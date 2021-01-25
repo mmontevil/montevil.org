@@ -12,9 +12,8 @@ eleventyComputed:
 permalink: /tags/{{ tag.slug }}/
 ---
 
-{% from "macros/articleCard.njk" import articleCard %}
-{% from "macros/linkCard.njk" import linkCard %}
-{% from "macros/noteCard.njk" import noteCard %}
+{% from "macros/itemCard.njk" import itemCard %}
+
 
 {% if tag.logo or tag.description %}
   <div class="intro clearfix">
@@ -37,13 +36,7 @@ permalink: /tags/{{ tag.slug }}/
 <div class="cards-list">
   {% set contentItems = collections[tag.tag] %}
   {% for item in contentItems | reverse %}
-    {% if item.data.layout == "article" %}
-      {{ articleCard(item) }}
-    {% elif item.data.layout == "link" %}
-      {{ linkCard(item) }}
-    {% elif item.data.layout == "note" %}
-      {{ noteCard(item) }}
-    {% endif %}
+      {{ itemCard(item) }}
   {% endfor %}
 </ul>
 

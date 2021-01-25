@@ -1,0 +1,26 @@
+---
+layout: content
+eleventyComputed: 
+    title : "{{ bibentry.title }}"
+    keyword : "{{ bibentry.keyword }}"
+    abstract : "{{ bibentry.abstract }}"
+    bibib: "src/assets/bib/{{page.fileSlug}}.bib"
+    bibout: "/assets/bib/{{page.fileSlug}}.bib"
+    pdfout: "/assets/pdf/{{page.fileSlug}}.pdf"
+---
+  {#  tags: 
+       - "  {{ pubmeta.keyword | splarray2 }}"
+tags: [{% for entry in keyword.split(', ') %}
+  \"{{entry}}\"{% if not loop.last %},{%- endif -%}
+{% endfor %}]
+{{keyword | splarray}}
+
+{{hop}}
+#}
+
+ <p>
+{{ bibib | bibcite|divRemove|safe}} <br>
+<a href="{{pdfout}}">Manuscript  </a> 
+   <a href="{{bibout}}"> Citation</a> <a href="{{page.url}}">Full text</a> <a href="https://dx.doi.org/{{bibentry.DOI}}">Publisher</a> </p>
+{{excerpt}}
+{{ content | safe }}

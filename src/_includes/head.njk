@@ -57,10 +57,10 @@
   {% endif %}
 
   {# opengraph and Twitter #}
-  <meta property="og:site_name" content="Nicolas Hoizey" />
+  <meta property="og:site_name" content="{{websiteid.name}}" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:creator" content="@nhoizey" />
-  <meta name="twitter:site" content="@nhoizey" />
+  <meta name="twitter:creator" content="@{{websiteid.twitter}}" />
+  <meta name="twitter:site" content="@{{websiteid.twitter}}" />
 
   {# https://dev.twitter.com/web/overview/widgets-webpage-properties#csp #}
   <meta name="twitter:widgets:csp" content="on" />
@@ -139,7 +139,7 @@
   {# iOS features #}
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  <link rel="apple-touch-icon" href="/assets/me/nicolas-hoizey-180px.png" />
+  <link rel="apple-touch-icon" href="/assets/me/Montevil-180px.png" />
   <meta name="apple-mobile-web-app-title" content="N. Hoizey" />
   {# https://timkadlec.com/remembers/2018-06-06-web-watch/ #}
   <meta name="disabled-adaptations" content="watch" />
@@ -157,12 +157,11 @@
   {# OpenSearch #}
   <link rel="search"
     type="application/opensearchdescription+xml"
-    title="Nicolas Hoizey"
-    href="https://nicolas-hoizey.com/opensearch.xml" />
+    title="{{websiteid.name}}"
+    href="{{websiteid.url}}/opensearch.xml" />
 
   {# rel-me (should be in visible links) #}
-  <link rel="me" href="https://twitter.com/nhoizey" />
-  <link rel="me" href="https://github.com/nhoizey" />
+  <link rel="me" href="https://twitter.com/{{websiteid.twitter}}" />
 
   {# http://microformats.org/wiki/source-brainstorming #}
   <link href="https://github.com/nhoizey/nicolas-hoizey.com" rel="source" />

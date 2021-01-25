@@ -15,10 +15,10 @@
       <div
         class="wrap">
         {% if page.url == "/" %}
-          <h1 class="site_title h-card" rel="me">Nicolas Hoizey</h1>
+          <h1 class="site_title h-card" rel="me">{{websiteid.titleshort}}</h1>
         {% else %}
           <p class="site_title">
-            <a class="h-card" href="/" rel="me" title="Homepage">Nicolas Hoizey</a>
+            <a class="h-card" href="/" rel="me" title="Homepage">{{websiteid.titleshort}}</a>
           </p>
         {% endif %}
       </div>
@@ -28,8 +28,8 @@
 
     <main id="main" role="main">
       <div class="wrap">
-        {% block content %}{% endblock %}
-        {{ content | safe }}
+        {% block content %}
+        {{ content | safe }}{% endblock %}
       </div>
     </main>
 

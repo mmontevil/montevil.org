@@ -3,6 +3,10 @@ const truncateHtml = require('truncate-html');
 const entities = require('entities');
 
 module.exports = {
+  divRemove: (content) => {
+     const regex = /(<div ((?!(>)).|\n)+>)|(<\/div>)/gm;
+    return content.replace(regex, '');
+  },  
   cleanDeepLinks: (content) => {
     const regex = / <a class="deeplink"((?!(<\/a>)).|\n)+<\/a>/gm;
     return content.replace(regex, '');

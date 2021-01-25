@@ -124,18 +124,13 @@ article {
 }
 
 // File link icons
-a[href$='.zip'],
-a[href$='.kml'] {
-  padding-left: 1.6em;
-  background-size: 1.4em 1.4em;
+a[href$='.zip']{
+  padding-left: 1.4em;
+  background-size: 1.2em 1.2em;
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 
 a[href$='.zip'] {
   background-image: url(/assets/icons/zip.svg);
-}
-
-a[href$='.kml'] {
-  background-image: url(/assets/icons/kml.svg);
 }

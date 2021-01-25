@@ -21,7 +21,16 @@ module.exports = function (collection) {
           ),
         ];
       }
-
+      if (item.data.layout === 'publications') {
+        itemTags = [
+          ...new Set(
+            [].concat(
+              ...itemTags,
+              ...item.data.tags
+            )
+          ),
+        ];
+      }
       for (const tag of itemTags) {
         let number = (tagsCollection.get(tag) || 0) + 1;
         max = Math.max(max, number);

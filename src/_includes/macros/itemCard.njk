@@ -1,0 +1,19 @@
+{% from "macros/articleCard.njk" import articleCard %}
+{% from "macros/linkCard.njk" import linkCard %}
+{% from "macros/noteCard.njk" import noteCard %}
+{% from "macros/pubCard.njk" import pubCard %}
+{% from "macros/talkCard.njk" import talkCard %}
+
+{% macro itemCard(item) %}
+    {% if item.data.layout == "article" %}
+      {{ articleCard(item) }}
+    {% elif item.data.layout == "link" %}
+      {{ linkCard(item) }}
+    {% elif item.data.layout == "note" %}
+      {{ noteCard(item) }}
+    {% elif item.data.layout == "publication" %}
+      {{ pubCard(item) }}
+          {% elif item.data.layout == "talk" %}
+      {{ talkCard(item) }}
+    {% endif %}
+{% endmacro %}

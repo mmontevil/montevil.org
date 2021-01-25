@@ -16,10 +16,7 @@ const getWebmentions = () => {
 
 function isSelf(entry) {
   return (
-    entry.url.match(/^https:\/\/twitter.com\/nice_links\//) ||
-    (entry['wm-property'] === 'repost-of' &&
-      (entry.url.match(/^https:\/\/twitter.com\/nhoizey\//) ||
-        entry.url.match(/^https:\/\/mamot.fr\/@nhoizey\//)))
+    entry.url.match(/^https:\/\/twitter.com\/MMontevil\//) 
   );
 }
 

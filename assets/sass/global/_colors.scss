@@ -2,13 +2,13 @@
 // Base colors
 // ************************************************************
 
-$color-white: #fff;
+$color-white: #fcfafb;
 $color-blue: #39f;
 $color-red: #f33;
 $color-lightgrey: #eee;
 $color-grey: #bbb;
 $color-darkgrey: #555;
-$color-gold: #937c07;
+$color-gold: #fefaa2;
 
 $color-twitter: #1da1f2;
 
@@ -20,25 +20,25 @@ $color-twitter: #1da1f2;
 //   https://www.economist.com/babbage/2014/06/23/the-colour-purple
 // https://gka.github.io/palettes/#/9|s|663399,ffffff||1|1
 
-$color-primary-darker-7: #130b18;
-$color-primary-darker-6: #1e1328;
-$color-primary-darker-5: #2a1939;
-$color-primary-darker-4: #351e4b;
-$color-primary-darker-3: #41235d;
-$color-primary-darker-2: #4d2871;
-$color-primary-darker-1: #592e85;
-$color-primary: rebeccapurple; // #663399;
-$color-primary-lighter-1: #7a4ca6;
-$color-primary-lighter-2: #8e64b3;
-$color-primary-lighter-3: #a17dbf;
-$color-primary-lighter-4: #b496cc;
-$color-primary-lighter-5: #c7b0d9;
-$color-primary-lighter-6: #dacae6;
-$color-primary-lighter-7: #ece4f2;
+$color-primary-darker-7: #14070e;
+$color-primary-darker-6: #1f0d17;
+$color-primary-darker-5: #2a111f;
+$color-primary-darker-4: #361227;
+$color-primary-darker-3: #42142f;
+$color-primary-darker-2: #4f1437;
+$color-primary-darker-1: #5c1540;
+$color-primary: #691449; // #663399;
+$color-primary-lighter-1: #7d345d;
+$color-primary-lighter-2: #905173,;
+$color-primary-lighter-3: #a36c89;
+$color-primary-lighter-4: #b6899f;
+$color-primary-lighter-5: #c8a5b6;
+$color-primary-lighter-6: #dbc3ce;
+$color-primary-lighter-7: #ede1e6;
 
 // Persimmon:
 //   https://en.wikipedia.org/wiki/Shades_of_orange#Persimmon
-$color-secondary: #ec5800;
+$color-secondary: #35d123;
 
 // Global styles
 $meta-icon-color: $color-grey;

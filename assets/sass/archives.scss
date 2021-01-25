@@ -11,13 +11,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    'searchbox searchbox'
-    'stats poweredby'
     'hits hits';
   grid-column-gap: calc(var(--gap) * 3);
-  column-gap: calc(var(--gap) * 3);
+  column-gap: calc(var(--gap) * 1);
   grid-row-gap: calc(var(--gap) * 2);
-  row-gap: calc(var(--gap) * 2);
+  row-gap: calc(var(--gap) * 1);
 }
 
 #clear-refinements,
@@ -29,10 +27,8 @@
 
 @media (min-width: 48rem) {
   .archives {
-    grid-template-columns: 1fr 1fr 12rem;
+    grid-template-columns: 1fr 1fr 13rem;
     grid-template-areas:
-      'searchbox searchbox clear'
-      'stats poweredby empty'
       'hits hits refinements';
   }
 

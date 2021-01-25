@@ -15,14 +15,14 @@ https://developers.google.com/search/docs/data-types/breadcrumbs
         "@type": "ListItem",
         "position": 1,
         "item": {
-          "@id": "https://nicolas-hoizey.com/notes/{{ page.date | date("YYYY") }}/",
+          "@id": "{{websiteid.url}}/notes/{{ page.date | date("YYYY") }}/",
           "name": "{{ page.date | date(" YYYY ") }}"
         }
       }, {
         "@type": "ListItem",
         "position": 2,
         "item": {
-          "@id": "https://nicolas-hoizey.com/notes/{{ page.date | date("YYYY/MM") }}/",
+          "@id": "{{websiteid.url}}/notes/{{ page.date | date("YYYY/MM") }}/",
           "name": "{{ page.date | date(" MM ") }}"
         }
       }, {

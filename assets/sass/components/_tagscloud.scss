@@ -34,6 +34,13 @@
   // }
 
   a {
+    
+    &.tag1 {
+      &:link,
+      &:visited {
+        background-color: $color-primary-lighter-2;
+      }
+    }
     &.tag2 {
       &:link,
       &:visited {

@@ -87,9 +87,34 @@ let collections = {
   monthsWithArchives: (collection) => {
     return monthsWithContent(getFilteredCollection(collection, 'archives'));
   },
+
+  yearsWithPublications: (collection) => {
+    return yearsWithContent(getFilteredCollection(collection, 'publications'));
+  },
+  monthsWithPublications: (collection) => {
+    return monthsWithContent(getFilteredCollection(collection, 'publications'));
+  },
+    yearsWithChapters: (collection) => {
+    return yearsWithContent(getFilteredCollection(collection, 'chapters'));
+  },
+  monthsWithChapters: (collection) => {
+    return monthsWithContent(getFilteredCollection(collection, 'chapters'));
+  },
+    yearsWithPeerreviewed: (collection) => {
+    return yearsWithContent(getFilteredCollection(collection, 'peer-reviewed'));
+  },
+  monthsWithPeerreviewed: (collection) => {
+    return monthsWithContent(getFilteredCollection(collection, 'peer-reviewed'));
+  },
+    yearsWithVaria: (collection) => {
+    return yearsWithContent(getFilteredCollection(collection, 'varia'));
+  },
+  monthsWithVaria: (collection) => {
+    return monthsWithContent(getFilteredCollection(collection, 'varia'));
+  },    
 };
 
-['articles', 'links', 'notes', 'talks', 'archives'].forEach(
+['publications','articles', 'links', 'notes', 'talks', 'archives','chapters','peer-reviewed','varia'].forEach(
   (collectionName) => {
     // collections for yearly archives
     collections[`${collectionName}ByYear`] = (collection) => {

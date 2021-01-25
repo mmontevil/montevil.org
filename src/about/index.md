@@ -4,35 +4,25 @@ layout: page
 lang: en
 ---
 
-![](/assets/me/nicolas-hoizey.jpg){.logo}{.portrait}
+![](/assets/me/Montevil.jpg){.logo}{.portrait}
 ::: intro
-I am **passionate about [the Web](#i-love-the-web) and [photography](#i-love-photography)**, among [many interests](/tags/).
+I am a *theoretical biologist* working at the crossroads of experimental biology, mathematics, and philosophy. I work both on the ways to understand living things and to take care of them in the Anthropocene, among [many more specific topics](/tags/).
 :::
 
-# I love the Web
 
-I am passionate about the Web, which I discovered in 1996 during my graduate studies at [EISTI](https://www.eisti.fr/). I have therefore naturally created or participated in the creation of many sites over the years[^sites], so many pretexts to explore the technological innovations of Web standards.
+[Publications](/assets/pdf/publications_Montevil2-en.pdf)
+[CV](/assets/pdf/cv_Montevil_2019_en.pdf)
 
-[^sites]: I try to put back online all the old sites whose sources I have kept or found, like [Ciné Files](https://archeologie.nicolas-hoizey.com/1998-cine-files/) dating from 1998…
 
-As a professional, I am **co-founder (in 2001) and director of innovation at [Clever Age](http://www.clever-age.com/)**, where I mainly advise on Web architecture (e-commerce, content management, collaborative tools, etc.) and *front end* expertise, including [Progressive Web Apps](/tags/pwa/), [Responsive Web Design](/tags/rwd/) and [Web Performance](/tags/webperf/). I also run some seminars and training courses on these topics.
+# Short CV
 
-A little (too?) curious and interested in everything about the Web, from knowledge of the lowest technical network and system layers (my specialization at EISTI) to quality *front end* integration including universal accessibility, I now call myself a **Web facilitator**, committed to sharing my knowledge with others, whether they are my clients, my colleagues or other members of the community.
-
-Always concerned about quality, I participated in the community project [Opquast](https://opquast.com/fr/), a quality repository for the Web initiated by [Temesis](https://temesis.com/). I also regularly participate, sometimes even as [a speaker](/talks/), in beautiful conferences such as [Paris Web](https://www.paris-web.fr/).
+* I am currently a researcher at Institut de Recherche et d'Innovation.
+* Previously, i was a postdoctoral fellow at MSC, Paris Diderot, funded by the Labex "Who AM I?." 
+* I was a postdoctoral fellow at IHPST, Paris 1 Panthéon-Sorbonne, on a grant from DIM-ISC of the île-de-France region 
+* a postdoctoral associate in Tufts University, dept. of Anatomy and cell biology, Soto and Sonnenschein Lab. In my postdoctorale position in Tufts, I learned experimental techniques, and focused on morphometrics of mammary gland and collagen analysis in 3D gels and in vivo.
+* I obtained my Phd under the supervision of [Giuseppe Longo](https://www.di.ens.fr/users/longo/) in [LIENS](https://www.di.ens.fr/), École Normale Supérieure and doctoral school [Frontières du vivant](https://www.fdv-paris.org/), in [Paris V, Descartes](https://www.univ-paris5.fr/).
 
 ::: info
 If you're more interested in technical stuff, you can learn more [about this website](/about/the-website.html).
 :::
 
-# I love photography
-
-Outside the Web, I am also passionate about [photography](/tags/photography/). As a child, I observed my father using his film camera a lot, especially for landscape or family photos, and I quickly wanted to get started too.
-
-I don't have a theme or subject that really stands out from the others in my photographic production, but I do have **a strong preference for the natural**, whether it's landscapes or urban landscapes, or portraits.
-
-My portfolio's name is [Photo Synthèse](http://photosynthese.net), and you can also see my photos on [Flickr](https://www.flickr.com/photos/nicolas-hoizey/).
-
-At the end of 2014, I joined the [Photo Club de Draveil](http://photo-club-draveil.fr/), which was being created, and has since participated in several group exhibitions. This is a great opportunity to **confront his work to the eyes of complete strangers** (who are much less so now), which seems necessary to me to progress.
-
-I also participated in the online photo magazine [Phototrend](http://phototrend.fr/author/nicolas-hoizey/), where I publish mainly hardware and software tests, but also news from the world of photography.

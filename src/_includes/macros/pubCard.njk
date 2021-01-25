@@ -1,0 +1,42 @@
+
+
+
+
+{% from "macros/meta.njk" import meta %}
+{% from "macros/card.njk" import card %}
+
+{% macro pubCard(article) %}
+  {% set content %}
+  <div class="card__body p-summary metabib"><p>
+{{ article.data.bibib | bibcite|divRemove|safe}} </p>
+<p>
+<a  href="{{article.data.pdfout}}" class="buttonlink"><svg class="icon"><use xlink:href="#symbol-pdf" /></svg> Manuscript</a> 
+   <a href="{{article.data.bibout}}" class="buttonlink"><svg class="icon"><use xlink:href="#symbol-bib" /></svg> Citation</a>
+   <a href="{{article.data.page.url}}" class="buttonlink"><svg ><use xlink:href="#symbol-link" /></svg> Full text</a> 
+  <a href="https://dx.doi.org/{{article.data.bibentry.DOI}}" class="buttonlink"><svg class="icon"><use xlink:href="#symbol-download" /></svg> Publisher</a> 
+  </p>
+  </div>
+<svg  class="icon"><use xlink:href="#symbol-link" /></svg>
+
+    <p class="card__body p-summary">
+    
+    {{ article.data.abstract  | safe }}</p> 
+
+      
+
+
+
+  {% endset %}
+
+  {% set meta %}
+  {{ meta(article) }}
+  {% endset %}
+
+  {{ card(
+    type = 'article',
+    lang = article.data.lang,
+    title = article.data.title,
+    url = article.url,
+    content = content,
+    meta = meta) }}
+{% endmacro %}

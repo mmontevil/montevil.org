@@ -35,6 +35,10 @@ body {
   color: $color-primary-darker-6;
   background-color: white;
 
+  //  background: url(/assets/blue3.webp) no-repeat center center fixed;
+    //    background-size: auto;
+   // background-size: cover;
+
   word-break: break-word;
 }
 
@@ -345,3 +349,26 @@ figcaption {
 .more {
   margin-top: var(--gap3);
 }
+
+
+.buttonlink { 
+      &:link,  &:visited{
+        padding: 0.1em 0.2em;
+    border: 2px solid var(--color-link);
+    border-radius: 0.5em;
+    color: var(--color-link);
+    margin-top: 0.1em;
+    background-color: #{$color-lightgrey};
+}
+  &:hover,
+  &:focus {
+    background-color: var(--color-link-hover-bg);
+    color: var(--color-link-hover);
+  }
+  &:active{
+    background-color: var(--color-secondary);
+    color: var(--color-link-hover);
+  }
+}
+
+

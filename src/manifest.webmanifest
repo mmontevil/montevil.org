@@ -1,24 +1,24 @@
 {
   "dir": "ltr",
   "lang": "en",
-  "name": "Nicolas Hoizey",
-  "short_name": "N. Hoizey",
-  "description": "Passionate about the Web and photography, among many other interests.",
+  "name": "Maël Montévil",
+  "short_name": "M. montévil",
+  "description": "working at the crossroad of theoretical biology and philosophy.",
   "scope": "/",
   "start_url": "/?utm_source=manifest",
   "display": "standalone",
   "orientation": "any",
-  "theme_color": "#663399",
-  "background_color": "#865aad",
+  "theme_color": "#691449",
+  "background_color": "#fcfafb",
   "icons": [
     {
-      "src": "/assets/me/nicolas-hoizey-maskable-192px.png",
+      "src": "/assets/me/Montevil-192px.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/assets/me/nicolas-hoizey-maskable-512px.png",
+      "src": "/assets/me/Montevil-512px.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"

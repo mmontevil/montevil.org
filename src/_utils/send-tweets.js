@@ -1,7 +1,7 @@
 // Heavily inspired from
 // https://mxb.dev/blog/syndicating-content-to-twitter-with-netlify-functions/
 
-const myTwitterUsername = 'nhoizey';
+const myTwitterUsername = 'mmontevil';
 
 const fetch = require('node-fetch');
 const dotenv = require('dotenv');

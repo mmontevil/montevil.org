@@ -1,0 +1,27 @@
+---
+layout: null
+permalink: /feeds/publications.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{websiteid.name}} - Publications</title>
+  <link href="{{ pkg.homepage }}/feeds/publications.xml" rel="self"/>
+  <link href="{{ pkg.homepage }}/publications/"/>
+  <link rel="hub" href="http://pubsubhubbub.superfeedr.com/" />
+  <updated>{{ collections.publications | rssLastUpdatedDate }}</updated>
+  <id>{{ pkg.homepage }}/publications/</id>
+  <author>
+    <name>{{ pkg.author.name }}</name>
+    <email>{{ pkg.author.email }}</email>
+  </author>
+  {% for entry in collections.publications | limit(50) %}
+    {% set absoluteEntryUrl %}{{ entry.url | url | absoluteUrl(pkg.homepage) }}{% endset %}
+    <entry>
+      <title>🖋 {{ entry.data.title }}</title>
+      <link href="{{ absoluteEntryUrl }}"/>
+      <updated>{{ entry.date | rssDate }}</updated>
+      <id>{{ absoluteEntryUrl }}</id>
+      <content type="html">{{ entry.templateContent | cleanDeepLinks | htmlToAbsoluteUrls(absoluteEntryUrl) }}</content>
+    </entry>
+  {% endfor %}
+</feed>

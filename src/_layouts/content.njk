@@ -15,14 +15,14 @@ https://developers.google.com/search/docs/data-types/breadcrumbs
         "@type": "ListItem",
         "position": 1,
         "item": {
-          "@id": "https://nicolas-hoizey.com/{{ layout }}s/{{ date | date("YYYY") }}/",
+          "@id": "{{websiteid.url}}/{{ layout }}s/{{ date | date("YYYY") }}/",
           "name": "{{ date | date(" YYYY ") }}"
         }
       }, {
         "@type": "ListItem",
         "position": 2,
         "item": {
-          "@id": "https://nicolas-hoizey.com/{{ layout }}s/{{ date | date("YYYY/MM") }}/",
+          "@id": "{{websiteid.url}}/{{ layout }}s/{{ date | date("YYYY/MM") }}/",
           "name": "{{ date | date(" MM ") }}"
         }
       }, {
@@ -96,7 +96,7 @@ https://developers.google.com/search/docs/data-types/breadcrumbs
     {{ content | safe }}
   </div>
 
-  {% if layout in ['article', 'link'] %}
+  {% if layout in ['article', 'link', 'publication'] %}
     <div id="webmentions" class="lazy"></div>
   {% else %}
     {% set articleUrl = page.url %}

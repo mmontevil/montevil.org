@@ -3,6 +3,7 @@ layout: default
 title: Home
 eleventyExcludeFromCollections: true
 ---
+ 
 
 {#
 JSON-LD for:
@@ -15,40 +16,54 @@ JSON-LD for:
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Nicolas Hoizey",
-    "url": "https://nicolas-hoizey.com/",
+    "name": "{{websiteid.name}}",
+    "url": "{{websiteid.url}}",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://nicolas-hoizey.com/archives/?query={search_term_string}",
+      "target": "{{websiteid.url}}/archives/?query={search_term_string}",
       "query-input": "required name=search_term_string"
     },
-    "sameAs": ["https://twitter.com/nhoizey", "https://mamot.fr/@nhoizey", "https://www.flickr.com/photos/nicolas-hoizey/", "https://github.com/nhoizey"]
+    "sameAs": [{% for urll in websiteid.sameAs %} "{{ urll}}", {% endfor %}]
   }
 </script>
 
 <div class="page">
 
   <div class="site__intro clearfix h-card">
-    <img src="/assets/me/nicolas-hoizey.jpg" alt="" class="logo portrait" />
-    <p class="site__intro__name">Hi, I'm <strong class="p-name">Nicolas Hoizey</strong>.</p>
+    <img src="/assets/me/Montevil.jpg" alt="" class="logo portrait" />
+    <p class="site__intro__name">Hi, I'm <a href="/about/"><strong class="p-name"> {{websiteid.name}}</strong></a>.</p>
     <p class="p-note">
-      Passionate about the Web, I co-founded
-      <a href="https://www.clever-age.com/en/" class="p-org h-card">Clever Age</a>.
-      <br />
-      I also love <a href="/tags/photography/">photography</a></a>,
+      I am a <em> theoretical biologist</em> working at the crossroads of experimental biology, mathematics, and philosophy. I also work on the Anthropocene,
       among <a href="/tags/">many other interests</a>.
     </p>
   </div>
 
   {% from "macros/articleCard.njk" import articleCard %}
+  {% from "macros/pubCard.njk" import pubCard %}
 
+  <h2>Latest articles</h2>
+  <div class="cards-list">
+    {% for article in collections.latestPeerreviewed %}
+      {{ pubCard(article) }}
+    {% endfor %}
+  </div>
+  
+  <h2>Latest publications</h2>
+  <div class="cards-list">
+    {% for article in collections.publications %}
+      {{ pubCard(article)   }}
+    {% endfor %}
+  </div>
+  
   <h2>Latest articles</h2>
   <div class="cards-list">
     {% for article in collections.latestArticles %}
       {{ articleCard(article) }}
     {% endfor %}
   </div>
-
+  
+  
+  
   <h2>Older noteworthy articles</h2>
   <div class="cards-list">
   {% for article in collections.promotedArticles %}
@@ -59,3 +74,5 @@ JSON-LD for:
 
   <div class="lazy"></div>
 </div>
+
+

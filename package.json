@@ -1,15 +1,15 @@
 {
-  "name": "nicolas-hoizey.com",
+  "name": "montevil.org",
   "version": "2.3.0",
   "title": "Nicolas Hoizey, passionate about the Web and photography",
   "description": "This is the personnal website of Nicolas Hoizey, passionate about the Web and photography, among many other interests.",
   "author": {
-    "name": "Nicolas Hoizey",
-    "email": "nicolas@hoizey.com",
-    "url": "https://nicolas-hoizey.com/"
+    "name": "Maël Montévil",
+    "email": "mael.montevil@gmail.com",
+    "url": "https://montevil.org/"
   },
   "license": "MIT",
-  "homepage": "https://nicolas-hoizey.com",
+  "homepage": "https://montevil.org",
   "repository": {
     "type": "git",
     "url": "https://github.com/nhoizey/nicolas-hoizey.com"
@@ -117,7 +117,12 @@
   },
   "private": true,
   "dependencies": {
-    "algoliasearch": "~4.7.0",
-    "instantsearch.js": "~4.8.7"
+    "algoliasearch": "^4.7.0",
+    "autocomplete.js": "^0.38.0",
+    "citation-js": "^0.5.0-alpha.9",
+    "element-remove": "^1.0.4",
+    "instantsearch.js": "~4.8.7",
+    "linkify-urls": "^3.1.1",
+    "moment-timezone": "^0.5.32"
   }
 }

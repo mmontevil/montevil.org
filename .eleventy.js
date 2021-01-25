@@ -6,7 +6,7 @@ module.exports = function (eleventyConfig) {
   // ------------------------------------------------------------------------
   // Collections
   // ------------------------------------------------------------------------
-
+eleventyConfig.setDataDeepMerge(true);
   glob
     .sync(path.join(config.dir.src, '_11ty/collections/*.js'))
     .forEach((file) => {
@@ -49,6 +49,7 @@ module.exports = function (eleventyConfig) {
       });
     });
 
+  
   // ------------------------------------------------------------------------
   // Plugins
   // ------------------------------------------------------------------------
@@ -213,7 +214,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig
     .addPassthroughCopy(
-      path.join(config.dir.src, '**/*.{jpg,png,gif,svg,kmz,zip,css}')
+      path.join(config.dir.src, '**/*.{jpg,png,gif,svg,kmz,zip,css,bib,pdf,webp}')
     )
     .addPassthroughCopy(path.join(config.dir.src, 'assets'))
     .addPassthroughCopy(path.join(config.dir.src, '.well-known'))
