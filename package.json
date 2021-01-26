@@ -124,7 +124,7 @@
     "autocomplete.js": "^0.38.0",
     "citation-js": "^0.5.0-alpha.9",
     "element-remove": "^1.0.4",
-    "instantsearch.js": "~4.9.2",
+    "instantsearch.js": "~4.13.1",
     "linkify-urls": "^3.1.1",
     "moment-timezone": "^0.5.32"
   }
