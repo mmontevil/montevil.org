@@ -5,27 +5,48 @@
 {% from "macros/meta.njk" import meta %}
 {% from "macros/card.njk" import card %}
 
-{% macro pubCard(article) %}
+{% macro pubCard(article,numbers2) %} 
+{% set rid %}
+    {{  numbers2| random }}
+{% endset %}
+
   {% set content %}
-  <div class="card__body p-summary metabib"><p>
-{{ article.data.bibib | bibcite|divRemove|safe}} </p>
-<p>
-<a  href="{{article.data.pdfout}}" class="buttonlink"><svg class="icon"><use xlink:href="#symbol-pdf" /></svg> Manuscript</a> 
-   <a href="{{article.data.bibout}}" class="buttonlink"><svg class="icon"><use xlink:href="#symbol-bib" /></svg> Citation</a>
-   <a href="{{article.data.page.url}}" class="buttonlink"><svg ><use xlink:href="#symbol-link" /></svg> Full text</a> 
-  <a href="https://dx.doi.org/{{article.data.bibentry.DOI}}" class="buttonlink"><svg class="icon"><use xlink:href="#symbol-download" /></svg> Publisher</a> 
+    <p class="card__body p-summary">  {{article.data.excerpt}}   </p> 
+
+  
+  <div class="card__body p-summary smalltext"><p>
+{{ article.data.bibib | bibcite|divRemove|safe}} </p></div>
+
+{% if not  (article.data.bibentry.abstract === undefined) %}
+ <section class="accordion">
+  <input type="checkbox" name="{{article.data.bibentry.id}}{{rid}}" id="{{article.data.bibentry.id}}{{rid}}" >
+  <p class="handle">
+    <label for="{{article.data.bibentry.id}}{{rid}}"> Abstract</label>
   </p>
+  <div class="content">
+     <p > <em> Abstract: </em>  {{ article.data.abstract  | safe }}</p >
+     {% if not  (article.data.bibentry.keyword === undefined) %}
+          <p > <em> Keywords: </em> {{ article.data.keyword  | safe }}</p >
+           {% endif %}
   </div>
-<svg  class="icon"><use xlink:href="#symbol-link" /></svg>
+</section>
+ {% endif %}
 
-    <p class="card__body p-summary">
-    
-    {{ article.data.abstract  | safe }}</p> 
+<p><a  href="{{article.data.pdfout}}" class="buttonlink smalltext">{% icon "pdf", "PDF" %}  Manuscript</a> 
+   <a href="{{article.data.bibout}}" class="buttonlink smalltext">{% icon "bib", "BIB" %}  Citation</a>
+   <a href="{{article.data.page.url}}" class="buttonlink smalltext svgnofill">{% icon "link", "Link" %} Full text</a> 
+   {% if not  (article.data.bibentry.DOI === undefined) %}
+  <a href="https://dx.doi.org/{{article.data.bibentry.DOI}}" class="buttonlink smalltext svgnofill">{% icon "exlink", "Link" %}
+  Publisher</a> 
+  {% else %}{% if not  (article.data.bibentry.url === undefined) %}
+  <a href="{{article.data.bibentry.url}}" class="buttonlink smalltext svgnofill">{% icon "exlink", "Link" %}
+  Publisher</a> 
+  {% endif %}  {% endif %}
+  </p>
+  
 
-      
 
-
-
+     
   {% endset %}
 
   {% set meta %}

@@ -6,55 +6,23 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
+  {{ head.title | safe }}
+
+  {% set cssFilename = "critical.css" %}
+  {% include "add-css.njk" %}
+
   {% if build.env == 'production' %}
-    {% set criticalCss %}
-    {% include_raw config.dir.dist + "/css/" + hashes_css['critical.css'] %}
+    {% set criticalJs %}
+    {% include_raw config.dir.dist + "/js/" + hashes_critical[config.dir.assets + '/js/critical.js'] %}
     {% endset %}
-    <style>
-      {{criticalCss | safe}}
-    </style>
-  {% else %}
-    <link rel="stylesheet" href="/css/critical.css" />
-  {% endif %}
-
-  {% set criticalJs %}
-  {% include_raw config.dir.dist + "/js/" + hashes_critical[config.dir.assets + '/js/critical.js'] %}
-  {% endset %}
-  <script>
-    {{ criticalJs | replace('//# sourceMappingURL=', '//# sourceMappingURL=/js/') | safe }}
-  </script>
-
-  {# Google Analytics #}
-  {% if build.env === "production" %}
     <script>
-      window.ga = function () {
-        ga
-          .q
-          .push(arguments)
-      };
-      ga.q = [];
-      ga.l = + new Date;
-      ga('create', 'UA-1655999-10', 'auto');
-      ga('set', 'transport', 'beacon');
-      ga('set', 'anonymizeIp', true);
-      if (window.viewport_width > 0) {
-        ga('set', {
-          dimension1: window.screen_density,
-          dimension2: window.viewport_width,
-          dimension3: window.root_font_size
-        });
-      } else {
-        ga('set', {
-          dimension1: window.screen_density,
-          dimension2: 0,
-          dimension3: window.root_font_size
-        });
-      }
-      ga('set', 'dimension4', 'online');
-      ga('send', 'pageview');
+      {{ criticalJs | replace('//# sourceMappingURL=', '//# sourceMappingURL=/js/') | safe }}
     </script>
-    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  {% else %}
+    <script src="/js/critical-iife.js"></script>
   {% endif %}
+
+  {% include 'components/google-analytics.njk' %}
 
   {# opengraph and Twitter #}
   <meta property="og:site_name" content="{{websiteid.name}}" />
@@ -65,104 +33,92 @@
   {# https://dev.twitter.com/web/overview/widgets-webpage-properties#csp #}
   <meta name="twitter:widgets:csp" content="on" />
 
-  {%- set ogTags = '' -%}
-  {% if tags %}
-    {%- set ogTags %}
-    {%- for tag in tags -%}
-      #{{- tag | tagToHashtag -}}%20%20
-    {%- endfor -%}
-    {%- endset -%}
-  {% endif %}
-
   {% set ogImageTitle = '' %}
-  {% set ogImageTagline = ogTags %}
+  {% set ogImageTagline = '' %}
 
-  {% set ogType = "website" %}
   {% if page.url == "/" %}
     {% set ogTitle = pkg.title %}
     {% set ogDescription = pkg.description %}
-    <title itemprop="name">{{ ogTitle }}</title>
   {% elif layout == "note" %}
     {% set ogTitle = pageExcerpt | striptags | truncate(60) | escape | titleSafe %}
     {% set ogDescription %}Note from {{ note.date | formattedDate }}{% endset %}
     {% set ogImageTitle = ogDescription %}
-    {% set ogType = "article" %}
-    <title>{{ ogTitle }} - {{ pkg.author.name }}</title>
   {% else %}
     {% set ogTitle = title %}
     {% if layout == "article" or layout == "link" or layout == "talk" %}
       {% set ogDescription = pageExcerpt | striptags | truncate(290) | escape %}
-      {% set ogType = "article" %}
       {% if layout == "link" %}
         {% set ogImageTitle %}Link: {{ ogTitle }}{% endset %}
       {% endif %}
     {% elif page.inputPath == "./src/tag-page.njk" %}
       {% set ogDescription = ogTitle %}
     {% endif %}
-    <title>{{ ogTitle }} - {{ pkg.author.name }}</title>
   {% endif %}
   {% if ogImageTitle == '' %}
     {% set ogImageTitle = ogTitle %}
   {% endif %}
 
-  <meta property="og:title" content="{{ ogTitle }}" />
+  <meta property="og:title" content="{{ opengraph.title }}" />
   <meta name="description" content="{{ ogDescription }}" />
   <meta property="og:description" content="{{ ogDescription }}" />
 
   <link rel="canonical" href="{{ pkg.homepage + page.url }}" itemprop="url" />
   <meta property="og:url" content="{{ pkg.homepage + page.url }}" />
 
-  <meta property="og:type" content="{{ ogType }}" />
-  {% if ogType == "article" %}
+  <meta property="og:type" content="{{ opengraph.type }}" />
+  {% if opengraph.type == "article" %}
     <meta property="article:published_time" content="{{ attributeDate }}" />
-    <meta property="article:author" content="https://www.facebook.com/nhoizey" />
+    <meta property="article:author" content="{{websiteid.url}}" />
   {% endif %}
 
   {#
   https://developers.facebook.com/docs/sharing/best-practices?locale=fr_FR#images
   https://developers.facebook.com/tools/debug/sharing/
   #}
-  {% set ogImageTitle = ogImageTitle | removeEmojis %}
-  {% set ogImageTagline = ogImageTagline | removeEmojis %}
-  <meta property="og:image" content="{% ogImage ogImageTitle, ogImageTagline %}" />
+  <meta property="og:image" content="{% ogImage opengraph.image.title, opengraph.image.tagline %}" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
+  <link rel="alternate" type="application/rss+xml" title="Feed for all content" href="/feeds/all.xml" />
   <link rel="alternate" type="application/rss+xml" title="Feed for articles only" href="/feeds/articles.xml" />
   <link rel="alternate" type="application/rss+xml" title="Feed for links only" href="/feeds/links.xml" />
+  <link rel="alternate" type="application/rss+xml" title="Feed for notes only" href="/feeds/notes.xml" />
   <link rel="icon" type="image/jpeg" href="/favicon.jpg" />
 
   {# webmentions with webmention.io #}
-  <link rel="pingback" href="https://webmention.io/nicolas-hoizey.com/xmlrpc" />
-  <link rel="webmention" href="https://webmention.io/nicolas-hoizey.com/webmention" />
+  <link rel="pingback" href="https://webmention.io/{{websiteid.webmention}}/xmlrpc" />
+  <link rel="webmention" href="https://webmention.io/{{websiteid.webmention}}/webmention" />
 
   {# iOS features #}
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <link rel="apple-touch-icon" href="/assets/me/Montevil-180px.png" />
-  <meta name="apple-mobile-web-app-title" content="N. Hoizey" />
+  <meta name="apple-mobile-web-app-title" content="{{websiteid.name}}" />
   {# https://timkadlec.com/remembers/2018-06-06-web-watch/ #}
   <meta name="disabled-adaptations" content="watch" />
 
   {# Theme color: https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android #}
-  <meta name="theme-color" content="#663399">
+  <meta name="theme-color" content="{{websiteid.color}}">
 
   {# web app manifest #}
   {# crossorigin: https://twitter.com/TimVereecke/status/1225547620791341062 #}
   <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials" />
 
-  {# web monetization #}
+  {# web monetization 
   <meta name="monetization" content="$ilp.uphold.com/G93bZjZYjHYb" />
-
-  {# OpenSearch #}
+#}
+  {# OpenSearch
   <link rel="search"
     type="application/opensearchdescription+xml"
     title="{{websiteid.name}}"
     href="{{websiteid.url}}/opensearch.xml" />
-
+ #}
   {# rel-me (should be in visible links) #}
   <link rel="me" href="https://twitter.com/{{websiteid.twitter}}" />
 
   {# http://microformats.org/wiki/source-brainstorming #}
-  <link href="https://github.com/nhoizey/nicolas-hoizey.com" rel="source" />
-</head>
+  <link href="{{websiteid.source}}" rel="source" />
+
+  <meta name="generator" content="Eleventy {{ build.version }}" />
+
+  </head>

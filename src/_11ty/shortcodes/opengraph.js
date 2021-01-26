@@ -4,7 +4,7 @@ module.exports = {
   ogImage: (title, tagline = '') => {
     return title
       ? getShareImage({
-          cloudName: 'nho',
+          cloudName: 'mmontevil',
           imageWidth: 1200,
           imageHeight: 630,
           imagePublicID: 'resources/opengraph-background',
@@ -22,7 +22,7 @@ module.exports = {
           taglineFontSize: 40,
           taglineGravity: 'north_east',
           taglineTopOffset: 300,
-          taglineColor: '663399',
+          taglineColor: '691449',
         })
       : '';
   },

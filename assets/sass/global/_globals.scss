@@ -1,0 +1,105 @@
+@use 'colors';
+
+:root {
+  --gap: 1rem;
+  --gap2: calc(2 * var(--gap));
+  --gap3: calc(3 * var(--gap));
+
+  --flow-space: 1em;
+
+  // --font-family-serif: NotoSerif, Georgia, 'Times New Roman', Times, serif;
+  --font-family-serif: Georgia, 'Times New Roman', Times, serif;
+
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  // --font-family-monospace: 'Fira Code', 'Courier New', Courier, monospace;
+  --font-family-monospace: 'Courier New', Courier, monospace;
+
+  --font-size-base: 0.9rem;
+  --font-size-responsive: 0.5vw;
+  --font-size-scale: 1.1;
+
+  // https://every-layout.dev/rudiments/modular-scale/
+  --font-size-m: calc(var(--font-size-base) + var(--font-size-responsive));
+  --font-size-m: min(
+    calc(var(--font-size-base) + var(--font-size-responsive)),
+    1.4rem
+  );
+  --font-size-s: calc(var(--font-size-m) / var(--font-size-scale));
+  --font-size-xs: calc(var(--font-size-s) / var(--font-size-scale));
+  --font-size-l: calc(var(--font-size-m) * var(--font-size-scale));
+  --font-size-xl: calc(var(--font-size-l) * var(--font-size-scale));
+  --font-size-xxl: calc(var(--font-size-xl) * var(--font-size-scale));
+  --font-size-xxxl: calc(var(--font-size-xxl) * var(--font-size-scale));
+  --font-size-xxxxl: calc(var(--font-size-xxxl) * var(--font-size-scale));
+
+  // --layout-max: calc(50 * var(--font-size-m));
+  --layout-max: 60rem;
+
+  // Color ingredients
+  --hue: 322;
+  --sat: 60%;
+  --sat-step: 4%;
+  --lum: 40%;
+  --lum-step: 7%;
+
+  // Colors
+  // Rebecca Purple:
+  //   https://www.economist.com/babbage/2014/06/23/the-colour-purple
+--color-primary-darker-7: #14070e;
+--color-primary-darker-6: #1f0d17;
+--color-primary-darker-5: #2a111f;
+--color-primary-darker-4: #361227;
+--color-primary-darker-3: #42142f;
+--color-primary-darker-2: #4f1437;
+--color-primary-darker-1: #5c1540;
+--color-primary: #691449; // #663399;
+--color-primary-lighter-1: #7d345d;
+--color-primary-lighter-2: #905173;
+--color-primary-lighter-3: #a36c89;
+--color-primary-lighter-4: #b6899f;
+--color-primary-lighter-5: #c8a5b6;
+--color-primary-lighter-6: #dbc3ce;
+--color-primary-lighter-7: #ede1e6;
+--color-primary-lighter-8: #fff2f7;
+
+  // Persimmon:
+  //   https://en.wikipedia.org/wiki/Shades_of_orange#Persimmon
+--color-secondary: #35d123;
+
+  --color-link: var(--color-primary);
+  --color-link-bg: inherit;
+  --color-link-decoration: var(--color-primary-lighter-6);
+
+  --color-link-hover: white;
+  --color-link-hover-bg: var(--color-primary);
+  --color-link-hover-decoration: none;
+
+  --color-meta: #777;
+  --color-meta-decoration: #999;
+
+  --color-gold: hsl(50, 91%, 30%);
+  --color-yellow-light: hsl(59, 100%, 88%);
+
+  --border-width: 0.15em;
+  
+// ************************************************************
+// Colors palette
+// ************************************************************
+
+--color-blue: #39f;
+--color-red: #f33;
+--color-lightgrey: #eee;
+--color-grey: #bbb;
+--color-darkgrey: #555;
+--color-xlightgrey: #fafafa;
+
+--color-twitter: #1da1f2;
+
+// Colors from Prism OneDark theme
+--inline-code-background-color: #282c34;
+--inline-code-text-color: #abb2bf;
+--background-image-chvronR: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23691449' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevrons-right'%3E%3Cpolyline points='13 17 18 12 13 7'%3E%3C/polyline%3E%3Cpolyline points='6 17 11 12 6 7'%3E%3C/polyline%3E%3C/svg%3E");
+--background-image-chvronD: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23691449' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevrons-down'%3E%3Cpolyline points='7 13 12 18 17 13'%3E%3C/polyline%3E%3Cpolyline points='7 6 12 11 17 6'%3E%3C/polyline%3E%3C/svg%3E");
+}

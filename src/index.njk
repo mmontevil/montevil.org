@@ -5,6 +5,9 @@ eleventyExcludeFromCollections: true
 ---
  
 
+{% set cssFilename = "page-home.css" %}
+{% include "add-css.njk" %}
+
 {#
 JSON-LD for:
 - Site name: https://developers.google.com/search/docs/data-types/sitename
@@ -30,7 +33,7 @@ JSON-LD for:
 <div class="page">
 
   <div class="site__intro clearfix h-card">
-    <img src="/assets/me/Montevil.jpg" alt="" class="logo portrait" />
+    <img src="/assets/me/{{websiteid.image}}" alt="" class="logo portrait" />
     <p class="site__intro__name">Hi, I'm <a href="/about/"><strong class="p-name"> {{websiteid.name}}</strong></a>.</p>
     <p class="p-note">
       I am a <em> theoretical biologist</em> working at the crossroads of experimental biology, mathematics, and philosophy. I also work on the Anthropocene,
@@ -44,14 +47,14 @@ JSON-LD for:
   <h2>Latest articles</h2>
   <div class="cards-list">
     {% for article in collections.latestPeerreviewed %}
-      {{ pubCard(article) }}
+      {{ pubCard(article,numbers.numbers2) }}
     {% endfor %}
   </div>
   
   <h2>Latest publications</h2>
   <div class="cards-list">
     {% for article in collections.publications %}
-      {{ pubCard(article)   }}
+      {{ pubCard(article,numbers.numbers2)   }}
     {% endfor %}
   </div>
   
@@ -64,12 +67,18 @@ JSON-LD for:
   
   
   
+  <ol class="cards-list">
+    {% for article in collections.latestArticles %}
+      {{ articleCard(article) }}
+    {% endfor %}
+  </ol>
+
   <h2>Older noteworthy articles</h2>
-  <div class="cards-list">
+  <ol class="cards-list">
   {% for article in collections.promotedArticles %}
     {{ articleCard(article) }}
   {% endfor %}
-  </div>
+  </ol>
   <p class="more">Read <a href="/articles/">all articles</a>…</p>
 
   <div class="lazy"></div>

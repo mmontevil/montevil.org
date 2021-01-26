@@ -72,8 +72,7 @@ module.exports = {
     selector: ':not(picture) img[src]:not([srcset]):not([src$=".svg"])',
     resizedImageUrl: (src, width) =>
       // https://cloudinary.com/blog/automatic_responsive_images_with_client_hints#comment-3190517665
-      // `https://res.cloudinary.com/nho/image/fetch/q_auto,f_auto,w_${width},c_limit/${src}`,
-      `https://res.cloudinary.com/nho/image/fetch/q_auto,f_auto,w_auto:100:${width},c_limit/${src}`,
+      `https://res.cloudinary.com/mmontevil/image/fetch/q_auto,f_auto,w_auto:100:${width},c_limit/${src}`,
     runBefore: runBeforeHook,
     runAfter: runAfterHook,
     fallbackWidth: 800,
@@ -82,6 +81,7 @@ module.exports = {
     sizes: '(max-width: 67rem) 90vw, 60rem',
     attributes: {
       loading: 'lazy',
+      crossorigin: 'anonymous',
     },
   },
   twothirds: {

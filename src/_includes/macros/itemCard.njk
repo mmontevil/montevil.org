@@ -4,7 +4,7 @@
 {% from "macros/pubCard.njk" import pubCard %}
 {% from "macros/talkCard.njk" import talkCard %}
 
-{% macro itemCard(item) %}
+{% macro itemCard(item,numbers2) %}
     {% if item.data.layout == "article" %}
       {{ articleCard(item) }}
     {% elif item.data.layout == "link" %}
@@ -12,7 +12,7 @@
     {% elif item.data.layout == "note" %}
       {{ noteCard(item) }}
     {% elif item.data.layout == "publication" %}
-      {{ pubCard(item) }}
+      {{ pubCard(item,numbers2) }}
           {% elif item.data.layout == "talk" %}
       {{ talkCard(item) }}
     {% endif %}

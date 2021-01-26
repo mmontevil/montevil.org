@@ -237,15 +237,15 @@ AddDefaultCharset utf-8
 
 # Remove www.
 RewriteCond %{HTTP_HOST} ^www\. [NC]
-RewriteRule ^(.*) https://nicolas-hoizey.com/$1 [QSA,R=301,L]
+RewriteRule ^(.*) https://montevil.org/$1 [QSA,R=301,L]
 
 # Redirect from .fr to .com
 RewriteCond %{HTTP_HOST} \.fr$ [NC]
-RewriteRule ^(.*) https://nicolas-hoizey.com/$1 [QSA,R=301,L]
+RewriteRule ^(.*) https://montevil.org/$1 [QSA,R=301,L]
 
 # Redirect from domain without dash
-RewriteCond %{HTTP_HOST} nicolashoizey\.com$ [NC]
-RewriteRule ^(.*) https://nicolas-hoizey.com/$1 [QSA,R=301,L]
+RewriteCond %{HTTP_HOST} montevil\.org$ [NC]
+RewriteRule ^(.*) https://montevil.org/$1 [QSA,R=301,L]
 
 # Don't redirect Let's Encrypt ACME Challenge
 # https://github.com/oncletom/letsencrypt-alwaysdata#http-redirects
@@ -256,7 +256,7 @@ RewriteRule .* - [L]
 # RewriteCond specific to AlwaysData proxy
 # https://help.alwaysdata.com/en/security/certificates/redirect-http-to-https/
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
-RewriteRule ^(.*) https://nicolas-hoizey.com/$1 [QSA,R=301,L]
+RewriteRule ^(.*) https://montevil.org/$1 [QSA,R=301,L]
 
 # ##############################################################################
 # # SECURITY                                                                   #
@@ -658,7 +658,8 @@ FileETag None
 # https://www.igvita.com/2015/08/17/eliminating-roundtrips-with-preconnect/
 
 <IfModule mod_headers.c>
-  Header set Link "<https://res.cloudinary.com>; rel=preconnect; crossorigin, <https://www.google-analytics.com>; rel=preconnect"
+  Header set Link "<https://res.cloudinary.com>; rel=dns-prefetch, <https://www.google-analytics.com>; rel=dns-prefetch"
+  Header set Link "<https://res.cloudinary.com>; rel=preconnect; crossorigin, <https://www.google-analytics.com>; rel=preconnect; crossorigin"
 </IfModule>
 
 # ------------------------------------------------------------------------------
@@ -744,6 +745,7 @@ RewriteRule ^.well-known/(host-meta|webfinger).* https://fed.brid.gy/$0  [redire
 # ----------------------------------------------------------------------
 # Renamed or moved articles and pages
 # ----------------------------------------------------------------------
+
 
 # ##############################################################################
 # # HOMAGE TO Terry Pratchett: http://www.gnuterrypratchett.com/               #

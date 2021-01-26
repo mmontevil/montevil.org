@@ -27,22 +27,22 @@ if (process.env.NODE_ENV === 'production') {
       navigator.serviceWorker.register('/service-worker.js');
     });
 
-    navigator.serviceWorker.addEventListener('message', async (event) => {
-      // Optional: ensure the message came from workbox-broadcast-update
-      if (event.data.meta === 'workbox-broadcast-update') {
-        const { cacheName, updatedUrl } = event.data.payload;
-        console.groupCollapsed(
-          `[Page] Updated content in "${cacheName}": ${updatedUrl}`
-        );
-        const cache = await caches.open(cacheName);
-        const updatedResponse = await cache.match(updatedUrl);
-        if (updatedResponse) {
-          const updatedText = await updatedResponse.text();
-          console.log(updatedText);
-        }
-        console.groupEnd();
-      }
-    });
+    // navigator.serviceWorker.addEventListener('message', async (event) => {
+    //   // Optional: ensure the message came from workbox-broadcast-update
+    //   if (event.data.meta === 'workbox-broadcast-update') {
+    //     const { cacheName, updatedURL } = event.data.payload;
+    //     console.groupCollapsed(
+    //       `[Page] Updated content in "${cacheName}": ${updatedURL}`
+    //     );
+    //     const cache = await caches.open(cacheName);
+    //     const updatedResponse = await cache.match(updatedURL);
+    //     if (updatedResponse) {
+    //       const updatedText = await updatedResponse.text();
+    //       console.log(updatedText);
+    //     }
+    //     console.groupEnd();
+    //   }
+    // });
   }
 }
 
@@ -52,7 +52,7 @@ if (process.env.NODE_ENV === 'production') {
 
 const loadFooter = () => {
   let backgroundImageWidth = Math.ceil(window.viewport_width / 20) * 20;
-  let limbes = `url('https://res.cloudinary.com/nho/image/fetch/c_limit,f_auto,q_auto,w_${backgroundImageWidth}/https://nicolas-hoizey.com/assets/limbes.jpg')`;
+  let limbes = `url('https://res.cloudinary.com/mmontevil/image/fetch/c_limit,f_auto,q_auto,w_${backgroundImageWidth}/https://montevil.org/assets/limbes.jpg')`;
   let footer = window.document.querySelector('#footer');
   footer.style.setProperty('--limbes', limbes);
   footer.style.color = '#fff';
@@ -75,7 +75,7 @@ const loadImage = (img) => {
  * Lazyload additional HTML
  * ****************************************************************/
 
-// TODO: manage multiple lazy containers with content URL from data-src
+// TODO: manage multiple lazy containers with content URL from data-href
 const lazyHtmlElement = document.querySelector('.lazy');
 
 const lazyHtml = () => {

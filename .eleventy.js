@@ -103,7 +103,8 @@ eleventyConfig.setDataDeepMerge(true);
   const markdownItAnchorOptions = {
     permalink: true,
     permalinkClass: 'deeplink',
-    permalinkSymbol: '&#xa7;&#xFE0E;',
+    permalinkSymbol:
+      '<svg class="icon" role="img" focusable="false"><use xlink:href="#symbol-anchor" /></svg>',
     level: [2, 3, 4],
     slugify: function (s) {
       return slugify(s);
@@ -170,7 +171,7 @@ eleventyConfig.setDataDeepMerge(true);
     .use(markdownItAttributes)
     .use(markdownItSpan)
     .use(markdownItAbbr)
-    .use(markdownItContainer, 'intro')
+    .use(markdownItContainer, 'lead') // Chapô in French
     .use(markdownItContainer, 'info')
     .use(markdownItContainer, 'success')
     .use(markdownItContainer, 'warning')
@@ -195,12 +196,12 @@ eleventyConfig.setDataDeepMerge(true);
     ));
     eleventyConfig.addPlugin(imagesResponsiver, imagesResponsiverConfig);
 
-    const htmlMinTransform = require(path.join(
-      __dirname,
-      config.dir.src,
-      '_transforms/html-min-transform.js'
-    ));
-    eleventyConfig.addTransform('htmlmin', htmlMinTransform);
+    // const htmlMinTransform = require(path.join(
+    //   __dirname,
+    //   config.dir.src,
+    //   '_transforms/html-min-transform.js'
+    // ));
+    // eleventyConfig.addTransform('htmlmin', htmlMinTransform);
   }
 
   // ------------------------------------------------------------------------
@@ -229,7 +230,7 @@ eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.setBrowserSyncConfig({
     ui: false,
     ghostMode: false,
-    files: ['_site/css/*.css'],
+    files: ['_site/css/*.css', '_site/js/*.js'],
   });
 
   return {

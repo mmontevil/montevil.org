@@ -23,14 +23,8 @@ title: Archives
 
 {% block content %}
 
-  {% if build.env == 'production' %}
-    {% set css %}
-    {% include_raw config.dir.dist + "/css/" + hashes_css['archives.css'] %}
-    {% endset %}
-    <style>{{css | safe}}</style>
-  {% else %}
-    <link rel="stylesheet" href="/css/archives.css" />
-  {% endif %}
+  {% set cssFilename = "page-archives.css" %}
+  {% include "add-css.njk" %}
 
   <h1>
     {% block title %}
@@ -119,30 +113,31 @@ title: Archives
     <div id="stats"></div>
     <div id="powered-by"></div>
     <div id="hits">
-      {% block hits %}
-        <div class="cards-list">
+      <div>
+        <ol class="cards-list">
           {% if currentMonth %}
             {% for item in collections[currentType + 'ByMonth'][currentYear + '/' + currentMonth] %}
-                {{ itemCard(item) }}
+                {{ itemCard(item,numbers.numbers2) }}
             {% endfor %}
           {% elif currentYear %}
             {% for item in collections[currentType + 'ByYear'][currentYear] | limit(10) %}
-                {{ itemCard(item) }}
+                {{ itemCard(item,numbers.numbers2) }}
             {% endfor %}
             {% if collections[currentType + 'ByYear'][currentYear].length > 10 %}
               <p>Filter by month to see more {{ currentType }} from year {{ currentYear }}.</p>
             {% endif %}
           {% else %}
             {% for item in collections[currentType] | limit(10) %}
-                {{ itemCard(item) }}
+                {{ itemCard(item,numbers.numbers2) }}
             {% endfor %}
             {% if collections[currentType].length > 10 %}
               <p>Filter by year and month to see more {{ currentType }}.</p>
             {% endif %}
           {% endif %}
-        </div>
-      {% endblock %}
+        </ol>
+      </div>
     </div>
   </div>
+
 
 {% endblock %}

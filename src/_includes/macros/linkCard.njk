@@ -19,17 +19,17 @@
         {%- if not loop.last -%}, {% else %} and {% endif -%}
       {%- endif -%}
       {%- if author.twitter -%}
-        <img class="u-photo avatar" src="https://res.cloudinary.com/nho/image/twitter_name/{{ author.twitter }}" alt="{{ author.name }} avatar" width="48" height="48" />
+        <img class="u-photo avatar" src="https://res.cloudinary.com/mmontevil/image/twitter_name/{{ author.twitter }}" alt="{{ author.name }} avatar" width="48" height="48" />
       {%- endif %}
       {{ author.name }}
+      {%- if author.twitter %}
+        <a class="author__twitter" href="https://twitter.com/{{ author.twitter }}" aria-label="@{{ author.twitter }} on Twitter"><svg><use xlink:href="#symbol-twitter" /></svg></a>
+      {%- endif %}
     {%- endfor %}
-    wrote
     {% endset %}
   {% endif %}
 
-  {% set content %}
-  <p class="card__body p-summary">{{ link.templateContent | excerpt | striptags | safe }}</p>
-  {% endset %}
+  {% set content = link.templateContent | excerpt | striptags | safe %}
 
   {% set meta %}
   {{ meta(link) }}

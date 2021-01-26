@@ -26,7 +26,7 @@ title: Latest Webmentions
           {% endif %}
         </td>
         <td style="white-space: nowrap">{{ webmention['wm-property'] }}</td>
-        <td><a href="{{ webmention['wm-target'] }}">{{ webmention['wm-target'] | replace('https://nicolas-hoizey.com', '') }}</a></td>
+        <td><a href="{{ webmention['wm-target'] }}">{{ webmention['wm-target'] | replace('{{websiteid.url}}', '') }}</a></td>
         <td><a href="{{ webmention.url }}">{{ webmention.url | replace('https://twitter.com/', '@') }}</a></td>
       </tr>
       {% if webmention.content.text %}

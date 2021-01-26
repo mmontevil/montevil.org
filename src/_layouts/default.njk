@@ -9,11 +9,10 @@
     data-img-dist="{{ page.outputPath | dirname }}/"
   >
 
-    <a class="visually-hidden" href="#main">Jump to main content</a>
+    <a class="quickaccess visually-hidden" href="#main">Jump to main content</a>
 
     <header id="header" role="banner">
-      <div
-        class="wrap">
+      <div class="wrap">
         {% if page.url == "/" %}
           <h1 class="site_title h-card" rel="me">{{websiteid.titleshort}}</h1>
         {% else %}
@@ -21,6 +20,14 @@
             <a class="h-card" href="/" rel="me" title="Homepage">{{websiteid.titleshort}}</a>
           </p>
         {% endif %}
+        <ul class="elsewhere">
+          <li><a href="https://twitter.com/{{websiteid.twitter}}" title="Link to my Twitter profile">{% icon "twitter", "Link to my Twitter profile" %}</a></li>
+          <li><a href="{{websiteid.academia}}" title="Link to my Academia profile">{% icon "academia", "Link to my academia profile" %}</a></li>
+          <li><a href="https://www.researchgate.net/profile/{{websiteid.researchgate}}" title="Link to my Researchgate profile">{% icon "researchgate", "Link to my Researchgate profile" %}</a></li>
+          <li><a href="https://scholar.google.fr/citations?user={{websiteid.scholaruser}}" title="Link to my google scholar profile">{% icon "googlescholar", "Link to my google scholar page" %}</a></li>
+          <li><a href="https://orcid.org/{{websiteid.orcid}}" title="Link to my Orcid profile">{% icon "orcid", "Link to my orcid page" %}</a></li>
+          <li><a href="https://github.com/{{websiteid.github}}" title="Link to my GitHub profile">{% icon "github", "Link to my GitHub profile" %}</a></li>
+        </ul>
       </div>
     </header>
 
@@ -37,17 +44,15 @@
     {% include "svg-sprite.svg" %}
 
     {% if build.env == 'production' %}
-      <link rel="stylesheet" href="/css/{{ hashes_css['additional.css'] }}" />
+      {#
+      https://buzut.net/configurer-rollup-bundles-esm-cjs/
+      https://v8.dev/features/modules#browser
+      #}
+      <script defer type="module" src="/js/{{ hashes_additional_es['assets/js/additional.js']}}"></script>
+      <script defer nomodule src="/js/{{ hashes_additional_iife['assets/js/additional.js']}}"></script>
     {% else %}
-      <link rel="stylesheet" href="/css/additional.css" />
+      <script defer type="module" src="/js/additional-es.js"></script>
     {% endif %}
-
-    {#
-    https://buzut.net/configurer-rollup-bundles-esm-cjs/
-    https://v8.dev/features/modules#browser
-    #}
-    <script defer type="module" src="/js/{{ hashes_additional_es['assets/js/additional.js']}}"></script>
-    <script defer nomodule src="/js/{{ hashes_additional_iife['assets/js/additional.js']}}"></script>
   </body>
 
 </html>

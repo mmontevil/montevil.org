@@ -1,25 +1,31 @@
 // https://github.com/hankchizljaw/modern-css-reset
-@import '../../node_modules/modern-css-reset/dist/reset';
+@use '../../node_modules/modern-css-reset/dist/reset';
 
-@import 'global/variables';
-@import 'global/colors';
-@import 'global/utilities';
-@import 'critical/globals';
-@import 'critical/accessibility';
-@import 'critical/fonts';
-@import 'components/avatar';
-@import 'components/header';
-@import 'components/navigation';
-@import 'components/link';
-@import 'components/button';
-@import 'components/code';
-@import 'components/meta';
-@import 'components/intro';
-@import 'components/card';
-@import 'components/page';
-@import 'components/tweets';
-@import 'components/container';
-@import 'components/prevnext';
+@use 'global/colors';
+@use 'global/utilities';
+@use 'global/globals';
+@use 'global/accessibility';
+@use 'global/fonts';
+@use 'components/avatar';
+@use 'components/header';
+@use 'components/navigation';
+@use 'components/link';
+@use 'components/button';
+@use 'components/blockquote';
+@use 'components/code';
+@use 'components/meta';
+@use 'components/card';
+@use 'components/page';
+@use 'components/tweets';
+@use 'components/container';
+@use 'components/toast';
+@use 'components/notification';
+@use 'components/footnotes';
+@use 'components/reactions';
+@use 'highlight/_prism-onedark';
+@use 'components/footer';
+@use 'components/tweets-icons';
+@use 'global/print';
 
 html {
   text-size-adjust: 100%;
@@ -28,16 +34,16 @@ html {
   overflow-y: scroll;
 }
 
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: var(--font-size-m);
   font-weight: 400;
 
-  color: $color-primary-darker-6;
+  color: var(--color-primary-darker-6);
   background-color: white;
-
-  //  background: url(/assets/blue3.webp) no-repeat center center fixed;
-    //    background-size: auto;
-   // background-size: cover;
 
   word-break: break-word;
 }
@@ -57,13 +63,13 @@ main {
   flex: 1;
 
   .wrap {
-    @extend .flow;
+    @extend %flow;
   }
 }
 
 .wrap {
   width: 90vw;
-  max-width: 60rem;
+  max-width: var(--layout-max);
   margin-left: auto;
   margin-right: auto;
 }
@@ -72,21 +78,11 @@ main {
 // Paragraphs and headers
 // ************************************************************
 
-.intro {
-  @extend .flow;
+.lead {
+  @extend %flow;
 
-  font-size: var(--font-size-xl);
-  color: $color-primary-darker-3;
-}
-
-p,
-ul,
-ol,
-dl,
-table,
-blockquote {
-  margin-top: 0;
-  margin-bottom: 0;
+  font-size: var(--font-size-xxl);
+  color: var(--color-primary-lighter-1);
 }
 
 h1,
@@ -95,15 +91,19 @@ h3,
 h4,
 h5,
 h6 {
-  --flow-space: 2em;
   line-height: 1.3;
-  color: $color-primary;
+  color: var(--color-primary-lighter-2);
   position: relative;
+
+  &:not(h1) {
+    --flow-space: var(--gap3);
+  }
 }
 
 h1 {
   font-size: var(--font-size-xxxxl);
   font-weight: 900;
+  color: var(--color-primary);
 }
 
 h2 {
@@ -145,7 +145,10 @@ a {
     background-color: var(--color-link-bg);
     text-decoration-line: underline;
     text-decoration-color: var(--color-link-decoration);
-    text-decoration-thickness: 0.1em;
+    text-decoration-thickness: 2px;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+    margin-left: -0.1em;
   }
 
   &:hover,
@@ -158,7 +161,7 @@ a {
 
   &:active {
     color: #fff;
-    background-color: $color-secondary;
+    background-color: var(--color-secondary);
     text-decoration: none;
     outline: none;
   }
@@ -175,6 +178,16 @@ a.deeplink {
     border-radius: 0.4em;
     color: #767676;
     text-decoration: none;
+
+    svg {
+      vertical-align: baseline;
+      font-size: 0.7em;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
   }
 
   &:hover,
@@ -189,6 +202,23 @@ a.deeplink {
   }
 }
 
+:target {
+  // Inspired by https://adrianroselli.com/2019/12/responsive-type-and-zoom.html#Update04
+  animation-name: target;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 3;
+}
+
+@keyframes target {
+  0% {
+    background-color: inherit;
+  }
+  85% {
+    background-color: var(--color-yellow-light);
+  }
+}
+
 // Links to content in another language
 // https://tzi.fr/css/link-hreflang/
 :lang(fr) > :link[hreflang]:not([hreflang='fr'])::after,
@@ -196,10 +226,6 @@ a.deeplink {
   content: ' (' attr(hreflang) ')';
   font-size: 70%;
   vertical-align: super;
-}
-
-:target {
-  scroll-margin-top: 4rem;
 }
 
 // ************************************************************
@@ -271,6 +297,13 @@ figure {
 
 figure,
 img {
+  &.twothirds,
+  &.onehalf {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   &.twothirds {
     max-width: 66%;
   }
@@ -280,6 +313,8 @@ img {
   }
 
   &.onethird {
+    @extend .right;
+
     max-width: 50%;
 
     @media (min-width: 20em) {
@@ -289,6 +324,8 @@ img {
 
   &.onefourth,
   &.logo {
+    @extend .right;
+
     max-width: 50%;
 
     @media (min-width: 20em) {
@@ -309,8 +346,7 @@ img {
     }
   }
 
-  &.right,
-  &.logo {
+  &.right {
     margin: var(--gap) auto;
 
     @media (min-width: 20em) {
@@ -322,7 +358,7 @@ img {
 
 figure.border img,
 img.border {
-  border: 3px solid $color-primary-lighter-5;
+  border: 3px solid var(--color-primary-lighter-5);
 }
 
 .logo {
@@ -331,7 +367,25 @@ img.border {
 }
 
 .portrait {
-  border-radius: 20%;
+  --wobble-min: 55%;
+  --wobble-max: 100%;
+
+  border-style: solid;
+  border-color: var(--color-primary);
+  border-width: var(--border-width);
+  border-radius: var(--wobble-max) var(--wobble-min) / var(--wobble-min)
+    var(--wobble-max);
+  animation: portrait-wobble 5s ease-in-out alternate infinite;
+
+  background-image: linear-gradient(55deg, #acf9fc, #70d4fc);
+}
+
+// https://chrisruppel.com/blog/css-animation-border-radius/
+@keyframes portrait-wobble {
+  100% {
+    border-radius: var(--wobble-min) var(--wobble-max) / var(--wobble-max)
+      var(--wobble-min);
+  }
 }
 
 figcaption {
@@ -350,25 +404,231 @@ figcaption {
   margin-top: var(--gap3);
 }
 
+ul,
+ol {
+  padding: 0 0 0 var(--gap2);
+}
 
-.buttonlink { 
+// ************************************************************
+// Tables
+// ************************************************************
+
+table {
+  border-collapse: collapse;
+  font-feature-settings: 'tnum' 1;
+
+  @supports (font-variant-numeric: tabular-nums) {
+    font-feature-settings: normal;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+thead {
+  background-color: #eee;
+
+  th {
+    vertical-align: bottom;
+  }
+}
+
+th,
+td {
+  padding: 0.3em 0.5em;
+  border: 1px solid #ccc;
+  vertical-align: top;
+}
+
+// ************************************************************
+// Sub and sup texts
+// ************************************************************
+
+// https://gist.github.com/unruthless/413930
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+// ************************************************************
+// Other elements inside the article
+// ************************************************************
+
+article {
+  .socialphoto {
+    background-color: #eef;
+    color: #333;
+    padding: 1em;
+
+    p {
+      margin: 0;
+    }
+
+    span {
+      white-space: nowrap;
+    }
+
+    a {
+      color: #777;
+    }
+  }
+}
+
+// File link icons
+a[href$='.zip'],
+a[href$='.kml'] {
+  padding-left: 1.6em;
+  background-size: 1.4em 1.4em;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+a[href$='.zip'] {
+  background-image: url(/assets/icons/zip.svg);
+}
+
+a[href$='.kml'] {
+  background-image: url(/assets/icons/kml.svg);
+}
+
+// Hidden for everyone
+.hidden {
+  display: none;
+}
+
+.quickaccess {
+  &:link,
+  &:visited {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding-left: 0.5em;
+    background-color: white;
+    color: var(--color-primary);
+  }
+}
+
+
+
+.buttonlink {
+  svg {
+      vertical-align: middle;
+      font-size: 1em;
+      stroke: currentColor;
+      stroke-width: 2px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: currentColor;
+    }
       &:link,  &:visited{
-        padding: 0.1em 0.2em;
-    border: 2px solid var(--color-link);
+        padding: 0.12em 0.2em;
+        padding-top: 0em;
+    border: 1px solid var(--color-primary-lighter-5);
     border-radius: 0.5em;
     color: var(--color-link);
-    margin-top: 0.1em;
-    background-color: #{$color-lightgrey};
+    background-color: var(--color-primary-lighter-8);
 }
   &:hover,
   &:focus {
     background-color: var(--color-link-hover-bg);
     color: var(--color-link-hover);
+    border: 2px solid var(--color-primary-lighter-5);
   }
   &:active{
     background-color: var(--color-secondary);
     color: var(--color-link-hover);
   }
 }
+.smalltext {
+  font-size: var(--font-size-xs);
+}
+.svgnofill{
+    svg {
+      fill: none;
+    }
+} 
 
+
+
+.accordion > input[type="checkbox"] {
+  position: absolute;
+  left: -100vw;
+}
+
+.accordion .content {
+  overflow-y: hidden;
+  height: 0;
+  transition: height 0.3s ease;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .content {
+  height: auto;
+  overflow: visible;
+}
+
+.accordion label {
+  display: block;
+}
+
+/*
+ Styling
+*/
+
+
+.accordion {
+  margin-bottom: 0em;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .content {
+  padding: 10px;
+  border: 1px solid var(--color-lightgrey);
+  border-top: 0;
+}
+
+.accordion .handle {
+color: var(--color-link)
+}
+
+
+.accordion label {
+  cursor: pointer;
+  padding: 5px;
+  background: var(--color-xlightgrey);
+    padding-left: 1.3em;
+  background-size: 1.4em 1.4em;
+  background-position: 0 0.3em;
+  background-repeat: no-repeat;
+        background-image: var(--background-image-chvronR);
+}
+
+.accordion label:hover,
+.accordion label:focus {
+  background: var(--color-lightgrey);
+    background-size: 1.4em 1.4em;
+  background-position: 0 0.3em;
+  background-repeat: no-repeat;
+  background-image: var(--background-image-chvronR);
+}
+
+
+
+.accordion > input[type="checkbox"]:checked ~ .handle label {
+  background-image: url(/assets/avatars/afonsoalban.jpg);
+    background-size: 1.4em 1.4em;
+  background-position: 0 0.3em;
+  background-repeat: no-repeat;
+  background-image: var(--background-image-chvronD);
+
+}
 

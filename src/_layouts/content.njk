@@ -2,6 +2,12 @@
 layout: default
 ---
 
+{% set newerContent = collections[layout + 's'] | getPreviousCollectionItem(page) %}
+{% set olderContent = collections[layout + 's'] | getNextCollectionItem(page) %}
+
+{% set cssFilename = "component-older-newer.css" %}
+{% include "add-css.njk" %}
+
 {#
 Breadcrumb JSON-LD:
 https://developers.google.com/search/docs/data-types/breadcrumbs
@@ -30,7 +36,7 @@ https://developers.google.com/search/docs/data-types/breadcrumbs
         "position": 3,
         "item": {
           "@id": "{{ pkg.homepage }}{{ page.url }}",
-          "name": "{{ title }}"
+          "name": "{% if layout == 'note' %}Note from {{ page.date | formattedDate }}{% else %}{{ title }}{% endif %}"
         }
       }
     ]
@@ -41,26 +47,28 @@ https://developers.google.com/search/docs/data-types/breadcrumbs
     class="page h-entry"
     lang="{{ lang }}">
 
-  {% if layout == 'link' %}
-    {% if authors %}
-      <p class="page__surtitle">
-        {% for author in authors %}
-          <span class="p-author h-card">
-            {% if author.twitter %}
-              <img class="u-photo avatar" src="https://res.cloudinary.com/nho/image/twitter_name/{{ author.twitter }}" alt="{{ author.name }} avatar" loading="lazy" width="48" height="48" />
-            {% endif %}
-            <b class="p-name">{{ author.name }}</b>
-            {% if author.twitter %}
-              <span class="author__twitter">(<svg><use xlink:href="#symbol-twitter" /></svg> @<a href="https://twitter.com/{{ author.twitter }}">{{ author.twitter }}</a>)</span>
-            {% endif %}
-          </span>
-        {% endfor %}
-        wrote
-      </p>
-    {% endif %}
+  <ul class="older-newer__shortcuts">
+    <li class="older-newer__older">
+      {% if olderContent %}
+        <a href="{{ olderContent.url }}" aria-label="older {{ layout }}">{% icon "older", "Older" %}</a>
+      {% endif %}
+    </li>
+    <li class="older-newer__newer">
+      {% if newerContent %}
+        <a href="{{ newerContent.url }}" aria-label="newer {{ layout }}">{% icon "newer", "Newer" %}</a>
+      {% endif %}
+    </li>
+  </ul>
+
+  {% if layout == 'link' and authors %}
+    <p class="page__surtitle">{{ authors.html | safe }}</p>
   {% endif %}
 
-  <h1 class="page__title p-name">{{ title | orphans | safe }}</h1>
+  {% if layout == 'note' %}
+    <h1 class="page__title p-name">Note from {{ page.date | formattedDate }}</h1>
+  {% else %}
+    <h1 class="page__title p-name">{{ title | orphans | safe }}</h1>
+  {% endif %}
 
   {% set item = {
     data: {
@@ -93,14 +101,39 @@ https://developers.google.com/search/docs/data-types/breadcrumbs
         <a href="{{ link }}" class="u-bookmark-of">{{ link }}</a>
       </p>
     {% endif %}
-    {{ content | safe }}
+    {% if layout == 'note' %}
+      {{ content | noteToHtml | safe }}
+    {% else %}
+      {{ content | safe }}
+    {% endif %}
   </div>
 
-  {% if layout in ['article', 'link', 'publication'] %}
-    <div id="webmentions" class="lazy"></div>
-  {% else %}
-    {% set articleUrl = page.url %}
-    {% include "components/webmentions.njk" %}
-  {% endif %}
-</article>
+
+  <ul class="older-newer">
+    <li class="older-newer__older">
+      {% if olderContent %}
+        {% icon "older", "Older" %} older {{ layout }}:<br />
+        {% if layout == 'note' %}
+          <a href="{{ olderContent.url }}">Note from {{ olderContent.date | formattedDate }}</a>
+        {% else %}
+          <a href="{{ olderContent.url }}">{{ olderContent.data.title }}</a>
+        {% endif %}
+      {% endif %}
+    </li>
+    <li class="older-newer__newer">
+      {% if newerContent %}
+        {% icon "newer", "Newer" %} newer {{ layout }}:<br />
+        {% if layout == 'note' %}
+          <a href="{{ newerContent.url }}">Note from {{ newerContent.date | formattedDate }}</a>
+        {% else %}
+          <a href="{{ newerContent.url }}">{{ newerContent.data.title }}</a>
+        {% endif %}
+      {% endif %}
+    </li>
+  </ul>
+
+  {% set articleUrl = page.url %}
+  {% include "components/webmentions.njk" %}
+
+  </article>
 
