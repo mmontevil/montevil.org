@@ -1,7 +1,7 @@
 {
   "name": "montevil.org",
   "version": "2.3.0",
-  "title": "Maël Montévil, research in theoretical biology0",
+  "title": "Maël Montévil, research in theoretical biology",
   "description": "This is the personnal website of Maël Montévil.",
   "author": {
     "name": "Maël Montévil",
@@ -32,7 +32,8 @@
     "build:benchmark": "DEBUG=Eleventy:Benchmark* npm run build",
     "build:lambdas": "netlify-lambda build _lambdas",
     "call:lambdas": "netlify functions:invoke --name deploy-succeeded",
-    "build:netlify": "cross-env NODE_ENV=production npm-run-all --sequential build build:lambdas",
+    "build:netlify":  "cross-env NODE_ENV=production npm-run-all --sequential clean --parallel build:js build:sass --sequential build:eleventy serviceworker:inject",
+    "build:netlifyold": "cross-env NODE_ENV=production npm-run-all --sequential build build:lambdas",
     "notist": "node ./_scripts/update-notist.js",
     "webmention": "node ./_scripts/update-webmention.js",
     "tweets": "node ./_scripts/send-tweets.js",
@@ -124,8 +125,8 @@
     "autocomplete.js": "^0.38.0",
     "citation-js": "^0.5.0-alpha.9",
     "element-remove": "^1.0.4",
+    "instantsearch.js": "~4.12.0",
     "linkify-urls": "^3.1.1",
-    "moment-timezone": "^0.5.32",
-    "instantsearch.js": "~4.12.0"
+    "moment-timezone": "^0.5.32"
   }
 }
