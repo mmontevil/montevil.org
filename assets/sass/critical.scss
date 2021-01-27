@@ -631,4 +631,59 @@ color: var(--color-link)
   background-image: var(--background-image-chvronD);
 
 }
+.inlineimg {
+  display: inline; 
+      text-align: center;
+}
+.figure{
+      text-align: center;
+}
 
+.picgrid, .picgrid3{ align-items: end;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+}
+
+.picgrid{
+  grid-template-rows: repeat(4, minmax(0px, auto));
+  grid-template-areas:  "img1" "sub1"
+                        "img2" "sub2"; 
+}
+.picgrid3{
+  grid-template-rows: repeat(6, minmax(0px, auto));
+  grid-template-areas:  "img1" "sub1"
+                        "img2" "sub2"
+                        "img3" "sub3";
+}
+
+.img1, .img2, .img3
+{  display: grid;
+}
+.img1{grid-area: img1;}
+.img2{grid-area: img2;}
+.img3{grid-area: img3;}
+  
+.sub1, .sub2, .sub3{  
+  display: grid;
+  text-align: left;
+}
+.sub1{  grid-area: sub1;}
+.sub2 {  grid-area: sub2;}
+.sub3{grid-area: sub3; }
+
+@media screen and (min-width: 768px)
+{
+  .picgrid
+  {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:  "img1 img2"
+                                           " sub1 sub2";
+  }
+    .picgrid3
+  {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:  "img1 img2 img3"
+                                           " sub1 sub2 sub3";
+  }
+}

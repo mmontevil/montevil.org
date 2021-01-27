@@ -10,9 +10,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    'hits hits';
-  grid-column-gap: var(--gap3);
-  column-gap: var(--gap3);
+  'refinements refinements' 
+  'hits hits';
+ // grid-column-gap: var(--gap3);
+ // column-gap: var(--gap3);
   grid-row-gap: var(--gap2);
   row-gap: var(--gap2);
 }
@@ -21,12 +22,13 @@
 .refinements {
   // Hide refinements on mobile
   // TODO: find a way to allow refinements
-  display: none;
+ // display: none;
+  justify-items: center;
 }
 
 @media (min-width: 48rem) {
   .archives {
-    grid-template-columns: 1fr 1fr 12rem;
+    grid-template-columns: 1fr 1fr 13rem;
     grid-template-areas:
       'hits hits refinements';
   }
