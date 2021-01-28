@@ -30,7 +30,9 @@ const runBeforeHook = (image, document) => {
       imageDimensions = imageSize(srcPath + imageSrc);
       imageUrl = pkg.homepage + distPath + imageSrc;
     }
+     if (image.getAttribute('width') !== null) {
     image.setAttribute('width', imageDimensions.width);
+     }
     image.setAttribute('height', imageDimensions.height);
     image.setAttribute('src', imageUrl);
   }

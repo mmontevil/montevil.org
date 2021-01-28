@@ -30,6 +30,7 @@
     "start:debug": "DEBUG=Eleventy* npm start",
     "build": "cross-env NODE_ENV=production npm-run-all --sequential clean --parallel build:js build:sass --sequential build:eleventy serviceworker:inject",
     "build:debug": "DEBUG=Eleventy* npm run build",
+    "build:debugr": "DEBUG=image-responsiver:* npm run build",
     "build:benchmark": "DEBUG=Eleventy:Benchmark* npm run build",
     "build:lambdas": "netlify-lambda build _lambdas",
     "call:lambdas": "netlify functions:invoke --name deploy-succeeded",
