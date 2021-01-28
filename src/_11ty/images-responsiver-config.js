@@ -30,13 +30,12 @@ const runBeforeHook = (image, document) => {
       imageDimensions = imageSize(srcPath + imageSrc);
       imageUrl = pkg.homepage + distPath + imageSrc;
     }
-     if (image.getAttribute('width') !== null) {
+     if (image.getAttribute('width') === null) {
     image.setAttribute('width', imageDimensions.width);
      }
     image.setAttribute('height', imageDimensions.height);
     image.setAttribute('src', imageUrl);
   }
-
   image.dataset.responsiver = image.className;
 };
 
@@ -50,21 +49,26 @@ const runAfterHook = (image, document) => {
   }
 
   let zoom = [...image.classList].indexOf('zoom') !== -1;
-
+ // let img1 = [...image.classList].indexOf('img1') !== -1;
+ // let img2 = [...image.classList].indexOf('img2') !== -1;
+ // let img3 = [...image.classList].indexOf('img3') !== -1;
+//var classs=""
+  //if(img1){classs="sub1"; }
+  
   if (caption || zoom) {
     const figure = document.createElement('figure');
     figure.classList.add(...image.classList);
     // TODO: decide weither classes should be removed from the image or not
     image.classList.remove(...image.classList);
     let figCaption = document.createElement('figcaption');
+    // figCaption.classList.add(classs);
     figCaption.innerHTML =
       (caption ? caption : '') +
       (zoom
-        ? `<p class="zoom">&#128269; See <a href="${imageUrl}">full size</a></p>`
+        ? `<p class="zoom ">&#128269; See <a href="${imageUrl}">full size</a></p>`
         : '');
     figure.appendChild(image.cloneNode(true));
     figure.appendChild(figCaption);
-
     image.replaceWith(figure);
   }
 };
@@ -98,7 +102,7 @@ module.exports = {
     minWidth: 180,
     maxWidth: 800,
     sizes: '(max-width: 67rem) 45vw, 30rem',
-    classes: ['onehalf'],
+    classes: ['onehalf','img1','img2','img3'],
   },
   onethird: {
     fallbackWidth: 300,

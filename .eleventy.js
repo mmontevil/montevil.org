@@ -188,13 +188,28 @@ eleventyConfig.setDataDeepMerge(true);
   // ------------------------------------------------------------------------
 
   if (process.env.NODE_ENV === 'production') {
-    const imagesResponsiver = require('eleventy-plugin-images-responsiver');
+   // const imagesResponsiver = require('eleventy-plugin-images-responsiver');
     const imagesResponsiverConfig = require(path.join(
       __dirname,
       config.dir.src,
       '_11ty/images-responsiver-config.js'
     ));
-    eleventyConfig.addPlugin(imagesResponsiver, imagesResponsiverConfig);
+    const imagesResponsiver = require('images-responsiver');
+const unescape = require('html-escaper').unescape;
+
+
+const imagesResponsiverTransform = (content, outputPath) => {
+  if (outputPath && outputPath.endsWith('.html')) {
+    return unescape(imagesResponsiver(content, imagesResponsiverConfig));
+  }
+  return content;
+};
+  eleventyConfig.addTransform(
+      'imagesResponsiver',
+      imagesResponsiverTransform
+    );
+
+  // eleventyConfig.addPlugin(imagesResponsiver, imagesResponsiverConfig);
 
     // const htmlMinTransform = require(path.join(
     //   __dirname,
