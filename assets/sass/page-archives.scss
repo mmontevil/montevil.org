@@ -1,6 +1,7 @@
 @use 'global/colors';
 @use 'global/utilities';
 @use 'components/card';
+@use 'global/globals';
 
 // ************************************************************
 // Layout
@@ -8,12 +9,11 @@
 
 .archives {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr ;
   grid-template-areas:
   'refinements refinements' 
-  'hits hits';
- // grid-column-gap: var(--gap3);
- // column-gap: var(--gap3);
+  'hits hits ';
+ 
   grid-row-gap: var(--gap2);
   row-gap: var(--gap2);
 }
@@ -23,14 +23,16 @@
   // Hide refinements on mobile
   // TODO: find a way to allow refinements
  // display: none;
-  justify-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 48rem) {
   .archives {
-    grid-template-columns: 1fr 1fr 13rem;
+    grid-column-gap: var(--gap);
+  column-gap: var(--gap);
+    grid-template-columns: 1fr  1fr 13rem;
     grid-template-areas:
-      'hits hits refinements';
+      'hits hits  refinements';
   }
 
   #clear-refinements,
@@ -134,18 +136,21 @@
 }
 
 // HierarchicalMenu
-.ais-HierarchicalMenu-item {
+.ais-HierarchicalMenu-item, .ais-RefinementList-item{
   padding-left: 1em;
 }
-
-.ais-HierarchicalMenu-item--selected > div > a {
-  font-weight: bold;
+.ais-HierarchicalMenu-item2 {
+  padding-left: 2em;
+}
+.ais-HierarchicalMenu-item--selected > div > a, .ais-RefinementList-item--selected  >a, {
+ // font-weight: bold;
+  background-color: var(--color-primary-lighter-7);
 }
 
 // RefinementList
-.ais-RefinementList-item--selected .ais-RefinementList-labelText {
-  font-weight: bold;
-}
+//.ais-RefinementList-item--selected .ais-RefinementList-labelText {
+//  font-weight: bold;
+//}
 
 // Counts
 .ais-RefinementList-count,
@@ -267,9 +272,9 @@
 // ************************************************************
 // Before Algolia instant search loads
 // ************************************************************
-
+/*
 .no-ais-RefinementList-list {
   li {
     padding-left: 1.2em;
   }
-}
+}*/

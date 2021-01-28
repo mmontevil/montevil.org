@@ -641,7 +641,7 @@ color: var(--color-link)
 
 .picgrid, .picgrid3{ align-items: end;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 0.5em;
   grid-template-columns: 1fr;
 }
 
