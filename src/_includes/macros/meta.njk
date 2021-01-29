@@ -5,11 +5,15 @@
     {% set title = item.data.title %}
   {% endif %}
   <ul class="meta">
-    {% if item.date %}
+    {% if item.data.page.date %}
       <li class="date meta__item meta__date">
         {% icon "date", "Date" %}
-        <time class="dt-published" datetime="{{ item.date | attributeDate }}">
-          {{ item.date | formattedDate }}
+        <time class="dt-published" datetime="{{ item.data.page.date | attributeDate }}">
+        {% if item.data.datepub %}
+            {{ item.data.page.date | formattedDate }}  (pub: {% if item.data.datepub == " Submitted" %} Submitted {% else %} {{ item.data.datepub | formattedDateShort}} {% endif %}) 
+            {% else %}
+          {{ item.data.page.date | formattedDate }}            
+        {% endif %}
         </time>
       </li>
     {% endif %}

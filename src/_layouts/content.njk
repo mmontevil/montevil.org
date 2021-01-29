@@ -75,10 +75,14 @@ https://developers.google.com/search/docs/data-types/breadcrumbs
       layout: layout,
       lang: lang,
       title: title,
-      tags: tags
-    },
-    date: date,
-    url: page.url
+      tags: tags,
+      datepub:datepub,
+      page: {
+          date: page.date,
+          url: page.url
+          }
+      },
+      url: page.url
   } %}
   {% from "macros/meta.njk" import meta %}
   <aside class="page__meta">

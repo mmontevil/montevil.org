@@ -1,0 +1,16 @@
+ 
+ 
+ {% macro pubuttons(item) %}
+ 
+<a  href="{{item.pdfout}}" class="buttonlink smalltext">{% icon "pdf", "PDF" %}  Manuscript</a> 
+   <a href="{{item.bibout}}" class="buttonlink smalltext">{% icon "bib", "BIB" %}  Citation</a>
+   <a href="{{item.page.url}}" class="buttonlink smalltext svgnofill">{% icon "link", "Link" %} Full text</a> 
+   {% if not  (item.bibentry.DOI === undefined) %}
+  <a href="https://dx.doi.org/{{item.bibentry.DOI}}" class="buttonlink smalltext svgnofill">{% icon "exlink", "Link" %}
+  Publisher</a> 
+  {% else %}{% if not  (item.bibentry.url === undefined) %}
+  <a href="{{item.bibentry.url}}" class="buttonlink smalltext svgnofill">{% icon "exlink", "Link" %}
+  Publisher</a> 
+  {% endif %}  {% endif %}
+  
+  {% endmacro %}

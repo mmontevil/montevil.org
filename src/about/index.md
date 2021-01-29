@@ -10,10 +10,10 @@ lang: en
 I am a *theoretical biologist* working at the crossroads of experimental biology, mathematics, and philosophy. I work both on the ways to understand living things and to take care of them in the Anthropocene, among [many more specific topics](/tags/).
 :::
 
-
-[Publications](/assets/pdf/publications_Montevil2-en.pdf)
-[CV](/assets/pdf/cv_Montevil_2019_en.pdf)
-
+{% icon "pdf", "pdf" %} 
+[ Publications](/assets/pdf/publications_Montevil2-en.pdf)
+[!{% icon "pdf", "pdf" %}!](/assets/pdf/cv_Montevil_2019_en.pdf)
+[{% icon "pdf", "pdf" %}](/assets/pdf/cv_Montevil_2019_en.pdf)
 
 # Short CV
 

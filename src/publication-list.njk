@@ -1,0 +1,32 @@
+---
+layout: default
+title: Publication List
+---
+      {% from "macros/pubuttons.njk" import pubuttons %}
+
+  <h2>Articles</h2>
+   <ul>
+    {% for article in collections['peer-reviewed'] %}
+  <li>{{article.data.typepub}}<p>{{ article.data.bibib | bibcite|divRemove|safe}}</p>
+  <p> {{pubuttons(article.data) |safe}}</p>
+  </li>
+    {% endfor %}
+  </ul>
+      
+  <h2>Chapters</h2>
+   <ul>
+    {% for article in collections.chapters %}
+  <li><p>{{ article.data.bibib | bibcite|divRemove|safe}}</p>
+  <p> {{pubuttons(article.data) |safe}}</p>
+  </li>
+    {% endfor %}
+  </ul>
+  
+    <h2>Varia</h2>
+   <ul>
+    {% for article in collections.varia %}
+  <li><p>{{ article.data.bibib | bibcite|divRemove|safe}}</p>
+  <p> {{pubuttons(article.data) |safe}}</p>
+  </li>
+    {% endfor %}
+  </ul>

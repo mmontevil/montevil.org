@@ -32,17 +32,8 @@
 </section>
  {% endif %}
 
-<p><a  href="{{article.data.pdfout}}" class="buttonlink smalltext">{% icon "pdf", "PDF" %}  Manuscript</a> 
-   <a href="{{article.data.bibout}}" class="buttonlink smalltext">{% icon "bib", "BIB" %}  Citation</a>
-   <a href="{{article.data.page.url}}" class="buttonlink smalltext svgnofill">{% icon "link", "Link" %} Full text</a> 
-   {% if not  (article.data.bibentry.DOI === undefined) %}
-  <a href="https://dx.doi.org/{{article.data.bibentry.DOI}}" class="buttonlink smalltext svgnofill">{% icon "exlink", "Link" %}
-  Publisher</a> 
-  {% else %}{% if not  (article.data.bibentry.url === undefined) %}
-  <a href="{{article.data.bibentry.url}}" class="buttonlink smalltext svgnofill">{% icon "exlink", "Link" %}
-  Publisher</a> 
-  {% endif %}  {% endif %}
-  </p>
+ {% from "macros/pubuttons.njk" import pubuttons %}
+<p>{{pubuttons(article.data) |safe}}  </p>
   
 
 
