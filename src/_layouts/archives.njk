@@ -20,7 +20,9 @@ title: Archives
 {% if not regExpMonth.test(currentMonth) %}
   {% set currentMonth = false %}
 {% endif %}
-
+  {% set currentType2 -%}{{"Peerreviewed" if currentType=="peer-reviewed"  else currentType}}{%endset%}
+  
+  
 {% block content %}
 
   {% set cssFilename = "page-archives.css" %}
@@ -58,14 +60,16 @@ title: Archives
           </ul>
         </div>
       </div>
-      <div id="tags-list"></div>
+      {#<div id="tags-list"></div>#}
       <div id="dates-menu">
+          
+      
         {% block dates %}
           <div class="ais-Panel">
             <div class="ais-Panel-header">Dates</div>
             <div class="ais-HierarchicalMenu">
               <ul class="ais-HierarchicalMenu-list">
-                {% for year in collections["yearsWith" + currentType | capitalize] %}
+                {% for year in collections["yearsWith" + currentType2 | capitalize] %}
                   {% if year == currentYear %}
                     <li class="ais-HierarchicalMenu-item ais-HierarchicalMenu-item--selected ais-HierarchicalMenu-item--parent">
                       <div>
@@ -78,7 +82,7 @@ title: Archives
                       </div>
                       <div class="ais-HierarchicalMenu-list--child">
                         <ul class="ais-HierarchicalMenu-list">
-                          {% for month in collections["monthsWith" + currentType | capitalize] %}
+                          {% for month in collections["monthsWith" + currentType2 | capitalize] %}
                             {% set monthYear = month | split('/') | first %}
                             {% set monthMonth = month | split('/') | offset(1) | first %}
                             {% if monthYear == currentYear %}
@@ -108,7 +112,7 @@ title: Archives
           </div>
         {% endblock %}
       </div>
-    <div id="langs-list"></div>
+    {#<div id="langs-list"></div>#}
     </div>
     {#  <div id="stats"></div>
     <div id="powered-by"></div> #}
@@ -123,7 +127,7 @@ title: Archives
             {% for item in collections[currentType + 'ByYear'][currentYear] | limit(10) %}
                 {{ itemCard(item,numbers.numbers2) }}
             {% endfor %}
-            {% if collections[currentType + 'ByYear'][currentYear].length > 10 %}
+            {% if collections[currentType2 + 'ByYear'][currentYear].length > 10 %}
               <p>Filter by month to see more {{ currentType }} from year {{ currentYear }}.</p>
             {% endif %}
           {% else %}

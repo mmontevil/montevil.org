@@ -17,13 +17,24 @@
   grid-row-gap: var(--gap2);
   row-gap: var(--gap2);
 }
+.refinements {
+  // Hide refinements on mobile
+  // TODO: find a way to allow refinements
+ // display: none;
+   display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-areas:
+  'refinements refinements' 
+  'hits hits ';
+ 
+}
 
 #clear-refinements,
 .refinements {
   // Hide refinements on mobile
   // TODO: find a way to allow refinements
  // display: none;
-  justify-content: center;
+ 
 }
 /*
 @media (min-width: 48rem) {
@@ -41,6 +52,9 @@
   }
 }
 */
+
+
+
 
 #searchbox {
   grid-area: searchbox;
@@ -118,7 +132,7 @@
 // ************************************************************
 
 .refinements {
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-m);
 
   .ais-Panel {
     margin-bottom: var(--gap);

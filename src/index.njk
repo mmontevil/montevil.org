@@ -41,9 +41,15 @@ JSON-LD for:
     </p>
   </div>
 
+
+
   {% from "macros/articleCard.njk" import articleCard %}
   {% from "macros/pubCard.njk" import pubCard %}
-
+ <p class="p-note"> mmm
+{% for article in collections.chaptersByYear%}
+  {{ article |dump}}
+    {% endfor %}
+    mmm </p>
   <h2>Latest articles</h2>
   <div class="cards-list">
     {% for article in collections.latestPeerreviewed %}
