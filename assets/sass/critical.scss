@@ -522,6 +522,7 @@ a[href$='.kml'] {
 
 
 .buttonlink {
+ // white-space:nowrap;
   svg {
       vertical-align: middle;
       font-size: 1em;
@@ -531,13 +532,14 @@ a[href$='.kml'] {
       stroke-linejoin: round;
       fill: currentColor;
     }
-      &:link,  &:visited{
+      &:link,  &:visited{display: inline-table;
         padding: 0.12em 0.2em;
+                margin: 0.1em;
         padding-top: 0em;
     border: 1px solid var(--color-primary-lighter-5);
     border-radius: 0.5em;
     color: var(--color-link);
-    background-color: var(--color-primary-lighter-8);
+   // background-color: var(--color-primary-lighter-8);
 }
   &:hover,
   &:focus {
@@ -560,6 +562,25 @@ a[href$='.kml'] {
 } 
 
 
+.publink {
+        padding: 0.12em 0.2em;
+        padding-top: 0em;
+        margin-right: 0.1em;
+   // border: 1px solid var(--color-primary-lighter-5);
+    border-radius: 1em;
+    color: white;
+    background-color: var(--color-red);
+}
+.publinkchap {
+    background-color: var(--color-blue);
+}
+
+@mixin chvronD-color($color) {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#{$color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevrons-down'%3E%3Cpolyline points='7 13 12 18 17 13'%3E%3C/polyline%3E%3Cpolyline points='7 6 12 11 17 6'%3E%3C/polyline%3E%3C/svg%3E");
+}
+@mixin chvronR-color($color) {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#{$color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevrons-right'%3E%3Cpolyline points='13 17 18 12 13 7'%3E%3C/polyline%3E%3Cpolyline points='6 17 11 12 6 7'%3E%3C/polyline%3E%3C/svg%3E");
+}
 
 .accordion > input[type="checkbox"] {
   position: absolute;
@@ -578,12 +599,10 @@ a[href$='.kml'] {
 }
 
 .accordion label {
-  display: block;
-}
-
-/*
- Styling
-*/
+  display: inline;
+  border: 1px solid var(--color-accord);
+    border-radius: 0.5em;
+} 
 
 
 .accordion {
@@ -591,46 +610,54 @@ a[href$='.kml'] {
 }
 
 .accordion > input[type="checkbox"]:checked ~ .content {
-  padding: 10px;
-  border: 1px solid var(--color-lightgrey);
-  border-top: 0;
+  padding: 0.5em;
+  border: 1px solid var(--color-accord);
+      border-radius: 0.5em;
+    border-top-left-radius: 0em;
 }
 
-.accordion .handle {
-color: var(--color-link)
+.accordion .handle {  
+  padding-bottom: 0.1em;
+color: var(--color-link);
+}
+
+.accordion > input[type="checkbox"]:checked ~ .handle label {
+    border-bottom-right-radius: 0em;
+    border-bottom-left-radius: 0em;
+}
+
+.accordion label {
+  cursor: pointer;
+  padding: 0.2em;
+ // background: rgba(230,230,230,0.5);
+  padding-left: 1.3em;
+  background-size: 1.4em 1.4em;
+  background-position: 0 0.12em;
+  background-repeat: no-repeat;
 }
 
 
 .accordion label {
-  cursor: pointer;
-  padding: 5px;
-  background: var(--color-xlightgrey);
-    padding-left: 1.3em;
-  background-size: 1.4em 1.4em;
-  background-position: 0 0.3em;
-  background-repeat: no-repeat;
-        background-image: var(--background-image-chvronR);
+@include chvronR-color('%23691449');
 }
 
 .accordion label:hover,
 .accordion label:focus {
-  background: var(--color-lightgrey);
-    background-size: 1.4em 1.4em;
-  background-position: 0 0.3em;
-  background-repeat: no-repeat;
-  background-image: var(--background-image-chvronR);
+  color: var(--color-link-hover);
+      background-color: var(--color-link-hover-bg);
+@include chvronR-color('%23fff');
 }
-
 
 
 .accordion > input[type="checkbox"]:checked ~ .handle label {
-  background-image: url(/assets/avatars/afonsoalban.jpg);
-    background-size: 1.4em 1.4em;
-  background-position: 0 0.3em;
-  background-repeat: no-repeat;
-  background-image: var(--background-image-chvronD);
-
+  @include chvronD-color('%23691449');
 }
+.accordion > input[type="checkbox"]:checked ~ .handle label:hover,.accordion > input[type="checkbox"]:checked ~ .handle label:focus {
+  @include chvronD-color('%23fff');
+}
+
+
+
 .inlineimg {
   display: inline; 
       text-align: center;
@@ -687,3 +714,48 @@ color: var(--color-link)
                                            " sub1 sub2 sub3";
   }
 }
+.publi,.card-list__item{
+    padding: 1.5em;
+    padding-top: 3em;
+    padding-bottom: 2em;
+
+    clip-path: polygon(0 2.5vw,100% 0,100% calc(100% - 2.5vw),0 100%);
+      width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+
+.publi:nth-child(2n+1),.card-list__item:nth-child(2n+1) {background: var(--color-primary-lighter-7)}
+.publi:nth-child(2n+2),.card-list__item:nth-child(2n+2) {background: var(--color-primary-lighter-8)}
+
+
+
+.pull-T, .pull-V, .pull-W, .pull-Y {margin-left: -0.07em}
+.push-T, .push-V, .push-W, .push-Y {margin-right: 0.07em}
+
+.pull-O, .pull-C, .pull-o, .pull-c {margin-left: -0.04em}
+.push-O, .push-C, .push-o, .push-c {margin-right: 0.04em}
+
+.pull-A {margin-left: -0.03em}
+.push-A {margin-right: 0.03em}
+
+/* 
+ Quotation mark 
+ https://en.wikipedia.org/wiki/Quotation_mark) 
+*/
+
+/* Single quotation marks (') */
+.pull-single{margin-left:-.27em}
+.push-single{margin-right:.27em}
+
+.pull-double, .push-double,
+.pull-single, .push-single {display: inline-block}
+
+/* Double quotation marks (") */
+.pull-double{margin-left:-.46em}
+.push-double{margin-right:.46em}
+

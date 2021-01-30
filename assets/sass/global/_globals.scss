@@ -62,7 +62,9 @@
 --color-primary-lighter-5: #c8a5b6;
 --color-primary-lighter-6: #dbc3ce;
 --color-primary-lighter-7: #ede1e6;
---color-primary-lighter-8: #fff2f7;
+--color-primary-lighter-7a: #f6e6f7;
+--color-primary-lighter-7b: #fdf0f5;
+--color-primary-lighter-8: #fff8fb;//#fff2f7
 
   // Persimmon:
   //   https://en.wikipedia.org/wiki/Shades_of_orange#Persimmon
@@ -76,14 +78,15 @@
   --color-link-hover-bg: var(--color-primary);
   --color-link-hover-decoration: none;
 
-  --color-meta: #777;
+  --color-meta: #4c4c4c;
   --color-meta-decoration: #999;
 
   --color-gold: hsl(50, 91%, 30%);
   --color-yellow-light: hsl(59, 100%, 88%);
 
   --border-width: 0.15em;
-  
+    --color-accord: var(--color-primary-lighter-4);
+    
 // ************************************************************
 // Colors palette
 // ************************************************************
@@ -100,6 +103,6 @@
 // Colors from Prism OneDark theme
 --inline-code-background-color: #282c34;
 --inline-code-text-color: #abb2bf;
---background-image-chvronR: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23691449' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevrons-right'%3E%3Cpolyline points='13 17 18 12 13 7'%3E%3C/polyline%3E%3Cpolyline points='6 17 11 12 6 7'%3E%3C/polyline%3E%3C/svg%3E");
---background-image-chvronD: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23691449' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevrons-down'%3E%3Cpolyline points='7 13 12 18 17 13'%3E%3C/polyline%3E%3Cpolyline points='7 6 12 11 17 6'%3E%3C/polyline%3E%3C/svg%3E");
+
+
 }

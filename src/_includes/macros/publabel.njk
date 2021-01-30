@@ -1,10 +1,10 @@
  
- {% macro pubuttons(item) %}
- {% if item.typepub === "article"%}
- 
-  {% elif item.type === "chapter" %}
-  
+ {% macro publabel(item) %}
+ {% if item.typepub === "Article"%}
+ <span class="publink ">Article</span> 
+  {% elif item.typepub === "chapter" %}
+   <span class="publink publinkchap ">Chapter</span> 
   {% elif item.type === "varia" %}
 
-  {% end%} 
+  {% endif%}  
    {% endmacro %}

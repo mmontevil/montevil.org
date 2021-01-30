@@ -208,7 +208,18 @@ const imagesResponsiverTransform = (content, outputPath) => {
       'imagesResponsiver',
       imagesResponsiverTransform
     );
-
+  
+const typeset = require('typeset');
+const typeseter = (content, outputPath) => {
+  if (outputPath && outputPath.endsWith('.html')) {
+    return typeset(content);
+  }
+  return content;
+};
+  eleventyConfig.addTransform(
+      'typeseter',
+      typeseter
+    );
   // eleventyConfig.addPlugin(imagesResponsiver, imagesResponsiverConfig);
 
     // const htmlMinTransform = require(path.join(

@@ -3,11 +3,11 @@ layout: default
 title: Publication List
 ---
       {% from "macros/pubuttons.njk" import pubuttons %}
-
+   {% from "macros/publabel.njk" import publabel %}
   <h2>Articles</h2>
    <ul>
     {% for article in collections['peer-reviewed'] %}
-  <li>{{article.data.typepub}}<p>{{ article.data.bibib | bibcite|divRemove|safe}}</p>
+  <li><p>{{publabel(article.data)|safe}} {{ article.data.bibib | bibcite|divRemove|safe}}</p>
   <p> {{pubuttons(article.data) |safe}}</p>
   </li>
     {% endfor %}
@@ -16,7 +16,7 @@ title: Publication List
   <h2>Chapters</h2>
    <ul>
     {% for article in collections.chapters %}
-  <li><p>{{ article.data.bibib | bibcite|divRemove|safe}}</p>
+  <li><p>{{publabel(article.data)|safe}} {{ article.data.bibib | bibcite|divRemove|safe}}</p>
   <p> {{pubuttons(article.data) |safe}}</p>
   </li>
     {% endfor %}
@@ -25,8 +25,47 @@ title: Publication List
     <h2>Varia</h2>
    <ul>
     {% for article in collections.varia %}
-  <li><p>{{ article.data.bibib | bibcite|divRemove|safe}}</p>
+  <li><p>{{publabel(article.data)|safe}} {{ article.data.bibib | bibcite|divRemove|safe}}</p>
   <p> {{pubuttons(article.data) |safe}}</p>
   </li>
     {% endfor %}
   </ul>
+
+  
+  <h2>By date</h2>
+   
+{% set dateit="temp" %}
+    {% for article in collections.publications |sortByOrder |reverse %}
+    {% set datete=article.data.bibentry.issued['date-parts'][0][0] %}
+    {% if datete=== undefined %}  {% set datete="Submitted" %} {%endif%}
+   {% if datete !== dateit %}
+        {% if dateit  !== "temp" %}
+         {#</ul> #}
+         {% endif %}
+         {% set dateit=datete %}
+       <h2>{{dateit}}</h2>
+    {# <ul>  #}      
+    {% endif %}
+
+    {% set aref %}
+     <a href={{article.data.page.url}}>{{-article.data.title-}}</a>{%endset%}
+  <section  class="publi"><div  class="wrap"><p>{{publabel(article.data)|safe}} {{ article.data.bibib | bibcite|divRemove| replace( article.data.title,aref)|safe}}</p>
+  {% if not  (article.data.bibentry.abstract === undefined) %}
+ {#<section class="accordion ">
+  <input type="checkbox" name="{{article.data.bibentry.id}}{{rid}}" id="{{article.data.bibentry.id}}{{rid}}" >
+  <p class="handle">
+    <label for="{{article.data.bibentry.id}}{{rid}}"> Abstract</label>
+  </p>
+  <div class="content">
+     <p > <em> Abstract: </em>  {{ article.data.abstract  | safe }}</p >
+     {% if not  (article.data.bibentry.keyword === undefined) %}
+          <p > <em> Keywords: </em> {{ article.data.keyword  | safe }}</p >
+           {% endif %}
+  </div>
+</section>#}
+ {% endif %}
+  <p class="smalltext"> {{pubuttons(article.data) |safe}}</p>
+  </div>
+  </section>
+    {% endfor %}
+ {# </ul>#}

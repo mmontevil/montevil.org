@@ -4,17 +4,31 @@
 
 {% from "macros/meta.njk" import meta %}
 {% from "macros/card.njk" import card %}
+   {% from "macros/publabel.njk" import publabel %}
 
 {% macro pubCard(article,numbers2) %} 
+
 {% set rid %}
     {{  numbers2| random }}
 {% endset %}
+
+ {% if article.data.illust %}
+ {% set srcurl%}
+ {{article.data.page.url-}}{{- article.data.illust}}
+ {%endset%}
+  {% set illustration = {
+    src:  srcurl,
+    alt:  article.data.title,
+    width: 1200,
+    height: 800
+  } %}
+{% endif %}
 
   {% set content %}
     <p class="card__body p-summary">  {{article.data.excerpt}}   </p> 
 
   
-  <div class="card__body p-summary smalltext"><p>
+  <div class="card__body p-summary smalltext"><p>{{publabel(article.data)|safe}}
 {{ article.data.bibib | bibcite|divRemove|safe}} </p></div>
 
 {% if not  (article.data.bibentry.abstract === undefined) %}
@@ -33,7 +47,7 @@
  {% endif %}
 
  {% from "macros/pubuttons.njk" import pubuttons %}
-<p>{{pubuttons(article.data) |safe}}  </p>
+<p class="smalltext">{{pubuttons(article.data) |safe}}  </p>
   
 
 
@@ -49,6 +63,7 @@
     lang = article.data.lang,
     title = article.data.title,
     url = article.url,
+    illustration = illustration,
     content = content,
     meta = meta) }}
 {% endmacro %}

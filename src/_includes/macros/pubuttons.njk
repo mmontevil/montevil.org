@@ -2,15 +2,13 @@
  
  {% macro pubuttons(item) %}
  
-<a  href="{{item.pdfout}}" class="buttonlink smalltext">{% icon "pdf", "PDF" %}  Manuscript</a> 
-   <a href="{{item.bibout}}" class="buttonlink smalltext">{% icon "bib", "BIB" %}  Citation</a>
-   <a href="{{item.page.url}}" class="buttonlink smalltext svgnofill">{% icon "link", "Link" %} Full text</a> 
+<a  href="{{item.pdfout}}" class="buttonlink ">{% icon "pdf", "PDF" %}&nbsp;Manuscript </a> 
+   <a href="{{item.bibout}}" class="buttonlink ">{% icon "bib", "BIB" %}&nbsp;Citation </a>
    {% if not  (item.bibentry.DOI === undefined) %}
-  <a href="https://dx.doi.org/{{item.bibentry.DOI}}" class="buttonlink smalltext svgnofill">{% icon "exlink", "Link" %}
-  Publisher</a> 
+  <a href="https://dx.doi.org/{{item.bibentry.DOI}}" class="buttonlink  svgnofill">{% icon "exlink", "Link" %}&nbsp;Publisher </a> 
   {% else %}{% if not  (item.bibentry.url === undefined) %}
-  <a href="{{item.bibentry.url}}" class="buttonlink smalltext svgnofill">{% icon "exlink", "Link" %}
-  Publisher</a> 
+  <a href="{{item.bibentry.url}}" class="buttonlink  svgnofill">{% icon "exlink", "Link" %}&nbsp;Publisher </a> 
   {% endif %}  {% endif %}
-  
+     <a href="{{item.page.url}}" class="buttonlink  svgnofill">{% icon "link", "Link" %}&nbsp;Full text </a> 
+
   {% endmacro %}
