@@ -5,7 +5,6 @@ node_modules
 _site
 hashes_*.json
 functions
-
 # logs
 _logs
 
@@ -14,3 +13,5 @@ _logs
 
 # Local Netlify folder
 .netlify
+#
+src/notes
