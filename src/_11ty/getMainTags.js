@@ -1,5 +1,5 @@
 module.exports = function (collection) {
-  const minContentsNumber = 10;
+  const minContentsNumber = 5;
   let tagsCollection = new Map();
   let max = 0;
 

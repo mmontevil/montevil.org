@@ -4,22 +4,28 @@
 const moment = require('moment');
 const getFilteredCollection = require('../../_utils/filter-collection');
 
+
+
 function makeDateFormatter(datePattern) {
   return function (date) {
-    return moment(date).format(datePattern);
+  //  if (date ==" Submitted"){
+  //      return (datePattern =='YYYY' ? " Submitted" : "Submitted2");
+  //  }else{
+        return moment(date).format(datePattern);      
+    //}
   };
 }
 
 function generateItemsDateSet(items, dateFormatter) {
   const formattedDates = items.map((item) => {
-    return dateFormatter(item.data.page.date);
+    return dateFormatter(item.data.orderDate);
   });
   return [...new Set(formattedDates)];
 }
 
 function getItemsByDate(items, date, dateFormatter) {
   return items.filter((item) => {
-    return dateFormatter(item.data.page.date) === date;
+    return dateFormatter(item.data.orderDate) === date;
   });
 }
 

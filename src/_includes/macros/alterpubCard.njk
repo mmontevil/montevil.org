@@ -1,0 +1,31 @@
+    {% from "macros/pubuttons.njk" import pubuttons %}
+   {% from "macros/publabel.njk" import publabel %}
+
+{% macro alterpubCard(itemdata) %}
+
+
+
+
+
+    {% set aref %}<a href={{itemdata.page.url}}>{{-itemdata.title-}}</a>{%endset%}
+  <section  class="publi"><div  class="wrap"><p>{{publabel(itemdata)|safe}} {{ itemdata.bibib | bibcite|divRemove| replace( itemdata.title,aref)|safe}}</p>
+  {% if not  (itemdata.bibentry.abstract === undefined) %}
+ <section class="accordion ">
+  <input type="checkbox" name="{{itemdata.bibentry.id}}{{rid}}" id="{{itemdata.bibentry.id}}{{rid}}" >
+  <p class="handle">
+    <span class="smalltext">{{pubuttons(itemdata) |safe}}</span><label for="{{itemdata.bibentry.id}}{{rid}}" class="smalltext"> Abstract</label> 
+  </p>
+  <div class="content">
+     <p > <em> Abstract: </em>  {{ itemdata.abstract  | safe }}</p >
+     {% if not  (itemdata.bibentry.keyword === undefined) %}
+          <p > <em> Keywords: </em> {{ itemdata.keyword  | safe }}</p >
+           {% endif %}
+  </div>
+</section>
+ {% endif %}
+  
+  </div>
+  </section>
+
+  
+{% endmacro %}

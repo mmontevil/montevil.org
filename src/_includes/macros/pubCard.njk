@@ -5,6 +5,7 @@
 {% from "macros/meta.njk" import meta %}
 {% from "macros/card.njk" import card %}
    {% from "macros/publabel.njk" import publabel %}
+ {% from "macros/pubuttons.njk" import pubuttons %}
 
 {% macro pubCard(article,numbers2) %} 
 
@@ -12,10 +13,8 @@
     {{  numbers2| random }}
 {% endset %}
 
- {% if article.data.illust2 %}
- {% set srcurl%}
- {{article.data.page.url-}}{{- article.data.illust}}
- {%endset%}
+ {% if article.data.illust %}
+ {% set srcurl-%}{{-article.data.page.url-}}{{- article.data.illust-}}{%-endset%}
   {% set illustration = {
     src:  srcurl,
     alt:  article.data.title,
@@ -35,7 +34,7 @@
  <section class="accordion">
   <input type="checkbox" name="{{article.data.bibentry.id}}{{rid}}" id="{{article.data.bibentry.id}}{{rid}}" >
   <p class="handle">
-    <label for="{{article.data.bibentry.id}}{{rid}}"> Abstract</label>
+   <span  class="smalltext">{{pubuttons(article.data) |safe}}</span> <label for="{{article.data.bibentry.id}}{{rid}}" class="smalltext">Abstract</label>
   </p>
   <div class="content">
      <p > <em> Abstract: </em>  {{ article.data.abstract  | safe }}</p >
@@ -46,8 +45,6 @@
 </section>
  {% endif %}
 
- {% from "macros/pubuttons.njk" import pubuttons %}
-<p class="smalltext">{{pubuttons(article.data) |safe}}  </p>
   
 
 

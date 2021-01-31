@@ -22,13 +22,29 @@
   // TODO: find a way to allow refinements
  // display: none;
    display: grid;
-  grid-template-columns: 1fr 1fr ;
-  grid-template-areas:
-  'refinements refinements' 
-  'hits hits ';
- 
+  grid-template-columns: 1fr  ;
 }
 
+@media (min-width: 20rem) {
+  .refinements  {
+    grid-column-gap: var(--gap);
+  column-gap: var(--gap);
+    grid-template-columns:  13rem 10em;
+  }
+}
+@media (min-width: 30rem) {
+  .refinements  {
+    grid-column-gap: var(--gap3);
+  column-gap: var(--gap3);
+    grid-template-columns:  1fr 1fr;
+  }
+}
+
+
+
+#types-list {
+margin-top: var(--flow-space, 1em);
+}
 #clear-refinements,
 .refinements {
   // Hide refinements on mobile
@@ -139,8 +155,9 @@
   }
 
   .ais-Panel-header {
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-m);
     border-bottom: 1px solid colors.$color-grey;
+    
     margin-bottom: 0.3em;
   }
 

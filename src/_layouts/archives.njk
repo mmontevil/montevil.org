@@ -1,5 +1,6 @@
 ---
 title: Archives
+isArchive: true
 ---
 
 {% extends "./default.njk" %}
@@ -28,7 +29,7 @@ title: Archives
   {% set cssFilename = "page-archives.css" %}
   {% include "add-css.njk" %}
 
-  <h1>
+  <h1 class= "wrap">
     {% block title %}
       {% if currentType == 'archives' %}
         Archives 
@@ -37,8 +38,8 @@ title: Archives
       {% endif %}
     {% endblock %}
   </h1>
-  <div class="archives">
-    <div class="refinements">
+  <div class="archives ">
+    <div class="refinements wrap ">
       <div id="types-list">
         <div class="ais-Panel">
           <div class="ais-Panel-header">Types</div>
@@ -57,7 +58,7 @@ title: Archives
                 </li>
               {%- endif -%}
             {% endfor %}
-          </ul>
+          </ul><p><a class=" " href="/publicationsbyType/">Complete Publication list by category</a></p>
         </div>
       </div>
       {#<div id="tags-list"></div>#}
@@ -108,7 +109,7 @@ title: Archives
                   {% endif %}
                 {%- endfor %}
               </ul>
-            </div>
+            </div><p><a class=" " href="/publicationsbyYear/">Complete Publication list by year</a></p>
           </div>
         {% endblock %}
       </div>
@@ -118,7 +119,7 @@ title: Archives
     <div id="powered-by"></div> #}
     <div id="hits">
       <div>
-        <ol class="cards-list">
+        <div class="cards-list0">
           {% if currentMonth %}
             {% for item in collections[currentType + 'ByMonth'][currentYear + '/' + currentMonth] %}
                 {{ itemCard(item,numbers.numbers2) }}
@@ -135,10 +136,10 @@ title: Archives
                 {{ itemCard(item,numbers.numbers2) }}
             {% endfor %}
             {% if collections[currentType].length > 10 %}
-              <p>Filter by year and month to see more {{ currentType }}.</p>
+              <p class= "wrap">Filter by year and month to see more {{ currentType }}.</p>
             {% endif %}
           {% endif %}
-        </ol>
+        </div>
       </div>
     </div>
   </div>

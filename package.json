@@ -36,6 +36,7 @@
     "build:netlify": "cross-env NODE_ENV=production npm-run-all --sequential clean --parallel build:js build:sass --sequential build:eleventy serviceworker:inject",
     "build:netlifyold": "cross-env NODE_ENV=production npm-run-all --sequential build build:lambdas",
     "notist": "node ./_scripts/update-notist.js",
+    "scholar": "node ./_scripts/update-scholar.js",
     "webmention": "node ./_scripts/update-webmention.js",
     "tweets": "node ./_scripts/send-tweets.js",
     "algolia": "atomic-algolia",
@@ -125,10 +126,12 @@
     "algoliasearch": "~4.8.3",
     "autocomplete.js": "^0.38.0",
     "citation-js": "^0.5.0-alpha.9",
+    "cross-spawn": "^7.0.3",
     "element-remove": "^1.0.4",
     "instantsearch.js": "~4.12.0",
     "linkify-urls": "^3.1.1",
     "moment-timezone": "^0.5.32",
+    "scholarly": "^1.1.0",
     "typeset": "^0.3.1"
   }
 }

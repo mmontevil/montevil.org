@@ -1,5 +1,7 @@
 ---
 layout: default
+eleventyComputed:
+    orderDate: "{{-page.date | attributeDate-}}"
 ---
 
 {% set newerContent = collections[layout + 's'] | getPreviousCollectionItem(page) %}
@@ -44,8 +46,9 @@ https://developers.google.com/search/docs/data-types/breadcrumbs
 </script>
 
 <article
-    class="page h-entry"
-    lang="{{ lang }}">
+    class="page wrap h-entry"
+    lang="{{ lang }}">{{orderDate}}
+
 
   <ul class="older-newer__shortcuts">
     <li class="older-newer__older">

@@ -7,7 +7,8 @@ eleventyComputed:
     bibib: "src/assets/bib/{{page.fileSlug}}.bib"
     bibout: "/assets/bib/{{page.fileSlug}}.bib"
     pdfout: "/assets/pdf/{{page.fileSlug}}.pdf"
-    datepub: "{% set date0 = bibentry.issued['date-parts'][0]%} {% if  date0 %}  {{- 0 if date0[0]<10  -}}{{- date0[0] if date0[0] else 2021 -}}-{{- 0 if (date0[1]<10 or not date0[2])  -}}{{- date0[1] if date0[1] else 01 -}}-{{- 0 if (date0[2]<10 or not date0[2])  -}}{{- date0[2] if date0[2] else 01 -}}T00:00:00Z{%- else -%}Submitted{%- endif -%}"
+    datepub: "{%- set date0 = bibentry.issued['date-parts'][0] -%}{%- if  date0 -%}{{- 0 if date0[0]<10  -}}{{- date0[0] if date0[0] else 2021 -}}-{{- 0 if (date0[1]<10 or not date0[2])  -}}{{- date0[1] if date0[1] else 01 -}}-{{- 0 if (date0[2]<10 or not date0[2])  -}}{{- date0[2] if date0[2] else 01 -}}{%- else -%}Submitted{%- endif -%}"
+    orderDate: "{%- if datepub=='Submitted' -%}{{- page.date | attributeDate -}}{%- else -%}{{- datepub     -}}{%- endif -%}"
 ---
  {#  tags: 
        - "  {{ pubmeta.keyword | splarray2 }}"
@@ -18,7 +19,9 @@ tags: [{% for entry in keyword.split(', ') %}
 
 {{hop}}
 #}
+{{- page.date | attributeDate | dump-}}
 
+{{ orderDate    | dump }}
 
 
 

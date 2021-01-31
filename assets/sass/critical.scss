@@ -535,6 +535,8 @@ a[href$='.kml'] {
       &:link,  &:visited{display: inline-table;
         padding: 0.12em 0.2em;
                 margin: 0.1em;
+          margin-bottom: 0.2em;
+
         padding-top: 0em;
     border: 1px solid var(--color-primary-lighter-5);
     border-radius: 0.5em;
@@ -614,10 +616,12 @@ a[href$='.kml'] {
   border: 1px solid var(--color-accord);
       border-radius: 0.5em;
     border-top-left-radius: 0em;
+        border-top-left-radius: 0em;
+
 }
 
 .accordion .handle {  
-  padding-bottom: 0.1em;
+  padding-bottom: 0em;
 color: var(--color-link);
 }
 
@@ -628,11 +632,11 @@ color: var(--color-link);
 
 .accordion label {
   cursor: pointer;
-  padding: 0.2em;
+  padding: 0.45em;
  // background: rgba(230,230,230,0.5);
   padding-left: 1.3em;
   background-size: 1.4em 1.4em;
-  background-position: 0 0.12em;
+  background-position: 0 0.4em;
   background-repeat: no-repeat;
 }
 
@@ -717,15 +721,16 @@ color: var(--color-link);
 .publi,.card-list__item{
     padding: 1.5em;
     padding-top: 3em;
-    padding-bottom: 2em;
-
+    padding-bottom: 2.5em;
+    margin-top: 0em;
+    margin-bottom: 0em;
     clip-path: polygon(0 2.5vw,100% 0,100% calc(100% - 2.5vw),0 100%);
-      width: 100vw;
+   /*   width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
-  margin-right: -50vw;
+  margin-right: -50vw;*/
 }
 
 

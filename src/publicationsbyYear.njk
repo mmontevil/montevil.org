@@ -1,0 +1,25 @@
+---
+layout: default
+title: Publication list by year
+---
+  
+      {% from "macros/alterpubCard.njk" import alterpubCard %}
+
+   
+{% set dateit="temp" %}
+    {% for article in collections.publications  %}
+    {% set datete=article.data.bibentry.issued['date-parts'][0][0] %}
+    {% if datete=== undefined %}  {% set datete="Submitted" %} {%endif%}
+   {% if datete !== dateit %}
+        {% if dateit  !== "temp" %}
+         {#</ul> #}
+         {% endif %}
+         {% set dateit=datete %}
+       <h2 class="wrap">{{dateit}}</h2>
+    {# <ul>  #}      
+    {% endif %}
+
+    {{alterpubCard(article.data) | safe}}
+    
+    {% endfor %}
+ {# </ul>#}

@@ -216,10 +216,20 @@ function ogImageTagline(data) {
   }
   return '';
 }
-
+function chooseDate(datepub,date) {
+  if (datepub){
+    if (datepub ==" Submitted"){
+      return date;
+    }else{
+      return datepub;
+    }
+  }else{
+    return date;
+  }
+}
 module.exports = {
   lang: (data) => data.lang || 'en',
-
+  //orderDate0: (data) => chooseDate(data.datepub,data.page.date),
   formattedDate: (data) => formattedDate(data.lang, data.page.date),
   attributeDate: (data) => attributeDate(data.page.date),
   permalinkDate: (data) => permalinkDate(data.page.date),

@@ -1,0 +1,33 @@
+---
+layout: default
+title: Publication list by category
+---
+  
+      {% from "macros/alterpubCard.njk" import alterpubCard %}
+
+  <h2 class="wrap">Articles</h2>
+   
+    {% for article in collections['peer-reviewed'] %}
+      {{alterpubCard(article.data) | safe}}
+  
+    {% endfor %}
+
+      
+  <h2 class="wrap">Chapters</h2>
+   
+    {% for article in collections.chapters %}
+      {{alterpubCard(article.data) | safe}}
+  
+
+    {% endfor %}
+
+  
+    <h2 class="wrap">Varia</h2>
+   
+    {% for article in collections.varia %}
+      {{alterpubCard(article.data) | safe}}
+  
+    {% endfor %}
+  
+
+ {# </ul>#}

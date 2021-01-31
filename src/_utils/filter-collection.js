@@ -1,5 +1,6 @@
 let filteredCollectionsMemoization = {};
 let now = new Date().getTime();
+var specialChars = "!@#$^&%*()+=-[]\/{}|:<>?,.";
 const getFilteredCollection = (collection, type) => {
   if (type in filteredCollectionsMemoization) {
     return filteredCollectionsMemoization[type];
@@ -8,7 +9,7 @@ const getFilteredCollection = (collection, type) => {
     let filteredCollection = collection
       .getFilteredByGlob([`src/${pattern}/**/*.md`,`src/${pattern}/**/*.njk`])
       .filter((item) => now >= item.date.getTime())
-      .sort((a, b) => b.date - a.date);
+      .sort((a, b) => parseInt(b.data.orderDate.replace(new RegExp("\\" + '-', "gi"), "")) - parseInt(a.data.orderDate.replace(new RegExp("\\" + '-', "gi"), "")));
     filteredCollectionsMemoization[type] = filteredCollection;
 
     return filteredCollection;

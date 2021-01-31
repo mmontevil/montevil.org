@@ -10,7 +10,7 @@
         {% icon "date", "Date" %}
         <time class="dt-published" datetime="{{ item.data.page.date | attributeDate }}">
         {% if item.data.datepub %}
-            {{ item.data.page.date | formattedDate }}  (pub: {% if item.data.datepub == " Submitted" %} Submitted {% else %} {{ item.data.datepub | formattedDateShort}} {% endif %}) 
+            {{ item.data.page.date | formattedDate }}  (pub: {% if item.data.datepub == "Submitted" %} Submitted {% else %} {{ item.data.datepub | formattedDateShort}} {% endif %}) 
             {% else %}
           {{ item.data.page.date | formattedDate }}            
         {% endif %}
