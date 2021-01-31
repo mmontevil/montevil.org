@@ -29,7 +29,7 @@
   .refinements  {
     grid-column-gap: var(--gap);
   column-gap: var(--gap);
-    grid-template-columns:  13rem 10em;
+    grid-template-columns:  13rem 1fr;
   }
 }
 @media (min-width: 30rem) {
