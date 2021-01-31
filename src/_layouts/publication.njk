@@ -18,18 +18,12 @@ tags: [{% for entry in keyword.split(', ') %}
 {{keyword | splarray}}
 
 {{hop}}
-#}
+
 {{- page.date | attributeDate | dump-}}
 
 {{ orderDate    | dump }}
+#}
 
-
-
-{% if not  (excerpt === undefined) %}
-<div class="lead">
-<p> {{excerpt}}</p>
-</div>
-{%endif%}
 
 
 {% from "macros/pubuttons.njk" import pubuttons %}
@@ -46,11 +40,22 @@ tags: [{% for entry in keyword.split(', ') %}
       }
 %}
 
-  <div><p>{{ bibib | bibcite|divRemove|safe}}</p>
+
+{% if not  (excerpt === undefined) %}
+<div class="lead">
+<p> {{excerpt}}</p>
+</div>
+{%endif%}
+
+
+{#
+<p class="indent"><span class="paragraphHead">Abstract: </span>
+{{bibentry.abstract |safe}}
+</p>#}
+  <div class="info indent"><p>{{ bibib | bibcite|divRemove|safe}}</p>
   <p> {{pubuttons(item) |safe}}</p>
   </div>
 
-
-
+<hr class="breakk">
 
 {{ content | safe }}

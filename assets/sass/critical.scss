@@ -70,8 +70,12 @@ main {
 .wrap {
   width: 90vw;
   max-width: var(--layout-max);
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+  @media (min-width: 40rem) {
+    width: 80vw;
+
+  }
 }
 
 // ************************************************************
@@ -595,13 +599,15 @@ a[href$='.kml'] {
   transition: height 0.3s ease;
 }
 
+
+
 .accordion > input[type="checkbox"]:checked ~ .content {
   height: auto;
   overflow: visible;
 }
 
 .accordion label {
-  display: inline;
+  display: inline-block;
   border: 1px solid var(--color-accord);
     border-radius: 0.5em;
 } 
@@ -612,11 +618,18 @@ a[href$='.kml'] {
 }
 
 .accordion > input[type="checkbox"]:checked ~ .content {
-  padding: 0.5em;
+  padding: 0.25em;
   border: 1px solid var(--color-accord);
       border-radius: 0.5em;
     border-top-left-radius: 0em;
         border-top-left-radius: 0em;
+        margin-left: 0em;
+  margin-right: 0em;
+      @media (min-width: 30rem) {
+        padding: 0.5em;
+  margin-left: 0.25em;  
+  margin-right: calc(0.5*100% - 0.5*30rem);
+      }
 
 }
 
@@ -631,6 +644,7 @@ color: var(--color-link);
 }
 
 .accordion label {
+    margin-top: 0.2em;
   cursor: pointer;
   padding: 0.45em;
  // background: rgba(230,230,230,0.5);
@@ -719,7 +733,7 @@ color: var(--color-link);
   }
 }
 .publi,.card-list__item{
-    padding: 1.5em;
+   // padding: 1.5em;
     padding-top: 3em;
     padding-bottom: 2.5em;
     margin-top: 0em;
@@ -764,3 +778,62 @@ color: var(--color-link);
 .pull-double{margin-left:-.46em}
 .push-double{margin-right:.46em}
 
+div > .indent, div >.noindent,.caption,div >.description,div >table.equation,div >.itemize1,div >.enumerate1,div >.tableofcontents{
+      @media (min-width: 30rem) {
+  margin-left: calc(0.25*100% - 0.25*30rem);
+  margin-right: calc(0.25*100% - 0.25*30rem);
+      }
+}
+div >.tableofcontents,.bibitem{
+      @media (min-width: 30rem) {
+  margin-left: calc(0.125*100% - 0.125*30rem);
+  margin-right: calc(0.125*100% - 0.125*30rem);
+      }
+}
+div >table.equation{
+      @media (min-width: 30rem) {
+  margin-left: calc(0.25*100% - 0.25*30rem);
+      }
+}
+.subsectionToc{
+  margin-left: 1em;
+  
+}
+.subsubsectionToc{
+  margin-left: 2em;
+}
+dt.description{margin-left: 0em;}
+.cmti-10{font-style: italic;}
+
+.cmbx-10,.ecbx-1000,.paragraphHead,.cmbx-9,.likeparagraphHead{
+  font-weight: bold;
+  color: var(--color-primary-lighter-2);
+}
+
+.bibitem{margin-bottom:0.7em;}
+
+.titleHead,.head,.center{text-align: center;}
+.titleHead{margin-bottom: 1em;}
+.head{margin-bottom: 2em;}
+.subtitleHead{text-align: center;
+  margin-top: 0em;}
+  
+.breakk{padding-bottom: 2em;
+    margin-top: 2em;
+  }
+  
+  hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    text-align: center;
+    height: 2em;
+}
+
+hr:after {
+    background: #fff;
+    content: 'Full Text';
+    padding: 0 0.3em;
+    position: relative;
+    top: -0.8em; 
+}

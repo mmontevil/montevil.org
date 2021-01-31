@@ -5,22 +5,23 @@ title: Home
 {% from "macros/linkCard.njk" import linkCard %}
 
 <h2 class="wrap" >Recent links</h2>
-<ol class="cards-list">
+<div class="cards-list">
   {% for link in collections.links | limit(4) %}
     {{ linkCard(link) }}
   {% endfor %}
-</ol>
+</div>
 <p class="more wrap">Discover <a href="/links/">all links</a>…</p>
-
+{#
 {% from "macros/noteCard.njk" import noteCard %}
 
 <h2 class="wrap">Recent notes</h2>
-<ol class="cards-list">
+<div class="cards-list">
 {% for note in collections.notes | limit(4) %}
   {{ noteCard(note) }}
 {% endfor %}
-</ol>
+</div>
 <p class="more wrap">Discover <a href="/notes/">all notes</a>…</p>
+#}
 
 {% set cssFilename = "page-tagscloud.css" %}
 {% include "add-css.njk" %}
