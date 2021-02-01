@@ -31,3 +31,4 @@ blockquote:not(.tweet-card) {
     font-style: normal;
   }
 }
+ .epigraph > p:first-child { @extend blockquote; }

@@ -778,7 +778,7 @@ color: var(--color-link);
 .pull-double{margin-left:-.46em}
 .push-double{margin-right:.46em}
 
-div > .indent, div >.noindent,dd > .noindent,.caption,div >.description,div >table.equation,div >.itemize1,div >.enumerate1,div >.tableofcontents, div.tabular,div >.tableofcontents,.bibitem, dd.enumerate {
+div > .indent, div >.noindent,section > .indent, section >.noindent,dd > .noindent,.caption,div >.description,div >table.equation,div >.itemize1,div >.enumerate1,div >.tableofcontents, div.tabular,div >.tableofcontents,.bibitem, dd.enumerate, div>blockquote , .enumerateRom,ol.references{
       @media (min-width: 30rem) {
   margin-left: calc(0.25*100% - 0.25*30rem);
   margin-right: calc(0.25*100% - 0.25*30rem);
@@ -793,13 +793,18 @@ div >.tableofcontents,.bibitem,.thebibliography{
 }
 
 */
-.sectionHead,.likesectionHead,.subsectionHead,.subsubsectionHead,.likesubsectionHead,.likesubsubsectionHead,  dt.enumerate,{
+.sectionHead,.likesectionHead,.subsectionHead,.subsubsectionHead,.likesubsectionHead,.likesubsubsectionHead,  dt.enumerate{
       @media (min-width: 30rem) {
   margin-left: calc(0.125*100% - 0.125*30rem);
   margin-right: calc(0.125*100% - 0.125*30rem);
       }
 }
-
+.sectionHead +.subsectionHead {
+  margin-top : 0.5em;
+}
+.subsectionHead +.subsubsectionHead {
+  margin-top : 0.5em;
+}
 div >table.equation{
       @media (min-width: 30rem) {
   margin-left: calc(0.25*100% - 0.25*30rem);
@@ -813,23 +818,34 @@ div >table.equation{
   margin-left: 2em;
 }
 dt.description{margin-left: 0em;}
-.cmti-10{font-style: italic;}
+.cmti-10,.ecti-1000{font-style: italic;}
 
-.cmbx-10,.ecbx-1000,.paragraphHead,.cmbx-9,.likeparagraphHead{
+.cmbx-10,.ecbx-1000,.paragraphHead,.cmbx-9,.likeparagraphHead,.ec-lmbx-10{
   font-weight: bold;
   color: var(--color-primary-lighter-2);
 }
 
 .bibitem, .thebibliography > *{margin-bottom:0.7em;}
 
-.titleHead,.head,.center{text-align: center;}
+.titleHead,.head,.center,.maketitle{text-align: center;}
 .titleHead{margin-bottom: 1em;}
 .head{margin-bottom: 2em;}
 .subtitleHead{text-align: center;
   margin-top: 0em;}
-  
+         span.smallcaps {
+            font-variant: small-caps;
+        }
 .breakk{
   }
+nav > ul, nav >ul >li>ul , nav >ul >li>ul>li>ul{
+  list-style-type: none;
+}
+.episource{text-align: right;
+  margin-left: 15%;
+}
+.td11{font-size: var(--font-size-s);}
+.enumerateRom{list-style-type: lower-roman;}
+//blockquote > p{margin-left: 2em; }
   /*
   hr {
     border: none;

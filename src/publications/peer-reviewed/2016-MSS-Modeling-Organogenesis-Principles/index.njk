@@ -1,0 +1,1116 @@
+---
+excerpt: "We developed a mathematical model of mammary gland based on proper biological principles: the default state of cell and the principle of organization."
+illust: icon_video8b.jpg
+---
+
+
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+
+    <h2 class="titleHead">Modeling mammary organogenesis from biological first principles: cells and their physical constraints</h2>
+  
+    <p class=indent center">
+        Maël Montévil<sup class="textsuperscript"><span class="ecrm-0900">a,b</span></sup>, Lucia Speroni<sup class="textsuperscript"><span class="ecrm-0900">c</span></sup>, Carlos Sonnenschein
+        <sup class="textsuperscript"><span class="ecrm-0900">d,e,c</span></sup>, Ana M. Soto
+        <sup class="textsuperscript">
+            <span class="ecrm-0900">d,c</span><math display="inline" xmlns="https://www.w3.org/1998/Math/MathML"><mo class="MathClass-bin"></mo></math>
+        </sup>
+    </p>
+    <p class=indent center">
+        <sup class="textsuperscript"><span class="ecti-0900">a</span></sup><span class="ecti-0800">Laboratoire "Mati</span><span class="ecti-0800">è</span><span class="ecti-0800">re et Syst</span><span class="ecti-0800">è</span>
+        <span class="ecti-0800">mes Complexes" (MSC), UMR 7057 CNRS, Universit</span><span class="ecti-0800">é</span> <span class="ecti-0800">Paris 7 Diderot, 75205 Paris Cedex 13, France</span> <a id="x1-3r2"></a>
+    </p>
+    <p class=indent center">
+        <sup class="textsuperscript"><span class="ecti-0900">b</span></sup><span class="ecti-0800">Institut d’Histoire et de Philosophie des Sciences et des Techniques (IHPST) - UMR 8590, 13, rue du Four, 75006 Paris, France</span>
+    </p>
+    <p class=indent center">
+        <a id="x1-4r3"></a> <sup class="textsuperscript"><span class="ecti-0900">c</span></sup><span class="ecti-0800">Department of Integrative Physiology and Pathobiology, Tufts University School of Medicine, Boston, MA USA</span>
+        <a id="x1-5r4"></a>
+    </p>
+    <p class=indent center">
+        <sup class="textsuperscript"><span class="ecti-0900">d</span></sup><span class="ecti-0800">Centre Cavaill</span><span class="ecti-0800">è</span><span class="ecti-0800">s, R</span><span class="ecti-0800">é</span>
+        <span class="ecti-0800">publique des Savoirs, CNRS USR3608, Coll</span><span class="ecti-0800">è</span><span class="ecti-0800">ge de France et </span><span class="ecti-0800">É</span><span class="ecti-0800">cole Normale Sup</span>
+        <span class="ecti-0800">é</span><span class="ecti-0800">rieure, Paris, France</span> <a id="x1-6r5"></a>
+    </p>
+    <p class=indent center">
+        <sup class="textsuperscript"><span class="ecti-0900">e</span></sup><span class="ecti-0800">Institut d’Etudes Avanc</span><span class="ecti-0800">é</span><span class="ecti-0800">es de Nantes, France.</span>
+    </p>
+    <hr class="topabs" />
+    <p class="noindent"><span class="ecbx-1000">Abstract</span></p>
+    <p class="indent"><!--l. 157--><!--l. 159--></p>
+    <p class="indent" style="text-align: justify;">
+        In multicellular organisms, relations among parts and between parts and the whole are contextual and interdependent. These organisms and their cells are ontogenetically linked: an organism starts as a cell that divides producing
+        non-identical cells, which organize in tri-dimensional patterns. These association patterns and cells types change as tissues and organs are formed. This contextuality and circularity makes it difficult to establish detailed cause
+        and effect relationships. Here we propose an approach to overcome these intrinsic difficulties by combining the use of two models; 1) an experimental one that employs 3D culture technology to obtain the structures of the mammary
+        gland, namely, ducts and acini, and 2) a mathematical model based on biological principles.
+    </p>
+    <p style="text-align: justify;"><!--l. 167--></p>
+    <p class="indent" style="text-align: justify;">
+        The typical approach for mathematical modeling in biology is to apply mathematical tools and concepts developed originally in physics or computer sciences. Instead, we propose to construct a mathematical model based on proper
+        biological principles. Specifically, we use principles identified as fundamental for the elaboration of a theory of organisms, namely i) the default state of cell proliferation with variation and motility and ii) the principle of
+        organization by closure of constraints.
+    </p>
+    <p style="text-align: justify;"><!--l. 173--></p>
+    <p class="indent" style="text-align: justify;">
+        This model has a biological component, the cells, and a physical component, a matrix which contains collagen fibers. Cells display agency and move and proliferate unless constrained; they exert mechanical forces that i) act on
+        collagen fibers and ii) on other cells. As fibers organize, they constrain the cells on their ability to move and to proliferate. The model exhibits a circularity that can be interpreted in terms of closure of constraints.
+    </p>
+    <p style="text-align: justify;"><!--l. 178--></p>
+    <p class="indent" style="text-align: justify;">
+        Implementing the mathematical model shows that constraints to the default state are sufficient to explain ductal and acinar formation, and points to a target of future research, namely, to inhibitors of cell proliferation and
+        motility generated by the epithelial cells. The success of this model suggests a step-wise approach whereby additional constraints imposed by the tissue and the organism could be examined <span class="ecti-1000">in silico </span>and
+        rigorously tested by <span class="ecti-1000">in vitro </span>and <span class="ecti-1000">in vivo </span>experiments, in accordance with the organicist perspective we embrace.
+        <!--l. 189-->
+    </p>
+    <p class="noindent"><span class="paragraphHead">Keywords:</span><span class="ecti-1000">&nbsp;</span> Ductal morphogenesis, mathematical models, organicism, organizational closure, acinar morphogenesis, mammary gland morphogenesis</p>
+    <hr class="endfigure" />
+
+    <div class="epigraph">
+        <p class="indent">
+            Theory and fact are equally strong and utterly interdependent; one has no meaning without the other. We need theory to organize and interpret facts, even to know what we can or might observe. And we need facts to validate
+            theories and give them substance. Theory and fact are equally strong and utterly interdependent; one has no meaning without the other. We need theory to organize and interpret facts, even to know what we can or might observe.
+            And we need facts to validate theories and give them substance.
+        </p>
+
+    <div class="episource">S.J. Gould (1998)</div>
+</div>
+<h3 class="sectionHead"><span class="titlemark">1. </span> <a id="x1-10001"></a> Introduction</h3>
+<p class="noindent">
+    Scientific theories provide organizing principles and construct objectivity by framing observations and experiments (Longo &amp; Soto, this issue). On the one hand, theories construct the proper observables and on the other they provide
+    the framework for studying them. Good theories, like Newton’s law of inertia and the conservation of momentum from his 3<sup class="textsuperscript"><span class="ecrm-0900">rd</span></sup> law were never abandoned but were reinstated
+    while physics underwent further theoretical changes. Indeed, a deeper understanding of these principles was gained through E. Noether’s theorems which justify the conservation properties of energy and momenta in terms of symmetries in
+    the state equations (van Fraassen 1989). However, a theory does not need to be “right” to guide the praxis of good experiments. Even a “wrong” theory can be useful if, when proven incorrect it is modified or even dismissed.
+</p>
+<!--l. 224-->
+<p class="indent">
+    Here we demonstrate that the application of the principles we propose to use for the construction of a theory of organisms results in a better understanding of morphogenesis (the generation of biological form) than the common practice
+    of using metaphors derived from the mathematical theory of information as theoretical background [for a critique see Perret and Longo in this issue, and (Longo et al. 2015)]. Our approach diverges from the biophysical methodology which
+    is based on conservation principles and their associated symmetries, on the one hand, and with optimization principles, on the other. In contrast, biology is about an incessant breaking of symmetries (Longo et al. 2015; Longo and
+    Montévil 2011; Longo and Soto, this issue). Taking mammary gland morphogenesis as an example, here we show that our theoretical principles are useful to provide a framework for the mathematical modelling of tissue morphogenesis. We will
+    focus on the manner in which we propose to deal with cellular behavior.
+</p>
+<!--l. 234-->
+<h3 class="sectionHead"><span class="titlemark">2. </span> <a id="x1-20002"></a>Theoretical principles</h3>
+<!--l. 235-->
+<p class="noindent">
+    We begin by identifying a foundational principle, the default state of cells, which is proliferation with variation and motility. This default state is a manifestation of the agency of living objects, and thus, a cause; it does not need
+    an explanation or an external cause (Longo et al. 2015, Soto et al. 2016). The default state is what happens when nothing is done to the system. Second, we adopt the notion that organismal constraints prevent the expression of the
+    default state. This means that constraints determine when proliferation with variation and/or motility are allowed to instantiate. Third, we consider it essential to stress that biological processes make full sense only in the context
+    of the organism in which they take place. As stated by Claude Bernard: “The physiologist and the physician must never forget that the living being comprises an organism and an individuality. If we decompose the living organism into its
+    various parts, it is only for the sake of experimental analysis, not for them to be understood separately. Indeed, when we wish to ascribe to a physiological quality its value and true significance, we must always refer to this whole
+    and draw our final conclusions only in relation to its effects in the whole.” We address this aspect of biological integration using the notion of closure of constraints (see Mossio et al this issue). These constraints are considered
+    “local invariants” because they do not change at the time scale of the process they influence. In an organism, these constraints depend collectively on each other thus attaining closure. In turn, closure provides an understanding of the
+    relative stability of biological organizations. Fourth, organisms spontaneously undergo variation. A fundamental generator of variation is the default state. Unlike physical systems, biological ones are not framed by invariants and
+    invariant preserving transformations. Instead, the flow of time is associated with qualitative changes of organization that cannot be stated <span class="ecti-1000">a priori</span>. This original feature is directly related to the
+    historical nature of biological objects, since a specific object is the result of this unpredictable accumulation of changes (Longo et al. 2015, this issue, Montévil et al, this issue). Another notion that becomes fundamental through
+    this principle of variation is that of contextuality. Indeed, understanding biological organization requires taking into account its interaction with the surrounding environment, both at a given time-point and through the successive
+    environments that biological objects traverse (Soto and Sonnenschein 2005)(see Miquel and Hwang, Montévil et al and Sonnenschein and Soto in this issue). In addition to the role that constraints play in canalizing processes, they make
+    possible the appearance of new constraints and thus changes of organization. Lastly, the framing principle states that biological phenomena should be understood as the non-identical iterations of morphogenetic processes. Biological
+    processes iterate at all levels of organization. Organization involves iteration through the circularity of closures, but organization itself is also iterated as reproduction. Inside organisms, structures are also iterated, for example
+    in the case of branching morphogenesis. In all cases, the principle of variation applies so that each iteration may be associated with unpredictable qualitative changes (Longo et al. 2015).
+</p>
+<!--l. 266-->
+<p class="indent">
+    Together these principles provide a genuinely biological framework for the understanding of organismal phenomena. This framework combines the integrative viewpoint inherited from physiology, the centrality of biological variation that
+    derives from the theory of evolution and the default state that links organismal and evolutionary biology.
+</p>
+<!--l. 270-->
+<h3 class="sectionHead"><span class="titlemark">3. </span> <a id="x1-30003"></a> The mammary gland as a model system</h3>
+<!--l. 271-->
+<p class="noindent">
+    The mammary gland is made up of two main tissue types, namely, i) the epithelial parenchyma, its function is to produce and deliver milk, and ii) the stroma which surrounds and supports the epithelium. The stroma is composed of various
+    cell types (fibroblasts, adipocytes, and immune cells), blood vessels, nerves, and an extracellular fibrous matrix of which the main component is collagen type-I. In the resting gland the epithelium is organized into a ductal tree.
+    During pregnancy a second epithelial compartment, the alveoli, develop from the ducts; these are the structures that produce and secrete milk. Throughout development, reciprocal interactions between the epithelium and the stroma are
+    responsible for the structure and function of mammary glands. Perturbations of epithelial-stromal interactions result in various pathologies including neoplasms (Soto and Sonnenschein 2011, Sonnenschein and Soto 2016).
+</p>
+<!--l. 280-->
+<p class="indent">
+    The mammary gland undergoes morphological and functional changes throughout life. Mammary organogenesis has been studied in most detail in rodents. In mice, the mammary placodes become visible between embryonic day (E) 11 and 12 and
+    they then develop into mammary buds by E13. At this time, several layers of mesenchyme condense surrounding the buds in a concentric fashion. In female mouse embryos the mammary bud sprouts and invades the presumptive fat pad. At E18,
+    the mammary epithelium consists of an incipient ductal tree (Balinsky 1950; Robinson et al. 1999). Although fetal mammary gland development occurs even in the absence of receptors for mammotropic hormones suggesting that these hormones
+    are not required at this stage, fetal mammary morphogenesis can be altered by exposure to hormonally-active chemicals (Vandenberg et al. 2007; Vandenberg et al. 2007). From the onset of puberty, the development of the mammary gland is
+    subject to hormonal regulation. At the onset of puberty, estrogens induce the formation of club-shaped structures at the end of the ducts, called terminal end buds (TEBs). Thereafter, the epithelium begins to fill the fat pad and
+    branches. Progesterone induces lateral branching. If pregnancy occurs, prolactin in combination with estrogen and progesterone initiates a characteristic lobuloalveolar development [reviewed in (Brisken and O’Malley 2010)]. When
+    lactation ceases, involution of the alveolar structures occurs and the mammary gland returns to its resting state.
+</p>
+<!--l. 294-->
+<h4 class="subsectionHead"><span class="titlemark">3.1. </span> <a id="x1-40003.1"></a>Biological models for the study of mammary gland biology</h4>
+<!--l. 296-->
+<p class="noindent">
+    3D culture systems allow for the dynamic study of epithelial morphogenesis and the organization of the stroma. These models are intended to mimic conditions prevailing in a living organism while reducing the number of constraints
+    present <span class="ecti-1000">in</span> <span class="ecti-1000">vivo </span>to those which theoretically and/or empirically are considered to be the most relevant ones for the subject study. When designing a 3D culture model one must
+    first define the main characteristics of the target tissue that the model aims to reproduce, and which stage of mammary gland development the investigator is interested in reproducing <span class="ecti-1000">in vitro</span>. The
+    objective of mimicking the tissue of origin is tempered by the need to make it manageable by reducing the model to a few components. This allows the researcher to infer from these results the contribution of these components to the
+    mammary gland phenotype <span class="ecti-1000">in vivo</span>. The resulting model may then be compared to more complex ones resulting from the step-wise addition of relevant components, and eventually to the behavior of the gland
+    <span class="ecti-1000">in</span> <span class="ecti-1000">situ</span>.
+</p>
+<!--l. 307-->
+<p class="indent">
+    Epithelial–stromal interactions can be studied using 3D co-cultures of epithelial and stromal cells by analyzing matrix remodeling and epithelial morphogenesis. With regard to matrices the most biologically relevant ones are those that
+    provide the structure and rigidity of the model tissue that allows the cellular components to attain characteristics seen in the breast.
+</p>
+<!--l. 312-->
+<p class="indent">
+    Here we focus on collagen-based matrices since collagen is a main component of the mammary stroma that allows for breast epithelial cells to organize into structures that closely resemble those observed
+    <span class="ecti-1000">in vivo </span>(Krause et al. 2012; Krause et al. 2008; Dhimolea et al. 2010; Speroni et al. 2014; Barnes et al. 2014).
+</p>
+<!--l. 316-->
+<h5 class="subsubsectionHead"><span class="titlemark">3.1.1. </span> <a id="x1-50003.1.1"></a> MCF10A 3D culture model</h5>
+<!--l. 317-->
+<p class="noindent">
+    To test the mathematical model, we used data generated using the MCF10A 3D culture model described in (Barnes et al. 2014). In this 3D culture model, the proportion of acinar and ductal structures can be modified by changing the
+    concentration of reconstituted basement membrane (Matrigel) in the extracellular matrix (ECM) (Krause et al. 2008; Barnes et al. 2014). Briefly, MCF10A human breast epithelial cells were seeded in either bovine type-I collagen matrix or
+    in mixed matrices containing collagen and Matrigel at 5 and 50% v/v. The final collagen concentration in all gels was 1.0 mg/ml. Gels were prepared by carefully pouring 500
+    <!--l. 322-->µl of the cell-matrix mixture into wells of a glass-bottomed 6 well plate. The gels were allowed to solidify for 30 min at 37<span class="tcrm-1000">°</span>C before adding 1.5 ml of cell maintenance culture medium into
+    each well. Cultures were maintained at 37<span class="tcrm-1000">°</span>C in an atmosphere containing 6% CO<sub class="textsubscript"><span class="ecrm-0900">2</span></sub>/94% and 100% humidity 5 or 7 days, and the medium was changed
+    every 2 days. Live cell-imaging was conducted with a Leica SP5 microscope (Leica-Microsystems, Germany). Simultaneous reflectance confocal microscopy (RCM) and bright-field images were acquired using a 40
+    <span class="tcrm-1000">×</span>, 1.1 numerical aperture, water immersion objective with separate photomultiplier tubes using the Argon 488 nm laser line. The RCM signal was collected between wavelengths of 478–498 nm with a pinhole
+    size of 57µm. For additional details see (Barnes et al. 2014).
+</p>
+<!--l. 332-->
+<h4 class="subsectionHead"><span class="titlemark">3.2. </span> <a id="x1-60003.2"></a> Current mathematical models of mammary gland morphogenesis</h4>
+<!--l. 333-->
+<p class="noindent">
+    Several types of mathematical models have been used for the study of mammary gland morphogenesis. These models focus on distinct aspects of this phenomenon, and address a given aspect at a particular time and space scale. These diverse
+    models also focus on different kinds of determinants, some chemical, some mechanical, some both.
+</p>
+<!--l. 336-->
+<p class="indent"><a id="x1-60011"></a></p>
+<hr class="float" />
+<div class="float">
+    <div class="tabular2">
+        <table class="tabular" dir="ltr" id="TBL-1" rules="groups" style="width: 100%; table-layout: fixed;" width="2493" height="678" cellspacing="0" cellpadding="0" align="center">
+            <colgroup id="TBL-1-1g">
+                <col id="TBL-1-1" />
+            </colgroup>
+            <colgroup id="TBL-1-2g">
+                <col id="TBL-1-2" />
+            </colgroup>
+            <colgroup id="TBL-1-3g">
+                <col id="TBL-1-3" />
+            </colgroup>
+            <colgroup id="TBL-1-4g">
+                <col id="TBL-1-4" />
+            </colgroup>
+            <colgroup id="TBL-1-5g">
+                <col id="TBL-1-5" />
+            </colgroup>
+            <tbody>
+                <tr id="TBL-1-1-" style="vertical-align: baseline;">
+                    <td class="td11" id="TBL-1-1-1" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 340-->
+                        <p class="noindent"><span class="ecbx-0900">Object studied</span></p>
+                    </td>
+                    <td class="td11" id="TBL-1-1-2" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 341-->
+                        <p class="noindent"><span class="ecbx-0900">Modeling cell</span> <span class="ecbx-0900">proliferation</span></p>
+                    </td>
+                    <td class="td11" id="TBL-1-1-3" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 342-->
+                        <p class="noindent"><span class="ecbx-0900">Modeling motility</span></p>
+                    </td>
+                    <td class="td11" id="TBL-1-1-4" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 343-->
+                        <p class="noindent"><span class="ecbx-0900">Implicit default state</span></p>
+                    </td>
+                    <td class="td11" id="TBL-1-1-5" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 344-->
+                        <p class="noindent"><span class="ecbx-0900">Reference</span></p>
+                    </td>
+                </tr>
+
+                <tr id="TBL-1-2-" style="vertical-align: baseline;">
+                    <td class="td11" id="TBL-1-2-1" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 345-->
+                        <p class="noindent"><span class="ecbx-0900">Collagen</span> <span class="ecbx-0900">network</span> <span class="ecbx-0900">remodeling</span></p>
+                    </td>
+                    <td class="td11" id="TBL-1-2-2" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 346-->
+                        <p class="noindent"><span class="ecrm-0900">Not discussed.</span></p>
+                    </td>
+                    <td class="td11" id="TBL-1-2-3" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 347-->
+                        <p class="noindent"><span class="ecrm-0900">ECM constrains</span> <span class="ecrm-0900">movement.</span></p>
+                    </td>
+                    <td class="td11" id="TBL-1-2-4" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 348-->
+                        <p class="noindent"><span class="ecrm-0900">Motility.</span></p>
+                    </td>
+                    <td class="td11" id="TBL-1-2-5" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 349-->
+                        <p class="noindent"><span class="ecrm-0900">(Harjanto and</span> <span class="ecrm-0900">Zaman 2013)</span></p>
+                    </td>
+                </tr>
+
+                <tr id="TBL-1-3-" style="vertical-align: baseline;">
+                    <td class="td11" id="TBL-1-3-1" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 350-->
+                        <p class="noindent"><span class="ecbx-0900">Collagen and</span> <span class="ecbx-0900">fibroblasts</span></p>
+                    </td>
+                    <td class="td11" id="TBL-1-3-2" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 351-->
+                        <p class="noindent"><span class="ecrm-0900">Not discussed.</span></p>
+                    </td>
+                    <td class="td11" id="TBL-1-3-3" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 352-->
+                        <p class="noindent"><span class="ecrm-0900">Cells spontaneously exert</span> <span class="ecrm-0900">forces and move. Stress</span> <span class="ecrm-0900">may prevent motion.</span></p>
+                    </td>
+                    <td class="td11" id="TBL-1-3-4" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 353-->
+                        <p class="noindent"><span class="ecrm-0900">Motility.</span></p>
+                    </td>
+                    <td class="td11" id="TBL-1-3-5" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 354-->
+                        <p class="noindent"><span class="ecrm-0900">(Dallon et al.</span> <span class="ecrm-0900">2014)</span></p>
+                    </td>
+                </tr>
+
+                <tr id="TBL-1-4-" style="vertical-align: baseline;">
+                    <td class="td11" id="TBL-1-4-1" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 355-->
+                        <p class="noindent"><span class="ecbx-0900">Acinus in 2D</span></p>
+                    </td>
+                    <td class="td11" id="TBL-1-4-2" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 356-->
+                        <p class="noindent">
+                            <span class="ecrm-0900">Limited space prevents</span> <span class="ecrm-0900">proliferation. Although</span> <span class="ecrm-0900">not included in the math</span>
+                            <span class="ecrm-0900">model, it is stated that</span> <span class="ecrm-0900">proliferation is regulated</span> <span class="ecrm-0900">by signals/growth</span> <span class="ecrm-0900">factors.</span>
+                        </p>
+                    </td>
+                    <td class="td11" id="TBL-1-4-3" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 358-->
+                        <p class="noindent"><span class="ecrm-0900">Not discussed.</span></p>
+                    </td>
+                    <td class="td11" id="TBL-1-4-4" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 359-->
+                        <p class="noindent"><span class="ecrm-0900">Proliferation (quiescence</span> <span class="ecrm-0900">is invoked the</span> <span class="ecrm-0900">discussion).</span></p>
+                    </td>
+                    <td class="td11" id="TBL-1-4-5" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 360-->
+                        <p class="noindent"><span class="ecrm-0900">(Rejniak</span> <span class="ecrm-0900">and Anderson</span> <span class="ecrm-0900">2008)</span></p>
+                    </td>
+                </tr>
+
+                <tr id="TBL-1-5-" style="vertical-align: baseline;">
+                    <td class="td11" id="TBL-1-5-1" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 361-->
+                        <p class="noindent"><span class="ecbx-0900">Acinus in 3D</span></p>
+                    </td>
+                    <td class="td11" id="TBL-1-5-2" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 362-->
+                        <p class="noindent">
+                            <span class="ecrm-0900">Only cells adjacent to</span> <span class="ecrm-0900">the basement membrane</span> <span class="ecrm-0900">proliferate. Cells have</span>
+                            <span class="ecrm-0900">a proliferative potential</span> <span class="ecrm-0900">that decreases at each</span> <span class="ecrm-0900">division.</span>
+                        </p>
+                    </td>
+                    <td class="td11" id="TBL-1-5-3" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 364-->
+                        <p class="noindent"><span class="ecrm-0900">Not discussed.</span></p>
+                    </td>
+                    <td class="td11" id="TBL-1-5-4" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 365-->
+                        <p class="noindent">
+                            <span class="ecrm-0900">Shifts from proliferation</span> <span class="ecrm-0900">to quiescence as time</span> <span class="ecrm-0900">elapses. Not discussed for</span> <span class="ecrm-0900">inner cells.</span>
+                        </p>
+                    </td>
+                    <td class="td11" id="TBL-1-5-5" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 366-->
+                        <p class="noindent"><span class="ecrm-0900">(Tang et al.</span> <span class="ecrm-0900">2011)</span></p>
+                    </td>
+                </tr>
+
+                <tr id="TBL-1-6-" style="vertical-align: baseline;">
+                    <td class="td11" id="TBL-1-6-1" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 367-->
+                        <p class="noindent"><span class="ecbx-0900">Review on</span> <span class="ecbx-0900">biophysical cell</span> <span class="ecbx-0900">self-assembly</span></p>
+                    </td>
+                    <td class="td11" id="TBL-1-6-2" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 368-->
+                        <p class="noindent"><span class="ecrm-0900">No proliferation.</span></p>
+                    </td>
+                    <td class="td11" id="TBL-1-6-3" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 369-->
+                        <p class="noindent">
+                            <span class="ecrm-0900">Cells show trend to move</span> <span class="ecrm-0900">modeled by a parameter</span> <span class="ecrm-0900">formally similar to</span> <span class="ecrm-0900">temperature.</span>
+                        </p>
+                    </td>
+                    <td class="td11" id="TBL-1-6-4" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 370-->
+                        <p class="noindent">
+                            <span class="ecrm-0900">If this "temperature</span> <span class="ecrm-0900">parameter" is an intrinsic</span> <span class="ecrm-0900">property of cells, the</span>
+                            <span class="ecrm-0900">default state is motility,</span> <span class="ecrm-0900">otherwise quiescence.</span>
+                        </p>
+                    </td>
+                    <td class="td11" id="TBL-1-6-5" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 372-->
+                        <p class="noindent"><span class="ecrm-0900">(Neagu 2006)</span></p>
+                    </td>
+                </tr>
+
+                <tr id="TBL-1-7-" style="vertical-align: baseline;">
+                    <td class="td11" id="TBL-1-7-1" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 373-->
+                        <p class="noindent"><span class="ecbx-0900">Terminal End</span> <span class="ecbx-0900">Buds</span></p>
+                    </td>
+                    <td class="td11" colspan="2" id="TBL-1-7-2" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <div class="multicolumn" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                            <span class="ecrm-0900">Not causal analysis (measured or assessed</span> <span class="ecrm-0900">indirectly).</span>
+                        </div>
+                    </td>
+                    <td class="td11" id="TBL-1-7-4" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 375-->
+                        <p class="noindent"><span class="ecrm-0900">NA</span></p>
+                    </td>
+                    <td class="td11" id="TBL-1-7-5" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 376-->
+                        <p class="noindent"><span class="ecrm-0900">(Paine et al.</span> <span class="ecrm-0900">2016)</span></p>
+                    </td>
+                </tr>
+
+                <tr id="TBL-1-8-" style="vertical-align: baseline;">
+                    <td class="td11" id="TBL-1-8-1" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 377-->
+                        <p class="noindent"><span class="ecbx-0900">Epithelial tree</span></p>
+                    </td>
+                    <td class="td11" id="TBL-1-8-2" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 378-->
+                        <p class="noindent">
+                            <span class="ecrm-0900">Components resulting</span> <span class="ecrm-0900">from the action of matrix</span> <span class="ecrm-0900">metalloproteinases are</span>
+                            <span class="ecrm-0900">inferred to stimulate cell</span> <span class="ecrm-0900">proliferation.</span>
+                        </p>
+                    </td>
+                    <td class="td11" id="TBL-1-8-3" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 379-->
+                        <p class="noindent"><span class="ecrm-0900">Not discussed.</span></p>
+                    </td>
+                    <td class="td11" id="TBL-1-8-4" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 380-->
+                        <p class="noindent"><span class="ecrm-0900">Quiescence.</span></p>
+                    </td>
+                    <td class="td11" id="TBL-1-8-5" style="word-wrap: break-word; text-align: left; vertical-align: middle;">
+                        <!--l. 381-->
+                        <p class="noindent"><span class="ecrm-0900">(Grant et al.</span> <span class="ecrm-0900">2004)</span></p>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <figcaption class="caption"><span class="id">Table&nbsp;1: </span><span class="content">Cell behavior according to current mathematical models of mammary gland morphogenesis. </span></figcaption>
+</div>
+<hr class="endfloat" />
+<!--l. 387-->
+<p class="indent">
+    Oftentimes the modelers make mathematical hypotheses on the behavior of cells without making explicit the broader biological significance of these hypotheses. Our mathematical model instead is based on general biological principles.
+    Some models seem to implicitly rely on the default state that we propose: that is, cells spontaneously move or proliferate and the model discusses specific constraints on these behaviors. In other models, cells are quiescent without any
+    constraints acting on them and chemicals stimulate proliferation and/or movement without removing constraints. Still, in other models even opposite behaviors co-exist and no explicit attempt to reconcile these opposites is made. In
+    Table <a href="#x1-60011">1</a> we review the way several models deal with cell behavior.
+</p>
+<!--l. 398-->
+<p class="indent">
+    In these models assumptions on cell behavior are largely <span class="ecti-1000">ad hoc</span>, varying from one model to another. Occasionally, the model and its interpretation in the Discussion are inconsistent. For example, in
+    (Rejniak and Anderson 2008) proliferation is constrained by the available space but it is also attributed to "signals".
+</p>
+<!--l. 403-->
+<p class="indent">
+    Various models implicitly adopt the premise that the default state of cells is proliferation or motility. Other models (Grant et al. 2004) do not adopt this premise; however they may be reinterpreted by adopting our principles. In the
+    Grant et al model, the matrix metalloproteinases are assumed to have a positive effect on proliferation by degrading the ECM. Because the authors also infer that the default state is quiescence, they assume that this degradation
+    produces a chemical which stimulates proliferation. A simpler hypothesis that we favor is that this degradation removes the mechanical constraint of the ECM on the default state of cell proliferation with variation and motility. To our
+    knowledge, no model of mammary gland morphogenesis has taken both aspects of our default state into account.
+</p>
+<!--l. 411-->
+<p class="indent">
+    The main aim of this article is to emphasize that making explicit the assumption that the default state is proliferation with variation and motility enables us to model morphogenesis on precise theoretical bases. The models reviewed
+    above focus on different aspects of mammary gland morphogenesis. For instance, models of ECM remodeling focus on fibroblasts and do not discuss epithelial morphogenesis. Several agent-based models focus on the behavior of epithelial
+    cells during acinus formation in conditions that preclude ductal morphogenesis. Finally, other models focus on larger scale organogenesis but do not provide a detailed account of cellular behavior. Determinants of these models are
+    either chemical, mechanical forces or empty space. Note however that in most cases morphogenesis is assumed to be driven by chemical interactions (Iber and Menshykau 2013). This article will focus on the formation of epithelial
+    structures, mostly ducts but also acini on the basis of mechanical interactions between cells and between cells and the ECM.
+</p>
+<!--l. 421-->
+<p class="indent">
+    Mammary gland morphogenesis <span class="ecti-1000">in vivo </span>requires an interplay between the epithelial compartment and the stroma which contains fibroblasts, adipocytes and ECM. Our simplified model contains epithelial cells
+    and a stroma devoid of cells but containing the ECM which <span class="ecti-1000">in vivo </span>would be a product of the stromal cells. The assumption that the ECM is the mechanically important component of the stroma opens the
+    possibility to explore a set of minimal and manageable conditions that allow for a bi-stable determination of acini and ducts, the two structures that characterize the mammary gland parenchyma. In the rest of the text we will discuss
+    all experimental results and mathematical assumptions under the hypothesis that the default state of cells is proliferation with variation and motility.
+</p>
+<h4 class="subsectionHead"><span class="titlemark">3.3. </span> <a id="x1-70003.3"></a> From the 3D culture model to a mathematical model</h4>
+<!--l. 431-->
+<h5 class="subsubsectionHead"><span class="titlemark">3.3.1. </span> <a id="x1-80003.3.1"></a> Proliferation</h5>
+<!--l. 432-->
+<p class="noindent">
+    As expected from the default state, breast epithelial cells proliferate maximally in serumless medium. Addition of hormone-free serum to culture medium results in a dose-dependent inhibition of cell proliferation. This is due to the
+    effect of serum albumin, a main constraint for the proliferation of estrogen-target cells. This constraint could be lifted by lowering albumin or serum concentration, a procedure easily performed in 2D cell cultures, or by adding
+    estrogens, which is the natural way the organism uses to neutralize the effect of serum albumin (Sonnenschein et al. 1996).
+</p>
+<!--l. 439-->
+<p class="indent">
+    Additional constraints are those imposed by cell-cell contact, which are weaker in 2D culture than in 3D. This is because 3D structures allow for cell-cell contact in practically all directions, while in 2D these contacts are more
+    restricted. For example, the estrogen-sensitive T47D cell line is inhibited from proliferating when placed in medium containing serum. This constraint is lifted by the addition of estrogen. When placed in 2D culture, the cell number
+    ratio between serum plus estrogen and serum without estrogen is 3.75, while the same experiment performed in 3D culture results in a ratio of 2.5 (Speroni et al. 2014). These data indicate that the organization of cells into epithelial
+    structures constrains cell proliferation more effectively than the one in 2D culture, where cells are not organized into closely packed epithelial structures. Additionally, in 2D cultures cells attach to the bottom of the culture dish,
+    a surface that is exceedingly more rigid than the conditions these very cells encounter within the tissue of origin. In contrast, 3D cultures could be engineered to mimic the rigidity of the tissue of origin.
+</p>
+<!--l. 450-->
+<h5 class="subsubsectionHead"><span class="titlemark">3.3.2. </span> <a id="x1-90003.3.2"></a> Motility</h5>
+<!--l. 451-->
+<p class="noindent">
+    In classical mechanics, motion is a consequence of external forces. In biology, the situation is different but compatible with mechanics. Cells need a configuration of forces to be able to move; for example, they need a support to be
+    able to crawl on it, or fibers to which they can attach and pull in order to move. However, unlike inert objects, cells initiate movement on their own. In other words, they are autonomous agents which express their default state
+    (Sonnenschein and Soto, 1999). Cells move unless there are constraints which prevent them from doing so. Reciprocally, a given mechanical force acting upon biological entities such as cells produces clearly different effects than forces
+    acting on inert matter (Soto et al. 2008; Longo and Montévil 2014). For example, gravity in mechanics is just a force proportional to the mass of the object and oriented towards the center of the earth. In biology, however, gravity
+    becomes a constant constraint, which has not been altered since the origin of life. Biological organization reacts to it in various ways. For example, swim bladders, wings, limbs and tree trunks are responsive to gravitational force but
+    are not explained by it. The behavior of molecules in cells and the overall behavior of tissues and organs are massively impacted when in microgravity conditions (Bizzarri et al. 2014).
+</p>
+
+<hr class="float" />
+<figure class="figure"><a id="x1-90011"></a>
+            <img alt="Projections of breast epithelial cells
+    seeded in a fibrilar matrix." src="figure1.jpg" width="850em" class="zoom"/>
+            
+  
+    <figcaption class="caption">
+        <span class="id">Figure&nbsp;1: </span>
+        <span class="content">
+            <span class="ecti-1000">Projections of breast epithelial cells seeded in a fibrilar matrix. </span>Soon after seeding cells emit projections in all directions; these projections are involved in collagen organization. Still
+            images from video <a href="#x1-310011">1</a> at 3, 4, 5 and 6 hours after seeding.
+        </span>
+    </figcaption>
+</figure>
+<hr class="figure" />
+<figure class="figure">
+    <a id="x1-90022"></a>
+                <img alt="SEM images of epithelial structures and their matrix at day 5." src="figure2.jpg" width="700em" class="zoom"/>
+
+    <figcaption class="caption">
+        <span class="id">Figure&nbsp;2: </span>
+        <span class="content">
+            <span class="ecti-1000">SEM images of epithelial structures and</span> <span class="ecti-1000">their matrix at day 5. </span>(A) Collagen fibers are clearly distinguished in a collagen-only matrix. (B) Addition of 5% Matrigel
+            results in a globular rather than fibrilar matrix. (C) The globular matrix is more compact in 50% Matrigel. (D) Tube-like cell processes (arrows) are observed at the tip of a duct in a collagen-only matrix. (E) Ductal and (F)
+            acinar structures in 5% Matrigel; Matrigel forms a localized coating in areas surrounding the acinus. (G) An acinus grown in 50% Matrigel; collagen fibers are not visible. Scale bar, 10µm in A to C and 15µm in D to G. Reproduced
+            with permission from (Barnes et al. 2014).
+        </span>
+    </figaption>
+</figure>
+<hr class="endfigure" />
+<figure class="figure">
+    <a id="x1-90033"></a>
+
+                    <img alt="Breast epithelial cells forming an acinus in a non-fibrilar matrix at day
+        4." src="figure3.jpg" width="400em" class="zoom"/>
+
+    <figcaption class="caption">
+        <span class="id">Figure&nbsp;3: </span>
+        <span class="content">
+            <span class="ecti-1000">Breast epithelial cells forming an acinus in a</span> <span class="ecti-1000">non-fibrilar matrix at day 4. </span>Cells display limited motility and emit only short projections into the matrix (arrow).
+            Cells rotate and divide resulting in the formation of an acinus, a sphere with a central lumen (circle). Still image from video <a href="#x1-310022">2</a>.
+        </span>
+    </figcaption>
+</figure>
+<hr class="endfigure" />
+<!--l. 497-->
+<p class="indent">
+    The constraints to motility that cells experience in the tissue environment can be modeled in a 3D culture system. In this system, the tissue environment is recreated by the matrix in which the cells are seeded. Cells exert their
+    motility by using filopodia and pseudopodia. When they encounter a structure such as a fiber they can use it for locomotion or pull on it to attach. Breast epithelial cells seeded in a fibrilar matrix emit projections in all directions
+    soon after seeding (Figure <a href="#x1-90011">1</a>; video <a href="#x1-310011">1</a>). This process allows cell elongation which precedes the formation of ducts (tubular structures) and branching (Barnes et al. 2014). Amorphous,
+    non-fibrilar matrix proteins as well as fibers also oppose migration and cause resistance due to their relative rigidity and their lack of pores (Figure <a href="#x1-90022">2</a>). Breast epithelial cells growing in a non-fibrilar
+    matrix display limited motility and emit short projections into the matrix that retract soon afterwards. Cells rotate and divide resulting in the formation of an acinus, a sphere with a central lumen (Tanner et al. 2012) (Figure
+    <a href="#x1-90033">3</a>; video <a href="#x1-310022">2</a>). Cell movement is also constrained by the pore size of the matrix, this is mostly determined by fiber alignment, fiber density and abundance of non-fibrous matrix materials.
+    Other factors such as pore size and matrix rigidity could contribute to the morphological differences of the epithelial structures. Pore size is bigger in the fibrilar matrix than in the globular matrix (Figure
+    <a href="#x1-90022">2</a>). The globular matrix is stiffer than the fibrilar matrix, however this proved to be a minor contributor to epithelial phenotype compared to collagen fiber distribution (Barnes et al. 2014).
+</p>
+<!--l. 513-->
+<p class="noindent">
+    <span class="paragraphHead"><a id="x1-100003.3.2"></a> <span class="ecbx-1000">Cell adhesion .</span></span> Cells can adhere to each other after division of their progenitor; they can also attach to any migrant cells they encounter.
+    Once an epithelial structure, such as a duct or an acinus, is formed, adhesion will be maintained as new cells are formed or replaced. Adhesion constrains the motion of cells. During ductal morphogenesis, single cells can detach from
+    the main structure and may also be incorporated back into the structure from which they detached (Figure <a href="#x1-100014">4</a>, video <a href="#x1-310033">3</a>). This phenomenon suggests an environment-sensing strategy as well as
+    a means used by epithelial structures to modify the matrix prior to growth in a certain direction. During lumen formation, cells migrate toward the periphery of the epithelial structure leaving a space that will be filled by fluid.
+</p>
+<!--l. 523-->
+<p class="indent"><a id="x1-100014"></a></p>
+<hr class="float" />
+<figure class="float figure">
+  
+                    <img alt="Branching duct at day 7 of culture." src="figure4.jpg" width="950em" class="zoom"/>
+
+    <figcaption class="caption">
+        <span class="id">Figure&nbsp;4: </span>
+        <span class="content">
+            <span class="ecti-1000">Branching duct at day 7 of culture. </span>A cell (arrow) detaches from the main structure and is incorporated back into the same structure. Still images from video <a href="#x1-310033">3</a>, each frame
+            corresponds to one hour.
+        </span>
+    </figcaption>
+</figure>
+<hr class="figure" />
+<figure class="figure">
+    <a id="x1-110015"></a>
+
+                    <img alt="Collagen fibers and breast epithelial structures after 6 days in culture." src="figure5.jpg" width="500em" class="zoom"/>
+
+    <figcaption class="caption">
+        <span class="id">Figure&nbsp;5: </span>
+        <span class="content">
+            <span class="ecti-1000">Collagen fibers and breast epithelial structures</span> <span class="ecti-1000">after 6 days in culture. </span>Cells organize collagen in a collagen only matrix and the collagen bundles (green)
+            facilitate the merging of epithelial structures. Still image from video <a href="#x1-310044">4</a>. (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this
+            article).
+        </span>
+    </figcaption>
+</figure>
+<p class="indent">&nbsp;</p>
+<hr class="figure" />
+<figure class="figure">
+    <a id="x1-110026"></a>
+    <!--l. 554-->
+    <p class="noindent">
+    <img alt="Evidence of cell activity on collagen organization." src="figure6.jpg" width="800em" class="zoom"/>
+
+    <figcaption class="caption">
+        <span class="id">Figure&nbsp;6: </span>
+        <span class="content">
+            <span class="ecti-1000">Evidence of cell activity on collagen</span> <span class="ecti-1000">organization. </span>Collagen fibers rearrangement in a fibrillar matrix containing no cells, fibroblasts (RMF) or MCF10A breast
+            epithelial cells, 24 h after seeding. Whole mount picrosirius red staining/polarized light imaging; scale bar 100µm. Reproduced with permission from (Dhimolea et al. 2010).
+        </span>
+    </figcaption>
+</figure>
+<!--l. 562-->
+<p class="indent">&nbsp;</p>
+<hr class="figure" />
+<figure class="figure">
+    <a id="x1-110037"></a>
+
+         <img alt="Schematic representation of the determination of the 3D biological model." src="figure7-.png" width="700em" class="zoom"/>
+
+    <figcaption class="caption">
+        <span class="id">Figure&nbsp;7: </span>
+        <span class="content">
+            <span class="ecti-1000">Schematic representation of the determination</span> <span class="ecti-1000">of the 3D biological model. </span>We analyze morphogenesis as the interaction between a physical and a biological component.
+            The physical component is mostly made out of collagen and is determined by physical principles in the absence of cells. Collagen undergoes spontaneous gel formation; however, its structure does not change much spontaneously
+            after this process. Cells are agents which act upon other cells and collagen fibers organizing them. The formation of epithelial structures by cells is modeled from the default state; cells and collagen constrain this default
+            state.
+        </span>
+    </figcaption>
+</figure>
+<hr class="endfigure" />
+<h5 class="indent"><span class="titlemark">3.3.3. </span> <a id="x1-110003.3.3"></a> Determination of the system</h5>
+<p class="indent">
+    The increase in cell number due to the unconstrained default state brings about re-distribution of fluids, reorganization of fibers and a certain degree of matrix compression, and/or matrix degradation. Elongation is accompanied by
+    fiber organization into bundles projecting in the direction of the ductal tip (Barnes et al. 2014). Collagen bundles facilitate the merging of epithelial structures initially positioned at a long distance range (Guo et al. 2012)(Figure
+    <a href="#x1-110015">5</a>, Video <a href="#x1-310044">4</a>).
+</p>
+<p class="indent">
+    Acellular collagen gels contain small fibers that are not seen using the classical picrosirius red/polarized light method to visualize collagen fibers. However, a similar collagen gel containing cells reveals a very different picture;
+    twenty-four hours after seeding the cells, small yellow fibers are detected (Figure <a href="#x1-110026">6</a>). This experiment shows that cells organize collagen fibers. In other words, cells exert forces upon fibers, and fibers
+    transmit these forces for quite long distances (Guo et al. 2012).
+</p>
+<p class="indent">
+    As collagen fibers progressively organize, they constrain the proliferation and motility of cells. These constraints may be positive like those that facilitate cell migration along fibers or negative like the ones hindering migration
+    orthogonally, and those due to “pore” formation when the collagen fibers organize into a network. Additionally, cells constrain other cells mechanically. The reciprocal interactions between the collagen and the cells are illustrated in
+    Figure <a href="#x1-110037">7</a> which emphasizes the separation of the system into a physical component, the collagen, and a biological component, the cells. In this diagram the behavior of the cells is determined by the default state
+    and the constraints exerted on it.
+</p>
+<h3 class="sectionHead"><span class="titlemark">4. </span> <a id="x1-120004"></a> Implementing a model based on these principles</h3>
+<!--l. 590-->
+<p class="noindent">
+    We propose a mathematical model of morphogenesis in 3D cultures that we analyze by computer simulations. In this article this model is used as a proof of concept. A mathematical description of our model is provided in Appendix
+    <a href="#x1-24000A">A</a>. Our model is based on the principles that we propose for the construction of a theory of organisms. Our theoretical framework restricts what is acceptable in order to model cellular behavior. For example, it
+    is unacceptable for cells to be proliferatively quiescent without an explicit constraint keeping them in this state. Of course, in the presence of a strong constraint cells will become quiescent and will remain as such for the duration
+    of the constraint.
+</p>
+<!--l. 597-->
+<h4 class="subsectionHead"><span class="titlemark">4.1. </span> <a id="x1-130004.1"></a>Components of the model</h4>
+<!--l. 599-->
+<p class="noindent">The 3D culture gel is represented as a lattice, in three dimensions. The model is based on different layers that interact with each other:</p>
+<!--l. 603-->
+<ol class="enumerateRom">
+    <li class="enumerate">A mechanical forces layer. Each elementary cube of our model exerts forces on the adjacent cubes. Forces propagate in space. Their orientation and propagation depends on the orientation of collagen fibers.</li>
+    <li class="enumerate">A cellular layer, which has three possible states: presence of a live cell, a dead cell (in the case of lumen formation), or no cell, in which case the cube contains ECM.</li>
+    <li class="enumerate">
+        The collagen layer is approached at a mesoscopic scale and does not represent individual fibers. Each cube of collagen has a main orientation which will transmit forces farther, and this orientation is random in the initial
+        conditions. This orientation is also relevant for cellular behavior (see below). Note that this layer represents the cytoskeleton in the cubes occupied by cells. Collagen tends to align with forces that are exerted on it.
+    </li>
+    <li class="enumerate">
+        An inhibitory layer. Cells around the lumen produce a short range inhibition of both proliferation and motility. This layer can be interpreted either as the formation of a basal membrane or as a chemical inhibitor. Both aspects are
+        biologically relevant and could be split into two different types of inhibition in future work.
+    </li>
+    <li class="enumerate">
+        A “nutrient" layer governed by diffusion. Cells consume nutrients. If there are not enough nutrients, cells die leading to lumen formation. The main point here is not to produce an accurate account of lumen formation, but instead to
+        take into account the consequences of lumen formation on morphogenesis as a lumen would disrupt the transmission of forces.
+        <!--l. 619-->
+    </li>
+</ol>
+<!--l. 620-->
+<h4 class="subsectionHead"><span class="titlemark">4.2. </span> <a id="x1-140004.2"></a> Cellular behavior:</h4>
+<!--l. 622-->
+<p class="noindent">Cells express four different behaviors:</p>
+<!--l. 625-->
+<ol class="enumerateRom">
+    <li class="enumerate">
+        Cells exert forces on each other and on the collagen network. The orientation of these forces is influenced by both the neighboring cells and there is also a random component. The magnitude of the force depends on the content of the
+        neighboring cube. More precisely, the force exerted depends on the position with respect to the cell, the orientation of the cytoskeleton of the cell and the orientation of the collagen fibers in the case of an action upon a
+        collagen fiber or fascicle. Additionally, cells tend to oppose strong mechanical stress.
+    </li>
+    <li class="enumerate">
+        Cells have a defined generation time and divide, except when there are constraints which prevents them from doing so. The new cell will occupy a random spot. When this spot is already occupied, the cell cannot proliferate; the cell
+        will make another attempt at the next iteration of the simulation loop.
+    </li>
+    <li class="enumerate">Cells move randomly unless this movement is constrained.</li>
+    <li class="enumerate">
+        Cells die when they lack nutrients. Unlike the other behaviors, this one is an <span class="ecti-1000">ad-hoc </span>addition to create a lumen, since the steps involved in lumen formation are not well known. There is evidence for
+        cell death and for cell migration, but the cue provoking lumen formation is unknown.
+        <!--l. 638-->
+    </li>
+</ol>
+<!--l. 639-->
+<p class="noindent">In this analysis, cell motility has two components: the forces exerted by cells and cell movement. Cell movement involves detachment and reattachment to other cells and to the extracellular matrix.</p>
+<!--l. 642-->
+<h4 class="subsectionHead"><span class="titlemark">4.3. </span> <a id="x1-150004.3"></a> Constraints on proliferation:</h4>
+<!--l. 645-->
+<ol class="enumerateRom">
+    <li class="enumerate">
+        Cells tend to proliferate along the direction of forces. The stronger the forces, the stronger the constraint becomes. In the case of three cells being aligned, the one in the middle may be unable to proliferate if there is a force
+        in the direction of their alignment.
+    </li>
+    <li class="enumerate">Strong mechanical stress slows down proliferation; this constraint is not required for the model to work.</li>
+    <li class="enumerate">
+        The inhibitory layer prevents proliferation.
+        <!--l. 651-->
+    </li>
+</ol>
+<!--l. 652-->
+<h4 class="subsectionHead"><span class="titlemark">4.4. </span> <a id="x1-160004.4"></a> Constraints on cell movement:</h4>
+<!--l. 655-->
+<ol class="enumerateRom">
+    <li class="enumerate">
+        A strong mechanical stress slows down movement; this is not required for the model to work. Also, as the number of neighboring cells increases, the stronger the effect of cell adhesion, which prevents the cell from initiating
+        movement.
+    </li>
+    <li class="enumerate">Movement is facilitated when it occurs along collagen fibers.</li>
+    <li class="enumerate">Movement is facilitated towards other cells.</li>
+    <li class="enumerate">
+        The inhibitory layer prevents movement.
+        <!--l. 662-->
+    </li>
+</ol>
+<!--l. 663-->
+<h4 class="subsectionHead"><span class="titlemark">4.5. </span> <a id="x1-170004.5"></a> Results of implementing the mathematical model</h4>
+<!--l. 665-->
+<p class="indent"><a id="x1-170018"></a></p>
+<hr class="float" />
+<figure class="float figure">
+ 
+                    <img alt="Schematic representation of the theoretical model." src="figure8-.png" width="750em" class="zoom"/>
+
+    <figcaption class="caption">
+        <span class="id">Figure&nbsp;8: </span>
+        <span class="content">
+            <span class="ecti-1000">Schematic representation of the theoretical model. </span>Chemical energy and chemicals from the medium are transformed by cells into the constraints at play in the system. Processes of transformation are
+            represented by straight arrows. The action of constraints on these processes are represented by zig-zag arrows. Constraints on the default state point to a cell. All cells in the model are represented by a single cell (green).
+            Note that we single out the cytoskeleton as a particularly relevant aspect of cellular organization in our model. This scheme shows the circularity of the reciprocal interactions and how cells collectively constitute their own
+            constraints leading to morphogenesis.
+        </span>
+    </figcaption>
+</figure>
+<hr class="endfloat" />
+<!--l. 681-->
+<p class="noindent">
+    The model that we propose exhibits a circularity that can be interpreted in terms of closure (Figure <a href="#x1-170018">8</a>). This circularity concerns constraints acting on i) processes such as physical forces and ii) directly on
+    the default state.
+</p>
+<!--l. 684-->
+<p class="indent">
+    The implementation of this mathematical model generates biologically relevant results. When in collagen, cells form elongated structures that can be interpreted as ducts. When we remove the effects of collagen’s fibrilar structure, in
+    order to mimic a globular matrix (Matrigel), cells form spherical structures.
+</p>
+<h5 class="subsubsectionHead"><span class="titlemark">4.5.1. </span> <a id="x1-180004.5.1"></a> Duct formation</h5>
+<!--l. 690-->
+<p class="noindent">
+    A single cell is surrounded by collagen. This cell starts to exert forces on the collagen and organizes it. The cell will proliferate and may move. The epithelial structure acquires additional cells through cell proliferation. Cells
+    move but they mostly stay attached to the structure. Cells in the middle of the structure can neither move nor proliferate. The cells exert forces on each other and on the collagen. This leads to the appearance of a dominant direction
+    in which these forces are exerted and collagen is reorganized. This direction is often that of the forces exerted initially by the first cell and also depends on initial collagen configuration. Motility and proliferation are facilitated
+    along this main direction, while they are inhibited in the direction perpendicular to this force. As a result, the structure acquires an elongated shape. The structure grows following this dynamic until it reaches a size large enough
+    for the lumen to form at the thickest part of the structure, which is close to the initial position of the first cell. In the context of lumen formation the inhibitor constrains proliferation and motility and inhibits the growth in the
+    width of the structure in the vicinity of a lumen. In contrast, the tips of the elongated structure are not inhibited and elongate further without apparent restriction (Figure <a href="#x1-180019">9</a>, videos
+    <a href="#x1-310055">5</a> and <a href="#x1-310066">6</a>).
+</p>
+<!--l. 703-->
+<p class="indent"><a id="x1-180019"></a></p>
+<hr class="float" />
+<figure class="float figure">         
+<img alt="Formation of a duct by the mathematical model" src="figure9.jpg" width="600em" class="zoom"/>
+
+    <figcaption class="caption">
+        <span class="id">Figure&nbsp;9: </span>
+        <span class="content">
+            <span class="ecti-1000">Formation of a duct by the mathematical model. </span>A) cells are represented in green and the ductal lumen in orange, in three dimensions and over time. B) depiction of a plane of the model over time.
+            The lines represent collagen orientation; shorter lines mean that the orientation of collagen is mostly along the vertical axis. Circles represent cells, and crosses represent lumen. Cells organize collagen over time by exerting
+            forces, and collagen constrains cell proliferation and motility. These interactions lead to the emergence of a main direction of growth. See also corresponding videos <a href="#x1-310055">5</a> and <a href="#x1-310066">6</a>.
+        </span>
+    </figcaption>
+</figure>
+<hr class="endfloat" />
+<!--l. 717-->
+<p class="indent">
+    In some cases, the constraints leading to duct formation can become disorganized at one of the tips. In such case, the main direction of forces exerted may change, leading to a change in the growth direction of the duct. In other cases,
+    this disorganization leads to a bifurcation in the main direction of the constraints and to branching (videos <a href="#x1-310077">7</a> and <a href="#x1-310088">8</a>). These phenomena will be the subject of further studies.
+</p>
+<h5 class="subsubsectionHead"><span class="titlemark">4.5.2. </span> <a id="x1-190004.5.2"></a>Acinus formation:</h5>
+<!--l. 724-->
+<p class="noindent">
+    The addition of Matrigel, to a collagen matrix changes the gel properties by coating the collagen fibers and thus hindering fiber organization (Barnes et al. 2014). In this case, collagen fibers are not accessible to the epithelial
+    cells, which prevents the establishment of a main direction in the forces exerted by the cells. Moreover, these forces are exerted exclusively on cells rather than on fibers. As a result, the epithelial structure grows in an isotropic
+    manner, and when the lumen is formed and the inhibitor is secreted, all cells are constrained. The acinus being formed is a smooth structure due to the constrained motility of cells, each of which is constrained by the many cells
+    surrounding them (Figure <a href="#x1-1900110">10</a>, video <a href="#x1-310099">9</a>).
+</p>
+<hr class="figure" />
+<figure class="figure">
+    <a id="x1-1900110"></a>
+   <img alt="Formation of an acinus by the mathematical model." src="figure10.jpg" width="400em" class="zoom"/>
+
+    <figcaption class="caption">
+        <span class="id">Figure&nbsp;10: </span>
+        <span class="content">
+            <span class="ecti-1000">Formation of an acinus by the mathematical</span> <span class="ecti-1000">model. </span>A) cells are represented in green and the lumen in orange, in 3 dimensions over time. B) depiction of a plane of the
+            model over time. The lines represent collagen orientation; shorter lines mean that the orientation of collagen is along the vertical axis. Circles represent cells, and crosses represent lumen. Here we remove the interactions
+            between the ECM and the cells in order to mimic the effect of Matrigel. In this condition, the cells proliferate and move in an isotropic manner leading to the formation of a rounded structure. See also corresponding video
+            <a href="#x1-310099">9</a>.
+        </span>
+    </figcaption>
+</figure>
+<hr class="endfigure" />
+<h3 class="sectionHead"><span class="titlemark">5. </span> <a id="x1-200005"></a> The <span class="ecti-1000">in vitro </span>system and the organism</h3>
+<!--l. 746-->
+<p class="noindent">
+    How faithfully does this in vitro system represent a phenomenon occurring inside the organism? By accepting the reciprocal relationship between the whole (organism) and its parts, it is difficult to conceive that a sub-system would
+    operate in a biologically relevant fashion when outside the organism. However, there are examples in embryology of the relative autonomy of parts at a particular point in space-time, as for example, the autonomy of limb morphogenesis
+    upon transplantation of the limb morphogenetic field to an ectopic location. Additionally, parceling a whole does not prevent us from ascertaining whether or not the in vitro process arrives at similar outcomes as those observed in
+    vivo. How faithfully does this <span class="ecti-1000">in vitro </span>system represent a phenomenon occurring inside the organism? By accepting the reciprocal relationship between the whole (organism) and its parts, it is difficult to
+    conceive that a sub-system would operate in a biologically relevant fashion when outside the organism. However, there are examples in embryology of the relative autonomy of parts at a particular point in space-time, as for example, the
+    autonomy of limb morphogenesis upon transplantation of the limb morphogenetic field to an ectopic location. Additionally, parceling a whole does not prevent us from ascertaining whether or not the
+    <span class="ecti-1000">in vitro</span> process arrives at similar outcomes as those observed <span class="ecti-1000">in</span> <span class="ecti-1000">vivo</span>.
+</p>
+<!--l. 761-->
+<p class="indent">Which constraints are required for a relevant model of tissue morphogenesis?</p>
+<!--l. 764-->
+<ol class="enumerateRom">
+    <li class="enumerate">
+        Biological meaning is construed by applying similar constraints to those which operate <span class="ecti-1000">in vivo </span>and which seem to play a role in the determination of the phenomenon. In this way, we can “reduce” the
+        number of constraints to those necessary to answer our specific question. Deviations from expected results may potentially indicate additional constraints which could then be identified.
+    </li>
+    <li class="enumerate">
+        Constraints that are absolutely required to allow the cells to continue being alive (pH, nutrients, temperature) and to express their default state in conditions that replicate as much as possible the conditions present in the
+        organism. The “optimization” of these basal conditions is done experimentally by ascertaining that the cells can proliferate as fast as possible and that the cellular phenotype that we wish to study is obtained. This is done in 2D
+        cultures.
+    </li>
+    <li class="enumerate">
+        Another consideration is the historicity and specificity of biological systems. For example, fibroblasts to be used in a 3D culture of the mammary gland are isolated from human breast tissue and used within 6 passages to avoid
+        excessive deviation from the <span class="ecti-1000">in situ</span> condition. Along the same lines, established epithelial cells are maintained in standardized conditions that result in the reproducibility of the phenomenon studied
+        (i.e., duct formation) and the cell phenotype (i.e., response to a given hormone).
+    </li>
+    <li class="enumerate">
+        <span class="ecti-1000">In vitro </span>3D models allow researchers to manipulate constraints beyond the range operating <span class="ecti-1000">in vivo</span>. That is, constraints are determined by the organism and its parts,
+        while in the <span class="ecti-1000">in vitro </span>model the researcher also plays a direct role in modifying these constraints and parameterizing them. For example, we can manipulate the rigidity of the mammary gland model to
+        that of bone, and learn how rigidity affects shape beyond the limits imposed by the organism (Weaver et al. 1995). This type of manipulation revealed that high rigidity inhibits lumen formation and makes epithelial structures
+        disorganize in a way reminiscent of neoplasms (Paszek et al. 2005).
+    </li>
+    <li class="enumerate">
+        Specific organism level constraints induce the tissue to undergo morphological changes required for proper organ function at the right time. Hormone action on the mammary gland is an example of this. At the onset of puberty,
+        estrogen influences the formation of TEBs, the structure at the end of the ducts that invades the stroma and guides ductal growth until the ductal tree fills the fat pad. Progesterone promotes side-branching and during pregnancy
+        prolactin facilitates acinar development in preparation for lactation. A classical biochemical interpretation would reduce the phenomenon to a hormone-receptor interaction triggering signaling pathways inside the cell. However, this
+        approach does not have the capacity to explain the shape changes resulting from these hormonal influences. From the tissue perspective, exposure to hormones leads to changes in collagen fiber organization which enable the cells to
+        generate various epithelial organization patterns. In a hormone-sensitive 3D culture model, epithelial structures resulting from exposure to estrogen in combination with a progestogen or prolactin were more irregular in shape than
+        the elongated, smooth structures resulting from exposure to estrogen alone. Consistently, combined hormone treatment resulted in higher collagen density variability within 20µm from the epithelial structure compared to E2 alone
+        (Speroni et al. 2014) (Figure <a href="#x1-2000611">11</a>).
+        <!--l. 798-->
+    </li>
+</ol>
+<hr class="figure" />
+<figure class="figure">
+    <a id="x1-2000611"></a>
+
+       <img alt="Effect of exposure to hormones on epithelial morphogenesis." src="figure11.jpg" width="750em" class="zoom"/>
+
+    <figcaption class="caption">
+        <span class="id">Figure&nbsp;11: </span>
+        <span class="content">
+            <span class="ecti-1000">Effect of exposure to hormones on</span> <span class="ecti-1000">epithelial morphogenesis. </span>Hormones acting on cells generate changes in collagen fiber organization which enable the cells to
+            generate various epithelial organization patterns. Hormone-sensitive epithelial structures resulting from exposure to estrogen (E2) in combination with promegestone or prolactin were more irregular in shape than the elongated,
+            smooth structures resulting from exposure to E2 alone. Consistently, combined hormone treatment resulted in higher collagen density variability within 20µm from the epithelial structure compared to E2 alone. (A) Second harmonic
+            generation (SHG) images, collagen fibers in white; (B) fiber density maps on merged SHG and two-photon excited fluorescence channels. Scale bar: 50µm. Reproduced with permission from (Speroni et al. 2014).
+        </span>
+    </figcaption>
+</figure>
+<hr class="endfigure" />
+<h3 class="sectionHead"><span class="titlemark">6. </span> <a id="x1-210006"></a> Conclusions</h3>
+<!--l. 817-->
+<p class="noindent">
+    We posited that experimental research guided by the global theoretical approach that we are proposing would be different from that of the prevailing ones which are mostly guided by the metaphors of information, signal and program
+    borrowed from mathematical information theories (Longo et al. 2012). Often times, modelers entering biological research treat biological objects as if they were either physical objects or computer programs. In this issue, we have
+    presented critiques to these approaches and suggested biological singularities that have to be taken into consideration when constructing a biological theory (Longo and Soto, this issue, Longo et al. 2015). On the one hand, the
+    metaphorical use of information pushes the experimenter to seek causality in terms of discrete structures, namely molecules, in particular DNA. This view precludes physical “constraints”, like the ones analyzed here, to causally
+    contribute to the generation and maintenance of the organism unless they are digitally encoded as molecular signs. On the other hand, biophysical approaches involve hypotheses which are not sound in biology, such as optimization
+    principles in the behavior of cells. The approach adopted herein is based on two of the principles proposed as foundations for a theory of organisms, namely, the default state and organizational closure. We explored whether it would be
+    possible and informative to model epithelial glandular morphogenesis from these biological principles, rather than the usual procedure of transferring mathematical structures developed for the understanding of physical phenomena into
+    biological ones or proposing that cells follow a program. It is worth stressing that the former represents true <span class="ecti-1000">mathematical modeling </span>which is based on the theoretical framework of the discipline to which
+    the modeled phenomenon pertains, while the latter, properly described as <span class="ecti-1000">imitation</span>, uses principles from one discipline and applies them to another without a critical appraisal of their theoretical meaning
+    when transported into a different theoretical context.
+</p>
+<!--l. 837-->
+<p class="indent">
+    In this initial modeling effort, applying the two principles (default state and constraints leading to closure) were sufficient to show the formation of ducts and acini. Cells generated forces that were transmitted to neighboring cells
+    and collagen fibers, which in turn created constraints to movement and proliferation (Figures <a href="#x1-110037">7</a> &amp; <a href="#x1-170018">8</a>). Additionally, constraints to the default state are sufficient to explain ductal
+    and acinar formation, and point to a target of future research, namely, the inhibitors of cell proliferation and motility which in this mathematical model are generated by the epithelial cells. Finally, the success of this modeling
+    effort performed as a “proof of principle” opens the possibility for a step-wise approach whereby additional constraints imposed by the tissue (e.g., additional cell types) and the organism (e.g., hormones) could be assessed
+    <span class="ecti-1000">in silico </span>and rigorously tested by <span class="ecti-1000">in vitro </span>and <span class="ecti-1000">in vivo </span>experiments.
+</p>
+<!--l. 847-->
+<h3 class="likesectionHead"><a id="x1-220006"></a>Acknowledgments</h3>
+<!--l. 849-->
+<p class="noindent">
+    This work was conducted as part of the research project “Addressing biological organization in the post-genomic era” which is supported by the International Blaise Pascal Chairs, Region Ile de France (AMS: Pascal Chair 2013). Additional
+    support to AMS was provided by Grant R01ES08314 from the U. S. National Institute of Environmental Health Sciences and Maël Montévil was supported by Labex "Who am I?", Laboratory of Excellence No. ANR-11-LABX-0071. The funders had no
+    role in the study design, data collection and analysis, decision to publish, or preparation of the manuscript. The authors are grateful to Cheryl Schaeberle for her critical input and Clifford Barnes for image acquisition. The authors
+    have no competing financial interests to declare.
+</p>
+<!--l. 866-->
+<h3 class="sectionHead"><span class="titlemark">7. </span> <a id="x1-230007"></a>References</h3>
+<!--l. 871-->
+<p class="noindent">Balinsky, B.I. 1950. On the prenatal growth of the mammary gland rudiment in the mouse. <span class="ecti-1000">J. Anat. 84</span>, 227-235.</p>
+<!--l. 873-->
+<p class="indent">
+    Barnes, C., Speroni, L., Quinn, K., Montévil, M., Saetzler, K., Bode-Animashaun, G., McKerr, G., Georgakoudi, I., Downes, S., Sonnenschein, C., Howard, C.V., Soto, A.M. 2014. From single cells to tissues: interactions between the matrix
+    and human breast cells in real time. <span class="ecti-1000">PLoS</span> <span class="ecti-1000">ONE 9</span>, e93325.
+</p>
+<!--l. 875-->
+<p class="indent">Bizzarri, M., Cucina, A., Palombo, A., Masiello, M.G. 2014. Gravity sensing by cells: mechanisms and theoretical grounds. <span class="ecti-1000">Rend. Fis. Acc. Lincei 25 Suppl 1</span>, S29-S38.</p>
+<!--l. 877-->
+<p class="indent">Brisken, C., O’Malley, B. 2010. Hormone action in the mammary gland. Cold Spring Harb. <span class="ecti-1000">Perspect. Biol. 2</span>, a003178.</p>
+<!--l. 879-->
+<p class="indent">Dallon, J.C., Evans, E.J., Ehrlich, P. 2014. A mathematical model of collagen lattice contraction. <span class="ecti-1000">J. R. Soc. Interface</span> <span class="ecti-1000">11</span>, 20140598.</p>
+<!--l. 881-->
+<p class="indent">Dhimolea, E., Maffini, M.V., Soto, A.M., Sonnenschein, C. 2010. The role of collagen reorganization on mammary epithelial morphogenesis in a 3D culture model. <span class="ecti-1000">Biomaterials 31</span>, 3622-3630.</p>
+<!--l. 883-->
+<p class="indent">Gould, S.J. 1998. <span class="ecti-1000">Leonardo’s Mountain of Clams and the Diet</span> <span class="ecti-1000">of Worms: Essays on Natural History</span>, 155.</p>
+<!--l. 885-->
+<p class="indent">
+    Grant, M.R., Hunt, C.A., Xia, L., Fata, J.E., Bissell, M.J. 2004. Modeling mammary gland morphogenesis as a reaction-diffusion process, in: <span class="ecti-1000">Engineering in</span>
+    <span class="ecti-1000">Medicine and Biology Society, JEMBS ’04 26th Annual</span> <span class="ecti-1000">International Conference of the IEEE</span>, pp. 679-682.
+</p>
+<!--l. 887-->
+<p class="indent">
+    Guo, C.L., Ouyang, M., Yu, J.Y., Maslov, J., Price, A., Shen, C.Y. 2012. Long-range mechanical force enables self-assembly of epithelial tubular patterns. <span class="ecti-1000">Proc. Nat.</span>
+    <span class="ecti-1000">Acad. Sci. USA 109</span>, 5576-5582.
+</p>
+<!--l. 889-->
+<p class="indent">Harjanto, D., Zaman, M.H. 2013. Modeling extracellular matrix reorganization in 3D environments. <span class="ecti-1000">PLoS One. 8</span>, e52509.</p>
+<!--l. 891-->
+<p class="indent">Iber, D., Menshykau, D. 2013. The control of branching morphogenesis. <span class="ecti-1000">Open Biol. 3</span>, 130088.</p>
+<!--l. 893-->
+<p class="indent">
+    Krause, S., Jondeau-Cabaton, A., Dhimolea, E., Soto, A.M., Sonnenschein, C., Maffini, M.V. 2012. Dual regulation of breast tubulogenesis using extracellular matrix composition and stromal cells.
+    <span class="ecti-1000">Tissue Eng Part A. 18</span>, 520-532.
+</p>
+<!--l. 895-->
+<p class="indent">
+    Krause, S., Maffini, M.V., Soto, A.M., Sonnenschein, C. 2008. A novel 3D in vitro culture model to study stromal-epithelial interactions in the mammary gland. <span class="ecti-1000">Tissue Eng. Part C Methods 14</span>, 261-271.
+</p>
+<!--l. 897-->
+<p class="indent">Longo, G., Miquel, P.-A., Sonnenschein, C., Soto, A.M. 2012. Is information a proper observable for biological organization? <span class="ecti-1000">Prog. Biophys. Mol. Biol. 109</span>, 108-14.</p>
+<!--l. 899-->
+<p class="indent">Longo, G., Montévil, M. 2011. From physics to biology by extending criticality and symmetry breakings. <span class="ecti-1000">Prog.</span> <span class="ecti-1000">Biophys. Mol. Biol. 106</span>, 340-347.</p>
+<!--l. 901-->
+<p class="indent">—— 2014. <span class="ecti-1000">Perspectives on Organisms: Biological Time,</span> <span class="ecti-1000">Symmetries and Singularities. </span>Springer, Berlin.</p>
+<!--l. 903-->
+<p class="indent">Longo, G., Montévil, M., Sonnenschein, C., Soto, A.M. 2015. In search of principles for a theory of organisms. <span class="ecti-1000">J.</span> <span class="ecti-1000">Biosci. 40</span>, 955-968.</p>
+<!--l. 905-->
+<p class="indent">
+    Longo, G. &amp; Soto, A.M. 2016, this issue. Why do we need theories?, <span class="ecti-1000">Progress in Biophysics and Molecular</span> <span class="ecti-1000">Biology</span>, Available online 4 July 2016, ISSN 0079-6107,
+    <a class="url" href="https://dx.doi.org/10.1016/j.pbiomolbio.2016.06.005"><span class="ectt-1000">https://dx.doi.org/10.1016/j.pbiomolbio.2016.06.005</span></a>
+</p>
+<!--l. 907-->
+<p class="indent">
+    Miquel, P.-A., Hwang, S.-Y 2016, this issue. From physical to biological individuation, <span class="ecti-1000">Progress in Biophysics and Molecular</span> <span class="ecti-1000">Biology</span>, Available online 16 July 2016, ISSN
+    0079-6107, <a class="url" href="https://dx.doi.org/10.1016/j.pbiomolbio.2016.07.002"><span class="ectt-1000">https://dx.doi.org/10.1016/j.pbiomolbio.2016.07.002</span></a>
+</p>
+<!--l. 910-->
+<p class="indent">
+    Montévil, M., Mossio, M., Pocheville, A. &amp; Longo, G. 2016, this issue. Theoretical principles for biology: Variation, <span class="ecti-1000">Progress in Biophysics and Molecular Biology</span>, Available online 13 August 2016, ISSN
+    0079-6107, <a class="url" href="https://dx.doi.org/10.1016/j.pbiomolbio.2016.08.005"><span class="ectt-1000">https://dx.doi.org/10.1016/j.pbiomolbio.2016.08.005</span></a>
+</p>
+<!--l. 912-->
+<p class="indent">
+    Mossio, M., Montévil, M., Longo, G. 2016, this issue. Theoretical principles for biology: Organization, <span class="ecti-1000">Progress in Biophysics and Molecular Biology</span>, Available online 10 August 2016, ISSN 0079-6107,
+    <a class="url" href="https://dx.doi.org/10.1016/j.pbiomolbio.2016.07.005"><span class="ectt-1000">https://dx.doi.org/10.1016/j.pbiomolbio.2016.07.005</span></a>
+</p>
+<!--l. 915-->
+<p class="indent">Neagu, A. 2006. Computational modeling of tissue self-assembly. <span class="ecti-1000">Mod. Phys. Lett. 20</span>, 1217.</p>
+<!--l. 917-->
+<p class="indent">
+    Paine, I., Chauviere, A., Landua, J., Sreekuman, A., Cristini, V., Rosen, J., Lewis, MT. 2016. A geometrically-constrained mathematical model of mammary gland ductal elongation reveals novel cellular dynamics within the terminal end
+    bud. <span class="ecti-1000">PLoS Comput. Biol. 12</span>, e1004839.
+</p>
+<!--l. 919-->
+<p class="indent">
+    Paszek, M.J., Zahir, N., Johnson, K.R., Lakins, J.N., Rozenberg, G.I., Gefen, A., Reinhart-King, C.A., Margulies, S.S., Dembo, M., Boettiger, D., Hammer, D.A., Weaver, V.M. 2005. Tensional homeostasis and the malignant phenotype.
+    <span class="ecti-1000">Cancer Cell 8</span>, 241-254.
+</p>
+<!--l. 921-->
+<p class="indent">
+    Perret, N. &amp; Longo, G. 2016, this issue. Reductionist perspectives and the notion of information, <span class="ecti-1000">Progress in Biophysics and Molecular Biology</span>, Available online 22 July 2016, ISSN 0079-6107,
+    <a class="url" href="https://dx.doi.org/10.1016/j.pbiomolbio.2016.07.003"><span class="ectt-1000">https://dx.doi.org/10.1016/j.pbiomolbio.2016.07.003</span></a>
+</p>
+<!--l. 924-->
+<p class="indent">
+    Rejniak, K.A., Anderson, A.R. 2008. A computational study of the development of epithelial acini: II. Necessary conditions for structure and lumen stability. <span class="ecti-1000">Bull. Math.</span>
+    <span class="ecti-1000">Biol. 70</span>, 1450-1479.
+</p>
+<!--l. 926-->
+<p class="indent">Robinson, G.W., Karpf, A.B.C., Kratochwil, K. 1999. Regulation of mammary gland development by tissue interaction. <span class="ecti-1000">J. Mammary Gland Biol. Neoplasia 4</span>, 9-19.</p>
+<!--l. 928-->
+<p class="indent">Sonnenschein C. and Soto A.M. <span class="ecti-1000">The Society of Cells: Cancer</span> <span class="ecti-1000">and Control of Cell Proliferation</span>. New York: Springer Verlag; 1999.</p>
+<!--l. 930-->
+<p class="indent">
+    Sonnenschein, C., Soto, A.M., Michaelson, C.L. 1996. Human serum albumin shares the properties of estrocolyone-I, the inhibitor of the proliferation of estrogen-target cells. <span class="ecti-1000">J.</span>
+    <span class="ecti-1000">Steroid Biochem. Molec. Biol. 59</span>, 147-154.
+</p>
+<!--l. 932-->
+<p class="indent">
+    Sonnenschein, C., Soto, A.M., Carcinogenesis explained within the context of a theory of organisms, <span class="ecti-1000">Progress in Biophysics and Molecular Biology</span>, Available online 3 August 2016, ISSN 0079-6107,
+    <a class="url" href="https://dx.doi.org/10.1016/j.pbiomolbio.2016.07.004"><span class="ectt-1000">https://dx.doi.org/10.1016/j.pbiomolbio.2016.07.004</span></a>
+</p>
+<!--l. 935-->
+<p class="indent">
+    Soto, A.M., Longo, G., Montévil, M., Sonnenschein, C. 2016, this issue. The biological default state of cell proliferation with variation and motility, a fundamental principle for a theory of organisms,
+    <span class="ecti-1000">Progress in Biophysics and Molecular</span> <span class="ecti-1000">Biology</span>, Available online 2 July 2016, ISSN 0079-6107,
+    <a class="url" href="https://dx.doi.org/10.1016/j.pbiomolbio.2016.06.006"><span class="ectt-1000">https://dx.doi.org/10.1016/j.pbiomolbio.2016.06.006</span></a>
+</p>
+<!--l. 937-->
+<p class="indent">Soto, A.M., Sonnenschein, C. 2005. Emergentism as a default: cancer as a problem of tissue organization. <span class="ecti-1000">J. Biosci. 30</span>, 103-118.</p>
+<!--l. 939-->
+<p class="indent">Soto, A.M., Sonnenschein, C. 2011. The tissue organization field theory of cancer: A testable replacement for the somatic mutation theory. <span class="ecti-1000">BioEssays 33</span>, 332-340.</p>
+<!--l. 941-->
+<p class="indent">Soto, A.M., Sonnenschein, C., Miquel, P.-A. 2008. On physicalism and Downward Causation in Developmental and Cancer Biology. <span class="ecti-1000">Acta Biotheoretica 56</span>, 257-274.</p>
+<!--l. 943-->
+<p class="indent">
+    Speroni, L., Whitt, G.S., Xylas, J., Quinn, K.P., Jondeau-Cabaton, A., Georgakoudi, I., Sonnenschein, C., Soto, A.M. 2014. Hormonal regulation of epithelial organization in a 3D breast tissue culture model.
+    <span class="ecti-1000">Tissue</span> <span class="ecti-1000">Eng. Part C Methods 20</span>, 42-51.
+</p>
+<!--l. 945-->
+<p class="indent">
+    Tang, J., Enderling, H., Becker-Weimann, S., Pham, C., Polyzos, A., Chen, C.-Y., Costes, S.V. 2011. Phenotypic transition maps of 3D breast acini obtained by imaging-guided agent-based modeling.
+    <span class="ecti-1000">Integrative</span> <span class="ecti-1000">Biology 3</span>, 408-421.
+</p>
+<!--l. 947-->
+<p class="indent">
+    Tanner, K., Mori, H., Mroue, R., Bruni-Cardoso, A., Bissell, M.J. 2012. Coherent angular motion in the establishment of multicellular architecture of glandular tissues. <span class="ecti-1000">Proc.</span>
+    <span class="ecti-1000">Nat. Acad. Sci. USA 109</span>, 1973-1978.
+</p>
+<!--l. 949-->
+<p class="indent">van Fraassen, B.C. 1989. <span class="ecti-1000">Laws and Symmetry. </span>Oxford University Press, Oxford.</p>
+<!--l. 951-->
+<p class="indent">
+    Vandenberg, L.N., Maffini, M.V., Wadia, P.R., Sonnenschein, C., Rubin, B.S., Soto, A.M. 2007. Exposure to environmentally relevant doses of the xenoestrogen bisphenol-A alters development of the fetal mouse mammary gland.
+    <span class="ecti-1000">Endocrinology 148</span>, 116-127.
+</p>
+<!--l. 953-->
+<p class="indent">
+    Weaver, V.M., Howlett, A.R., Langton-Webster, B., Petersen, O.W., Bissell, M.J. 1995. The development of a functionally relevant cell culture model of progressive human breast cancer.
+    <span class="ecti-1000">Seminars in Cancer Biology 6</span>, 175-184.
+</p>
+
+
+<h3 class="sectionHead"><i>Video 1. Projections of breast epithelial cells seeded in a fibrilar matrix. </i></h3>
+
+<p class="indent">Cells emit projections in all directions soon after seeding. These cell projections are involved in collagen organization.</p>
+<p class="indent"><a id="x1-310011"></a></p>
+<center>
+    <video class="video-js vjs-default-skin" controls="controls" data-setup="{}" id="my_video_1" preload="auto" tabindex="0" width="368" height="354">
+        <source src="https://montevil.theobio.org/sites/montevil.theobio.org/files/videos_morphogenesis/video1.mp4" type="video/mp4" />
+        <source src="https://montevil.theobio.org/sites/montevil.theobio.org/files/videos_morphogenesis/video1.ogv" type="video/ogg" />
+    </video>
+</center>
+
+<h3 class="sectionHead"><i>Video 2. Breast epithelial cells forming an acinus in a non-fibrilar matrix at day 4.</i></h3>
+<p class="indent">Cells display limited motility and emit only short projections into the matrix. Cells rotate and divide resulting in the formation of an acinus, a sphere with a central lumen.</p>
+<p class="indent"><a id="x1-310022"></a></p>
+<center>
+    <video class="video-js vjs-default-skin" controls="controls" data-setup="{}" id="my_video_1" preload="auto" tabindex="0" width="320" height="320">
+        <source src="https://montevil.theobio.org/sites/montevil.theobio.org/files/videos_morphogenesis/video2.mp4" type="video/mp4" />
+        <source src="https://montevil.theobio.org/sites/montevil.theobio.org/files/videos_morphogenesis/video2.ogv" type="video/ogg" />
+    </video>
+</center>
+
+        <h3 class="sectionHead"><i>Video 3. Branching duct at day 7 of culture.</i></h3>
+        
+
+<p class="indent"><a id="x1-310033"></a>A cell detaches from the main structure and is incorporated back into the structure.</p>
+<center>
+    <video class="video-js vjs-default-skin" controls="controls" data-setup="{}" id="my_video_1" preload="auto" tabindex="0" width="580" height="474">
+        <source src="https://montevil.theobio.org/sites/montevil.theobio.org/files/videos_morphogenesis/video3.mp4" type="video/mp4" />
+        <source src="https://montevil.theobio.org/sites/montevil.theobio.org/files/videos_morphogenesis/video3.ogv" type="video/ogg" />
+    </video>
+</center>
+
+<h3 class="sectionHead"><i>Video 4. Collagen fibers and breast epithelial structures after 6 days in culture.</i></h3>
+<p class="indent">Cells organize collagen in a collagen only matrix and the collagen bundles (green) facilitate the merging of epithelial structures.</p>
+<p class="indent"><a id="x1-310044"></a></p>
+<center>
+    <video class="video-js vjs-default-skin" controls="controls" data-setup="{}" id="my_video_1" preload="auto" tabindex="0" width="650" height="650">
+        <source src="https://montevil.theobio.org/sites/montevil.theobio.org/files/videos_morphogenesis/video4.mp4" type="video/mp4" />
+        <source src="https://montevil.theobio.org/sites/montevil.theobio.org/files/videos_morphogenesis/video4.ogv" type="video/ogg" />
+    </video>
+</center>
+<h3 class="sectionHead"><i>Video 5 and 6. Formation of a duct by the mathematical model.</i></h3>
+<p class="indent">
+    Cells are represented in green and the ductal lumen in orange in 3 dimensions. Cells organize collagen over time by exerting forces; in turn, collagen constrains cell proliferation and motility. These interactions lead to the emergence
+    of a main direction of growth.
+</p>
+<p class="indent"><a id="x1-310066"></a><a id="x1-310055"></a></p>
+
+<center>
+    <video class="video-js vjs-default-skin" controls="controls" data-setup="{}" id="my_video_1" preload="auto" tabindex="0" width="675" height="355">
+        <source src="https://montevil.theobio.org/sites/montevil.theobio.org/files/videos_morphogenesis/video5.mp4" type="video/mp4" />
+        <source src="https://montevil.theobio.org/sites/montevil.theobio.org/files/videos_morphogenesis/video5.ogv" type="video/ogg" />
+    </video>
+</center>
+
+<center>
+    <video class="video-js vjs-default-skin" controls="controls" data-setup="{}" id="my_video_1" preload="auto" tabindex="0" width="415" height="510">
+        <source src="https://montevil.theobio.org/sites/montevil.theobio.org/files/videos_morphogenesis/video6.mp4" type="video/mp4" />
+        <source src="https://montevil.theobio.org/sites/montevil.theobio.org/files/videos_morphogenesis/video6.ogv" type="video/ogg" />
+    </video>
+</center>
+
+<h3 class="sectionHead"><i>Video 7 and 8. Formation of branching ducts by the mathematical model.</i></h3>
+<p class="indent">
+    Cells are represented in green and the ductal lumen in orange in 3 dimensions. Ducts branch spontaneously in our model (see also the end of video 5 and 6). For these simulations, we reduced the range of the inhibitor which increases the
+    odds of branching.
+</p>
+<p class="indent"><a id="x1-310088"></a> <a id="x1-310077"></a></p>
+<center>
+    <video class="video-js vjs-default-skin" controls="controls" data-setup="{}" id="my_video_1" preload="auto" tabindex="0" width="504" height="352">
+        <source src="https://montevil.theobio.org/sites/montevil.theobio.org/files/videos_morphogenesis/video7.mp4" type="video/mp4" />
+        <source src="https://montevil.theobio.org/sites/montevil.theobio.org/files/videos_morphogenesis/video7.ogv" type="video/ogg" />
+    </video>
+</center>
+
+<center>
+    <video class="video-js vjs-default-skin" controls="controls" data-setup="{}" id="my_video_1" preload="auto" tabindex="0" width="341" height="531">
+        <source src="https://montevil.theobio.org/sites/montevil.theobio.org/files/videos_morphogenesis/video8.mp4" type="video/mp4" />
+        <source src="https://montevil.theobio.org/sites/montevil.theobio.org/files/videos_morphogenesis/video8.ogv" type="video/ogg" />
+    </video>
+</center>
+<h3 class="sectionHead"><i>Video 9. Formation of an acinus by the mathematical model.</i></h3>
+<p class="indent">
+    Cells are represented in green and the lumen in orange in 3 dimensions. Here, the interactions between the ECM and the cells were removed in order to mimic the effect of Matrigel. In this condition, cells proliferate and move in an
+    isotropic manner leading to the formation of a rounded structure.
+</p>
+<p class="indent"><a id="x1-310099"></a></p>
+<center>
+    <p class="indent">
+        <video class="video-js vjs-default-skin" controls="controls" data-setup="{}" id="my_video_1" preload="auto" tabindex="0" width="208" height="224">
+            <source src="https://montevil.theobio.org/sites/montevil.theobio.org/files/videos_morphogenesis/video9.mp4" type="video/mp4" />
+            <source src="https://montevil.theobio.org/sites/montevil.theobio.org/files/videos_morphogenesis/video9.ogv" type="video/ogg" />
+        </video>
+    </p>
+</center>
