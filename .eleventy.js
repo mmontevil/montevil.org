@@ -219,7 +219,7 @@ const typeseter = (content, outputPath) => {
   eleventyConfig.addTransform(
       'typeseter',
       typeseter
-    );
+    ); 
   // eleventyConfig.addPlugin(imagesResponsiver, imagesResponsiverConfig);
 
     // const htmlMinTransform = require(path.join(

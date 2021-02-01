@@ -778,18 +778,28 @@ color: var(--color-link);
 .pull-double{margin-left:-.46em}
 .push-double{margin-right:.46em}
 
-div > .indent, div >.noindent,.caption,div >.description,div >table.equation,div >.itemize1,div >.enumerate1,div >.tableofcontents{
+div > .indent, div >.noindent,dd > .noindent,.caption,div >.description,div >table.equation,div >.itemize1,div >.enumerate1,div >.tableofcontents, div.tabular,div >.tableofcontents,.bibitem, dd.enumerate {
       @media (min-width: 30rem) {
   margin-left: calc(0.25*100% - 0.25*30rem);
   margin-right: calc(0.25*100% - 0.25*30rem);
       }
 }
+/*
 div >.tableofcontents,.bibitem,.thebibliography{
       @media (min-width: 30rem) {
   margin-left: calc(0.125*100% - 0.125*30rem);
   margin-right: calc(0.125*100% - 0.125*30rem);
       }
 }
+
+*/
+.sectionHead,.likesectionHead,.subsectionHead,.subsubsectionHead,.likesubsectionHead,.likesubsubsectionHead,  dt.enumerate,{
+      @media (min-width: 30rem) {
+  margin-left: calc(0.125*100% - 0.125*30rem);
+  margin-right: calc(0.125*100% - 0.125*30rem);
+      }
+}
+
 div >table.equation{
       @media (min-width: 30rem) {
   margin-left: calc(0.25*100% - 0.25*30rem);
@@ -818,8 +828,7 @@ dt.description{margin-left: 0em;}
 .subtitleHead{text-align: center;
   margin-top: 0em;}
   
-.breakk{padding-bottom: 2em;
-    margin-top: 2em;
+.breakk{
   }
   /*
   hr {
