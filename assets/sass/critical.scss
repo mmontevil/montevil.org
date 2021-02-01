@@ -784,7 +784,7 @@ div > .indent, div >.noindent,.caption,div >.description,div >table.equation,div
   margin-right: calc(0.25*100% - 0.25*30rem);
       }
 }
-div >.tableofcontents,.bibitem{
+div >.tableofcontents,.bibitem,.thebibliography{
       @media (min-width: 30rem) {
   margin-left: calc(0.125*100% - 0.125*30rem);
   margin-right: calc(0.125*100% - 0.125*30rem);
@@ -810,7 +810,7 @@ dt.description{margin-left: 0em;}
   color: var(--color-primary-lighter-2);
 }
 
-.bibitem{margin-bottom:0.7em;}
+.bibitem, .thebibliography > *{margin-bottom:0.7em;}
 
 .titleHead,.head,.center{text-align: center;}
 .titleHead{margin-bottom: 1em;}

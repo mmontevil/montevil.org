@@ -34,7 +34,7 @@
       }
     ],
     "container-title": "Theory in Biosciences",
-    "id": "2020-Montevil-HistoricityHeartBiology",
+    "id": "2020-Montevil-Historicity-Heart-Biology",
     "issued": {
       "date-parts": [
         [
@@ -57,7 +57,7 @@
       }
     ],
     "container-title": "Personalized Medicine in the Making: Philosophical Perspectives from Biology to Healthcare",
-    "id": "InPress-Montevil-ConceptualTheoreticalSpecifications",
+    "id": "2021-Montevil-Theory-Accuracy-Medicine",
     "keyword": "Normativity, Organization, Personalized Medicine, Technology, theoretical biology",
     "publisher": "Springer; Springer",
     "title": "Conceptual and theoretical specifications for accuracy in medicine",
@@ -215,7 +215,7 @@
     ],
     "chapter-number": "9",
     "container-title": "Life Sciences, Information Sciences",
-    "id": "2018-MLS-CenturyGeneThat",
+    "id": "2018-MLS-Gene-Century-Organism",
     "issued": {
       "date-parts": [
         [
@@ -417,7 +417,7 @@
       }
     ],
     "container-title": "Biomorphisme",
-    "id": "Submitted-Montevil-LeSensDes",
+    "id": "2021-Sens-Formes-biologie",
     "publisher": "NAIMA",
     "title": "Le sens des formes en biologie",
     "type": "chapter"
@@ -511,12 +511,14 @@
       }
     ],
     "container-title": "Progress in Biophysics and Molecular Biology",
-    "id": "2016-MML-TheoreticalPrinciplesBiology",
+    "id": "2016-MML-Theoretical-Principles-Organization",
     "issue": "1",
     "issued": {
       "date-parts": [
         [
-          2016
+          2016,
+          8,
+          10
         ]
       ]
     },
@@ -549,12 +551,14 @@
       }
     ],
     "container-title": "Progress in Biophysics and Molecular Biology",
-    "id": "2016-MMP-TheoreticalPrinciplesBiology",
+    "id": "2016-MMP-Theoretical-Principles-Variation",
     "issue": "1",
     "issued": {
       "date-parts": [
         [
-          2016
+          2016,
+          8,
+          13
         ]
       ]
     },
@@ -850,11 +854,13 @@
       }
     ],
     "container-title": "Journal of Theoretical Biology",
-    "id": "2015-MM-BiologicalOrganisationAs",
+    "id": "2015-MM-Organisation-Closure-Constraints",
     "issued": {
       "date-parts": [
         [
-          2015
+          2015,
+          3,
+          6
         ]
       ]
     },
@@ -883,7 +889,7 @@
       }
     ],
     "container-title": "Progress in Biophysics and Molecular Biology",
-    "id": "2011-BLM-2DimensionalGeometry",
+    "id": "2011-BLM-2D-Time-Biology",
     "issue": "3",
     "issued": {
       "date-parts": [
@@ -987,7 +993,7 @@
         "given": "André"
       }
     ],
-    "id": "2012-LM-RandomnessIncreasesOrder",
+    "id": "2012-LM-Randomness-Order-Evolution",
     "issued": {
       "date-parts": [
         [
@@ -1018,12 +1024,14 @@
       }
     ],
     "container-title": "Frontiers in Physiology",
-    "id": "2012-LM-InertVsLiving",
+    "id": "2012-LM-Inert-Vs-Living",
     "issue": "00039",
     "issued": {
       "date-parts": [
         [
-          2012
+          2012,
+          2,
+          27
         ]
       ]
     },
@@ -1047,7 +1055,7 @@
       }
     ],
     "container-title": "Theory in Biosciences",
-    "id": "2011-LM-ProtentionRetentionBiological",
+    "id": "2011-LM-Protention-Retention-Biology",
     "issue": "2",
     "issued": {
       "date-parts": [
@@ -1058,6 +1066,7 @@
         ]
       ]
     },
+    "keyword": "Memory and Cognition, protention, retention, biological time",
     "page": "107-117",
     "publisher": "Springer Berlin / Heidelberg",
     "title": "Protention and retention in biological systems",
@@ -1079,7 +1088,7 @@
       }
     ],
     "container-title": "Progress in Biophysics and Molecular Biology",
-    "id": "2011-LM-PhysicsBiologyExtending",
+    "id": "2011-LM-Biology-Extending-Criticality",
     "issue": "2",
     "issued": {
       "date-parts": [
@@ -1115,7 +1124,7 @@
     ],
     "container-title": "Genetic and Evolutionary Computation Conference",
     "edition": "GECCO’12",
-    "id": "2012-LMK-NoEntailingLaws",
+    "id": "2012-LMK-No-Entailing-Laws-Enablement",
     "issued": {
       "date-parts": [
         [
@@ -1190,7 +1199,7 @@
       }
     ],
     "container-title": "Frontiers in Physiology",
-    "id": "2012-LMP-BottomApproachesLevels",
+    "id": "2012-LMP-Levels-Organization-Criticality",
     "issue": "232",
     "issued": {
       "date-parts": [
@@ -1230,7 +1239,7 @@
         "given": "T."
       }
     ],
-    "id": "2012-Montevil-GeometrieDuTemps",
+    "id": "2012-Montevil-Geometrie-Temps-Biologique",
     "issued": {
       "date-parts": [
         [
@@ -1256,7 +1265,7 @@
       }
     ],
     "container-title": "Biology & Philosophy",
-    "id": "2019-Montevil-MeasurementBiologyIs",
+    "id": "2019-Montevil-Measurement-Biology-Theory",
     "issue": "3",
     "issued": {
       "date-parts": [
@@ -1845,12 +1854,14 @@
       }
     ],
     "container-title": "Chaos, Solitons & Fractals",
-    "id": "2013-LM-ExtendedCriticalityPhase",
+    "id": "2013-LM-Extended-Criticality-Enablement",
     "issue": "0",
     "issued": {
       "date-parts": [
         [
-          2013
+          2013,
+          4,
+          16
         ]
       ]
     },
