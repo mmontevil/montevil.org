@@ -20,6 +20,6 @@ title: Publication list by year
     {% endif %}
 
     {{alterpubCard(article.data) | safe}}
-    
+    <span>About {{ article | readingTime({speed:170}) }} reading time</span>
     {% endfor %}
  {# </ul>#}

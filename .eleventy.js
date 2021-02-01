@@ -2,6 +2,7 @@ const glob = require('fast-glob');
 const path = require('path');
 const config = require('./pack11ty.config.js');
 
+
 module.exports = function (eleventyConfig) {
   // ------------------------------------------------------------------------
   // Collections
@@ -84,7 +85,10 @@ eleventyConfig.setDataDeepMerge(true);
   });
 
   eleventyConfig.addPlugin(require('eleventy-plugin-link_to'));
-
+  
+const readingTime = require('eleventy-plugin-reading-time');
+  
+eleventyConfig.addPlugin(readingTime);
   // ------------------------------------------------------------------------
   // Markdown plugins
   // ------------------------------------------------------------------------

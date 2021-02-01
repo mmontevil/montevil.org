@@ -778,7 +778,7 @@ color: var(--color-link);
 .pull-double{margin-left:-.46em}
 .push-double{margin-right:.46em}
 
-div > .indent, div >.noindent,section > .indent, section >.noindent,dd > .noindent,.caption,div >.description,div >table.equation,div >.itemize1,div >.enumerate1,div >.tableofcontents, div.tabular,div >.tableofcontents,.bibitem, dd.enumerate, div>blockquote , .enumerateRom,ol.references{
+div > .indent, div >.noindent,section > .indent, section >.noindent,dd > .noindent,.caption,div >.description,div >table.equation,div >.itemize1,div >.enumerate1,div >.tableofcontents, div.tabular,div >.tableofcontents,.bibitem, dd.enumerate, div>blockquote , .enumerateRom,ol.references,.Tableau10{
       @media (min-width: 30rem) {
   margin-left: calc(0.25*100% - 0.25*30rem);
   margin-right: calc(0.25*100% - 0.25*30rem);
@@ -793,7 +793,7 @@ div >.tableofcontents,.bibitem,.thebibliography{
 }
 
 */
-.sectionHead,.likesectionHead,.subsectionHead,.subsubsectionHead,.likesubsectionHead,.likesubsubsectionHead,  dt.enumerate{
+.sectionHead,.likesectionHead,.subsectionHead,.subsubsectionHead,.subsubsubsectionHead,.likesubsectionHead,.likesubsubsectionHead,  dt.enumerate{
       @media (min-width: 30rem) {
   margin-left: calc(0.125*100% - 0.125*30rem);
   margin-right: calc(0.125*100% - 0.125*30rem);
