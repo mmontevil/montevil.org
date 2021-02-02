@@ -55,7 +55,7 @@ tags: [{% for entry in keyword.split(', ') %}
   <div class="info indent"><p>{{ bibib | bibcite|divRemove|safe}}</p>
   <p> {{pubuttons(item) |safe}}</p>
   </div>
+<h2 class=center> Full text, reading time: ~{{ content   | readingTime({speed:170}) }}</h2>
 
 <hr class="breakk">
-
 {{ content | safe }}

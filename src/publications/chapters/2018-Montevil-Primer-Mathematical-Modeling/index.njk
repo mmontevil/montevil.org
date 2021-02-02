@@ -1,0 +1,984 @@
+---
+excerpt: "How do mathematical models convey meaning? What is required to build a model? An introduction for biologists and philosophers."
+illust: logistic.png
+---
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+<div class="maketitle">
+    <h2 class="titleHead">A primer on mathematical modeling in the study of organisms and their parts</h2>
+    
+    <div class="author">
+        <span class="ecrm-1200">Ma</span><span class="ecrm-1200">ë</span><span class="ecrm-1200">l Mont</span><span class="ecrm-1200">é</span><span class="ecrm-1200">vil</span>
+        <span class="thank-mark">
+            <a href="#tk-2" id="kt-2"><span class="tcrm-1200">†</span></a>
+        </span>
+    </div>
+</div>
+<!--l. 31-->
+<p class="indent">
+    <span class="ecbx-1000">Abstract : </span>Mathematical modeling is a very powerful tool to understand natural phenomena. Such a tool carries its own assumptions and should always be used critically. In this chapter we highlight the key
+    ingredients and steps of modeling and focus on their biological interpretation. In particular, we discuss the role of theoretical principles in writing models. We also highlight the meaning and interpretation of equations. The main aim
+    of this chapter is to facilitate the interaction between biologists and mathematical modelers. We focus on the case of cell proliferation and motility in the context of multicellular organisms.
+</p>
+<!--l. 39-->
+<p class="indent"><span class="ecbx-1000">Keywords : </span>mathematical modeling, proliferation, theory, equations, parameters</p>
+<h3 class="sectionHead"><span class="titlemark">1 </span> <a id="x1-10001"></a>Introduction</h3>
+<!--l. 43-->
+<p class="noindent">
+    Mathematical modeling may serve many purposes such as performing quantitative predictions or making sense of a situation where reciprocal interactions are beyond informal analyses. For example, describing the properties of the diferent
+    ionic channels of a neuron individually is not sufficient to understand how their combination entails the formation of action potentials. We need a mathematical analysis such as the one performed by the Hodgkin-Huxley model to gain such
+    an understanding [<a href="#x1-170011">1<!--tex4ht:ref: bkm:RefNumPara18011924949141 --></a>]. In this sense, mathematical modeling is required at some point in order to understand many biological phenomena. Let us emphasize that the
+    perspective of modelers is usually different than the one of many experimentalists, especially in molecular biology. The latter field tends to emphasize the contribution of individual parts, but traditional reductionism [
+    <a href="#x1-170032">2<!--tex4ht:ref: bkm:RefNumPara18031924949141 --></a>] involves both the analysis of parts and the theoretical composition of parts to understand the whole, usually by means of mathematical analysis. Without the
+    latter move, it is never clear whether the parts analyzed individually are sufficient to explain how the phenomenon under study comes to be or whether key processes are missing.
+</p>
+<!--l. 55-->
+<p class="indent">
+    We want to emphasize the difference between mathematical models on the one side and theories on the other side. Of course modelization belongs to the broad category of theoretical work by contrast with experimental work. However, in
+    this text, we will refer to theory in the precise sense of a broad conceptual framework such as evolutionary theory. Evolutionary theory has been initially formulated without explicit mathematics. Evolutionary theory has actually led to
+    different categories of mathematical analyses such as population genetics or phyllogenetic analysis which are very different mathematically. Theoretical frameworks typically guide modelization and contributes to justify mathematical
+    models.
+</p>
+<!--l. 63-->
+<p class="indent">Mathematical modeling raises several difficulties in the study of organisms.</p>
+<!--l. 65-->
+<p class="indent">
+    The first one is that most biologists do not have the mathematical or physical background to assess the meaning and the validity of models. The division of labor in interdisciplinary projects is an efficient way to work but it should at
+    least be completed by an understanding of the principles at play in every part of the work. Otherwise, the coherence of the knowledge that result from this work is not ensured.
+</p>
+<!--l. 70-->
+<p class="indent">The second difficulty is intrinsic. Living objects have theoretical specificities that make mathematical modeling difficult or at least limit its meaning. These specificities are at least of two kinds.</p>
+<ul class="itemize1">
+    <li class="itemize">
+        Current organisms are the result of an evolutive and developmental history which means that many contingent events are deeply inscribed in the organization of living being. By contrast the aim of mathematical modeling is usually to
+        make explicit the necessity of an outcome. For more on this issue, see [<a href="#x1-170053">3<!--tex4ht:ref: bkm:RefNumPara18051924949141 --></a>].
+    </li>
+    <li class="itemize">
+        The study of a part <span class="ecti-1000">X </span>of an organism is not completely meaningful by itself. Instead, the inscription of this part inside the organism and in particular the role that this part plays is a mandatory
+        object of study to assess the biological relevance of the properties of <span class="ecti-1000">X </span>that are under study. As such, the modelization of <span class="ecti-1000">X per se </span>is insufficient and requires a
+        supplementary discussion [<a href="#x1-170074">4<!--tex4ht:ref: bkm:RefNumPara18071924949141 --></a>].
+    </li>
+</ul>
+<!--l. 82-->
+<p class="noindent">
+    The third difficulty is that there are no well established theoretical principles to frame model writing in physiology or developmental biology [<a href="#x1-170095">5<!--tex4ht:ref: bkm:RefNumPara30321924949141 --></a>]. In particular,
+    cells are elementary objects since the cell theory states that there is no living things without cells. However, cells have complex organizations themselves. Modeling their behavior (note
+    <a href="#x1-160011">1<!--tex4ht:ref: bkm:RefNumPara17981924949141 --></a>) is therefore challenging and requires appropriate theoretical assumptions to ensure that this modeling has a robust biological meaning.
+</p>
+<!--l. 88-->
+<p class="indent">
+    A theoretical way to organize the mathematical modeling of cell behaviors is to propose a default state, that is to say to make explicit a state of reference that takes place without the need of particular constraints, input or signal.
+    We think that proliferation with variation and motility should be used as a default state [<a href="#x1-170116">6<!--tex4ht:ref: bkm:RefNumPara18091924949141 --></a>,
+    <a href="#x1-170137">7<!--tex4ht:ref: bkm:RefNumPara18111924949141 --></a>]. Under this assumption, cells spontaneously proliferate. By contrast, quiescence should be explained by constraints explicitly limiting or even preventing cell
+    proliferation. The same reasoning applies <span class="ecti-1000">mutadis mutandis </span>to motility. This assumption has been used to model mammary gland morphogenesis and helps to systematize the mathematical analysis of cellular
+    populations [<a href="#x1-170158">8<!--tex4ht:ref: bkm:RefNumPara18131924949141 --></a>].
+</p>
+<!--l. 97-->
+<p class="indent">
+    In this chapter we will focus on model writing. Our aim is not to emphasize the technical aspects of mathematical analysis. Instead, this text aims to help biologists to understand modelization in order to better interact with modelers.
+    Reciprocally, we also highlight theoretical specificities of biology which may be of help to modelers. Of course, the usual way to divide chapters in this book series is not entirely appropriate for the topic of our chapter. We still
+    kept this structure and follow it in a metaphorical sense. In materials, we are describing key conceptual and mathematical ingredients of models. In methods, we will focus on the writing and analysis of models
+    <span class="ecti-1000">per se</span>.
+</p>
+<!--l. 104-->
+<h3 class="sectionHead"><span class="titlemark">2 </span> <a id="x1-20002"></a>Materials</h3>
+<!--l. 106-->
+<h4 class="subsectionHead"><span class="titlemark">2.1 </span> <a id="x1-30002.1"></a>Parameters and states</h4>
+<!--l. 108-->
+<h5 class="subsubsectionHead"><span class="titlemark">2.1.1 </span> <a id="x1-40002.1.1"></a>Parameters</h5>
+<!--l. 109-->
+<p class="noindent">
+    Parameters are quantities that play a role in the system but which are not significantly impacted by the system’s behavior at the time scale of the phenomenon under study. From an experimentalist’s point of view, there are two kinds of
+    parameters. Some parameters correspond to a quantity that is explicitly set by the experimenter such as the temperature, the size of a plate or the concentration of a relevant compound in the media. Other parameters correspond to
+    properties of parts under study, such as the speed of a chemical reaction, the elasticity of collagen or the division rate
+    <!--l. 114-->
+    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>τ</mi></math> of a cell without constraints. Changing the value of these parameters require to change the part in question, see also note
+    <a href="#x1-160032">2<!--tex4ht:ref: bkm:RefNumPara18611924949141 --></a>.
+</p>
+<!--l. 117-->
+<p class="indent">Identifying relevant parameters has actually two different meaning :</p>
+<ul class="itemize1">
+    <li class="itemize">
+        Parameters that will be used explicitly in the model are parameters whose value is required to deduce the behavior of the system. The dynamics of the system depends explicitly on the value of these parameters.
+        <span class="ecti-1000">A</span> <span class="ecti-1000">fortiori</span>, parameters that correspond to different treatments leading to a response will fall under this category. Note that the importance of some parameters usually
+        appear in other steps of modeling.
+    </li>
+    <li class="itemize">
+        Theoretical parameters correspond to parameters that we know are relevant and even mandatory for the process to take place but that we can keep implicit in our model. For example, the concentration of oxygen in the media is usually
+        not made explicit in a model of an <span class="ecti-1000">in vitro</span> experiment even though it is relevant for the very survival of the cells studied. Of course, there is usually a cornucopia of this sort of parameters, for
+        example the many components of the serum.
+    </li>
+</ul>
+<!--l. 131-->
+<h5 class="subsubsectionHead"><span class="titlemark">2.1.2 </span> <a id="x1-50002.1.2"></a> State space</h5>
+<!--l. 133-->
+<p class="noindent">
+    The state of an object describes its situation at a given time. The state is composed of one or several quantities, see note <a href="#x1-160053">3<!--tex4ht:ref: bkm:RefNumPara28701924949141 --></a>. By contrast with parameters, the
+    notion of state is restricted to those aspects of the system which will change as a result of explicit causes or randomness intrinsic to the system described. The usual approach, inherited from physics, is to propose a set of possible
+    states that does not change during the dynamics. Then the changes of the system will be changes of states while staying among these possible states. For example, we can describe a cell population in a very simple manner by the number of
+    cells <span class="ecti-1000">n(t)</span>. Then, the state space is all the possible values for <span class="ecti-1000">n</span>, that is to say the positive integers.
+</p>
+<!--l. 141-->
+<p class="indent">
+    Usually, the changes of state depend on the state of the system which means that the state has a causal power, which can be either direct or indirect. A direct causal power is illustrated by <span class="ecti-1000">n </span>which is the
+    number of cells that are actively proliferating in the example above and thus trigger the changes in <span class="ecti-1000">n</span>. An indirect causal power corresponds, for example, to the position of a cell provided that some
+    positions are too crowded for cells to proliferate.
+</p>
+<!--l. 147-->
+<h5 class="subsubsectionHead"><span class="titlemark">2.1.3 </span> <a id="x1-60002.1.3"></a>Parameter versus state</h5>
+<!--l. 150-->
+<p class="noindent">
+    Deciding whether a given quantity should be described as a parameter or as an element of the state space is a theoretical decision that is sometimes difficult, see also note
+    <a href="#x1-160074">4<!--tex4ht:ref: bkm:RefNumPara27161924949141 --></a>. The heart of the matter is to analyze the role of this quantity but it also depends on the modeling aims.
+</p>
+<ul class="itemize1">
+    <li class="itemize">Does this quantity change in a quantitatively significant way at the time scale of the phenomenon of interest ? If no it should be a parameter. If yes :</li>
+    <li class="itemize">Are the changes of this quantity required to observe the phenomenon one wants to explain ? If yes, it should be a part of the state space. If no :</li>
+    <li class="itemize">Do we want to perform precise quantitative predictions ? If yes, then the quantity should be a part of the state space and a parameter otherwise.</li>
+</ul>
+<!--l. 162-->
+<p class="noindent">In the following, we will call “description space” the combination of the state space and parameters.</p>
+<!--l. 164-->
+<h4 class="subsectionHead"><span class="titlemark">2.2 </span> <a id="x1-70002.2"></a>Equations</h4>
+<!--l. 167-->
+<p class="noindent">
+    Equations are often seen as intimidating by experimental biologists. Our aim here and in the following subsection is to help demystify them. In the modeling process, equations are the final explicitation of how changes occur and causes
+    act in a model. As a result understanding them is of paramount importance to understand the assumptions of a model.
+</p>
+<!--l. 171-->
+<p class="indent">
+    The basic rule of modeling is extremely simple. Parameters do not require equations since they are set externally. However, the value of states are unspecified. As a result, equations are required to describe how states change. More
+    precisely, modelers require an equation for each quantity describing the state. Quantities of the state space are degrees of freedom, and these degrees of freedom have to be “removed” by equations for the model to perform predictions.
+    These equations need to be independent in the sense that they need to capture different aspects of the system : copying twice the same equation obviously does not constrain the states. Equations typically come in two kinds :
+</p>
+<ul class="itemize1">
+    <li class="itemize">
+        Equations that relate different quantities of the state space. For example, if we have <span class="ecti-1000">n </span>the total number of cells and two possible cell types with cell counts <span class="ecti-1000">n</span>
+        <sub class="textsubscript"><span class="ecti-0900">1</span></sub> and <span class="ecti-1000">n</span><sub class="textsubscript"><span class="ecti-0900">2</span></sub>, then we will always have<sub class="textsubscript"> </sub>
+        <!--l. 182-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <msub>
+                <mrow>
+                    <mstyle class="text"><mtext>n=n</mtext></mstyle>
+                </mrow>
+                <mrow><mn>1</mn></mrow>
+            </msub>
+            <msub>
+                <mrow>
+                    <mstyle class="text"><mtext>+n</mtext></mstyle>
+                </mrow>
+                <mrow><mn>2</mn></mrow>
+            </msub>
+        </math>
+        <span class="ecti-1000">.</span> As a result, it is sufficient to describe how two of these variables change in order obtain the third one.
+    </li>
+    <li class="itemize">
+        Equations that describe a change of state as a function of the state. These equations typically take two different forms, depending on the representation of time which may be either continuous or discrete, see note
+        <a href="#x1-160095">5<!--tex4ht:ref: bkm:RefNumPara18651924949141 --></a>. In continuous time, modelers use differential equations, for example
+        <!--l. 187-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mstyle class="text"><mtext>dn</mtext></mstyle><mo class="MathClass-bin">∕</mo><mstyle class="text"><mtext>dt=n</mtext></mstyle><mo class="MathClass-bin">∕</mo><mi>τ</mi>
+        </math>
+        . This equation means that the change of <span class="ecti-1000">n </span>(<span class="ecti-1000">dn) </span>during a short time (<span class="ecti-1000">dt) </span>is equal to <span class="ecti-1000">ndt/</span>
+        <!--l. 188-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>τ</mi></math>. This change follows from cell proliferation and we will expand on this equation in the next section. In discrete time,
+        <!--l. 190-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>n</mi>
+            <mfenced close=")" open="(" separators="">
+                <mrow>
+                    <mstyle class="text">
+                        <mtext>t+</mtext><mstyle class="math"><mi>Δ</mi></mstyle><mtext>t</mtext>
+                    </mstyle>
+                </mrow>
+            </mfenced>
+            <mo class="MathClass-bin">−</mo> <mi>n</mi>
+            <mfenced close=")" open="(" separators="">
+                <mrow><mi>t</mi></mrow>
+            </mfenced>
+        </math>
+        is the change of state which relates to the current state by
+        <!--l. 191-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>n</mi>
+            <mfenced close=")" open="(" separators="">
+                <mrow>
+                    <mstyle class="text">
+                        <mtext>t+</mtext><mstyle class="math"><mi>Δ</mi></mstyle><mtext>t</mtext>
+                    </mstyle>
+                </mrow>
+            </mfenced>
+            <mo class="MathClass-bin">−</mo> <mi>n</mi>
+            <mfenced close=")" open="(" separators="">
+                <mrow><mi>t</mi></mrow>
+            </mfenced>
+            <mstyle class="text"><mtext>=n</mtext></mstyle>
+            <mfenced close=")" open="(" separators="">
+                <mrow><mi>t</mi></mrow>
+            </mfenced>
+            <mstyle class="text">
+                <mtext></mtext><mstyle class="math"><mi>Δ</mi></mstyle><mtext>t</mtext>
+            </mstyle>
+            <mo class="MathClass-bin">∕</mo><mi>τ</mi>
+        </math>
+        . Alternatively and equivalently, the future state can be written as a function of the current state :
+        <!--l. 194-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>n</mi>
+            <mfenced close=")" open="(" separators="">
+                <mrow>
+                    <mstyle class="text">
+                        <mtext>t+</mtext><mstyle class="math"><mi>Δ</mi></mstyle><mtext>t</mtext>
+                    </mstyle>
+                </mrow>
+            </mfenced>
+            <mstyle class="text"><mtext>=n</mtext></mstyle>
+            <mfenced close=")" open="(" separators="">
+                <mrow><mi>t</mi></mrow>
+            </mfenced>
+            <mstyle class="text">
+                <mtext></mtext><mstyle class="math"><mi>Δ</mi></mstyle><mtext>t</mtext>
+            </mstyle>
+            <mo class="MathClass-bin">∕</mo>
+            <mstyle class="text">
+                <mtext></mtext><mstyle class="math"><mi>τ</mi></mstyle><mtext>+n</mtext>
+            </mstyle>
+            <mfenced close=")" open="(" separators="">
+                <mrow><mi>t</mi></mrow>
+            </mfenced>
+        </math>
+        . Defining a dynamics requires at least one such equation to bind together the different time points, that is to say to bind causes and their effects.
+    </li>
+</ul>
+<!--l. 200-->
+<h4 class="subsectionHead"><span class="titlemark">2.3 </span> <a id="x1-80002.3"></a>Invariants and symmetries</h4>
+<!--l. 202-->
+<p class="noindent">
+    We have discussed the role of equations, now let us expand on their structure. Let us start with the equation mentioned above :
+    <!--l. 203-->
+    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mstyle class="text"><mtext>dn</mtext></mstyle><mo class="MathClass-bin">∕</mo><mstyle class="text"><mtext>dt=n</mtext></mstyle><mo class="MathClass-bin">∕</mo><mi>τ</mi>
+    </math>
+    . What is the meaning of such an equation ? This equation states that the change of <span class="ecti-1000">n,</span> <span class="ecti-1000">dn/dt, </span>is proportional to <span class="ecti-1000">n</span>. 1) In conformity, with the
+    cell theory, there is no spontaneous generation. There is no migration from outside the system described, which is an assumption proper to a given situation. The only source of cells is then cell proliferation. 2) Every cell divides at
+    a given rate, independently. As a conclusion, the appearance of new cells is proportional to the number of cells which are dividing unconstrained, that is to say <span class="ecti-1000">n</span>. A cell needs a duration of
+    <!--l. 208-->
+    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>τ</mi></math> to generate two cells (that is to say increase the cell count by one) which is exemplified by the fact that for
+    <span class="ecti-1000">n=1, dn/dt=1/</span>
+    <!--l. 210-->
+    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>τ</mi></math><span class="ecti-1000">.</span>
+</p>
+<!--l. 212-->
+<p class="indent">
+    Alternatively, this equation is equivalent to
+    <!--l. 212-->
+    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mstyle class="text"><mtext>dn</mtext></mstyle><mo class="MathClass-bin">∕</mo><mstyle class="text"><mtext>dt</mtext></mstyle> <mo class="MathClass-bin">×</mo> <mn>1</mn><mo class="MathClass-bin">∕</mo>
+        <mstyle class="text"><mtext>n=</mtext></mstyle><mn>1</mn><mo class="MathClass-bin">∕</mo><mi>τ</mi>
+    </math>
+    , and the latter relation shows that the equation is equivalent to the existence of an invariant quantity :
+    <!--l. 214-->
+    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mstyle class="text"><mtext>dn</mtext></mstyle><mo class="MathClass-bin">∕</mo><mstyle class="text"><mtext>dt</mtext></mstyle> <mo class="MathClass-bin">×</mo> <mn>1</mn><mo class="MathClass-bin">∕</mo><mi>n</mi>
+    </math>
+    which is equal to 1/<!--l. 215-->
+    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>τ</mi></math> for all values of <span class="ecti-1000">n. </span>Doubling <span class="ecti-1000">n </span>thus requires to double
+    <span class="ecti-1000">dn/dt. </span>In this sense, the joint transformation
+    <!--l. 217-->
+    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mstyle class="text"><mtext>dn</mtext></mstyle><mo class="MathClass-bin">∕</mo><mstyle class="text"><mtext>dt</mtext></mstyle> <mo class="MathClass-rel">→</mo> <mn>2</mn><mstyle class="text"><mtext>dn</mtext></mstyle>
+        <mo class="MathClass-bin">∕</mo><mstyle class="text"><mtext>dt</mtext></mstyle>
+    </math>
+    and
+    <!--l. 218-->
+    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi> <mo class="MathClass-rel">→</mo> <mn>2</mn><mi>n</mi></math> is a symmetry, that is to say a transformation that leaves invariant a key aspect of the system
+    <span class="ecti-1000">. </span>This transformation leads from one time point to another. Discussing symmetries of equations is a method to show their meaning. Here, in a sense, the size of the population does not matter. Symmetries
+    can also be multi-scale, for example fractal analysis is based on a symmetry between the different scales that is very fruitful in biology [<a href="#x1-170179">9<!--tex4ht:ref: bkm:RefNumPara36521924949141 --></a>,
+    <a href="#x1-1701910">10<!--tex4ht:ref: bkm:RefNumPara36541924949141 --></a>].
+</p>
+<!--l. 225-->
+<p class="indent">
+    Probabilities may also be analyzed on the basis of symmetries. Randomness may be defined as unpredictability in a given theoretical frame and is more general than probabilities. To define probabilities, two steps have to be performed.
+    The modeler needs to define a space of possibilities and then to define the probabilities of these possibilities. The most meaningful way to do the latter is to figure out possibilities that are equivalent, that is to say symmetric. For
+    example, in a homogeneous environment, all directions are equivalent and thus would be assigned the same probabilities. A cell, in this situation, would have the same chance to choose any of these directions assuming that the cell’s
+    organization is not already oriented in space, see also note <a href="#x1-160116">6<!--tex4ht:ref: bkm:RefNumPara22321924949141 --></a>. In physics, a common assumption is to consider that states which have the same energy have the same
+    probabilities.
+</p>
+<!--l. 234-->
+<p class="indent">Now there are several ways to write equations, independently of their deterministic or stochastic nature :</p>
+<ul class="itemize1">
+    <li class="itemize">
+        Symmetry based writing is exemplified by the model of exponential growth above. In this case, the equation has a genuine meaning. Of course the model conveys approximations which are not always valid, but the terms of the equation
+        are biologically meaningful. This also ensure that all mathematical outputs of the model may be interpreted biologically.
+    </li>
+    <li class="itemize">
+        Equations may also be based on a mathematical reasoning which provides a legitimacy to their form but restricts their biological interpretations. For example, many mathematical functions may be approximated around 0 by the sum
+        <!--l. 243-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <msup>
+                <mrow>
+                    <mstyle class="text"><mtext>ax+bx</mtext></mstyle>
+                </mrow>
+                <mrow><mn>2</mn></mrow>
+            </msup>
+            <mo class="MathClass-bin">+</mo> <mo class="MathClass-punc">.</mo><mo class="MathClass-punc">.</mo><mo class="MathClass-punc">.</mo>
+        </math>
+        . As a result, a usual way to model a population which constraints itself is the following
+    </li>
+<table class="equation-star">
+    <tbody>
+        <tr>
+            <td>
+                <!--l. 246-->
+                <math class="equation" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mstyle class="text"><mtext>dn</mtext></mstyle><mo class="MathClass-bin">∕</mo><mstyle class="text"><mtext>dt=n</mtext></mstyle><mo class="MathClass-bin">∕</mo><mi>τ</mi> <mo class="MathClass-bin">−</mo>
+                    <msup>
+                        <mrow><mi>n</mi></mrow><mrow><mn>2</mn></mrow>
+                    </msup>
+                    <mo class="MathClass-bin">∕</mo>
+                    <mstyle class="text">
+                        <mtext>k</mtext><mstyle class="math"><mi>τ</mi></mstyle><mtext></mtext>
+                    </mstyle>
+                </math>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table class="equation-star">
+    <tbody>
+        <tr>
+            <td>
+                <!--l. 249-->
+                <math class="equation" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mstyle class="text"><mtext>dn</mtext></mstyle><mo class="MathClass-bin">∕</mo><mstyle class="text"><mtext>dt=n</mtext></mstyle><mo class="MathClass-bin">∕</mo><mi>τ</mi>
+                    <mfenced close=")" open="(" separators="">
+                        <mrow><mn>1</mn> <mo class="MathClass-bin">−</mo> <mi>n</mi><mo class="MathClass-bin">∕</mo><mi>k</mi></mrow>
+                    </mfenced>
+                </math>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!--l. 252-->
+<p class="noindent">
+    where <span class="ecti-1000">k </span>is the maximum of the population. Le us remark that we have written the equation in two different forms, we come back on this in note
+    <a href="#x1-160137">7<!--tex4ht:ref: bkm:RefNumPara1233547012894 --></a>. The solution of this equation is the classical logistic function.
+</p>
+<!--l. 256-->
+<p class="indent">
+    Note however that this equation has symmetries which are dubious from a biological viewpoint : the way the population takes off is identical to the way it saturates because the logistic equation has a center of symmetry,
+    <span class="ecti-1000">A </span>in figure, see also [<a href="#x1-1702111">11<!--tex4ht:ref: bkm:RefNumPara18291924949141 --></a>].
+</p>
+<!--l. 260-->
+<figure class="figure">
+                  <img  alt="The logistic function." src="logistic.png" width="500em" class="zoom"/>
+
+<figcaption class="caption" >
+    <strong>Figure 1 : </strong><span class="ecti-1000">The logistic function. </span>This function is often used to model a growth with constraints leading to a saturation. However, this function possess a center of symmetry, A, which
+    implies that the initial exponential growth is exactly equivalent to the way the growth saturates. This is biologically problematic : there is an initial lag phase and the saturation trigger causes that are not significant in the
+    initial growth leading for example to cell death [<a href="#x1-1702312">12<!--tex4ht:ref: bkm:RefNumPara32861924949141 --></a>].
+</figcaption></figure>
+
+    <li class="itemize">
+        The last way to write equations is called heuristic. The idea is to use functions that mimic quantitatively and to some extent qualitatively the phenomenon under study. Of course this method is less meaningful that the others but it
+        is often required when the knowledge of the underlying phenomenon is not sufficient.
+    </li>
+</ul>
+<!--l. 273-->
+<h4 class="subsectionHead"><span class="titlemark">2.4 </span> <a id="x1-90002.4"></a>Theoretical principles</h4>
+<!--l. 276-->
+<p class="noindent">Theoretical principles are powerful tools to write equations that convey biological meaning. Let us provide a few examples.</p>
+<ul class="itemize1">
+    <li class="itemize">Cell theory implies that cells come from the proliferation of other cells and excludes spontaneous generation.</li>
+    <li class="itemize">
+        Classical mechanics aims to understand movements in space. The acceleration of an object requires that a mechanical force is exerted on this object. Note that the principle of reaction states that if A exerts a force on B, then B
+        exerts the same force with opposite direction on A. Therefore, there is an equivalence between “A exerts a force” and “a force is exerted on A” from the point of view of classical mechanics. The difficulty lies in the forces exerted
+        by cells as cells can consume free energy to exert many kinds of forces. Cells are neither an elastic nor a bag of water, they possess agency which leads us to the next point.
+    </li>
+    <li class="itemize">
+        As explained in introduction, the reference to a default state helps to write equations that pertain to cellular behaviors. There are many aspects that contribute to cellular proliferation and motility. The writing of an equation
+        such as the logistic model is not about all these factors and should not be interpreted as such. Instead, it assumes proliferation on the one side and one or several factors that constrain proliferation on the other side.
+    </li>
+</ul>
+<!--l. 293-->
+<h3 class="sectionHead"><span class="titlemark">3 </span> <a id="x1-100003"></a>Methods</h3>
+<!--l. 295-->
+<h4 class="subsectionHead"><span class="titlemark">3.1 </span> <a id="x1-110003.1"></a>Model writing</h4>
+<!--l. 297-->
+<p class="noindent">
+    Model writing may have different levels of precision and ambition. Models can be a proof of concept, that is to say the genuine proof that some hypotheses explain a given behavior or even proofs of the theoretical possibility of a
+    behavior. Proof of concept do not include a complete proof that the natural phenomenon genuinely behave like the model. On the opposite end of the spectrum, models may aim at quantitative predictions. Usually, it is good practice to
+    start from a crude model and after that to go for more detailed and quantitative analyses depending on the experimental possibilities.
+</p>
+<!--l. 304-->
+<p class="indent">We will now provide a short walkthrough for writing an initial model :</p>
+<ul class="itemize1">
+    <li class="itemize">
+        Specify the aims of the model. Models cannot answer all questions at once, and it is crucial to be clear on the aim of a model before attempting to write it. Of course, these aims may be adjusted afterwards. The scope of the model
+        should also depend on the experimental methods that link it to reality.
+    </li>
+    <li class="itemize">
+        Analyze the level of description that is mandatory for the model to explain the target phenomenon. Usually, the simplest the description is the better. When cells do not constrain each other, describing cells by their count
+        <span class="ecti-1000">n </span>is sufficient. By contrast, if cells constrain each other, for example if they are in organized 3d structures it can be necessary to take into account the position of each individual cell which leads
+        to a list of positions
+        <!--l. 314-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <msub>
+                <mrow>
+                    <mover accent="true">
+                        <mrow><mi>x</mi></mrow><mo class="MathClass-op">→</mo>
+                    </mover>
+                </mrow>
+                <mrow>
+                    <mstyle class="text"><mtext>1,</mtext></mstyle>
+                </mrow>
+            </msub>
+            <msub>
+                <mrow>
+                    <mover accent="true">
+                        <mrow><mi>x</mi></mrow><mo class="MathClass-op">→</mo>
+                    </mover>
+                </mrow>
+                <mrow>
+                    <mstyle class="text"><mtext>2,</mtext></mstyle>
+                </mrow>
+            </msub>
+            <msub>
+                <mrow>
+                    <mover accent="true">
+                        <mrow><mi>x</mi></mrow><mo class="MathClass-op">→</mo>
+                    </mover>
+                </mrow>
+                <mrow>
+                    <mstyle class="text"><mtext>3,</mtext></mstyle>
+                </mrow>
+            </msub>
+            <mo class="MathClass-punc">.</mo><mo class="MathClass-punc">.</mo><mo class="MathClass-punc">.</mo>
+        </math>
+        . Note that in this case the state space is far larger than before, see note <a href="#x1-160158">8<!--tex4ht:ref: bkm:RefNumPara23301924949141 --></a>. A fortiori, it is necessary to represent space to understand morphogenesis.
+        Note that the notion of level of description is different from the notion of scale. A level of description pertains to qualitative aspects such as the individual cell, the tissue, the organ, the organism, etc. By contrast, a scale
+        is defined by a quantity.
+    </li>
+    <li class="itemize">
+        List the theoretical principles that are relevant to the phenomenon. These principles can be properly biological and pertain to cell theory, the notion of default state, biological organization or evolution. Physico-chemical
+        principles may also be useful such as mechanics or the balance of chemical reactions.
+    </li>
+    <li class="itemize">
+        List the relevant states and parameters. These quantities are the ones that are expected to play a causal role that pertains to the aim of the model. This list will probably not be definitive, and will be adjusted in further steps.
+        In all cases, we cannot emphasize enough that aiming for exhaustivity is the modeler’s worst enemy. Biologists need to take many factors into account when designing an experimental protocol, it is a mistake to try to model all of
+        these factors.
+    </li>
+    <li class="itemize">
+        The crucial step is to propose mathematical relations between states and their changes. We have described in sections 2.2 and 2.3 what kinds of relation can be used. Usually these relations will involve supplementary parameters
+        whose relevance was not obvious initially. Let us emphasize here that the key to robust models is to base it on sufficiently solid grounds. A model where all relations are heuristic will probably not be robust. As such, figuring out
+        the robust and meaningful relations that can be used is crucial.
+    </li>
+    <li class="itemize">
+        The last step is to analyze the consequences of the model. We describe this step with more details below. What matters here is that the models may work as intended, in which case it may be refined by adding further details. The
+        model may also lead to unrealistic consequences and not lead to the expected results. In these latter cases, the issue may lie in the formulation of the relations above, in the choice of the variables or in oversimplifications. In
+        all cases the model requires a revision.
+    </li>
+</ul>
+<!--l. 338-->
+<p class="noindent">
+    Writing a model is similar to the chess game in that the anticipation of all these steps from the beginning helps. The steps that we have described are all required but a central aspect of modeling is to gain a precise intuition of what
+    determines the system’s behavior. Once this intuition is gained, it guides the specification of the model at all step. Reciprocally, these steps help to gain such an intuition.
+</p>
+<!--l. 343-->
+<h4 class="subsectionHead"><span class="titlemark">3.2 </span> <a id="x1-120003.2"></a>Model analysis</h4>
+<!--l. 345-->
+<p class="noindent">
+    In this section, we will not cover all the main ways to analyze model since this subject is far too vast and depends on the mathematical structures used in the models. Instead, we will focus on the outcome of model analyses.
+</p>
+<!--l. 349-->
+<h5 class="subsubsectionHead"><span class="titlemark">3.2.1 </span> <a id="x1-130003.2.1"></a> Analytic methods</h5>
+<!--l. 352-->
+<p class="noindent">Analytic methods consist in the mathematical analysis of a model. They should always be preferred to simulations when the model is tractable, even at the cost of using simplifying hypotheses.</p>
+<ul class="itemize1">
+    <li class="itemize">
+        Asymptotic reasoning is a fundamental method to study models. The underlying idea is that models are always a bit complicated. To make sense of them, we can look at the dynamics after enough time which simplifies the outcome. For
+        example, the outcome of the logistic function discussed above will always be an equilibrium point, where the population is at a maximum. Mathematically, “enough” time means infinite time, hence the term asymptotic. In practice
+        “infinite” means “large in comparison with the characteristic times of the dynamics”, which may not be long from a human point of view. For example, a typical culture of bacteria reaches a maximum after less than day. Asymptotic
+        behaviors may be more complicated such as oscillations or strange attractors.
+    </li>
+    <li class="itemize">
+        Steady states analysis. In fairly complex situations, for example when both space and time are involved, a usual approach is to analyze states that are sustained over time. For example, in the analysis of epithelial morphogenesis,
+        it is possible to consider how the shape of a duct is sustained over time.
+    </li>
+    <li class="itemize">
+        Stability analysis. A very common analytic method is to find equibria, that is to say situations where the changes stop (<span class="ecti-1000">dx/dt=0 </span>for all state variable <span class="ecti-1000">x</span>). For example,
+        <!--l. 368-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mstyle class="text"><mtext>dn</mtext></mstyle><mo class="MathClass-bin">∕</mo><mstyle class="text"><mtext>dt=n</mtext></mstyle><mo class="MathClass-bin">∕</mo><mi>τ</mi>
+            <mfenced close=")" open="(" separators="">
+                <mrow><mn>1</mn> <mo class="MathClass-bin">−</mo> <mi>n</mi><mo class="MathClass-bin">∕</mo><mi>k</mi></mrow>
+            </mfenced>
+        </math>
+        has two equilibria for <span class="ecti-1000">n=k </span>and <span class="ecti-1000">n=0</span>. Stability analysis look at the consequences of equation near an equilibrium point. Near the equilibrium value
+        <span class="ecti-1000">n</span><sub class="textsubscript"><span class="ecti-0900">e</span></sub>,
+        <!--l. 371-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <msub>
+                <mrow>
+                    <mstyle class="text"><mtext>n=n</mtext></mstyle>
+                </mrow>
+                <mrow><mi>e</mi></mrow>
+            </msub>
+            <mstyle class="text">
+                <mtext>+</mtext><mstyle class="math"><mi>Δ</mi></mstyle><mtext>n</mtext>
+            </mstyle>
+        </math>
+        where
+        <!--l. 371-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mstyle class="text">
+                <mtext></mtext><mstyle class="math"><mi>Δ</mi></mstyle><mtext>n</mtext>
+            </mstyle>
+        </math>
+        is considered to be small.
+        <!--l. 372-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mstyle class="text">
+                <mtext></mtext><mstyle class="math"><mi>Δ</mi></mstyle><mtext>n</mtext>
+            </mstyle>
+        </math>
+        small means that
+        <!--l. 372-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mstyle class="text">
+                <mtext></mtext><mstyle class="math"><mi>Δ</mi></mstyle><mtext>n</mtext>
+            </mstyle>
+        </math>
+        dominates
+        <!--l. 373-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <msup>
+                <mrow>
+                    <mstyle class="text">
+                        <mtext></mtext><mstyle class="math"><mi>Δ</mi></mstyle><mtext>n</mtext>
+                    </mstyle>
+                </mrow>
+                <mrow><mn>2</mn></mrow>
+            </msup>
+        </math>
+        and all other powers of
+        <!--l. 373-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mstyle class="text">
+                <mtext></mtext><mstyle class="math"><mi>Δ</mi></mstyle><mtext>n</mtext>
+            </mstyle>
+        </math>
+        , see also note <a href="#x1-160179">9<!--tex4ht:ref: bkm:RefNumPara18631924949141 --></a>. The reason for that is simple : if
+        <!--l. 375-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mstyle class="text">
+                <mtext></mtext><mstyle class="math"><mi>Δ</mi></mstyle><mtext>n=</mtext>
+            </mstyle>
+            <mn>0</mn><mo class="MathClass-punc">.</mo><mn>1</mn>
+        </math>
+        ,
+        <!--l. 375-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <msup>
+                <mrow>
+                    <mstyle class="text">
+                        <mtext></mtext><mstyle class="math"><mi>Δ</mi></mstyle><mtext>n</mtext>
+                    </mstyle>
+                </mrow>
+                <mrow><mn>2</mn></mrow>
+            </msup>
+            <mo class="MathClass-rel">=</mo> <mn>0</mn><mo class="MathClass-punc">.</mo><mn>0</mn><mn>1</mn>
+        </math>
+        ...
+    </li>
+<!--l. 377-->
+<p class="noindent">
+    Near 0,
+    <!--l. 377-->
+    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mstyle class="text"><mtext>n=</mtext></mstyle><mn>0</mn>
+        <mstyle class="text">
+            <mtext>+</mtext><mstyle class="math"><mi>Δ</mi></mstyle><mtext>n</mtext>
+        </mstyle>
+    </math>
+    and
+    <!--l. 378-->
+    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mstyle class="text"><mtext>dn</mtext></mstyle><mo class="MathClass-bin">∕</mo>
+        <mstyle class="text">
+            <mtext>dt</mtext><mstyle class="math"><mo class="MathClass-rel">≃</mo><mi>Δ</mi></mstyle><mtext>n</mtext>
+        </mstyle>
+        <mo class="MathClass-bin">∕</mo><mi>τ</mi>
+    </math>
+    . The small variation
+    <!--l. 379-->
+    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mstyle class="text">
+            <mtext></mtext><mstyle class="math"><mi>Δ</mi></mstyle><mtext>n</mtext>
+        </mstyle>
+    </math>
+    leads to a positive
+    <!--l. 379-->
+    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mstyle class="text"><mtext>dn</mtext></mstyle><mo class="MathClass-bin">∕</mo><mstyle class="text"><mtext>dt</mtext></mstyle>
+    </math>
+    therefore this variation is amplified and this equilibrium is not stable. We should not forget the biology here. For a population of cells or animals of a given large size, a small variation is possible. However, a small variation from
+    a population of size 0 is only possible through migration because spontaneous generation does not happen. Nevertheless this analysis shows that a small population, close to <span class="ecti-1000">n=0</span>, should not collapse but
+    instead will expand.
+</p>
+<!--l. 385-->
+<p class="indent">
+    Near <span class="ecti-1000">k</span>, let us write
+    <!--l. 385-->
+    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mstyle class="text">
+            <mtext>n=k+</mtext><mstyle class="math"><mi>Δ</mi></mstyle><mtext>n</mtext>
+        </mstyle>
+    </math>
+</p>
+<table class="equation-star">
+    <tbody>
+        <tr>
+            <td>
+                <!--l. 387-->
+                <math class="equation" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mstyle class="text"><mtext>dn</mtext></mstyle><mo class="MathClass-bin">∕</mo><mstyle class="text"><mtext>dt=</mtext></mstyle>
+                    <mfenced close=")" open="(" separators="">
+                        <mrow>
+                            <mstyle class="text">
+                                <mtext>k+</mtext><mstyle class="math"><mi>Δ</mi></mstyle><mtext>n</mtext>
+                            </mstyle>
+                        </mrow>
+                    </mfenced>
+                    <mo class="MathClass-bin">∕</mo><mi>τ</mi>
+                    <mfenced close=")" open="(" separators="">
+                        <mrow>
+                            <mn>1</mn> <mo class="MathClass-bin">−</mo>
+                            <mfenced close=")" open="(" separators="">
+                                <mrow>
+                                    <mstyle class="text">
+                                        <mtext>k+</mtext><mstyle class="math"><mi>Δ</mi></mstyle><mtext>n</mtext>
+                                    </mstyle>
+                                </mrow>
+                            </mfenced>
+                            <mo class="MathClass-bin">∕</mo><mi>k</mi>
+                        </mrow>
+                    </mfenced>
+                    <mo class="MathClass-rel">=</mo>
+                    <mfenced close=")" open="(" separators="">
+                        <mrow>
+                            <mstyle class="text">
+                                <mtext>k+</mtext><mstyle class="math"><mi>Δ</mi></mstyle><mtext>n</mtext>
+                            </mstyle>
+                        </mrow>
+                    </mfenced>
+                    <mo class="MathClass-bin">∕</mo><mi>τ</mi>
+                    <mfenced close=")" open="(" separators="">
+                        <mrow>
+                            <mo class="MathClass-bin">−</mo><mn>1</mn>
+                            <mstyle class="text">
+                                <mtext></mtext><mstyle class="math"><mi>Δ</mi></mstyle><mtext>n</mtext>
+                            </mstyle>
+                            <mo class="MathClass-bin">∕</mo><mi>k</mi>
+                        </mrow>
+                    </mfenced>
+                </math>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<table class="equation-star">
+    <tbody>
+        <tr>
+            <td>
+                <!--l. 392-->
+                <math class="equation" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mstyle class="text"><mtext>dn</mtext></mstyle><mo class="MathClass-bin">∕</mo><mstyle class="text"><mtext>dt=</mtext></mstyle> <mo class="MathClass-bin">−</mo>
+                    <mstyle class="text">
+                        <mtext></mtext><mstyle class="math"><mi>Δ</mi></mstyle><mtext>n</mtext><mstyle class="math"><mi>τ</mi></mstyle><mtext></mtext>
+                    </mstyle>
+                    <mo class="MathClass-bin">−</mo>
+                    <msup>
+                        <mrow>
+                            <mstyle class="text">
+                                <mtext></mtext><mstyle class="math"><mi>Δ</mi></mstyle><mtext>n</mtext>
+                            </mstyle>
+                        </mrow>
+                        <mrow><mn>2</mn></mrow>
+                    </msup>
+                    <mo class="MathClass-bin">∕</mo>
+                    <mstyle class="text">
+                        <mtext></mtext><mstyle class="math"><mi>τ</mi></mstyle><mtext>k</mtext><mstyle class="math"><mo class="MathClass-rel">≃</mo></mstyle><mtext></mtext>
+                    </mstyle>
+                    <mo class="MathClass-bin">−</mo>
+                    <mstyle class="text">
+                        <mtext></mtext><mstyle class="math"><mi>Δ</mi></mstyle><mtext>n</mtext><mstyle class="math"><mi>τ</mi></mstyle><mtext></mtext>
+                    </mstyle>
+                </math>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!--l. 397-->
+<p class="indent">
+    In this case, the small variation
+    <!--l. 397-->
+    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+        <mstyle class="text">
+            <mtext></mtext><mstyle class="math"><mi>Δ</mi></mstyle><mtext>n</mtext>
+        </mstyle>
+    </math>
+    leads to a negative feedback, therefore the equilibrium is stable.
+</p>
+
+    <li class="itemize">
+        Special cases. In some situations, qualitatively remarkable behaviors appear for specific values of the parameters. Studying these cases is interesting <span class="ecti-1000">per se, e</span>ven though the odds for parameters to
+        have specific value are slim without an explicit reason for this paramter to be set at this value. However, in biology the value of some parameters are the result of biological evolution and specific value can become relevant when
+        the associated qualitative behavior is biologically meaningful [<a href="#x1-1702513">13<!--tex4ht:ref: bkm:RefNumPara18331924949141 --></a>,<a href="#x1-1702714">14<!--tex4ht:ref: bkm:RefNumPara18351924949141 --></a>].
+    </li>
+    <li class="itemize">
+        Parameter rewriting. One of the major practical advantages of analytical methods is to prove the relevance of parameters that are key to understand the behavior of a system. These “new” parameters are usually combinations of the
+        initial parameters. We have implicitly done this operation in section <a href="#x1-80002.3">2.3<!--tex4ht:ref: bkm:RefNumPara18311924949141 --></a>. Instead of writing
+        <!--l. 410-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <msup>
+                <mrow>
+                    <mstyle class="text"><mtext>an+bn</mtext></mstyle>
+                </mrow>
+                <mrow><mn>2</mn></mrow>
+            </msup>
+        </math>
+        we have written
+        <!--l. 410-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mi>n</mi><mo class="MathClass-bin">∕</mo><mi>τ</mi> <mo class="MathClass-bin">−</mo>
+            <msup>
+                <mrow><mi>n</mi></mrow><mrow><mn>2</mn></mrow>
+            </msup>
+            <mo class="MathClass-bin">∕</mo>
+            <mstyle class="text">
+                <mtext>k</mtext><mstyle class="math"><mi>τ</mi></mstyle><mtext></mtext>
+            </mstyle>
+        </math>
+        . The point here is to introduce
+        <!--l. 411-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>τ</mi></math> the characteristic time for a cell division and <span class="ecti-1000">k </span>which is the maximum size of the population. By contrast,
+        <span class="ecti-1000">a </span>and especially <span class="ecti-1000">b </span>are less meaningful. These key parameters and their meaning are an outcome of models and at the same time should be the target of precise experiments
+        to explore the validity of models.
+    </li>
+</ul>
+<!--l. 416-->
+<h5 class="subsubsectionHead"><span class="titlemark">3.2.2 </span> <a id="x1-140003.2.2"></a>Numerical methods – simulations</h5>
+<!--l. 418-->
+<p class="noindent">
+    Simulations have a major strength and a major weakness. Their strength lies in their ability to handle complicated situations that are not tractable analytically. Their weakness is that each simulation run provides a particular
+    trajectory which cannot <span class="ecti-1000">a</span> <span class="ecti-1000">priori </span>be assumed to be representative of the dynamical possibilities of the model.
+</p>
+<!--l. 422-->
+<p class="indent">
+    In this sense, the outcome of simulations may be compared to empirical results, except that simulation are transparent : it is possible to track all variables of interest over time. Of course, the outcome of simulations is artificial
+    and only as good as the initial model.
+</p>
+<!--l. 426-->
+<p class="indent">
+    Last, there is almost always a loss when going from a mathematical model to a computer simulation. Computer simulation are always about discrete objects and deterministic functions. Randomness and continua are always approximated in
+    simulations and mathematical care is required to ensure that the qualitative features of simulations are feature of the mathematical model and not artifacts of the transposition of the model into a computer program. A subfield of
+    mathematics, numerical analysis, is devoted to this issue.
+</p>
+<!--l. 432-->
+<h5 class="subsubsectionHead"><span class="titlemark">3.2.3 </span> <a id="x1-150003.2.3"></a>Results</h5>
+<!--l. 434-->
+<p class="noindent">We want to emphasize two points to conclude this section.</p>
+<!--l. 436-->
+<p class="indent">
+    First, it is not sufficient for a model to provide the qualitative or even quantitative behavior expected for this model to be correct. The validation of a model is based on the validation of a process and of the way this process takes
+    place. As a result, it is necessary to explore the predictions of the model to verify them experimentally. All outcomes that we have described in <a href="#x1-130003.2.1">3.2.1<!--tex4ht:ref: bkm:RefNumPara38971924949141 --></a> may be
+    used to do so on top of a direct verification of the assumptions of the model themselves. Of course, it is never possible to verify everything experimentally, therefore the focus should be on aspects that are unlikely except in the
+    light of the model.
+</p>
+<!--l. 443-->
+<p class="indent">
+    Second, modeling focuses on a specific part and a specific process. However, this part and this process take place in an organism. Their physiological meaning, or possible lack thereof, should be analyzed. We are developing a framework
+    to perform this kind of analysis [<a href="#x1-1702915">15<!--tex4ht:ref: bkm:RefNumPara40491924949141 --></a>,<a href="#x1-170074">4<!--tex4ht:ref: bkm:RefNumPara18071924949141 --></a>] but it can also be performed informally by
+    looking at the consequences of the part considered for the rest of the organism.
+</p>
+<!--l. 448-->
+<h3 class="sectionHead"><span class="titlemark">4 </span> <a id="x1-160004"></a>Notes</h3>
+<!--l. 450-->
+<ol class="enumerate1">
+    <li class="enumerate" id="x1-16002x1">
+        <a id="x1-160011"></a>In biology, behavior usually has an ethological meaning and evolution refers to the theory evolution. In the mathematical context, these words have a broader meaning. They both typically refer to the properties
+        of dynamics. For example, the behavior of a population without constrain is exponential growth.
+    </li>
+    <li class="enumerate" id="x1-16004x2">
+        <a id="x1-160032"></a>Parameters that play a role in an equation are defined in two different ways. They are defined by their role in the equation and by their biological interpretation. For example, the division rate
+        <!--l. 456-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>τ</mi></math> corresponds to the division rate of the cells without the constraint that is represented by <span class="ecti-1000">k</span>.
+        <!--l. 457-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>τ</mi></math> may also embed constant constraints on cell proliferation, for example chemical constraints from the serum or the temperature. Thus,
+        <!--l. 458-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>τ</mi></math> is what physicists call an effective parameter it carries implicitly constraints beyond the explicit constraints of the model.
+    </li>
+    <li class="enumerate" id="x1-16006x3">
+        <a id="x1-160053"></a>A state may be composed of several quantities, let’s say <span class="ecti-1000">k, n, m</span>. It is possible to write the state by the three quantities independently or to join them in one vector
+        <span class="ecti-1000">X=(k,n,m)</span>. The two viewpoints are of course equivalent but they lead to different mathematical methods and ways to see the problem. The second viewpoint shows that it is always valid to consider that
+        the state is a single mathematical object and not just a plurality of quantities.
+    </li>
+    <li class="enumerate" id="x1-16008x4">
+        <a id="x1-160074"></a>The notion of organization in the sense of a specific interdependence between parts [<a href="#x1-170074">4<!--tex4ht:ref: bkm:RefNumPara18071924949141 --></a>] implies that most parameters are a consequence of
+        others parts, at other time scales. As a result, modeling a given quantity as a parameter is only valid for some time scales, and is acceptable when these time scales are the ones at which the process modeled takes place.
+    </li>
+    <li class="enumerate" id="x1-16010x5">
+        <a id="x1-160095"></a>The choice between a model based on discrete or on continuous time is base on several criteria. For example, if the proliferation of cells is synchronized, there is a discrete nature of the phenomenon that
+        strongly suggests to represent the dynamics in discrete time. In this case the discrete time corresponds to an objective aspect of the phenomenon. On the opposite, when cells divide at all times in the population, a representation
+        in continuous time is more adequate. In order to perform simulations, time may still be discretized but the status of the discrete structure is then different than in the first case : discretization is then arbitrary and serves the
+        purpose of approximating the continuum. To distinguish the two situations, a simple question should be asked. What is the meaning of the time difference between two time points. In the first case, this time difference has a
+        biological meaning, in the second it is arbitrary and just small enough for the approximation to be acceptable.
+    </li>
+    <li class="enumerate" id="x1-16012x6">
+        <a id="x1-160116"></a>Probabilities over continuous possibilities are somewhat subtle. Let us show why : let us say that all directions are equivalent, thus all angles in the interval [0,360[ are equivalent. They are equivalent, so
+        their probabilities are all the same value <span class="ecti-1000">p. </span>However, there is an infinite number of possible angles, so the sum of all the probabilities of all possibilities would be infinite. Over the continuum,
+        probabilities are assigned to sets and in particular to intervals, not individual possibilities.
+    </li>
+    <li class="enumerate" id="x1-16014x7">
+        <a id="x1-160137"></a>There are many equivalent ways to write a mathematical term. The choice of a specific way to write a term conveys meaning and corresponds to an interpretation of this term. For example, in the text, we
+        transformed
+        <!--l. 486-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mstyle class="text"><mtext>dn</mtext></mstyle><mo class="MathClass-bin">∕</mo><mstyle class="text"><mtext>dt=n</mtext></mstyle><mo class="MathClass-bin">∕</mo><mi>τ</mi> <mo class="MathClass-bin">−</mo>
+            <msup>
+                <mrow><mi>n</mi></mrow><mrow><mn>2</mn></mrow>
+            </msup>
+            <mo class="MathClass-bin">∕</mo>
+            <mstyle class="text">
+                <mtext>k</mtext><mstyle class="math"><mi>τ</mi></mstyle><mtext></mtext>
+            </mstyle>
+        </math>
+        because this expression has little biological meaning. By contrast,
+        <!--l. 488-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mstyle class="text"><mtext>dn</mtext></mstyle><mo class="MathClass-bin">∕</mo><mstyle class="text"><mtext>dt=n</mtext></mstyle>
+            <mfenced close=")" open="(" separators="">
+                <mrow><mn>1</mn> <mo class="MathClass-bin">−</mo> <mi>n</mi><mo class="MathClass-bin">∕</mo><mi>k</mi></mrow>
+            </mfenced>
+            <mo class="MathClass-bin">∕</mo><mi>τ</mi>
+        </math>
+        implies that when n/k is very small by comparison with 1, cells are not constraining each other. On the opposite, when <span class="ecti-1000">n=k </span>there is no proliferation. The consequence of cells constraining each other
+        can be interpreted as a proportion <span class="ecti-1000">1-n/k </span>of cells proliferating and a proportion <span class="ecti-1000">n/k </span>of cells not proliferating. Now, there is another way to write the same term which is
+        :
+        <!--l. 492-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mstyle class="text"><mtext>dn</mtext></mstyle><mo class="MathClass-bin">∕</mo><mstyle class="text"><mtext>dt=n</mtext></mstyle><mo class="MathClass-bin">∕</mo>
+            <mfenced close=")" open="(" separators="">
+                <mrow>
+                    <mi>τ</mi><mo class="MathClass-bin">∕</mo>
+                    <mfenced close=")" open="(" separators="">
+                        <mrow><mn>1</mn> <mo class="MathClass-bin">−</mo> <mi>n</mi><mo class="MathClass-bin">∕</mo><mi>k</mi></mrow>
+                    </mfenced>
+                </mrow>
+            </mfenced>
+        </math>
+        . Here, the division time becomes
+        <!--l. 493-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>τ</mi></math><span class="ecti-1000">/(1-n/k)</span> and the more cells there are, the longer the division time becomes. This division time becomes infinite when
+        <span class="ecti-1000">n=k </span>which means that cells are quiescent. These two interpretations are biologically different. In the first interpretation, a proportion of cells are completely constrained while the other proliferate
+        freely. In the second, all cells are impacted equally. Nevertheless, the initial term is compatible with both interpretations and they hhave the same consequences at this level of analysis.
+    </li>
+    <li class="enumerate" id="x1-16016x8">
+        <a id="x1-160158"></a>The number of quantities that form the state space is called its dimension. The dimension of the phase space is a crucial matter for its mathematical analysis. Basically, low dimensions such as 3 or below are
+        more tractable and easier to represent. High dimensions may also be tractable if many dimensions play equivalent roles (even in infinite dimension). A large number of heterogeneous quantities (10 or 20) is complicated to analyze
+        even with computer simulations because this situation is associated with many possibilities for the initial conditions and for the parameters making it difficult to “probe” the different qualitative possibilities of the model.
+    </li>
+    <li class="enumerate" id="x1-16018x9">
+        <a id="x1-160179"></a>It is very common in modeling to use the words “small” and “large”. A small (resp. large) quantity is a quantity that is assumed to be small (resp. large) enough so that a given approximation can be performed.
+        For example, a large time in the context of the logistic equation means that the population is approximately at the maximum <span class="ecti-1000">k</span>. Similarly, infinite and large are very close notions in most practical
+        cases. For example, a very large capacity <span class="ecti-1000">k </span>leads to
+        <!--l. 510-->
+        <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mstyle class="text"><mtext>dn</mtext></mstyle><mo class="MathClass-bin">∕</mo><mstyle class="text"><mtext>dt=n</mtext></mstyle><mo class="MathClass-bin">∕</mo><mi>τ</mi>
+            <mfenced close=")" open="(" separators="">
+                <mrow><mn>1</mn> <mo class="MathClass-bin">−</mo> <mi>n</mi><mo class="MathClass-bin">∕</mo><mi>k</mi></mrow>
+            </mfenced>
+            <mstyle class="text">
+                <mtext></mtext><mstyle class="math"><mo class="MathClass-rel">≃</mo></mstyle><mtext>n</mtext>
+            </mstyle>
+            <mo class="MathClass-bin">∕</mo><mi>τ</mi>
+        </math>
+        which is an exponential growth as long as <span class="ecti-1000">n </span>is far smaller than <span class="ecti-1000">k.</span>
+    </li>
+</ol>
+<!--l. 515-->
+<h3 class="likesectionHead"><a id="x1-170004"></a>References</h3>
+<!--l. 517-->
+<ol class="enumerate1">
+    <li class="enumerate" id="x1-17002x1">
+        <a id="x1-170011"></a>Beeman, D. (2013). Hodgkin-Huxley Model, pages 1–13. Encyclopedia of Computational Neuroscience. Springer New York, New York, NY. Doi :
+        <a href="http://dx.doi.org/10.1007/978-1-4614-7320-6_127-3">10.1007/978-1-4614-7320-6_127-3</a>
+    </li>
+    <li class="enumerate" id="x1-17004x2"><a id="x1-170032"></a>Descartes, R. (2016). Discours de la méthode. Flammarion.</li>
+    <li class="enumerate" id="x1-17006x3">
+        <a id="x1-170053"></a>Montévil, M., Mossio, M., Pocheville, A., and Longo, G. (2016a). Theoretical principles for biology : Variation. Progress in Biophysics and Molecular Biology, 122(1) : 36 – 50. Doi :
+        <a href="http://dx.doi.org/10.1016/j.pbiomolbio.2016.08.005">10.1016/j.pbiomolbio.2016.08.005</a>
+    </li>
+    <li class="enumerate" id="x1-17008x4">
+        <a id="x1-170074"></a>Mossio, M., Montévil, M., and Longo, G. (2016). Theoretical principles for biology : Organization. Progress in Biophysics and Molecular Biology, 122(1) : 24 – 35. Doi :
+        <a href="http://dx.doi.org/10.1016/j.pbiomolbio.2016.07.005">10.1016/j.pbiomolbio.2016.07.005</a>
+    </li>
+    <li class="enumerate" id="x1-17010x5">
+        <a id="x1-170095"></a>Noble, D. (2010). Biophysics and systems biology. Philosophical Transactions of the Royal Society A : Mathematical, Physical and Engineering Sciences, 368(1914) : 1125. Doi :
+        <a href="http://dx.doi.org/10.1098/rsta.2009.0245">10.1098/rsta.2009.0245</a>
+    </li>
+    <li class="enumerate" id="x1-17012x6"><a id="x1-170116"></a>Sonnenschein, C. and Soto, A. (1999). The society of cells : cancer and control of cell proliferation. Springer Verlag, New York.</li>
+    <li class="enumerate" id="x1-17014x7">
+        <a id="x1-170137"></a>Soto, A. M., Longo, G., Montévil, M., and Sonnenschein, C. (2016). The biological default state of cell proliferation with variation and motility, a fundamental principle for a theory of organisms. Progress in
+        Biophysics and Molecular Biology, 122(1) : 16 – 23. Doi : <a href="http://dx.doi.org/10.1016/j.pbiomolbio.2016.06.006">10.1016/j.pbiomolbio.2016.06.006</a>
+    </li>
+    <li class="enumerate" id="x1-17016x8">
+        <a id="x1-170158"></a>Montévil, M., Speroni, L., Sonnenschein, C., and Soto, A. M. (2016b). Modeling mammary organogenesis from biological first principles : Cells and their physical constraints. Progress in Biophysics and Molecular
+        Biology, 122(1) : 58 – 69. Doi : <a href="http://dx.doi.org/10.1016/j.pbiomolbio.2016.08.004">10.1016/j.pbiomolbio.2016.08.004</a>
+    </li>
+    <li class="enumerate" id="x1-17018x9">
+        <a id="x1-170179"></a>D’Anselmi, F., Valerio, M., Cucina, A., Galli, L., Proietti, S., Dinicola, S., Pasqualato, A., Manetti, C., Ricci, G., Giuliani, A., and Bizzarri, M. (2011). Metabolism and cell shape in cancer : A fractal
+        analysis. The International Journal of Biochemistry &amp; Cell Biology, 43(7) : 1052 – 1058. Metabolic Pathways in Cancer. Doi : <a href="http://dx.doi.org/10.1016/j.biocel.2010.05.002">10.1016/j.biocel.2010.05.002</a>
+    </li>
+    <li class="enumerate" id="x1-17020x10">
+        <a id="x1-1701910"></a>Longo, G. and Montévil, M. (2014). Perspectives on Organisms : Biological time, symmetries and singularities. Lecture Notes in Morphogenesis. Springer, Dordrecht. Doi :
+        <a href="http://dx.doi.org/10.1007/978-3-642-35938-5">10.1007/978-3-642-35938-5</a>
+    </li>
+    <li class="enumerate" id="x1-17022x11">
+        <a id="x1-1702111"></a>Tjørve, E. (2003). Shapes and functions of species–area curves : a review of possible models. Journal of Biogeography, 30(6) : 827 – 835. Doi :
+        <a href="http://dx.doi.org/10.1046/j.1365-2699.2003.00877.x">10.1046/j.1365-2699.2003.00877.x</a>
+    </li>
+    <li class="enumerate" id="x1-17024x12">
+        <a id="x1-1702312"></a>Hoehler, T. M. and Jorgensen, B. B. (2013). Microbial life under extreme energy limitation. Nat Rev Micro, 11(2) : 83 – 94. Doi : <a href="http://dx.doi.org/10.1038/nrmicro2939">10.1038/nrmicro2939</a>
+    </li>
+    <li class="enumerate" id="x1-17026x13">
+        <a id="x1-1702513"></a>Camalet, S., Duke, T., Julicher, F., and Prost, J. (2000). Auditory sensitivity provided by self-tuned critical oscillations of hair cells. Proceedings of the National Academy of Sciences, pages 3183 – 3188.
+        Doi : <a href="http://dx.doi.org/10.1073/pnas.97.7.3183">10.1073/pnas.97.7.3183</a>
+    </li>
+    <li class="enumerate" id="x1-17028x14">
+        <a id="x1-1702714"></a>Lesne, A. and Victor, J.-M. (2006). Chromatin fiber functional organization : Some plausible models. Eur Phys J E Soft Matter, 19(3) : 279 – 290. Doi :
+        <a href="http://dx.doi.org/10.1140/epje/i2005-10050-6">10.1140/epje/i2005-10050-6</a>
+    </li>
+    <li class="enumerate" id="x1-17030x15">
+        <a id="x1-1702915"></a>Montévil, M. and Mossio, M. (2015). Biological organisation as closure of constraints. Journal of Theoretical Biology, 372(0) : 179 – 191. Doi :
+        <a href="http://dx.doi.org/10.1016/j.jtbi.2015.02.029">10.1016/j.jtbi.2015.02.029</a>
+    </li>
+</ol>
+<div class="indent footnotes">
+    <p>
+        <a href="#kt-1" id="tk-1">
+            <span class="thank-mark"><span class="tcrm-1000">∗</span></span>
+        </a>
+        Montévil M. (2018) A Primer on Mathematical Modeling in the Study of Organisms and Their Parts. In: Bizzarri M. (eds) Systems Biology. Methods in Molecular Biology, vol 1702. Humana Press, New York, NY. Doi :
+        <a href="https://doi.org/10.1007/978-1-4939-7456-6_4">10.1007/978-1-4939-7456-6_4</a>
+    </p>
+    <p>
+        <a href="#kt-2" id="tk-2">
+            <span class="thank-mark"><span class="tcrm-1000">†</span></span>
+        </a>
+        Laboratoire "Matière et Systèmes Complexes" (MSC), UMR 7057 CNRS, Université Paris 7 Diderot, 75205 Paris Cedex 13, France and Institut d’Histoire et de Philosophie des Sciences et des Techniques (IHPST) - UMR 8590 Paris, France.
+    </p>
+</div>

@@ -37,9 +37,9 @@
    <span  class="smalltext">{{pubuttons(article.data) |safe}}</span> <label for="{{article.data.bibentry.id}}{{rid}}" class="smalltext">Abstract</label>
   </p>
   <div class="content">
-     <p > <em> Abstract: </em>  {{ article.data.abstract  | safe }}</p >
+     <p > <span class="paragraphHead2"> Abstract: </span>  {{ article.data.abstract  | safe }}</p >
      {% if not  (article.data.bibentry.keyword === undefined) %}
-          <p > <em> Keywords: </em> {{ article.data.keyword  | safe }}</p >
+          <p > <span class="paragraphHead2"><em> Keywords: </em></span>  {{ article.data.keyword  | safe }}</p >
            {% endif %}
   </div>
 </section>

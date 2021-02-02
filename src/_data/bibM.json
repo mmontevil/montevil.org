@@ -321,7 +321,7 @@
       }
     ],
     "container-title": "Frontiers in Physiology",
-    "id": "2020-MM-IdentityOrganismsScientific",
+    "id": "2020-MM-Identity-Organism",
     "issued": {
       "date-parts": [
         [
@@ -437,13 +437,14 @@
       }
     ],
     "container-title": "Organisms. Journal of Biological Sciences",
-    "id": "2017-MP-HitchhikersGuideCancer",
+    "id": "2017-MP-Hitchhikers-Guide-Cancer",
     "issue": "2",
     "issued": {
       "date-parts": [
         [
           2017,
-          12
+          12,
+          15
         ]
       ]
     },
@@ -712,7 +713,7 @@
       }
     ],
     "container-title": "Synthese",
-    "id": "2019-Montevil-PossibilitySpacesNotion",
+    "id": "2019-Montevil-Possibility-Spaces-Novelty",
     "issue": "11",
     "issued": {
       "date-parts": [
@@ -918,7 +919,7 @@
       }
     ],
     "container-title": "PLoS ONE",
-    "id": "2014-BSQ-SingleCellsTissues",
+    "id": "2014-BSQ-Tissues-Collagen-Time",
     "issue": "4",
     "issued": {
       "date-parts": [
@@ -1312,7 +1313,7 @@
       }
     ],
     "container-title": "Environmental Health Perspectives",
-    "id": "2020-MAS-CombinedMorphometricStatistical",
+    "id": "2020-MAS-Morphometric-Clarity-Bpa",
     "issue": "5",
     "issued": {
       "date-parts": [
@@ -1426,13 +1427,14 @@
       }
     ],
     "container-title": "<span class=\"nocase\">Logical Methods in Computer Science</span>",
-    "id": "2017-LM-LogicBiologyVia",
+    "id": "2017-LM-Logic-Physics-Biology",
     "issue": "4",
     "issued": {
       "date-parts": [
         [
           2017,
-          11
+          11,
+          30
         ]
       ]
     },
@@ -1739,7 +1741,7 @@
       }
     ],
     "container-title": "Biological Theory",
-    "id": "2014-PMF-EcologicalModelsGene",
+    "id": "2014-PMF-Ecological-Models-Cells-Genes",
     "issue": "4",
     "issued": {
       "date-parts": [
@@ -1770,7 +1772,7 @@
       }
     ],
     "container-title": "Biological Theory",
-    "id": "2014-PM-EcologicalModelsGene",
+    "id": "2014-PM-Ecological-Models-Cells",
     "issue": "4",
     "issued": {
       "date-parts": [
