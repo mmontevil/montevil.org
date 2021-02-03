@@ -1,3 +1,4 @@
+ 
 <head{% if page.url == "/" %} itemscope itemtype="https://schema.org/WebSite"{% endif %}>
   {#
   charset and viewport first:
@@ -25,10 +26,10 @@
   {% include 'components/google-analytics.njk' %}
 
   {# opengraph and Twitter #}
-  <meta property="og:site_name" content="{{websiteid.name}}" />
+  <meta property="og:site_name" content="Nicolas Hoizey" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:creator" content="@{{websiteid.twitter}}" />
-  <meta name="twitter:site" content="@{{websiteid.twitter}}" />
+  <meta name="twitter:creator" content="@nhoizey" />
+  <meta name="twitter:site" content="@nhoizey" />
 
   {# https://dev.twitter.com/web/overview/widgets-webpage-properties#csp #}
   <meta name="twitter:widgets:csp" content="on" />
@@ -45,7 +46,7 @@
     {% set ogImageTitle = ogDescription %}
   {% else %}
     {% set ogTitle = title %}
-    {% if layout == "article" or layout == "publication" or layout == "link" or layout == "talk" %}
+    {% if layout == "article" or layout == "link" or layout == "talk" %}
       {% set ogDescription = pageExcerpt | striptags | truncate(290) | escape %}
       {% if layout == "link" %}
         {% set ogImageTitle %}Link: {{ ogTitle }}{% endset %}
@@ -68,7 +69,7 @@
   <meta property="og:type" content="{{ opengraph.type }}" />
   {% if opengraph.type == "article" %}
     <meta property="article:published_time" content="{{ attributeDate }}" />
-    <meta property="article:author" content="{{websiteid.url}}" />
+    <meta property="article:author" content="https://www.facebook.com/nhoizey" />
   {% endif %}
 
   {#
@@ -86,39 +87,32 @@
   <link rel="icon" type="image/jpeg" href="/favicon.jpg" />
 
   {# webmentions with webmention.io #}
-  <link rel="pingback" href="https://webmention.io/{{websiteid.webmention}}/xmlrpc" />
-  <link rel="webmention" href="https://webmention.io/{{websiteid.webmention}}/webmention" />
+  <link rel="pingback" href="https://webmention.io/nicolas-hoizey.com/xmlrpc" />
+  <link rel="webmention" href="https://webmention.io/nicolas-hoizey.com/webmention" />
 
   {# iOS features #}
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  <link rel="apple-touch-icon" href="/assets/me/Montevil-180px.png" />
-  <meta name="apple-mobile-web-app-title" content="{{websiteid.name}}" />
+  <link rel="apple-touch-icon" href="/assets/me/nicolas-hoizey-180px.png" />
+  <meta name="apple-mobile-web-app-title" content="N. Hoizey" />
   {# https://timkadlec.com/remembers/2018-06-06-web-watch/ #}
   <meta name="disabled-adaptations" content="watch" />
 
   {# Theme color: https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android #}
-  <meta name="theme-color" content="{{websiteid.color}}">
+  <meta name="theme-color" content="#663399">
 
   {# web app manifest #}
   {# crossorigin: https://twitter.com/TimVereecke/status/1225547620791341062 #}
   <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials" />
 
-  {# web monetization 
+  {# web monetization #}
   <meta name="monetization" content="$ilp.uphold.com/G93bZjZYjHYb" />
-#}
-  {# OpenSearch
+
+  {# OpenSearch #}
   <link rel="search"
     type="application/opensearchdescription+xml"
-    title="{{websiteid.name}}"
-    href="{{websiteid.url}}/opensearch.xml" />
- #}
-  {# rel-me (should be in visible links) #}
-  <link rel="me" href="https://twitter.com/{{websiteid.twitter}}" />
-
-  {# http://microformats.org/wiki/source-brainstorming #}
-  <link href="{{websiteid.source}}" rel="source" />
+    title="Nicolas Hoizey"
+    href="https://nicolas-hoizey.com/opensearch.xml" />
 
   <meta name="generator" content="Eleventy {{ build.version }}" />
-
-  </head>
+</head>

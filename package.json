@@ -129,6 +129,7 @@
     "cross-spawn": "^7.0.3",
     "element-remove": "^1.0.4",
     "eleventy-plugin-reading-time": "^0.0.1",
+    "fix": "^0.0.6",
     "instantsearch.js": "~4.12.0",
     "linkify-urls": "^3.1.1",
     "moment-timezone": "^0.5.32",

@@ -1,7 +1,7 @@
 ---
 layout: content
 eleventyComputed:
-    title : "{{ bibentry.title }}"
+   
     keyword : "{{ bibentry.keyword }}"
     abstract : "{{ bibentry.abstract }}"
     bibib: "src/assets/bib/{{page.fileSlug}}.bib"
@@ -23,7 +23,6 @@ tags: [{% for entry in keyword.split(', ') %}
 
 {{ orderDate    | dump }}
 #}
-
 
 
 {% from "macros/pubuttons.njk" import pubuttons %}

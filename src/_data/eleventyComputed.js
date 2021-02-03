@@ -137,7 +137,10 @@ function tags(data) {
   if (data.layout === 'note') {
     tags = twitter.extractHashtags(twitter.htmlEscape(data.content));
   }
-  if (data.tags !== undefined) {
+    if (data.layout === 'publication') {
+         //   tags = data.keyword ;
+  }
+  if (data.tags !== undefined ) {
     // merge and deduplicate
     tags = [...new Set([].concat(...tags, ...data.tags))];
   }
@@ -157,6 +160,7 @@ function headTitle(data) {
   if (data.page.url === '/') {
     return `<title itemprop="name">${data.pkg.title}</title>`;
   }
+
   // if (data.layout === 'note') {
   //   return `<title>${lead(data).slice(0, 50)} - ${
   //     data.pkg.author.name
@@ -167,6 +171,7 @@ function headTitle(data) {
 
 function ogType(data) {
   switch (data.layout) {
+    case 'publication':
     case 'article':
     case 'link':
     case 'note':
@@ -192,6 +197,7 @@ function ogImageTitle(data) {
     return data.pkg.title;
   }
   switch (data.layout) {
+     case 'publication':   
     case 'article':
     case 'link':
     case 'talk':
@@ -208,6 +214,7 @@ function ogImageTagline(data) {
     return '';
   }
   switch (data.layout) {
+    case 'publication':
     case 'article':
     case 'link':
     case 'note':
@@ -250,5 +257,16 @@ module.exports = {
     },
   },
   lead: (data) => lead(data),
-  // tags: (data) => tags(data),
+  test: "yop",
+   bibentry: (data) => {
+      var res={};
+      for (const entry in data.bibM) {
+          if(data.bibM[entry].id===data.page.fileSlug){
+            res = data.bibM[entry];
+          }
+      }
+        return res;
+    },
+    title: (data) => data.bibentry.title || data.title ,
+  tags: (data) => tags(data),
 };

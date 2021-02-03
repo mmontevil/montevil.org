@@ -1,7 +1,22 @@
 
-module.exports = {
+module.exports = {/*
   eleventyComputed: {
-    tags: (data) => {
+    bibentry: (data) => {
+      var res={};
+      for (const entry in data.bibM) {
+          if(data.bibM[entry].id===data.page.fileSlug){
+            res = data.bibM[entry];
+          }
+      }
+        return res;
+    }, },
+    */
+  // tags: (data) => tags(data),
+
+
+
+
+  /*  tags: (data) => {
       if (data.content === undefined) {
         return data.tags || [];
       }
@@ -12,19 +27,8 @@ module.exports = {
         tags = [...new Set([].concat(...tags, ...data.tags))];
       }
       return tags;
-    },  
-    bibentry: (data) => {
-      var res={};
-      for (const entry in data.bibM) {
-          if(data.bibM[entry].id===data.page.fileSlug){
-            res = data.bibM[entry];
-          }
-      }
-        return res;
-    },
-    hoptest: (data) => { ;
-     return data.bibentry.title;
-   },
-  },
+    },*/  
+
+   
     
   };

@@ -30,20 +30,20 @@
   <div class="card__body p-summary smalltext"><p>{{publabel(article.data)|safe}}
 {{ article.data.bibib | bibcite|divRemove|safe}} </p></div>
 
-{% if not  (article.data.bibentry.abstract === undefined) %}
+
  <section class="accordion">
   <input type="checkbox" name="{{article.data.bibentry.id}}{{rid}}" id="{{article.data.bibentry.id}}{{rid}}" >
   <p class="handle">
-   <span  class="smalltext">{{pubuttons(article.data) |safe}}</span> <label for="{{article.data.bibentry.id}}{{rid}}" class="smalltext">Abstract</label>
+   <span  class="smalltext">{{pubuttons(article.data) |safe}}</span> {% if not  (article.data.bibentry.abstract === undefined) %}<label for="{{article.data.bibentry.id}}{{rid}}" class="smalltext">Abstract</label>
   </p>
   <div class="content">
      <p > <span class="paragraphHead2"> Abstract: </span>  {{ article.data.abstract  | safe }}</p >
      {% if not  (article.data.bibentry.keyword === undefined) %}
           <p > <span class="paragraphHead2"><em> Keywords: </em></span>  {{ article.data.keyword  | safe }}</p >
            {% endif %}
-  </div>
+  </div>{% endif %}
 </section>
- {% endif %}
+ 
 
   
 

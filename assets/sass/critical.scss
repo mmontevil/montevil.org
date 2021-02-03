@@ -783,7 +783,7 @@ color: var(--color-link);
   color: var(--color-primary-darker-1);
 }
 
-div > .indent, div >.noindent,section > .indent, section >.noindent,dd > .noindent,.caption,div >.description,div >table.equation,div >.itemize1,div >.enumerate1,div >.tableofcontents, div.tabular,div >.tableofcontents,.bibitem, dd.enumerate, div>blockquote , .enumerateRom,ol.references,.Tableau10,.equation-star{
+div > .indent, div >.noindent,section > .indent, section >.noindent,dd > .noindent,.caption,div >.description,div >table.equation,div >.itemize1,div >.enumerate1,div >.tableofcontents, div.tabular,div >.tableofcontents,.bibitem, dd.enumerate, div>blockquote , .enumerateRom,ol.references,ul.references,.Tableau10,.equation-star, .footnotes{
       @media (min-width: 30rem) {
   margin-left: calc(0.25*100% - 0.25*30rem);
   margin-right: calc(0.25*100% - 0.25*30rem);
@@ -810,6 +810,9 @@ div >.tableofcontents,.bibitem,.thebibliography{
 .subsectionHead +.subsubsectionHead {
   margin-top : 0.5em;
 }
+.subsubsectionHead +.subsubsectionHead {
+  margin-top : -0.5em;
+}
 div >table.equation{
       @media (min-width: 30rem) {
   margin-left: calc(0.25*100% - 0.25*30rem);
@@ -822,9 +825,9 @@ div >table.equation{
 .subsubsectionToc{
   margin-left: 2em;
 }
-dt.description{margin-left: 0em;}
 .cmti-10,.ecti-1000{font-style: italic;}
-dt.description{margin-left: -2em;
+dt.description, dt.dt{margin-left: -2em;
+  margin-top: 0.3em;
   font-variant: small-caps;}
 .cmbx-10,.ecbx-1000,.paragraphHead,.cmbx-9,.likeparagraphHead,.ec-lmbx-10{
   font-weight: bold;
@@ -833,7 +836,7 @@ dt.description{margin-left: -2em;
 
 .bibitem, .thebibliography > *{margin-bottom:0.7em;}
 
-.titleHead,.head,.center,.maketitle{text-align: center;}
+.titleHead,.head,.center,.maketitle,.author{text-align: center;}
 .titleHead{margin-bottom: 1em;}
 .head{margin-bottom: 2em;}
 .subtitleHead{text-align: center;
@@ -843,16 +846,26 @@ dt.description{margin-left: -2em;
         }
 .breakk{
   }
-nav > ul, nav >ul >li>ul , nav >ul >li>ul>li>ul{
+nav > ul, nav >ul >li>ul , nav >ul >li>ul>li>ul,.references {
   list-style-type: none;
 }
 .episource{text-align: right;
   margin-left: 15%;
 }
 .td11{font-size: var(--font-size-s);}
+.frame_hsides{font-size: var(--font-size-xs);}
 .enumerateRom{list-style-type: lower-roman;}
 .quote {padding-left:1.5em;  }
-
+//th{padding:0 }
+ .frame_hsides{ margin-left: auto;
+  margin-right: auto;
+ }
+ .bibsp{display:none;}
+ .bibitem, .thebibliography >p, .thebibliography >div, .references__item{
+   text-indent: -1.5em;
+   padding-left:1.5em;
+}
+.ReferencesCopy2{text-indent: 0em;}
 //blockquote > p{margin-left: 2em; }
   /*
   hr {
