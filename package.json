@@ -114,7 +114,7 @@
     "workbox-core": "6.0.2",
     "workbox-expiration": "6.0.2",
     "workbox-google-analytics": "6.1.0",
-    "workbox-precaching": "6.0.2",
+    "workbox-precaching": "6.1.0",
     "workbox-routing": "6.1.0",
     "workbox-strategies": "6.0.2"
   },
