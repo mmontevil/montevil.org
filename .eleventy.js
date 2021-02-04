@@ -245,6 +245,10 @@ const typeseter = (content, outputPath) => {
       'typeseter',
       typeseter
     ); 
+  const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minifier");
+module.exports = (eleventyConfig) => {
+  eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
+};
   
   // eleventyConfig.addPlugin(imagesResponsiver, imagesResponsiverConfig);
 
