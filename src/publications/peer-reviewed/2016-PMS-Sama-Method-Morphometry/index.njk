@@ -2,658 +2,461 @@
 excerpt: Software for Automated Morphological Analysis is a method by which epithelial structures grown in 3D cultures can be imaged, reconstructed and analyzed.
 illust: pone.0153022.g002.PNG_L.png
 ---
-
-<h2 id="titleHead" style="text-align: center;">SAMA: A Method for 3D Morphological Analysis</h2>
-<div class="indent center">
-    <a class="author-name" data-author-id="0">Tessie Paulose,</a><a class="author-name" data-author-id="1"> Maël Montévil, </a><a class="author-name" data-author-id="2">Lucia Speroni, </a>
-    <a class="author-name" data-author-id="3"> Florent Cerruti</a>,<a class="author-name" data-author-id="4"> Carlos Sonnenschein,<span class="type"> </span>Ana M. Soto <span class="email"> </span></a>
-</div>
-<div style="text-align: center;">Published: April 1, 2016</div>
-
+<h2 id="titleHead" style="text-align:center">SAMA: A Method for 3D Morphological Analysis</h2>
+<div class="indent center"><a class="author-name" data-author-id="0">Tessie Paulose,</a><a class="author-name" data-author-id="1"> Maël Montévil, </a><a class="author-name" data-author-id="2">Lucia Speroni, </a><a class="author-name" data-author-id="3">Florent Cerruti</a>,<a class="author-name" data-author-id="4"> Carlos Sonnenschein,<span class="type"> </span>Ana M. Soto<span class="email"></span></a></div>
+<div style="text-align:center">Published: April 1, 2016</div>
 <p class="indent paragraphHead">Abstract</p>
 <p class="indent">
-    Three-dimensional (3D) culture models are critical tools for understanding tissue morphogenesis. A key requirement for their analysis is the ability to reconstruct the tissue into computational models that allow quantitative evaluation
-    of the formed structures. Here, we present Software for Automated Morphological Analysis (SAMA), a method by which epithelial structures grown in 3D cultures can be imaged, reconstructed and analyzed with minimum human intervention.
-    SAMA allows quantitative analysis of key features of epithelial morphogenesis such as ductal elongation, branching and lumen formation that distinguish different hormonal treatments. SAMA is a user-friendly set of customized macros
-    operated via FIJI (
-    <a href="http://fiji.sc/Fiji">http://fiji.sc/Fiji</a>), an open-source image analysis platform in combination with a set of functions in R ( <a href="http://www.r-project.org/">http://www.r-project.org/</a>), an open-source program for
-    statistical analysis. SAMA enables a rapid, exhaustive and quantitative 3D analysis of the shape of a population of structures in a 3D image. SAMA is cross-platform, licensed under the GPLv3 and available at
-    <a href="http://montevil.theobio.org/content/sama">http://montevil.theobio.org/content/sama</a>.
+  Three-dimensional (3D) culture models are critical tools for understanding tissue morphogenesis. A key requirement for their analysis is the ability to reconstruct the tissue into computational models that allow quantitative evaluation
+  of the formed structures. Here, we present Software for Automated Morphological Analysis (SAMA), a method by which epithelial structures grown in 3D cultures can be imaged, reconstructed and analyzed with minimum human intervention.
+  SAMA allows quantitative analysis of key features of epithelial morphogenesis such as ductal elongation, branching and lumen formation that distinguish different hormonal treatments. SAMA is a user-friendly set of customized macros
+  operated via FIJI (
+  <a href="http://fiji.sc/Fiji">http://fiji.sc/Fiji</a>), an open-source image analysis platform in combination with a set of functions in R ( <a href="http://www.r-project.org/">http://www.r-project.org/</a>), an open-source program for
+  statistical analysis. SAMA enables a rapid, exhaustive and quantitative 3D analysis of the shape of a population of structures in a 3D image. SAMA is cross-platform, licensed under the GPLv3 and available at
+  <a href="http://montevil.theobio.org/content/sama">http://montevil.theobio.org/content/sama</a>.
 </p>
-
 <p class="indent">
-    <strong>Funding: </strong>This work was supported by Award Number R01ES08314 from the National Institute of Environmental Health Sciences of the National Institutes of Health (
-    <a href="https://www.niehs.nih.gov/">https://www.niehs.nih.gov/</a>) and Award numbers #02-2009-093 and #02-2011-095 from the Avon Foundation for Women ( <a href="http://www.avonfoundation.org/">http://www.avonfoundation.org/</a>) to
-    AMS. The content does not necessarily represent the official views of the funding agencies and the funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
+  <strong>Funding: </strong>This work was supported by Award Number R01ES08314 from the National Institute of Environmental Health Sciences of the National Institutes of Health (
+  <a href="https://www.niehs.nih.gov/">https://www.niehs.nih.gov/</a>) and Award numbers #02-2009-093 and #02-2011-095 from the Avon Foundation for Women ( <a href="http://www.avonfoundation.org/">http://www.avonfoundation.org/</a>) to
+  AMS. The content does not necessarily represent the official views of the funding agencies and the funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
 </p>
-<p class="indent"><strong>Competing interests: </strong> The authors have declared that no competing interests exist.</p>
-
-    <h3 class="sectionHead id="section1">Introduction</h3>
-    <p class="indent">
-        The past couple of decades have witnessed great progress in optical imaging, computational analysis and modeling of biological systems. In the quest for understanding development in higher organisms, biologists are seeking imaging
-        modalities that are increasingly multidimensional by relying on cutting-edge computational approaches to monitor biological phenomena with exceptional resolution, specificity and dimensionality [
-        <a class="ref-tip" href="#pone.0153022.ref001">1</a>–<a class="ref-tip" href="#pone.0153022.ref004">4</a>]. Computerized analyses of images can now overcome the limitations and biases of human assessments with the aid of
-        three-dimensional (3D) images while using <em>in vitro</em> 3D tissue cultures.
-    </p>
-    <p class="indent">
-        In the past five years, 3D tissue culture models have greatly advanced our understanding of tissue morphogenesis and pathogenesis of several diseases, including cancer [
-        <a class="ref-tip" href="#pone.0153022.ref005">5</a>–<a class="ref-tip" href="#pone.0153022.ref007">7</a>] by bridging the gap between complex whole animal models and simple 2D cell cultures that lack the architecture, geometry and
-        functionality of the live glandular tissue. A significant contribution of 3D cultures is towards understanding ductal and branching morphogenesis of epithelial cells with respect to its surrounding extracellular matrix (ECM). 3D
-        cultures of tissues including the mammary gland, lungs, pancreas and blood vessels serve as important tools to study the development of organs and tissues by cell-ECM interactions. Several laboratories, including ours, use different
-        types of 3D culture models to understand normal or neoplastic tissue development [ <a class="ref-tip" href="#pone.0153022.ref006">6</a>;<a class="ref-tip" href="#pone.0153022.ref008">8</a>–
-        <a class="ref-tip" href="#pone.0153022.ref014">14</a>].
-    </p>
-    <p class="indent">
-        We analyzed images from the 3D gels using presently available commercial and open-source software and found them lacking in options that acquire biologically relevant morphometric parameters in 3D breast tissue. More specifically,
-        these software lacked techniques to accurately analyze elongation, sphericity, lumen formation, and branching, characteristics that make epithelial structures of the 3D model physiologically and morphologically relevant. In this
-        article, we describe a software tool that can provide a rapid and biologically relevant analysis of the 3D culture models of the breast. Here we introduce our open-source SAMA (Software for Automated Morphological Analysis) that
-        takes into account various parameters that define a normal breast while using 3D simulations of breast morphogenesis.
-    </p>
-    <p class="indent">
-        For the sake of simplicity, we have described in this paper the analysis of only one 3D model, specifically a hormone-sensitive 3D culture model of the human breast. In the normal breast, during early development as well as during
-        puberty and pregnancy, the gland responds to hormones, including estradiol, progesterone and prolactin. These hormones regulate mammary morphogenesis by increasing ductal elongation, lateral branching of the ducts, budding, i.e.,
-        formation of acini [<a class="ref-tip" href="#pone.0153022.ref015">15</a>] and also lumen formation [ <a class="ref-tip" href="#pone.0153022.ref016">16</a>;<a class="ref-tip" href="#pone.0153022.ref017">17</a>]. Given that there is
-        no established breast cell line that responds to mammotropic hormones, research on hormone action in cell culture is mainly done in 2D using hormone-sensitive cell lines derived from pleural effusions obtained from breast cancer
-        patients. Among these cell lines we have chosen the T47D cell line to develop a hormone-sensitive 3D culture of the breast. This model represents the only available model for the study of hormone regulation of epithelial
-        morphogenesis. In this model, the breast cancer T47D cells were embedded in Type I Collagen and these gels were treated with hormones that are physiologically involved in breast morphogenesis. It was observed that the model responds
-        to hormones in ways similar to what is seen in the breast: estradiol (E2) caused elongation, the progestogen, Promegestone (P) caused branching and Prolactin (Prl) caused budding in these structures [
-        <a class="ref-tip" href="#pone.0153022.ref011">11</a>]. The variety of epithelial structures makes this model a suitable choice for testing the power of SAMA in measuring several morphological parameters.
-    </p>
-    <p class="indent">
-        While we have used SAMA to specifically analyze in vitro 3D models of the breast, we believe that developmental biologists in general as well as scientists keen on understanding tissue morphogenesis can use this technique
-        effectively. SAMA is particularly useful for multi-dimensional and multi-parametric analyses and is able to measure the size, shape, lumen formation and quantitative branching of a variety of structures in a high throughput manner.
-    </p>
-    <p class="indent">
-        In the following sections, we will describe the technical features of SAMA, including a description of how images are processed to obtain the final output. SAMA meets the following demands of 3D image analysis: 1) it uses novel
-        algorithms for image analysis that are able to identify, count and analyze crowded 3D structures, 2) it has a versatile design allowing analysis of epithelial phenotypes in several types of matrices, 3) it is open-source and written
-        mostly in R and ImageJ macro language which are simple languages, so the underlying methodology is known and can be modified or improved by users with relative ease, 4) it is fully operated from ImageJ through a user-friendly
-        interface and finally, 5) it is an automated, high-throughput analysis that eliminates the monotony that is typically involved in image analyses (for instance, image formatting, looping several image analysis steps and repeating the
-        analysis without human bias).
-    </p>
-
-    <h3 class="sectionHead" id="section2">Materials and Methods</h3>
-        <h4 class="subsectionHead" id="section1">Description of SAMA</h4>
-        <p class="indent">
-            SAMA is a novel method by which epithelial structures grown in 3D cultures can be imaged, reconstructed and analyzed with minimum human intervention and bias. It is a powerful and flexible tool for high-throughput morphological
-            and statistical analysis of 3D images. Additionally, we have included an analysis to evaluate the reproducibility of results within and among experimental groups, a critical necessity in biological experiments.
-        </p>
-        <p class="indent">
-            SAMA is a user-friendly set of customized macros with an interactive and user-friendly interface that uses many tools of FIJI (<a href="http://fiji.sc/Fiji">http://fiji.sc/Fiji</a>) [
-            <a class="ref-tip" href="#pone.0153022.ref018">18</a>], an open-source image analysis platform, in combination with a set of functions in R ( <a href="http://www.r-project.org/">http://www.r-project.org/</a>), an open-source
-            software tool for statistical analysis. The website for downloading SAMA is <a href="http://montevil.theobio.org/en/content/sama">http://montevil.theobio.org/en/content/sama</a>. Herein, it is accessible as a FIJI plugin,
-            compatible with Windows, Mac, and Unix along with downloadable source code. In addition, the website includes detailed technical description of the software with sample images for the user to download and learn how to navigate
-            SAMA. Several plugins used in SAMA are available when FIJI is downloaded, while others have to be installed by the user, the details of which are available on the website.
-        </p>
-
-        <h4 class="subsectionHead"  id="section2">Image processing</h4>
-        <p class="indent">
-            A salient requirement in image analysis is to obtain a homogenized image stack in terms of image resolution and luminosity. 3D structures with homogeneous pixel values that are significantly different from the background are
-            desirable so that a threshold can be applied for segmentation. However, this is difficult to achieve because acquiring images at low magnifications (20X) often results in pixelated and poorly resolved images, leading to
-            artifacts in image analysis. One of the problems we encountered was conjoined structures in crowded areas of the gel due to limited resolution of voxels. Another hindrance was differences in luminosity within the z-stack images
-            (typically the slice closest to the laser will be the brightest and subsequent slices will have decreased intensity, and existing solutions did not work for this type of data set as they rely on more homogenous media [
-            <a class="ref-tip" href="#pone.0153022.ref019">19</a>]. This resulted in dim structures in slices that were farther away from the laser. To solve issues of imaging irregularities, we included several steps of 3D filtering that
-            take into account the 3D information of the signal and reduce the noise and artifacts in images. Briefly, we first remove the local background of the images and then, the images are subjected to several filters including 3D
-            Median, Variance, Minimum and Maximum filters alone or in combination. These filters ensure that most of the noise is removed, while the shape of the structure is maintained. Additionally, a 3D Gaussian blur filter is used to
-            smooth the surface of the structures by normalizing the intensity of pixels with reference to neighboring pixels. We compensate the loss of luminosity for deeper slices of the stack on the basis of the running average of the
-            maximum luminosity of each slice, so that for each slice, the previous, current and next slice are taken into account to assess and compensate for the loss of luminosity. In addition, for the morphological analysis, using 2D
-            fill holes, we fill the structures to avoid interference from the lumen. Using these filters in image processing is important for two reasons; first, homogenized pixels in the structures have similar threshold intensity, thus
-            allowing an accurate morphological analysis, and second, lumen in the homogenized structures can be accurately segmented and analyzed. An optional step for images with crowded structures is to separate out structures that were
-            merged because of poorly resolved voxels. To achieve this we subjected the image to 3D Gradient filter process, which demarcates the edges of the structures. This image with demarcated structures is then subtracted from the
-            original image, thus getting rid of unwanted pixels between structures. This step ensures an accurate count and morphological measurement of individual structures. However, in images where crowded structures are not an issue,
-            these steps can be left out of the algorithm. Image processing steps described here are incorporated at several stages in the SAMA-images section of the code depending on the end-point needed.
-        </p>
-        <p class="indent">
-            A drawback of most commercial software is the inability to adapt new parameters that result from either including additional steps for image processing or calculating new features of epithelial structures. In contrast, SAMA's
-            modular algorithm and open-source code allows users the choice of including additional image processing steps or novel phenotype measurements as needed. As an example of giving users the option to choose steps during image
-            processing, we used images in which most of the background noise was removed by using wavelet techniques [
-            <a class="ref-tip" href="#pone.0153022.ref020">20</a>], a de-noising plugin. However, de-noising was excluded from the main SAMA framework and was run separately because it required more memory to function than what a typical
-            personal computer has, the absence of which may cause the program to fail. With SAMA, users have the freedom to run de-noising or an alternative algorithm based on bilateral filtering as a stand-alone batch process function
-            depending on the user’s computer memory (the stand-alone de-noising batch process is included).
-        </p>
-        <h4 class="subsectionHead"  id="section3">User-interface</h4>
-        <p class="indent">
-            The SAMA plugin has two main parts—“SAMA-image” and “SAMA-analyze” (<a href="#pone-0153022-g001">Fig 1</a>). SAMA-image allows users to analyze 3D structures in three tiers. Tier 1 is fully automated and is a mandatory step for
-            subsequent tiers. Users have a choice to carry out basic morphometrics, complexity (branching analysis) and lumen analysis either simultaneously or individually. Basic morphometric analysis includes counting all the structures
-            in the 3D image and saving the information in a text file. The data obtained from this analysis contain several morphologically relevant parameters (explained in the following section) that define the shape and size of the
-            structure (<a href="#pone-0153022-g002">Fig 2A</a>). The image files are batch-processed from a user-specified source directory wherein output files are stored as well. The plugins used in this tier for analyzing basic
-            morphometrics are 3D Object counter and 3D ROI manager [<a class="ref-tip" href="#pone.0153022.ref021">21</a>; <a class="ref-tip" href="#pone.0153022.ref022">22</a>]. In complexity analysis, branches of the structures are
-            quantified and these data are stored as separate files in the source directory. Briefly, the structures are skeletonized (structures stripped to the bare minimum pixels while preserving their overall shape) [
-            <a class="ref-tip" href="#pone.0153022.ref023">23</a>]and SAMA identifies each skeleton with the corresponding structure (<a href="#pone-0153022-g002">Fig 2B</a>). This enables the user to quantify the complexity of the skeleton
-            (number of branches and cumulated length of branches). Lumen analysis spans Tiers 1, 2 and 3. In Tier 1, the images are pre-processed for lumen analysis using several filters and the resulting images are then used in Tier 2. In
-            Tier 2, the user specifies the threshold for processed images that segments lumen in the structures, a value that varies from image to image and hence, cannot be automated. In Tier 3, lumena are identified by the difference in
-            pixel intensity between the surrounding cells and the hollow space in the epithelial structure. Multiple lumena are detected as regions, which appear darker than their surroundings, forming a hole, which are then segmented (
-            <a href="#pone-0153022-g002">Fig 2C</a>). The segmented lumena are counted and analyzed by 3D object counter and 3D ROI manager plugins, the corresponding structures are also identified. Every lumen thus obtains an identity of
-            its own with 3D parameters. All parameters obtained in Tiers 1, 2 and 3 are then statistically analyzed in SAMA-analyze. SAMA-analyze operates the part of SAMA written in R through the interface in ImageJ, which contains two
-            main parts—Data handling and Data analysis. Data handling consolidates all the data gathered from Tiers 1, 2 and 3 of SAMA-images into a single spreadsheet for analysis. Here, the user has the option to include or exclude lumen
-            and branching analysis from basic morphometric analysis. SAMA-analyze generates an exhaustive report, which compares shape and morphology of epithelial structures obtained in the different conditions/treatments. Biologically
-            relevant parameters (<a href="#pone-0153022-t001">Table 1</a>) ( <a href="#pone.0153022.s001">S1 Fig</a>) of each experimental replicate are represented as the mean, standard deviation, coefficient of variation and median with
-            respect to the distribution of structures in each group. This report includes a graph for each quantity and function of the estimated distribution of the replicates and a boxplot of the same data. ANOVA is performed to assess
-            the significance of the experimental conditions and Wilcoxon rank test is also performed in the case where only two conditions are present. An overview of the results is obtained by principal component analysis (PCA) (Figs
-            <a href="#pone-0153022-g003">3B</a> and <a href="#pone-0153022-g004">4B</a>), which enables to identify the variables that have a greater influence in the variance of the samples. This technique enables the user to represent a
-            data set with many parameters by defining new dimensions (which are combinations of the original variables) and represents a simple way of understanding the variance of the data set. This is helpful when many parameters are
-            correlated to each other. In the case of SAMA, some data sets, for example, lead to a size related quantity and a shape related quantity. Note however, that the definitions of such quantities are obtained <em>de novo</em> for
-            each dataset. Note also, that parameters that are biologically relevant but are not correlated with other parameters are usually not taken into account by this analysis because it focuses on trends present in many quantities.
-        </p>
-
-        <figure class="figure" data-doi="10.1371/journal.pone.0153022.g001">
-                        <img alt="Flow-chart and user-interfaces of SAMA." src="pone.0153022.g001.PNG_L.png" width="900em" class="zoom"/>
-
-            <figcaption class="caption">
-                <span>Fig 1. </span> Flow-chart and user-interfaces of SAMA. General algorithm of functions in SAMA (top panel). The two main interfaces of SAMA—SAMA-Images (bottom left) and SAMA-Analyze (bottom right).
-                <a href="https://doi.org/10.1371/journal.pone.0153022.g001"> https://doi.org/10.1371/journal.pone.0153022.g001</a>
-            </figcaption>
-        </figure>
-
- 
-        <figure class="figure" data-doi="10.1371/journal.pone.0153022.g002">
-                        <img alt="Basic morphometrics, branching and lumen analysis in the 3D hormone-sensitive breast
-            model." src="pone.0153022.g002.PNG_L.png" width="900em" class="zoom"/>
-
-            <figcaption class="caption">
-                <span>Fig 2. </span> Basic morphometrics, branching and lumen analysis in the 3D hormone-sensitive breast model. (a) An overview of all 3D structures (top) and individual 3D structure showing budding from E2+Prl (bottom
-                left) and branching from E2+P (bottom right) treatment groups. (b) Branching of structures in E2 alone (top) and E2+Prl (bottom). (c) Raw image of structures with lumena (top) and the processed image of structures with
-                segmented lumena (bottom).<a href="https://doi.org/10.1371/journal.pone.0153022.g002"> https://doi.org/10.1371/journal.pone.0153022.g002</a>
-            </figcaption>
-        </figure>
-
-        <figure class="figure" data-doi="10.1371/journal.pone.0153022.g003">
-                        <img alt="Morphometric analysis of structures
-            in E2+Prl treatment group." src="pone.0153022.g003.PNG_L.png" width="700em" class="zoom"/>
-
-                <figcaption class="caption">
-                    <span>Fig 3. </span> Morphometric analysis of structures in E2+Prl treatment group. (a) Graphs represent 3D parameters that were calculated using the formula shown in <a href="#pone-0153022-t001">Table 1</a>; elongation
-                    (top left), presence of lumen, (top right), sphericity (bottom left) and branching (bottom right). X-axis represents the mean of the parameters and Y-axis represents the distribution of the structures measured in three
-                    experimental replicates. Blue (solid) line represents E2 alone treatment and pink (dashed) line represents E2+Prl. (b) Principal component analysis (PCA) shows variance in the data by analyzing correlated variables
-                    between E2 and E2+Prl. Factor map with vectors represent highly correlated variables as Dimension 1 and 2 on the x and y axes respectively. Correlated variables sphericity (S) and ratio volume ellipsoid (RVE) in E2
-                    treatment shown with blue arrows while correlated variables elongation (E), number of lumen (L) and complexity (C) in E2+Prl shown with pink arrows (left). Graph shows distribution of the structures in each treatment
-                    group, E2 (blue) and E2+Prl (pink) with correlated variables (right).<a href="https://doi.org/10.1371/journal.pone.0153022.g003"> https://doi.org/10.1371/journal.pone.0153022.g003</a>
-                </figcaption>
-                </figure>
-                
-                <figure class="figure" data-doi="10.1371/journal.pone.0153022.g004">
-                
-                                <img alt="Morphometric analysis of structures in E2+P treatment group." src="pone.0153022.g004.PNG_L.png" width="800em" class="zoom"/>
-
-                    <figcaption class="caption">
-                        <span>Fig 4. </span> Morphometric analysis of structures in E2+P treatment group. (a) Graphs represent 3D parameters that were calculated using the formula shown in <a href="#pone-0153022-t001">Table 1</a>;
-                        elongation (top left), elongation in structures with lumen (top right), sphericity (bottom left) and branching in terms of ratio volume ellipsoid (bottom right). X-axis represents the mean of the parameters and
-                        Y-axis represents the distribution of the structures measured in three experimental replicates. Blue (solid) line represents E2 alone treatment and pink (dashed) line represents E2+P. (b) Principal component analysis
-                        (PCA) shows variance in the data by analyzing correlated variables, sphericity (S), ratio volume ellipsoid (RVE), elongation (E), complexity (C) and number of lumen (L) between E2 and E2+P. Factor map with vectors
-                        represent highly correlated variables as Dimension 1 and 2 on the x and y axes respectively. Vector colors, blue, pink and black correspond to the trend in the distribution of structures in E2, E2+P and both
-                        respectively (left). Graph shows distribution of the structures in each treatment group, E2 (blue) and E2+P (pink) with correlated variables (right). (c) Graphs represent reproducibility in the measurement of
-                        elongation in structures of E2 (left) and E2+P (right). X-axis represents the mean of the parameters and y-axis represents the distribution of the structures measured in five experimental replicates shown as a number
-                        code.
-                        <a href="https://doi.org/10.1371/journal.pone.0153022.g004"> https://doi.org/10.1371/journal.pone.0153022.g004</a>
-                    </figcaption>
-                    </figure>
-                    
-       <figure class="figure">              <img alt="List of quantitative
-                        parameters and their corresponding mathematical definitions" src="pone.0153022.t001.PNG_L.png" width="1000em" class="zoom"/><figcaption class="caption">  
-
-                        <span>Table 1. </span> List of quantitative parameters and their corresponding mathematical definitions.
-                        <a href="https://doi.org/10.1371/journal.pone.0153022.t001">https://doi.org/10.1371/journal.pone.0153022.t001</a></figcaption></figure>
-                        
-                        <h4 class="subsectionHead"  id="section4">Computer generated images</h4>
-                        <p class="indent">
-                            In order to validate SAMA, we tested our software on computer generated (CG) stacks (<a href="#pone.0153022.s002">S2 Fig</a>). The stacks were generated with 40 ellipsoids, which mimic an image containing 40
-                            epithelial structures in a z-stack obtained by confocal microscopy of 3D cultures. These CG structures are at random positions, orientation and sizes in the three axes. Lumena are smaller structures constructed
-                            with a randomly chosen radius within the larger structures. The reference condition (C1), are ellipsoids that contain a lumen, have similar probability distribution in terms of size and orientation towards any of
-                            the axes. Condition C2 was designed to differ from C1 in that the maximum size of the ellipsoid oriented in one axis of the ellipsoid is twice the size that is oriented towards the other axes. Condition C3
-                            differs from C1 because it was made with each structure having only a 50% chance of having a lumen. Condition C4 contains structures with two ellipsoids positioned perpendicularly, to test the ability of SAMA to
-                            detect structures with a higher complexity. For each condition, we generated six stacks.
-                        </p>
-    <h4 class="subsectionHead" id="section5">Three-dimensional cultures</h4>
-    <p class="indent">
-        The epithelial cells and components used in the 3D cultures of the breast used for validation of SAMA have been previously described [<a class="ref-tip" href="#pone.0153022.ref011">11</a>]. Briefly, cells were suspended in a final
-        volume of 1.5 mL of collagen (1 mg/ml) and poured into 12-well plates (Becton Dickinson). The mixture was allowed to congeal for 30 min at 37°C and 1.5 mL of the CD-FBS or CD-FBS medium containing estradiol alone
-        (10<sup>−10</sup>,10<sup>−9</sup>M), or in combination with promegestone (10<sup>−10</sup>M), or prolactin (10<sup>−7</sup>M)was added to each well. Gels were detached [ <a class="ref-tip" href="#pone.0153022.ref010">10</a>] and
-        cultures were maintained for two weeks for cell organization analysis and the medium was changed every two days. After two weeks, gels were fixed overnight in 10% phosphate-buffered formalin and stained with Carmine-alum.
-    </p>
-    <h4 class="subsectionHead" id="section6">Image acquisition</h4>
-    <p class="indent">
-        Whole-mounted gels stained with carmine alum were imaged using a Zeiss LSM 510 system (Carl Zeiss MicroImaging, Inc.). Samples were excited with the HeNe 633nm laser as the Carmine dye fluoresces at this wavelength. Images were
-        acquired at 20X magnification using a MultiTime macro, which enables automated imaging of multiple frames of z-stacks, which are then stitched using 20% overlap of images to obtain 5 X 3 image tiles.
-    </p>
-    <h4 class="subsectionHead" id="section7">Statistical analysis</h4>
-    <p class="indent">
-        The results we discuss are obtained both by ANOVA and Wilcoxon rank test and the p-value reported is the largest between the two values obtained. All statistical analyses are performed with cran R. The PCA analysis is performed with
-        the R package FactoMineR.
-    </p>
-    <h4 class="subsectionHead" id="section8">Imaging parameters</h4>
-    <p class="indent">
-        A description of the parameters and the formula that were used to give an in-depth morphological analysis of the epithelial structures is described in <a href="#pone-0153022-t001">Table 1</a>. The basic morphometric parameters
-        generated by 3D ROI manager plugin used in SAMA’s program are elongation, flatness, sphericity and volume. For lumen analysis, we incorporated two parameters, the presence of a lumen and the relative lumen volume (ratio of the
-        volume of the lumen to the volume of the structure). Quality is a derivative quantity, which takes into account the elongation of the structure and relative lumen volume. Morphologically relevant epithelial structures in 3D gels are
-        ones that are optimally elongated, not very flat and contain a lumen. These features resemble those of a normal breast epithelium. Hence, a positive value for quality would indicate normal structures while negative values for
-        quality would indicate that the structure is flat. For branching analysis, we use parameters that are generated by 3D ROI manager, namely ratio volume ellipsoid (RVE) as well as a parameter we generated, namely complexity. RVE is
-        the ratio of the volume of the structure to the volume of the ellipsoid fitted around the structure. Hence a value of 1 will indicate a perfect ellipsoid or sphere whereas values close to 0 will indicate a convoluted structure,
-        indicating the presence of branches or protrusions. We assess skeletonized structures with several complexity quantities: whether there is more than one branch, the number of branches, and the cumulated lengths of the branches. The
-        higher the value of complexity, the more convoluted or branched the structure would be.
-    </p>
-    <h3 class="sectionHead" id="section3">Results and Discussion</h3>
-    <h4 class="subsectionHead" id="section1">Validation by computer generated images</h4>
-    <p class="indent">
-        To ensure that SAMA is functional, we validated the software using computer generated model images. The model images were constructed to test several analytical functions of SAMA. SAMA provides the expected outputs from our designed
-        conditions (<a href="#pone.0153022.s002">S2 Fig</a>). The analysis shows that C2 has more elongated structures than C1 (p = 0.002). In C3, there are more structures with lumen (p = 0.016) and overall structures have bigger lumena (p
-        = 0.002). Condition C4 has structures that are more complex than C1 for all of our measures of complexity (p&lt;0.026). As a result, SAMA performs as expected in computer generated images.
-    </p>
-    <h4 class="subsectionHead" id="section2">Biological Validation and Analysis</h4>
-    <p class="indent">
-        To validate SAMA, we used images from a hormone-sensitive 3D culture of the breast [<a class="ref-tip" href="#pone.0153022.ref011">11</a>]. We chose to analyze gels that have previously been analyzed using 2D image measurements as
-        well as 3D computational modeling and visualization using the commercial software package, Volocity [<a class="ref-tip" href="#pone.0153022.ref011">11</a>].
-    </p>
-    <p class="indent">
-        We observed that T47D cells that were not exposed to hormones did not develop any epithelial structures and hence, these gels were excluded from our analysis. In the 3D gels analyzed here by SAMA, the cells responded to E2 by
-        proliferating and forming elongated and spherical 3D structures. Further, treatment of cells with E2+P and E2+Prl caused significantly higher elongation of structures in the gels compared to E2 treatment alone (Figs
-        <a href="#pone-0153022-g003">3A</a> and <a href="#pone-0153022-g004">4A</a>). These results are consistent with previously published results from 2D analysis [ <a class="ref-tip" href="#pone.0153022.ref011">11</a>]. In addition to
-        these data, we were able to analyze new features including lumen formation and branching of these structures. We found that in E2+Prl treatment group, structures had higher number of lumen compared to E2 alone (
-        <a href="#pone-0153022-g003">Fig 3A</a>). In E2+P treatment group, structures with lumen had significantly higher elongation than E2 alone (<a href="#pone-0153022-g004">Fig 4A</a>). Similarly, we observed that E2+Prl and E2+P gels
-        had higher branching in structures with hormone combinations than E2 alone (Figs <a href="#pone-0153022-g003">3A</a> and <a href="#pone-0153022-g004">4A</a>). The PCA factor map and graphs give a comprehensive analysis of correlated
-        variables, which indicate the diversity of structures formed in E2 treatment alone and E2 + hormone treatment (Figs <a href="#pone-0153022-g003">3B</a> and <a href="#pone-0153022-g004">4B</a>). These data, thus give us new
-        quantifiable information regarding lumen and branching of structures in these treatments, features that could only be qualitatively analyzed previously. Additionally, SAMA analyzes the reproducibility of results obtained within and
-        between treatment groups. Specifically, SAMA is able to measure reproducibility and variability in the tissue culture system by calculating the mean of biologically relevant parameters and plotting this as a distribution curve. As
-        an example, we have shown the distribution of one such parameter, namely elongation, as this is the distinguishing feature between ducts and acini. The graph that SAMA generates shows whether the distribution curve of each
-        experimental replicate of a given sampling group superimposes on each other. Superimposition of these curves would indicate that the structures are not variable within treatment replicates, suggesting that the results were
-        reproducible between experiments (<a href="#pone-0153022-g004">Fig 4C</a>). This enables the user to understand variability in 3D morphogenesis that is inevitable in biological experiments and observe how these inconsistencies
-        distribute among the experimental groups and replicates.
-    </p>
-    <h4 class="subsectionHead" id="section3">SAMA versus current software</h4>
-    <p class="indent">
-        Currently, there are several commercial as well as open-source software packages available that combine image acquisition and analysis (<a href="#pone-0153022-t002">Table 2</a>). Among them, Imaris (Bitplane), Volocity
-        (Perkin-Elmer), Image-Pro (MediaCybernetics), Amira and Metamorph (Molecular Devices) are examples of commercially available software. CellProfiler [ <a class="ref-tip" href="#pone.0153022.ref024">24</a>], V3D [
-        <a class="ref-tip" href="#pone.0153022.ref025">25</a>], BioImageXD [<a class="ref-tip" href="#pone.0153022.ref026">26</a>] and NEMO [ <a class="ref-tip" href="#pone.0153022.ref027">27</a>] are examples of open-source software
-        platforms for the analysis of biological images. The advantage of commercial software is that it is tailor-made for the imaging system purchased, with the availability of customer support and warranties from the company. Their
-        drawbacks include the high costs of purchasing hardware-software bundles and most critically, the inability to know and modify the proprietary codes. This prevents researchers from knowing the details of the computing processes and
-        modifying them to acquire specific and biologically relevant end-points. While these are aspects where open-source software has an edge over commercial software, the presently available open-source software packages have limitations
-        as well. Existing open-source software enables basic morphometrics (structural parameters only), but there are limited options available for an exhaustive, high throughput, biologically relevant multi-parametric image analysis
-        bundled with statistical analysis that takes into account reproducibility among experiments. For example, there are limited software packages that can carry out in-depth analyses (a combination of morphological, statistical and
-        reproducibility analyses of shape, size, lumen formation and branching) of 3D epithelial structures in models of biological systems. To remedy this latter inconvenience, we developed SAMA to 1) obtain an exhaustive and comprehensive
-        analysis of tissue morphogenesis in 3D culture models of the breast, 2) to gain a deeper understanding of biological variability in tissue morphogenesis in 3D tissue cultures, 3) to acquire a rapid, automated and unbiased analysis
-        of every epithelial structure in the 3D images that span a large sampling area and, 4) to combine imaging analysis with a meticulous analysis of the experimental replicates, thus ensuring reproducibility in the data obtained from
-        the 3D cultures.
-    </p>
-
-    <figure class="figure" data-doi="10.1371/journal.pone.0153022.t002">
-   
-                    <img alt="Comparison between SAMA and other
-        software packages that combine image acquisition and analysis." src="pone.0153022.t002.PNG_L.png" width="1000em" class="zoom"/>
-
-        <figcaption class="caption">
-            <span>Table 2. </span> Comparison between SAMA and other software packages that combine image acquisition and analysis.
-            <a href="https://doi.org/10.1371/journal.pone.0153022.t002"> https://doi.org/10.1371/journal.pone.0153022.t002</a>
-        </figcaption>
-    </figure>
-    <p class="indent">
-        3D tissue cultures are increasingly becoming a source of new information regarding tissue morphogenesis, which can lead to a more detailed understanding of carcinogenesis in tissues such as the breast. However, lack of proper
-        methodology and software prevents researchers from getting an in-depth analysis of a large population of 3D structures in images. Researchers tend to choose a few epithelial structures from a large heterogeneous population of 3D
-        structures to represent the outcome of a given experimental condition [<a class="ref-tip" href="#pone.0153022.ref012">12</a>; <a class="ref-tip" href="#pone.0153022.ref028">28</a>]. Heterogeneity in the distribution and shape of
-        epithelial structures in a 3D gel is a phenomenon that we have observed within each gel as well as over a given period of time [<a class="ref-tip" href="#pone.0153022.ref010">10</a>]. With such a heterogeneous population, it is
-        imperative that a large sampling size be taken into consideration to analyze and represent the global experimental outcome. Hence, SAMA was developed keeping in mind the need to have an exhaustive analysis of the 3D sample so that
-        biologists are not constrained to choosing a restricted number of structures that require time-consuming manual analysis and may not truly represent the overall outcome of their experimental conditions.
-    </p>
-
-    <h3 class="sectionHead" id="section4">Summary</h3>
-    <p class="indent">
-        We have compared SAMA to existing commercial and open-source software. Specifically, we compared biologically relevant end-points that SAMA analyzes to those analyzed by other software (
-        <a href="#pone-0153022-t002">Table 2</a>). These comparisons of biological end-points hold greater bearing for our analyses than comparing imaging features and software intricacies. The open-source SAMA is our contribution to the
-        growing community of scientists working with 3D cultures who want to obtain a comprehensive, multi-parametric and biologically relevant analysis of 3D structures of the tissue. We encourage scientists to not only download and use
-        SAMA, but also innovatively improvise its code to help in this endeavor.
-    </p>
-    <h3 class="sectionHead" id="section5">Supporting Information</h3>
-
-    <h3 class="sectionHead" class="siTitle title-small"><a href="article/file?type=supplementary&amp;id=info:doi/10.1371/journal.pone.0153022.s001">S1 Fig. </a>Visual representation of parameters.</h3>
-        
-        <figure class="figure" style="text-align: center;">
-
-            <img alt="Visual representation of parameters." src="pone.0153022.s001.png" width="500em" class="zoom"/>
-
-        <figcaption class="indent caption" >
-            This figure is a representation of how elongation and branching are calculated by SAMA. The measurement of elongation as shown in Panel A has been explained using a 3D cylinder (representing an epithelial structure) in which the
-            three axes have been labeled as L, M and S. Elon1 is the ratio of the long axis to the middle axis (L/M). Elon 2 is the ratio of the middle axis to small axis (M/S). Elon1 &gt; Elon2 would mean that the epithelial structure is
-            elongated. Elon2 &gt; Elon1 would mean the epithelial structure is flat. Elon1 = Elon2 would mean that the epithelial structure is spherical. Branching was measured in two ways, namely Complexity and Ratio Volume Ellipsoid
-            (RVE). Panel B explains how complexity is measured. The shapes “Y” and “I” represent branched and single (no branching) epithelial ducts. Complexity is the measurement of the length of structures. The sum of the three arms
-            (represented by the three black lines inside the pink structures) of “Y” is calculated to give the total length of “Y”. Similarly the length of “I” is calculated. The structure with greater length is more complex than ones with
-            smaller length. Panel C explains how RVE is calculated by drawing an ellipse around “Y” and the letter “O” (representing an acini). RVE is the ratio of the volume of the structure to the volume of an ellipsoid fitted around the
-            structure. Log RVE is close to 0 for spherical structures and close to 1 for branched structures.<a href="https://doi.org/10.1371/journal.pone.0153022.s001"> https://doi.org/10.1371/journal.pone.0153022.s001</a>
-        </figcaption>        </figure>
-
-        <h3 class="sectionHead" class="siTitle title-small"><a href="article/file?type=supplementary&amp;id=info:doi/10.1371/journal.pone.0153022.s002">S2 Fig. </a>Validation of SAMA.</h3>
-      
-        <figure class="figure"> <img alt="Computer generated images of
-            four test conditions." src="pone.0153022.s002.png" width="1000em" class="zoom"/>
-        <figcaption class="caption" class="siDoi">
-            Panel A: Computer generated images of four test conditions. Each one is a single representative image of the complete stack. Panel B: Resulting SAMA output of four parameters each compared to the reference condition (C1).
-            <a href="https://doi.org/10.1371/journal.pone.0153022.s002"> https://doi.org/10.1371/journal.pone.0153022.s002</a>
-        </figcaption>               
-
+<p class="indent"><strong>Competing interests: </strong>The authors have declared that no competing interests exist.</p>
+<h3 class="sectionHead id=" section1&#x26;#x22; id="introduction">Introduction</h3>
+<p class="indent">
+  The past couple of decades have witnessed great progress in optical imaging, computational analysis and modeling of biological systems. In the quest for understanding development in higher organisms, biologists are seeking imaging
+  modalities that are increasingly multidimensional by relying on cutting-edge computational approaches to monitor biological phenomena with exceptional resolution, specificity and dimensionality [
+  <a class="ref-tip" href="#pone.0153022.ref001">1</a>–<a class="ref-tip" href="#pone.0153022.ref004">4</a>]. Computerized analyses of images can now overcome the limitations and biases of human assessments with the aid of
+  three-dimensional (3D) images while using <em>in vitro</em> 3D tissue cultures.
+</p>
+<p class="indent">
+  In the past five years, 3D tissue culture models have greatly advanced our understanding of tissue morphogenesis and pathogenesis of several diseases, including cancer [
+  <a class="ref-tip" href="#pone.0153022.ref005">5</a>–<a class="ref-tip" href="#pone.0153022.ref007">7</a>] by bridging the gap between complex whole animal models and simple 2D cell cultures that lack the architecture, geometry and
+  functionality of the live glandular tissue. A significant contribution of 3D cultures is towards understanding ductal and branching morphogenesis of epithelial cells with respect to its surrounding extracellular matrix (ECM). 3D
+  cultures of tissues including the mammary gland, lungs, pancreas and blood vessels serve as important tools to study the development of organs and tissues by cell-ECM interactions. Several laboratories, including ours, use different
+  types of 3D culture models to understand normal or neoplastic tissue development [ <a class="ref-tip" href="#pone.0153022.ref006">6</a>;<a class="ref-tip" href="#pone.0153022.ref008">8</a>–
+  <a class="ref-tip" href="#pone.0153022.ref014">14</a>].
+</p>
+<p class="indent">
+  We analyzed images from the 3D gels using presently available commercial and open-source software and found them lacking in options that acquire biologically relevant morphometric parameters in 3D breast tissue. More specifically,
+  these software lacked techniques to accurately analyze elongation, sphericity, lumen formation, and branching, characteristics that make epithelial structures of the 3D model physiologically and morphologically relevant. In this
+  article, we describe a software tool that can provide a rapid and biologically relevant analysis of the 3D culture models of the breast. Here we introduce our open-source SAMA (Software for Automated Morphological Analysis) that
+  takes into account various parameters that define a normal breast while using 3D simulations of breast morphogenesis.
+</p>
+<p class="indent">
+  For the sake of simplicity, we have described in this paper the analysis of only one 3D model, specifically a hormone-sensitive 3D culture model of the human breast. In the normal breast, during early development as well as during
+  puberty and pregnancy, the gland responds to hormones, including estradiol, progesterone and prolactin. These hormones regulate mammary morphogenesis by increasing ductal elongation, lateral branching of the ducts, budding, i.e.,
+  formation of acini [<a class="ref-tip" href="#pone.0153022.ref015">15</a>] and also lumen formation [ <a class="ref-tip" href="#pone.0153022.ref016">16</a>;<a class="ref-tip" href="#pone.0153022.ref017">17</a>]. Given that there is
+  no established breast cell line that responds to mammotropic hormones, research on hormone action in cell culture is mainly done in 2D using hormone-sensitive cell lines derived from pleural effusions obtained from breast cancer
+  patients. Among these cell lines we have chosen the T47D cell line to develop a hormone-sensitive 3D culture of the breast. This model represents the only available model for the study of hormone regulation of epithelial
+  morphogenesis. In this model, the breast cancer T47D cells were embedded in Type I Collagen and these gels were treated with hormones that are physiologically involved in breast morphogenesis. It was observed that the model responds
+  to hormones in ways similar to what is seen in the breast: estradiol (E2) caused elongation, the progestogen, Promegestone (P) caused branching and Prolactin (Prl) caused budding in these structures [
+  <a class="ref-tip" href="#pone.0153022.ref011">11</a>]. The variety of epithelial structures makes this model a suitable choice for testing the power of SAMA in measuring several morphological parameters.
+</p>
+<p class="indent">
+  While we have used SAMA to specifically analyze in vitro 3D models of the breast, we believe that developmental biologists in general as well as scientists keen on understanding tissue morphogenesis can use this technique
+  effectively. SAMA is particularly useful for multi-dimensional and multi-parametric analyses and is able to measure the size, shape, lumen formation and quantitative branching of a variety of structures in a high throughput manner.
+</p>
+<p class="indent">
+  In the following sections, we will describe the technical features of SAMA, including a description of how images are processed to obtain the final output. SAMA meets the following demands of 3D image analysis: 1) it uses novel
+  algorithms for image analysis that are able to identify, count and analyze crowded 3D structures, 2) it has a versatile design allowing analysis of epithelial phenotypes in several types of matrices, 3) it is open-source and written
+  mostly in R and ImageJ macro language which are simple languages, so the underlying methodology is known and can be modified or improved by users with relative ease, 4) it is fully operated from ImageJ through a user-friendly
+  interface and finally, 5) it is an automated, high-throughput analysis that eliminates the monotony that is typically involved in image analyses (for instance, image formatting, looping several image analysis steps and repeating the
+  analysis without human bias).
+</p>
+<h3 class="sectionHead" id="section2">Materials and Methods</h3>
+<h4 class="subsectionHead" id="section1">Description of SAMA</h4>
+<p class="indent">
+  SAMA is a novel method by which epithelial structures grown in 3D cultures can be imaged, reconstructed and analyzed with minimum human intervention and bias. It is a powerful and flexible tool for high-throughput morphological
+  and statistical analysis of 3D images. Additionally, we have included an analysis to evaluate the reproducibility of results within and among experimental groups, a critical necessity in biological experiments.
+</p>
+<p class="indent">
+  SAMA is a user-friendly set of customized macros with an interactive and user-friendly interface that uses many tools of FIJI (<a href="http://fiji.sc/Fiji">http://fiji.sc/Fiji</a>) [
+  <a class="ref-tip" href="#pone.0153022.ref018">18</a>], an open-source image analysis platform, in combination with a set of functions in R ( <a href="http://www.r-project.org/">http://www.r-project.org/</a>), an open-source
+  software tool for statistical analysis. The website for downloading SAMA is <a href="http://montevil.theobio.org/en/content/sama">http://montevil.theobio.org/en/content/sama</a>. Herein, it is accessible as a FIJI plugin,
+  compatible with Windows, Mac, and Unix along with downloadable source code. In addition, the website includes detailed technical description of the software with sample images for the user to download and learn how to navigate
+  SAMA. Several plugins used in SAMA are available when FIJI is downloaded, while others have to be installed by the user, the details of which are available on the website.
+</p>
+<h4 class="subsectionHead" id="section2">Image processing</h4>
+<p class="indent">
+  A salient requirement in image analysis is to obtain a homogenized image stack in terms of image resolution and luminosity. 3D structures with homogeneous pixel values that are significantly different from the background are
+  desirable so that a threshold can be applied for segmentation. However, this is difficult to achieve because acquiring images at low magnifications (20X) often results in pixelated and poorly resolved images, leading to
+  artifacts in image analysis. One of the problems we encountered was conjoined structures in crowded areas of the gel due to limited resolution of voxels. Another hindrance was differences in luminosity within the z-stack images
+  (typically the slice closest to the laser will be the brightest and subsequent slices will have decreased intensity, and existing solutions did not work for this type of data set as they rely on more homogenous media [
+  <a class="ref-tip" href="#pone.0153022.ref019">19</a>]. This resulted in dim structures in slices that were farther away from the laser. To solve issues of imaging irregularities, we included several steps of 3D filtering that
+  take into account the 3D information of the signal and reduce the noise and artifacts in images. Briefly, we first remove the local background of the images and then, the images are subjected to several filters including 3D
+  Median, Variance, Minimum and Maximum filters alone or in combination. These filters ensure that most of the noise is removed, while the shape of the structure is maintained. Additionally, a 3D Gaussian blur filter is used to
+  smooth the surface of the structures by normalizing the intensity of pixels with reference to neighboring pixels. We compensate the loss of luminosity for deeper slices of the stack on the basis of the running average of the
+  maximum luminosity of each slice, so that for each slice, the previous, current and next slice are taken into account to assess and compensate for the loss of luminosity. In addition, for the morphological analysis, using 2D
+  fill holes, we fill the structures to avoid interference from the lumen. Using these filters in image processing is important for two reasons; first, homogenized pixels in the structures have similar threshold intensity, thus
+  allowing an accurate morphological analysis, and second, lumen in the homogenized structures can be accurately segmented and analyzed. An optional step for images with crowded structures is to separate out structures that were
+  merged because of poorly resolved voxels. To achieve this we subjected the image to 3D Gradient filter process, which demarcates the edges of the structures. This image with demarcated structures is then subtracted from the
+  original image, thus getting rid of unwanted pixels between structures. This step ensures an accurate count and morphological measurement of individual structures. However, in images where crowded structures are not an issue,
+  these steps can be left out of the algorithm. Image processing steps described here are incorporated at several stages in the SAMA-images section of the code depending on the end-point needed.
+</p>
+<p class="indent">
+  A drawback of most commercial software is the inability to adapt new parameters that result from either including additional steps for image processing or calculating new features of epithelial structures. In contrast, SAMA's
+  modular algorithm and open-source code allows users the choice of including additional image processing steps or novel phenotype measurements as needed. As an example of giving users the option to choose steps during image
+  processing, we used images in which most of the background noise was removed by using wavelet techniques [
+  <a class="ref-tip" href="#pone.0153022.ref020">20</a>], a de-noising plugin. However, de-noising was excluded from the main SAMA framework and was run separately because it required more memory to function than what a typical
+  personal computer has, the absence of which may cause the program to fail. With SAMA, users have the freedom to run de-noising or an alternative algorithm based on bilateral filtering as a stand-alone batch process function
+  depending on the user’s computer memory (the stand-alone de-noising batch process is included).
+</p>
+<h4 class="subsectionHead" id="section3">User-interface</h4>
+<p class="indent">
+  The SAMA plugin has two main parts—“SAMA-image” and “SAMA-analyze” (<a href="#pone-0153022-g001">Fig 1</a>). SAMA-image allows users to analyze 3D structures in three tiers. Tier 1 is fully automated and is a mandatory step for
+  subsequent tiers. Users have a choice to carry out basic morphometrics, complexity (branching analysis) and lumen analysis either simultaneously or individually. Basic morphometric analysis includes counting all the structures
+  in the 3D image and saving the information in a text file. The data obtained from this analysis contain several morphologically relevant parameters (explained in the following section) that define the shape and size of the
+  structure (<a href="#pone-0153022-g002">Fig 2A</a>). The image files are batch-processed from a user-specified source directory wherein output files are stored as well. The plugins used in this tier for analyzing basic
+  morphometrics are 3D Object counter and 3D ROI manager [<a class="ref-tip" href="#pone.0153022.ref021">21</a>; <a class="ref-tip" href="#pone.0153022.ref022">22</a>]. In complexity analysis, branches of the structures are
+  quantified and these data are stored as separate files in the source directory. Briefly, the structures are skeletonized (structures stripped to the bare minimum pixels while preserving their overall shape) [
+  <a class="ref-tip" href="#pone.0153022.ref023">23</a>]and SAMA identifies each skeleton with the corresponding structure (<a href="#pone-0153022-g002">Fig 2B</a>). This enables the user to quantify the complexity of the skeleton
+  (number of branches and cumulated length of branches). Lumen analysis spans Tiers 1, 2 and 3. In Tier 1, the images are pre-processed for lumen analysis using several filters and the resulting images are then used in Tier 2. In
+  Tier 2, the user specifies the threshold for processed images that segments lumen in the structures, a value that varies from image to image and hence, cannot be automated. In Tier 3, lumena are identified by the difference in
+  pixel intensity between the surrounding cells and the hollow space in the epithelial structure. Multiple lumena are detected as regions, which appear darker than their surroundings, forming a hole, which are then segmented (
+  <a href="#pone-0153022-g002">Fig 2C</a>). The segmented lumena are counted and analyzed by 3D object counter and 3D ROI manager plugins, the corresponding structures are also identified. Every lumen thus obtains an identity of
+  its own with 3D parameters. All parameters obtained in Tiers 1, 2 and 3 are then statistically analyzed in SAMA-analyze. SAMA-analyze operates the part of SAMA written in R through the interface in ImageJ, which contains two
+  main parts—Data handling and Data analysis. Data handling consolidates all the data gathered from Tiers 1, 2 and 3 of SAMA-images into a single spreadsheet for analysis. Here, the user has the option to include or exclude lumen
+  and branching analysis from basic morphometric analysis. SAMA-analyze generates an exhaustive report, which compares shape and morphology of epithelial structures obtained in the different conditions/treatments. Biologically
+  relevant parameters (<a href="#pone-0153022-t001">Table 1</a>) ( <a href="#pone.0153022.s001">S1 Fig</a>) of each experimental replicate are represented as the mean, standard deviation, coefficient of variation and median with
+  respect to the distribution of structures in each group. This report includes a graph for each quantity and function of the estimated distribution of the replicates and a boxplot of the same data. ANOVA is performed to assess
+  the significance of the experimental conditions and Wilcoxon rank test is also performed in the case where only two conditions are present. An overview of the results is obtained by principal component analysis (PCA) (Figs
+  <a href="#pone-0153022-g003">3B</a> and <a href="#pone-0153022-g004">4B</a>), which enables to identify the variables that have a greater influence in the variance of the samples. This technique enables the user to represent a
+  data set with many parameters by defining new dimensions (which are combinations of the original variables) and represents a simple way of understanding the variance of the data set. This is helpful when many parameters are
+  correlated to each other. In the case of SAMA, some data sets, for example, lead to a size related quantity and a shape related quantity. Note however, that the definitions of such quantities are obtained <em>de novo</em> for
+  each dataset. Note also, that parameters that are biologically relevant but are not correlated with other parameters are usually not taken into account by this analysis because it focuses on trends present in many quantities.
+</p>
+<figure class="figure" data-doi="10.1371/journal.pone.0153022.g001">
+  <img alt="Flow-chart and user-interfaces of SAMA." src="pone.0153022.g001.PNG_L.png" width="900em" class="zoom" />
+  <figcaption class="caption">
+    <span>Fig 1. </span>Flow-chart and user-interfaces of SAMA. General algorithm of functions in SAMA (top panel). The two main interfaces of SAMA—SAMA-Images (bottom left) and SAMA-Analyze (bottom right).
+    <a href="https://doi.org/10.1371/journal.pone.0153022.g001">https://doi.org/10.1371/journal.pone.0153022.g001</a>
+  </figcaption>
 </figure>
-        <h3 class="sectionHead">Acknowledgments</h3>
-        <p class="indent">
-            We greatly appreciate the editorial assistance by Cheryl Schaeberle. This research was supported by Avon Grant #02-2009-093, and 02-2011-095. Additional support was provided by NIEHS/NIH ES08314. The content is solely the
-            responsibility of the authors and does not necessarily represent the official views of the National Institute of Environmental Health Sciences or the National Institutes of Health.
-        </p>
-        <h3 class="sectionHead">Author Contributions</h3>
-        <p class="indent">
-            Conceived and designed the experiments: LS AMS CS MM TP. Performed the experiments: TP FC MM. Analyzed the data: TP FC LS MM AMS CS. Contributed reagents/materials/analysis tools: TP LS MM. Wrote the paper: TP LS MM AMS CS.
-            Maintained the software: MM.
-        </p>
-        <h3 class="sectionHead">References</h3>
-        <ol class="references">
-            <li id="ref1">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref001" name="pone.0153022.ref001"></a>Kohl P, Noble D, Winslow RL, Hunter PJ. Computational modelling of biolobical systems: tools and visions. Philos
-                Trans R Soc London [Biol] 2000;358:579–610.&nbsp;
-                <a
-                    data-author="Kohl"
-                    data-cit="KohlP%2C%20NobleD%2C%20WinslowRL%2C%20HunterPJ.%20Computational%20modelling%20of%20biolobical%20systems%3A%20tools%20and%20visions.%20Philos%20Trans%20R%20Soc%20London%20%5BBiol%5D%202000%3B358%3A579%E2%80%93610."
-                    data-title="Computational%20modelling%20of%20biolobical%20systems%3A%20tools%20and%20visions"
-                    href="#"
-                    target="_new"
-                    title="Go to article in CrossRef"
-                >
-                    View Article,
-                </a>
-                <a href="http://scholar.google.com/scholar?q=Computational+modelling+of+biolobical+systems%3A+tools+and+visions+Kohl+2000" target="_new" title="Go to article in Google Scholar">Google Scholar </a>
-            </li>
-            <li id="ref2">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref002" name="pone.0153022.ref002"></a>Eliceiri KW, Berthold MR, Goldberg IG, Ibáñez L, Manjunath BS, Martone ME, et al. Biological imaging software
-                tools. Nat Methods 2012;9:697–710. pmid:22743775
-                <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1038/nmeth.2084" target="_new" title="Go to article">View Article, </a>
-                <a href="http://www.ncbi.nlm.nih.gov/pubmed/22743775" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a>
-                <a href="http://scholar.google.com/scholar?q=Biological+imaging+software+tools+Eliceiri+2012" target="_new" title="Go to article in Google Scholar">Google Scholar </a>
-            </li>
-            <li id="ref3">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref003" name="pone.0153022.ref003"></a>Peng H. Bioimage informatics: a new area of engineering biology. Bioinformatics 2008;24:1827–36. pmid:18603566
-                <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1093/bioinformatics/btn346" target="_new" title="Go to article">View Article, </a>
-                <a href="http://www.ncbi.nlm.nih.gov/pubmed/18603566" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a>
-                <a href="http://scholar.google.com/scholar?q=Bioimage+informatics%3A+a+new+area+of+engineering+biology+Peng+2008" target="_new" title="Go to article in Google Scholar">Google Scholar </a>
-            </li>
-            <li id="ref4">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref004" name="pone.0153022.ref004"></a>Huang B, Wang W, Bates M, Zhuang X. Three-dimensional super-resolution imaging by stochastic optical
-                reconstruction microscopy. Science 2008;319:810–3. pmid:18174397
-                <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1126/science.1153529" target="_new" title="Go to article">View Article, </a>
-                <a href="http://www.ncbi.nlm.nih.gov/pubmed/18174397" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a>
-                <a href="http://scholar.google.com/scholar?q=Three-dimensional+super-resolution+imaging+by+stochastic+optical+reconstruction+microscopy+Huang+2008" target="_new" title="Go to article in Google Scholar">
-                    Google Scholar
-                </a>
-            </li>
-            <li id="ref5">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref005" name="pone.0153022.ref005"></a>Fessart D, Begueret H, Delom F. Three-dimensional culture model to distinguish normal from malignant human
-                bronchial epithelial cells. Eur Respir J 2013;42:1345–56. pmid:23349442
-                <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1183/09031936.00118812" target="_new" title="Go to article">View Article, </a>
-                <a href="http://www.ncbi.nlm.nih.gov/pubmed/23349442" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a>
-                <a href="http://scholar.google.com/scholar?q=Three-dimensional+culture+model+to+distinguish+normal+from+malignant+human+bronchial+epithelial+cells+Fessart+2013" target="_new" title="Go to article in Google Scholar">
-                    Google Scholar
-                </a>
-            </li>
-            <li id="ref6">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref006" name="pone.0153022.ref006"></a>Debnath J, Muthuswamy SK, Brugge JS. Morphogenesis and oncogenesis of MCF-10A mammary epithelial acini grown in
-                three-dimensional basement membrane cultures. Methods 2003;30:256–68. pmid:12798140
-                <a
-                    data-author="Debnath"
-                    data-cit="DebnathJ%2C%20MuthuswamySK%2C%20BruggeJS.%20Morphogenesis%20and%20oncogenesis%20of%20MCF-10A%20mammary%20epithelial%20acini%20grown%20in%20three-dimensional%20basement%20membrane%20cultures.%20Methods%202003%3B30%3A256%E2%80%9368.%2012798140"
-                    data-title="Morphogenesis%20and%20oncogenesis%20of%20MCF-10A%20mammary%20epithelial%20acini%20grown%20in%20three-dimensional%20basement%20membrane%20cultures"
-                    href="#"
-                    target="_new"
-                    title="Go to article in CrossRef"
-                >
-                    View Article,
-                </a>
-                <a href="http://www.ncbi.nlm.nih.gov/pubmed/12798140" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a>
-                <a
-                    href="http://scholar.google.com/scholar?q=Morphogenesis+and+oncogenesis+of+MCF-10A+mammary+epithelial+acini+grown+in+three-dimensional+basement+membrane+cultures+Debnath+2003"
-                    target="_new"
-                    title="Go to article in Google Scholar"
-                >
-                    Google Scholar
-                </a>
-            </li>
-            <li id="ref7">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref007" name="pone.0153022.ref007"></a>Yamada KM, Cukierman E. Modeling tissue morphogenesis and cancer in 3D. Cell 2007;130:601–10. pmid:17719539
-                <a
-                    data-author="Yamada"
-                    data-cit="YamadaKM%2C%20CukiermanE.%20Modeling%20tissue%20morphogenesis%20and%20cancer%20in%203D.%20Cell%202007%3B130%3A601%E2%80%9310.%2017719539"
-                    data-title="Modeling%20tissue%20morphogenesis%20and%20cancer%20in%203D"
-                    href="#"
-                    target="_new"
-                    title="Go to article in CrossRef"
-                >
-                    View Article,
-                </a>
-                <a href="http://www.ncbi.nlm.nih.gov/pubmed/17719539" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a>
-                <a href="http://scholar.google.com/scholar?q=Modeling+tissue+morphogenesis+and+cancer+in+3D+Yamada+2007" target="_new" title="Go to article in Google Scholar">Google Scholar </a>
-            </li>
-            <li id="ref8">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref008" name="pone.0153022.ref008"></a>Krause S, Maffini MV, Soto AM, Sonnenschein C. A novel 3D in vitro culture model to study stromal-epithelial
-                interactions in the mammary gland. Tissue Eng Part C Methods 2008;14:261–71. pmid:18694322
-                <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1089/ten.tec.2008.0030" target="_new" title="Go to article">View Article, </a>
-                <a href="http://www.ncbi.nlm.nih.gov/pubmed/18694322" target="_new" title="Go to article in PubMed">PubMed/NCBI </a>,
-                <a href="http://scholar.google.com/scholar?q=A+novel+3D+in+vitro+culture+model+to+study+stromal-epithelial+interactions+in+the+mammary+gland+Krause+2008" target="_new" title="Go to article in Google Scholar">
-                    Google Scholar
-                </a>
-            </li>
-            <li id="ref9">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref009" name="pone.0153022.ref009"></a>Krause S, Maffini MV, Soto AM, Sonnenschein C. The microenvironment determines the breast cancer cells'
-                phenotype: organization of MCF7 cells in 3D cultures. BMC Cancer 2010;10:263–75. pmid:20529269
-                <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1186/1471-2407-10-263" target="_new" title="Go to article">View Article, </a>
-                <a href="http://www.ncbi.nlm.nih.gov/pubmed/20529269" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a>
-                <a
-                    href="http://scholar.google.com/scholar?q=The+microenvironment+determines+the+breast+cancer+cells%26apos%3B+phenotype%3A+organization+of+MCF7+cells+in+3D+cultures+Krause+2010"
-                    target="_new"
-                    title="Go to article in Google Scholar"
-                >
-                    Google Scholar
-                </a>
-            </li>
-            <li id="ref10">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref010" name="pone.0153022.ref010"></a>Dhimolea E, Maffini MV, Soto AM, Sonnenschein C. The role of collagen reorganization on mammary epithelial
-                morphogenesis in a 3D culture model. Biomaterials 2010 May;31:3622–30. pmid:20149444
-                <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1016/j.biomaterials.2010.01.077" target="_new" title="Go to article">View Article, </a>
-                <a href="http://www.ncbi.nlm.nih.gov/pubmed/20149444" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a>
-                <a href="http://scholar.google.com/scholar?q=The+role+of+collagen+reorganization+on+mammary+epithelial+morphogenesis+in+a+3D+culture+model+Dhimolea+2010" target="_new" title="Go to article in Google Scholar">
-                    Google Scholar
-                </a>
-            </li>
-            <li id="ref11">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref011" name="pone.0153022.ref011"></a>Speroni L, Whitt GS, Xylas J, Quinn KP, Jondeau-Cabaton A, Georgakoudi I, et al. Hormonal regulation of
-                epithelial organization in a 3D breast tissue culture model. Tissue Eng Part C Methods 2014;20:42–51. pmid:23675751
-                <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1089/ten.TEC.2013.0054" target="_new" title="Go to article">View Article, </a>
-                <a href="http://www.ncbi.nlm.nih.gov/pubmed/23675751" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a>
-                <a href="http://scholar.google.com/scholar?q=Hormonal+regulation+of+epithelial+organization+in+a+3D+breast+tissue+culture+model+Speroni+2014" target="_new" title="Go to article in Google Scholar">
-                    Google Scholar
-                </a>
-            </li>
-            <li id="ref12">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref012" name="pone.0153022.ref012"></a>Weigelt B, Bissell MJ. Unraveling the microenvironmental influences on the normal mammary gland and breast
-                cancer. Semin Cancer Biol 2008;18:311–21. pmid:18455428
-                <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1016/j.semcancer.2008.03.013" target="_new" title="Go to article">View Article, </a>
-                <a href="http://www.ncbi.nlm.nih.gov/pubmed/18455428" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a>
-                <a href="http://scholar.google.com/scholar?q=Unraveling+the+microenvironmental+influences+on+the+normal+mammary+gland+and+breast+cancer+Weigelt+2008" target="_new" title="Go to article in Google Scholar">
-                    Google Scholar
-                </a>
-            </li>
-            <li id="ref13">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref013" name="pone.0153022.ref013"></a>Gjorevski N, Nelson CM. Mapping of mechanical strains and stresses around quiescent engineered three-dimensional
-                epithelial tissues. Biophys J 2012;103:152–62. pmid:22828342
-                <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1016/j.bpj.2012.05.048" target="_new" title="Go to article">View Article, </a>
-                <a href="http://www.ncbi.nlm.nih.gov/pubmed/22828342" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a>
-                <a href="http://scholar.google.com/scholar?q=Mapping+of+mechanical+strains+and+stresses+around+quiescent+engineered+three-dimensional+epithelial+tissues+Gjorevski+2012" target="_new" title="Go to article in Google Scholar">
-                    Google Scholar
-                </a>
-            </li>
-            <li id="ref14">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref014" name="pone.0153022.ref014"></a>Pageau SC, Sazonova O, Wong JY, Soto AM, Sonnenschein C. The effect of stromal components on the modulation of
-                the phenotype of human bronchial epithelial cells in 3D culture. Biomaterials 2011;32:7169–80. pmid:21724251
-                <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1016/j.biomaterials.2011.06.017" target="_new" title="Go to article">View Article, </a>
-                <a href="http://www.ncbi.nlm.nih.gov/pubmed/21724251" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a>
-                <a
-                    href="http://scholar.google.com/scholar?q=The+effect+of+stromal+components+on+the+modulation+of+the+phenotype+of+human+bronchial+epithelial+cells+in+3D+culture+Pageau+2011"
-                    target="_new"
-                    title="Go to article in Google Scholar"
-                >
-                    Google Scholar
-                </a>
-            </li>
-            <li id="ref15">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref015" name="pone.0153022.ref015"></a>Neville MC, McFadden TB, Forsyth I. Hormonal regulation of mammary differentiation and milk secretion. J Mammary
-                Gland Biol Neoplasia 2002;7:49–66. pmid:12160086
-                <a
-                    data-author="Neville"
-                    data-cit="NevilleMC%2C%20McFaddenTB%2C%20ForsythI.%20Hormonal%20regulation%20of%20mammary%20differentiation%20and%20milk%20secretion.%20J%20Mammary%20Gland%20Biol%20Neoplasia%202002%3B7%3A49%E2%80%9366.%2012160086"
-                    data-title="Hormonal%20regulation%20of%20mammary%20differentiation%20and%20milk%20secretion"
-                    href="#"
-                    target="_new"
-                    title="Go to article in CrossRef"
-                >
-                    View Article,
-                </a>
-                <a href="http://www.ncbi.nlm.nih.gov/pubmed/12160086" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a>
-                <a href="http://scholar.google.com/scholar?q=Hormonal+regulation+of+mammary+differentiation+and+milk+secretion+Neville+2002" target="_new" title="Go to article in Google Scholar">Google Scholar </a>
-            </li>
-            <li id="ref16">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref016" name="pone.0153022.ref016"></a>Soto AM, Brisken C, Schaeberle CM, Sonnenschein C. Does cancer start in the womb? Altered mammary gland
-                development and predisposition to breast cancer due to in utero exposure to endocrine disruptors. J Mammary Gland Biol Neoplasia 2013;18:199–208. pmid:23702822
-                <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1007/s10911-013-9293-5" target="_new" title="Go to article">View Article, </a>
-                <a href="http://www.ncbi.nlm.nih.gov/pubmed/23702822" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a>
-                <a
-                    href="http://scholar.google.com/scholar?q=Does+cancer+start+in+the+womb%3F+Altered+mammary+gland+development+and+predisposition+to+breast+cancer+due+to+in+utero+exposure+to+endocrine+disruptors+Soto+2013"
-                    target="_new"
-                    title="Go to article in Google Scholar"
-                >
-                    Google Scholar
-                </a>
-            </li>
-            <li id="ref17">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref017" name="pone.0153022.ref017"></a>Soto AM, Vandenberg LN, Maffini MV, Sonnenschein C. Does breast cancer start in the womb? Basic Clin Pharmacol
-                Toxicol 2008 Feb;102:125–33. pmid:18226065
-                <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1111/j.1742-7843.2007.00165.x" target="_new" title="Go to article">View Article, </a>
-                <a href="http://www.ncbi.nlm.nih.gov/pubmed/18226065" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a>
-                <a href="http://scholar.google.com/scholar?q=Does+breast+cancer+start+in+the+womb%3F+Soto+2008" target="_new" title="Go to article in Google Scholar">Google Scholar </a>
-            </li>
-            <li id="ref18">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref018" name="pone.0153022.ref018"></a>Schindelin J, Arganda-Carreras I, Frise E, Kaynig V, Longair M, Pietzsch T, et al. Fiji: an open-source platform
-                for biological-image analysis. Nature Methods 2012;9:676–82. pmid:22743772
-                <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1038/nmeth.2019" target="_new" title="Go to article">View Article, </a>
-                <a href="http://www.ncbi.nlm.nih.gov/pubmed/22743772" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a>
-                <a href="http://scholar.google.com/scholar?q=Fiji%3A+an+open-source+platform+for+biological-image+analysis+Schindelin+2012" target="_new" title="Go to article in Google Scholar">Google Scholar </a>
-            </li>
-            <li id="ref19">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref019" name="pone.0153022.ref019"></a>Biot E, Crowell E, Hofte H, Maurin Y, Vernhettes S, Andrey P. A new filter for spot extraction in N-dimensional
-                biological imaging. Fifth IEEE International Symposium on Miomedical Imaging: From Nano to Micro, Paris, May 14–17 2008.
-                <ul class="find-nolinks"></ul>
-            </li>
-            <li id="ref20">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref020" name="pone.0153022.ref020"></a>Luisier F, Vonesch C, Blu T, Unser M. Fast interscale wevelet denoising of Poisson-corrupted images. Signal
-                Processing 2010;90:415–27.
-                <a
-                    data-author="Luisier"
-                    data-cit="LuisierF%2C%20VoneschC%2C%20BluT%2C%20UnserM.%20Fast%20interscale%20wevelet%20denoising%20of%20Poisson-corrupted%20images.%20Signal%20Processing%202010%3B90%3A415%E2%80%9327."
-                    data-title="Fast%20interscale%20wevelet%20denoising%20of%20Poisson-corrupted%20images"
-                    href="#"
-                    target="_new"
-                    title="Go to article in CrossRef"
-                >
-                    View Article,
-                </a>
-                <a href="http://scholar.google.com/scholar?q=Fast+interscale+wevelet+denoising+of+Poisson-corrupted+images+Luisier+2010" target="_new" title="Go to article in Google Scholar">Google Scholar </a>
-            </li>
-            <li id="ref21">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref021" name="pone.0153022.ref021"></a>Ollion J, Cochennec J, Loll F, Escudé C, Boudier T. TANGO: A generic tool for high-throughput 3D image analysis
-                for studying nuclear organization. Bioinformatics 2013;29:1840–1. pmid:23681123
-                <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1093/bioinformatics/btt276" target="_new" title="Go to article">View Article, </a>
-                <a href="http://www.ncbi.nlm.nih.gov/pubmed/23681123" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a>
-                <a href="http://scholar.google.com/scholar?q=TANGO%3A+A+generic+tool+for+high-throughput+3D+image+analysis+for+studying+nuclear+organization+Ollion+2013" target="_new" title="Go to article in Google Scholar">
-                    Google Scholar
-                </a>
-            </li>
-            <li id="ref22">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref022" name="pone.0153022.ref022"></a>Bolte S, Cordelières FP. A guided tour into subcellular colocalization analysis in light microscopy. J Microsc
-                2006;224:213–32. pmid:17210054
-                <a
-                    data-author="Bolte"
-                    data-cit="BolteS%2C%20Cordeli%C3%A8resFP.%20A%20guided%20tour%20into%20subcellular%20colocalization%20analysis%20in%20light%20microscopy.%20J%20Microsc%202006%3B224%3A213%E2%80%9332.%2017210054"
-                    data-title="A%20guided%20tour%20into%20subcellular%20colocalization%20analysis%20in%20light%20microscopy"
-                    href="#"
-                    target="_new"
-                    title="Go to article in CrossRef"
-                >
-                    View Article,
-                </a>
-                <a href="http://www.ncbi.nlm.nih.gov/pubmed/17210054" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a>
-                <a href="http://scholar.google.com/scholar?q=A+guided+tour+into+subcellular+colocalization+analysis+in+light+microscopy+Bolte+2006" target="_new" title="Go to article in Google Scholar">
-                    Google Scholar
-                </a>
-            </li>
-            <li id="ref23">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref023" name="pone.0153022.ref023"></a>Lee T-C, Kashyap RL, Chu C-N. Building skeleton models via 3-D medial surface/axis thinning algorithms.
-                Graphical Models and Image Processing 1994;56:462–78.
-                <a
-                    data-author="Lee"
-                    data-cit="LeeT-C%2C%20KashyapRL%2C%20ChuC-N.%20Building%20skeleton%20models%20via%203-D%20medial%20surface%2Faxis%20thinning%20algorithms.%20Graphical%20Models%20and%20Image%20Processing%201994%3B56%3A462%E2%80%9378."
-                    data-title="Building%20skeleton%20models%20via%203-D%20medial%20surface%2Faxis%20thinning%20algorithms"
-                    href="#"
-                    target="_new"
-                    title="Go to article in CrossRef"
-                >
-                    View Article,
-                </a>
-                <a href="http://scholar.google.com/scholar?q=Building+skeleton+models+via+3-D+medial+surface%2Faxis+thinning+algorithms+Lee+1994" target="_new" title="Go to article in Google Scholar">Google Scholar </a>
-            </li>
-            <li id="ref24">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref024" name="pone.0153022.ref024"></a>Carpenter AE, Jones TR, Lamprecht MR, Clarke C, Kang IH, Friman O, et al. CellProfiler: image analysis software
-                for identifying and quantifying cell phenotypes. Genome Biology 2006;7:R100. pmid:17076895
-                <a
-                    data-author="Carpenter"
-                    data-cit="CarpenterAE%2C%20JonesTR%2C%20LamprechtMR%2C%20ClarkeC%2C%20KangIH%2C%20FrimanO%2C%20et%20al.%20CellProfiler%3A%20image%20analysis%20software%20for%20identifying%20and%20quantifying%20cell%20phenotypes.%20Genome%20Biology%202006%3B7%3AR100.%2017076895"
-                    data-title="CellProfiler%3A%20image%20analysis%20software%20for%20identifying%20and%20quantifying%20cell%20phenotypes"
-                    href="#"
-                    target="_new"
-                    title="Go to article in CrossRef"
-                >
-                    View Article,
-                </a>
-                <a href="http://www.ncbi.nlm.nih.gov/pubmed/17076895" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a>
-                <a href="http://scholar.google.com/scholar?q=CellProfiler%3A+image+analysis+software+for+identifying+and+quantifying+cell+phenotypes+Carpenter+2006" target="_new" title="Go to article in Google Scholar">
-                    Google Scholar
-                </a>
-            </li>
-            <li id="ref25">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref025" name="pone.0153022.ref025"></a>Peng H, Ruan Z, Long F, Simpson JH, Myers EW. V3D enables real-time 3D visualization and quantitative analysis
-                of large-scale biological image data sets. Nat Biotechnol 2010;28:348–53. pmid:20231818
-                <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1038/nbt.1612" target="_new" title="Go to article">View Article, </a>
-                <a href="http://www.ncbi.nlm.nih.gov/pubmed/20231818" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a>
-                <a href="http://scholar.google.com/scholar?q=V3D+enables+real-time+3D+visualization+and+quantitative+analysis+of+large-scale+biological+image+data+sets+Peng+2010" target="_new" title="Go to article in Google Scholar">
-                    Google Scholar
-                </a>
-            </li>
-            <li id="ref26">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref026" name="pone.0153022.ref026"></a>Kankaanpää P, Paavolainen L, Tiitta S, Karjalainen M, Päivärinne J, Nieminen J, et al. BioImageXD: an open,
-                general-purpose and high-throughput image-processing platform. Nat Methods 2012;9:683–9. pmid:22743773
-                <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1038/nmeth.2047" target="_new" title="Go to article">View Article, </a>
-                <a href="http://www.ncbi.nlm.nih.gov/pubmed/22743773" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a>
-                <a href="http://scholar.google.com/scholar?q=BioImageXD%3A+an+open%2C+general-purpose+and+high-throughput+image-processing+platform+Kankaanp%C3%A4%C3%A4+2012" target="_new" title="Go to article in Google Scholar">
-                    Google Scholar
-                </a>
-            </li>
-            <li id="ref27">
-                <span class="order">&nbsp;</span><a class="link-target" id="pone.0153022.ref027" name="pone.0153022.ref027"></a>Billeci L, Magliaro C, Pioggia G, Ahluwalia A. NEuronMOrphological analysis tool: open-source software for
-                quantitative morphometrics. Front Neuroinform 2013;7:2. pmid:23420185
-                <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.3389/fninf.2013.00002" target="_new" title="Go to article">View Article, </a>
-                <a href="http://www.ncbi.nlm.nih.gov/pubmed/23420185" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a>
-                <a href="http://scholar.google.com/scholar?q=NEuronMOrphological+analysis+tool%3A+open-source+software+for+quantitative+morphometrics+Billeci+2013" target="_new" title="Go to article in Google Scholar">
-                    Google Scholar
-                </a>
-            </li>
-            <li id="ref28">
-                <a class="link-target" id="pone.0153022.ref028" name="pone.0153022.ref028"></a>Chaudhuri O, Koshy ST, Branco da Cunha C, Shin JW, Verbeke CS, Allison KH, et al. Extracellular matrix stiffness and composition jointly regulate
-                the induction of malignant phenotypes in mammary epithelium. Nat Mater 2014;13:970–8. pmid:24930031
-                <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1038/nmat4009" target="_new" title="Go to article">View Article, </a>
-                <a href="http://www.ncbi.nlm.nih.gov/pubmed/24930031" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a>
-                <a
-                    href="http://scholar.google.com/scholar?q=Extracellular+matrix+stiffness+and+composition+jointly+regulate+the+induction+of+malignant+phenotypes+in+mammary+epithelium+Chaudhuri+2014"
-                    target="_new"
-                    title="Go to article in Google Scholar"
-                >
-                    Google Scholar
-                </a>
-            </li>
-        </ol>
+<figure class="figure" data-doi="10.1371/journal.pone.0153022.g002">
+  <img alt="Basic morphometrics, branching and lumen analysis in the 3D hormone-sensitive breast
+            model." src="pone.0153022.g002.PNG_L.png" width="900em" class="zoom" />
+  <figcaption class="caption">
+    <span>Fig 2. </span>Basic morphometrics, branching and lumen analysis in the 3D hormone-sensitive breast model. (a) An overview of all 3D structures (top) and individual 3D structure showing budding from E2+Prl (bottom
+    left) and branching from E2+P (bottom right) treatment groups. (b) Branching of structures in E2 alone (top) and E2+Prl (bottom). (c) Raw image of structures with lumena (top) and the processed image of structures with
+    segmented lumena (bottom).<a href="https://doi.org/10.1371/journal.pone.0153022.g002"> https://doi.org/10.1371/journal.pone.0153022.g002</a>
+  </figcaption>
+</figure>
+<figure class="figure" data-doi="10.1371/journal.pone.0153022.g003">
+  <img alt="Morphometric analysis of structures
+            in E2+Prl treatment group." src="pone.0153022.g003.PNG_L.png" width="700em" class="zoom" />
+  <figcaption class="caption">
+    <span>Fig 3. </span>Morphometric analysis of structures in E2+Prl treatment group. (a) Graphs represent 3D parameters that were calculated using the formula shown in <a href="#pone-0153022-t001">Table 1</a>; elongation
+    (top left), presence of lumen, (top right), sphericity (bottom left) and branching (bottom right). X-axis represents the mean of the parameters and Y-axis represents the distribution of the structures measured in three
+    experimental replicates. Blue (solid) line represents E2 alone treatment and pink (dashed) line represents E2+Prl. (b) Principal component analysis (PCA) shows variance in the data by analyzing correlated variables
+    between E2 and E2+Prl. Factor map with vectors represent highly correlated variables as Dimension 1 and 2 on the x and y axes respectively. Correlated variables sphericity (S) and ratio volume ellipsoid (RVE) in E2
+    treatment shown with blue arrows while correlated variables elongation (E), number of lumen (L) and complexity (C) in E2+Prl shown with pink arrows (left). Graph shows distribution of the structures in each treatment
+    group, E2 (blue) and E2+Prl (pink) with correlated variables (right).<a href="https://doi.org/10.1371/journal.pone.0153022.g003"> https://doi.org/10.1371/journal.pone.0153022.g003</a>
+  </figcaption>
+</figure>
+<figure class="figure" data-doi="10.1371/journal.pone.0153022.g004">
+  <img alt="Morphometric analysis of structures in E2+P treatment group." src="pone.0153022.g004.PNG_L.png" width="800em" class="zoom" />
+  <figcaption class="caption">
+    <span>Fig 4. </span>Morphometric analysis of structures in E2+P treatment group. (a) Graphs represent 3D parameters that were calculated using the formula shown in <a href="#pone-0153022-t001">Table 1</a>;
+    elongation (top left), elongation in structures with lumen (top right), sphericity (bottom left) and branching in terms of ratio volume ellipsoid (bottom right). X-axis represents the mean of the parameters and
+    Y-axis represents the distribution of the structures measured in three experimental replicates. Blue (solid) line represents E2 alone treatment and pink (dashed) line represents E2+P. (b) Principal component analysis
+    (PCA) shows variance in the data by analyzing correlated variables, sphericity (S), ratio volume ellipsoid (RVE), elongation (E), complexity (C) and number of lumen (L) between E2 and E2+P. Factor map with vectors
+    represent highly correlated variables as Dimension 1 and 2 on the x and y axes respectively. Vector colors, blue, pink and black correspond to the trend in the distribution of structures in E2, E2+P and both
+    respectively (left). Graph shows distribution of the structures in each treatment group, E2 (blue) and E2+P (pink) with correlated variables (right). (c) Graphs represent reproducibility in the measurement of
+    elongation in structures of E2 (left) and E2+P (right). X-axis represents the mean of the parameters and y-axis represents the distribution of the structures measured in five experimental replicates shown as a number
+    code.
+    <a href="https://doi.org/10.1371/journal.pone.0153022.g004">https://doi.org/10.1371/journal.pone.0153022.g004</a>
+  </figcaption>
+</figure>
+<figure class="figure">
+  <img alt="List of quantitative
+                        parameters and their corresponding mathematical definitions" src="pone.0153022.t001.PNG_L.png" width="1000em" class="zoom" />
+  <figcaption class="caption">
+    <span>Table 1. </span>List of quantitative parameters and their corresponding mathematical definitions.
+    <a href="https://doi.org/10.1371/journal.pone.0153022.t001">https://doi.org/10.1371/journal.pone.0153022.t001</a>
+  </figcaption>
+</figure>
+<h4 class="subsectionHead" id="section4">Computer generated images</h4>
+<p class="indent">
+  In order to validate SAMA, we tested our software on computer generated (CG) stacks (<a href="#pone.0153022.s002">S2 Fig</a>). The stacks were generated with 40 ellipsoids, which mimic an image containing 40
+  epithelial structures in a z-stack obtained by confocal microscopy of 3D cultures. These CG structures are at random positions, orientation and sizes in the three axes. Lumena are smaller structures constructed
+  with a randomly chosen radius within the larger structures. The reference condition (C1), are ellipsoids that contain a lumen, have similar probability distribution in terms of size and orientation towards any of
+  the axes. Condition C2 was designed to differ from C1 in that the maximum size of the ellipsoid oriented in one axis of the ellipsoid is twice the size that is oriented towards the other axes. Condition C3
+  differs from C1 because it was made with each structure having only a 50% chance of having a lumen. Condition C4 contains structures with two ellipsoids positioned perpendicularly, to test the ability of SAMA to
+  detect structures with a higher complexity. For each condition, we generated six stacks.
+</p>
+<h4 class="subsectionHead" id="section5">Three-dimensional cultures</h4>
+<p class="indent">
+  The epithelial cells and components used in the 3D cultures of the breast used for validation of SAMA have been previously described [<a class="ref-tip" href="#pone.0153022.ref011">11</a>]. Briefly, cells were suspended in a final
+  volume of 1.5 mL of collagen (1 mg/ml) and poured into 12-well plates (Becton Dickinson). The mixture was allowed to congeal for 30 min at 37°C and 1.5 mL of the CD-FBS or CD-FBS medium containing estradiol alone
+  (10<sup>−10</sup>,10<sup>−9</sup>M), or in combination with promegestone (10<sup>−10</sup>M), or prolactin (10<sup>−7</sup>M)was added to each well. Gels were detached [ <a class="ref-tip" href="#pone.0153022.ref010">10</a>] and
+  cultures were maintained for two weeks for cell organization analysis and the medium was changed every two days. After two weeks, gels were fixed overnight in 10% phosphate-buffered formalin and stained with Carmine-alum.
+</p>
+<h4 class="subsectionHead" id="section6">Image acquisition</h4>
+<p class="indent">
+  Whole-mounted gels stained with carmine alum were imaged using a Zeiss LSM 510 system (Carl Zeiss MicroImaging, Inc.). Samples were excited with the HeNe 633nm laser as the Carmine dye fluoresces at this wavelength. Images were
+  acquired at 20X magnification using a MultiTime macro, which enables automated imaging of multiple frames of z-stacks, which are then stitched using 20% overlap of images to obtain 5 X 3 image tiles.
+</p>
+<h4 class="subsectionHead" id="section7">Statistical analysis</h4>
+<p class="indent">
+  The results we discuss are obtained both by ANOVA and Wilcoxon rank test and the p-value reported is the largest between the two values obtained. All statistical analyses are performed with cran R. The PCA analysis is performed with
+  the R package FactoMineR.
+</p>
+<h4 class="subsectionHead" id="section8">Imaging parameters</h4>
+<p class="indent">
+  A description of the parameters and the formula that were used to give an in-depth morphological analysis of the epithelial structures is described in <a href="#pone-0153022-t001">Table 1</a>. The basic morphometric parameters
+  generated by 3D ROI manager plugin used in SAMA’s program are elongation, flatness, sphericity and volume. For lumen analysis, we incorporated two parameters, the presence of a lumen and the relative lumen volume (ratio of the
+  volume of the lumen to the volume of the structure). Quality is a derivative quantity, which takes into account the elongation of the structure and relative lumen volume. Morphologically relevant epithelial structures in 3D gels are
+  ones that are optimally elongated, not very flat and contain a lumen. These features resemble those of a normal breast epithelium. Hence, a positive value for quality would indicate normal structures while negative values for
+  quality would indicate that the structure is flat. For branching analysis, we use parameters that are generated by 3D ROI manager, namely ratio volume ellipsoid (RVE) as well as a parameter we generated, namely complexity. RVE is
+  the ratio of the volume of the structure to the volume of the ellipsoid fitted around the structure. Hence a value of 1 will indicate a perfect ellipsoid or sphere whereas values close to 0 will indicate a convoluted structure,
+  indicating the presence of branches or protrusions. We assess skeletonized structures with several complexity quantities: whether there is more than one branch, the number of branches, and the cumulated lengths of the branches. The
+  higher the value of complexity, the more convoluted or branched the structure would be.
+</p>
+<h3 class="sectionHead" id="section3">Results and Discussion</h3>
+<h4 class="subsectionHead" id="section1">Validation by computer generated images</h4>
+<p class="indent">
+  To ensure that SAMA is functional, we validated the software using computer generated model images. The model images were constructed to test several analytical functions of SAMA. SAMA provides the expected outputs from our designed
+  conditions (<a href="#pone.0153022.s002">S2 Fig</a>). The analysis shows that C2 has more elongated structures than C1 (p = 0.002). In C3, there are more structures with lumen (p = 0.016) and overall structures have bigger lumena (p
+  = 0.002). Condition C4 has structures that are more complex than C1 for all of our measures of complexity (p&lt;0.026). As a result, SAMA performs as expected in computer generated images.
+</p>
+<h4 class="subsectionHead" id="section2">Biological Validation and Analysis</h4>
+<p class="indent">
+  To validate SAMA, we used images from a hormone-sensitive 3D culture of the breast [<a class="ref-tip" href="#pone.0153022.ref011">11</a>]. We chose to analyze gels that have previously been analyzed using 2D image measurements as
+  well as 3D computational modeling and visualization using the commercial software package, Volocity [<a class="ref-tip" href="#pone.0153022.ref011">11</a>].
+</p>
+<p class="indent">
+  We observed that T47D cells that were not exposed to hormones did not develop any epithelial structures and hence, these gels were excluded from our analysis. In the 3D gels analyzed here by SAMA, the cells responded to E2 by
+  proliferating and forming elongated and spherical 3D structures. Further, treatment of cells with E2+P and E2+Prl caused significantly higher elongation of structures in the gels compared to E2 treatment alone (Figs
+  <a href="#pone-0153022-g003">3A</a> and <a href="#pone-0153022-g004">4A</a>). These results are consistent with previously published results from 2D analysis [ <a class="ref-tip" href="#pone.0153022.ref011">11</a>]. In addition to
+  these data, we were able to analyze new features including lumen formation and branching of these structures. We found that in E2+Prl treatment group, structures had higher number of lumen compared to E2 alone (
+  <a href="#pone-0153022-g003">Fig 3A</a>). In E2+P treatment group, structures with lumen had significantly higher elongation than E2 alone (<a href="#pone-0153022-g004">Fig 4A</a>). Similarly, we observed that E2+Prl and E2+P gels
+  had higher branching in structures with hormone combinations than E2 alone (Figs <a href="#pone-0153022-g003">3A</a> and <a href="#pone-0153022-g004">4A</a>). The PCA factor map and graphs give a comprehensive analysis of correlated
+  variables, which indicate the diversity of structures formed in E2 treatment alone and E2 + hormone treatment (Figs <a href="#pone-0153022-g003">3B</a> and <a href="#pone-0153022-g004">4B</a>). These data, thus give us new
+  quantifiable information regarding lumen and branching of structures in these treatments, features that could only be qualitatively analyzed previously. Additionally, SAMA analyzes the reproducibility of results obtained within and
+  between treatment groups. Specifically, SAMA is able to measure reproducibility and variability in the tissue culture system by calculating the mean of biologically relevant parameters and plotting this as a distribution curve. As
+  an example, we have shown the distribution of one such parameter, namely elongation, as this is the distinguishing feature between ducts and acini. The graph that SAMA generates shows whether the distribution curve of each
+  experimental replicate of a given sampling group superimposes on each other. Superimposition of these curves would indicate that the structures are not variable within treatment replicates, suggesting that the results were
+  reproducible between experiments (<a href="#pone-0153022-g004">Fig 4C</a>). This enables the user to understand variability in 3D morphogenesis that is inevitable in biological experiments and observe how these inconsistencies
+  distribute among the experimental groups and replicates.
+</p>
+<h4 class="subsectionHead" id="section3">SAMA versus current software</h4>
+<p class="indent">
+  Currently, there are several commercial as well as open-source software packages available that combine image acquisition and analysis (<a href="#pone-0153022-t002">Table 2</a>). Among them, Imaris (Bitplane), Volocity
+  (Perkin-Elmer), Image-Pro (MediaCybernetics), Amira and Metamorph (Molecular Devices) are examples of commercially available software. CellProfiler [ <a class="ref-tip" href="#pone.0153022.ref024">24</a>], V3D [
+  <a class="ref-tip" href="#pone.0153022.ref025">25</a>], BioImageXD [<a class="ref-tip" href="#pone.0153022.ref026">26</a>] and NEMO [ <a class="ref-tip" href="#pone.0153022.ref027">27</a>] are examples of open-source software
+  platforms for the analysis of biological images. The advantage of commercial software is that it is tailor-made for the imaging system purchased, with the availability of customer support and warranties from the company. Their
+  drawbacks include the high costs of purchasing hardware-software bundles and most critically, the inability to know and modify the proprietary codes. This prevents researchers from knowing the details of the computing processes and
+  modifying them to acquire specific and biologically relevant end-points. While these are aspects where open-source software has an edge over commercial software, the presently available open-source software packages have limitations
+  as well. Existing open-source software enables basic morphometrics (structural parameters only), but there are limited options available for an exhaustive, high throughput, biologically relevant multi-parametric image analysis
+  bundled with statistical analysis that takes into account reproducibility among experiments. For example, there are limited software packages that can carry out in-depth analyses (a combination of morphological, statistical and
+  reproducibility analyses of shape, size, lumen formation and branching) of 3D epithelial structures in models of biological systems. To remedy this latter inconvenience, we developed SAMA to 1) obtain an exhaustive and comprehensive
+  analysis of tissue morphogenesis in 3D culture models of the breast, 2) to gain a deeper understanding of biological variability in tissue morphogenesis in 3D tissue cultures, 3) to acquire a rapid, automated and unbiased analysis
+  of every epithelial structure in the 3D images that span a large sampling area and, 4) to combine imaging analysis with a meticulous analysis of the experimental replicates, thus ensuring reproducibility in the data obtained from
+  the 3D cultures.
+</p>
+<figure class="figure" data-doi="10.1371/journal.pone.0153022.t002">
+  <img alt="Comparison between SAMA and other
+        software packages that combine image acquisition and analysis." src="pone.0153022.t002.PNG_L.png" width="1000em" class="zoom" />
+  <figcaption class="caption">
+    <span>Table 2. </span>Comparison between SAMA and other software packages that combine image acquisition and analysis.
+    <a href="https://doi.org/10.1371/journal.pone.0153022.t002">https://doi.org/10.1371/journal.pone.0153022.t002</a>
+  </figcaption>
+</figure>
+<p class="indent">
+  3D tissue cultures are increasingly becoming a source of new information regarding tissue morphogenesis, which can lead to a more detailed understanding of carcinogenesis in tissues such as the breast. However, lack of proper
+  methodology and software prevents researchers from getting an in-depth analysis of a large population of 3D structures in images. Researchers tend to choose a few epithelial structures from a large heterogeneous population of 3D
+  structures to represent the outcome of a given experimental condition [<a class="ref-tip" href="#pone.0153022.ref012">12</a>; <a class="ref-tip" href="#pone.0153022.ref028">28</a>]. Heterogeneity in the distribution and shape of
+  epithelial structures in a 3D gel is a phenomenon that we have observed within each gel as well as over a given period of time [<a class="ref-tip" href="#pone.0153022.ref010">10</a>]. With such a heterogeneous population, it is
+  imperative that a large sampling size be taken into consideration to analyze and represent the global experimental outcome. Hence, SAMA was developed keeping in mind the need to have an exhaustive analysis of the 3D sample so that
+  biologists are not constrained to choosing a restricted number of structures that require time-consuming manual analysis and may not truly represent the overall outcome of their experimental conditions.
+</p>
+<h3 class="sectionHead" id="section4">Summary</h3>
+<p class="indent">
+  We have compared SAMA to existing commercial and open-source software. Specifically, we compared biologically relevant end-points that SAMA analyzes to those analyzed by other software (
+  <a href="#pone-0153022-t002">Table 2</a>). These comparisons of biological end-points hold greater bearing for our analyses than comparing imaging features and software intricacies. The open-source SAMA is our contribution to the
+  growing community of scientists working with 3D cultures who want to obtain a comprehensive, multi-parametric and biologically relevant analysis of 3D structures of the tissue. We encourage scientists to not only download and use
+  SAMA, but also innovatively improvise its code to help in this endeavor.
+</p>
+<h3 class="sectionHead" id="section5">Supporting Information</h3>
+<h3 class="sectionHead" id="s1-fig-visual-representation-of-parameters"><a href="article/file?type=supplementary&amp;id=info:doi/10.1371/journal.pone.0153022.s001">S1 Fig. </a>Visual representation of parameters.</h3>
+<figure class="figure" style="text-align:center">
+  <img alt="Visual representation of parameters." src="pone.0153022.s001.png" width="500em" class="zoom" />
+  <figcaption class="indent caption">
+    This figure is a representation of how elongation and branching are calculated by SAMA. The measurement of elongation as shown in Panel A has been explained using a 3D cylinder (representing an epithelial structure) in which the
+    three axes have been labeled as L, M and S. Elon1 is the ratio of the long axis to the middle axis (L/M). Elon 2 is the ratio of the middle axis to small axis (M/S). Elon1 &gt; Elon2 would mean that the epithelial structure is
+    elongated. Elon2 &gt; Elon1 would mean the epithelial structure is flat. Elon1 = Elon2 would mean that the epithelial structure is spherical. Branching was measured in two ways, namely Complexity and Ratio Volume Ellipsoid
+    (RVE). Panel B explains how complexity is measured. The shapes “Y” and “I” represent branched and single (no branching) epithelial ducts. Complexity is the measurement of the length of structures. The sum of the three arms
+    (represented by the three black lines inside the pink structures) of “Y” is calculated to give the total length of “Y”. Similarly the length of “I” is calculated. The structure with greater length is more complex than ones with
+    smaller length. Panel C explains how RVE is calculated by drawing an ellipse around “Y” and the letter “O” (representing an acini). RVE is the ratio of the volume of the structure to the volume of an ellipsoid fitted around the
+    structure. Log RVE is close to 0 for spherical structures and close to 1 for branched structures.<a href="https://doi.org/10.1371/journal.pone.0153022.s001"> https://doi.org/10.1371/journal.pone.0153022.s001</a>
+  </figcaption>
+</figure>
+<h3 class="sectionHead" id="s2-fig-validation-of-sama"><a href="article/file?type=supplementary&amp;id=info:doi/10.1371/journal.pone.0153022.s002">S2 Fig. </a>Validation of SAMA.</h3>
+<figure class="figure">
+  <img alt="Computer generated images of
+            four test conditions." src="pone.0153022.s002.png" width="1000em" class="zoom" />
+  <figcaption class="caption">
+    Panel A: Computer generated images of four test conditions. Each one is a single representative image of the complete stack. Panel B: Resulting SAMA output of four parameters each compared to the reference condition (C1).
+    <a href="https://doi.org/10.1371/journal.pone.0153022.s002">https://doi.org/10.1371/journal.pone.0153022.s002</a>
+  </figcaption>
+</figure>
+<h3 class="sectionHead" id="acknowledgments">Acknowledgments</h3>
+<p class="indent">
+  We greatly appreciate the editorial assistance by Cheryl Schaeberle. This research was supported by Avon Grant #02-2009-093, and 02-2011-095. Additional support was provided by NIEHS/NIH ES08314. The content is solely the
+  responsibility of the authors and does not necessarily represent the official views of the National Institute of Environmental Health Sciences or the National Institutes of Health.
+</p>
+<h3 class="sectionHead" id="author-contributions">Author Contributions</h3>
+<p class="indent">
+  Conceived and designed the experiments: LS AMS CS MM TP. Performed the experiments: TP FC MM. Analyzed the data: TP FC LS MM AMS CS. Contributed reagents/materials/analysis tools: TP LS MM. Wrote the paper: TP LS MM AMS CS.
+  Maintained the software: MM.
+</p>
+<h3 class="sectionHead" id="references">References</h3>
+<ol class="references">
+  <li id="ref1">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref001" name="pone.0153022.ref001"></a>Kohl P, Noble D, Winslow RL, Hunter PJ. Computational modelling of biolobical systems: tools and visions. Philos
+    Trans R Soc London [Biol] 2000;358:579–610. 
+    <a data-author="Kohl" data-cit="KohlP%2C%20NobleD%2C%20WinslowRL%2C%20HunterPJ.%20Computational%20modelling%20of%20biolobical%20systems%3A%20tools%20and%20visions.%20Philos%20Trans%20R%20Soc%20London%20%5BBiol%5D%202000%3B358%3A579%E2%80%93610." data-title="Computational%20modelling%20of%20biolobical%20systems%3A%20tools%20and%20visions" href="#" target="_new" title="Go to article in CrossRef">View Article,
+</a><a href="http://scholar.google.com/scholar?q=Computational+modelling+of+biolobical+systems%3A+tools+and+visions+Kohl+2000" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref2">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref002" name="pone.0153022.ref002"></a>Eliceiri KW, Berthold MR, Goldberg IG, Ibáñez L, Manjunath BS, Martone ME, et al. Biological imaging software
+    tools. Nat Methods 2012;9:697–710. pmid:22743775
+    <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1038/nmeth.2084" target="_new" title="Go to article">View Article, </a><a href="http://www.ncbi.nlm.nih.gov/pubmed/22743775" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a><a href="http://scholar.google.com/scholar?q=Biological+imaging+software+tools+Eliceiri+2012" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref3">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref003" name="pone.0153022.ref003"></a>Peng H. Bioimage informatics: a new area of engineering biology. Bioinformatics 2008;24:1827–36. pmid:18603566
+    <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1093/bioinformatics/btn346" target="_new" title="Go to article">View Article, </a><a href="http://www.ncbi.nlm.nih.gov/pubmed/18603566" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a><a href="http://scholar.google.com/scholar?q=Bioimage+informatics%3A+a+new+area+of+engineering+biology+Peng+2008" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref4">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref004" name="pone.0153022.ref004"></a>Huang B, Wang W, Bates M, Zhuang X. Three-dimensional super-resolution imaging by stochastic optical
+    reconstruction microscopy. Science 2008;319:810–3. pmid:18174397
+    <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1126/science.1153529" target="_new" title="Go to article">View Article, </a><a href="http://www.ncbi.nlm.nih.gov/pubmed/18174397" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a><a href="http://scholar.google.com/scholar?q=Three-dimensional+super-resolution+imaging+by+stochastic+optical+reconstruction+microscopy+Huang+2008" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref5">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref005" name="pone.0153022.ref005"></a>Fessart D, Begueret H, Delom F. Three-dimensional culture model to distinguish normal from malignant human
+    bronchial epithelial cells. Eur Respir J 2013;42:1345–56. pmid:23349442
+    <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1183/09031936.00118812" target="_new" title="Go to article">View Article, </a><a href="http://www.ncbi.nlm.nih.gov/pubmed/23349442" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a><a href="http://scholar.google.com/scholar?q=Three-dimensional+culture+model+to+distinguish+normal+from+malignant+human+bronchial+epithelial+cells+Fessart+2013" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref6">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref006" name="pone.0153022.ref006"></a>Debnath J, Muthuswamy SK, Brugge JS. Morphogenesis and oncogenesis of MCF-10A mammary epithelial acini grown in
+    three-dimensional basement membrane cultures. Methods 2003;30:256–68. pmid:12798140
+    <a data-author="Debnath" data-cit="DebnathJ%2C%20MuthuswamySK%2C%20BruggeJS.%20Morphogenesis%20and%20oncogenesis%20of%20MCF-10A%20mammary%20epithelial%20acini%20grown%20in%20three-dimensional%20basement%20membrane%20cultures.%20Methods%202003%3B30%3A256%E2%80%9368.%2012798140" data-title="Morphogenesis%20and%20oncogenesis%20of%20MCF-10A%20mammary%20epithelial%20acini%20grown%20in%20three-dimensional%20basement%20membrane%20cultures" href="#" target="_new" title="Go to article in CrossRef">View Article,
+</a><a href="http://www.ncbi.nlm.nih.gov/pubmed/12798140" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a><a href="http://scholar.google.com/scholar?q=Morphogenesis+and+oncogenesis+of+MCF-10A+mammary+epithelial+acini+grown+in+three-dimensional+basement+membrane+cultures+Debnath+2003" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref7">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref007" name="pone.0153022.ref007"></a>Yamada KM, Cukierman E. Modeling tissue morphogenesis and cancer in 3D. Cell 2007;130:601–10. pmid:17719539
+    <a data-author="Yamada" data-cit="YamadaKM%2C%20CukiermanE.%20Modeling%20tissue%20morphogenesis%20and%20cancer%20in%203D.%20Cell%202007%3B130%3A601%E2%80%9310.%2017719539" data-title="Modeling%20tissue%20morphogenesis%20and%20cancer%20in%203D" href="#" target="_new" title="Go to article in CrossRef">View Article,
+</a><a href="http://www.ncbi.nlm.nih.gov/pubmed/17719539" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a><a href="http://scholar.google.com/scholar?q=Modeling+tissue+morphogenesis+and+cancer+in+3D+Yamada+2007" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref8">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref008" name="pone.0153022.ref008"></a>Krause S, Maffini MV, Soto AM, Sonnenschein C. A novel 3D in vitro culture model to study stromal-epithelial
+    interactions in the mammary gland. Tissue Eng Part C Methods 2008;14:261–71. pmid:18694322
+    <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1089/ten.tec.2008.0030" target="_new" title="Go to article">View Article, </a><a href="http://www.ncbi.nlm.nih.gov/pubmed/18694322" target="_new" title="Go to article in PubMed">PubMed/NCBI </a>,
+    <a href="http://scholar.google.com/scholar?q=A+novel+3D+in+vitro+culture+model+to+study+stromal-epithelial+interactions+in+the+mammary+gland+Krause+2008" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref9">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref009" name="pone.0153022.ref009"></a>Krause S, Maffini MV, Soto AM, Sonnenschein C. The microenvironment determines the breast cancer cells'
+    phenotype: organization of MCF7 cells in 3D cultures. BMC Cancer 2010;10:263–75. pmid:20529269
+    <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1186/1471-2407-10-263" target="_new" title="Go to article">View Article, </a><a href="http://www.ncbi.nlm.nih.gov/pubmed/20529269" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a><a href="http://scholar.google.com/scholar?q=The+microenvironment+determines+the+breast+cancer+cells%26apos%3B+phenotype%3A+organization+of+MCF7+cells+in+3D+cultures+Krause+2010" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref10">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref010" name="pone.0153022.ref010"></a>Dhimolea E, Maffini MV, Soto AM, Sonnenschein C. The role of collagen reorganization on mammary epithelial
+    morphogenesis in a 3D culture model. Biomaterials 2010 May;31:3622–30. pmid:20149444
+    <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1016/j.biomaterials.2010.01.077" target="_new" title="Go to article">View Article, </a><a href="http://www.ncbi.nlm.nih.gov/pubmed/20149444" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a><a href="http://scholar.google.com/scholar?q=The+role+of+collagen+reorganization+on+mammary+epithelial+morphogenesis+in+a+3D+culture+model+Dhimolea+2010" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref11">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref011" name="pone.0153022.ref011"></a>Speroni L, Whitt GS, Xylas J, Quinn KP, Jondeau-Cabaton A, Georgakoudi I, et al. Hormonal regulation of
+    epithelial organization in a 3D breast tissue culture model. Tissue Eng Part C Methods 2014;20:42–51. pmid:23675751
+    <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1089/ten.TEC.2013.0054" target="_new" title="Go to article">View Article, </a><a href="http://www.ncbi.nlm.nih.gov/pubmed/23675751" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a><a href="http://scholar.google.com/scholar?q=Hormonal+regulation+of+epithelial+organization+in+a+3D+breast+tissue+culture+model+Speroni+2014" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref12">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref012" name="pone.0153022.ref012"></a>Weigelt B, Bissell MJ. Unraveling the microenvironmental influences on the normal mammary gland and breast
+    cancer. Semin Cancer Biol 2008;18:311–21. pmid:18455428
+    <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1016/j.semcancer.2008.03.013" target="_new" title="Go to article">View Article, </a><a href="http://www.ncbi.nlm.nih.gov/pubmed/18455428" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a><a href="http://scholar.google.com/scholar?q=Unraveling+the+microenvironmental+influences+on+the+normal+mammary+gland+and+breast+cancer+Weigelt+2008" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref13">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref013" name="pone.0153022.ref013"></a>Gjorevski N, Nelson CM. Mapping of mechanical strains and stresses around quiescent engineered three-dimensional
+    epithelial tissues. Biophys J 2012;103:152–62. pmid:22828342
+    <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1016/j.bpj.2012.05.048" target="_new" title="Go to article">View Article, </a><a href="http://www.ncbi.nlm.nih.gov/pubmed/22828342" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a><a href="http://scholar.google.com/scholar?q=Mapping+of+mechanical+strains+and+stresses+around+quiescent+engineered+three-dimensional+epithelial+tissues+Gjorevski+2012" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref14">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref014" name="pone.0153022.ref014"></a>Pageau SC, Sazonova O, Wong JY, Soto AM, Sonnenschein C. The effect of stromal components on the modulation of
+    the phenotype of human bronchial epithelial cells in 3D culture. Biomaterials 2011;32:7169–80. pmid:21724251
+    <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1016/j.biomaterials.2011.06.017" target="_new" title="Go to article">View Article, </a><a href="http://www.ncbi.nlm.nih.gov/pubmed/21724251" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a><a href="http://scholar.google.com/scholar?q=The+effect+of+stromal+components+on+the+modulation+of+the+phenotype+of+human+bronchial+epithelial+cells+in+3D+culture+Pageau+2011" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref15">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref015" name="pone.0153022.ref015"></a>Neville MC, McFadden TB, Forsyth I. Hormonal regulation of mammary differentiation and milk secretion. J Mammary
+    Gland Biol Neoplasia 2002;7:49–66. pmid:12160086
+    <a data-author="Neville" data-cit="NevilleMC%2C%20McFaddenTB%2C%20ForsythI.%20Hormonal%20regulation%20of%20mammary%20differentiation%20and%20milk%20secretion.%20J%20Mammary%20Gland%20Biol%20Neoplasia%202002%3B7%3A49%E2%80%9366.%2012160086" data-title="Hormonal%20regulation%20of%20mammary%20differentiation%20and%20milk%20secretion" href="#" target="_new" title="Go to article in CrossRef">View Article,
+</a><a href="http://www.ncbi.nlm.nih.gov/pubmed/12160086" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a><a href="http://scholar.google.com/scholar?q=Hormonal+regulation+of+mammary+differentiation+and+milk+secretion+Neville+2002" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref16">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref016" name="pone.0153022.ref016"></a>Soto AM, Brisken C, Schaeberle CM, Sonnenschein C. Does cancer start in the womb? Altered mammary gland
+    development and predisposition to breast cancer due to in utero exposure to endocrine disruptors. J Mammary Gland Biol Neoplasia 2013;18:199–208. pmid:23702822
+    <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1007/s10911-013-9293-5" target="_new" title="Go to article">View Article, </a><a href="http://www.ncbi.nlm.nih.gov/pubmed/23702822" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a><a href="http://scholar.google.com/scholar?q=Does+cancer+start+in+the+womb%3F+Altered+mammary+gland+development+and+predisposition+to+breast+cancer+due+to+in+utero+exposure+to+endocrine+disruptors+Soto+2013" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref17">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref017" name="pone.0153022.ref017"></a>Soto AM, Vandenberg LN, Maffini MV, Sonnenschein C. Does breast cancer start in the womb? Basic Clin Pharmacol
+    Toxicol 2008 Feb;102:125–33. pmid:18226065
+    <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1111/j.1742-7843.2007.00165.x" target="_new" title="Go to article">View Article, </a><a href="http://www.ncbi.nlm.nih.gov/pubmed/18226065" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a><a href="http://scholar.google.com/scholar?q=Does+breast+cancer+start+in+the+womb%3F+Soto+2008" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref18">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref018" name="pone.0153022.ref018"></a>Schindelin J, Arganda-Carreras I, Frise E, Kaynig V, Longair M, Pietzsch T, et al. Fiji: an open-source platform
+    for biological-image analysis. Nature Methods 2012;9:676–82. pmid:22743772
+    <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1038/nmeth.2019" target="_new" title="Go to article">View Article, </a><a href="http://www.ncbi.nlm.nih.gov/pubmed/22743772" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a><a href="http://scholar.google.com/scholar?q=Fiji%3A+an+open-source+platform+for+biological-image+analysis+Schindelin+2012" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref19">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref019" name="pone.0153022.ref019"></a>Biot E, Crowell E, Hofte H, Maurin Y, Vernhettes S, Andrey P. A new filter for spot extraction in N-dimensional
+    biological imaging. Fifth IEEE International Symposium on Miomedical Imaging: From Nano to Micro, Paris, May 14–17 2008.
+    <ul class="find-nolinks"></ul>
+  </li>
+  <li id="ref20">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref020" name="pone.0153022.ref020"></a>Luisier F, Vonesch C, Blu T, Unser M. Fast interscale wevelet denoising of Poisson-corrupted images. Signal
+    Processing 2010;90:415–27.
+    <a data-author="Luisier" data-cit="LuisierF%2C%20VoneschC%2C%20BluT%2C%20UnserM.%20Fast%20interscale%20wevelet%20denoising%20of%20Poisson-corrupted%20images.%20Signal%20Processing%202010%3B90%3A415%E2%80%9327." data-title="Fast%20interscale%20wevelet%20denoising%20of%20Poisson-corrupted%20images" href="#" target="_new" title="Go to article in CrossRef">View Article,
+</a><a href="http://scholar.google.com/scholar?q=Fast+interscale+wevelet+denoising+of+Poisson-corrupted+images+Luisier+2010" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref21">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref021" name="pone.0153022.ref021"></a>Ollion J, Cochennec J, Loll F, Escudé C, Boudier T. TANGO: A generic tool for high-throughput 3D image analysis
+    for studying nuclear organization. Bioinformatics 2013;29:1840–1. pmid:23681123
+    <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1093/bioinformatics/btt276" target="_new" title="Go to article">View Article, </a><a href="http://www.ncbi.nlm.nih.gov/pubmed/23681123" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a><a href="http://scholar.google.com/scholar?q=TANGO%3A+A+generic+tool+for+high-throughput+3D+image+analysis+for+studying+nuclear+organization+Ollion+2013" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref22">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref022" name="pone.0153022.ref022"></a>Bolte S, Cordelières FP. A guided tour into subcellular colocalization analysis in light microscopy. J Microsc
+    2006;224:213–32. pmid:17210054
+    <a data-author="Bolte" data-cit="BolteS%2C%20Cordeli%C3%A8resFP.%20A%20guided%20tour%20into%20subcellular%20colocalization%20analysis%20in%20light%20microscopy.%20J%20Microsc%202006%3B224%3A213%E2%80%9332.%2017210054" data-title="A%20guided%20tour%20into%20subcellular%20colocalization%20analysis%20in%20light%20microscopy" href="#" target="_new" title="Go to article in CrossRef">View Article,
+</a><a href="http://www.ncbi.nlm.nih.gov/pubmed/17210054" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a><a href="http://scholar.google.com/scholar?q=A+guided+tour+into+subcellular+colocalization+analysis+in+light+microscopy+Bolte+2006" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref23">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref023" name="pone.0153022.ref023"></a>Lee T-C, Kashyap RL, Chu C-N. Building skeleton models via 3-D medial surface/axis thinning algorithms.
+    Graphical Models and Image Processing 1994;56:462–78.
+    <a data-author="Lee" data-cit="LeeT-C%2C%20KashyapRL%2C%20ChuC-N.%20Building%20skeleton%20models%20via%203-D%20medial%20surface%2Faxis%20thinning%20algorithms.%20Graphical%20Models%20and%20Image%20Processing%201994%3B56%3A462%E2%80%9378." data-title="Building%20skeleton%20models%20via%203-D%20medial%20surface%2Faxis%20thinning%20algorithms" href="#" target="_new" title="Go to article in CrossRef">View Article,
+</a><a href="http://scholar.google.com/scholar?q=Building+skeleton+models+via+3-D+medial+surface%2Faxis+thinning+algorithms+Lee+1994" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref24">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref024" name="pone.0153022.ref024"></a>Carpenter AE, Jones TR, Lamprecht MR, Clarke C, Kang IH, Friman O, et al. CellProfiler: image analysis software
+    for identifying and quantifying cell phenotypes. Genome Biology 2006;7:R100. pmid:17076895
+    <a data-author="Carpenter" data-cit="CarpenterAE%2C%20JonesTR%2C%20LamprechtMR%2C%20ClarkeC%2C%20KangIH%2C%20FrimanO%2C%20et%20al.%20CellProfiler%3A%20image%20analysis%20software%20for%20identifying%20and%20quantifying%20cell%20phenotypes.%20Genome%20Biology%202006%3B7%3AR100.%2017076895" data-title="CellProfiler%3A%20image%20analysis%20software%20for%20identifying%20and%20quantifying%20cell%20phenotypes" href="#" target="_new" title="Go to article in CrossRef">View Article,
+</a><a href="http://www.ncbi.nlm.nih.gov/pubmed/17076895" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a><a href="http://scholar.google.com/scholar?q=CellProfiler%3A+image+analysis+software+for+identifying+and+quantifying+cell+phenotypes+Carpenter+2006" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref25">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref025" name="pone.0153022.ref025"></a>Peng H, Ruan Z, Long F, Simpson JH, Myers EW. V3D enables real-time 3D visualization and quantitative analysis
+    of large-scale biological image data sets. Nat Biotechnol 2010;28:348–53. pmid:20231818
+    <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1038/nbt.1612" target="_new" title="Go to article">View Article, </a><a href="http://www.ncbi.nlm.nih.gov/pubmed/20231818" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a><a href="http://scholar.google.com/scholar?q=V3D+enables+real-time+3D+visualization+and+quantitative+analysis+of+large-scale+biological+image+data+sets+Peng+2010" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref26">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref026" name="pone.0153022.ref026"></a>Kankaanpää P, Paavolainen L, Tiitta S, Karjalainen M, Päivärinne J, Nieminen J, et al. BioImageXD: an open,
+    general-purpose and high-throughput image-processing platform. Nat Methods 2012;9:683–9. pmid:22743773
+    <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1038/nmeth.2047" target="_new" title="Go to article">View Article, </a><a href="http://www.ncbi.nlm.nih.gov/pubmed/22743773" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a><a href="http://scholar.google.com/scholar?q=BioImageXD%3A+an+open%2C+general-purpose+and+high-throughput+image-processing+platform+Kankaanp%C3%A4%C3%A4+2012" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref27">
+    <span class="order"> </span><a class="link-target" id="pone.0153022.ref027" name="pone.0153022.ref027"></a>Billeci L, Magliaro C, Pioggia G, Ahluwalia A. NEuronMOrphological analysis tool: open-source software for
+    quantitative morphometrics. Front Neuroinform 2013;7:2. pmid:23420185
+    <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.3389/fninf.2013.00002" target="_new" title="Go to article">View Article, </a><a href="http://www.ncbi.nlm.nih.gov/pubmed/23420185" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a><a href="http://scholar.google.com/scholar?q=NEuronMOrphological+analysis+tool%3A+open-source+software+for+quantitative+morphometrics+Billeci+2013" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+  <li id="ref28">
+    <a class="link-target" id="pone.0153022.ref028" name="pone.0153022.ref028"></a>Chaudhuri O, Koshy ST, Branco da Cunha C, Shin JW, Verbeke CS, Allison KH, et al. Extracellular matrix stiffness and composition jointly regulate
+    the induction of malignant phenotypes in mammary epithelium. Nat Mater 2014;13:970–8. pmid:24930031
+    <a data-author="doi-provided" data-cit="doi-provided" data-title="doi-provided" href="https://doi.org/10.1038/nmat4009" target="_new" title="Go to article">View Article, </a><a href="http://www.ncbi.nlm.nih.gov/pubmed/24930031" target="_new" title="Go to article in PubMed">PubMed/NCBI, </a><a href="http://scholar.google.com/scholar?q=Extracellular+matrix+stiffness+and+composition+jointly+regulate+the+induction+of+malignant+phenotypes+in+mammary+epithelium+Chaudhuri+2014" target="_new" title="Go to article in Google Scholar">Google Scholar</a>
+  </li>
+</ol>

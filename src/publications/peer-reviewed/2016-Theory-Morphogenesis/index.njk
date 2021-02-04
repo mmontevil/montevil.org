@@ -1,0 +1,320 @@
+---
+excerpt: We propose a framework to model the behavior of cells in tissues and develop an application in the case of ductal morphogenesis.
+illust: acini-duct.png
+---
+<style type="text/css">
+@page {
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+empty-cells: show;
+}
+.fr1 {
+text-align: center;
+}
+.fr2 {
+text-align: center;
+}
+.P15 {
+font-weight: bold;
+}
+.P17 {
+font-weight: bold;
+}
+.P19 {
+font-weight: bold;
+}
+.centerpar {
+text-align: center;
+}
+.Footnote_20_Reference {
+vertical-align: super;
+font-size: 80%;
+}
+.T5 , .T6 ,
+.T7{
+font-style: italic;
+}</style>
+<h2 class="titleHead" id="theoretical-approach-of-ductal-morphogenesis">Theoretical approach of ductal morphogenesis</h2>
+<div class="center" ><div class="P3" >
+  <span class="T2">Maël Montévil</span>
+  <span class="Footnote_20_Reference"><span class="Footnote_20_anchor" title="Footnote:  E mail: mael.montevil@gmail.com. Url: http://montevil.theobio.org Laboratoire &quot;Matière et Systèmes Complexes&quot; (MSC), UMR 7057 CNRS, Université Paris 7 Diderot, 75205 Paris Cedex 13, France and Institut d’Histoire et de Philosophie des Sciences et des Techniques (IHPST) - UMR 8590 Paris, France. "><a href="#ftn1" id="body_ftn1">1</a></span></span><span class="T2"></span>
+</div>
+<div class="P3" >
+  <span class="T2">Carlos Sonnenschein</span>
+  <span class="Footnote_20_Reference"><span class="Footnote_20_anchor" title="Footnote:  Centre Cavaillès, École Normale Supérieure, Paris, France, and Institut d’Etudes Avancees de Nantes, France and Department of Integrative Physiology and Pathobiology, Tufts University School of Medicine, Boston, MA USA. "><a href="#ftn2" id="body_ftn2">2</a></span></span><span class="T2"></span>
+</div>
+<div class="P3" >
+  <span class="T2">Ana Soto</span>
+  <span class="Footnote_20_Reference"><span class="Footnote_20_anchor" title="Footnote:  Centre Cavaillès, République des Savoirs, CNRS USR3608, Collège de France et Ecole Normale Supérieure, Paris, France and Department of Integrative Physiology and Pathobiology, Tufts University School of Medicine, Boston, MA USA "><a href="#ftn3" id="body_ftn3">3</a></span></span>
+</div></div>
+<p class="indent paragraphHead" id="abstract">Abstract</p>
+<p class="indent">
+  <span class="T4"> </span>We developed 3D culture methods that reproduce in vitro mammary gland ductal morphogenesis. We are proposing a conceptual framework to understand morphogenetic events based on epistemologically sound
+  biological principles instead of the common practice of using only physical principles. More specifically, our theoretical framework is based on the principle that the default state of cells is proliferation with variation and motility.
+  We emphasize the role played by the agency of cells embedded in a gel and the circularity that is relevant for the intended process, whereby cells act upon other cells and on matrix elements, and are subject to the agency of neighboring
+  cells. This circularity strongly differs from classical linear causality. Finally, our approach opens up the study of causal determination to multilevel explanations rather than to reductive ones involving only molecules in general and
+  genes in particular.
+</p>
+<h3 class="sectionHead" id="1--introduction"><a id="a__1_Introduction"></a>1  Introduction</h3>
+<p class="indent">
+  The proper understanding of epithelial morphogenesis and aberrant morphogenesis, for example in the case of cancer, requires an appropriate theoretical framework. Such a theoretical framework should take place within a theory of
+  organisms that encompasses life cycles. This theory aims to provide a framework for both experiments and mathematical modeling of organisms and their parts. The role of theory that we describe here is similar to an extent with the
+  manner in which classical mechanics and its concepts of space, time and forces frame the movement of classical objects in classical mechanics.
+</p>
+<p class="indent">
+  Theoretical descriptions in terms of genes or individual categories of proteins do not include a notion of space and time. As a result they are not sufficient to explain biological shapes because shapes are about space and morphogenesis
+  is about space and time. Moreover, a theoretical framework for organisms should enable us to understand reciprocal interactions and the non-linearities relevant to morphogenesis. Therefore a good theory should enable us to perform
+  mathematical modeling and interpret the meaning of the use of mathematics.
+</p>
+<p class="indent">
+  In order to develop a theory of organisms, physical theories are an obvious reference and it is so in two distinct manners. First of all, biological objects are surely compatible with physical theories when they are in their range of
+  application; however this does not imply that current physical theories are sufficient to understand biological organisms. For example, the (mass times) acceleration of a cell is surely equals to the sum of the forces that applies to
+  it; however these forces are largely the result of an evolutionary and ontogenetic history, and handling this history theoretically requires an appropriate framework [<a href="#BIB_longomont">1</a>, <a href="#BIB_lomososo2015">2</a>].
+  Second, physical theories are also a methodological reference, especially in their use of mathematics to understand natural phenomena. Third, in physics we witness that phenomena at different scales are explained by different
+  fundamental theories such as cosmology, thermodynamics and quantum field theories. This experience in physical theorizing goes against overly reductionist positions often defended in biology. Again, physics being a reference does not
+  mean that we must build a theory of organism following the same epistemology. In fact, we have contrasted numerous times the two domains, see in particular [<a href="#BIB_longomont">1</a>, <a href="#BIB_longo13">3</a>,
+  <a href="#BIB_longo2011c">4</a>].
+</p>
+<p class="indent">
+  In this essay, we will present some elements of context on epithelial morphogenesis. In particular, we will emphasize the role of the stroma on the basis of experimental results. We will then present a model of cell culture in 3D
+  collagen gels where morphogenesis takes place in a similar manner than in mammary glands <span class="T6">in situ</span>. Last, we discuss how we frame the situation theoretically and emphasize the manner in which we discuss cellular
+  behaviors.
+</p>
+<h3 class="sectionHead" id="2--stroma-and-morphogenesis"><a id="a__2_Stroma_and_morphogenesis"></a>2  Stroma and morphogenesis</h3>
+<p class="indent">
+  Morphogenesis, and more generally development, should not be conceived as the unfolding of a program contained in specific parts but as a result of the interplay of parts. Among them, we would like to emphasize the reciprocal
+  interactions between the stroma and the epithelium. These interactions are of biophysical, in particular biomechanical, and biochemical nature, and the two aspects are often coupled, for example when a chemical compound induces changes
+  of the cytoskeleton organization and the latter feeds back on gene expression [5]. Let us now discuss a few experiments which exemplify these reciprocal interactions and emphasize the crucial role of the stroma.
+</p>
+<p class="indent">
+  In [6], the authors transplant epithelium from the mammary gland in the stroma of salivary glands and in the other way around. The outcome of these transplantation experiments is that the morphology of the epithelium is determined by
+  the stroma, so that the mammary epithelium in the salivary stroma takes the morphology of a salivary gland (and the other way around).
+</p>
+<p class="indent">
+  The extracellular matrix participates in the determination of cellular behaviors. Naive mesenchymal stem cells differentiation depends on the mechanical properties of their micro-environment[7]. More precisely, a soft matrix is
+  neurogenic while a very stiff one is osteogenic. An average stiffness is myogenic.
+</p>
+<p class="indent">
+  Now let us consider a highly pathological morphogenesis: i.e., carcinogenesis. In [8], the authors expose animals to a highly carcinogenic compound: NMU. Then they perform all the possible recombinations of exposed and non-exposed
+  stroma with exposed and non-exposed epithelium. The results show in very clear manner that an exposed stroma is sufficient to lead to tumor formation while an exposed epithelium recombined with a non-exposed stroma leads, instead, to
+  normal morphogenesis. Let us also remark that metastasis is facilitated when the metastatic epithelial seed carries stroma, including fibroblasts [9].
+</p>
+<p class="indent">
+  This short discussion shows the importance of the stroma and more generally of the micro-environment in the determination of both the morphogenetic process and of cellular behaviors. The biological model described below is another
+  relevant example of these events. We emphasize the effects of the extracellular matrix of the stroma on the epithelium among their reciprocal interactions because these effects are generally underestimated. However, we will see below
+  that it is really their reciprocal interactions that enable us to understand a specific biological situation.
+</p>
+<h3 class="sectionHead" id="3--biological-model"><a id="a__3_Biological_model"></a>3  Biological model</h3>
+
+  <figure class="figure" id="Image9" >
+
+      <img alt="Acinus and ducts in 3d culture in a collagen and matrigel gel" src="acini-duct.png"  class="zoom"/>
+
+<figcaption class="caption">
+  <span class="T6">Figure </span><a id="BMfig_structure"><span class="T6">1</span><span class="T6"></a>: Epithelial structures observed by confocal microscopy.</span> The images are a projection of 3D stacks. In red, we observe cells by carmine staining. In green, we observe collagen-I fibers
+by reflective confocal microscopy [see also figure
+<a href="#BMfig_colla">2</a>]. All images come from the same collagen gel with 5% basement membrane protein (matrigel) which is known to lead to two kinds of structures. On the left side, cells from the MCF10A breast epithelial cell
+  line form an acinus. On the right side, instead, they form elongated structures similar to ducts in vivo. Note that in the latter, we can see two elongated structures which are not connected, even though they are partially superposed.
+  The experimental protocol to obtain these structures is described in [10].
+</figcaption></figure>
+<p class="indent">
+  Collagen-I is the main protein of the stromal extracellular matrix of mammary gland. A 3D biological model of mammary gland morphogenesis consists of a collagen gel containing epithelial cells. More precisely, collagen fibrils remain
+  liquid at low temperature and they form a gel at ambient temperature, which can capture cells in suspension.
+</p>
+<p class="indent">
+  This in vitro model enables us to partially disentangle the relationships between our object of study and the rest of the organism. More precisely, this model makes it possible to control precisely the mechanical properties of the
+  extracellular matrix and the cell type that participate in morphogenesis. Seeding cells of the breast epithelial cell line MCF10A in such gels leads to the formation of elongated epithelial structures, polarization of cells within the
+  structures and the formation of lumen, which are then similar to mammary ducts [11] [see figure <a href="#BMfig_structure">1</a>].
+</p>
+<p class="indent">
+  Matrigel is a mixture of basement membrane proteins that can be added to collagen to obtain a gel with different properties than pure collagen gels. In a gel with 1mg/ml collagen and 50% (v/v) matrigel, MCF10A cells form spherical
+  structurese close to the acini <span class="T6">in vivo</span>. The morphogenetic process with matrigel is thus distinct from the one without matrigel. With less matrigel (5%), cells form both spherical and elongated structures as
+  illustrated in figure <a href="#BMfig_structure">1</a>.
+</p>
+<figure class="figure">
+      <img  id="Image5" alt="Epithelial structure and collagen orientation" src="duct2.jpg"  class="zoom"/>
+<figcaption class="caption">
+  Figure
+  <a id="BMfig_colla">2:</a> Collagen orientation around an epithelial structure. Here, we represent in blue the average orientation of collagen fibers for each element of an arbitrary grid, using the method described in [12]. Collagen is oriented in the
+same direction than the tip of the elongated structure. This image exemplifies the fact that epithelial cells remodel collagen during the morphogenetic process.
+</figcaption></figure>
+<p class="indent">The bulk mechanical properties of gels are not sufficient to explain these different morphogenetic processes because gels with collagen and 0% or 5% matrigel have very similar macroscopic mechanical properties but lead nevertheless
+to different epithelial shapes [10]. However, these different gels have very different microscopic properties, as shown by electron micrographs. Collagen gels are fibrilar; they form a mesh of collagen fibrils. By contrast, the
+addition of matrigel leads to a more globular matrix, where fibers are less accessible, depending on the amount of matrigel added.</p>
+<p class="indent">
+  In collagen gels, cells reorganize collagen and do so very early, i.e., a few hours after seeding [10][ see also figure <a href="#BMfig_colla">2</a>]. Moreover, a macroscopic mechanical strain leads collagen
+  fibers to be oriented along the direction of the strain and to the formation of elongated structures along the same direction [13]. Forces exerted by cells on collagen can affect distant cells at a range far greater than cell sizes
+  [14].The inhibition of remodeling by the matrigel-containing globular matrix is central to the formation of acini. As a conclusion, we hypothesize that the interplay between cells and the matrix is central to morphogenesis, and more
+  specifically, to the remodeling of the fibrilar matrix of collagen.Note that it is possible to refine this biological model to include other cell types such as fibroblasts or to change the initial conditions of the cells, or the
+  mechanical constraints on the gel.
+</p>
+<h3 class="sectionHead" id="4--theoretical-principles"><a id="a__4_Theoretical_principles"></a>4  Theoretical principles</h3>
+<p class="indent">
+  One crucial difficulty in modeling biological systems is the lack of established theoretical principles to frame cellular behaviors. Cells are sometimes informally considered to be stimulated by “signals”, which are usually chemicals
+  and would “command” them to behave in a certain way, for example, by making them proliferate or move [12, 15]. In other models, cellular proliferation or motility are assumed to be spontaneous but may be prevented by constraints such as
+  a lack of available space for proliferation [see for example 12,16]. Sometimes, the different viewpoints are discussed for the same object without being explicitly articulated. Another viewpoint from physics proposes that cells are in a
+  configuration of minimum energy; however, this idea cannot be considered as a general principle since cells are active entities which can and often do escape minimum energy configurations by the consumption of chemical free energy.
+</p>
+<figure class="figure">
+ 
+ <img id="Image6" alt="Theoretical articulation of cells and collagen for mathematical modeling" src="schema.jpg" class="zoom"/>
+   
+<figcaption class="caption"><span class="T6">Figure </span><a id="BMfig_diag"><span class="T6">3</span><span class="T6"></a>: Diagram of the different interacting elements of the biological model.</span> We separate the components of the system on the basis of the principles that provide the theoretical framework
+to describe them. Classical mechanics and chemistry for collagen fibers, for example, and our default state for cells. These two kinds of elements are in continual interaction.</figcaption></figure>
+<p class="indent">
+  This brief overview shows that a general theoretical frame to understand cellular behavior is missing. In [<a href="#BIB_lomososo2015">2</a>, 17], we have proposed to build such a frame on the basis of an analogy
+  with classical mechanics. In the latter, a fundamental principle, the principle of inertia, specifies the behavior of a system when nothing is done to it. We call such a reference behavior a default state. Thus, te default state is the
+  behavior of a system when no specific external cause acts on it. Assuming a default state is a fundamental principle for a theory. Reciprocally, causes, that is to say physical forces in classical mechanics, explain a departure from the
+  default state. Epistemologically, a default state does not require an explanation; it is postulated and only departures from the default state require explanations.
+</p>
+<p class="indent">
+  In line with former work [18, 19], we propose in [<a href="#BIB_lomososo2015">2</a>, 17] that the default state of cells is proliferation with variation and motility. This entails that no cause is required to justify that cells
+  proliferate. Instead what requires an explanation is quiescence. Similarly, we assume that motility is spontaneous. Note that motility is not restricted to cell mobility. Motility also includes, for example, the motion of cellular
+  pseudopods involved in the reorganization of the extracellular matrix.
+</p>
+<p class="indent">
+  In our framework, the departure from the default state is the result of constraints such as physical forces, the attachment to other cells, chemical inhibitors [20], etc. Note that this framework is at least partially compatible with
+  several existing mathematical models [12, 16], and transforms local hypotheses into a general principle.
+</p>
+<figure class="figure" >
+      <img id="Image1" alt="Results of the simulation of duct morphogenesis" src="duct1.png" class="zoom" width="700em"/>
+<figcaption class="caption"><span class="T6">Figure </span><a id="BMfig_simu"><span class="T6">4</span></a><span class="T6">: Two different runs of a simulation of 3D cell culture of breast epithelial cells in collagen gels. </span>In green we represent cells and in orange we represent the lumen. The model is
+described in [21]. Note that branching occurs in the first run (left) while it does not on the second (right). These different behaviors stem from different values in the parameter representing the ability of cells to remodel
+collagen.</figcaption></figure>
+<p class="indent">
+  The systematic use of our default state in order to understand the biological model described in the previous section is the object of a paper in press [21]. Basically, we analyze this system as the interaction between two types of
+objects. The first is the collagen (or more generally, the extra-cellular matrix) which is determined by physical principles. In particular, collagen initially self-organizes in the process of gel formation. Afterwards, collagen
+transmits forces exerted by cells, i.e., during the process of morphogenesis. On the other side, the system includes cells which require a proper theoretical principle and we frame their behavior with the default state. Then, the
+analysis of the situation of interest corresponds to assumptions on the specific constraints that act on the default state and which stem mostly from the extra-cellular matrix and from other cells. The full system is then modeled as
+the interplay between these two components [see figure
+<a href="#BMfig_diag">3</a>]. In figure <a href="#BMfig_simu">4</a>, we propose two simulation outcomes that lead to elongated structures [21]. These structures result from the forces exerted by cells on the fibrillar matrix. By
+  generating and applying these forces epithelial cells organize the collagen around them and constrain each other. These constraints lead to the formation of a dominant direction which is a typically non-linear phenomenon. In particular,
+  cells that are in the middle of the tube cannot migrate or proliferate towards the exterior mostly because of the mechanical strain along the direction of the tube
+</p>
+<h3 class="sectionHead" id="5--conclusion"><a id="a__5_Conclusion"></a>5  Conclusion</h3>
+<p class="indent">
+  In this brief overview on mammary gland epithelial morphogenesis, we emphasize the role of the hypotheses and principles that we use to understand a system. We  illustrate the idea that the interplay between the stroma, here
+  represented by the extracellular matrix, and the epithelium is a crucial determinant of epithelial morphogenesis, including pathological morphogenesis as in the case of cancer. We also emphasize the need of a proper theoretical
+  principle in order to frame cellular behaviors both in experimental and mathematical work. We present the idea that the default state of cells is proliferation with variation and motility which is an evolutionary sound approach to frame
+  cellular behaviors theoretically. The application of these ideas to specific mathematical modeling is the object of ongoing work and a first model can be found in [21].
+</p>
+<p class="indent">
+  This work exemplifies the idea that fundamental biological explanations do not always need to appeal to the molecular level. Our principle builds on cell theory and thus consider cells as elementary but complex objects in order to
+  understand tissues and their genesis. The default state of cells is a fundamental principle in the sense that the default state defines a causal structure: the default state does not need to be explained while a departure from it
+  requires a causal explanation.
+</p>
+<h4 class="subsectionHead" id="acknowledgements"><a id="a__Acknowledgements"></a>Acknowledgements</h4>
+<p class="indent">
+  This work was conducted as part of the research project ‘Addressing biological organization in the post-genomic era’, which is supported by the International Blaise Pascal Chairs, Region Ile de France. AMS was the Blaise Pascal Chair of
+  Biology 2013-15 at the École Normale Supérieure. Additional support was provided by Award Number R01ES08314 (P.I. AMS) from the National Institute of Environmental Health Sciences. The funders had no role in the study design, data
+  collection and analysis, decision to publish, or preparation of the manuscript. Maël Montévil is supported by Labex "Who am I?", laboratory of Excellence No. ANR-11-LABX-0071. CS is a member of the Centre Cavaill
+  <span class="T1">è</span>s at the École Normale Sup<span class="T1">é</span>rieure, Paris France.
+</p>
+<h3 class="sectionHead thebibilography" id="references">References</h3>
+<p class="indent">
+  [
+  <a id="BIB_longomont">1]<span> Longo G and Montévil M. <span class="T5">Perspectives on Organisms: Biological time, symmetries and singularities</span>. Lecture Notes in Morphogenesis. Springer, Dordrecht, 2014.</span></a>
+</p>
+<p class="indent">
+  <a id="BIB_longomont">[</a>
+  <a id="BIB_lomososo2015">2]<span> Longo G, Montévil M, Sonnenschein C, and Soto AM. In search of principles for a theory of organisms. <span class="T5">Journal of Biosciences</span>, pages 1–14, 2015.</span></a>
+</p>
+<p class="indent">
+  <a id="BIB_lomososo2015">[</a>
+  <a id="BIB_longo13">3]<span> Longo G and Montévil M. Extended criticality, phase spaces and enablement in biology. <span class="T5">Chaos, Solitons &amp; Fractals</span>, page 64-79, 2013.</span></a>
+</p>
+<p class="indent">
+  <a id="BIB_longo13">[</a>
+  <a id="BIB_longo2011c">4]
+<span> Longo G and Montévil M. From physics to biology by extending criticality and symmetry breakings. <span class="T5">Progress in Biophysics and Molecular Biology</span>, 106(2):340 – 347, 2011. Invited paper, special issue:
+Systems Biology and Cancer.</span></a>
+</p>
+<p class="indent"><a id="BIB_longo2011c"><span class="T1">[5]        Dinicola S, Fabrizi G, Masiello MG, Proietti S,  Palombo A, Minini M,  Harrath AH, Alwasel SH, Ricci G, Catizone A, Cucina A, Bizzarri M, Inositol induces mesenchymal-epithelial reversion
+in breast cancer cells through cytoskeleton rearrangement,
+</span><span class="T7">Experimental Cell Research</span><span class="T1">, Volume 345, Issue 1, 1 July 2016, Pages 37-50, ISSN 0014-4827, http://dx.doi.org/10.1016/j.yexcr.2016.05.007.</span></a></p>
+<p class="indent">
+  <a id="BIB_longo2011c">[6</a>
+  <a id="BIB_Sakakura421">]
+<span> Sakakura T, Kusano I, Kusakabe M, Inaguma Y, and Nishizuka Y. Biology of mammary fat pad in fetal mouse: capacity to support development of various fetal epithelia in vivo. <span class="T5">Development</span>,
+100(3):421–430, 1987.</span></a>
+</p>
+<p class="indent">
+  <a id="BIB_Sakakura421">[7</a>
+  <a id="BIB_Engler2006677">]<span> Engler AJ, Sen S, Lee Sweeney H, and  Discher DE. Matrix elasticity directs stem cell lineage specification. <span class="T5">Cell</span>, 126(4):677 – 689, 2006.</span></a>
+</p>
+<p class="indent">
+  <a id="BIB_Engler2006677">[8</a>
+  <a id="BIB_Maffini15032004">]<span> Maffini MV, Soto AM, Calabro JM, Ucci AA, and Sonnenschein C. The stroma as a crucial target in rat mammary gland carcinogenesis. <span class="T5">Journal of Cell Science</span>, 117(8):1495–1502, 2004.</span></a>
+</p>
+<p class="indent">
+  <a id="BIB_Maffini15032004">[9</a>
+  <a id="BIB_duda2010malignant">]
+<span> Duda DG, Duyverman A, Kohno M, Snuderl M, Steller E, Fukumura D, and Jain RK. Malignant cells facilitate lung metastasis by bringing their own soil. <span class="T5">Proceedings of the National Academy of Sciences</span>,
+107(50):21677–21682, 2010.</span></a>
+</p>
+<p class="indent">
+  <a id="BIB_duda2010malignant">[10</a>
+  <a id="BIB_Lucia_2014">]
+<span> Barnes C, Speroni L, Quinn K, Montévil M, Saetzler K, Bode-Animashaun G, McKerr G, Georgakoudi I, Downes S, Sonnenschein C, Howard V, and Soto AM. From single cells to tissues: Interactions between the matrix and human
+breast cells in real time. <span class="T5">PLoS ONE</span>, 9(4):e93325, 04 2014.</span></a>
+</p>
+<p class="indent">
+  <a id="BIB_Lucia_2014">[</a>
+  <a id="BIB_krause2008novel">11]
+<span> Krause S, Maffini MV, Soto AM, and Sonnenschein C. A novel 3d in vitro culture model to study stromal-epithelial interactions in the mammary gland. <span class="T5">Tissue Engineering Part C: Methods</span>, 14(3):261–271,
+2008.</span></a>
+</p>
+<p class="indent">
+  <a id="BIB_krause2008novel">[</a>
+  <a id="BIB_Rejniak2dacini">12]
+<span> Rejniak KA and  Anderson ARA. A computational study of the development of epithelial acini: Ii.necessary conditions for structure and lumen stability. <span class="T5">Bulletin of Mathematical Biology</span>,
+70(5):1450–1479, 2008.</span></a>
+</p>
+<p class="indent">
+  <a id="BIB_Rejniak2dacini">[</a>
+  <a id="BIB_dhimolea2010role">13]<span> Dhimolea E, Maffini MV, Soto AM, and Sonnenschein C. The role of collagen reorganization on mammary epithelial morphogenesis in a 3d culture model. <span class="T5">Biomaterials</span>, 31:3622–3630, 2010.</span></a>
+</p>
+<p class="indent">
+  <a id="BIB_dhimolea2010role">[</a>
+  <a id="BIB_Wang20142592">14]
+<span> Wang H, Abhilash AS, Chen CS, Wells RG, and Shenoy VB. Long-range force transmission in fibrous matrices enabled by tension-driven alignment of fibers. <span class="T5">Biophysical Journal</span>, 107(11):2592 – 2603,
+2014.</span></a>
+</p>
+<p class="indent">
+  <a id="BIB_Wang20142592">[</a>
+  <a id="BIB_Grantreactiondiffusion">15]
+<span> Grant MR, Hunt CA, Xia L, Fata JE, and Bissell MJ. Modeling mammary gland morphogenesis as a reaction-diffusion process. In
+<span class="T5">Engineering in Medicine and Biology Society, 2004. IEMBS ’04. 26th Annual International Conference of the IEEE</span>, volume 1, pages 679–682, Sept 2004.</span></a>
+</p>
+<p class="indent">
+  <a id="BIB_Grantreactiondiffusion"><span class="T8">[</span></a>
+  <a id="BIB_Harjantoremodeling"><span class="T8">16</span><span class="T8">] Harjanto D and Zaman MH. </span>Modeling extracellular matrix reorganization in 3d environments. <span class="T5">PLoS ONE</span>, 8(1):1–11, 01 2013.</a>
+</p>
+<p class="indent">
+  <a id="BIB_Harjantoremodeling">[</a>
+  <a id="BIB_chapterdefault">17]
+<span> Soto AM, Sonnenschein C, Montévil M, and Longo G. The biological default state of  cell proliferation with variation and motility, a fundamental principle for a theory of organisms.
+<span class="T6">Prog Biophys Mol Biol.</span> doi: 10.1016/j.pbiomolbio.2016.06.006, 2016.</span></a>
+</p>
+<p class="indent">
+  <a id="BIB_chapterdefault">[</a>
+  <a id="BIB_NYASNYAS412">18]<span> Soto AM and Sonnenschein C. Regulation of cell proliferation: The negative control perspectivea. <span class="T5">Annals of the New York Academy of Sciences</span>, 628(1):412–418, 1991.</span></a>
+</p>
+<p class="indent">
+  <a id="BIB_NYASNYAS412">[</a>
+  <a id="BIB_Society">19]<span> Sonnenschein C and Soto AM. <span class="T5">The society of cells: cancer and control of cell proliferation</span>. Springer Verlag, New York, 1999.</span></a>
+</p>
+<p class="indent">
+  <a id="BIB_Society">[20</a>
+  <a id="BIB_Sonnenschein1996147">]
+<span> Sonnenschein C, Soto AM, and Michaelson CL. Human serum albumin shares the properties of estrocolyone-i, the inhibitor of the proliferation of estrogen-target cells.
+<span class="T5">The Journal of Steroid Biochemistry and Molecular Biology</span>, 59(2):147 – 154, 1996.</span></a>
+</p>
+<p class="indent">
+  <a id="BIB_Sonnenschein1996147">[</a>
+  <a id="BIB_chapterconstraints">21]
+<span> Montévil M, Speroni L, Sonnenschein C, and Soto AM. Modeling mammary organogenesis from biological first principles: cells and their physical constraints.
+<span class="T6">Prog Biophys Mol Biol. Doi: 10.1016/j.pbiomolbio.2016.08.004</span>, 2016.</span></a>
+</p>

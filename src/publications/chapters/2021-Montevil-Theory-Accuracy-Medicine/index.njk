@@ -1,16 +1,12 @@
 ---
-title: test  
+title: test
 ---
-
-	<h2 class="titleHead">Conceptual and theoretical specifications for accuracy in medicine<a class="footnote-ref" href="#fn2" id="fnref2" role="doc-noteref"><sup>2</sup></a></h2>
-	<p class="head" style="text-align: center;">Maël Montévil<a class="footnote-ref" href="#fn1" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-
-
-<p class="indent paragraphHead">Abstract: </p><p class="indent">Technological developments in genomics and other -omics originated the idea that precise measurements would lead to better therapeutic strategies. However, precision does not entail accuracy. Scientific accuracy requires a theoretical framework to understand the meaning of measurements, the nature of causal relationships, and potential intrinsic limitations of knowledge. For example, a precise measurement of initial positions in classical mechanics is useless without initial velocities; it is not an accurate measurement of the initial condition. Conceptual and theoretical accuracy is required for precision to lead to the progress of knowledge and rationality in action.</p>
+<h2 class="titleHead" id="conceptual-and-theoretical-specifications-for-accuracy-in-medicine2">Conceptual and theoretical specifications for accuracy in medicine<a class="footnote-ref" href="#fn2" id="fnref2" role="doc-noteref"><sup>2</sup></a></h2>
+<p class="head" style="text-align:center">Maël Montévil<a class="footnote-ref" href="#fn1" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p class="indent paragraphHead">Abstract:</p>
+<p class="indent">Technological developments in genomics and other -omics originated the idea that precise measurements would lead to better therapeutic strategies. However, precision does not entail accuracy. Scientific accuracy requires a theoretical framework to understand the meaning of measurements, the nature of causal relationships, and potential intrinsic limitations of knowledge. For example, a precise measurement of initial positions in classical mechanics is useless without initial velocities; it is not an accurate measurement of the initial condition. Conceptual and theoretical accuracy is required for precision to lead to the progress of knowledge and rationality in action.</p>
 <p class="indent">In the search for accuracy in medicine, we first outline our results on a theory of organisms. Biology is distinct from physics and requires a specific epistemology. In particular, we develop the meaning of biological measurements and emphasize that variability and historicity are fundamental notions. However, medicine is not just biology; we articulate the historicity of biological norms that stems from evolution and the idea that patients and groups of patients generate new norms to overcome pathological situations. Patients then play an active role, in line with the philosophy of Georges Canguilhem. We argue that taking this dimension of medicine into account is critical for theoretical accuracy.</p>
-
-<p class="indent "><span class="indent paragraphHead">Keywords</span>: Personalized Medicine, Normativity, Theoretical Biology, Organization, Technology</p>
-
+<p class="indent"><span class="indent paragraphHead">Keywords</span>: Personalized Medicine, Normativity, Theoretical Biology, Organization, Technology</p>
 <h3 data-number="1" id="introduction"><span class="header-section-number">1</span> Introduction</h3>
 <p class="indent">Medicine is not a science but an art that builds on sciences <span class="citation" data-cites="canguilhem1972normal">(Canguilhem 1972)</span>. It follows that modern medicine always took into account scientific evidence. In this perspective, the name “evidence-based medicine” is somewhat misleading. Moreover, this methodology was never supposed to build on scientific evidence alone. Instead, proponents of evidence-based medicine also acknowledge the physicians’ experience <span class="citation" data-cites="Sackett1996 Masic2008">(Sackett et al. 1996; Masic, Miokovic, and Muhamedagic 2008)</span>. A similar misnaming occurs for personalized and precision medicine. Since Hippocrates, medicine has always been personalized, and hopefully, medicine always aimed for a reasonable level of precision.</p>
 <p class="indent">“Evidence-based medicine” and the more recent “personalized medicine” and “precision medicine” are notions that are partially misnamed — their name emphasizes a general aspect of medicine that is not specific to them. These names are less appropriate for philosophy and scientific reasoning than for marketing strategies targeting the medical community, patients, managers, and political deciders. They suggest that other approaches are lacking in the designated area: nobody defends a medicine that would ignore scientific evidence, would be imprecise, or would not take into account the individuality of patients.</p>
@@ -21,8 +17,8 @@ title: test
 <p class="indent">However, personalized medicine is also emerging when other technologies are being developed, such as cloud computing, especially the new database and deep learning technologies. The connection between personalized medicine and these technologies is undecided to no small extent. It remains at the level of prototypes and projects such as IBM Watson <span class="citation" data-cites="RHRISSORRAKRAI2016392">(Rhrissorrakrai, Koyama, and Parida 2016)</span> — a project that is seemingly not in good shape. The principal, certain applications of personalized medicine remain limited to specific cases of genetic correlations associated with the choice of a few drugs or the adjustment of drug doses <span class="citation" data-cites="personalized">(The Personalized Medicine Coalition 2014)</span>. As a result, it is critical to distinguish the real practices, and knowledge from the attempts at performative technological discourses pushed forward by several stakeholders. Let us emphasize that using high throughput methods requires statistical methods. When the latter does not build on the concept of machine learning, they use complex computational models built on classical concepts of statistical analysis.</p>
 <p class="indent">In this context, the relationship between evidence-based medicine and personalized medicine also remains a matter of debate. For some authors, personalized medicine should be a further development of evidence-based medicine — a logical stance considering that current applications are limited to the use of new observables for the stratification of patient groups <span class="citation" data-cites="10.1093/pcmedi/pby009">(Chow, Gallo, and Busse 2018)</span>. For others, there is a paradigm shift between the two approaches. Randomized trials assume the homogeneity of the intended population; by contrast, personalized medicine would consider that populations are fundamentally heterogeneous <span class="citation" data-cites="deleon">(Leon 2012)</span>. The latter option culminates in the notion of <span class="math inline"><em>n</em> = 1</span> experiments, where an experiment is performed repeatedly on a single individual to provide clues on her response and find suitable treatments.</p>
 <p class="indent">As mentioned above, the core of these approaches is technological, empirical procedures, where statistical computations are central. However, the bare use of statistical methods is a misuse. More than 800 statisticians defend the idea that the categorization of results by statistical significance (p-values) is damaging science and should not be performed anymore <span class="citation" data-cites="amrhein2019scientists">(Amrhein et al. 2019)</span>. Along the same line, the American Statistical Society felt compelled to produce a statement on the use of p-values, a unique situation since statements by scientific societies usually target non-academic actors, such as decision-makers <span class="citation" data-cites="doi:10.1080/00031305.2016.1154108">(Wasserstein and Lazar 2016)</span>. Let us quote this statement:</p>
-<blockquote >
-	<p class="indent">Practices that reduce data analysis or scientific inference to mechanical “bright-line” rules (such as “p &lt; 0.05”) for justifying scientific claims or conclusions can lead to erroneous beliefs and poor decision making. [...] Researchers should bring many contextual factors into play to derive scientific inferences, including the design of a study, the quality of the measurements, the external evidence for the phenomenon under study, and the validity of assumptions that underlie the data analysis. [...] The widespread use of “statistical significance” (generally interpreted as “p &lt; 0.05”) as a license for making a claim of a scientific finding (or implied truth) leads to considerable distortion of the scientific process.</p>
+<blockquote>
+  <p class="indent">Practices that reduce data analysis or scientific inference to mechanical “bright-line” rules (such as “p &lt; 0.05”) for justifying scientific claims or conclusions can lead to erroneous beliefs and poor decision making. [...] Researchers should bring many contextual factors into play to derive scientific inferences, including the design of a study, the quality of the measurements, the external evidence for the phenomenon under study, and the validity of assumptions that underlie the data analysis. [...] The widespread use of “statistical significance” (generally interpreted as “p &lt; 0.05”) as a license for making a claim of a scientific finding (or implied truth) leads to considerable distortion of the scientific process.</p>
 </blockquote>
 <p class="indent">Part of the (intellectual) context of a scientific experiment is the scientific framework in which it takes place, especially its theoretical and epistemological framework. By contrast with the idea that data and statistics could replace the scientific method <span class="citation" data-cites="anderson2008end">(Anderson 2008)</span>, statisticians emphasize the role of hypotheses and the underlying scientific reasoning to interpret data and perform statistical analyses. Detailed analyses emphasize this point <span class="citation" data-cites="doi:10.1177/2053951714534395 bigdatagiulia">(Leonelli 2014; Montévil and Longo 2018)</span>. Evidence-based medicine and personalized medicine are lacking in that regard. Evidence-based medicine focuses on the generic concept of the randomized trial without addressing the theoretical background of such trials, especially the causal analysis of the treatment attempted. Existing personalized medicine builds mostly on genetic determinism, a somewhat outdated perspective; for example, in some cases, overall gene expression does not reflect radical phenotypic changes <span class="citation" data-cites="Po2019">(Po et al. 2019)</span>. Moreover, the genocentric view can only analyze differences between individuals and groups; therefore, it is blind to general trends such as the current pandemics of non-communicable diseases, a critical topic for current public health <span class="citation" data-cites="pmid23410611">(Moodie et al. 2013)</span>.</p>
 <p class="indent">At this point, it is useful to introduce the conceptual difference between precision and accuracy. Let us start with a familiar image: shooting arrows at a target. Precision describes whether arrows hit a specific area of the target consistently, but not necessarily its center, while accuracy represents whether arrows hit the center of the target. In terms of classical measurement<a class="footnote-ref" href="#fn3" id="fnref3" role="doc-noteref"><sup>3</sup></a>, precision describes how consistent a measurement method is, while accuracy describes whether measurements correspond to the genuine theoretical target, for example, the right observables without systematic biases. Here, we emphasize that genuine scientific accuracy requires a theoretical framework, whereas precision makes sense in more lenient settings. Let us take a medical example. Heart rate, as defined by EEG patterns, may be measured with very high precision; however, this precision does not make much biological and medical sense since this rate is a non-stationary time series: its average changes over time, at all time scales. It is far more biologically accurate to obtain a reasonably precise measurement of the value of heart rate complemented by an analysis of its variability <span class="citation" data-cites="west2006medicine scaling2014">(West 2006; Longo and Montévil 2014)</span>. We want to emphasize that an excess of precision in reading instruments is considered bad practice in physics and that measurement reports are limited to significant figures, the digits that are assumed to be accurate accounts of the intended theoretical quantity. By contrast, further digits are noise from the measurement apparatus, and reporting them in publications is a bad practice that mixes significant figures and noise. Let us take a final example. In classical physics, both initial position and velocity measurements are required to make predictions. Without velocity, even extremely precise measurements of the initial position are inadequate to make predictions. Such measurements are insufficient and thus inaccurate for prediction purposes.</p>
@@ -58,201 +54,200 @@ title: test
 <p class="indent">Let us wrap our discussion up. Accuracy in medicine requires a well-defined theoretical basis. We argue that this basis should analyze organizations as a whole and in their historicity. Historicity means that organizations are the result of history but also that they produce history by generating new constraints. It follows that statistical norms and biological norms cannot be conflated and that medical practitioners cannot always follow standardized protocols if they are to accompany this normativity. This normativity is not just strictly biological. Instead, patients’ ability to generate knowledge is part of this normativity, and this work is typically performed in groups. Groups are then a fundamental level for health care. Let us emphasize that the current period is characterized by rapid changes in technologies or due to technologies, such as climate change. As a result, an accurate account of health care cannot ignore this group level normativity that impacts lifestyles, technics, and biological properties. Last, the same applies to the use of technologies by healthcare practitioners themselves, such as the ones advocated by evidenced-based or precision medicine. Technologies require specific knowledge to mitigate their negative consequences, and specifically, algorithmic methods tend to ignore normativity at all levels.</p>
 <h3 data-number="4" id="acknowledgments">Acknowledgments</h3>
 <p class="indent">This chapter builds to a large extent on the collective work of the Organism group. We are also indebted to Bernard Stiegler and Nicolas André for helpful discussions.</p>
-<h3><span class="header-section-number">4</span> References</h3>
+<h3 id="4-references"><span class="header-section-number">4</span> References</h3>
 <div class="references hanging-indent" id="refs" role="doc-bibliography">
-	<div id="ref-amrhein2019scientists">
-		<p class="bibitem">Amrhein, V, S Greenland, B McShane, and 800 signatories. 2019. “Scientists Rise up Against Statistical Significance.” <em>Nature</em> 567. Nature Publishing Group: 305–7. doi:<a href="https://doi.org/10.1038/d41586-019-00857-9">10.1038/d41586-019-00857-9</a>.</p>
-	</div>
-	<div id="ref-anderson2008end">
-		<p class="bibitem">Anderson, C. 2008. “The End of Theory: The Data Deluge Makes the Scientific Method Obsolete.” <em>Wired Magazine</em> 16 (7): 16–07. <a href="https://www.wired.com/2008/06/pb-theory/">https://www.wired.com/2008/06/pb-theory/</a>.</p>
-	</div>
-	<div id="ref-bernard2015introduction">
-		<p class="bibitem">Bernard, C, and others. (1865) 2015. <em>Introduction à La Médecine Expérimentale</em>. Ligaran.</p>
-	</div>
-	<div id="ref-bevilacqua2019limits">
-		<p class="bibitem">Bevilacqua, A. 2019. “The Limits of Association Studies in Behavioral Genetics: A Revenge of Sexual Reproduction?” <em>Organisms. Journal of Biological Sciences</em> 3 (1): 21–24. doi:<a href="https://doi.org/10.13133/2532-5876_5.6">10.13133/2532-5876_5.6</a>.</p>
-	</div>
-	<div id="ref-10.3389/fphys.2020.00069">
-		<p class="bibitem">Bich, L, M Mossio, and AM Soto. 2020. “Glycemia Regulation: From Feedback Loops to Organizational Closure.” <em>Frontiers in Physiology</em> 11: 69. doi:<a href="https://doi.org/10.3389/fphys.2020.00069">10.3389/fphys.2020.00069</a>.</p>
-	</div>
-	<div id="ref-Brown1040">
-		<p class="bibitem">Brown, A, and et al. 2011. “Media Use by Children Younger Than 2 Years.” <em>Pediatrics</em> 128 (5). American Academy of Pediatrics: 1040–5. doi:<a href="https://doi.org/10.1542/peds.2011-1753">10.1542/peds.2011-1753</a>.</p>
-	</div>
-	<div id="ref-canguilhem1972normal">
-		<p class="bibitem">Canguilhem, G. 1972. <em>Le Normal et Le Pathologique</em>. Paris: Presses Universitaires de France.</p>
-	</div>
-	<div id="ref-10.1093/pcmedi/pby009">
-		<p class="bibitem">Chow, N, L Gallo, and JW Busse. 2018. “Evidence-based medicine and precision medicine: Complementary approaches to clinical decision-making.” <em>Precision Clinical Medicine</em> 1 (2): 60–64. doi:<a href="https://doi.org/10.1093/pcmedi/pby009">10.1093/pcmedi/pby009</a>.</p>
-	</div>
-	<div id="ref-COHEN2004197">
-		<p class="bibitem">Cohen, AM, and WR Hersh. 2004. “Criticisms of Evidence–Based Medicine.” <em>Evidence-Based Cardiovascular Medicine</em> 8 (3): 197–98. doi:<a href="https://doi.org/10.1016/j.ebcm.2004.06.036">10.1016/j.ebcm.2004.06.036</a>.</p>
-	</div>
-	<div id="ref-doi:10.1056/NEJM199103213241201">
-		<p class="bibitem">Echt, DS, PR Liebson, LB Mitchell, RW Peters, D Obias-Manno, AH Barker, D Arensberg, et al. 1991. “Mortality and Morbidity in Patients Receiving Encainide, Flecainide, or Placebo.” <em>New England Journal of Medicine</em> 324 (12): 781–88. doi:<a href="https://doi.org/10.1056/NEJM199103213241201">10.1056/NEJM199103213241201</a>.</p>
-	</div>
-	<div id="ref-pmid15936423">
-		<p class="bibitem">Edwards, P, M Arango, L Balica, R Cottingham, H El-Sayed, B Farrell, J Fernandes, et al. 2005. “Final results of MRC CRASH, a randomised placebo-controlled trial of intravenous corticosteroid in adults with head injury-outcomes at 6 months.” <em>Lancet</em> 365 (9475): 1957–9. doi:<a href="https://doi.org/10.1016/S0140-6736(05)66552-X">10.1016/S0140-6736(05)66552-X</a>.</p>
-	</div>
-	<div id="ref-JOLY20171">
-		<p class="bibitem">Joly, M, and PHC Rondó. 2017. “The Future of Computational Biomedicine: Complex Systems Thinking.” <em>Mathematics and Computers in Simulation</em> 132: 1–27. doi:<a href="https://doi.org/10.1016/j.matcom.2015.06.010">10.1016/j.matcom.2015.06.010</a>.</p>
-	</div>
-	<div id="ref-stuart1993origins">
-		<p class="bibitem">Kauffman, SA. 1993. <em>The Origins of Order: Self Organization and Selection in Evolution</em>. New York: Oxford University Press.</p>
-	</div>
-	<div id="ref-Kelly20">
-		<p class="bibitem">Kelly, J, K Humphreys, and M Ferri. 2020. “Alcoholics Anonymous and Other 12‐step Programs for Alcohol Use Disorder.” <em>Cochrane Database of Systematic Reviews</em>, no. 3. John Wiley &amp; Sons, Ltd. doi:<a href="https://doi.org/10.1002/14651858.CD012880.pub2">10.1002/14651858.CD012880.pub2</a>.</p>
-	</div>
-	<div id="ref-10.2307/25791005">
-		<p class="bibitem">Kuriyama, S. 1997. “The Historical Origins of "Katakori".” <em>Japan Review</em>, no. 9. International Research Centre for Japanese Studies, National Institute for the Humanities: 127–49. doi:<a href="https://doi.org/10.15055/00000321">10.15055/00000321</a>.</p>
-	</div>
-	<div id="ref-kuriyama1999expressiveness">
-		<p class="bibitem">———. 1999. <em>The Expressiveness of the Body and the Divergence of Greek and Chinese Medicine</em>. Zone Books New York.</p>
-	</div>
-	<div id="ref-deleon">
-		<p class="bibitem">Leon, J de. 2012. “Evidence-Based Medicine Versus Personalized Medicine Are They Enemies?” <em>Journal of Clinical Psychopharmacology</em> 32 (April): 153–64. doi:<a href="https://doi.org/10.1097/JCP.0b013e3182491383">10.1097/JCP.0b013e3182491383</a>.</p>
-	</div>
-	<div id="ref-doi:10.1177/2053951714534395">
-		<p class="bibitem">Leonelli, S. 2014. “What Difference Does Quantity Make? On the Epistemology of Big Data in Biology.” <em>Big Data &amp; Society</em> 1 (1): 2053951714534395. doi:<a href="https://doi.org/10.1177/2053951714534395">10.1177/2053951714534395</a>.</p>
-	</div>
-	<div id="ref-scaling2014">
-		<p class="bibitem">Longo, G, and M Montévil. 2014. “Scaling and Scale Symmetries in Biological Systems.” In <em>Perspectives on Organisms</em>, 23–73. Lecture Notes in Morphogenesis. Springer Berlin Heidelberg. doi:<a href="https://doi.org/10.1007/978-3-642-35938-5_2">10.1007/978-3-642-35938-5_2</a>.</p>
-	</div>
-	<div id="ref-longo2014">
-		<p class="bibitem">———. 2017. “Comparing Symmetries in Models and Simulations.” In <em>Springer Handbook of Model-Based Science</em>, edited by M. Dorato, L. Magnani, and T. Bertolotti. Springer. doi:<a href="https://doi.org/10.1007/978-3-319-30526-4">10.1007/978-3-319-30526-4</a>.</p>
-	</div>
-	<div id="ref-lotka1945law">
-		<p class="bibitem">Lotka, AJ. 1945. “The Law of Evolution as a Maximal Principle.” <em>Human Biology</em> 17 (3). JSTOR: 167–94.</p>
-	</div>
-	<div id="ref-Masic2008">
-		<p class="bibitem">Masic, I, M Miokovic, and B Muhamedagic. 2008. “Evidence Based Medicine - New Approaches and Challenges.” <em>Acta Informatica Medica : AIM : Journal of the Society for Medical Informatics of Bosnia &amp; Herzegovina : Casopis Drustva Za Medicinsku Informatiku BiH</em> 16 (4). AVICENA, d.o.o., Sarajevo: 219–25. doi:<a href="https://doi.org/10.5455/aim.2008.16.219-225">10.5455/aim.2008.16.219-225</a>.</p>
-	</div>
-	<div id="ref-montevilmeasure">
-		<p class="bibitem">Montévil, M. 2019a. “Measurement in Biology Is Methodized by Theory.” <em>Biology &amp; Philosophy</em> 34 (3): 35. doi:<a href="https://doi.org/10.1007/s10539-019-9687-x">10.1007/s10539-019-9687-x</a>.</p>
-	</div>
-	<div id="ref-novelty2017">
-		<p class="bibitem">———. 2019b. “Possibility Spaces and the Notion of Novelty: From Music to Biology.” <em>Synthese</em> 196 (11): 4555–81. doi:<a href="https://doi.org/10.1007/s11229-017-1668-5">10.1007/s11229-017-1668-5</a>.</p>
-	</div>
-	<div id="ref-montevilentropy">
-		<p class="bibitem">———. n.d.a. “Entropies and the Anthropocene Crisis.” <em>AI and Society</em>.</p>
-	</div>
-	<div id="ref-montevilhistoricity">
-		<p class="bibitem">———. n.d.b. “Historicity at the Heart of Biology.” <em>Theory in Biosciences</em>.</p>
-	</div>
-	<div id="ref-bigdatagiulia">
-		<p class="bibitem">Montévil, M, and G Longo. 2018. “Big Data and Biological Knowledge.” In <em>Predictability and the Unpredictable. Life, Evolution and Behaviour</em>, edited by Giulia Frezza and David Ceccarelli, 133–44. Roma: CNR Edizioni.</p>
-	</div>
-	<div id="ref-Montevil2015c">
-		<p class="bibitem">Montévil, M, and M Mossio. 2015. “Biological Organisation as Closure of Constraints.” <em>Journal of Theoretical Biology</em> 372: 179–91. doi:<a href="https://doi.org/10.1016/j.jtbi.2015.02.029">10.1016/j.jtbi.2015.02.029</a>.</p>
-	</div>
-	<div id="ref-momoidentity2019">
-		<p class="bibitem">———. 2020. “The Identity of Organisms in Scientific Practice: Integrating Historical and Relational Conceptions.” <em>Frontiers in Physiology</em> 11: 611. doi:<a href="https://doi.org/10.3389/fphys.2020.00611">10.3389/fphys.2020.00611</a>.</p>
-	</div>
-	<div id="ref-chaptervariation">
-		<p class="bibitem">Montévil, M, M Mossio, A Pocheville, and G Longo. 2016. “Theoretical Principles for Biology: Variation.” <em>Progress in Biophysics and Molecular Biology</em> 122 (1): 36–50. doi:<a href="https://doi.org/10.1016/j.pbiomolbio.2016.08.005">10.1016/j.pbiomolbio.2016.08.005</a>.</p>
-	</div>
-	<div id="ref-montevil_hitchhikers_">
-		<p class="bibitem">Montévil, M, and A Pocheville. 2017. “The Hitchhiker’s Guide to the Cancer Galaxy: How Two Critics Missed Their Destination.” <em>Organisms. Journal of Biological Sciences</em> 1 (2): 37–48. doi:<a href="https://doi.org/10.13133/2532-5876_2.9">10.13133/2532-5876_2.9</a>.</p>
-	</div>
-	<div id="ref-chapterconstraints">
-		<p class="bibitem">Montévil, M, L Speroni, C Sonnenschein, and AM Soto. 2016. “Modeling Mammary Organogenesis from Biological First Principles: Cells and Their Physical Constraints.” <em>Progress in Biophysics and Molecular Biology</em> 122 (1): 58–69. doi:<a href="https://doi.org/10.1016/j.pbiomolbio.2016.08.004">10.1016/j.pbiomolbio.2016.08.004</a>.</p>
-	</div>
-	<div id="ref-pmid23410611">
-		<p class="bibitem">Moodie, R, D Stuckler, C Monteiro, N Sheron, B Neal, T Thamarangsi, P Lincoln, and S Casswell. 2013. “Profits and pandemics: prevention of harmful effects of tobacco, alcohol, and ultra-processed food and drink industries.” <em>Lancet</em> 381 (9867): 670–79. doi:<a href="https://doi.org/10.1016/S0140-6736(12)62089-3">10.1016/S0140-6736(12)62089-3</a>.</p>
-	</div>
-	<div id="ref-chapterorganization">
-		<p class="bibitem">Mossio, M, M Montévil, and G Longo. 2016. “Theoretical Principles for Biology: Organization.” <em>Progress in Biophysics and Molecular Biology</em> 122 (1): 24–35. doi:<a href="https://doi.org/10.1016/j.pbiomolbio.2016.07.005">10.1016/j.pbiomolbio.2016.07.005</a>.</p>
-	</div>
-	<div id="ref-Noble01032002">
-		<p class="bibitem">Noble, D. 2002. “Modeling the Heart—from Genes to Cells to the Whole Organ.” <em>Science</em> 295 (5560): 1678–82. doi:<a href="https://doi.org/10.1126/science.1069881">10.1126/science.1069881</a>.</p>
-	</div>
-	<div id="ref-Noble01012008">
-		<p class="bibitem">———. 2008. “Claude Bernard, the First Systems Biologist, and the Future of Physiology.” <em>Experimental Physiology</em> 93 (1): 16–26. doi:<a href="https://doi.org/10.1113/expphysiol.2007.038695">10.1113/expphysiol.2007.038695</a>.</p>
-	</div>
-	<div id="ref-Noble2017">
-		<p class="bibitem">———. 2017. “Systems Biology Beyond the Genome.” In <em>Philosophy of Systems Biology: Perspectives from Scientists and Philosophers</em>, edited by Sara Green, 227–35. Cham: Springer International Publishing. doi:<a href="https://doi.org/10.1007/978-3-319-47000-9_21">10.1007/978-3-319-47000-9_21</a>.</p>
-	</div>
-	<div id="ref-Po2019">
-		<p class="bibitem">Po, A, A Giuliani, MG Masiello, A Cucina, A Catizone, G Ricci, M Chiacchiarini, M Tafani, E Ferretti, and M Bizzarri. 2019. “Phenotypic Transitions Enacted by Simulated Microgravity Do Not Alter Coherence in Gene Transcription Profile.” <em>Npj Microgravity</em> 5 (1): 27. doi:<a href="https://doi.org/10.1038/s41526-019-0088-x">10.1038/s41526-019-0088-x</a>.</p>
-	</div>
-	<div id="ref-10.7554/eLife.49555">
-		<p class="bibitem">Protsiv, M, C Ley, J Lankester, T Hastie, and J Parsonnet. 2020. “Decreasing Human Body Temperature in the United States Since the Industrial Revolution.” Edited by Mark Jit, Eduardo Franco, Jill Waalen, and Frank Rühli. <em>eLife</em> 9 (January). eLife Sciences Publications, Ltd: e49555. doi:<a href="https://doi.org/10.7554/eLife.49555">10.7554/eLife.49555</a>.</p>
-	</div>
-	<div id="ref-RHRISSORRAKRAI2016392">
-		<p class="bibitem">Rhrissorrakrai, K, T Koyama, and L Parida. 2016. “Watson for Genomics: Moving Personalized Medicine Forward.” <em>Trends in Cancer</em> 2 (8): 392–95. doi:<a href="https://doi.org/10.1016/j.trecan.2016.06.008">10.1016/j.trecan.2016.06.008</a>.</p>
-	</div>
-	<div id="ref-rosen2005">
-		<p class="bibitem">Rosen, R. 1991. <em>Life Itself: A Comprehensive Inquiry into the Nature, Origin, and Fabrication of Life</em>. New York: Columbia University Press.</p>
-	</div>
-	<div id="ref-Sackett1996">
-		<p class="bibitem">Sackett, DL, WM Rosenberg, JA Gray, RB Haynes, and WS Richardson. 1996. “Evidence Based Medicine: What It Is and What It Isn’t.” <em>BMJ (Clinical Research Ed.)</em> 312 (7023). BMJ Group: 71–72. doi:<a href="https://doi.org/10.1136/bmj.312.7023.71">10.1136/bmj.312.7023.71</a>.</p>
-	</div>
-	<div id="ref-RePEc:oxp:obooks:9780195650389">
-		<p class="bibitem">Sen, A. 1999. <em>Commodities and Capabilities</em>. OUP Catalogue 9780195650389. Oxford University Press. <a href="https://ideas.repec.org/b/oxp/obooks/9780195650389.html">https://ideas.repec.org/b/oxp/obooks/9780195650389.html</a>.</p>
-	</div>
-	<div id="ref-Society">
-		<p class="bibitem">Sonnenschein, C, and AM Soto. 1999. <em>The society of cells: cancer and control of cell proliferation</em>. New York: Springer Verlag.</p>
-	</div>
-	<div id="ref-chaptercancer">
-		<p class="bibitem">———. 2016. “Carcinogenesis Explained Within the Context of a Theory of Organisms” 122 (1): 70–76. doi:<a href="https://doi.org/10.1016/j.pbiomolbio.2016.07.004">10.1016/j.pbiomolbio.2016.07.004</a>.</p>
-	</div>
-	<div id="ref-Sonnenschein2014">
-		<p class="bibitem">Sonnenschein, C, AM Soto, A Rangarajan, and P Kulkarni. 2014. “Competing Views on Cancer.” <em>Journal of Biosciences</em> 39 (2): 281–302. doi:<a href="https://doi.org/10.1007/s12038-013-9403-y">10.1007/s12038-013-9403-y</a>.</p>
-	</div>
-	<div id="ref-sorger2011quantitative">
-		<p class="bibitem">Sorger, PK, SR Allerheiligen, DR Abernethy, RB Altman, KL Brouwer, A Califano, DZ D’Argenio, et al. 2011. “Quantitative and Systems Pharmacology in the Post-Genomic Era: New Approaches to Discovering Drugs and Understanding Therapeutic Mechanisms.” In <em>An Nih White Paper by the Qsp Workshop Group</em>. Vol. 48. NIH Bethesda, MD.</p>
-	</div>
-	<div id="ref-chapterdefault">
-		<p class="bibitem">Soto, AM, G Longo, M Montévil, and C Sonnenschein. 2016. “The Biological Default State of Cell Proliferation with Variation and Motility, a Fundamental Principle for a Theory of Organisms.” <em>Progress in Biophysics and Molecular Biology</em> 122 (1): 16–23. doi:<a href="https://doi.org/10.1016/j.pbiomolbio.2016.06.006">10.1016/j.pbiomolbio.2016.06.006</a>.</p>
-	</div>
-	<div id="ref-soto2016century">
-		<p class="bibitem">Soto, AM, G Longo, D Noble, N Perret, M Montévil, C Sonnenschein, M Mossio, A Pocheville, P-A Miquel, and S-Y Hwang. 2016. “From the Century of the Genome to the Century of the Organism: New Theoretical Approaches.” <em>Progress in Biophysics and Molecular Biology, Special Issue</em>. Elsevier, 1–82.</p>
-	</div>
-	<div id="ref-Stephanou2018">
-		<p class="bibitem">Stéphanou, A, E Fanchon, PF Innominato, and A Ballesta. 2018. “Systems Biology, Systems Medicine, Systems Pharmacology: The What and the Why.” <em>Acta Biotheoretica</em> 66 (4): 345–65. doi:<a href="https://doi.org/10.1007/s10441-018-9330-2">10.1007/s10441-018-9330-2</a>.</p>
-	</div>
-	<div id="ref-stiegler2016disruption">
-		<p class="bibitem">Stiegler, B. 2016. <em>Dans La Disruption: Comment Ne Pas Devenir Fou?</em> Éditions Les Liens qui libèrent.</p>
-	</div>
-	<div id="ref-stiegler2015emploi">
-		<p class="bibitem">Stiegler, B, and A Kyrou. 2015. <em>L’emploi Est Mort, Vive Le Travail!: Entretien Avec Ariel Kyrou</em>. Fayard/Mille et une nuits.</p>
-	</div>
-	<div id="ref-stiegler2017called">
-		<p class="bibitem">Stiegler, B, and D Ross. 2017. “What Is Called Caring?: Beyond the Anthropocene.” <em>Techné: Research in Philosophy and Technology</em>. doi:<a href="https://doi.org/10.5840/techne201712479">10.5840/techne201712479</a>.</p>
-	</div>
-	<div id="ref-personalized">
-		<p class="bibitem">The Personalized Medicine Coalition. 2014. <em>The Case for Personalized Medicine</em>. 4th ed. Personalized Medicine Coalition.</p>
-	</div>
-	<div id="ref-Varela1974187">
-		<p class="bibitem">Varela, FJ, HR Maturana, and R Uribe. 1974. “Autopoiesis: The Organization of Living Systems, Its Characterization and a Model.” <em>Biosystems</em> 5 (4): 187–96. doi:<a href="https://doi.org/10.1016/0303-2647(74)90031-8">10.1016/0303-2647(74)90031-8</a>.</p>
-	</div>
-	<div id="ref-doi:10.1080/00031305.2016.1154108">
-		<p class="bibitem">Wasserstein, RL, and NA Lazar. 2016. “The Asa Statement on P-Values: Context, Process, and Purpose.” <em>The American Statistician</em> 70 (2). Taylor &amp; Francis: 129–33. doi:<a href="https://doi.org/10.1080/00031305.2016.1154108">10.1080/00031305.2016.1154108</a>.</p>
-	</div>
-	<div id="ref-west2006medicine">
-		<p class="bibitem">West, BJ. 2006. <em>Where Medicine Went Wrong: Rediscovering the Path to Complexity</em>. Teaneck, NJ: World Scientific.</p>
-	</div>
-	<div id="ref-west2003developmental">
-		<p class="bibitem">West-Eberhard, MJ. 2003. <em>Developmental Plasticity and Evolution</em>. New York: Oxford University Press.</p>
-	</div>
-	<div id="ref-wolf2008proust">
-		<p class="bibitem">Wolf, M, and CJ Stoodley. 2008. <em>Proust and the Squid: The Story and Science of the Reading Brain</em>. Harper Perennial New York.</p>
-	</div>
-	<div id="ref-endocrinedisruptors">
-		<p class="bibitem">Zoeller, RT, TR Brown, LL Doan, AC Gore, NE Skakkebaek, AM Soto, TJ Woodruff, and FS Vom Saal. 2012. “Endocrine-Disrupting Chemicals and Public Health Protection: A Statement of Principles from the Endocrine Society.” <em>Endocrinology</em> 153 (9): 4097–4110. doi:<a href="https://doi.org/10.1210/en.2012-1422">10.1210/en.2012-1422</a>.</p>
-	</div>
+  <div id="ref-amrhein2019scientists">
+    <p class="bibitem">Amrhein, V, S Greenland, B McShane, and 800 signatories. 2019. “Scientists Rise up Against Statistical Significance.” <em>Nature</em> 567. Nature Publishing Group: 305–7. doi:<a href="https://doi.org/10.1038/d41586-019-00857-9">10.1038/d41586-019-00857-9</a>.</p>
+  </div>
+  <div id="ref-anderson2008end">
+    <p class="bibitem">Anderson, C. 2008. “The End of Theory: The Data Deluge Makes the Scientific Method Obsolete.” <em>Wired Magazine</em> 16 (7): 16–07. <a href="https://www.wired.com/2008/06/pb-theory/">https://www.wired.com/2008/06/pb-theory/</a>.</p>
+  </div>
+  <div id="ref-bernard2015introduction">
+    <p class="bibitem">Bernard, C, and others. (1865) 2015. <em>Introduction à La Médecine Expérimentale</em>. Ligaran.</p>
+  </div>
+  <div id="ref-bevilacqua2019limits">
+    <p class="bibitem">Bevilacqua, A. 2019. “The Limits of Association Studies in Behavioral Genetics: A Revenge of Sexual Reproduction?” <em>Organisms. Journal of Biological Sciences</em> 3 (1): 21–24. doi:<a href="https://doi.org/10.13133/2532-5876_5.6">10.13133/2532-5876_5.6</a>.</p>
+  </div>
+  <div id="ref-10.3389/fphys.2020.00069">
+    <p class="bibitem">Bich, L, M Mossio, and AM Soto. 2020. “Glycemia Regulation: From Feedback Loops to Organizational Closure.” <em>Frontiers in Physiology</em> 11: 69. doi:<a href="https://doi.org/10.3389/fphys.2020.00069">10.3389/fphys.2020.00069</a>.</p>
+  </div>
+  <div id="ref-Brown1040">
+    <p class="bibitem">Brown, A, and et al. 2011. “Media Use by Children Younger Than 2 Years.” <em>Pediatrics</em> 128 (5). American Academy of Pediatrics: 1040–5. doi:<a href="https://doi.org/10.1542/peds.2011-1753">10.1542/peds.2011-1753</a>.</p>
+  </div>
+  <div id="ref-canguilhem1972normal">
+    <p class="bibitem">Canguilhem, G. 1972. <em>Le Normal et Le Pathologique</em>. Paris: Presses Universitaires de France.</p>
+  </div>
+  <div id="ref-10.1093/pcmedi/pby009">
+    <p class="bibitem">Chow, N, L Gallo, and JW Busse. 2018. “Evidence-based medicine and precision medicine: Complementary approaches to clinical decision-making.” <em>Precision Clinical Medicine</em> 1 (2): 60–64. doi:<a href="https://doi.org/10.1093/pcmedi/pby009">10.1093/pcmedi/pby009</a>.</p>
+  </div>
+  <div id="ref-COHEN2004197">
+    <p class="bibitem">Cohen, AM, and WR Hersh. 2004. “Criticisms of Evidence–Based Medicine.” <em>Evidence-Based Cardiovascular Medicine</em> 8 (3): 197–98. doi:<a href="https://doi.org/10.1016/j.ebcm.2004.06.036">10.1016/j.ebcm.2004.06.036</a>.</p>
+  </div>
+  <div id="ref-doi:10.1056/NEJM199103213241201">
+    <p class="bibitem">Echt, DS, PR Liebson, LB Mitchell, RW Peters, D Obias-Manno, AH Barker, D Arensberg, et al. 1991. “Mortality and Morbidity in Patients Receiving Encainide, Flecainide, or Placebo.” <em>New England Journal of Medicine</em> 324 (12): 781–88. doi:<a href="https://doi.org/10.1056/NEJM199103213241201">10.1056/NEJM199103213241201</a>.</p>
+  </div>
+  <div id="ref-pmid15936423">
+    <p class="bibitem">Edwards, P, M Arango, L Balica, R Cottingham, H El-Sayed, B Farrell, J Fernandes, et al. 2005. “Final results of MRC CRASH, a randomised placebo-controlled trial of intravenous corticosteroid in adults with head injury-outcomes at 6 months.” <em>Lancet</em> 365 (9475): 1957–9. doi:<a href="https://doi.org/10.1016/S0140-6736(05)66552-X">10.1016/S0140-6736(05)66552-X</a>.</p>
+  </div>
+  <div id="ref-JOLY20171">
+    <p class="bibitem">Joly, M, and PHC Rondó. 2017. “The Future of Computational Biomedicine: Complex Systems Thinking.” <em>Mathematics and Computers in Simulation</em> 132: 1–27. doi:<a href="https://doi.org/10.1016/j.matcom.2015.06.010">10.1016/j.matcom.2015.06.010</a>.</p>
+  </div>
+  <div id="ref-stuart1993origins">
+    <p class="bibitem">Kauffman, SA. 1993. <em>The Origins of Order: Self Organization and Selection in Evolution</em>. New York: Oxford University Press.</p>
+  </div>
+  <div id="ref-Kelly20">
+    <p class="bibitem">Kelly, J, K Humphreys, and M Ferri. 2020. “Alcoholics Anonymous and Other 12‐step Programs for Alcohol Use Disorder.” <em>Cochrane Database of Systematic Reviews</em>, no. 3. John Wiley &amp; Sons, Ltd. doi:<a href="https://doi.org/10.1002/14651858.CD012880.pub2">10.1002/14651858.CD012880.pub2</a>.</p>
+  </div>
+  <div id="ref-10.2307/25791005">
+    <p class="bibitem">Kuriyama, S. 1997. “The Historical Origins of "Katakori".” <em>Japan Review</em>, no. 9. International Research Centre for Japanese Studies, National Institute for the Humanities: 127–49. doi:<a href="https://doi.org/10.15055/00000321">10.15055/00000321</a>.</p>
+  </div>
+  <div id="ref-kuriyama1999expressiveness">
+    <p class="bibitem">———. 1999. <em>The Expressiveness of the Body and the Divergence of Greek and Chinese Medicine</em>. Zone Books New York.</p>
+  </div>
+  <div id="ref-deleon">
+    <p class="bibitem">Leon, J de. 2012. “Evidence-Based Medicine Versus Personalized Medicine Are They Enemies?” <em>Journal of Clinical Psychopharmacology</em> 32 (April): 153–64. doi:<a href="https://doi.org/10.1097/JCP.0b013e3182491383">10.1097/JCP.0b013e3182491383</a>.</p>
+  </div>
+  <div id="ref-doi:10.1177/2053951714534395">
+    <p class="bibitem">Leonelli, S. 2014. “What Difference Does Quantity Make? On the Epistemology of Big Data in Biology.” <em>Big Data &amp; Society</em> 1 (1): 2053951714534395. doi:<a href="https://doi.org/10.1177/2053951714534395">10.1177/2053951714534395</a>.</p>
+  </div>
+  <div id="ref-scaling2014">
+    <p class="bibitem">Longo, G, and M Montévil. 2014. “Scaling and Scale Symmetries in Biological Systems.” In <em>Perspectives on Organisms</em>, 23–73. Lecture Notes in Morphogenesis. Springer Berlin Heidelberg. doi:<a href="https://doi.org/10.1007/978-3-642-35938-5_2">10.1007/978-3-642-35938-5_2</a>.</p>
+  </div>
+  <div id="ref-longo2014">
+    <p class="bibitem">———. 2017. “Comparing Symmetries in Models and Simulations.” In <em>Springer Handbook of Model-Based Science</em>, edited by M. Dorato, L. Magnani, and T. Bertolotti. Springer. doi:<a href="https://doi.org/10.1007/978-3-319-30526-4">10.1007/978-3-319-30526-4</a>.</p>
+  </div>
+  <div id="ref-lotka1945law">
+    <p class="bibitem">Lotka, AJ. 1945. “The Law of Evolution as a Maximal Principle.” <em>Human Biology</em> 17 (3). JSTOR: 167–94.</p>
+  </div>
+  <div id="ref-Masic2008">
+    <p class="bibitem">Masic, I, M Miokovic, and B Muhamedagic. 2008. “Evidence Based Medicine - New Approaches and Challenges.” <em>Acta Informatica Medica : AIM : Journal of the Society for Medical Informatics of Bosnia &amp; Herzegovina : Casopis Drustva Za Medicinsku Informatiku BiH</em> 16 (4). AVICENA, d.o.o., Sarajevo: 219–25. doi:<a href="https://doi.org/10.5455/aim.2008.16.219-225">10.5455/aim.2008.16.219-225</a>.</p>
+  </div>
+  <div id="ref-montevilmeasure">
+    <p class="bibitem">Montévil, M. 2019a. “Measurement in Biology Is Methodized by Theory.” <em>Biology &amp; Philosophy</em> 34 (3): 35. doi:<a href="https://doi.org/10.1007/s10539-019-9687-x">10.1007/s10539-019-9687-x</a>.</p>
+  </div>
+  <div id="ref-novelty2017">
+    <p class="bibitem">———. 2019b. “Possibility Spaces and the Notion of Novelty: From Music to Biology.” <em>Synthese</em> 196 (11): 4555–81. doi:<a href="https://doi.org/10.1007/s11229-017-1668-5">10.1007/s11229-017-1668-5</a>.</p>
+  </div>
+  <div id="ref-montevilentropy">
+    <p class="bibitem">———. n.d.a. “Entropies and the Anthropocene Crisis.” <em>AI and Society</em>.</p>
+  </div>
+  <div id="ref-montevilhistoricity">
+    <p class="bibitem">———. n.d.b. “Historicity at the Heart of Biology.” <em>Theory in Biosciences</em>.</p>
+  </div>
+  <div id="ref-bigdatagiulia">
+    <p class="bibitem">Montévil, M, and G Longo. 2018. “Big Data and Biological Knowledge.” In <em>Predictability and the Unpredictable. Life, Evolution and Behaviour</em>, edited by Giulia Frezza and David Ceccarelli, 133–44. Roma: CNR Edizioni.</p>
+  </div>
+  <div id="ref-Montevil2015c">
+    <p class="bibitem">Montévil, M, and M Mossio. 2015. “Biological Organisation as Closure of Constraints.” <em>Journal of Theoretical Biology</em> 372: 179–91. doi:<a href="https://doi.org/10.1016/j.jtbi.2015.02.029">10.1016/j.jtbi.2015.02.029</a>.</p>
+  </div>
+  <div id="ref-momoidentity2019">
+    <p class="bibitem">———. 2020. “The Identity of Organisms in Scientific Practice: Integrating Historical and Relational Conceptions.” <em>Frontiers in Physiology</em> 11: 611. doi:<a href="https://doi.org/10.3389/fphys.2020.00611">10.3389/fphys.2020.00611</a>.</p>
+  </div>
+  <div id="ref-chaptervariation">
+    <p class="bibitem">Montévil, M, M Mossio, A Pocheville, and G Longo. 2016. “Theoretical Principles for Biology: Variation.” <em>Progress in Biophysics and Molecular Biology</em> 122 (1): 36–50. doi:<a href="https://doi.org/10.1016/j.pbiomolbio.2016.08.005">10.1016/j.pbiomolbio.2016.08.005</a>.</p>
+  </div>
+  <div id="ref-montevil_hitchhikers_">
+    <p class="bibitem">Montévil, M, and A Pocheville. 2017. “The Hitchhiker’s Guide to the Cancer Galaxy: How Two Critics Missed Their Destination.” <em>Organisms. Journal of Biological Sciences</em> 1 (2): 37–48. doi:<a href="https://doi.org/10.13133/2532-5876_2.9">10.13133/2532-5876_2.9</a>.</p>
+  </div>
+  <div id="ref-chapterconstraints">
+    <p class="bibitem">Montévil, M, L Speroni, C Sonnenschein, and AM Soto. 2016. “Modeling Mammary Organogenesis from Biological First Principles: Cells and Their Physical Constraints.” <em>Progress in Biophysics and Molecular Biology</em> 122 (1): 58–69. doi:<a href="https://doi.org/10.1016/j.pbiomolbio.2016.08.004">10.1016/j.pbiomolbio.2016.08.004</a>.</p>
+  </div>
+  <div id="ref-pmid23410611">
+    <p class="bibitem">Moodie, R, D Stuckler, C Monteiro, N Sheron, B Neal, T Thamarangsi, P Lincoln, and S Casswell. 2013. “Profits and pandemics: prevention of harmful effects of tobacco, alcohol, and ultra-processed food and drink industries.” <em>Lancet</em> 381 (9867): 670–79. doi:<a href="https://doi.org/10.1016/S0140-6736(12)62089-3">10.1016/S0140-6736(12)62089-3</a>.</p>
+  </div>
+  <div id="ref-chapterorganization">
+    <p class="bibitem">Mossio, M, M Montévil, and G Longo. 2016. “Theoretical Principles for Biology: Organization.” <em>Progress in Biophysics and Molecular Biology</em> 122 (1): 24–35. doi:<a href="https://doi.org/10.1016/j.pbiomolbio.2016.07.005">10.1016/j.pbiomolbio.2016.07.005</a>.</p>
+  </div>
+  <div id="ref-Noble01032002">
+    <p class="bibitem">Noble, D. 2002. “Modeling the Heart—from Genes to Cells to the Whole Organ.” <em>Science</em> 295 (5560): 1678–82. doi:<a href="https://doi.org/10.1126/science.1069881">10.1126/science.1069881</a>.</p>
+  </div>
+  <div id="ref-Noble01012008">
+    <p class="bibitem">———. 2008. “Claude Bernard, the First Systems Biologist, and the Future of Physiology.” <em>Experimental Physiology</em> 93 (1): 16–26. doi:<a href="https://doi.org/10.1113/expphysiol.2007.038695">10.1113/expphysiol.2007.038695</a>.</p>
+  </div>
+  <div id="ref-Noble2017">
+    <p class="bibitem">———. 2017. “Systems Biology Beyond the Genome.” In <em>Philosophy of Systems Biology: Perspectives from Scientists and Philosophers</em>, edited by Sara Green, 227–35. Cham: Springer International Publishing. doi:<a href="https://doi.org/10.1007/978-3-319-47000-9_21">10.1007/978-3-319-47000-9_21</a>.</p>
+  </div>
+  <div id="ref-Po2019">
+    <p class="bibitem">Po, A, A Giuliani, MG Masiello, A Cucina, A Catizone, G Ricci, M Chiacchiarini, M Tafani, E Ferretti, and M Bizzarri. 2019. “Phenotypic Transitions Enacted by Simulated Microgravity Do Not Alter Coherence in Gene Transcription Profile.” <em>Npj Microgravity</em> 5 (1): 27. doi:<a href="https://doi.org/10.1038/s41526-019-0088-x">10.1038/s41526-019-0088-x</a>.</p>
+  </div>
+  <div id="ref-10.7554/eLife.49555">
+    <p class="bibitem">Protsiv, M, C Ley, J Lankester, T Hastie, and J Parsonnet. 2020. “Decreasing Human Body Temperature in the United States Since the Industrial Revolution.” Edited by Mark Jit, Eduardo Franco, Jill Waalen, and Frank Rühli. <em>eLife</em> 9 (January). eLife Sciences Publications, Ltd: e49555. doi:<a href="https://doi.org/10.7554/eLife.49555">10.7554/eLife.49555</a>.</p>
+  </div>
+  <div id="ref-RHRISSORRAKRAI2016392">
+    <p class="bibitem">Rhrissorrakrai, K, T Koyama, and L Parida. 2016. “Watson for Genomics: Moving Personalized Medicine Forward.” <em>Trends in Cancer</em> 2 (8): 392–95. doi:<a href="https://doi.org/10.1016/j.trecan.2016.06.008">10.1016/j.trecan.2016.06.008</a>.</p>
+  </div>
+  <div id="ref-rosen2005">
+    <p class="bibitem">Rosen, R. 1991. <em>Life Itself: A Comprehensive Inquiry into the Nature, Origin, and Fabrication of Life</em>. New York: Columbia University Press.</p>
+  </div>
+  <div id="ref-Sackett1996">
+    <p class="bibitem">Sackett, DL, WM Rosenberg, JA Gray, RB Haynes, and WS Richardson. 1996. “Evidence Based Medicine: What It Is and What It Isn’t.” <em>BMJ (Clinical Research Ed.)</em> 312 (7023). BMJ Group: 71–72. doi:<a href="https://doi.org/10.1136/bmj.312.7023.71">10.1136/bmj.312.7023.71</a>.</p>
+  </div>
+  <div id="ref-RePEc:oxp:obooks:9780195650389">
+    <p class="bibitem">Sen, A. 1999. <em>Commodities and Capabilities</em>. OUP Catalogue 9780195650389. Oxford University Press. <a href="https://ideas.repec.org/b/oxp/obooks/9780195650389.html">https://ideas.repec.org/b/oxp/obooks/9780195650389.html</a>.</p>
+  </div>
+  <div id="ref-Society">
+    <p class="bibitem">Sonnenschein, C, and AM Soto. 1999. <em>The society of cells: cancer and control of cell proliferation</em>. New York: Springer Verlag.</p>
+  </div>
+  <div id="ref-chaptercancer">
+    <p class="bibitem">———. 2016. “Carcinogenesis Explained Within the Context of a Theory of Organisms” 122 (1): 70–76. doi:<a href="https://doi.org/10.1016/j.pbiomolbio.2016.07.004">10.1016/j.pbiomolbio.2016.07.004</a>.</p>
+  </div>
+  <div id="ref-Sonnenschein2014">
+    <p class="bibitem">Sonnenschein, C, AM Soto, A Rangarajan, and P Kulkarni. 2014. “Competing Views on Cancer.” <em>Journal of Biosciences</em> 39 (2): 281–302. doi:<a href="https://doi.org/10.1007/s12038-013-9403-y">10.1007/s12038-013-9403-y</a>.</p>
+  </div>
+  <div id="ref-sorger2011quantitative">
+    <p class="bibitem">Sorger, PK, SR Allerheiligen, DR Abernethy, RB Altman, KL Brouwer, A Califano, DZ D’Argenio, et al. 2011. “Quantitative and Systems Pharmacology in the Post-Genomic Era: New Approaches to Discovering Drugs and Understanding Therapeutic Mechanisms.” In <em>An Nih White Paper by the Qsp Workshop Group</em>. Vol. 48. NIH Bethesda, MD.</p>
+  </div>
+  <div id="ref-chapterdefault">
+    <p class="bibitem">Soto, AM, G Longo, M Montévil, and C Sonnenschein. 2016. “The Biological Default State of Cell Proliferation with Variation and Motility, a Fundamental Principle for a Theory of Organisms.” <em>Progress in Biophysics and Molecular Biology</em> 122 (1): 16–23. doi:<a href="https://doi.org/10.1016/j.pbiomolbio.2016.06.006">10.1016/j.pbiomolbio.2016.06.006</a>.</p>
+  </div>
+  <div id="ref-soto2016century">
+    <p class="bibitem">Soto, AM, G Longo, D Noble, N Perret, M Montévil, C Sonnenschein, M Mossio, A Pocheville, P-A Miquel, and S-Y Hwang. 2016. “From the Century of the Genome to the Century of the Organism: New Theoretical Approaches.” <em>Progress in Biophysics and Molecular Biology, Special Issue</em>. Elsevier, 1–82.</p>
+  </div>
+  <div id="ref-Stephanou2018">
+    <p class="bibitem">Stéphanou, A, E Fanchon, PF Innominato, and A Ballesta. 2018. “Systems Biology, Systems Medicine, Systems Pharmacology: The What and the Why.” <em>Acta Biotheoretica</em> 66 (4): 345–65. doi:<a href="https://doi.org/10.1007/s10441-018-9330-2">10.1007/s10441-018-9330-2</a>.</p>
+  </div>
+  <div id="ref-stiegler2016disruption">
+    <p class="bibitem">Stiegler, B. 2016. <em>Dans La Disruption: Comment Ne Pas Devenir Fou?</em> Éditions Les Liens qui libèrent.</p>
+  </div>
+  <div id="ref-stiegler2015emploi">
+    <p class="bibitem">Stiegler, B, and A Kyrou. 2015. <em>L’emploi Est Mort, Vive Le Travail!: Entretien Avec Ariel Kyrou</em>. Fayard/Mille et une nuits.</p>
+  </div>
+  <div id="ref-stiegler2017called">
+    <p class="bibitem">Stiegler, B, and D Ross. 2017. “What Is Called Caring?: Beyond the Anthropocene.” <em>Techné: Research in Philosophy and Technology</em>. doi:<a href="https://doi.org/10.5840/techne201712479">10.5840/techne201712479</a>.</p>
+  </div>
+  <div id="ref-personalized">
+    <p class="bibitem">The Personalized Medicine Coalition. 2014. <em>The Case for Personalized Medicine</em>. 4th ed. Personalized Medicine Coalition.</p>
+  </div>
+  <div id="ref-Varela1974187">
+    <p class="bibitem">Varela, FJ, HR Maturana, and R Uribe. 1974. “Autopoiesis: The Organization of Living Systems, Its Characterization and a Model.” <em>Biosystems</em> 5 (4): 187–96. doi:<a href="https://doi.org/10.1016/0303-2647(74)90031-8">10.1016/0303-2647(74)90031-8</a>.</p>
+  </div>
+  <div id="ref-doi:10.1080/00031305.2016.1154108">
+    <p class="bibitem">Wasserstein, RL, and NA Lazar. 2016. “The Asa Statement on P-Values: Context, Process, and Purpose.” <em>The American Statistician</em> 70 (2). Taylor &amp; Francis: 129–33. doi:<a href="https://doi.org/10.1080/00031305.2016.1154108">10.1080/00031305.2016.1154108</a>.</p>
+  </div>
+  <div id="ref-west2006medicine">
+    <p class="bibitem">West, BJ. 2006. <em>Where Medicine Went Wrong: Rediscovering the Path to Complexity</em>. Teaneck, NJ: World Scientific.</p>
+  </div>
+  <div id="ref-west2003developmental">
+    <p class="bibitem">West-Eberhard, MJ. 2003. <em>Developmental Plasticity and Evolution</em>. New York: Oxford University Press.</p>
+  </div>
+  <div id="ref-wolf2008proust">
+    <p class="bibitem">Wolf, M, and CJ Stoodley. 2008. <em>Proust and the Squid: The Story and Science of the Reading Brain</em>. Harper Perennial New York.</p>
+  </div>
+  <div id="ref-endocrinedisruptors">
+    <p class="bibitem">Zoeller, RT, TR Brown, LL Doan, AC Gore, NE Skakkebaek, AM Soto, TJ Woodruff, and FS Vom Saal. 2012. “Endocrine-Disrupting Chemicals and Public Health Protection: A Statement of Principles from the Endocrine Society.” <em>Endocrinology</em> 153 (9): 4097–4110. doi:<a href="https://doi.org/10.1210/en.2012-1422">10.1210/en.2012-1422</a>.</p>
+  </div>
 </div>
 <section class="footnotes" role="doc-endnotes">
-	<hr>
-	<ol>
-		<li id="fn1" role="doc-endnote">
-			<p class="indent">Institut de Recherche et d’Innovation, Centre Pompidou. Mail: mael.montevil@gmail.com Web: <a href="https://montevil.theobio.org/en">https://montevil.theobio.org/en</a><a class="footnote-back" href="#fnref1" role="doc-backlink">↩︎</a></p>
-		</li>
-		<li id="fn2" role="doc-endnote">
-			<p class="indent">To appear: M. Montévil (2020) Conceptual and theoretical specifications for accuracy in medicine. Volume on Personalized medicine (tbd) Chiara Beneduce and Marta Bertoloso Ed. Springer.<a class="footnote-back" href="#fnref2" role="doc-backlink">↩︎</a></p>
-		</li>
-		<li id="fn3" role="doc-endnote">
-			<p class="indent">In classical physics, a system has a state that can be measured with arbitrarily high precision, in principle. However, and again in principle, this precision is never perfect, which is why some systems can be at the same time deterministic and unpredictable.<a class="footnote-back" href="#fnref3" role="doc-backlink">↩︎</a></p>
-		</li>
-	</ol>
+  <hr />
+  <ol>
+    <li id="fn1" role="doc-endnote">
+      <p class="indent">Institut de Recherche et d’Innovation, Centre Pompidou. Mail: mael.montevil@gmail.com Web: <a href="https://montevil.theobio.org/en">https://montevil.theobio.org/en</a><a class="footnote-back" href="#fnref1" role="doc-backlink">↩︎</a></p>
+    </li>
+    <li id="fn2" role="doc-endnote">
+      <p class="indent">To appear: M. Montévil (2020) Conceptual and theoretical specifications for accuracy in medicine. Volume on Personalized medicine (tbd) Chiara Beneduce and Marta Bertoloso Ed. Springer.<a class="footnote-back" href="#fnref2" role="doc-backlink">↩︎</a></p>
+    </li>
+    <li id="fn3" role="doc-endnote">
+      <p class="indent">In classical physics, a system has a state that can be measured with arbitrarily high precision, in principle. However, and again in principle, this precision is never perfect, which is why some systems can be at the same time deterministic and unpredictable.<a class="footnote-back" href="#fnref3" role="doc-backlink">↩︎</a></p>
+    </li>
+  </ol>
 </section>
-

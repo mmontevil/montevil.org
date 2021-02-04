@@ -1,882 +1,831 @@
 ---
 excerpt: We summarize the theoretical ideas of our book, Perspectives on Organisms, where we discuss biological time, anti-entropy, randomness, incompleteness, etc.
 ---
-
 <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_CHTML"></script>
-
-    <h2 class="titleHead" >From Logic to Biology via Physics: a survey</h2>
-    <div class="authors" style="text-align: center;">Giuseppe Longo and Maël Montévil</div>
-        <p><!--l. 51--></p>
-        <p class="noindent" style="text-align: center;">
-            <em>
-                <span class="address">
-                    <span class="rm-lmr-9">Centre Cavaill</span><span class="rm-lmr-9">ès, R</span><span class="rm-lmr-9">épublique des Savoirs, CNRS, Coll</span><span class="rm-lmr-9">ège de France et Ecole Normale Sup</span>
-                    <span class="rm-lmr-9">érieure, Paris,</span> <span class="rm-lmr-9">and Department of Integrative Physiology and Pathobiology, Tufts University School of Medicine,</span> <span class="rm-lmr-9">Boston.</span>
-                </span>
-            </em>
-        </p>
-        <p>
-            <em><!--l. 51--><!--l. 51--></em>
-        </p>
-        <p class="noindent" style="text-align: center;">
-            <em>
-                <em>
-                    <span class="address"><span class="rm-lmr-9">IHPST, CNRS and universit</span><span class="rm-lmr-9">é Paris I, Paris. Grant from </span><span class="rm-lmr-9">île-de-France, DIM ISC.</span></span>
-                </em>
-            </em>
-        </p>
-        <p class="noindent" >
-            <span class=" paragraphHead">Abstract. </span><span class="rm-lmr-9">This short text summarizes the work in biology proposed in our book,</span> <span class="rm-lmri-9">Perspectives on Organisms</span>
-            <span class="rm-lmr-9">, where we analyse the unity proper to organisms by looking at</span> <span class="rm-lmr-9">it from different viewpoints. We discuss the theoretical roles of biological time, complexity,</span>
-            <span class="rm-lmr-9">theoretical symmetries, singularities and critical transitions. We explicitly borrow from the</span>
-            <span class="rm-lmr-9">conclusions in some key chapters and introduce them by a reflection on “incompleteness”,</span>
-            <span class="rm-lmr-9">also proposed in the book. We consider that incompleteness is a fundamental notion to</span>
-            <span class="rm-lmr-9">understand the way in which we construct knowledge. Then we will introduce an approach</span>
-            <span class="rm-lmr-9">to biological dynamics where randomness is central to the theoretical determination:</span>
-            <span class="rm-lmr-9">randomness does not oppose biological stability but contributes to it by variability,</span>
-            <span class="rm-lmr-9">adaptation, and diversity. Then, evolutionary and ontogenetic trajectories are continual</span>
-            <span class="rm-lmr-9">changes of coherence structures involving symmetry changes within an ever-changing global</span> <span class="rm-lmr-9">stability.</span>
-        </p>
-        <!--l. 51-->
-    <div class="keywords">
-        <p class="indent"><span class="rm-lmri-10x-x-109 paragraphHead">Keywords and phrases: </span>Incompleteness, symmetries, randomness, critical transitions, biological evolution and ontogenesis.</p>
-    </div>
-    
-<h3 class="sectionHead"><a id="x1-1000"></a>Introduction</h3>
-<!--l. 55-->
+<h2 class="titleHead" id="from-logic-to-biology-via-physics-a-survey">From Logic to Biology via Physics: a survey</h2>
+<div class="authors" style="text-align:center">Giuseppe Longo and Maël Montévil</div>
+<p></p>
+<p class="noindent" style="text-align:center"><em><span class="address"><span class="rm-lmr-9">Centre Cavaill</span><span class="rm-lmr-9">ès, R</span><span class="rm-lmr-9">épublique des Savoirs, CNRS, Coll</span><span class="rm-lmr-9">ège de France et Ecole Normale Sup</span>
+<span class="rm-lmr-9">érieure, Paris,</span> <span class="rm-lmr-9">and Department of Integrative Physiology and Pathobiology, Tufts University School of Medicine,</span> <span class="rm-lmr-9">Boston.</span></span></em></p>
+<p><em></em></p>
+<p class="noindent" style="text-align:center"><em><em><span class="address"><span class="rm-lmr-9">IHPST, CNRS and universit</span><span class="rm-lmr-9">é Paris I, Paris. Grant from </span><span class="rm-lmr-9">île-de-France, DIM ISC.</span></span></em></em></p>
 <p class="noindent">
-    An analysis of biological phenomena requires many tools, thus an approach at the interface of the discipline may help to gain insights. The construction of scientific objectivity at the core of physical theorizing is the main reference
-    for our approach. While we borrow from the methods of physics, we do not transfer techniques and tools from that discipline, or we do not do it passively: equations or evolution functions, for example, are used for clarifying
-    theoretical concepts more than for deducing and computing consequences. Thus, this short survey will not focus on the tools, but on some key conceptual constructions that frame the theoretical work in
-    <span class="cite">[<a href="#Xlongomont">LM14f</a>]</span>. Our hope is that this will encourage the reader to refer to our book for a more detailed discussion.
+  <span class="paragraphHead">Abstract. </span><span class="rm-lmr-9">This short text summarizes the work in biology proposed in our book,</span> <span class="rm-lmri-9">Perspectives on Organisms</span>
+  <span class="rm-lmr-9">, where we analyse the unity proper to organisms by looking at</span> <span class="rm-lmr-9">it from different viewpoints. We discuss the theoretical roles of biological time, complexity,</span>
+  <span class="rm-lmr-9">theoretical symmetries, singularities and critical transitions. We explicitly borrow from the</span>
+  <span class="rm-lmr-9">conclusions in some key chapters and introduce them by a reflection on “incompleteness”,</span>
+  <span class="rm-lmr-9">also proposed in the book. We consider that incompleteness is a fundamental notion to</span>
+  <span class="rm-lmr-9">understand the way in which we construct knowledge. Then we will introduce an approach</span>
+  <span class="rm-lmr-9">to biological dynamics where randomness is central to the theoretical determination:</span>
+  <span class="rm-lmr-9">randomness does not oppose biological stability but contributes to it by variability,</span>
+  <span class="rm-lmr-9">adaptation, and diversity. Then, evolutionary and ontogenetic trajectories are continual</span>
+  <span class="rm-lmr-9">changes of coherence structures involving symmetry changes within an ever-changing global</span> <span class="rm-lmr-9">stability.</span>
 </p>
-<h3 class="sectionHead"><span class="titlemark">1. </span> <a id="x1-20001"></a>A Definition of Life?</h3>
-<!--l. 60-->
+<div class="keywords">
+  <p class="indent"><span class="rm-lmri-10x-x-109 paragraphHead">Keywords and phrases: </span>Incompleteness, symmetries, randomness, critical transitions, biological evolution and ontogenesis.</p>
+</div>
+<h3 class="sectionHead" id="introduction"><a id="x1-1000"></a>Introduction</h3>
 <p class="noindent">
-    In the multisecular debate between physicalism and vitalism, the focus has often been on the <span class="rm-lmri-10x-x-109">definition </span>of life. A small but remarkable book by Schrödinger
-    <span class="cite">[<a href="#Xschrodinger">Sch44</a>]</span> contributed to the debate in a way that we find relevant, at least in its second part which focuses on the notion of biological order. Do we provide a “definition of life” in
-    our book? Do we, at least, work towards such a definition? Let’s better specify how we see this issue:
+  An analysis of biological phenomena requires many tools, thus an approach at the interface of the discipline may help to gain insights. The construction of scientific objectivity at the core of physical theorizing is the main reference
+  for our approach. While we borrow from the methods of physics, we do not transfer techniques and tools from that discipline, or we do not do it passively: equations or evolution functions, for example, are used for clarifying
+  theoretical concepts more than for deducing and computing consequences. Thus, this short survey will not focus on the tools, but on some key conceptual constructions that frame the theoretical work in
+  <span class="cite">[<a href="#Xlongomont">LM14f</a>]</span>. Our hope is that this will encourage the reader to refer to our book for a more detailed discussion.
+</p>
+<h3 class="sectionHead" id="1--a-definition-of-life"><span class="titlemark">1. </span><a id="x1-20001"></a>A Definition of Life?</h3>
+<p class="noindent">
+  In the multisecular debate between physicalism and vitalism, the focus has often been on the <span class="rm-lmri-10x-x-109">definition </span>of life. A small but remarkable book by Schrödinger
+  <span class="cite">[<a href="#Xschrodinger">Sch44</a>]</span> contributed to the debate in a way that we find relevant, at least in its second part which focuses on the notion of biological order. Do we provide a “definition of life” in
+  our book? Do we, at least, work towards such a definition? Let’s better specify how we see this issue:
 </p>
 <dl class="description">
-    <dt class="description"><span class="rm-lmbx-10x-x-109">Primo:</span></dt>
-    <dd class="description">
-        An “ideal” definition of life phenomena seems out of the question: there is no <span class="rm-lmri-10x-x-109">Platonic idea </span>of life to be grasped in a definite manner or with the maximal conceptual stability and invariance
-        specific to mathematical notions (as there is with the definition or <span class="rm-lmri-10x-x-109">idea </span>of triangle, of Hilbert space or Turing machines …). It is rather a question of defining a few
-        <span class="rm-lmri-10x-x-109">operational notions </span>enabling to draw out concepts for a systemic understanding of biological phenomena. Analogously, physics does not define “matter” otherwise than using operative dualities or
-        contrapositions with the notions energy, vacuum or anti-matter, or in the opposition between fermions and bosons, for example. Another, very rigorous, “provable impossibility to define the object of study” is presented in the next
-        section. Note that Darwin’s approach to evolution neither use nor need a definition of life, but needs to refer to organisms that reproduce with variations.
-    </dd>
-    <dt class="description"><span class="rm-lmbx-10x-x-109">Segundo:</span></dt>
-    <dd class="description">
-        The specific phenomenalities of life should be the starting point of any proposal of a operational framework. For example, it is possible that for any chosen finite list of “defining” properties of life, there would exist a
-        sufficiently talented computer scientist able to create the virtual image of this property and render it on a computer screen. It is quite simple to program a virtual “autopoietic” system
-        <span class="cite">[<a href="#XVarela1974187">VMU74</a>,&nbsp;<a href="#Xvarela1989">Var89</a>]</span> or a formalized metabolic cycle in the manner of Rosen <span class="cite">[<a href="#Xrosen2005">Ros91</a>]</span> — see
-        <span class="cite">[<a href="#XMossio2009">MLS09</a>]</span>, for example. However, any human being and even non-human animals would recognize it as a series of non-living “virtual images” (which are typically detectable through
-        identical iteration, as indirectly suggested by Turing’s imitation game, see <span class="cite">[<a href="#Xturing1950">Tur50</a>,&nbsp;<a href="#Xlongo2008laplace">Lon08</a>]</span>).
-    </dd>
+  <dt class="description"><span class="rm-lmbx-10x-x-109">Primo:</span></dt>
+  <dd class="description">
+    An “ideal” definition of life phenomena seems out of the question: there is no <span class="rm-lmri-10x-x-109">Platonic idea </span>of life to be grasped in a definite manner or with the maximal conceptual stability and invariance
+    specific to mathematical notions (as there is with the definition or <span class="rm-lmri-10x-x-109">idea </span>of triangle, of Hilbert space or Turing machines …). It is rather a question of defining a few
+    <span class="rm-lmri-10x-x-109">operational notions </span>enabling to draw out concepts for a systemic understanding of biological phenomena. Analogously, physics does not define “matter” otherwise than using operative dualities or
+    contrapositions with the notions energy, vacuum or anti-matter, or in the opposition between fermions and bosons, for example. Another, very rigorous, “provable impossibility to define the object of study” is presented in the next
+    section. Note that Darwin’s approach to evolution neither use nor need a definition of life, but needs to refer to organisms that reproduce with variations.
+  </dd>
+  <dt class="description"><span class="rm-lmbx-10x-x-109">Segundo:</span></dt>
+  <dd class="description">
+    The specific phenomenalities of life should be the starting point of any proposal of a operational framework. For example, it is possible that for any chosen finite list of “defining” properties of life, there would exist a
+    sufficiently talented computer scientist able to create the virtual image of this property and render it on a computer screen. It is quite simple to program a virtual “autopoietic” system
+    <span class="cite">[<a href="#XVarela1974187">VMU74</a>, <a href="#Xvarela1989">Var89</a>]</span> or a formalized metabolic cycle in the manner of Rosen <span class="cite">[<a href="#Xrosen2005">Ros91</a>]</span> — see
+    <span class="cite">[<a href="#XMossio2009">MLS09</a>]</span>, for example. However, any human being and even non-human animals would recognize it as a series of non-living “virtual images” (which are typically detectable through
+    identical iteration, as indirectly suggested by Turing’s imitation game, see <span class="cite">[<a href="#Xturing1950">Tur50</a>, <a href="#Xlongo2008laplace">Lon08</a>]</span>).
+  </dd>
 </dl>
-<!--l. 68-->
 <p class="indent">
-    We think that the theoretical effort should focus on developing a sound intelligibility of phenomena in their constitutive, natural history. We should keep in mind the fact that <span class="rm-lmri-10x-x-109">any</span>
-    <span class="rm-lmri-10x-x-109">constitution is contingent </span>— both the constitution (evolution) of life and of our historical understanding of it. That is, we stress the contingency of life phenomena and of our modest attempts to
-    grasp its unfolding over a material evolution — better still: over one of the <span class="rm-lmri-10x-x-109">possible</span> evolutions, taking place on <span class="rm-lmri-10x-x-109">this </span>Earth, in
-    <span class="rm-lmri-10x-x-109">these </span>ecosystems and with <span class="rm-lmri-10x-x-109">this </span>physical matter and natural history. Our point of view includes what biologists often express when they say that nothing in
-    biology makes sense except in the light of evolution (Darwinian and in this world) and what historians claim to be the concrete historicity of science, as a non-arbitrary, but historical tool for constructing objectivity and the very
-    objects of knowledge.
+  We think that the theoretical effort should focus on developing a sound intelligibility of phenomena in their constitutive, natural history. We should keep in mind the fact that <span class="rm-lmri-10x-x-109">any</span>
+  <span class="rm-lmri-10x-x-109">constitution is contingent </span>— both the constitution (evolution) of life and of our historical understanding of it. That is, we stress the contingency of life phenomena and of our modest attempts to
+  grasp its unfolding over a material evolution — better still: over one of the <span class="rm-lmri-10x-x-109">possible</span> evolutions, taking place on <span class="rm-lmri-10x-x-109">this </span>Earth, in
+  <span class="rm-lmri-10x-x-109">these </span>ecosystems and with <span class="rm-lmri-10x-x-109">this </span>physical matter and natural history. Our point of view includes what biologists often express when they say that nothing in
+  biology makes sense except in the light of evolution (Darwinian and in this world) and what historians claim to be the concrete historicity of science, as a non-arbitrary, but historical tool for constructing objectivity and the very
+  objects of knowledge.
 </p>
-<!--l. 70-->
 <p class="indent">
-    It should be clear that we do not discuss here how “life may have emerged from the inert”, but rather we explore how to go from the current <span class="rm-lmri-10x-x-109">theories </span>of the inert to a sufficiently robust
-    <span class="rm-lmri-10x-x-109">theory </span>of the living. In particular, we proposed in <span class="cite">[<a href="#Xlongomont">LM14f</a>]</span> an analysis of the specificity of the living object which may be seen as a physical
-    singularity. We proceeded by looking first at the properties we think we need (or <span class="rm-lmri-10x-x-109">not</span>) in any theory of the “living state of matter”. It is of course an
-    <span class="rm-lmri-10x-x-109">incomplete </span>(see next section) attempt at providing a conceptual framework guiding more particular analyzes.
+  It should be clear that we do not discuss here how “life may have emerged from the inert”, but rather we explore how to go from the current <span class="rm-lmri-10x-x-109">theories </span>of the inert to a sufficiently robust
+  <span class="rm-lmri-10x-x-109">theory </span>of the living. In particular, we proposed in <span class="cite">[<a href="#Xlongomont">LM14f</a>]</span> an analysis of the specificity of the living object which may be seen as a physical
+  singularity. We proceeded by looking first at the properties we think we need (or <span class="rm-lmri-10x-x-109">not</span>) in any theory of the “living state of matter”. It is of course an
+  <span class="rm-lmri-10x-x-109">incomplete </span>(see next section) attempt at providing a conceptual framework guiding more particular analyzes.
 </p>
-<!--l. 72-->
 <p class="indent">
-    In the following methodological reflection, we will build on the role of incompleteness in Mathematical Logic to discuss “our theoretical endeavors towards knowledge” (to put it in H. Weyl’s words) and of its relation to conceptual or
-    formal “definitions”, of life in particular.
+  In the following methodological reflection, we will build on the role of incompleteness in Mathematical Logic to discuss “our theoretical endeavors towards knowledge” (to put it in H. Weyl’s words) and of its relation to conceptual or
+  formal “definitions”, of life in particular.
 </p>
-<!--l. 74-->
-<h4 class="subsectionHead">
-    <span class="subsectionHead"><span class="titlemark">1.1. </span> <span class="rm-lmbx-10x-x-109">Interfaces of Incompleteness.</span></span>
-</h4>
-<!--l. 76-->
+<h4 class="subsectionHead" id="11--interfaces-of-incompleteness"><span class="subsectionHead"><span class="titlemark">1.1. </span><span class="rm-lmbx-10x-x-109">Interfaces of Incompleteness.</span></span></h4>
+<p class="indent">Do we need to have a definition of life to construct robust theories of the living state of matter? Let us now answer this question by analogy with a field where it may be dealt with in the highest rigor: Mathematical Logic.</p>
 <p class="indent">
-    Do we need to have a definition of life to construct robust theories of the living state of matter? Let us now answer this question by analogy with a field where it may be dealt with in the highest rigor: Mathematical Logic.
+  Is the concept of integer (thus “standard” or finite) number captured (defined, characterized) by the (formal) theory of numbers? Frege (1884) believed so, as the absolute concept of number was, in his view, fully characterized by
+  Peano-Dedekind theory. In modern logical terms, we can say that Peano Arithmetic (
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mi>P</mi>
+    <mi>A</mi>
+  </math>) was “categorical” for Frege.
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mi>P</mi>
+    <mi>A</mi>
+  </math> was believed to have just one and only one model up to isomorphisms: the standard model of integers (the one which the reader learned about in
+  elementary school, with
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mn>0</mn>
+  </math>, though, and formal induction). Thus, the theory was also meant to define uniquely “what a number is”.
 </p>
-<!--l. 79-->
 <p class="indent">
-    Is the concept of integer (thus “standard” or finite) number captured (defined, characterized) by the (formal) theory of numbers? Frege (1884) believed so, as the absolute concept of number was, in his view, fully characterized by
-    Peano-Dedekind theory. In modern logical terms, we can say that Peano Arithmetic (<!--l. 79-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi><mi>A</mi></math>) was “categorical” for Frege.
-    <!--l. 79-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi><mi>A</mi></math> was believed to have just one and only one model up to isomorphisms: the standard model of integers (the one which the reader learned about in
-    elementary school, with
-    <!--l. 79-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math>, though, and formal induction). Thus, the theory was also meant to define uniquely “what a number is”.
+  This viewpoint turned out to be blatantly wrong. Löwenheim and Skolem (1915-20) proved, by a simple proof, that
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mi>P</mi>
+    <mi>A</mi>
+  </math> has infinitely many non-isomorphic models and, thus, that it is not categorical. Moreover, a simple theorem (“compactness”) showed that no
+  predicate, definable in
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mi>P</mi>
+    <mi>A</mi>
+  </math>, may isolate (define) all and exactly all the standard integers (see <span class="cite">[<a href="#Xmarker2002model">Mar02</a>]</span>). In
+  short, any predicate valid on infinitely many standard integers must also hold for (infinitely many) non-standard integers (which cannot be considered properly “finite”) — this is also known as the “overspill lemma”. Gödel’s
+  incompleteness theorem reinforced these negative properties:
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mi>P</mi>
+    <mi>A</mi>
+  </math> is <span class="rm-lmri-10x-x-109">incomplete </span>or, equivalently, it has lots of logically non-equivalent models, a much stronger
+  property than <span class="rm-lmri-10x-x-109">non-categoricity</span>.
 </p>
-<!--l. 81-->
 <p class="indent">
-    This viewpoint turned out to be blatantly wrong. Löwenheim and Skolem (1915-20) proved, by a simple proof, that
-    <!--l. 81-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi><mi>A</mi></math> has infinitely many non-isomorphic models and, thus, that it is not categorical. Moreover, a simple theorem (“compactness”) showed that no
-    predicate, definable in
-    <!--l. 81-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi><mi>A</mi></math>, may isolate (define) all and exactly all the standard integers (see <span class="cite">[<a href="#Xmarker2002model">Mar02</a>]</span>). In
-    short, any predicate valid on infinitely many standard integers must also hold for (infinitely many) non-standard integers (which cannot be considered properly “finite”) — this is also known as the “overspill lemma”. Gödel’s
-    incompleteness theorem reinforced these negative properties:
-    <!--l. 81-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi><mi>A</mi></math> is <span class="rm-lmri-10x-x-109">incomplete </span>or, equivalently, it has lots of logically non-equivalent models, a much stronger
-    property than <span class="rm-lmri-10x-x-109">non-categoricity</span>.
+  A fortiori, there is no hope to characterize in a finitistic way the concept of a standard (finite) integer number, or, equivalently, (Formalized) Number Theory cannot define what a number is. One has to add an axiom of infinity (Set
+  Theory) or proper second order quantification to do so,
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mi>P</mi>
+    <msub>
+      <mrow>
+        <mi>A</mi>
+      </mrow>
+      <mrow>
+        <mn>2</mn>
+      </mrow>
+    </msub>
+  </math>
+  , and these are infinitary or impredicative formal frames. Set Theory with an axiom of infinity and
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mi>P</mi>
+    <msub>
+      <mrow>
+        <mi>A</mi>
+      </mrow>
+      <mrow>
+        <mn>2</mn>
+      </mrow>
+    </msub>
+  </math>
+  are not only strict extensions but they are <span class="rm-lmri-10x-x-109">non-conservative </span>extensions of
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mi>P</mi>
+    <mi>A</mi>
+  </math>: they prove propositions of
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mi>P</mi>
+    <mi>A</mi>
+  </math>, which are unprovable in
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mi>P</mi>
+    <mi>A</mi>
+  </math> (yet another consequence of Gödel’s incompleteness).
 </p>
-<!--l. 83-->
 <p class="indent">
-    A fortiori, there is no hope to characterize in a finitistic way the concept of a standard (finite) integer number, or, equivalently, (Formalized) Number Theory cannot define what a number is. One has to add an axiom of infinity (Set
-    Theory) or proper second order quantification to do so,
-    <!--l. 83-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-        <mi>P</mi>
-        <msub>
-            <mrow><mi>A</mi></mrow><mrow><mn>2</mn></mrow>
-        </msub>
-    </math>
-    , and these are infinitary or impredicative formal frames. Set Theory with an axiom of infinity and
-    <!--l. 83-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-        <mi>P</mi>
-        <msub>
-            <mrow><mi>A</mi></mrow><mrow><mn>2</mn></mrow>
-        </msub>
-    </math>
-    are not only strict extensions but they are <span class="rm-lmri-10x-x-109">non-conservative </span>extensions of
-    <!--l. 83-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi><mi>A</mi></math>: they prove propositions of
-    <!--l. 83-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi><mi>A</mi></math>, which are unprovable in
-    <!--l. 83-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi><mi>A</mi></math> (yet another consequence of Gödel’s incompleteness).
+  As a side remark, whether our theoretical proposals for biology are strict extensions of the related physical theories is surely an interesting question. However, it would be much more interesting if one of our theories or their
+  conjunction were shown to be non-conservative with respect to a (pertinent) theory of the inert. For example, Pasteur’s famous example of statistically non-balanced chirality of some macromolecules in cells is a property that can be
+  stated in the language of physics, yet, as far as we know, it has not been derived from any physical theory. It would be fantastic if it could be justified within one of our frames, e.g. from a property of the phenotype at the
+  cellular level, for example, extended criticality (see below).
 </p>
-<!--l. 85-->
 <p class="indent">
-    As a side remark, whether our theoretical proposals for biology are strict extensions of the related physical theories is surely an interesting question. However, it would be much more interesting if one of our theories or their
-    conjunction were shown to be non-conservative with respect to a (pertinent) theory of the inert. For example, Pasteur’s famous example of statistically non-balanced chirality of some macromolecules in cells is a property that can be
-    stated in the language of physics, yet, as far as we know, it has not been derived from any physical theory. It would be fantastic if it could be justified within one of our frames, e.g.&nbsp;from a property of the phenotype at the
-    cellular level, for example, extended criticality (see below).
+  In conclusion, despite its incompleteness, everybody soundly considers
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mi>P</mi>
+    <mi>A</mi>
+  </math> as the “natural” (formal) theory of numbers: it elegantly singles out the main relevant, and very robust, properties of numbers (
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mn>0</mn>
+  </math>, successor, induction), even though it <span class="rm-lmri-10x-x-109">cannot define what a number is</span>. There is a similarity between physics and
+  logic. Physics cannot define its object of study, physical matter, and Logic is another example of a sound theoretical frame, which cannot define, within itself, its object of study: the object ”natural number”. Moreover, we do not see
+  a straightforward way to get out of the language of physics or of biology in the same manner that Mathematical Logic gets out of
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mi>P</mi>
+    <mi>A</mi>
+  </math> by using infinities: what could correspond to an axiom of infinity or higher order quantification?
 </p>
-<!--l. 87-->
 <p class="indent">
-    In conclusion, despite its incompleteness, everybody soundly considers
-    <!--l. 87-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi><mi>A</mi></math> as the “natural” (formal) theory of numbers: it elegantly singles out the main relevant, and very robust, properties of numbers (<!--l. 87-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math>, successor, induction), even though it <span class="rm-lmri-10x-x-109">cannot define what a number is</span>. There is a similarity between physics and
-    logic. Physics cannot define its object of study, physical matter, and Logic is another example of a sound theoretical frame, which cannot define, within itself, its object of study: the object ”natural number”. Moreover, we do not see
-    a straightforward way to get out of the language of physics or of biology in the same manner that Mathematical Logic gets out of
-    <!--l. 87-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>P</mi><mi>A</mi></math> by using infinities: what could correspond to an axiom of infinity or higher order quantification?
+  We encourage the reader to pursue her theoretical work in biology without the anguishing search for a <span class="rm-lmri-10x-x-109">definition </span>of life and with the clear perspective of the intrinsic incompleteness of all our
+  theoretical endeavors, <span class="cite">[<a href="#Xlongo2011e">Lon11</a>]</span>. We can just hope to organize by theories some fragments of reality, whatever this latter word may mean. Let’s try to do it to the best of our
+  knowledge, in a sufficiently broad and robust way, and in full theoretical and empirical freedom. We should not necessarily feel stuck either to existing theories nor always search for the “Ultimate (complete?) Theory” nor the “ultimate
+  reduction”. As we hint in the book and several papers, molecular analyzes are not useless, of course, nor wrong a priori. In our opinion, they are just incomplete when we aim to describe phenotypes and their evolutionary and ontogenetic
+  dynamics.
 </p>
-<!--l. 89-->
 <p class="indent">
-    We encourage the reader to pursue her theoretical work in biology without the anguishing search for a <span class="rm-lmri-10x-x-109">definition </span>of life and with the clear perspective of the intrinsic incompleteness of all our
-    theoretical endeavors, <span class="cite">[<a href="#Xlongo2011e">Lon11</a>]</span>. We can just hope to organize by theories some fragments of reality, whatever this latter word may mean. Let’s try to do it to the best of our
-    knowledge, in a sufficiently broad and robust way, and in full theoretical and empirical freedom. We should not necessarily feel stuck either to existing theories nor always search for the “Ultimate (complete?) Theory” nor the “ultimate
-    reduction”. As we hint in the book and several papers, molecular analyzes are not useless, of course, nor wrong a priori. In our opinion, they are just incomplete when we aim to describe phenotypes and their evolutionary and ontogenetic
-    dynamics.
+  Similarly, the issue of the emergence of life from molecules is a very relevant one. Nevertheless, as long as we do not have a sufficiently robust, yet incomplete, theory of organisms, it is not clear what “objects”, with what
+  properties, should ever be shown to emerge from inert matter.
 </p>
-<!--l. 91-->
-<p class="indent">
-    Similarly, the issue of the emergence of life from molecules is a very relevant one. Nevertheless, as long as we do not have a sufficiently robust, yet incomplete, theory of organisms, it is not clear what “objects”, with what
-    properties, should ever be shown to emerge from inert matter.
-</p>
-<h3 class="sectionHead"><span class="titlemark">2. </span> <a id="x1-40002"></a>Symmetry breakings and randomness</h3>
-<!--l. 95-->
+<h3 class="sectionHead" id="2--symmetry-breakings-and-randomness"><span class="titlemark">2. </span><a id="x1-40002"></a>Symmetry breakings and randomness</h3>
 <p class="noindent">
-    Since ancient Greece (Archimedes’ principle on equilibria) up to Relativity Theory (Noether’s and Weyl’s work on conservation properties) and Quantum Mechanics (from Weyl’s groups to the time-charge-parity symmetry), symmetries have
-    provided a unified view of the principles of theoretical intelligibility in physics. In our approach, biology requires a careful attention both to symmetries and to symmetry changes. In short, symmetry changes are symmetry breaking or
-    formation. Symmetry changes are related with randomness and the appearance of new coherence structures, such as organisms, species, ecosystems.
+  Since ancient Greece (Archimedes’ principle on equilibria) up to Relativity Theory (Noether’s and Weyl’s work on conservation properties) and Quantum Mechanics (from Weyl’s groups to the time-charge-parity symmetry), symmetries have
+  provided a unified view of the principles of theoretical intelligibility in physics. In our approach, biology requires a careful attention both to symmetries and to symmetry changes. In short, symmetry changes are symmetry breaking or
+  formation. Symmetry changes are related with randomness and the appearance of new coherence structures, such as organisms, species, ecosystems.
 </p>
-<!--l. 101-->
 <p class="indent">
-    In section 5 of chapter <span class="cite">[<a href="#Xlomoncriphy">LM14d</a>]</span>, we propose a preliminary and informal remark when stressing the role of randomness in biology and this remark may be significant outside of biology.
-    Namely, we argue that every random event is associated with a symmetry change in all existing physical theories (see also <span class="cite">[<a href="#Xlongo2014">LM17</a>]</span>). This remark is a joint interpretation of the
-    different frameworks for randomness that we base on the analysis of these different frameworks. In a sense its status may be compared with Church thesis.
+  In section 5 of chapter <span class="cite">[<a href="#Xlomoncriphy">LM14d</a>]</span>, we propose a preliminary and informal remark when stressing the role of randomness in biology and this remark may be significant outside of biology.
+  Namely, we argue that every random event is associated with a symmetry change in all existing physical theories (see also <span class="cite">[<a href="#Xlongo2014">LM17</a>]</span>). This remark is a joint interpretation of the
+  different frameworks for randomness that we base on the analysis of these different frameworks. In a sense its status may be compared with Church thesis.
 </p>
-<!--l. 103-->
 <p class="indent">
-    A random event is an event where the knowledge about a system at a given time is not sufficient to deduce its future description; thus, the event is unpredictable relatively to the intended theory. Physics has several theoretical
-    descriptions of random events, but in all these cases, the description before the event determines the complete list of possible outcomes. Thus, what is unpredictable is a <span class="rm-lmri-10x-x-109">numerical value </span>in a
-    pre-given space of observables — modulo some finer considerations as the ones we discuss in chapter <span class="cite">[<a href="#Xlomonphase">LM14c</a>]</span> as for quantum field theory and statistical physics. Moreover, in physical
-    theories, the theory provides a metric or, more generally, a measure (of probabilities or other measures) which determines the observed statistics. Then one may say that these events are random or unpredictable but only to a point: we
-    know the possibilities and their probability distribution. Kolmogorov’s axiomatic system for probabilities works this way and provides probabilities for the possible outcomes.
+  A random event is an event where the knowledge about a system at a given time is not sufficient to deduce its future description; thus, the event is unpredictable relatively to the intended theory. Physics has several theoretical
+  descriptions of random events, but in all these cases, the description before the event determines the complete list of possible outcomes. Thus, what is unpredictable is a <span class="rm-lmri-10x-x-109">numerical value </span>in a
+  pre-given space of observables — modulo some finer considerations as the ones we discuss in chapter <span class="cite">[<a href="#Xlomonphase">LM14c</a>]</span> as for quantum field theory and statistical physics. Moreover, in physical
+  theories, the theory provides a metric or, more generally, a measure (of probabilities or other measures) which determines the observed statistics. Then one may say that these events are random or unpredictable but only to a point: we
+  know the possibilities and their probability distribution. Kolmogorov’s axiomatic system for probabilities works this way and provides probabilities for the possible outcomes.
 </p>
-<!--l. 105-->
 <p class="indent">Our claim is that the various physical cases of randomness can be understood and compared in terms of symmetry breaking.</p>
 <dl class="description">
-    <dt class="description"><span class="rm-lmbx-10x-x-109">Quantum Mechanics:</span></dt>
-    <dd class="description">measurement breaks the unitarity of the quantum evolution, which amounts to say that the quantum state space assumes privileged directions (a symmetry breaking).</dd>
-    <dt class="description"><span class="rm-lmbx-10x-x-109">Classical probabilities:</span></dt>
-    <dd class="description">
-        the intended phase space contains the set of all possibilities. Elements of this set are symmetric in the sense that they are all possibilities. Moreover, sets of possibilities having the same probability have the same propensity to
-        occur. Reciprocally, starting from sets that are theoretically equivalent and thus should have the same probability to occur is a common way to assign probabilities in a meaningful way. For example, the sides of a dice are commonly
-        assumed to be symmetric thus equiprobable and the same applies to the regions of the phase space with the same energy in the microcanonical ensemble of statistical mechanics. All these symmetries break at the occurrence of the
-        random event, which singles out an outcome and excludes others.
-    </dd>
-    <dt class="description"><span class="rm-lmbx-10x-x-109">Algorithmic concurrency theory:</span></dt>
-    <dd class="description">
-        the theory gives the possibilities (a finite list) but does not provide probabilities for them. Probabilities may be added if the physical event forcing a choice is known (but computer scientists, in programming theory and practice,
-        usually “do not care” — this is the terminology they use, see <span class="cite">[<a href="#Xlongorand">LPP10</a>]</span>). The point here is to have a program that works as intended in all cases.
-    </dd>
+  <dt class="description"><span class="rm-lmbx-10x-x-109">Quantum Mechanics:</span></dt>
+  <dd class="description">measurement breaks the unitarity of the quantum evolution, which amounts to say that the quantum state space assumes privileged directions (a symmetry breaking).</dd>
+  <dt class="description"><span class="rm-lmbx-10x-x-109">Classical probabilities:</span></dt>
+  <dd class="description">
+    the intended phase space contains the set of all possibilities. Elements of this set are symmetric in the sense that they are all possibilities. Moreover, sets of possibilities having the same probability have the same propensity to
+    occur. Reciprocally, starting from sets that are theoretically equivalent and thus should have the same probability to occur is a common way to assign probabilities in a meaningful way. For example, the sides of a dice are commonly
+    assumed to be symmetric thus equiprobable and the same applies to the regions of the phase space with the same energy in the microcanonical ensemble of statistical mechanics. All these symmetries break at the occurrence of the
+    random event, which singles out an outcome and excludes others.
+  </dd>
+  <dt class="description"><span class="rm-lmbx-10x-x-109">Algorithmic concurrency theory:</span></dt>
+  <dd class="description">
+    the theory gives the possibilities (a finite list) but does not provide probabilities for them. Probabilities may be added if the physical event forcing a choice is known (but computer scientists, in programming theory and practice,
+    usually “do not care” — this is the terminology they use, see <span class="cite">[<a href="#Xlongorand">LPP10</a>]</span>). The point here is to have a program that works as intended in all cases.
+  </dd>
 </dl>
-<!--l. 113-->
 <p class="indent">
-    We thus related random events to symmetry breakings in the main physicomathematical frames (plus one of linguistic nature: networks’ programming). In each case, we have several possible outcomes that have a symmetrical role, possibly
-    measured by different probabilities. After the random event, however, one of the “formerly possible” situations is singled out as the actual result. Therefore, each random event that fits this description is based on a symmetry
-    breaking, which can take different yet precise mathematical forms, depending in particular on the probability theory involved (or lack thereof). In this line of reasoning, randomness leads to a distinction between the possible and the
-    actual result (“possible” and “result” have different specific meaning depending on the theory). The symmetry is then between the different possibilities, and this symmetry breaks when we obtain one result out of them. This scheme of
-    randomness seems quite general to us.
+  We thus related random events to symmetry breakings in the main physicomathematical frames (plus one of linguistic nature: networks’ programming). In each case, we have several possible outcomes that have a symmetrical role, possibly
+  measured by different probabilities. After the random event, however, one of the “formerly possible” situations is singled out as the actual result. Therefore, each random event that fits this description is based on a symmetry
+  breaking, which can take different yet precise mathematical forms, depending in particular on the probability theory involved (or lack thereof). In this line of reasoning, randomness leads to a distinction between the possible and the
+  actual result (“possible” and “result” have different specific meaning depending on the theory). The symmetry is then between the different possibilities, and this symmetry breaks when we obtain one result out of them. This scheme of
+  randomness seems quite general to us.
 </p>
-<!--l. 116-->
 <p class="indent">
-    In the case where probabilities are defined, let us better specify the symmetries we are discussing. Let us consider an event
-    <!--l. 116-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>X</mi></math>, which can be either
-    <!--l. 116-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi></math>, with probability
-    <!--l. 116-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>p</mi></math> or
-    <!--l. 116-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>B</mi></math> with probability
-    <!--l. 116-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn> <mo class="MathClass-bin">−</mo> <mi>p</mi></math>. Then, we can consider
-    <!--l. 116-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-        <msub>
-            <mrow><mi>f</mi></mrow><mrow><mi>A</mi></mrow>
-        </msub>
-        <mrow>
-            <mo class="MathClass-open">(</mo><mrow><mi>X</mi></mrow><mo class="MathClass-close">)</mo>
-        </mrow>
-        <mo class="MathClass-rel">=</mo> <mn>1</mn><mo class="MathClass-bin">∕</mo><mi>p</mi>
-    </math>
-    if
-    <!--l. 116-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>X</mi> <mo class="MathClass-rel">=</mo> <mi>A</mi></math> else
-    <!--l. 116-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-        <msub>
-            <mrow><mi>f</mi></mrow><mrow><mi>A</mi></mrow>
-        </msub>
-        <mrow>
-            <mo class="MathClass-open">(</mo><mrow><mi>X</mi></mrow><mo class="MathClass-close">)</mo>
-        </mrow>
-        <mo class="MathClass-rel">=</mo> <mn>0</mn>
-    </math>
-    and
-    <!--l. 116-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-        <msub>
-            <mrow><mi>f</mi></mrow><mrow><mi>B</mi></mrow>
-        </msub>
-        <mrow>
-            <mo class="MathClass-open">(</mo><mrow><mi>X</mi></mrow><mo class="MathClass-close">)</mo>
-        </mrow>
-        <mo class="MathClass-rel">=</mo> <mn>1</mn><mo class="MathClass-bin">∕</mo>
-        <mrow>
-            <mo class="MathClass-open">(</mo><mrow><mn>1</mn> <mo class="MathClass-bin">−</mo> <mi>p</mi></mrow><mo class="MathClass-close">)</mo>
-        </mrow>
-    </math>
-    if
-    <!--l. 116-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>X</mi> <mo class="MathClass-rel">=</mo> <mi>B</mi></math> else
-    <!--l. 116-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-        <msub>
-            <mrow><mi>f</mi></mrow><mrow><mi>B</mi></mrow>
-        </msub>
-        <mrow>
-            <mo class="MathClass-open">(</mo><mrow><mi>X</mi></mrow><mo class="MathClass-close">)</mo>
-        </mrow>
-        <mo class="MathClass-rel">=</mo> <mn>0</mn>
-    </math>
-    . we see then that
-    <!--l. 116-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-        <msub>
-            <mrow><mi>f</mi></mrow><mrow><mi>A</mi></mrow>
-        </msub>
-    </math>
-    and
-    <!--l. 116-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-        <msub>
-            <mrow><mi>f</mi></mrow><mrow><mi>B</mi></mrow>
-        </msub>
-    </math>
-    have the same expectancy. It is precisely this symmetry that experimenters try to show empirically, and that legitimates the probability values.
+  In the case where probabilities are defined, let us better specify the symmetries we are discussing. Let us consider an event
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mi>X</mi>
+  </math>, which can be either
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mi>A</mi>
+  </math>, with probability
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mi>p</mi>
+  </math> or
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mi>B</mi>
+  </math> with probability
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mn>1</mn>
+    <mo class="MathClass-bin">−</mo>
+    <mi>p</mi>
+  </math>. Then, we can consider
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <msub>
+      <mrow>
+        <mi>f</mi>
+      </mrow>
+      <mrow>
+        <mi>A</mi>
+      </mrow>
+    </msub>
+    <mrow>
+      <mo class="MathClass-open">(</mo>
+      <mrow>
+        <mi>X</mi>
+      </mrow>
+      <mo class="MathClass-close">)</mo>
+    </mrow>
+    <mo class="MathClass-rel">=</mo>
+    <mn>1</mn>
+    <mo class="MathClass-bin">∕</mo>
+    <mi>p</mi>
+  </math>
+  if
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mi>X</mi>
+    <mo class="MathClass-rel">=</mo>
+    <mi>A</mi>
+  </math> else
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <msub>
+      <mrow>
+        <mi>f</mi>
+      </mrow>
+      <mrow>
+        <mi>A</mi>
+      </mrow>
+    </msub>
+    <mrow>
+      <mo class="MathClass-open">(</mo>
+      <mrow>
+        <mi>X</mi>
+      </mrow>
+      <mo class="MathClass-close">)</mo>
+    </mrow>
+    <mo class="MathClass-rel">=</mo>
+    <mn>0</mn>
+  </math>
+  and
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <msub>
+      <mrow>
+        <mi>f</mi>
+      </mrow>
+      <mrow>
+        <mi>B</mi>
+      </mrow>
+    </msub>
+    <mrow>
+      <mo class="MathClass-open">(</mo>
+      <mrow>
+        <mi>X</mi>
+      </mrow>
+      <mo class="MathClass-close">)</mo>
+    </mrow>
+    <mo class="MathClass-rel">=</mo>
+    <mn>1</mn>
+    <mo class="MathClass-bin">∕</mo>
+    <mrow>
+      <mo class="MathClass-open">(</mo>
+      <mrow>
+        <mn>1</mn>
+        <mo class="MathClass-bin">−</mo>
+        <mi>p</mi>
+      </mrow>
+      <mo class="MathClass-close">)</mo>
+    </mrow>
+  </math>
+  if
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mi>X</mi>
+    <mo class="MathClass-rel">=</mo>
+    <mi>B</mi>
+  </math> else
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <msub>
+      <mrow>
+        <mi>f</mi>
+      </mrow>
+      <mrow>
+        <mi>B</mi>
+      </mrow>
+    </msub>
+    <mrow>
+      <mo class="MathClass-open">(</mo>
+      <mrow>
+        <mi>X</mi>
+      </mrow>
+      <mo class="MathClass-close">)</mo>
+    </mrow>
+    <mo class="MathClass-rel">=</mo>
+    <mn>0</mn>
+  </math>
+  . we see then that
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <msub>
+      <mrow>
+        <mi>f</mi>
+      </mrow>
+      <mrow>
+        <mi>A</mi>
+      </mrow>
+    </msub>
+  </math>
+  and
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <msub>
+      <mrow>
+        <mi>f</mi>
+      </mrow>
+      <mrow>
+        <mi>B</mi>
+      </mrow>
+    </msub>
+  </math>
+  have the same expectancy. It is precisely this symmetry that experimenters try to show empirically, and that legitimates the probability values.
 </p>
-<!--l. 118-->
 <p class="indent">
-    Note that random events define a <span class="rm-lmri-10x-x-109">before </span>and an <span class="rm-lmri-10x-x-109">after </span>that the event of symmetry breaking separates. This <span class="rm-lmri-10x-x-109">before </span>and
-    <span class="rm-lmri-10x-x-109">after </span>may be intrinsic and correspond to a genuine change of the object, for example in the case of quantum mechanics. By contrast, it may only correspond to the knowledge of the observer, for
-    example in the case of chaotic dynamics and we call this latter randomness epistemic.
+  Note that random events define a <span class="rm-lmri-10x-x-109">before </span>and an <span class="rm-lmri-10x-x-109">after </span>that the event of symmetry breaking separates. This <span class="rm-lmri-10x-x-109">before </span>and
+  <span class="rm-lmri-10x-x-109">after </span>may be intrinsic and correspond to a genuine change of the object, for example in the case of quantum mechanics. By contrast, it may only correspond to the knowledge of the observer, for
+  example in the case of chaotic dynamics and we call this latter randomness epistemic.
 </p>
-<!--l. 120-->
 <p class="indent">Let us now review more closely, in a schematic way, how random events are associated to symmetry breakings:</p>
 <dl class="description">
-    <dt class="description"><span class="rm-lmbx-10x-x-109">Quantum Mechanics:</span></dt>
-    <dd class="description">the projection of the state vector (measurement); non-commutativity of measurement; tunneling effects; creation of a particle-antiparticle pair&nbsp;….</dd>
-    <dt class="description"><span class="rm-lmbx-10x-x-109">Classical dynamics:</span></dt>
-    <dd class="description">
-        the randomness associated with chaotic dynamics stems from the equivalence between different initial conditions (because the classical measurement is not pointwise), and the exponential drift of the trajectories coming from these
-        initial conditions.
-    </dd>
-    <dt class="description"><span class="rm-lmbx-10x-x-109">Critical transitions:</span></dt>
-    <dd class="description">
-        the point-wise symmetry change leads to a “choice” of specific directions (the orientation of a magnet, the spatial orientation of a crystal, etc.). The specific directions taken are the result of fluctuations. Also, the multi-scale
-        configuration at the critical point is random and fluctuating.
-    </dd>
-    <dt class="description"><span class="rm-lmbx-10x-x-109">Thermodynamics:</span></dt>
-    <dd class="description">
-        the arrow of time (entropy production). This case is peculiar as randomness and symmetry breaking are not associated with an event but with the microscopic description. The time reversal symmetry breaks at the thermodynamic limit.
-    </dd>
-    <dt class="description"><span class="rm-lmbx-10x-x-109">Algorithmic concurrency:</span></dt>
-    <dd class="description">the choice of one of the possible computational paths (backtracking is impossible).</dd>
+  <dt class="description"><span class="rm-lmbx-10x-x-109">Quantum Mechanics:</span></dt>
+  <dd class="description">the projection of the state vector (measurement); non-commutativity of measurement; tunneling effects; creation of a particle-antiparticle pair ….</dd>
+  <dt class="description"><span class="rm-lmbx-10x-x-109">Classical dynamics:</span></dt>
+  <dd class="description">
+    the randomness associated with chaotic dynamics stems from the equivalence between different initial conditions (because the classical measurement is not pointwise), and the exponential drift of the trajectories coming from these
+    initial conditions.
+  </dd>
+  <dt class="description"><span class="rm-lmbx-10x-x-109">Critical transitions:</span></dt>
+  <dd class="description">
+    the point-wise symmetry change leads to a “choice” of specific directions (the orientation of a magnet, the spatial orientation of a crystal, etc.). The specific directions taken are the result of fluctuations. Also, the multi-scale
+    configuration at the critical point is random and fluctuating.
+  </dd>
+  <dt class="description"><span class="rm-lmbx-10x-x-109">Thermodynamics:</span></dt>
+  <dd class="description">the arrow of time (entropy production). This case is peculiar as randomness and symmetry breaking are not associated with an event but with the microscopic description. The time reversal symmetry breaks at the thermodynamic limit.</dd>
+  <dt class="description"><span class="rm-lmbx-10x-x-109">Algorithmic concurrency:</span></dt>
+  <dd class="description">the choice of one of the possible computational paths (backtracking is impossible).</dd>
 </dl>
-<!--l. 129-->
 <p class="indent">
-    If this list is exhaustive, as it seems, it is fair to say that random events, in physics, are associated with symmetry breakings (and programming follows this pattern). Note that in all these cases, one does not fit completely in our
-    qualitative discussion and has a more complex structure: the case of thermodynamics. Indeed, from a purely macroscopic viewpoint, there is no particular form of randomness associated with the theory, and provided that a trajectory is
-    defined, it will be deterministic (except for critical transitions or similar situations which are discussed above). Randomness appears at the microscopic level, either as chaotic classical dynamics or classical probabilities (in
-    statistical mechanics). Both correspond to the analysis of their respective categories above. However, this does not explain the arrow of time, which is a particularly interesting symmetry breaking in this situation. In thermodynamics,
-    a closed system evolves towards a maximum of entropy up to energetic constraints. This evolution is a trend towards a symmetrization in the sense that the system evolves towards the macroscopic state to which correspond the greatest
-    number of microscopic states (they are symmetric in the sense that they leave the macroscopic state invariant). In this case, randomness explains the dispersion in the microscopic phase space (leading to the trend towards the
-    macrostates corresponding to more microstates). Therefore, it is a process of symmetrization which breaks the time symmetry but does not lead to macroscopic randomness. On the opposite, it determines the macroscopic, mostly
-    deterministic behavior of thermodynamic systems. Macroscopic randomness may still appear if there are different minima for the relevant thermodynamic potential, as in phase transitions.
+  If this list is exhaustive, as it seems, it is fair to say that random events, in physics, are associated with symmetry breakings (and programming follows this pattern). Note that in all these cases, one does not fit completely in our
+  qualitative discussion and has a more complex structure: the case of thermodynamics. Indeed, from a purely macroscopic viewpoint, there is no particular form of randomness associated with the theory, and provided that a trajectory is
+  defined, it will be deterministic (except for critical transitions or similar situations which are discussed above). Randomness appears at the microscopic level, either as chaotic classical dynamics or classical probabilities (in
+  statistical mechanics). Both correspond to the analysis of their respective categories above. However, this does not explain the arrow of time, which is a particularly interesting symmetry breaking in this situation. In thermodynamics,
+  a closed system evolves towards a maximum of entropy up to energetic constraints. This evolution is a trend towards a symmetrization in the sense that the system evolves towards the macroscopic state to which correspond the greatest
+  number of microscopic states (they are symmetric in the sense that they leave the macroscopic state invariant). In this case, randomness explains the dispersion in the microscopic phase space (leading to the trend towards the
+  macrostates corresponding to more microstates). Therefore, it is a process of symmetrization which breaks the time symmetry but does not lead to macroscopic randomness. On the opposite, it determines the macroscopic, mostly
+  deterministic behavior of thermodynamic systems. Macroscopic randomness may still appear if there are different minima for the relevant thermodynamic potential, as in phase transitions.
 </p>
-<!--l. 131-->
 <p class="indent">
-    All these symmetry changes and the associated random events happen within the intended phase space, or, in other words, within the set of possibilities given by the intended physical theory and models. The challenge we are facing in
-    biology (see <span class="cite">[<a href="#Xlomonphase">LM14c</a>]</span> and below), is that randomness manifests itself at the very level of the observables. Critical transitions are the closest physical phenomenon to the needs of the
-    theoretical investigation in biology, and we will discuss them in next section.
+  All these symmetry changes and the associated random events happen within the intended phase space, or, in other words, within the set of possibilities given by the intended physical theory and models. The challenge we are facing in
+  biology (see <span class="cite">[<a href="#Xlomonphase">LM14c</a>]</span> and below), is that randomness manifests itself at the very level of the observables. Critical transitions are the closest physical phenomenon to the needs of the
+  theoretical investigation in biology, and we will discuss them in next section.
 </p>
-<h3 class="sectionHead"><span class="titlemark">3. </span> <a id="x1-50003"></a>Symmetries and theoretical extensions of physical theories</h3>
-<!--l. 135-->
+<h3 class="sectionHead" id="3--symmetries-and-theoretical-extensions-of-physical-theories"><span class="titlemark">3. </span><a id="x1-50003"></a>Symmetries and theoretical extensions of physical theories</h3>
 <p class="noindent">
-    On the grounds of the previous remarks, we claim now that there are significant challenges for the proposal of mathematical and theoretical ideas in biology. These challenges stem from the very different roles that symmetries can play
-    in biology when compared to physics.
+  On the grounds of the previous remarks, we claim now that there are significant challenges for the proposal of mathematical and theoretical ideas in biology. These challenges stem from the very different roles that symmetries can play
+  in biology when compared to physics.
 </p>
-<!--l. 138-->
 <p class="indent">
-    The way we picture an unifying theoretical framework for biology is not based on specific invariants and invariants preserving transformations (symmetries) like in (mathematical/theoretical) physics. Instead, such a framework should
-    focus on the permanent qualitative changes that modify the analysis of processes both in ontogenesis and evolution. Of course, these biological changes preserve an ever changing structural stability, the coherence of organisms.
+  The way we picture an unifying theoretical framework for biology is not based on specific invariants and invariants preserving transformations (symmetries) like in (mathematical/theoretical) physics. Instead, such a framework should
+  focus on the permanent qualitative changes that modify the analysis of processes both in ontogenesis and evolution. Of course, these biological changes preserve an ever changing structural stability, the coherence of organisms.
 </p>
-<!--l. 144-->
 <p class="indent">
-    The adaptivity of an organism and the diversity of a population are consequences of variability, thus of randomness. They contribute in an essential way to the stability of life phenomena. Thus, in a sense, variability may be considered
-    as the primary invariant of the living state of matter (but it is not necessarily the only one!).
+  The adaptivity of an organism and the diversity of a population are consequences of variability, thus of randomness. They contribute in an essential way to the stability of life phenomena. Thus, in a sense, variability may be considered
+  as the primary invariant of the living state of matter (but it is not necessarily the only one!).
 </p>
-<!--l. 147-->
-<h4 class="subsectionHead">
-    <span class="subsectionHead"><span class="titlemark">3.1. </span> <a id="x1-60003.1"></a><span class="rm-lmbx-10x-x-109">Extended criticality.</span></span>
-</h4>
-<!--l. 151-->
+<h4 class="subsectionHead" id="31--extended-criticality"><span class="subsectionHead"><span class="titlemark">3.1. </span><a id="x1-60003.1"></a><span class="rm-lmbx-10x-x-109">Extended criticality.</span></span></h4>
 <p class="indent">
-    To analyze variability, we proposed to consider the role played by local and global symmetry changes along “extended critical transitions”. The notion of phase transition was first proposed in physics by Curie, at the beginning of the
-    last century. Phase transition typically correspond to changes of state of matter such as the transition from liquid to a gas or a solid. After Curie, the notion of phase transition has been deeply revised and mathematized by the
-    introduction of renormalization methods <span class="cite">[<a href="#Xtoulouse1977introduction">TPB77</a>,&nbsp;<a href="#XZinnJustin_2007">ZJ07</a>]</span>. These methods are required because certain cases, such as the
-    paramagnetic-ferromagnetic transition, involve a specific coherence structure at the point of transition. This point is “between” two different states, a situation that typically requires the appearance of scale free patterns. Such
-    behavior are typical of criticality. Critical transitions describe phase changes where a re-organization of the pertinent observables correspond to a symmetry change. In particular, a new coherence structure “emerges” by establishing
-    long range correlations. Typically, the formation of a crystal or even of a snowflake, percolation, para-ferromagnetic transitions…may all be analyzed as critical transitions.
+  To analyze variability, we proposed to consider the role played by local and global symmetry changes along “extended critical transitions”. The notion of phase transition was first proposed in physics by Curie, at the beginning of the
+  last century. Phase transition typically correspond to changes of state of matter such as the transition from liquid to a gas or a solid. After Curie, the notion of phase transition has been deeply revised and mathematized by the
+  introduction of renormalization methods <span class="cite">[<a href="#Xtoulouse1977introduction">TPB77</a>, <a href="#XZinnJustin_2007">ZJ07</a>]</span>. These methods are required because certain cases, such as the
+  paramagnetic-ferromagnetic transition, involve a specific coherence structure at the point of transition. This point is “between” two different states, a situation that typically requires the appearance of scale free patterns. Such
+  behavior are typical of criticality. Critical transitions describe phase changes where a re-organization of the pertinent observables correspond to a symmetry change. In particular, a new coherence structure “emerges” by establishing
+  long range correlations. Typically, the formation of a crystal or even of a snowflake, percolation, para-ferromagnetic transitions…may all be analyzed as critical transitions.
 </p>
-<!--l. 157-->
 <p class="indent">
-    We propose to analyze organisms with the tentative notion of <span class="rm-lmri-10x-x-109">extended </span>criticality, where the notion of criticality is extended from being pointwise in physics to being relevant for a whole region
-    of the description space. Organisms are then dynamically changing coherent structures, global entities displaying qualitative variability. The coherent structure proper to critical phenomena also justifies the use of variables depending
-    on non-local effects. Such, an explicitly systemic approach may help to avoid the accumulation of models and hidden variables. In short, the notion of extended criticality provides a conceptual framework, to be mathematized, where the
-    dynamics of symmetries and symmetry changes provides a new, crucial role for symmetries in biology by contrast with physics.
+  We propose to analyze organisms with the tentative notion of <span class="rm-lmri-10x-x-109">extended </span>criticality, where the notion of criticality is extended from being pointwise in physics to being relevant for a whole region
+  of the description space. Organisms are then dynamically changing coherent structures, global entities displaying qualitative variability. The coherent structure proper to critical phenomena also justifies the use of variables depending
+  on non-local effects. Such, an explicitly systemic approach may help to avoid the accumulation of models and hidden variables. In short, the notion of extended criticality provides a conceptual framework, to be mathematized, where the
+  dynamics of symmetries and symmetry changes provides a new, crucial role for symmetries in biology by contrast with physics.
 </p>
-<!--l. 168-->
 <p class="indent">
-    The concept of extended critical transition involves ubiquitous symmetry changes, and these changes have far reaching consequences. They lead to radical methodological difficulties. In short, in mathematics and in physics, objects are
-    generic, they are invariants of the theory and experiment. In mathematics, a triangle, a Hilbert space…are used in proofs as generic, by their very definition. Similarly, a falling object is generic: it is described as a material point
-    of mass
-    <!--l. 168-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mi>m</mi></math> at all times of its trajectory. The same applies to electrons: all electrons are assumed to obey the same “laws”. These objects are all invariants of
-    the theoretical and experimental frames (they are fully interchangeable, in their class). On the opposite, physical trajectories are specific, that is they are optimal in the suitable phase spaces (in the case of the electron, the
-    “trajectory” is given by Schrödinger’s equation thus by the trajectory of a probability amplitude in a Hilbert space). In contrast to this, we analyze biological (phylogenetic, but also ontogenetic) trajectories as generic: they are
-    possible ones, within a phase space co-constructed by the changes of the object. Biological objects are specific in the sense that they are defined by a history and not by generic features. Two mammals have qualitative differences, and
-    two mice also have qualitative differences. Their very names correspond to a genealogical relation, not to an identity of behaviors like in the case of the electron. Biological objects are mostly not interchangeable (or not
-    mathematically invariant) both for the theory and for experiments (a major challenge for the interpretation of experimental results and doubly so in the case of in vitro experiments). We exemplify the instability of theoretical
-    symmetries by a review of scale symmetries in biology <span class="cite">[<a href="#Xscaling2014">LM14h</a>]</span>. For example, allometry is the analysis of a quantity such as the metabolism (oxygen consumption) as a function of the
-    size (mass) of an organism. This analysis is based on a scale symmetry, and, in mammals, the metabolism is often assumed to be proportional to
-    <!--l. 168-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-        <msup>
-            <mrow><mi>M</mi></mrow><mrow><mn>3</mn><mo class="MathClass-bin">∕</mo><mn>4</mn></mrow>
-        </msup>
-    </math>
-    and rhythms to
-    <!--l. 168-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-        <msup>
-            <mrow><mi>M</mi></mrow><mrow><mn>1</mn><mo class="MathClass-bin">∕</mo><mn>4</mn></mrow>
-        </msup>
-    </math>
-    . Our analysis of the literature shows that the situation is far more complex and that some phyla have different trends: the relations above cannot be considered as a stable symmetry.
+  The concept of extended critical transition involves ubiquitous symmetry changes, and these changes have far reaching consequences. They lead to radical methodological difficulties. In short, in mathematics and in physics, objects are
+  generic, they are invariants of the theory and experiment. In mathematics, a triangle, a Hilbert space…are used in proofs as generic, by their very definition. Similarly, a falling object is generic: it is described as a material point
+  of mass
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mi>m</mi>
+  </math> at all times of its trajectory. The same applies to electrons: all electrons are assumed to obey the same “laws”. These objects are all invariants of
+  the theoretical and experimental frames (they are fully interchangeable, in their class). On the opposite, physical trajectories are specific, that is they are optimal in the suitable phase spaces (in the case of the electron, the
+  “trajectory” is given by Schrödinger’s equation thus by the trajectory of a probability amplitude in a Hilbert space). In contrast to this, we analyze biological (phylogenetic, but also ontogenetic) trajectories as generic: they are
+  possible ones, within a phase space co-constructed by the changes of the object. Biological objects are specific in the sense that they are defined by a history and not by generic features. Two mammals have qualitative differences, and
+  two mice also have qualitative differences. Their very names correspond to a genealogical relation, not to an identity of behaviors like in the case of the electron. Biological objects are mostly not interchangeable (or not
+  mathematically invariant) both for the theory and for experiments (a major challenge for the interpretation of experimental results and doubly so in the case of in vitro experiments). We exemplify the instability of theoretical
+  symmetries by a review of scale symmetries in biology <span class="cite">[<a href="#Xscaling2014">LM14h</a>]</span>. For example, allometry is the analysis of a quantity such as the metabolism (oxygen consumption) as a function of the
+  size (mass) of an organism. This analysis is based on a scale symmetry, and, in mammals, the metabolism is often assumed to be proportional to
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <msup>
+      <mrow>
+        <mi>M</mi>
+      </mrow>
+      <mrow>
+        <mn>3</mn>
+        <mo class="MathClass-bin">∕</mo>
+        <mn>4</mn>
+      </mrow>
+    </msup>
+  </math>
+  and rhythms to
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <msup>
+      <mrow>
+        <mi>M</mi>
+      </mrow>
+      <mrow>
+        <mn>1</mn>
+        <mo class="MathClass-bin">∕</mo>
+        <mn>4</mn>
+      </mrow>
+    </msup>
+  </math>
+  . Our analysis of the literature shows that the situation is far more complex and that some phyla have different trends: the relations above cannot be considered as a stable symmetry.
 </p>
-<!--l. 171-->
 <p class="indent">
-    This difference between physical and biological objects is probably the most radical change of perspective we propose. It alters the very theoretical nature of the scientific object as for proper biological observables: organisms and
-    phenotypes. As a result, physical notions like the space of theoretical determination (phase space) cannot have the same meaning and use in biology. One of the main and maybe the main notion at the core of these changes is historicity.
-    In evolution and development, biological objects organize themselves, and they do so in an ever changing manner, as long as their organization allow them to survive. The specificity of biological objects is associated with this
-    historical determination and the underlying unstable mathematical symmetries. This calls for a change of perspective in the understanding of biological phenomena. Physical objects, even the most complex ones, are understood by their
-    regularities (invariants and associated symmetries). Some physical systems are called “historical”, for example when there are hysteresis or a few successive symmetry breaking but this historicity is limited to the state of the object
-    and does not impact the space and the determination (equation for example) of the object like in biology. By contrast, the most stable features of biological objects is their variability. This variability engenders diversity and
-    contributes by this to biological structural stability, at all levels of organization. It is the reason why we put variability, understood as symmetry changes, at the core of our approach to biological phenomena.
+  This difference between physical and biological objects is probably the most radical change of perspective we propose. It alters the very theoretical nature of the scientific object as for proper biological observables: organisms and
+  phenotypes. As a result, physical notions like the space of theoretical determination (phase space) cannot have the same meaning and use in biology. One of the main and maybe the main notion at the core of these changes is historicity.
+  In evolution and development, biological objects organize themselves, and they do so in an ever changing manner, as long as their organization allow them to survive. The specificity of biological objects is associated with this
+  historical determination and the underlying unstable mathematical symmetries. This calls for a change of perspective in the understanding of biological phenomena. Physical objects, even the most complex ones, are understood by their
+  regularities (invariants and associated symmetries). Some physical systems are called “historical”, for example when there are hysteresis or a few successive symmetry breaking but this historicity is limited to the state of the object
+  and does not impact the space and the determination (equation for example) of the object like in biology. By contrast, the most stable features of biological objects is their variability. This variability engenders diversity and
+  contributes by this to biological structural stability, at all levels of organization. It is the reason why we put variability, understood as symmetry changes, at the core of our approach to biological phenomena.
 </p>
-<!--l. 175-->
-<h4 class="subsectionHead">
-    <span class="subsectionHead"><span class="titlemark">3.2. </span> <a id="x1-70003.2"></a><span class="rm-lmbx-10x-x-109">More on critical phase transitions in physics.</span></span>
-</h4>
-<!--l. 176-->
+<h4 class="subsectionHead" id="32--more-on-critical-phase-transitions-in-physics"><span class="subsectionHead"><span class="titlemark">3.2. </span><a id="x1-70003.2"></a><span class="rm-lmbx-10x-x-109">More on critical phase transitions in physics.</span></span></h4>
 <p class="indent">
-    We have seen that symmetry and symmetry breaking have fundamental consequences for the determination of the behavior of objects. Theoretical symmetries correspond to conserved quantities, which are the properties of physical objects and
-    allow their theoretical determination.
+  We have seen that symmetry and symmetry breaking have fundamental consequences for the determination of the behavior of objects. Theoretical symmetries correspond to conserved quantities, which are the properties of physical objects and
+  allow their theoretical determination.
 </p>
-<!--l. 178-->
 <p class="indent">
-    At a spontaneous symmetry breaking point, there is a loss of the structure of <span class="rm-lmri-10x-x-109">both </span>phases behaviors (the phase at the different sides of the transition). It is then logical that this loss leads to
-    a particular determination. More precisely, the critical point constitutes a singularity in the determination of the system because it is between two different behaviors, characterized by different relevant macroscopic phase spaces. A
-    symmetry breaking involves the appearance of a new relevant variable describing the way in which the symmetry is broken, for example the magnetization, the structure of a crystal, etc. This variable goes from a constant zero to a finite
-    value at the macroscopic level which explains why the function describing these systems cannot be analytic.
+  At a spontaneous symmetry breaking point, there is a loss of the structure of <span class="rm-lmri-10x-x-109">both </span>phases behaviors (the phase at the different sides of the transition). It is then logical that this loss leads to
+  a particular determination. More precisely, the critical point constitutes a singularity in the determination of the system because it is between two different behaviors, characterized by different relevant macroscopic phase spaces. A
+  symmetry breaking involves the appearance of a new relevant variable describing the way in which the symmetry is broken, for example the magnetization, the structure of a crystal, etc. This variable goes from a constant zero to a finite
+  value at the macroscopic level which explains why the function describing these systems cannot be analytic.
 </p>
-<!--l. 180-->
 <p class="indent">
-    The strength of these singularities can be of different magnitudes; depending on the Ginzburg criterion <span class="cite">[<a href="#Xgizcri">ANB77</a>,&nbsp;<a href="#Xlomoncriphy">LM14d</a>]</span> an original method,
-    renormalization, can be required. This criterion qualitatively assess whether averages or on the opposite fluctuations dominate a model. In higher spatial dimensions, averages dominate since the higher the dimension of space, the more
-    neighbors a point has. When this averaging is insufficient, renormalization methods <span class="cite">[<a href="#Xfisher1998renormalization">Fis98</a>]</span> are necessary to take into account the global structure of determination of
-    the system that results from the coupling between fluctuations at all scales.
+  The strength of these singularities can be of different magnitudes; depending on the Ginzburg criterion <span class="cite">[<a href="#Xgizcri">ANB77</a>, <a href="#Xlomoncriphy">LM14d</a>]</span> an original method,
+  renormalization, can be required. This criterion qualitatively assess whether averages or on the opposite fluctuations dominate a model. In higher spatial dimensions, averages dominate since the higher the dimension of space, the more
+  neighbors a point has. When this averaging is insufficient, renormalization methods <span class="cite">[<a href="#Xfisher1998renormalization">Fis98</a>]</span> are necessary to take into account the global structure of determination of
+  the system that results from the coupling between fluctuations at all scales.
 </p>
-<!--l. 182-->
-<h4 class="subsectionHead">
-    <span class="subsectionHead"><span class="titlemark">3.3. </span> <a id="x1-80003.3"></a><span class="rm-lmbx-10x-x-109">Variability and stability.</span></span>
-</h4>
-<!--l. 184-->
+<h4 class="subsectionHead" id="33--variability-and-stability"><span class="subsectionHead"><span class="titlemark">3.3. </span><a id="x1-80003.3"></a><span class="rm-lmbx-10x-x-109">Variability and stability.</span></span></h4>
 <p class="indent">
-    It should be clear that when we focus on symmetry changes and variability as core notions for understanding the adaptivity and diversity proper to biological phenomena, we do not forget biological structural stability and autonomy,
-    under ecosystemic and internal constraints. No extended criticality would ever be possible without the integrating and regulating activities proper to an organism and its relations to the ecosystem. The coherent structures
-    characteristic of critical transitions in physics has been our initial motivation to look into criticality in the biological context. Even though these structures change along all control parameters in a biological organism, these
-    structures are the mathematical representation of the organismal (changing) stability: its internal and external coherence.
+  It should be clear that when we focus on symmetry changes and variability as core notions for understanding the adaptivity and diversity proper to biological phenomena, we do not forget biological structural stability and autonomy,
+  under ecosystemic and internal constraints. No extended criticality would ever be possible without the integrating and regulating activities proper to an organism and its relations to the ecosystem. The coherent structures
+  characteristic of critical transitions in physics has been our initial motivation to look into criticality in the biological context. Even though these structures change along all control parameters in a biological organism, these
+  structures are the mathematical representation of the organismal (changing) stability: its internal and external coherence.
 </p>
-<!--l. 187-->
 <p class="indent">
-    We have recently proposed that biological variation should be the framed by a principle <span class="cite">[<a href="#Xchaptervariation">MMPL16</a>]</span> and that the reciprocal dependence between the parts of an organism should be
-    described by a specific principle that we call the principle of organization <span class="cite">[<a href="#Xchapterorganization">MML16</a>]</span>.
+  We have recently proposed that biological variation should be the framed by a principle <span class="cite">[<a href="#Xchaptervariation">MMPL16</a>]</span> and that the reciprocal dependence between the parts of an organism should be
+  described by a specific principle that we call the principle of organization <span class="cite">[<a href="#Xchapterorganization">MML16</a>]</span>.
 </p>
-<h3 class="sectionHead"><span class="titlemark">4. </span> <a id="x1-90004"></a>Remarks on reductionism and renormalization</h3>
-<!--l. 192-->
+<h3 class="sectionHead" id="4--remarks-on-reductionism-and-renormalization"><span class="titlemark">4. </span><a id="x1-90004"></a>Remarks on reductionism and renormalization</h3>
 <p class="noindent">
-    In our perspective, the peculiar phenomenality of life requires new concepts and observables. We tried to contribute to this task by the notions of extended critical transition, biological complexity, organization, proper biological
-    time, …. The point is the pertinence, if any, of these treatments, “<span class="rm-lmri-10x-x-109">per se</span>”. Those who claim that all these concepts should be reduced to (existing?) physical theories are welcome to try: we would
-    be very pleased and proud if the competent reductionists were able to rewrite them fully and faithfully (derive or embed them) in (existing) physical frames. However, they should first look at the history of Physics itself, where novel
-    theoretical frames stem from the invention of new perspectives as well as new concepts and observables (inertia, gravitation, entropy, anti-matter…). Their pertinence had to be judged “as such”, within their domain of meaning, not on
-    the grounds of their reducibility to existing, thus “safe”, explanatory grounds. In any cases, should reduction or unification be performed, the first question is: <span class="rm-lmri-10x-x-109">what theory</span> does one want to
-    reduce to <span class="rm-lmri-10x-x-109">which theory</span>? Reduction, as we learn from physics and logic, is an intertheoretical issue. The case of renormalization methods exemplifies the theoretical creativity in physics and
-    provides a very different picture than standard reductionism.
+  In our perspective, the peculiar phenomenality of life requires new concepts and observables. We tried to contribute to this task by the notions of extended critical transition, biological complexity, organization, proper biological
+  time, …. The point is the pertinence, if any, of these treatments, “<span class="rm-lmri-10x-x-109">per se</span>”. Those who claim that all these concepts should be reduced to (existing?) physical theories are welcome to try: we would
+  be very pleased and proud if the competent reductionists were able to rewrite them fully and faithfully (derive or embed them) in (existing) physical frames. However, they should first look at the history of Physics itself, where novel
+  theoretical frames stem from the invention of new perspectives as well as new concepts and observables (inertia, gravitation, entropy, anti-matter…). Their pertinence had to be judged “as such”, within their domain of meaning, not on
+  the grounds of their reducibility to existing, thus “safe”, explanatory grounds. In any cases, should reduction or unification be performed, the first question is: <span class="rm-lmri-10x-x-109">what theory</span> does one want to
+  reduce to <span class="rm-lmri-10x-x-109">which theory</span>? Reduction, as we learn from physics and logic, is an intertheoretical issue. The case of renormalization methods exemplifies the theoretical creativity in physics and
+  provides a very different picture than standard reductionism.
 </p>
-<!--l. 195-->
 <p class="indent">
-    The renormalization methods are required to study critical transitions and quantum field theories where all scales contribute to a phenomenon which leads to the appearance of infinite quantities and the collapse of usual model solving.
-    To avoid this infinite quantities, renormalization methods use the recursive calculation of interactions on limited ranges of scales. The idea is to avoid the full set of interactions taking place at all scales and instead exhibit
-    scaling properties asymptotically. These methods are based on the simplification of the equational with the scale change and on the stability of a part of these equations by scale change. Renormalization is useful when (a part of) the
-    equations describing the system at different scales keeps the same form.
+  The renormalization methods are required to study critical transitions and quantum field theories where all scales contribute to a phenomenon which leads to the appearance of infinite quantities and the collapse of usual model solving.
+  To avoid this infinite quantities, renormalization methods use the recursive calculation of interactions on limited ranges of scales. The idea is to avoid the full set of interactions taking place at all scales and instead exhibit
+  scaling properties asymptotically. These methods are based on the simplification of the equational with the scale change and on the stability of a part of these equations by scale change. Renormalization is useful when (a part of) the
+  equations describing the system at different scales keeps the same form.
 </p>
-<!--l. 198-->
 <p class="indent">
-    The classical reductionist paradigm is to decompose a system, analyze the parts and (re-)compose theoretically this parts to study the system. The last part is the analysis of the interactions taking place in the system. Renormalization
-    methods, are outside the classical reductionist paradigm in the sense that the composition of the part is not directly solvable. Nevertheless, the intelligibility of the phenomenon still has an “upward” flavor in the sense that the
-    understanding of larger scales come from smaller scales. The global situation may seem to be given by its (elementary) components, but the system is never understood as a combination of its parts. Renormalization analyzes a recursive
-    sequence of models. The “locus of the objectivity” is not in the description of the parts but in the stability of the equational determination when taking more and more interactions into account. This rationale also holds for those
-    critical phenomena where some parts, atoms, for example, can be objectivated extrinsically to the renormalization and have a characteristic scale. In general, only scale invariance matters and the contingent choice of a fundamental
-    (atomic) scale is irrelevant. Actually, in quantum fields theories, there is no known relevant elementary scale. Again, such a scale would not play a significant role since the objectivity of the approach lies in its inter-scale
-    relationships, see for example <span class="cite">[<a href="#XZinnJustin_2007">ZJ07</a>]</span> for a technical discussion.
+  The classical reductionist paradigm is to decompose a system, analyze the parts and (re-)compose theoretically this parts to study the system. The last part is the analysis of the interactions taking place in the system. Renormalization
+  methods, are outside the classical reductionist paradigm in the sense that the composition of the part is not directly solvable. Nevertheless, the intelligibility of the phenomenon still has an “upward” flavor in the sense that the
+  understanding of larger scales come from smaller scales. The global situation may seem to be given by its (elementary) components, but the system is never understood as a combination of its parts. Renormalization analyzes a recursive
+  sequence of models. The “locus of the objectivity” is not in the description of the parts but in the stability of the equational determination when taking more and more interactions into account. This rationale also holds for those
+  critical phenomena where some parts, atoms, for example, can be objectivated extrinsically to the renormalization and have a characteristic scale. In general, only scale invariance matters and the contingent choice of a fundamental
+  (atomic) scale is irrelevant. Actually, in quantum fields theories, there is no known relevant elementary scale. Again, such a scale would not play a significant role since the objectivity of the approach lies in its inter-scale
+  relationships, see for example <span class="cite">[<a href="#XZinnJustin_2007">ZJ07</a>]</span> for a technical discussion.
 </p>
-<!--l. 200-->
 <p class="indent">
-    In short, even in physics, there are situations where the whole is not the sum of the parts because the parts cannot be summed on. This issue is not unique to quantum fields as it is also relevant for classical fields. In all these
-    situations, the intelligibility is obtained by a scale symmetry. This symmetry is why choices of fundamental scales are arbitrary for the models of these phenomena, see
-    <span class="cite">[<a href="#XLongo_2012_From">LMP12</a>]</span> for further discussions.
+  In short, even in physics, there are situations where the whole is not the sum of the parts because the parts cannot be summed on. This issue is not unique to quantum fields as it is also relevant for classical fields. In all these
+  situations, the intelligibility is obtained by a scale symmetry. This symmetry is why choices of fundamental scales are arbitrary for the models of these phenomena, see
+  <span class="cite">[<a href="#XLongo_2012_From">LMP12</a>]</span> for further discussions.
 </p>
-<!--l. 202-->
 <p class="indent">
-    Broadly speaking, the theoretical principles that we propose in <span class="cite">[<a href="#Xlongomont">LM14f</a>]</span> constitute an <span class="rm-lmri-10x-x-109">extension </span>of existing physical theories since they address
-    observables and quantities unique to life phenomena. They preserve the same formal mathematical structure and, if we set the value of the considered observables or parameters to
-    <!--l. 202-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math>, they lead us back to the case of the inert. That is, if there is no protention <span class="cite">[<a href="#Xlomonproret">LM14g</a>]</span>, no second
-    temporal dimension <span class="cite">[<a href="#Xlomongeo">LM14a</a>]</span>, no extension of criticality <span class="cite">[<a href="#Xlomonextend">LM14e</a>]</span>, zero anti-entropy
-    <span class="cite">[<a href="#Xlomonanti">LM14b</a>]</span>, one returns to physical frames. Our theoretical frameworks are thus compatible, although they may be irreducible to “existing physical theories”. That is, they are reducible
-    to physics <span class="rm-lmri-10x-x-109">as soon as </span>they are outside the extended critical zone having its own temporality and its anti-entropy, or as soon as these specific quantities go to
-    <!--l. 202-->
-    <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math>.
+  Broadly speaking, the theoretical principles that we propose in <span class="cite">[<a href="#Xlongomont">LM14f</a>]</span> constitute an <span class="rm-lmri-10x-x-109">extension </span>of existing physical theories since they address
+  observables and quantities unique to life phenomena. They preserve the same formal mathematical structure and, if we set the value of the considered observables or parameters to
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mn>0</mn>
+  </math>, they lead us back to the case of the inert. That is, if there is no protention <span class="cite">[<a href="#Xlomonproret">LM14g</a>]</span>, no second
+  temporal dimension <span class="cite">[<a href="#Xlomongeo">LM14a</a>]</span>, no extension of criticality <span class="cite">[<a href="#Xlomonextend">LM14e</a>]</span>, zero anti-entropy
+  <span class="cite">[<a href="#Xlomonanti">LM14b</a>]</span>, one returns to physical frames. Our theoretical frameworks are thus compatible, although they may be irreducible to “existing physical theories”. That is, they are reducible
+  to physics <span class="rm-lmri-10x-x-109">as soon as </span>they are outside the extended critical zone having its own temporality and its anti-entropy, or as soon as these specific quantities go to
+  
+  <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+    <mn>0</mn>
+  </math>.
 </p>
-<!--l. 204-->
 <p class="indent">In the next section, we will explore the consequences of our analysis on the notion of phase spaces, discuss causality and introduce the concept of enablement.</p>
-<h3 class="sectionHead"><span class="titlemark">5. </span> <a id="x1-100005"></a>Phase spaces and enablement</h3>
-<!--l. 209-->
+<h3 class="sectionHead" id="5--phase-spaces-and-enablement"><span class="titlemark">5. </span><a id="x1-100005"></a>Phase spaces and enablement</h3>
 <p class="noindent">
-    We have discussed the role of invariance, symmetries and conservation properties in physical theories, as presented in chapter <span class="cite">[<a href="#Xlomoncriphy">LM14d</a>]</span>. Our aim, here, following chapter
-    <span class="cite">[<a href="#Xlomonphase">LM14c</a>]</span>, is to hint that the powerful methods of physics do not apply as such to biology. More precisely, physical methodology pre-defines phase spaces on the grounds of the
-    observables and the invariants in the “trajectories” (the symmetries of the equations) and we argue that this methodology has to be reevaluated in biology.
+  We have discussed the role of invariance, symmetries and conservation properties in physical theories, as presented in chapter <span class="cite">[<a href="#Xlomoncriphy">LM14d</a>]</span>. Our aim, here, following chapter
+  <span class="cite">[<a href="#Xlomonphase">LM14c</a>]</span>, is to hint that the powerful methods of physics do not apply as such to biology. More precisely, physical methodology pre-defines phase spaces on the grounds of the
+  observables and the invariants in the “trajectories” (the symmetries of the equations) and we argue that this methodology has to be reevaluated in biology.
 </p>
-<!--l. 212-->
 <p class="indent">
-    In biology, symmetries at the phenotypic level are continually changed, beginning with cell proliferation, up to the “structural bifurcations” which yield speciations in evolution. Thus, there are no biological symmetries that are
-    <span class="rm-lmri-10x-x-109">a priori </span>preserved except for some time and we call these symmetries and invariants constraints. There are no sufficiently stable mathematical regularities and transformations to allow an
-    equational and law like description entailing the phylogenetic and ontogenetic trajectories. Biological changes involve cascades of symmetry changes and thus cumulative historical dynamics. Each symmetry change is associated with a
-    random event (quantum, classical or due to bio-resonance, see <span class="cite">[<a href="#Xbuiatti2011randomness">BL13</a>]</span>), while the global shaping of the trajectory, by selection say, is also due to non-random events. In
-    this sense biological trajectories are generic: they are just possible ones and yield a historical result, that is an individuated, specific organism (see
-    <span class="cite">[<a href="#Xbailly2011">BL11</a>,&nbsp;<a href="#Xlongo2011c">LM11</a>,&nbsp;<a href="#Xlomonextend">LM14e</a>]</span>).
+  In biology, symmetries at the phenotypic level are continually changed, beginning with cell proliferation, up to the “structural bifurcations” which yield speciations in evolution. Thus, there are no biological symmetries that are
+  <span class="rm-lmri-10x-x-109">a priori </span>preserved except for some time and we call these symmetries and invariants constraints. There are no sufficiently stable mathematical regularities and transformations to allow an
+  equational and law like description entailing the phylogenetic and ontogenetic trajectories. Biological changes involve cascades of symmetry changes and thus cumulative historical dynamics. Each symmetry change is associated with a
+  random event (quantum, classical or due to bio-resonance, see <span class="cite">[<a href="#Xbuiatti2011randomness">BL13</a>]</span>), while the global shaping of the trajectory, by selection say, is also due to non-random events. In
+  this sense biological trajectories are generic: they are just possible ones and yield a historical result, that is an individuated, specific organism (see
+  <span class="cite">[<a href="#Xbailly2011">BL11</a>, <a href="#Xlongo2011c">LM11</a>, <a href="#Xlomonextend">LM14e</a>]</span>).
 </p>
-<!--l. 215-->
 <p class="indent">
-    In other words, this sum of individuals and individualizing histories, co-constituted within an ever-changing ecosystem, does not allow a compressed, finite or formal description of the space of possibilities. The actual biological
-    phase space (functions, phenotypes, organisms) is not described by a definite axiomatic. Biological possibilities are the result of an unpredictable sequence of symmetry changes. This situation is in contrast to the invariant
-    (conservation) properties which determine physical “trajectories”, in the broad sense (including for Hilbert’s spaces, in Quantum Mechanics).
+  In other words, this sum of individuals and individualizing histories, co-constituted within an ever-changing ecosystem, does not allow a compressed, finite or formal description of the space of possibilities. The actual biological
+  phase space (functions, phenotypes, organisms) is not described by a definite axiomatic. Biological possibilities are the result of an unpredictable sequence of symmetry changes. This situation is in contrast to the invariant
+  (conservation) properties which determine physical “trajectories”, in the broad sense (including for Hilbert’s spaces, in Quantum Mechanics).
 </p>
-<!--l. 217-->
 <p class="indent">
-    An immense literature has been tackling “emergence” in life phenomena. In the technical analyzes, the strong and dominating theoretical frames inherited from mathematical physics (or even computing) remain the main reference. From
-    Artificial Life to Cellular Automata and various very rich analysis of dynamical systems, the space for intelligibility is given <span class="rm-lmri-10x-x-109">a priori</span>. It takes the form of one or more pre-defined phase spaces,
-    possibly to be combined by adequate mathematical forms of products (Cartesian, tensorial products …). A very rich and motivated framework for these perspectives is summarized in
-    <span class="cite">[<a href="#Xrooney2007energetics">DFZG07</a>]</span>. Well beyond the many analysis which deal with equilibrium systems, an inadequate frame for biology, these authors analyze interactions between multiple attractors
-    in dissipative dynamical systems, possibly given in two or more phase spaces (the notion of attractor is a beautiful mathematical notion, which requires explicit equations or evolution functions — solutions with no equations — in
-    pertinent phase spaces). Then, two or more deterministic, yet highly unpredictable and independent systems, interacting in the attractor space, may “produce persistent attractors that are offsprings of the parents…. Emergence, in this
-    case, has a precise meaning because no trajectories exist linking the child to either parent (p. 158) …[The] source [of emergence] is the creation, evolution, destruction, and interaction of dynamical attractors (p. 179)”.
+  An immense literature has been tackling “emergence” in life phenomena. In the technical analyzes, the strong and dominating theoretical frames inherited from mathematical physics (or even computing) remain the main reference. From
+  Artificial Life to Cellular Automata and various very rich analysis of dynamical systems, the space for intelligibility is given <span class="rm-lmri-10x-x-109">a priori</span>. It takes the form of one or more pre-defined phase spaces,
+  possibly to be combined by adequate mathematical forms of products (Cartesian, tensorial products …). A very rich and motivated framework for these perspectives is summarized in
+  <span class="cite">[<a href="#Xrooney2007energetics">DFZG07</a>]</span>. Well beyond the many analysis which deal with equilibrium systems, an inadequate frame for biology, these authors analyze interactions between multiple attractors
+  in dissipative dynamical systems, possibly given in two or more phase spaces (the notion of attractor is a beautiful mathematical notion, which requires explicit equations or evolution functions — solutions with no equations — in
+  pertinent phase spaces). Then, two or more deterministic, yet highly unpredictable and independent systems, interacting in the attractor space, may “produce persistent attractors that are offsprings of the parents…. Emergence, in this
+  case, has a precise meaning because no trajectories exist linking the child to either parent (p. 158) …[The] source [of emergence] is the creation, evolution, destruction, and interaction of dynamical attractors (p. 179)”.
 </p>
-<!--l. 220-->
 <p class="indent">
-    This analysis is compatible with ours, and it may enrich it by a further component, in pre-given interacting phase spaces. Yet, we go somewhat beyond pre-given phase spaces, from a critical perspective, which, per se, is a tool for
-    intelligibility. Below, we will hint again to further possible (and positive) work, besides negating the possibility of an <span class="rm-lmri-10x-x-109">a priori </span>and compressed mathematical description of (combined) spaces of
-    evolution.
+  This analysis is compatible with ours, and it may enrich it by a further component, in pre-given interacting phase spaces. Yet, we go somewhat beyond pre-given phase spaces, from a critical perspective, which, per se, is a tool for
+  intelligibility. Below, we will hint again to further possible (and positive) work, besides negating the possibility of an <span class="rm-lmri-10x-x-109">a priori </span>and compressed mathematical description of (combined) spaces of
+  evolution.
 </p>
-<!--l. 222-->
 <p class="indent">In summary, in our approach, the intrinsic unpredictability of the very <span class="rm-lmri-10x-x-109">Phase Space </span>of phylogenetic (and ontogenetic) dynamics corresponds to:</p>
-<!--l. 225-->
 <ol class="enumerate indent">
-    <li class="enumerate">
-        physical and properly biological randomness. In particular, bio-resonance is due to interacting levels of organization, as a component both of integration and regulation in an organism. This includes the amplification of random
-        fluctuations in one level of organization through the others;
-    </li>
-    <li class="enumerate">extended criticality, as a locus for the correlation between symmetry breaking and randomness;</li>
-    <li class="enumerate">cascades of symmetry changes in (onto-)phylogenetic trajectories;</li>
-    <li class="enumerate">enablement, or the co-constitution of niches and phenotypes, a notion to be added to the physical determination and that we define below.</li>
+  <li class="enumerate">
+    physical and properly biological randomness. In particular, bio-resonance is due to interacting levels of organization, as a component both of integration and regulation in an organism. This includes the amplification of random
+    fluctuations in one level of organization through the others;
+  </li>
+  <li class="enumerate">extended criticality, as a locus for the correlation between symmetry breaking and randomness;</li>
+  <li class="enumerate">cascades of symmetry changes in (onto-)phylogenetic trajectories;</li>
+  <li class="enumerate">enablement, or the co-constitution of niches and phenotypes, a notion to be added to the physical determination and that we define below.</li>
 </ol>
-
 <p class="indent">
-    By the lack of mathematically stable invariants (stable symmetries), there are no laws that entail, as in physics, the biological observables in the becoming of the biosphere. In physics, the geodetic principle mathematically forces
-    objects never to go wrong. A falling stone follows exactly the gravitational arrow. A river goes along the shortest path to the sea, and it may change its path by nonlinear well definable interactions as mentioned above, but it will
-    never go wrong. These are all optimal trajectories. Even though it may be very hard or impossible to compute them, they are unique, by principle, in physics. Living entities, instead, may follow many possible paths, and they go wrong
-    most of the time. Most species are extinct, almost half of fecundations in mammals do not lead to a birth, and an amoeba does not follow, exactly, a curving gradient — by retention it would first go on the initial tangent, then it
-    corrects the trajectory, in a protensive action. In short, life goes wrong most of the time, but it “adjusts” to the environment and may change the environment <span class="cite">[<a href="#Xnicheconstr">Poc10</a>]</span>: it is
-    adaptive. It maintains itself, always in a critical transition, that is within an extend critical interval, whose limits are the edge of death. It does so by changing the observables, the phenotypes, and its niche — in the sense of
-    Darwinian correlated variations of organisms and ecosystems. Thus, it is the very nature and phase space of the living object that changes, in contrast to physics.
+  By the lack of mathematically stable invariants (stable symmetries), there are no laws that entail, as in physics, the biological observables in the becoming of the biosphere. In physics, the geodetic principle mathematically forces
+  objects never to go wrong. A falling stone follows exactly the gravitational arrow. A river goes along the shortest path to the sea, and it may change its path by nonlinear well definable interactions as mentioned above, but it will
+  never go wrong. These are all optimal trajectories. Even though it may be very hard or impossible to compute them, they are unique, by principle, in physics. Living entities, instead, may follow many possible paths, and they go wrong
+  most of the time. Most species are extinct, almost half of fecundations in mammals do not lead to a birth, and an amoeba does not follow, exactly, a curving gradient — by retention it would first go on the initial tangent, then it
+  corrects the trajectory, in a protensive action. In short, life goes wrong most of the time, but it “adjusts” to the environment and may change the environment <span class="cite">[<a href="#Xnicheconstr">Poc10</a>]</span>: it is
+  adaptive. It maintains itself, always in a critical transition, that is within an extend critical interval, whose limits are the edge of death. It does so by changing the observables, the phenotypes, and its niche — in the sense of
+  Darwinian correlated variations of organisms and ecosystems. Thus, it is the very nature and phase space of the living object that changes, in contrast to physics.
 </p>
-<!--l. 237-->
 <p class="indent">
-    We must ask new scientific questions and invent new tools to understand these co-constitutions that is to say the way organisms co-evolve and make their worlds together. We consider this feature as a central component of the biosphere’s
-    dynamics. The instability of theoretical symmetries in biology is not, of course, the end of science, but it sets the limits of the transfer of physicomathematical philosophy and methods to biology. As such, the instability of
-    theoretical symmetries in biology can be considered a “negative result”. Kant already doubted of the applicability of physicomathematical reasoning to biology, <span class="cite">[<a href="#Xkant1781critique">Kan81</a>]</span>. In
-    biological evolution, we cannot use the same very rich interaction with mathematics than in the core of physical theories. However, mathematics is an adaptive human construction: an intense dialogue with biology may shape new scientific
-    paths, concepts, structures, as it did with physics since Newton.
+  We must ask new scientific questions and invent new tools to understand these co-constitutions that is to say the way organisms co-evolve and make their worlds together. We consider this feature as a central component of the biosphere’s
+  dynamics. The instability of theoretical symmetries in biology is not, of course, the end of science, but it sets the limits of the transfer of physicomathematical philosophy and methods to biology. As such, the instability of
+  theoretical symmetries in biology can be considered a “negative result”. Kant already doubted of the applicability of physicomathematical reasoning to biology, <span class="cite">[<a href="#Xkant1781critique">Kan81</a>]</span>. In
+  biological evolution, we cannot use the same very rich interaction with mathematics than in the core of physical theories. However, mathematics is an adaptive human construction: an intense dialogue with biology may shape new scientific
+  paths, concepts, structures, as it did with physics since Newton.
 </p>
-<!--l. 240-->
 <p class="indent">
-    By providing some theoretical arguments that yield this “negative result” in terms of symmetries and critical transitions, we hope to provide also some tools for a new opening. Negative results marked the beginning of new sciences in
-    several occasions: the thermodynamic limit to energy transformation (increasing entropy), Poincaré’s negative result (as he called his Three Body Theorem), Gödel’s theorem (which set a new start to Recursion Theory and Proof Theory) all
-    opened new ways of thinking, <span class="cite">[<a href="#Xlongo2012c">Lon12</a>]</span>. Limits clarify the feasible and the nonfeasible with the existing tools and may show new directions by their very nature if these limits have a
-    sufficiently precise, scientific content.
+  By providing some theoretical arguments that yield this “negative result” in terms of symmetries and critical transitions, we hope to provide also some tools for a new opening. Negative results marked the beginning of new sciences in
+  several occasions: the thermodynamic limit to energy transformation (increasing entropy), Poincaré’s negative result (as he called his Three Body Theorem), Gödel’s theorem (which set a new start to Recursion Theory and Proof Theory) all
+  opened new ways of thinking, <span class="cite">[<a href="#Xlongo2012c">Lon12</a>]</span>. Limits clarify the feasible and the nonfeasible with the existing tools and may show new directions by their very nature if these limits have a
+  sufficiently precise, scientific content.
 </p>
-<!--l. 242-->
 <p class="indent">
-    The scientific answer we propose to this end of the physicalist certitudes is based on our analysis of symmetry changes in extended critical transitions and the notion of “enablement” in evolution (and ontogenesis). Enablement is a form
-    of causation that is proper to biology and has never been developed in physics. A biological trait enables the appearance of novel traits that do not result from the properties of the initial trait. Instead, Any biological trait have a
-    specific form of causal power: it makes new traits possible and these new possibilities cannot be predicted on the basis of the current state of affairs. Enablement concerns how organisms co-create their worlds, with their changing
-    symmetries and coherence structures, such that they can exist in a qualitatively expanding universe.
+  The scientific answer we propose to this end of the physicalist certitudes is based on our analysis of symmetry changes in extended critical transitions and the notion of “enablement” in evolution (and ontogenesis). Enablement is a form
+  of causation that is proper to biology and has never been developed in physics. A biological trait enables the appearance of novel traits that do not result from the properties of the initial trait. Instead, Any biological trait have a
+  specific form of causal power: it makes new traits possible and these new possibilities cannot be predicted on the basis of the current state of affairs. Enablement concerns how organisms co-create their worlds, with their changing
+  symmetries and coherence structures, such that they can exist in a qualitatively expanding universe.
 </p>
-<!--l. 244-->
 <p class="indent">
-    Our thesis is that evolution and ontogenesis are “diachronic processes” of becoming that “enable” the future state of affairs and do not cause it in the physical sense. Moreover, Galileo and Newton’s mathematization of trajectories
-    concerns only Aristotle’s “efficient cause”. Instead, such <span class="rm-lmri-10x-x-109">entailed causal relations must be enriched by “enablement” relations </span>for biological processes. Physical quantities typically play a
-    different role in biology than in physics. In biology, we consider that they play the role of constraints, limiting possibilities on the one side and enabling behaviors on the other side.
+  Our thesis is that evolution and ontogenesis are “diachronic processes” of becoming that “enable” the future state of affairs and do not cause it in the physical sense. Moreover, Galileo and Newton’s mathematization of trajectories
+  concerns only Aristotle’s “efficient cause”. Instead, such <span class="rm-lmri-10x-x-109">entailed causal relations must be enriched by “enablement” relations </span>for biological processes. Physical quantities typically play a
+  different role in biology than in physics. In biology, we consider that they play the role of constraints, limiting possibilities on the one side and enabling behaviors on the other side.
 </p>
-<!--l. 246-->
 <p class="indent">
-    Life is caught in a causal web but also lives in a web of enablement and radical emergence of life from life, whose intelligibility may largely be given in terms of symmetry changes and their association to random events at all levels
-    of organization.
+  Life is caught in a causal web but also lives in a web of enablement and radical emergence of life from life, whose intelligibility may largely be given in terms of symmetry changes and their association to random events at all levels
+  of organization.
 </p>
-<!--l. 248-->
 <p class="indent">
-    Enablement is crucial to understand life persistence. Variability, thus diversity and adaptability are an integral component of life persistence. Our theoretical frame, in particular, is based on reproduction with variation and motility
-    as the proper default state for the analysis of phyllo- and ontogenesis <span class="cite">[<a href="#Xchapterconstraints">MSSS16</a>]</span> where selection shapes the bubbling forth of life by excluding the incompatible.
+  Enablement is crucial to understand life persistence. Variability, thus diversity and adaptability are an integral component of life persistence. Our theoretical frame, in particular, is based on reproduction with variation and motility
+  as the proper default state for the analysis of phyllo- and ontogenesis <span class="cite">[<a href="#Xchapterconstraints">MSSS16</a>]</span> where selection shapes the bubbling forth of life by excluding the incompatible.
 </p>
-<!--l. 250-->
 <p class="indent">
-    As hinted in section 5 of <span class="cite">[<a href="#Xlomonphase">LM14c</a>]</span>, a long term project would be to better quantify our approaches to the two-dimensional time for rhythms, to extended criticality and to anti-entropy
-    (basically an evaluation of biological complexity, see chapter <span class="cite">[<a href="#Xlomonanti">LM14b</a>]</span>). This would allow to construct an abstract phase space based on these mathematically stable properties. The
-    analysis should follow the nature of Darwin’s evolution, which is a historical science, not meant to “predict” yet giving remarkable insights on the living. Thus, the dynamics of extended criticality or anti-entropy should just provide
-    the evolution of these state functions, or how these abstract observables may develop with respect to the intended parameters and over time. And this, without being “projectable” on specific phenotypes, even not in probabilities, as it
-    is instead possible for Schrödinger’s state functions in Quantum Mechanics. To this purpose, one should give a biologically interesting measure for extended criticality and describe it in a quantitative way in the abstract space of
-    extended critical transitions, that is to say the qualitative evolution of life. In a preliminary way, we have been able to do so, by following Gould’s analysis of increasing biological complexity by analyzing the evolutionary dynamics
-    of a global observable we call anti-entropy, <span class="cite">[<a href="#Xlomonanti">LM14b</a>]</span>.
+  As hinted in section 5 of <span class="cite">[<a href="#Xlomonphase">LM14c</a>]</span>, a long term project would be to better quantify our approaches to the two-dimensional time for rhythms, to extended criticality and to anti-entropy
+  (basically an evaluation of biological complexity, see chapter <span class="cite">[<a href="#Xlomonanti">LM14b</a>]</span>). This would allow to construct an abstract phase space based on these mathematically stable properties. The
+  analysis should follow the nature of Darwin’s evolution, which is a historical science, not meant to “predict” yet giving remarkable insights on the living. Thus, the dynamics of extended criticality or anti-entropy should just provide
+  the evolution of these state functions, or how these abstract observables may develop with respect to the intended parameters and over time. And this, without being “projectable” on specific phenotypes, even not in probabilities, as it
+  is instead possible for Schrödinger’s state functions in Quantum Mechanics. To this purpose, one should give a biologically interesting measure for extended criticality and describe it in a quantitative way in the abstract space of
+  extended critical transitions, that is to say the qualitative evolution of life. In a preliminary way, we have been able to do so, by following Gould’s analysis of increasing biological complexity by analyzing the evolutionary dynamics
+  of a global observable we call anti-entropy, <span class="cite">[<a href="#Xlomonanti">LM14b</a>]</span>.
 </p>
-<h3 class="sectionHead"><a id="x1-110005"></a>Acknowledgment</h3>
-<!--l. 255-->
+<h3 class="sectionHead" id="acknowledgment"><a id="x1-110005"></a>Acknowledgment</h3>
 <p class="noindent">The authors wish to acknowledge our preliminary joint work with Francis Bailly and many fruitful discussions with Carlos Sonnenschein, Ana Soto, Matteo Mossio, Arnaud Pocheville, Stuart Kauffman.</p>
-<h3 class="sectionHead"><a id="x1-120005"></a>References</h3>
-<!--l. 1-->
+<h3 class="sectionHead" id="references"><a id="x1-120005"></a>References</h3>
 <div class="thebibliography">
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[ANB77]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xgizcri"></a><span class="rm-lmr-9">J.</span><span class="rm-lmr-9">&nbsp;Als-Nielsen and R.</span><span class="rm-lmr-9">&nbsp;J. Birgeneau. Mean field theory, the ginzburg criterion, and marginal</span>
-        <span class="rm-lmr-9">dimensionality of phase transitions. </span><span class="rm-lmri-9">American Journal of Physics</span><span class="rm-lmr-9">, 45(6):554–560, 1977.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[BL11]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xbailly2011"></a><span class="rm-lmr-9">F.</span><span class="rm-lmr-9">&nbsp;Bailly and G.</span><span class="rm-lmr-9">&nbsp;Longo. </span>
-        <span class="rm-lmri-9">Mathematics and the natural sciences; The Physical Singularity of</span> <span class="rm-lmri-9">Life</span>
-        <span class="rm-lmr-9">. Imperial College Press, London, 2011. Preliminary version in French: Hermann, Vision des</span> <span class="rm-lmr-9">sciences, 2006.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[BL13]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xbuiatti2011randomness"></a><span class="rm-lmr-9">Marcello Buiatti and G.</span><span class="rm-lmr-9">&nbsp;Longo. Randomness and multilevel interactions in biology. </span><span class="rm-lmri-9">Theory</span>
-        <span class="rm-lmri-9">in Biosciences</span><span class="rm-lmr-9">, 132(3):139–158, 2013.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[DFZG07]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xrooney2007energetics"></a><span class="rm-lmr-9">J.A. Drake, M.M. Fuller, C.R. Zimmermann, and J.G.P. Gamarra. </span><span class="rm-lmri-9">From energetics to</span>
-        <span class="rm-lmri-9">ecosystems: the dynamics and structure of ecological systems</span><span class="rm-lmr-9">. Springer, 2007.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[Fis98]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xfisher1998renormalization"></a><span class="rm-lmr-9">M.E. Fisher. Renormalization group theory: Its basis and formulation in statistical physics.</span> <span class="rm-lmri-9">Reviews of Modern Physics</span>
-        <span class="rm-lmr-9">, 70(2):653–681, 1998.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[Kan81]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xkant1781critique"></a><span class="rm-lmr-9">I.</span><span class="rm-lmr-9">&nbsp;Kant. </span><span class="rm-lmri-9">Critique of Pure Reason</span>
-        <span class="rm-lmr-9">. transl. N. Kemp Smith, Palgrave Macmillan, this edition</span> <span class="rm-lmr-9">published 1929, 1781.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[LM11]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xlongo2011c"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9">&nbsp;Longo and M.</span><span class="rm-lmr-9">&nbsp;Mont</span>
-        <span class="rm-lmr-9">évil. From physics to biology by extending criticality and symmetry</span> <span class="rm-lmr-9">breakings. </span><span class="rm-lmri-9">Progress in Biophysics and Molecular Biology</span>
-        <span class="rm-lmr-9">, 106(2):340 – 347, 2011.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[LM14a]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xlomongeo"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9">&nbsp;Longo and M.</span><span class="rm-lmr-9">&nbsp;Mont</span><span class="rm-lmr-9">évil. A 2-dimensional geometry for biological time. In </span>
-        <span class="rm-lmri-9">Perspectives</span> <span class="rm-lmri-9">on Organisms</span><span class="rm-lmr-9">, Lecture Notes in Morphogenesis, pages 75–97. Springer Berlin Heidelberg, 2014.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[LM14b]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xlomonanti"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9">&nbsp;Longo and M.</span><span class="rm-lmr-9">&nbsp;Mont</span>
-        <span class="rm-lmr-9">évil. Biological order as a consequence of randomness: Anti-entropy</span> <span class="rm-lmr-9">and symmetry changes. In </span><span class="rm-lmri-9">Perspectives on Organisms</span>
-        <span class="rm-lmr-9">, Lecture Notes in Morphogenesis, pages</span> <span class="rm-lmr-9">215–248. Springer Berlin Heidelberg, 2014.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[LM14c]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xlomonphase"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9">&nbsp;Longo and M.</span><span class="rm-lmr-9">&nbsp;Mont</span><span class="rm-lmr-9">évil. Biological phase spaces and enablement. In </span>
-        <span class="rm-lmri-9">Perspectives on</span> <span class="rm-lmri-9">Organisms</span><span class="rm-lmr-9">, Lecture Notes in Morphogenesis, pages 187–213. Springer Berlin Heidelberg, 2014.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[LM14d]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xlomoncriphy"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9">&nbsp;Longo and M.</span><span class="rm-lmr-9">&nbsp;Mont</span><span class="rm-lmr-9">évil. Critical phase transitions. In </span>
-        <span class="rm-lmri-9">Perspectives on Organisms</span><span class="rm-lmr-9">,</span> <span class="rm-lmr-9">Lecture Notes in Morphogenesis, pages 137–160. Springer Berlin Heidelberg, 2014.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[LM14e]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xlomonextend"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9">&nbsp;Longo and M.</span><span class="rm-lmr-9">&nbsp;Mont</span>
-        <span class="rm-lmr-9">évil. From physics to biology by extending criticality and symmetry</span> <span class="rm-lmr-9">breakings. In </span><span class="rm-lmri-9">Perspectives on Organisms</span>
-        <span class="rm-lmr-9">, Lecture Notes in Morphogenesis, pages 161–185.</span> <span class="rm-lmr-9">Springer Berlin Heidelberg, 2014.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[LM14f]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xlongomont"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9">&nbsp;Longo and M.</span><span class="rm-lmr-9">&nbsp;Mont</span><span class="rm-lmr-9">évil. </span>
-        <span class="rm-lmri-9">Perspectives on Organisms: Biological time, symmetries and</span> <span class="rm-lmri-9">singularities</span><span class="rm-lmr-9">. Lecture Notes in Morphogenesis. Springer, Dordrecht, 2014.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[LM14g]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xlomonproret"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9">&nbsp;Longo and M.</span><span class="rm-lmr-9">&nbsp;Mont</span><span class="rm-lmr-9">évil. Protention and retention in biological systems. In </span>
-        <span class="rm-lmri-9">Perspectives</span> <span class="rm-lmri-9">on Organisms</span><span class="rm-lmr-9">, Lecture Notes in Morphogenesis, pages 99–119. Springer Berlin Heidelberg, 2014.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[LM14h]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xscaling2014"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9">&nbsp;Longo and M.</span><span class="rm-lmr-9">&nbsp;Mont</span>
-        <span class="rm-lmr-9">évil. Scaling and scale symmetries in biological systems. In</span> <span class="rm-lmri-9">Perspectives on Organisms</span>
-        <span class="rm-lmr-9">, Lecture Notes in Morphogenesis, pages 23–73. Springer Berlin</span> <span class="rm-lmr-9">Heidelberg, 2014.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[LM17]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xlongo2014"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9">&nbsp;Longo and M.</span><span class="rm-lmr-9">&nbsp;Mont</span><span class="rm-lmr-9">évil. </span>
-        <span class="rm-lmri-9">Comparing Symmetries in Models and Simulations</span><span class="rm-lmr-9">. Springer,</span> <span class="rm-lmr-9">2017.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[LMP12]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="XLongo_2012_From"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9">&nbsp;Longo, M.</span><span class="rm-lmr-9">&nbsp;Mont</span><span class="rm-lmr-9">évil, and A.</span>
-        <span class="rm-lmr-9">&nbsp;Pocheville. From bottom-up approaches to levels of</span> <span class="rm-lmr-9">organization and extended critical transitions. </span><span class="rm-lmri-9">Frontiers in Physiology</span>
-        <span class="rm-lmr-9">, 3(232), july 2012. invited</span> <span class="rm-lmr-9">paper.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[Lon08]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xlongo2008laplace"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9">&nbsp;Longo. Laplace, turing and the ”imitation game” impossible geometry: randomness,</span>
-        <span class="rm-lmr-9">determinism and programs in turing’s test. In R.</span><span class="rm-lmr-9">&nbsp;Epstein, G.</span><span class="rm-lmr-9">&nbsp;Roberts, and G</span><span class="rm-lmr-9">&nbsp;Beber, editors,</span>
-        <span class="rm-lmri-9">Parsing the Turing Test</span><span class="rm-lmr-9">, pages 377–411. Springer, 2008.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[Lon11]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xlongo2011e"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9">&nbsp;Longo. </span><span class="rm-lmri-9">Interfaces of incompleteness</span>
-        <span class="rm-lmr-9">. downloadable english version, 2011. original in</span> <span class="rm-lmr-9">Italian in </span><span class="rm-lmr-9">”La Matematica</span><span class="rm-lmr-9">”, vol. 4, Einaudi, 2010.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[Lon12]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xlongo2012c"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9">&nbsp;Longo. On the relevance of negative results. In </span><span class="rm-lmri-9">Conference on Negation, duality, polarity,</span>
-        <span class="rm-lmri-9">Marseille 2008</span><span class="rm-lmr-9">, November 2012. (proceedings inInfluxus, electronic journal ).</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[LPP10]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xlongorand"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9">&nbsp;Longo, C.</span><span class="rm-lmr-9">&nbsp;Palamidessi, and T.</span>
-        <span class="rm-lmr-9">&nbsp;Paul. Some bridging results and challenges in classical,</span> <span class="rm-lmr-9">quantum and computational randomness. In H.</span><span class="rm-lmr-9">&nbsp;Zenil, editor, </span>
-        <span class="rm-lmri-9">Randomness through Computation</span><span class="rm-lmr-9">.</span> <span class="rm-lmr-9">World Scientific, 2010.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[Mar02]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xmarker2002model"></a><span class="rm-lmr-9">D.</span><span class="rm-lmr-9">&nbsp;Marker. </span><span class="rm-lmri-9">Model theory: an introduction</span><span class="rm-lmr-9">. Springer Verlag, 2002.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[MLS09]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="XMossio2009"></a><span class="rm-lmr-9">M.</span><span class="rm-lmr-9">&nbsp;Mossio, G.</span><span class="rm-lmr-9">&nbsp;Longo, and J.</span>
-        <span class="rm-lmr-9">&nbsp;Stewart. A computable expression of closure to efficient</span> <span class="rm-lmr-9">causation. </span><span class="rm-lmri-9">Journal of Theoretical Biology</span>
-        <span class="rm-lmr-9">, 257(3):489 – 498, 2009.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[MML16]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xchapterorganization"></a><span class="rm-lmr-9">M.</span><span class="rm-lmr-9">&nbsp;Mossio, M.</span><span class="rm-lmr-9">&nbsp;Mont</span><span class="rm-lmr-9">évil, and G.</span>
-        <span class="rm-lmr-9">&nbsp;Longo. Theoretical principles for biology: Organization.</span> <span class="rm-lmri-9">Progress in Biophysics and Molecular Biology</span><span class="rm-lmr-9">, 122(1):24 – 35, 2016.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[MMPL16]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xchaptervariation"></a><span class="rm-lmr-9">M.</span><span class="rm-lmr-9">&nbsp;Mont</span><span class="rm-lmr-9">évil, M.</span><span class="rm-lmr-9">&nbsp;Mossio, A.</span>
-        <span class="rm-lmr-9">&nbsp;Pocheville, and G.</span><span class="rm-lmr-9">&nbsp;Longo. Theoretical principles for biology:</span> <span class="rm-lmr-9">Variation. </span>
-        <span class="rm-lmri-9">Progress in Biophysics and Molecular Biology</span><span class="rm-lmr-9">, 122(1):36 – 50, 2016.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[MSSS16]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xchapterconstraints"></a><span class="rm-lmr-9">M.</span><span class="rm-lmr-9">&nbsp;Mont</span><span class="rm-lmr-9">évil, L.</span><span class="rm-lmr-9">&nbsp;Speroni, C.</span>
-        <span class="rm-lmr-9">&nbsp;Sonnenschein, and A.</span><span class="rm-lmr-9">&nbsp;M. Soto. Modeling mammary</span>
-        <span class="rm-lmr-9">organogenesis from biological first principles: Cells and their physical constraints. </span><span class="rm-lmri-9">Progress in</span> <span class="rm-lmri-9">Biophysics and Molecular Biology</span>
-        <span class="rm-lmr-9">, 122(1):58 – 69, 2016.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[Poc10]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xnicheconstr"></a><span class="rm-lmr-9">A.</span><span class="rm-lmr-9">&nbsp;Pocheville. </span><span class="rm-lmri-9">What niche construction is (not)</span><span class="rm-lmr-9">. 2010.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[Ros91]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xrosen2005"></a><span class="rm-lmr-9">R.</span><span class="rm-lmr-9">&nbsp;Rosen. </span><span class="rm-lmri-9">Life itself: a comprehensive inquiry into the nature, origin, and fabrication of life</span>
-        <span class="rm-lmr-9">.</span> <span class="rm-lmr-9">Columbia U. P., 1991.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[Sch44]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xschrodinger"></a><span class="rm-lmr-9">E.</span><span class="rm-lmr-9">&nbsp;Schr</span><span class="rm-lmr-9">ödinger. </span><span class="rm-lmri-9">What Is Life? </span><span class="rm-lmr-9">Cambridge U.P., 1944.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[TPB77]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xtoulouse1977introduction"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9">&nbsp;Toulouse, P.</span><span class="rm-lmr-9">&nbsp;Pfeuty, and G.</span><span class="rm-lmr-9">&nbsp;Barton. </span>
-        <span class="rm-lmri-9">Introduction to the renormalization group and to</span> <span class="rm-lmri-9">critical phenomena</span><span class="rm-lmr-9">. Wiley, London, 1977.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[Tur50]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xturing1950"></a><span class="rm-lmr-9">A.</span><span class="rm-lmr-9">&nbsp;M Turing. Computing machinery and intelligence. </span><span class="rm-lmri-9">Mind</span><span class="rm-lmr-9">, 59(236):433–460, 1950.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[Var89]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="Xvarela1989"></a><span class="rm-lmr-9">F.J. Varela. </span><span class="rm-lmri-9">Autonomie et connaissance</span><span class="rm-lmr-9">. Seuil, Paris, 1989.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[VMU74]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="XVarela1974187"></a><span class="rm-lmr-9">F.J. Varela, H.R. Maturana, and R.</span><span class="rm-lmr-9">&nbsp;Uribe. Autopoiesis: The organization of living systems,</span>
-        <span class="rm-lmr-9">its characterization and a model. </span><span class="rm-lmri-9">Biosystems</span><span class="rm-lmr-9">, 5(4):187 – 196, 1974.</span>
-    </p>
-    <p class="bibitem">
-        <span class="biblabel">
-            <span class="rm-lmr-9">[ZJ07]</span> <span class="bibsp"><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span><span class="rm-lmr-9">&nbsp;</span></span>
-        </span>
-        <a id="XZinnJustin_2007"></a><span class="rm-lmr-9">J.</span><span class="rm-lmr-9">&nbsp;Zinn-Justin. </span><span class="rm-lmri-9">Phase transitions and renormalization group</span>
-        <span class="rm-lmr-9">. Oxford University Press, New</span> <span class="rm-lmr-9">York, 2007.</span>
-    </p>
+  <p class="bibitem">
+    <span class="biblabel"><span class="rm-lmr-9">[ANB77]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xgizcri"></a><span class="rm-lmr-9">J.</span><span class="rm-lmr-9"> Als-Nielsen and R.</span><span class="rm-lmr-9"> J. Birgeneau. Mean field theory, the ginzburg criterion, and marginal</span>
+    <span class="rm-lmr-9">dimensionality of phase transitions. </span><span class="rm-lmri-9">American Journal of Physics</span><span class="rm-lmr-9">, 45(6):554–560, 1977.</span>
+  </p>
+  <p class="bibitem">
+    <span class="biblabel"><span class="rm-lmr-9">[BL11]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xbailly2011"></a><span class="rm-lmr-9">F.</span><span class="rm-lmr-9"> Bailly and G.</span><span class="rm-lmr-9"> Longo. </span><span class="rm-lmri-9">Mathematics and the natural sciences; The Physical Singularity of</span> <span class="rm-lmri-9">Life</span>
+    <span class="rm-lmr-9">. Imperial College Press, London, 2011. Preliminary version in French: Hermann, Vision des</span> <span class="rm-lmr-9">sciences, 2006.</span>
+  </p>
+  <p class="bibitem">
+    <span class="biblabel"><span class="rm-lmr-9">[BL13]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xbuiatti2011randomness"></a><span class="rm-lmr-9">Marcello Buiatti and G.</span><span class="rm-lmr-9"> Longo. Randomness and multilevel interactions in biology. </span><span class="rm-lmri-9">Theory</span>
+    <span class="rm-lmri-9">in Biosciences</span><span class="rm-lmr-9">, 132(3):139–158, 2013.</span>
+  </p>
+  <p class="bibitem">
+    <span class="biblabel"><span class="rm-lmr-9">[DFZG07]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xrooney2007energetics"></a><span class="rm-lmr-9">J.A. Drake, M.M. Fuller, C.R. Zimmermann, and J.G.P. Gamarra. </span><span class="rm-lmri-9">From energetics to</span>
+    <span class="rm-lmri-9">ecosystems: the dynamics and structure of ecological systems</span><span class="rm-lmr-9">. Springer, 2007.</span>
+  </p>
+  <p class="bibitem">
+    <span class="biblabel"><span class="rm-lmr-9">[Fis98]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xfisher1998renormalization"></a><span class="rm-lmr-9">M.E. Fisher. Renormalization group theory: Its basis and formulation in statistical physics.</span> <span class="rm-lmri-9">Reviews of Modern Physics</span>
+    <span class="rm-lmr-9">, 70(2):653–681, 1998.</span>
+  </p>
+  <p class="bibitem">
+    <span class="biblabel"><span class="rm-lmr-9">[Kan81]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xkant1781critique"></a><span class="rm-lmr-9">I.</span><span class="rm-lmr-9"> Kant. </span><span class="rm-lmri-9">Critique of Pure Reason</span>
+    <span class="rm-lmr-9">. transl. N. Kemp Smith, Palgrave Macmillan, this edition</span> <span class="rm-lmr-9">published 1929, 1781.</span>
+  </p>
+  <p class="bibitem">
+    <span class="biblabel"><span class="rm-lmr-9">[LM11]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xlongo2011c"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9"> Longo and M.</span><span class="rm-lmr-9"> Mont</span>
+    <span class="rm-lmr-9">évil. From physics to biology by extending criticality and symmetry</span> <span class="rm-lmr-9">breakings. </span><span class="rm-lmri-9">Progress in Biophysics and Molecular Biology</span>
+    <span class="rm-lmr-9">, 106(2):340 – 347, 2011.</span>
+  </p>
+  <p class="bibitem"><span class="biblabel"><span class="rm-lmr-9">[LM14a]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xlomongeo"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9"> Longo and M.</span><span class="rm-lmr-9"> Mont</span><span class="rm-lmr-9">évil. A 2-dimensional geometry for biological time. In </span><span class="rm-lmri-9">Perspectives</span> <span class="rm-lmri-9">on Organisms</span><span class="rm-lmr-9">, Lecture Notes in Morphogenesis, pages 75–97. Springer Berlin Heidelberg, 2014.</span></p>
+  <p class="bibitem">
+    <span class="biblabel"><span class="rm-lmr-9">[LM14b]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xlomonanti"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9"> Longo and M.</span><span class="rm-lmr-9"> Mont</span>
+    <span class="rm-lmr-9">évil. Biological order as a consequence of randomness: Anti-entropy</span> <span class="rm-lmr-9">and symmetry changes. In </span><span class="rm-lmri-9">Perspectives on Organisms</span>
+    <span class="rm-lmr-9">, Lecture Notes in Morphogenesis, pages</span> <span class="rm-lmr-9">215–248. Springer Berlin Heidelberg, 2014.</span>
+  </p>
+  <p class="bibitem"><span class="biblabel"><span class="rm-lmr-9">[LM14c]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xlomonphase"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9"> Longo and M.</span><span class="rm-lmr-9"> Mont</span><span class="rm-lmr-9">évil. Biological phase spaces and enablement. In </span><span class="rm-lmri-9">Perspectives on</span> <span class="rm-lmri-9">Organisms</span><span class="rm-lmr-9">, Lecture Notes in Morphogenesis, pages 187–213. Springer Berlin Heidelberg, 2014.</span></p>
+  <p class="bibitem"><span class="biblabel"><span class="rm-lmr-9">[LM14d]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xlomoncriphy"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9"> Longo and M.</span><span class="rm-lmr-9"> Mont</span><span class="rm-lmr-9">évil. Critical phase transitions. In </span><span class="rm-lmri-9">Perspectives on Organisms</span><span class="rm-lmr-9">,</span> <span class="rm-lmr-9">Lecture Notes in Morphogenesis, pages 137–160. Springer Berlin Heidelberg, 2014.</span></p>
+  <p class="bibitem">
+    <span class="biblabel"><span class="rm-lmr-9">[LM14e]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xlomonextend"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9"> Longo and M.</span><span class="rm-lmr-9"> Mont</span>
+    <span class="rm-lmr-9">évil. From physics to biology by extending criticality and symmetry</span> <span class="rm-lmr-9">breakings. In </span><span class="rm-lmri-9">Perspectives on Organisms</span>
+    <span class="rm-lmr-9">, Lecture Notes in Morphogenesis, pages 161–185.</span> <span class="rm-lmr-9">Springer Berlin Heidelberg, 2014.</span>
+  </p>
+  <p class="bibitem"><span class="biblabel"><span class="rm-lmr-9">[LM14f]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xlongomont"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9"> Longo and M.</span><span class="rm-lmr-9"> Mont</span><span class="rm-lmr-9">évil. </span><span class="rm-lmri-9">Perspectives on Organisms: Biological time, symmetries and</span> <span class="rm-lmri-9">singularities</span><span class="rm-lmr-9">. Lecture Notes in Morphogenesis. Springer, Dordrecht, 2014.</span></p>
+  <p class="bibitem"><span class="biblabel"><span class="rm-lmr-9">[LM14g]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xlomonproret"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9"> Longo and M.</span><span class="rm-lmr-9"> Mont</span><span class="rm-lmr-9">évil. Protention and retention in biological systems. In </span><span class="rm-lmri-9">Perspectives</span> <span class="rm-lmri-9">on Organisms</span><span class="rm-lmr-9">, Lecture Notes in Morphogenesis, pages 99–119. Springer Berlin Heidelberg, 2014.</span></p>
+  <p class="bibitem">
+    <span class="biblabel"><span class="rm-lmr-9">[LM14h]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xscaling2014"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9"> Longo and M.</span><span class="rm-lmr-9"> Mont</span>
+    <span class="rm-lmr-9">évil. Scaling and scale symmetries in biological systems. In</span> <span class="rm-lmri-9">Perspectives on Organisms</span>
+    <span class="rm-lmr-9">, Lecture Notes in Morphogenesis, pages 23–73. Springer Berlin</span> <span class="rm-lmr-9">Heidelberg, 2014.</span>
+  </p>
+  <p class="bibitem"><span class="biblabel"><span class="rm-lmr-9">[LM17]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xlongo2014"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9"> Longo and M.</span><span class="rm-lmr-9"> Mont</span><span class="rm-lmr-9">évil. </span><span class="rm-lmri-9">Comparing Symmetries in Models and Simulations</span><span class="rm-lmr-9">. Springer,</span> <span class="rm-lmr-9">2017.</span></p>
+  <p class="bibitem">
+    <span class="biblabel"><span class="rm-lmr-9">[LMP12]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="XLongo_2012_From"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9"> Longo, M.</span><span class="rm-lmr-9"> Mont</span><span class="rm-lmr-9">évil, and A.</span>
+    <span class="rm-lmr-9"> Pocheville. From bottom-up approaches to levels of</span> <span class="rm-lmr-9">organization and extended critical transitions. </span><span class="rm-lmri-9">Frontiers in Physiology</span>
+    <span class="rm-lmr-9">, 3(232), july 2012. invited</span> <span class="rm-lmr-9">paper.</span>
+  </p>
+  <p class="bibitem">
+    <span class="biblabel"><span class="rm-lmr-9">[Lon08]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xlongo2008laplace"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9"> Longo. Laplace, turing and the ”imitation game” impossible geometry: randomness,</span>
+    <span class="rm-lmr-9">determinism and programs in turing’s test. In R.</span><span class="rm-lmr-9"> Epstein, G.</span><span class="rm-lmr-9"> Roberts, and G</span><span class="rm-lmr-9"> Beber, editors,</span>
+    <span class="rm-lmri-9">Parsing the Turing Test</span><span class="rm-lmr-9">, pages 377–411. Springer, 2008.</span>
+  </p>
+  <p class="bibitem">
+    <span class="biblabel"><span class="rm-lmr-9">[Lon11]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xlongo2011e"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9"> Longo. </span><span class="rm-lmri-9">Interfaces of incompleteness</span>
+    <span class="rm-lmr-9">. downloadable english version, 2011. original in</span> <span class="rm-lmr-9">Italian in </span><span class="rm-lmr-9">”La Matematica</span><span class="rm-lmr-9">”, vol. 4, Einaudi, 2010.</span>
+  </p>
+  <p class="bibitem">
+    <span class="biblabel"><span class="rm-lmr-9">[Lon12]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xlongo2012c"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9"> Longo. On the relevance of negative results. In </span><span class="rm-lmri-9">Conference on Negation, duality, polarity,</span>
+    <span class="rm-lmri-9">Marseille 2008</span><span class="rm-lmr-9">, November 2012. (proceedings inInfluxus, electronic journal ).</span>
+  </p>
+  <p class="bibitem">
+    <span class="biblabel"><span class="rm-lmr-9">[LPP10]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xlongorand"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9"> Longo, C.</span><span class="rm-lmr-9"> Palamidessi, and T.</span>
+    <span class="rm-lmr-9"> Paul. Some bridging results and challenges in classical,</span> <span class="rm-lmr-9">quantum and computational randomness. In H.</span><span class="rm-lmr-9"> Zenil, editor, </span><span class="rm-lmri-9">Randomness through Computation</span><span class="rm-lmr-9">.</span> <span class="rm-lmr-9">World Scientific, 2010.</span>
+  </p>
+  <p class="bibitem"><span class="biblabel"><span class="rm-lmr-9">[Mar02]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xmarker2002model"></a><span class="rm-lmr-9">D.</span><span class="rm-lmr-9"> Marker. </span><span class="rm-lmri-9">Model theory: an introduction</span><span class="rm-lmr-9">. Springer Verlag, 2002.</span></p>
+  <p class="bibitem">
+    <span class="biblabel"><span class="rm-lmr-9">[MLS09]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="XMossio2009"></a><span class="rm-lmr-9">M.</span><span class="rm-lmr-9"> Mossio, G.</span><span class="rm-lmr-9"> Longo, and J.</span>
+    <span class="rm-lmr-9"> Stewart. A computable expression of closure to efficient</span> <span class="rm-lmr-9">causation. </span><span class="rm-lmri-9">Journal of Theoretical Biology</span>
+    <span class="rm-lmr-9">, 257(3):489 – 498, 2009.</span>
+  </p>
+  <p class="bibitem">
+    <span class="biblabel"><span class="rm-lmr-9">[MML16]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xchapterorganization"></a><span class="rm-lmr-9">M.</span><span class="rm-lmr-9"> Mossio, M.</span><span class="rm-lmr-9"> Mont</span><span class="rm-lmr-9">évil, and G.</span>
+    <span class="rm-lmr-9"> Longo. Theoretical principles for biology: Organization.</span> <span class="rm-lmri-9">Progress in Biophysics and Molecular Biology</span><span class="rm-lmr-9">, 122(1):24 – 35, 2016.</span>
+  </p>
+  <p class="bibitem">
+    <span class="biblabel"><span class="rm-lmr-9">[MMPL16]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xchaptervariation"></a><span class="rm-lmr-9">M.</span><span class="rm-lmr-9"> Mont</span><span class="rm-lmr-9">évil, M.</span><span class="rm-lmr-9"> Mossio, A.</span>
+    <span class="rm-lmr-9"> Pocheville, and G.</span><span class="rm-lmr-9"> Longo. Theoretical principles for biology:</span> <span class="rm-lmr-9">Variation. </span><span class="rm-lmri-9">Progress in Biophysics and Molecular Biology</span><span class="rm-lmr-9">, 122(1):36 – 50, 2016.</span>
+  </p>
+  <p class="bibitem">
+    <span class="biblabel"><span class="rm-lmr-9">[MSSS16]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xchapterconstraints"></a><span class="rm-lmr-9">M.</span><span class="rm-lmr-9"> Mont</span><span class="rm-lmr-9">évil, L.</span><span class="rm-lmr-9"> Speroni, C.</span>
+    <span class="rm-lmr-9"> Sonnenschein, and A.</span><span class="rm-lmr-9"> M. Soto. Modeling mammary</span>
+    <span class="rm-lmr-9">organogenesis from biological first principles: Cells and their physical constraints. </span><span class="rm-lmri-9">Progress in</span> <span class="rm-lmri-9">Biophysics and Molecular Biology</span>
+    <span class="rm-lmr-9">, 122(1):58 – 69, 2016.</span>
+  </p>
+  <p class="bibitem"><span class="biblabel"><span class="rm-lmr-9">[Poc10]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xnicheconstr"></a><span class="rm-lmr-9">A.</span><span class="rm-lmr-9"> Pocheville. </span><span class="rm-lmri-9">What niche construction is (not)</span><span class="rm-lmr-9">. 2010.</span></p>
+  <p class="bibitem">
+    <span class="biblabel"><span class="rm-lmr-9">[Ros91]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xrosen2005"></a><span class="rm-lmr-9">R.</span><span class="rm-lmr-9"> Rosen. </span><span class="rm-lmri-9">Life itself: a comprehensive inquiry into the nature, origin, and fabrication of life</span>
+    <span class="rm-lmr-9">.</span> <span class="rm-lmr-9">Columbia U. P., 1991.</span>
+  </p>
+  <p class="bibitem"><span class="biblabel"><span class="rm-lmr-9">[Sch44]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xschrodinger"></a><span class="rm-lmr-9">E.</span><span class="rm-lmr-9"> Schr</span><span class="rm-lmr-9">ödinger. </span><span class="rm-lmri-9">What Is Life? </span><span class="rm-lmr-9">Cambridge U.P., 1944.</span></p>
+  <p class="bibitem"><span class="biblabel"><span class="rm-lmr-9">[TPB77]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xtoulouse1977introduction"></a><span class="rm-lmr-9">G.</span><span class="rm-lmr-9"> Toulouse, P.</span><span class="rm-lmr-9"> Pfeuty, and G.</span><span class="rm-lmr-9"> Barton. </span><span class="rm-lmri-9">Introduction to the renormalization group and to</span> <span class="rm-lmri-9">critical phenomena</span><span class="rm-lmr-9">. Wiley, London, 1977.</span></p>
+  <p class="bibitem"><span class="biblabel"><span class="rm-lmr-9">[Tur50]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xturing1950"></a><span class="rm-lmr-9">A.</span><span class="rm-lmr-9"> M Turing. Computing machinery and intelligence. </span><span class="rm-lmri-9">Mind</span><span class="rm-lmr-9">, 59(236):433–460, 1950.</span></p>
+  <p class="bibitem"><span class="biblabel"><span class="rm-lmr-9">[Var89]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="Xvarela1989"></a><span class="rm-lmr-9">F.J. Varela. </span><span class="rm-lmri-9">Autonomie et connaissance</span><span class="rm-lmr-9">. Seuil, Paris, 1989.</span></p>
+  <p class="bibitem">
+    <span class="biblabel"><span class="rm-lmr-9">[VMU74]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="XVarela1974187"></a><span class="rm-lmr-9">F.J. Varela, H.R. Maturana, and R.</span><span class="rm-lmr-9"> Uribe. Autopoiesis: The organization of living systems,</span>
+    <span class="rm-lmr-9">its characterization and a model. </span><span class="rm-lmri-9">Biosystems</span><span class="rm-lmr-9">, 5(4):187 – 196, 1974.</span>
+  </p>
+  <p class="bibitem">
+    <span class="biblabel"><span class="rm-lmr-9">[ZJ07]</span> <span class="bibsp"><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span><span class="rm-lmr-9"> </span></span>
+</span><a id="XZinnJustin_2007"></a><span class="rm-lmr-9">J.</span><span class="rm-lmr-9"> Zinn-Justin. </span><span class="rm-lmri-9">Phase transitions and renormalization group</span>
+    <span class="rm-lmr-9">. Oxford University Press, New</span> <span class="rm-lmr-9">York, 2007.</span>
+  </p>
 </div>

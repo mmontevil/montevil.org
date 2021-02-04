@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: lists
 title: Publication list by year
 ---
   
@@ -15,11 +15,12 @@ title: Publication list by year
          {#</ul> #}
          {% endif %}
          {% set dateit=datete %}
-       <h2 class="wrap">{{dateit}}</h2>
+  <h2 class="sectionHeadList"id="{{dateit}}">{{dateit}}</h2>
+ 
     {# <ul>  #}      
     {% endif %}
 
-    {{alterpubCard(article.data) | safe}}
+{{-alterpubCard(article.data)  |safe-}}
     
     {% endfor %}
  {# </ul>#}

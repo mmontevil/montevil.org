@@ -1,0 +1,419 @@
+---
+excerpt: Most mathematical modeling in biology rely on the epistemology of physics. By contrast, we argue that historicity comes first in biology.
+---
+
+<div class="maketitle">
+   <h2 class="titleHead" style="text-align: center;"> 
+Historicity at the heart of biology</h2>
+   <div class="author" style="text-align: center;"><span class="cmr-12">Ma</span><span class="cmr-12">ë</span><span class="cmr-12">l Mont</span><span class="cmr-12">é</span><span class="cmr-12">vil</span></div>
+</div>
+<div class="abstract">
+
+      <p class="noindent"><strong><span class="cmbx-9">Abstract</span></strong></p>
+
+
+   <p class="indent"><span class="cmr-9">Most mathematical modeling in biology relies either implicitly or explicitly on the</span> <span class="cmr-9">epistemology of physics. The underlying conception is that the historicity of biological</span> <span class="cmr-9">objects would not matter to understand a situation here and now, or, at least, historicity</span> <span class="cmr-9">would not impact the method of modeling. We analyze that it is not the case with</span> <span class="cmr-9">concrete examples. Historicity forces a conceptual reconﬁguration where equations no</span> <span class="cmr-9">longer play a central role. We argue that all observations depend on objects deﬁned by</span> <span class="cmr-9">their historical origin instead of their relations as in physics. Therefore, we propose that</span> <span class="cmr-9">biological variations and historicity come ﬁrst, and regularities are constraints with</span> <span class="cmr-9">limited validity in biology. Their proper theoretical and empirical use requires speciﬁc</span> <span class="cmr-9">rationales.</span></p>
+   <!--l. 48--></div>
+   <p class="noindent"><span class="paragraphHead"><strong><a id="x1-1000"></a></strong><span class="cmbx-9"><strong>keywords</strong>:</span></span> <span class="cmr-9">Historicity, Organization, Epistemology, Mathematical modeling, Constraints</span></p>
+
+<!--l. 52-->
+<h3 class="likesectionHead"><a id="x1-2000"></a>Contents</h3>
+<div class="tableofcontents"><span class="sectionToc">1 <a href="#x1-40001" id="QQ2-1-4">The shadow of historicity on mathematical models</a></span><br><span class="sectionToc">2 <a href="#x1-50002" id="QQ2-1-5">Biological historicity takes another stab at physics epistemological principles</a></span><br><span class="sectionToc">3 <a href="#x1-60003" id="QQ2-1-6"> historicity shapes the observation of biological matter</a></span><br><span class="sectionToc">4 <a href="#x1-70004" id="QQ2-1-7">A castling move on the epistemological board</a></span></div>
+<!--l. 54-->
+<h3 class="likesectionHead"><a id="x1-3000"></a>Introduction<span class="footnote-mark"><a href="historicity-html2.html#fn1x0"><sup class="textsuperscript">1</sup></a></span><a id="x1-3001f1"></a></h3>
+<!--l. 55-->
+<p class="noindent">For many scientists and philosophers, physics remains the paradigm of scientiﬁc thinking, either implicitly or explicitly. The reasoning is predominantly anhistorical in physics. However, some classes of phenomena are radically historical. It is the case in evolutionary biology and most human and social sciences such as linguistics or economics.</p>
+<!--l. 60-->
+<p class="indent">Why is physics fundamentally anhistorical? Physics studies phenomena by static equations, they stem from the older notion of the laws of nature. In models, the changes of an object are changes of position in a theoretical space, for example, the space of positions and velocities in classical mechanics. These changes derive from the equations. In other words, change stems from an underlying invariance. In historical phenomena, the ability to ﬁnd such invariance at any level is doubtful.</p>
+<!--l. 67-->
+<p class="indent">In this discussion, we describe physics by its method: physics has a speciﬁc use of mathematics to understand phenomena. However, there are other uses of the word that we want to review succinctly in order to avoid confusions and misunderstandings.</p>
+<ul class="itemize1">
+   <li class="itemize">First, physics can refer to the theories of physics such as quantum mechanics, statistical mechanics, or hydrodynamics. These theories are not genuinely reducible to one another. Nevertheless, they display a unity thanks to theoretical bridges. The International System of Units is valid for all these theories and materializes this unity.</li>
+   <li class="itemize">Second, physics may also refer to the mathematical apparatus of these theories and more broadly to the models of physics. Physicists sometimes use these models to study other objects. For example, physicists describe ﬂocks of birds with statistical mechanics. In their work, the elementary objects are birds and no longer molecules. From the perspective of the theories of physics, it is not indisputable that birds would behave similarly to molecules. Nevertheless, the strong points of this approach are that these models may have a broader generality than their use in the theories of physics and that these mathematical apparatus are well known.</li>
+   <li class="itemize">Third, as mentioned above, physics can be the use of physics method to study phenomena. Physics does not stick to existing theories or mathematical structures to study the inert. Otherwise, theoretical physics would be a ﬁnished ﬁeld of research. Assuming that this method would be adequate to study the living, there is no reason to assume that existing theories and models would themselves be adequate.</li>
+   <li class="itemize">Fourth, physics etymologically means the knowledge of nature, that is, phenomena that do not involve humans. In the history of thoughts, nature became matter, and, in the materialist tradition, the matter became everything there is. Physics, in this sense, encompasses everything. However, even in this tradition, it does not follow that the method of physics enables us to understand all phenomena. Accordingly, physics method has a special relationship with mathematics, but this relationship does not need to be the norm for all sciences.</li>
+   <li class="itemize">Last, physics has also an institutional dimension. According to this perspective, physics is everything that is done in departments of physics. In the latter case, we think that the use of the method of physics is a decisive criterion of peer recognition.</li>
+</ul>
+<!--l. 95-->
+<p class="indent">In the context of biology, the confusions between these diﬀerents meaning of physics tend to bend theoretical and philosophical work by introducing artiﬁcial epistemological norms or authority. In this article, we will discuss the articulation of physics method with biology, and more speciﬁcally, with the historicity of biological phenomena.</p>
+<!--l. 98-->
+<p class="indent">A classical perspective to articulate historical and anhistorical reasoning stems from linguistic. <a href="#Xde2011course">De&nbsp;Saussure</a>&nbsp;(<a href="#Xde2011course">2011</a>) stated that there are two ways to study languages. The synchronic perspective studies the use of a language at a given time. By contrast, the diachronic perspective investigates the historical processes of language transformations. Along the same line, in an inﬂuential article, <a href="#Xmayr1961cause">Mayr</a>&nbsp;(<a href="#Xmayr1961cause">1961</a>) distinguishes functional biology and evolutionary biology. The two biologies are concerned with distinct kinds of causes: proximal and distal causes, respectively. In both cases, the idea is to study short time scales phenomena ahistorically, on the one side, and the historical changes, on the other side. In biology, <a href="#Xnewman2012physico">Newman</a>&nbsp;(<a href="#Xnewman2012physico">2012</a>,&nbsp;<a href="#Xdoi:10.1002/jez.b.22895">2019</a>) provides another perspective along this line. Newman argues that biological development is the combination of genes and physics. Genes would be the carrier of the historical past, and physics provides anhistorical laws recruited by genes.</p>
+<!--l. 109-->
+<p class="indent">Let us remark that, in biology, historical processes are often conﬂated with evolution and evolution is often conﬂated with genetic changes. There are historical reasons for this. The idea of a genetic program is associated with determinism at the level of functional biology <span class="cmti-10">sensu </span>Mayr, while evolution was seen as the determination of such programs, where randomness is central via mutations. The idea of a genetic program is no longer widely accepted, and it follows that we can consider that development and physiology also are fundamentally historical processes.</p>
+<!--l. 114-->
+<p class="indent">We can wonder, however, whether it is sound to separate historical and current aspects of biological phenomena or, on the opposite, whether they can be deeply entangled. Authors of the extended synthesis argue against such a separation (<a href="#XLaland1512">Laland et&nbsp;al.</a>,&nbsp;<a href="#XLaland1512">2011</a>). The core argument is that evolution and development are far more entangled than previously thought. Historicity does not just manifest on the long time scales of evolution. For example, biological innovations also take place at the level of development and can be decisive for evolution. The issue can be analyzed in terms of time scale (<a href="#Xnicheconstr">Pocheville</a>,&nbsp;<a href="#Xnicheconstr">2010</a>,&nbsp;<a href="#Xpocheville_darwinian_2018">2019</a>). The classical perspective assumes a separation between the time scale of evolution and life cycles. In this perspective, the evolutionary processes would be static at the level of life cycles and, reciprocally, life cycles would be almost instantaneous when analyzing evolutive processes. Alternatively, the two-time scales can meet, and life cycles and evolutionary processes would require a joint analysis.</p>
+<!--l. 125-->
+<p class="indent">In this paper, we will criticize the analytic separation between the study of a life form as it is right now and the historical processes that originate it. Prima facie, there is indeed no apparent reason why a phenomenon that stems from history could be mathematized by the same method than a spontaneous phenomenon. We do not think that it is the case for principled reasons (<a href="#Xlongo2012b">Longo et&nbsp;al.</a>,&nbsp;<a href="#Xlongo2012b">2012</a>;&nbsp;<a href="#Xchaptervariation">Montévil et&nbsp;al.</a>,&nbsp;<a href="#Xchaptervariation">2016</a>;&nbsp;<a href="#Xnovelty2017">Montévil</a>,&nbsp;<a href="#Xnovelty2017">2019b</a>). In this paper, we will focus on practical situations where the methodology of mathematization departs from the usual physics method.</p>
+<h3 class="sectionHead"><span class="titlemark">1 </span> <a id="x1-40001"></a>The shadow of historicity on mathematical models</h3>
+<!--l. 134-->
+<p class="noindent">
+   Reasoning on quantities is central to physics. However, reasoning on quantities does not mean reasoning on particular values. Instead, physicists work with generic variables. For example, let us consider the case of free fall. To describe it, physicists do not describe an object of mass <!--l. 138-->
+   <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mn>1</mn>
+      <mo class="MathClass-punc">.</mo>
+      <mn>5</mn>
+      <mn>1</mn>
+      <mi>k</mi>
+      <mi>g</mi>
+   </math>
+   at the height of <!--l. 138-->
+   <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mn>2</mn>
+      <mo class="MathClass-punc">.</mo>
+      <mn>1</mn>
+      <mn>4</mn>
+      <mi>m</mi>
+   </math>
+   and velocity <!--l. 138-->
+   <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mn>0</mn>
+      <mo class="MathClass-punc">.</mo>
+      <mn>1</mn>
+      <mn>7</mn>
+      <mi>m</mi>
+      <msup>
+         <mrow>
+            <mi>s</mi>
+         </mrow>
+         <mrow>
+            <mo class="MathClass-bin">−</mo>
+            <mn>1</mn>
+         </mrow>
+      </msup>
+   </math>
+   . Instead, they write equations for an object of mass <!--l. 139-->
+   <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mi>m</mi>
+   </math>
+   at a height <!--l. 139-->
+   <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mi>x</mi>
+   </math>
+   and vertical velocity <!--l. 139-->
+   <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mi>v</mi>
+   </math>
+   . Since the height and velocity change over time, it is decisive that equations are valid for any value of the variables.
+</p>
+<!--l. 142-->
+<p class="indent">Moreover, such values do not have any intrinsic meaning; they depend on the arbitrary choice of a reference frame. Objectivity requires to take into account all possible reference frames, thus a collection of descriptions (<a href="#Xlongomont">Longo and Montévil</a>,&nbsp;<a href="#Xlongomont">2014a</a>). In a nutshell, physicomathematical reasoning is not about particular values; it is about generic variables and their relations. Equations usually describe these relations.</p>
+<!--l. 149-->
+<p class="indent">
+   However, equations are not the only element determining a situation. Parameters, initial conditions, and boundary conditions complement them to entail trajectories. The equations do not determine the value of such quantities; as a result, we will call them “external quantities” in this text. Choosing arbitrarily the value of external quantities can yield all kinds of patterns, and this move is not allowed in physics. Let us illustrate why with a simple dynamical system. Consider that the value <!--l. 154-->
+   <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <msup>
+         <mrow>
+            <mi>x</mi>
+         </mrow>
+         <mrow>
+            <mrow>
+               <mo class="MathClass-open">(</mo>
+               <mrow>
+                  <mi>t</mi>
+               </mrow>
+               <mo class="MathClass-close">)</mo>
+            </mrow>
+         </mrow>
+      </msup>
+      <mo class="MathClass-rel">=</mo>
+      <msub>
+         <mrow>
+            <mi>x</mi>
+         </mrow>
+         <mrow>
+            <mn>0</mn>
+         </mrow>
+      </msub>
+      <mo class="MathClass-punc">.</mo>
+      <msub>
+         <mrow>
+            <mi>x</mi>
+         </mrow>
+         <mrow>
+            <mn>1</mn>
+         </mrow>
+      </msub>
+      <msub>
+         <mrow>
+            <mi>x</mi>
+         </mrow>
+         <mrow>
+            <mn>2</mn>
+         </mrow>
+      </msub>
+      <msub>
+         <mrow>
+            <mi>x</mi>
+         </mrow>
+         <mrow>
+            <mn>3</mn>
+         </mrow>
+      </msub>
+      <mo class="MathClass-punc">.</mo>
+      <mo class="MathClass-punc">.</mo>
+      <mo class="MathClass-punc">.</mo>
+   </math>
+   in decimal writing is transformed into <!--l. 154-->
+   <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <msup>
+         <mrow>
+            <mi>x</mi>
+         </mrow>
+         <mrow>
+            <mrow>
+               <mo class="MathClass-open">(</mo>
+               <mrow>
+                  <mi>t</mi>
+                  <mo class="MathClass-bin">+</mo>
+                  <mn>1</mn>
+               </mrow>
+               <mo class="MathClass-close">)</mo>
+            </mrow>
+         </mrow>
+      </msup>
+      <mo class="MathClass-rel">=</mo>
+      <msub>
+         <mrow>
+            <mi>x</mi>
+         </mrow>
+         <mrow>
+            <mn>1</mn>
+         </mrow>
+      </msub>
+      <mo class="MathClass-punc">.</mo>
+      <msub>
+         <mrow>
+            <mi>x</mi>
+         </mrow>
+         <mrow>
+            <mn>2</mn>
+         </mrow>
+      </msub>
+      <msub>
+         <mrow>
+            <mi>x</mi>
+         </mrow>
+         <mrow>
+            <mn>3</mn>
+         </mrow>
+      </msub>
+      <mo class="MathClass-punc">.</mo>
+      <mo class="MathClass-punc">.</mo>
+      <mo class="MathClass-punc">.</mo>
+   </math>
+   at the next time step. For the initial condition <!--l. 155-->
+   <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mi>π</mi>
+      <mo class="MathClass-rel">=</mo>
+      <mn>3</mn>
+      <mo class="MathClass-punc">.</mo>
+      <mn>1</mn>
+      <mn>4</mn>
+      <mn>1</mn>
+      <mn>5</mn>
+      <mo class="MathClass-punc">.</mo>
+      <mo class="MathClass-punc">.</mo>
+      <mo class="MathClass-punc">.</mo>
+   </math>
+   , the integer part of the state will span the decimals of <!--l. 155-->
+   <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mi>π</mi>
+   </math>
+   one by one. However, this dynamical system has nothing to do with <!--l. 155-->
+   <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mi>π</mi>
+   </math>
+   speciﬁcally. The link with <!--l. 156-->
+   <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mi>π</mi>
+   </math>
+   stems only from the initial condition, and diﬀerent initial conditions would yield diﬀerent results. Actually, this dynamical system can produce all possible patterns of sequences of numbers. As a result, the equation of the dynamics cannot genuinely explain why the system spans speciﬁcally the decimal of <!--l. 157-->
+   <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mi>π</mi>
+   </math>
+   .
+</p>
+<!--l. 159-->
+<p class="indent">
+   Without additional hypotheses, such a dynamical system can only explain the qualitative properties obtained for all possible initial conditions or almost all initial conditions. “Almost all” is a mathematical notion. Let us assume a measure on initial conditions, for example, based on probabilities or a metric. The properties valid for almost all initial conditions are valid for all initial conditions except for a set of measure <!--l. 161-->
+   <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mn>0</mn>
+   </math>
+   . For example, almost all real numbers are not integers, rational numbers, or <!--l. 162-->
+   <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mi>π</mi>
+   </math>
+   .
+</p>
+<!--l. 164-->
+<p class="indent">Physicists consider that only generic values of external quantities appear spontaneously. In cosmology, this fundamental epistemological point leads to a troublesome situation: models do not lead to the formation of complex matter in the universe except for a narrow range of parameter values. Some theologians argue that this situation is evidence of intelligent design. In physics, a popular way to justify this unlikely situation is to assume there are universes with all possible values of the parameters, and we are in a universe that is compatible with our existence (<a href="#Xsep-fine-tuning">Friederich</a>,&nbsp;<a href="#Xsep-fine-tuning">2018</a>). This example shows that setting particular values of the parameters cannot be done for free, and explaining situations that do not correspond to generic values of the parameters sometimes leads to rather ontologically costly hypotheses.</p>
+<!--l. 171-->
+<p class="indent">However, in biology, in numerous cases, speciﬁc values of external quantities are used in models and are necessary to explain the intended behavior. For example, <a href="#Xmora2010biological">Mora and Bialek</a>&nbsp;(<a href="#Xmora2010biological">2011</a>) argue that in many situations, biological systems seem “poised” at criticality.</p>
+<!--l. 174-->
+<p class="indent">The underlying evolutionary history is used to justify such tuning of the parameters. However, there is usually no investigation of the natural history <span class="cmti-10">per se</span>. Instead, the modeler identiﬁes that speciﬁc values are required for the model to lead a functional conﬁguration. For example, <a href="#XLesne06">Lesne and Victor</a>&nbsp;(<a href="#XLesne06">2006</a>) observe that a model of the chromatin leads to a functional conﬁguration only when the properties of two otherwise independent molecules are equal. Similarly, modelers in ecology can use the fact that initial conditions are not random but correspond to a viable conﬁguration for all populations involved. This conﬁguration does not stem from a dynamic intrinsic to the model but the underlying history (<a href="#Xdisruptpol">Jane et&nbsp;al.</a>,&nbsp;<a href="#Xdisruptpol">2007</a>).</p>
+<!--l. 181-->
+<p class="indent">In these cases, natural history justiﬁes a speciﬁc conﬁguration. However, in practice, this speciﬁc conﬁguration is not genuinely singled out by historical reasoning. Instead, modelers ﬁnd it because it leads to speciﬁc properties in the model. This line of reasoning can be pursued further by postulating that a quantity reaches an optimum in evolution because of its functional role. For example, modelers have assumed that evolution has maximized the exchange surface of the lungs (<a href="#Xwest1997">West et&nbsp;al.</a>,&nbsp;<a href="#Xwest1997">1997</a>,&nbsp;<a href="#Xwest1999">1999</a>).</p>
+<!--l. 187-->
+<p class="indent">These relatively simple cases and examples show that historicity interferes with the epistemology of mathematical modeling. Tuning parameters and initial conditions can be allowed in biology while it is forbidden in physics. However, we have seen that choosing the value of external quantities can yield unacceptable explanations; therefore, modelers cannot do it freely. Let us analyze the corresponding reasoning more deeply. The central argument is that we can single out a speciﬁc conﬁguration by their corresponding function. At the level of the model, the speciﬁc conﬁguration may entail qualitatively distinct trajectories, or they can be optimal without qualitative discontinuity. In both cases, understanding the situation requires a hypothesis on biological functions. This hypothesis does not stem from the causal relationships described in the model and requires analyses beyond its boundaries.</p>
+<!--l. 197-->
+<p class="indent">The theories and models of physics do not provide a theory of biological functions. It follows that in many cases, modelers make functional assumptions on very informal bases. This situation leads to a diversity of hypotheses, even in the case of a single structure and function. For example, lungs have a function of gas exchange; however, the latter can be formalized in many ways (<a href="#Xwest1999">West et&nbsp;al.</a>,&nbsp;<a href="#Xwest1999">1999</a>;&nbsp;<a href="#X10.1007/978-3-662-06162-6_12">Sapoval et&nbsp;al.</a>,&nbsp;<a href="#X10.1007/978-3-662-06162-6_12">2001</a>;&nbsp;<a href="#XGheorghiu2005">Gheorghiu et&nbsp;al.</a>,&nbsp;<a href="#XGheorghiu2005">2005</a>, for example). Moreover, in a model, the robustness of this function is not necessarily compatible with its maximum eﬃciency (<a href="#XMauroy2004">Mauroy et&nbsp;al.</a>,&nbsp;<a href="#XMauroy2004">2004</a>). This example shows that assumptions on biological functions require great care and a proper theorization.</p>
+<!--l. 204-->
+<p class="indent">There are several philosophical interpretations of biological functions that may become starting points for such a theory. A trait may be functional in the sense that it has been selected because of its consequences (<a href="#Xgodfrey1994modern">Godfrey-Smith</a>,&nbsp;<a href="#Xgodfrey1994modern">1994</a>), or it may be functional in the sense that it is maintained by a whole and contributes to maintaining this whole (<a href="#Xmossio2009organizational">Mossio et&nbsp;al.</a>,&nbsp;<a href="#Xmossio2009organizational">2009</a>;&nbsp;<a href="#XMontevil2015c">Montévil and Mossio</a>,&nbsp;<a href="#XMontevil2015c">2015</a>). To be operational, the ﬁrst concept of function requires a historical investigation. The second concept of function is more systemic; the presence of a function is justiﬁed when the trait contributes to maintaining another part of the organization but is also maintained actively. The origin of this situation remains historical. This concept of function cannot justify optimization; it can only justify that a functional eﬀect requires a speciﬁc conﬁguration and that this conﬁguration is plausible because processes maintain it.</p>
+<!--l. 212-->
+<p class="indent">Let us sum this discussion up. In physics, it is not possible to assume speciﬁc values of parameters or initial conditions without justiﬁcation. In biology, there is a reason to use speciﬁc values of such quantities: natural history and organization, that is to say, the presence of a function.</p>
+<!--l. 217-->
+<h3 class="sectionHead"><span class="titlemark">2 </span> <a id="x1-50002"></a>Biological historicity takes another stab at physics epistemological principles</h3>
+<!--l. 219-->
+<p class="noindent">
+   In physics, equations play a central role. They build on the notion that permanence underlies changes: equations do not change but enable physicists to understand objects’ changes. They materialize the classical notion of natural laws, a central, traditional aim of scientiﬁc inquiry. In modern terms, equations manifest fundamental invariants and symmetries that are at the core of theories (<a href="#Xbailly2011">Bailly and Longo</a>,&nbsp;<a href="#Xbailly2011">2011</a>;&nbsp;<a href="#Xlongomont">Longo and Montévil</a>,&nbsp;<a href="#Xlongomont">2014a</a>). They also articulate diﬀerent concepts. For example, Einstein’s famous equation <!--l. 224-->
+   <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+      <mi>E</mi>
+      <mo class="MathClass-rel">=</mo>
+      <mi>m</mi>
+      <msup>
+         <mrow>
+            <mi>c</mi>
+         </mrow>
+         <mrow>
+            <mn>2</mn>
+         </mrow>
+      </msup>
+   </math>
+   articulates energy and mass.
+</p>
+<!--l. 226-->
+<p class="indent">By contrast, external quantities such as initial conditions and parameters are of secondary epistemological importance. They stem from circumstances, and their value is contingent to a large extent. As discussed above, since physicists usually study the consequences of generic values of these quantities, no speciﬁc hypothesis is required to justify them. We have seen that it is not always the case in biology. This problem alone suggests already that we should confer an equal or similar epistemological status to hypotheses concerning equations and external quantities.</p>
+<!--l. 233-->
+<p class="indent">There are further reasons to argue for this change in epistemological status. Since modelers confer most of the epistemological weight to equations, it follows that using a single equation to explain a diversity of phenomena is more parsimonious in physics.</p>
+<!--l. 236-->
+<p class="indent">This logic is exported to biology. For example, <a href="#X10.1371/journal.pone.0010892">Zhu et&nbsp;al.</a>&nbsp;(<a href="#X10.1371/journal.pone.0010892">2010</a>) aim to understand vertebrate forelimbs morphogenesis. To this end, they use a single equation describing a system of reaction-diﬀusion. They show that this equation can lead to a diversity of conﬁgurations encountered in nature. However, these conﬁgurations require a diversity of hypotheses on external quantities. We are not interested in discussing the validity of this model <span class="cmti-10">per se</span>. Since one of the authors argues that this method is general (<a href="#Xsep-fine-tuning">Friederich</a>,&nbsp;<a href="#Xsep-fine-tuning">2018</a>), we assess the general methodology of modelization and its epistemological validity.</p>
+<!--l. 244-->
+<p class="indent">Like in physics, let us consider that equations come ﬁrst epistemologically. From this perspective, this model is very parsimonious because it subsumes a diversity of situations by a single equation. The use of a single equation carries heavy epistemological weight.</p>
+<!--l. 248-->
+<p class="indent">On the opposite, let us consider that hypotheses on equations and external quantities are on an equal epistemological footing. In this perspective, the model is not particularly parsimonious because many hypotheses on external quantities are required to explain the diﬀerent forms observed. This situation alone is not necessarily a problem. There is no way around the notion that natural history generates novelties that require speciﬁc hypotheses (<a href="#Xnovelty2017">Montévil</a>,&nbsp;<a href="#Xnovelty2017">2019b</a>). However, the simultaneous use of a single equation and a diversity of patterns for external variables is an oddity that may be acceptable in speciﬁc cases but is not a sound general method. As a result, it does not carry any epistemological weight; on the opposite, it may very well be an artifact steming from the inappropriate use of physics epistemology.</p>
+<!--l. 255-->
+<p class="indent">We think that the second perspective is the right one in biology. Let us examine further this model of morphogenesis. In this model, equations describe interacting molecules and their diﬀusion at a given developmental step.</p>
+<ul class="itemize1">
+   <li class="itemize">The equations require many assumptions to be valid. For example, the organism produces the chemicals involved; a relatively homogeneous medium exists where they can diﬀuse, and no other process interferes signiﬁcantly, be it chemical, physical or biological (such as cell diﬀerentiation).</li>
+   <li class="itemize">Parameters describe the chemicals and also the structure of the tissue via diﬀusion coeﬃcients. Boundary conditions stem from the geometry of limbs over developmental time.</li>
+</ul>
+<!--l. 263-->
+<p class="noindent">We argue that both kinds of assumptions have fundamentally the same status. For example, assumptions on the internal structure of the system and assumptions on the geometry of the limb are very similar. All these properties stem from the previous stages of development and the underlying evolutionary process. There is no principled reason to assume that the boundary conditions would be more labile than the equations themselves. For example, the recruitment of a new molecule in the diﬀusion process would be suﬃcient to change the equations, and it is a likely change on evolutionary time scales. We conclude that the distinction between assumptions about equations and external quantities is perspectival in biology; therefore, all theses hypothesis ultimately have the same status.</p>
+<!--l. 271-->
+<p class="indent">Along the same line, there is no principled equation in biology. In more technical terms, let us recall that theoretical symmetries confer the form of fundamental equations in physics and justify them. We have argued that there is no fundamental symmetry in biology (<a href="#Xlongo2011c">Longo and Montévil</a>,&nbsp;<a href="#Xlongo2011c">2011</a>;&nbsp;<a href="#Xlongo2012b">Longo et&nbsp;al.</a>,&nbsp;<a href="#Xlongo2012b">2012</a>;&nbsp;<a href="#Xlongomont">Longo and Montévil</a>,&nbsp;<a href="#Xlongomont">2014a</a>;&nbsp;<a href="#Xchaptervariation">Montévil et&nbsp;al.</a>,&nbsp;<a href="#Xchaptervariation">2016</a>). Even in ﬁelds that are mathematized such as population genetics, equations depend on the process of gene transmission from one generation to the next. However, this process changed in many phyla in evolution. For example, chromosomes may be present in only one or several versions, leading to haploidy, diploidy, tetraploidy, and so on. Sexual reproduction appeared in various forms. Another example is monozygotic polyembryony in organisms such as armadillos (<span class="cmti-10">Dasypus novemcinctus</span>): in layman terms, armadillos systematically give birth to true quadruplets.</p>
+<!--l. 279-->
+<p class="indent">All these features appeared in evolution and impacted the form of equations of gene transmission. Beyond these examples, in population genetics, the main diﬃculty lies in the determination of ﬁtness since no computation can derive ﬁtness from genotypes, and there cannot be such a computation since ﬁtness is context-dependent. Ecology meets similar diﬃculties (<a href="#XULANOWICZ20091886">Ulanowicz</a>,&nbsp;<a href="#XULANOWICZ20091886">2009</a>) and the problem is general in the study of living things (<a href="#Xchaptervariation">Montévil et&nbsp;al.</a>,&nbsp;<a href="#Xchaptervariation">2016</a>;&nbsp;<a href="#Xkauffman2019world">Kauﬀman</a>,&nbsp;<a href="#Xkauffman2019world">2019</a>), including in human activities such as economy (<a href="#Xfelin2014economic">Felin et&nbsp;al.</a>,&nbsp;<a href="#Xfelin2014economic">2014</a>).</p>
+<!--l. 283-->
+<p class="indent">In a nutshell, assigning epistemological primacy to equations introduces a bias in the analysis of biological situations. When physics epistemology is applied to biology, equations are assumed to be permanent while other components of modeling have to accommodate the historical changes of biological objects. These asymmetric roles do not build on a theoretical or philosophical rationale. This conception generates artifacts in the analysis of biological situations. In the previous section, we have seen that historicity pops out as a necessary component to assume speciﬁc external quantities. However, from a general theoretical perspective, the form of equations is no less the result of history than external quantities.</p>
+<!--l. 290-->
+<p class="indent">We have coined a concept of constraints to address this kind of issues. Constraints are regularities that are relevant to processes of transformation (<a href="#XMontevil2015c">Montévil and Mossio</a>,&nbsp;<a href="#XMontevil2015c">2015</a>;&nbsp;<a href="#Xsoto2016century">Soto et&nbsp;al.</a>,&nbsp;<a href="#Xsoto2016century">2016</a>). Constraints are not principled; they are only valid at a given time scale and can be maintained actively. They can also change over time, and their validity is contingent to an extent. This epistemological framework reinterprets the structure of equations and external quantities of a typical model. These structures are constraints or result from constraints.</p>
+<!--l. 296-->
+<p class="indent">At this point, another, similar bias appears that stems from the epistemology of physics. In order to ﬁt the notion that equations do not change, biophysicists focus on constraints that display the highest stability. However, other constraints are more speciﬁc and possibly also more plastic; and they are also a fundamental part of biological organizations.</p>
+<!--l. 300-->
+<h3 class="sectionHead"><span class="titlemark">3 </span> <a id="x1-60003"></a> historicity shapes the observation of biological matter</h3>
+<!--l. 302-->
+<p class="noindent">In the theories of physics, objects are deﬁned by the mathematical structure that describes them (<a href="#Xbailly2011">Bailly and Longo</a>,&nbsp;<a href="#Xbailly2011">2011</a>;&nbsp;<a href="#Xlongomont">Longo and Montévil</a>,&nbsp;<a href="#Xlongomont">2014a</a>;&nbsp;<a href="#Xchaptervariation">Montévil et&nbsp;al.</a>,&nbsp;<a href="#Xchaptervariation">2016</a>). For example, in particle physics, particles such as electrons are deﬁned and classiﬁed by equations describing their behaviors, including characteristic quantities such as the electrical charge. In a model, if a term ﬁts the attributes of an electron, then it is an electron. Reciprocally, if we are considering a real electron, then it will follow the mathematical structure describing electrons.</p>
+<!--l. 307-->
+<p class="indent">When physicists deﬁne a concrete phenomenon by mathematics, mathematicians and physicists can work out the consequences of a situation <span class="cmti-10">in abstracto</span>. They analyze equations on a piece of paper or work with a computer far from the concrete phenomenon. The causal investigation is detached from the concrete phenomenon. Because of this separation, the equations can apply to another concrete phenomenon. In this sense, the objects theorized by physics are generic, and we can obtain the <span class="cmti-10">same </span>generic theoretical phenomenon <span class="cmti-10">de</span> <span class="cmti-10">novo</span>.</p>
+<!--l. 314-->
+<p class="indent">For example, physicists study convection cells and other phenomena of self-organization occurring in inert matter. They display morphogenesis and are often compared to biological morphogenesis. They are sometimes seen as a paradigm to understand them (<a href="#Xmuller2003origination">Müller et&nbsp;al.</a>,&nbsp;<a href="#Xmuller2003origination">2003</a>). However, the theorization of morphogenesis in physics is about generic phenomena; they always appear in the same manner and display the same properties. <a href="#XDouady1996255">Douady and Couder</a>&nbsp;(<a href="#XDouady1996255">1996a</a>,<a href="#XDouady1996275">b</a>,<a href="#XDOUADY1996295">c</a>) provide another example. These authors wrote a model to understand the property of morphogenesis in many plants called phyllotaxis. To further justify their model, they instantiated it in an abiotic system leading to the same mathematical structure. This kind of modelization requires and implies that the phenomenon is abstracted from the organisms in which it takes place.</p>
+<!--l. 323-->
+<p class="indent">This epistemological situation grounds a singular (dis)connection between theoretical descriptions and matter. The theoretical description is typically a mathematical model, and its articulation with a concrete object requires only to obtain quantities deﬁned in the model. This operation is called measurement and has a diﬀerent nature depending on the theory (<a href="#Xmontevilmeasure">Montévil</a>,&nbsp;<a href="#Xmontevilmeasure">2019a</a>). For example, in classical mechanics, states are points. However, measurement is never perfect; therefore, its outcome is an interval. Still, in physics, the nature of the causal relations do not require something like a measurement; the theory speciﬁes them. Modelers only need to set the quantities of the model to the value of a given concrete situation to understand the latter.</p>
+<!--l. 331-->
+<p class="indent">The scientiﬁc meaning of quantities depends on the theoretical analysis (<a href="#Xhoule2011measurement">Houle et&nbsp;al.</a>,&nbsp;<a href="#Xhoule2011measurement">2011</a>), and this meaning does not change over time, unlike quantities. Of course, in research situations, this meaning is not necessarily known initially, but two major methodological postulates guide the investigation. First, physicists assume that there are underlying equations which deﬁne the meaning of quantities. Let us recall that the existence of a mathematical object is a strong hypothesis. Second, physicists assume that one quantity or another is relevant. Then, experimental work aims to unravel the underlying equations and their structure by changing external quantities such as parameters.</p>
+<!--l. 338-->
+<p class="indent">In biology, we have seen that equations are as labile as external quantities <span class="cmti-10">a priori</span>. More precisely, they both ultimately stem from constraints that can change (<a href="#Xchaptervariation">Montévil et&nbsp;al.</a>,&nbsp;<a href="#Xchaptervariation">2016</a>). Therefore, measurement is not just about obtaining quantities; measurement has to accommodate changing constraints (<a href="#Xmontevilmeasure">Montévil</a>,&nbsp;<a href="#Xmontevilmeasure">2019a</a>). This situation leads to several challenges that the theorization of measurement has to accommodate.</p>
+<!--l. 343-->
+<p class="indent">Constraints are both historical and contextual. They are historical because they stem from an evolutive and ontogenetic history. For example, the geometry of forelimbs is diﬀerent in a rat and a human. They are contextual because current and past contexts contribute to determining a biological organization, including its constraints (<a href="#Xgilbert2009ecological">Gilbert and Epel</a>,&nbsp;<a href="#Xgilbert2009ecological">2009</a>;&nbsp;<a href="#XchapterPA">Miquel and Hwang</a>,&nbsp;<a href="#XchapterPA">2016</a>). Of course, the ﬁrst and critical context in the analysis of a biological part is the organization in which it takes place, that is to say, the organism, be it unicellular or multicellular. Since the meaning of a part, its functional role, depends on the organization, a proper concept of measurement has to accommodate organizations.</p>
+<!--l. 351-->
+<p class="indent">Moreover, the constraints of a given biological situation are mostly unknown. It is the case for epistemic reasons, that is to say, because of a lack of knowledge. However, another reason is principled: changes can occur in a given species or individual situation, and further experimentations with several organisms would be required to objectivize them. In other words, biological historicity has generated new constraints that are diﬃcult to objectivize <span class="cmti-10">a posteriori</span>, and this process never stops generating novelties even in laboratory conditions.</p>
+<!--l. 356-->
+<p class="indent">To accommodate these diﬃculties, we have argued that biological measurement speciﬁes shared past and contexts. For example, the existence of a common ancestor deﬁnes mice, <span class="cmti-10">Mus Musculus</span>, and all other groups used to classify living being in systematics. Similarly, laboratory strains have a controlled historical origin. The diﬀerence between the two frameworks is that the genealogy of strains is observed directly and controlled while systematics estimates the common theoretical ancestor deﬁning a group.</p>
+<!--l. 361-->
+<p class="indent">Let us emphasize the originality of this epistemology. In evolution, it is blatant that organizations change over time and that the nature of these changes cannot be pre-stated. It follows that we cannot deﬁne objects accurately by a set of stable properties. If we were to deﬁne tetrapods by the existence of four external limbs, we would have to preclude changes impacting this property or accept that organisms, such as snakes, can jump from one group to another. Instead, systematics deﬁnes objects by their past and not by what they do. This strategy provides stable and accurate deﬁnitions in a context where objects can undergo radical changes.</p>
+<!--l. 368-->
+<p class="indent">This situation implies a diﬀerent articulation between concrete objects and theoretical descriptions. Theoretical descriptions, starting with names, cannot be detached from speciﬁc concrete objects. For example, mice are the descent from a common ancestor which means that all mice have a material, genealogical link. No mouse can exist outside this material link.</p>
+<!--l. 373-->
+<p class="indent">Name baring types are single specimens that deﬁne names in systematics. Names are extended theoretically to all the descent of a common ancestor. In this manner, if the classiﬁcation requires a revision, the deﬁnition of names remains stable. It follows that names correspond to speciﬁc material objects in biology. By contrast, the speed of light in the vacuum is an invariant of relativistic theories. The International System of Units uses this invariant to deﬁne lengths. There is no need to specify which photon we are talking about; all photons will go at the same speed in the vaccuum. Physics is based on generic material objects, and not on speciﬁc material objects. This comparison shows the deep methodological and epistemological divide between biology and physics and how this divide shapes actual practices.</p>
+<!--l. 383-->
+<p class="indent">Now, let us go back to biological measurement. In a nutshell, deﬁning measurement requires to deﬁne commensurability. For example, measurement in quantum mechanics has unusual properties because it requires the commensurability of a microscopic and a macroscopic object — the measurement apparatus. Let us consider the commensurability of the length of a bone. From the perspective of physics, this length seems well deﬁned: it is the largest spatial extension of the bone. The bone, as a spatial object, is commensurable to a ruler. Here the classical concept of measurement applies, and the resulting length is approximate.</p>
+<!--l. 391-->
+<p class="indent">However, there is another diﬃculty in biology. The biologist would immediately wonder what bone and in what organism — provided that the names of bones stem from groups in the classiﬁcation of living beings. In other words, commensurability in biology is not only about the commensurability of a part with an inert object. Commensurability between organisms is also required because it is this commensurability that deﬁnes parts and their biological meaning. For example, the length of a bone is not necessarily its largest spatial extension. Instead, it is also deﬁned on a qualitative basis so that diﬀerent measurements have a similar meaning. For example, the length can be smaller than the width in some specimen or species. The underlying problem is the identiﬁcation of constraints, both constraints of the bone and the organism.</p>
+<!--l. 400-->
+<p class="indent">As discussed above, the speciﬁcation of organisms relies on shared, material pasts. Biologists can also use quantities to assess the health of the specimens, for example. However, these quantities are never suﬃcient to make measurement ahistorical. Measurement describes how the historicity of organisms deﬁnes the objects, that is to say how we establish their commensurability. For example, it is not the same to measure one strain or another, or wild animals of a given species or among a larger group in the classiﬁcation.</p>
+<!--l. 406-->
+<p class="indent">To understand the meaning of biological measurement, we have introduced the concept of symmetrization (<a href="#Xmontevilmeasure">Montévil</a>,&nbsp;<a href="#Xmontevilmeasure">2019a</a>). Because biological objects undergo qualitative changes, they are not generic and thus are not equivalent. However, choosing a shared past enables biologist to posit a certain level of equivalence between diﬀerent organisms that we call symmetrization. Of course, <span class="cmti-10">a priori</span>, the more recent this shared past is, the fewer novelties appeared in the diﬀerent individual organisms, and the stronger the symmetrization is.</p>
+<!--l. 411-->
+<p class="indent">Symmetrization includes other methods to deﬁne an equivalence between organisms. For example, the metabolic rate of mammals can be measured by the rate of oxygen consumption (respiration). However, this rate strongly depends on the activity of organisms. Then biologists have to decide how this activity is speciﬁed. For example, the activity of organisms in their ecosystem deﬁnes the ﬁeld metabolic rate. By contrast, the basal metabolic rate corresponds to an activity where the organism is non-sleeping but does not perform a speciﬁc activity. By suppressing speciﬁc activities, the latter symmetrization reduces the impact of novelties; therefore, it is stronger than the ﬁrst.</p>
+<!--l. 419-->
+<p class="indent">At this point, the reader may think that the stronger the symmetrization is, the better. However, stronger symmetrizations come at a cost. For example, the basal metabolic rate is less variable and display clearer trends than the ﬁeld metabolic rate (<a href="#Xscaling2014">Longo and Montévil</a>,&nbsp;<a href="#Xscaling2014">2014b</a>). However, it does not ﬁt the activity of organisms in ecosystems, and the ﬁeld metabolic rate is more appropriate to assess the free energy requirements of a species. Along the same line, experimenters may prefer to work on a speciﬁc strain of animals, with a very recent common ancestor, to reduce the variability of experimental results. However, this strategy leads to results that may be speciﬁc to this strain and may not hold with diﬀerent animals of the same species. Therefore, there is a tradeoﬀ between the diﬀerent symmetrization strategies and their scientiﬁc merits.</p>
+<!--l. 427-->
+<p class="indent">Let us sum this discussion up. Biological objects are not generic because mathematical invariance does not deﬁne them. Instead, biological objects are the result of a cascade of changes and continue to produce such changes. In this situation, deﬁnitions of biological objects are anchored on speciﬁc material objects and the concept that objects have a shared concrete past. In particular, the names of systematics are used universally in biology, and all rely on genealogical concepts — in particular, the concept of a common ancestor. Since all empirical works in biology rely on such names to deﬁne their objects, there is no situation in biology that is deﬁned purely with the epistemology of physics.</p>
+<!--l. 434-->
+<p class="indent">A measurement relies on a symmetrization, that is to say, a speciﬁc way to consider that diﬀerent organisms are equivalent despite qualitative diﬀerences. Symmetrization may be more or less strong; for example, one can study the metabolism or mammals or study the metabolism of a clonal population of cells. However, it is never possible to consider that a symmetrization would be perfect; variations are always possible. Moreover, stronger symmetrizations are not always better. They tend to provide more stable results, but these results may be speciﬁc to this symmetrization.</p>
+<!--l. 440-->
+<h3 class="sectionHead"><span class="titlemark">4 </span> <a id="x1-70004"></a>A castling move on the epistemological board</h3>
+<!--l. 442-->
+<p class="noindent">We have discussed several problems that undermine the ability to objectivize biological phenomena by the method of physics. External quantities such as initial conditions or parameters can be non-generic and thus require speciﬁc hypotheses. Biological changes can invalidate hypotheses deﬁning equations, and these hypotheses ultimately have the same epistemological status than hypotheses on external quantities. It follows that the classiﬁcation and naming of biological objects cannot rely on equations. Instead, naming empirical objects relies on a historical epistemological framework where objects are deﬁned by their historical origin and not by what they do, like in physics. Since the physics epistemology cannot name biological objects, it cannot accommodate empirical results alone.</p>
+<!--l. 445-->
+<p class="indent">However, this situation is not a checkmate for our scientiﬁc endeavors. Our arguments only imply that we can no longer assume that the method of physics would be adequate in biology. In other words, we cannot separate proximate causes from the underlying history. Living beings require speciﬁc methods and epistemology to accommodate their historicity, even when we study how such or such organisms behave here and now.</p>
+<!--l. 447-->
+<p class="indent">To uphold our ability to objectivize biological phenomena, we have to reorganize our epistemological framework and acknowledge that equations and more generally ﬁxed mathematical structures cannot play a central role. Let us recall that the method of physics postulates invariance in order to explain changes. In biology, we postulate instead that there is no underlying invariance behind changes (<a href="#Xchaptervariation">Montévil et&nbsp;al.</a>,&nbsp;<a href="#Xchaptervariation">2016</a>;&nbsp;<a href="#Xlongo2014">Longo and Montévil</a>,&nbsp;<a href="#Xlongo2014">2017</a>). Invariance is limited to constraints, whose validity is ascertained only at a given time and time scale (<a href="#XMontevil2015c">Montévil and Mossio</a>,&nbsp;<a href="#XMontevil2015c">2015</a>;&nbsp;<a href="#XLongo2018">Longo</a>,&nbsp;<a href="#XLongo2018">2018</a>). Then, in biology, changes come ﬁrst, and invariance comes second. It follows that invariance requires explanations.</p>
+<!--l. 450-->
+<p class="indent">Let us develop the latter idea. In physics, theories provide mathematical structures that modelers use. These structures have deep theoretical and empirical roots and have solid justiﬁcations. In biology, speciﬁc constraints cannot be justiﬁed this way because their validity is not general. However, there are other ways to justify constraints and to choose between several possible mathematical forms.</p>
+<!--l. 452-->
+<p class="indent">A ﬁrst theoretical justiﬁcation of the stability of a constraint stems from natural selection. Natural selection explains the ”preservation of favored races,” that is to say the stability of certain traits in a population (<a href="#Xdarwin1859origin">Darwin</a>,&nbsp;<a href="#Xdarwin1859origin">1859</a>;&nbsp;<a href="#Xdoi:10.1002/9781119452713.ch14">Lecointre</a>,&nbsp;<a href="#Xdoi:10.1002/9781119452713.ch14">2018</a>).</p>
+<!--l. 454-->
+<p class="indent">The organizational perspective provides another justiﬁcation for the validity of constraints. In this perspective, parts of an organism collectively maintain each other; this notion leads to the concept of closure of constraints (<a href="#XMontevil2015c">Montévil and Mossio</a>,&nbsp;<a href="#XMontevil2015c">2015</a>). Then, in an organism, the theoretical validity of a constraint is justiﬁed by the existence of a process under constraints maintaining it. Let us take a step back. In physics, mathematical structures trickle down from the general framework to particular models. Instead, in biology, at the level of organisms, constraints mutually justify each other by the circularity of their interdependencies.</p>
+<!--l. 456-->
+<p class="indent">These two methods correspond to two philosophical concepts of biological functions introduced brieﬂy above. The selectionnist perspective considers that a trait has a function when it has been selected because of its eﬀects (<a href="#Xgodfrey1994modern">Godfrey-Smith</a>,&nbsp;<a href="#Xgodfrey1994modern">1994</a>). The organizational perspective considers that a constraint has a function when it is part of the closure of constraints (<a href="#Xmossio2009organizational">Mossio et&nbsp;al.</a>,&nbsp;<a href="#Xmossio2009organizational">2009</a>;&nbsp;<a href="#XMontevil2015c">Montévil and Mossio</a>,&nbsp;<a href="#XMontevil2015c">2015</a>)</p>
+<!--l. 458-->
+<p class="indent">With this rationale, we hope that we have shown how proper biological thinking can lead to another perspective on the underpinnings of mathematical modeling in biology. By switching perspective, we can avoid artifacts stemming from improper use of the epistemology of physics. By embracing the historicity of biological phenomena, we can build on historical reasoning to deﬁne precisely the objects that we are working with. The method of objectivation of physics no longer holds; however, mathematical models can still be justiﬁed by other rationales where biological functions play a central role.</p>
+<!--l. 1-->
+<h3 class="likesectionHead"><a id="x1-80004"></a>References</h3>
+<!--l. 1-->
+<div class="thebibliography">
+   <p class="bibitem"><span class="biblabel"><a id="Xbailly2011"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Bailly, F. and G.&nbsp;Longo (2011). <span class="cmti-10">Mathematics and the natural sciences; The Physical</span> <span class="cmti-10">Singularity of Life</span>. Imperial College Press, London. doi:&nbsp;<a href="https://doi.org/10.1142/p774"><span class="cmtt-10">10.1142/p774</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xdarwin1859origin"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Darwin, C. (1859). <span class="cmti-10">On the Origin of Species by Means of Natural Selection, or the</span> <span class="cmti-10">Preservation of Favoured Races in the Struggle for Life</span>. John Murray, London.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xde2011course"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>De&nbsp;Saussure, F. (2011). <span class="cmti-10">Course in general linguistics</span>. Columbia University Press.</p>
+   <p class="bibitem"><span class="biblabel"><a id="XDouady1996255"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Douady, S. and Y.&nbsp;Couder (1996a). Phyllotaxis as a dynamical self organizing process part i: The spiral modes resulting from time-periodic iterations. <span class="cmti-10">Journal of Theoretical</span> <span class="cmti-10">Biology</span>, 178(3):255 – 273. ISSN 0022-5193. doi:&nbsp;<a href="https://doi.org/10.1006/jtbi.1996.0024"><span class="cmtt-10">10.1006/jtbi.1996.0024</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="XDouady1996275"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Douady, S. and Y.&nbsp;Couder (1996b). Phyllotaxis as a dynamical self organizing process part ii: The spontaneous formation of a periodicity and the coexistence of spiral and whorled patterns. <span class="cmti-10">Journal of Theoretical Biology</span>, 178(3):275 – 294. ISSN 0022-5193. doi:&nbsp;<a href="https://doi.org/10.1006/jtbi.1996.0025"><span class="cmtt-10">10.1006/jtbi.1996.0025</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="XDOUADY1996295"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Douady, S. and Y.&nbsp;Couder (1996c). Phyllotaxis as a dynamical self organizing process part iii: The simulation of the transient regimes of ontogeny. <span class="cmti-10">Journal of Theoretical</span> <span class="cmti-10">Biology</span>, 178(3):295 – 312. ISSN 0022-5193. doi:&nbsp;<a href="https://doi.org/10.1006/jtbi.1996.0026"><span class="cmtt-10">10.1006/jtbi.1996.0026</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xfelin2014economic"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Felin, T., S.&nbsp;Kauﬀman, R.&nbsp;Koppl, and G.&nbsp;Longo (2014). Economic opportunity and evolution: Beyond landscapes and bounded rationality. <span class="cmti-10">Strategic Entrepreneurship</span> <span class="cmti-10">Journal</span>, 8(4):269–282. doi:&nbsp;<a href="https://doi.org/10.1002/sej.1184"><span class="cmtt-10">10.1002/sej.1184</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xsep-fine-tuning"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Friederich, S. (2018). Fine-tuning. In E.&nbsp;N. Zalta, editor, <span class="cmti-10">The Stanford Encyclopedia of</span> <span class="cmti-10">Philosophy</span>. Metaphysics Research Lab, Stanford University, winter 2018 edition.</p>
+   <p class="bibitem"><span class="biblabel"><a id="XGheorghiu2005"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Gheorghiu, S., S.&nbsp;Kjelstrup, P.&nbsp;Pfeifer3, and M.-O. Coppens (2005). Is the lung an optimal gas exchanger? In G.&nbsp;A. Losa, D.&nbsp;Merlini, T.&nbsp;F. Nonnenmacher, and E.&nbsp;R. Weibel, editors, <span class="cmti-10">Fractals in Biology and Medicine</span>, Mathematics and Biosciences in Interaction, pages 31–42. Birkhäuser Basel. ISBN 978-3-7643-7412-9. doi:&nbsp;<a href="https://doi.org/10.1007/3-7643-7412-8_3"><span class="cmtt-10">10.1007/</span> <span class="cmtt-10">3-7643-7412-8_3</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xgilbert2009ecological"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Gilbert, S.&nbsp;F. and D.&nbsp;Epel (2009). <span class="cmti-10">Ecological developmental biology: integrating</span> <span class="cmti-10">epigenetics, medicine, and evolution</span>. Sinauer Associates Sunderland.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xgodfrey1994modern"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Godfrey-Smith, P. (1994). A modern history theory of functions. <span class="cmti-10">No</span><span class="cmti-10">û</span><span class="cmti-10">s</span>, 28(3):344–362. doi:&nbsp;<a href="https://doi.org/10.2307/2216063"><span class="cmtt-10">10.2307/2216063</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xhoule2011measurement"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Houle, D., C.&nbsp;Pélabon, G.&nbsp;P. Wagner, and T.&nbsp;F. Hansen (2011). Measurement and meaning in biology. <span class="cmti-10">The Quarterly Review of Biology</span>, 86(1):3–34. doi:&nbsp;<a href="https://doi.org/10.1086/658408"><span class="cmtt-10">10.1086/658408</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xdisruptpol"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Jane, M., C.&nbsp;P. G., W.&nbsp;N. M., and P.&nbsp;M. V. (2007). Global warming and the disruption of plant–pollinator interactions. <span class="cmti-10">Ecology Letters</span>, 10(8):710–717. doi:&nbsp;<a href="https://doi.org/10.1111/j.1461-0248.2007.01061.x"><span class="cmtt-10">10.1111/</span> <span class="cmtt-10">j.1461-0248.2007.01061.x</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xkauffman2019world"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Kauﬀman, S.&nbsp;A. (2019). <span class="cmti-10">A World Beyond Physics: The Emergence and Evolution of</span> <span class="cmti-10">Life</span>. Oxford University Press, New York.</p>
+   <p class="bibitem"><span class="biblabel"><a id="XLaland1512"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Laland, K.&nbsp;N., K.&nbsp;Sterelny, J.&nbsp;Odling-Smee, W.&nbsp;Hoppitt, and T.&nbsp;Uller (2011). Cause and eﬀect in biology revisited: Is mayr’s proximate-ultimate dichotomy still useful? <span class="cmti-10">Science</span>, 334(6062):1512–1516. ISSN 0036-8075. doi:&nbsp;<a href="https://doi.org/10.1126/science.1210879"><span class="cmtt-10">10.1126/science.1210879</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xdoi:10.1002/9781119452713.ch14"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Lecointre, G. (2018). <span class="cmti-10">The Boxes and their Content: What to Do with Invariants</span> <span class="cmti-10">in Biology?</span>, chapter&nbsp;14, pages 139–152. John Wiley &amp; Sons, Ltd. doi:&nbsp;<a href="https://doi.org/10.1002/9781119452713.ch14"><span class="cmtt-10">10.1002/</span> <span class="cmtt-10">9781119452713.ch14</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="XLesne06"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Lesne, A. and J.-M. Victor (2006). Chromatin ﬁber functional organization: Some plausible models. <span class="cmti-10">Eur Phys J E Soft Matter</span>, 19(3):279–290. doi:&nbsp;<a href="https://doi.org/10.1140/epje/i2005-10050-6"><span class="cmtt-10">10.1140/epje/</span> <span class="cmtt-10">i2005-10050-6</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="XLongo2018"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Longo, G. (2018). How future depends on past and rare events in systems of life. <span class="cmti-10">Foundations of Science</span>, 23(3):443–474. ISSN 1572-8471. doi:&nbsp;<a href="https://doi.org/10.1007/s10699-017-9535-x"><span class="cmtt-10">10.1007/</span> <span class="cmtt-10">s10699-017-9535-x</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xlongo2011c"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Longo, G. and M.&nbsp;Montévil (2011). From physics to biology by extending criticality and symmetry breakings. <span class="cmti-10">Progress in Biophysics and Molecular Biology</span>, 106(2):340 – 347. ISSN 0079-6107. doi:&nbsp;<a href="https://doi.org/10.1016/j.pbiomolbio.2011.03.005"><span class="cmtt-10">10.1016/j.pbiomolbio.2011.03.005</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xlongomont"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Longo, G. and M.&nbsp;Montévil (2014a). <span class="cmti-10">Perspectives on Organisms: Biological time,</span> <span class="cmti-10">symmetries and singularities</span>. Lecture Notes in Morphogenesis. Springer, Heidelberg. ISBN 978-3-642-35937-8. doi:&nbsp;<a href="https://doi.org/10.1007/978-3-642-35938-5"><span class="cmtt-10">10.1007/978-3-642-35938-5</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xscaling2014"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Longo, G. and M.&nbsp;Montévil (2014b). Scaling and scale symmetries in biological systems. In <span class="cmti-10">Perspectives on Organisms</span>, Lecture Notes in Morphogenesis, pages 23–73. Springer Berlin Heidelberg. ISBN 978-3-642-35937-8. doi:&nbsp;<a href="https://doi.org/10.1007/978-3-642-35938-5_2"><span class="cmtt-10">10.1007/978-3-642-35938-5_2</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xlongo2014"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Longo, G. and M.&nbsp;Montévil (2017). <span class="cmti-10">Comparing Symmetries in Models and Simulations</span>. Springer. doi:&nbsp;<a href="https://doi.org/10.1007/978-3-319-30526-4"><span class="cmtt-10">10.1007/978-3-319-30526-4</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xlongo2012b"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Longo, G., M.&nbsp;Montévil, and S.&nbsp;Kauﬀman (2012). No entailing laws, but enablement in the evolution of the biosphere. In <span class="cmti-10">Genetic and Evolutionary Computation Conference</span>. GECCO’12, ACM, New York, NY, USA. doi:&nbsp;<a href="https://doi.org/10.1145/2330784.2330946"><span class="cmtt-10">10.1145/2330784.2330946</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="XMauroy2004"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Mauroy, B., M.&nbsp;Filoche, E.&nbsp;Weibel, and B.&nbsp;Sapoval (2004). An optimal bronchial tree may be dangerous. <span class="cmti-10">Nature</span>, 427:633–636. doi:&nbsp;<a href="https://doi.org/10.1038/nature02287"><span class="cmtt-10">10.1038/nature02287</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xmayr1961cause"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Mayr, E. (1961). Cause and eﬀect in biology. <span class="cmti-10">Science</span>, 134(3489):1501–1506.</p>
+   <p class="bibitem"><span class="biblabel"><a id="XchapterPA"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Miquel, P.-A. and S.-Y. Hwang (2016). From physical to biological individuation. <span class="cmti-10">Progress in Biophysics and Molecular Biology</span>, 122(1):51 – 57. ISSN 0079-6107. doi:&nbsp;<a href="https://doi.org/10.1016/j.pbiomolbio.2016.07.002"><span class="cmtt-10">10.</span> <span class="cmtt-10">1016/j.pbiomolbio.2016.07.002</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xmontevilmeasure"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Montévil, M. (2019a). Measurement in biology is methodized by theory. <span class="cmti-10">Biology &amp;</span> <span class="cmti-10">Philosophy</span>, 34(3):35. ISSN 1572-8404. doi:&nbsp;<a href="https://doi.org/10.1007/s10539-019-9687-x"><span class="cmtt-10">10.1007/s10539-019-9687-x</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xnovelty2017"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Montévil, M. (2019b). Possibility spaces and the notion of novelty: from music to biology. <span class="cmti-10">Synthese</span>, 196(11):4555–4581. ISSN 1573-0964. doi:&nbsp;<a href="https://doi.org/10.1007/s11229-017-1668-5"><span class="cmtt-10">10.1007/</span> <span class="cmtt-10">s11229-017-1668-5</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="XMontevil2015c"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Montévil, M. and M.&nbsp;Mossio (2015). Biological organisation as closure of constraints. <span class="cmti-10">Journal of Theoretical Biology</span>, 372:179 – 191. ISSN 0022-5193. doi:&nbsp;<a href="https://doi.org/10.1016/j.jtbi.2015.02.029"><span class="cmtt-10">10.1016/j.jtbi.</span> <span class="cmtt-10">2015.02.029</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xchaptervariation"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Montévil, M., M.&nbsp;Mossio, A.&nbsp;Pocheville, and G.&nbsp;Longo (2016). Theoretical principles for biology: Variation. <span class="cmti-10">Progress in Biophysics and Molecular Biology</span>, 122(1):36 – 50. ISSN 0079-6107. doi:&nbsp;<a href="https://doi.org/10.1016/j.pbiomolbio.2016.08.005"><span class="cmtt-10">10.1016/j.pbiomolbio.2016.08.005</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xmora2010biological"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Mora, T. and W.&nbsp;Bialek (2011). Are biological systems poised at criticality? <span class="cmti-10">Journal of</span> <span class="cmti-10">Statistical Physics</span>, 144:268–302. ISSN 0022-4715. doi:&nbsp;<a href="https://doi.org/10.1007/s10955-011-0229-4"><span class="cmtt-10">10.1007/s10955-011-0229-4</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xmossio2009organizational"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Mossio, M., C.&nbsp;Saborido, and A.&nbsp;Moreno (2009). An organizational account of biological functions. <span class="cmti-10">The British Journal for the Philosophy of Science</span>, 60(4):813–841. doi:&nbsp;<a href="https://doi.org/10.1093/bjps/axp036"><span class="cmtt-10">10.</span> <span class="cmtt-10">1093/bjps/axp036</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xmuller2003origination"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Müller, G.&nbsp;B., S.&nbsp;A. Newman, S.&nbsp;Newman, K.&nbsp;Schäfer, and S.&nbsp;I.&nbsp;T. Pradeu (2003). <span class="cmti-10">Origination of organismal form: beyond the gene in developmental and evolutionary</span> <span class="cmti-10">biology</span>. MIT Press.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xnewman2012physico"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Newman, S.&nbsp;A. (2012). Physico-genetic determinants in the evolution of development. <span class="cmti-10">Science</span>, 338(6104):217–219. doi:&nbsp;<a href="https://doi.org/10.1126/science.1222003"><span class="cmtt-10">10.1126/science.1222003</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xdoi:10.1002/jez.b.22895"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Newman, S.&nbsp;A. (2019). Inherent forms and the evolution of evolution. <span class="cmti-10">Journal of</span> <span class="cmti-10">Experimental Zoology Part B: Molecular and Developmental Evolution</span>. doi:&nbsp;<a href="https://doi.org/10.1002/jez.b.22895"><span class="cmtt-10">10.1002/</span> <span class="cmtt-10">jez.b.22895</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xnicheconstr"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Pocheville, A. (2010). <span class="cmti-10">What niche construction is (not)</span>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xpocheville_darwinian_2018"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Pocheville, A. (2019). A Darwinian dream: on time, levels, and processes in evolution. In T.&nbsp;Uller and K.&nbsp;N. Laland, editors, <span class="cmti-10">Evolutionary Causation. Biological and philosophical</span> <span class="cmti-10">reﬂections</span>, Vienna Series in Theoretical Biology. MIT Press.</p>
+   <p class="bibitem"><span class="biblabel"><a id="X10.1007/978-3-662-06162-6_12"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Sapoval, B., M.&nbsp;Filoche, and E.&nbsp;R. Weibel (2001). Branched structures, acinus morphology and optimal design of mammalian lungs. In V.&nbsp;Fleury, J.-F. Gouyet, and M.&nbsp;Léonetti, editors, <span class="cmti-10">Branching in Nature</span>, pages 225–242. Springer Berlin Heidelberg, Berlin, Heidelberg. ISBN 978-3-662-06162-6. doi:&nbsp;<a href="https://doi.org/10.1007/978-3-662-06162-6_12"><span class="cmtt-10">10.1007/978-3-662-06162-6_12</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xsoto2016century"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Soto, A.&nbsp;M., G.&nbsp;Longo, D.&nbsp;Noble, N.&nbsp;Perret, M.&nbsp;Montévil, C.&nbsp;Sonnenschein, et&nbsp;al. (2016). From the century of the genome to the century of the organism: New theoretical approaches. <span class="cmti-10">Progress in Biophysics and Molecular Biology, Special issue</span>, pages 1–82.</p>
+   <p class="bibitem"><span class="biblabel"><a id="XULANOWICZ20091886"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Ulanowicz, R.&nbsp;E. (2009). The dual nature of ecosystem dynamics. <span class="cmti-10">Ecological Modelling</span>, 220(16):1886 – 1892. ISSN 0304-3800. doi:&nbsp;<a href="https://doi.org/10.1016/j.ecolmodel.2009.04.015"><span class="cmtt-10">10.1016/j.ecolmodel.2009.04.015</span></a>. Selected Papers from the Workshop on Emergence of Novelties, 9-16 October 2008, Pacina, Siena, Italy.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xwest1997"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>West, G., J.&nbsp;Brown, and B.&nbsp;Enquist (1997). A general model for the origin of allometric scaling laws in biology. <span class="cmti-10">Science</span>, 276(5309):122–126. doi:&nbsp;<a href="https://doi.org/10.1126/science.276.5309.122"><span class="cmtt-10">10.1126/science.276.5309.</span> <span class="cmtt-10">122</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="Xwest1999"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>West, G., J.&nbsp;Brown, and B.&nbsp;Enquist (1999). The fourth dimension of life: Fractal geometry and allometric scaling of organisms. <span class="cmti-10">Science</span>, 284(5420):1677–1679. doi:&nbsp;<a href="https://doi.org/10.1126/science.284.5420.1677"><span class="cmtt-10">10.</span> <span class="cmtt-10">1126/science.284.5420.1677</span></a>.</p>
+   <p class="bibitem"><span class="biblabel"><a id="X10.1371/journal.pone.0010892"></a><span class="bibsp">&nbsp;&nbsp;&nbsp;</span></span>Zhu, J., Y.-T. Zhang, M.&nbsp;S. Alber, and S.&nbsp;A. Newman (2010). Bare bones pattern formation: A core regulatory network in varying geometries reproduces major features of vertebrate limb development and evolution. <span class="cmti-10">PLOS ONE</span>, 5(5):1–11. doi:&nbsp;<a href="https://doi.org/10.1371/journal.pone.0010892"><span class="cmtt-10">10.1371/</span> <span class="cmtt-10">journal.pone.0010892</span></a>.</p>
+</div>

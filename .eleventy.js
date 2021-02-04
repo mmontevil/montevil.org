@@ -89,6 +89,13 @@ eleventyConfig.setDataDeepMerge(true);
 const readingTime = require('eleventy-plugin-reading-time');
   
 eleventyConfig.addPlugin(readingTime);
+
+
+const pluginTOC = require('eleventy-plugin-nesting-toc')
+ 
+  eleventyConfig.addPlugin(pluginTOC,{tags:['h2', 'h3', 'h4', 'h5', 'h6'], wrapperClass:'indent autotoc'})
+
+
   // ------------------------------------------------------------------------
   // Markdown plugins
   // ------------------------------------------------------------------------
@@ -213,10 +220,24 @@ const imagesResponsiverTransform = (content, outputPath) => {
       imagesResponsiverTransform
     );
   
+   /*
+  const typesetPlugin = require('eleventy-plugin-typeset');
+
+  
+  eleventyConfig.addPlugin(
+  typesetPlugin({
+    only: '.article-text', // Run only on HTML content within a certain CSS selector
+    disable: ['ligatures'], // Disable typesetting feature 'smallCaps'
+    // etc.
+  })
+);*/
+ const options = {
+  disable: ['ligatures'] // array of typeset feature(s) to disable
+};
 const typeset = require('typeset');
 const typeseter = (content, outputPath) => {
   if (outputPath && outputPath.endsWith('.html')) {
-    return typeset(content);
+    return typeset(content,options);
   }
   return content;
 };
@@ -224,6 +245,7 @@ const typeseter = (content, outputPath) => {
       'typeseter',
       typeseter
     ); 
+  
   // eleventyConfig.addPlugin(imagesResponsiver, imagesResponsiverConfig);
 
     // const htmlMinTransform = require(path.join(

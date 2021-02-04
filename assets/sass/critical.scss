@@ -752,6 +752,12 @@ color: var(--color-link);
 .publi:nth-child(2n+2),.card-list__item:nth-child(2n+2) {background: var(--color-primary-lighter-8)}
 
 
+.sectionHeadList{margin-top:1em;margin-bottom:1em;
+  text-align: center;  
+  font-size: var(--font-size-xxxxl);
+}
+
+
 
 .pull-T, .pull-V, .pull-W, .pull-Y {margin-left: -0.07em}
 .push-T, .push-V, .push-W, .push-Y {margin-right: 0.07em}
@@ -778,17 +784,20 @@ color: var(--color-link);
 .pull-double{margin-left:-.46em}
 .push-double{margin-right:.46em}
 
+
+
 .paragraphHead2{
   font-weight: bold;
   color: var(--color-primary-darker-1);
 }
 
-div > .indent, div >.noindent,section > .indent, section >.noindent,dd > .noindent,.caption,div >.description,div >table.equation,div >.itemize1,div >.enumerate1,div >.tableofcontents, div.tabular,div >.tableofcontents,.bibitem, dd.enumerate, div>blockquote , .enumerateRom,ol.references,ul.references,.Tableau10,.equation-star, .footnotes{
+div > .indent, div >.noindent,section > .indent, section >.noindent,dd > .noindent,.caption,div >.description,div >table.equation,div >.itemize1,div >.enumerate1,div >.tableofcontents, div.tabular,div >.tableofcontents,.bibitem, dd.enumerate, div>blockquote , .enumerateRom,ol.references,ul.references,.Tableau10,.equation-star, .footnotes,.Footnote{
       @media (min-width: 30rem) {
   margin-left: calc(0.25*100% - 0.25*30rem);
   margin-right: calc(0.25*100% - 0.25*30rem);
       }
 }
+
 /*
 div >.tableofcontents,.bibitem,.thebibliography{
       @media (min-width: 30rem) {
@@ -846,7 +855,7 @@ dt.description, dt.dt{margin-left: -2em;
         }
 .breakk{
   }
-nav > ul, nav >ul >li>ul , nav >ul >li>ul>li>ul,.references {
+nav > ul, nav >ul >li>ul , nav >ul >li>ul>li>ul,.references,.autotoc ol {
   list-style-type: none;
 }
 .episource{text-align: right;
