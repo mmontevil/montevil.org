@@ -1,7 +1,7 @@
 ---
 layout: content
+upnav: toc-site
 eleventyComputed:
-   
     keyword : "{{ bibentry.keyword }}"
     abstract : "{{ bibentry.abstract }}"
     bibib: "src/assets/bib/{{page.fileSlug}}.bib"
@@ -10,6 +10,16 @@ eleventyComputed:
     datepub: "{%- set date0 = bibentry.issued['date-parts'][0] -%}{%- if  date0 -%}{{- 0 if date0[0]<10  -}}{{- date0[0] if date0[0] else 2021 -}}-{{- 0 if (date0[1]<10 or not date0[2])  -}}{{- date0[1] if date0[1] else 01 -}}-{{- 0 if (date0[2]<10 or not date0[2])  -}}{{- date0[2] if date0[2] else 01 -}}{%- else -%}Submitted{%- endif -%}"
     orderDate: "{%- if datepub=='Submitted' -%}{{- page.date | attributeDate -}}{%- else -%}{{- datepub     -}}{%- endif -%}"
 ---
+
+<script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+<script>
+   document.addEventListener('DOMContentLoaded', function(event) {
+
+  anchors.add();
+
+});
+</script> 
+
  {#  tags: 
        - "  {{ pubmeta.keyword | splarray2 }}"
 tags: [{% for entry in keyword.split(', ') %}
@@ -54,9 +64,12 @@ tags: [{% for entry in keyword.split(', ') %}
   <div class="info indent"><p>{{ bibib | bibcite|divRemove|safe}}</p>
   <p> {{pubuttons(item) |safe}}</p>
   </div>
-<h2 class=center> Full text, reading time: ~{{ content   | readingTime({speed:170}) }}</h2>
 
 <hr class="breakk">
-  {{ content | toc | safe }}
 
+ <h2 class=sectionHead id="toc-site"> Table of contents, reading time: ~{{ content   | readingTime({speed:170}) }}</h2>
+ {{ content | toc | safe }}
+
+
+ <hr class="breakk">
 {{ content | safe }}

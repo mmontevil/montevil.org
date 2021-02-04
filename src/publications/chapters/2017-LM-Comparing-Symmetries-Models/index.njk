@@ -1,0 +1,779 @@
+---
+excerpt: We distinguish mathematical modeling, computer implementations of these models and purely computational approaches by their symmetries and by randomness.
+---
+
+<meta name="author" content="Giuseppe Longo" /><meta name="author" content="Maël Montévil" />
+    <style type="text/css">
+        code {
+            white-space: pre-wrap;
+        }
+        span.smallcaps {
+            font-variant: small-caps;
+        }
+        span.underline {
+            text-decoration: underline;
+        }
+        div.column {
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+        }
+    </style>
+    <!--[if lt IE 9]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+<header id="title-block-header">
+    <h2 class="titleHead" >Comparing Symmetries in Models and Simulations</h2>
+ 
+    <p class="author" >
+        Giuseppe Longo<a class="footnote-ref" href="#fn2" id="fnref2"><sup>2</sup></a> and Maël Montévil<a class="footnote-ref" href="#fn3" id="fnref3"><sup>3</sup></a>
+    </p>
+</header>
+
+<h3 class="sectionHead"  class="unnumbered" id="keywords">Abstract:</h3>
+<p class="indent">
+    Computer simulations brought remarkable novelties in knowledge construction.&nbsp; In this paper, we first distinguish between mathematical modeling, computer implementations of these models and purely computational approaches. In all
+    three cases, different answers are provided to the questions the observer may have concerning the processes under investigation. These differences will be highlighted by looking at the different theoretical symmetries of each frame. In
+    the latter case, the peculiarities of Agent Based or Object Oriented Languages allow to discuss the role of phase spaces in mathematical analyses of physical vs. biological dynamics. Symmetry breaking and randomness are finally
+    correlated in the various contexts where they may be observed.
+</p>
+<h4 class="subsectionHead"  class="unnumbered" id="keywords">Keywords:</h4>
+<p class="indent">computer simulation, symmetries, randomness, theoretical framework, biology, equational modeling</p>
+<p class="indent">&nbsp;</p>
+<h3 class="sectionHead"  id="introduction"><span class="header-section-number">1</span> Introduction</h3>
+<p class="indent">Mathematical and computational modeling have become crucial in Natural Sciences, as well as in architecture, economics, humanities, ….</p>
+<p class="indent">
+    Sometimes the two modeling techniques, typically over continuous or discrete structures, are conflated into or, even, identified to natural processes, by considering nature either intrinsically continuous or discrete, according to the
+    preferences of the modeler.
+</p>
+<p class="indent">
+    We analyze here the major differences that exist between continuous (mostly equational) computational (mostly discrete and algorithmic) modeling, often referred to as computer simulations. We claim that these different approaches
+    propose different insights into the intended processes: they actually organize nature (or the object of study) in deeply different ways. This may be understood by an analysis of symmetries and symmetry breakings, which are often
+    implicit but strongly enforced by the use of mathematical structures.
+</p>
+<p class="indent">
+    We organize the World by symmetries. They constitute a fundamental “principle of (conceptual) construction”, in the sense of <span class="citation" data-cites="bailly2011">(Bailly and Longo 2011)</span>, from Greek geometry, to XXth
+    century physics and mathematics. All axioms by Euclid may be understood as “maximizing the symmetries of the construction” (see <span class="citation" data-cites="longovision">(Longo 2010)</span>). Euclid’s definitions and proofs
+    proceed by rotations and translations, which are symmetries of space.
+</p>
+<p class="indent">
+    Symmetries govern the search for invariants and their preserving transformations that shaped mathematics from Descartes spaces to Grothendieck toposes and all XXth century Mathematics (see
+    <span class="citation" data-cites="Zalamea">(Zalamea 2012)</span>). Theoretical physics has been constructed by sharing with mathematics the same principle of (conceptual) construction. Among them, symmetries, which describe invariance,
+    and order, which is needed for optimality, play a key role from Galileo’s inertia to the geodetic principle and to Noether’s theorems (see
+    <span class="citation" data-cites="van1989laws Schwarzbach longomont">(Van Fraassen 1989; Kosmann-Schwarzbach 2004; Longo and Montévil 2014)</span>). The fundamental passage from Galileo’s symmetry group, which describes the
+    transformation from an inertial frame to another while preserving the theoretical invariants, to Lorentz-Poincaré group characterizes the move from classical to relativistic physics. The geodetic principle is an extremizing principle
+    and a consequence of conservation principles, that is of symmetries in equations (Noether).
+</p>
+<p class="indent">
+    Well beyond mathematics and modern physics, the choice of symmetries as organizing principle is rooted in our search for invariants of action, in space and time, as moving and adaptive animals. We adjust to changing environment by
+    trying to detect stabilities or by forcing them into the environment. Our bilateral symmetry is an example of this evolutionary adjustment between our biological structure and movement: its symmetry plane is given by the vertical axis
+    of gravitation and the horizontal one of movement<a class="footnote-ref" href="#fn5" id="fnref5"><sup>5</sup></a>. In this perspective, the role we give to symmetries in mathematics and physics is grounded on pre-human relations to the
+    physical world, well before becoming a fundamental component of our scientific knowledge construction.
+</p>
+<p class="indent">By this, we claim that an analysis of the intended symmetries and their breaking, in theorizing and modeling, is an essential part of an investigation of their reasonable effectiveness and at the core of any comparative analysis.</p>
+<h3 class="sectionHead"  id="approximation"><span class="header-section-number">2</span> Approximation?</h3>
+<p class="indent">
+    Before getting into our main theme, let’s first clarify an “obvious” issue that is not so obvious to many: the discrete is not an approximation of the continuum. They simply, or more deeply, provide different insights. Thus, in no way
+    we will stress the superiority of one technique over the other. We will just try to understand continuous vs.&nbsp;discrete frames in terms of different symmetries.
+</p>
+<p class="indent">
+    It should be clear that, on one hand, we do not share the view of many, beautifully expressed by Réné Thom, on the intrinsically continuous nature of the World, where the discrete is just given by singularities in continua. On the other
+    hand, many mythical descriptions of a Computational World or just of the perfection of computational modeling seem to ignore the limits of discrete approximation as well as some more basic facts, which are well-known, since always, in
+    Numerical Analysis (the first teaching job, for a few years, of the first author). There is no way to approximate long enough a continuous non-linear dynamics by an algorithm on discrete data types when the mathematical description
+    yields some sensitivity to initial/border conditions. Given any digital approximation, the discrete and the continuous trajectories quickly diverge by the combination of the round-off and the sensitivity. However, in some cases (some
+    hyperbolic dynamics), the <em>discrete trajectory may be indefinitely approximated by a continuous one</em>, but not conversely. The result is proved by difficult “shadowing theorems”, see
+    <span class="citation" data-cites="pilyugin1999shadowing">(Pilyugin 1999)</span>. Note that this is the opposite of the “discrete approximating the continuum”, which is given for granted by many.
+</p>
+<p class="indent">
+    We are hinting here just to a comparison between mathematical techniques that provably differ, but which, <em>a priori</em>, says nothing about the actual physical processes that are not continuous nor discrete, as they are what they
+    are. Yet, it is very easy to check an algorithmic description of a double pendulum against the actual physical device (on sell for 50 euros on the web): very soon the computational imitation has nothing to do with the actual dynamics.
+    The point is that there is no way to have a physical double pendulum to iterate exactly on the “same” initial conditions (i.e. when started in the same interval of the best possible measurement), as this device is sensitive to minor
+    fluctuations (thermal, for example), well below the unavoidable interval of measurement. By principle and <em>in practice</em>, instead, discrete data types allow exact iteration of the computational dynamics, on exactly the same
+    initial data. Again, this is a difference in symmetries and their breaking.
+</p>
+<p class="indent">
+    In conclusion, on one side, a mathematical analysis of the equations allows to display sensitivity properties, from “mixing”, a weak form of chaos, to high dependence on minor variations of the initial conditions (as well as topological
+    transitivity, a property related to the density of orbits, etc). These are mathematical properties of deterministic chaos. We stress by this that deterministic chaos and its various degrees are a property of the
+    <em>mathematical model</em>: by a reasonable abuse one may then say that the modeled physical process is chaotic, if one believes that the mathematical model is a good/faithful/correct representation of the intended process. But this is
+    an abuse: the dice or a double pendulum know very well where they will go: along a unique physical geodetics, extremizing a Lagrangian action, according to Hamilton principle. If we are not able to predict it, it is our problem due to
+    the non-linearity of the model, which “amplifies fluctuations”, <em>and</em> due to our approximated measurements.
+</p>
+<p class="indent">
+    As it happens, the interval of measurement, the unavoidable approximated interface between us and the World, is better understood by continua than over discrete data types (we will go back to this) and, thus, physicists usually deal
+    with equations within continuous frames.
+</p>
+<p class="indent">
+    On the other side, the power of discrete computations allows to …compute, even forever, and, by this, it gives fantastic images of deterministic chaos. As a matter of fact, this was mathematically described and perfectly understood by
+    Poincaré in 1892, yet it came to the limelight only after Lorentz computational discovery of “strange attractors” (and Ruelle’s work, <span class="citation" data-cites="onturbulence">(Ruelle and Takens 1971)</span>). As deterministic
+    chaos is an asymptotic notion, there is no frame where one can better see chaotic dynamics, strange attractor or alike than on a computer. Yet, just push the restart button and the most chaotic dynamics will iterate exactly, as we
+    observed and further argue below, far away from any actual physical possibility. And this is not a minor point: it is “correctness of programs” a major scientific issue in Computer Science. Of course, one can artificially break the
+    symmetry, by asking a friend to change the 16th decimal in the initial conditions. Then, the chaotic dynamics will follow a very different trajectory on the screen, an interesting information, <em>per se</em>. However, our analysis here
+    is centered on symmetry breaking intrinsic to a theory, that is on changes which have a physical meaning. This control, available in computer simulations, is thus an artifact from a physical perspective.
+</p>
+<h3 class="sectionHead"  id="what-do-equations-and-computations-do"><span class="header-section-number">3</span> What do equations and computations do?</h3>
+<h4 class="subsectionHead"  id="equations"><span class="header-section-number">3.1</span> Equations</h4>
+<p class="indent">
+    In physics, equations follow symmetries, either in equilibrium systems, where equations are mostly derived from conservation properties (thus from symmetries, see below), or in far from equilibrium systems, where they describe flows, at
+    least in the stationary cases — very little is known in non stationary cases. This is the physical meaning of most equational descriptions.
+</p>
+<p class="indent">
+    Then one “computes” from equations and, in principle, derives knowledge on physical processes, possibly by obtaining and discussing solutions — or the lack of solutions: a proof of non-analyticity, such as Poincaré’s Three Body Theorem
+    for example, may be very informative. But these derivations are not just formal: they are mostly based on proofs of relevant theorems. The job of mathematical deductions, in physics in particular, is to develop the consequences of
+    “meaningful” writings. Mathematics is not a formal game of signs, but a construction grounded on meaning and handled both by formal “principles of proofs” and by semantically rich “principles of constructions”
+    <span class="citation" data-cites="bailly2011">(Bailly and Longo 2011)</span>. Typically, one reasons by symmetries, uses order, including well-ordering, the genericity of the intended mathematical object or generalized forms of
+    induction that logicians analyze by very large cardinals, an extension of the order of integer numbers obtained by alternating limits and successor operations <span class="citation" data-cites="Barwise">(Barwise 1978)</span>. Once more,
+    theoretical symmetries and meaning step in while proving theorems and solving/discussing equations; also the passage from Laplace’s predictability of deterministic process, to Poincaré’s proof of deterministic though unpredictable
+    processes is a breaking of the observable symmetries (see below for more).
+</p>
+<p class="indent">
+    As a matter of fact, in order to solve equations, or discuss their solvability, we invented very original mathematical structures, from Galois’ groups to differential geometry. The use of enriched construction principles, often based on
+    or yielding new mathematical meaning, has been constantly stimulated by the analysis of equations. This is part of the common practice of mathematical reasoning. However, well beyond the extraordinary diagonal trick by Gödel, it is very
+    hard to <em>prove</em> that “meaningful” procedures are unavoidable in actual proofs, that is to show that meaning is essential to proofs. An analysis of some recent “concrete” incompleteness result is in
+    <span class="citation" data-cites="Longo01102011">(Longo 2011)</span>: meaning, as well-ordering, a geometric judgment, provably and inevitably steps in proofs even of combinatorial theorems (of Arithmetic!). Or, very large, infinite
+    cardinals may be shown to be essential to proofs <span class="citation" data-cites="Friedman904672">(Friedman 1998)</span>. In this precise sense, formal deductions as computations, with their finitistic principles of proof, are
+    provably incomplete.
+</p>
+<p class="indent">
+    In particular, physico-mathematical deductions, used to discuss and solve equations, are <em>not</em> just formal computations, i.e. meaningless manipulations of signs. They transfer symmetries in equations to further symmetries, or
+    prove symmetry changes or breaking (non-analyticity, typically). In Category Theory, equations are analyzed by drawing diagrams and inspecting their symmetries.
+</p>
+<h4 class="subsectionHead"  id="from-equations-to-computations"><span class="header-section-number">3.2</span> From Equations to Computations</h4>
+<p class="indent">
+    The mathematical frame of modern computers was proposed within an analysis of formal deductions. Actually, Gödel, Kleene, Church, Turing …invented computable functions, in the 1930’s, in order to disprove the largely believed
+    completeness hypothesis of formal/axiomatic systems and their formally provable consistency<a class="footnote-ref" href="#fn6" id="fnref6"><sup>6</sup></a>. Turing, in particular, imagined the logical Computing Machine, imitating a man
+    in the least action of sign manipulation according to formal instructions (write or erase <span class="math inline">0</span> and <span class="math inline">1</span>, move left or right of one square in a “child’s notebook”), and invented
+    by this the modern split between software and hardware. He then wrote an equation that easily defines an incomputable arithmetic function. Turing’s remarkable work for this negative result produced the modern notion of program and
+    digital computer, a discrete state machine working on discrete data types. As we said, computing machinery, invented as an implementation of formal proofs, are provably incomplete even in arithmetic, let alone in proper extension of it,
+    based on principles richer that arithmetic induction (well-ordering, symmetries, infinite ordinals …).
+</p>
+<p class="indent">
+    Thus, beyond the limits set by the impossibility of approximation mentioned above, there is also a conceptual gap between proving over equations and computing solutions by algorithms on discrete data. The first deals with the physical
+    <em>meaning</em> of equations, their symmetries and their breaking, transfers this meaning to consequences, by human reasoning, grounded on “gestures" (such as drawing a diagram) and common understanding. It is based on the invention,
+    if needed, of new mathematical structures, possibly infinitary ones, from Galois’ groups to Hilbert Spaces to the modern fine analysis of infinitary proofs <span class="citation" data-cites="rathjen2006art">(Rathjen 2006)</span>. These,
+    in some cases such as for well-ordering or the large infinite cardinals mentioned above, may even be proved to be unavoidable, well beyond computations and formalisms (see the reference above). Do algorithms transfer “physical meaning”
+    along the computation? Do they preserve symmetries? Are those broken in the same way we understand they are in the natural process under scrutiny?
+</p>
+<p class="indent">
+    Our claim is that algorithmic approaches (with the notable exception of interactive automated formal calculus, within its limits) involve a modification of the theoretical symmetries used to describe and understand phenomena in physics,
+    in particular by continua. This means that algorithmic approaches usually convey less or a different physical meaning than the original equational approaches. In other words, the modification of the equations needed for a completely
+    finitary and discrete approach to the determination of a phenomenon leads to losses of meaningful aspects of the mathematization and to the introduction of arbitrary or new features.
+</p>
+<p class="indent">
+    As far as losses are concerned, the most preeminent ones probably stem from the departure from the continuum, an invention resulting from measurement, from Pythagoras’ theorem to the role of intervals in physical measurement. As we
+    already hinted, in the computing world, deterministic unpredictability does not make sense. A program determines and computes on exact data: when those are known, exactly (which is always possible), the program iterates exactly, thus
+    allows a perfect prediction, as the program itself yields the prediction. The point is that deterministic unpredictability is due to the non-linearity, typically, of the “determination” (the equations) and triggered by non-observable
+    fluctuations or perturbation, <em>below</em> the (best) interval of measurement. Now, approximation is handled, in mathematics, by topologies of open intervals over continua, the so called “natural topology” over the real numbers.
+</p>
+<p class="indent">
+    At this regards, note that a key assumption, bridging mathematics of continua and classical physics, is that any sequence of measurements of increasing, arbitrary precision converge to a well defined state. This is mathematically a
+    Cauchy condition of completeness, which implies that the rational numbers are not sufficient to understand the situation. Cantor’s real numbers have been invented exactly to handle this kind of problems (among other reasons, such as the
+    need to mathematize rigorously the phenomenal continuum in its broadest sense, the continuum of movement, say).
+</p>
+<p class="indent">
+    Also, the fundamental relation between symmetries and conservation properties exhibited by Noether’s theorems depend on the continuum (e.g.&nbsp;continuous time translations), so that these results can no longer be derived on a
+    discretized background. In short, these theorems rely on the theoretical ability to transform states continuously along continuous symmetries in equations (of movement, for example) since the intended conserved quantity cannot change
+    during such a transformation. With a discrete transformation the observed quantities can be altered (and it is the case usually in simulations) because there is no continuity to enforce their conservation.
+</p>
+<p class="indent">
+    Reciprocally, the changes due to the discretization introduce features that are arbitrary from a physical perspective. For example a basic discretization of time introduces an arbitrary fundamental time-scale. In Numerical Analysis, the
+    methodology is to have the (differential) equations as the locus of objectivity and to design algorithms that can be shown to asymptotically converge (in a pertinent mathematical sense, and hopefully rapidly in practice) towards the
+    mathematical solutions of the physically meaningful equations. In these frames, the theoretical meaning of the numerical (or algorithmic) approaches is entirely derivative: such numerical approaches are sound only with respect to, and
+    inasmuch as there are mathematical results showing a proximity with the original equations and the trajectories determined by them. The mathematical results (convergence theorems) define the nature of this proximity, and are usually
+    limited to specific cases, so that entire research communities develop around the topic of the simulation of a specific family of equations (Navier-Stokes or alike for turbulence, Schrödinger in Quantum Physics, …). As a result, the
+    methods to approach different (non-linear) equations by computing rely on specific discretizations and their close, often <em>ad hoc</em>, analysis.
+</p>
+<h4 class="subsectionHead"  id="computations"><span class="header-section-number">3.3</span> Computations</h4>
+<p class="indent">
+    As we said, we are just singling-out some methodological differences or gaps between different modeling techniques. On the “side of algorithms”, the main issue we want to stress here is that equational approaches force uniform phase
+    spaces. That is, the list of pertinent observables and parameters, including space and/or time, of course, must be given <em>a priori</em>. Since the work by Boltzmann and Poincaré, physicists usually consider the phase spaces made out
+    of (position, momentum) or (energy,time) as sufficient for writing the equational determination. By generalizing the Philosopher’s (Kant) remark on Newton’s work, the (phase) space is the very “condition of possibility” for the
+    mathematical intelligibility of physics. Or, to put it as H. Weyl, the main epistemological teaching of Relativity Theory is that physical knowledge begins when one fixes the reference system (that is to say, the way to describe the
+    phase space) and the metrics on it. Then Einstein’s Invariantentheorie allows to inspect the relevant invariants and transformations, on the grounds of Lorentz-Poincaré symmetry groups, typically, within a pre-given list of observables
+    and parameters.
+</p>
+<p class="indent">
+    Now, there exists a rich practice of computational modeling, which does not need to pass through equations, skips this <em>a priori</em>. Varenne nicely describes the dynamic mixture of different computational contexts as a “simulat”, a
+    neologism which recalls “agrégat” (an aggregate) <span class="citation" data-cites="varennesimulat">(Varenne 2012)</span>. This novelty has been introduced, in particular, by the peculiar features of Object Oriented Programming (OOP),
+    but other “agent oriented systems” exist.
+</p>
+<p class="indent">
+    As a matter of fact, procedural languages require all values to share the same representation — this is how computer scientists call names for observables and parameters<a class="footnote-ref" href="#fn7" id="fnref7"><sup>7</sup></a>.
+    “Objects" instead may interact even with completely different representations as long as their interfaces are compatible<a class="footnote-ref" href="#fn8" id="fnref8"><sup>8</sup></a>. Thus, objects behave autonomously and do not
+    require knowledge of the private (encapsulated) details of those they are interacting with. As a consequence, only the interface is important for external reactions (
+    <span class="citation" data-cites="cook Bruce">(Cook 1991; Bruce, Cardelli, and Pierce 1997)</span>).
+</p>
+<p class="indent">
+    In biological modeling, aggregating different techniques, with no common <em>a priori</em> “phase space”, is a major contribution to knowledge construction. Organisms, niches, ecosystems may be better understood by structuring them in
+    different levels of organization, each with a proper structure of determination, that is phase space and description of the dynamics. For example, networks of cells are better described by tools from statistical physics, while
+    morphogenesis, e.g.&nbsp;organ formation, are currently and mostly modeled by differential equations in continua. Each of these approaches requires pregiven phase spaces, which may radically differ (and the communities of researchers in
+    the two fields hardly talk to each other). In a computer, by its high parallelism, one may mix these different techniques, with some more or less acceptable approximations, in spite of their differences. Even more so,
+    <em>ad hoc</em> algorithms may describe specific interactions, independently of a unified equational description that may be impossible. Then “objects", in the sense above, may interact only on the grounds of the actual interface, both
+    within a level of organization and between different levels, without reference to the proper or internal (to the object, to the level), causal structure.
+</p>
+<p class="indent">
+    In other words, OOP allows independent objects’ dynamics, reminiscent of individual cell dynamics. Then, proliferation with variation and motility, the default state of life (see
+    <span class="citation" data-cites="lomososo2015">(Longo et al. 2015)</span>) may be added to the models of morphogenesis that usually consider cells as inertial bullets, which they are not; that is, their proliferation, changes and
+    motility are not entailed by physical forces that contribute to shape organs (in particular, when organs function for the exchange of energy and matter). By the computational power of modern computers, agent or object based programming
+    styles (such as OOP) may implement autonomous agency for each cell, have them simultaneously interact within a morphogenetic field shaping the dynamics or a network ruled by statistical laws.
+</p>
+<p class="indent">
+    In summary, in computer simulation, one may “put together” all these techniques, design very complex “simulat” as aggregation of algorithms, including stochastic equations, probabilities distributions and alike. In particular, OOP
+    allows the simulation of discrete dynamics of individual cells in an organism or of organisms in an ecosystem. And this with no need to write global first equations: one directly goes to algorithms in their changing environment.
+</p>
+<p class="indent">
+    However, let the process, or images on a computer, run …then push the restart button. Since access to discrete data is exact, as we said and keep stressing, the computer will iterate on the same initial conditions, exactly, with the
+    same discrete algorithms. Thus, it will go exactly along the same computation and produce exactly the same trajectories, images and genesis of forms. This has no physical meaning as an unstable or chaotic system would never “iterate
+    identically”. It is even less biologically plausible, as biology is, at least, the “<em>never identical iteration of a morphogenetic process</em>” (see <span class="citation" data-cites="lomososo2015">(Longo et al. 2015)</span>).
+    Observe now that <em>exact iteration</em> is a form of (time-shift/process-identity) symmetry; while non identical iteration is a symmetry breaking (see below for more on randomness vs.&nbsp;symmetry breaking). Noise, of course, may be
+    introduced artificially, but this makes a deep conceptual difference, at the core of our analysis.
+</p>
+<p class="indent">
+    Note finally, that stochastic equations, probability values and their formal or algorithmic descriptions, are <em>expressions</em> and <em>measurement</em> of randomness, they <em>do not</em> implement randomness. And this is a key
+    issue.
+</p>
+<h3 class="sectionHead"  id="randomness-in-biology"><span class="header-section-number">4</span> Randomness in Biology</h3>
+<p class="indent">
+    Theoretical Physics proposes at least two forms of randomness: classical and quantum. They are separated by different probability theories and underying logic: entanglement modifies the probability correlations between quantum events
+    <span class="citation" data-cites="belavkin2000quantum">(Belavkin 2000)</span>. Even the outcome of the mesurement of generic states is contextual which means that this outcome depends on the other measurements performed and cannot be
+    assumed to be predefined <span class="citation" data-cites="PhysRevA.89.032109 PhysRevLett.101.210401">(Abbott, Calude, and Svozil 2014; Cabello 2008)</span>, and this situation departs from classical ones which are not contextual. A
+    new form of randomness seems to be emerging from computer networks; or, at least, it is treated, so far, by yet different mathematics <span class="citation" data-cites="longorand">(Longo, Palamidessi, and Paul 2010)</span>. In
+    particular, some analysis of randomness are carried without using probabilities.
+</p>
+<p class="indent">
+    In the same way that we said that the world is neither intrinsically continuous or discrete, randomness is not in the world: it is in the interface between our theoretical descriptions and “reality” as accessed by measurement.
+    Randomness is <em>unpredictability with respect to the intended theory and measurement</em>. Both classical and quantum randomness, though different, originate in measurement.
+</p>
+<p class="indent">
+    The classical one is present in dynamics sensitive to initial or border conditions: a fluctuation or perturbation below measurement, which cannot be exact by physical principles (it is an interval, as we said), is amplified by the
+    dynamics, becomes measurable and …“we have a random phenomenon” <span class="citation" data-cites="henri1902science">(Poincaré 1902)</span>. This amplification is mathematically described by the non-linearity of the intended equations
+    or evolution function, with a subtle difference though. If a solution of the non-linear system exists, then the analysis of the Lyapounov exponents, possibly, yields some information on the speed of divergence of trajectories, initially
+    indistinguishable by measurement: a non measurable fluctuation is amplified and produces an unpredictable and measurable event, yet the amplification is computable. In the case of non-existence or non-analyticity of solutions of the
+    given differential equations, one may have bifurcations or an unstable homoclinic trajectories (i.e. trajectories at the intersection of stable and unstable manifolds). The choice at bifurcation or the physical trajectory is then highly
+    unpredictable, thus random, and may be also physically ascribed to fluctuations or perturbations below measurement. However, in this case, one does not have, in general, a criterium of divergence, such as Lyapounov exponents. The
+    fluctuation or perturbation “causes” the unpredictable event, thus Curie’s principle is preserved: “a physical effect cannot have a dissymmetry absent from its efficient cause” — a symmetry conservation principle, or “symmetries cannot
+    decrease”. Yet, at the level of <em>measured</em> observables one witness a symmetry breaking, as the causing dissymmetry cannot be observed.
+</p>
+<p class="indent">
+    Quantum randomness is grounded on non-commutativity of the measurement of conjugated variables (position and momentum or energy and time), given by a lower bound — Planck’s <span class="math inline"><em>h</em></span>. It is represented
+    by Schroedinger’s equation that defines the trajectory of a probability amplitude (or law), in a very abstract mathematical space (a Hilbert space). As hinted above, measurement of entangled particles gives probabilities that are
+    different from the classical contexts (Bell inequalities are not respected, see <span class="citation" data-cites="aspect2">(Aspect 1999)</span>).
+</p>
+<p class="indent">
+    In quantum physics, though, there is another fundamental difference: in classical and relativistic mechanics, from Aristotle, to Galileo and Einstein, it is assumed that “every event has a cause”. As mentioned above in reference to
+    Curie’s principle, the unpredictable, but measurable, classical event is “caused” by the (initial or border) undetectable fluctuation. Instead, in current interpretations of QM, random events may be <em>a-causal</em> — the spin up /
+    spin down of an electron, say, is pure contingency, it does not need to have a cause. This radically changes the conceptual frame — and many still do not accept it and keep looking, in vain, for hidden variables (hidden causes), along
+    the classical paradigm.
+</p>
+<p class="indent">
+    Surprisingly enough, a quantum event at the molecular level may have a phenotypic effect, in biology. This is the result of recent empirical evidence, summarized and discussed in
+    <span class="citation" data-cites="buiatti2011randomness">(Buiatti and Longo 2013)</span>. Thus, a phenotype, that is a structural property of an organism, possibly a new organism, may result from an a-causal event, happening at a
+    completely different level of organization (molecular vs.&nbsp;organs or organisms). This micro event may be amplified by classical dynamics of molecules, including as their enthalpic oscillations and their Brownian motion. Brownian
+    motion is omnipresent in cells’ proteome, where macromolecules are very “sticky” and their chemical interactions are largely stochastic — though canalized by strong chemical affinities and cell compartmentalization. So, quantum and
+    classical randomness may “superpose” in a highly constrained environment. Moreover, it is increasingly recognized that gene expression is mostly stochastic, see
+    <span class="citation" data-cites="Elowitz02 Arjun2008">(Elowitz et al. 2002; Arjun and Oudenaarden 2008)</span>.
+</p>
+<p class="indent">This leads to the fully general fact that:</p>
+<p class="indent"><em>macromolecular interactions and dynamics are stochastic, they must be described in terms of probabilities and these probabilities depend on the context</em>.</p>
+<p class="indent">
+    This context includes the global proteomic composition, the torsion and pressure on the chromatin <span class="citation" data-cites="Lesne06">(Lesne and Victor 2006)</span>, the cell activity in a tissue
+    <span class="citation" data-cites="Bizzarri_2011 Lucia_2014">(Bizzarri et al. 2011; Barnes 2014)</span>, the hormonal cascades…up to the ecosystem, as containing fundamental constraints to biological dynamics. The up and down
+    interactions between different levels of organization yield a proper form of biological randomness, a resonance between levels, called bio-resonance in
+    <span class="citation" data-cites="buiatti2011randomness">(Buiatti and Longo 2013)</span>. Bio-resonance destabilizes and stabilizes organisms; it both <em>yields</em> and <em>follows from</em> variability, as correlated variations
+    contribute also to the changing structural stability of organisms. Note that variability produces adaptation and diversity, at the core of biological dynamical stability: an organism, a population, a species is “biologically stable”,
+    while changing and adapting, also because it is diverse. Both stability and diversity are also the result of randomness. “Also”, because, as we said, randomness is highly canalized in biology, by cellular compartments of molecules,
+    tissues tensegrity, organismal control (hormones, immune and neural systems …) and the ecosystem may downward influence these constraints (methylation and demethylation, which may regulate gene expression, can be induced by the
+    environment), <span class="citation" data-cites="gilbert2009ecological">(Gilbert and Epel 2009)</span>. Variability and diversity are constrained by history as well: phenotypes are the result of an evolutionary history that canalizes,
+    but does not determine (at least in view of quantum events) further evolution. For example, as for historical “canalization” there are good reasons to believe that we, the vertebrates, we will never get out of the “valley” of tetrapodes
+    — at most we may lose, and some of us have lost, podia and keep just traces of them.
+</p>
+<p class="indent">
+    In conclusion, randomness has a constitutive role in biology, as variability and diversity contribute to structural stability, beginning with gene expression. We developed above a comparative analysis in terms of symmetries of physical
+    processes with respect to their equational and computational modeling. We now hinted to the different ways randomness is understood in various physical and biological frames. In biology, this later issue becomes particularly relevant,
+    in view of the organizing role of randomness, including for small numbers (a population of a few thousands individuals is biologically more stable when diverse). Further on, we will propose a ‘general ‘thesis’’ relating randomness and
+    symmetry breaking.
+</p>
+<h3 class="sectionHead"  id="symmetries-and-information-in-physics-in-biology."><span class="header-section-number">5</span> Symmetries and information, in physics, in biology.</h3>
+<h4 class="subsectionHead"  id="turing-discrete-state-machines-and-continuous-dynamics"><span class="header-section-number">5.1</span> Turing, Discrete State Machines and Continuous Dynamics</h4>
+<p class="indent">
+    We already stressed the key role of invariants and invariant preserving transformations in the construction of mathematical and physical knowledge. The sharing of construction principles in these two disciplines, first of all, symmetry
+    principles and order principles, are the reason of the reasonable, though limited, effectiveness of mathematics for physics: these disciplines have been actually co-constituted on the grounds of these common construction principles, see
+    <span class="citation" data-cites="bailly2011">(Bailly and Longo 2011)</span>. However, since so few physical processes can be actually predicted — frictions and many-body interactions, i.e.&nbsp;non-linearity, are everywhere —, the
+    effectiveness of mathematics stays mostly in the reasonable intelligibility we have of a few phenomena, when we can organize them in terms of invariants and their transformations, thus of symmetries, well beyond predictability.
+</p>
+<p class="indent">
+    In the account above, changing fundamental symmetries produced the change from one theoretical frame to another, such as from classical to relativistic physics. Further useful examples may be given by thermodynamics and hydrodynamics.
+    The irreversibility of time, a symmetry breaking, steps in the first by the proposal of a new observable, entropy; the second assumes incompressibility and fluidity in continua, two symmetries that are irreducible to the quantum
+    mechanical ones, so far.
+</p>
+<p class="indent">
+    There is a common fashion in projecting the sciences of information onto biological and even physical processes. The DNA, the brain, even the Universe would be (possibly huge) programs or Turing Machines, sometimes set up in networks —
+    note that the reference to networks is newer, it followed actual network computing by a many years delay.
+</p>
+<p class="indent">
+    We do not discuss here the Universe nor the brain. It may suffice to quote the inventor of computing by discrete state machines, Turing: “ …given the initial state of the machine and the input signal it is always possible to predict all
+    future states. This is reminiscent of Laplace’s view that from the complete state of the universe at one moment of time, as described by the positions and velocities of all particles, it should be possible to predict all future states.
+    The prediction which we are considering is, however, rather nearer to practicability than that considered by Laplace. The system of the ’universe as a whole’ is such that quite small errors in the initial conditions can have an
+    overwhelming effect at a later time. The displacement of a single electron by a billionth of a centimeter at one moment might make the difference between a man being killed by an avalanche a year later, or escaping. It is an essential
+    property of the mechanical systems which we have called ’discrete state machines’ that this phenomenon does not occur. Even when we consider the actual physical machines instead of the idealized machines, reasonably accurate knowledge
+    of the state at one moment yields reasonably accurate knowledge any number of steps later“ (<span class="citation" data-cites="turing1950">(Turing 1950)</span>, p. 440)<a class="footnote-ref" href="#fn9" id="fnref9"><sup>9</sup></a>.
+</p>
+<p class="indent">
+    As for the brain, Turing continues: “The nervous system is certainly not a discrete-state machine. A small error in the information about the size of a nervous impulse impinging on a neuron, may make a large difference to the size of
+    the outgoing impulse” (<span class="citation" data-cites="turing1950">(Turing 1950)</span>, p. 451). As a matter of fact, the notions of spontaneous symmetry breaking, “catastrophic instability”, random fluctuations…are at the core of
+    Turing’s analysis of <em>continuous</em> morphogenesis, <span class="citation" data-cites="Turing1952">(Turing 1952)</span>, far remote from his own invention of the elaboration of information by the “Discrete State Machine” (DSM, his
+    renaming in 1950 of his Logical Computing Machine of 1936).
+</p>
+<p class="indent">
+    It is worth stressing here the breadth and originality of Turing’s work. He first invented the split hardware/software and the DSM, in Logic. Then, when moving to bio-physics, he invented a continuous model for morphogenesis, viewed
+    just as physical matter (hardware) that undergoes continuous deformations, triggered by (continuous) symmetry breaking of an homogeneous field, in a chemical reaction-diffusion system. The model is given by non-linear equations: a
+    linear solution is proposed, the non-linear case is discussed at length.
+</p>
+<p class="indent">
+    A key property of Turing’s continuous model is that it is “a falsification” (his words on page 37) of the need for a (coded) “design”. This clearly appears from the further comments on the role of genes, mentioned below. In discussions
+    reported by Hodges <span class="citation" data-cites="hodges1997turing">(Hodges 1997)</span>, Turing turns out to be against Huxley’s “new synthesis”, which focused on chromosomes as fully determining ontogenesis and phylogenesis
+    <span class="citation" data-cites="huxley1942evolution">(Huxley 1942)</span>. He never refers to the already very famous 1944 booklet by Schrödinger <span class="citation" data-cites="schrodinger">(Schrödinger 1944)</span>, where
+    Schrödinger proposes to understand the chromosomes as loci of a coding, thus as a Laplacian determination of embryogenesis, as he says explicitly (“once their structure will be fully decoded, we will be in the position of Laplace’s
+    daemon” says Schrödinger in chapter 2, The hereditary code-script). As a matter of fact, in his 1952 paper, Turing quotes only Child, D’arcy Thompson and Waddington as biologists, all working on dynamics of forms, at most constrained
+    (Waddington), but not determined nor “pre-designed” by chromosomes. Indeed, Turing discusses the role of genes, in chromosomes, which differ from his “morphogenes” as generators of forms by a chemical action/reaction system. He sees the
+    function of chromosomal genes as purely catalytic and, says Turing, “genes may be said to influence the anatomical form of the organism by determining the rates of those reactions that they catalyze …if a comparison of organisms is not
+    in question, the genes themselves may be eliminated from the discussion”, page 38 (a remarkable proposal, in the very fuzzy, ever changing notion of “gene”, see
+    <span class="citation" data-cites="fox2000century">(Fox Keller 2002)</span>). No (predefined) design, no coded or programmed Aristotelian homunculus in the chromosomes (the myth of the chromosomes as a program), for Turing, the man who
+    invented coding and programming. This is science: an explicit proposal of a (possibly new) perspective on nature, not the transfer of familiar tools (the ones he invented, in this case!) on top of a different phenomenology.
+</p>
+<p class="indent">
+    Note finally that, when comparing his DSM to a woman’s brain in <span class="citation" data-cites="turing1950">(Turing 1950)</span>, Turing describes an “imitation game”, while he talks of a “model” as for morphogenesis. This beautiful
+    distinction, computational imitation vs.&nbsp;continuous model, is closely analyzed in <span class="citation" data-cites="longocri">(Longo 2009)</span>.
+</p>
+<h4 class="subsectionHead"  id="classifying-information"><span class="header-section-number">5.2</span> Classifying information</h4>
+<p class="indent">Let’s further analyze the extensive use of “information” in biology, molecular biology in particular. Information branches in at least two theories:</p>
+<ul class="enumerate1">
+    <li>
+        <p class="indent">
+            elaboration of information (Turing, Church, Kleene and many others, later consistently extended to algorithmic information theory: Martin-Loef, Chaitin, Calude, see
+            <span class="citation" data-cites="calude2002information">(Calude 2002)</span> and
+        </p>
+    </li>
+    <li>
+        <p class="indent">transmission of information (Shannon, Brillouin, see <span class="citation" data-cites="shannon">(SHANNON 1948)</span>).</p>
+    </li>
+</ul>
+<p class="indent">
+    In <span class="citation" data-cites="longo2012">(Longo et al. 2012)</span>, we stressed the key differences between these two theories that are confusedly identified in molecular biology, with unintelligible consequences in the
+    description of the relationship of information to entropy and complexity …two relevant notions in biology<a class="footnote-ref" href="#fn10" id="fnref10"><sup>10</sup></a>.
+</p>
+<p class="indent">
+    As scientific constructions, both information theories are grounded on fundamental invariants. And this is so since at least Morse practical invention, with no theory, of information transmission. Information is independent of the
+    specific coding and the material support. We can transmit and encode information as “bip-bip”, by short and long hits, as flashes, shouts, smoke clouds …by bumping on wood, metal, by electricity in cables or whatever and this in a
+    binary, ternary, or other code …. Information is the <em>invariant</em> with respect to the transformation of these coding and material supports: this is its fundamental symmetry. Up to Turing’s fundamental invention: distinguish
+    software from hardware. So, a rich Theory of Programming was born, largely based on Logic, Typed and Typed-free languages, term rewriting systems etc, entirely independent of the specific encoding, implementation and hardware. The
+    computer’s soul is so detached from its physical realization that Descartes dualism is a pale predecessor of this radical and most fruitful split. And when the hardware of your computer is dying, you may transfer the entire software,
+    including the operating system, compilers and interpreters, to another computer. This symmetry by transfer is called “metempsychosis”, we think. Now, it does not apply in biology, nowhere.
+</p>
+<p class="indent">
+    The DNA is not a code, carrying information. There is no way to detach a soft content from it and transfer it to another material structure: it cannot be replaced by metal bullets, or bumps on a piece of wood. What gets transferred to
+    RNA and then proteins is a chemical and physical structure, a most relevant one, as the DNA is an extraordinary <em>chemical trace of an history</em>. And it transmits to other chemicals an entirely contingent physico-chemical
+    conformation. If a stone bumps against other stones in a river and de-forms them (in-forms them, would say Aristotle), there is no meaning to speak of a transmission of information, in the scientific invariant sense above, unless in
+    reference to the Aristotelian sense. No informational invariant can be extracted, but the ones proper to the physico-chemical processes relative to stone bumping. Life is radically contingent and material: no software/hardware split.
+    The pre-scientific reference to information, sometimes called “metaphorical”, has had a major misleading role. First, it did not help to find the <em>right invariants</em>. The physico-chemical structure of cellular receptors, for
+    example, has some sort of generality, which yields some stereospecificity <span class="citation" data-cites="kuiper1997comparison">(Kuiper et al. 1997)</span>. Yet, this is still strictly related to a common chemistry that has nothing
+    to do with an impossible abstract information theoretic description. The proposal of a too abstract and matter independent invariant did not help to find the right scientific level of invariance. Or, more severely so, it forced exact
+    stereospecifity of macromolecular interaction, as a <em>consequence</em> of the information theoretic bias.
+</p>
+<p class="indent">
+    Monod, one of the main theoreticians of molecular biology, claims that the molecular processes are based on the “oriented transmission of information …(in the sense of Brillouin)”. In
+    <span class="citation" data-cites="Monod">(Monod 1970)</span>, he derives from this that the “<em>necessarily</em> stereospecific molecular interactions explain the structure of the code …a Boolean algebra, like in computers” and that
+    “genes define completely the tridimensional folding of proteins, the epigenetic environment only excludes the other possible foldings”. Indeed, bio-molecular activities “are a Cartesian Mechanism, autonomous, exact, independent from
+    external influences”. Thus, the analysis based on the search for how information could be transmitted, forced an understanding inspired by the Cartesian exactness proper to computers as well as the Laplacian causal structure, Turing
+    would say, proper to information theories. It induced the invention of exact stereospecificity, which is “necessary” to “explain” the Boolean coding! That is, stereospecificity was logically, not empirically, derived, while, since 1957
+    <span class="citation" data-cites="Novick15071957">(Novick and Weiner 1957)</span>, robust evidence had already shown the stochasticity of gene expression (see
+    <span class="citation" data-cites="kupiec83 kupiec2003ni Arjun2008">(Kupiec 1983; Kupiec and Sonigo 2003; Arjun and Oudenaarden 2008)</span> and <span class="citation" data-cites="Heams">(Heams 2014)</span> for a recent synthesis).
+</p>
+<p class="indent">
+    We now know that the protein folding is not determined by the coding (yet, Monod did consider this possibility). Macromolecular interactions, including gene expression, are largely random: they must at least be given in probabilities,
+    as we said, and these probabilities would then depend on the context. No hardware independent Boolean algebra governs the chemical cascades from DNA to RNA to proteins, also because these cascades depend, as we already recalled, on the
+    pressure and tensions on the chromatin, the proteome activities, the intracellular spatial organization, the cellular environment and many other forms of organismal regulations, see for example
+    <span class="citation" data-cites="Weiss_2004 Lesne06">(Weiss et al. 2004; Lesne and Victor 2006)</span>.
+</p>
+<p class="indent">
+    In summary, the informational bias introduced a reasoning based on Laplacian symmetries, far away from the largely turbulent structure of the proteome, empowered also by chaotic enthalpic oscillations of macromolecules. This bias was
+    far from neutral in guiding experiments, research projects and conceptual frames. For example, it passed by the role of endocrine disruptors of the more than 80,000 molecules we synthesized and used in the XXth century, an increasingly
+    evident cause of major pathologies, including cancer, <span class="citation" data-cites="endocrinedisruptors soto2010environmental demeneix2014losing">(Zoeller et al. 2012; Soto and Sonnenschein 2010; Demeneix 2014)</span>. These
+    molecules were not supposed to interfere with the exact molecular cascades of key-lock correspondences, a form of stereospecificity. The bias guided the work on GMO, which have been conceived on the grounds of the “central dogma of
+    molecular biology” and of Monod’s approach above: genetic modifications would completely guide phenotypic changes and their ecosystemic interactions (see <span class="citation" data-cites="buiatti2003functional">(Buiatti 2003)</span>).
+</p>
+<p class="indent">
+    One final point. Information theories are “code independent”, or analyze code in order to develop general results and transmission stability as <em>code insensitive</em> (of course cryptography goes otherwise: but secrecy and code
+    breaking are different purposes, not exactly relevant for organisms). Information on discrete data is also “<em>dimension independent</em>”: by a polynomial translation one may encode discrete spaces of
+    <em>any finite dimension</em> into one dimension. This is crucial to computing, since it is needed to define Turing’s Universal Machine, thus operating systems and compilers.
+</p>
+<p class="indent">
+    Biology instead is embedded in a physical world where the space dimension is crucial. In physics, heat propagation and many other phenomena, typically field theories, strictly depend on space dimension. By “mean field theories” one can
+    show that life, as we know it, is only possible in three dimensions (see <span class="citation" data-cites="bailly2011">(Bailly and Longo 2011)</span>). Organisms are highly geometric in the sense that “geometric” implies
+    <em>sensitivity to coding and dimensions</em>. In this sense, continuous models more consistently propose some intelligibility: in “natural” topologies over continua, that is when the topology derives from the interval of physical
+    measurement, dimension is a topological invariant, a fundamental invariant in physics, to be preserved in biology, unless the reader believes that he/she can live encoded in one dimension, just exchanging information, like on the tape
+    of a Turing Machine. A rather flat Universe …yet, with no loss of information. But where one has only information, not life.
+</p>
+<p class="indent">
+    Missing the right level of invariance and, thus, the explanatory symmetries, is a major scientific mistake. Sometimes, it may seem just a “matter of language”, as if language mattered little, or of informal metaphors, as if metaphors
+    were not carrying meaning, forcing insight and guiding experiments. They actually transfer the conceptual structure or the intended symmetries of the theory they originate from, in an implicit, thus more dangerous and un-scientific way.
+    Just focusing on language, consider the terminology used when referring to DNA/RNA as the “universal code for life”, since all forms of life are based on it. This synchronic perspective on life — all organisms yield these molecules and
+    the basic chemical structure of their interactions, <em>thus</em> there is a universal code — misses the historical contingency of life. There is no universality in the informational sense of an invariant code with respect to an
+    independent hardware. Life is the historical result of contingent events, the formation somewhere and somehow of DNA or RNA or both, sufficiently isolated in a membrane, which occurred over that hardware only. Then, the resulting cell
+    reproduced with variation and diversified, up to today’s evolutionary diversity. One contingent material origin, then diversification of that matter, of that specific hardware and no other. Invariance, symmetries and their breaking are
+    different from those proper to “information”, in this strictly material, evolutionary perspective.
+</p>
+<h3 class="sectionHead"  id="theoretical-symmetries-and-randomness"><span class="header-section-number">6</span> Theoretical symmetries and randomness</h3>
+<p class="indent">
+    In this section, we would like to elaborate on a “thesis”, already hinted in <span class="citation" data-cites="longomont">(Longo and Montévil 2014)</span>. In physical theories, where the specific trajectory of an object is determined
+    by its theoretical symmetries, we propose that randomness appears when there is a change in some of these symmetries along a trajectory and reciprocally that changes of symmetries are associated to randomness.
+</p>
+<p class="indent">
+    Intuitively theoretical symmetries enable to understand a wide set of phenomenal situations as equivalent. In the end of the day, the trajectory that a physical object will follow, according to a theory, is the only trajectory which is
+    compatible with the theoretical symmetries of a given system. Symmetries, in this context, enable to understand conservation properties, the uniqueness of the <em>entailed</em> trajectory and ultimately the associated prediction, if
+    any.
+</p>
+<p class="indent">
+    Now, what happens when, over time or with respect to a pertinent parameter, a symmetry of the system is broken? A symmetry corresponds to a situation where the state or the set of possible states and the determination of a system does
+    not change according to specific transformations (the symmetries). After the symmetry breaking, the state(s) becomes no longer invariant by these transformations; typically, the trajectory goes to one of the formerly symmetric states
+    and not to the others (a ball on top of a mathematical hill falls along <em>one</em> of the equivalent sides). Since the initial situation is exactly symmetric (by hypothesis), all the different “symmetric” states are equivalent and
+    there is no way to single out any of them. Then, in view of the symmetry breaking, the physical phenomena will nevertheless single out one of them. As a result we are confronted with a non-entailed change: it is a random change.
+</p>
+<p class="indent">
+    This explanation provides a physico-mathematical meaning to the philosophical notion of contingency as non-necessity: this description of randomness as symmetry breaking captures contingency as a lack of entailment or of necessity in an
+    intended theory. Note that usually the equivalent states may not be completely symmetric as they may be associated to different probabilities, nevertheless they have the same status as “possible” states.
+</p>
+<p class="indent">
+    For now, we discussed the situation at the level of the theoretical determination alone, but the same reasoning applies <em>mutadis mutandis</em> to prediction. Indeed, we access to a phenomenon by measurement, but measurement may be
+    associated to different possible states, not distinguishable individually. These states thus are symmetric with respect to the measurement, but the determination may be such that these (non-measurably different) states lead to
+    completely different measurable consequences. This reasoning is completely valid only when the situation is such for all allowed measurements, so that randomness cannot be associated to the possible crudeness of an arbitrary specific
+    measurement.
+</p>
+<p class="indent">
+    Reciprocally, when we consider a random event, it means that we are confronted with a change that cannot be entailed from a previous observation (and the associated determination). When the possible observations can be determined (known
+    phase space), this means that the different possibilities have a symmetric status before the random event (precisely because they are all pre-defined possibilities) but that one (or several) of them are singled out by the random event
+    in the sense that it becomes the actual state. We recognize in this statement the description of a symmetry that is broken during the random event.
+</p>
+<p class="indent">Let us now review the main physical cases of randomness.</p>
+<ul class="enumerate1">
+    <li>
+        <p class="indent">
+            Spontaneous symmetry breaking in quantum field theories and theories of phase transitions (from a macroscopic viewpoint) are the most straightforward examples of the conjecture we describe. In these cases, the theoretical
+            determination (Hamiltonian) is symmetric and the change of a parameter leads the systems equilibrium to shift from a symmetric state to an asymmetric one (for example isotropy of a liquid shifting to a crystal with a specific
+            orientation). Randomness stems then just from the “choice” of a specific orientation, triggered by fluctuations in statistical mechanics.
+        </p>
+    </li>
+    <li>
+        <p class="indent">
+            Classical mechanics can, in spite of its deterministic nature, lead to unpredictability as a consequence of the symmetrizing effect of measurement on one side (there are always different states which are not distinguished by a
+            measurement), and a determination that leads those states to diverge (which breaks the above symmetry). This reasoning applies to chaotic dynamics but also to phase transitions where, from a strictly classical viewpoint,
+            fluctuations below the observation determine the orientation of the symmetry changes.
+        </p>
+    </li>
+    <li>
+        <p class="indent">
+            In classical probabilities, applied to “naive” cases such as throwing a dice or to more sophisticated framework such as statistical mechanics, our reasoning also applies. When forgetting about the underlying classical mechanics,
+            the probabilistic framework is a strict equivalence between different possibilities, except for their expected frequencies which may differ: those are given by the associated probabilities. In order to define theoretically these
+            probabilities, some underlying theoretical symmetries are required. In our examples, the symmetries are the symmetry between the sides of a dice and for statistical mechanics, the symmetry between states with the same energy for
+            the microcanonical ensemble. From a strictly classical viewpoint, these symmetries are assumed to be established on average by the properties of the considered dynamics. In the case of dice, it is the rotation, associated to the
+            dependence on many parameters which leads to a sufficient mixing, generating the symmetry between the different sides of the dice. In the case of statistical mechanics, it is the property of topological mixing of chaotic
+            dynamics (a property met by these systems by definition). This property is assumed in order to justify the validity of statistical mechanics from the point of view of classical mechanics. In both cases, a specific state or
+            outcome corresponds to a breaking of the relevant symmetry.
+        </p>
+    </li>
+    <li>
+        <p class="indent">
+            In quantum mechanics, the usual determination of the trajectory of a state is deterministic, randomness pops out during measurement. The operator corresponding to the measurement performed establishes a symmetry between its
+            different eigen vectors, which also correspond to the different outcomes corresponding to the eigen values. This symmetry is partially broken by the state of the system, which provides different weights (probabilities) to these
+            possibilities. The measurement singles out one of the eigen vectors which becomes the state of the system and this breaks the former symmetry.
+        </p>
+    </li>
+</ul>
+<p class="indent">We can conclude from this analysis and these examples that randomness and symmetry breaking are tightly associated. We can put this relationship into one sentence:</p>
+<p class="indent"><em>A symmetry breaking means that equivalent “directions” become no longer equivalent and precisely because the different directions were initially equivalent (symmetric) the outcome cannot be predicted</em>.</p>
+<p class="indent">
+    As discussed elsewhere <span class="citation" data-cites="longo2011c longomont">(Longo and Montévil 2011, 2014)</span>, we assume that theoretical symmetries in biology are unstable. It follows that randomness, understood as associated
+    to symmetry breaking, should be expected to be ubiquitous; however, this approach leads also to propose a further form of randomness. In order to show that randomness can be seen as a symmetry breaking, we needed to assume that the set
+    of possibilities was determined before the event. In biology, the instability of the theoretical symmetries does not allow such an assumption in general. On the opposite, a new form of randomness appears through the changes of phase
+    spaces, and this randomness does not take the form of a symmetry breaking stricto sensu inasmuch as it does not operate on a pre-defined set. In other words, these changes cannot be entailed but they cannot even be understood as the
+    singling out of one possibility among others — the list of possibilities (the phase space) is not pre-given.
+</p>
+<p class="indent">
+    In brief, theoretical symmetries in physics enable to single-out a specific trajectory in a phase space, formed by a combination of observables. Thus, a symmetry breaking corresponds to the need of one or several supplementary
+    quantities to further specify a system on the basis of already defined quantities (which were formerly symmetric and thus not useful to specify the situation). In biology, instead, the dynamic introduces new observable quantities which
+    get integrated to the determination of the object as the latter is associated to the intended quantities and symmetries. This dynamics of the very phase space may be analyzed <em>a posteriori</em> as a symmetry breaking. Thus,
+    randomness moves from within a phase space to the very construction of a phase space, a major mathematical challenge.
+</p>
+<h3 class="sectionHead"  class="unnumbered" id="acknowledgments">Acknowledgments</h3>
+<p class="indent">
+    We would like to thank Kim Bruce for reminding and updating us on the Foundations of Object Oriented Languages, an area which he contributed to trigger, in part by joint work with GL, and by starting the FOOL series conferences, twenty
+    years ago.
+</p>
+<h3 class="sectionHead"  class="unnumbered" id="bibliography">References</h3>
+
+<div class="references thebibliography" id="refs">
+    <div id="ref-PhysRevA.89.032109">
+        <p class="indent">
+            Abbott, Alastair A., Cristian S. Calude, and Karl Svozil. 2014. “Value-Indefinite Observables Are Almost Everywhere.” <em>Phys. Rev. A</em> 89 (3): 032109.
+            <a href="https://doi.org/10.1103/PhysRevA.89.032109">https://doi.org/10.1103/PhysRevA.89.032109</a>.
+        </p>
+    </div>
+    <div id="ref-Arjun2008">
+        <p class="indent">Arjun, R., and R. van Oudenaarden. 2008. “Stochastic Gene Expression and Its Consequences.” <em>Cell</em> 135 (2): 216–26.</p>
+    </div>
+    <div id="ref-aspect2">
+        <p class="indent">Aspect, A. 1999. “Bell’s Inequality Test: More Ideal Than Ever.” <em>Nature</em> 398 (6724): 189–90. <a href="https://doi.org/10.1038/18296">https://doi.org/10.1038/18296</a>.</p>
+    </div>
+    <div id="ref-bailly2011">
+        <p class="indent">Bailly, F., and G. Longo. 2011. <em>Mathematics and the Natural Sciences; the Physical Singularity of Life</em>. London: Imperial College Press.</p>
+    </div>
+    <div id="ref-Lucia_2014">
+        <p class="indent">
+            Barnes, L. AND Quinn, C. AND Speroni. 2014. “From Single Cells to Tissues: Interactions Between the Matrix and Human Breast Cells in Real Time.” <em>PLoS ONE</em> 9 (4): e93325.
+            <a href="https://doi.org/10.1371/journal.pone.0093325">https://doi.org/10.1371/journal.pone.0093325</a>.
+        </p>
+    </div>
+    <div id="ref-Barwise">
+        <p class="indent">Barwise, J. 1978. <em>Handbook of Mathematical Logic</em>. Elsevier.</p>
+    </div>
+    <div id="ref-belavkin2000quantum">
+        <p class="indent">Belavkin, VP. 2000. “Quantum Probabilities and Paradoxes of the Quantum Century.” <em>Infinite Dimensional Analysis, Quantum Probability and Related Topics</em> 3 (04): 577–610.</p>
+    </div>
+    <div id="ref-Bizzarri_2011">
+        <p class="indent">
+            Bizzarri, M., A. Giuliani, A. Cucina, F. D’Anselmi, A. M. Soto, and C. Sonnenschein. 2011. “Fractal Analysis in a Systems Biology Approach to Cancer.” <em>Seminars in Cancer Biology</em> 21 (3): 175–82.
+            <a href="https://doi.org/10.1016/j.semcancer.2011.04.002">https://doi.org/10.1016/j.semcancer.2011.04.002</a>.
+        </p>
+    </div>
+    <div id="ref-Bruce">
+        <p class="indent">
+            Bruce, K., L. Cardelli, and B. Pierce. 1997. “Comparing Object Encodings.” In <em>Theoretical Aspects of Computer Software</em>, edited by Martín Abadi and Takayasu Ito, 1281:415–38. Lecture Notes in Computer Science. Springer
+            Berlin Heidelberg. <a href="https://doi.org/10.1007/BFb0014561">https://doi.org/10.1007/BFb0014561</a>.
+        </p>
+    </div>
+    <div id="ref-buiatti2003functional">
+        <p class="indent">Buiatti, Marcello. 2003. “Functional Dynamics of Living Systems and Genetic Engineering.” <em>Rivista Di Biologia</em> 97 (3): 379–408.</p>
+    </div>
+    <div id="ref-buiatti2011randomness">
+        <p class="indent">
+            Buiatti, Marcello, and G. Longo. 2013. “Randomness and Multilevel Interactions in Biology.” <em>Theory in Biosciences</em> 132 (3): 139–58.
+            <a href="https://doi.org/10.1007/s12064-013-0179-2">https://doi.org/10.1007/s12064-013-0179-2</a>.
+        </p>
+    </div>
+    <div id="ref-PhysRevLett.101.210401">
+        <p class="indent">
+            Cabello, Adán. 2008. “Experimentally Testable State-Independent Quantum Contextuality.” <em>Phys. Rev. Lett.</em> 101 (21): 210401.
+            <a href="https://doi.org/10.1103/PhysRevLett.101.210401">https://doi.org/10.1103/PhysRevLett.101.210401</a>.
+        </p>
+    </div>
+    <div id="ref-calude2002information">
+        <p class="indent">Calude, Cristian. 2002. <em>Information and Randomness: An Algorithmic Perspective</em>. Springer.</p>
+    </div>
+    <div id="ref-cook">
+        <p class="indent">
+            Cook, W. 1991. “Object-Oriented Programming Versus Abstract Data Types.” In <em>Foundations of Object-Oriented Languages</em>, edited by J.W. Bakker, W.P. Roever, and G. Rozenberg, 489:151–78. Lecture Notes in Computer Science.
+            Springer Berlin Heidelberg. <a href="https://doi.org/10.1007/BFb0019443">https://doi.org/10.1007/BFb0019443</a>.
+        </p>
+    </div>
+    <div id="ref-demeneix2014losing">
+        <p class="indent">Demeneix, Barbara. 2014. <em>Losing Our Minds: How Environmental Pollution Impairs Human Intelligence and Mental Health</em>. Oxford University Press, USA.</p>
+    </div>
+    <div id="ref-Elowitz02">
+        <p class="indent">
+            Elowitz, M. B., A. J. Levine, E. D. Siggia, and P. S. Swain. 2002. “Stochastic Gene Expression in a Single Cell.” <em>Science</em> 297 (5584): 1183–6.
+            <a href="https://doi.org/10.1126/science.1070919">https://doi.org/10.1126/science.1070919</a>.
+        </p>
+    </div>
+    <div id="ref-fox2000century">
+        <p class="indent">Fox Keller, E. 2002. <em>The Century of the Gene</em>. Harvard University Press.</p>
+    </div>
+    <div id="ref-Friedman904672">
+        <p class="indent">Friedman, H M. 1998. “Finite functions and the necessary use of large cardinals.” <em>Ann. Math., 2</em> 148 (math.LO/9811187. 3): 803–93.</p>
+    </div>
+    <div id="ref-gilbert2009ecological">
+        <p class="indent">Gilbert, S. F, and D. Epel. 2009. <em>Ecological Developmental Biology: Integrating Epigenetics, Medicine, and Evolution</em>. Sinauer Associates Sunderland.</p>
+    </div>
+    <div id="ref-gould1989wonderful">
+        <p class="indent">Gould, S. J. 1989. <em>Wonderful Life: The Burgess Shale and the Nature of History.</em> New York, USA: Norton.</p>
+    </div>
+    <div id="ref-Heams">
+        <p class="indent">Heams, T. 2014. “Randomness in Biology.” <em>Math. Structures in Comp. Sci., Special Issue</em> 24 (3). <a href="https://doi.org/10.1017/S096012951200076X">https://doi.org/10.1017/S096012951200076X</a>.</p>
+    </div>
+    <div id="ref-hodges1997turing">
+        <p class="indent">Hodges, A. 1997. <em>Turing: A Natural Philosopher</em>. Phoenix London.</p>
+    </div>
+    <div id="ref-huxley1942evolution">
+        <p class="indent">Huxley, J. 1942. “Evolution. The Modern Synthesis.” <em>Evolution. The Modern Synthesis.</em></p>
+    </div>
+    <div id="ref-Schwarzbach">
+        <p class="indent">Kosmann-Schwarzbach, Y. 2004. <em>Les Théorèmes de Noether: Invariance et Lois de Conservation Au Xxe Siècle</em>. Editions Ecole Polytechnique.</p>
+    </div>
+    <div id="ref-kuiper1997comparison">
+        <p class="indent">
+            Kuiper, G., BO Carlsson, KAJ Grandien, E. Enmark, J. Häggblad, S. Nilsson, and J. Gustafsson. 1997. “Comparison of the Ligand Binding Specificity and Transcript Tissue Distribution of Estrogen Receptors
+            <span class="math inline"><em>α</em></span> and <span class="math inline"><em>β</em></span>.” <em>Endocrinology</em> 138 (3): 863–70.
+        </p>
+    </div>
+    <div id="ref-kupiec83">
+        <p class="indent">Kupiec, J.J. 1983. “A Probabilistic Theory of Cell Differentiation, Embryonic Mortality and Dna c-Value Paradox.” <em>Specul. Sci. Techno.</em> 6: 471–78.</p>
+    </div>
+    <div id="ref-kupiec2003ni">
+        <p class="indent">Kupiec, J.J., and P. Sonigo. 2003. <em>Ni Dieu Ni Gène: Pour Une Autre Théorie de L’hérédité</em>. Editions du Seuil.</p>
+    </div>
+    <div id="ref-Lesne06">
+        <p class="indent">
+            Lesne, A., and J.-M. Victor. 2006. “Chromatin Fiber Functional Organization: Some Plausible Models.” <em>Eur Phys J E Soft Matter</em> 19 (3): 279–90.
+            <a href="https://doi.org/10.1140/epje/i2005-10050-6">https://doi.org/10.1140/epje/i2005-10050-6</a>.
+        </p>
+    </div>
+    <div id="ref-longocri">
+        <p class="indent">Longo, G. 2009. “Critique of Computational Reason in the Natural Sciences.” In <em>Fundamental Concepts in Computer Science</em>, edited by E. Gelenbe and J.-P. Kahane. Imperial College Press/World Scientific.</p>
+    </div>
+    <div id="ref-longovision">
+        <p class="indent">———. 2010. “Theorems as Constructive Visions.” In <em>Proceedings of Icmi 19 Conference on Proof and Proving</em>, edited by de Villiers eds. Hanna. Taipei, Taiwan: Springer.</p>
+    </div>
+    <div id="ref-Longo01102011">
+        <p class="indent">———. 2011. “Reflections on Concrete Incompleteness.” <em>Philosophia Mathematica</em> 19 (3): 255–80. <a href="https://doi.org/10.1093/philmat/nkr016">https://doi.org/10.1093/philmat/nkr016</a>.</p>
+    </div>
+    <div id="ref-longo2012">
+        <p class="indent">
+            Longo, G., P.-A. Miquel, C. Sonnenschein, and A. M. Soto. 2012. “Is Information a Proper Observable for Biological Organization?” <em>Progress in Biophysics and Molecular Biology</em> 109 (3): 108–14.
+            <a href="https://doi.org/10.1016/j.pbiomolbio.2012.06.004">https://doi.org/10.1016/j.pbiomolbio.2012.06.004</a>.
+        </p>
+    </div>
+    <div id="ref-longo2011c">
+        <p class="indent">
+            Longo, G., and M. Montévil. 2011. “From Physics to Biology by Extending Criticality and Symmetry Breakings.” <em>Progress in Biophysics and Molecular Biology</em> 106 (2): 340–47.
+            <a href="https://doi.org/10.1016/j.pbiomolbio.2011.03.005">https://doi.org/10.1016/j.pbiomolbio.2011.03.005</a>.
+        </p>
+    </div>
+    <div id="ref-longomont">
+        <p class="indent">
+            ———. 2014. <em>Perspectives on Organisms: Biological Time, Symmetries and Singularities</em>. Lecture Notes in Morphogenesis. Dordrecht: Springer.
+            <a href="https://doi.org/10.1007/978-3-642-35938-5">https://doi.org/10.1007/978-3-642-35938-5</a>.
+        </p>
+    </div>
+    <div id="ref-lomososo2015">
+        <p class="indent">
+            Longo, G., M. Montévil, Carlos Sonnenschein, and Ana M Soto. 2015. “In Search of Principles for a Theory of Organisms.” <em>Journal of Biosciences</em>, 1–14.
+            <a href="https://doi.org/10.1007/s12038-015-9574-9">https://doi.org/10.1007/s12038-015-9574-9</a>.
+        </p>
+    </div>
+    <div id="ref-longorand">
+        <p class="indent">Longo, G., C. Palamidessi, and T. Paul. 2010. “Some Bridging Results and Challenges in Classical, Quantum and Computational Randomness.” In <em>Randomness Through Computation</em>, edited by H. Zenil. World Scientific.</p>
+    </div>
+    <div id="ref-Monod">
+        <p class="indent">Monod, J. 1970. <em>Le Hasard et La Nécessité</em>. Seuil, Paris.</p>
+    </div>
+    <div id="ref-Novick15071957">
+        <p class="indent">
+            Novick, A., and M. Weiner. 1957. “ENZYME Induction as an All-or-None Phenomenon.” <em>Proceedings of the National Academy of Sciences</em> 43 (7): 553–66.
+            <a href="http://www.pnas.org/content/43/7/553.short">http://www.pnas.org/content/43/7/553.short</a>.
+        </p>
+    </div>
+    <div id="ref-pilyugin1999shadowing">
+        <p class="indent">Pilyugin, S. Y. 1999. <em>Shadowing in Dynamical Systems</em>. Vol. 1706. Lecture Notes in Mathematics. Springer Berlin.</p>
+    </div>
+    <div id="ref-henri1902science">
+        <p class="indent">Poincaré, H. 1902. <em>La Science et L’hypothèse</em>.</p>
+    </div>
+    <div id="ref-rathjen2006art">
+        <p class="indent">Rathjen, Michael. 2006. “The Art of Ordinal Analysis.” In <em>Proceedings of the International Congress of Mathematicians</em>, 2:45–69.</p>
+    </div>
+    <div id="ref-onturbulence">
+        <p class="indent">Ruelle, D., and F. Takens. 1971. “On the Nature of Turbulence.” <em>Communications in Mathematical Physics</em> 20 (3): 167–92. <a href="https://doi.org/10.1007/BF01646553">https://doi.org/10.1007/BF01646553</a>.</p>
+    </div>
+    <div id="ref-schrodinger">
+        <p class="indent">Schrödinger, E. 1944. <em>What Is Life?</em> Cambridge U.P.</p>
+    </div>
+    <div id="ref-shannon">
+        <p class="indent">SHANNON, C. E. 1948. “A Mathematical Theory of Communication.” <em>The Bell System Technical Journal</em> 27: 379–423.</p>
+    </div>
+    <div id="ref-smith1999idea">
+        <p class="indent">Smith, John Maynard. 1999. “The Idea of Information in Biology.” <em>Quarterly Review of Biology</em>, 395–400.</p>
+    </div>
+    <div id="ref-soto2010environmental">
+        <p class="indent">Soto, A M, and C Sonnenschein. 2010. “Environmental Causes of Cancer: Endocrine Disruptors as Carcinogens.” <em>Nature Reviews Endocrinology</em> 6 (7): 363–70.</p>
+    </div>
+    <div id="ref-turing1950">
+        <p class="indent">Turing, A. M. 1950. “Computing Machinery and Intelligence.” <em>Mind</em> 59 (236): 433–60.</p>
+    </div>
+    <div id="ref-Turing1952">
+        <p class="indent">
+            Turing, A. M. 1952. “The Chemical Basis of Morphogenesis.” <em>Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences</em> 237 (641): 37–72.
+            <a href="https://doi.org/10.1098/rstb.1952.0012">https://doi.org/10.1098/rstb.1952.0012</a>.
+        </p>
+    </div>
+    <div id="ref-van1989laws">
+        <p class="indent">Van Fraassen, B.C. 1989. <em>Laws and Symmetry</em>. Oxford University Press, USA.</p>
+    </div>
+    <div id="ref-varennesimulat">
+        <p class="indent">Varenne, F. 2012. “La Reconstruction Phénoménologique Par Simulation: Vers Une épaisseur Du Simulat.” In <em>Actes Du Colloque Formes, Milieux et Systèmes Techniques</em>.</p>
+    </div>
+    <div id="ref-Weiss_2004">
+        <p class="indent">
+            Weiss, M., M. Elsner, F. Kartberg, and T. Nilsson. 2004. “Anomalous Subdiffusion Is a Measure for Cytoplasmic Crowding in Living Cells.” <em>Biophys. J.</em> 87 (5): 3518–24.
+            <a href="https://doi.org/10.1529/biophysj.104.044263">https://doi.org/10.1529/biophysj.104.044263</a>.
+        </p>
+    </div>
+    <div id="ref-weyl1918kontinuum">
+        <p class="indent">Weyl, Hermann. 1918. <em>Das Kontinuum</em>. Veit Leipzig.</p>
+    </div>
+    <div id="ref-Zalamea">
+        <p class="indent">Zalamea, F. 2012. <em>Synthetic Philosophy of Contemporary Mathematics</em>. Urbanomic Sequence Press.</p>
+    </div>
+    <div id="ref-endocrinedisruptors">
+        <p class="indent">
+            Zoeller, R. T., T. R. Brown, L. L. Doan, A. C. Gore, N. E. Skakkebaek, A. M. Soto, T. J. Woodruff, and Vom SaalF. S. 2012. “Endocrine-Disrupting Chemicals and Public Health Protection: A Statement of Principles from the
+            Endocrine Society.” <em>Endocrinology</em> 153 (9): 4097–4110. <a href="https://doi.org/10.1210/en.2012-1422">https://doi.org/10.1210/en.2012-1422</a>.
+        </p>
+    </div>
+</div>
+<section class="footnotes">
+    <hr />
+    <ol>
+        <li id="fn1">
+            <p class="indent">G.&nbsp;Longo’s work was supported in part by Marie Curie FP7-PEOPLE-2010-IRSES Grant RANPHYS. M.&nbsp;Montévil’s Work is supported by région Île-de-France, DIM ISC<a class="footnote-back" href="#fnref1">↩</a></p>
+        </li>
+        <li id="fn2">
+            <p class="indent">
+                Centre Cavaillès, République des Savoirs, CNRS, Collège de France et Ecole Normale Supérieure, Paris, and Department of Integrative Physiology and Pathobiology, Tufts University School of Medicine, Boston.
+                <a href="http://www.di.ens.fr/users/longo/">http://www.di.ens.fr/users/longo/</a><a class="footnote-back" href="#fnref2">↩</a>
+            </p>
+        </li>
+        <li id="fn3">
+            <p class="indent">IHPST, CNRS and université Paris I, Paris.<a class="footnote-back" href="#fnref3">↩</a></p>
+        </li>
+        <li id="fn4">&nbsp;</li>
+        <li id="fn5">
+            <p class="indent">
+                The Burgess fauna, some 520 millions years ago <span class="citation" data-cites="gould1989wonderful">(Gould 1989)</span>, seems to present many cases of “asymmetric” beasts among these early multicellular organisms, later
+                negatively selected.<a class="footnote-back" href="#fnref5">↩</a>
+            </p>
+        </li>
+        <li id="fn6">
+            <p class="indent">
+                It is not by chance that an immense mathematical physicist, H. Weyl, was one of the few who claimed that the formalist /computational project was trivializing mathematics and conjectured incompleteness, already in 1918,
+                <span class="citation" data-cites="weyl1918kontinuum">(Weyl 1918)</span>, see also <span class="citation" data-cites="bailly2011">(Bailly and Longo 2011)</span><a class="footnote-back" href="#fnref6">↩</a>
+            </p>
+        </li>
+        <li id="fn7">
+            <p class="indent">Technically, an existential quantifier is opened at the beginning of the program and then everyone shares all private information.<a class="footnote-back" href="#fnref7">↩</a></p>
+        </li>
+        <li id="fn8">
+            <p class="indent">The existentials are opened only at the point of performing the operation<a class="footnote-back" href="#fnref8">↩</a></p>
+        </li>
+        <li id="fn9">
+            <p class="indent">
+                In popular references to unstable or chaotic dynamics, instead of quoting the famous “Lorentz’s butterfly effect”, proposed in 1972 on the grounds of Lorentz’ work of 1961, one should better refer the “Turing’s electron
+                effect”, published in 1952.<a class="footnote-back" href="#fnref9">↩</a>
+            </p>
+        </li>
+        <li id="fn10">
+            <p class="indent">
+                See <span class="citation" data-cites="smith1999idea">(Smith 1999)</span>), where Turing-Kolmogorov’s elaboration theory is quoted as well as Shannon’s theory. The author considers the second as more pertinent for biology.
+                Then a notion of complexity as amount of information is given that is actually based on the first theory and it is described as <em>co-variant to entropy</em>. Finally, in the paper, Shannon’s theory pops out again — the
+                more pertinent theory, according to the author, where complexity is <em>contravariant to entropy</em>, it is negentropy.<a class="footnote-back" href="#fnref10">↩</a>
+            </p>
+        </li>
+    </ol>
+</section>

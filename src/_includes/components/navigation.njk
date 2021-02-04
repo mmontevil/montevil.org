@@ -19,6 +19,11 @@
           <a href="{{ url }}">{{ type }}</a>
         </li>
       {% endfor %}
+         {% if upnav %}
+        <li class="navigation__{{ type }}{% if url in page.url %} current" aria-current="page{% endif %}">
+          <a href="#{{ upnav }}">TOC</a>
+        </li>
+        {% endif %}
     </ul>
     <ul class="tools" role="list">
       <li class="tools__search navigation_archives{% if 'archives' in page.url %} current" aria-current="page{% endif %}">

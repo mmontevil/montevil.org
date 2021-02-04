@@ -1,0 +1,462 @@
+---
+excerpt: "This note introduces work in Theoretical Biology in the book: Perspectives on Organisms: Biological Time, Symmetries and Singularities."
+illust: bif.png
+---
+<style type="text/css">
+code {
+white-space: pre-wrap;
+}
+span.smallcaps {
+font-variant: small-caps;
+}
+span.underline {
+text-decoration: underline;
+}
+div.column {
+display: inline-block;
+vertical-align: top;
+width: 50%;
+}</style>
+<header id="title-block-header">
+  <h2 class="titleHead" id="introduction-to-new-perspectives-in-biology">Introduction to New Perspectives in Biology</h2>
+</header>
+<p class="paragraphHead indent" id="abstract">Abstract</p>
+<p class="indent">
+  This note introduces recent work in Theoretical Biology by borrowing from the Introduction (chapter 1) of the book by the authors: “Perspectives on Organisms: Biological Time, Symmetries and Singularities”, Springer, 2014. The idea is
+  to work towards a Theory of Organisms analogue and along the Theory of Evolution, where ontogenesis could be considered as part of phylogenesis. As a matter of fact, the latter is made out of “segments” of the first: phylogenesis is the
+  “sum” of ontogenetic paths and they should be made intelligible by similar principles. To this aim, we look at ontogenesis from different perspectives. By this, we shed light on the unity of the organism from different points of view,
+  yet constantly keeping that unity as a core invariant. The analysis of <em>invariance</em>, as the result of theoretical symmetries, and of <em>symmetry changes</em>, is a key theme of the approach in the book and in the discussion in
+  this note.
+</p>
+<h3 class="sectionHead" id="from-physics-towards-biology"><span class="header-section-number">1</span> From physics towards biology</h3>
+<p class="indent">
+  Current biology is largely an experimental discipline, that is most, and actually almost all, research activities are — highly dextrous — experimentations. For a natural science, this situation may not seem to be an issue. However, this
+  is mostly associated to a belief that experiments and theoretical thinking could be decoupled, and that experiments could actually be performed independently from theories. Yet, “concrete” experimentations cannot be conceived as
+  autonomous with respect to theoretical considerations, which may have abstract means but also have very practical implications. In the field of molecular biology, for example, research is related to the finding of hypothesized molecules
+  and molecular manipulations that would allow to understand biological phenomena and solve medical or other socially relevant problems. This experimental work can be carried on almost forever as biological molecular diversity is
+  abundant. However, the understanding of the actual phenomena, beyond the differences induced by local molecular transformations is limited, precisely because such an understanding requires a theory, relating, in this case, the molecular
+  level to the phenotype and the organism. In some cases, the argued theoretical frame is provided by the reference to an unspecified “information theoretical encoding”, used as a metaphor more than as an actual scientific notion,
+  <span class="citation" data-cites="fox1995 longo2012">(Fox Keller 1995; Longo et al. 2012)</span>. This metaphor is used to legitimate observed correlations between molecular differential manipulations and phenotype changes, but it does
+  so by putting aside considerable aspects of the phenomena under study. For example, there is a gap between a gene that is experimentally necessary to obtain a given shape in a strain and actually entailing this shape. In order to
+  justify this “entailment”, genes are argued to correspond to “code”, that is a one-dimensional discrete structure, meanwhile shapes are the result of a constitutive history in space and time: the explanatory and conceptual gap between
+  the two is enormous. In our opinion, the absence or even the avoidance of theoretical thinking leads to the acceptance of the naive or common sense theory, possibly based on unspecified metaphors, which is generally insufficient for
+  satisfactory explanations or even false — when it is well defined enough as to be proven false.
+</p>
+<p class="indent">
+  We can then informally describe the reasons for the need of new theoretical perspectives in biology as follows. First, there are empirical, theoretical and conceptual <em>instabilities</em> in current biological knowledge. This can be
+  exemplified by the notion of the gene and its various and changing meanings <span class="citation" data-cites="fox2000century">(Fox Keller 2002)</span>, or the unstable historical dynamics of research fields in molecular biology
+  <span class="citation" data-cites="Lazebnik02">(Lazebnik 2002)</span>. In both cases, the reliability and the meaning of research results is at risk. Another issue is that the molecular level does not accommodate phenomena that occur
+  typically at other <em>levels of organization</em>. We propose many examples in <span class="citation" data-cites="longomont">(Longo and Montévil 2014)</span>, but let’s quote as for now the work on microtubules
+  <span class="citation" data-cites="karsenti2008self">(Karsenti 2008)</span>, on cancer at the level of tissues <span class="citation" data-cites="sonnenschein2000somatic">(Sonnenschein and Soto 2000)</span>, or on cardiac functions at
+  its different levels <span class="citation" data-cites="noble2010biophysics">(Noble 2010)</span>. Some authors also emphasize the historical and conceptual shifts that have led to the current methodological and theoretical situation of
+  molecular biology, which is, therefore, subject to ever changing interpretations <span class="citation" data-cites="Amzallag Stewart2004">(Amzallag 2002; Stewart 2004)</span>. In general, when considering the molecular level, the
+  problem of the composition, that is the putting together, of a great variety of molecular phenomena arises. Single molecule phenomena may be biologically irrelevant <em>per se</em>: they need to be related to other levels of
+  organization (tissue, organ, organism, …) in order to understand their possible biological significance.
+</p>
+<p class="indent">
+  In no way do we mean to negate that <span class="smallcaps">dna</span> and the molecular cascades related to it play a fundamental role, yet their investigations are far from <em>complete</em> regarding the description of life
+  phenomena. Indeed, these cascades may causally depend on activities and organization at different level of analysis, which interact with them and in particular shape them and deserve proper insights.
+</p>
+<p class="indent">
+  Thus, it seems that, with respect to explicit theoretical frames in biology, the situation is not particularly satisfying, and this can be explained by the complexity of the phenomena of life. Theoretical approaches in biology are
+  numerous and extremely diverse in comparison, say, with the situation in theoretical physics. In the latter discipline, theorizing has a deep methodological unity, even when there exists no unified theory to understand different classes
+  of phenomena — typically, the Relativistic and Quantum Fields are not (yet) unified, <span class="citation" data-cites="weinberg1995 bailly2011">(Weinberg 1995; Bailly and Longo 2011)</span>. A key component of this methodological
+  unity, in physics, is given by the role of “symmetries”, which we will extensively stress. Biological theories instead range from conceptual frameworks to highly mathematized physical approaches, the latter mostly dealing with
+  <em>local</em> properties of biological systems (e. g. organ shape). The most prominent conceptual theories are Darwin’s approach to evolution — its principles, “descent with modification" and “selection", shed a major light
+  on the dynamics of phylogenesis, the theory of common descent — all current organisms are the descendants of one or a few simple organisms, and cell theory — all organisms have a single cell life stage and are cells, or are composed of
+  cells. It would be too long to quote work in the second and third group: they mostly deal with the dynamics of forms of organs (morphogenesis), cellular networks of all sorts, dynamics of populations …when needed, we will refer to
+  specific analyses. Very often, this relevant mathematical work is identified as “theoretical biology”, while we care for a distinction, in biology, between “theory” and “mathematics” analogous to the one in physics between theoretical
+  physics and mathematical physics: the latter mostly or more completely formalizes and technically solves problems (equations, typically), as set up within or by theoretical proposals or directly derived from empirical data.
+</p>
+<p class="indent">
+  In our view, there is currently no satisfactory <em>theory</em> of biological organization as such, and in particular, in spite of many attempts, there is no theory of the organism. Darwin’s theory, and even more so neo-Darwinian
+  approaches, basically avoid as much as possible the problem raised by the organism. Darwin uses the duality between life and death as natural selection to understand why, between given biological forms, some are observed and others are
+  not. That is, he gave us a remarkable theoretical frame for phylogenesis, without confronting the issue of what a theory of organisms could be. In the modern synthesis, since
+  <span class="citation" data-cites="Fisher1930">(Fisher 1930)</span>, the properties of organisms and phenotypes, fitness in particular, are predetermined and defined, in principle, by genetics (hints to this view may be found already in
+  Spencer’s approach to evolution <span class="citation" data-cites="stiegler2001nietzsche">(Stiegler 2001)</span>). In modern terms, “(potential) fitness is already encoded in genes”. Thus, the “structure of determination” of organisms
+  is assumed to be theoretically unnecessary and is not approached<a class="footnote-ref" href="#fn1" id="fnref1" role="doc-noteref"><sup>1</sup></a>.
+</p>
+<p class="indent">
+  In physiology or developmental biology the question of the structure of determination of the system is often approached on qualitative grounds and the mathematical descriptions are usually limited to specific aspects of organs or
+  tissues. Major examples are provided by the well established and relevant work in morphogenesis, since Turing, Thom and many others (see <span class="citation" data-cites="Jeanphyllotaxis">(Jean 1994)</span> for phillotaxis and
+  <span class="citation" data-cites="fleury2009">(Fleury 2009)</span> for recent work on organogenesis), in a biophysical perspective. In cellular biology, the equivalent situation leads to (bio-)physical approaches to specific biological
+  structures such as membranes, microtubules, …, as hinted above. On the contrary, the tentative, possibly mathematical, approaches that aim to understand the proper structure of determination of organisms as a whole, are mostly based on
+  ideas such as autonomy and autopoiesis, see for example <span class="citation" data-cites="rosen2005 varela1979principles matteobook">(Rosen 1991; Varela 1979; Moreno and Mossio 2015)</span>. These ideas are philosophically very
+  relevant and help to understand the structure of the organization of biological entities. However, they usually do not have a clear connection with experimental biology, and some of them mostly focus on the question of the definition of
+  life and, possibly, of its origin, which is not our aim. Moreover, their relationship with the aforementioned biophysical and mathematical approaches is generally not made explicit. In a sense, our specific “perspectives" on the
+  organism as a whole (time, criticality, anti-entropy, the main themes of our book <span class="citation" data-cites="longomont">(Longo and Montévil 2014)</span>) may be used to fill the gap, as on one side we try to ground them on some
+  empirical work, on the other they may provide a theoretical frame relating the global analysis of organisms as autopoietic entities and the local analysis developed in biophysics.
+</p>
+<p class="indent">
+  In this context, physiology and developmental biology (and the study of related pathological aspects) are in a particularly interesting situation. These fields are directly confronted with empirical work and with the complexity of
+  biological phenomena; recent methodological changes have been proposed and are usually described as “systems biology”. These changes consist, briefly, in focusing on the systemic properties of biological objects instead of trying to
+  reconstruct macroscopic properties from their components, see <span class="citation" data-cites="noble2006 noble2011 Society">(Noble 2006, 2011; Sonnenschein and Soto 1999)</span> and, in particular,
+  <span class="citation" data-cites="Noble01012008">(Noble 2008)</span>. In the latter, it is acknowledged that, as for theories in systems biology:
+</p>
+<blockquote>
+  <p class="indent">There are many more to be discovered; a genuine “theory of biology” does not yet exist.</p>
+</blockquote>
+<p class="indent">
+  Systems biology has been recently and extensively developed, but it also corresponds to a long tradition. The aim of our book <span class="citation" data-cites="longomont">(Longo and Montévil 2014)</span> can be understood as a
+  theoretical contribution to this research program. That is, we aim at a preliminary, yet possibly general theory of biological objects and their dynamics, by focusing on “perspectives” that shed some light on the unity of organisms from
+  a specific point of view.
+</p>
+<p class="indent">
+  In this project, there are numerous pitfalls that should be avoided. In particular, the relation with the powerful physical theories is a recurring issue. In order to clarify the relationships between physics, mathematics and biology, a
+  critical approach to the very foundations of physical theories and, more generally, to the relation between mathematized theories and natural phenomena is most helpful and we think even necessary. This analysis is at the core of
+  <span class="citation" data-cites="bailly2011">(Bailly and Longo 2011)</span> and, in the rest of this text, we just review some of the key points in our approach. By this, we provide below a brief account of the philosophical
+  background and of the methodology that we follow in the book <span class="citation" data-cites="longomont">(Longo and Montévil 2014)</span>. We also discuss some elements of comparison with other theoretical approaches and then
+  summarize some of the key ideas of our approach.
+</p>
+<p class="indent">
+  Physical theorizing guides our attempts in biology, without reductions to the “objects” of physics, but by a permanent reference, even by local reductions, to the <em>methodology</em> of physics. We are aware of the historical
+  contingency of this method, yet by making explicit its working principles, we aim at its strongest possible conceptual stability and <em>adaptability</em>: “perturbing” our principles and even our methods may allow further progress in
+  knowledge construction.
+</p>
+<p class="indent">
+  Our “perspectives” on organisms complement Luca Cardelli’s contributions, largely based on molecular analyses. Yet, links may be established with his more “systemic” approaches, as beautifully developed in the Brane Calculi, Stochastic
+  Gene Networks and Process Algebra Models.
+</p>
+<h3 class="sectionHead" id="objectivization-and-theories"><span class="header-section-number">2</span> Objectivization and Theories</h3>
+<p class="indent">As already stressed, theories are conceptual and — in physics — largely mathematized frameworks that frame the intelligibility of natural phenomena.</p>
+<p class="indent">
+  One of the most difficult theoretical tasks in biology is to insert the autonomy of the organism in the unavoidable ecosystem, both internal and external: life is variability <em>and</em> constraints, and neither make sense without the
+  other. In this sense, the recent exploration in <span class="citation" data-cites="matteobook Montevil2015c">(Moreno and Mossio 2015; Montévil and Mossio 2015)</span> relates constraints and autonomy in an original way and complements
+  our effort. Both this “perspective" and ours are only possible when accessing living organisms in their unity and by taking this “wholeness” as a “condition of possibility" for the construction of biological knowledge. However, we do
+  not discuss here this unity <em>per se</em>, nor directly analyze its auto-organizing structural stability. In this sense, these two complementary approaches may enrich each other and produce, by future work, a novel integrated
+  framework.
+</p>
+<p class="indent">
+  As for the interplay with physics, our approach particularly s the <em>praxis</em> underlying scientific theorizing, including mathematical reasoning, as well as the cognitive resources mobilized and refined in the process of knowledge
+  construction. From this perspective, mathematics and mathematized theories, in particular, are the result of human activities, in our historical space of humanity,
+  <span class="citation" data-cites="Husserl1970origin">(Husserl 1970)</span>. Yet, they are the most stable and conceptually invariant knowledge constructions we have ever produced. This singles them out from the other forms of
+  knowledge. In particular, they are grounded on the constituted <em>invariants of our action</em>, gestures and language, and on the <em>transformations</em> that preserve them: the concept of number is an invariant of counting and
+  ordering; symmetries are fundamental cognitive invariants and transformations of action and vision — made concepts by language, through history,
+  <span class="citation" data-cites="Dehaene1997 longo2010mathematical">(Dehaene 1997; Longo and Viarouge 2010)</span>. More precisely, both ordering (the result of an action in space) and symmetries may be viewed as “principles of
+  conceptual construction” and result from core cognitive activities, shared by all humans, well before language, yet spelled out in language. Thus, jointly to the “principles of (formal) proof”, that is to (formalized) deductive methods,
+  the principles of construction ground mathematics at the conjunction of action and language. And this is so beginning with the constructions by rotations and translations in Euclid’s geometry (which are symmetries) and the
+  axiomatic-deductive structure of Euclid’s proofs (with their proof principles).
+</p>
+<p class="indent">
+  This distinction, construction principles vs. proof principles, is at the core of the analysis in <span class="citation" data-cites="bailly2011">(Bailly and Longo 2011)</span>, which begins by comparing the situation in mathematics
+  with the foundations of physics. The observation is that mathematics and physics share the same construction principles, which were largely co-constituted, at least since Galileo and Newton up to Noether and Weyl, in the XXth century
+  <a class="footnote-ref" href="#fn2" id="fnref2" role="doc-noteref"><sup>2</sup></a>. One may formalize the role of symmetries and orders by the key notion of group. Mathematical groups correspond to symmetries, while semi-groups
+  correspond to various forms of ordering. Groups and semi-groups provide, by this, the mathematical counterpart of some fundamental cognitive grounds for our conceptual constructions, shared by mathematics and physics: the active
+  gestures which organize the world in space and time, by symmetries and orders.
+</p>
+<p class="indent">
+  Yet, mathematics and physics differ as for the principles of proof: these are the (possibly formalized) principles of deduction in mathematics, while proofs need to be grounded on experiments and empirical verification, in physics. What
+  can we say as for biology? On one side, “empirical evidence” is at the core of its proofs, as in any science of nature, yet mathematical invariance and its transformations do not seem to be sufficiently robust and general as to
+  construct biological knowledge, at least not at the level of organisms and their dynamics, where variability is one of the major “invariants”. So, biology and physics share the principles of proofs, in a broad sense, while we claim that
+  the principles of conceptual constructions cannot be transferred as such. The aim of <span class="citation" data-cites="longomont">(Longo and Montévil 2014)</span> is to highlight and apply some cases where this can be done, by some
+  major changes though, and other cases where one needs radically different insights, from those proper to the so beautifully and extensively mathematized theories of the inert.
+</p>
+<p class="indent">
+  It should be clear by now, that our foundational perspective concerns as a priority the methodology (and the practice) that allows the establishment of scientific objectivity in our theories of nature. As a matter of fact, in our views,
+  the constitution of theoretical thinking is at the same time a process of objectivization. That is, this very process co-constitutes the object of study, jointly to the empirical evidence, in a way that simultaneously allows its
+  intelligibility. The case of quantum mechanics is paradigmatic for us, as a quanton (and even its reference system) is the result of active measurement and its practical and theoretical preparation. In this perspective, then, the
+  objects are defined by measuring and theorizing that simultaneously give their intelligibility, while the validity of the theory (the proofs, in a sense) is given by further experiments. Thus, in quantum physics, measurement has a
+  particular status, since it is not only the access to an object that would be there beyond and before measurement, but it contributes to the constitution of the very object measured. More generally, in natural sciences, measurement
+  deals with the questions: where to look, how to measure, where to set boundaries to objects and phenomena, which correlations to check and even propose …. This co-constitution can be intrinsic to some theories such as quantum mechanics,
+  but a discussion seems crucial to us also in biology, see <span class="citation" data-cites="montevilmeasure">(Montévil 2019)</span>.
+</p>
+<p class="indent">
+  Following this line of reasoning, the research program we follow towards a theory of organisms aims at finding ways to constitute theoretically biological objects and objectivize their behavior. Differences and analogies, by conceptual
+  continuities or dualities with physics will be at the core of our method (as for dualities, see, for example, our understanding of “genericity vs. specificity” in physics vs. biology in
+  <span class="citation" data-cites="longo2011c longomont">(Longo and Montévil 2011, 2014)</span>), while the correlations with other theories can, perhaps, be understood later
+  <a class="footnote-ref" href="#fn3" id="fnref3" role="doc-noteref"><sup>3</sup></a>. In this context, thus, a certain number of problems in the philosophy of biology are not methodological barriers; on the contrary, they may provide new
+  links between remote theorizing such as physical and social ones, which would not be based on the transfer of already constructed mathematical models.
+</p>
+<h3 class="sectionHead" id="a-short-synthesis-of-our-approach-to-biological-phenomena"><span class="header-section-number">3</span> A short synthesis of our approach to biological phenomena</h3>
+<p class="indent">
+  A methodological point that we first want to emphasize is that we focus on “current” organisms, as a result of the process of biological evolution. Indeed, the question of the origin of life is a very active field of research. In this
+  field, most of these analyses use physical or almost physical theories as such, that is they try to analyze how, from a mix of (existing) physical theories, one can obtain “organic” or evolutive systems. We will not work at the
+  (interesting, <em>per se</em>) problem of the origin of life, as the transition from the inert to the living state of matter, but we will work at the transition from <em>theories</em> of the inert to <em>theories</em> of living objects.
+  In a sense this may contribute also to the “origin” problem, as a sound theory of organisms, if any, may help to specify what the transition from the inert leads to, and therefore what it requires.
+</p>
+<p class="indent">
+  More precisely, the method of mathematical biology and biophysical modeling quoted above is usually the transformation of <em>a part</em> of an organism (more generally, of a living system) into a physical system, in general separated
+  from the organism and from the biological context it belongs to. This methodology often allows an understanding of some biological phenomena, from morphogenesis (phyllotaxis, formation of some organs …) to cellular networks and more,
+  see above. For example, the modeling of microtubules allows to approach their self-organization properties <span class="citation" data-cites="karsenti2008self">(Karsenti 2008)</span>, but it corresponds to a theoretical (and
+  experimental) <em>in vitro</em> situation, and their relation with the cell is not understood by the physical approach alone. The understanding of the system in the cell requires an approach external to the structure of determination at
+  play in the purely physical modeling. Thus, to this technically difficult work ranging from morphogenesis and phyllotaxis to cellular networks, one should add an insufficiently analyzed issue: these organs or nets, whose shape and
+  dynamics are investigated by physical tools, are generally part of an organism. That is, they are regulated and integrated in and by the organism and never develop like isolated or generic (completely defined by invariant rules)
+  crystals or physical forms. It is instead this integration and regulation in the coherent structure of an organism that contributes in making the biologically relevant situations, which is often non-generic in the physical sense,
+  <span class="citation" data-cites="Lesne06">(Lesne and Victor 2006)</span>.
+</p>
+<figure class="figure">
+  <img alt=" scheme of the relation between physics 
+and biology, from a diachronic point of view" id="fig:biori" src="bif.png" class="zoom" width="600em" />
+  <figcaption class="caption">
+    <em>A scheme of the relation between physics and biology, from a diachronic point of view</em>. Theoretical approaches that focus on the origin of life usually follow the physical line (stay within existing physical theories) and
+    try to approach the “bifurcation” point. The latter is not well defined since there is no proper theory for the biological entities that are assumed to emerge. Usually, the necessary ingredients for Darwinian evolution are used as
+    goals to be obtained from physical systems. From our perspective, a proper understanding of biological phenomena needs to focus directly, at least as a first (huge) step, on the properly biological domain, where the Darwinian tools
+    soundly apply, but also where organisms are constituted. It may then be easier to fill the gap.
+  </figcaption>
+</figure>
+<p class="indent">
+  The general strategy we use for our investigations in theoretical biology, is to approach the biological phenomena from different perspectives, each of them focusing on different <em>aspects</em> of biological organization, not on
+  different <em>parts</em> such as organs or cellular nets in tissues …. The aim is to propose a basis for a partially mathematized theoretical understanding. This strategy allows us to obtain relatively autonomous progresses on the
+  corresponding aspects of living systems. An essential difficulty is that, <em>in fine</em>, these concepts are fully meaningful only in the interaction with each other, that is to say in a unified framework that we are contributing to
+  establish. In this sense, then, we are making progresses by revolving around this not yet existing framework, proposing and browsing these different perspectives in the process. However, this allows a stronger relation to empirical
+  work, in contrast to theories of biological autonomy, without losing the sense of the biological unity of an organism.
+</p>
+<p class="indent">
+  The method we follow in order to progress in each of these specific aspects of life phenomena can mostly be understood as taking different points of view on organisms: we look at them from the point of view of time and rhythms, of the
+  interplay of global stability vs. instability, of the formation and maintenance of organization through changes …. As a result, we combine in <span class="citation" data-cites="longomont">(Longo and Montévil 2014)</span> a few of
+  these theoretical perspectives, for which the principal common organizing concepts are biological time, on one side, and extended criticality on the other. More specifically, the main conceptual frames that we either follow directly or
+  that make recurrent appearance in this text are the following:
+</p>
+<dl class="enumerate">
+  <dt class="enumerate">Biological temporal organization</dt>
+  <dd class="enumerate">
+    <p class="indent">
+      The idea is that, more than space or especially energy, biological time is a at the center of biological organization. This does not mean that energy is irrelevant, but both time and energy have a different role from the one
+      they play in physics. The reasons for this are explained throughout <span class="citation" data-cites="longomont">(Longo and Montévil 2014)</span>. The approach in terms of symmetry changes that we develop provides a radical
+      argument for this point of view. Intuitively, the idea is that what matters in biological theorizing is the notion of “organization” and the way it is constructed along and, we dare to say, <em>by</em> time, since biological
+      time will be an operator for us, in a precise mathematical sense. In contrast to this, the energetic level (say, between mammals of different sizes) is relatively contingent, as supported by the allometric relations,reviewed in
+      the second chapter of <span class="citation" data-cites="longomont">(Longo and Montévil 2014)</span>, where energy or mass appear as a parameter. Some preliminary arguments from physics are provided by the role of time (entropy
+      production) in dissipative structures <span class="citation" data-cites="Nicolis77">(Nicolis and Prigogine 1977)</span> and by the non-ergodicity of the molecular phase space, discussed in
+      <span class="citation" data-cites="kauffman2002investigations longo2012b">(Kauffman 2002; Longo, Montévil, and Kauffman 2012)</span>.
+    </p>
+  </dd>
+  <dt class="enumerate">Extended critical transitions</dt>
+  <dd class="enumerate">
+    <p class="indent">
+      A large part of our work uses the notion of extended critical transition
+      <span class="citation" data-cites="bailly1991anneau bailly2008 bailly2011 longo2011c">(Bailly 1991; Bailly and Longo 2008, 2011; Longo and Montévil 2011)</span> to understand biological systems. This notion is relatively
+      complex, in particular because of its physical prerequisites. It is discussed at length, with these prerequisites, in <span class="citation" data-cites="longomont">(Longo and Montévil 2014)</span>. Note that it provides a
+      precise meaning to the idea of the physical singularity of life phenomena in the sense that the biological is approached as a limit case of a physical situation.
+    </p>
+  </dd>
+  <dt class="enumerate">Enablement</dt>
+  <dd class="enumerate">
+    <p class="indent">
+      Biologists working on evolution often refer to a contingent state of the ecosystem as “enabling" a given form of life. A niche, typically, enables a, possibly new, organism; yet, a niche may be also constructed by an organism
+      <span class="citation" data-cites="nicheconstr">(Pocheville 2010)</span>. In <span class="citation" data-cites="longo2012b">(Longo, Montévil, and Kauffman 2012)</span> and
+      <span class="citation" data-cites="longo13">(Longo and Montévil 2013)</span> an attempt is made to frame this informal notion in a rigorous context. We borrow here from that work to link enablement to the role of symmetry
+      changes and we provide by this a further conceptual transition from physics to biology.
+    </p>
+  </dd>
+  <dt class="enumerate">Anti-entropy</dt>
+  <dd class="enumerate">
+    <p class="indent">
+      This notion aims to quantify the “amount of biological organization” of an organism <span class="citation" data-cites="bailly2009 Longo_2012_Randomness">(Bailly and Longo 2009; Longo and Montévil 2012)</span> as a non-reducible
+      opposite of entropy. It also determines some temporal aspects of biological organization. This aspect of our investigation gives a major role to randomness. The notion of randomness is related to entropy and to the
+      irreversibility of time in thermodynamics and statistical mechanics. As a result, we consider a proper notion of biological randomness as related to anti-entropy, to be added on top of the many (at least three) forms of
+      randomness present in physical theories (classical, thermodynamical, quantum).
+    </p>
+  </dd>
+</dl>
+<p class="indent">
+  Various physical theories (classical, relativistic, quantum, thermodynamic) make the inert intelligible in a remarkable way. Significant incompatibilities exist (the relativistic and quantum fields are not unified; they are in fact
+  incompatible). However, some major principles of conceptual construction confer a great unity to contemporary theoretical physics. The geodesic principle and its accompaniment by “symmetries”,
+  <span class="citation" data-cites="weyl1983symmetry van1989laws bailly2011">(Weyl 1983; Van Fraassen 1989; Bailly and Longo 2011)</span>, enable to grasp, under a conceptually unitary perspective, a wide area of knowledge regarding the
+  inert. Biology, having to date been less “theorized” and mathematized, can also progress in the construction of its theoretical frameworks by means of analogies, extensions and differentiations regarding physical theories, even by means
+  of conceptual dualities. Regarding dualities, we recall here one that is, we believe, fundamental and that has been extensively addressed in
+  <span class="citation" data-cites="bailly2011 Frezza2010 longo2011c longomont">(Bailly and Longo 2011; Frezza and Longo 2010; Longo and Montévil 2011, 2014)</span>): the <em>genericity</em> of physical objects (that is, their
+  theoretical and experimental invariance) and the <em>specificity</em> of their trajectories (basically, their reconstruction by means of the geodesic principle or identification by mathematical techniques, by symmetries typically). In
+  our perspective, this is inverted in biology, as it is transformed into the <em>specificity</em> (individuation and history) of the living object and the <em>genericity</em> of trajectories (evolutionary, ontogenetic: they are just
+  “possibilities” within spaces — ecosystems — in co-constitution). As a result, the work of theorization differs strongly between biology and physics.
+</p>
+<h3 class="sectionHead" id="bibliography">References</h3>
+<div class=" thebibliography" id="refs" role="doc-bibliography">
+  <div id="ref-Amzallag">
+    <p class="bibitem">Amzallag, G. Nissim. 2002. <em>La Raison Malmenée. De L’origine Des Idées Reçues En Biologie Moderne</em>. CNRS édition.</p>
+  </div>
+  <div id="ref-bailly1991anneau">
+    <p class="bibitem">Bailly, F. 1991. “L’anneau Des Disciplines.” <em>Revue Internationale de Systémique</em> 5 (3).</p>
+  </div>
+  <div id="ref-bailly2008">
+    <p class="bibitem">
+      Bailly, F., and G. Longo. 2008. “Extended Critical Situations: The Physical Singularity of Life Phenomena.” <em>Journal of Biological Systems</em> 16 (2): 309.
+      <a href="https://doi.org/10.1142/S0218339008002514">https://doi.org/10.1142/S0218339008002514</a>.
+    </p>
+  </div>
+  <div id="ref-bailly2009">
+    <p class="bibitem">———. 2009. “Biological Organization and Anti-Entropy.” <em>Journal of Biological Systems</em> 17 (1): 63–96. <a href="https://doi.org/10.1142/S0218339009002715">https://doi.org/10.1142/S0218339009002715</a>.</p>
+  </div>
+  <div id="ref-bailly2011">
+    <p class="bibitem">———. 2011. <em>Mathematics and the Natural Sciences; the Physical Singularity of Life</em>. London: Imperial College Press.</p>
+  </div>
+  <div id="ref-Dehaene1997">
+    <p class="bibitem">Dehaene, S. 1997. <em>The Number Sense.</em> Oxford University Press.</p>
+  </div>
+  <div id="ref-Dirac01021928">
+    <p class="bibitem">
+      Dirac, P. A. M. 1928. “The Quantum Theory of the Electron.” <em>Proceedings of the Royal Society of London. Series A</em> 117 (778): 610–24.
+      <a href="https://doi.org/10.1098/rspa.1928.0023">https://doi.org/10.1098/rspa.1928.0023</a>.
+    </p>
+  </div>
+  <div id="ref-Fisher1930">
+    <p class="bibitem">Fisher, R. A. 1930. <em>The Genetical Theory of Natural Selection</em>. Clarendon.</p>
+  </div>
+  <div id="ref-fleury2009">
+    <p class="bibitem">
+      Fleury, V. 2009. “Clarifying Tetrapod Embryogenesis, a Physicist’s Point of View.” <em>The European Physical Journal Applied Physics</em> 45 (03).
+      <a href="https://doi.org/10.1051/epjap/2009033">https://doi.org/10.1051/epjap/2009033</a>.
+    </p>
+  </div>
+  <div id="ref-fox1995">
+    <p class="bibitem">Fox Keller, E. 1995. <em>Refiguring Life: Metaphors of Twentieth-Century Biology</em>. New York: Columbia University Press.</p>
+  </div>
+  <div id="ref-fox2000century">
+    <p class="bibitem">———. 2002. <em>The Century of the Gene</em>. Harvard University Press.</p>
+  </div>
+  <div id="ref-Frezza2010">
+    <p class="bibitem">Frezza, G., and G. Longo. 2010. “Variations on the Theme of Invariants: Conceptual and Mathematical Dualities in Physics Vs Biology.” <em>Human Evolution</em> 25 (3-4): 167–72.</p>
+  </div>
+  <div id="ref-Husserl1970origin">
+    <p class="bibitem">Husserl, Edmund. 1970. “Origin of Geometry.” In <em>The crisis of european sciences and transcendental phenomenology: an introduction to phenomenological philosophy</em>. Evanston, Illinois: Northwestern University Press.</p>
+  </div>
+  <div id="ref-Jeanphyllotaxis">
+    <p class="bibitem">Jean, R.v. 1994. <em>Phyllotaxis: A Systemic Study in Plant Morphogenesis</em>. Cambridge Studies in Mathematics.</p>
+  </div>
+  <div id="ref-karsenti2008self">
+    <p class="bibitem">Karsenti, E. 2008. “Self-Organization in Cell Biology: A Brief History.” <em>Nature Reviews Molecular Cell Biology</em> 9 (3): 255–62. <a href="https://doi.org/10.1038/nrm2357">https://doi.org/10.1038/nrm2357</a>.</p>
+  </div>
+  <div id="ref-kauffman2002investigations">
+    <p class="bibitem">Kauffman, S. A. 2002. <em>Investigations</em>. Oxford University Press, USA.</p>
+  </div>
+  <div id="ref-Lazebnik02">
+    <p class="bibitem">
+      Lazebnik, Y. 2002. “Can a Biologist Fix a Radio? Or, What I Learned While Studying Apoptosis.” <em>Cancer Cell</em> 2 (3): 179–82.
+      <a href="https://doi.org/10.1007/s10541-005-0088-1">https://doi.org/10.1007/s10541-005-0088-1</a>.
+    </p>
+  </div>
+  <div id="ref-Lesne06">
+    <p class="bibitem">
+      Lesne, A., and J.-M. Victor. 2006. “Chromatin Fiber Functional Organization: Some Plausible Models.” <em>Eur Phys J E Soft Matter</em> 19 (3): 279–90.
+      <a href="https://doi.org/10.1140/epje/i2005-10050-6">https://doi.org/10.1140/epje/i2005-10050-6</a>.
+    </p>
+  </div>
+  <div id="ref-longo2012">
+    <p class="bibitem">
+      Longo, G., P.-A. Miquel, C. Sonnenschein, and A. M. Soto. 2012. “Is Information a Proper Observable for Biological Organization?” <em>Progress in Biophysics and Molecular Biology</em> 109 (3): 108–14.
+      <a href="https://doi.org/10.1016/j.pbiomolbio.2012.06.004">https://doi.org/10.1016/j.pbiomolbio.2012.06.004</a>.
+    </p>
+  </div>
+  <div id="ref-longo2011c">
+    <p class="bibitem">
+      Longo, G., and M. Montévil. 2011. “From Physics to Biology by Extending Criticality and Symmetry Breakings.” <em>Progress in Biophysics and Molecular Biology</em> 106 (2): 340–47.
+      <a href="https://doi.org/10.1016/j.pbiomolbio.2011.03.005">https://doi.org/10.1016/j.pbiomolbio.2011.03.005</a>.
+    </p>
+  </div>
+  <div id="ref-Longo_2012_Randomness">
+    <p class="bibitem">
+      ———. 2012. “Randomness Increases Order in Biological Evolution.” In <em>Computation, Physics and Beyond</em>, edited by M. Dinneen, B. Khoussainov, and A. Nies, 7160:289–308. Lecture Notes in Computer Science. Springer Berlin /
+      Heidelberg. <a href="https://doi.org/10.1007/978-3-642-27654-5_22">https://doi.org/10.1007/978-3-642-27654-5_22</a>.
+    </p>
+  </div>
+  <div id="ref-longo13">
+    <p class="bibitem">
+      ———. 2013. “Extended Criticality, Phase Spaces and Enablement in Biology.” <em>Chaos, Solitons &amp; Fractals</em> 55 (0): 64–79.
+      <a href="https://doi.org/10.1016/j.chaos.2013.03.008">https://doi.org/10.1016/j.chaos.2013.03.008</a>.
+    </p>
+  </div>
+  <div id="ref-longomont">
+    <p class="bibitem">
+      ———. 2014. <em>Perspectives on Organisms: Biological Time, Symmetries and Singularities</em>. Lecture Notes in Morphogenesis. Dordrecht: Springer.
+      <a href="https://doi.org/10.1007/978-3-642-35938-5">https://doi.org/10.1007/978-3-642-35938-5</a>.
+    </p>
+  </div>
+  <div id="ref-longo2012b">
+    <p class="bibitem">
+      Longo, G., M. Montévil, and S. Kauffman. 2012. “No Entailing Laws, but Enablement in the Evolution of the Biosphere.” In <em>Genetic and Evolutionary Computation Conference</em>, GECCO’12. New York, NY, USA: GECCO’12; ACM.
+      <a href="https://doi.org/10.1145/2330784.2330946">https://doi.org/10.1145/2330784.2330946</a>.
+    </p>
+  </div>
+  <div id="ref-longo2010mathematical">
+    <p class="bibitem">Longo, G., and A. Viarouge. 2010. “Mathematical Intuition and the Cognitive Roots of Mathematical Concepts.” <em>Topoi</em> 29 (1): 15–27.</p>
+  </div>
+  <div id="ref-montevilmeasure">
+    <p class="bibitem">Montévil, Maël. 2019. “Measurement in Biology Is Methodized by Theory.” <em>Biology &amp; Philosophy</em> 34 (3): 35. <a href="https://doi.org/10.1007/s10539-019-9687-x">https://doi.org/10.1007/s10539-019-9687-x</a>.</p>
+  </div>
+  <div id="ref-Montevil2015c">
+    <p class="bibitem">
+      Montévil, M., and M. Mossio. 2015. “Biological Organisation as Closure of Constraints.” <em>Journal of Theoretical Biology</em> 372: 179–91.
+      <a href="https://doi.org/10.1016/j.jtbi.2015.02.029">https://doi.org/10.1016/j.jtbi.2015.02.029</a>.
+    </p>
+  </div>
+  <div id="ref-matteobook">
+    <p class="bibitem">Moreno, A., and M. Mossio. 2015. <em>Biological Autonomy. A Philosophical and Theoretical Enquiry.</em> Dordrecht: Springer.</p>
+  </div>
+  <div id="ref-Nicolis77">
+    <p class="bibitem">Nicolis, G., and I Prigogine. 1977. <em>Self-Organization in Non-Equilibrium Systems</em>. New York: Wiley.</p>
+  </div>
+  <div id="ref-noble2006">
+    <p class="bibitem">Noble, D. 2006. <em>The music of life</em>. Oxford: Oxford U. P.</p>
+  </div>
+  <div id="ref-Noble01012008">
+    <p class="bibitem">
+      ———. 2008. “Claude Bernard, the First Systems Biologist, and the Future of Physiology.” <em>Experimental Physiology</em> 93 (1): 16–26.
+      <a href="https://doi.org/10.1113/expphysiol.2007.038695">https://doi.org/10.1113/expphysiol.2007.038695</a>.
+    </p>
+  </div>
+  <div id="ref-noble2010biophysics">
+    <p class="bibitem">
+      ———. 2010. “Biophysics and Systems Biology.” <em>Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</em> 368 (1914): 1125.
+      <a href="https://doi.org/10.1098/rsta.2009.0245">https://doi.org/10.1098/rsta.2009.0245</a>.
+    </p>
+  </div>
+  <div id="ref-noble2011">
+    <p class="bibitem">———. 2011. <em>The music of life: sourcebook</em>. Oxford.</p>
+  </div>
+  <div id="ref-nicheconstr">
+    <p class="bibitem">Pocheville, A. 2010. “What Niche Construction Is (Not).” In <em>La Niche Ecologique: Concepts, Modèles, Applications. Thèse de Doctorat</em>. <a href="http://hal.upmc.fr/tel-00715471/">http://hal.upmc.fr/tel-00715471/</a>.</p>
+  </div>
+  <div id="ref-rosen2005">
+    <p class="bibitem">Rosen, R. 1991. <em>Life Itself: A Comprehensive Inquiry into the Nature, Origin, and Fabrication of Life</em>. Columbia U. P.</p>
+  </div>
+  <div id="ref-Society">
+    <p class="bibitem">Sonnenschein, C., and A. M. Soto. 1999. <em>The society of cells: cancer and control of cell proliferation</em>. New York: Springer Verlag.</p>
+  </div>
+  <div id="ref-sonnenschein2000somatic">
+    <p class="bibitem">
+      ———. 2000. “Somatic Mutation Theory of Carcinogenesis: Why It Should Be Dropped and Replaced.” <em>Molecular Carcinogenesis</em> 29 (4): 205–11.
+      <a href="https://doi.org/10.1002/1098-2744(200012)29:4%3C205::AID-MC1002%3E3.0.CO;2-W">https://doi.org/10.1002/1098-2744(200012)29:4&lt;205::AID-MC1002&gt;3.0.CO;2-W</a>.
+    </p>
+  </div>
+  <div id="ref-Stewart2004">
+    <p class="bibitem">Stewart, J. 2004. <em>La Vie Existe-T-Elle ?</em> Editions Vuibert.</p>
+  </div>
+  <div id="ref-stiegler2001nietzsche">
+    <p class="bibitem">Stiegler, Barbara. 2001. <em>Nietzsche et La Biologie</em>. Puf, Paris.</p>
+  </div>
+  <div id="ref-van1989laws">
+    <p class="bibitem">Van Fraassen, B. C. 1989. <em>Laws and Symmetry</em>. Oxford University Press, USA.</p>
+  </div>
+  <div id="ref-varela1979principles">
+    <p class="bibitem">Varela, F. J. 1979. <em>Principles of Biological Autonomy</em>. North Holland New York.</p>
+  </div>
+  <div id="ref-weinberg1995">
+    <p class="bibitem">Weinberg, S. 1995. <em>The Quantum Theory of Fields.</em> Cambridge University Press.</p>
+  </div>
+  <div id="ref-weyl1983symmetry">
+    <p class="bibitem">Weyl, H. 1983. <em>Symmetry</em>. Princeton: Princeton University Press.</p>
+  </div>
+</div>
+<section class="footnotes" role="doc-endnotes">
+  <hr />
+  <ol>
+    <li id="fn1" role="doc-endnote">
+      <p class="bibitem">
+        By the general notion of structure of determination we refer to the theoretical determination provided by a conceptual frame, in more or less formalized terms. In physics, this determination is generally expressed by systems
+        of equations or by functions describing the dynamics.<a class="footnote-back" href="#fnref1" role="doc-backlink">↩︎</a>
+      </p>
+    </li>
+    <li id="fn2" role="doc-endnote">
+      <p class="bibitem">
+        Archimedes should be quoted as well: why is a balance with equal weights at equilibrium? for symmetry reasons, says he. This is how physicists still argue now: why does that particle exist? for symmetry reasons — see the
+        case of anti-matter and the negative solution of Dirac’s equations, <span class="citation" data-cites="Dirac01021928">(Dirac 1928)</span>.<a class="footnote-back" href="#fnref2" role="doc-backlink">↩︎</a>
+      </p>
+    </li>
+    <li id="fn3" role="doc-endnote">
+      <p class="bibitem">
+        The “adjacent” fields are, following <span class="citation" data-cites="bailly1991anneau">(Bailly 1991)</span>, physical theories in one direction and social sciences in another. The underlying notion of “extended
+        criticality”, may prove to be useful in economics, since we seem to be always in a permanent, extended, crisis or critical transition, very far from economic equilibria.
+        <a class="footnote-back" href="#fnref3" role="doc-backlink">↩︎</a>
+      </p>
+    </li>
+  </ol>
+</section>

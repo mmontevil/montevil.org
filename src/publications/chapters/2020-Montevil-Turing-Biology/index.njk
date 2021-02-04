@@ -1,0 +1,536 @@
+---
+excerpt: Turing distingue soigneusement l’imitation d’un phénomène de sa modélisation. En biologie, il n'y a cependant pas de cadre théorique bien établi pour encadrer la pratique de modélisation.
+---
+<h2 class="titleHead" id="de-lœuvre-de-turing-aux-défis-contemporains-pour-la-compréhension-mathématique-du-vivant-">De l’œuvre de Turing aux défis contemporains pour la compréhension mathématique du vivant <a class="sdfootnoteanc" href="#sdfootnote1sym" name="sdfootnote1anc" sdfixed><sup>*</sup></a></h2>
+<p class="center"><a name="__DdeLink__1366_811207450"></a>Maël Montévil<a class="sdfootnoteanc" href="#sdfootnote2sym" name="sdfootnote2anc"><sup>1</sup></a></p>
+<p class="indent paragraphHead">Résumé :</p>
+<p class="indent">
+  Turing distingue soigneusement l’imitation de la modélisation d’un phénomène. Cette dernière vise à saisir la structure causale du phénomène étudié. En biologie, il n'y a cependant pas de cadre théorique bien établi
+  pour encadrer la pratique de modélisation. Nous partons de l'articulation entre la compréhension du vivant et la thermodynamique, en particulier le second principe. Ceci nous conduira à expliciter les défis théoriques et
+  épistémologiques pour la compréhension mathématique du vivant. En particulier, l'historicité du vivant est un défi rarement abordé explicitement dans ce domaine. Nous pensons que ce défi nécessite un renversement complet de
+  l'épistémologie de la physique afin d'aborder de manière théoriquement précise les organismes vivants. Ce changement épistémologique est pertinent tant pour la pratique théorique que pour l'interprétation des protocoles et résultats
+  expérimentaux.
+</p>
+<p class="indent paragraphHead">Mots-clés :</p>
+<p class="indent">Turing, morphogenèse, entropie, anti-entropie, historicité, épistémologie</p>
+<h2 class="titleHead center indent" id="from-turings-work-to-current-challenges-for-the-mathematical-understanding-of-living-beings">From Turing’s work to current challenges for the mathematical understanding of living beings</h2>
+<h3 class="indent paragraphHead" id="abstract"><span><b>Abstract:</b></span></h3>
+<p class="indent">
+  <span>Turing sharply distinguishes the imitation from the modeling of a phenomenon. The latter aims to grasp the causal structure of the phenomenon studied. However, in biology, there is no well-established theoretical framework for
+modeling practices. We start from the
+</span><span>link</span><span> between the living and thermodynamics, especially the second principle. This discussion will lead us to the theoretical and epistemological challenges </span><span>in</span>
+  <span>the mathematical understanding of living beings. In particular, the historicity of living phenomena is a difficulty rarely taken into account in this field. We believe that the historicity of living phenomena requires a complete
+reversal of the epistemology of physics in order to understand living organisms with theoretical and conceptual accuracy. This challenge is relevant both for theoretical practices and for interpreting protocols and experimental
+results.</span>
+</p>
+<h4 class="indent paragraphHead" id="keywords">Keywords:</h4>
+<p class="indent">Turing, morphogenesis, entropy, anti-entropy, historicity, epistemology</p>
+<h3 class="sectionHead" id="1-introduction">1. Introduction</h3>
+<p class="indent">
+  Dans son article de 1950, Alan Turing introduit le concept d'intelligence artificielle comme <i>imitation</i> de l'intelligence humaine (
+  <u><a href="#Xturing1950">Turing, 1950</a></u>
+  ). Cette imitation est définie comme la capacité à soutenir une conversation par ce que l'on appellerait aujourd'hui une messagerie électronique. Dans cet article, Turing distingue soigneusement son approche d'une réelle compréhension
+  des processus cérébraux et plus généralement de l’intelligence humaine. Il souligne en effet que le continu joue un rôle clé dans les processus biologiques, or sa machine, qu’il propose d’utiliser pour imiter l’intelligence humaine, est
+  une machine à états discrets. Son fonctionnement est un processus parfaitement déterministe et prédictible, et cette propriété n’est pas une propriété universelle des processus ayant des variables continues. L'intelligence artificielle,
+  comme imitation, a été et est l'objet de recherches nombreuses dont les plus récentes est le développement des méthodes d’apprentissage machine (machine learning), utilisant les Big Data que les ordinateurs en réseau ont rendues
+  disponible.
+</p>
+<p class="indent">
+  Mais, l'imitation, comme méthode, n'apporte aucune garantie sur le comportement d'un processus, tant, du moins, qu'il n'y a pas de preuve que cette imitation doit ressembler au processus d'intérêt. De telles preuves supposent de passer
+  par une compréhension de ce que l’on cherche à imiter. Par compréhension, nous n'entendons pas, bien sûr, une compréhension parfaite mais le résultat d'un réel effort pour appréhender la structure causale
+  <a class="sdfootnoteanc" href="#sdfootnote3sym" name="sdfootnote3anc"><sup>2</sup></a> de ce que l'on cherche à comprendre. Un tel travail ne suppose pas seulement l'étude d'un processus dans sa singularité mais une mise en cohérence de
+  l’appréhension de ce processus avec la connaissance d'autres phénomènes pertinents.
+</p>
+<p class="indent">
+  Turing a adopté cette seconde approche dans son travail sur la genèse des formes biologiques, travail qu’il décrit comme une <i>modélisation</i>, et non comme une imitation (
+  <u><a href="#XTuring1952">Turing, 1952</a></u>
+  ). Notons que le modèle de Hodgkin et Huxley, publié la même année, est présenté par ses auteurs comme une <i>description</i> et non un modèle ce qui souligne la force du terme (
+  <u><a href="#Xdoi:10.1113/jphysiol.1952.sp004764">Hodgkin &amp; Huxley, 1952</a></u>
+  ). Pour comprendre la morphogenèse, plutôt que de mobiliser directement sa machine, Turing s'est tourné vers des concepts physico-chimiques et les mathématiques du continu. Ce faisant, il a montré qu'une forme n'a pas besoin d'être
+  encodée, d'une manière ou d'une autre, pour apparaître. Les formes peuvent apparaître comme résultat d'une dynamique non-linéaire. Il s'agissait déjà d'une falsification du concept de programme génétique comme concept technique précis,
+  informatique, avant même que ce concept n'ait pris son essor en biologie (
+  <u><a href="#Xlongo2018letter">Longo, 2018</a></u>
+  ). Cette approche de la morphogenèse, initiée par Turing, a conduit à de nombreux travaux.
+</p>
+<p class="indent">
+  Rappelons le cadre conceptuel de ces approches. Turing décrit des réactions chimiques entre molécules, et le déplacement de ces molécules dans l'espace, de manière macroscopique. Ce processus est décrit par une équation. Mais cette
+  équation est insuffisante pour prédire une trajectoire. Il est aussi nécessaire de spécifier les valeurs des paramètres, c’est-à-dire des variables qui ne sont pas déterminées par les équations, ainsi que les conditions initiales du
+  système, c'est-à-dire son état initial, et ses conditions au bord, c'est-à-dire ce qu'il se passe à sa frontière (
+  <u><a href="#Xmontevilmariano">Montévil, 2018</a></u>
+  b).
+</p>
+<p class="indent">
+  Paradoxalement, il nous semble que la validité de cette approche n'est jamais plus grande que dans l'étude d'un système abiotique, par exemple dans l’étude d’une solution chimique présentant des phénomènes de réaction-diffusion, comme
+  la réaction de Belousov–Zhabotinsky. Illustrons les difficultés de cette approche en biologie par un exemple. Stuart Newman et ses collègues se placent directement dans le cadre mathématique de Turing pour étudier la morphogenèse
+  conduisant aux membres antérieurs des tétrapodes, dans leur diversité (
+  <u><a href="#X10.1371/journal.pone.0010892">Zhu, 2010</a></u>
+  ). La force de leur approche, d'après les auteurs, est d’embrasser cette diversité en utilisant une seule et même équation — ce qui n’est possible qu’à condition de faire varier les paramètres, les conditions initiales et les conditions
+  au bord de leur modèle pour retrouver cette diversité. Les auteurs mobilisent l'idée suivant laquelle l'objectivité d'une approche mathématique des phénomènes naturels est beaucoup plus grande si l'on arrive à appréhender une diversité
+  de phénomènes à travers une seule équation. Cette équation unique, au cœur de l’objectivation des phénomènes, permet alors de comprendre l’unité du divers. Cette épistémologie fait sens en physique où les équations correspondent à des
+  principes théoriques généraux, formulés mathématiquement. Mais en biologie elle est beaucoup plus problématique. En effet, pourquoi imaginer qu'aucune molécule ou phénomène supplémentaire ne viendrait se greffer à ce processus de
+  morphogenèse au cours de l'évolution, et ne viendrait alors changer la forme des équations considérées ? On pourrait imaginer répondre à cette objection en termes de parcimonie : une seule équation est préférable à plusieurs
+  car la première situation nécessite moins d'hypothèses. Il s'agit cependant d'une description inexacte de la situation. En effet, si l'équation ne change pas, dans leur approche, les paramètres et les conditions initiales et au bord
+  sont changées pour générer la diversité des situations observées empiriquement. Décrire ces changements demande autant d'hypothèses. Certaines de ces hypothèses sont d’ailleur parfois très spécifiques. Par exemple, dans leur modèle,
+  certains paramètres changent dans le temps au cours du processus de morphogenèse. Nous pensons que la distinction entre les hypothèses concernant les équations et les autres hypothèses n’est pas dotée, ici, d'une grande profondeur
+  épistémologique. Les hypothèses s’ajoutant à l’équation décrivent, elles aussi, une partie du processus d’embryogenèse dont une partie seulement est abordée par l'équation de manière causale. Nous ne voyons pas d'argument convaincant
+  pour penser que la partie décrite causalement par l’équation soit nécessairement plus statique que les autres au cours de l'évolution. A<i> fortiori,</i> il n’y pas de raison de faire de cette hypothèse le cœur méthodologique de la
+  compréhension des phénomènes de morphogenèse biologique.
+</p>
+<p class="indent">
+  Pour progresser il nous semble nécessaire de revenir non pas à la lettre de l'approche de Turing, c'est-à-dire les processus de réaction-diffusion et la morphogenèse au sens physique du terme, mais à l'esprit de son approche qui
+  consiste à interroger la structure causale des phénomènes que l'on cherche à comprendre. Pour se faire nous allons partir des rapports entre organismes vivants et le second principe de la thermodynamique, c’est-à-dire la croissance de
+  l’entropie dans les systèmes isolés. Ceci nous amènera à aborder la question plus générale de l’articulation entre objets mathématiques et phénomènes biologiques, pour lequel nous insisterons sur l’enjeu de l’historicité du vivant. Dans
+  la suite de l’attention de Turing aux implications que les objets mathématiques utilisés ont pour la connaissance empirique, tant dans le cas de sa machine à états discrets que celui des phénomènes décrits par le continu, nous
+  conclurons sur la question de la mesure en biologie.
+</p>
+<h3 class="sectionHead" id="2-le-vivant-et-lentropie">2. Le vivant et l’entropie</h3>
+<h4 class="subsectionHead" id="21-le-vivant-et-le-second-principe-de-la-thermodynamique">2.1. Le vivant et le second principe de la thermodynamique</h4>
+<p class="indent">
+  Avec le développement de la thermodynamique se pose un problème théorique majeur. Le second principe de la thermodynamique stipule que l'entropie d’un système isolé ne peut qu’augmenter. Ce principe suggère, par une lecture un peu trop
+  rapide, que la tendance à se simplifier, donc la tendance à la disparition des formes, constitue un principe fondamental de la physique. Dans ce contexte, la morphogenèse telle que décrite par Turing semblait impossible à beaucoup de
+  physiciens (
+  <u><a href="#Xwinfree1984prehistory">Winfree, 1984</a></u>
+  ). Plus généralement c'est la compréhension de la possibilité même du vivant qui était en jeu : les situations biologiques sont remarquables en ce qu’elles ne correspondent clairement pas à une entropie maximale et ne tendent pas
+  vers une entropie maximale — sauf potentiellement après la mort. Prigogine, Schrödinger et von Bertalanffy ont, eux aussi, travaillé sur cette difficulté au milieu du XXe siècle (
+  <u><a href="#XNicolis77">Nicolis &amp; Prigogine, 1977</a></u>
+   ;
+  <u><a href="#Xschrodinger">Schrödinger, 1944</a></u>
+   ;
+  <u><a href="#Xvon1949biologische">von Bertalanffy, 1952</a></u>
+  ).
+</p>
+<p class="indent">
+  L’entropie basse et parfois décroissante des objets biologiques contredirait-elle les principes de la thermodynamique ? Rappelons que le deuxième principe stipule que l'entropie ne peut pas diminuer dans un système isolé. Par
+  exemple, un parfum ne retourne pas spontanément dans sa bouteille. Spontanément, il ne peut que se propager, par exemple dans une pièce. La solution au paradoxe est simple : les situations biologiques, y compris la biosphère dans
+  son ensemble, ne sont pas des systèmes isolés. Les situations biologiques sont ouvertes, elles sont soumises à des flux d'énergie, de matière et d'entropie. Dans le cas de la biosphère, le soleil est une source essentielle d’énergie
+  structurée (à basse entropie), utilisée par les organismes photosynthétiques. Par conséquent, les situations biologiques ne contredisent pas le deuxième principe. Une conséquence importante est que les organisations biologiques sont
+  nécessairement locales et dépendent de leur couplage avec un extérieur. Isolés, les organismes meurent, au mieux après une période de stase. La relation entre l'intérieur et l'extérieur d’un organisme est matérialisée et organisée par
+  des membranes semi-perméables, considérées comme principielles par Varela, Maturana et Uribe (
+  <u><a href="#XVarela1974187">1974</a></u>
+  ).
+</p>
+<p class="indent">
+  En physique, l'articulation entre les concepts d'entropie et de (dés-)ordre est une approximation conceptuelle qui peut être trompeuse et doit être discutée avec beaucoup de soin. En résumé, l’augmentation de l’entropie dans un système
+  physique est le processus qui consiste à passer d’états macroscopiques moins probables à d’autres plus probables. Il s’ensuit que l’augmentation de l’entropie est la disparition de caractéristiques initiales improbables et leur
+  remplacement par des caractéristiques plus probables, c’est-à-dire l’effacement du passé dans la mesure où les contraintes énergétiques le permettent. Dans beaucoup de situations, mais pas toutes, la mécanique statistique définit les
+  probabilités en posant que tous les états de même énergie sont équivalent et donc ont la même probabilité. Dans ces situations, l'augmentation de l'entropie est la dispersion de l'énergie. Cependant, il convient de garder à l’esprit que
+  cette dispersion se produit au niveau de l’espace de phase, décrivant les états microscopiques possibles. Ce dernier comprend à la fois les positions et les vitesses. Par conséquent, l’augmentation de l’entropie ne peut pas être
+  confondue avec la simple disparition de patrons dans la configuration spatiale du système.
+</p>
+<p class="indent">
+  Prenons un exemple. L'eau peut être à l'état liquide en dessous de 0°C, dans un état métastable. Cette situation s'appelle la surfusion. Mettons cette eau dans une boîte complètement isolée : l’énergie est conservée d’après le
+  premier principe de la thermodynamique et l’entropie ne peut qu’augmenter d’après le second principe. Que se passe-t-il quand cette eau se solidifie ? L’entropie ne diminue pas, mais il y a formation de patrons cristallins et le
+  système semble bien devenir plus ordonné. Analysons la situation plus précisément. La cristallisation est la formation de configurations particulières dans le système concernant la position des molécules d'eau. Cependant, sous forme
+  cristalline, la relation entre ces molécules est à un niveau d'énergie plus bas et l'énergie est conservée, donc ce processus libère de l’énergie (réciproquement, la fonte de la glace nécessite un apport de chaleur, c’est pourquoi de la
+  glace à 0°C semble plus froide que de l’eau à la même température). Puisque le système est isolé, cette énergie prend la seule forme possible, c'est-à-dire l'agitation moléculaire et donc conduit à une augmentation de la température.
+  L’analyse entropique de cette transformation est alors que l’entropie configurationnelle (correspondant aux positions) a diminué tandis que l’entropie associée aux vitesses a augmenté — il existe beaucoup plus de vitesses possibles
+  lorsque la vitesse moyenne des particules augmente. Globalement, l'entropie du système augmente. Il est important de garder à l’esprit que la maximisation de l’entropie d’un système isolé est compatible avec l’apparition de patrons
+  macroscopiques. Il n’en reste pas moins exact que les situations biologiques ne sont pas à une entropie maximale et que leur organisation est le résultat d’une activité, productrice d’entropie, dès lors qu’il y a métabolisme. En effet,
+  s’il est possible d’avoir un phénomène de morphogenèse par l’augmentation d’entropie, la récurrence de ces processus suppose d’être loin de l’équilibre thermodynamique.
+</p>
+<h4 class="subsectionHead" id="22-de-la-néguentropie-à-lanti-entropie">2.2. De la néguentropie à l’anti-entropie</h4>
+<p class="indent">
+  Ces précisions étant apportées, comment progresser dans la compréhension des situations biologiques ? La maximisation de l'entropie dans les systèmes isolés n'est pas une hypothèse parmi d'autres. Prédire nécessite de distinguer
+  théoriquement un état parmi beaucoup d'autres : l'état auquel les changements spontanés de l'objet étudié conduiront. La maximisation de l'entropie distingue un état macroscopique des autres : celui qui maximise l'entropie.
+  Les fonctions jouant ce rôle théorique et épistémologique en physique s'appellent des potentiels. Il existe une diversité de potentiels dans le domaine de la thermodynamique à l'équilibre, tous faisant intervenir l'entropie mais prenant
+  des formes différentes suivant le couplage entre le système et son extérieur. La plupart de ces potentiels sont appelés énergie libre (de Gibbs, de Helmholtz, etc.) car ils décrivent le travail macroscopique que l’on peut obtenir du
+  système lorsqu’il tend vers l’équilibre thermodynamique. Rappelons la définition de cet équilibre : un système est à l’équilibre thermodynamique lorsqu’il ne présente pas de flux net avec son extérieur et ne change plus.
+</p>
+<p class="indent">
+  Le problème est que, pour les systèmes ouverts loin de l'équilibre thermodynamique, demandant donc de tels flux, tel qu’un ouragan, une flamme ou un être vivant, il n'y a pas de consensus sur un potentiel ni même sur l'existence
+  théorique d'une telle fonction ou famille de fonctions. Par exemple, l’idée principale de Prigogine est que le taux de production d’entropie, c’est-à-dire le taux de dissipation de l’énergie, pourrait jouer le rôle théorique d’un
+  potentiel dans certaines situations (
+  <u><a href="#XNicolis77">Nicolis &amp; Prigogine, 1977</a></u>
+  ). Dans une perspective moins technique, Schrödinger a introduit l'idée que le problème, en biologie, n'est pas de comprendre l'ordre à partir du désordre, comme dans de nombreuses situations physiques, mais de comprendre l'ordre à
+  partir de l'ordre (
+  <u><a href="#Xschrodinger">Schrödinger, 1944</a></u>
+  ). Pour saisir cette idée, il propose d’examiner l’entropie négative, une idée que Brillouin a développée plus tard en nommant cette entropie négative « néguentropie » (
+  <u><a href="#XBrillouin">Brillouin, 1956</a></u>
+  ).
+</p>
+<p class="indent">
+  Cependant, l'entropie négative ne rend pas compte exactement des organisations biologiques. L'entropie peut être réduite simplement en abaissant les températures tandis que les organisations biologiques ne restent telles que dans une
+  plage de températures. Une glaciation majeure diminuerait l'entropie, mais détruirait également les organisations biologiques. De plus, les parties fonctionnelles des organisations biologiques impliquent souvent une augmentation de
+  l'entropie au sein même de leurs fonctionnements. Par exemple, la diffusion d'un composé depuis le lieu de sa production dans une cellule jusqu'au reste de la cellule est un processus impliquant une production d'entropie physique.
+  Néanmoins, ce processus conduit ledit composé à atteindre des positions où il peut jouer un rôle fonctionnel. En résumé, avoir une entropie inférieure signifie qu’un objet possède des patrons macroscopiques improbables, mais cela ne
+  signifie pas pour autant que ces patrons soient biologiquement significatifs. Une partie de la complexité contribuant à une faible entropie peut être biologiquement non pertinente et ne pas contribuer au maintien de l'organisme de sa
+  lignée. Par exemple, un cancer correspond typiquement à une augmentation de la complexité morphologique d’un tissu mais à une baisse de sa capacité à effectuer sa, ou ses, fonctions (
+  <u><a href="#Xlomososo2015">Longo </a></u><u><a href="#Xlomososo2015"><i>et al</i></a>
+</u><u><a href="#Xlomososo2015">, 2015</a></u>
+  ). Exemplifions ce point avec la théorie de l'information de Shannon. Celle-ci pose que plus un message est improbable, plus l’information qu’il porte est élevée (
+  <u><a href="#Xshannon">Shannon, 1948</a></u>
+  ). Ici, improbable doit être compris au sens mathématique du terme. Cette approche est pertinente pour évaluer les ressources nécessaires pour communiquer des messages. Cependant, il est absurde de l’utiliser pour évaluer le sens d’un
+  message et la richesse de ce sens. Par exemple, une séquence binaire d’une longueur suffisante ne contenant que des 1 contient beaucoup plus d’informations au sens de Shannon que n’importe quelle pièce de Shakespeare.
+</p>
+<p class="indent">
+  Pour surmonter ces paradoxes, j’ai contribué à introduire un autre concept que celui d’entropie (et son opposé mathématique la néguentropie) : cette nouvelle quantité s'appelle l’anti-entropie et correspond de manière informelle à
+  la complexité d'une organisation biologique dans la mesure où elle est organisée (
+  <u><a href="#Xbailly2009">Bailly &amp; Longo, 2009</a></u>
+   ;
+  <u><a href="#Xlongomont">Longo &amp; Montévil, 2014</a> ; <a href="#anthropocene">Montévil, </a><a href="#anthropocene">soumis</a></u>
+  ). Plus précisément, et comme nous allons le voir par la suite, ce qui contribue à l’anti-entropie est ce qui est le résultat singulier d’une histoire et contribue à l’organisation biologique du fait de cette singularité. Par exemple,
+  une séquence génétique permettant la production d’une enzyme permettant de métaboliser telle ou telle ressource est une configuration improbable spontanément mais ayant un rôle dans l’organisation. Introduire une telle grandeur a de
+  nombreuses conséquences. Au lieu d'étudier un seul type de quantité tendant à être élevée (entropie) ou faible (néguentropie), il existe deux grandeurs qui contribuent à décrire une situation. Un organisme vivant possède à la fois une
+  entropie et une anti-entropie. La mort de cet organisme signifie théoriquement que l'anti-entropie se transforme en néguentropie, c'est-à-dire en entropie faible. La mort, à court terme, n'implique pas une perte de complexité
+  macroscopique, mais simplement une perte de complexité organisée. Bien entendu, cette complexité n'étant plus activement maintenue par un tout cohérent (l'organisme), il s'ensuit une augmentation rapide de l'entropie. Cependant,
+  certains éléments qui contribuaient auparavant à l’anti-entropie peuvent perdurer, y compris aux échelles géologiques par le processus de fossilisation. Dans ces derniers types de processus, il est clair que la situation peut être
+  étudiée en tant que processus physico-chimique générique, où la cohérence biologique antérieure en tant que telle n’a plus aucun rôle pour l’analyse.
+</p>
+<p class="indent">
+  L'anti-entropie ne joue pas le même rôle épistémologique que l'entropie. Comme mentionné ci-dessus, l'entropie joue le rôle de potentiel dans un système isolé, elle permet de comprendre et de prédire les changements d'un système :
+  l'équilibre thermodynamique maximise l'entropie, et ceci conduit à un problème mathématique, résolu par le calcul (sauf dans des situations singulières). En revanche, l'anti-entropie n'est pas un potentiel, ce n'est pas une quantité
+  maximisée dans le temps. Au contraire, l'anti-entropie des organismes peut tout autant augmenter que diminuer. Il y a cependant une anti-entropie minimale nécessaire à la viabilité ; par conséquent, même si nous supposons que les
+  augmentations et les diminutions sont également probables, le biais introduit par ce niveau minimal d'anti-entropie (le mur de la complexité minimale décrit par
+  <u><a href="#Xgould1997full">Gould, 1997</a></u>
+  ) entraîne une augmentation moyenne de l'anti-entropie au niveau de la macroévolution.
+</p>
+<p class="indent">Pour aller plus loin dans la compréhension des formes biologique et leur analyse causale, nous allons développer le problème plus général du cadre théorique et épistémologique pouvant permettre de comprendre ces formes.</p>
+<h3 class="sectionHead" id="3-mathématiques-et-intelligibilité-du-vivant">3. Mathématiques et intelligibilité du vivant</h3>
+<h4 class="subsectionHead" id="31-le-problème-de-lhistoricité-du-vivant">3.1. Le problème de l’historicité du vivant</h4>
+<p class="indent">
+  Comme discuté en introduction avec le cas des travaux de Newman (
+  <u><a href="#X10.1371/journal.pone.0010892">Zhu </a></u><u><a href="#X10.1371/journal.pone.0010892"><i>et al</i></a>
+</u><u><a href="#X10.1371/journal.pone.0010892">, 2010</a></u>
+  ), l'approche physico-mathématique pour aborder les phénomènes biologiques pose problème à cause de l'historicité du vivant. Cette approche possède néanmoins des justifications théoriques. Par exemple, Mayr distingue les causes
+  proximales des causes distales (
+  <u><a href="#Xmayr1988toward">Mayr, 1988</a></u>
+  ). Les causes proximales correspondraient à l'analyse des organismes tels qu'ils sont actuellement, les causes distales renverraient au contraire à l'évolution et aux raisons pour lesquels les organismes sont ainsi. Cette distinction
+  peut être rapprochée de la distinction entre approche diachronique et synchronique introduite par Saussure en linguistique. L’analyse de la morphogenèse à la Turing se place clairement dans l'analyse des causes proximales, comme le font
+  la plupart des modélisations dont l'épistémologie est issue de la physique.
+</p>
+<p class="indent">
+  Cette distinction pose pourtant problème, elle suppose que le fait que les organismes vivants proviennent d'une histoire n'intervienne pas dans l'analyse causale. Autrement dit, cette approche suppose que les objets provenant d’une
+  histoire pourraient être compris de la même manière que des objets spontanés. Ce n'est pourtant pas toujours le cas en pratique, ainsi Annick Lesne souligne l'importance des fonctions biologiques et de l'histoire sous-jacente pour
+  l'écriture d'un modèle de la chromatine (
+  <u><a href="#XLesne06">Lesne &amp; Victor, 2006</a></u>
+  ). La fonction biologique guide alors la modélisation, mais plus encore elle justifie l'utilisation d'hypothèses physico-mathématiques que l'on peut qualifier de non-standard. Par exemple, l'histoire est mobilisée pour justifier
+  l'égalité entre deux paramètres physiquement indépendants dans le modèle de Lesne et Victor. De nombreux modèles rencontrent ce genre de difficultés où le choix de valeurs spécifiques pour les paramètres est requis pour que la
+  modélisation ait une pertinence biologique (par exemple,
+  <u><a href="#Xmora2010biological">Mora &amp; Bialek, 2011</a></u>
+   ;
+  <u><a href="#XSebastienCamalet99">Camalet</a></u>
+  <u><a href="#XSebastienCamalet99"><i>et al</i></a>
+</u><u><a href="#XSebastienCamalet99">, 2000</a></u>
+  ). Ces hypothèses peuvent sembler être épistémologiquement secondaires mais il n'en est rien.
+</p>
+<p class="indent">
+  Illustrons les difficultés engendrées par le choix d’une valeur précise des paramètres. La cosmologie écrit des équations pour comprendre la formation de l'univers, mais cette discipline se heurte à un problème mathématique et
+  épistémologique : les équations ne conduisent à la formation d'un univers complexe, doté d'atomes, molécules et étoiles, que pour des valeurs spécifiques des paramètres. Les équations ne permettent pas, toutes seules, de comprendre
+  pourquoi l'univers est tel qu'il est car des valeurs quelconques des paramètres ne produisent pas le résultat escompté. Le choix de valeurs particulières pour ces paramètres doit être justifié. Michel Cassé (
+  <u><a href="#Xcasse2017">2017</a></u>
+  ) conclue ainsi : soit Dieu a choisi la bonne valeur des paramètres, soit il y a une infinité d'univers correspondant aux différentes valeurs possibles de ces paramètres, et nous sommes bien évidemment dans un univers qui nous rend
+  possible, même si cette situation n'est pas représentative des autres univers. Dans les deux cas, la justification de l'utilisation de valeurs particulières pour les paramètres est ontologiquement coûteuse. Prenons un autre exemple
+  concernant cette fois les conditions initiales. Considérons une machine de Turing, dont le programme, très simple, prend les symboles en entrée et les reproduit, un par un, en sortie. Alors si l'on utilise le texte de cet article en
+  entrée, cette machine le produira en sortie. Il est pourtant clair qu'une telle machine ne contribue — presque — en rien à l'intelligibilité de ce texte. Nous disons « presque » car cette machine se base sur une propriété
+  générique des textes usuels : ils sont une suite de symboles. Cette propriété générique a d'ailleurs de nombreuses applications où elle est pertinente, de l'imprimerie aux logiciels de traitement de texte (
+  <u><a href="#Xnovelty2017">Montévil, 2018</a>a</u>
+  ). Mais tout cela est assez éloigné des raisons pour lesquels ce texte est tel qu’il est.
+</p>
+<p class="indent">
+  Au-delà de ces conséquences techniques directes, l'historicité biologique a des implications profondes pour la compréhension de l'utilisation des mathématiques en biologie. Les modèles mathématiques usuels décrivent des relations
+  invariantes dans le temps au bon niveau d'analyse. Ceci est illustré par la centralité et la fixité des équations. Centrer la validité épistémologique de la recherche scientifique sur des équations fixes est au cœur de la démarche de
+  Stuart Newman que nous avons critiqué en introduction. L'historicité implique au contraire que les relations elles-mêmes puissent changer, et de surcroît que ces changements revêtent une certaine contingence — le thème de la contingence
+  évolutive est souvent abordé par les philosophes et les évolutionnistes (par exemple,
+  <u><a href="#XBeattycontingency">Beatty, 1995</a></u>
+  ) mais rarement pensé dans son articulation avec les mathématiques. Plus précisément, nous devons distinguer deux types de situations théoriques. Un phénomène conduisant à des configurations très spécifiques et improbables peut être
+  bien décrit par le calcul si toutes ses configurations « fonctionnent » de la même manière au bon niveau d’analyse. Par exemple, la dérive génétique pour des mutations n’ayant pas d’effets fonctionnels correspond à cette
+  situation. En revanche, s’il existe une rétroaction entre les configurations spécifiques et l’analyse causale, les objets sont dotés d’une historicité forte qui empêche ces diverses situations spécifiques d’être subsumées par un cadre
+  mathématique générique et donc <i>a fortiori</i> empêche d’effectuer des calculs pertinents (
+  <u><a href="#Xnovelty2017">Montévil, 2018</a>a</u>
+  ). Nous posons que ce problème est consubstantiel aux situations biologiques. Cette situation a des conséquences théoriques et épistémologiques extrêmement profondes. Elle conduit à repenser l'architecture de la connaissance biologique
+  qui est trop souvent pensée comme similaire à une physique classique considérée informellement.
+</p>
+<p class="indent">
+  Revenons d'abord sur les enjeux directs de l’historicité pour la pratique de modélisation, par comparaison avec la physique. En physique, la modélisation s'adosse à des théories incarnées par des objets mathématiques dont la validité
+  est postulée, par exemple les équations de Newton. L’utilisation de ces concepts et objets est justifiée de multiples manières, y compris par des raisonnements purement théoriques. Par exemple, les théorèmes de Noether justifient les
+  équations de Newton et les quantités qu'elles conservent en apportant un autre regard sur ce que signifie leur conservation, par le concept de symétrie (
+  <u><a href="#Xnoether1918invariante">Noether, 1918</a></u>
+   ;
+  <u><a href="#Xbyers1999noether">Byers, 1999</a></u>
+  ). Depuis Galilée et son utilisation des expériences de pensée, les physiciens s'efforcent de donner un parfum de nécessité à leurs raisonnements et équations, au moins pour les équations considérées comme fondamentales. Or
+  l'historicité vient précisément percuter ce régime épistémologique. Richard Feynman a, par exemple, envisagé de considérer les lois de la physique comme historiques, mais c'est précisément l'absence de contraintes théoriques sur la
+  manière de procéder qui l'en a empêché (
+  <u><a href="#Xfeynman1973take">Feynman, 1973</a></u>
+  ). Dès lors, la modélisation mathématique en biologie, même si elle capture parfois de réels aspects causaux, nous semble aussi revêtir certaines caractéristiques de ce que Turing décrit comme imitation : elles reproduisent un
+  phénomène mais ne saurait avoir ce parfum de nécessité des raisonnements de physique théorique, et donc être l'objet de justification profondes : les phénomènes eux-mêmes sont compris comme fondamentalement contingents. Le problème
+  de la valeur des conditions initiales et des paramètres peut-être analysé dans cette perspective. Le comportement d'un système pour une valeur quelconque des paramètres est nécessaire alors que le comportement associé à des valeurs
+  singulières ne l'est pas.
+</p>
+<h4 class="subsectionHead" id="32-repenser-lépistémologie-des-raisonnements-mathématiques-en-biologie">3.2. Repenser l’épistémologie des raisonnements mathématiques en biologie</h4>
+<p class="indent">
+  Comment penser les raisonnements mathématiques en biologie afin de les doter d'une profondeur théorique appropriée à cette discipline ? La voie que nous tentons d'ouvrir est d'abord une stratégie de recherche. Il s'agit de
+  s'éloigner des stratégies permettant de contourner le problème de l’historicité en se concentrant sur certains cas particuliers. Par exemple, les biophysiciens se concentrent sur des phénomènes présentant une grande régularité, parfois
+  un peu forcé comme dans le cas des travaux de Newman. De même, la biologie moléculaire, et les modèles en émanant, vise à trouver des éléments et des relations stables au niveau le plus microscopique, le niveau moléculaire. En se
+  concentrant sur ces éléments, l'objectif apparent est d'asseoir la connaissance biologique sur des phénomènes plus stables que les phénomènes biologiques eux-mêmes, des phénomènes chimiques — une telle approche n'a pourtant jamais eu de
+  réelle pertinence en physique comme le montre la centralité du concept de système dans cette discipline. À l’opposé, nous constatons qu’au sein de la physique elle-même, les difficultés théoriques et épistémologiques sont des points de
+  départ féconds pour l’investigation théorique. La stratégie que nous défendons consiste alors à partir des difficultés propres à la biologie, et donc au premier chef de l'historicité des phénomènes biologiques.
+</p>
+<p class="indent">
+  Il s’agit donc de considérer l'historicité comme centrale en biologie, comme le défend Gould en critiquant l’approche de d'Arcy Thompson (
+  <u><a href="#Xgould2002structure">Gould, 2002</a></u>
+  , chap. 11). L’épistémologie des structures mathématiques en biologie est alors bouleversée. Pour souligner cette transformation, nous proposons d'appeler « contraintes » les régularités biologiques pouvant être mobilisées
+  dans la modélisation. Les contraintes sont donc, en quelque sorte, l'analogue biologique des lois physiques, mais la validité d'une contrainte est fondamentalement contingente : elles apparaissent, disparaissent et changent de
+  nature au cours du temps. Cette situation requiert un renversement épistémologique. En physique, les changements sont compris sur la base de l'invariance inscrite dans les équations, qui, elles, sont postulées. En biologie, au
+  contraire, les changements des contraintes sont premiers, et c'est l'invariance qui requiert une explication. Nous avons appelé « principe de variation » cette idée et ses conséquences (
+  <u><a href="#Xchaptervariation">Montévil </a></u><u><a href="#Xchaptervariation"><i>et al</i></a>
+</u><u><a href="#Xchaptervariation">,</a></u>
+  2016). Elle provient de ce que nous avons décrit comme une criticité étendue, une situation où les changements de symétrie sont omniprésents (
+  <u><a href="#critic">Longo et Montévil, 2011</a></u>
+  ). Ici, l’invariance reste possible et mobilisable pour la description scientifique par le concept de contrainte, mais cette invariance est limitée dans le temps, et est locale : elle n’est pertinente que pour certaines classes
+  d’organismes. Mentionnons certaines conséquences de cette situation épistémologique :
+</p>
+<ul class="enumerate1">
+  <li>
+    <p class="indent">
+      Les modèles mathématiques usuels sont l’articulation de plusieurs contraintes, au niveau des équations, des paramètres, des conditions initiales, etc. — ces modèles peuvent décrire des changements mais en un sens beaucoup plus
+      faible que les changements de contraintes.
+    </p>
+  </li>
+  <li>
+    <p class="indent">
+      Les changements de contrainte issus du principe de variation ne sont pas donnés par une structure mathématique préexistante car une telle structure devrait être définie par d’autres contraintes, qui, elles-mêmes, pourraient
+      changer. Ces changements sont donc aléatoires en un sens spécifique, distinct du concept d’aléatoire comme probabilité.
+    </p>
+  </li>
+  <li>
+    <p class="indent">
+      Les possibles sont donnés par les contraintes déjà pertinentes pour un objet. Par exemple, les os des membres antérieurs rendent possibles certains mouvements dont la description dépend de l’articulation entre ces os. Définir
+      des probabilités, notamment, requiert des possibles prédéfinis. Ici, au contraire, il est nécessaire de mobiliser le concept de nouveau possible (
+      <u><a href="#Xkauffman2002investigations">Kauffman, 2002</a></u>
+       ;
+      <u><a href="#Xnovelty2017">Montévil, 2018</a>a</u>
+      ). Les nouveaux possibles correspondent à la capacité des organismes vivants à produire une histoire.
+    </p>
+  </li>
+</ul>
+<p class="indent">
+  Nous avons mentionné qu'en biologie, l'invariance, c'est-à-dire les contraintes, doit être expliquée. Il y a au moins deux grands types d'explications de la stabilité d'une contrainte. Comme le souligne Guillaume Lecointre (
+  <u><a href="#Xlecoitnre2017">2017</a></u>
+  ), la sélection naturelle explique la préservation de certains caractères. Le titre complet de « On the Origin of Species » de Darwin est d'ailleurs « On the Origin of Species by Means of Natural Selection, or the
+  <i>Preservation</i> of Favoured Races in the Struggle for Life » (nous soulignons,
+  <u><a href="#Xdarwin1859origin">Darwin, 1859</a></u>
+  ). Il est certes possible que la sélection naturelle oriente les changements dans une population, mais cela ne se produit que par l'itération du processus de variation-sélection. La sélection <i>stricto sensu</i> n'explique que la
+  préservation de certains variants à chaque étape. La sélection naturelle est donc un principe permettant de comprendre le maintien de certaines contraintes. Par exemple, les tétrapodes ont un cœur car les variants où cet organe
+  disparaît ou n’est pas fonctionnel ne sont pas viables.
+</p>
+<p class="indent">
+  Mais la sélection naturelle n'est pas suffisante pour comprendre la stabilité relative de certaines contraintes en biologie. Elle n'opère qu'à l'échelle de temps transgénérationnelle, alors que bien des contraintes considérée
+  indépendamment de l'organisme devraient disparaître bien plus rapidement. Nous nous sommes donc tournés vers une théorisation ancrée dans la tradition physiologique. Dans la lignée des travaux de Maturana et Varela sur l'autopoïese (
+  <u><a href="#XVarela1974187">Varela </a></u><u><a href="#XVarela1974187"><i>et al</i></a>
+</u><u><a href="#XVarela1974187">, 1976),</a></u>
+  de Rosen sur les systèmes (M,R) (
+  <u><a href="#Xrosen2005">Rosen, 1991</a></u>
+  ) et de Kauffman sur les cycles travail-contraintes et les ensembles collectivement autocatalytiques (
+  <u><a href="#Xkauffman2002investigations">Kauffman, 2002</a></u>
+  ), nous avons développé un cadre théorique pour comprendre l'interdépendance entre contraintes d'un organisme, où les contraintes se maintiennent collectivement. Ce cadre décrit une clôture entre contraintes (
+  <u><a href="#XMontevil2015c">Montévil &amp; Mossio, 2015</a></u>
+   ;
+  <u><a href="#Xchapterorganization">Mossio </a></u><u><a href="#Xchapterorganization"><i>et al</i></a>
+</u><u><a href="#Xchapterorganization">, 2016</a></u>
+  ). L'idée est alors que les contraintes pertinentes pour comprendre l'organisation d'un organisme sont des contraintes i) qui sont maintenues par un processus canalisé par une autre contrainte de l'organisme, et ii) qui agissent sur un
+  autre processus maintenant une troisième contrainte de l'organisme. Une contrainte <i>C</i> maintient donc une autre contrainte de l’organisme, qui maintient une autre contrainte, ..., qui maintient la contrainte <i>C, </i>ce qui
+  constitue une circularité. Ce cadre permet donc de comprendre et d'analyser comment les parties d'un organisme se stabilisent mutuellement. Ce cadre pose la centralité de l’articulation entre les parties (les contraintes et les
+  processus) et le tout. Néanmoins, cette stabilisation n’est que partielle, d’autres contraintes peuvent être impliquées et, de plus, certaines circularités font intervenir l’émergence de nouveautés, de manière constitutive (
+  <u><a href="#miquel">Miquel, P.A. &amp; Hwang, 2016</a></u>
+  ,
+  <u><a href="#chi">Montévil &amp; Mossio, soumis</a></u>
+  ).
+</p>
+<p class="indent">
+  Si les physiciens peuvent donner un parfum de nécessité à leur travail sur les équations fondamentales, la biologie mathématique trouverait la justification de l’usage d'une forme mathématique, une contrainte, dans le fait que celle-ci
+  soit maintenue activement dans un organisme, par l’organisation, et dans l’évolution, par le processus de sélection naturelle. À l'opposé, sans une telle analyse, les structures mathématiques utilisées conservent un parfum d'arbitraire.
+  Nous envisageons toutefois une perspective complémentaire. En effet, le principe de variation pose que la validité d'une contrainte est contingente. Il est donc pertinent d'explorer les variations facilitées par une contrainte donnée,
+  que cela soit dans une autre branche du vivant ou par la variabilité au sein d'une espèce. La validation épistémologique d'une contrainte proviendrait alors, non pas seulement du fait qu'elle soit invariante, mais du fait qu'elle
+  subisse plus aisément certaines variations que d'autres, ce qui peut être investigué théoriquement et empiriquement.
+</p>
+<p class="indent">
+  On peut alors noter que les deux types d’explications de la stabilité d'une contrainte renvoient à deux interprétations de la notion de fonctions biologiques. La notion sélectionniste de fonction pose qu'un trait est fonctionnel parce
+  qu'il a été sélectionné à cause de ses conséquences (
+  <u><a href="#Xgodfrey1994modern">Godfrey-Smith, 1994</a></u>
+  ). La notion organisationnelle de fonction pose qu'une contrainte <i>C</i> est fonctionnelle parce que son existence<i> </i>dépend de ses conséquences via la circularité de l’organisation<i> </i>(
+  <u><a href="#Xmossio2009organizational">Mossio </a></u><u><a href="#Xmossio2009organizational"><i>et al</i></a>
+</u><u><a href="#Xmossio2009organizational">, 2009</a></u>
+   ;
+  <u><a href="#XMontevil2015c">Montévil &amp; Mossio, 2015</a></u>
+  ). Il est remarquable que la notion de fonction biologique, qui n'a pas de place dans les modèles mathématiques usuels, acquiert un rôle clé et naturel à la suite de ce changement d'épistémologie.
+</p>
+<h4 class="subsectionHead" id="33-retour-sur-lanti-entropie">3.3. Retour sur l’anti-entropie</h4>
+<p class="indent">
+  Nous avions décrit l’anti-entropie comme relative à l’organisation biologique dans son historicité, sans spécifier le sens de cette notion. Après la discussion ci-dessus, nous pouvons revenir sur les organisations biologiques. Celles-ci
+  ont deux dimensions complémentaires. Premièrement, elles sont le résultat d’une histoire et continuent à produire une histoire : la nature des organismes et ce qu’ils font dépendent de leur passé et peut changer au cours du temps.
+  Ici, être historique a un sens précis : l’apparition itérative de nouvelles possibilités. Par exemple, au cours de l'évolution, certaines cellules ont commencé à vivre ensemble, ce a permis la formation d'organes différenciés, tels
+  que la bouche, et la bouche de certaines lignées s’est complexifiée avec des mâchoires articulées, ce qui a ensuite permis l'apparition de dents spécialisées. Ces nouveautés n'étaient certainement pas nécessaires : il y a des
+  espèces qui ne les possèdent pas et qui constituent des trajectoires évolutives complètement différentes. L'organisation des organismes est constituée par l'accumulation de tels changements et serait donc hautement improbable… si des
+  probabilités pouvaient être définies. Deuxièmement, les organismes biologiques et, dans une certaine mesure, les écosystèmes sont constitués de parties qui se maintiennent collectivement : les organisations biologiques ont une
+  dimension synchronique. Elles se maintiennent et maintiennent leurs parties, au moins pendant une certaine durée.
+</p>
+<p class="indent">
+  Nous posons donc que l’anti-entropie correspond à la complexité biologique en tant qu’elle provient d’une histoire, et donc est spécifique, improbable lorsque ce concept a une pertinence. Mais la complexité pertinente est aussi
+  fonctionnelle de manière synchronique, au sens où elle ne comprend que les contraintes participant à la clôture entre contraintes.
+</p>
+<p class="indent">
+  En biologie, la question de l'ordre et du désordre acquiert un sens spécifique. Les organisations biologiques sont fondamentalement historiques et continuent à produire une histoire. Un concept rigoureux d'ordre biologique ne peut pas
+  être basé sur des normes statiques ou essentialisées : l'ordre biologique doit inclure l'apparition de nouveaux possibles et de nouvelles contraintes fonctionnelles, bref le caractère normatif du vivant (
+  <u><a href="#Xcanguilhem1972normal">Canguilhem, 1972</a></u>
+  ). Sinon, l’ordre biologique serait un ordre proche de la mort. De plus, l'historicité des organisations biologiques implique que leur ordre, leur capacité de se maintenir, est doublement précaire. Les organisations biologiques sont
+  précaires car l’existence et la nature des contraintes qui les constituent est fondamentalement contingente. En particulier ces contraintes doivent être activement maintenues pour durer, car elles sont loin d’une configuration
+  d’entropie maximale. Les organisations biologiques sont également précaires, car leur cohérence ne découle pas uniquement de rétroactions permettant de garantir que les fonctions biologiques soient bien fonctionnelles. Une partie de
+  leur cohérence découle de leur historicité elle-même. Par exemple, dans les écosystèmes, de nombreux processus sont synchronisés de manière saisonnière, tels que la floraison des plantes et l'activité des pollinisateurs, ou l'éclosion
+  d'oiseaux et d'insectes. Ces synchronisations ne sont pas dues à un feedback à l'échelle du temps des organismes. Différentes espèces utilisent des indices différents pour organiser leurs activités (température de l'air ou du sol,
+  photopériode, …) et ces indices sont donc indépendants du point de vue de l’analyse causale du système. La synchronisation de ces différentes activités est une situation spécifique résultant de leur histoire évolutive et est vulnérable
+  aux altérations de ce contexte passé. Par exemple, le changement climatique affecte différemment les espèces et ces différences brisent leur synchronisation, rompant la cohérence des écosystèmes (
+  <u><a href="#Xdoi:10.1111/j.1461-0248.2007.01061.x">Memmott </a></u><u><a href="#Xdoi:10.1111/j.1461-0248.2007.01061.x"><i>et al</i></a>
+</u><u><a href="#Xdoi:10.1111/j.1461-0248.2007.01061.x">, 2007</a></u>
+  ,
+  <u><a href="#Xdoi:10.1111/oik.01386">Forrest, 2014</a>, Montévil, soumis</u>
+  ). Conceptuellement, nous observons le passage d’une situation spécifique cohérente à une situation plus générique, c’est-à-dire plus probable étant donné les contraintes existantes. En d'autres termes, nous constatons l'entropisation
+  d'une partie de l'organisation d'un écosystème, et donc d’une partie de l’anti-entropie. Cette entropisation conduit à la fragilisation de l’écosystème, voire à son effondrement partiel ou complet.
+</p>
+<h4 class="subsectionHead" id="34-la-question-de-la-mesure">3.4. La question de la mesure</h4>
+<p class="indent">
+  Tant dans son article de 1950 sur l'imitation que dans celui de 1952 sur la modélisation, Turing est attentif à l'accès empirique aux objets qu'il décrit. Ainsi, il distingue soigneusement sa machine à états discrets, où l'accès à
+  l’état du système peut être parfait, des situations biologiques ou les variables continues impliquent que la mesure est nécessairement approchée. Cette distinction est d'autant plus importante que Turing a introduit le concept de dérive
+  exponentielle (exponential drift) pour décrire les situations où des conditions initiales très proches peuvent s'éloigner très rapidement. Étant donné que la mesure est approchée, ceci entraîne l'imprédictibilité du comportement du
+  système.
+</p>
+<p class="indent">
+  Mais ces notions héritées de la physique sont-elles suffisantes pour la biologie ? Dès lors que des contraintes sont identifiées et mesurée, la question du continu et du discret est pertinente. Mais la biologie ne peut se contenter
+  de décrire les quelques contraintes mesurées dans une expérience pour rendre compte de cette expérience. Les cellules et les organismes manipulés et observés doivent être aussi rapportés et plus précisément une notion de
+  commensurabilité entre organismes est nécessaire. Ces objets ne sont jamais décrits comme un agencement de contraintes mais ils sont au contraire décrits de manière historique, notamment par leur généalogie et l’analyse phylogénétique.
+  Nous avons donc défendu l'idée que la mesure biologique inclut la référence à une histoire (
+  <u><a href="#Xmontevilmeasure">Montévil, 2019</a></u>
+  ). Faire une mesure en biologie, c'est faire une mesure sur des objets ayant un passé commun, notamment un ancêtre commun, plus ou moins récent. Bien évidemment cet usage d'un raisonnement historique a deux implications. Les objets
+  peuvent varier, parfois, de manière très importante, mais leur définition reste valide car elle se réfère au passé et non au présent. Par contre, la mesure n'apporte aucune garantie sur le comportement des objets : c'est le passé
+  et non le comportement présent qui intervient dans la définition des objets.
+</p>
+<p class="indent">
+  Les travaux en biologie expérimentale visant très souvent à développer et utiliser des protocoles reproductibles, les biologistes utilisent de multiples méthodes conférant un certain contrôle sur le comportement des objets. Pour décrire
+  cette problématique, nous avons introduit le concept de symétrisation (
+  <u><a href="#Xmontevilmeasure">Montévil, 2019</a></u>
+  ) : il s’agit des actions concrètes ou abstraites conduisant à considérer différents objets comme équivalents. La symétrisation n’est jamais parfaite à cause du principe de variation, par contre elle peut varier en termes de
+  degrés. Par exemple les biologistes peuvent travailler sur des lignées clonales de cellules et les congeler pour éviter que la prolifération avec variation à température ambiante leur permettent de produire une histoire et donc de
+  produire des changements d’organisation significatifs. De même, les expérimentateurs travaillent généralement sur des souches d’animaux, des sous-souches et des sous-sous-souches au fur et à mesure que l'avancée du temps permet aux
+  populations de produire une histoire, même pour des animaux vivant dans des conditions de laboratoire pendant de nombreuses générations. Un autre aspect de la symétrisation des objets biologiques est le choix d’un contexte. Dans
+  l’optique de la reproductibilité expérimentale, les contextes conduisant à des comportements aussi stéréotypés que possible sont souvent préférés. Par exemple, des cellules peuvent-être mises dans des conditions où elles prolifèrent
+  sans contrainte, plutôt que dans des conditions où, trop nombreuses, elles se contraignent mutuellement de manière hétérogène. Certaines approches permettent même de limiter l'impact de la diversité issue de l'évolution sur une quantité
+  observée. Il est aussi possible, au contraire, de laisser les organismes effectuer une diversité de comportements, par exemple dans leurs milieux naturels afin d’étudier ces comportements dans leur diversité.
+</p>
+<p class="indent">
+  Le sens d'une mesure en biologie est donc complexe et très différent des concepts de mesure en physique, une mesure dépend de la symétrisation effectuée qui peut viser à contrôler l'objet autant que possible ou au contraire à laisser
+  plus de place à la diversité du vivant, qu’elle provienne de l'évolution ou de la plasticité phénotypique.
+</p>
+<h3 class="sectionHead" id="4-conclusion">4. Conclusion</h3>
+<p class="indent">
+  Turing a contribué à la recherche des structures causales pertinentes pour comprendre les phénomènes vivants par son travail sur la morphogenèse. Les processus de morphogenèse sont omniprésents dans les phénomènes biologiques. Une des
+  caractéristiques du vivant est, en effet, de présenter toutes sortes de formes et plus généralement de patrons tels que des rythmes. Le second principe de la thermodynamique décrit plutôt la disparition des formes : un système à
+  entropie maximale est dans la configuration la plus probable permise par ses contraintes énergétiques. La morphogenèse décrite par Turing et, plus généralement, les phénomènes biologiques sont néanmoins compatibles avec ce principe. Les
+  êtres vivants restent loin de l'équilibre thermodynamique en générant et en maintenant les formes qui les constituent. Mais cela ne signifie pas pour autant que l'opposé de l'entropie, la néguentropie, soit la clé mathématique et
+  théorique de la compréhension du vivant.
+</p>
+<p class="indent">
+  De même que Turing comprend sa machine en en montrant aussi les limites, tant par le problème de l’arrêt que par la compréhension de la morphogenèse nécessitant les mathématiques du continu, pour comprendre le vivant, nous pensons qu'il
+  faut partir de ce qui pose problème pour sa mathématisation : l'historicité. En effet l'historicité met à mal l'épistémologie de l'utilisation des mathématiques héritée de la physique en posant comme fondamentales la contingence et
+  la diversité des régularités biologiques. En physique, l'objectivité réside en grande partie dans le fait de pouvoir subsumer le divers en une seule équation, dont la validité est considérée comme permanente. Si, comme nous proposons de
+  le faire, l’historicité biologique est acceptée comme fondamentale, il ne nous reste que deux options. Soit nous considérons que l'usage des mathématiques en biologie est limité à un rôle théorique secondaire, finalement proche de
+  l'imitation. Soit nous proposons un autre régime épistémologique pour l’usage des mathématiques en biologie. Nous travaillons dans cette dernière direction en proposant de considérer l'historicité comme première, et donc la présence de
+  régularités, que nous appelons contraintes, comme seconde épistémologiquement. Alors que la physique parvient à comprendre les changements sur la base d'une invariance postulée (les lois physiques), en biologie, les changements sont
+  premiers et c'est l'invariance des contraintes qui doit être expliquées, dans la mesure où cette invariance est vérifiée bien évidemment. Puisque les régularités ne participent plus de lois générales considérées comme nécessaires, les
+  hypothèses d'un modèle doivent-être justifiées par des processus qui en maintiennent la pertinence, notamment le maintien mutuel des parties d’un organisme et la sélection naturelle.
+</p>
+<p class="indent">
+  Turing était attentif aux conditions et aux limites de l'accès empirique aux objets qu'il aborde mathématiquement. La distinction entre objets discrets et continus est alors cruciale. En biologie, l'historicité étant posée comme
+  première, elle devient un élément irréductible de l'accès aux objets empiriques, même quand de nombreuses stratégies sont utilisées pour tenter de rendre les objets aussi symétriques que possible.
+</p>
+<h3 class="sectionHead" id="références">Références</h3>
+<p class="bibitem"><a name="_GoBack"></a>   Bailly, F. et Longo, G. (2009). Biological organization and anti-entropy. <i>Journal of Biological Systems</i>, 17(1):63–96.</p>
+<p class="bibitem"><a name="XBeattycontingency"></a>   Beatty, J. (1995). The evolutionary contingency thesis. In <i>Conceptual Issues</i> <i>in Evolutionary Biology.</i>, page 217, Cambridge, MA. MIT Press.</p>
+<p class="bibitem"><a name="XBrillouin"></a>   Brillouin, L. (1956). <i>Science and Information Theory</i>. Academic Press, New York.</p>
+<p class="bibitem">
+  <a name="Xbyers1999noether"></a>   Byers, N. (1999). E. Noether’s discovery of the deep connection between symmetries and conservation laws. In <i>The heritage of Emmy Noether in</i> <i>algebra, geometry, and physics</i>,
+  volume 12, pages 67–81, Tel Aviv. Israel mathematical conference.
+</p>
+<p class="bibitem">
+  <a name="XSebastienCamalet99"></a>   Camalet, S., Duke, T., Julicher, F., et Prost, J. (2000). Auditory sensitivity provided by self-tuned critical oscillations of hair cells. <i>Proceedings of the</i>
+  <i>National Academy of Sciences</i>, pages 3183–3188.
+</p>
+<p class="bibitem"><a name="Xcanguilhem1972normal"></a>   Canguilhem, G. (1972). <i>Le normal et le pathologique</i>. Presses universitaires de France.</p>
+<p class="bibitem"><a name="Xcasse2017"></a>   Cassé, M. (2017). <i>Inflation quantique et plurivers</i>, pages 320–330. ISTE-Editions., Paris.</p>
+<p class="bibitem"><a name="Xdarwin1859origin"></a>   Darwin, C. (1859). <i>On the Origin of Species by Means of Natural Selection,</i> <i>or the Preservation of Favoured Races in the Struggle for Life</i>. London: John Murray.</p>
+<p class="bibitem"><a name="Xfeynman1973take"></a>   Feynman, R. (1973). Take the world from another point of view. Yorkshire Television interview.</p>
+<p class="bibitem">
+  <a name="Xdoi:10.1111/oik.013"></a>   Forrest, J. R. K. (2014). Plant–pollinator interactions and phenological change: what can we learn about climate impacts from experiments and observations? <i>Oikos</i>,
+  124(1):4–13.
+</p>
+<p class="bibitem"><a name="Xgodfrey1994modern"></a>   Godfrey-Smith, P. (1994). A modern history theory of functions. <i>Noûs</i>, 28(3):344–362.</p>
+<p class="bibitem"><a name="Xgould2002structure"></a>   Gould, S. (2002). <i>The structure of evolutionary theory</i>. Harvard University Press.</p>
+<p class="bibitem"><a name="Xgould1997full"></a>   Gould, S. J. (1997). <i>Full house: The spread of excellence from Plato to</i> <i>Darwin</i>. Three Rivers Pr.</p>
+<p class="bibitem">
+  <a name="Xdoi:10.1113/jphysio"></a>   Hodgkin, A. L. et Huxley, A. F. (1952). A quantitative description of membrane current and its application to conduction and excitation in nerve.
+  <i>The Journal of Physiology</i>, 117(4):500–544.
+</p>
+<p class="bibitem"><a name="Xkauffman2002investigations"></a>   Kauffman, S. (2002). <i>Investigations</i>. Oxford University Press, USA.</p>
+<p class="bibitem"><a name="Xlecoitnre2017"></a>   Lecointre, G. (2017). <i>Les contenants et les contenus : Que faire des</i> <i>invariants en biologie ?</i>, pages 129–143. ISTE-Editions., Paris.</p>
+<p class="bibitem"><a name="XLesne06"></a>   Lesne, A. et Victor, J.-M. (2006). Chromatin fiber functional organization: Some plausible models. <i>Eur Phys J E Soft Matter</i>, 19(3):279–290.</p>
+<p class="bibitem"><a name="critic"></a>G. Longo et Montévil, M. (2011). From physics to biology by extending criticality and symmetry breakings, <i>Progress in Biophysics and Molecular Biology</i>, 106: 340 –347.</p>
+<p class="bibitem"><a name="Xlongo2018letter"></a>   Longo, G. (2018). Letter to Turing. <i>Theory, Culture &amp; Society</i>.</p>
+<p class="bibitem"><a name="Xlongomont"></a>   Longo, G. et Montévil, M. (2014). <i>Perspectives on Organisms: Biological</i> <i>time, symmetries and singularities</i>. Lecture Notes in Morphogenesis. Springer, Dordrecht.</p>
+<p class="bibitem"><a name="Xlomososo2015"></a>   Longo, G., Montévil, M., Sonnenschein, C., et Soto, A. M. (2015). In search of principles for a theory of organisms. <i>Journal of Biosciences</i>, pages 1–14.</p>
+<p class="bibitem"><a name="Xmayr1988toward"></a>   Mayr, E. (1988). <i>Toward a new philosophy of biology: Observations of an</i> <i>evolutionist</i>. Number 211. Harvard University Press.</p>
+<p class="bibitem">
+  <a name="Xdoi:10.1111/j.1461-"></a>   Memmott, J., Craze, P. G., Waser, N. M., et Price, M. V. (2007). Global warming and the disruption of plant–pollinator interactions. <i>Ecology Letters</i>,
+  10(8):710–717.
+</p>
+<p class="bibitem"><a name="miquel"></a>Miquel, P.A. et Hwang, S.Y. (2016). From physical to biological individuation, <i>Progress in Biophysics and Molecular Biology</i>, 122(1): 51-57.</p>
+<p class="bibitem"><a name="Xnovelty2017"></a>   Montévil, M. (2018a). Possibility spaces and the notion of novelty: from music to biology. <i>Synthese</i>.</p>
+<p class="bibitem">
+  <a name="Xmontevilmariano"></a>   Montévil, M. (2018b). <i>A Primer on Mathematical Modeling in the Study</i> <i>of Organisms and Their Parts</i>, pages 41–55. Methods in Molecular Biology. Springer New York, New York,
+  NY.
+</p>
+<p class="bibitem"><a name="Xmontevilmeasure"></a>   Montévil, M. (2019). Measurement in biology is methodized by theory. <i>Biology &amp; philosophy</i>.</p>
+<p class="bibitem"><a name="anthropocene"></a>  Montévil, M. (soumis), “Entropies and the Anthropocene crisis”, <i>AI and Society.</i></p>
+<p class="bibitem"><a name="XMontevil2015c"></a>   Montévil, M. et Mossio, M. (2015). Biological organisation as closure of constraints. <i>Journal of Theoretical Biology</i>, 372(0):179 – 191.</p>
+<p class="bibitem"><a name="chi"></a>  Montévil, M. et Mossio, M. (soumis). Biological identity at the crossroad between historical and relational conceptions. <i>Frontiers in physiology</i>.</p>
+<p class="bibitem"><a name="Xchaptervariation"></a>   Montévil, M., Mossio, M., Pocheville, A., et Longo, G. (2016). Theoretical principles for biology: Variation. <i>Progress in Biophysics and Molecular</i> <i>Biology</i>, 122(1):36 – 50.</p>
+<p class="bibitem"><a name="Xmora2010biological"></a>   Mora, T. et Bialek, W. (2011). Are biological systems poised at criticality? <i>Journal of Statistical Physics</i>, 144:268–302.</p>
+<p class="bibitem"><a name="Xchapterorganization"></a>   Mossio, M., Montévil, M., et Longo, G. (2016). Theoretical principles for biology: Organization. <i>Progress in Biophysics and Molecular Biology</i>, 122(1):24 – 35.</p>
+<p class="bibitem"><a name="Xmossio2009organizational"></a>   Mossio, M., Saborido, C., et Moreno, A. (2009). An organizational account of biological functions. <i>The British Journal for the Philosophy of Science</i>, 60(4):813–841.</p>
+<p class="bibitem"><a name="Xnewman2012physico"></a>   Newman, S. A. (2012). Physico-genetic determinants in the evolution of development. <i>Science</i>, 338(6104):217–219.</p>
+<p class="bibitem"><a name="XNicolis77"></a>   Nicolis, G. et Prigogine, I. (1977). <i>Self-organization in non-equilibrium</i> <i>systems</i>. Wiley, New York.</p>
+<p class="bibitem"><a name="Xnoether1918invariante"></a>   Noether, E. (1918). Invariante Variationsprobleme. <i>Nachrichten von der</i> <i>Gesellschaft der Wissenschaften zu Göttingen</i>, 235–257.</p>
+<p class="bibitem"><a name="Xrosen2005"></a>   Rosen, R. (1991). <i>Life itself: a comprehensive inquiry into the nature, origin,</i> <i>and fabrication of life</i>. Columbia U. P.</p>
+<p class="bibitem"><a name="Xschrodinger"></a>   Schrödinger, E. (1944). <i>What Is Life? </i>Cambridge U.P.</p>
+<p class="bibitem"><a name="Xshannon"></a>   Shannon, C. E. (1948). A mathematical theory of communication. <i>The Bell</i> <i>System Technical Journal</i>, 27:379–423.</p>
+<p class="bibitem"><a name="Xturing1950"></a>   Turing, A. M. (1950). Computing machinery and intelligence. <i>Mind</i>, 59(236):433–460.</p>
+<p class="bibitem"><a name="XTuring1952"></a>   Turing, A. M. (1952). The chemical basis of morphogenesis. <i>Philosophical</i> <i>Transactions of the Royal Society of London. Series B, Biological Sciences</i>, 237(641):37–72.</p>
+<p class="bibitem"><a name="XVarela1974187"></a>   Varela, F., Maturana, H., et Uribe, R. (1974). Autopoiesis: The organization of living systems, its characterization and a model. <i>Biosystems</i>, 5(4):187 – 196.</p>
+<p class="bibitem"><a name="Xvon1949biologische"></a>   von Bertalanffy, L. (1952). <i>Problems of Life: An Evaluation of Modern</i> <i>Biological Thought. </i>John Wiley &amp; Sons, New York.</p>
+<p class="bibitem"><a name="Xwinfree1984prehistory"></a>   Winfree, A. T. (1984). The prehistory of the belousov-zhabotinsky oscillator. <i>Journal of Chemical Education</i>, 61(8):661.</p>
+<p class="bibitem">
+  <a name="X10.1371/journal.pone.0010892"></a>   Zhu, J., Zhang, Y.-T., Alber, M. S., et Newman, S. A. (2010). Bare bones pattern formation: A core regulatory network in varying geometries reproduces major
+  features of vertebrate limb development and evolution. <i>PLOS ONE</i>, 5(5):1–11.
+</p>
+<div class="footnotes">
+  <hr />
+  <div id="sdfootnote1">
+    <p class="indent">
+      <a class="sdfootnotesym" href="#sdfootnote1anc" name="sdfootnote1sym">*</a>À paraître comme : M. Montévil (2020). De l’œuvre de Turing aux défis contemporains pour la compréhension mathématique du vivant.
+      <i>Intellectica</i> n°72.
+    </p>
+  </div>
+  <div id="sdfootnote2">
+    <p class="indent">
+      <a class="sdfootnotesym" href="#sdfootnote2anc" name="sdfootnote2sym">1</a>Mail :
+      <u><a href="mailto:Mael.montevil@gmail.com">Mael.montevil@gmail.com</a></u>
+      Web :
+      <u><a href="https://montevil.theobio.org/">https://montevil.theobio.org/</a></u>
+    </p>
+    <p class="indent">Institut de Recherche et d’Innovation, Centre Pompidou, 4 Rue Aubry le Boucher, 75004 Paris.</p>
+    <p class="indent">Institut d’Histoire et Philosophie des Sciences et des Techniques, UMR 8590, Université Paris 1, 13 Rue du Four, 75006 Paris.</p>
+  </div>
+  <div id="sdfootnote3">
+    <p class="indent">
+      <a class="sdfootnotesym" href="#sdfootnote3anc" name="sdfootnote3sym">2</a>Par structure causale, nous entendons ici une description théorique de la causalité. Par exemple, le principe fondamental de la dynamique, en mécanique
+      classique définit les forces comme causes agissant sur l’accélération d’un objet. L’équation de Schrödinger, en mécanique quantique, donne une autre structure causale.
+    </p>
+  </div>
+</div>
