@@ -21,7 +21,7 @@
       {% endfor %}
          {% if upnav %}
         <li class="navigation__{{ type }}{% if url in page.url %} current" aria-current="page{% endif %}">
-          <a href="#{{ upnav }}">TOC</a>
+          <a href="#{{ upnav }}">TOP</a> <span class="onclickbutton" onclick="openNav()">TOC</span>
         </li>
         {% endif %}
     </ul>
