@@ -234,7 +234,7 @@ const imagesResponsiverTransform = (content, outputPath) => {
  const options = {
   disable: ['ligatures'] // array of typeset feature(s) to disable
 };
-/*const typeset = require('typeset');
+const typeset = require('typeset');
 const typeseter = (content, outputPath) => {
   if (outputPath && outputPath.endsWith('.html')) {
     return typeset(content,options);
@@ -248,7 +248,7 @@ const typeseter = (content, outputPath) => {
   const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minifier");
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
-};*/
+};
   
   // eleventyConfig.addPlugin(imagesResponsiver, imagesResponsiverConfig);
 
