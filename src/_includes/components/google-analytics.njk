@@ -9,14 +9,16 @@ document.getElementById("myNav").style.height = 0;
 document.getElementById("navToc").classList.remove("onclickbuttonon");
 }else{
     scrollPosition = window.pageYOffset;
-    if (scrollPosition!=55){
+    if (Math.sign(scrollPosition-55)==-1){
 window.scrollBy(0, 60);
 scrollPosition =60;
 }
 document.getElementById("myNav").style.height = "100%";
 document.getElementById("navToc").classList.add("onclickbuttonon");
 }
-}    </script>
+}   
+
+</script>
   
   
   {% if build.env === "production" %}
