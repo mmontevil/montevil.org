@@ -5,6 +5,11 @@ const observable =
   typeof IntersectionObserver !== 'undefined' &&
   'forEach' in NodeList.prototype;
 
+  
+  
+
+  
+  
 /*****************************************************************
  * Statistics
  * ****************************************************************/
@@ -289,3 +294,5 @@ function checkConnectivity() {
 
 // when the page has finished loading,
 window.addEventListener('load', checkConnectivity);
+
+

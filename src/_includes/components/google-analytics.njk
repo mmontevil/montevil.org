@@ -1,3 +1,24 @@
+          <script>
+    let scrollPosition = 0;
+/* Open */
+
+function openNav() {
+if(document.getElementById("myNav").style.height === "100%"){
+window.scrollTo(0, scrollPosition);
+document.getElementById("myNav").style.height = 0;
+document.getElementById("navToc").classList.remove("onclickbuttonon");
+}else{
+    scrollPosition = window.pageYOffset;
+    if (scrollPosition!=55){
+window.scrollBy(0, 60);
+scrollPosition =60;
+}
+document.getElementById("myNav").style.height = "100%";
+document.getElementById("navToc").classList.add("onclickbuttonon");
+}
+}    </script>
+  
+  
   {% if build.env === "production" %}
     <script>
       window.ga = function () {
@@ -34,5 +55,6 @@
       ga('set', 'dimension4', 'online');
       ga('send', 'pageview');
     </script>
+
     <script src="https://www.google-analytics.com/analytics.js" defer></script>
   {% endif %}
