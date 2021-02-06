@@ -34,22 +34,22 @@
     &.navigation__talks {
       display: none;
 
-      @media (min-width: 45em) {
+      @media (min-width: 51em) {
         display: block;
       }
     }
-
+    a,
     a:link,
     a:visited {
       display: inline-block;
       margin: var(--border-width) 0 0 0;
-      padding: 0.1em 0.75vw 0.2em;
+      padding: 0.1em 0.6vw 0.2em;
       text-decoration: none;
       white-space: nowrap;
     }
 
     &.current {
-      a:link,
+      a, a:link,
       a:visited {
         color: var(--color-primary);
         text-decoration-line: underline;

@@ -1,0 +1,143 @@
+ 
+
+@mixin chvronD-color($color) {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#{$color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevrons-down'%3E%3Cpolyline points='7 13 12 18 17 13'%3E%3C/polyline%3E%3Cpolyline points='7 6 12 11 17 6'%3E%3C/polyline%3E%3C/svg%3E");
+}
+@mixin chvronR-color($color) {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#{$color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevrons-right'%3E%3Cpolyline points='13 17 18 12 13 7'%3E%3C/polyline%3E%3Cpolyline points='6 17 11 12 6 7'%3E%3C/polyline%3E%3C/svg%3E");
+}
+
+
+
+  /* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 0;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  //background-color: rgb(255,255,255); /* Black fallback color */
+ // background-color: rgba(255,255,255, 01); /* Black w/opacity */
+      background-color: var(--color-primary-lighter-7);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    overflow-y: scroll;
+      overscroll-behavior: contain;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 1.5em; /* 25% from the top */
+  width: 100%; /* 100% width */
+  //text-align: center; /* Centered text/links */
+  margin-top: 5em; /* 30px top margin to avoid conflict with the close button on smaller screens */
+   margin-bottom: 10em;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  //padding: 8px;
+  text-decoration: none;
+  font-size: var(--font-size-xl);
+ // color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+ // color: #f1f1f1;
+}
+
+
+
+
+
+ .onclickbutton {
+ // white-space:nowrap;
+  svg {
+      vertical-align: middle;
+      font-size: 1em;
+      stroke: currentColor;
+      stroke-width: 2px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: currentColor;
+    }
+      display: inline-table;
+        padding: 0.12em 0.2em;
+                margin: 0.1em;
+          margin-bottom: 0.2em;
+
+        padding-top: 0em;
+    border: 1px solid var(--color-primary-lighter-5);
+   // border-radius: 0.5em;
+    color: var(--color-link);
+   // background-color: var(--color-primary-lighter-8);
+  &:hover,
+  &:focus {
+    background-color: var(--color-link-hover-bg);
+    color: var(--color-link-hover);
+    border: 2px solid var(--color-primary-lighter-5);
+  }
+  &:active{
+    background-color: var(--color-secondary);
+    color: var(--color-link-hover);
+  }
+}
+
+.onclickbutton {padding-left: 1.3em; 
+  background-size: 1.4em 1.4em;
+  background-position:  0.2em; 
+  background-repeat: no-repeat;
+    @include chvronR-color('%23691449');
+    
+  border:0; 
+  &:link,  &:visited,&:hover,
+  &:focus {
+   border:0; 
+   }
+    &:hover,
+  &:focus {
+       @include chvronR-color('%23fff');
+   }
+}
+.onclickbuttonon {
+    @include chvronD-color('%23691449');
+  &:link,  &:visited,&:hover,
+  &:focus {
+   border:0; 
+   }
+    &:hover,
+  &:focus {
+       @include chvronD-color('%23fff');
+   }
+}
+
+.onclickbutton {text-indent: 1em; 
+  background-size: 1.2em 1.2em;
+  background-position:  0.2em; 
+}
+
+
+
+ /*When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+  
+
+     .autotoc > ol ,.overlay-content > nav{
+  padding-left:0.2em;
+    margin-top:0em;
+        margin-bottom:0em;
+  }
+

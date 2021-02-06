@@ -1,0 +1,26 @@
+ {% from "macros/alterpubCard.njk" import alterpubCard %}
+
+
+{% macro colByYear(collection,htmlTag="h2",prefix="",htmlclass="sectionHeadList") %}
+
+
+   
+{% set dateit="temp" %}
+    {% for article in collection  %}
+    {% set datete=article.data.bibentry.issued['date-parts'][0][0] %}
+    {% if datete=== undefined %}  {% set datete="Submitted" %} {%endif%}
+   {% if datete !== dateit %}
+        {% if dateit  !== "temp" %}
+         {#</ul> #}
+         {% endif %}
+         {% set dateit=datete %}
+  <{{- htmlTag }} class="{{htmlclass}}" id="{{prefix}}{{dateit}}">{{dateit}}</{{- htmlTag }}>
+ 
+    {# <ul>  #}      
+    {% endif %}
+
+{{-alterpubCard(article.data)  |safe-}}
+    
+    {% endfor %}
+    
+{% endmacro %}

@@ -1,0 +1,41 @@
+
+
+{% macro overlayToc(content,h2=false) %}
+
+<script >
+let scrollPosition = 0;
+
+/* Open */
+function openNav() {
+if(document.getElementById("myNav").style.height === "100%"){
+window.scrollTo(0, scrollPosition);
+document.getElementById("myNav").style.height = 0;
+document.getElementById("navToc").classList.remove("onclickbuttonon");
+}else{
+    scrollPosition = window.pageYOffset;
+    if (scrollPosition<55){
+window.scrollBy(0, 60);
+scrollPosition =60;
+}
+document.getElementById("myNav").style.height = "100%";
+document.getElementById("navToc").classList.add("onclickbuttonon");
+}
+}
+</script>
+
+<div id="myNav" class=" overlay" onclick="openNav()">
+  <div class="wrap">
+  <div class=" overlay-content ">
+  {%if h2=="tocCenter"%}
+    {{ content | toc(tags=['h2', 'h3'], wrapperClass='autotoc tocCenter')|safe}}
+    {%elif h2=="tocH2"%}
+    {{ content | toc(tags=['h2', 'h3'], wrapperClass='autotoc indent')|safe}}
+  {%else%}
+   <nav class=" autotoc indent"><ol ><li><a href="#CitationAnchor"><i>Citation & Download</i></a></li></ol></nav>
+ {{ content | toc | safe }}
+  {%endif%}
+  </div>
+</div>
+</div>
+
+{% endmacro %}

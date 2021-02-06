@@ -3,7 +3,10 @@ layout: default
 upnav: toc-site
 ---
 <h1 id="toc-site" class="wrap center">{{ title }}</h1>
-<dic class="center">
-{{ content | toc | safe }}
-</div>
+
+{{ content | toc(tags=['h2', 'h3'], wrapperClass='autotoc tocCenter textLeft') | safe }}
+
+{% from "macros/overlayToc.njk" import overlayToc %}
+{{overlayToc(content,tocOver)|safe}}
+
 {{ content | safe }}

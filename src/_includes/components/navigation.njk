@@ -19,13 +19,14 @@
           <a href="{{ url }}">{{ type }}</a>
         </li>
       {% endfor %}
-         {% if upnav %}
+     
+    </ul>
+    <ul class="tools" role="list">    {% if upnav %}
         <li class="navigation__{{ type }}{% if url in page.url %} current" aria-current="page{% endif %}">
-          <a href="#{{ upnav }}">TOP</a> <span class="onclickbutton" onclick="openNav()">TOC</span>
+         {#<a href="#{{ upnav }}">TOP</a>#}
+          <a class="onclickbutton" onclick="openNav()" id="navToc">TOC</a>
         </li>
         {% endif %}
-    </ul>
-    <ul class="tools" role="list">
       <li class="tools__search navigation_archives{% if 'archives' in page.url %} current" aria-current="page{% endif %}">
         <a href="/archives/">{% icon "search", "Search" %} archives</a>
       </li>

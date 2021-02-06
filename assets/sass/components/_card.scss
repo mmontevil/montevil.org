@@ -75,3 +75,23 @@ img.card__illustration {
   margin-left: auto;
   margin-right: auto;
 }
+
+.publi,.card-list__item{
+   // padding: 1.5em;
+    padding-top: 3em;
+    padding-bottom: 2.5em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    clip-path: polygon(0 2.5vw,100% 0,100% calc(100% - 2.5vw),0 100%);
+   /*   width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;*/
+}
+
+
+.publi:nth-child(2n+1),.card-list__item:nth-child(2n+1) {background: var(--color-primary-lighter-7)}
+.publi:nth-child(2n+2),.card-list__item:nth-child(2n+2) {background: var(--color-primary-lighter-8)}
+

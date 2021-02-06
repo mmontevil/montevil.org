@@ -1,0 +1,149 @@
+ 
+
+.buttonlink {
+ // white-space:nowrap;
+  svg {
+      vertical-align: middle;
+      font-size: 1em;
+      stroke: currentColor;
+      stroke-width: 2px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: currentColor;
+    }
+      display: inline-table;
+        padding: 0.12em 0.2em;
+                margin: 0.1em;
+          margin-bottom: 0.2em;
+
+        padding-top: 0em;
+    border: 1px solid var(--color-primary-lighter-5);
+    border-radius: 0.5em;
+    color: var(--color-link);
+   // background-color: var(--color-primary-lighter-8);
+  &:hover,
+  &:focus {
+    background-color: var(--color-link-hover-bg);
+    color: var(--color-link-hover);
+    border: 2px solid var(--color-primary-lighter-5);
+  }
+  &:active{
+    background-color: var(--color-secondary);
+    color: var(--color-link-hover);
+  }
+}
+.smalltext {
+  font-size: var(--font-size-xs);
+}
+.svgnofill{
+    svg {
+      fill: none;
+    }
+} 
+
+
+.publink {
+        padding: 0.12em 0.2em;
+        padding-top: 0em;
+        margin-right: 0.1em;
+   // border: 1px solid var(--color-primary-lighter-5);
+    border-radius: 1em;
+    color: white;
+    background-color: var(--color-red);
+}
+.publinkchap {
+    background-color: var(--color-blue);
+}
+
+@mixin chvronD-color($color) {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#{$color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevrons-down'%3E%3Cpolyline points='7 13 12 18 17 13'%3E%3C/polyline%3E%3Cpolyline points='7 6 12 11 17 6'%3E%3C/polyline%3E%3C/svg%3E");
+}
+@mixin chvronR-color($color) {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#{$color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevrons-right'%3E%3Cpolyline points='13 17 18 12 13 7'%3E%3C/polyline%3E%3Cpolyline points='6 17 11 12 6 7'%3E%3C/polyline%3E%3C/svg%3E");
+}
+
+.accordion > input[type="checkbox"] {
+  position: absolute;
+  left: -100vw;
+}
+
+.accordion .content {
+  overflow-y: hidden;
+  height: 0;
+  transition: height 0.3s ease;
+}
+
+
+
+.accordion > input[type="checkbox"]:checked ~ .content {
+  height: auto;
+  overflow: visible;
+}
+
+.accordion label {
+  display: inline-block;
+  border: 1px solid var(--color-accord);
+    border-radius: 0.5em;
+} 
+
+
+.accordion {
+  margin-bottom: 0em;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .content {
+  padding: 0.25em;
+  border: 1px solid var(--color-accord);
+      border-radius: 0.5em;
+    border-top-left-radius: 0em;
+        border-top-left-radius: 0em;
+        margin-left: 0em;
+  margin-right: 0em;
+      @media (min-width: 30rem) {
+        padding: 0.5em;
+  margin-left: 0.25em;  
+  margin-right: calc(0.5*100% - 0.5*30rem);
+      }
+
+}
+
+.accordion .handle {  
+  padding-bottom: 0em;
+color: var(--color-link);
+}
+
+.accordion > input[type="checkbox"]:checked ~ .handle label {
+    border-bottom-right-radius: 0em;
+    border-bottom-left-radius: 0em;
+}
+
+.accordion label {
+    margin-top: 0.2em;
+  cursor: pointer;
+  padding: 0.45em;
+ // background: rgba(230,230,230,0.5);
+  padding-left: 1.3em;
+  background-size: 1.4em 1.4em;
+  background-position: 0 0.4em;
+  background-repeat: no-repeat;
+}
+
+
+.accordion label {
+@include chvronR-color('%23691449');
+}
+
+.accordion label:hover,
+.accordion label:focus {
+  color: var(--color-link-hover);
+      background-color: var(--color-link-hover-bg);
+@include chvronR-color('%23fff');
+}
+
+
+.accordion > input[type="checkbox"]:checked ~ .handle label {
+  @include chvronD-color('%23691449');
+}
+.accordion > input[type="checkbox"]:checked ~ .handle label:hover,.accordion > input[type="checkbox"]:checked ~ .handle label:focus {
+  @include chvronD-color('%23fff');
+}

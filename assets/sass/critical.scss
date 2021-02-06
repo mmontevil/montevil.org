@@ -16,11 +16,14 @@
 @use 'components/meta';
 @use 'components/card';
 @use 'components/page';
+@use 'components/tocbutton';
 @use 'components/tweets';
 @use 'components/container';
 @use 'components/toast';
 @use 'components/notification';
 @use 'components/footnotes';
+@use 'components/pubcards';
+@use 'components/pubtext';
 @use 'components/reactions';
 @use 'highlight/_prism-onedark';
 @use 'components/footer';
@@ -32,6 +35,8 @@ html {
   // https://twitter.com/TimVereecke/status/1239454788116533248
   // https://twitter.com/lfredolo/status/1240301405325361152
   overflow-y: scroll;
+  scroll-margin-top: 5rem;
+    // overflow-y: hidden;
 }
 
 html:focus-within {
@@ -44,6 +49,7 @@ body {
 
   color: var(--color-primary-darker-6);
   background-color: white;
+  scroll-margin-top: 5rem;
 
   word-break: break-word;
 }
@@ -525,240 +531,11 @@ a[href$='.kml'] {
 
 
 
-.buttonlink, .onclickbutton {
- // white-space:nowrap;
-  svg {
-      vertical-align: middle;
-      font-size: 1em;
-      stroke: currentColor;
-      stroke-width: 2px;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      fill: currentColor;
-    }
-      display: inline-table;
-        padding: 0.12em 0.2em;
-                margin: 0.1em;
-          margin-bottom: 0.2em;
-
-        padding-top: 0em;
-    border: 1px solid var(--color-primary-lighter-5);
-    border-radius: 0.5em;
-    color: var(--color-link);
-   // background-color: var(--color-primary-lighter-8);
-  &:hover,
-  &:focus {
-    background-color: var(--color-link-hover-bg);
-    color: var(--color-link-hover);
-    border: 2px solid var(--color-primary-lighter-5);
-  }
-  &:active{
-    background-color: var(--color-secondary);
-    color: var(--color-link-hover);
-  }
-}
-.smalltext {
-  font-size: var(--font-size-xs);
-}
-.svgnofill{
-    svg {
-      fill: none;
-    }
-} 
-.onclickbutton {&:link,  &:visited,&:hover,
-  &:focus {
-    border:0;
-  }}
-
-
-.publink {
-        padding: 0.12em 0.2em;
-        padding-top: 0em;
-        margin-right: 0.1em;
-   // border: 1px solid var(--color-primary-lighter-5);
-    border-radius: 1em;
-    color: white;
-    background-color: var(--color-red);
-}
-.publinkchap {
-    background-color: var(--color-blue);
-}
-
-@mixin chvronD-color($color) {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#{$color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevrons-down'%3E%3Cpolyline points='7 13 12 18 17 13'%3E%3C/polyline%3E%3Cpolyline points='7 6 12 11 17 6'%3E%3C/polyline%3E%3C/svg%3E");
-}
-@mixin chvronR-color($color) {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#{$color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevrons-right'%3E%3Cpolyline points='13 17 18 12 13 7'%3E%3C/polyline%3E%3Cpolyline points='6 17 11 12 6 7'%3E%3C/polyline%3E%3C/svg%3E");
-}
-
-.accordion > input[type="checkbox"] {
-  position: absolute;
-  left: -100vw;
-}
-
-.accordion .content {
-  overflow-y: hidden;
-  height: 0;
-  transition: height 0.3s ease;
-}
 
 
 
-.accordion > input[type="checkbox"]:checked ~ .content {
-  height: auto;
-  overflow: visible;
-}
-
-.accordion label {
-  display: inline-block;
-  border: 1px solid var(--color-accord);
-    border-radius: 0.5em;
-} 
 
 
-.accordion {
-  margin-bottom: 0em;
-}
-
-.accordion > input[type="checkbox"]:checked ~ .content {
-  padding: 0.25em;
-  border: 1px solid var(--color-accord);
-      border-radius: 0.5em;
-    border-top-left-radius: 0em;
-        border-top-left-radius: 0em;
-        margin-left: 0em;
-  margin-right: 0em;
-      @media (min-width: 30rem) {
-        padding: 0.5em;
-  margin-left: 0.25em;  
-  margin-right: calc(0.5*100% - 0.5*30rem);
-      }
-
-}
-
-.accordion .handle {  
-  padding-bottom: 0em;
-color: var(--color-link);
-}
-
-.accordion > input[type="checkbox"]:checked ~ .handle label {
-    border-bottom-right-radius: 0em;
-    border-bottom-left-radius: 0em;
-}
-
-.accordion label {
-    margin-top: 0.2em;
-  cursor: pointer;
-  padding: 0.45em;
- // background: rgba(230,230,230,0.5);
-  padding-left: 1.3em;
-  background-size: 1.4em 1.4em;
-  background-position: 0 0.4em;
-  background-repeat: no-repeat;
-}
-
-
-.accordion label {
-@include chvronR-color('%23691449');
-}
-
-.accordion label:hover,
-.accordion label:focus {
-  color: var(--color-link-hover);
-      background-color: var(--color-link-hover-bg);
-@include chvronR-color('%23fff');
-}
-
-
-.accordion > input[type="checkbox"]:checked ~ .handle label {
-  @include chvronD-color('%23691449');
-}
-.accordion > input[type="checkbox"]:checked ~ .handle label:hover,.accordion > input[type="checkbox"]:checked ~ .handle label:focus {
-  @include chvronD-color('%23fff');
-}
-
-
-
-.inlineimg {
-  display: inline; 
-      text-align: center;
-}
-.figure{
-      text-align: center;
-}
-
-.picgrid, .picgrid3{ align-items: end;
-  display: grid;
-  grid-gap: 0.5em;
-  grid-template-columns: 1fr;
-}
-
-.picgrid{
-  grid-template-rows: repeat(4, minmax(0px, auto));
-  grid-template-areas:  "img1" "sub1"
-                        "img2" "sub2"; 
-}
-.picgrid3{
-  grid-template-rows: repeat(6, minmax(0px, auto));
-  grid-template-areas:  "img1" "sub1"
-                        "img2" "sub2"
-                        "img3" "sub3";
-}
-
-.img1, .img2, .img3
-{  display: grid;
-}
-.img1{grid-area: img1;}
-.img2{grid-area: img2;}
-.img3{grid-area: img3;}
-  
-.sub1, .sub2, .sub3{  
-  display: grid;
-  text-align: left;
-}
-.sub1{  grid-area: sub1;}
-.sub2 {  grid-area: sub2;}
-.sub3{grid-area: sub3; }
-
-@media screen and (min-width: 768px)
-{
-  .picgrid
-  {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:  "img1 img2"
-                                           " sub1 sub2";
-  }
-    .picgrid3
-  {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:  "img1 img2 img3"
-                                           " sub1 sub2 sub3";
-  }
-}
-.publi,.card-list__item{
-   // padding: 1.5em;
-    padding-top: 3em;
-    padding-bottom: 2.5em;
-    margin-top: 0em;
-    margin-bottom: 0em;
-    clip-path: polygon(0 2.5vw,100% 0,100% calc(100% - 2.5vw),0 100%);
-   /*   width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;*/
-}
-
-
-.publi:nth-child(2n+1),.card-list__item:nth-child(2n+1) {background: var(--color-primary-lighter-7)}
-.publi:nth-child(2n+2),.card-list__item:nth-child(2n+2) {background: var(--color-primary-lighter-8)}
-
-
-.sectionHeadList{margin-top:1em;margin-bottom:1em;
-  text-align: center;  
-  font-size: var(--font-size-xxxxl);
-}
 
 
 
@@ -788,96 +565,6 @@ color: var(--color-link);
 .push-double{margin-right:.46em}
 
 
-
-.paragraphHead2{
-  font-weight: bold;
-  color: var(--color-primary-darker-1);
-}
-
-div > .indent, div >.noindent,section > .indent, section >.noindent,dd > .noindent,.caption,div >.description,div >table.equation,div >.itemize1,div >.enumerate1,div >.tableofcontents, div.tabular,div >.tableofcontents,.bibitem, dd.enumerate, div>blockquote , .enumerateRom,ol.references,ul.references,.Tableau10,.equation-star, .footnotes,.Footnote{
-      @media (min-width: 30rem) {
-  margin-left: calc(0.25*100% - 0.25*30rem);
-  margin-right: calc(0.25*100% - 0.25*30rem);
-      }
-}
-
-/*
-div >.tableofcontents,.bibitem,.thebibliography{
-      @media (min-width: 30rem) {
-  margin-left: calc(0.125*100% - 0.125*30rem);
-  margin-right: calc(0.125*100% - 0.125*30rem);
-      }
-}
-
-*/
-.sectionHead,.likesectionHead,.subsectionHead,.subsubsectionHead,.subsubsubsectionHead,.likesubsectionHead,.likesubsubsectionHead,  dt.enumerate{
-      @media (min-width: 30rem) {
-  margin-left: calc(0.125*100% - 0.125*30rem);
-  margin-right: calc(0.125*100% - 0.125*30rem);
-      }
-}
-.sectionHead +.subsectionHead {
-  margin-top : 0.5em;
-}
-.subsectionHead +.subsubsectionHead {
-  margin-top : 0.5em;
-}
-.subsubsectionHead +.subsubsectionHead {
-  margin-top : -0.5em;
-}
-div >table.equation{
-      @media (min-width: 30rem) {
-  margin-left: calc(0.25*100% - 0.25*30rem);
-      }
-}
-.subsectionToc{
-  margin-left: 1em;
-  
-}
-.subsubsectionToc{
-  margin-left: 2em;
-}
-.cmti-10,.ecti-1000{font-style: italic;}
-dt.description, dt.dt{margin-left: -2em;
-  margin-top: 0.3em;
-  font-variant: small-caps;}
-.cmbx-10,.ecbx-1000,.paragraphHead,.cmbx-9,.likeparagraphHead,.ec-lmbx-10{
-  font-weight: bold;
-  color: var(--color-primary-lighter-2);
-}
-
-.bibitem, .thebibliography > *{margin-bottom:0.7em;}
-
-.titleHead,.head,.center,.maketitle,.author{text-align: center;}
-.titleHead{margin-bottom: 1em;}
-.head{margin-bottom: 2em;}
-.subtitleHead{text-align: center;
-  margin-top: 0em;}
-         span.smallcaps, .small-caps,.textsc{
-            font-variant: small-caps;
-        }
-.breakk{
-  }
-nav > ul, nav >ul >li>ul , nav >ul >li>ul>li>ul,.references,.autotoc ol {
-  list-style-type: none;
-}
-.episource{text-align: right;
-  margin-left: 15%;
-}
-.td11{font-size: var(--font-size-s);}
-.frame_hsides{font-size: var(--font-size-xs);}
-.enumerateRom{list-style-type: lower-roman;}
-.quote {padding-left:1.5em;  }
-//th{padding:0 }
- .frame_hsides{ margin-left: auto;
-  margin-right: auto;
- }
- .bibsp{display:none;}
- .bibitem, .thebibliography >p, .thebibliography >div, .references__item{
-   text-indent: -1.5em;
-   padding-left:1.5em;
-}
-.ReferencesCopy2{text-indent: 0em;}
 //blockquote > p{margin-left: 2em; }
   /*
   hr {
@@ -896,68 +583,54 @@ hr:after {
     top: -0.8em; 
 }*/
 
+
+
+      .autotoc > ol >li >a{@extend h3; }
+      .autotoc > ol >li >ol>li>a{@extend h4}
+      .autotoc > ol >li >ol>li>ol>li>a{@extend h5}
+      .autotoc > ol >li >ol>li>ol>li>ol>li>a{@extend h6}  
+   .autotoc a:hover{color: var(--color-link-hover);}
+
   
   
-  
-  
-  /* The Overlay (background) */
-.overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-  height: 0;
-  width: 100%;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  background-color: rgb(255,255,255); /* Black fallback color */
-  background-color: rgba(255,255,255, 0.9); /* Black w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    .autotoc a {
+     margin-bottom:0.3em !important;
 }
-
-/* Position the content inside the overlay */
-.overlay-content {
-  position: relative;
-  top: 3em; /* 25% from the top */
-  width: 100%; /* 100% width */
-  //text-align: center; /* Centered text/links */
-  margin-top: 3em; /* 30px top margin to avoid conflict with the close button on smaller screens */
-   margin-bottom: 10em;
+.overlay-content  .autotoc a {
+     margin-bottom:0.3em !important;
+   text-indent: -1.5em;
+  padding-left:1.5em;
 }
+.page__body>nav{
+    text-indent: -1.5em;
+  padding-left:1.5em;
+     text-indent: -1.5em;
 
-/* The navigation links inside the overlay */
-.overlay a {
-  //padding: 8px;
-  text-decoration: none;
-  font-size: var(--font-size-xl);
- // color: #818181;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
 }
+.overlay-content  .tocCenter a{
+     //  text-align: center;
 
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
- // color: #f1f1f1;
 }
-
-
-
- /*When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
+ .tocCenter> ol{
+   margin-top:2em;
+display: flex;
+flex-direction: row ;
+   flex-wrap:wrap;
+   justify-content: space-evenly;
 }
+.textLeft  .tocCenter li{
+  text-align :left}
+.tocCenter a{padding : 0.4em;
+  margin : 0.5em;}
+  .tocCenter li{
+  margin : 0.5em;}
+ .overlay-content .tocCenter li{
+  margin : 0.5em;}
+
   
-   
-  
-  
-  
-  
-  
-  
+      .autotoc li {//  padding-left:1.5em;
+    // margin-bottom:0.3em !important;
+//   padding-left:1.5em;
+}
   
   

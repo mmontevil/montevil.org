@@ -2,33 +2,27 @@
 layout: lists
 title: Publication list by category
 eleventyExcludeFromCollections: true
+tocOver: tocCenter
 ---
-  
+     {% from "macros/colByYear.njk" import colByYear %}
+
+     
       {% from "macros/alterpubCard.njk" import alterpubCard %}
 
-  <h2 class="wrap">Articles</h2>
-   
-    {% for article in collections['peer-reviewed'] %}
-      {{alterpubCard(article.data) | safe}}
-  
-    {% endfor %}
+  <h2 class="wrap sectionHeadList" id="articles">Articles</h2>
+   {{ colByYear(collections['peer-reviewed'],"h3","article-"," titleHead ") |safe }}
 
       
-  <h2 class="wrap">Chapters</h2>
-   
-    {% for article in collections.chapters %}
-      {{alterpubCard(article.data) | safe}}
-  
+  <h2 class="wrap sectionHeadList" id="chapters ">Chapters</h2>
+     {{ colByYear(collections.chapters,"h3","article-"," titleHead ") |safe}}
 
-    {% endfor %}
+
 
   
-    <h2 class="wrap">Varia</h2>
-   
-    {% for article in collections.varia %}
-      {{alterpubCard(article.data) | safe}}
+    <h2 class="wrap sectionHeadList" id="varia">Varia</h2>
+        {{ colByYear(collections.varia,"h3","article-"," titleHead " ) |safe }}
+
   
-    {% endfor %}
   
 
  {# </ul>#}

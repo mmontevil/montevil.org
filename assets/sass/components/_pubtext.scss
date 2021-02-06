@@ -1,0 +1,157 @@
+ 
+
+
+.inlineimg {
+  display: inline; 
+      text-align: center;
+}
+.figure{
+      text-align: center;
+}
+
+.picgrid, .picgrid3{ align-items: end;
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: 1fr;
+}
+
+.picgrid{
+  grid-template-rows: repeat(4, minmax(0px, auto));
+  grid-template-areas:  "img1" "sub1"
+                        "img2" "sub2"; 
+}
+.picgrid3{
+  grid-template-rows: repeat(6, minmax(0px, auto));
+  grid-template-areas:  "img1" "sub1"
+                        "img2" "sub2"
+                        "img3" "sub3";
+}
+
+.img1, .img2, .img3
+{  display: grid;
+}
+.img1{grid-area: img1;}
+.img2{grid-area: img2;}
+.img3{grid-area: img3;}
+  
+.sub1, .sub2, .sub3{  
+  display: grid;
+  text-align: left;
+}
+.sub1{  grid-area: sub1;}
+.sub2 {  grid-area: sub2;}
+.sub3{grid-area: sub3; }
+
+@media screen and (min-width: 768px)
+{
+  .picgrid
+  {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:  "img1 img2"
+                                           " sub1 sub2";
+  }
+    .picgrid3
+  {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:  "img1 img2 img3"
+                                           " sub1 sub2 sub3";
+  }
+}
+.sectionHeadList{margin-top:1em;margin-bottom:1em;
+  text-align: center;  
+  font-size: var(--font-size-xxxxl);
+}
+
+
+
+
+.paragraphHead2{
+  font-weight: bold;
+  color: var(--color-primary-darker-1);
+}
+
+div > .indent, div >.noindent,section > .indent, section >.noindent,dd > .noindent,.caption,div >.description,div >table.equation,div >.itemize1,div >.enumerate1,div >.tableofcontents, div.tabular,div >.tableofcontents,.bibitem, dd.enumerate, div>blockquote , .enumerateRom,ol.references,ul.references,.Tableau10,.equation-star, .footnotes,.Footnote{
+      @media (min-width: 30rem) {
+  margin-left: calc(0.25*100% - 0.25*30rem);
+  margin-right: calc(0.25*100% - 0.25*30rem);
+      }
+}
+
+/*
+div >.tableofcontents,.bibitem,.thebibliography{
+      @media (min-width: 30rem) {
+  margin-left: calc(0.125*100% - 0.125*30rem);
+  margin-right: calc(0.125*100% - 0.125*30rem);
+      }
+}
+
+*/
+.sectionHead,.likesectionHead,.subsectionHead,.subsubsectionHead,.subsubsubsectionHead,.likesubsectionHead,.likesubsubsectionHead,  dt.enumerate{
+      @media (min-width: 30rem) {
+  margin-left: calc(0.125*100% - 0.125*30rem);
+  margin-right: calc(0.125*100% - 0.125*30rem);
+      }
+}
+.sectionHead +.subsectionHead {
+  margin-top : 0.5em;
+}
+.subsectionHead +.subsubsectionHead {
+  margin-top : 0.5em;
+}
+.subsubsectionHead +.subsubsectionHead {
+  margin-top : -0.5em;
+}
+div >table.equation{
+      @media (min-width: 30rem) {
+  margin-left: calc(0.25*100% - 0.25*30rem);
+      }
+}
+.subsectionToc{
+  margin-left: 1em;
+  
+}
+.subsubsectionToc{
+  margin-left: 2em;
+}
+.cmti-10,.ecti-1000{font-style: italic;}
+dt.description, dt.dt{margin-left: -2em;
+  margin-top: 0.3em;
+  font-variant: small-caps;}
+.cmbx-10,.ecbx-1000,.paragraphHead,.cmbx-9,.likeparagraphHead,.ec-lmbx-10{
+  font-weight: bold;
+  color: var(--color-primary-lighter-2);
+}
+
+.bibitem, .thebibliography > *{margin-bottom:0.7em;}
+
+.titleHead,.head,.center,.maketitle,.author{text-align: center;}
+.titleHead{margin-bottom: 1em;}
+.head{margin-bottom: 2em;}
+.subtitleHead{text-align: center;
+  margin-top: 0em;}
+         span.smallcaps, .small-caps,.textsc{
+            font-variant: small-caps;
+        }
+.breakk{
+  }
+nav > ul, nav >ul >li>ul , nav >ul >li>ul>li>ul,.references,.autotoc ol {
+  list-style-type: none;
+}
+.episource{text-align: right;
+  margin-left: 15%;
+}
+.td11{font-size: var(--font-size-s);}
+.frame_hsides{font-size: var(--font-size-xs);}
+.enumerateRom{list-style-type: lower-roman;}
+.quote {padding-left:1.5em;  }
+//th{padding:0 }
+ .frame_hsides{ margin-left: auto;
+  margin-right: auto;
+ }
+ .bibsp{display:none;}
+ .bibitem, .thebibliography >p, .thebibliography >div, .references__item {
+   text-indent: -1.5em;
+   padding-left:1.5em;
+}
+.ReferencesCopy2{text-indent: 0em;}
+

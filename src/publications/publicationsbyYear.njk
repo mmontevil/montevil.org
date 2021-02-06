@@ -2,26 +2,9 @@
 layout: lists
 title: Publication list by year
 eleventyExcludeFromCollections: true
+tocOver: tocCenter
 ---
-  
-      {% from "macros/alterpubCard.njk" import alterpubCard %}
-
-   
-{% set dateit="temp" %}
-    {% for article in collections.publications  %}
-    {% set datete=article.data.bibentry.issued['date-parts'][0][0] %}
-    {% if datete=== undefined %}  {% set datete="Submitted" %} {%endif%}
-   {% if datete !== dateit %}
-        {% if dateit  !== "temp" %}
-         {#</ul> #}
-         {% endif %}
-         {% set dateit=datete %}
-  <h2 class="sectionHeadList"id="{{dateit}}">{{dateit}}</h2>
- 
-    {# <ul>  #}      
-    {% endif %}
-
-{{-alterpubCard(article.data)  |safe-}}
-    
-    {% endfor %}
+   {% from "macros/colByYear.njk" import colByYear %}
+{{ colByYear(collections.publications) }}
+     
  {# </ul>#}
