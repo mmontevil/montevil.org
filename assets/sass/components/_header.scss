@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
 
-  color: #fff;
+  color: var(--color-link-hover);
   background: var(--color-primary);
   border-top: solid var(--border-width) var(--color-primary-lighter-3);
 
@@ -26,7 +26,7 @@
 
     margin: 0;
     padding: 0.3em 0;
-    color: #fff;
+    color: var(--color-link-hover);
 
     &:last-child {
       text-align: right;
@@ -55,20 +55,20 @@
     a:hover,
     a:focus {
       svg {
-        fill: white;
+        fill: var(--color-link-hover);
       }
     }
   }
 
   a:link,
   a:visited {
-    color: #fff;
+    color: var(--color-link-hover);
     text-decoration: none;
   }
 
   a:hover,
   a:focus {
-    color: #fff;
+    color: var(--color-link-hover);
     background-color: transparent;
     text-decoration: underline;
     mix-blend-mode: normal;

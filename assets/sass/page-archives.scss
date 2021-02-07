@@ -195,7 +195,7 @@ margin-top: var(--flow-space, 1em);
   font-size: 0.7em;
   margin-left: 0.2em;
   padding: 0.1em 0.5em;
-  background-color: colors.$color-lightgrey;
+  background-color: var(--color-lightgrey);
   border-radius: 1em;
 }
 

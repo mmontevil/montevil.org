@@ -69,6 +69,7 @@
   // Persimmon:
   //   https://en.wikipedia.org/wiki/Shades_of_orange#Persimmon
 --color-secondary: #35d123;
+  --color-bg: white;
 
   --color-link: var(--color-primary);
   --color-link-bg: inherit;
@@ -86,7 +87,8 @@
 
   --border-width: 0.15em;
     --color-accord: var(--color-primary-lighter-4);
-    
+    --color-caption: #666;
+
 // ************************************************************
 // Colors palette
 // ************************************************************
@@ -103,6 +105,75 @@
 // Colors from Prism OneDark theme
 --inline-code-background-color: #282c34;
 --inline-code-text-color: #abb2bf;
+--color-grad:100%;
 
 
+}
+[data-theme="dark"] {
+
+
+--color-primary-lighter-8: #16020d;
+//--color-primary-lighter-7a: #2e041b;
+--color-primary-lighter-7: #2c041a;
+--color-primary-lighter-6: #5c0836;
+--color-primary-lighter-5: #730b44;
+--color-primary-lighter-4: #8a0d52;
+--color-primary-lighter-3: #a10f5f;
+--color-primary-lighter-2: #ea168a; // #663399;
+--color-primary-lighter-1: #ea1c8e;
+--color-primary: #eb2391;
+--color-primary-darker-1: #ee45a2;
+--color-primary-darker-2: #f055aa;
+--color-primary-darker-3: #f166b3;
+--color-primary-darker-4: #f377bb;
+--color-primary-darker-5: #f488c4;
+--color-primary-darker-6: #f7aad5;
+//--color-primary-darker-7b: #fdf0f5;
+--color-primary-darker-7: #f7aad5;//#fff2f7
+--color-grad:0%;
+
+  // Persimmon:
+  //   https://en.wikipedia.org/wiki/Shades_of_orange#Persimmon
+--color-secondary: #35d123;
+  --color-bg: #0d0108;
+
+  --color-link: var(--color-primary);
+  --color-link-bg: inherit;
+  --color-link-decoration: var(--color-primary-lighter-5);
+
+  --color-link-hover: black;
+  --color-link-hover-bg: var(--color-primary);
+  --color-link-hover-decoration: none;
+--color-caption: #999;
+  --color-meta: #8a8a8a;
+  --color-meta-decoration: #999;
+
+  --color-gold: hsl(50, 91%, 30%);
+  --color-yellow-light: hsl(59, 100%, 88%);
+    --color-accord: var(--color-primary-lighter-4);
+    
+// ************************************************************
+// Colors palette
+// ************************************************************
+--color-green: #3f7e00;
+--color-blue: #194d7e;
+--color-red: #af2222;
+--color-lightgrey: #333;
+--color-grey: #bbb;
+--color-darkgrey: #eee;
+--color-xlightgrey: #353535;
+
+--color-twitter: #1da1f2;
+
+// Colors from Prism OneDark theme
+--inline-code-background-color: #282c34;
+--inline-code-text-color: #abb2bf;
+
+
+  img,#footer {
+    filter: hue-rotate(180deg) invert(100%);
+  }
+#footer {
+    filter: hue-rotate(180deg) invert(100%) grayscale(0.5);
+  }
 }
