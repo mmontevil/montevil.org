@@ -170,10 +170,13 @@
 --inline-code-text-color: #abb2bf;
 
 
-  img,#footer {
+  img {
     filter: hue-rotate(180deg) invert(100%);
   }
 #footer {
     filter: hue-rotate(180deg) invert(100%) grayscale(0.5);
+  }
+    .noDarkFilter {
+    filter: none;
   }
 }
