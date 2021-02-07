@@ -10,7 +10,7 @@ tocOver: tocCenter
       {% from "macros/alterpubCard.njk" import alterpubCard %}
 
   <h2 class="wrap sectionHeadList" id="articles">Articles</h2>
-   {{ colByYear(collections['peer-reviewed'],"h3","article-"," titleHead ") |safe }}
+   {{ colByYear(collections.articles,"h3","article-"," titleHead ") |safe }}
 
       
   <h2 class="wrap sectionHeadList" id="chapters ">Chapters</h2>

@@ -1,18 +1,19 @@
 
 
-{% macro overlayToc(content,h2=false) %}
+{% macro overlayToc(content,h2=false,title="") %}
 
 
 
 <div id="myNav" class=" overlay" onclick="openNav()">
   <div class="wrap">
   <div class=" overlay-content ">
+  <h2 class="center titleOverToc"> {{title}}</h2>
   {%if h2=="tocCenter"%}
     {{ content | toc(tags=['h2', 'h3'], wrapperClass='autotoc tocCenter')|safe}}
     {%elif h2=="tocH2"%}
     {{ content | toc(tags=['h2', 'h3'], wrapperClass='autotoc indent')|safe}}
   {%else%}
-   <nav class=" autotoc indent"><ol ><li><a href="#CitationAnchor"><i>Citation & Download</i></a></li></ol></nav>
+   <nav class=" autotoc indent"><ol ><li><a href="#CitationAnchor"  class="buttonInToc"> <i>Citation & Download</i> {% icon "pdf", "PDF" %} {% icon "bib", "BIB" %}</a></li></ol></nav>
  {{ content | toc | safe }}
   {%endif%}
   </div>

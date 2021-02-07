@@ -63,11 +63,11 @@ const contentsByYear = (collection) => {
 };
 
 let collections = {
-  yearsWithArticles: (collection) => {
-    return yearsWithContent(getFilteredCollection(collection, 'articles'));
+  yearsWithPosts: (collection) => {
+    return yearsWithContent(getFilteredCollection(collection, 'posts'));
   },
-  monthsWithArticles: (collection) => {
-    return monthsWithContent(getFilteredCollection(collection, 'articles'));
+  monthsWithPosts: (collection) => {
+    return monthsWithContent(getFilteredCollection(collection, 'posts'));
   },
   yearsWithLinks: (collection) => {
     return yearsWithContent(getFilteredCollection(collection, 'links'));
@@ -106,11 +106,11 @@ let collections = {
   monthsWithChapters: (collection) => {
     return monthsWithContent(getFilteredCollection(collection, 'chapters'));
   },
-    yearsWithPeerreviewed: (collection) => {
-    return yearsWithContent(getFilteredCollection(collection, 'peer-reviewed'));
+    yearsWithArticles: (collection) => {
+    return yearsWithContent(getFilteredCollection(collection, 'articles'));
   },
-  monthsWithPeerreviewed: (collection) => {
-    return monthsWithContent(getFilteredCollection(collection, 'peer-reviewed'));
+  monthsWithArticles: (collection) => {
+    return monthsWithContent(getFilteredCollection(collection, 'articles'));
   },
     yearsWithVaria: (collection) => {
     return yearsWithContent(getFilteredCollection(collection, 'varia'));
@@ -120,7 +120,7 @@ let collections = {
   },    
 };
 
-['publications','articles', 'links', 'notes', 'talks', 'archives','chapters','peer-reviewed','varia'].forEach(
+['publications','posts', 'links', 'notes', 'talks', 'archives','chapters','articles','varia'].forEach(
   (collectionName) => {
     // collections for yearly archives
     collections[`${collectionName}ByYear`] = (collection) => {

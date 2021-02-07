@@ -76,7 +76,7 @@ tags: [{% for entry in keyword.split(', ') %}
  
  
 {% from "macros/overlayToc.njk" import overlayToc %}
-{{overlayToc(content)|safe}}
+{{overlayToc(content,"",title)|safe}}
 
  <hr class="breakk">
 {{ content | safe }}

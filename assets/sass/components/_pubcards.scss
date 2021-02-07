@@ -43,7 +43,7 @@
 
 
 .publink {
-        padding: 0.12em 0.2em;
+        padding: 0.12em 0.3em;
         padding-top: 0em;
         margin-right: 0.1em;
    // border: 1px solid var(--color-primary-lighter-5);
@@ -53,6 +53,9 @@
 }
 .publinkchap {
     background-color: var(--color-blue);
+}
+.pubPeerReview {
+  background-color: var(--color-green);
 }
 
 @mixin chvronD-color($color) {

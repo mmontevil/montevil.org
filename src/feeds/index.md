@@ -12,7 +12,7 @@ You can follow my publications with several feeds.
 Here are the feeds:
 
 - [latest publications](/feeds/publications.xml)
-- [latest articles](/feeds/articles.xml)
+- [latest posts](/feeds/posts.xml)
 - [latest links](/feeds/links.xml)
 - [latest notes](/feeds/notes.xml)
 - [latest contents from all types](/feeds/all.xml)

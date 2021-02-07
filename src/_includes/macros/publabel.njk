@@ -5,6 +5,9 @@
   {% elif item.typepub === "chapter" %}
    <span class="publink publinkchap ">Chapter</span> 
   {% elif item.type === "varia" %}
-
+ 
   {% endif%}  
+  {% if item.peerReview%}
+<span class="publink  pubPeerReview">Peer-reviewed</span> 
+{% endif%} 
    {% endmacro %}

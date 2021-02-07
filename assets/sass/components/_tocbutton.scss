@@ -33,7 +33,7 @@
   top: 1.5em; /* 25% from the top */
   width: 100%; /* 100% width */
   //text-align: center; /* Centered text/links */
-  margin-top: 5em; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  margin-top: 3em; /* 30px top margin to avoid conflict with the close button on smaller screens */
    margin-bottom: 10em;
 }
 
@@ -43,7 +43,7 @@
   text-decoration: none;
   font-size: var(--font-size-xl);
  // color: #818181;
-  display: block; /* Display block instead of inline */
+  //display: block; /* Display block instead of inline */
   transition: 0.3s; /* Transition effects on hover (color) */
 }
 
@@ -54,7 +54,23 @@
 
 
 
-
+.buttonInToc {
+ // white-space:nowrap;
+  svg {
+      vertical-align: middle;
+      font-size: 1em;
+      fill: currentColor;
+    }  &:hover,
+  &:focus {
+    background-color: var(--color-link-hover-bg);
+    color: var(--color-link-hover);
+  }
+  &:active{
+    background-color: var(--color-secondary);
+    color: var(--color-link-hover);
+  }
+  
+}
 
  .onclickbutton {
  // white-space:nowrap;
@@ -89,7 +105,8 @@
   }
 }
 
-.onclickbutton {padding-left: 1.3em; 
+.onclickbutton {
+  padding-left: 1.3em; 
   background-size: 1.4em 1.4em;
   background-position:  0.2em; 
   background-repeat: no-repeat;
@@ -117,7 +134,8 @@
    }
 }
 
-.onclickbutton {text-indent: 1em; 
+.onclickbutton {
+  text-indent: 1em; 
   background-size: 1.2em 1.2em;
   background-position:  0.2em; 
 }
@@ -134,10 +152,36 @@
   }
 }
   
+  
+  
+   .autotoc a:hover{color: var(--color-link-hover);}
+  
+  .autotoc a{
+    position: relative;
+      line-height: 1.3;
+color: var(--color-link);
+  }
+  
+   .autotoc > ol >li >a{
+      font-size: var(--font-size-xxl);
+  font-weight: 500;
+  }
+      .autotoc > ol >li >ol>li>a{
+          font-size: var(--font-size-xl);
+  font-weight: 500;  color: var(--color-primary-lighter-1 );
+      }
+      .autotoc > ol >li >ol>li>ol>li>a{
+        font-size: var(--font-size-l);color: var(--color-primary-lighter-2 );
+  font-weight: 300;
+      }
+      .autotoc > ol >li >ol>li>ol>li>ol>li>a{ font-style: italic;color: var(--color-primary-lighter-2 );
+  font-size: var(--font-size-l);
+  font-weight: 300;}  
 
-     .autotoc > ol ,.overlay-content > nav{
-  padding-left:0.2em;
-    margin-top:0em;
-        margin-bottom:0em;
+     .titleOverToc {
+      font-size: var(--font-size-xxxl);
+  font-weight: 600;
+  line-height: 1.3;
+     margin-bottom: 1em;
   }
 

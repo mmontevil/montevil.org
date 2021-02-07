@@ -1,0 +1,79 @@
+ 
+<div class="refinements wrap ">
+      <div id="types-list">
+        <div class="ais-Panel">
+          <div class="ais-Panel-header">Types</div>
+          <ul class="no-ais-RefinementList-list">
+            {% for type in pubtypes.types %}
+              {% if type == currentType -%}
+                <li class="ais-RefinementList-item {% if type == 'articles' or type == 'chapters' or type == 'varia'  -%}  ais-HierarchicalMenu-item2   {% endif %} ais-RefinementList-item--selected ">
+                
+                  <a href="/archives/{% if currentYear %}{{ currentYear}}/{% endif %}{% if currentMonth %}{{ currentMonth}}/{% endif %}">{{ type }}</a>
+                  <span class="ais-RefinementList-count">{{ collections[type] | length }}</span>
+                </li>
+              {% else %}
+                <li class="ais-RefinementList-item {% if type == 'articles' or type == 'chapters' or type == 'varia'  -%}  ais-HierarchicalMenu-item2   {% endif %} "> 
+                  <a href="/{{ type }}/">{{ type }}</a>
+                  <span class="ais-RefinementList-count">{{ collections[type] | length }}</span>
+                </li>
+              {%- endif -%}
+            {% endfor %}
+          </ul><p><a class=" " href="/publications/publicationsbyType/">Complete Publication list by category</a></p>
+        </div>
+      </div>
+      {#<div id="tags-list"></div>#}
+      <div id="dates-menu">
+          
+      
+        {% block dates %}
+          <div class="ais-Panel">
+            <div class="ais-Panel-header">Dates</div>
+            <div class="ais-HierarchicalMenu">
+              <ul class="ais-HierarchicalMenu-list">
+                {% for year in collections["yearsWith" + currentType | capitalize] %}
+                  {% if year == currentYear %}
+                    <li class="ais-HierarchicalMenu-item ais-HierarchicalMenu-item--selected ais-HierarchicalMenu-item--parent">
+                      <div>
+                        {% if currentMonth %}
+                          <a class="ais-HierarchicalMenu-link" href="/{{ currentType }}/{{ year }}/">{{ year }}</a>
+                        {% else %}
+                          <a class="ais-HierarchicalMenu-link" href="/{{ currentType }}/">{{ year }}</a>
+                        {% endif %}
+                        <span class="ais-RefinementList-count">{{ collections[currentType + 'ByYear'][year] | length }}</span>
+                      </div>
+                     {# <div class="ais-HierarchicalMenu-list--child">
+                        <ul class="ais-HierarchicalMenu-list">
+                          {% for month in collections["monthsWith" + currentType | capitalize] %}
+                            {% set monthYear = month | split('/') | first %}
+                            {% set monthMonth = month | split('/') | offset(1) | first %}
+                            {% if monthYear == currentYear %}
+                              <li class="ais-HierarchicalMenu-item">
+                                {% if monthMonth == currentMonth %}
+                                  <strong>{{ monthMonth }}</strong>
+                                {% else %}
+                                  <a class="ais-HierarchicalMenu-link" href="/{{ currentType }}/{{ year }}/{{ monthMonth }}/">{{ monthMonth }}</a>
+                                {% endif %}
+                              </li>
+                            {% endif %}
+                          {% endfor %}
+                        </ul>
+                      </div> #}
+                    </li>
+                  {% else %}
+                    <li class="ais-HierarchicalMenu-item">
+                      <div>
+                        <a class="ais-HierarchicalMenu-link" href="/{{ currentType }}/{{ year }}/">{{ year }}</a>
+                        <span class="ais-RefinementList-count">{{ collections[currentType + 'ByYear'][year] | length }}</span>
+                      </div>
+                    </li>
+                  {% endif %}
+                {%- endfor %}
+              </ul>
+            </div><p><a class=" " href="/publications/publicationsbyYear/">Complete Publication list by year</a></p>
+          </div>
+        {% endblock %}
+      </div>
+    {#<div id="langs-list"></div>#}
+    </div>
+    {#  <div id="stats"></div>
+    <div id="powered-by"></div> #}

@@ -585,31 +585,31 @@ hr:after {
 
 
 
-      .autotoc > ol >li >a{@extend h3; }
-      .autotoc > ol >li >ol>li>a{@extend h4}
-      .autotoc > ol >li >ol>li>ol>li>a{@extend h5}
-      .autotoc > ol >li >ol>li>ol>li>ol>li>a{@extend h6}  
-   .autotoc a:hover{color: var(--color-link-hover);}
 
   
-  
-    .autotoc a {
-     margin-bottom:0.3em !important;
+  .autotoc li , .autotoc ol {//  padding-left:1.5em;
+     margin-top:0.5em !important;
+//   padding-left:1.5em;
+     margin-bottom: 0em;
 }
-.overlay-content  .autotoc a {
+
+  .autotoc li {
      margin-bottom:0.3em !important;
    text-indent: -1.5em;
   padding-left:1.5em;
 }
+  .autotoc ol {
+     margin-left: -1.5em ;
+}
+/*
 .page__body>nav{
-    text-indent: -1.5em;
   padding-left:1.5em;
      text-indent: -1.5em;
+}*/
 
-}
-.overlay-content  .tocCenter a{
+.overlay-content  .autotoc a{
      //  text-align: center;
-
+  padding-bottom: 0.1em;
 }
  .tocCenter> ol{
    margin-top:2em;
@@ -617,20 +617,27 @@ display: flex;
 flex-direction: row ;
    flex-wrap:wrap;
    justify-content: space-evenly;
+   
 }
 .textLeft  .tocCenter li{
   text-align :left}
-.tocCenter a{padding : 0.4em;
-  margin : 0.5em;}
-  .tocCenter li{
-  margin : 0.5em;}
- .overlay-content .tocCenter li{
-  margin : 0.5em;}
+.tocCenter a{
+  padding : 0.2em;
+}
+  .tocCenter li{ margin-bottom : 0.5em!important;
+  //margin : 0.5em;
+  }
+
 
   
-      .autotoc li {//  padding-left:1.5em;
-    // margin-bottom:0.3em !important;
-//   padding-left:1.5em;
-}
+
   
   
+     
+   //   .autotoc a:link, .autotoc a{}
+     //   .autotoc a:hover{color: var(--color-link-hover);}
+
+
+
+
+

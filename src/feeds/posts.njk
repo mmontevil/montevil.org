@@ -1,20 +1,20 @@
 ---
 layout: null
-permalink: /feeds/articles.xml
+permalink: /feeds/posts.xml
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{websiteid.name}} - Articles</title>
-  <link href="{{ pkg.homepage }}/feeds/articles.xml" rel="self"/>
-  <link href="{{ pkg.homepage }}/articles/"/>
+  <title>{{websiteid.name}} - Posts</title>
+  <link href="{{ pkg.homepage }}/feeds/posts.xml" rel="self"/>
+  <link href="{{ pkg.homepage }}/posts/"/>
   <link rel="hub" href="http://pubsubhubbub.superfeedr.com/" />
-  <updated>{{ collections.articles | rssLastUpdatedDate }}</updated>
-  <id>{{ pkg.homepage }}/articles/</id>
+  <updated>{{ collections.posts | rssLastUpdatedDate }}</updated>
+  <id>{{ pkg.homepage }}/posts/</id>
   <author>
     <name>{{ pkg.author.name }}</name>
     <email>{{ pkg.author.email }}</email>
   </author>
-  {% for entry in collections.articles | limit(50) %}
+  {% for entry in collections.posts | limit(50) %}
     {% set absoluteEntryUrl %}{{ entry.url | url | absoluteUrl(pkg.homepage) }}{% endset %}
     <entry>
       <title>🖋 {{ entry.data.title }}</title>

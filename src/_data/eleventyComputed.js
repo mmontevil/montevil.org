@@ -172,7 +172,7 @@ function headTitle(data) {
 function ogType(data) {
   switch (data.layout) {
     case 'publication':
-    case 'article':
+    case 'post':
     case 'link':
     case 'note':
     case 'talk':
@@ -198,7 +198,7 @@ function ogImageTitle(data) {
   }
   switch (data.layout) {
      case 'publication':   
-    case 'article':
+    case 'post':
     case 'link':
     case 'talk':
     case 'note':
@@ -215,7 +215,7 @@ function ogImageTagline(data) {
   }
   switch (data.layout) {
     case 'publication':
-    case 'article':
+    case 'post':
     case 'link':
     case 'note':
     case 'talk':

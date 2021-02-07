@@ -5,7 +5,7 @@ const getFilteredCollection = (collection, type) => {
   if (type in filteredCollectionsMemoization) {
     return filteredCollectionsMemoization[type];
   } else {
-    const pattern = type === 'archives' ? '{publications,articles,links,notes,talks}' : (type === 'peer-reviewed' ? 'publications/peer-reviewed' : (type === 'chapters' ? 'publications/chapters' : (type === 'varia' ? 'publications/varia' : type)));
+    const pattern = type === 'archives' ? '{publications,posts,links,notes,talks}' : (type === 'articles' ? 'publications/articles' : (type === 'chapters' ? 'publications/chapters' : (type === 'varia' ? 'publications/varia' : type)));
     let filteredCollection = collection
       .getFilteredByGlob([`src/${pattern}/**/*.md`,`src/${pattern}/**/*.njk`])
       .filter((item) => now >= item.date.getTime())

@@ -1,7 +1,7 @@
 {% from "macros/meta.njk" import meta %}
 {% from "macros/card.njk" import card %}
 
-{% macro articleCard(article) %}
+{% macro postCard(article) %}
   {% set content %}
   <p class="card__body p-summary">{{ article.templateContent | excerpt | striptags | safe }}</p>
   {% endset %}
@@ -11,7 +11,7 @@
   {% endset %}
 
   {{ card(
-    type = 'article',
+    type = 'post',
     lang = article.data.lang,
     title = article.data.title,
     url = article.url,

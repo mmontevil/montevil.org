@@ -5,11 +5,11 @@ title: Every characters
 
 <h1>Every characters used on this site</h1>
 
-{% from "macros/articleCard.njk" import articleCard %}
+{% from "macros/postCard.njk" import postCard %}
 
 {% set every_char = '' %}
-{% for article in collections.articles %}
-  {% set article_chars %}{{ articleCard(article) }}{{ article.templateContent }}{% endset %}
+{% for article in collections.posts %}
+  {% set article_chars %}{{ postCard(article) }}{{ article.templateContent }}{% endset %}
   {% set new_every_char %}{{ every_char }}{{ article_chars | striptags | split("") | uniq | join("") }}{% endset %}
   {% set every_char = new_every_char %}
 {% endfor %}

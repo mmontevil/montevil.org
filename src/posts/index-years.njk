@@ -1,12 +1,12 @@
 ---
 layout: false
 pagination:
-  data: collections.articlesByYear
+  data: collections.postsByYear
   size: 1
   alias: year
-permalink: "articles/{{ year }}/"
+permalink: "posts/{{ year }}/"
 eleventyComputed:
-  title: Articles published in {{ year }}
+  title: Posts published in {{ year }}
 eleventyExcludeFromCollections: true
 ---
 

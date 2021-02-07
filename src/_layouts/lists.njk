@@ -2,11 +2,12 @@
 layout: default
 upnav: toc-site
 ---
-<h1 id="toc-site" class="wrap center">{{ title }}</h1>
-
+<div class="wrap">
+<h1 id="toc-site" class=" center">{{ title }}</h1>
 {{ content | toc(tags=['h2', 'h3'], wrapperClass='autotoc tocCenter textLeft') | safe }}
+</div>
 
 {% from "macros/overlayToc.njk" import overlayToc %}
-{{overlayToc(content,tocOver)|safe}}
+{{overlayToc(content,tocOver,title)|safe}}
 
 {{ content | safe }}

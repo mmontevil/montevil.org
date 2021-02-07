@@ -43,38 +43,33 @@ JSON-LD for:
 
 
 
-  {% from "macros/articleCard.njk" import articleCard %}
+  {% from "macros/postCard.njk" import postCard %}
   {% from "macros/pubCard.njk" import pubCard %}
 
-  <h2   class="wrap">Latest articles</h2>
+  <h2   class="wrap">Latest Publications</h2>
   <div class="cards-list">
-    {% for article in collections.latestPeerreviewed %}
+    {% for article in collections.latestPublications %}
       {{ pubCard(article,numbers.numbers2) }}
     {% endfor %}
   </div>
   
-  <h2 class="wrap">Latest publications</h2>
-  <div class="cards-list">
-    {% for article in collections.publications %}
-      {{ pubCard(article,numbers.numbers2)   }}
-    {% endfor %}
-  </div>
+
   
-  <h2 class="wrap">Latest articles</h2>
+  <h2 class="wrap">Latest posts</h2>
   
   <div class="cards-list">
-    {% for article in collections.latestArticles %}
-      {{ articleCard(article) }}
+    {% for article in collections.latestPosts %}
+      {{ postCard(article) }}
     {% endfor %}
   </div>
 
   <h2 class="wrap">Older noteworthy articles</h2>
   <div class="cards-list">
-  {% for article in collections.promotedArticles %}
-    {{ articleCard(article) }}
+  {% for article in collections.promotedPosts %}
+    {{ postCard(article) }}
   {% endfor %}
   </div>
-  <p class="wrap more ">Read <a href="/articles/">all articles</a>…</p>
+  <p class="wrap more ">Read <a href="/posts/">all posts</a>…</p>
 
   <div class=" lazy "></div>
 </div>

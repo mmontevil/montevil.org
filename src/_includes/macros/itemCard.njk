@@ -1,12 +1,12 @@
-{% from "macros/articleCard.njk" import articleCard %}
+{% from "macros/postCard.njk" import postCard %}
 {% from "macros/linkCard.njk" import linkCard %}
 {% from "macros/noteCard.njk" import noteCard %}
 {% from "macros/pubCard.njk" import pubCard %}
 {% from "macros/talkCard.njk" import talkCard %}
 
 {% macro itemCard(item,numbers2) %}
-    {% if item.data.layout == "article" %}
-      {{ articleCard(item) }}
+    {% if item.data.layout == "post" %}
+      {{ postCard(item) }}
     {% elif item.data.layout == "link" %}
       {{ linkCard(item) }}
     {% elif item.data.layout == "note" %}
