@@ -131,12 +131,13 @@ img.card__illustration {
 }
 .titleDiag>h2{
   padding: 0.5em 0;
-  margin-bottom: -2em;
+  margin-bottom: -1.5em;
 }
 .titleDiag>.titleHead, .titleDiag>.sectionHeadList{
   margin-top: calc(0.5*var(--skew-padding));
+  margin-bottom: calc(0.5*var(--skew-padding));
 }
-
+.titleDiag + .titleDiag{padding-top: 0; margin-top:0;}
 
 .publi:nth-child(2n+1) ,.card-list__item:nth-child(2n+1) {&:before {background: var(--color-primary-lighter-7)}}
 .publi:nth-child(2n+2),.card-list__item:nth-child(2n+2) {&:before {background: var(--color-primary-lighter-8)}}
