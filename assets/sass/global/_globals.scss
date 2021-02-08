@@ -4,6 +4,20 @@
 
 
 :root {
+
+      --width: calc(min( var(--layout-max),90vw));
+
+  @media (min-width: 40rem) {
+     --width: calc(min( var(--layout-max),80vw));
+  }
+  
+  
+
+    --angle: -6deg;
+  --magic-number: 0.0525;
+  --skew-padding: calc(var(--width) * var(--magic-number));
+  //--clip-padding: calc(var(--full-width) * var(--magic-number));
+  
   --gap: 1rem;
   --gap2: calc(2 * var(--gap));
   --gap3: calc(3 * var(--gap));
