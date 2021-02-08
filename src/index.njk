@@ -45,8 +45,9 @@ JSON-LD for:
 
   {% from "macros/postCard.njk" import postCard %}
   {% from "macros/pubCard.njk" import pubCard %}
-
+<div class="titleDiag">
   <h2   class="wrap">Latest Publications</h2>
+    </div>
   <div class="cards-list">
     {% for article in collections.latestPublications %}
       {{ pubCard(article,numbers.numbers2) }}
@@ -54,16 +55,21 @@ JSON-LD for:
   </div>
   
 
-  
+  <div class="titleDiag">
   <h2 class="wrap">Latest posts</h2>
-  
+    </div>
+    
   <div class="cards-list">
     {% for article in collections.latestPosts %}
       {{ postCard(article) }}
     {% endfor %}
   </div>
-
+  
+  <div class="titleDiag">
   <h2 class="wrap">Older noteworthy articles</h2>
+    </div>
+
+  
   <div class="cards-list">
   {% for article in collections.promotedPosts %}
     {{ postCard(article) }}

@@ -8,18 +8,21 @@ tocOver: tocCenter
 
      
       {% from "macros/alterpubCard.njk" import alterpubCard %}
-
+<div class="titleDiag">
   <h2 class="wrap sectionHeadList" id="articles">Articles</h2>
+   </div>
    {{ colByYear(collections.articles,"h3","article-"," titleHead ") |safe }}
 
-      
+      <div class="titleDiag">
   <h2 class="wrap sectionHeadList" id="chapters ">Chapters</h2>
+   </div>
      {{ colByYear(collections.chapters,"h3","chapter-"," titleHead ") |safe}}
 
 
 
-  
+  <div class="titleDiag">
     <h2 class="wrap sectionHeadList" id="varia">Varia</h2>
+     </div>
         {{ colByYear(collections.varia,"h3","varia-"," titleHead " ) |safe }}
 
   
