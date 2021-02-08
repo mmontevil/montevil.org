@@ -28,7 +28,7 @@
     padding: 0;
 
     &.navigation__publications,
-    &.navigation__articles,
+    &.navigation__posts,
     &.navigation__links,
     &.navigation__notes,
     &.navigation__talks {
@@ -60,7 +60,7 @@
 
       a:hover,
       a:focus {
-        color: white;
+        color: var(--color-link-hover);
         text-decoration: none;
       }
     }
@@ -171,29 +171,21 @@
 //   }
 // }
 
-.theme-theme-switch-wrapper{
-width: 2.6em;
-height:1em;
-position: absolute;
-top: 50%;
-left:50%;
+.theme-switch-wrapper{
+display: inline-block;
 
-display: inline;
-margin-bottom: -1em;
-padding: 0;
+justify-content: center;
+vertical-align: middle; 
 
 }
-.theme-theme-switch-wrapper > label{
 
-margin-bottom: -1em;
-
-}
 
 .theme-switchb{transform: translate(0%, 40%);
+ top: -0.2em;
 position: relative;
-width: 1.2em;
+width: 1.3em;
 height: 1.2em;
-margin: 0px;
+padding-bottom: 0.2em;
 appearance: none;
 -webkit-appearance: none;
   
@@ -217,12 +209,12 @@ transition:  background-color 1s ease-in-out;
 
 .theme-switchb:checked:before{
 content: '';
-width: 1em;
-height: 1em;
+width: 0.7em;
+height: 0.7em;
 border-radius: 50%;
 position: absolute;
-left: 0.5em;
-top: 0;
+left: 0.4em;
+top: 0.2em;
 transform-origin: 1em 0.2em;
 background-color: transparent;
 filter: blur(0px);

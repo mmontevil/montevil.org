@@ -1,7 +1,7 @@
 .info,
 .success,
 .warning,
-.error {
+.error, .citationW {
   clear: both;
   padding: calc(var(--gap) / 3);
 
@@ -27,7 +27,7 @@
 .info.info,
 .success.success,
 .warning.warning,
-.error.error {
+.error.error, .citationW.citationW {
   & a:hover,
   & a:focus,
   & a:active {
@@ -100,3 +100,33 @@
     text-decoration-color: #843534;
   }
 }
+
+.citationW {
+  color: var(--color-primary-lighter-1);
+  background-color: var(--color-primary-lighter-7);
+  border-color:  var(--color-primary-lighter-3);
+
+  &::before {
+    content: url(/assets/icons/info.svg);
+  }
+
+  a:link,
+  a:visited {
+    
+   color: var(--color-primary-darker-4)  ;
+   // text-decoration-color: #843534;
+  }
+
+}
+.citationW.citationW {  color: var(--color-primary-lighter-1);
+  background-color: var(--color-primary-lighter-7);
+  border-color:  var(--color-primary-lighter-3);
+    a:link,
+  a:visited {
+    
+   color: var(--color-primary-darker-4)  ;
+   // text-decoration-color: #843534;
+  }
+  a:hover{color: var(--color-link-hover);  }
+}
+

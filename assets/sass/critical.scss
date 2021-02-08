@@ -36,6 +36,7 @@ html {
   // https://twitter.com/lfredolo/status/1240301405325361152
   overflow-y: scroll;
   scroll-margin-top: 5rem;
+
     // overflow-y: hidden;
 }
 
@@ -44,6 +45,7 @@ html:focus-within {
 }
 
 body {
+
   font-size: var(--font-size-m);
   font-weight: 400;
 
@@ -52,7 +54,7 @@ body {
   scroll-margin-top: 5rem;
 
   word-break: break-word;
-  transition: background-color 300ms ease-in-out 0s;
+ // transition: background-color 300ms ease-in-out 0s;
 }
 
 // ************************************************************
@@ -187,7 +189,6 @@ a.deeplink {
     margin-left: 0.3rem;
     padding: 0 0.4rem;
     border-radius: 0.4em;
-    color: #767676;
     text-decoration: none;
 
     svg {
