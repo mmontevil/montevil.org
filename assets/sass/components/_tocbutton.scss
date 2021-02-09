@@ -83,11 +83,11 @@
       stroke-linejoin: round;
       fill: currentColor;
     }
-      display: inline-table;
+/*      display: inline-table;
         padding: 0.12em 0.2em;
                 margin: 0.1em;
           margin-bottom: 0.2em;
-
+*/
         padding-top: 0em;
     border: 1px solid var(--color-primary-lighter-5);
    // border-radius: 0.5em;
@@ -106,39 +106,20 @@
 }
 
 .onclickbutton {
-  padding-left: 1.3em; 
-  background-size: 1.4em 1.4em;
-  background-position:  0.2em; 
-  background-repeat: no-repeat;
-    @include chvronR-color('%23691449');
-    
+    .unfolded{display: none;}
   border:0; 
   &:link,  &:visited,&:hover,
   &:focus {
    border:0; 
    }
-    &:hover,
-  &:focus {
-       @include chvronR-color('%23fff');
-   }
+
 }
 .onclickbuttonon {
-    @include chvronD-color('%23691449');
-  &:link,  &:visited,&:hover,
-  &:focus {
-   border:0; 
-   }
-    &:hover,
-  &:focus {
-       @include chvronD-color('%23fff');
-   }
+  .folded{display: none;} 
+  .unfolded{display: inline;}
 }
 
-.onclickbutton {
-  text-indent: 1em; 
-  background-size: 1.2em 1.2em;
-  background-position:  0.2em; 
-}
+
 
 
 

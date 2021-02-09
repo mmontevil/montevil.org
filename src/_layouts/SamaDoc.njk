@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+
+
+<article
+    class="page wrap h-entry"
+    lang="{{ lang }}">
+
+
+
+
+    <h1 class="page__title p-name">{{ title | orphans | safe }}</h1>
+
+
+
+  <div class="page__body e-content">
+  <hr><div class="centerList">
+    {{ collections.all | eleventyNavigation | eleventyNavigationToHtml(
+    {
+    activeListItemClass: "selected-A", 
+    activeKey: eleventyNavigation.key
+    }) | safe }}</div>
+    <hr>
+    
+      {{ content | safe }}
+      
+      
+  <hr><div class="centerList">
+    {{ collections.all | eleventyNavigation | eleventyNavigationToHtml(
+    {
+    activeListItemClass: "selected-A", 
+    activeKey: eleventyNavigation.key
+    }) | safe }}</div>
+    <hr>
+  </div>
+
+
+
+  {% set articleUrl = page.url %}
+  {% include "components/webmentions.njk" %}
+
+  </article>
+

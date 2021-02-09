@@ -94,6 +94,8 @@ eleventyConfig.addPlugin(readingTime);
 const pluginTOC = require('eleventy-plugin-nesting-toc')
  
   eleventyConfig.addPlugin(pluginTOC,{tags:['h3', 'h4', 'h5', 'h6'], wrapperClass:' autotoc indent '})
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
 
   // ------------------------------------------------------------------------

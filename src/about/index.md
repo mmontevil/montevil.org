@@ -4,7 +4,7 @@ layout: page
 lang: en
 ---
 
-![](/assets/me/Montevil.jpg){.logo}{.portrait}{.noDarkFilter}
+![Maël Montévil](/assets/me/Montevil.jpg){.logo}{.portrait}{.noDarkFilter}
 
 ::: lead
 I am a *theoretical biologist* working at the crossroads of experimental biology, mathematics, and philosophy. I work both on the ways to understand living things and to take care of them in the Anthropocene, among [many more specific topics](/tags/).

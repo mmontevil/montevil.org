@@ -24,7 +24,7 @@
     <ul class="tools" role="list">    {% if upnav %}
         <li class="navigation__{{ type }}{% if url in page.url %} current" aria-current="page{% endif %}">
          {#<a href="#{{ upnav }}">TOP</a>#}
-          <a class="onclickbutton" onclick="openNav()" id="navToc">TOC</a>
+          <a class="onclickbutton" onclick="openNav()" id="navToc"><span class="abssvg folded">{% icon "chevronRight", "Link" %}</span><span class="abssvg unfolded">{% icon "chevronDown", "Link" %}</span>toc</a>
         </li>
         {% endif %}
       <li class="tools__search navigation_archives{% if 'archives' in page.url %} current" aria-current="page{% endif %}">

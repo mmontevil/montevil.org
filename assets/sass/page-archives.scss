@@ -176,10 +176,10 @@ margin-top: var(--flow-space, 1em);
 .ais-HierarchicalMenu-item2 {
   padding-left: 2em;
 }
-.ais-HierarchicalMenu-item--selected > div > a, .ais-RefinementList-item--selected  >a, {
- // font-weight: bold;
-  background-color: var(--color-primary-lighter-7);
-}
+.ais-HierarchicalMenu-item--selected > div > a, .ais-RefinementList-item--selected  >a {color: var(--color-primary-darker-2) ;
+  background-color: var(--color-primary-lighter-6);  &:hover{color: var(--color-link-hover) ;
+    background-color: var(--color-primary-darker-2);
+}}
 
 // RefinementList
 //.ais-RefinementList-item--selected .ais-RefinementList-labelText {

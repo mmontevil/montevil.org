@@ -36,11 +36,21 @@
   font-size: var(--font-size-xs);
 }
 .svgnofill{
-    svg {
+    svg {      vertical-align: middle;
       fill: none;
     }
 } 
-
+.abssvg{
+    svg {      vertical-align: middle;
+      font-size: 1.2em;
+      stroke: currentColor;
+      stroke-width: 2px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: currentColor;
+      fill: none;
+    }
+} 
 
 .publink {
         padding: 0.12em 0.3em;
@@ -125,28 +135,26 @@ color: var(--color-link);
   cursor: pointer;
   padding: 0.45em;
  // background: rgba(230,230,230,0.5);
-  padding-left: 1.3em;
-  background-size: 1.4em 1.4em;
-  background-position: 0 0.4em;
-  background-repeat: no-repeat;
+ // padding-left: 1.3em;
+
+}
+.accordion label .unfolded{
+display: none;}
+
+.accordion > input[type="checkbox"]:checked ~ .handle label .folded{
+  display: none;
+}
+.accordion > input[type="checkbox"]:checked ~ .handle label .unfolded{
+  display: inline;
 }
 
 
-.accordion label {
-@include chvronR-color('%23691449');
-}
 
 .accordion label:hover,
 .accordion label:focus {
   color: var(--color-link-hover);
       background-color: var(--color-link-hover-bg);
-@include chvronR-color('%23fff');
 }
 
 
-.accordion > input[type="checkbox"]:checked ~ .handle label {
-  @include chvronD-color('%23691449');
-}
-.accordion > input[type="checkbox"]:checked ~ .handle label:hover,.accordion > input[type="checkbox"]:checked ~ .handle label:focus {
-  @include chvronD-color('%23fff');
-}
+

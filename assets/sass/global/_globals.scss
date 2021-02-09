@@ -2,7 +2,6 @@
 
 
 
-
 :root {
 
       --width: calc(min( var(--layout-max),90vw));
@@ -128,8 +127,9 @@
     filter: none;
   }
 
+--limbes0: var(limb);
 }
-
+ 
 
 [data-theme="dark"] {
   
@@ -168,7 +168,7 @@
   --color-meta-decoration: #666666;
 
   --color-gold: hsl(50, 91%, 30%);
-  --color-yellow-light: hsl(59, 100%, 88%);
+  --color-yellow-light: hsl(171, 68%, 25%);
 
   --border-width: 0.15em;
     --color-accord: var(--color-primary-lighter-4);
@@ -194,6 +194,7 @@
 --svg-hover:'%23000';
     img {
     filter: hue-rotate(180deg) invert(100%);
+    
   }
 #footer {
     filter: hue-rotate(180deg) invert(100%) grayscale(0.5);

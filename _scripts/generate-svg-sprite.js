@@ -26,6 +26,8 @@ const ICONS_LIST = {
     download: { title: 'Download' },
     'external-link': { name: 'exlink', title: 'external-link' },  
         link: { title: 'Link' },
+     'chevrons-down': { name: 'chevronDown', title: 'chevron-down' },  
+    'chevrons-right': { name: 'chevronRight', title: 'chevron-right' },  
   },
   simple: {
     flickr: { title: 'Flickr' },
