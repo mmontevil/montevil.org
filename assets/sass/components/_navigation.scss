@@ -209,8 +209,8 @@ transition:  background-color 1s ease-in-out;
 
 .theme-switchb:checked:before{
 content: '';
-width: 0.7em;
-height: 0.7em;
+width: 0.6em;
+height: 0.6em;
 border-radius: 50%;
 position: absolute;
 left: 0.4em;
@@ -265,5 +265,5 @@ background-color: #f5daaa;
 }
 
 
-
+.theme-switchb:hover{background-color: var(--color-link-hover-bg)} 
 

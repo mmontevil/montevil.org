@@ -2,7 +2,31 @@ const cheerio = require('cheerio');
 const truncateHtml = require('truncate-html');
 const entities = require('entities');
 
+var rehype = require('rehype')
+var link = require('rehype-autolink-headings')
+var options={
+  behavior:"append" ,
+  properties: {class : "deeplink"},
+  content : {type: 'text', value: 'svgPlaceHolder'}
+}
+
+
 module.exports = {
+  addAnchor: (content) => {
+   var file000="";
+    rehype().data('settings', {fragment: true}).use(link,options).process(String(content), function(err, file) {
+    var res=String( file);
+res=res.replaceAll('mfenced close=")" open separators','mfenced close=")" open="(" separators');
+res=res.replaceAll('mfenced close="∥" open separators','mfenced close="∥" open="∥" separators');
+res=res.replaceAll('mfenced close="]" open separators','mfenced close="]" open="[" separators');
+regexp1= /svgPlaceHolder/gi;
+res=res.replace(regexp1,'<svg class="icon" role="img" focusable="false"><use xlink:href="#symbol-anchor" /></svg>');
+
+file000=res;
+
+  })
+    return file000;
+  },
   divRemove: (content) => {
      const regex = /(<div ((?!(>)).|\n)+>)|(<\/div>)/gm;
     return content.replace(regex, '');

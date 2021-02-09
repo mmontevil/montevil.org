@@ -71,7 +71,8 @@ tags: [{% for entry in keyword.split(', ') %}
 
 <hr class="breakk">
 
- <h2 class="sectionHead indent" id="toc-site"> Table of contents, reading time: ~{{ content   | readingTime({speed:170}) }}</h2>
+ <h2 class="titleHead indent" id="toc-site"> Table of contents</h2>
+  <h3 class="subtitleHead indent" id="toc-site"> Reading time: ~{{ content   | readingTime({speed:170}) }}</h3>
   {{ content | toc | safe }}
  
  
@@ -79,4 +80,4 @@ tags: [{% for entry in keyword.split(', ') %}
 {{overlayToc(content,"",title)|safe}}
 
  <hr class="breakk">
-{{ content | safe }}
+{{ content |addAnchor | safe }}

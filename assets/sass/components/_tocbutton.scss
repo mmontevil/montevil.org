@@ -1,11 +1,5 @@
  
 
-@mixin chvronD-color($color) {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#{$color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevrons-down'%3E%3Cpolyline points='7 13 12 18 17 13'%3E%3C/polyline%3E%3Cpolyline points='7 6 12 11 17 6'%3E%3C/polyline%3E%3C/svg%3E");
-}
-@mixin chvronR-color($color) {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#{$color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevrons-right'%3E%3Cpolyline points='13 17 18 12 13 7'%3E%3C/polyline%3E%3Cpolyline points='6 17 11 12 6 7'%3E%3C/polyline%3E%3C/svg%3E");
-}
 
 
 
@@ -41,7 +35,7 @@
 .overlay a {
   //padding: 8px;
   text-decoration: none;
-  font-size: var(--font-size-xl);
+ // font-size: var(--font-size-xl);
  // color: #818181;
   //display: block; /* Display block instead of inline */
   transition: 0.3s; /* Transition effects on hover (color) */
@@ -144,19 +138,19 @@ color: var(--color-link);
   }
   
    .autotoc > ol >li >a{
-      font-size: var(--font-size-xxl);
-  font-weight: 500;
+      font-size: var(--font-size-l);
+  font-weight: 700;color: var(--color-primary-darker-2 );
   }
       .autotoc > ol >li >ol>li>a{
-          font-size: var(--font-size-xl);
-  font-weight: 500;  color: var(--color-primary-lighter-1 );
+          font-size: var(--font-size-l);
+  font-weight: 500;  color: var(--color-primary );
       }
       .autotoc > ol >li >ol>li>ol>li>a{
-        font-size: var(--font-size-l);color: var(--color-primary-lighter-2 );
-  font-weight: 300;
+        font-size: var(--font-size-m);color: var(--color-primary-lighter-2 );
+  font-weight: 500;
       }
       .autotoc > ol >li >ol>li>ol>li>ol>li>a{ font-style: italic;color: var(--color-primary-lighter-2 );
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-s);
   font-weight: 300;}  
 
      .titleOverToc {
