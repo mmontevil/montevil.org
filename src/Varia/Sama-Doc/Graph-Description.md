@@ -21,7 +21,7 @@ For every image, there are several structures which can be summarized by taking 
 
 For every quantity, the population of replicates is plotted as an estimation of a distribution and as a boxplot. Under the first graph, the quantity plotted is given, here Elon1, then the function in order to go from all the structures in one replicate to one point (here the mean), then the p-value is given for an ANOVA and for the Wilcoxon rank test (when there is only two treatments). Under the boxplot, the average and standard deviation of every Treatment is given.
 
-![Graph](../varia.png){.centerBlock}
+![Graph](varia.png){.centerBlock}
 
 The graph include also a PCA analysis, based on the factominR package for R. This include a plot of the similarity betweeen the two first dimension of the PCA, and of the original quantity, a scatterplot of the replicates on these dimensions and an automatic clustering based on the 4 first dimensions of the PCA.
 
