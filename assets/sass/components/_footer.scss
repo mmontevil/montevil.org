@@ -2,6 +2,7 @@
 // Footer
 // ************************************************************
 
+
 @keyframes revealFooter {
   0% {
     opacity: 0;
@@ -10,11 +11,27 @@
     opacity: 1;
   }
 }
+//.blurryWrap{overflow-y: hidden;}
+.blurryHL{
+  filter: blur(0.5em);
+  height: 1.2em;
+  width:100%;
+ // margin-left: -5%;
+  margin-bottom: -1.5em;
+  margin-top: 0.5em;
+  z-index: -2; 
+  background-color: var(--color-bg);
+  // background-color: white;
+
+  border-color: transparent;
+ // color: transparent;
+}
 
 #footer {
   white-space: nowrap;
   margin: 1em 0 0 0;
   padding: 1em 0;
+  z-index: -3; 
 
   // transition color and padding if background image is added with JS
   color: currentColor;
@@ -35,7 +52,7 @@
   background-image: var(--limbes),
     linear-gradient(
       to bottom,
-      white,
+      var(--color-bg),
       var(--color-primary-lighter-4) 50%,
       var(--color-primary-darker-2) 80%,
       var(--color-primary-darker-5)
@@ -43,7 +60,6 @@
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-
   a:link,
   a:visited {
     color: currentColor;
