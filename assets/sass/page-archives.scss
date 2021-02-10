@@ -157,7 +157,7 @@ margin-top: var(--flow-space, 1em);
 
   .ais-Panel-header {
     font-size: var(--font-size-m);
-    border-bottom: 1px solid colors.$color-grey;
+    border-bottom: 1px solid var(--color-grey);
     
     margin-bottom: 0.3em;
   }
@@ -302,7 +302,12 @@ margin-top: var(--flow-space, 1em);
 .ais-InfiniteHits-loadMore {
   margin-top: var(--gap3);
 }
-
+.searchBox{
+  background-color: var(--color-primary-lighter-7);
+  border-color: var(--color-primary-lighter-4);
+  box-shadow: 10px 5px 5px var(--color-primary-lighter-7);
+   color: var(--color-primary);
+}
 // ************************************************************
 // Before Algolia instant search loads
 // ************************************************************

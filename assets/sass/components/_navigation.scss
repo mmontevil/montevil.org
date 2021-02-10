@@ -34,7 +34,7 @@
     &.navigation__talks {
       display: none;
 
-      @media (min-width: 51em) {
+      @media (min-width: 58em) {
         display: block;
       }
     }
@@ -188,7 +188,9 @@ height: 1.2em;
 padding-bottom: 0.2em;
 appearance: none;
 -webkit-appearance: none;
-  
+  margin: 0 ;
+   margin-right: 0.2em ;
+   
 background-color:darkblue;
 background-size: cover;
 background-repeat: no-repeat;
@@ -203,10 +205,9 @@ overflow: hidden;
   background-color:lightblue;
 transition:  background-color 1s ease-in-out;
 }
-
-
-
-
+.theme-switch{
+color: var(--color-link);
+}
 .theme-switchb:checked:before{
 content: '';
 width: 0.6em;
@@ -215,9 +216,9 @@ border-radius: 50%;
 position: absolute;
 left: 0.4em;
 top: 0.2em;
-transform-origin: 1em 0.2em;
+//transform-origin: 1em 0.2em;
 background-color: transparent;
-filter: blur(0px);
+filter: blur(0.5px);
 animation: sun .7s forwards ease;
 justify: center;
 justify-content: center;
@@ -229,7 +230,7 @@ justify-content: center;
     filter: blur(0px);
 }
 100%{
-    transform: rotate(0deg);
+    //transform: rotate(0deg);
     background-color: #f5daaa;
      filter: blur(1px);
 }
@@ -246,21 +247,21 @@ position: absolute;
 left: -0.1em;
 top: 0.2em;
 filter: blur(1px);
-background-color: #f5daaa;
+//background-color: #f5daaa;
  transform-origin: 1em 0.2em;
- animation: moon .7s forwards ease;
+ animation: moon 1s forwards ease;
 }
 @keyframes moon{
 0%{
     //transform: rotate(0deg);
-    filter: blur(1px);
+    filter: blur(2px);
         box-shadow: 5px -1px 0px #fff;
 }
 100%{
    // transform: rotate(170deg);
     background-color: transparent;
     box-shadow: 5px -1px 0px #fff;
-    filter: blur(0px);
+    filter: blur(0.2px);
 }
 }
 
