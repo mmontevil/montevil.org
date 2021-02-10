@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 import path from 'path';
-import babel from 'rollup-plugin-babel';
+import babel from '@rollup/plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
 import replace from '@rollup/plugin-replace';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
