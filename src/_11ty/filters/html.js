@@ -9,7 +9,7 @@ var options={
   properties: {class : "deeplink"},
   content : {type: 'text', value: 'svgPlaceHolder'}
 }
-
+var replaceall = require("replaceall");
 
 module.exports = {
   addAnchor: (content) => {
@@ -17,10 +17,11 @@ module.exports = {
     rehype().data('settings', {fragment: true}).use(link,options).process(String(content), function(err, file) {
     var res=String( file);
     regexp1= /svgPlaceHolder/gi;
-res=res.replaceAll('mfenced close=")" open separators','mfenced close=")" open="(" separators').replaceAll('mfenced close="∥" open separators','mfenced close="∥" open="∥" separators').replaceAll('mfenced close="]" open separators','mfenced close="]" open="[" separators').replace(regexp1,'<svg class="icon" role="img" focusable="false"><use xlink:href="#symbol-anchor" /></svg>');
-
+res=replaceall('mfenced close=")" open separators','mfenced close=")" open="(" separators',res)
+res=replaceall('mfenced close="∥" open separators','mfenced close="∥" open="∥" separators',res)
+res=replaceall('mfenced close="]" open separators','mfenced close="]" open="[" separators',res)
+res=res.replace(regexp1,'<svg class="icon" role="img" focusable="false"><use xlink:href="#symbol-anchor" /></svg>');
 file000=res;
-
   })
     return file000;
   },
