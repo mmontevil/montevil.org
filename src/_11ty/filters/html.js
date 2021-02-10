@@ -16,11 +16,8 @@ module.exports = {
    var file000="";
     rehype().data('settings', {fragment: true}).use(link,options).process(String(content), function(err, file) {
     var res=String( file);
-res=res.replaceAll('mfenced close=")" open separators','mfenced close=")" open="(" separators');
-res=res.replaceAll('mfenced close="∥" open separators','mfenced close="∥" open="∥" separators');
-res=res.replaceAll('mfenced close="]" open separators','mfenced close="]" open="[" separators');
-regexp1= /svgPlaceHolder/gi;
-res=res.replace(regexp1,'<svg class="icon" role="img" focusable="false"><use xlink:href="#symbol-anchor" /></svg>');
+    regexp1= /svgPlaceHolder/gi;
+res=res.replaceAll('mfenced close=")" open separators','mfenced close=")" open="(" separators').replaceAll('mfenced close="∥" open separators','mfenced close="∥" open="∥" separators').replaceAll('mfenced close="]" open separators','mfenced close="]" open="[" separators').replace(regexp1,'<svg class="icon" role="img" focusable="false"><use xlink:href="#symbol-anchor" /></svg>');
 
 file000=res;
 
