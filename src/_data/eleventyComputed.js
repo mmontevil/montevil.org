@@ -257,8 +257,7 @@ module.exports = {
     },
   },
   lead: (data) => lead(data),
-  test: "yop",
-   bibentry: (data) => {
+  bibentry: (data) => {
       var res={};
       for (const entry in data.bibM) {
           if(data.bibM[entry].id===data.page.fileSlug){
@@ -269,4 +268,9 @@ module.exports = {
     },
     title: (data) => data.bibentry.title || data.title ,
   tags: (data) => tags(data),
+  colKey: {
+    lang: (data) => data.lang,
+    date:(data) => data.orderDate,
+    category:(data) => data.category
+  },
 };

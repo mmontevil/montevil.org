@@ -8,6 +8,12 @@ tocOver: tocCenter
 <p class="wrap center ">See also: <a class=" " href="/publications/publicationsbyYear/">Complete Publication list by year</a> </p>
     
       {% from "macros/alterpubCard.njk" import alterpubCard %}
+      
+      <div class="titleDiag">
+  <h2 class="wrap sectionHeadList" id="articles">Books</h2>
+   </div>
+   {{ colByYear(collections.books,"h3","book-"," titleHead ") |safe }}
+   
 <div class="titleDiag">
   <h2 class="wrap sectionHeadList" id="articles">Articles</h2>
    </div>

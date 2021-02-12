@@ -34,7 +34,7 @@
     &.navigation__talks {
       display: none;
 
-      @media (min-width: 58em) {
+      @media (min-width: 47em) {
         display: block;
       }
     }
@@ -43,7 +43,7 @@
     a:visited {
       display: inline-block;
       margin: var(--border-width) 0 0 0;
-      padding: 0.1em 0.5vw 0.2em;
+      padding: 0.1em 0.4vw 0.2em;
       text-decoration: none;
       white-space: nowrap;
     }

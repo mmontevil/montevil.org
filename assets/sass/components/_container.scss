@@ -127,6 +127,6 @@
    color: var(--color-primary-darker-4)  ;
    // text-decoration-color: #843534;
   }
-  a:hover{color: var(--color-link-hover);  }
+  a:hover,a:focus{color: var(--color-link-hover);  }
 }
 

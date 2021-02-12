@@ -1,5 +1,59 @@
 [
   {
+    "DOI": "10.1016/j.pbiomolbio.2016.07.006",
+    "ISSN": "0079-6107",
+    "abstract": "Abstract Organisms, be they uni- or multi-cellular, are agents capable of creating their own norms; they are continuously harmonizing their ability to create novelty and stability, that is, they combine plasticity with robustness. Here we articulate the three principles for a theory of organisms, namely: the default state of proliferation with variation and motility, the principle of variation and the principle of organization. These principles profoundly change both biological observables and their determination with respect to the theoretical framework of physical theories. This radical change opens up the possibility of anchoring mathematical modeling in biologically proper principles.",
+    "author": [
+      {
+        "family": "Soto",
+        "given": "Ana M."
+      },
+      {
+        "family": "Longo",
+        "given": "G."
+      },
+      {
+        "family": "Miquel",
+        "given": "P.-A."
+      },
+      {
+        "family": "Montevil",
+        "given": "M."
+      },
+      {
+        "family": "Mossio",
+        "given": "Matteo"
+      },
+      {
+        "family": "Perret",
+        "given": "N."
+      },
+      {
+        "family": "Pocheville",
+        "given": "A."
+      },
+      {
+        "family": "Sonnenschein",
+        "given": "Carlos"
+      }
+    ],
+    "container-title": "Progress in Biophysics and Molecular Biology",
+    "id": "2016-SLN-Conclusion-Century-Organism",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "keyword": "Individuation",
+    "page": "77 - 82",
+    "title": "Toward a theory of organisms: Three founding principles in search of a useful integration",
+    "type": "article-journal",
+    "volume": "122"
+  },
+  {
     "DOI": "10.24019/jtavr.7",
     "author": [
       {
@@ -693,6 +747,7 @@
     "volume": "122"
   },
   {
+    "abstract": "This focused issue of Progress in Biophysics and Molecular Biology is entitled \"From the century of the genome to the century of the organism: New theoretical approaches.\" It was developed during Ana M. Soto’s tenure as Blaise Pascal Chair of Biology 2013-15 at the Ecole Normale Supérieure (ENS, Paris, France). Giuseppe Longo was the Pascal Chair host at the ENS. This ongoing theoretical was also used as the content of a 10 session course attended by graduate students and post-graduates, which took place at the National Museum of Natural History and at the ENS. The attendants of course encouraged the guest editors to make this material easily available, hence the origin of PBMB issue.",
     "author": [
       {
         "family": "Soto",
@@ -736,7 +791,7 @@
       }
     ],
     "container-title": "Progress in Biophysics and Molecular Biology, Special issue",
-    "id": "2016-SLN-Conclusion-Century-Organism",
+    "id": "2016-SLN-Century-Organism",
     "issued": {
       "date-parts": [
         [
@@ -1036,7 +1091,7 @@
       }
     ],
     "collection-title": "Lecture Notes in Morphogenesis",
-    "id": "2014-LM-PerspectivesOrganismsBiological",
+    "id": "2014-LM-Perspectives-Organisms",
     "issued": {
       "date-parts": [
         [
@@ -1125,6 +1180,28 @@
     "title": "The Inert vs. the Living State of Matter: Extended Criticality, Time Geometry, Anti-Entropy — an overview",
     "type": "article-journal",
     "volume": "3"
+  },
+  {
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "genre": "thèse de doctorat",
+    "id": "2011-Montevil-TempsBiologiqueEt",
+    "issued": {
+      "date-parts": [
+        [
+          2011,
+          10,
+          7
+        ]
+      ]
+    },
+    "publisher": "Mémoire de Thèse - Université Paris V",
+    "title": "Temps biologique et transitions critiques étendues - Vers une objectivation de l’état vivant de la matière",
+    "type": "thesis"
   },
   {
     "DOI": "10.1007/s12064-010-0116-6",

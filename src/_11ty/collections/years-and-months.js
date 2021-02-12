@@ -2,7 +2,7 @@
 // https://github.com/11ty/eleventy/issues/502#issuecomment-498234424
 
 const moment = require('moment');
-const getFilteredCollection = require('../../_utils/filter-collection');
+const getFilteredCollection = require('../../_utils/get-collection');
 
 
 
@@ -63,74 +63,58 @@ const contentsByYear = (collection) => {
 };
 
 let collections = {
-  yearsWithPosts: (collection) => {
-    return yearsWithContent(getFilteredCollection(collection, 'posts'));
-  },
-  monthsWithPosts: (collection) => {
-    return monthsWithContent(getFilteredCollection(collection, 'posts'));
-  },
-  yearsWithLinks: (collection) => {
-    return yearsWithContent(getFilteredCollection(collection, 'links'));
-  },
-  monthsWithLinks: (collection) => {
-    return monthsWithContent(getFilteredCollection(collection, 'links'));
-  },
-  yearsWithNotes: (collection) => {
-    return yearsWithContent(getFilteredCollection(collection, 'notes'));
-  },
-  monthsWithNotes: (collection) => {
-    return monthsWithContent(getFilteredCollection(collection, 'notes'));
-  },
-  yearsWithTalks: (collection) => {
-    return yearsWithContent(getFilteredCollection(collection, 'talks'));
-  },
-  monthsWithTalks: (collection) => {
-    return monthsWithContent(getFilteredCollection(collection, 'talks'));
-  },
-  yearsWithArchives: (collection) => {
-    return yearsWithContent(getFilteredCollection(collection, 'archives'));
-  },
-  monthsWithArchives: (collection) => {
-    return monthsWithContent(getFilteredCollection(collection, 'archives'));
-  },
-
-  yearsWithPublications: (collection) => {
-    return yearsWithContent(getFilteredCollection(collection, 'publications'));
-  },
-  monthsWithPublications: (collection) => {
-    return monthsWithContent(getFilteredCollection(collection, 'publications'));
-  },
-    yearsWithChapters: (collection) => {
-    return yearsWithContent(getFilteredCollection(collection, 'chapters'));
-  },
-  monthsWithChapters: (collection) => {
-    return monthsWithContent(getFilteredCollection(collection, 'chapters'));
-  },
-    yearsWithArticles: (collection) => {
-    return yearsWithContent(getFilteredCollection(collection, 'articles'));
-  },
-  monthsWithArticles: (collection) => {
-    return monthsWithContent(getFilteredCollection(collection, 'articles'));
-  },
-    yearsWithVaria: (collection) => {
-    return yearsWithContent(getFilteredCollection(collection, 'varia'));
-  },
-  monthsWithVaria: (collection) => {
-    return monthsWithContent(getFilteredCollection(collection, 'varia'));
-  },    
+  
 };
 
-['publications','posts', 'links', 'notes', 'talks', 'archives','chapters','articles','varia'].forEach(
+const latestNb = 3;
+const promotedNb = 3;
+
+
+['','fr', 'en'].forEach(
+  (lang) => {
+['publications','posts', 'links', 'notes', 'talks', 'archives','chapters','articles','varia','books'].forEach(
   (collectionName) => {
     // collections for yearly archives
-    collections[`${collectionName}ByYear`] = (collection) => {
+    collections[`${collectionName}${lang}ByYear`] = (collection) => {
       return contentsByYear(getFilteredCollection(collection, collectionName));
     };
-    // collections for monthly archives
-    collections[`${collectionName}ByMonth`] = (collection) => {
+
+      collections[`yearsWith${collectionName}${lang}`] =     (collection) => {
+    return yearsWithContent(getFilteredCollection(collection, collectionName));
+  };   
+   collections[`${collectionName}${lang}`]  =(collection) => {
+    return getFilteredCollection(collection, collectionName);
+  };
+   collections[`latest${collectionName}${lang}`] = (collection) => {
+    // latest articles
+    return getFilteredCollection(collection, collectionName).slice(0, latestNb);
+  };
+  collections[`promoted${collectionName}${lang}`] = (collection) => {
+    // promoted articles within not the latest ones
+    return getFilteredCollection(collection, collectionName)
+      .slice(latestNb)
+      .filter((article) => article.data.promoted)
+      .slice(0, promotedNb);
+  };
+ /* eleventyConfig.addCollection("onlyMarkdown", function(collectionApi) {
+    return collectionApi.getAllSorted().filter(function(item) {
+      // Only return content that was originally a markdown file
+      let extension = item.inputPath.split('.').pop();
+      return extension === "md";
+    });
+  });*/
+  
+  // collections for monthly archives
+ /*   collections[`${collectionName}ByMonth`] = (collection) => {
       return contentsByMonth(getFilteredCollection(collection, collectionName));
-    };
+    };*/
+  /* collections[`monthsWith${collectionName}`] =   (collection) => {
+    return monthsWithContent(getFilteredCollection(collection, collectionName));
+  } ;*/   
+    
+    
   }
 );
-
+  }
+);
 module.exports = collections;

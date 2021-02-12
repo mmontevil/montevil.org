@@ -6,13 +6,13 @@
           <ul class="no-ais-RefinementList-list">
             {% for type in pubtypes.types %}
               {% if type == currentType -%}
-                <li class="ais-RefinementList-item {% if type == 'articles' or type == 'chapters' or type == 'varia'  -%}  ais-HierarchicalMenu-item2   {% endif %} ais-RefinementList-item--selected ">
+                <li class="ais-RefinementList-item {% if type in pubtypes.subtypes  -%}  ais-HierarchicalMenu-item2   {% endif %} ais-RefinementList-item--selected ">
                 
                   <a href="/archives/{% if currentYear %}{{ currentYear}}/{% endif %}{% if currentMonth %}{{ currentMonth}}/{% endif %}">{{ type }}</a>
                   <span class="ais-RefinementList-count">{{ collections[type] | length }}</span>
                 </li>
               {% else %}
-                <li class="ais-RefinementList-item {% if type == 'articles' or type == 'chapters' or type == 'varia'  -%}  ais-HierarchicalMenu-item2   {% endif %} "> 
+                <li class="ais-RefinementList-item {% if type in pubtypes.subtypes -%}  ais-HierarchicalMenu-item2   {% endif %} "> 
                   <a href="/{{ type }}/">{{ type }}</a>
                   <span class="ais-RefinementList-count">{{ collections[type] | length }}</span>
                 </li>
@@ -30,7 +30,7 @@
             <div class="ais-Panel-header">Dates</div>
             <div class="ais-HierarchicalMenu">
               <ul class="ais-HierarchicalMenu-list">
-                {% for year in collections["yearsWith" + currentType | capitalize] %}
+                {% for year in collections["yearsWith" + currentType ] %}
                   {% if year == currentYear %}
                     <li class="ais-HierarchicalMenu-item ais-HierarchicalMenu-item--selected ais-HierarchicalMenu-item--parent">
                       <div>
@@ -43,7 +43,7 @@
                       </div>
                      {# <div class="ais-HierarchicalMenu-list--child">
                         <ul class="ais-HierarchicalMenu-list">
-                          {% for month in collections["monthsWith" + currentType | capitalize] %}
+                          {% for month in collections["monthsWith" + currentType ] %}
                             {% set monthYear = month | split('/') | first %}
                             {% set monthMonth = month | split('/') | offset(1) | first %}
                             {% if monthYear == currentYear %}
@@ -69,11 +69,7 @@
                   {% endif %}
                 {%- endfor %}
               </ul>
-            </div><p><a class=" " href="/publications/publicationsbyYear/">Complete Publication list by year</a></p>
-            
-          
-            
-            
+            </div><p><a class=" " href="/publications/publicationsbyYear/">Complete Publication list by year</a></p>            
           </div>
         {% endblock %}
       </div>
