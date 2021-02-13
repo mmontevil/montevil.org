@@ -7,16 +7,17 @@ isArchive: true
 
 {% from "macros/itemCard.njk" import itemCard %}
 
+{% set currentLang = page.url | split("/") | offset(1) | first %}
 
-{% set currentType = page.url | split("/") | offset(1) | first %}
+{% set currentType = page.url | split("/") | offset(2) | first %}
 
-{% set currentYear = page.url | split("/") | offset(2) | first %}
+{% set currentYear = page.url | split("/") | offset(3) | first %}
 {% set regExpYear = r/^[0-9]{4}$/g %}
 {% if not regExpYear.test(currentYear) %}
   {% set currentYear = false %}
 {% endif %}
 
-{% set currentMonth = page.url | split("/") | offset(3) | first %}
+{% set currentMonth = page.url | split("/") | offset(4) | first %}
 {% set regExpMonth = r/^[0-9]{2}$/g %}
 {% if not regExpMonth.test(currentMonth) %}
   {% set currentMonth = false %}
@@ -58,28 +59,28 @@ isArchive: true
   <input type="hidden" name="k8" value="var(--color-bg)"/>
   <input type="hidden" name="k9" value="var(--color-lighter-5)"/>
   <input type="hidden" name="kt" value="h"/>
-  <input type="text" name="q" maxlength="255" placeholder="Search&hellip;" class="centerBlock searchBox" />
-  <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
+  <label class="center"> <p class="center">Search  DuckDuckGo:</p><input type="text" name="q" maxlength="255" placeholder="Search&hellip;" class="centerBlock searchBox" /></label>
+ <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
 </form>
 
       <div>
         <div class="cards-list0">
           {% if currentMonth %}
-            {% for item in collections[currentType + 'ByMonth'][currentYear + '/' + currentMonth] %}
+            {% for item in collections[currentType +currentLang + 'ByMonth'][currentYear + '/' + currentMonth] %}
                 {{ itemCard(item,numbers.numbers2) }}
             {% endfor %}
           {% elif currentYear %}
-            {% for item in collections[currentType + 'ByYear'][currentYear] | limit(10) %}
+            {% for item in collections[currentType +currentLang + 'ByYear'][currentYear] | limit(10) %}
                 {{ itemCard(item,numbers.numbers2) }}
             {% endfor %}
-            {% if collections[currentType + 'ByYear'][currentYear].length > 10 %}
+            {% if collections[currentType  +currentLang + 'ByYear'][currentYear].length > 10 %}
               <p>Filter by month to see more {{ currentType }} from year {{ currentYear }}.</p>
             {% endif %}
           {% else %}
-            {% for item in collections[currentType] | limit(10) %}
+            {% for item in collections[currentType+currentLang ] | limit(10) %}
                 {{ itemCard(item,numbers.numbers2) }}
             {% endfor %}
-            {% if collections[currentType].length > 10 %}
+            {% if collections[currentType+currentLang].length > 10 %}
               <p class= "wrap">Filter by year and month to see more {{ currentType }}.</p>
             {% endif %}
           {% endif %}

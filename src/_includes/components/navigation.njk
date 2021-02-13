@@ -14,7 +14,16 @@
         'feeds',
         'about'
       ] %}
+      
+       {% if type in [
+      'publications',
+        'posts',
+        'links',
+        'talks'] %} {% set url = '/all/' + type + '/' %}
+        {% else %}
         {% set url = '/' + type + '/' %}
+        {% endif %}
+        
         <li class="navigation__{{ type }}{% if url in page.url %} current" aria-current="page{% endif %}">
           <a href="{{ url }}">{{ type }}</a>
         </li>
@@ -28,7 +37,7 @@
         </li>
         {% endif %}
       <li class="tools__search navigation_archives{% if 'archives' in page.url %} current" aria-current="page{% endif %}">
-        <a href="/archives/">{% icon "search", "Search" %} archives</a>
+        <a href="/all/archives/">{% icon "search", "Search" %} archives</a>
       </li>
       <li class="tools__search">
       <div class="theme-switch-wrapper">

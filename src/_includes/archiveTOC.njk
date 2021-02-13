@@ -1,69 +1,78 @@
  
 <div class="refinements wrap ">
-      <div id="types-list">
-        <div class="ais-Panel">
-          <div class="ais-Panel-header">Types</div>
+        <div class="ais-Panel" id="lang-list">
+       
+       <div class="ais-Panel-header">Languages</div>
+        <ul class="no-ais-RefinementList-list">
+            {%- for lang in ["all","fr","en"] -%}
+            {% if 0 === collections[currentType+lang] | length -%}
+                            <li class="ais-RefinementList-item ">
+                
+                  {{ lang }}
+            {% else %}        {% if lang == currentLang -%}
+                <li class="ais-RefinementList-item  ais-RefinementList-item--selected ">
+                
+                  <a href="/all/{{ currentType}}/{% if currentYear %}{{ currentYear}}/{% endif %}{% if currentMonth %}{{ currentMonth}}/{% endif %}">{{ lang }}</a>
+              {% else %}
+                <li class="ais-RefinementList-item  "> 
+                  <a href="/{{lang}}/{{ currentType }}/">{{ lang }}</a>
+              {%- endif -%}{%- endif -%}
+                <span class="ais-RefinementList-count">{{ collections[currentType+lang] | length }}</span>
+                </li>
+                {% endfor -%}
+        </ul>
+       
+       </div>
+        <div class="ais-Panel" id="types-list">
+       <div class="ais-Panel-header">Types</div>
           <ul class="no-ais-RefinementList-list">
             {% for type in pubtypes.types %}
+            {% if 0 === collections[type+currentLang] | length -%}
+                            <li class="ais-RefinementList-item {% if type in pubtypes.subtypes  -%}  ais-HierarchicalMenu-item2   {% endif %} ">
+                
+                  {{ type }}
+            {% else %}
               {% if type == currentType -%}
                 <li class="ais-RefinementList-item {% if type in pubtypes.subtypes  -%}  ais-HierarchicalMenu-item2   {% endif %} ais-RefinementList-item--selected ">
                 
-                  <a href="/archives/{% if currentYear %}{{ currentYear}}/{% endif %}{% if currentMonth %}{{ currentMonth}}/{% endif %}">{{ type }}</a>
-                  <span class="ais-RefinementList-count">{{ collections[type] | length }}</span>
-                </li>
+                  <a href="/{{ currentLang}}/archives/{% if currentYear %}{{ currentYear}}/{% endif %}{% if currentMonth %}{{ currentMonth}}/{% endif %}">{{ type }}</a>
+
               {% else %}
                 <li class="ais-RefinementList-item {% if type in pubtypes.subtypes -%}  ais-HierarchicalMenu-item2   {% endif %} "> 
-                  <a href="/{{ type }}/">{{ type }}</a>
-                  <span class="ais-RefinementList-count">{{ collections[type] | length }}</span>
+                  <a href="/{{ currentLang}}/{{ type }}/">{{ type }}</a>
+              {%- endif -%}{%- endif -%}
+                <span class="ais-RefinementList-count">{{ collections[type+currentLang] | length }}</span>
                 </li>
-              {%- endif -%}
             {% endfor %}
           </ul><p><a class=" " href="/publications/publicationsbyType/">Complete Publication list by category</a></p>
         </div>
-      </div>
-      {#<div id="tags-list"></div>#}
-      <div id="dates-menu">
+      
+      {#</div><div id="tags-list"></div>#}
+      <div id="dates-menu" class="ais-Panel">
           
       
         {% block dates %}
-          <div class="ais-Panel">
+      
             <div class="ais-Panel-header">Dates</div>
             <div class="ais-HierarchicalMenu">
               <ul class="ais-HierarchicalMenu-list">
-                {% for year in collections["yearsWith" + currentType ] %}
+                {% for year in collections["yearsWith" + currentType +currentLang ] %}
                   {% if year == currentYear %}
                     <li class="ais-HierarchicalMenu-item ais-HierarchicalMenu-item--selected ais-HierarchicalMenu-item--parent">
                       <div>
                         {% if currentMonth %}
-                          <a class="ais-HierarchicalMenu-link" href="/{{ currentType }}/{{ year }}/">{{ year }}</a>
+                          <a class="ais-HierarchicalMenu-link" href="/{{currentLang}}/{{ currentType }}/{{ year }}/">{{ year }}</a>
                         {% else %}
-                          <a class="ais-HierarchicalMenu-link" href="/{{ currentType }}/">{{ year }}</a>
+                          <a class="ais-HierarchicalMenu-link" href="/{{currentLang}}/{{ currentType }}/">{{ year }}</a>
                         {% endif %}
-                        <span class="ais-RefinementList-count">{{ collections[currentType + 'ByYear'][year] | length }}</span>
+                        <span class="ais-RefinementList-count">{{ collections[currentType+currentLang  + 'ByYear'][year] | length }}</span>
                       </div>
-                     {# <div class="ais-HierarchicalMenu-list--child">
-                        <ul class="ais-HierarchicalMenu-list">
-                          {% for month in collections["monthsWith" + currentType ] %}
-                            {% set monthYear = month | split('/') | first %}
-                            {% set monthMonth = month | split('/') | offset(1) | first %}
-                            {% if monthYear == currentYear %}
-                              <li class="ais-HierarchicalMenu-item">
-                                {% if monthMonth == currentMonth %}
-                                  <strong>{{ monthMonth }}</strong>
-                                {% else %}
-                                  <a class="ais-HierarchicalMenu-link" href="/{{ currentType }}/{{ year }}/{{ monthMonth }}/">{{ monthMonth }}</a>
-                                {% endif %}
-                              </li>
-                            {% endif %}
-                          {% endfor %}
-                        </ul>
-                      </div> #}
                     </li>
                   {% else %}
                     <li class="ais-HierarchicalMenu-item">
                       <div>
-                        <a class="ais-HierarchicalMenu-link" href="/{{ currentType }}/{{ year }}/">{{ year }}</a>
-                        <span class="ais-RefinementList-count">{{ collections[currentType + 'ByYear'][year] | length }}</span>
+                        <a class="ais-HierarchicalMenu-link" href="/{{currentLang}}/{{ currentType }}/{{ year }}/">{{ year }}</a>
+                        <span class="ais-RefinementList-count">{{ collections[currentType +currentLang + 'ByYear'][year] | length }}</span>
                       </div>
                     </li>
                   {% endif %}
@@ -72,7 +81,7 @@
             </div><p><a class=" " href="/publications/publicationsbyYear/">Complete Publication list by year</a></p>            
           </div>
         {% endblock %}
-      </div>
+     
     {#<div id="langs-list"></div>#}
     </div>
     {#  <div id="stats"></div>

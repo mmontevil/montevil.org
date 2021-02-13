@@ -1,13 +1,13 @@
 let filteredCollectionsMemoization = {};
 let now = new Date().getTime();
-const getCollectionbyCat = (collection, type) => {
-  if (type in filteredCollectionsMemoization) {
-    return filteredCollectionsMemoization[type];
+const getCollectionbyCat = (collection, type,lang) => {
+  if (type+lang in filteredCollectionsMemoization) {
+    return filteredCollectionsMemoization[type+lang];
   } else {
     let filteredCollection = collection.getAll().filter(function(item) {
-      if(type==='archives'){return "category" in item.data;}
+      if(type==='archives'){return "category" in item.data && (lang==='all' || item.data.lang===lang);}
       if(item.data.category){
-         return  item.data.category.includes( type);     
+         return  item.data.category.includes( type)&& (lang==='all' || item.data.lang===lang);     
       }
       return false;
     }).filter((item) => now >= item.date.getTime())

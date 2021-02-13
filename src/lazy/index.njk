@@ -6,7 +6,7 @@ title: Home
 
 <h2 class="wrap" >Recent links</h2>
 <div class="cards-list">
-  {% for link in collections.links | limit(4) %}
+  {% for link in collections.linksall | limit(4) %}
     {{ linkCard(link) }}
   {% endfor %}
 </div>
@@ -16,7 +16,7 @@ title: Home
 
 <h2 class="wrap">Recent notes</h2>
 <div class="cards-list">
-{% for note in collections.notes | limit(4) %}
+{% for note in collections.notesall | limit(4) %}
   {{ noteCard(note) }}
 {% endfor %}
 </div>

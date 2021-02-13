@@ -7,14 +7,14 @@ permalink: /feeds/links.xml
   <title>{{websiteid.name}} - Links</title>
   <link href="{{ pkg.homepage }}/feeds/links.xml" rel="self"/>
   <link href="{{ pkg.homepage }}/links/"/>
-  <updated>{{ collections.links | rssLastUpdatedDate }}</updated>
+  <updated>{{ collections.linksall | rssLastUpdatedDate }}</updated>
   <id>{{ pkg.homepage }}/links/</id>
   <author>
     <name>{{ pkg.author.name }}</name>
     <email>{{ pkg.author.email }}</email>
   </author>
 
-  {% for entry in collections.links | limit(50) %}
+  {% for entry in collections.linksall | limit(50) %}
     {% set absoluteEntryUrl %}{{ entry.url | url | absoluteUrl(pkg.homepage) }}{% endset %}
     <entry>
       <link href="{{ absoluteEntryUrl }}"/>

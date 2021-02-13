@@ -49,7 +49,11 @@ const contentByDateString = (items, dateFormatter) => {
 const yearsWithContent = (collection) => {
   return generateItemsDateSet(collection, makeDateFormatter('YYYY'));
 };
+const contentsByYear = (collection) => {
+  return contentByDateString(collection, makeDateFormatter('YYYY'));
+};
 
+/*
 const monthsWithContent = (collection) => {
   return generateItemsDateSet(collection, makeDateFormatter('YYYY/MM'));
 };
@@ -57,10 +61,8 @@ const monthsWithContent = (collection) => {
 const contentsByMonth = (collection) => {
   return contentByDateString(collection, makeDateFormatter('YYYY/MM'));
 };
+*/
 
-const contentsByYear = (collection) => {
-  return contentByDateString(collection, makeDateFormatter('YYYY'));
-};
 
 let collections = {
   
@@ -69,29 +71,29 @@ let collections = {
 const latestNb = 3;
 const promotedNb = 3;
 
-
-['','fr', 'en'].forEach(
+  
+['all','fr', 'en'].forEach(
   (lang) => {
 ['publications','posts', 'links', 'notes', 'talks', 'archives','chapters','articles','varia','books'].forEach(
   (collectionName) => {
     // collections for yearly archives
     collections[`${collectionName}${lang}ByYear`] = (collection) => {
-      return contentsByYear(getFilteredCollection(collection, collectionName));
+      return contentsByYear(getFilteredCollection(collection, collectionName,lang));
     };
 
       collections[`yearsWith${collectionName}${lang}`] =     (collection) => {
-    return yearsWithContent(getFilteredCollection(collection, collectionName));
+    return yearsWithContent(getFilteredCollection(collection, collectionName,lang));
   };   
    collections[`${collectionName}${lang}`]  =(collection) => {
-    return getFilteredCollection(collection, collectionName);
+    return getFilteredCollection(collection, collectionName,lang);
   };
    collections[`latest${collectionName}${lang}`] = (collection) => {
     // latest articles
-    return getFilteredCollection(collection, collectionName).slice(0, latestNb);
+    return getFilteredCollection(collection, collectionName,lang).slice(0, latestNb);
   };
   collections[`promoted${collectionName}${lang}`] = (collection) => {
     // promoted articles within not the latest ones
-    return getFilteredCollection(collection, collectionName)
+    return getFilteredCollection(collection, collectionName,lang)
       .slice(latestNb)
       .filter((article) => article.data.promoted)
       .slice(0, promotedNb);
@@ -111,10 +113,34 @@ const promotedNb = 3;
   /* collections[`monthsWith${collectionName}`] =   (collection) => {
     return monthsWithContent(getFilteredCollection(collection, collectionName));
   } ;*/   
-    
-    
+  
+ 
   }
 );
   }
-);
+);  
+
+const formatter=makeDateFormatter('YYYY');
+collections[`allKeys`] = (collection) => {
+    let catSet = new Set()
+  collection.getAllSorted().forEach(item =>
+
+ item.data.category && item.data.category.forEach(catt =>
+        catSet.add('all/archives')&&
+        catSet.add('all/archives/'+formatter(item.data.orderDate))&&
+        catSet.add('all/'+catt)&&
+        catSet.add('all/'+catt+'/'+formatter(item.data.orderDate))&&
+        catSet.add(item.data.lang+'/archives')&&
+        catSet.add(item.data.lang+'/archives/'+formatter(item.data.orderDate))&&
+        catSet.add(item.data.lang+'/'+catt)&&
+        catSet.add(item.data.lang+'/'+catt+'/'+formatter(item.data.orderDate))
+                            
+))
+
+      
+    return [...catSet];
+  };
+
+
+
 module.exports = collections;

@@ -19,7 +19,7 @@ title: Tweets
 <h1>Tweets</h1>
 
 <h2 id="articles">Articles</h2>
-{% for article in collections.posts | limit(5) %}
+{% for article in collections.postsall | limit(5) %}
   <div class="tweet">
   <p>
     🖋 "{{ article.data.title}}"

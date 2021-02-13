@@ -49,7 +49,7 @@ JSON-LD for:
   <h2   class="wrap">Latest Publications</h2>
     </div>
   <div class="cards-list">
-    {% for article in collections.latestpublications %}
+    {% for article in collections.latestpublicationsall %}
       {{ pubCard(article,numbers.numbers2) }}
     {% endfor %}
   </div>
@@ -60,7 +60,7 @@ JSON-LD for:
     </div>
     
   <div class="cards-list">
-    {% for article in collections.latestposts %}
+    {% for article in collections.latestpostsall %}
       {{ postCard(article) }}
     {% endfor %}
   </div>
@@ -71,7 +71,7 @@ JSON-LD for:
 
   
   <div class="cards-list">
-  {% for article in collections.promotedposts %}
+  {% for article in collections.promotedpostsall %}
     {{ postCard(article) }}
   {% endfor %}
   </div>

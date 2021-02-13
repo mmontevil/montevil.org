@@ -1,0 +1,26 @@
+---
+layout: false
+upnav: true
+pagination:
+  data: collections.allKeys
+  size: 1
+  alias: pathKey
+permalink: "{{pathKey}}/"
+eleventyComputed:
+  title: '{% set currentLang = page.url | split("/") | offset(1) | first %}
+{% set currentType = page.url | split("/") | offset(2) | first %}
+{% set currentYear = page.url | split("/") | offset(3) | first %}
+{{ currentType |capitalize}}
+{% set regExpYear = r/^[0-9]{4}$/g %}
+{% if not regExpYear.test(currentYear) %}
+  {% set currentYear = false %}
+  {%else%} published in  {{currentYear}}
+{% endif %} 
+{% if currentLang ==="fr" %} in french
+{% elif currentLang ==="en" %} in english
+{%endif%}'
+eleventyExcludeFromCollections: true
+---
+{% extends "./_layouts/archives.njk" %}
+
+

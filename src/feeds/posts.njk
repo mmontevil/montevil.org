@@ -8,13 +8,13 @@ permalink: /feeds/posts.xml
   <link href="{{ pkg.homepage }}/feeds/posts.xml" rel="self"/>
   <link href="{{ pkg.homepage }}/posts/"/>
   <link rel="hub" href="http://pubsubhubbub.superfeedr.com/" />
-  <updated>{{ collections.posts | rssLastUpdatedDate }}</updated>
+  <updated>{{ collections.postsall | rssLastUpdatedDate }}</updated>
   <id>{{ pkg.homepage }}/posts/</id>
   <author>
     <name>{{ pkg.author.name }}</name>
     <email>{{ pkg.author.email }}</email>
   </author>
-  {% for entry in collections.posts | limit(50) %}
+  {% for entry in collections.postsall | limit(50) %}
     {% set absoluteEntryUrl %}{{ entry.url | url | absoluteUrl(pkg.homepage) }}{% endset %}
     <entry>
       <title>🖋 {{ entry.data.title }}</title>

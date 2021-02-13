@@ -4,8 +4,8 @@ eleventyComputed:
     orderDate: "{{-page.date | attributeDate-}}"
 ---
 
-{% set newerContent = collections[layout + 's'] | getPreviousCollectionItem(page) %}
-{% set olderContent = collections[layout + 's'] | getNextCollectionItem(page) %}
+{% set newerContent = collections[layout + 'sall'] | getPreviousCollectionItem(page) %}
+{% set olderContent = collections[layout + 'sall'] | getNextCollectionItem(page) %}
 
 {% set cssFilename = "component-older-newer.css" %}
 {% include "add-css.njk" %}

@@ -10,7 +10,7 @@
     {% set aref %}<a href={{itemdata.page.url}}>{{-itemdata.title-}}</a>{%endset%}
   <section  class="publi"><div  class="wrap"><p>{{publabel(itemdata)|safe}} {{ itemdata.bibib | bibcite|divRemove| replace( itemdata.title,aref)|safe}}</p>
   
- <section class="accordion "><input type="checkbox" name="{{itemdata.bibentry.id}}{{rid}}" id="{{itemdata.bibentry.id}}{{rid}}" >
+ <section class="accordion ">{% if not  (itemdata.bibentry.abstract === undefined) %}<input type="checkbox" name="{{itemdata.bibentry.id}}{{rid}}" id="{{itemdata.bibentry.id}}{{rid}}" >{% endif %}
   <p class="handle">  
     <span class="smalltext">{{pubuttons(itemdata) |safe}}</span>{% if not  (itemdata.bibentry.abstract === undefined) %}<label for="{{itemdata.bibentry.id}}{{rid}}" class="smalltext"><span class="abssvg folded">{% icon "chevronRight", "Link" %}</span><span class="abssvg unfolded">{% icon "chevronDown", "Link" %}</span>Abstract</label> 
   </p>

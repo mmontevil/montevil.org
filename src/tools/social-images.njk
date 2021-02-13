@@ -7,7 +7,7 @@ title: Social images
 
 <h1 id="publications">Publications</h1>
 <ol class="cards-list">
-  {% for article in collections.publications | limit(10) %}
+  {% for article in collections.publicationsall | limit(10) %}
     {% set ogTags -%}
     {%- for tag in article.data.tags -%}
     #{{- tag | tagToHashtag -}}%20%20
@@ -20,7 +20,7 @@ title: Social images
 
 <h1 id="posts">Posts</h1>
 <ol class="cards-list">
-  {% for article in collections.posts | limit(10) %}
+  {% for article in collections.postsall | limit(10) %}
     {% set ogTags -%}
     {%- for tag in article.data.tags -%}
     #{{- tag | tagToHashtag -}}%20%20
@@ -32,7 +32,7 @@ title: Social images
 
 <h1 id="links">Links</h1>
 <ol class="cards-list">
-  {% for link in collections.links | limit(10) %}
+  {% for link in collections.linksall | limit(10) %}
     {% set ogImageTitle %}Link: {{ link.data.title }}{% endset %}
     {% set ogTags -%}
     {%- for tag in link.data.tags -%}
@@ -45,7 +45,7 @@ title: Social images
 
 <h1 id="notes">Notes</h1>
 <ol class="cards-list">
-  {% for note in collections.notes | limit(10) %}
+  {% for note in collections.notesall | limit(10) %}
     {% set ogImageTitle %}Note from {{ note.date | formattedDate }}{% endset %}
     {% set ogTags -%}
     {%- for tag in note.data.tags -%}

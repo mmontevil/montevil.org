@@ -9,7 +9,7 @@
 // ************************************************************
 
 .archives {
-  display: grid;
+/*  display: grid;
   grid-template-columns: 1fr 1fr ;
   grid-template-areas:
   'refinements refinements' 
@@ -17,35 +17,62 @@
  
   grid-row-gap: var(--gap2);
   row-gap: var(--gap2);
-}
+*/}
 .refinements {
   // Hide refinements on mobile
   // TODO: find a way to allow refinements
  // display: none;
    display: grid;
   grid-template-columns: 1fr  ;
+        grid-template-areas: 
+      'lang '' types' 
+      '   dates' ;
 }
-
+/*
 @media (min-width: 20rem) {
   .refinements  {
     grid-column-gap: var(--gap);
   column-gap: var(--gap);
-    grid-template-columns:  13rem 1fr;
+    grid-template-columns:   6rem 1fr;
+    grid-template-areas: 'lang-list types-list ' 'dates-menu dates-menu' ;
   }
-}
-@media (min-width: 30rem) {
+}*/
+
+
+@media (min-width: 20em) {
   .refinements  {
     grid-column-gap: var(--gap3);
   column-gap: var(--gap3);
-    grid-template-columns:  1fr 1fr;
+    grid-template-columns:  minmax(5em,1fr) minmax(10em,3fr) ;
+      grid-template-areas: 
+      'lang types' 
+      ' .   dates' ;
+  }
+}
+
+@media (min-width: 30em) {
+  .refinements  {
+    grid-column-gap: var(--gap3);
+  column-gap: var(--gap3);
+    grid-template-columns:  minmax(5em,1fr) minmax(10em,3fr) minmax(6em,2fr);
+      grid-template-areas:  '  lang types dates' ;
   }
 }
 
 
 
-#types-list {
+
+#types-list,#lang-list {
 margin-top: var(--flow-space, 1em);
+grid-area: types;
 }
+#lang-list {
+grid-area: lang;
+}
+#dates-menu {
+grid-area: dates;
+}
+
 #clear-refinements,
 .refinements {
   // Hide refinements on mobile
@@ -73,42 +100,7 @@ margin-top: var(--flow-space, 1em);
 
 
 
-#searchbox {
-  grid-area: searchbox;
 
-  // prepare space to prevent layout shift
-  // input font-size + padding + border
-  min-height: calc(1.5em + 2 * 0.2em + 2 * 1px);
-}
-
-#clear-refinements {
-  grid-area: clear;
-  align-self: center;
-}
-
-#stats {
-  grid-area: stats;
-  font-size: var(--font-size-xs);
-  align-self: center;
-}
-
-#powered-by {
-  grid-area: poweredby;
-  min-height: 1.5em;
-}
-
-#stats,
-#powered-by {
-  margin-top: -1rem;
-}
-
-#stats {
-  display: none;
-
-  @media (min-width: 20em) {
-    display: block;
-  }
-}
 
 .refinements {
   grid-area: refinements;
@@ -218,97 +210,8 @@ margin-top: var(--flow-space, 1em);
   border-radius: 1em;
 }
 
-// ************************************************************
-// Powered by
-// ************************************************************
 
-#powered-by {
-  align-self: center;
-  justify-self: end;
 
-  .ais-PoweredBy-link {
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: transparent;
-    }
-  }
-}
-
-// ************************************************************
-// Search box
-// ************************************************************
-
-.ais-SearchBox-form {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 0.2em 0.5em;
-
-  background-color: colors.$color-lightgrey;
-
-  border-width: 1px;
-  border-style: solid;
-  border-color: colors.$color-grey;
-  border-radius: 2em;
-
-  input,
-  button {
-    font-size: 0.8rem;
-    margin: 0;
-    padding: 0;
-    border: transparent;
-    background-color: transparent;
-    outline: none;
-    width: auto;
-    height: 1.5em;
-  }
-
-  input[type='search']::-webkit-search-cancel-button,
-  input[type='search']::-webkit-search-decoration,
-  input[type='search']::-webkit-search-results-button,
-  input[type='search']::-webkit-search-results-decoration {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-  }
-
-  input[type='search'] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-  }
-
-  $search-button-width: 1.5em;
-  input {
-    flex-grow: 1;
-    max-width: calc(100% - #{$search-button-width} - 0.5em);
-    padding-left: 0.3em;
-  }
-
-  button {
-    width: $search-button-width;
-    fill: colors.$color-darkgrey;
-
-    svg {
-      width: 0.5em;
-      height: 0.5em;
-    }
-  }
-
-  .ais-SearchBox-submit {
-    display: none;
-  }
-}
-
-#searchbox .ais-SearchBox-form {
-  input,
-  button {
-    font-size: var(--font-size-m);
-  }
-}
 
 // ************************************************************
 // Hits list

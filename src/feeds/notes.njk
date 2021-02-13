@@ -8,13 +8,13 @@ permalink: /feeds/notes.xml
   <link href="{{ pkg.homepage }}/feeds/notes.xml" rel="self"/>
   <link href="{{ pkg.homepage }}/notes/"/>
   <link rel="hub" href="http://pubsubhubbub.superfeedr.com/" />
-  <updated>{{ collections.notes | rssLastUpdatedDate }}</updated>
+  <updated>{{ collections.notesall | rssLastUpdatedDate }}</updated>
   <id>{{ pkg.homepage }}/notes/</id>
   <author>
     <name>{{ pkg.author.name }}</name>
     <email>{{ pkg.author.email }}</email>
   </author>
-  {% for entry in collections.notes | limit(50) %}
+  {% for entry in collections.notesall | limit(50) %}
     {% set absoluteEntryUrl %}{{ entry.url | url | absoluteUrl(pkg.homepage) }}{% endset %}
     <entry>
       <title>💬 Note from {{ entry.date | date("Do MMMM YYYY [at] H:mm:ss") }}</title>
