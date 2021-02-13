@@ -21,12 +21,18 @@ module.exports = function (collection) {
           ),
         ];
       }
-      if (item.data.layout === 'publications') {
+      if (item.data.layout === 'publication') {
+  let tagst = [];
+  if(item.data.keyword){
+            tagst = item.data.keyword.toLowerCase().split(', ') ;
+            tagst=tagst.map(st =>(st.trim().replace(/[é,é,è,ê]/g, 'e')));
+    }
         itemTags = [
           ...new Set(
             [].concat(
               ...itemTags,
-              ...item.data.tags
+              ...item.data.tags,
+              ...tagst
             )
           ),
         ];

@@ -46,6 +46,7 @@
       padding: 0.1em 0.4vw 0.2em;
       text-decoration: none;
       white-space: nowrap;
+      
     }
 
     &.current {
@@ -65,7 +66,7 @@
       }
     }
   }
-
+  li:nth-child(1)> a{padding-left:0}
   .tools {
     svg {
       fill: transparent;
@@ -264,7 +265,7 @@ filter: blur(1px);
     filter: blur(0.2px);
 }
 }
-
+.hiddenLabel{display:none;}
 
 .theme-switchb:hover{background-color: var(--color-link-hover-bg)} 
 

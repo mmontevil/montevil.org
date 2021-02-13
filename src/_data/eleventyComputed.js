@@ -1,4 +1,5 @@
 const twitter = require('twitter-text');
+const slugifyString = require('../_utils/slugify');
 
 const dtf = {
   en: new Intl.DateTimeFormat('en-GB', {
@@ -137,13 +138,16 @@ function tags(data) {
   if (data.layout === 'note') {
     tags = twitter.extractHashtags(twitter.htmlEscape(data.content));
   }
-    if (data.layout === 'publication') {
-         //   tags = data.keyword ;
+    if (data.layout === 'publication') {if(data.keyword){
+            tags = data.keyword.toLowerCase().split(', ') ;
+            tags=tags.map(st =>(st.trim().replace(/[é,é,è,ê]/g, 'e')));
+    }
   }
   if (data.tags !== undefined ) {
     // merge and deduplicate
     tags = [...new Set([].concat(...tags, ...data.tags))];
   }
+  
   tags.sort((a, b) => {
     return a.localeCompare(b, 'en', { ignorePunctuation: true });
   });
@@ -267,7 +271,7 @@ module.exports = {
         return res;
     },
     title: (data) => data.bibentry.title || data.title ,
-  tags: (data) => tags(data),
+//  tags: (data) => tags(data),
   colKey: {
     lang: (data) => data.lang,
     date:(data) => data.orderDate,
