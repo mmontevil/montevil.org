@@ -4,7 +4,6 @@ eleventyNavigation:
   key: Trouble
   parent: Troubleshooting
   order: 7
-  title: Troubleshooting
 ---
 # Check list
 

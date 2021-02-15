@@ -4,7 +4,6 @@ eleventyNavigation:
   key: Quantities
   parent: SAMA
   order: 6
-  title: Quantities
 ---
 
 Summary of the relevant quantities, by order of appearance in the pdf produced.

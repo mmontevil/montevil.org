@@ -4,7 +4,6 @@ eleventyNavigation:
   key: Graph
   parent: SAMA
   order: 5
-  title: Graph descriptions
 ---
 
 

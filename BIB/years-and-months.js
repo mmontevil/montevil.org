@@ -74,7 +74,7 @@ const promotedNb = 3;
   
 ['all','fr', 'en'].forEach(
   (lang) => {
-['publications','posts', 'links', 'notes', 'talks', 'archives','chapters','articles','varia','books','SamaDocs'].forEach(
+['publications','posts', 'links', 'notes', 'talks', 'archives','chapters','articles','varia','books'].forEach(
   (collectionName) => {
     // collections for yearly archives
     collections[`${collectionName}${lang}ByYear`] = (collection) => {
@@ -128,13 +128,66 @@ tags.forEach(  (tag) => {
 });
   */
 
+function tags0(data) {
+  let tags = [];
+  if (data.layout === 'note') {
+    tags = twitter.extractHashtags(twitter.htmlEscape(data.content));
+  }
+    if (data.layout === 'publication') {if(data.keyword){
+            tags = data.keyword.toLowerCase().split(', ') ;
+            tags=tags.map(st =>(st.trim().replace(/[é,é,è,ê]/g, 'e')));
+    }
+  }
+  if (data.tags !== undefined ) {
+    // merge and deduplicate
+    tags = [...new Set([].concat(...tags, ...data.tags))];
+  }
+  
+  tags.sort((a, b) => {
+    return a.localeCompare(b, 'en', { ignorePunctuation: true });
+  });
+  return tags;
+}
+
+function generateTags(items) {
+  const formattedTags = items.map((item) => {
+    return tags0(item.data);
+  });
+  const formattedTags2 =formattedTags.flat();
+  return [...new Set(formattedTags2)];
+}
+
+function getItemsByTags(items, tag0) {
+  return items.filter((item) => {
+    return (item.data && ( "genericity" === "genericity"))
+  });
+}
+
+const contentByTag = (items) => {
+  return generateTags(items).reduce(function (
+    collected,
+    tag
+  ) {
+    return Object.assign({}, collected, {
+      // lowercase to match month directory page.url
+      [tag]: getItemsByTags(
+        items,
+        tag
+      ),
+    });
+  },
+  {});
+};
+    collections[`contentByTag0`] = (collection) => {
+      return contentByTag(getFilteredCollection(collection,'archives','all'));
+    };
 
 const formatter=makeDateFormatter('YYYY');
 collections[`allKeys`] = (collection) => {
     let catSet = new Set()
   collection.getAllSorted().forEach(item =>
 
- item.data.category && item.data.category.forEach(catt => 
+ item.data.category && item.data.category.forEach(catt =>
         catSet.add('all/archives')&&
         catSet.add('all/archives/'+formatter(item.data.orderDate))&&
         catSet.add('all/'+catt)&&
@@ -143,7 +196,7 @@ collections[`allKeys`] = (collection) => {
         catSet.add(item.data.lang+'/archives/'+formatter(item.data.orderDate))&&
         catSet.add(item.data.lang+'/'+catt)&&
         catSet.add(item.data.lang+'/'+catt+'/'+formatter(item.data.orderDate))
-                                          
+                            
 ))
 
       

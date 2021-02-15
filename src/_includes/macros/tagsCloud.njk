@@ -1,24 +1,29 @@
 {% macro tagsCloud(tags) %}
 
-{% set minSize = 0.9 %}
-{% set maxSize = 1.8 %}
+{% set minSize = 0.8 %}
+{% set maxSize = 4 %}
 {% set minWeight = 300 %}
 {% set maxWeight = 900 %}
-
+{% set minOpacity = 0.7 %}
+{% set maxOpacity = 1 %}
+{#class="tagscloud__tags"   class="tag{{ tag.step }}" <span style="font-size: 0.8" >({{ tag.number }})</span>#}
 <ol class="tagscloud__tags">
 {% for tag in tags %}
   {% set tagUrl %}/tags/{{ tag.tag | slugify }}/{% endset %}
   {% set fontSize = (maxSize - minSize) * tag.factor + minSize %}
   {% set fontWeight = (maxWeight - minWeight) * tag.factor + minWeight %}
+    {% set fontOpa = (maxOpacity - minOpacity) * tag.factor + minOpacity %}
+
   <li>
     <a href="{{ tagUrl }}"
-      class="tag{{ tag.step }}"
       aria-label="{{ tag.number }} content{% if tag.number > 1 %}s{% endif %} with tag {{ tag.tag }}"
       data-number="{{ tag.number }}"
       style="
         font-size: {{ fontSize | round(2) }}em;
-        font-weight: {{ fontWeight | round(0) }}"
-      rel="tag">{{ tag.tag }}</a>
+        font-weight: {{ fontWeight | round(0) }};
+        opacity: {{fontOpa | round(2)}};
+        "
+      rel="tag">{{ tag.tag }}</a> 
   </li>
 {% endfor %}
 </ol>

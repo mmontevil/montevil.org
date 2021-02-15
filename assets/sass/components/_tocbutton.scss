@@ -15,7 +15,7 @@
   //background-color: rgb(255,255,255); /* Black fallback color */
  // background-color: rgba(255,255,255, 01); /* Black w/opacity */
       background-color: var(--color-primary-lighter-7);
-      background: radial-gradient(circle, var(--color-bg) 0%, var(--color-primary-lighter-8) 55%, var(--color-primary-lighter-7) 100%);
+      background: radial-gradient(circle, var(--color-link-hover) 0%, var(--color-primary-lighter-8) 55%, var(--color-primary-lighter-7) 100%);
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.25s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
     overflow-y: scroll;

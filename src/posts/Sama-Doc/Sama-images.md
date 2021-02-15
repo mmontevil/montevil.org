@@ -1,10 +1,10 @@
 ---
 title: SAMA-images
+excerpt:  3D structures are counted and parameters that define shape, volume and position are measured.
 eleventyNavigation:
   key: images
   parent: SAMA
   order: 3
-  title: SAMA-images
 ---
 
 _**Important:**_

@@ -1,5 +1,8 @@
 ---
-layout: default
+layout: content
+eleventyComputed:
+    orderDate: "{{-page.date | attributeDate-}}"
+    title: "SAMA documentation - {{title}}"
 ---
 
 

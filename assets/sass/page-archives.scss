@@ -37,9 +37,15 @@
     grid-template-areas: 'lang-list types-list ' 'dates-menu dates-menu' ;
   }
 }*/
-
-
-@media (min-width: 20em) {
+#dates-menu > .ais-HierarchicalMenu{
+  column-count: 1; 
+}
+@media (min-width: 11em) {
+#dates-menu > .ais-HierarchicalMenu{
+  column-count: 2; 
+}
+}
+@media (min-width: 21em) {
   .refinements  {
     grid-column-gap: var(--gap3);
   column-gap: var(--gap3);
@@ -54,12 +60,27 @@
   .refinements  {
     grid-column-gap: var(--gap3);
   column-gap: var(--gap3);
-    grid-template-columns:  minmax(5em,1fr) minmax(10em,3fr) minmax(6em,2fr);
+    grid-template-columns:  minmax(5em,1fr) minmax(9em,3fr) minmax(6em,2fr);
       grid-template-areas:  '  lang types dates' ;
   }
+  #dates-menu > .ais-HierarchicalMenu{
+  column-count: 1; 
 }
-
-
+}
+@media (min-width: 35em) {.refinements  {
+    grid-template-columns:  minmax(5em,1fr) minmax(8em,3fr) minmax(12em,3fr);
+  }
+  #dates-menu > .ais-HierarchicalMenu{
+  column-count: 2; 
+}
+}
+#dates-menu > .ais-HierarchicalMenu{
+  margin-block-start:1em;
+  
+}
+.ais-HierarchicalMenu-list{
+    margin-block-start:0em;
+}
 
 
 #types-list,#lang-list {
@@ -162,11 +183,12 @@ grid-area: dates;
 
 // HierarchicalMenu
 .ais-HierarchicalMenu-item, .ais-RefinementList-item{
-  padding-left: 1em;
-  margin:0.35em
+  padding-left: 0em;
+  margin:0.35em;
+  margin-top: 0;
 }
 .ais-HierarchicalMenu-item2 {
-  padding-left: 2em;
+  padding-left: 1em;
 }
 .ais-HierarchicalMenu-item--selected > div > a, .ais-RefinementList-item--selected  >a {
   /*color: var(--color-primary-darker-2) ;
@@ -209,8 +231,6 @@ grid-area: dates;
   background-color: var(--color-lightgrey);
   border-radius: 1em;
 }
-
-
 
 
 // ************************************************************

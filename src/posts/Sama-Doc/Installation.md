@@ -4,7 +4,6 @@ eleventyNavigation:
   key: Installation
   parent: SAMA
   order: 1
-  title: Installation of SAMA
 ---
 
 # Dependencies

@@ -6,17 +6,17 @@ pagination:
   filter:
     - all
   addAllPagesToCollections: true
-layout: page
+layout: default
 eleventyComputed:
   title: Contents tagged “{{ tag.tag }}”
 permalink: /tags/{{ tag.slug }}/
 ---
-
+<h2 class=wrap>{{title}} </h2>
 {% from "macros/itemCard.njk" import itemCard %}
 
 
 {% if tag.logo or tag.description %}
-  <div class="intro clearfix">
+  <div class="intro clearfix indent">
     {% if tag.logo %}
       <img src="/{{ tag.logo }}" class="logo" />
     {% endif %}
@@ -28,16 +28,15 @@ permalink: /tags/{{ tag.slug }}/
 {% endif %}
 
 {% if tag.number > 1 %}
-  <p>There are {{ tag.number }} contents with this tag:</p>
+  <p class="wrap">There are {{ tag.number }} contents with the tag “{{tag.tag}}”:</p>
 {% else %}
-  <p>There is only one content with this tag:</p>
+  <p class="wrap">There is only one content with the tag “{{tag.tag}}”:</p>
 {% endif %}
 
 <ol class="cards-list">
-  {% set contentItems = collections[tag.tag] %}
+  {% set contentItems = collections['archivesall'] |hasTag(tag.tag) |reverse%}
   {% for item in contentItems | reverse %}
       {{ itemCard(item,numbers.numbers2) }}
   {% endfor %}
 </ol>
-
-<p>See <a href="/tags/">all tags</a>.</p>
+<p class="more wrap">See <a href="/tags/">all tags</a>.</p>

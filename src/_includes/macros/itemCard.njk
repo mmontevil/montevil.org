@@ -5,7 +5,7 @@
 {% from "macros/talkCard.njk" import talkCard %}
 
 {% macro itemCard(item,numbers2) %}
-    {% if item.data.layout == "post" %}
+    {% if item.data.category.includes("posts") %}
       {{ postCard(item) }}
     {% elif item.data.layout == "link" %}
       {{ linkCard(item) }}

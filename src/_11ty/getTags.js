@@ -1,15 +1,17 @@
 const slugify = require('@sindresorhus/slugify');
 const fs = require('fs');
 const hashtagsToTags = require('../_utils/hashtags').hashtagsToTags;
+const tagFilter = require('../_utils/tagfilter');
 
 module.exports = function (collection) {
   let tagsCollection = new Map();
   let max = 0;
 
   collection.getAll().forEach(function (item) {
+    let itemTags = [];
     if ('tags' in item.data) {
-      let itemTags = item.data.tags;
-
+    itemTags = item.data.tags;
+    }
       // TODO: deal with hashtags only once
       if (item.data.layout === 'note') {
         itemTags = [
@@ -21,28 +23,27 @@ module.exports = function (collection) {
           ),
         ];
       }
-      if (item.data.layout === 'publication') {
+    //  if (item.data.layout === 'publication') {
   let tagst = [];
   if(item.data.keyword){
-            tagst = item.data.keyword.toLowerCase().split(', ') ;
-            tagst=tagst.map(st =>(st.trim().replace(/[é,é,è,ê]/g, 'e')));
+            tagst =item.data.keyword.split(',') ;
     }
         itemTags = [
           ...new Set(
             [].concat(
               ...itemTags,
-              ...item.data.tags,
               ...tagst
             )
           ),
         ];
-      }
+            itemTags=tagFilter(itemTags);
+     // }
       for (const tag of itemTags) {
         let number = (tagsCollection.get(tag) || 0) + 1;
         max = Math.max(max, number);
         tagsCollection.set(tag, number);
       }
-    }
+    
   });
 
   // We assume there is at least one tag with only one content

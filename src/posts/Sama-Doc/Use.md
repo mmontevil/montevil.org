@@ -4,7 +4,6 @@ eleventyNavigation:
   key: use
   parent: SAMA
   order: 2
-  title: How to use SAMA?
 ---
 
 

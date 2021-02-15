@@ -4,7 +4,6 @@ eleventyNavigation:
   key: analyze
   parent: SAMA
   order: 4
-  title: SAMA-analyze
 ---
 
 _This plugin analyzes all the data generated from images processed in SAMA-images._
