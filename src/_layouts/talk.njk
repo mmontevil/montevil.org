@@ -40,7 +40,7 @@ https://developers.google.com/search/docs/data-types/breadcrumbs
 </script>
 
 <article
-    class="page h-entry"
+    class="page h-entry wrap"
     lang="{{ lang }}">
   <h1 id="post" class="page__title p-name">{{ title }}</h1>
 
@@ -55,7 +55,11 @@ https://developers.google.com/search/docs/data-types/breadcrumbs
         location: {
           name: location.name,
           url: location.url or ''
-        }
+          },
+        page: {
+            date: page.date
+            },
+        datepub: datepub
       }
   } %}
   {% from "macros/meta.njk" import meta %}
@@ -63,19 +67,20 @@ https://developers.google.com/search/docs/data-types/breadcrumbs
     {{ meta(item) }}
   </aside>
 
-  <div class="page__body e-content">
+  <div class="page__body e-content ">
+  {% if illustration.src %}
     <img
       alt="Cover slide from the talk “{{ title }}”"
       width="{{ illustration.width }}"
       height="{{ illustration.height }}"
       src="{{ illustration.src }}"
-      class="page__illustration u-photo"
+      class="page__illustration u-photo noDarkFilter"
       crossorigin="anonymous"
       >
-
+{% endif %}
     {{ content | safe }}
 
-    <p>See slides and additional content on Notist:<br /><a href="{{ notist_url }}">{{ title }}</a>
+    {#<p>See slides and additional content on Notist:<br /><a href="{{ notist_url }}">{{ title }}</a>#}
   </div>
 
   {% set articleUrl = page.url %}

@@ -65,23 +65,27 @@ isArchive: true
 
       <div>
         <div class="cards-list0">
-          {% if currentMonth %}
-            {% for item in collections[currentType +currentLang + 'ByMonth'][currentYear + '/' + currentMonth] %}
-                {{ itemCard(item,numbers.numbers2) }}
-            {% endfor %}
-          {% elif currentYear %}
+
+          {% if currentYear %}
+          {% if currentType === "publications" or  currentType === "archives" %}
             {% for item in collections[currentType +currentLang + 'ByYear'][currentYear] | limit(10) %}
                 {{ itemCard(item,numbers.numbers2) }}
             {% endfor %}
+            
             {% if collections[currentType  +currentLang + 'ByYear'][currentYear].length > 10 %}
               <p>Filter by month to see more {{ currentType }} from year {{ currentYear }}.</p>
             {% endif %}
+            {% else %}
+            {% for item in collections[currentType +currentLang + 'ByYear'][currentYear]  %}
+                {{ itemCard(item,numbers.numbers2) }}
+            {% endfor %}
+          {% endif %}
           {% else %}
             {% for item in collections[currentType+currentLang ] | limit(10) %}
                 {{ itemCard(item,numbers.numbers2) }}
             {% endfor %}
             {% if collections[currentType+currentLang].length > 10 %}
-              <p class= "wrap">Filter by year and month to see more {{ currentType }}.</p>
+              <p class= "wrap">Filter by year to see more {{ currentType }}.</p>
             {% endif %}
           {% endif %}
         </div>
