@@ -18,7 +18,7 @@ eleventyComputed: {
   permalink:    "talks/{{- datepub-}}-{%-if entry['container-title'] -%}{{- entry['container-title'] | slugify-}}{%-endif-%}/",
   illustration: {
       src: "{%- if  bibentryconf.fields.illustration -%}/assets/talks/{{-   bibentryconf.fields.illustration -}}{%- else -%}{%- if  entry.URL -%}https://image.thum.io/get/width/640/crop/600/noanimate/{{ entry.URL }}{%- endif -%}{%- endif -%}",
-      classes: "noDarkFilter "
+      classes: "{%- if  bibentryconf.fields.illustrationclass -%}{{-   bibentryconf.fields.illustrationclass -}}{%- else -%}  noDarkFilter {%- endif -%}"
   },
   abstract: "{{bibentryconf.fields.abstract |safe}}",
   program: "{{bibentryconf.fields.program}}",

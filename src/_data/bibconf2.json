@@ -141,6 +141,7 @@
             "location": "Festival Agir pour le vivant, Arles, France",
             "language": "fr",
             "url": "https://www.agirpourlevivant.fr/copie-de-programme",
+            "day": "25",
             "author": "M. Montévil",
             "title": "Il faut qu'il y ait en biologie théorique un symbole tel qu'il empêche de calculer"
         }
@@ -157,6 +158,7 @@
             "url": "https://www.rtbf.be/auvio/detail_tendances-premiere?id=2679861",
             "language": "fr",
             "illustration": "bifurquer.png",
+            "day": "14",
             "author": "A. Alombert and V. Chaix and M. Montévil",
             "title": "'Bifurquer' (Ed. LLL) de Bernard Stiegler et le collectif Internation."
         }
@@ -190,6 +192,7 @@
             "url": "https://www.lemonde.fr/planete/article/2020/05/22/le-bisphenol-a-produit-des-consequences-deleteres-meme-a-tres-faibles-doses_6040388_3244.html",
             "language": "fr",
             "illustration": "1920px-Le_Monde.png",
+            "illustrationclass": "viclass",
             "day": "22",
             "author": "Stéphane Foucart",
             "title": "Le bisphénol A produit des effets délétères même à très faibles doses"
@@ -208,6 +211,7 @@
             "url": "https://www.lemonde.fr/planete/article/2021/02/03/l-autorite-europeenne-de-securite-des-aliments-accusee-de-minimiser-certains-effets-des-perturbateurs-endocriniens_6068682_3244.html",
             "language": "fr",
             "illustration": "1920px-Le_Monde.png",
+            "illustrationclass": "viclass",
             "author": "Stéphane Foucart and Stéphane Horel",
             "title": "L’EFSA minimise certains effets des perturbateurs endocriniens"
         }
@@ -223,6 +227,7 @@
             "program": "2020-abstractEDC.pdf",
             "abstract": " Anthropogenic effects on the living are widely described as “disruptions”. For example, climate change disrupts ecosystem interactions by random changes in seasonal activity periods, leading to bird hatching before their prey or pollinators starting their activity before plant flowering. Despite these uses and the importance of the subject, the notion of disruption has not been conceptualized and theorized in biology. In general, we hypothesize that history brings about specific situations that have a biological meaning because of this specificity, and disruptions destroy the specificity of such situations and the corresponding contribution to an organization. <br> Then, a proper concept of disruption needs to articulate (i) the analysis of a system or organization at a given time and (ii) the historical origin of this organization. A critical domain where the use of the notion of disruption has been discussed is physiology and developmental biology. Since the Wingspread conference in 1991, endocrine disruptors are an active field of research and concern for public health. This workshop aims to discuss the notion of disruption in the context of endocrine disruptors. In this domain, historicity has multiple components: the historicity of evolution and development, and also the history leading to the technological lineages of the molecules that are endocrine disruptors.",
             "illustration": "disrupt.png",
+            "day": "20",
             "author": "M. Montévil",
             "title": "Journée d'étude : What does it mean for chemicals to be endocrine disruptors?"
         }
@@ -238,6 +243,7 @@
             "location": "Maison Suger, Paris, France",
             "illustration": "46000.webp",
             "language": "fr",
+            "day": "3",
             "author": "M. Montévil",
             "title": "(Pour)quoi l'immunologie chez Sloterdijk ?"
         }
@@ -251,8 +257,10 @@
             "year": "2020",
             "month": "6",
             "location": "Musée de Silésie, Katowice, Poland",
-            "abstract": "Book-of-Abstracts-–-Anthropocenes-2020.pdf",
+            "abstract": "Why should we invest in the concept of entropy to face the challenges of the Anthropocene? Of course, entropy production is a more accurate description of physical processes than energy consumption – and the difference between the two concepts has applications. However, entropy has other ramifications. Living beings oppose entropy increase in two different ways. First, as emphasized by Schrödinger, living beings have to sustain a low entropy situation, and this implies that they are local, open systems. Second, while entropy increase leads to more generic configurations, biological individuation brings about the more specific organization, at the scale of evolution as well as shorter time scales. These specific organizations are precisely the way living being delay the increase of entropy. These counter-trends are analyzed as anti-entropy and anti-entropy production, respectively. We will show that they are damaged in the Anthropocene, meaning that biological organizations are disrupted, and their ability to reorganize is also weakened.",
+            "program": "Anthropocenes-2020.pdf",
             "illustration": "anthropocene.png",
+            "day": "18",
             "author": "Anne Alombert and M. Montévil and Michal Krzykawski",
             "title": "Panel: Towards anti-entropic exorganisms and exorganisations in the Anthropocene. Bioeconomics, Institutions, Localities"
         }
@@ -361,7 +369,7 @@
             "month": "10",
             "location": "Universita degli studi di Padova, Padova, Italia",
             "language": "fr",
-            "illustration": "il governo dell entropia web.jpg",
+            "illustration": "ilgovernodellentropiaweb.jpg",
             "author": " M. Montévil",
             "title": "L'Anthropocène comme désorganisation du vivant"
         }
@@ -1245,6 +1253,8 @@
             "month": "7",
             "location": "IHES, Paris",
             "abstract": "In 1999, C Sonnenschein and AM Soto proposed the tissue organization field theory (TOFT). The TOFT posits 1) that cancer is a tissue-based disease whereby carcinogens (directly) and germ-line mutations (indirectly) alter normal interactions between the stroma and adjacent epithelium; and 2) the default state of all cells is proliferation with variation and motility. This later premise is relevant to and compatible with evolutionary theory, and is diametrically opposed to that of the somatic mutation theory. <br> This theoretical change is incompatible with the reductionist genocentric perspective generated by the molecular biology revolution. Rather than forcing a “bricolage” we decided to frontally attack the problem by joining efforts with philosophers, mathematicians and theoretical biologists to search for principles upon which to build a theory of organisms (this work is currently supported by the Pascal Chair). <br> While the theory of evolution has provided an increasingly adequate explanation of phylogeny, biology still lacks a theory of organisms that would encompass ontogeny and life cycles, and thus phenomena on a conception to death time-scale. To achieve this goal we propose that theoretical extensions of physics are required in order to grasp the living state of matter. Such extensions will help to describe the proper biological observables, i.e. the phenotypes. Biological entities must also follow the underlying principles used to understand inert matter. However, these physical laws and principles may not suffice to make the biological dynamics intelligible at the phenotypic level. By analogy with classical mechanics, where the principle of inertiais the default state of inert matter, we are proposing two aspects of the default state in biology, and a framing principle, namely: i) Default state: cell proliferation with variation as a constitutive property of the living. Variation is generated in particular by the mere fact that cell division generates two overall similar, but not identical cells. ii) Default state: motility, which encompasses cell and organismic movements as well as movement within cells. iii) Framing principle: life phenomena exhibit never identical iterations of a morphogenetic process. Organisms are the consequence of the inherent variability generated by proliferation, motility and auto-organization which operate within the framing principle. From these basic premises, we will elaborate on the generation of robustness, the structure of theoretical determination, and the identification of biological proper observables.",
+            "url": "https://www.ihes.fr/evenements/#seminaires",
+            "day": "4",
             "author": " A. Soto and M. Montévil",
             "title": "From the tissue organization field theory of carcinogenesis to a theory of organisms."
         }
@@ -1257,6 +1267,7 @@
             "booktitle": "Evolution, Development and Cancer",
             "year": "2014",
             "month": "12",
+            "day": "5",
             "location": "Museum National d'Histoire Naturelle, Paris",
             "url": "https://chairepascalbio.wordpress.com/2014/11/25/colloque-evolution-development-and-cancer/",
             "author": " N. Perret and M. Montévil",
@@ -1275,6 +1286,7 @@
             "url": "http://sps2014.blogspot.com/",
             "abstract": "Les objets physiques sont définis théoriquement et mathématiquement comme des objets génériques. Ainsi, du point de vue de la gravitation newtonienne, une pomme ou une planète sont interchangeables, de même que le moment ou l'endroit où des phénomènes ont lieu. Un objet physique a une trajectoire spécifique, déterminée dans un espace de description stable. Au cœur de cette approche des phénomènes naturels se trouve la notion de symétrie théorique, qui justifie que des transformations (réelles ou virtuelles) ne changent pas les aspects pertinents d'un objet, en particulier et surtout la forme de sa détermination équationnelle. Les symétries justifient l'articulation des mathématiques avec le réel et permettent la dérivation mathématique des trajectoires. <br> En biologie, nous proposons que les symétries théoriques sont instables. Ceci a de nombreuses conséquences puisque c'est la définition même des objets qui ne peut être opérée comme en physique. La première de ces conséquences est que l'objet doit être pensé comme spécifique, étant donné qu'il altère ses symétries au cours du temps (ontogénétique et phylogénétique). Ceci confère à l'objet biologique une nature fondamentalement historique. De plus, l'espace de description biologique est alors lui-même défini comme résultat d'une histoire. Enfin, les trajectoires biologiques ne peuvent alors pas être dérivées mathématiquement puisque ce sont les symétries déterminant ces trajectoires qui changent au cours du temps.",
             "language": "fr",
+            "day": "25",
             "author": " M. Montévil",
             "title": "Objets physiques, objets biologiques."
         }
@@ -1290,6 +1302,8 @@
             "location": "21 – 25 Mai 2014, St Flour",
             "program": "SFBT2014.pdf",
             "language": "fr",
+            "day": "21",
+            "illustration": "Saint-flour-ville-haute_0640x0428_cc-by-sa_WM.jpg",
             "author": " M. Montévil",
             "title": "Changements critiques de symétrie et aléatoire. Mathématiques et objectivation du vivant"
         }
@@ -1304,6 +1318,8 @@
             "month": "5",
             "location": "Università degli Studi di Camerino, Camerino",
             "abstract": "The coupling of generic objects, defined by their symmetries, on the one side, and the corresponding trajectories, on the other side, is at the core of the objectivation of phenomena understood in existing physical theories. As for proper biological phenomena, we hypothesize that they do not possess stable theoretical symmetries. Thus, biological objects are specific in the sense that they are the result of historical and contingent changes of symmetries. This provides a specific notion of randomness, proper to biological phenomena.",
+            "day": "14",
+            "illustration": "Logo_Università_degli_Studi_di_Camerino.png",
             "author": " M. Montévil",
             "title": "The specificity of biological objects. From physics to biology tier 2."
         }
@@ -1318,6 +1334,8 @@
             "month": "5",
             "location": "Università degli Studi di Camerino, Camerino",
             "abstract": "In this talk, we will discuss some propositions of extensions of physical theories to understand biological objects. we will focus on some aspects of biological time. First, we will focus on biological rhythms, in relationship with allometric relations. Then we will discuss the notions of biological complexity and organization, in the context of macroevolution.",
+            "day": "13",
+            "illustration": "Logo_Università_degli_Studi_di_Camerino.png",
             "author": " M. Montévil",
             "title": "Some aspects of biological time. From physics to biology tier 1."
         }
@@ -1332,6 +1350,8 @@
             "month": "4",
             "location": "EHESS, Paris",
             "language": "fr",
+            "day": "11",
+            "abstract": "Dans chaque théorie physique, la mesure, en tant que lien entre modèle et l'empirie, a un sens précis et adapté au cadre théorique. En biologie, cette question n'a que peu été étudiée, ce qui contraste avec la richesse et la spécificité méthodologique des approches expérimentales. Nous proposons ici, dans le cadre d'une caractérisation des spécificités de l'objet biologique, d’appréhender la mesure biologique comme co-constituant l'objet observé au sens où le résultat de la mesure dépend de, et parfois agit sur, les régularités et en particulier l'histoire de l'objet en un sens précis que nous développerons.",
             "author": " M. Montévil",
             "title": "La notion de mesure : de la physique à la biologie."
         }
@@ -1363,6 +1383,7 @@
             "location": "Muséum National d'histoire naturelle, Paris",
             "url": "https://chairepascalbio.wordpress.com/page/2/",
             "language": "fr",
+            "day": "14",
             "author": " M. Montévil",
             "title": "Temps et objet biologique"
         }
@@ -1377,6 +1398,7 @@
             "location": "Institut d'Étude Avancée, Nantes",
             "illustration": "iea-nantes.png",
             "language": "fr",
+            "day": "12",
             "author": " M. Montévil",
             "title": "La notion de mesure : de la physique à la biologie"
         }
@@ -1393,6 +1415,7 @@
             "abstract": "The core of the objectivization in physics is the coupling of generic objects, as defined by their symmetries, and their corresponding specific trajectories. As for biological phenomena, we posit that they do not possess stable theoretical symmetries. Thus, biological objects are specific in the sense that they are the result of historical and contingent changes of symmetries. This situation will allow us to discuss a specific notion of measurement for biological objects: measurements in biology co-establishes and often stabilize the theoretical symmetries of biological objects.",
             "url": "https://www.pitt.edu/~pittcntr/Events/All/Lunchtime_talks/lunchtime_2013-14/abstracts/feb_14_details.html",
             "illustration": "cathedraloflearning.jpg",
+            "day": "11",
             "author": " M. Montévil",
             "title": "Biological objects and measurement"
         }
@@ -1422,7 +1445,8 @@
             "year": "2012",
             "month": "11",
             "location": "Muséum National d’Histoire Naturelle, Paris",
-            "illustration": "mnhn.png"
+            "illustration": "mnhn.png",
+            "illustrationclass": " viclass"
         }
     },
     {
@@ -1634,7 +1658,8 @@
             "url": "https://academic.oup.com/edrv/issue/35/Supplement",
             "abstract": "Lower type 1 collagen concentration (0.5 mg/ml) increases elongation of structures compared to 1 mg/ml. Fibroblasts enhances elongation of structures in 1 mg/ml, but not 0.5 mg/ml. In 1 mg/ml collagen, elongated epithelial structures had lumen formation when co­‐cultured with fibroblasts. Hormones in co-­‐cultures of T47D + fibroblasts, significantly altered the phenotype in terms of elongation.",
             "poster": "ICE_ENDO2014_poster_TPMM.pdf",
-            "illustration": "Chicago2014a.jpg"
+            "illustration": "Chicago2014a.jpg",
+            "day": "21"
         }
     },
     {
@@ -1651,7 +1676,8 @@
             "url": "https://academic.oup.com/edrv/issue/35/Supplement",
             "abstract": " In vitro 3D simulations of biological systems are critical for understanding morphogenesis and patterns of normal and abnormal development in tissues. <br> Here we present SAMA, a novel method through which epithelial structures grown in 3D cultures can be imaged, reconstructed in 3D and analyzed with minimum human intervention and, therefore, bias. <br> SAMA gives us an accurate picture of the epithelial structures and hence, more information compared to 2D morphometric analysis. In addition, this automated method is less time consuming than regular 2D morphometrics.",
             "poster": "poster SAMA LS_finalMM.pdf",
-            "illustration": "Chicago2014a.jpg"
+            "illustration": "Chicago2014a.jpg",
+            "day": "21"
         }
     },
     {
