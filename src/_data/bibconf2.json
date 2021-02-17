@@ -10,6 +10,7 @@
             "day": "5",
             "location": "Maison de la Santé, Saint-Denis",
             "abstract": "Depuis deux ans, le philosophe Bernard Stiegler, récemment disparu, a initié une recherche-action sur la prévention aux effets des écrans chez les enfants, pilotée par l’IRI (Institut de Recherche et d’Innovation du Centre Pompidou). Une série d’ateliers est menée au sein de la PMI Pierre Sémard de Saint-Denis, mobilisant professionnelles de la PMI, chercheurs de l’IRI, et parents. Constitué en groupe de recherche contributive, ces acteurs accueillent de nouveaux parents et favorisent les échanges de savoir entre les participants, pour prévenir des effets des écrans sur le développement des jeunes enfants et inventer ensemble de nouvelles manière d’éduquer nos enfants à l’ère numérique.",
+            "illustration": "maisonSante.png",
             "author": "Marie-Claude Bossière and M. Montévil and Anne Kunvari and PMI Pierre Sémard and Hakima Yacouben",
             "title": "Les ateliers de prévention des effets des écrans à la PMI Pierre Sémard de Saint-Denis"
         }
@@ -69,7 +70,7 @@
             "year": "2020",
             "month": "12",
             "day": "11",
-            "location": "Unversité de Lille et Université de katowice",
+            "location": "Unversité de Lille et Université de Katowice",
             "url": "https://lillethics.com/event/seminaire-annuel-bifurquer-autour-du-livre-de-bernard-stiegler/",
             "language": "fr",
             "author": "M. Montévil",
@@ -107,6 +108,7 @@
             "video": "https://media.iri.centrepompidou.fr/video/enmi/2020/enmi_2020_day_1_session_2_2020-12-22.mp4",
             "day": "22",
             "language": "fr",
+            "illustration": "banner_ENMI_logo_2020.jpg",
             "author": " M. Montévil",
             "title": "Il faut qu’il y ait en biologie théorique un symbole tel qu’il empêche de calculer"
         }
@@ -138,6 +140,7 @@
             "month": "8",
             "location": "Festival Agir pour le vivant, Arles, France",
             "language": "fr",
+            "url": "https://www.agirpourlevivant.fr/copie-de-programme",
             "author": "M. Montévil",
             "title": "Il faut qu'il y ait en biologie théorique un symbole tel qu'il empêche de calculer"
         }
@@ -153,6 +156,7 @@
             "location": "La première, RTBF",
             "url": "https://www.rtbf.be/auvio/detail_tendances-premiere?id=2679861",
             "language": "fr",
+            "illustration": "bifurquer.png",
             "author": "A. Alombert and V. Chaix and M. Montévil",
             "title": "'Bifurquer' (Ed. LLL) de Bernard Stiegler et le collectif Internation."
         }
@@ -169,6 +173,7 @@
             "location": "La première, RTBF",
             "url": "https://www.rtbf.be/auvio/detail_au-bout-du-jour?id=2705708",
             "language": "fr",
+            "illustration": "bifurquer.png",
             "author": " A. Alombert and M. Montévil",
             "title": "Interview par Eddy Caekelberghs"
         }
@@ -184,6 +189,8 @@
             "note": "Interview",
             "url": "https://www.lemonde.fr/planete/article/2020/05/22/le-bisphenol-a-produit-des-consequences-deleteres-meme-a-tres-faibles-doses_6040388_3244.html",
             "language": "fr",
+            "illustration": "1920px-Le_Monde.png",
+            "day": "22",
             "author": "Stéphane Foucart",
             "title": "Le bisphénol A produit des effets délétères même à très faibles doses"
         }
@@ -200,6 +207,7 @@
             "note": "Interview",
             "url": "https://www.lemonde.fr/planete/article/2021/02/03/l-autorite-europeenne-de-securite-des-aliments-accusee-de-minimiser-certains-effets-des-perturbateurs-endocriniens_6068682_3244.html",
             "language": "fr",
+            "illustration": "1920px-Le_Monde.png",
             "author": "Stéphane Foucart and Stéphane Horel",
             "title": "L’EFSA minimise certains effets des perturbateurs endocriniens"
         }
@@ -243,6 +251,8 @@
             "year": "2020",
             "month": "6",
             "location": "Musée de Silésie, Katowice, Poland",
+            "abstract": "Book-of-Abstracts-–-Anthropocenes-2020.pdf",
+            "illustration": "anthropocene.png",
             "author": "Anne Alombert and M. Montévil and Michal Krzykawski",
             "title": "Panel: Towards anti-entropic exorganisms and exorganisations in the Anthropocene. Bioeconomics, Institutions, Localities"
         }
@@ -259,6 +269,7 @@
             "abstract": "Technological developments in genomics and other omics methods originated the idea that precise measurements of these biological properties could lead to better therapeutic strategies. However, precision does not entail accuracy. Scientific accuracy requires a theoretical framework to understand the meaning of measurements, the nature of causal relationships, and potential intrinsic limitations of knowledge. For example, a precise measurement of initial position in classical mechanics is useless without a measurement of the initial velocity. Moreover, even in this deterministic framework, precise measurements do not entail predictability in the case of chaotic dynamics. These examples show that conceptual and theoretical accuracy is required for precision to entail progress of knowledge and rationality in action. We outline our results in search of a theory of organisms. Biology is distinct from physics and requires a specific epistemology. For example, we develop the meaning of biological measurements, where historicity is a fundamental notion. We also emphasize that the historicity of biological norms that stems from evolutionary theory implies that patients and groups of patients can play an active role in establishing new norms to overcome a pathological situation, in line with the philosophy of G. Canguilhem. This dimension of medicine is required for accuracy.",
             "day": "3",
             "program": "Program Abstracts.pdf",
+            "url": "https://philpharmblog.wordpress.com/2020/11/15/experts-meeting-personalized-medicine-a-multidisciplinary-approach-to-complexity/",
             "author": "M. Montévil",
             "title": "Conceptual and theoretical specifications towards accuracy in medicine"
         }
@@ -274,6 +285,8 @@
             "location": "Festival Agir pour le vivant, Arles, France.",
             "language": "fr",
             "video": "https://www.youtube.com/watch?v=dkXLuaClCvg",
+            "url": "https://www.agirpourlevivant.fr/copie-de-programme",
+            "day": "27",
             "author": "M. Montévil",
             "title": "Épistémologie de la catastrophe"
         }
@@ -288,6 +301,9 @@
             "month": "1",
             "location": "Club suisse de la presse, Genève, Suisse.",
             "language": "fr",
+            "url": "https://pressclub.ch/des-intellectuels-repondent-a-antonio-guterres-et-greta-thunberg/?lang=en",
+            "video": "https://www.youtube.com/watch?v=_fmc-VPtWx8",
+            "day": "10",
             "author": "M. Montévil",
             "title": "Anthropocène, exosomatisation et néguentropie"
         }
@@ -316,6 +332,8 @@
             "month": "11",
             "location": "Collège international de philosophie, Paris, France.",
             "language": "fr",
+            "program": "Formes espace.pdf",
+            "abstract": "Dans le cadre de la relativité générale, l'espace temps constitue un bloc géométrisé où la temporalité en tant que telle disparaît. Ce cadre est extrêmement éloigné de la biologie où la temporalité possède un rôle central parce que l'historicité biologique est fondamentale. Néanmoins le processus d'individuation organique s'appuie sur la capacité du vivant à être organisateur de son espace-temps. Il s'agit là d'une condition de possibilité de l'individuation dont nous développerons certains aspects remarquables.",
             "author": "M. Montévil",
             "title": "Espace-temps et individuation"
         }
@@ -343,6 +361,7 @@
             "month": "10",
             "location": "Universita degli studi di Padova, Padova, Italia",
             "language": "fr",
+            "illustration": "il governo dell entropia web.jpg",
             "author": " M. Montévil",
             "title": "L'Anthropocène comme désorganisation du vivant"
         }
@@ -357,6 +376,7 @@
             "month": "10",
             "location": "Palais de Bondy, Lyon, France",
             "language": "fr",
+            "abstract": "La crise que constitue l'Anthropocène est souvent décrite à travers la raréfaction de ressources. Pourtant un autre aspect de cette crise est tout aussi critique et concerne aussi les humains: la désorganisation des organismes et des écosystèmes. Nous introduirons brièvement cette question et montrerons qu'elle demande des raisonnements spécifiques.",
             "author": " M. Montévil",
             "title": "L'Anthropocène comme désorganisation du vivant"
         }
@@ -385,6 +405,7 @@
             "month": "10",
             "location": "ERRAPHIS, Université de Toulouse 2 – Jean Jaurès, Toulouse, France",
             "language": "fr",
+            "program": "PROGRAM Physical Time, Biological Time - Bergsonism Today.pdf",
             "author": " M. Montévil",
             "title": "Comment objectiver les nouveaux possibles en biologie?"
         }
@@ -412,6 +433,7 @@
             "year": "2019",
             "month": "8",
             "location": "The Santa Fe Institute, Santa Fe, NM, USA",
+            "program": "Kauffman Final Conference Schedule.pdf",
             "author": " M. Montévil",
             "title": "No Entailing Laws but Enablement in the Evolution of the Biosphere"
         }
@@ -453,6 +475,8 @@
             "year": "2019",
             "month": "7",
             "location": "Oslo, Norway",
+            "program": "ISHPSSB2019_Book_of_abstracts.pdf",
+            "abstract": "Organization constitutes an overarching hypoth- esis that frames the intelligibility of biological objects. We offer a specific characterization of organization in terms of closure of con- straints. The adoption of organization as a principle fosters an orig- inal approach to biological stability. We elaborate on its articulation with the two other theoretical principles addressed in this session and use them to discuss what it means to access empirical objects in biology. Finally, we address measurement and precision in biology.",
             "author": " M. Montévil",
             "title": "Principle of organization, integration of the principles and application --- Precision biology: concepts and measurements"
         }
@@ -493,6 +517,7 @@
             "month": "04",
             "location": "IHPST, Paris",
             "language": "fr",
+            "abstract": "L'utilisation des mathématiques pour comprendre le vivant est souvent conçue à l'aune de son utilisation en physique. Pourtant, la biologie possède des spécificités qui sont parfois mobilisées pour la modélisation. En particulier, les êtres vivants sont le résultat d'une double histoire, évolutive et individuelle. Nous aborderons plusieurs conséquences de cette historicité du vivant, tant au niveau de la modélisation à proprement parler que pour l'accès aux phénomènes, dans l’expérience.",
             "author": " M. Montévil",
             "title": "Repenser la modélisation à l'aune de l'historicité des phénomènes vivants"
         }
@@ -522,6 +547,7 @@
             "location": "IMéRA - Institut d'études avancées Exploratoire Méditerranéen de l’Interdisciplinarité, Marseille, France",
             "language": "fr",
             "video": "https://www.youtube.com/watch?v=aL2VUJ0jXLU",
+            "abstract": "Dans l'interface entre biologie et mathématiques, les formes et les processus de morphogenèse sont souvent étudiées en \"eux-même\". Nous montrerons que cette manière de procéder est insuffisante pour capturer le sens biologique de ces formes. La biologie comporte des spécificités qui se manifestent tant sur le plan philosophique que sur celui des principes théoriques : en particulier, tout processus biologique tel qu’un processus de morphogenèse ou une régulation physiologique (i) s’inscrit dans l’évolution et dans une histoire naturelle et (ii) s’intègre dans un organisme dont il dépend et auquel il participe. Nous aborderons alors le sens des formes biologiques à l'aune de ces principes, tant au niveau de la théorie qu'au niveau de la compréhension de l'accès expérimental aux objets biologiques.",
             "author": " M. Montévil",
             "title": "Le sens des formes en biologie"
         }
@@ -562,6 +588,7 @@
             "year": "2018",
             "month": "10",
             "location": "ETH Zürich, Zürich, Suisse",
+            "abstract": "Biological evolution involves the appearance of new traits, new phenotypes and new processes but the mathematical understanding of such novelties is still lacking. In this paper, I argue that the notion of a new possibility should be and can be a fundamental notion in biology. This idea has been used in several models but it still lacks a proper mathematical, theoretical and epistemological framework. The notion of new possibility should be analyzed carefully since, like for the notion of probability, points of view a priori and a posteriori cannot be conflated. Moreover possibilities are virtual and it seems at first sight that adding possibilities by a retrospective theoretical move does not change the state of an object. In order to define precisely the notion of new possibilities, I will first discuss a positive notion of possibility which pertains to properties that are properly defined theoretically. This will lead us to a more precise discussion than the set-theoretic language to describe possibilities and enable us to define a robust notion of new possibilities.",
             "author": " M. Montévil",
             "title": "What is a new possibility in theoretical biology?"
         }
@@ -575,6 +602,7 @@
             "year": "2018",
             "month": "10",
             "location": "ETH Zürich, Zürich, Suisse",
+            "abtract": "Biology is in crisis. On the one side, when tested systematically, the majority of biological experiments is not reproducible. On the other side, biological concepts are unstable. For example, the term “gene” corresponds to different concepts depending on the context. Some authors argue that we should give up on it altogether.",
             "author": " M. Montévil",
             "title": "The coding of life. Breakthroughs and Blind Spots in the Mathematisation of the Life Sciences."
         }
@@ -602,6 +630,8 @@
             "year": "2018",
             "month": "10",
             "location": "Centro Internazionale di Studi Umanistici Umberto Eco, Bologna, Italie",
+            "abstract": " In biology, the molecular biology revolutio lead to the prevalence of a linguistic metaphor in the second half of the twentieth century. This metaphor led to a double perspective on secrecy: biologists aimed to unravel the secrets of the living, which would be revealed by reading and decoding DNA, and the secrecy between researchers competing to decode the same \"information\". This framework is now outdated, both for the understanding of life and in social practice. Biology seems to hesitate between imposing transparency, on both its practices and its objects, and recognizing the existence of several opacities.",
+            "program": "semiotic-cryptic.pdf",
             "author": " M. Montévil",
             "title": "Secrecy, transparency and opacity in biology."
         }
@@ -642,6 +672,7 @@
             "year": "2018",
             "month": "7",
             "location": "XIV Biennial Conference of the Italian Society of Applied and Industrial Mathematics, Rome, Italie",
+            "abstract": "By analogy with theoretical physics, theoretical biology is not limited to mathematical modeling. Instead, theoretical biology should strive to find suitable first principles to ground the understanding of biological phenomena and ultimately frame biological experiments and mathematical models. First principles in physics are discussed in terms of symmetries and the associated conservation principles, on the one side, and optimization on the other side. In biology, we have argued instead that a strong notion of variation is fundamental. This notion encompasses new possibilities and is associated with the historicity of biological phenomena [3]. By contrast, the relative regularity of some aspects of biological organisms should be seen as the consequence of a mutual stabilization by the parts of organisms [2]. In this paper, we will focus on a last aspect which pertains to the way cellular behavior is framed theoretically: should cells of multicellular organisms be considered as spontaneously quiescent so that a stimulation would be required for them to move or proliferate, or should cells be considered as spontaneously moving and proliferating so that quiescence would be the result of constraints. We argue the latter and will show that this assumption can be used to build a model of epithelial morphogenesis in tissue culture.",
             "author": " M. Montévil",
             "title": "What first principles for mathematical modeling in biology?"
         }
@@ -742,6 +773,7 @@
             "location": "Centre Pompidou, Paris, France",
             "video": "https://www.youtube.com/watch?v=iBKG84J0a28",
             "language": "fr",
+            "abstract": "En biologie expérimentale et théorique, les approches computationnelles prennent une place croissante. Sur la base d’un exemple, j’aborderai les différentes étapes computationnelles entre l’échantillon et la discussion biologique. L’analyse morphométrique est traditionnellement effectuée directement par un observateur, mais cette méthode est de plus en plus remplacée par l’utilisation d’algorithmes. Il est alors impératif de proposer une critique de ces approches computationnelle que j’esquisserait sur la base d’une comparaison entre ces deux méthodes. Enfin, je montrerai que la notion de symétrie permet, au moins dans certains cas, d’aborder parallèlement ces questions épistémologiques et des problèmes politiques dans l’utilisation des intelligences artificielles.",
             "author": " M. Montévil",
             "title": "Quelques opacités computationnelles: de la biologie aux décisions humaines"
         }
@@ -784,6 +816,7 @@
             "month": "10",
             "location": "Muséum national d'Histoire naturelle, Paris, France",
             "language": "fr",
+            "abstract": "En physique, les objets sont définis théoriquement par les relations qu'il entretiennent les uns avec les autres. Ce sont ces relations qui sont instanciées dans les modèles mathématiques et qui expliquent le lien profond entre physique et mathématiques. Les modèles mathématique en biologie héritent de cet épistémologie. Nous montrerons pourtant que l'historicité des objets biologiques a des conséquences profondes sur la manière dont on peut envisager ces modèles. Ces conséquences portent d'abord sur l'étude d'organismes actuels qui ne peuvent être envisagée sans leurs histoires évolutives. Elles interviennent ensuite dans la modélisation de la variation phénotypique elle même, laquelle semble bien nécessiter des changements d'espace des possibles et une théorie des contraintes biologiques.",
             "author": " M. Montévil",
             "title": "Enjeux de l’historicité du vivant pour la modélisation mathématique en biologie"
         }
@@ -798,6 +831,7 @@
             "month": "6",
             "location": "IRI, centre Pompidou, Paris, France",
             "language": "fr",
+            "abstract": "En biologie expérimentale et théorique, les approches computationnelles prennent une place croissante. Pour la biologie expérimentale, je discuterai mon expérience dans un laboratoire se focalisant sur la physiologie et le développement des glandes mammaires. J'aborderai les différentes étapes computationnelles entre l'échantillon et la discussion biologique. En particulier, l'analyse morphométrique est traditionnellement faite directement, par un observateur, mais elle est faite de plus en plus par l'utilisation d'algorithmes. La comparaison entre les deux méthodes est instructive. J'aborderai aussi le rôle épistémologique particulier des analyse statistiques. En biologie théorique, j'aborderai plusieurs obstacles dans l'utilisation de modèles computationnels.",
             "author": " M. Montévil",
             "title": "Les multiples opacités computationnelles en biologie expérimentale et théorique"
         }
@@ -811,6 +845,8 @@
             "year": "2017",
             "month": "7",
             "location": "São Paulo, Brazil",
+            "abstract": "The typical approach for mathematical modeling in biology is to apply mathematical tools and concepts which originated from theoretical principles in physics and computer sciences. Instead, the authors propose to construct a mathematical model based on proper biological principles. Specifically, they use principles identified as fundamental for the elaboration of a theory of organisms, namely i) the default state of cells and ii) the principle of organization. Cells display agency, move and proliferate unless constrained. They exert mechanical forces that i) act on collagen fibers and ii) on other cells. When fibers organize, they constrain the cells on their ability to move and to proliferate. The model exhibits a circularity that can be interpreted in terms of a closure of constraints. Implementing the mathematical model shows that constraints to the default state are sufficient to explain ductal and acinar formation, and points to a target of future research.",
+            "program": "Conference-program-ISHPSSB-2017.pdf",
             "author": " M. Montévil",
             "title": "Modeling mammary organogenesis from biological first principles: The default state of cells and its physical constraints."
         }
@@ -824,6 +860,8 @@
             "year": "2017",
             "month": "7",
             "location": "São Paulo, Brazil",
+            "abstract": "In this paper, we will discuss the notion of inertia in Classical Mechanics and its possible counterparts in Theoretical Population Genetics. We will show that, in Population Genetics, changes take place in a mathematical space whose structure is not compatible with notions such as the conservation of momentum or of angular momentum. In spite of this difference, we will argue that there is a fundamental analogy holds between the two fields. The principle of inertia describes the behavior of a system when nothing acts upon it. In Mechanics, this behavior is described by the conservation of momentum. We will show that different situations may be analogous to inertia in evolution. In particular, Theoretical Population Genetics uses a similar line of reasoning in at least two cases: random genetic drift, and geometric growth. However, we will argue that genetic drift is mathematically very different from mechanical inertia as it is far richer in contingent events having lasting consequences.",
+            "program": "Conference-program-ISHPSSB-2017.pdf",
             "author": " M. Montévil",
             "title": "What counterpart to the principle of inertia in Population Genetics ?"
         }
@@ -838,7 +876,9 @@
             "title": "Modeling mammary gland from biological first principles.",
             "author": "M. Montévil and L. Spéroni and A. Soto and C. Sonnenschein",
             "month": "11",
-            "year": "2016"
+            "year": "2016",
+            "abstract": "We strudy 3D culture methods that reproduce in vitro mammary gland ductal morphogenesis. We are proposing a conceptual framework to understand morphogenetic events based on epistemologically sound biological principles instead of using only physical principles. More specifically, our theoretical framework is based on the principle that the default state of cells is proliferation with variation and motility. We emphasize the role played by the agency of cells embedded in a gel and the circularity that is relevant for the intended process, whereby cells act upon other cells and on matrix elements, and are subject to the agency of neighboring cells. This circularity strongly differs from classical linear causality. Finally, our approach opens up the study of causal determination to multilevel explanations rather than to reductive ones involving only molecules in general and genes in particular.",
+            "poster": "Poster-Model.pdf"
         }
     },
     {
@@ -882,6 +922,7 @@
             "month": "1",
             "location": "Université de Toulouse - Jean Jaurès, Toulouse",
             "url": "https://phiscivi.wixsite.com/phiscivi/seminaires-passes",
+            "abstract": "",
             "author": " M. Montévil",
             "title": "Systems biology beyond systems"
         }
@@ -944,6 +985,7 @@
             "url": "https://ijl.univ-lorraine.fr/actualites/single-calendar-single/jeudi-3-et-vendredi-4-novembre-2016-colloque-cathy-dufour-symetries-invariances-et-classifications/actualites-generales-13/2016/11/?tx_ttnews%5BbackPid%5D=3",
             "illustration": "dufour.png",
             "language": "fr",
+            "abstract": "L’allométrie est l’analyse de la variation de certaines grandeurs (métabolisme, rythmes, ...) en fonction de la taille de l’objet considéré. Elle procède d’une hypothèse de symétrie entre des objets de tailles différentes et a conduit à des résultats remarquables en biologie. Cependant, ces résultats sont le lieu de conflits d’interprétation entre un point de vue physique, où les relations allométriques sont conçues comme une « loi de la nature » et un point de vue plus biologique où l’historicité du vivant et les exceptions sont mises en valeur. <br> Pour expliciter cette différence de point de vue, nous allons discuter les bases théoriques de la phylogénie, c’est-à-dire la classification évolutive des êtres vivants. Dans la théorie de l’évolution, la variation, une asymétrie, est un principe premier et ce n’est que dans un deuxième temps que certains caractères peuvent être interprétés comme plus ou moins symétriques (conservés). Ici donc, les symétries pertinentes sont les homologies, les caractères ayant une origine commune située historiquement.<br> Nous proposerons enfin un cadre conceptuel permettant d’articuler l’épistémologie de la physique où les symétries fondamentales sont postulées et celle de la biologie, où les symétries apparaissent de manière historique.",
             "author": " M. Montévil",
             "title": "Asymétries et symétries en biologie: Allométrie, classification phylogénétique et biophysique"
         }
@@ -972,6 +1014,7 @@
             "month": "10",
             "location": " Collège de France, Paris",
             "url": "https://www.lpsm.paris/smile/seminars.php",
+            "day": "18",
             "author": " M. Montévil",
             "title": "Time reversibility and other comparisons between mechanics and population genetics"
         }
@@ -987,6 +1030,7 @@
             "location": " Cerisy-la-Salle",
             "url": "http://www.ccic-cerisy.asso.fr/sciences16.html",
             "language": "fr",
+            "abstract": "Dans cette présentation nous développons deux principes théoriques qui opèrent ensemble pour permettre de comprendre les organismes vivants dans leurs spécificités. Le premier principe est un principe de variation, et nous montrons qu'il conduit à distinguer fortement les objets biologiques des objets physiques. Le second est un principe d'organisation, s’appuyant sur une tradition riche en biologie théorique et qui met l'accent sur l'interdépendance des parties d'un organisme. Ces deux principes, combinés à la notion d'état par défaut, conduisent à un concept de contrainte biologique opératoire, riche et original.",
             "author": " M. Montévil",
             "title": "Principes théoriques pour les organismes : principes de variation et d'organisation."
         }
@@ -1001,6 +1045,7 @@
             "month": "7",
             "location": " San Sebastian, Spain",
             "url": "https://www.ihpst.cnrs.fr/activites/colloques/international-workshop-stability-and-variation-biological-systems",
+            "abstract": "We have proposed the following principles for the elaboration of a theory of organisms: i) the default state of cell proliferation with variation and motility and b) the principle of organization by closure of constraints. We now propose to use them to frame experiments using experimental biological models and mathematical modeling. <br> The typical way of doing mathematical modeling in biology is to apply mathematical tools and concepts developed originally in physics. Instead, we propose to use the biological principles mentioned above as bases for our modeling effort. <br> This model has a biological component, the cells, and a physical component, a matrix which contains collagen fibers. Cells are agents that move and proliferate unless constrained; they exert mechanical forces that i) act on collagen fibers and ii) on other cells. As fibers get organized, they constrain the cells on their ability to move and to proliferate. The model exhibits a circularity that can be interpreted in terms of closure of constraints. <br> Implementing the mathematical model shows that constraints to the default state are sufficient to explain ductal and acinar formation, and points to a target of future research, namely, to inhibitors of cell proliferation and motility generated by the epithelial cells. The success of this model suggests a step-wise approach whereby additional constraints imposed by the tissue and the organism could be examined in silico and rigorously tested by in vitro and in vivo experiments, in accordance with the organicist perspective we embrace.",
             "author": " A. Soto and M. Montévil",
             "title": "Modeling mammary organogenesis from biological first principles: cells and their physical constraints"
         }
