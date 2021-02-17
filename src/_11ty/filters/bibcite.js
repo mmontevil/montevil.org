@@ -1,8 +1,15 @@
  
  const fs = require('fs');
 const linkifyUrls = require('linkify-urls');
-const Cite = require('citation-js');
+//const Cite = require('citation-js');
 const path = require('path');
+
+const template = String(fs.readFileSync('assets/chicago-author-date.csl'));
+let templateName = 'chicago';
+const Cite = require("citation-js")
+
+const config = Cite.plugins.config.get("@csl");
+config.templates.add(templateName, template)
 
 module.exports =  {
 
@@ -17,7 +24,7 @@ module.exports =  {
                   const cite =new Cite(`${rawBib}`);
      return linkifyUrls(cite.format('bibliography', {
             format: 'html',
-            template: 'apa',
+            template: templateName,
             lang: 'en-US'
         }))
          },
@@ -27,7 +34,7 @@ module.exports =  {
                   const cite =new Cite(`${rawBib}`);
      return cite.format('bibtex', {
             format: 'html',
-            template: 'apa',
+            template: templateName,
             lang: 'en-US'
         })
          },     
@@ -35,7 +42,7 @@ module.exports =  {
                   const cite =new Cite(JSON.stringify(bibfi));
      return linkifyUrls(cite.format('bibliography', {
             format: 'html',
-            template: 'apa',
+            template: templateName,
             lang: 'en-US'
         }))
          },        

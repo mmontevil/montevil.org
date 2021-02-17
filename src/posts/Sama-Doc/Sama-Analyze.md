@@ -1,5 +1,6 @@
 ---
 title: SAMA-analyze
+date: 2016-05-05
 eleventyNavigation:
   key: analyze
   parent: SAMA

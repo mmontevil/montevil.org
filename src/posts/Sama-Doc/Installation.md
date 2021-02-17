@@ -1,5 +1,6 @@
 ---
 title: Installation of SAMA
+date: 2016-05-02
 eleventyNavigation:
   key: Installation
   parent: SAMA

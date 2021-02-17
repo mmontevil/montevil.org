@@ -1,5 +1,6 @@
 ---
 title: How to use SAMA?
+date: 2016-05-03
 eleventyNavigation:
   key: use
   parent: SAMA

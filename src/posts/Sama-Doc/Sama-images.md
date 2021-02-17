@@ -1,6 +1,7 @@
 ---
 title: SAMA-images
 excerpt:  3D structures are counted and parameters that define shape, volume and position are measured.
+date: 2016-05-04
 eleventyNavigation:
   key: images
   parent: SAMA

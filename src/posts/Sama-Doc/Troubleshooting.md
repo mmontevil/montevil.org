@@ -1,5 +1,6 @@
 ---
 title: Troubleshooting
+date: 2016-05-08
 eleventyNavigation:
   key: Trouble
   parent: Troubleshooting

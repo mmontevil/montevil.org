@@ -1,5 +1,6 @@
 ---
 title: Graph descriptions
+date: 2016-05-06
 eleventyNavigation:
   key: Graph
   parent: SAMA
