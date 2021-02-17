@@ -240,7 +240,15 @@ function chooseDate(datepub,date) {
   }
 }
 module.exports = {
-  lang: (data) => data.lang || 'en',
+  lang: (data) => { let lang=data.lang;
+    if(data.bibentryconf && data.bibentryconf.fields && data.bibentryconf.fields.language){
+      lang=data.bibentryconf.fields.language;
+    }
+    if('fr'===lang || 'en'===lang ){
+        return  lang; }
+      else{
+        return 'en';
+      }},
   //orderDate0: (data) => chooseDate(data.datepub,data.page.date),
   formattedDate: (data) => formattedDate(data.lang, data.page.date),
   attributeDate: (data) => attributeDate(data.page.date),

@@ -17,9 +17,9 @@ eleventyComputed: {
   orderDate: "{%- if datepub=='Submitted' -%}{{- page.date | attributeDate -}}{%- else -%}{{- datepub     -}}{%- endif -%}",
   permalink:    "talks/{{- datepub-}}-{%-if entry['container-title'] -%}{{- entry['container-title'] | slugify-}}{%-endif-%}/",
   illustration: {
-      src: "{%- if  bibentryconf.fields.illustration -%}/assets/talks/{{-   bibentryconf.fields.illustration -}}{%- else -%}{%- if  entry.URL -%}https://image.thum.io/get/width/640/crop/600/noanimate/{{ entry.URL }}{%- endif -%}{%- endif -%}"
+      src: "{%- if  bibentryconf.fields.illustration -%}/assets/talks/{{-   bibentryconf.fields.illustration -}}{%- else -%}{%- if  entry.URL -%}https://image.thum.io/get/width/640/crop/600/noanimate/{{ entry.URL }}{%- endif -%}{%- endif -%}",
+      classes: "noDarkFilter "
   },
-  lang: "{{bibentryconf.fields.language or 'en'}}",
   abstract: "{{bibentryconf.fields.abstract |safe}}",
   program: "{{bibentryconf.fields.program}}",
   video: "{{bibentryconf.fields.video}}",
