@@ -243,10 +243,10 @@ const typeseter = (content, outputPath) => {
   }
   return content;
 };
-  eleventyConfig.addTransform(
+ /* eleventyConfig.addTransform(
       'typeseter',
       typeseter
-    ); 
+    ); */
   const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minifier");
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(eleventyPluginFilesMinifier);

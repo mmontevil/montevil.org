@@ -635,7 +635,7 @@
       <key variable="issued"/>
       <key variable="title"/>
     </sort>
-    <layout suffix=".">
+    <layout suffix="">
       <group delimiter=". ">
         <text macro="contributors"/>
         <text macro="date"/>

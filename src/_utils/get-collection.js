@@ -5,7 +5,7 @@ const getCollectionbyCat = (collection, type,lang) => {
     return filteredCollectionsMemoization[type+lang];
   } else {
     let filteredCollection = collection.getAll().filter(function(item) {
-      if(type==='archives'){return "category" in item.data && (lang==='all' || item.data.lang===lang);}
+      if(type==='archives'){return "category" in item.data && item.data.category[0] && (lang==='all' || item.data.lang===lang);}
       if(item.data.category){
          return  item.data.category.includes( type)&& (lang==='all' || item.data.lang===lang);     
       }

@@ -284,7 +284,7 @@ module.exports = {
     title: (data) => data.bibentry.title || data.title ,
   tags: (data) => tags(data),
   //  tags2: (data) => tags(data),
-  
+  category:(data) => data.category ? (data.video ? [data.category,"video"].flat() :data.category)  : [],
   colKey: {
     lang: (data) => data.lang,
     date:(data) => data.orderDate,
