@@ -271,10 +271,20 @@ module.exports = {
       }
         return res;
     },
+      bibentryconf: (data) => {
+      var res={};
+      if (data.entry){
+      for (const entry in data.bibconf2) {
+          if(data.bibconf2[entry].entrykey===data.entry.id){
+            res = data.bibconf2[entry];
+          }
+      }}
+        return res;
+    },
     title: (data) => data.bibentry.title || data.title ,
   tags: (data) => tags(data),
   //  tags2: (data) => tags(data),
-
+  
   colKey: {
     lang: (data) => data.lang,
     date:(data) => data.orderDate,

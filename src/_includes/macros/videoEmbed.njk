@@ -1,0 +1,29 @@
+
+
+{% macro videoEmbed(video) %}
+ 
+ {% set regExp = r/.*youtube.*/g %}
+{% if regExp.test(video) %}
+{{video | markdownify | safe }}
+{% endif %}
+{% set regExp = r/.*mp4.*/g %}
+{% if regExp.test(video) %}
+<video controls class="wrap">
+  <source src="{{video}}" type="video/mp4">
+  <p>Your browser doesn't support HTML5 video. Here is
+     a <a href="{{video}}">link to the video</a> instead.</p>
+</video>
+
+{% endif %}
+{% set regExp = r/.*mp3.*/g %}
+{% if regExp.test(video) %}
+    <audio
+        controls
+        src="{{video}}">
+            Your browser does not support the
+            <code>audio</code> element.  Here is
+     a <a href="{{video}}">link to the file</a> instead.
+    </audio>
+
+{% endif %}
+{% endmacro %}

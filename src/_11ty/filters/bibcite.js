@@ -32,7 +32,7 @@ module.exports =  {
         })
          },     
         bibcite2: (bibfi) => {
-                  const cite =new Cite(`${JSON.stringify(bibfi)}`);
+                  const cite =new Cite(JSON.stringify(bibfi));
      return linkifyUrls(cite.format('bibliography', {
             format: 'html',
             template: 'apa',

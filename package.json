@@ -131,6 +131,7 @@
     "@sideway/pinpoint": "^2.0.0",
     "algoliasearch": "^4.8.3",
     "autocomplete.js": "^0.38.0",
+    "bib2json": "^0.0.1",
     "citation-js": "^0.5.0-alpha.10",
     "core-js": "^2.6.12",
     "cross-spawn": "^7.0.3",

@@ -74,6 +74,8 @@ https://developers.google.com/search/docs/data-types/breadcrumbs
   {% endif %}
 
   {% set item = {
+        date: date,
+      url: page.url,
     data: {
       layout: layout,
       lang: lang,
@@ -83,9 +85,12 @@ https://developers.google.com/search/docs/data-types/breadcrumbs
       page: {
           date: page.date,
           url: page.url
+          },
+      location: {
+          name: location.name,
+          url: location.url or ''
           }
-      },
-      url: page.url
+      }
   } %}
   {% from "macros/meta.njk" import meta %}
   <aside class="page__meta">

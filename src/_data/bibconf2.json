@@ -1,0 +1,1626 @@
+[
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "midisante_2020",
+        "fields": {
+            "booktitle": "Midi-Santé",
+            "year": "2020",
+            "month": "11",
+            "day": "5",
+            "location": "Maison de la Santé, Saint-Denis",
+            "url": "https://www.academia.edu/44787319/Penser_une_exosomatisation_n%C3%A9guanthropique_Atelier_de_lecture_contributive_autour_de_Bifurquer",
+            "abstract": "Depuis deux ans, le philosophe Bernard Stiegler, récemment disparu, a initié une recherche-action sur la prévention aux effets des écrans chez les enfants, pilotée par l’IRI (Institut de Recherche et d’Innovation du Centre Pompidou). Une série d’ateliers est menée au sein de la PMI Pierre Sémard de Saint-Denis, mobilisant professionnelles de la PMI, chercheurs de l’IRI, et parents. Constitué en groupe de recherche contributive, ces acteurs accueillent de nouveaux parents et favorisent les échanges de savoir entre les participants, pour prévenir des effets des écrans sur le développement des jeunes enfants et inventer ensemble de nouvelles manière d’éduquer nos enfants à l’ère numérique.",
+            "author": "Marie-Claude Bossière and M. Montévil and Anne Kunvari and PMI Pierre Sémard and Hakima Yacouben",
+            "title": "Les ateliers de prévention des effets des écrans à la PMI Pierre Sémard de Saint-Denis"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "UT2020",
+        "fields": {
+            "booktitle": "Séminaire du GIS-UTSH (Unité technologies et sciences de l'Homme)",
+            "year": "2021",
+            "month": "3",
+            "location": "Université Technologique de Compiègne, Paris, France.",
+            "author": "M. Montévil and Victor Petit",
+            "title": "Écologie de la conception"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "gaetano2021",
+        "fields": {
+            "title": "tbd",
+            "booktitle": "Puissance, mécanicisme et limites du numérique : ontologie, mathématiques, éthique",
+            "location": "Collège International de Philosophie, Paris, France.",
+            "year": "2021",
+            "month": "3",
+            "day": "29",
+            "program": "CHIURAZZI_BAT_Colloque.pdf"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "utc2021",
+        "fields": {
+            "booktitle": "Séminaire Phiteco",
+            "year": "2021",
+            "month": "1",
+            "day": "21",
+            "location": "COSTECH, Université Technologique de Compiègne, Compiègne, France.",
+            "url": "https://sites.google.com/site/mineurphiteco/seminaires-et-ateliers",
+            "illustration": "utc2021.jpg",
+            "abstract": "Le concept d'entropie est difficile. Il a fait l'objet de multiples incompréhensions, en particulier lorsqu'il s'agit de le mobiliser pour comprendre le vivant ou les activités humaines. Conscient de ces difficultés et malgré elles, Bernard Stiegler en a fait un thême central de ses derniers travaux, à la fois pour répondre à la question urgente de l'Anthropocène mais aussi pour développer son oeuvre philosophique. L'enjeu est à la fois d'impulser une appropriation transdisciplinaire de ces questions mais aussi de défendre des positions conceptuellement précises sur l'articulation entre entropie, néguentropie et anti-entropie. En cela, Bernard Stiegler s'inscrit dans la tradition philosophique qui ne se limite pas à l'analyse des discours scientifiques mais qui, en s'appuyant sur les sciences constitutées, élabore et défend de nouvelles perspectives. Nous montrerons que ces perspectives sont susceptibles de développements scientifiques.",
+            "program": "LIVRET PHITECO 2021 Penser la technique avec Bernard Stiegler.pdf",
+            "language": "fr",
+            "author": "M. Montévil",
+            "title": "Bernard Stiegler et l'entropie"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "sembifu_2020",
+        "fields": {
+            "booktitle": "Séminaire \"Bifurquer\"",
+            "year": "2020",
+            "month": "12",
+            "day": "11",
+            "location": "Unversité de Lille et Université de katowice",
+            "url": "https://lillethics.com/event/seminaire-annuel-bifurquer-autour-du-livre-de-bernard-stiegler/",
+            "language": "fr",
+            "author": "M. Montévil",
+            "title": "Entropie et Anthropocène"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "semfoodpackaging_2020",
+        "fields": {
+            "booktitle": "Webinar",
+            "year": "2020",
+            "month": "5",
+            "location": "Food packaging forum, Zurich, Switzerland",
+            "abstract": "In their presentation, the scientists provide background on CLARITY-BPA, the setup of their mammary gland study, and a detailed discussion of the analytical and statistical methods applied. They explain that their study shows clear statistical evidence of non-monotonic dose-response curves (NMDRC) of developmental exposure to BPA for multiple measurements, that such responses occurred at all ages of the animals studied, and argue that additional “mechanistic studies are not needed to accept that a NMDRC reflects a causal link to the exposure when the statistical methods of analysis are pertinent and rigorous.”",
+            "url": "https://www.foodpackagingforum.org/events/non-monotonicity-of-bpa",
+            "video": "https://www.youtube.com/watch?v=zPqEU-oVpDM",
+            "day": "26",
+            "author": "M. Montévil",
+            "title": "Non-monotonicity of BPA"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "enmi_2020",
+        "fields": {
+            "booktitle": "Entretiens du Nouveau Monde Industriel 2020 : prendre soin de l'informatique et des générations.",
+            "year": "2020",
+            "month": "12",
+            "location": "Centre Pompidou, Paris, France",
+            "url": "https://enmi-conf.org/wp/enmi20/",
+            "abstract": "Les notions de calcul et d’information sont utilisées de manière fort libérale en biologie, avec des prises de positions fortes telle que considérer que l’ADN contient un programme et que la pensée est un calcul. La physique donne un rôle plus modeste à ces concepts, car elle place les mathématiques plutôt que le calcul au centre de sa théorisation. Les physiciens entrés en biologie tendent néanmoins à imposer leur epistémologie sans prendre en compte la singularité de ce champs. <br> Nous montrerons qu’une approche différente de la biologie est possible, deman- dant des innovations épistémologiques, théoriques et formelles. Ici, c’est rôle des mathématiques qui devient plus modeste à cause de l’historicité du vivant. Ces innovations permettent de suggérer des directions pour repenser l’articulation entre informatique et mathématiques.",
+            "video": "https://media.iri.centrepompidou.fr/video/enmi/2020/enmi_2020_day_1_session_2_2020-12-22.mp4",
+            "day": "22",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Il faut qu’il y ait en biologie théorique un symbole tel qu’il empêche de calculer"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "memory_2020",
+        "fields": {
+            "booktitle": "Memory for the Future. Thinking with Bernard Stiegler",
+            "year": "2020",
+            "month": "12",
+            "location": "Leiden Centre for Continental Philosophy, Leiden, Pays-bas",
+            "day": "3",
+            "url": "https://www.universiteitleiden.nl/en/events/2020/12/lccp-symposium-memory-for-the-future-thinking-with-bernard-stiegler",
+            "video": "https://www.youtube.com/watch?v=_3B1NzgxhXI",
+            "author": "M. Montévil",
+            "title": " The Plaine Commune project"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "info2020",
+        "fields": {
+            "booktitle": "Informatique et générations",
+            "year": "2020",
+            "month": "8",
+            "location": "Festival Agir pour le vivant, Arles, France",
+            "language": "fr",
+            "author": "M. Montévil",
+            "title": "Il faut qu'il y ait en biologie théorique un symbole tel qu'il empêche de calculer"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "rtbfa2020",
+        "fields": {
+            "booktitle": "Tendances Première",
+            "year": "2020",
+            "month": "9",
+            "location": "La première, RTBF",
+            "url": "https://www.rtbf.be/auvio/detail_tendances-premiere?id=2679861",
+            "language": "fr",
+            "author": "A. Alombert and V. Chaix and M. Montévil",
+            "title": "'Bifurquer' (Ed. LLL) de Bernard Stiegler et le collectif Internation."
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "rtbfb2020",
+        "fields": {
+            "booktitle": "Au bout du Jour",
+            "year": "2020",
+            "month": "11",
+            "day": "19",
+            "location": "La première, RTBF",
+            "url": "https://www.rtbf.be/auvio/detail_au-bout-du-jour?id=2705708",
+            "language": "fr",
+            "author": " A. Alombert and M. Montévil",
+            "title": "Interview par Eddy Caekelberghs"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "article",
+        "entrykey": "lemonde2020",
+        "fields": {
+            "journal": "Le monde",
+            "year": "2020",
+            "month": "5",
+            "note": "Interview",
+            "url": "https://www.lemonde.fr/planete/article/2020/05/22/le-bisphenol-a-produit-des-consequences-deleteres-meme-a-tres-faibles-doses_6040388_3244.html",
+            "language": "fr",
+            "author": "Stéphane Foucart",
+            "title": "Le bisphénol A produit des effets délétères même à très faibles doses"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "article",
+        "entrykey": "lemonde2021",
+        "fields": {
+            "journal": "Le monde",
+            "year": "2021",
+            "month": "2",
+            "day": "4",
+            "note": "Interview",
+            "url": "https://www.lemonde.fr/planete/article/2021/02/03/l-autorite-europeenne-de-securite-des-aliments-accusee-de-minimiser-certains-effets-des-perturbateurs-endocriniens_6068682_3244.html",
+            "language": "fr",
+            "author": "Stéphane Foucart and Stéphane Horel",
+            "title": "L’EFSA minimise certains effets des perturbateurs endocriniens"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "book",
+        "entrykey": "ED2020",
+        "fields": {
+            "year": "2020",
+            "month": "5",
+            "location": "IHPST, Paris, France",
+            "program": "2020-abstractEDC.pdf",
+            "abstract": " Anthropogenic effects on the living are widely described as “disruptions”. For example, climate change disrupts ecosystem interactions by random changes in seasonal activity periods, leading to bird hatching before their prey or pollinators starting their activity before plant flowering. Despite these uses and the importance of the subject, the notion of disruption has not been conceptualized and theorized in biology. In general, we hypothesize that history brings about specific situations that have a biological meaning because of this specificity, and disruptions destroy the specificity of such situations and the corresponding contribution to an organization. <br> Then, a proper concept of disruption needs to articulate (i) the analysis of a system or organization at a given time and (ii) the historical origin of this organization. A critical domain where the use of the notion of disruption has been discussed is physiology and developmental biology. Since the Wingspread conference in 1991, endocrine disruptors are an active field of research and concern for public health. This workshop aims to discuss the notion of disruption in the context of endocrine disruptors. In this domain, historicity has multiple components: the historicity of evolution and development, and also the history leading to the technological lineages of the molecules that are endocrine disruptors.",
+            "illustration": "disrupt.png",
+            "author": "M. Montévil",
+            "title": "Journée d'étude : What does it mean for chemicals to be endocrine disruptors?"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "immun2020",
+        "fields": {
+            "booktitle": "Séminaire Pharmakon",
+            "year": "2020",
+            "month": "7",
+            "location": "Maison Suger, Paris, France",
+            "illustration": "46000.webp",
+            "language": "fr",
+            "author": "M. Montévil",
+            "title": "(Pour)quoi l'immunologie chez Sloterdijk ?"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "Katowice2020",
+        "fields": {
+            "booktitle": "Anthropocenes: Reworking of the Wound",
+            "year": "2020",
+            "month": "6",
+            "location": "Musée de Silésie, Katowice, Poland",
+            "author": "Anne Alombert and M. Montévil and Michal Krzykawski",
+            "title": "Panel: Towards anti-entropic exorganisms and exorganisations in the Anthropocene. Bioeconomics, Institutions, Localities"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "personalized2020",
+        "fields": {
+            "booktitle": "Personalized Medicine : A Multidisciplinary Approach to Complexity",
+            "year": "2020",
+            "month": "2",
+            "location": "Campus Bio-Medico, University of Rome, Rome, Italie.",
+            "abstract": "Technological developments in genomics and other omics methods originated the idea that precise measurements of these biological properties could lead to better therapeutic strategies. However, precision does not entail accuracy. Scientific accuracy requires a theoretical framework to understand the meaning of measurements, the nature of causal relationships, and potential intrinsic limitations of knowledge. For example, a precise measurement of initial position in classical mechanics is useless without a measurement of the initial velocity. Moreover, even in this deterministic framework, precise measurements do not entail predictability in the case of chaotic dynamics. These examples show that conceptual and theoretical accuracy is required for precision to entail progress of knowledge and rationality in action. We outline our results in search of a theory of organisms. Biology is distinct from physics and requires a specific epistemology. For example, we develop the meaning of biological measurements, where historicity is a fundamental notion. We also emphasize that the historicity of biological norms that stems from evolutionary theory implies that patients and groups of patients can play an active role in establishing new norms to overcome a pathological situation, in line with the philosophy of G. Canguilhem. This dimension of medicine is required for accuracy.",
+            "day": "3",
+            "program": "Program Abstracts.pdf",
+            "author": "M. Montévil",
+            "title": "Conceptual and theoretical specifications towards accuracy in medicine"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "trarles2020",
+        "fields": {
+            "booktitle": "Table ronde",
+            "year": "2020",
+            "month": "8",
+            "location": "Festival Agir pour le vivant, Arles, France.",
+            "language": "fr",
+            "video": "https://www.youtube.com/watch?v=dkXLuaClCvg",
+            "author": "M. Montévil",
+            "title": "Épistémologie de la catastrophe"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "geneva2020",
+        "fields": {
+            "booktitle": "Pour fournir des éléments de réponse à António Guterres et Greta Thunberg",
+            "year": "2020",
+            "month": "1",
+            "location": "Club suisse de la presse, Genève, Suisse.",
+            "language": "fr",
+            "author": "M. Montévil",
+            "title": "Anthropocène, exosomatisation et néguentropie"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "lille2019",
+        "fields": {
+            "booktitle": "Journée systémique et éthique",
+            "year": "2019",
+            "month": "11",
+            "location": "Université Catholique de Lille, Lille, France.",
+            "language": "fr",
+            "author": "M. Montévil",
+            "title": "Systèmes et biologie : enjeux théoriques et épistémologique"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "espace2019",
+        "fields": {
+            "booktitle": "Formes d'espace, formes de vie",
+            "year": "2019",
+            "month": "11",
+            "location": "Collège international de philosophie, Paris, France.",
+            "language": "fr",
+            "author": "M. Montévil",
+            "title": "Espace-temps et individuation"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "shaj_2019",
+        "fields": {
+            "booktitle": "Chaire Géopolitique du Risque",
+            "year": "2019",
+            "month": "11",
+            "location": "École Normale supérieure, Paris, France.",
+            "author": "Shaj Mohan and M. Montévil",
+            "title": "Technology, art and autonomy"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "padoue_2019",
+        "fields": {
+            "booktitle": "Le gouvernement de l'entropie --- Il governo dell’entropia",
+            "year": "2019",
+            "month": "10",
+            "location": "Universita degli studi di Padova, Padova, Italia",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "L'Anthropocène comme désorganisation du vivant"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "fm_2019",
+        "fields": {
+            "booktitle": "Rencontres culturelles maçonniques de Lyon : sciences(s) et humanisme",
+            "year": "2019",
+            "month": "10",
+            "location": "Palais de Bondy, Lyon, France",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "L'Anthropocène comme désorganisation du vivant"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "isc_2019",
+        "fields": {
+            "booktitle": "Journée Arts & Sciences des systèmes complexes : Artex",
+            "year": "2019",
+            "month": "10",
+            "location": "ISC, Paris, France",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Espaces des possibles et nouveauté : de la musique à la biologie"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "bergson_2019",
+        "fields": {
+            "booktitle": "Physical Time, Biological Time: Bergsonism Today",
+            "year": "2019",
+            "month": "10",
+            "location": "ERRAPHIS, Université de Toulouse 2 – Jean Jaurès, Toulouse, France",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Comment objectiver les nouveaux possibles en biologie?"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "cim_2019",
+        "fields": {
+            "booktitle": "Séminaire complexité et information morphologique",
+            "year": "2019",
+            "month": "9",
+            "location": "ÉNS, Paris, France",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Mesurer le vivant"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "sf_2019",
+        "fields": {
+            "booktitle": "80 Shades of Stu - 30 Years of Complexity",
+            "year": "2019",
+            "month": "8",
+            "location": "The Santa Fe Institute, Santa Fe, NM, USA",
+            "author": " M. Montévil",
+            "title": "No Entailing Laws but Enablement in the Evolution of the Biosphere"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "Sableon_2019",
+        "fields": {
+            "booktitle": "Discussion avec Sabina Leonelli",
+            "year": "2019",
+            "month": "5",
+            "location": "IHPST, Paris, France",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Introduction: Sabina Leonelli, La recherche scientifique à l’ère des Big Data"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "cerisy_2019",
+        "fields": {
+            "booktitle": "Les sciences humaines et sociales en recherche technologique",
+            "year": "2019",
+            "month": "6",
+            "location": "Centre culturel international de Cerisy, Cerisy-la-Salle, France",
+            "language": "fr",
+            "author": " Bernard Stiegler and M. Montévil",
+            "title": "La recherche technologique à l'IRI : méthode pour une clinique contributive."
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "oslo_2019",
+        "fields": {
+            "booktitle": "2019 Meeting of the International Society for History, Philosophy and Social Studies of Biology (ISHPSSB)",
+            "year": "2019",
+            "month": "7",
+            "location": "Oslo, Norway",
+            "author": " M. Montévil",
+            "title": "Principle of organization, integration of the principles and application --- Precision biology: concepts and measurements"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "enmiprep_2019",
+        "fields": {
+            "booktitle": "ENMI Préparatoire 2019: Disruption, massive destruction and organization of an 'internation' in the sense of Marcel Mauss",
+            "year": "2019",
+            "month": "7",
+            "location": "Paris, France",
+            "author": " M. Montévil",
+            "title": "Groupe 1 Epistemology: Anthropocene, exosomatization and negentropy"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "gradcam_2019",
+        "fields": {
+            "booktitle": "Environment, Sustainability and Health Institute Paper Club Meeting",
+            "year": "2019",
+            "month": "07",
+            "location": "Technological University Dublin, Dublin, Irlande",
+            "author": " M. Montévil",
+            "title": "Why theorization has to make a comeback if we are to meet the challenges of the Anthropocene."
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "epimod_2019",
+        "fields": {
+            "booktitle": "Séminaire d'épistémologie des modèles",
+            "year": "2019",
+            "month": "04",
+            "location": "IHPST, Paris",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Repenser la modélisation à l'aune de l'historicité des phénomènes vivants"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "biomorph2_2019",
+        "fields": {
+            "booktitle": "Biomorphisme : Approches sensibles et conceptuelles des formes du vivant --- journée grand public",
+            "year": "2019",
+            "month": "01",
+            "location": "Grand-Plateau de la Friche-Belle de Mai, Marseille, France",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Table ronde « Enjeux politiques et écologiques du biomorphisme »"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "biomorph1_2019",
+        "fields": {
+            "booktitle": "Biomorphisme : Approches sensibles et conceptuelles des formes du vivant",
+            "year": "2019",
+            "month": "01",
+            "location": "IMéRA - Institut d'études avancées Exploratoire Méditerranéen de l’Interdisciplinarité, Marseille, France",
+            "language": "fr",
+            "video": "https://www.youtube.com/watch?v=aL2VUJ0jXLU",
+            "author": " M. Montévil",
+            "title": "Le sens des formes en biologie"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "Ehess2019",
+        "fields": {
+            "booktitle": "Expression et individuation. Les enjeux esthétiques, politiques et exosomatiques",
+            "year": "2019",
+            "month": "01",
+            "location": "CRAL, École des Hautes Études en Sciences Sociales , Paris, France",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "L'individuation biologique : approche épistémologique et théorique"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "ENS2018",
+        "fields": {
+            "booktitle": "Geometry and Phenomenology of the Living. Limits and possibilities of mathematization, complexity and individuation",
+            "year": "2018",
+            "month": "12",
+            "location": "École Normal Supérieure de Paris, Paris, France",
+            "author": " M. Montévil",
+            "title": "Historicity at the Heart of Biology: a Challenge for Mathematical Thinking"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "zurich2018",
+        "fields": {
+            "booktitle": "Symposium: The Science of Systems and Life: Alternative Philosophies, new Mathematics",
+            "year": "2018",
+            "month": "10",
+            "location": "ETH Zürich, Zürich, Suisse",
+            "author": " M. Montévil",
+            "title": "What is a new possibility in theoretical biology?"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "sip2018",
+        "fields": {
+            "booktitle": "Science in Perspective Talk #4",
+            "year": "2018",
+            "month": "10",
+            "location": "ETH Zürich, Zürich, Suisse",
+            "author": " M. Montévil",
+            "title": "The coding of life. Breakthroughs and Blind Spots in the Mathematisation of the Life Sciences."
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "onteis2018",
+        "fields": {
+            "booktitle": "La médecine au chevet de l’IA médicale : nécessité d’un fondement théorique du vivant pour aborder les nouvelles technologies de manière rationnelle",
+            "year": "2018",
+            "month": "9",
+            "location": "Institut des systèmes complexes, Paris, France",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Approche théorique des organismes pour la médecine"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "bolognesemio",
+        "fields": {
+            "booktitle": "International Workshop: Laboratory on the disciplines of secrecy",
+            "year": "2018",
+            "month": "10",
+            "location": "Centro Internazionale di Studi Umanistici Umberto Eco, Bologna, Italie",
+            "author": " M. Montévil",
+            "title": "Secrecy, transparency and opacity in biology."
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "sepentine2_2018",
+        "fields": {
+            "booktitle": "Work Marathon",
+            "year": "2018",
+            "month": "9",
+            "location": "Serpentine Gallery, London, UK",
+            "author": " M. Montévil",
+            "title": "Round table: Mathematics, Life sciences, Finance, Work and Economy"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "sepentine_2018",
+        "fields": {
+            "booktitle": "Work Marathon",
+            "year": "2018",
+            "month": "9",
+            "location": "Serpentine Gallery, London, UK",
+            "video": "https://www.youtube.com/watch?v=cnUYq0yglEU",
+            "author": " M. Montévil",
+            "title": "Entropy and the anthropocene"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "simai_2018",
+        "fields": {
+            "booktitle": "Attempts of a Mathematical Uprising for Restructuring Biomedical Sciences",
+            "year": "2018",
+            "month": "7",
+            "location": "XIV Biennial Conference of the Italian Society of Applied and Industrial Mathematics, Rome, Italie",
+            "author": " M. Montévil",
+            "title": "What first principles for mathematical modeling in biology?"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "nextleap_2018",
+        "fields": {
+            "booktitle": "Séminaire nextLeap: Information & Entropy",
+            "year": "2018",
+            "month": "6",
+            "location": " Centre Pompidou, Paris , France",
+            "video": "https://www.youtube.com/watch?v=a1I4iOzpPd0",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Entropy and functions"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "ischappy_2018",
+        "fields": {
+            "booktitle": "Happy Hour Conference # 2 : Morphogenesis",
+            "year": "2018",
+            "month": "6",
+            "location": " Institut des systèmes complexes, Paris , France",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Quels principes premiers pour comprendre la morphogenèse biologique?"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "mnhn2_2018",
+        "fields": {
+            "booktitle": "Histoire Naturelle et Systèmes Complexes – Problématiques, méthodes et enjeux",
+            "year": "2018",
+            "month": "6",
+            "location": " Institut des systèmes complexes, Paris , France",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Les organisations biologiques entre interdépendances systémiques et historicité : le cas des disruptions dues au changement climatique"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "pasteur_2018",
+        "fields": {
+            "booktitle": "Quelle modèle économique pour l'hôtel Pasteur?",
+            "year": "2018",
+            "month": "5",
+            "location": "Hôtel Pasteur, Rennes, France",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Le projet d'économie contributive à Plaine Commune"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "cardano_2018",
+        "fields": {
+            "booktitle": "Transitions et crises : mathématiques, finance, écosystèmes",
+            "year": "2018",
+            "month": "5",
+            "location": "École Normale Supérieure, Paris, France",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Analogies entre les disruptions endocrinniennes, écologiques et sociales."
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "museum_2018",
+        "fields": {
+            "booktitle": "Séminaire de l’atelier de bioinformatique",
+            "year": "2018",
+            "month": "1",
+            "location": "Muséum national d'Histoire naturelle, Paris, France",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Enjeux de l’historicité du vivant pour la modélisation mathématique en biologie"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "enmi_2017",
+        "fields": {
+            "booktitle": "Entretiens du Nouveau Monde Industriel 11 : bêtise et intelligence artificielles.",
+            "year": "2017",
+            "month": "12",
+            "location": "Centre Pompidou, Paris, France",
+            "video": "https://www.youtube.com/watch?v=iBKG84J0a28",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Quelques opacités computationnelles: de la biologie aux décisions humaines"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "drts_2017",
+        "fields": {
+            "booktitle": "À propos de l'intelligence artificielle",
+            "year": "2017",
+            "month": "12",
+            "location": "Les rencontres du Droit Humain, Paris, France",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Pour un usage raisonné des algorithmes d'intelligence artificielle"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "utc_2017",
+        "fields": {
+            "booktitle": "Séminaire de l'équipe Cognitive Research and Enaction Design",
+            "year": "2017",
+            "month": "10",
+            "location": "Université Technologique de Compiègne, Compiègne, France",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Comprendre le vivant : quel rôle pour les mathématiques ?"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "museum_2017",
+        "fields": {
+            "booktitle": "Séminaire de l’Institut de Systématique, Évolution, Biodiversité",
+            "year": "2017",
+            "month": "10",
+            "location": "Muséum national d'Histoire naturelle, Paris, France",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Enjeux de l’historicité du vivant pour la modélisation mathématique en biologie"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "iri_2017",
+        "fields": {
+            "booktitle": "Intelligence artificielle et épistémologie des « boites noires »",
+            "year": "2017",
+            "month": "6",
+            "location": "IRI, centre Pompidou, Paris, France",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Les multiples opacités computationnelles en biologie expérimentale et théorique"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "saopaulo_2017",
+        "fields": {
+            "booktitle": "2017 Meeting of the International Society for History, Philosophy and Social Studies of Biology (ISHPSSB)",
+            "year": "2017",
+            "month": "7",
+            "location": "São Paulo, Brazil",
+            "author": " M. Montévil",
+            "title": "Modeling mammary organogenesis from biological first principles: The default state of cells and its physical constraints."
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "saopaulo2_2017",
+        "fields": {
+            "booktitle": "2017 Meeting of the International Society for History, Philosophy and Social Studies of Biology (ISHPSSB)",
+            "year": "2017",
+            "month": "7",
+            "location": "São Paulo, Brazil",
+            "author": " M. Montévil",
+            "title": "What counterpart to the principle of inertia in Population Genetics ?"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "misc",
+        "entrykey": "whoami2016",
+        "fields": {
+            "address": " Colloque du labex \"Who am I?\" 2016",
+            "type": "Poster",
+            "title": "Modeling mammary gland from biological first principles.",
+            "author": "M. Montévil and L. Spéroni and A. Soto and C. Sonnenschein",
+            "month": "11",
+            "year": "2016"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "gould17",
+        "fields": {
+            "booktitle": "Demi-journée Stephen Jay Gould",
+            "year": "2017",
+            "month": "2",
+            "location": "Centre Cavaillès - République des savoirs, ÉNS, Paris.",
+            "url": "https://sfs.snv.jussieu.fr/index.php/2017/02/13/demi-journee-stephen-jay-gould/",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Raisonnements physico-mathématiques et historicité du vivant: actualité d'une tension conceptuelle cruciale chez Gould"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "nantes17",
+        "fields": {
+            "booktitle": "Colloque : Modèles mathématiques et prévisions: leurs usages et abus dans les sciences humaines et les sciences de la nature",
+            "year": "2017",
+            "month": "2",
+            "location": "Institut d’études avancées de Nantes",
+            "abstract": "Dans cette intervention, nous partirons d'un cas particulier de modèle biophysique de morphogenèse chez les plantes. Nous montrerons que ce modèle permet de comprendre certains aspects du phénomène considéré mais laisse de côté plusieurs aspects clef de la compréhension biologique de la situation : l'inscription de la partie considérée dans un organisme et l'inscription de cet organisme dans une histoire évolutive. Nous montrerons alors que le style de raisonnement de la physique, c'est à dire sa manière de comprendre les phénomènes, pose problème en biologie. Nous proposerons enfin quelques directions pour surmonter ces difficultés.",
+            "url": "https://www.iea-nantes.fr/fr/actualites/colloque-modeles-mathematiques-et-previsions-leurs-usages-et-abus-dans-les-sciences-humaines-et-les-sciences-de-la-nature_713",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Critique de la raison physico-mathématique en biologie : comment comprendre la morphogénèse chez le vivant?"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "toulouse17",
+        "fields": {
+            "booktitle": "Séminaire PHISCIVI",
+            "year": "2017",
+            "month": "1",
+            "location": "Université de Toulouse - Jean Jaurès, Toulouse",
+            "url": "https://phiscivi.wixsite.com/phiscivi/seminaires-passes",
+            "author": " M. Montévil",
+            "title": "Systems biology beyond systems"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "isc16",
+        "fields": {
+            "booktitle": " Discussion autour de la modélisation de cellules en interactions (H. Bersini, M. Montévil)",
+            "year": "2016",
+            "month": "11",
+            "location": "Institut des Systèmes Complexes, Paris",
+            "abstract": "Modéliser des systèmes de cellules est un besoin commun en biologie et pour lequel il n’y pas de méthode standard. Dans ce séminaire, nous présenterons deux approches de ce problème. Nous discuterons en particulier l’interaction entre modélisateurs et biologistes, et l’articulation entre modèles et phénomènes biologiques.",
+            "url": "https://iscpif.fr/events-archive/la-modelisation-des-systemes-cellulaires/",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Modélisation de l’organogénèse mammaire à partir de principes biologiques premiers: les cellules et leurs contraintes physiques."
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "coursihpst",
+        "fields": {
+            "booktitle": "Master de philosophie, Parcours « Logique et philosophie des sciences » (LOPHISC), Cours de Philosophie de la Biologie (M1)",
+            "year": "2016",
+            "month": "12",
+            "location": "Université Paris 1 Panthéon-Sorbonne",
+            "url": "https://www.pantheonsorbonne.fr/en/ufr/ufr10/formations/master-candidature/presentation-des-parcours-du-m1/m1-lophisc/",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "La question de l'accès à l'objet biologique (2x2h)"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "coursihpst2",
+        "fields": {
+            "booktitle": "Master de philosophie, Parcours « Logique et philosophie des sciences » (LOPHISC), Cours de Philosophie de la Biologie (M1)",
+            "year": "2017",
+            "month": "12",
+            "location": "Université Paris 1 Panthéon-Sorbonne",
+            "url": "https://www.pantheonsorbonne.fr/en/ufr/ufr10/formations/master-candidature/presentation-des-parcours-du-m1/m1-lophisc/",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "La question de l'accès à l'objet biologique (2x2h)"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "nancy16",
+        "fields": {
+            "booktitle": "Colloque Cathy Dufour 2016 : Symétries, invariances et classifications.",
+            "year": "2016",
+            "month": "11",
+            "location": "Faculté des Sciences et Technologies, Vandoeuvre les Nancy",
+            "url": "https://ijl.univ-lorraine.fr/actualites/single-calendar-single/jeudi-3-et-vendredi-4-novembre-2016-colloque-cathy-dufour-symetries-invariances-et-classifications/actualites-generales-13/2016/11/?tx_ttnews%5BbackPid%5D=3",
+            "illustration": "dufour.png",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Asymétries et symétries en biologie: Allométrie, classification phylogénétique et biophysique"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "Ronchi16",
+        "fields": {
+            "booktitle": "Séminaire CIM",
+            "year": "2016",
+            "month": "10",
+            "location": "ÉNS, Paris",
+            "language": "fr",
+            "author": " M. Montévil and R. Ronchi",
+            "title": "La nouveauté en biologie, discussion autour des concepts de Bergson"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "smile16",
+        "fields": {
+            "booktitle": "Séminaire Smile",
+            "year": "2016",
+            "month": "10",
+            "location": " Collège de France, Paris",
+            "url": "https://www.lpsm.paris/smile/seminars.php",
+            "author": " M. Montévil",
+            "title": "Time reversibility and other comparisons between mechanics and population genetics"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "cerisy16",
+        "fields": {
+            "booktitle": "Sciences de la vie, sciences de l'infomation",
+            "year": "2016",
+            "month": "9",
+            "location": " Cerisy-la-Salle",
+            "url": "http://www.ccic-cerisy.asso.fr/sciences16.html",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Principes théoriques pour les organismes : principes de variation et d'organisation."
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "sanseb16",
+        "fields": {
+            "booktitle": "International Workshop: Stability and Variation in Biological Systems",
+            "year": "2016",
+            "month": "7",
+            "location": " San Sebastian, Spain",
+            "url": "https://www.ihpst.cnrs.fr/activites/colloques/international-workshop-stability-and-variation-biological-systems",
+            "author": " A. Soto and M. Montévil",
+            "title": "Modeling mammary organogenesis from biological first principles: cells and their physical constraints"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "barbara2015",
+        "fields": {
+            "booktitle": "Séminaire Laboratoire : Evolution des Régulations Endocriniennes",
+            "year": "2015",
+            "month": "12",
+            "location": "MNHN, Paris, France",
+            "author": " M. Montévil",
+            "title": "Theoretical principles for organisms and hormones"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "labex_2015",
+        "fields": {
+            "booktitle": "Who am I? Labex Retreat",
+            "year": "2015",
+            "month": "11",
+            "location": "Deauville, France",
+            "url": "http://www.labex-whoami.org/en/news/93-who-am-i-2015-retreat",
+            "abstract": "We argue that a theory of biological systems should rely on organization and variation as theoretical principles. As such, these principles are fundamental for the biological domain: biological systems are organized natural systems that undergo (functional) variation. <br> In this paper, we provide a specific characterization of each principle, by emphasizing their mutual relations: organization provides the relevant kind of complexity for functional variation to occur; in turn, variation enables the maintenance of organization over time, notably at the evolutionary scale. We will illustrate this discussion with examples from plant morphogenesis.",
+            "author": " M. Montévil",
+            "title": "Organization and variation as theoretical principles for biology"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "napoli_2015",
+        "fields": {
+            "booktitle": "The III International Vasculab Conference",
+            "year": "2015",
+            "month": "11",
+            "location": "Hemodyn 2015 Napoli, Italia",
+            "url": "http://www.vasculab.it/hemodyn2015.xml",
+            "abstract": "We developed 3D culture methods that reproduce mammary gland ductal morphogenesis in in vitro conditions. We are proposing a conceptual framework to understand morphogenetic events based on epistemological sound biological principles instead of the common practice of using purely biophysical approaches. More specifically, our theoretical framework is based on the principle that the default state of cells is proliferation with variation and motility. We emphasize the role played by the agency of cells embedded in a gel and the circularity that is relevant for the intended process, whereby cells act upon other cells and matrix elements, and are subject to the agentivity of neighboring cells. This circularity strongly differs from classical linear causality. Finally, our approach opens up the study of causal determination to multilevel explanations rather than reductive ones involving only molecules in general and genes in particular.",
+            "illustration": "vasculab.png",
+            "author": " M. Montévil and A. Soto",
+            "title": "Theoretical approach of duct morphogenesis"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "div_2015",
+        "fields": {
+            "booktitle": "Approches théoriques et modélisation de la diversité biologique et résilience dynamique des systèmes complexes organisés multi-échelles : du système immunitaire aux macro-écosystèmes.",
+            "year": "2015",
+            "month": "10",
+            "location": "ISC Paris, France",
+            "day": "12",
+            "url": "https://iscpif.fr/events-archive/approches-theoriques-et-modelisation-de-la-diversite-biologique-et-resilience-dynamique-des-systemes-complexes-organises-multi-echelles-du-systeme-immunitaire-aux-macro-ecosystemes/",
+            "program": "150917 programme colloque biodiversité resilience.pdf",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Historicity and organization"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "canada2_2015",
+        "fields": {
+            "booktitle": "From the tissue organization field theory of carcinogenesis to a theory of organisms and back",
+            "year": "2015",
+            "month": "7",
+            "location": "ISHPSSB 2015 Montreal, Canada",
+            "url": "http://ishpssb2015.uqam.ca/",
+            "abstract": "Biophysical approaches to biological phenomena have provided fruitful insights, yet they generally suffer from the direct transposition of physical paradigms and methods in biology, without the deep justifications that exist in physics (as for the conservation of energy for example). In this context, we feel that it is extremely fruitful to propose theoretical principles that are genuinely biological, and frame the discussion and the mathematical analysis of biological processes. <br> In this talk, we will discuss a framing principle for biology: biological processes can be interpreted as the never-identical iteration of morphogenetic processes. <br> The iteration mentioned in this principle takes place both at the level of tissues and organs, where it can lead to fractal-like structures, for example, and at the level of organisms (including cells), where it leads to the flow of generations, which phylogeny aims to reconstruct. <br> The non-identical character of these iterations correspond to a specific form of variation: it is not just quantitative changes that we aim to characterize but changes in the mathematical regularities that enable to study the corresponding processes. We will discuss how the concept of never identical iteration of a morphogenetic process enables to better understand both ontogenetic and phylogenetic processes, and illustrate this with the morphology of mammary gland epithelium. Note for example that phylogenetic analyses are based on the notion that individuals that are afar in the genealogy have different relevant characters. <br> Last we will briefly discuss the epistemological consequences of this proposal as for the nature of the articulation between mathematics and biological phenomena.",
+            "author": " M. Montévil",
+            "title": "A novel framing principle for biology."
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "canada1_2015",
+        "fields": {
+            "booktitle": "Boundaries and levels of biological organization",
+            "year": "2015",
+            "month": "7",
+            "location": "ISHPSSB 2015 Montreal, Canada",
+            "url": "http://ishpssb2015.uqam.ca/",
+            "program": "ISHPSSB 2015 IAS- IHPST session.pdf",
+            "abstract": "We propose a theoretical and formal way to account for the various levels of organization that biological systems may realize. Our key assumption is that levels of organization are to be understood as specific networks of interdependences among the functional constituents. More precisely, we will rely on the notion of organizational closure, which refers to the mutual construction and stabilization of constituents playing the role of constraints within the system. A level of biological organization, we will argue, is a level of closure of constraints. <br> With this characterization in hand, we will first discuss those situations in which different levels of organization can be distinguished, and hierarchically articulated, by relying on sharp discontinuities. In particular, this is the case of cells within multicellular organisms. We will then focus on those more complex cases in which the description of a level of organization requires appealing to the notion of “tendency to closure”, which aims to deal with the qualitative notion of level of organization by quantitative means. In particular, the tendency to closure involves a quantitative measure of functional interdependences at the relevant spatial scale at which constraints operate. <br> We conclude with a preliminary discussion of the spatiotemporal conditions (in particular: the dependence on large space scale and small time scale) that enable the coherence of organisms realizing high levels of organization (e.g. mammals).",
+            "author": " M. Montévil and M. Mossio",
+            "title": "From levels of organization to the organization of levels"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "syd_2015",
+        "fields": {
+            "booktitle": "Workshop on approaches to variation and stability in contemporary biology",
+            "year": "2015",
+            "month": "5",
+            "location": "University of Sydney, Australia",
+            "abstract": "In this presentation, we will contrast the articulation between mathematics and phenomena that is performed in physical theorizing with the situation in biology.short, physical theorizing is grounded on stable mathematical structures, defined by theoretical symmetries and corresponding conservation principles. By contrast, itfair to postulate that biological organizations exhibit changes of such structures over time. <br> This will enable us to define a strong notion of variability, which differs from quantitative variations. Variability will then play the role of a fundamental principle for biology. We will also discuss the consequences of these ideas on the form that a general theory of biological organization may have.",
+            "program": "2015Sydneyprogram.pdf",
+            "author": " M. Montévil",
+            "title": "Biological variability and physico-mathematical reasoning"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "nice_2015",
+        "fields": {
+            "booktitle": "La Pensée des Sciences. Rôles des pratiques épistémologiques dans la fabrication contemporaine des savoirs scientifiques",
+            "year": "2015",
+            "month": "4",
+            "day": "20",
+            "location": "Université Nice Sophia Antipolis, Nice",
+            "abstract": "L'observation de cellules en culture montre qu'elles prolifèrent, se meuvent, changent de forme... Confrontés à des contradictions entre leurs résultats expérimentaux et les cadres d’interprétations en vigueur (l'idée que les cellules d'un métazoaire sont quiescentes par défaut), Anna Soto et Carlos Sonnenschein ont été conduits à se séparer à la fois de ces cadres déterministes, où tout phénomène est conçu comme l’exécution d'un programme, mais aussi de l'ontologie qui leur est associée, et ont postulé que la prolifération et la motilité font partie de l'état par défaut des cellules. Des problèmes de même ordre se rencontrent dans la modélisation mathématique en biologie, dont le principe a été largement importé depuis la physique sans encadrement théorique. <br> Ces difficultés ont conduit à la mise en place progressive d'un programme de recherche, regroupant philosophes, biologistes et mathématiciens, visant à développer un cadre théorique solide pour la compréhension des organismes qui soit adapté à l'originalité des phénomènes biologiques.",
+            "url": "http://crhi-unice.fr/la-pensee-des-sciences/253-lundi-20-avril-2015-ana-soto-et-mael-montevil",
+            "language": "fr",
+            "author": " A. Soto and M. Montévil",
+            "title": "Chemins vers une théorie des organismes"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "explabio_2015",
+        "fields": {
+            "booktitle": "Séminaire Explabio",
+            "year": "2015",
+            "month": "2",
+            "location": "IHPST, Paris",
+            "language": "fr",
+            "author": " M. Montévil and M. Mossio",
+            "title": "Principes d'organisation et de variation en biologie"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "pascal_2015",
+        "fields": {
+            "booktitle": "Biological complexity and organization: theoretical approaches and applications",
+            "year": "2015",
+            "month": "5",
+            "location": "Muséum national d’Histoire naturelle, Paris",
+            "abstract": "We argue that a theory of biological systems should rely on organization and variation as fundamental theoretical principles. Biological systems are organized natural systems that undergo functional variation. In this presentation we will provide a specific characterization of each principle while emphasizing their mutual relations. Organization provides the relevant kind of complexity for functional variation to occur; and, in turn, variation enables the maintenance of organization over time, notably at the evolutionary scale.",
+            "url": "https://chairepascalbio.wordpress.com/2015/04/02/colloque-5-et-6-mai-2015-biological-complexity-and-organization-theoretical-approaches-and-applications/",
+            "author": " M. Montévil and M. Mossio",
+            "title": "Theoretical principles for biology: organization and variation"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "pascal2015",
+        "fields": {
+            "booktitle": "Séminaire de la chaire Blaise Pascal d'A. Soto",
+            "year": "2015",
+            "month": "3",
+            "location": "ENS, Paris",
+            "abstract": "Dans cette présentation, nous allons revenir sur une énigme : il n’y a pas d’explication possible en biologie sans enchevêtrement de niveaux. La relation entre les états d’un système et sa structure, qui permet en physique de déterminer un point de vue du système distinct de celui de l’observateur semble ne pas pouvoir être aussi aisémentat testée en biologie. Nous nous demanderons quelle est la source de ce problème ? La réponse que nous proposerons est que l’organisation biologique est une organisation du second ordre, ou pour le dire autrement un redoublement d’organisation, dont nous essaierons de préciser certains aspects conceptuels et certains aspects mathématiques. Nous comparerons ce concept de redoublement, avec l’hypothèse de criticité étendue, proposée par Bailly et Longo, mais aussi avec celui de clôture organisationnelle proposépar Varela et les néovaréliens. Nous montrerons également le lien direct qu’il y a entre cette hypothèse et l’existence de la prolifération avec variations comme état standard pour l’ontogénie et le développement des organismes, ainsi que celui de descendance avec modifications, pour l’évolution.",
+            "url": "https://chairepascalbio.wordpress.com/",
+            "language": "fr",
+            "author": " M. Montévil and P.A. Miquel",
+            "title": "L'individuation biologique, aspects conceptuels, aspects mathématiques"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "evaglo2014",
+        "fields": {
+            "booktitle": "L’évaluation face aux enjeux globaux --- Biologie, techniques et vulnérabilités",
+            "year": "2014",
+            "month": "10",
+            "day": "14",
+            "location": "ISC, Paris",
+            "url": "https://leocoutellec.wordpress.com/2014/07/03/colloque-14-octobre-2014-levaluation-face-aux-changements-globaux/",
+            "language": "fr",
+            "author": " G. Longo and M. Montévil",
+            "title": "Aléatoire, historicité et complexité biologique"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "IHES2014",
+        "fields": {
+            "booktitle": "Séminaire de biologie de M. Gromov",
+            "year": "2014",
+            "month": "7",
+            "location": "IHES, Paris",
+            "abstract": "In 1999, C Sonnenschein and AM Soto proposed the tissue organization field theory (TOFT). The TOFT posits 1) that cancer is a tissue-based disease whereby carcinogens (directly) and germ-line mutations (indirectly) alter normal interactions between the stroma and adjacent epithelium; and 2) the default state of all cells is proliferation with variation and motility. This later premise is relevant to and compatible with evolutionary theory, and is diametrically opposed to that of the somatic mutation theory. <br> This theoretical change is incompatible with the reductionist genocentric perspective generated by the molecular biology revolution. Rather than forcing a “bricolage” we decided to frontally attack the problem by joining efforts with philosophers, mathematicians and theoretical biologists to search for principles upon which to build a theory of organisms (this work is currently supported by the Pascal Chair). <br> While the theory of evolution has provided an increasingly adequate explanation of phylogeny, biology still lacks a theory of organisms that would encompass ontogeny and life cycles, and thus phenomena on a conception to death time-scale. To achieve this goal we propose that theoretical extensions of physics are required in order to grasp the living state of matter. Such extensions will help to describe the proper biological observables, i.e. the phenotypes. Biological entities must also follow the underlying principles used to understand inert matter. However, these physical laws and principles may not suffice to make the biological dynamics intelligible at the phenotypic level. By analogy with classical mechanics, where the principle of inertiais the default state of inert matter, we are proposing two aspects of the default state in biology, and a framing principle, namely: i) Default state: cell proliferation with variation as a constitutive property of the living. Variation is generated in particular by the mere fact that cell division generates two overall similar, but not identical cells. ii) Default state: motility, which encompasses cell and organismic movements as well as movement within cells. iii) Framing principle: life phenomena exhibit never identical iterations of a morphogenetic process. Organisms are the consequence of the inherent variability generated by proliferation, motility and auto-organization which operate within the framing principle. From these basic premises, we will elaborate on the generation of robustness, the structure of theoretical determination, and the identification of biological proper observables.",
+            "author": " A. Soto and M. Montévil",
+            "title": "From the tissue organization field theory of carcinogenesis to a theory of organisms."
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "carlos2014",
+        "fields": {
+            "booktitle": "Evolution, Development and Cancer",
+            "year": "2014",
+            "month": "12",
+            "location": "Museum National d'Histoire Naturelle, Paris",
+            "url": "https://chairepascalbio.wordpress.com/2014/11/25/colloque-evolution-development-and-cancer/",
+            "author": " N. Perret and M. Montévil",
+            "title": "From genetic program to enablement"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "sps2014",
+        "fields": {
+            "booktitle": "Ve Congrès de la Société de Philosophie des Sciences. Métaphysique des sciences.",
+            "year": "2014",
+            "month": "6",
+            "location": "Lille",
+            "url": "http://sps2014.blogspot.com/",
+            "abstract": "Les objets physiques sont définis théoriquement et mathématiquement comme des objets génériques. Ainsi, du point de vue de la gravitation newtonienne, une pomme ou une planète sont interchangeables, de même que le moment ou l'endroit où des phénomènes ont lieu. Un objet physique a une trajectoire spécifique, déterminée dans un espace de description stable. Au cœur de cette approche des phénomènes naturels se trouve la notion de symétrie théorique, qui justifie que des transformations (réelles ou virtuelles) ne changent pas les aspects pertinents d'un objet, en particulier et surtout la forme de sa détermination équationnelle. Les symétries justifient l'articulation des mathématiques avec le réel et permettent la dérivation mathématique des trajectoires. <br> En biologie, nous proposons que les symétries théoriques sont instables. Ceci a de nombreuses conséquences puisque c'est la définition même des objets qui ne peut être opérée comme en physique. La première de ces conséquences est que l'objet doit être pensé comme spécifique, étant donné qu'il altère ses symétries au cours du temps (ontogénétique et phylogénétique). Ceci confère à l'objet biologique une nature fondamentalement historique. De plus, l'espace de description biologique est alors lui-même défini comme résultat d'une histoire. Enfin, les trajectoires biologiques ne peuvent alors pas être dérivées mathématiquement puisque ce sont les symétries déterminant ces trajectoires qui changent au cours du temps.",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Objets physiques, objets biologiques."
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "stflour2014",
+        "fields": {
+            "booktitle": "École de printemps de la Société Francophone de Biologie Théorique. Le vivant critique et chaotique.",
+            "year": "2014",
+            "month": "5",
+            "location": "21 – 25 Mai 2014, St Flour",
+            "program": "SFBT2014.pdf",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Changements critiques de symétrie et aléatoire. Mathématiques et objectivation du vivant"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "cam2",
+        "fields": {
+            "booktitle": " School of Science and Technology",
+            "year": "2014",
+            "month": "5",
+            "location": "Università degli Studi di Camerino, Camerino",
+            "abstract": "The coupling of generic objects, defined by their symmetries, on the one side, and the corresponding trajectories, on the other side, is at the core of the objectivation of phenomena understood in existing physical theories. As for proper biological phenomena, we hypothesize that they do not possess stable theoretical symmetries. Thus, biological objects are specific in the sense that they are the result of historical and contingent changes of symmetries. This provides a specific notion of randomness, proper to biological phenomena.",
+            "author": " M. Montévil",
+            "title": "The specificity of biological objects. From physics to biology tier 2."
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "cam1",
+        "fields": {
+            "booktitle": " School of Science and Technology",
+            "year": "2014",
+            "month": "5",
+            "location": "Università degli Studi di Camerino, Camerino",
+            "abstract": "In this talk, we will discuss some propositions of extensions of physical theories to understand biological objects. we will focus on some aspects of biological time. First, we will focus on biological rhythms, in relationship with allometric relations. Then we will discuss the notions of biological complexity and organization, in the context of macroevolution.",
+            "author": " M. Montévil",
+            "title": "Some aspects of biological time. From physics to biology tier 1."
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "cams",
+        "fields": {
+            "booktitle": "Séminaire du CAMS, Systèmes complexes en sciences sociales",
+            "year": "2014",
+            "month": "4",
+            "location": "EHESS, Paris",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "La notion de mesure : de la physique à la biologie."
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "ensbp",
+        "fields": {
+            "booktitle": "Cours: complexité biologique et organisation : démarches théoriques et applications expérimentales.",
+            "year": "2014",
+            "month": "4",
+            "location": "École Normale Supérieure, Paris",
+            "url": "https://chairepascalbio.wordpress.com/page/2/",
+            "day": "8",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Framing biological objects"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "mhnm",
+        "fields": {
+            "booktitle": "Cours: Complexité biologique et organisation : démarches théoriques et applications expérimentales.",
+            "year": "2014",
+            "month": "3",
+            "location": "Muséum National d'histoire naturelle, Paris",
+            "url": "https://chairepascalbio.wordpress.com/page/2/",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "Temps et objet biologique"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "mnantes",
+        "fields": {
+            "year": "2014",
+            "month": "3",
+            "location": "Institut d'Étude Avancée, Nantes",
+            "illustration": "iea-nantes.png",
+            "language": "fr",
+            "author": " M. Montévil",
+            "title": "La notion de mesure : de la physique à la biologie"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "mpitt",
+        "fields": {
+            "booktitle": "Center for philosophy of science",
+            "year": "2014",
+            "month": "2",
+            "location": "University of Pittsburgh",
+            "abstract": "The core of the objectivization in physics is the coupling of generic objects, as defined by their symmetries, and their corresponding specific trajectories. As for biological phenomena, we posit that they do not possess stable theoretical symmetries. Thus, biological objects are specific in the sense that they are the result of historical and contingent changes of symmetries. This situation will allow us to discuss a specific notion of measurement for biological objects: measurements in biology co-establishes and often stabilize the theoretical symmetries of biological objects.",
+            "url": "https://www.pitt.edu/~pittcntr/Events/All/Lunchtime_talks/lunchtime_2013-14/abstracts/feb_14_details.html",
+            "illustration": "cathedraloflearning.jpg",
+            "author": " M. Montévil",
+            "title": "Biological objects and measurement"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "mtufts",
+        "fields": {
+            "booktitle": "Soto and Sonnenschein lab",
+            "year": "2014",
+            "month": "2",
+            "location": "Tufts University, Boston",
+            "illustration": "tufts.png",
+            "author": " M. Montévil",
+            "title": "Collagen organization in 3D cultures, From physical to biological self-organization"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "po12",
+        "fields": {
+            "author": "Longo, G. and Montévil, M. and Pocheville, A.",
+            "title": "Symmetry changes and enablement in the evolution of the biosphere: their impact on biological theoretizing",
+            "booktitle": "Evolution des Formes : Contraintes - Adaptation",
+            "year": "2012",
+            "month": "11",
+            "location": "Muséum National d’Histoire Naturelle, Paris",
+            "illustration": "mnhn.png"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "ssml",
+        "fields": {
+            "booktitle": "Meeting of the International Society for History, Philosophy and Social Studies of Biology",
+            "year": "2013",
+            "month": "7",
+            "location": "Montpellier",
+            "url": "https://www.ishpssb.org/past-meetings/93-2013-montpellier-programme",
+            "day": "7",
+            "language": "fr",
+            "author": " A. M. Soto and C. Sonnenschein and M. Montévil and G. Longo",
+            "title": "Towards a theory of organisms"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "pocheville_intra-organismal_2010",
+        "fields": {
+            "author": "Pocheville, A. and Montévil, M.",
+            "title": "Intra-organismal ecology: niche construction and gene therapy",
+            "booktitle": "Organisms as ecosystems, ecosystems as organisms",
+            "year": "2010",
+            "month": "12",
+            "location": "Laboratoire Ecologie et Evolution, Université Paris 6"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "mm11c",
+        "fields": {
+            "author": "Montévil, M.",
+            "title": "Rôle des symétries théoriques dans la mesure en biologie",
+            "booktitle": "Séminaire de biologie théorique",
+            "year": "2011",
+            "month": "11",
+            "location": "CREA-IHPST, Paris",
+            "abstract": "Dans les théories physiques, la mesure a un statut précis, intrinsèque au cadre mathématique permettant l’objectivation des phénomènes. En biologie, cette question n’est que très peu traité, en particulier en lien avec le paradigme de programme génétique qui permet en principe une mesure exacte et complète. Partant de la notion de criticité étendue comme instabilité des symétries théorique, nous proposerons un statut théorique à la mesure en biologie comme participant directement des symétries théorique des objets étudiés. Dans cette approche, la constitution de l’objet dans l’acte théorique de mesure est alors plus « forte » encore qu’en physique quantique.",
+            "url": "https://biotheo.wordpress.com/2011/11/08/mael-montevil/",
+            "day": "22",
+            "language": "fr"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "mm9",
+        "fields": {
+            "author": "Montévil, M.",
+            "title": "Table ronde : Fin et ouverture...",
+            "booktitle": "Journée d’études L’anneau des disciplines",
+            "year": "2009",
+            "month": "11",
+            "location": "ÉNS, Paris",
+            "url": "https://sncs.fr/2009/11/23/l-anneau-des-disciplines-hommage-a/",
+            "program": "anneau.pdf",
+            "day": "16",
+            "abstract": "Francis Bailly (10 février 1939 5 février 2009) a été chercheur, physicien du solide, au CNRS (Laboratoire de physique du solide de Meudon-Bellevue) de 1962 à 2004. Il est l’auteur de nombreux articles scientifiques traitant de l’épistémologie de la physique. <br> Cette journée d’études est organisée à sa mémoire par l’École normale supérieure dans le cadre du Collectif Histoire Philosophie Sciences avec le support du Département d’informatique. Son titre, L’anneau des disciplines, reprend l intitulé d’un numéro spécial de la Revue internationale de systémique (vol. 5, n° 3, 1991) par Francis Bailly. Publication :",
+            "language": "fr"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "mm11b",
+        "fields": {
+            "author": "Montévil, M. and Mossio, M.",
+            "title": "The idea of closure in autonomous systems",
+            "booktitle": "Workshop on Artificial Autonomy ECAL 2011",
+            "year": "2011",
+            "month": "8",
+            "location": " Paris",
+            "url": "https://autonomyworkshop.wordpress.com/",
+            "program": "ECAL-book_of_abstracts.pdf",
+            "abstract": "In this paper, we provide a general characterization of closure as a distinctive causal regime of autonomous systems, which cannot be reduced to physico-chemical causation without loosing relevant information about the system’s organization. <br> Our argument consists in three steps. First, we put forward an account of how different levels of causation can be realized within a biological autonomous systems, by making a conceptual and formal distinction, based on the idea of symmetry, between processes and constraints exerted on these processes. Second, we develop the notion of dependence among constraints and, third, we claim that closure is realized as a mutual dependence among a set of entities having the status of constraints within the system. The paper might then make a relevant contribution to the elaboration of a conceptual and formal theory of closure, able to overcome some of the weaknesses of previous accounts.",
+            "day": "8"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "mm11a",
+        "fields": {
+            "author": "Longo, G. and Montévil, M.",
+            "title": "From Physics to Biology by symmetry breakings",
+            "booktitle": "Self-Organization in Biology: scope and limits",
+            "year": "2011",
+            "month": "5",
+            "location": "Ceperc, Philosophy of Biology Group, Aix-en-Provence",
+            "url": "https://selforganizationbiology2011.wordpress.com/",
+            "program": "self-organization-Aix.pdf",
+            "day": "24"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "mm10b",
+        "fields": {
+            "author": "Montévil, M.",
+            "title": "Géométrie du temps biologique : rythmes et protension",
+            "booktitle": "Questions de phrasé",
+            "year": "2010",
+            "month": "9",
+            "location": "ENS, Paris",
+            "url": "http://www.entretemps.asso.fr/phraser/",
+            "abstract": " Nous observons que le temps physique usuel, linéaire, est insuffisant pour comprendre les phénomènes propres au vivant tels que les rythmes tant physiques (circadiens, circannuels, ...) que proprement biologiques (cardiaques, respiratoires, métaboliques, ...). En particulier, le rôle des rythmes biologiques ne semble pas avoir de contrepartie dans la formalisation des horloges physiques, basée sur des fréquences correspondant au temps linéaire usuel (potentiellement thermodynamique, donc orienté). <br> Nous proposons ensuite une représentation fonctionnelle du temps biologique par un tube bidimensionnel, permettant de tenir compte des rythmes biologiques. <br> Cela conduit à introduire un système de référence tridimensionnel comme espace de plongement, interprétable biologiquement. Cette approche a des applications en terme de diagnostic médical, lorsque l’on introduit des données empiriques, par exemple une série de battements de coeur, dans le cadre théorique proposé. <br> Nous essaierons de produire quelques éléments de comparaison avec les rythmes musicaux.",
+            "program": "Questions de phrasé.pdf",
+            "day": "23",
+            "video": "https://montevil.theobio.org/sites/montevil.theobio.org/files/2010_09_23_montevil.mp3",
+            "language": "fr"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "mm10a",
+        "fields": {
+            "author": "Montévil, M. and Pocheville, A.",
+            "title": "Multilevel Causation and criticality: from physics to biology",
+            "booktitle": "Workshop: multilevel causation",
+            "year": "2010",
+            "month": "3",
+            "location": "IHPST, Paris",
+            "day": "25"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "mm09c",
+        "fields": {
+            "author": "Montévil, M.",
+            "title": "Criticité étendue et identité",
+            "booktitle": "LIGC 2009 \"Egalité, identité, isomorphisme\"",
+            "year": "2009",
+            "month": "9",
+            "location": " Firenze",
+            "url": "http://www.ligc.fr/rencontres-passees/article/ligc-2009-firenze",
+            "day": "17",
+            "language": "fr"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "mm09b",
+        "fields": {
+            "author": "Montévil, M. and Pocheville, A.",
+            "title": "Niche écologique: splendeurs et décadence",
+            "booktitle": "Les paradigmes de l’écologie : modélisation, économie, et éthique de l’environnement",
+            "year": "2009",
+            "month": "3",
+            "location": "CNRS, Cargèse",
+            "day": "5",
+            "language": "fr"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "mm09a",
+        "fields": {
+            "author": "Montévil, M.",
+            "title": "Explorer la singularité physique du vivant: temps biologique, criticité étendue et anti-entropie.",
+            "booktitle": "Séminaire de biologie théorique",
+            "year": "2009",
+            "month": "3",
+            "location": "CREA, Paris",
+            "abstract": "Après avoir explicité brièvement la nature, le sens et les conséquences méthodologique que comporte pour nous l'hypothèse de la singularité physique du vivant, nous décrirons nos progrès dans le développement et l'exploration de plusieurs notions proposée par Bailly & Longo. Ces notions, proprement biologiques, seront dans certains illustrées par des données biologique.",
+            "day": "26",
+            "language": "fr"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "mm08a",
+        "fields": {
+            "author": "Montévil, M.",
+            "title": "Commentaire de Réseaux de régulation biologiques et causalité complexe (Annick Lesne)",
+            "booktitle": "Fonctions et causalité complexe",
+            "year": "2008",
+            "month": "11",
+            "location": "IHPST, Paris",
+            "url": "https://hidetakayakura.webs.com/conferences.htm",
+            "program": "2008-causalite.pdf",
+            "illustration": "ihpst.png",
+            "day": "28",
+            "language": "fr"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "misc",
+        "entrykey": "Chicago2014b",
+        "fields": {
+            "address": " 16th International Congress of Endocrinology and Endocrine Society's 96th Annual Meeting & Expo ICE/ENDO 2014, Chicago",
+            "type": "Poster",
+            "title": "A Novel 3D Model to Study the Link Between Hormonal Exposure and Mammographic Density in Breast Cancer",
+            "author": " Tessie Paulose and Maël Montévil and Lucia Speroni and Carlos Sonnenschein and Ana M. Soto",
+            "month": "6",
+            "year": "2014",
+            "url": "https://academic.oup.com/edrv/issue/35/Supplement",
+            "abstract": "Lower type 1 collagen concentration (0.5 mg/ml) increases elongation of structures compared to 1 mg/ml. Fibroblasts enhances elongation of structures in 1 mg/ml, but not 0.5 mg/ml. In 1 mg/ml collagen, elongated epithelial structures had lumen formation when co­‐cultured with fibroblasts. Hormones in co-­‐cultures of T47D + fibroblasts, significantly altered the phenotype in terms of elongation.",
+            "poster": "ICE_ENDO2014_poster_TPMM.pdf",
+            "illustration": "Chicago2014a.jpg"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "misc",
+        "entrykey": "Chicago2014a",
+        "fields": {
+            "address": " 16th International Congress of Endocrinology and Endocrine Society's 96th Annual Meeting & Expo ICE/ENDO 2014, Chicago",
+            "type": "Poster",
+            "title": "Development of Software for Automated Morphology Analysis (SAMA) to analyze morphogenic effects of mammotrophic hormones in vitro",
+            "author": "Lucia Speroni and Maël Montévil and Tessie Paulose and Florent Cerruti and Carlos Sonnenschein and Ana M. Soto",
+            "month": "6",
+            "year": "2014",
+            "url": "https://academic.oup.com/edrv/issue/35/Supplement",
+            "abstract": " In vitro 3D simulations of biological systems are critical for understanding morphogenesis and patterns of normal and abnormal development in tissues. <br> Here we present SAMA, a novel method through which epithelial structures grown in 3D cultures can be imaged, reconstructed in 3D and analyzed with minimum human intervention and, therefore, bias. <br> SAMA gives us an accurate picture of the epithelial structures and hence, more information compared to 2D morphometric analysis. In addition, this automated method is less time consuming than regular 2D morphometrics.",
+            "poster": "poster SAMA LS_finalMM.pdf",
+            "illustration": "Chicago2014a.jpg"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "misc",
+        "entrykey": "pocheville_are_2009",
+        "fields": {
+            "address": "Université Paris 7",
+            "type": "Poster",
+            "title": "Are there neutral forces in ecology?",
+            "abstract": "No, there are no forces. Yes, there is neutrality.",
+            "author": "Pocheville, Arnaud and Montévil, Maël",
+            "month": "12",
+            "year": "2009"
+        }
+    }
+]

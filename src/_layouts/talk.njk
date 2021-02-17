@@ -1,71 +1,10 @@
 ---
-layout: default
+layout: content
 eleventyComputed:
     orderDate: "{{-page.date | attributeDate-}}"
 ---
 
-{#
-Breadcrumb JSON-LD:
-https://developers.google.com/search/docs/data-types/breadcrumbs
-#}
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "item": {
-          "@id": "{{websiteid.url}}/talks/{{ page.date | date("YYYY") }}/",
-          "name": "{{ page.date | date(" YYYY ") }}"
-        }
-      }, {
-        "@type": "ListItem",
-        "position": 2,
-        "item": {
-          "@id": "{{websiteid.url}}/talks/{{ page.date | date("YYYY/MM") }}/",
-          "name": "{{ page.date | date(" MM ") }}"
-        }
-      }, {
-        "@type": "ListItem",
-        "position": 3,
-        "item": {
-          "@id": "{{ pkg.homepage }}{{ page.url }}",
-          "name": "{{ title }}"
-        }
-      }
-    ]
-  }
-</script>
 
-<article
-    class="page h-entry wrap"
-    lang="{{ lang }}">
-  <h1 id="post" class="page__title p-name">{{ title }}</h1>
-
-  {% set item = {
-      date: date,
-      url: page.url,
-      data: {
-        layout: 'talk',
-        lang: lang,
-        title: title,
-        tags: tags,
-        location: {
-          name: location.name,
-          url: location.url or ''
-          },
-        page: {
-            date: page.date
-            },
-        datepub: datepub
-      }
-  } %}
-  {% from "macros/meta.njk" import meta %}
-  <aside class="page__meta">
-    {{ meta(item) }}
-  </aside>
 
   <div class="page__body e-content ">
   {% if illustration.src %}
@@ -78,12 +17,10 @@ https://developers.google.com/search/docs/data-types/breadcrumbs
       crossorigin="anonymous"
       >
 {% endif %}
+
     {{ content | safe }}
 
     {#<p>See slides and additional content on Notist:<br /><a href="{{ notist_url }}">{{ title }}</a>#}
   </div>
 
-  {% set articleUrl = page.url %}
-  {% include "components/webmentions.njk" %}
 
-</article>

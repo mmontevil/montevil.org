@@ -4,10 +4,12 @@
 rm -fr ../src/assets/bib/*.bib
 pandoc-citeproc --bib2json bibM.bib  > bibM.json
 pandoc-citeproc --bib2json bibconf.bib  > bibconf.json
+node bibjson.js   > bibconf2.json
 
 cp -f bibM.bib ../src/assets/bib/bibM.bib
 mv -f bibM.json ../src/_data/bibM.json
 mv -f bibconf.json ../src/_data/bibconf.json
+mv -f bibconf2.json ../src/_data/bibconf2.json
 
 for i in "${array[@]}"; do  
     bibtool  -X "$i"  bibM.bib -o "$i".bib
