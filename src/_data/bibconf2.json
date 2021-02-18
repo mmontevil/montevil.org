@@ -1067,6 +1067,10 @@
             "year": "2015",
             "month": "12",
             "location": "MNHN, Paris, France",
+            "illustration": "mnhn.png",
+            "illustrationclass": " viclass",
+            "day": "8",
+            "abstract": "In this presentation we will discuss three theoretical principles for biology: the principle of organization, the principle of variation and the default state of cells. We will propose possible applications to understand hormone action.",
             "author": " M. Montévil",
             "title": "Theoretical principles for organisms and hormones"
         }
@@ -1082,6 +1086,7 @@
             "location": "Deauville, France",
             "url": "http://www.labex-whoami.org/en/news/93-who-am-i-2015-retreat",
             "abstract": "We argue that a theory of biological systems should rely on organization and variation as theoretical principles. As such, these principles are fundamental for the biological domain: biological systems are organized natural systems that undergo (functional) variation. <br> In this paper, we provide a specific characterization of each principle, by emphasizing their mutual relations: organization provides the relevant kind of complexity for functional variation to occur; in turn, variation enables the maintenance of organization over time, notably at the evolutionary scale. We will illustrate this discussion with examples from plant morphogenesis.",
+            "day": "24",
             "author": " M. Montévil",
             "title": "Organization and variation as theoretical principles for biology"
         }
@@ -1098,6 +1103,7 @@
             "url": "http://www.vasculab.it/hemodyn2015.xml",
             "abstract": "We developed 3D culture methods that reproduce mammary gland ductal morphogenesis in in vitro conditions. We are proposing a conceptual framework to understand morphogenetic events based on epistemological sound biological principles instead of the common practice of using purely biophysical approaches. More specifically, our theoretical framework is based on the principle that the default state of cells is proliferation with variation and motility. We emphasize the role played by the agency of cells embedded in a gel and the circularity that is relevant for the intended process, whereby cells act upon other cells and matrix elements, and are subject to the agentivity of neighboring cells. This circularity strongly differs from classical linear causality. Finally, our approach opens up the study of causal determination to multilevel explanations rather than reductive ones involving only molecules in general and genes in particular.",
             "illustration": "vasculab.png",
+            "day": "4",
             "author": " M. Montévil and A. Soto",
             "title": "Theoretical approach of duct morphogenesis"
         }
@@ -1130,6 +1136,7 @@
             "location": "ISHPSSB 2015 Montreal, Canada",
             "url": "http://ishpssb2015.uqam.ca/",
             "abstract": "Biophysical approaches to biological phenomena have provided fruitful insights, yet they generally suffer from the direct transposition of physical paradigms and methods in biology, without the deep justifications that exist in physics (as for the conservation of energy for example). In this context, we feel that it is extremely fruitful to propose theoretical principles that are genuinely biological, and frame the discussion and the mathematical analysis of biological processes. <br> In this talk, we will discuss a framing principle for biology: biological processes can be interpreted as the never-identical iteration of morphogenetic processes. <br> The iteration mentioned in this principle takes place both at the level of tissues and organs, where it can lead to fractal-like structures, for example, and at the level of organisms (including cells), where it leads to the flow of generations, which phylogeny aims to reconstruct. <br> The non-identical character of these iterations correspond to a specific form of variation: it is not just quantitative changes that we aim to characterize but changes in the mathematical regularities that enable to study the corresponding processes. We will discuss how the concept of never identical iteration of a morphogenetic process enables to better understand both ontogenetic and phylogenetic processes, and illustrate this with the morphology of mammary gland epithelium. Note for example that phylogenetic analyses are based on the notion that individuals that are afar in the genealogy have different relevant characters. <br> Last we will briefly discuss the epistemological consequences of this proposal as for the nature of the articulation between mathematics and biological phenomena.",
+            "day": "7",
             "author": " M. Montévil",
             "title": "A novel framing principle for biology."
         }
@@ -1146,6 +1153,7 @@
             "url": "http://ishpssb2015.uqam.ca/",
             "program": "ISHPSSB 2015 IAS- IHPST session.pdf",
             "abstract": "We propose a theoretical and formal way to account for the various levels of organization that biological systems may realize. Our key assumption is that levels of organization are to be understood as specific networks of interdependences among the functional constituents. More precisely, we will rely on the notion of organizational closure, which refers to the mutual construction and stabilization of constituents playing the role of constraints within the system. A level of biological organization, we will argue, is a level of closure of constraints. <br> With this characterization in hand, we will first discuss those situations in which different levels of organization can be distinguished, and hierarchically articulated, by relying on sharp discontinuities. In particular, this is the case of cells within multicellular organisms. We will then focus on those more complex cases in which the description of a level of organization requires appealing to the notion of “tendency to closure”, which aims to deal with the qualitative notion of level of organization by quantitative means. In particular, the tendency to closure involves a quantitative measure of functional interdependences at the relevant spatial scale at which constraints operate. <br> We conclude with a preliminary discussion of the spatiotemporal conditions (in particular: the dependence on large space scale and small time scale) that enable the coherence of organisms realizing high levels of organization (e.g. mammals).",
+            "day": "6",
             "author": " M. Montévil and M. Mossio",
             "title": "From levels of organization to the organization of levels"
         }
@@ -1161,6 +1169,7 @@
             "location": "University of Sydney, Australia",
             "abstract": "In this presentation, we will contrast the articulation between mathematics and phenomena that is performed in physical theorizing with the situation in biology.short, physical theorizing is grounded on stable mathematical structures, defined by theoretical symmetries and corresponding conservation principles. By contrast, itfair to postulate that biological organizations exhibit changes of such structures over time. <br> This will enable us to define a strong notion of variability, which differs from quantitative variations. Variability will then play the role of a fundamental principle for biology. We will also discuss the consequences of these ideas on the form that a general theory of biological organization may have.",
             "program": "2015Sydneyprogram.pdf",
+            "day": "26",
             "author": " M. Montévil",
             "title": "Biological variability and physico-mathematical reasoning"
         }
@@ -1189,9 +1198,11 @@
         "fields": {
             "booktitle": "Séminaire Explabio",
             "year": "2015",
-            "month": "2",
+            "month": "3",
             "location": "IHPST, Paris",
             "language": "fr",
+            "day": "11",
+            "illustration": "ihpst.png",
             "author": " M. Montévil and M. Mossio",
             "title": "Principes d'organisation et de variation en biologie"
         }
@@ -1207,6 +1218,7 @@
             "location": "Muséum national d’Histoire naturelle, Paris",
             "abstract": "We argue that a theory of biological systems should rely on organization and variation as fundamental theoretical principles. Biological systems are organized natural systems that undergo functional variation. In this presentation we will provide a specific characterization of each principle while emphasizing their mutual relations. Organization provides the relevant kind of complexity for functional variation to occur; and, in turn, variation enables the maintenance of organization over time, notably at the evolutionary scale.",
             "url": "https://chairepascalbio.wordpress.com/2015/04/02/colloque-5-et-6-mai-2015-biological-complexity-and-organization-theoretical-approaches-and-applications/",
+            "day": "5",
             "author": " M. Montévil and M. Mossio",
             "title": "Theoretical principles for biology: organization and variation"
         }
@@ -1221,8 +1233,9 @@
             "month": "3",
             "location": "ENS, Paris",
             "abstract": "Dans cette présentation, nous allons revenir sur une énigme : il n’y a pas d’explication possible en biologie sans enchevêtrement de niveaux. La relation entre les états d’un système et sa structure, qui permet en physique de déterminer un point de vue du système distinct de celui de l’observateur semble ne pas pouvoir être aussi aisémentat testée en biologie. Nous nous demanderons quelle est la source de ce problème ? La réponse que nous proposerons est que l’organisation biologique est une organisation du second ordre, ou pour le dire autrement un redoublement d’organisation, dont nous essaierons de préciser certains aspects conceptuels et certains aspects mathématiques. Nous comparerons ce concept de redoublement, avec l’hypothèse de criticité étendue, proposée par Bailly et Longo, mais aussi avec celui de clôture organisationnelle proposépar Varela et les néovaréliens. Nous montrerons également le lien direct qu’il y a entre cette hypothèse et l’existence de la prolifération avec variations comme état standard pour l’ontogénie et le développement des organismes, ainsi que celui de descendance avec modifications, pour l’évolution.",
-            "url": "https://chairepascalbio.wordpress.com/",
+            "url": "https://chairepascalbio.wordpress.com/2015/02/23/conference-de-paul-antoine-miquel-et-mael-montevil/",
             "language": "fr",
+            "day": "12",
             "author": " M. Montévil and P.A. Miquel",
             "title": "L'individuation biologique, aspects conceptuels, aspects mathématiques"
         }
