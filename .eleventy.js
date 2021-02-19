@@ -247,6 +247,46 @@ const typeseter = (content, outputPath) => {
       'typeseter',
       typeseter
     ); */
+ 
+
+const mathjax2 = async (content, outputPath) => {
+
+  if (outputPath && outputPath.endsWith('.html') && outputPath.includes('publications') && (outputPath.includes('articles')  || outputPath.includes('chapters'))  && (content.includes("<!--CompileMaths-->" ))) {
+    
+const {mathjax} = require('mathjax-full/js/mathjax.js');
+const {MathML} = require('mathjax-full/js/input/mathml.js');
+const {CHTML} = require('mathjax-full/js/output/chtml.js');
+const {liteAdaptor} = require('mathjax-full/js/adaptors/liteAdaptor.js');
+const {RegisterHTMLHandler} = require('mathjax-full/js/handlers/html.js');
+const {AssistiveMmlHandler} = require('mathjax-full/js/a11y/assistive-mml.js');
+
+require('mathjax-full/js/util/entities/all.js');
+
+const adaptor = liteAdaptor({fontSize: 16});
+AssistiveMmlHandler(RegisterHTMLHandler(adaptor));
+
+//
+//  Create input and output jax and a document using them on the content from the HTML file
+//
+const mathml = new MathML();
+const chtml = new CHTML({fontURL: '/assets/fonts/woff-2', exFactor: 8 / 16});
+const html = mathjax.document(content, {InputJax: mathml, OutputJax: chtml});
+
+//
+//  Typeset the document
+//
+html.render();
+return adaptor.outerHTML(adaptor.root(html.document));
+    
+    
+  }
+  return content;
+};
+ eleventyConfig.addTransform(
+      'mathjax2',
+      mathjax2
+    ); 
+ 
   const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minifier");
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
