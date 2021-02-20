@@ -70,7 +70,7 @@
   color: var(--color-primary-darker-1);
 }
 
-div > .indent, div >.noindent,section > .indent, section >.noindent,dd > .noindent,.caption,div >.description,div >table.equation,div >.itemize1,div >.enumerate1,div >.tableofcontents, div.tabular,div >.tableofcontents,.bibitem, dd.enumerate, div>blockquote , .enumerateRom,ol.references,ul.references,.Tableau10,.equation-star, .footnotes,.Footnote, ul.thebibliography, h3.abstract,.titleHead, h4.abstract,.episource, .epigraph > .indent{
+div > .indent, div >.noindent,section > .indent, section >.noindent,dd > .noindent,.caption,div >.description,div >table.equation,div >.itemize1,div >.enumerate1,div >.tableofcontents, div.tabular,div >.tableofcontents,.bibitem, dd.enumerate, div>blockquote , .enumerateRom,ol.references,ul.references,.Tableau10,.equation-star, .footnotes,.Footnote, ul.thebibliography, h3.abstract,.titleHead, h4.abstract,.episource, .epigraph > .indent,.referencesn{
       @media (min-width: 30rem) {
   margin-left: calc(0.25*100% - 0.25*30rem);
   margin-right: calc(0.25*100% - 0.25*30rem);
@@ -122,7 +122,7 @@ dt.description, dt.dt{margin-left: -2em;
   color: var(--color-primary-darker-1);
 }
 
-.bibitem, .thebibliography > *{margin-bottom:0.7em;}
+.bibitem, .thebibliography > *,.referencesn>*{margin-bottom:0.7em;}
 
 .titleHead,.head,.center,.maketitle,.author{text-align: center;}
 .titleHead{margin-bottom: 1em;}
