@@ -20,7 +20,7 @@ module.exports = {
 res=replaceall('mfenced close=")" open separators','mfenced close=")" open="(" separators',res)
 res=replaceall('mfenced close="∥" open separators','mfenced close="∥" open="∥" separators',res)
 res=replaceall('mfenced close="]" open separators','mfenced close="]" open="[" separators',res)
-res=res.replace(regexp1,'<svg class="icon" role="img" focusable="false"><use xlink:href="#symbol-anchor" /></svg>');
+res=res.replace(regexp1,'<svg class="icon" role="img" focusable="false" aria-label="Anchor"><use xlink:href="#symbol-anchor" /></svg>');
 file000=res;
   })
     return file000;

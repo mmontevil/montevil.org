@@ -117,7 +117,7 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
     permalink: true,
     permalinkClass: 'deeplink',
     permalinkSymbol:
-      '<svg class="icon" role="img" focusable="false"><use xlink:href="#symbol-anchor" /></svg>',
+      '<svg class="icon" role="img" focusable="false" aria-label="Anchor"><use xlink:href="#symbol-anchor" /></svg>',
     level: [2, 3, 4],
     slugify: function (s) {
       return slugify(s);
@@ -276,8 +276,8 @@ const html = mathjax.document(content, {InputJax: mathml, OutputJax: chtml});
 //  Typeset the document
 //
 html.render();
-return adaptor.outerHTML(adaptor.root(html.document));
-    
+ //
+  return  adaptor.doctype(html.document)+adaptor.outerHTML(adaptor.root(html.document));;
     
   }
   return content;

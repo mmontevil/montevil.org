@@ -1,5 +1,6 @@
 {
   "typepub": "book",
   "peerReview": false,
-    "category": ["books"]
+    "category": ["books"],
+    "noToc": true
 }

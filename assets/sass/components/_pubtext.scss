@@ -70,7 +70,7 @@
   color: var(--color-primary-darker-1);
 }
 
-div > .indent, div >.noindent,section > .indent, section >.noindent,dd > .noindent,.caption,div >.description,div >table.equation,div >.itemize1,div >.enumerate1,div >.tableofcontents, div.tabular,div >.tableofcontents,.bibitem, dd.enumerate, div>blockquote , .enumerateRom,ol.references,ul.references,.Tableau10,.equation-star, .footnotes,.Footnote{
+div > .indent, div >.noindent,section > .indent, section >.noindent,dd > .noindent,.caption,div >.description,div >table.equation,div >.itemize1,div >.enumerate1,div >.tableofcontents, div.tabular,div >.tableofcontents,.bibitem, dd.enumerate, div>blockquote , .enumerateRom,ol.references,ul.references,.Tableau10,.equation-star, .footnotes,.Footnote, ul.thebibliography, h3.abstract,.titleHead, h4.abstract,.episource, .epigraph > .indent{
       @media (min-width: 30rem) {
   margin-left: calc(0.25*100% - 0.25*30rem);
   margin-right: calc(0.25*100% - 0.25*30rem);
@@ -113,7 +113,7 @@ div >table.equation{
 .subsubsectionToc{
   margin-left: 2em;
 }
-.cmti-10,.ecti-1000{font-style: italic;}
+.cmti-10,.ecti-1000,.rm-lmri-9,.Emphasis,.ecti-1000{font-style: italic;}
 dt.description, dt.dt{margin-left: -2em;
   margin-top: 0.3em;
   font-variant: small-caps;}
@@ -153,5 +153,21 @@ nav > ul, nav >ul >li>ul , nav >ul >li>ul>li>ul,.references,.autotoc ol {
    text-indent: -1.5em;
    padding-left:1.5em;
 }
-.ReferencesCopy2{text-indent: 0em;}
+.thebibliography{    padding-inline-start:0;
+  list-style-type: none;
+}
+.footnotes >*{margin-top: 0.5em;}
 
+.ReferencesCopy2{text-indent: 0em;}
+h3.abstract{font-variant: small-caps;
+  margin-bottom: 0.25em;
+  font-weight: 600 ;
+}
+h4.abstract{font-variant: small-caps;margin-top: 0.2em;
+  margin-bottom: 0em;
+  font-weight: 500 ;
+}
+.keywords, .paragraphHead{font-weight: 600 ;
+  font-style: italic;
+  margin-bottom: 0.25em;
+}

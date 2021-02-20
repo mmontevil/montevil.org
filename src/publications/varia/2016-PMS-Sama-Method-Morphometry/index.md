@@ -1,5 +1,6 @@
 ---
 excerpt: Documentation for Software for Automated Morphological Analysis, a method by which epithelial structures grown in 3D cultures can be imaged, reconstructed and analyzed.
+noToc: true
 eleventyNavigation:
   key: SAMA
   title: What is SAMA?

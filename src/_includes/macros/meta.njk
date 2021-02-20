@@ -26,7 +26,7 @@
         </time>
       </li>
     {% endif %}
-    {% if item.data.location %}
+    {% if item.data.location and not  item.data.location===""%}
       <li class="date meta__item meta__location">
         {% icon "location", "Location" %}
         {% if item.data.location.url %}

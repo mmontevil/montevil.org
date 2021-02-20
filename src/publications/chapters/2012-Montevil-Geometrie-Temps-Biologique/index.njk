@@ -8,11 +8,13 @@ lang: fr
 
 <div class="maketitle">
   <h2 class="titleHead" id="géométrie-du-temps-biologique--rythmes-et-protension">Géométrie du temps biologique : rythmes et protension</h2>
-  <div class="author" style="text-align:center"><span class="ecrm-1200">Ma</span><span class="ecrm-1200">ë</span><span class="ecrm-1200">l Mont</span><span class="ecrm-1200">é</span><span class="ecrm-1200">vil</span></div>
+  <div class="author center" >Maël Montévil</div>
 </div>
+{#
 <h3 class="likesectionHead" id="table-des-matières"><a id="x1-1000"></a>Table des matières</h3>
 <div class="tableofcontents"><span class="sectionToc">1 <a href="#x1-20001" id="QQ2-1-2">Introduction</a></span><br /><span class="sectionToc">2 <a href="#x1-30002" id="QQ2-1-3">Une approche géométrique des rythmes biologiques</a></span><br /> <span class="subsectionToc">2.1 <a href="#x1-40002.1" id="QQ2-1-4">Deux types de rythmes</a></span><br /> <span class="subsectionToc">2.2 <a href="#x1-50002.2" id="QQ2-1-8">Une mathématisation de ce schème</a></span><br />  <span class="subsubsectionToc">2.2.1 <a href="#x1-60002.2.1" id="QQ2-1-9">Cadre mathématique</a></span><br /> <span class="subsectionToc">2.3 <a href="#x1-70002.3" id="QQ2-1-11">Variabilité des rythmes internes</a></span><br /> <span class="subsectionToc">2.4 <a href="#x1-80002.4" id="QQ2-1-15">Conclusion: des rythmes à la protension</a></span><br /><span class="sectionToc">3 <a href="#x1-90003" id="QQ2-1-16">Rétention et protension en biologie</a></span><br /> <span class="subsectionToc">3.1 <a href="#x1-100003.1" id="QQ2-1-17">Préliminaires théoriques</a></span><br /> <span class="subsectionToc">3.2 <a href="#x1-110003.2" id="QQ2-1-18">Principes</a></span><br /> <span class="subsectionToc">3.3 <a href="#x1-120003.3" id="QQ2-1-19">Spécifications</a></span><br /> <span class="subsectionToc">3.4 <a href="#x1-130003.4" id="QQ2-1-20">Analyse</a></span><br />  <span class="subsubsectionToc">3.4.1 <a href="#x1-140003.4.1" id="QQ2-1-21">Inertie biologique</a></span><br />  <span class="subsubsectionToc">3.4.2 <a href="#x1-150003.4.2" id="QQ2-1-23">Protension globale</a></span><br /> <span class="subsectionToc">3.5 <a href="#x1-160003.5" id="QQ2-1-25">Discussion</a></span><br /><span class="sectionToc">4 <a href="#x1-170004" id="QQ2-1-26">Conclusion</a></span><br /><span class="sectionToc"><a href="#x1-190004" id="QQ2-1-28">Références</a></span></div>
-<h3 class="sectionHead" id="1--introduction"><span class="titlemark">1 </span><a id="x1-20001"></a>Introduction</h3>
+#}
+<h3 class="sectionHead" id="1--introduction"><span class="titlemark" id="x1-20001">1 </span>Introduction</h3>
 <p class="noindent">
   Le vivant possède une phénoménalité particulière et originale. Comme cadre et siège de cette phénoménalité, l’organisation temporelle des organismes est elle-même d’une grande richesse. Ainsi, l’on rencontre dans l’activité biologique
   des cas de cyclicité : cycle cardiaque, cycle respiratoire, rythmes cérébraux, cycles circadiens, cycle de vie, etc.; et d’autre part il s’y présente, parfois même au sein de ces cycles, des phénomènes dont la nature semble plutôt être
@@ -20,8 +22,8 @@ lang: fr
   les considérer dans un cadre où la question de la temporalité soit abordée de manière adéquate.
 </p>
 <p class="indent">
-  Nous proposons dans ce texte de décrire deux directions que nous avons explorées en ce sens Bailly, Longo et Montévil <a href="tex4webhtml.html#X0-bailly2011b">2011</a>; Longo et Montévil
-  <a href="tex4webhtml.html#X0-longo2011">2011</a>. L’idée au cœur de ces propositions est d’aborder les phénomènes vivants en s’inspirant des démarches théoriques employées en science physique. Le premier principe de cette démarche
+  Nous proposons dans ce texte de décrire deux directions que nous avons explorées en ce sens Bailly, Longo et Montévil <a href="#X0-bailly2011b">2011</a>; Longo et Montévil
+  <a href="#X0-longo2011">2011</a>. L’idée au cœur de ces propositions est d’aborder les phénomènes vivants en s’inspirant des démarches théoriques employées en science physique. Le premier principe de cette démarche
   consiste, à notre sens, à s’appuyer sur les particularités et les régularités — et irrégularités — des phénomènes que l’on se propose d’étudier pour concevoir des cadres théoriques originaux, et souvent contre-intuitif, à même de tenir
   compte de ces phénoménalités. Ce faisant, la physique s’est développée autour d’une certaine audace et radicalité dans la formulation de cadres théoriques alternatifs.
 </p>
@@ -46,21 +48,21 @@ lang: fr
     <mi>C</mi>
     <mi>P</mi>
     <mi>T</mi>
-  </math>, voir Feynman et al. <a id="page.4"></a><a href="tex4webhtml.html#X0-feynman-nature">1980</a>. Ainsi, ces exemples, très divers,
+  </math>, voir Feynman et al. <a id="page.4" href="#X0-feynman-nature">1980</a>. Ainsi, ces exemples, très divers,
   montrent comment la réorganisation théorique de l’appréhension des structures temporelles permet l’intelligibilité des phénomènes.
 </p>
 <p class="indent">
   Les organismes vivant, eux, se présentent comme des organisateurs du temps. Ainsi si certains aspects du temps de la physique classique restent valides — il est toujours possible de mesurer à l’aide d’une horloge l’instant auquel tel ou
   tel événement se produit ou la durée de tel ou tel phénomène, voir section <a href="#x1-30002">2</a> — , un certain nombre de situations conduisent à d’autres propositions, mettant en avant l’unité
-  organisationnelle qui existe entre une souris et un éléphant par exemple McMahon <a href="tex4webhtml.html#X0-mcmahon1980scaling">1980</a>; West et Brown <a href="tex4webhtml.html#X0-West2005">2005</a>. D’autres approches consiste à
-  étudier à l’aide de systèmes dynamiques classiques comment tel ou telle structure temporelle peuvent apparaître, Winfree <a href="tex4webhtml.html#X0-winfree">2001</a>. Nous pensons cependant que ces approches ne permettent pas de tenir
+  organisationnelle qui existe entre une souris et un éléphant par exemple McMahon <a href="#X0-mcmahon1980scaling">1980</a>; West et Brown <a href="#X0-West2005">2005</a>. D’autres approches consiste à
+  étudier à l’aide de systèmes dynamiques classiques comment tel ou telle structure temporelle peuvent apparaître, Winfree <a href="#X0-winfree">2001</a>. Nous pensons cependant que ces approches ne permettent pas de tenir
   compte de l’originalité phénoménale du vivant, laissant de coté le rôle du temps physique dans le premier cas, et ne prenant pas en compte l’autonomisation du temps biologique vis à vis du temps physique dans le contexte d’un organisme
   pour le second.
 </p>
 <p class="indent">
   Ces critiques poussent à une conceptualisation originale du rapport entre temps physique et temps biologique qui peut être exprimée en terme de “phrasé”. Ainsi le temps biologique peut être analysé comme phrasé par rapport au temps
   physique, il n’est pas un temps fondamentalement incompatible avec le temps physique, et l’on peut voir des régularités moyennes dans leurs rapports. Cependant la constitution du temps biologique se fait, à notre avis, dans le cadre de
-  la criticité étendue (voir Bailly et Longo <a href="tex4webhtml.html#X0-bailly2011">2011</a>, <a href="tex4webhtml.html#X0-bailly2008">2008a</a>; Longo et Montévil <a href="tex4webhtml.html#X0-longo2011">2011</a>) où les symétries
+  la criticité étendue (voir Bailly et Longo <a href="#X0-bailly2011">2011</a>, <a href="#X0-bailly2008">2008a</a>; Longo et Montévil <a href="#X0-longo2011">2011</a>) où les symétries
   donnant en particulier les trajectoires spécifiques des systèmes dynamiques (et <span class="ecti-1095">in fine </span>la validité de leurs attracteurs) se trouvent brisées. Ainsi, il y a une forme d’irrégularité ou
   d’incommensurabilité, à notre sens, entre le temps physique et le temps biologique en tant que ce dernier n’est pas “arrimé” au temps physique par les symétries que les systèmes physiques usuels possèdent. Ce décalage n’est pas dû, à
   notre sens, à l’adjonction de quelque propriété extérieure au monde physique, mais aux singularités que nous proposons comme présentes au cœur de la détermination biologique. Pour donner un exemple particulièrement concret, considérons
@@ -76,24 +78,24 @@ lang: fr
   biologiques (avec l’exemple du rythme cardiaque) et temps physique, cette structure dépendant notamment de l’état de santé de l’organisme considéré. Dans la second partie, nous décrirons un autre aspect du temps biologique, que nous
   aborderons comme la tension mise en place par l’organisme entre événements passés et événements futurs et virtuels, ceci constituant dès lors un autre aspect de la réorganisation du temps dans les systèmes biologiques.
 </p>
-<h3 class="sectionHead" id="2--une-approche-géométrique-des-rythmes-biologiques"><span class="titlemark">2 </span><a id="x1-30002"></a>Une approche géométrique des rythmes biologiques</h3>
+<h3 class="sectionHead" id="2--une-approche-géométrique-des-rythmes-biologiques"><span class="titlemark" id="x1-30002">2 </span>Une approche géométrique des rythmes biologiques</h3>
 <p class="noindent">
-  Dans cette section, nous décrirons notre approche des rythmes biologiques, développée dans Bailly, Longo et Montévil <a id="page.5"></a><a href="tex4webhtml.html#X0-bailly2011b">2011</a>. Il s’agira ici de proposer un cadre relativement
+  Dans cette section, nous décrirons notre approche des rythmes biologiques, développée dans Bailly, Longo et Montévil <a id="page.5" href="#X0-bailly2011b">2011</a>. Il s’agira ici de proposer un cadre relativement
   simple où l’organisation temporelle des phénomènes biologiques nous amènera à proposer l’introduction d’une dimension temporelle supplémentaire. Ce cadre, nous le verrons, permet de considérer ensemble des invariants biologiques moyens
   de nature différentes. De plus, il permet de mettre en évidence la structure de la variabilité de certains rythmes biologiques pour une trajectoire expérimentalement mesurée.
 </p>
-<h4 class="subsectionHead" id="21--deux-types-de-rythmes"><span class="titlemark">2.1 </span><a id="x1-40002.1"></a>Deux types de rythmes</h4>
+<h4 class="subsectionHead" id="21--deux-types-de-rythmes"><span class="titlemark" id="x1-40002.1">2.1 </span>Deux types de rythmes</h4>
 <p class="noindent">
   Pour aborder l’organisation du temps biologique, il convient d’organiser les situations rythmiques suivant leurs propriétés d’invariance. Cette approche nous conduit alors à distinguer deux cas de rythmicité dont la nature est
   profondément différente :
 </p>
 <div class="table">
-  <p class="indent"><a id="x1-40011"></a></p>
+  <p class="indent" id="x1-40011"></p>
   <div class="minipage"> </div>
   <figcaption class="caption"><span class="id"><span class="eccc1095-"><span class="small-caps">T</span><span class="small-caps">a</span><span class="small-caps">b</span><span class="small-caps">l</span><span class="small-caps">e</span></span> 1:
 </span><span class="content"><span class="ecti-1095">Allometrie</span> <span class="ecti-1095">des</span> <span class="ecti-1095">rythmes</span> <span class="ecti-1095">biologiques</span> <span class="ecti-1095">chez</span>
 <span class="ecti-1095">les</span> <span class="ecti-1095">mammif</span><span class="ecti-1095">è</span><span class="ecti-1095">res</span>, ce tableau est établi à partir de Lindstedt et Calder III
-<a href="tex4webhtml.html#X0-lindstedt">1981</a> et représente
+<a href="#X0-lindstedt">1981</a> et représente
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
         <msub>
           <mrow>
@@ -311,8 +313,8 @@ en min.</span></td>
       <mn>1</mn>
       <mo class="MathClass-bin">∕</mo>
       <mn>4</mn>
-    </math>, voir Lindstedt et Calder III <a id="page.9"></a><a href="tex4webhtml.html#X0-lindstedt">1981</a>;
-    Schmidt-Nielsen <a href="tex4webhtml.html#X0-schmidtnielsen1984">1984</a>; Savage et al. <a href="tex4webhtml.html#X0-savage2004">2004</a>). Des exemples sont donnés dans la table <a href="#x1-40011">1</a>.
+    </math>, voir Lindstedt et Calder III <a id="page.9" href="#X0-lindstedt">1981</a>;
+    Schmidt-Nielsen <a href="#X0-schmidtnielsen1984">1984</a>; Savage et al. <a href="#X0-savage2004">2004</a>). Des exemples sont donnés dans la table <a href="#x1-40011">1</a>.
     Notons en particulier que les rythmes cardiaques, respiratoires et (approximativement) l’espérance de vie suivent ce genre d’invariants. Il en résulte que l’invariance qui apparaît alors n’est pas d’abord dans le lien avec le temps
     physique, mais dans le rapport entre ces rythmicités, ce rapport servant à décrire le nombre d’itérations d’un rythme pendant une itération d’un second rythme. Ce nombre est alors indépendant de la masse de l’organisme considéré —
     ainsi apparaît notamment le nombre total d’itérations du cycle cardiaque au cours de la vie d’un organisme, comme indépendant de l’organisme considéré, du moins parmi de grandes classes d’organismes telle que celle des mammifères.
@@ -320,7 +322,7 @@ en min.</span></td>
   </dd>
 </dl>
 <div class="table">
-  <p class="indent"><a id="x1-40022"></a></p>
+  <p class="indent" id="x1-40022"></p>
   <div class="minipage"> </div>
   <figcaption class="caption"><span class="id"><span class="eccc1095-"><span class="small-caps">T</span><span class="small-caps">a</span><span class="small-caps">b</span><span class="small-caps">l</span><span class="small-caps">e</span></span> 2:
 </span><span class="content"><span class="ecti-1095">Tempo</span> <span class="ecti-1095">et</span> <span class="ecti-1095">rythme</span> <span class="ecti-1095">cardiaque</span>, la troisième colonne met en correspondance le tempo et et le niveau
@@ -472,8 +474,8 @@ réciproquement, à une très grande stabilité du rythme en fonction de la mass
   <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
     <mi>θ</mi>
   </math>, dont la topologie est celle d’un cercle
-  <span class="footnote-mark"><a href="#fn1x0"><sup class="textsuperscript">1</sup></a>
-</span><a id="x1-4003f1"></a>, et à laquelle est associée un nombre d’itérations
+  <span class="footnote-mark"><a href="#fn1x0"><sup class="textsuperscript" id="x1-4003f1">1</sup></a>
+</span>, et à laquelle est associée un nombre d’itérations
   
   <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
     <mi>n</mi>
@@ -496,8 +498,8 @@ réciproquement, à une très grande stabilité du rythme en fonction de la mass
   manières différentes. Nous avons illustré ce fait dans le tableau <a href="#x1-40022">2</a>, en mettant en correspondance les tempo musicaux avec le rythme cardiaque : d’une part à différents niveaux d’activité
   chez l’homme et d’autre part en envisageant une correspondance avec des animaux au même niveau d’activité mais ayant différentes masses adultes, illustrant ainsi la notion d’allométrie.
 </p>
-<figure class="figure"><a id="x1-40051"></a><a id="x1-4004r1"></a>
-  <p class="noindent" style="text-align:center">
+<figure class="figure" id="x1-40051">
+  <p class="noindent" style="text-align:center" id="x1-4004r1">
     <img alt="Illustration qualitative de notre schème du temps biologique" src="exp-1+0_0-.png" width="600em" />
   </p>
   <figcaption class="caption"><span class="id"><span class="eccc1095-"><span class="small-caps">F</span><span class="small-caps">i</span><span class="small-caps">g</span><span class="small-caps">u</span><span class="small-caps">r</span><span class="small-caps">e</span>
@@ -517,8 +519,8 @@ bidimensionnalité est ici suggérée par divers valeurs de
   obtenons une spirale d’axe courbe (à peu près droit chez l’adulte). Finalement, le rythme interne constituera lui même une seconde spirale, prenant comme axe la première et qui engendrera une structure tubulaire, caractérisant
   l’autonomie de ce rythme vis à vis du temps physique.
 </p>
-<h4 class="subsectionHead" id="22--une-mathématisation-de-ce-schème"><span class="titlemark">2.2 </span><a id="x1-50002.2"></a>Une mathématisation de ce schème</h4>
-<h5 class="subsubsectionHead" id="221--cadre-mathématique"><span class="titlemark">2.2.1 </span><a id="x1-60002.2.1"></a>Cadre mathématique</h5>
+<h4 class="subsectionHead" id="22--une-mathématisation-de-ce-schème"><span class="titlemark" id="x1-50002.2">2.2 </span>Une mathématisation de ce schème</h4>
+<h5 class="subsubsectionHead" id="221--cadre-mathématique"><span class="titlemark" id="x1-60002.2.1">2.2.1 </span>Cadre mathématique</h5>
 <p class="noindent">
   Comme référentiel de base nous choisissons des coordonnées cartésiennes orthogonales. Les axes
   
@@ -785,8 +787,8 @@ l’organisme de petite taille que de celle de l’organisme plus gros.</span></
     <table class="equation">
       <tbody>
         <tr>
-          <td><a id="x1-6004r1"></a>
-            <math class="equation" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+          <td>
+            <math id="x1-6004r1" class="equation" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
               <mover class="overrightarrow">
                 <mrow>
                   <msub>
@@ -985,8 +987,8 @@ l’organisme de petite taille que de celle de l’organisme plus gros.</span></
     <table class="equation">
       <tbody>
         <tr>
-          <td><a id="x1-6005r2"></a>
-            <math class="equation" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+          <td>
+            <math  id="x1-6005r2" class="equation" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
               <mover class="overrightarrow">
                 <mrow>
                   <msub>
@@ -1295,12 +1297,12 @@ l’organisme de petite taille que de celle de l’organisme plus gros.</span></
     correspond à une situation inverse des situations physiques, les temps physiques (classiques, relativistes et quantiques) étant invariants par translation. Ce point est particulièrement important car le théorème de Noether montre
     que cette symétrie du temps physique, dans le cadre classique, correspond à la conservation de l’énergie, et permet ultimement la détermination des trajectoires. De manière similaire, dans le cadre quantique, temps et énergie sont
     conjugués mais leurs statuts n’est pas symétrique car le théorème de Pauli montre que la borne inférieure pour l’énergie (une absence de symétrie par translation) est incompatible avec l’existence d’un opérateur temps, voir Bailly,
-    Gaill et Mosseri <a id="page.19"></a><a href="tex4webhtml.html#X0-bailly1993">1993</a>; Longo et Montévil <a href="tex4webhtml.html#X0-longo2011">2011</a>.
+    Gaill et Mosseri <a id="page.19" href="#X0-bailly1993">1993</a>; Longo et Montévil <a href="#X0-longo2011">2011</a>.
     <table class="equation">
       <tbody>
         <tr>
-          <td><a id="x1-6006r3"></a>
-            <math class="equation" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+          <td>
+            <math id="x1-6006r3" class="equation" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
               <mover class="overrightarrow">
                 <mrow>
                   <msub>
@@ -1524,13 +1526,13 @@ l’organisme de petite taille que de celle de l’organisme plus gros.</span></
     </mover>
   </math>
   , modulo une hypothèse supplémentaire sur l’effet du temps physique sur le temps biologique en dehors de toute activité biologique (on peut penser à la congélation, voir Bailly, Longo et Montévil
-  <a href="tex4webhtml.html#X0-bailly2011b">2011</a>), nous obtenons :
+  <a href="#X0-bailly2011b">2011</a>), nous obtenons :
 </p>
 <table class="equation">
   <tbody>
     <tr>
-      <td><a id="x1-6007r4"></a>
-        <math class="equation" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+      <td>
+        <math id="x1-6007r4" class="equation" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
           <mfrac>
             <mrow>
               <mi>d</mi>
@@ -1801,8 +1803,8 @@ l’organisme de petite taille que de celle de l’organisme plus gros.</span></
 <table class="equation">
   <tbody>
     <tr>
-      <td><a id="x1-6008r5"></a>
-        <math class="equation" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+      <td>
+        <math id="x1-6008r5" class="equation" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
           <mfenced close="∥" open="∥" separators>
             <mrow>
               <mfrac>
@@ -1874,7 +1876,7 @@ l’organisme de petite taille que de celle de l’organisme plus gros.</span></
   </tbody>
 </table>
 <p class="indent">
-  Ce cadre permet alors de lier les propriétés du temps bidimensionnel avec des quantités observables, et conduit à un certain nombre de prédictions, détaillées dans Bailly, Longo et Montévil <a id="page.20"></a><a href="tex4webhtml.html#X0-bailly2011b">2011</a>. Plus précisément, les itérations observables du temps compacifié (battements de cœur, respirations, ...), repérées par le temps physique, déterminent directement
+  Ce cadre permet alors de lier les propriétés du temps bidimensionnel avec des quantités observables, et conduit à un certain nombre de prédictions, détaillées dans Bailly, Longo et Montévil <a id="page.20" href="#X0-bailly2011b">2011</a>. Plus précisément, les itérations observables du temps compacifié (battements de cœur, respirations, ...), repérées par le temps physique, déterminent directement
   
   <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
     <msub>
@@ -1905,8 +1907,8 @@ l’organisme de petite taille que de celle de l’organisme plus gros.</span></
 </p>
 <p class="indent">Nous allons maintenant nous focaliser sur ce que ce cadre permet, lorsque nous considérons la structure fine de la variabilité des rythmes biologiques (et non plus des moyennes).</p>
 <p class="noindent"> </p>
-<h4 class="subsectionHead" id="23--variabilité-des-rythmes-internes"><span class="titlemark">2.3 </span><a id="x1-70002.3"></a>Variabilité des rythmes internes</h4>
-<figure class="figure"><a id="x1-70013"></a>
+<h4 class="subsectionHead" id="23--variabilité-des-rythmes-internes"><span class="titlemark" id="x1-70002.3">2.3 </span>Variabilité des rythmes internes</h4>
+<figure class="figure" id="x1-70013">
   <img alt="Renormalisation et principes de la représentation de la variabilité." src="exp-4+0-.png" width="650em" />
   <figcaption class="caption"><span class="id"><span class="eccc1095-"><span class="small-caps">F</span><span class="small-caps">i</span><span class="small-caps">g</span><span class="small-caps">u</span><span class="small-caps">r</span><span class="small-caps">e</span>
 </span> 3 :
@@ -2029,8 +2031,8 @@ excroissance ou une contraction concernant un cercle entier (pour une accéléra
 <table class="equation">
   <tbody>
     <tr>
-      <td><a id="x1-7002r6"></a>
-        <math class="equation" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
+      <td>
+        <math id="x1-7002r6" class="equation" display="block" xmlns="http://www.w3.org/1998/Math/MathML">
           <mfrac>
             <mrow>
               <mi>∂</mi>
@@ -2447,8 +2449,8 @@ excroissance ou une contraction concernant un cercle entier (pour une accéléra
   </math>
   .
 </p>
-<figure class="figure"><a id="x1-70084"></a>
-  <div class="center"><a id="x1-7003r1"></a>
+<figure class="figure" id="x1-70084">
+  <div class="center" id="x1-7003r1">
     <p class="noindent">
       <img alt=" Une vue globale (2 jours)." src="dscheme8.png" />
     </p>
@@ -2468,11 +2470,11 @@ excroissance ou une contraction concernant un cercle entier (pour une accéléra
   <figcaption class="caption"><span class="id"><span class="eccc1095-"><span class="small-caps">F</span><span class="small-caps">i</span><span class="small-caps">g</span><span class="small-caps">u</span><span class="small-caps">r</span><span class="small-caps">e</span>
 </span> 4:
 </span><span class="content"><span class="ecti-1095">Comparaison de la situation pendant le sommeil et la veille. </span>Nous voulons mettre en avant, ici, le fait que la structure devient un cylindre régulier à grandes échelles pendant la nuit, alors que
-pendant le jour la structure est complexe à toutes les échelles. (Échantillon s20011 de la base de donnée “Long-Term ST Database”, dans Goldberger et al. <a id="page.25"></a><a href="tex4webhtml.html#X0-PhysioNet">2000</a>). La
+pendant le jour la structure est complexe à toutes les échelles. (Échantillon s20011 de la base de donnée “Long-Term ST Database”, dans Goldberger et al. <a id="page.25" href="#X0-PhysioNet">2000</a>). La
 série d’intervalles entre battements procurés par cette base de donnée est utilisé directement, dans notre cadre mathématique, pour estimer les quelques paramètres dont nous avons besoin et de manière plus importante, les
 différents rayons impliqués (chaque battement de cœur est représenté).</span></figcaption>
 </figure>
-<figure class="figure"><a id="x1-70095"></a>
+<figure class="figure" id="x1-70095">
   <p class="noindent" style="text-align:center">
     <img alt="Comparaisons entre un cas sain et des cas de mort cardiaque subite." src="path.png" />
   </p>
@@ -2480,12 +2482,12 @@ différents rayons impliqués (chaque battement de cœur est représenté).</spa
 </span> 5:
 </span><span class="content"><span class="ecti-1095">Comparaisons entre un cas sain et des cas de mort cardiaque subite. </span>(a) Cas sain, cf figure <a href="#x1-70084">4</a>. (b) Femme âgée de 67 ans avec un rythme
 sinusoïdal et régulation médicale intermittente. (c) Femme, 72 ans, avec fibrillation auriculaire. (d) Homme, 43 ans, avec un rythme sinusoïdal. (Les données proviennent des échantillons 51, 35 et 30 de la base de donnée “The
-Sudden Cardiac Death Holter Database”, voir Goldberger et al. <a id="page.28"></a><a href="tex4webhtml.html#X0-PhysioNet">2000</a>).</span></figcaption>
+Sudden Cardiac Death Holter Database”, voir Goldberger et al. <a id="page.28" href="#X0-PhysioNet">2000</a>).</span></figcaption>
 </figure>
 <p class="indent">
   Nous pouvons alors injecter directement des données expérimentales dans notre cadre géométrique (essentiellement des séries temporelles d’intervalles entre battements de cœur). Nous obtenons alors une visualisation originale, voir
-  figure <a href="#x1-70084">4</a>, de phénomènes déjà observés par ailleurs, voir par exemple Gang et Malik <a id="page.29"></a><a href="tex4webhtml.html#X0-gang2003heart">2003</a>; Malik et al.
-  <a href="tex4webhtml.html#X0-malik1996heart">1996</a>; Massin et al. <a href="tex4webhtml.html#X0-massin2000">2000</a>. Plus précisément, le rythme cardiaque (contrairement à l’intuition usuelle) n’est pas régulé autour d’une valeur
+  figure <a href="#x1-70084">4</a>, de phénomènes déjà observés par ailleurs, voir par exemple Gang et Malik <a id="page.29" href="#X0-gang2003heart">2003</a>; Malik et al.
+  <a href="#X0-malik1996heart">1996</a>; Massin et al. <a href="#X0-massin2000">2000</a>. Plus précisément, le rythme cardiaque (contrairement à l’intuition usuelle) n’est pas régulé autour d’une valeur
   fixe (avec quelque fluctuations aléatoires) mais au contraire, il fait preuve, pour un organisme en bonne santé et en état de veille, de fluctuations à toutes les échelles, lui donnant alors une structure fractale. Dans notre cadre,
   cette structure apparaît très clairement par la présence, en des positions irrégulières, d’excroissances circulaires (correspondant à une accélération cardiaque pendant un nombre de battements au moins aussi grand que l’échelle de
   renormalisation; cette échelle est, rappelons-le, nombre de battements nécessaires pour faire un tour complet du cylindre). Lors du sommeil, au contraire, le rythme cardiaque est régulier (cylindre lisse) avec quelque pics d’activité de
@@ -2498,7 +2500,7 @@ Sudden Cardiac Death Holter Database”, voir Goldberger et al. <a id="page.28">
   structure “poilue”, caractéristique de l’irrégularité très forte de l’activité cardiaque aux temps courts, et le dernier cas, dont la série aboutit à une mort cardiaque subite, présente une régularité anormale du rythme cardiaque
   (structure relativement lisse).
 </p>
-<h4 class="subsectionHead" id="24--conclusion--des-rythmes-à-la-protension"><span class="titlemark">2.4 </span><a id="x1-80002.4"></a>Conclusion : des rythmes à la protension</h4>
+<h4 class="subsectionHead" id="24--conclusion--des-rythmes-à-la-protension"><span class="titlemark" id="x1-80002.4">2.4 </span>Conclusion : des rythmes à la protension</h4>
 <p class="noindent">
   Nous avons vu que l’exploitation des invariants moyens dont nous disposons nous permet de proposer une dimension supplémentaire pour le temps biologique. Cette dimension caractérise l’autonomisation du temps biologique vis à vis du
   temps physique. Cette autonomie permet dès lors la mise en place d’une structure propre, caractérisée par la variabilité de ce temps biologique vis à vis du temps physique, structure que l’on peut lire comme phrasé en tant qu’elle est
@@ -2696,13 +2698,13 @@ Sudden Cardiac Death Holter Database”, voir Goldberger et al. <a id="page.28">
   prolongement du temps de l’organisme par l’élément infinitésimal de temps physique, ainsi il peut donc être interprété comme un élément de protension. Nous allons dans la seconde partie de ce texte formuler une approche visant à
   objectiver de manière indépendante ces concepts de protension et de rétention.
 </p>
-<h3 class="sectionHead" id="3---rétention-et-protension-en-biologie"><span class="titlemark">3 </span><a id="x1-90003"></a>Rétention et protension en biologie</h3>
+<h3 class="sectionHead" id="3---rétention-et-protension-en-biologie"><span class="titlemark" id="x1-90003">3 </span>Rétention et protension en biologie</h3>
 <p class="noindent">
-  Dans cette section, nous décrirons l’analyse de la protension et de la rétention en biologie que nous avons développée dans Longo et Montévil <a id="page.30"></a><a href="tex4webhtml.html#X0-longo2011">2011</a>. Il s’agit d’aborder
+  Dans cette section, nous décrirons l’analyse de la protension et de la rétention en biologie que nous avons développée dans Longo et Montévil <a id="page.30" href="#X0-longo2011">2011</a>. Il s’agit d’aborder
   théoriquement la constitution par les objets biologique d’un présent étendu, conceptualisé comme tension locale entre un passé et un futur proche. Ainsi, en tant qu’organisateurs de leurs temporalités, les êtres vivants ne se contentent
   pas de “réagir” aux événements, mais les maintiennent et les prolongent, constituant ainsi une forme originale de présent, étendu, que nous essayons de contribuer à décrire.
 </p>
-<h4 class="subsectionHead" id="31---préliminaires-théoriques"><span class="titlemark">3.1 </span><a id="x1-100003.1"></a>Préliminaires théoriques</h4>
+<h4 class="subsectionHead" id="31---préliminaires-théoriques"><span class="titlemark" id="x1-100003.1">3.1 </span>Préliminaires théoriques</h4>
 <p class="noindent">
   Il convient d’abord de préciser en quel sens nous parlons de protension et de rétention. Ces termes proviennent de la phénoménologie et en particulier de la philosophie husserlienne. Rappelons que la phénoménologie peut être définie de
   manière concise comme l’étude de ce qui apparaît à la conscience et plus précisément l’étude des modalités d’apparition des phénomènes conscients. Par cette méthode, Husserl distingue la mémoire comme reconstruction d’un passé distant,
@@ -2710,9 +2712,9 @@ Sudden Cardiac Death Holter Database”, voir Goldberger et al. <a id="page.28">
   vers l’avenir immédiat.
 </p>
 <p class="indent">
-  Ces distinctions se retrouvent en biologie, notamment à travers le projet visant à naturaliser la phénoménologie Van Gelder <a href="tex4webhtml.html#X0-vangelder1999">1999</a> . Ainsi, Edelmann comprend la mémoire en termes
-  neurologiques comme “cerveau qui se remet dans un état vécu” Edelman et Tononi <a href="tex4webhtml.html#X0-edelman2000">2000</a>, <a href="tex4webhtml.html#X0-edelman2001">2001</a>, alors que Varela
-  <a href="tex4webhtml.html#X0-varela1999">1999</a> s’intéresse à la constitution chez le vivant d’un <span class="ecti-1095">specious</span> <span class="ecti-1095">present</span>, un présent étendu par comparaison avec le présent
+  Ces distinctions se retrouvent en biologie, notamment à travers le projet visant à naturaliser la phénoménologie Van Gelder <a href="#X0-vangelder1999">1999</a> . Ainsi, Edelmann comprend la mémoire en termes
+  neurologiques comme “cerveau qui se remet dans un état vécu” Edelman et Tononi <a href="#X0-edelman2000">2000</a>, <a href="#X0-edelman2001">2001</a>, alors que Varela
+  <a href="#X0-varela1999">1999</a> s’intéresse à la constitution chez le vivant d’un <span class="ecti-1095">specious</span> <span class="ecti-1095">present</span>, un présent étendu par comparaison avec le présent
   ponctue,l “instantané”, en physique classique.
 </p>
 <p class="indent">
@@ -2720,9 +2722,9 @@ Sudden Cardiac Death Holter Database”, voir Goldberger et al. <a id="page.28">
   la notion de temps caractéristique. Celle-ci nous permettra de formuler un squelette mathématique, rudimentaire mais précis, qui, nous l’espérons, permettra de clarifier ces notions.
 </p>
 <p class="indent">
-  Rappelons que notre cadre conceptuel est celui de la criticité étendue Bailly et Longo <a id="page.31"></a><a href="tex4webhtml.html#X0-bailly2011">2011</a>, <a href="tex4webhtml.html#X0-bailly2008">2008a</a>; Longo et Montévil
-  <a href="tex4webhtml.html#X0-longo2011">2011</a>, or il est intéressant de mentionner le fait que la criticité physique est généralement accompagnée d’un phénomène de ralentissement critique Suzuki, Kaneko et Takesue
-  <a href="tex4webhtml.html#X0-suzuki1982critical">1982</a> : le temps de relaxation (de retour à l’équilibre après une perturbation) d’un système temps vers l’infini lorsqu’on approche ce système d’un point critique. Le sens qualitatif
+  Rappelons que notre cadre conceptuel est celui de la criticité étendue Bailly et Longo <a id="page.31"  href="#X0-bailly2011">2011</a>, <a href="#X0-bailly2008">2008a</a>; Longo et Montévil
+  <a href="#X0-longo2011">2011</a>, or il est intéressant de mentionner le fait que la criticité physique est généralement accompagnée d’un phénomène de ralentissement critique Suzuki, Kaneko et Takesue
+  <a href="#X0-suzuki1982critical">1982</a> : le temps de relaxation (de retour à l’équilibre après une perturbation) d’un système temps vers l’infini lorsqu’on approche ce système d’un point critique. Le sens qualitatif
   de ce type de situation, en biologie, serait que le système sous l’effet d’un stimulus prendrait un temps extrêmement long à se stabiliser à nouveau (ou plus généralement, l’organisme prendrait un temps important pour réagir ou
   s’adapter). Ainsi donc, si l’organisme est compris comme étant en permanence en une situation de criticité, il aurait des temps de réaction très lents si on considère qu’une réaction adaptée nécessite une stabilisation. Plus
   généralement, et y compris dans le cadre d’une approche en termes de théorie de l’information, le temps d’élaboration/réaction est nécessairement grand pour un organisme ayant de grandes longueurs de corrélation et des composants ayant
@@ -2730,10 +2732,10 @@ Sudden Cardiac Death Holter Database”, voir Goldberger et al. <a id="page.28">
   proposons d’appréhender cette solution — ou tout au moins une partie de cette solution — en disant que l’organisme compense cette lenteur en se préparant en avance à l’arrivée d’un stimulus (que cela soit au niveau de la détection du
   stimulus à proprement parler ou au niveau de la réaction elle-même). Ainsi, la protension apparaît comme une forme de lenteur négative, un prolongement virtuel du passé, servant de support à la réaction à un futur proche et aux
   changements d’activité physiologique que cette réaction nécessite. Conceptuellement il est alors aussi logique que cette forme d’organisation conduise à une notion spécifique d’inertie biologique, constituée par ces prolongements
-  protensifs. Notons que cette justification théorique correspond, de fait, à un grand nombre de comportements observés expérimentalement, voir par exemple Berthoz <a href="tex4webhtml.html#X0-berthoz1997">1997</a> et la discussion 
+  protensifs. Notons que cette justification théorique correspond, de fait, à un grand nombre de comportements observés expérimentalement, voir par exemple Berthoz <a href="#X0-berthoz1997">1997</a> et la discussion 
   <a href="#x1-160003.5">3.5</a>.
 </p>
-<h4 class="subsectionHead" id="32---principes"><span class="titlemark">3.2 </span><a id="x1-110003.2"></a>Principes</h4>
+<h4 class="subsectionHead" id="32---principes"><span class="titlemark" id="x1-110003.2">3.2 </span>Principes</h4>
 <p class="noindent">
   Nous avons présenté les notions de protension et de rétention comme maintient élémentaire du passé et prolongement/estimation élémentaire du future. Ces composantes sont le résultat de l’activité biologique en tant que constituée par un
   organisme, par-delà les structures temporelles usuelles en physique, mais relèvent aussi, de part leurs caractère élémentaire et “local” dans le temps, d’une certaine “passivité” si l’on compare ces notions aux situations de mémoire et
@@ -3036,12 +3038,12 @@ Sudden Cardiac Death Holter Database”, voir Goldberger et al. <a id="page.28">
   . Nous faisons dès lors correspondre ces quantités à l’analyse phénoménologique de la protension et de la rétention lorsqu’elle est possible, notre approche permettant un élargissement de l’application de ces notions ainsi que leurs
   stabilisation par l’usage de mathématiques élémentaires.
 </p>
-<h4 class="subsectionHead" id="33---spécifications"><span class="titlemark">3.3 </span><a id="x1-120003.3"></a>Spécifications</h4>
+<h4 class="subsectionHead" id="33---spécifications"><span class="titlemark" id="x1-120003.3">3.3 </span>Spécifications</h4>
 <p class="noindent">
   Pour aller plus loin dans cette étude, nous proposons une formulation explicite de la rétention et de la protension virtuelle. Ceci nous permettra, par des manipulations mathématiques élémentaires, de jouer sur les concepts dont nous
   voulons approfondir la signification et les reformulations possibles. La formulation que nous proposons utilise la notion, extrêmement classique en physique, de de fonction de relaxation
-  <span class="footnote-mark"><a href="#fn2x0" id="fn2x0-bk"><sup class="textsuperscript">2</sup></a>
-</span><a id="x1-12001f2"></a>.
+  <span class="footnote-mark"><a href="#fn2x0" id="fn2x0-bk"><sup class="textsuperscript" id="x1-12001f2">2</sup></a>
+</span>.
 </p>
 <p class="indent">
   Nous proposons d’utiliser des fonctions de relaxation, car la diminution progressive de la rétention, en s’éloignant dans le temps du début d’une phrase, voire, de manière plus générale, de toute action (y compris l’écoute), peut être
@@ -3576,8 +3578,8 @@ Sudden Cardiac Death Holter Database”, voir Goldberger et al. <a id="page.28">
     <mn>0</mn>
   </math> (absence complète de rétention) la protension s’annule du fait qu’il n’existe plus de référent qui permette
   d’anticiper un tant soit peu l’événement pertinent
-  <span class="footnote-mark"><a href="#fn3x0" id="fn3x0-bk"><sup class="textsuperscript">3</sup></a>
-</span><a id="x1-12005f3"></a>.
+  <span class="footnote-mark"><a href="#fn3x0" id="fn3x0-bk"><sup class="textsuperscript" id="x1-12005f3">3</sup></a>
+</span>.
 </p>
 <p class="indent">
   Toujours d’un point de vue phénoménologique, on s’attendra, en général à ce que
@@ -3757,8 +3759,8 @@ Sudden Cardiac Death Holter Database”, voir Goldberger et al. <a id="page.28">
   </math>
   ).
 </p>
-<h4 class="subsectionHead" id="34--analyse"><span class="titlemark">3.4 </span><a id="x1-130003.4"></a>Analyse</h4>
-<h5 class="subsubsectionHead" id="341--inertie-biologique"><span class="titlemark">3.4.1 </span><a id="x1-140003.4.1"></a>Inertie biologique</h5>
+<h4 class="subsectionHead" id="34--analyse"><span class="titlemark" id="x1-130003.4">3.4 </span>Analyse</h4>
+<h5 class="subsubsectionHead" id="341--inertie-biologique"><span class="titlemark" id="x1-140003.4.1">3.4.1 </span>Inertie biologique</h5>
 <p class="noindent">
   Pour mieux rendre explicite le rôle du paramètre
   
@@ -3849,7 +3851,7 @@ Sudden Cardiac Death Holter Database”, voir Goldberger et al. <a id="page.28">
   </math>
   , soit :
 </p>
-<figure class="figure"><a id="x1-140016"></a>
+<figure class="figure" id="x1-140016">
   <p class="noindent" style="text-align:center">
     <img alt=" Illustration des quantités définies dans le texte." src="exp-1-.png" width="650em" />
   </p>
@@ -4717,7 +4719,7 @@ protension est une fonction croissante du temps.</span></figcaption>
   ) et d’une inertie proprement biologique. Cette dernière est à comprendre comme un “traînage par continuité” de la stabilité (structurelle) présente; sorte de pari du vivant d’une permanence de sa propre structure et de celle du monde
   sensible, corrélé à la rétention (voir aussi les sections suivantes).
 </p>
-<h5 class="subsubsectionHead" id="342--protension-globale"><span class="titlemark">3.4.2 </span><a id="x1-150003.4.2"></a>Protension globale</h5>
+<h5 class="subsubsectionHead" id="342--protension-globale"><span class="titlemark" id="x1-150003.4.2">3.4.2 </span>Protension globale</h5>
 <p class="noindent">
   Pour évaluer l’effet de la protension sur un organisme, pour un couple d’événements donnés, nous pouvons considérer la quantité totale de protension que l’activité biologique met en jeu pour ces événements en faisant l’intégrale de la
   protension sur l’intervalle considéré :
@@ -5276,7 +5278,7 @@ protension est une fonction croissante du temps.</span></figcaption>
   , la rétention n’est pas associée à une protension virtuelle suffisamment forte pour avoir des effets importants. Ce dernier point est intéressant à mentionner car il redonne une certaine symétrie aux termes protensifs et rétensifs en
   cela que l’effectivité de la rétention passe par la protension.
 </p>
-<figure class="figure"><a id="x1-150047"></a>
+<figure class="figure" id="x1-150047">
   <p class="noindent" style="text-align:center">
     <img alt="Protension globale." src="exp-4-.png" width="600em" />
   </p>
@@ -5442,13 +5444,13 @@ protension est une fonction croissante du temps.</span></figcaption>
     </mtable>
   </math>
 </p>
-<h4 class="subsectionHead" id="35--discussion"><span class="titlemark">3.5 </span><a id="x1-160003.5"></a>Discussion</h4>
+<h4 class="subsectionHead" id="35--discussion"><span class="titlemark" id="x1-160003.5">3.5 </span>Discussion</h4>
 <p class="noindent">
   D’un point de vue cognitif, les situations où la notion de protension semble valide, voire nécessaire, pour comprendre les phénomènes semblent nombreuses. Citons tout d’abord le système nerveux des mammifères dont aucune des parties ne
-  se contente de“transmettre” de l’information et de réagir, mais au contraire élabore, prolonge et anticipe, voir par exemple Berthoz <a id="page.43"></a><a href="tex4webhtml.html#X0-berthoz1997">1997</a>. Mais d’autres exemples peuvent
+  se contente de“transmettre” de l’information et de réagir, mais au contraire élabore, prolonge et anticipe, voir par exemple Berthoz <a id="page.43"  href="#X0-berthoz1997">1997</a>. Mais d’autres exemples peuvent
   être trouvés chez les unicellulaires. Ainsi, une paramécie entourée de sel, substance létale pour elle, fera quelques tentative pour trouver un passage, puis tentera un passage en force Misslin
-  <a href="tex4webhtml.html#X0-Misslin">2003</a>. Ce type de comportements nous semble manifeste d’une organisation temporelle déjà avancée, puisqu’elle suppose une certaine forme “d’impatience”, basée sur la rétention des tentatives
-  précédentes. Un autre exemple intéressant se trouve chez l’amibe, voir Saigusa et al. <a href="tex4webhtml.html#X0-amoeba">2008</a>. Une amibe soumise à trois agressions régulièrement espacées dans le temps est capable d’anticiper une
+  <a href="#X0-Misslin">2003</a>. Ce type de comportements nous semble manifeste d’une organisation temporelle déjà avancée, puisqu’elle suppose une certaine forme “d’impatience”, basée sur la rétention des tentatives
+  précédentes. Un autre exemple intéressant se trouve chez l’amibe, voir Saigusa et al. <a href="#X0-amoeba">2008</a>. Une amibe soumise à trois agressions régulièrement espacées dans le temps est capable d’anticiper une
   quatrième agression possible (elle “réagit” quand le quatrième stimulus devrait avoir lieu, alors même qu’elle n’est pas perturbée), voire anticipe, sans stimulus supplémentaires jusqu’à trois agressions supplémentaires. Le dispositif
   employé est assez simple : l’amibe se déplace à une vitesse régulière, lors des trois stimuli (espacés régulièrement de
   
@@ -5499,16 +5501,16 @@ protension est une fonction croissante du temps.</span></figcaption>
   </math> pour laquelle l’effet de la protension est la plus importante (sans que cette optimalité se présente de manière aiguë).
 </p>
 <p class="indent">
-  Nous avons de plus obtenu une formulation pour l’inertie biologique. Remarquons qu’un tel concept a déjà été proposé pour décrire le comportement du système immunitaire Vaz et Varela <a href="tex4webhtml.html#X0-vaz1978">1978</a>, dans
+  Nous avons de plus obtenu une formulation pour l’inertie biologique. Remarquons qu’un tel concept a déjà été proposé pour décrire le comportement du système immunitaire Vaz et Varela <a href="#X0-vaz1978">1978</a>, dans
   le contexte théorique plus large de l’autopoïese — où le point de vue théorique se centre sur l’organisation biologique en tant qu’ensemble de processus se maintenant et maintenant ses conditions d’existence. Ce type d’idée est aussi
   présent autour des questions concernant la dynamique à grande échelle en neurologie, via la notion de “centre dynamique” (<span class="ecti-1095">dynamic core</span>) dans Edelman et Tononi
-  <a href="tex4webhtml.html#X0-edelman2000">2000</a>; Le Van Quyen <a href="tex4webhtml.html#X0-levanquyen2003">2003</a>. Dans ce contexte aussi, donc, l’interprétation de la situation en terme “d’inertie active” semble utile, l’inertie
+  <a href="#X0-edelman2000">2000</a>; Le Van Quyen <a href="#X0-levanquyen2003">2003</a>. Dans ce contexte aussi, donc, l’interprétation de la situation en terme “d’inertie active” semble utile, l’inertie
   biologique apparaissant alors comme la conséquence de l’activité interne, autonome, de l’organisme. L’autonomie de ce temps biologique est alors constituée à la fois d’une certaine indépendance vis à vis de l’environnement, engendrée
   par la dynamique de l’organisme, et d’une plus grande “adhésion” ou adéquation aux phénomènes , permise par la protension (voir la section <a href="#x1-100003.1">3.1</a>). Cette combinaison peut aussi être
   interprétée comme une sortie du cadre de la théorie de l’information (dans laquelle les signaux sont traités pour faire ressortir les éléments pertinents) au profit “d’hypothèses” faites par l’organisme sur lui-même et sur
   environnement, faisant alors apparaître la pertinence du concept associé d’erreur
-  <span class="footnote-mark"><a href="#fn4x0" id="fn4x0-bk"><sup class="textsuperscript">4</sup></a>
-</span><a id="x1-16001f4"></a>. De manière générale, il convient de noter que l’inertie biologique est à la fois basée sur une certaine stabilité des événements auxquels elle s’applique et surtout sur la stabilité structurelle, dynamique, de
+  <span class="footnote-mark"><a href="#fn4x0" id="fn4x0-bk"><sup class="textsuperscript" id="x1-16001f4">4</sup></a>
+</span>. De manière générale, il convient de noter que l’inertie biologique est à la fois basée sur une certaine stabilité des événements auxquels elle s’applique et surtout sur la stabilité structurelle, dynamique, de
   l’organisme.
 </p>
 <p class="indent">
@@ -5548,7 +5550,7 @@ protension est une fonction croissante du temps.</span></figcaption>
   </math>
   .
 </p>
-<h3 class="sectionHead" id="4--conclusion"><span class="titlemark">4 </span><a id="x1-170004"></a>Conclusion</h3>
+<h3 class="sectionHead" id="4--conclusion"><span class="titlemark" id="x1-170004">4 </span>Conclusion</h3>
 <p class="noindent">
   Nous avons montré quelques aspects de l’organisation temporelle en biologie. Tout d’abord les rythmes biologiques peuvent être classés en deux catégories, en fonction de leurs invariants : les rythmes externes dont les propriétés les
   plus basique ne dépendent pas de l’organisme considéré et les rythmes internes, dépendant notamment de la masse adulte et du développement de l’organisme considéré. Cette distinction nous a amené à proposer une structure temporelle
@@ -5559,11 +5561,11 @@ protension est une fonction croissante du temps.</span></figcaption>
 <p class="indent">
   On peut cependant aller plus loin dans l’analyse car l’invariance associée au temps biologique concerne plutôt des nombres purs, “détachés” dès lors, de la dimensionalité du temps physique. Nous pouvons même aller plus loin dans
   l’analyse en termes de phrasé. En effet, ce qui fonde en général la rythmicité des phénomènes physiques est généralement la conservation d’un niveau d’énergie, définissant les propriétés du phénomène (plus généralement encore, l’on peut
-  dire que ce sont les symétries en jeu dans le cadre théorique que l’on utilise et qui conduisent à une trajectoire temporelle spécifique, voir Bailly et Longo <a id="page.44"></a><a href="tex4webhtml.html#X0-bailly2011">2011</a>,
-  <a href="tex4webhtml.html#X0-bailly2008">2008a</a>; Longo et Montévil <a href="tex4webhtml.html#X0-longo2011">2011</a>). Or, le cadre théorique que nous proposons pour l’étude du vivant, la criticité étendue, est au contraire basée sur
+  dire que ce sont les symétries en jeu dans le cadre théorique que l’on utilise et qui conduisent à une trajectoire temporelle spécifique, voir Bailly et Longo <a id="page.44" href="#X0-bailly2011">2011</a>,
+  <a href="#X0-bailly2008">2008a</a>; Longo et Montévil <a href="#X0-longo2011">2011</a>). Or, le cadre théorique que nous proposons pour l’étude du vivant, la criticité étendue, est au contraire basée sur
   la brisure de ces symétries, ainsi il devient, à notre sens, impossible de fonder une correspondance “précise” (au sens d’une trajectoire spécifique) entre ce temps biologique et temps physique. Cet aspect peut être abordé de manière
   tout à fait élémentaire si l’on considère par exemple le rythme cardiaque : non seulement l’analyse de l’organe qu’est le cœur ne passe pas par un oscillateur physiquement élémentaire fondant le rapport entre cycle cardiaque et temps
-  physique Noble <a href="tex4webhtml.html#X0-noble2006">2006</a> (autrement dit il n’y a pas d’horloge interne séparée déterminant la rythmicité du rythme cardiaque), mais le régime causal de la rythmicité cardiaque n’est pas basé
+  physique Noble <a href="#X0-noble2006">2006</a> (autrement dit il n’y a pas d’horloge interne séparée déterminant la rythmicité du rythme cardiaque), mais le régime causal de la rythmicité cardiaque n’est pas basé
   (uniquement) sur un système possédant une forme physiquement usuelle d’invariance dans l’organisation dynamique du cœur, y compris émergente. Au contraire, ce régime causal implique directement l’organisme dans sa globalité, en tant
   qu’il a une histoire (tant aux temps courts que longs), un contexte, …Partant, la réduction du temps biologique au temps physique — que l’on pourrait voir comme une projection — nous semble impossible (non-objective) dans le contexte de
   l’organisme, y compris localement, car non-fondée sur une invariance (sauf certains comportements moyens).
@@ -5578,266 +5580,265 @@ protension est une fonction croissante du temps.</span></figcaption>
 <p class="indent">
   Les aspects dont nous avons développé une théorisation dans ce texte, n’épuisent pas, bien entendu, la richesse des formes de temporalité constituées par les phénomènes biologiques. Dans le prolongement des aspects que nous avons
   décrit, nous pouvons par exemple pointer la question des rapports entre rythmes internes, par delà les correspondances de leurs périodes moyennes du point de vue de l’allométrie. Pour des rythmes internes proches du point de vue de
-  leurs périodicités, tels que les cycles cardiaques et respiratoires, différentes formes de variabilités corrélées sont rencontrées, ce qui semble indiquer que leurs liens sont complexes Schäfer et al. <a id="page.45"></a><a href="tex4webhtml.html#X0-schafer1999synchronization">1999</a>; Song et Lehrer <a href="tex4webhtml.html#X0-song2003effects">2003</a>. Suivant un point de vue différent, le rapport entre protension/rétention et les rythmes
+  leurs périodicités, tels que les cycles cardiaques et respiratoires, différentes formes de variabilités corrélées sont rencontrées, ce qui semble indiquer que leurs liens sont complexes Schäfer et al. <a id="page.45"  href="#X0-schafer1999synchronization">1999</a>; Song et Lehrer <a href="#X0-song2003effects">2003</a>. Suivant un point de vue différent, le rapport entre protension/rétention et les rythmes
   biologiques se joue à l’intérieur de l’organisme, l’itération des rythmes internes engendrant un “substrat temporel” sur lequel l’activité protensive, cellulaire par exemple, peut s’appuyer de manière privilégiée.
 </p>
 <p class="noindent">
-  <span class="paragraphHead"><a id="x1-180004"></a><span class="ecbx-1095">Note :</span></span> Des versions préliminaires ou revues des articles de Longo et Montévil sont téléchargeables sur
+  <span class="paragraphHead" id="x1-180004"><span class="ecbx-1095">Note :</span></span> Des versions préliminaires ou revues des articles de Longo et Montévil sont téléchargeables sur
   <a class="url" href="http://www.di.ens.fr/users/longo"><span class="ectt-1095">http://www.di.ens.fr/users/longo</span></a> et
   <a class="url" href="http://www.montevil.theobio.org"><span class="ectt-1095">http://www.montevil.theobio.org</span></a> respectivement.
 </p>
-<h3 class="sectionHead" id="références"><a id="x1-190004"></a>Références</h3>
-<dl class="thebibliography">
-  <dd class="thebibliography" id="bib-1">
-    <p class="noindent"><a id="page.46"></a>Bailly, F. 1991. « L’anneau des disciplines ». <span class="ecti-1095">Revue Internationale de Syst</span><span class="ecti-1095">é</span><span class="ecti-1095">mique </span>5 (3).</p>
-  </dd>
-  <dd class="thebibliography" id="bib-2">
+<h3 class="sectionHead" id="références"><span id="x1-190004">Références</span></h3>
+<ul class="thebibliography">
+  <li class="thebibliography" id="bib-1">
+    <p class="noindent" id="page.46">Bailly, F. 1991. « L’anneau des disciplines ». <span class="ecti-1095">Revue Internationale de Syst</span><span class="ecti-1095">é</span><span class="ecti-1095">mique </span>5 (3).</p>
+  </li>
+  <li class="thebibliography" id="bib-2">
     <p class="noindent">
       Bailly, F., F. Gaill et R. Mosseri. 1993. « Orgons and biolons in theoretical biology : Phenomenological analysis and quantum analogies. » <span class="ecti-1095">Acta Biotheoretica </span>41 (1–2) : 3-11. doi :
       <a href="http://dx.doi.org/10.1007/BF00712769">10.1007/BF00712769</a>. (Cf. page <a href="#page.19">19</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-3">
+  </li>
+  <li class="thebibliography" id="bib-3">
     <p class="noindent">
       Bailly, F., et G. Longo. 2008a. « Extended critical situations : the physical singularity of life phenomena ». <span class="ecti-1095">Journal of Biological Systems </span>16 (2) : 309. doi :
       <a href="http://dx.doi.org/10.1142/S0218339008002514">10.1142/S0218339008002514</a>. (Cf. pages <a href="#page.5">5</a>, <a href="#page.31">31</a>, <a href="#page.44">44</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-4">
+  </li>
+  <li class="thebibliography" id="bib-4">
     <p class="noindent">
       _________. 2008b. « Schèmes géométriques pour le temps biologique ». In <span class="ecti-1095">Sciences</span> <span class="ecti-1095">du vivant et ph</span><span class="ecti-1095">é</span><span class="ecti-1095">nom</span>
       <span class="ecti-1095">é</span><span class="ecti-1095">nologie de la vie, </span>sous la direction de P.A. Miquel. Noesis-Vrin. (Cf. pages <a href="#page.1">1</a>, <a href="#page.50">50</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-5">
+  </li>
+  <li class="thebibliography" id="bib-5">
     <p class="noindent">
       _________. 2011. <span class="ecti-1095">Mathematics and the natural sciences; The Physical Singularity of Life.</span> London : Imperial College Press. (Cf. pages <a href="#page.5">5</a>, <a href="#page.31">31</a>,
       <a href="#page.44">44</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-6">
+  </li>
+  <li class="thebibliography" id="bib-6">
     <p class="noindent">
       Bailly, F., G. Longo et M. Montévil. 2011. « A 2-dimensional geometry for biological time ». <span class="ecti-1095">Progress in Biophysics and Molecular Biology </span>106 (3) : 474-484.
       <span class="eccc1095-"><span class="small-caps">i</span><span class="small-caps">s</span><span class="small-caps">s</span><span class="small-caps">n</span> </span>: 0079-6107. doi :
       <a href="http://dx.doi.org/10.1016/j.pbiomolbio.2011.02.001">10.1016/j.pbiomolbio.2011.02.001</a>. (Cf. pages <a href="#page.1">1</a>, <a href="#page.4">4</a> <a href="#page.5">sq.</a>, <a href="#page.19">19</a>
       <a href="#page.20">sq.</a>, <a href="#page.50">50</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-7">
+  </li>
+  <li class="thebibliography" id="bib-7">
     <p class="noindent">Berthoz, A. 1997. <span class="ecti-1095">Le sens du mouvement. </span>Odile Jacob. (Cf. pages <a href="#page.31">31</a>, <a href="#page.43">43</a>).</p>
-  </dd>
-  <dd class="thebibliography" id="bib-8">
+  </li>
+  <li class="thebibliography" id="bib-8">
     <p class="noindent">
       Botzung, A., E. Denkova et L. Manning. 2008. « Experiencing past and future personal events : Functional neuroimaging evidence on the neural bases of mental time travel ». <span class="ecti-1095">Brain and Cognition </span>66
       (2) : 202-212. doi :<a href="http://dx.doi.org/10.1016/j.bandc.2007.07.011">10.1016/j.bandc.2007.07.011</a>. (Cf. page <a href="#page.50">50</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-9">
+  </li>
+  <li class="thebibliography" id="bib-9">
     <p class="noindent">Bourgine, P., et J. Stewart. 2004. « Autopoiesis and cognition ». <span class="ecti-1095">Artificial Life </span>10 : 327. doi :<a href="http://dx.doi.org/10.1162/1064546041255557">10.1162/1064546041255557</a>.</p>
-  </dd>
-  <dd class="thebibliography" id="bib-10">
+  </li>
+  <li class="thebibliography" id="bib-10">
     <p class="noindent">
       Chaline, J. 1999. <span class="ecti-1095">Les horloges du vivant : un nouveau stade de la th</span><span class="ecti-1095">é</span><span class="ecti-1095">orie de</span> <span class="ecti-1095">l’</span>
       <span class="ecti-1095">é</span><span class="ecti-1095">volution? </span>Hachette Littératures<span class="ecti-1095">.</span>
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-11">
+  </li>
+  <li class="thebibliography" id="bib-11">
     <p class="noindent">
       Edelman, G.M., et G. Tononi. 2000. « Reentry and the dynamic core : neural correlates of conscious experience ». In <span class="ecti-1095">Neural Correlates of Consciousness : Empirical and</span>
       <span class="ecti-1095">Conceptual Questions, </span>sous la direction de T. Metzinger, 139-151. MIT Press. (Cf. pages <a href="#page.30">30</a>, <a href="#page.44">44</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-12">
+  </li>
+  <li class="thebibliography" id="bib-12">
     <p class="noindent">_________. 2001. <span class="ecti-1095">A universe of consciousness : How matter becomes imagination. </span>Basic Books. (Cf. page <a href="#page.30">30</a>).</p>
-  </dd>
-  <dd class="thebibliography" id="bib-13">
+  </li>
+  <li class="thebibliography" id="bib-13">
     <p class="noindent">Feynman, R.P., H. Isaac, J.M. Lévy-Leblond et F. Balibar. 1980. <span class="ecti-1095">La nature de la</span> <span class="ecti-1095">physique. </span>Seuil. (Cf. page <a href="#page.4">4</a>).</p>
-  </dd>
-  <dd class="thebibliography" id="bib-14">
+  </li>
+  <li class="thebibliography" id="bib-14">
     <p class="noindent">Gang, Y., et M. Malik. 2003. « Heart rate variability analysis in general medicine ». <span class="ecti-1095">Indian Pacing and Electrophysiology Journal </span>3 (1) : 34. (Cf. page <a href="#page.29">29</a>).</p>
-  </dd>
-  <dd class="thebibliography" id="bib-15">
+  </li>
+  <li class="thebibliography" id="bib-15">
     <p class="noindent">
       Goldberger, A.L., L.A.N. Amaral, L. Glass, J.M. Hausdorff, P.C. Ivanov, R.G. Mark, J.E. Mietus, G.B. Moody, C.-K. Peng et H.E. Stanley. 2000. « PhysioBank, PhysioToolkit, and PhysioNet : Components of a New Research Resource for
       Complex Physiologic Signals ». <span class="ecti-1095">Circulation </span>101, n<sup class="textsuperscript"><span class="ecrm-1000">o</span></sup> 23 (juin) : e215-e220. doi :
       <a href="http://dx.doi.org/10.1161/01.CIR.101.23.e215">10.1161/01.CIR.101.23.e215</a>. (Cf. pages <a href="#page.25">25</a>, <a href="#page.28">28</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-16">
+  </li>
+  <li class="thebibliography" id="bib-16">
     <p class="noindent">
       Horsfield, K. 1977. « Morphology of branching trees related to entropy. » <span class="ecti-1095">Respiration</span> <span class="ecti-1095">Physiology </span>29 (2) : 179. doi :
       <a href="http://dx.doi.org/10.1016/0034-5687(77)90090-1">10.1016/0034-5687(77)90090-1</a>.
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-17">
+  </li>
+  <li class="thebibliography" id="bib-17">
     <p class="noindent">
       Le Van Quyen, M. 2003. « Disentangling the dynamic core : a research program for a neurodynamics at the large-scale ». <span class="ecti-1095">Biological Research </span>36 : 67-88. doi :
       <a href="http://dx.doi.org/10.4067/S0716-97602003000100006">10.4067/S0716-97602003000100006</a>. (Cf. page <a href="#page.44">44</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-18">
+  </li>
+  <li class="thebibliography" id="bib-18">
     <p class="noindent">
       Lecointre, G., H. Le Guyader et D. Visset. 2001. <span class="ecti-1095">Classification phylog</span><span class="ecti-1095">é</span><span class="ecti-1095">n</span><span class="ecti-1095">é</span>
       <span class="ecti-1095">tique du</span> <span class="ecti-1095">vivant. </span>Belin.
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-19">
+  </li>
+  <li class="thebibliography" id="bib-19">
     <p class="noindent">
       Lindstedt, S.L., et W.A. Calder III. 1981. « Body size, physiological time, and longevity of homeothermic animals ». <span class="ecti-1095">Quarterly Review of Biology : </span>1-16. doi :
       <a href="http://dx.doi.org/10.1086/412080">10.1086/412080</a>. (Cf. pages <a href="#page.8">8</a> <a href="#page.9">sq.</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-20">
+  </li>
+  <li class="thebibliography" id="bib-20">
     <p class="noindent">
       Longo, G., et M. Montévil. 2011. « Protention and retention in biological systems ». <span class="ecti-1095">Theory in Biosciences </span>130 (2) : 107-117.
       <span class="eccc1095-"><span class="small-caps">i</span><span class="small-caps">s</span><span class="small-caps">s</span><span class="small-caps">n</span> </span>: 1431-7613. doi :
       <a href="http://dx.doi.org/10.1007/s12064-010-0116-6">10.1007/s12064-010-0116-6</a>. (Cf. pages <a href="#page.1">1</a>, <a href="#page.4">4</a> <a href="#page.5">sq.</a>, <a href="#page.19">19</a>, <a href="#page.30">30</a>
       <a href="#page.31">sq.</a>, <a href="#page.44">44</a>, <a href="#page.50">50</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-21">
+  </li>
+  <li class="thebibliography" id="bib-21">
     <p class="noindent">
       Malik, M., J.T. Bigger, A.J. Camm, R.E. Kleiger, A. Malliani, A.J. Moss et P.J. Schwartz. 1996. « Heart rate variability : Standards of measurement, physiological interpretation, and clinical use ».
       <span class="ecti-1095">European Heart Journal </span>17 (3) : 354. doi :<a href="http://dx.doi.org/10.1161/01.CIR.0000140765.71014.1C">10.1161/01.CIR.0000140765.71014.1C</a>. (Cf. page <a href="#page.29">29</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-22">
+  </li>
+  <li class="thebibliography" id="bib-22">
     <p class="noindent">
       Massin, M.M., K. Maeyns, N. Withofs, F. Ravet et P. Gerard. 2000. « Circadian rhythm of heart rate and heart rate variability. » <span class="ecti-1095">Archives of Disease in Childhood </span>83 (2) : 179-182. doi :
       <a href="http://dx.doi.org/10.1136/adc.83.2.179">10.1136/adc.83.2.179</a>. (Cf. page <a href="#page.29">29</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-23">
+  </li>
+  <li class="thebibliography" id="bib-23">
     <p class="noindent">
       McMahon, T.A. 1980. « Scaling physiological time ». In <span class="ecti-1095">Some mathematical questions</span> <span class="ecti-1095">in biology, </span>13 : 131. Amer Mathematical Society.
       <span class="eccc1095-"><span class="small-caps">i</span><span class="small-caps">s</span><span class="small-caps">b</span><span class="small-caps">n</span> </span>: 0821811630. (Cf. page <a href="#page.4">4</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-24">
+  </li>
+  <li class="thebibliography" id="bib-24">
     <p class="noindent">
       Misslin, R. 2003. « Une vie de cellule ». <span class="ecti-1095">Revue de Synth</span><span class="ecti-1095">è</span><span class="ecti-1095">se </span>124 (1) : 205-221. doi :
       <a href="http://dx.doi.org/10.1007/BF02963405">10.1007/BF02963405</a>. (Cf. page <a href="#page.43">43</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-25">
+  </li>
+  <li class="thebibliography" id="bib-25">
     <p class="noindent">
       Montévil, M. 2012. « Géométrie du temps biologique : rythmes et protension ». In <span class="ecti-1095">Questions de phras</span><span class="ecti-1095">é</span><span class="ecti-1095">, </span>sous la direction d’A. bonnet, F.
       Nicolas et T. Paul. Article invité. Hermann, janvier. <span class="eccc1095-"><span class="small-caps">i</span><span class="small-caps">s</span><span class="small-caps">b</span><span class="small-caps">n</span> </span>:
       978-2705681555. (Cf. pages <a href="#page.1">1</a>, <a href="#page.50">50</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-26">
+  </li>
+  <li class="thebibliography" id="bib-26">
     <p class="noindent">Noble, D. 2006. <span class="ecti-1095">The music of life. </span>Oxford : Oxford U. P. (Cf. page <a href="#page.45">45</a>).</p>
-  </dd>
-  <dd class="thebibliography" id="bib-27">
+  </li>
+  <li class="thebibliography" id="bib-27">
     <p class="noindent">
       Overduin, J.M., et P.S. Wesson. 1997. « Kaluza-Klein Gravity ». <span class="ecti-1095">Physics Reports </span>283 : 303-380. doi :<a href="http://dx.doi.org/10.1016/S0370-1573(96)00046-4">10.1016/S0370-1573(96)00046-4</a>. (Cf.
       page <a href="#page.50">50</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-28">
+  </li>
+  <li class="thebibliography" id="bib-28">
     <p class="noindent">Peters, R.H. 1986. <span class="ecti-1095">The ecological implications of body size. </span>Cambridge U. P.</p>
-  </dd>
-  <dd class="thebibliography" id="bib-29">
+  </li>
+  <li class="thebibliography" id="bib-29">
     <p class="noindent">Rosen, R. 1991. <span class="ecti-1095">Life itself : a comprehensive inquiry into the nature, origin, and</span> <span class="ecti-1095">fabrication of life. </span>Columbia U. P.</p>
-  </dd>
-  <dd class="thebibliography" id="bib-30">
+  </li>
+  <li class="thebibliography" id="bib-30">
     <p class="noindent">
       Saigusa, T., A. Tero, T. Nakagaki et Y. Kuramoto. 2008. « Amoebae anticipate periodic events. » <span class="ecti-1095">Physical Review Letters</span> 100 (1) : 018101. doi :
       <a href="http://dx.doi.org/10.1103/PhysRevLett.100.018101">10.1103/PhysRevLett.100.018101</a>. (Cf. page <a href="#page.43">43</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-31">
+  </li>
+  <li class="thebibliography" id="bib-31">
     <p class="noindent">
       Savage, V.M., J.F. Gilloly, W.H. Woodruff, G.B. West, A.P. Allen, B.J. Enquist et J.H. Brown. 2004. « The predominance of quarter-power scaling in biology ». <span class="ecti-1095">Ecology</span> 18 : 257-282. doi :
       <a href="http://dx.doi.org/10.1111/j.0269-8463.2004.00856.x">10.1111/j.0269-8463.2004.00856.x</a>. (Cf. page <a href="#page.9">9</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-32">
+  </li>
+  <li class="thebibliography" id="bib-32">
     <p class="noindent">
       Schäfer, C., M.G. Rosenblum, H.H. Abel et J. Kurths. 1999. « Synchronization in the human cardiorespiratory system ». <span class="ecti-1095">Physical Review E </span>60 (1) : 857-870. doi :
       <a href="http://dx.doi.org/10.1103/PhysRevE.60.857">10.1103/PhysRevE.60.857</a>. (Cf. page <a href="#page.45">45</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-33">
+  </li>
+  <li class="thebibliography" id="bib-33">
     <p class="noindent">Schmidt-Nielsen, K. 1984. <span class="ecti-1095">Scaling. </span>Cambridge U. P. (Cf. page <a href="#page.9">9</a>).</p>
-  </dd>
-  <dd class="thebibliography" id="bib-34">
+  </li>
+  <li class="thebibliography" id="bib-34">
     <p class="noindent">
       Song, H.S., et P.M. Lehrer. 2003. « The effects of specific respiratory rates on heart rate and heart rate variability ». <span class="ecti-1095">Applied psychophysiology and biofeedback </span>28 (1) : 13-23. doi :
       <a href="http://dx.doi.org/10.1023/A:1022312815649">10.1023/A:1022312815649</a>. (Cf. page <a href="#page.45">45</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-35">
+  </li>
+  <li class="thebibliography" id="bib-35">
     <p class="noindent">
       Suzuki, M., K. Kaneko et S. Takesue. 1982. « Critical Slowing Down in Stochastic Processes. I ». <span class="ecti-1095">Progress of Theoretical Physics </span>67 (6) : 1756-1775. doi :
       <a href="http://dx.doi.org/10.1143/PTP.67.1756">10.1143/PTP.67.1756</a>. (Cf. page <a href="#page.31">31</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-36">
+  </li>
+  <li class="thebibliography" id="bib-36">
     <p class="noindent">
       Szpunar, K.K., J.M. Watson et K.B. McDermott. 2007. « Neural substrates of envisioning the future ». <span class="ecti-1095">Proceedings of the National Academy of Sciences </span>104 (2) : 642. doi :
       <a href="http://dx.doi.org/10.1073/pnas.0610082104">10.1073/pnas.0610082104</a>. (Cf. page <a href="#page.50">50</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-37">
+  </li>
+  <li class="thebibliography" id="bib-37">
     <p class="noindent">
       Van Gelder, T. 1999. « Wooden iron? Husserlian phenomenology meets cognitive science ». In <span class="ecti-1095">Naturalizing Phenomenology : Issues in Contemporary Phenomenology</span>
       <span class="ecti-1095">and Cognitive Science, </span>sous la direction de J. Petitot, F.J. Varela, B. Pachoud et J.M. Roy, 245-265. Stanford U. P. (Cf. page <a href="#page.30">30</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-38">
+  </li>
+  <li class="thebibliography" id="bib-38">
     <p class="noindent">Varela, F.J. 1989. <span class="ecti-1095">Autonomie et connaissance. </span>Paris : Seuil.</p>
-  </dd>
-  <dd class="thebibliography" id="bib-39">
+  </li>
+  <li class="thebibliography" id="bib-39">
     <p class="noindent">
       _________. 1997. « Patterns of life : Intertwining identity and cognition ». <span class="ecti-1095">Brain and</span> <span class="ecti-1095">Cognition </span>34 (1) : 72-87. doi :
       <a href="http://dx.doi.org/10.1006/brcg.1997.0907">10.1006/brcg.1997.0907</a>.
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-40">
+  </li>
+  <li class="thebibliography" id="bib-40">
     <p class="noindent">
       _________. 1999. « The specious present : A neurophenomenology of time consciousness ». In <span class="ecti-1095">Naturalizing phenomenology : Issues in contemporary phenomenology and cognitive</span>
       <span class="ecti-1095">science, </span>sous la direction de J. Petitot, F.J. Varela, B. Pachoud et J.M. Roy, 266-314. Stanford U. P. (Cf. page <a href="#page.30">30</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-41">
+  </li>
+  <li class="thebibliography" id="bib-41">
     <p class="noindent">
       Vaz, N.M., et F.J. Varela. 1978. « Self and non-sense : an organism-centered approach to immunology. » <span class="ecti-1095">Medical Hypotheses </span>4 (3) : 231-267. doi :
       <a href="http://dx.doi.org/10.1016/0306-9877(78)90005-1">10.1016/0306-9877(78)90005-1</a>. (Cf. page <a href="#page.43">43</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-42">
+  </li>
+  <li class="thebibliography" id="bib-42">
     <p class="noindent">
       Waddington, G.H. 1977. « Stabilisation In Systems : Chreods and epigenetic landscapes ». <span class="ecti-1095">Futures </span>9 (2) : 139-146.
       <span class="eccc1095-"><span class="small-caps">i</span><span class="small-caps">s</span><span class="small-caps">s</span><span class="small-caps">n</span> </span>: 0016-3287. doi :
       <a href="http://dx.doi.org/10.1016/0016-3287(77)90006-4">10.1016/0016-3287(77)90006-4</a>.
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-43">
+  </li>
+  <li class="thebibliography" id="bib-43">
     <p class="noindent">
       West, G.B., et J.H. Brown. 2005. « The origin of allometric scaling laws in biology from genomes to ecosystems : Towards a quantitative unifying theory of biological structure and organization. »
       <span class="ecti-1095">Journal of Experimental Biology </span>208 (9) : 1575-1592. doi :<a href="http://dx.doi.org/10.1242/jeb.01589">10.1242/jeb.01589</a>. (Cf. page <a href="#page.4">4</a>).
     </p>
-  </dd>
-  <dd class="thebibliography" id="bib-44">
+  </li>
+  <li class="thebibliography" id="bib-44">
     <p class="noindent">Winfree, A.T. 2001. <span class="ecti-1095">The geometry of biological time. </span>Second. Springer Verlag. (Cf. page <a href="#page.4">4</a>).</p>
-  </dd>
-</dl>
+  </li>
+</ul>
 <div class="footnotes">
   <p class="indent">
     <a href="#kt-2" id="tk-2"><span class="thank-mark"><span class="tcrm-1095">†</span></span>
-</a>Cet article est une synthèse et un approfondissement de l’approche original proposée dans Bailly et Longo <a id="page.3"></a><a href="tex4webhtml.html#X0-balo08">2008b</a>, revue aussi sur la base des développements décrits dans
-    Bailly, Longo et Montévil <a href="tex4webhtml.html#X0-bailly2011b">2011</a>; Longo et Montévil <a href="tex4webhtml.html#X0-longo2011">2011</a>. Publié comme :
-    <a id="cite.0:phrasemoi">M. Montévil. 2012. « Géométrie du temps biologique : rythmes et protension ». In <span class="ecti-1095">Questions de phras</span><span class="ecti-1095">é</span><span class="ecti-1095">, </span>sous la direction d’A. bonnet, F.
+</a>Cet article est une synthèse et un approfondissement de l’approche original proposée dans Bailly et Longo <a id="page.3" href="#X0-balo08">2008b</a>, revue aussi sur la base des développements décrits dans
+    Bailly, Longo et Montévil <a href="#X0-bailly2011b">2011</a>; Longo et Montévil <a href="#X0-longo2011" id="cite.0:phrasemoi">2011</a>. Publié comme :
+    M. Montévil. 2012. « Géométrie du temps biologique : rythmes et protension ». In <span class="ecti-1095">Questions de phras</span><span class="ecti-1095">é</span><span class="ecti-1095">, </span>sous la direction d’A. bonnet, F.
 Nicolas et T. Paul. Article invité. Hermann, janvier. <span class="eccc1095-"><span class="small-caps">i</span><span class="small-caps">s</span><span class="small-caps">b</span><span class="small-caps">n</span> </span>:
-978-2705681555
-</a>.
+978-2705681555.
   </p>
   <p class="indent">
     <span class="footnote-mark"><a href="#fn1x0-bk" id="fn1x0">1.</a></span><span class="ecrm-0900">Notons que l’id</span><span class="ecrm-0900">é</span>
     <span class="ecrm-0900">e d’ajouter des dimensions d’espace ou de temps suppl</span><span class="ecrm-0900">é</span><span class="ecrm-0900">mentaires est pr</span><span class="ecrm-0900">é</span>
-    <span class="ecrm-0900">sente en</span> <span class="ecrm-0900">physique depuis le mod</span><span class="ecrm-0900">è</span><span class="ecrm-0900">le de Kaluza et Klein Overduin et Wesson </span><a id="page.14"></a><a href="tex4webhtml.html#X0-97"><span class="ecrm-0900">1997</span></a><span class="ecrm-0900">, et couramment utilis</span><span class="ecrm-0900">é</span> <span class="ecrm-0900">dans les</span> <span class="ecrm-0900">th</span>
+    <span class="ecrm-0900">sente en</span> <span class="ecrm-0900">physique depuis le mod</span><span class="ecrm-0900">è</span><span class="ecrm-0900">le de Kaluza et Klein Overduin et Wesson </span><a id="page.14"  href="#X0-97"><span class="ecrm-0900">1997</span></a><span class="ecrm-0900">, et couramment utilis</span><span class="ecrm-0900">é</span> <span class="ecrm-0900">dans les</span> <span class="ecrm-0900">th</span>
     <span class="ecrm-0900">é</span><span class="ecrm-0900">ories de gravitation quantique (supercorde notamment). Notre approche est cependant diff</span><span class="ecrm-0900">é</span><span class="ecrm-0900">rente en cela que</span>
     <span class="ecrm-0900">les dimensions suppl</span><span class="ecrm-0900">é</span><span class="ecrm-0900">mentaires, compacifi</span><span class="ecrm-0900">é</span><span class="ecrm-0900">es, propos</span>
     <span class="ecrm-0900">é</span><span class="ecrm-0900">es en physique, ont typiquement une taille</span> <span class="ecrm-0900">microscopique et ne sont donc pas observable directement, alors que notre dimension suppl</span>
@@ -5907,7 +5908,7 @@ Nicolas et T. Paul. Article invité. Hermann, janvier. <span class="eccc1095-"><
   <p class="indent">
     <span class="footnote-mark"><a href="#fn3x0-bk" id="fn3x0">3.</a></span><span class="ecrm-0900">Apr</span><span class="ecrm-0900">è</span><span class="ecrm-0900">s avoir lu un brouillon de ce texte, L. Manning nous a donn</span>
     <span class="ecrm-0900">é</span> <span class="ecrm-0900">des r</span><span class="ecrm-0900">é</span><span class="ecrm-0900">f</span><span class="ecrm-0900">é</span><span class="ecrm-0900">rences corroborant</span>
-    <span class="ecrm-0900">exp</span><span class="ecrm-0900">é</span><span class="ecrm-0900">rimentalement la d</span><span class="ecrm-0900">é</span><span class="ecrm-0900">pendance de la protension vis </span><span class="ecrm-0900">à</span> <span class="ecrm-0900">vis de la r</span><span class="ecrm-0900">é</span><span class="ecrm-0900">tention en neuro-imagerie Szpunar,</span> <span class="ecrm-0900">Watson et McDermott </span><a id="page.34"></a><a href="tex4webhtml.html#X0-szpunar2007"><span class="ecrm-0900">2007</span></a><span class="ecrm-0900">; Botzung, Denkova et Manning </span><a href="tex4webhtml.html#X0-botzung2008"><span class="ecrm-0900">2008</span></a><span class="ecrm-0900">. D’autres exp</span><span class="ecrm-0900">é</span><span class="ecrm-0900">riences, plus sp</span>
+    <span class="ecrm-0900">exp</span><span class="ecrm-0900">é</span><span class="ecrm-0900">rimentalement la d</span><span class="ecrm-0900">é</span><span class="ecrm-0900">pendance de la protension vis </span><span class="ecrm-0900">à</span> <span class="ecrm-0900">vis de la r</span><span class="ecrm-0900">é</span><span class="ecrm-0900">tention en neuro-imagerie Szpunar,</span> <span class="ecrm-0900">Watson et McDermott </span><a id="page.34"  href="#X0-szpunar2007"><span class="ecrm-0900">2007</span></a><span class="ecrm-0900">; Botzung, Denkova et Manning </span><a href="#X0-botzung2008"><span class="ecrm-0900">2008</span></a><span class="ecrm-0900">. D’autres exp</span><span class="ecrm-0900">é</span><span class="ecrm-0900">riences, plus sp</span>
     <span class="ecrm-0900">é</span><span class="ecrm-0900">cifiques,</span> <span class="ecrm-0900">seraient requises pour </span><span class="ecrm-0900">é</span>
     <span class="ecrm-0900">valuer les coefficients que nous introduisons.</span>
   </p>

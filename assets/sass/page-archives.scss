@@ -90,7 +90,13 @@ grid-area: types;
 }
 #lang-list {
 grid-area: lang;
+
 }
+#lang-list >ul > li {
+margin-top: 0.4em;
+
+}
+
 #dates-menu {
 grid-area: dates;
 }
