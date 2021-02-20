@@ -7,7 +7,8 @@ module.exports = {
           cloudName: 'mmontevil',
           imageWidth: 1200,
           imageHeight: 630,
-          imagePublicID: 'resources/opengraph-background',
+          imagePublicID: 'assets/limbes.jpg'
+,
           textAreaWidth: 1100,
           textLeftOffset: 50,
 
