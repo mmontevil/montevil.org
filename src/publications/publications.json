@@ -1,5 +1,7 @@
 {
   "layout": "publication",
   "lang": "en",
-  "category": ["publications"]
+  "category": ["publications"],
+      "hasPDF": true,
+      "hasFullText": true
 }

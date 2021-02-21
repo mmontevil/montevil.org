@@ -438,7 +438,7 @@ table {
 }
 
 thead {
-  background-color: #eee;
+  background-color: var(--color-primary-lighter-5);
 
   th {
     vertical-align: bottom;
@@ -683,4 +683,4 @@ h4 +h5 {
 h5 +h6 {
   margin-top : 0.5em;
 }
-
+.page__body>ul>li {margin-top: 0.4em;}

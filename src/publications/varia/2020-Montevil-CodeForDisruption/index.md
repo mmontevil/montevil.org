@@ -1,6 +1,8 @@
 ---
 excerpt: Paper to be published.
 noToc: true
+hasPDF: false
+hasFullText: false
 ---
 
 # disruption-phenology

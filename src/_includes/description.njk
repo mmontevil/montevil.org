@@ -1,0 +1,92 @@
+
+{% if layout==="publication" %}
+
+<meta name="citation_title" content="{{bibentry.title}}"> 
+
+{% for auth in  bibentry.author %}
+      <meta name="citation_author" content="{{auth.family}}, {{auth.given}}">
+      {% if auth.family==="Montévil" %}
+          <meta name="citation_author_orcid" content="https://orcid.org/0000-0001-7177-5995" />
+          <meta name="citation_author_hal_id" content="mael-montevil" />
+      {%  endif %}
+{% endfor %}
+
+{% if bibentry.issued %}
+    {% set datepublic=bibentry.issued["date-parts"][0] %}
+    {% if datepublic[2] %}
+        <meta name="citation_publication_date" content="{{datepublic[0]}}/{{datepublic[1]}}/{{datepublic[2]}}">
+          <meta name="citation_date" content="{{datepublic[0]}}/{{datepublic[1]}}/{{datepublic[2]}}">
+    {% elif datepublic[0] %} 
+        <meta name="citation_publication_date" content="{{datepublic[0]}}"> 
+        <meta name="citation_date" content="{{datepublic[0]}}"> 
+    {%endif%}
+    {%else%}
+    <meta name="citation_publication_date" content="{{websiteid.currentYear}}"> 
+    <meta name="citation_date" content="{{websiteid.currentYear}}"> 
+
+{%endif%}
+
+{% if bibentry.type === "article-journal"%}
+    <meta name="citation_journal_title" content="{{bibentry["container-title"]}}">
+    <meta name="citation_article_type" content="Full-length article" />
+{%endif%}
+
+{% if bibentry.type === "chapter"%}
+    <meta name="citation_inbook_title" content="{{bibentry["container-title"]}}"/>
+        <meta name="citation_book_title" content="{{bibentry["container-title"]}}"/>
+{%endif%}
+{% if bibentry.type === "paper-conference"%}
+    <meta name="citation_inbook_title" content="{{bibentry["container-title"]}}"/>
+            <meta name="citation_book_title" content="{{bibentry["container-title"]}}"/>
+{%endif%}
+
+{% if bibentry.type === "thesis" %}
+    <meta name="citation_dissertation_institution" content="{{bibentry.publisher}}">
+{%endif%}
+
+{% if bibentry.page %}
+    {% set pagepub=bibentry.page.split('-') %}
+    <meta name="citation_firstpage" content="{{pagepub[0]}}">
+    {% if pagepub[1] %}
+        <meta name="citation_lastpage" content="{{pagepub[1]}}">
+    {%endif%}
+{%endif%}
+
+{% if bibentry.volume %}
+    <meta name="citation_volume" content="{{bibentry.volume}}">
+{%endif%}    
+{% if bibentry.issue %}
+    <meta name="citation_issue" content="{{bibentry.issue}}">
+{%endif%}
+{% if bibentry.ISSN %}
+    <meta name="citation_issn" content="{{bibentry.ISSN}}">
+{%endif%} 
+{% if bibentry.ISBN %}
+    <meta name="citation_isbn" content="{{bibentry.ISBN}}">
+{%endif%} 
+{% if bibentry.keyword %}
+    <meta name="citation_keywords" content="{{bibentry.keyword| replace(",", " ; ")}}">
+    <meta name="keywords" content="{{bibentry.keyword| replace(",", " ; ")}}">
+{%endif%} 
+
+{% if hasPDF%}
+    <meta name="citation_pdf_url" content="{{websiteid.url}}/assets/pdf/{{bibentry.id}}.pdf">
+{%endif%} 
+
+
+{% if bibentry.publisher %}
+    <meta name="citation_publisher" content="{{bibentry.publisher}}">
+{%endif%}
+
+{% if bibentry.DOI %}
+    <meta name="citation_doi" content="{{bibentry.DOI}}" />
+    <meta name="dc.identifier" content="{{bibentry.DOI}}"/>
+{%endif%}
+
+{% if bibentry.abstract %}
+    <meta name="citation_abstract" content="{{bibentry.abstract}}">
+{%endif%}
+
+<meta name="citation_language" content="{{lang}}"/>
+
+{%endif%}

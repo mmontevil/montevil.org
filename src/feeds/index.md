@@ -14,7 +14,7 @@ Here are the feeds:
 - [latest publications](/feeds/publications.xml)
 - [latest posts](/feeds/posts.xml)
 - [latest links](/feeds/links.xml)
-- [latest notes](/feeds/notes.xml)
+- [latest talks](/feeds/talks.xml)
 - [latest contents from all types](/feeds/all.xml)
 
 ::: info

@@ -1,0 +1,27 @@
+---
+layout: null
+permalink: /feeds/talks.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{websiteid.name}} - Talks</title>
+  <link href="{{ pkg.homepage }}/feeds/talks.xml" rel="self"/>
+  <link href="{{ pkg.homepage }}/talks/"/>
+  <link rel="hub" href="http://pubsubhubbub.superfeedr.com/" />
+  <updated>{{ collections.talkssall | rssLastUpdatedDate }}</updated>
+  <id>{{ pkg.homepage }}/talks/</id>
+  <author>
+    <name>{{ pkg.author.name }}</name>
+    <email>{{ pkg.author.email }}</email>
+  </author>
+  {% for entry in collections.talksall | limit(150) %}
+    {% set absoluteEntryUrl %}{{ entry.url | url | absoluteUrl(pkg.homepage) }}{% endset %}
+    <entry>
+      <title> 💬{{ entry.data.title }}</title>
+      <link href="{{ absoluteEntryUrl }}"/>
+      <updated>{{ entry.date | rssDate }}</updated>
+      <id>{{ absoluteEntryUrl }}</id>
+      <content type="html">{{ entry.templateContent | cleanDeepLinks | htmlToAbsoluteUrls(absoluteEntryUrl) }}</content>
+    </entry>
+  {% endfor %}
+</feed>

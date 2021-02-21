@@ -14,7 +14,7 @@ eleventyComputed:
 
 
 
-    <h1 class="page__title p-name">{{ title | orphans | safe }}</h1>
+    {#<h1 class="page__title p-name">{{ title | orphans | safe }}</h1>#}
 
 
 
@@ -26,9 +26,9 @@ eleventyComputed:
     activeKey: eleventyNavigation.key
     }) | safe }}</div>
     <hr>
-    
+    <div class="indent">
       {{ content | safe }}
-      
+      </div>
       
   <hr><div class="centerList">
     {{ collections.all | eleventyNavigation | eleventyNavigationToHtml(

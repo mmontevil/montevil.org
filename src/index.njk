@@ -21,11 +21,6 @@ JSON-LD for:
     "@type": "WebSite",
     "name": "{{websiteid.name}}",
     "url": "{{websiteid.url}}",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "{{websiteid.url}}/archives/?query={search_term_string}",
-      "query-input": "required name=search_term_string"
-    },
     "sameAs": [{% for urll in websiteid.sameAs %} "{{ urll}}", {% endfor %}]
   }
 </script>

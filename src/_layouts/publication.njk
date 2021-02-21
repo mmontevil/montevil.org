@@ -40,12 +40,14 @@ tags: [{% for entry in keyword.split(', ') %}
 {% set item = {
       pdfout: pdfout,
       bibout: bibout,
+      hasPDF: hasPDF,
+      hasFullText: hasFullText,       
       page: {
           url: page.url
           },
       bibentry: {
           DOI: bibentry.DOI,
-          url: bibentry.url
+          URL: bibentry.URL
           }
       }
 %}

@@ -45,7 +45,8 @@
     {% set ogImageTitle = ogDescription %}
   {% else %}
     {% set ogTitle = title %}
-    {% if layout == "article" or layout == "publication" or layout == "link" or layout == "talk" %}
+    {% set ogDescription = pageExcerpt | striptags | truncate(290) | escape %}
+    {% if layout == "post" or layout == "publication" or layout == "link" or layout == "talk" %}
       {% set ogDescription = pageExcerpt | striptags | truncate(290) | escape %}
       {% if layout == "link" %}
         {% set ogImageTitle %}Link: {{ ogTitle }}{% endset %}
@@ -78,11 +79,16 @@
   <meta property="og:image" content="{% ogImage opengraph.image.title, opengraph.image.tagline %}" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />#}
-
+  
+{# scholar metatags #}
+  {% include "description.njk" %}
+  
   <link rel="alternate" type="application/rss+xml" title="Feed for all content" href="/feeds/all.xml" />
   <link rel="alternate" type="application/rss+xml" title="Feed for posts only" href="/feeds/posts.xml" />
   <link rel="alternate" type="application/rss+xml" title="Feed for links only" href="/feeds/links.xml" />
   <link rel="alternate" type="application/rss+xml" title="Feed for publications only" href="/feeds/publications.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Feed for talks only" href="/feeds/talks.xml" />
+
   <link rel="icon" type="image/jpeg" href="/favicon.jpg" />
 
   {# webmentions with webmention.io #}

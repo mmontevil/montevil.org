@@ -1,18 +1,24 @@
 ---
 excerpt: Documentation for Software for Automated Morphological Analysis, a method by which epithelial structures grown in 3D cultures can be imaged, reconstructed and analyzed.
 noToc: true
+hasFullText: false
 eleventyNavigation:
   key: SAMA
   title: What is SAMA?
 ---
+
+
+<div class="centerList" >
 {{ collections.all | eleventyNavigation | eleventyNavigationToHtml(
     {
     activeListItemClass: "selected-A", 
     activeKey: eleventyNavigation.key
-    })  |safe }}
+    })  |safe }} 
+</div>
+<div class="indent">
+<hr>
 
-
-# What is SAMA?
+# What is SAMA? 
 
 Software for Automated Morphological Analysis or SAMA is a plugin that is operated via the imaging platform, FIJI. Although the analysis is done using R, the user-friendly interface of SAMA integrates imaging and analysis in FIJI.
 
@@ -24,7 +30,7 @@ SAMA is released under the [Gnu Public License](http://www.gnu.org/licenses/gpl.
 
 [Download SAMA](http://montevil.theobio.org/sites/montevil.theobio.org/files/sama/Sama.zip) (compatible with windows, mac OSX and Linux)
 
-[<span style="font-size:16px;">Download example dataset](http://montevil.theobio.org/sites/montevil.theobio.org/files/sama/example_SAMA.zip)
+[Download example dataset](http://montevil.theobio.org/sites/montevil.theobio.org/files/sama/example_SAMA.zip)
 
 [Alternative, computer generated example dataset.](http://montevil.theobio.org/sites/montevil.theobio.org/files/sama/cgi.zip)
 
@@ -38,3 +44,4 @@ SAMA is released under the [Gnu Public License](http://www.gnu.org/licenses/gpl.
 *   14 august 2015: compatibility with version 3.3 of 3D imagej suite
 *   3 may 2015: first prerelease.
 
+</div>

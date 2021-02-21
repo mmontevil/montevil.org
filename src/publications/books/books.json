@@ -2,5 +2,6 @@
   "typepub": "book",
   "peerReview": false,
     "category": ["books"],
-    "noToc": true
+    "noToc": true,
+      "hasPDF": false
 }
