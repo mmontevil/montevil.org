@@ -14,9 +14,9 @@
         <p class="card__surtitle">{{ surtitle | safe }}</p>
       {% endif %}
       {% if title %}
-        <p class="card__title p-name">
+        <h3 class="card__title p-name">
           <a href="{{ url }}" hreflang="{{ lang }}" class="u-url">{{ title | orphans | safe }}</a>
-        </p>
+        </h3>
       {% endif %}
       {% if meta %}
         {{ meta | safe }}

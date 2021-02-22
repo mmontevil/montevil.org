@@ -1,7 +1,7 @@
-<nav class="navigation" role="navigation">
+<nav class="navigation" >
   <div class="wrap">
     {# <span class="signature"><span title="Maël">M</span><span title=" Montévil">M</span></span> #}
-    <ul class="menu" role="list">
+    <ul class="menu" >
       <li class="navigation__home{% if page.url == '/' %} current" aria-current="page{% endif %}">
         <a href="/">home</a>
       </li>
@@ -30,7 +30,7 @@
       {% endfor %}
      
     </ul>
-    <ul class="tools" role="list">    {% if upnav %}
+    <ul class="tools" >    {% if upnav %}
         <li class="navigation__{{ type }}{% if url in page.url %} current" aria-current="page{% endif %}">
          {#<a href="#{{ upnav }}">TOP</a>#}
           <a class="onclickbutton" onclick="openNav()" id="navToc"><span class="abssvg folded">{% icon "chevronRight", "Link" %}</span><span class="abssvg unfolded">{%- icon "chevronDown", "Link" -%}</span>toc</a>

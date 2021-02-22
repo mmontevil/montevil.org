@@ -9,9 +9,9 @@
 
 {% macro pubCard(article,numbers2) %} 
 
-{% set rid %}
-    {{  numbers2| random }}
-{% endset %}
+{% set rid -%}
+{{-numbers2| random-}}
+{%- endset %}
 
  {% if article.data.illust %}
  {% set srcurl-%}{{-article.data.page.url-}}{{- article.data.illust-}}{%-endset%}
@@ -31,8 +31,8 @@
 {{ article.data.bibib | bibcite|divRemove|safe}} </p></div>
 
 
- <section class="accordion">{% if not  (article.data.bibentry.abstract === undefined) %}
-  <input type="checkbox" name="{{article.data.bibentry.id}}{{rid}}" id="{{article.data.bibentry.id}}{{rid}}" >{% endif %}
+ <div class="accordion">{% if not  (article.data.bibentry.abstract === undefined) %}
+  <input type="checkbox" name="{{article.data.bibentry.id}}{{rid}}" id="{{-article.data.bibentry.id-}}{{-rid-}}" >{% endif %}
   <p class="handle">
    <span  class="smalltext">{{pubuttons(article.data) |safe}}</span> {% if not  (article.data.bibentry.abstract === undefined) %}<label for="{{article.data.bibentry.id}}{{rid}}" class="smalltext"><span class="abssvg folded">{% icon "chevronRight", "Link" %}</span><span class="abssvg unfolded">{% icon "chevronDown", "Link" %}</span>Abstract</label>
   </p>
@@ -42,7 +42,7 @@
           <p > <span class="paragraphHead2"><em> Keywords: </em></span>  {{ article.data.keyword  | safe }}</p >
            {% endif %}
   </div>{% endif %}
-</section>
+</div>
  
 
   
