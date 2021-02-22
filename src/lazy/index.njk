@@ -3,8 +3,9 @@ title: Home
 ---
 
 {% from "macros/linkCard.njk" import linkCard %}
-
+ <div class="titleDiag">
 <h2 class="wrap" >Recent links</h2>
+</div>
 <div class="cards-list">
   {% for link in collections.linksall | limit(4) %}
     {{ linkCard(link) }}

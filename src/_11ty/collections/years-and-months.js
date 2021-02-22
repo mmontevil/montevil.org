@@ -150,6 +150,15 @@ collections[`allKeys`] = (collection) => {
     return [...catSet];
   };
 
-
+const formatter2=makeDateFormatter('YYYYMMDD');
+collections[`futureTalks`] = (collection) => { 
+  return collection.getAll().filter(function(item) {
+        if(item.data.category && item.data.category.includes( 'talks')  && item.data.bibentryconf.fields.annonce ){
+            return (parseInt(formatter2(Date.now()))-parseInt(formatter2(item.data.orderDate))<=0);
+      }else{ 
+        return false;}
+  });
+  
+}   
 
 module.exports = collections;

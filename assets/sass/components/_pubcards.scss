@@ -76,8 +76,8 @@
         padding-top: 0em;
         margin-right: 0.1em;
     border: 1px solid var(--color-primary-lighter-5);
-    border-radius: 0.3em;  color: white;
-    background-color: black;
+    border-radius: 0.3em;  color: var(--color-primary-lighter-7);
+    background-color: var(--color-primary-darker-5);
 }
 @mixin chvronD-color($color) {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#{$color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevrons-down'%3E%3Cpolyline points='7 13 12 18 17 13'%3E%3C/polyline%3E%3Cpolyline points='7 6 12 11 17 6'%3E%3C/polyline%3E%3C/svg%3E");

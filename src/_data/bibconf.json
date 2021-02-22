@@ -38,6 +38,23 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://www.ias-research.net/",
+    "container-title": "IAS-Research Talk",
+    "id": "IAS2021",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          3,
+          16
+        ]
+      ]
+    },
+    "publisher-place": "IAS Research Centre for Life, Mind; Society - University of the Basque Country, San Sebastian, Spain.",
+    "title": "Integrating entropy, constraints closure and historicity to understand anthropogenic disruptions",
+    "type": "paper-conference"
+  },
+  {
     "author": [
       {
         "family": "Montévil",
@@ -53,8 +70,7 @@
     "issued": {
       "date-parts": [
         [
-          2021,
-          3
+          2021
         ]
       ]
     },
@@ -63,6 +79,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://www.ciph.org/spip.php?page=activite-detail&idevt=1163",
     "container-title": "Puissance, mécanicisme et limites du numérique : ontologie, mathématiques, éthique",
     "id": "gaetano2021",
     "issued": {
@@ -75,7 +92,7 @@
       ]
     },
     "publisher-place": "Collège International de Philosophie, Paris, France.",
-    "title": "tbd",
+    "title": "Puissance, mécanicisme et limites du numérique",
     "type": "paper-conference"
   },
   {

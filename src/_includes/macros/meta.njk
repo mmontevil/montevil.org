@@ -7,6 +7,11 @@
 
   
   <ul class="meta">
+    {% if item.data.video %}
+     <li class="date meta__item ">
+        {% icon "video", "Video" %} Recording available
+        </li>
+        {% endif %} 
     {% if item.data.page.date %}
       <li class="date meta__item meta__date">
         {% icon "date", "Date" %}
@@ -26,7 +31,7 @@
         </time>
       </li>
     {% endif %}
-    {% if item.data.location and not  item.data.location===""%}
+    {% if item.data.location.name  %}
       <li class="date meta__item meta__location">
         {% icon "location", "Location" %}
         {% if item.data.location.url %}

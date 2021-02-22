@@ -371,7 +371,7 @@ illust: Reversibility-img001.png
   is called reversible. Let X(t) be a stochastic process, and τ a time increment. A standard definition of time-reversibility for a stochastic
   process is:
 </p>
-<blockquote class="indent">“A stochastic process X(t) is reversible if (X(t<sub>1</sub>), X(t<sub>2</sub>), …, X(tn)) has the same distribution as (X(τ-t<sub>1</sub>), X(τ-t<sub>2</sub>), …, X(τ-t<sub>n</sub>)) for all t<sub>1</sub>, t<sub>2</sub>,…, t<sub>n</sub>” (Kelly 2011, p. 5) [3]</blockquote>
+<blockquote class="epigraph">“A stochastic process X(t) is reversible if (X(t<sub>1</sub>), X(t<sub>2</sub>), …, X(tn)) has the same distribution as (X(τ-t<sub>1</sub>), X(τ-t<sub>2</sub>), …, X(τ-t<sub>n</sub>)) for all t<sub>1</sub>, t<sub>2</sub>,…, t<sub>n</sub>” <p class="episource">(Kelly 2011, p. 5) [3]</p></blockquote>
 <p class="indent">
   This definition means that the joint probabilities of the forward and reverse state sequences are the same for all sets of time increments. This notion can be applied to a Markovian process (
   i.e. in a state of equilibrium), that is to say a random process that undergoes transition from one state to another with no memory of the past. In a state of equilibrium, the condition
@@ -452,9 +452,9 @@ illust: Reversibility-img001.png
   the frequency at a time t units prior to the present). Watterson is very explicit about the role of time-reversibility in his model, the general spirit of which is presented in the
   following terms:
 </p>
-<blockquote class="indent">
+<blockquote class="epigraph">
   “This interpretation seems surprising on two counts: first, because it means that the published results are simply moment of extinction times for diffusions, and second, there are stochastic processes for which this
-  reversibility is valid, that is, processes whose behaviour looking into the past is statistically identical with their future behaviour.” (Watterson 1976, p. 240)
+  reversibility is valid, that is, processes whose behaviour looking into the past is statistically identical with their future behaviour.” <p class="episource">(Watterson 1976, p. 240)</p>
 </blockquote>
 <p class="indent">This declaration is accompanied by a no less explicit figure (Figure 1), illustrating the symmetry between the ‘age of an allele’ and ‘extinction time’.</p>
 <figure class="figure">
@@ -468,11 +468,12 @@ illust: Reversibility-img001.png
   The model itself relies on an estimation of the probabilities of all the possible transitions from one state to another, in both directions of time (β→ β’ and β’→ β). Since the Markov chain considered has a stationary
   distribution, which means that the process described is time reversible (Kelly 2011), Watterson states:
 </p>
-<blockquote class="indent">
+<blockquote class="epigraph">
   “The consequence of reversibility for the stationary configuration process is that we can discuss its past evolution with equal ease as its future evolution; β(t), β(
   t-1), β(t-2), β(t-3),… have the same joint [sic. ‘probability’
-  ?] as have β(t), β(t+1), β(t+2), β(t+3),…ˮ  (Watterson 1976, p.
-  243).
+  ?] as have β(t), β(t+1), β(t+2), β(t+3),…ˮ  
+  <p class="episource">(Watterson 1976, p.
+  243).</p>
 </blockquote>
 <p class="indent">
   The main conclusion of the paper is that “…the age distribution {P<sub>i</sub>(
@@ -503,10 +504,11 @@ illust: Reversibility-img001.png
 </p>
 <h6 class="subsubsectionHead" id="3221-retrodictability">3.2.2.1 Retrodictability</h6>
 <p class="indent">The issue of retrodictability will be considered first. Intuitively, if the existence of deterministic models in population genetics is accepted, the answer seems obvious. Richard Lewontin is particularly clear on this issue:</p>
-<blockquote class="indent">
+<blockquote class="epigraph">
   “It is usual for population geneticists, who claim that they are studying the dynamics of evolution, to divide the kinds of models that they deal with in two sorts. They talk about deterministic models and
   about stochastic models? What is meant by deterministic models is that, given the initial conditions of the population, which I will simply specify by X<sub>0</sub> (although that
-  will be some sort of a vector of conditions of the population), and some set of parameters, then it is possible to predict exactly the condition of the population at some other time, τ.” (Lewontin 1967, p. 81)
+  will be some sort of a vector of conditions of the population), and some set of parameters, then it is possible to predict exactly the condition of the population at some other time, τ.” 
+  <p class="episource"> (Lewontin 1967, p. 81) </p>
 </blockquote>
 <p class="indent">
   By “some other time”, Lewontin means any other time, past or future, as explicited a few pages later in the famous 1967 paper on “historicity in evolution”: “If I just give you one history of a deterministic population because
@@ -611,23 +613,16 @@ illust: Reversibility-img001.png
   </figcaption>
 </figure>
 <p class="indent">
-  A similar operation can be done for selection at a diallelic locus with constant selective values W<sub>11</sub>
-  , W<sub>12</sub>
-  , W<sub>22</sub>, one of the simplest cases of selection. In
+  A similar operation can be done for selection at a diallelic locus with constant selective values W<sub>11</sub>, W<sub>12</sub>, W<sub>22</sub>, one of the simplest cases of selection. In
   the case of discrete generations, all textbooks give the same basic recurrence equation for this process
   <span><sup><a href="#ftn19" id="bodyftn19">19</a></sup>
 </span>(p: frequency of allele A; q: frequency of allele a;
   p+q = 1):
 </p>
 <p class="indent">
-  p(t+1) = (p(
-  t)W<sub>11</sub> + q(
-  t)W<sub>12</sub>) p(
-  t) / (p(t)
+  p(t+1) = (p(t)W<sub>11</sub> + q(t)W<sub>12</sub>) p(t) / (p(t)
   <sup>2</sup>W<sub>11</sub> + 2
-  p(t) q(t)W
-  <sub>12</sub> + p<sup>2</sup>W
-  <sub>22</sub>) [7]
+  p(t) q(t)W<sub>12</sub> + p<sup>2</sup>W<sub>22</sub>) [7]
 </p>
 <p class="indent">
   The expression (p(t)W<sub>11</sub>
@@ -643,8 +638,7 @@ illust: Reversibility-img001.png
       <td>
         <p class="indent">
           p(t+1) = p(t)
-          W<sub>A</sub> / W
-        </p>
+          W<sub>A</sub> / W</p>
       </td>
       
     </tr>
@@ -680,9 +674,7 @@ illust: Reversibility-img001.png
 </p>
 <p class="indent">
   Although analytical iteration is not accessible, it is possible to iterate backwards generation-by-generation. Appendix 2.2 provides a demonstration of the possibility of retrodiction in the case of a model of selection at a
-  diallelic locus with W<sub>11</sub> &gt; W
-  <sub>12</sub>&gt; W
-  <sub>22</sub>. This result could reasonably be extended to all possible fitness ratios, because the backward equation is quadratic and its
+  diallelic locus with W<sub>11</sub> &gt; W<sub>12</sub>&gt; W<sub>22</sub>. This result could reasonably be extended to all possible fitness ratios, because the backward equation is quadratic and its
   coefficients show that it has only one positive solution (Anthony Edwards, personal communication). Therefore, at least in this case, retrodiction is possible. Note that the backward equation is
   derived from the forward equation. Appendix 2.2 also shows why reversibility is not satisfied for the same model. This brings us to the issue of time-reversibility in population genetics.
 </p>
@@ -877,11 +869,8 @@ illust: Reversibility-img001.png
   The basic equation to predict the evolution of gene frequencies for a diallelic selection submitted to selection has been given in [7]. This recurrence equation is a rather general one. It ignores the various possible relations
   between the selective values, for instance: selection against a recessive gene (W<sub>22</sub>&lt; W<sub>12</sub>
   =W<sub>11</sub>), selection against the dominant allele (
-  W<sub>11</sub> &lt; W
-  <sub>22</sub> = W
-  <sub>12</sub>), incomplete dominance (W<sub>11</sub>&lt; W<sub>12</sub>&lt; W<sub>22</sub>
-  or W<sub>22</sub>&lt; W<sub>12</sub>&lt; W
-  <sub>11</sub>), or advantage to the heterozygote (W<sub>12</sub>
+  W<sub>11</sub> &lt; W<sub>22</sub> = W<sub>12</sub>), incomplete dominance (W<sub>11</sub>&lt; W<sub>12</sub>&lt; W<sub>22</sub>
+  or W<sub>22</sub>&lt; W<sub>12</sub>&lt; W<sub>11</sub>), or advantage to the heterozygote (W<sub>12</sub>
   superior to the two other genotypic selective values). In all cases, selective values are assumed to be constant.
 </p>
 <p class="indent">
@@ -962,9 +951,7 @@ illust: Reversibility-img001.png
     <mi>Δ</mi>
   </math> p<sub>i</sub>
   always increases, or always decreases, or sometimes increases and sometimes decreases will depend on the relations between the genotypic selective values
-  W<sub>11</sub>, W
-  <sub>12</sub>, and W
-  <sub>22</sub>.
+  W<sub>11</sub>, W<sub>12</sub>, and W<sub>22</sub>.
 </p>
 <p class="indent">
   Before commenting on reversibility, another crucial notion must be introduced. If the selective values are kept constant, Δp
@@ -1096,11 +1083,12 @@ illust: Reversibility-img001.png
 </span>.
 </p>
 <p class="indent">It is worth quoting Fisher here who compares his fundamental theorem with the Second Law of Thermodynamics:</p>
-<blockquote class="indent">
+<blockquote class="epigraph">
   “Both are properties of populations, or aggregates, true irrespective of the nature of the units which compose them; both are statistical laws ; each requires the constant increase of a measurable quantity, in the one case the
   entropy of a physical system and in the other the fitness, measured by m, of a biological population. As in the physical world we can conceive of theoretical systems in which dissipative forces are wholly absent, and in which
-  the entropy consequently remains constant, so we can conceive, though we need not expect to find, biological populations in which the genetic variance is absolutely zero, and in which fitness does not increase.” (Fisher [1930]
-  1958, p. 39)
+  the entropy consequently remains constant, so we can conceive, though we need not expect to find, biological populations in which the genetic variance is absolutely zero, and in which fitness does not increase.” 
+  <p class="episource">(Fisher [1930]
+  1958, p. 39)</p>
 </blockquote>
 <p class="indent">
   In spite of these resemblances
@@ -1148,8 +1136,7 @@ illust: Reversibility-img001.png
 <p class="indent">
   There is no doubt about the plausibility and effectiveness of such processes. But they mean something different from the various senses of reversibility analysed above. Recurrent reverse mutation has been discussed, consider now
   the case of selection. In the haploid case, how far would an inversion of the selection coefficient amount to a ‘reversible process’ in a technical sense close to time-reversibility? Appendix 2.1 provides a formal treatment of
-  this problem in the simple case of haploid populations. The method consists in replacing the selective values W
-  <sub>i</sub> (haploid populations) with the inverse quantities 1/
+  this problem in the simple case of haploid populations. The method consists in replacing the selective values W<sub>i</sub> (haploid populations) with the inverse quantities 1/
   W<sub>i</sub> in the recurrence equation. This inversion preserves the relative values of the
   Ws, but in reverse order. The question then, is whether the inversion of the fitness values preserves the ‘law’ expressed in the recurrence equation or not. The
   calculation shows that the dynamics of the initial equation is preserved with the new parameters 1/W<sub>i</sub>.
@@ -1160,10 +1147,8 @@ illust: Reversibility-img001.png
   Would the same methodology produce a similar case in the case of selection on sexually reproducing diploid population? Certainly not. Suppose for instance that the heterozygote is advantaged,
   ie. W<sub>12</sub>
   greater than both W<sub>11 </sub>and
-  W<sub>22</sub>. The dynamics of such selection is represented in Figure 7. If the values of the W
-  <sub>ij</sub> were inverted, i.e. if the
-  W<sub>ij</sub> were replaced by expressions of the form 1/ W
-  <sub>ij, </sub>then we would have W<sub>12 </sub>smaller than both
+  W<sub>22</sub>. The dynamics of such selection is represented in Figure 7. If the values of the W<sub>ij</sub> were inverted, i.e. if the
+  W<sub>ij</sub> were replaced by expressions of the form 1/ W<sub>ij</sub>, then we would have W<sub>12 </sub>smaller than both
   W<sub>11 </sub>and W<sub>22</sub>
   . This would correspond to the dynamics represented in Figure 6 (underdominance), with an unstable equilibrium, and two possible equilibria (
   p = 0 and p = 1). This is indeed a totally different dynamics. The same could be said of other possible ratios for the
@@ -1462,7 +1447,7 @@ illust: Reversibility-img001.png
         </p>
       </td>
       <td>
-        <p class="indent">(2)</p>
+        (2)
       </td>
     </tr>
   </tbody>
@@ -4239,15 +4224,10 @@ illust: Reversibility-img001.png
   </tbody>
 </table>
 <figcaption class="caption">
-  Fig. 3. Effect of selection when W
-  <sub>11</sub>
-  <span>&lt;</span>W
-  <sub>12</sub>
-  <span>&lt;</span>W
-  <sub>22 </sub>(After Jacquard 1971). The W
-  <sub>ij</sub> designate the selective values of the genotypes. Allele 1, with frequency p, is disadvantaged. The heterozygote has an intermediate selective value. The average selective value W of the population always increases. It goes from W = W
-  <sub>11 </sub>when all individuals are AA
-  to W= W<sub>22 </sub>when all individuals are aa. Δp
+  Fig. 3. Effect of selection when W<sub>11</sub>
+  <span>&lt;</span>W<sub>12</sub>
+  <span>&lt;</span>W<sub>22 </sub>(After Jacquard 1971). The W<sub>ij</sub> designate the selective values of the genotypes. Allele 1, with frequency p, is disadvantaged. The heterozygote has an intermediate selective value. The average selective value W of the population always increases. It goes from W = W<sub>11 </sub>when all individuals are AA
+  to W= W<sub>22</sub>when all individuals are aa. Δp
   is always negative, meaning that the unfavoured allele 1 is progressively eliminated. W always increases.
 </figcaption>
 <table class="Tableau10" id="Tableau32table">
@@ -4267,8 +4247,7 @@ illust: Reversibility-img001.png
   </tbody>
 </table>
 <figcaption class="caption">
-  Fig. 4. Effect of selection when W
-  <sub>11</sub>=W<sub>12</sub><span>&lt;</span>W<sub>22 </sub>(After Jacquard 1971). Allele 2
+  Fig. 4. Effect of selection when W<sub>11</sub>=W<sub>12</sub><span>&lt;</span>W<sub>22 </sub>(After Jacquard 1971). Allele 2
   is favoured only as homozygote, and spreads very slowly when rare. W
   always increases.
 </figcaption>
@@ -4289,9 +4268,8 @@ illust: Reversibility-img001.png
   </tbody>
 </table>
 <figcaption class="caption">
-  Fig. 5. Effect of selection when W
-  <sub>11</sub><span>&lt;</span>W<sub>12</sub>
-  =W<sub>22 </sub>(After Jacquard 1971). This is the typical case of selection against a recessive gene. Allele 1 is disadvantaged only as homozygote, and is eliminated very slowly when rare. W <span>always increases. Selection against a recessive gene is the most frequent case among the standard situations represented in Fig. 3 through 7. Fig. 8 represents the shape of the trajectory of gene
+  Fig. 5. Effect of selection when W<sub>11</sub><span>&lt;</span>W<sub>12</sub>
+  =W<sub>22 </sub>(After Jacquard 1971). This is the typical case of selection against a recessive gene. Allele 1 is disadvantaged only as homozygote, and is eliminated very slowly when rare. W<span>always increases. Selection against a recessive gene is the most frequent case among the standard situations represented in Fig. 3 through 7. Fig. 8 represents the shape of the trajectory of gene
 </span>frequencies for this case.
 </figcaption>
 <table class="Tableau10" id="Tableau34table">
@@ -4311,8 +4289,7 @@ illust: Reversibility-img001.png
   </tbody>
 </table>
 <figcaption class="caption">
-  Fig. 6. Effect of selection when W
-  <sub>12</sub><span>&lt;</span>W<sub>11</sub><span>&lt;</span>W<sub>22 </sub>(After Jacquard 1971). The heterozygote is disadvantaged (underdominance). There are two equilibria. Δp
+  Fig. 6. Effect of selection when W<sub>12</sub><span>&lt;</span>W<sub>11</sub><span>&lt;</span>W<sub>22 </sub>(After Jacquard 1971). The heterozygote is disadvantaged (underdominance). There are two equilibria. Δp
   is either negative or positive. W always increases, but moves towards two possible stable equilibria, corresponding to p = 0 and p = 1; 
   <math>
     <mover accent="true">
@@ -4339,8 +4316,7 @@ illust: Reversibility-img001.png
   </tbody>
 </table>
 <figcaption class="caption">
-  Fig. 7. Effect of selection W<sub>11</sub><span>&lt;</span>W<sub>22</sub><span>&lt;</span>W
-  <sub>12 </sub>(
+  Fig. 7. Effect of selection W<sub>11</sub><span>&lt;</span>W<sub>22</sub><span>&lt;</span>W<sub>12 </sub>(
   After Jacquard 1971). Known as overdominance or ‘advantage of the heterozygote’. There are two unstable equilibria, p = 0
   and p = 1, and one stable equilibrium, 
   <math>

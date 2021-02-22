@@ -13,6 +13,7 @@ const ICONS_FOLDERS = {
 // icon filename + title for accessibility
 const ICONS_LIST = {
   feather: {
+        film: {name: 'video', title: 'Video' },
     anchor: { title: 'Anchor' },
     calendar: { name: 'date', title: 'Date' },
     info: { title: 'Info' },

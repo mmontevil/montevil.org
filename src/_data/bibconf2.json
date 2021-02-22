@@ -18,11 +18,25 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "IAS2021",
+        "fields": {
+            "title": "Integrating entropy, constraints closure and historicity to understand anthropogenic disruptions",
+            "booktitle": "IAS-Research Talk",
+            "location": "IAS Research Centre for Life, Mind and Society - University of the Basque Country, San Sebastian, Spain.",
+            "year": "2021",
+            "month": "3",
+            "day": "16",
+            "annonce": "true",
+            "url": "https://www.ias-research.net/"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
         "entrykey": "UT2020",
         "fields": {
             "booktitle": "Séminaire du GIS-UTSH (Unité technologies et sciences de l'Homme)",
             "year": "2021",
-            "month": "3",
             "location": "Université Technologique de Compiègne, Paris, France.",
             "author": "M. Montévil and Victor Petit",
             "title": "Écologie de la conception"
@@ -33,13 +47,15 @@
         "entrytype": "inproceedings",
         "entrykey": "gaetano2021",
         "fields": {
-            "title": "tbd",
+            "title": "Puissance, mécanicisme et limites du numérique",
             "booktitle": "Puissance, mécanicisme et limites du numérique : ontologie, mathématiques, éthique",
             "location": "Collège International de Philosophie, Paris, France.",
             "year": "2021",
             "month": "3",
             "day": "29",
-            "program": "CHIURAZZI_BAT_Colloque.pdf"
+            "program": "CHIURAZZI_BAT_Colloque.pdf",
+            "url": "https://www.ciph.org/spip.php?page=activite-detail&idevt=1163",
+            "annonce": "true"
         }
     },
     {
