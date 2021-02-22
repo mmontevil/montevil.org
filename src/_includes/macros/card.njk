@@ -1,5 +1,5 @@
 {% macro card(type = false, lang = 'en', surtitle = false, title = false, url = false, illustration = false, content = false, meta = false) %}
-  <section class="card-list__item">
+  <li class="card-list__item">
     <article class="wrap card {{ type or '' }} h-entry" lang="{{ lang }}">
       {% if illustration.src %}
         <img
@@ -26,5 +26,5 @@
         
       {% endif %}
     </article>
-  </section>
+  </li>
 {% endmacro %}

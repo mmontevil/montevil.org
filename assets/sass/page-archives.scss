@@ -84,15 +84,15 @@
 }
 
 
-#types-list,#lang-list {
+#types-list,.lang-list {
 margin-top: var(--flow-space, 1em);
 grid-area: types;
 }
-#lang-list {
+.lang-list {
 grid-area: lang;
 
 }
-#lang-list >ul > li {
+.lang-list >ul > li {
 margin-top: 0.4em;
 
 }

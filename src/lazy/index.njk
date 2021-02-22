@@ -3,24 +3,22 @@ title: Home
 ---
 
 {% from "macros/linkCard.njk" import linkCard %}
- <div class="titleDiag">
-<h2 class="wrap" >Recent links</h2>
-</div>
-<div class="cards-list">
+<h2 class="wrap titleDiag" >Recent links</h2>
+<li class="cards-list">
   {% for link in collections.linksall | limit(4) %}
     {{ linkCard(link) }}
   {% endfor %}
-</div>
+</li>
 <p class="more wrap">Discover <a href="/links/">all links</a>…</p>
 {#
 {% from "macros/noteCard.njk" import noteCard %}
 
 <h2 class="wrap">Recent notes</h2>
-<div class="cards-list">
+<li class="cards-list">
 {% for note in collections.notesall | limit(4) %}
   {{ noteCard(note) }}
 {% endfor %}
-</div>
+</li>
 <p class="more wrap">Discover <a href="/notes/">all notes</a>…</p>
 #}
 

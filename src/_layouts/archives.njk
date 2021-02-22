@@ -63,15 +63,15 @@ isArchive: true
  <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
 </form>
 
-      <div>
-        <div class="cards-list0">
+      
+        <ol class="cards-list">
 
           {% if currentYear %}
           {% if currentType === "publications" or  currentType === "archives" %}
             {% for item in collections[currentType +currentLang + 'ByYear'][currentYear] | limit(10) %}
                 {{ itemCard(item,numbers.numbers2) }}
             {% endfor %}
-            
+       </ol>       
             {% if collections[currentType  +currentLang + 'ByYear'][currentYear].length > 10 %}
               <p>Filter by month to see more {{ currentType }} from year {{ currentYear }}.</p>
             {% endif %}
@@ -79,19 +79,19 @@ isArchive: true
             {% for item in collections[currentType +currentLang + 'ByYear'][currentYear]  %}
                 {{ itemCard(item,numbers.numbers2) }}
             {% endfor %}
+      </ol>  
           {% endif %}
           {% else %}
             {% for item in collections[currentType+currentLang ] | limit(10) %}
                 {{ itemCard(item,numbers.numbers2) }}
             {% endfor %}
+        </ol>    
             {% if collections[currentType+currentLang].length > 10 %}
               <p class= "wrap">Filter by year to see more {{ currentType }}.</p>
             {% endif %}
           {% endif %}
-        </div>
-      </div>
-    </div>
-  </div>
-
+        
+    
+</div>
 
 {% endblock %}
