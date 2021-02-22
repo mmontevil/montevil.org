@@ -78,7 +78,7 @@ tags: [{% for entry in keyword.split(', ') %}
 <hr class="breakk">
 
  <h2 class="titleHead indent" id="toc-site"> Table of contents</h2>
-  <h3 class="subtitleHead indent" id="toc-site"> Reading time: ~{{ content   | readingTime({speed:170}) }}</h3>
+  <h3 class="subtitleHead indent" > Reading time: ~{{ content   | readingTime({speed:170}) }}</h3>
   {{ content | toc | safe }}
  {%endif%}
  

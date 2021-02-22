@@ -37,7 +37,7 @@
 
     {% include "components/navigation.njk" %}
 
-    <main id="main" role="main">
+    <main id="main">
       <div >{#class="wrap"#}{{orderDate0}}
         {% block content %}
         {{ content | safe }}{% endblock %}
@@ -52,10 +52,10 @@
       https://buzut.net/configurer-rollup-bundles-esm-cjs/
       https://v8.dev/features/modules#browser
       #}
-      <script defer type="module" src="/js/{{ hashes_additional_es['assets/js/additional.js']}}"></script>
+      <script async="true" type="module" src="/js/{{ hashes_additional_es['assets/js/additional.js']}}"></script>
       <script defer nomodule src="/js/{{ hashes_additional_iife['assets/js/additional.js']}}"></script>
     {% else %}
-      <script defer type="module" src="/js/additional-es.js"></script>
+      <script async="true" type="module" src="/js/additional-es.js"></script>
     {% endif %}
   </body>
 
