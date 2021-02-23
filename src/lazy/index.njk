@@ -4,11 +4,13 @@ title: Home
 
 {% from "macros/linkCard.njk" import linkCard %}
 <h2 class="wrap titleDiag" >Recent links</h2>
+<ol class="cards-list">
 <li class="cards-list">
   {% for link in collections.linksall | limit(4) %}
     {{ linkCard(link) }}
   {% endfor %}
 </li>
+</ol>
 <p class="more wrap">Discover <a href="/links/">all links</a>…</p>
 {#
 {% from "macros/noteCard.njk" import noteCard %}

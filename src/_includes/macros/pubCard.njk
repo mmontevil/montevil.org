@@ -24,8 +24,9 @@
 {% endif %}
 
   {% set content %}
+  {% if article.data.excerpt %}
     <p class="card__body p-summary">  {{article.data.excerpt}}   </p> 
-
+{% endif %}
   
   <div class="card__body p-summary smalltext"><p>{{publabel(article.data)|safe}}
 {{ article.data.bibib | bibcite|divRemove|safe}} </p></div>

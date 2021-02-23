@@ -98,7 +98,7 @@ img.card__illustration {
   margin-left: -50vw;
   margin-right: -50vw;*/
 }
-.publi:before ,.card-list__item:before, .titleDiag:before{
+.publi:before ,.card-list__item:before, .titleDiag:before, .publi:after ,.card-list__item:after{
     content: "";
     position: absolute;
     left: 0;
@@ -112,29 +112,43 @@ img.card__illustration {
     z-index: -1;
       
    }  
-   .publi:before ,.card-list__item:before{  //box-shadow: 10px 5px 5px black; 
+   .publi:after ,.card-list__item:after{  //box-shadow: 10px 5px 5px black; 
+
+
+  box-shadow: 0 1px 2px var(--color-primary-darker-7), 
+              0 2px 4px var(--color-primary-darker-7), 
+              0 4px 8px var(--color-primary-darker-7), 
+              0 8px 16px var(--color-primary-darker-7), 
+              0 16px 32px var(--color-primary-darker-7),
+0 32px 64px var(--color-primary-darker-7);
  
+ opacity: 0;
+  transition: opacity 0.3s ease-in-out;transition: transform 0.3s ease-in-out;
       }
- .publi:hover::before , .card-list__item:hover:before{ box-shadow: 10px 5px 5px grey;  z-index: 0; 
-    transform:  scale(1.05, 1.05);
-      transition: all 0.3s ease-in-out;
+         .publi:hover:after ,.card-list__item:hover:after{    
+           transition: opacity 0.3s ease-in-out; transition: transform 0.3s ease-in-out;
+  //box-shadow: 10px 5px 5px black; 
+           transform:  scale(1.025, 1.025);
+ opacity: 0.15; z-index: 0;
+      }
+ .publi:hover::before , .card-list__item:hover:before{  z-index: 0; 
+    transform:  scale(1.025, 1.025);
+      transition: transform 0.3s ease-in-out;
       
-    }.publi >article  , .card-list__item> article {
-             
     }
      .publi:hover >div , .card-list__item:hover> article {
-    
-          transform:  scale(1.05, 1.05);
+     z-index: 1; 
+          transform:  scale(1.025, 1.025);
 
               transition: all 0.3s ease-in-out;
               
     }
 
-.publi > div,.card-list__item >article, .titleDiag>h2, .titleDiag>h3{
+.publi > div,.card-list__item >article, .titleDiag h2, .titleDiag h3{
  // max-width: var(--width);
   margin: 0em auto;
   margin-top: var(--skew-padding);
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
  // padding-bottom: 1.5em;
   position: relative;
 //  padding: var(--skew-padding) 0;
@@ -142,13 +156,13 @@ img.card__illustration {
 }
 .card-list__item >article{
    // margin-top: var(--skew-padding);
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
-.titleDiag>h2{
+.titleDiag h2{
   padding: 0.5em 0;
   margin-bottom: -1.5em;
 }
-.titleDiag>.titleHead, .titleDiag>.sectionHeadList{
+.titleDiag .titleHead, .titleDiag .sectionHeadList{
   margin-top: calc(0.5*var(--skew-padding));
   margin-bottom: calc(0.5*var(--skew-padding));
 }

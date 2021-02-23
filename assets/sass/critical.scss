@@ -669,6 +669,10 @@ hr {color: var(--color-grey);}
 padding: 0;
 list-style: none;
 }
+h1 +h2 {
+  margin-top : 0.5em;
+}
+
 h2 +h3 {
   margin-top : 0.5em;
 }
@@ -680,5 +684,13 @@ h4 +h5 {
 }
 h5 +h6 {
   margin-top : 0.5em;
+}
+
+ .titleDiag.titleHead {
+  margin-bottom : 0em;
+}
+.sectionHeadList +.titleHead{
+  margin-top : 0em;
+  margin-bottom : 0em;
 }
 .page__body>ul>li {margin-top: 0.4em;}

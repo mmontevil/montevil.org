@@ -98,16 +98,18 @@
 }
 
 
-
 .accordion > input[type="checkbox"]:checked ~ .content {
   height: auto;
   overflow: visible;
 }
 
+
+
 .accordion label {
   display: inline-block;
   border: 1px solid var(--color-accord);
     border-radius: 0.5em;
+       
 } 
 
 
