@@ -13,6 +13,7 @@
   {% set fontSize = (maxSize - minSize) * tag.factor + minSize %}
   {% set fontWeight = (maxWeight - minWeight) * tag.factor + minWeight %}
     {% set fontOpa = (maxOpacity - minOpacity) * tag.factor + minOpacity %}
+    {% set marginv = (-0.75) *2* tag.factor*(1-1/2*tag.factor) + 0.75 %}
 
   <li>
     <a href="{{ tagUrl }}"
@@ -22,6 +23,8 @@
         font-size: {{ fontSize | round(2) }}em;
         font-weight: {{ fontWeight | round(0) }};
         opacity: {{fontOpa | round(2)}};
+        margin-top: {{marginv | round(2)}}em;
+        margin-bottom: {{marginv | round(2)}}em;
         "
       rel="tag">{{ tag.tag }}</a> 
   </li>

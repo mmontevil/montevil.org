@@ -110,10 +110,25 @@ img.card__illustration {
     outline: 1px solid transparent;
     backface-visibility: hidden; 
     z-index: -1;
-         
-
+      
    }  
+   .publi:before ,.card-list__item:before{  //box-shadow: 10px 5px 5px black; 
+ 
+      }
+ .publi:hover::before , .card-list__item:hover:before{ box-shadow: 10px 5px 5px grey;  z-index: 0; 
+    transform:  scale(1.05, 1.05);
+      transition: all 0.3s ease-in-out;
+      
+    }.publi >article  , .card-list__item> article {
+             
+    }
+     .publi:hover >div , .card-list__item:hover> article {
+    
+          transform:  scale(1.05, 1.05);
 
+              transition: all 0.3s ease-in-out;
+              
+    }
 
 .publi > div,.card-list__item >article, .titleDiag>h2, .titleDiag>h3{
  // max-width: var(--width);
