@@ -21,7 +21,7 @@ JSON-LD for:
     "@type": "WebSite",
     "name": "{{websiteid.name}}",
     "url": "{{websiteid.url}}",
-    "sameAs": [{% for urll in websiteid.sameAs %} "{{ urll}}", {% endfor %}]
+    "sameAs": [{% for urll in websiteid.sameAs %} "{{ urll}}"{% if not loop.last-%},{%-endif%} {% endfor %}]
   }
 </script>
 
@@ -40,7 +40,7 @@ JSON-LD for:
 
  
   {% from "macros/pubCard.njk" import pubCard %}
-  <h2   class="wrap titleDiag">Latest Publications</h2>
+  <h2   class="wrap titleDiag titleDiag2">Latest Publications</h2>
   <ol class="cards-list">
     {% for article in collections.latestpublicationsall %}
       {{ pubCard(article,numbers.numbers2) }}
@@ -52,7 +52,7 @@ JSON-LD for:
     
 {% for article in collections.futureTalks | sortByOrder2%}
     {% if loop.first%}
-        <h2   class="wrap titleDiag">Forthcoming Talks</h2>
+        <h2   class="wrap titleDiag titleDiag2">Forthcoming Talks</h2>
          <ol class="cards-list">
     {% endif %}
     {{ talkCard(article) }}
@@ -67,7 +67,7 @@ JSON-LD for:
 
  {% from "macros/postCard.njk" import postCard %}    
 
-  <h2 class="wrap titleDiag">Latest posts</h2>
+  <h2 class="wrap titleDiag titleDiag2">Latest posts</h2>
 
   <ol class="cards-list">
     {% for article in collections.latestpostsall %}
@@ -77,7 +77,7 @@ JSON-LD for:
   #}
   
   {#
-  <div class="titleDiag">
+  <div class="titleDiag titleDiag2">
   <h2 class="wrap">Older noteworthy articles</h2>
     </div>
 

@@ -115,12 +115,12 @@ img.card__illustration {
    .publi:after ,.card-list__item:after{  //box-shadow: 10px 5px 5px black; 
 
 
-  box-shadow: 0 1px 2px var(--color-primary-darker-7), 
-              0 2px 4px var(--color-primary-darker-7), 
-              0 4px 8px var(--color-primary-darker-7), 
-              0 8px 16px var(--color-primary-darker-7), 
-              0 16px 32px var(--color-primary-darker-7),
-0 32px 64px var(--color-primary-darker-7);
+  box-shadow: 0 1px 2px var(--color-primary-lighter-4), 
+              0 2px 4px var(--color-primary-lighter-4), 
+              0 4px 8px var(--color-primary-lighter-4), 
+              0 8px 16px var(--color-primary-lighter-4), 
+              0 16px 32px var(--color-primary-lighter-4),
+0 32px 64px var(--color-primary-lighter-4);
  
  opacity: 0;
   transition: opacity 0.3s ease-in-out;transition: transform 0.3s ease-in-out;
@@ -129,7 +129,8 @@ img.card__illustration {
            transition: opacity 0.3s ease-in-out; transition: transform 0.3s ease-in-out;
   //box-shadow: 10px 5px 5px black; 
            transform:  scale(1.025, 1.025);
- opacity: 0.15; z-index: 0;
+ opacity: 0.4;
+ z-index: 0;
       }
  .publi:hover::before , .card-list__item:hover:before{  z-index: 0; 
     transform:  scale(1.025, 1.025);
@@ -171,3 +172,13 @@ img.card__illustration {
 .publi:nth-child(2n+1) ,.card-list__item:nth-child(2n+1) {&:before {background: var(--color-primary-lighter-7)}}
 .publi:nth-child(2n+2),.card-list__item:nth-child(2n+2) {&:before {background: var(--color-primary-lighter-8)}}
 
+.publi:nth-child(2n+1) ,.card-list__item:nth-child(2n+1) {&>.wrap>section>.content {background: var(--color-primary-lighter-7);
+  z-index: 1;
+  position:relative;
+}}
+.publi:nth-child(2n+2),.card-list__item:nth-child(2n+2) {&>.wrap>section>.content {background: var(--color-primary-lighter-8);
+  z-index: 1;
+  position:relative;
+}}
+
+.titleDiag2{margin-bottom: -0.5em}

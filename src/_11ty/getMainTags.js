@@ -21,7 +21,7 @@ module.exports = function (collection) {
   const tags = [];
   tagsCollection.forEach((number, tag) => {
     if (number >= minContentsNumber) {
-      let factor = (Math.log(number) - minLog) / (maxLog - minLog);
+      let factor = (Math.log(number) ) / (maxLog );
       tags.push({ 'tag': tag, 'number': number, 'factor': factor, 'step': Math.ceil(factor * 2) + 1 });
     }
   });

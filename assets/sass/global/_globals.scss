@@ -128,13 +128,14 @@
  .noDarkFilter {
     filter: none;
   }
-
+--soft-shadow: rgba(0,0,0,0.05);
 
 }
  
 
 [data-theme="dark"] {
-  
+  --soft-shadow: rgba(255,255,255,0.075);
+
 --color-primary-darker-7: #f8ebf2;
 --color-primary-darker-6: #f2e0ea;
 --color-primary-darker-5: #edd5e3;

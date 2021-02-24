@@ -1,7 +1,7 @@
 {% macro tagsCloud(tags) %}
 
-{% set minSize = 0.8 %}
-{% set maxSize = 4 %}
+{% set minSize = 0.75 %}
+{% set maxSize = 3 %}
 {% set minWeight = 300 %}
 {% set maxWeight = 900 %}
 {% set minOpacity = 0.7 %}
@@ -20,7 +20,7 @@
       aria-label="{{ tag.number }} content{% if tag.number > 1 %}s{% endif %} with tag {{ tag.tag }}"
       data-number="{{ tag.number }}"
       style="
-        font-size: {{ fontSize | round(2) }}em;
+        font-size: calc({{ fontSize | round(2) }}* var(--font-size-m));
         font-weight: {{ fontWeight | round(0) }};
         opacity: {{fontOpa | round(2)}};
         margin-top: {{marginv | round(2)}}em;

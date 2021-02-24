@@ -1,5 +1,8 @@
 const slugifyString = require('../../_utils/slugify');
 
+
+
+
 module.exports = {
   base64: (string) => {
     return Buffer.from(string).toString('base64');
@@ -25,4 +28,19 @@ module.exports = {
     if (string === undefined) return '';
     return string.slice(1);
   },
+   urlize: (str, find,url,type="default")  =>{
+var open='\“';
+var close='\”';
+if(type==="book"){
+  open='<i>';
+  close='</i>';
+}
+//    var find2 =find.replace(/[-[\]{}()*+?.,\\^$|]/g, "\s*.*");
+ // var reg0 = new RegExp('('+find2+')', 'gi');
+    var reg = new RegExp('('+open+'.*'+close+')', 'gi');
+
+  var str2=str.replace(reg, '<a href=\"XXXX\">$1</a>');
+  return str2.replace('XXXX', url);
+  
+},
 };
