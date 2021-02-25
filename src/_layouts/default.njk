@@ -41,7 +41,8 @@
     <main id="main">
       <div >{#class="wrap"#}
         {% block content %}
-        {{ content | safe }}{% endblock %}
+        {{ content | safe }}
+        {% endblock %}
       </div>
     </main>
  {% if build.env === "special" %}

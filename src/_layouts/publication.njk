@@ -80,15 +80,15 @@ tags: [{% for entry in keyword.split(', ') %}
  <h2 class="titleHead indent" id="toc-site"> Table of contents</h2>
   <h3 class="subtitleHead indent" > Reading time: ~{{ content   | readingTime({speed:170}) }}</h3>
   {{ content | toc | safe }}
+  
+  {% from "macros/overlayToc.njk" import overlayToc %}
+{{overlayToc(content,"",title)|safe}}
  {%endif%}
  
 
 
  <hr class="breakk">
 {{ content |addAnchor | safe }}
- {% if build.env === "special" %}
- {%else%}
-{% from "macros/overlayToc.njk" import overlayToc %}
-{{overlayToc(content,"",title)|safe}}
+ 
 
-{%endif%}
+
