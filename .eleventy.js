@@ -200,7 +200,7 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
   // Transforms
   // ------------------------------------------------------------------------
 
-  if (process.env.NODE_ENV === 'production') {
+  if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'special') {
    // const imagesResponsiver = require('eleventy-plugin-images-responsiver');
     const imagesResponsiverConfig = require(path.join(
       __dirname,

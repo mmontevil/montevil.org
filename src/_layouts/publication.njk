@@ -82,8 +82,13 @@ tags: [{% for entry in keyword.split(', ') %}
   {{ content | toc | safe }}
  {%endif%}
  
-{% from "macros/overlayToc.njk" import overlayToc %}
-{{overlayToc(content,"",title)|safe}}
+
 
  <hr class="breakk">
 {{ content |addAnchor | safe }}
+ {% if build.env === "special" %}
+ {%else%}
+{% from "macros/overlayToc.njk" import overlayToc %}
+{{overlayToc(content,"",title)|safe}}
+
+{%endif%}

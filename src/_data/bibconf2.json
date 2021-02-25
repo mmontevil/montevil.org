@@ -20,14 +20,15 @@
         "entrytype": "inproceedings",
         "entrykey": "IAS2021",
         "fields": {
-            "title": "Integrating entropy, constraints closure and historicity to understand anthropogenic disruptions",
+            "title": "Integrating entropy, constraints closure, and historicity to understand anthropogenic disruptions",
             "booktitle": "IAS-Research Talk",
             "location": "IAS Research Centre for Life, Mind and Society - University of the Basque Country, San Sebastian, Spain.",
             "year": "2021",
             "month": "3",
             "day": "16",
             "annonce": "true",
-            "url": "https://www.ias-research.net/"
+            "url": "https://www.ias-research.net/",
+            "abstract": "The term \"disruption\" is commonly used in the literature to describe anthropogenic damages on ecosystems and life cycles. However, this notion has not been conceptualized and theorized as such. Here we will focus on the specific case of plant-pollinators networks and their disruption by climate change. We will show that the analysis of these situations requires integrating constraints closure and historical reasoning. Moreover, entropy enters the picture in a new way: its coarse-graining is defined by constraints closure. This framework leads to an initial account of disruption in biology: disruptions a loss of historical singularity impacting constraints closure."
         }
     },
     {
@@ -73,6 +74,7 @@
             "abstract": "Le concept d'entropie est difficile. Il a fait l'objet de multiples incompréhensions, en particulier lorsqu'il s'agit de le mobiliser pour comprendre le vivant ou les activités humaines. Conscient de ces difficultés et malgré elles, Bernard Stiegler en a fait un thême central de ses derniers travaux, à la fois pour répondre à la question urgente de l'Anthropocène mais aussi pour développer son oeuvre philosophique. L'enjeu est à la fois d'impulser une appropriation transdisciplinaire de ces questions mais aussi de défendre des positions conceptuellement précises sur l'articulation entre entropie, néguentropie et anti-entropie. En cela, Bernard Stiegler s'inscrit dans la tradition philosophique qui ne se limite pas à l'analyse des discours scientifiques mais qui, en s'appuyant sur les sciences constitutées, élabore et défend de nouvelles perspectives. Nous montrerons que ces perspectives sont susceptibles de développements scientifiques.",
             "program": "LIVRET PHITECO 2021 Penser la technique avec Bernard Stiegler.pdf",
             "language": "fr",
+            "video": "https://www.youtube.com/watch?v=aM_YYbAvJgs",
             "author": "M. Montévil",
             "title": "Bernard Stiegler et l'entropie"
         }

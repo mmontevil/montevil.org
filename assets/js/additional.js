@@ -45,11 +45,13 @@ if (currentTheme) {
         toggleSwitch.checked = true;
     }
 }
+ });
  /*****************************************************************
  * TOC
  * ****************************************************************/
 
 /* Open */
+ document.addEventListener("DOMContentLoaded", function() { 
 
 var scrollPosition = 0;
 
@@ -72,8 +74,9 @@ navToc.classList.add("onclickbuttonon");
 }
 }   
 if(myNav &&navToc){
-navToc.onclick =function () {openNav();};
-myNav.onclick =function () {openNav();};
+  navToc.addEventListener("click", openNav, false);
+  myNav.addEventListener("click", openNav, false);
+
 }
 });
  
