@@ -12,8 +12,7 @@
     data-img-src="{% if layout %}{{- page.inputPath | dirname -}}{%-else-%}src{%-endif-%}/"
     data-img-dist="{{ page.outputPath | dirname }}/"
   >
- {% if build.env === "special" %}
- {%else%}
+
     <a class="quickaccess visually-hidden" href="#main">Jump to main content</a>
 
     <header id="header" >
@@ -37,7 +36,7 @@
     </header>
 
     {% include "components/navigation.njk" %}
-{% endif %}
+
     <main id="main">
       <div >{#class="wrap"#}
         {% block content %}
@@ -45,11 +44,10 @@
         {% endblock %}
       </div>
     </main>
- {% if build.env === "special" %}
- {%else%}
+ 
     {% include "components/footer.njk" %}
     {% include "svg-sprite.svg" %}
-{% endif %}
+
     {% if build.env == 'production' %}
       {#
       https://buzut.net/configurer-rollup-bundles-esm-cjs/
