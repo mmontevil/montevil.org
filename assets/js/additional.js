@@ -5,10 +5,80 @@ const observable =
   typeof IntersectionObserver !== 'undefined' &&
   'forEach' in NodeList.prototype;
 
-  
-  
+  /*****************************************************************
+ * night mode
+ * ****************************************************************/
 
   
+ document.addEventListener("DOMContentLoaded", function() { 
+
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark'); //add this
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light'); //add this
+    }    
+}
+
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
+}
+ /*****************************************************************
+ * TOC
+ * ****************************************************************/
+
+/* Open */
+
+var scrollPosition = 0;
+
+var myNav=document.getElementById("myNav");
+var navToc=document.getElementById("navToc");
+
+ function openNav   () { 
+if(myNav.style.height === "100%"){
+window.scrollTo(0, scrollPosition);
+myNav.style.height = 0;
+navToc.classList.remove("onclickbuttonon");
+}else{
+    scrollPosition = window.pageYOffset;
+    if (Math.sign(scrollPosition-55)==-1){
+window.scrollBy(0, 60);
+scrollPosition =60;
+}
+myNav.style.height = "100%";
+navToc.classList.add("onclickbuttonon");
+}
+}   
+if(myNav &&navToc){
+navToc.onclick =function () {openNav();};
+myNav.onclick =function () {openNav();};
+}
+});
+ 
+
+
   
 /*****************************************************************
  * Statistics
@@ -19,6 +89,8 @@ const observable =
   bodyElement.setAttribute('data-viewportwidth', window.viewport_width);
   bodyElement.setAttribute('data-screendensity', window.screen_density);
   bodyElement.setAttribute('data-rootfontsize', window.root_font_size);
+  
+  
 })(window);
 
 /*****************************************************************
@@ -294,5 +366,4 @@ function checkConnectivity() {
 
 // when the page has finished loading,
 window.addEventListener('load', checkConnectivity);
-
 

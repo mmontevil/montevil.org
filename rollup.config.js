@@ -26,12 +26,12 @@ const JS_NAME =
     : '[name]-[format].js';
 
 const plugins_critical = [
-  replace({
+  replace({preventAssignment:true, 
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
   }),
   nodeResolve({ browser: true }),
   commonjs(),
-  babel({
+  babel({ babelHelpers: 'bundled',
     exclude: 'node_modules/**',
   }),
   process.env.NODE_ENV === 'production' && terser(),
@@ -43,12 +43,12 @@ const plugins_critical = [
 
 // only in production, for old browsers
 const plugins_additional_iife = [
-  replace({
+  replace({preventAssignment:true, 
     'process.env.NODE_ENV': 'production',
   }),
   nodeResolve({ browser: true }),
   commonjs(),
-  babel({
+  babel({babelHelpers: 'bundled',
     // exclude: 'node_modules/**',
     presets: ['@babel/preset-env'],
   }),
@@ -59,12 +59,12 @@ const plugins_additional_iife = [
 ];
 
 const plugins_additional_es = [
-  replace({
+  replace({preventAssignment:true, 
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
   }),
   nodeResolve({ browser: true }),
-  commonjs(),
-  babel({
+  
+  babel({babelHelpers: 'bundled',
     // exclude: 'node_modules/**',
     presets: [
       [
@@ -77,6 +77,7 @@ const plugins_additional_es = [
       ],
     ],
   }),
+  commonjs(),
   process.env.NODE_ENV === 'production' && terser(),
   process.env.NODE_ENV === 'production' &&
     entrypointHashmanifest({
@@ -84,39 +85,7 @@ const plugins_additional_es = [
     }),
 ];
 
-const plugins_archives = [
-  replace({
-    'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
-    'process.env.ALGOLIA_APP_ID': JSON.stringify(process.env.ALGOLIA_APP_ID),
-    'process.env.ALGOLIA_READ_ONLY_API_KEY': JSON.stringify(
-      process.env.ALGOLIA_READ_ONLY_API_KEY
-    ),
-    'process.env.ALGOLIA_INDEX_NAME': JSON.stringify(
-      process.env.ALGOLIA_INDEX_NAME
-    ),
-  }),
-  nodeResolve({ browser: true, preferBuiltins: false }),
-  commonjs(),
-  babel({
-    exclude: 'node_modules/**',
-    presets: [
-      [
-        '@babel/preset-env',
-        {
-          targets: { esmodules: true },
-          bugfixes: true,
-          loose: true,
-        },
-      ],
-    ],
-  }),
-  process.env.NODE_ENV === 'production' && terser(),
-  process.env.NODE_ENV === 'production' &&
-    entrypointHashmanifest({
-      manifestName: path.join(HASH, 'hashes_archives.json'),
-    }),
-  // visualizer(),
-];
+
 
 const targets = [
   {
@@ -139,20 +108,7 @@ const targets = [
       sourcemap: true,
     },
     plugins: plugins_additional_es,
-  },
-  {
-    input: path.join(JS_SRC, 'archives.js'),
-    output: {
-      dir: JS_DIST,
-      entryFileNames: JS_NAME,
-      format: 'es',
-      sourcemap: true,
-      globals: {
-        events: 'events',
-      },
-    },
-    plugins: plugins_archives,
-  },
+  }                          
 ];
 
 if (process.env.NODE_ENV === 'production') {
@@ -171,10 +127,10 @@ if (process.env.NODE_ENV === 'production') {
     input: path.join(JS_SRC, 'service-worker.js'),
     plugins: [
       nodeResolve(),
-      replace({
+      replace({preventAssignment:true, 
         'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
       }),
-      babel({
+      babel({babelHelpers: 'bundled',
         presets: [
           [
             '@babel/preset-env',

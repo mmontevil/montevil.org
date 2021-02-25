@@ -90,7 +90,7 @@
   --color-link: var(--color-primary);
   --color-link-bg: inherit;
   --color-link-decoration: var(--color-primary-lighter-6);
-
+--color-link-hoveralt: black;
   --color-link-hover: white;
   --color-link-hover-bg: var(--color-primary);
   --color-link-hover-decoration: none;
@@ -135,6 +135,7 @@
 
 [data-theme="dark"] {
   --soft-shadow: rgba(255,255,255,0.075);
+--color-link-hoveralt: white;
 
 --color-primary-darker-7: #f8ebf2;
 --color-primary-darker-6: #f2e0ea;
