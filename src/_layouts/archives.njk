@@ -94,4 +94,19 @@ isArchive: true
     
 </div>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+<script type="text/javascript">
+  algoliasearchNetlify({
+    appId: 'FWO1TXJD82',
+    apiKey: '441877879034955305bd5bbcf16a8f15',
+    siteId: '9cdc232a-b341-4608-a689-551b0bcecc7b',
+    branch: 'master',
+    selector: 'div#search', 
+    hitsPerPage: 10, 
+  });
+</script>
+<div id="search" class="wrap"> </div> 
+
+
 {% endblock %}
