@@ -18,7 +18,7 @@ eleventyComputed: {
   orderDate: "{%- if datepub=='Submitted' -%}{{- page.date | attributeDate -}}{%- else -%}{{- datepub     -}}{%- endif -%}",
 
   illustration: {
-      src: "{%- if  bibentryconf.fields.illustration -%}/assets/talks/{{-   bibentryconf.fields.illustration -}}{%- else -%}{%- if  entry.URL|safe -%}https://image.thum.io/get/width/640/crop/600/noanimate/{{ entry.URL |safe}}{%- endif -%}{%- endif -%}",
+      src: "{%- if  bibentryconf.fields.illustration -%}/assets/talks/{{-   bibentryconf.fields.illustration -}}{%- elif  entry.URL -%}https://image.thum.io/get/width/640/crop/600/noanimate/{{- entry.URL |safe-}}{%- endif -%}",
       classes: "{%- if  bibentryconf.fields.illustrationclass -%}{{-   bibentryconf.fields.illustrationclass -}}{%- else -%}  noDarkFilter {%- endif -%}"
   },
   abstract: "{{bibentryconf.fields.abstract |safe}}",
@@ -36,9 +36,9 @@ eleventyComputed: {
 
 {% if program or poster %}
 <p>{% if program %}
-<a  href="/assets/talks/{{program}}" class="buttonlink ">{% icon "pdf", "Program" %}&nbsp; Program of the event. </a> 
+<a  href="/assets/talks/{{program}}" class="buttonlink ">{% icon "pdf", "Program" %} Program of the event. </a> 
 {% endif %}{% if  poster %}
-<a  href="/assets/talks/{{poster}}" class="buttonlink ">{% icon "pdf", "Poster" %}&nbsp; Poster. </a> 
+<a  href="/assets/talks/{{poster}}" class="buttonlink ">{% icon "pdf", "Poster" %} Poster. </a> 
 {% endif %}
 {% if video %}
 <a href="{{video}}" class="buttonlink abssvg">{% icon "video", "Video" %} Link to the Video</a> 

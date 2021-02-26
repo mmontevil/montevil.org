@@ -498,6 +498,7 @@
             "month": "5",
             "location": "IHPST, Paris, France",
             "language": "fr",
+            "illustration": "ihpst.png",
             "author": " M. Montévil",
             "title": "Introduction: Sabina Leonelli, La recherche scientifique à l’ère des Big Data"
         }
@@ -870,7 +871,7 @@
             "month": "1",
             "location": "Muséum national d'Histoire naturelle, Paris, France",
             "language": "fr",
-            "ilustration": "MNHN.png",
+            "ilustration": "mnhn.png",
             "illustrationclass": "viclass",
             "author": " M. Montévil",
             "title": "Enjeux de l’historicité du vivant pour la modélisation mathématique en biologie"

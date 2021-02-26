@@ -14,7 +14,7 @@ I am a *theoretical biologist* working at the crossroads of experimental biology
 <div>
 <a  class="buttonlink" href=/assets/pdf/publications_Montevil2-en.pdf >{% icon "pdf", "pdf" %}  Publications </a>
 <a class="buttonlink" href=/assets/pdf/cv_Montevil_2019_en.pdf >{% icon "pdf", "pdf" %}  CV </a>
-<a class="buttonlink" href=/assets/bib/bibM.bib >{% icon "bib", "bib" %}  Données bibliographiques </a>
+<a class="buttonlink" href=/assets/bib/bibM.bib >{% icon "bib", "bib" %}  Publication references </a>
 </div>
 {% endset %}
 
