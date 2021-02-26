@@ -6,6 +6,6 @@ tocOver: tocCenter
 ---
    {% from "macros/colByYear.njk" import colByYear %}
    <p class=" wrap center">See also: <a class=" " href="/publications/publicationsbyType/">Complete Publication list by category</a></p>
-{{ colByYear(collections.publicationsall) }}
+{{ colByYear(collections.publicationsall) |safe}}
      
  {# </ul>#}

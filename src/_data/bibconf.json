@@ -1,5 +1,40 @@
 [
   {
+    "URL": "https://www.ias-research.net/",
+    "abstract": "The term \"disruption\" is commonly used in the literature to describe anthropogenic damages on ecosystems and life cycles. However, this notion has not been conceptualized and theorized as such. Here we will focus on the specific case of plant-pollinators networks and their disruption by climate change. We will show that the analysis of these situations requires integrating constraints closure and historical reasoning. Moreover, entropy enters the picture in a new way: its coarse-graining is defined by constraints closure. This framework leads to an initial account of disruption in biology: disruptions a loss of historical singularity impacting constraints closure.",
+    "container-title": "IAS-Research Talk",
+    "id": "IAS2021",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          3,
+          16
+        ]
+      ]
+    },
+    "publisher-place": "IAS Research Centre for Life, Mind; Society - University of the Basque Country, San Sebastian, Spain.",
+    "title": "Integrating entropy, constraints closure, and historicity to understand anthropogenic disruptions",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://www.ciph.org/spip.php?page=activite-detail&idevt=1163",
+    "container-title": "Puissance, mécanicisme et limites du numérique : ontologie, mathématiques, éthique",
+    "id": "gaetano2021",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          3,
+          29
+        ]
+      ]
+    },
+    "publisher-place": "Collège International de Philosophie, Paris, France.",
+    "title": "Puissance, mécanicisme et limites du numérique",
+    "type": "paper-conference"
+  },
+  {
     "abstract": "Depuis deux ans, le philosophe Bernard Stiegler, récemment disparu, a initié une recherche-action sur la prévention aux effets des écrans chez les enfants, pilotée par l’IRI (Institut de Recherche et d’Innovation du Centre Pompidou). Une série d’ateliers est menée au sein de la PMI Pierre Sémard de Saint-Denis, mobilisant professionnelles de la PMI, chercheurs de l’IRI, et parents. Constitué en groupe de recherche contributive, ces acteurs accueillent de nouveaux parents et favorisent les échanges de savoir entre les participants, pour prévenir des effets des écrans sur le développement des jeunes enfants et inventer ensemble de nouvelles manière d’éduquer nos enfants à l’ère numérique.",
     "author": [
       {
@@ -38,24 +73,6 @@
     "type": "paper-conference"
   },
   {
-    "URL": "https://www.ias-research.net/",
-    "abstract": "The term \"disruption\" is commonly used in the literature to describe anthropogenic damages on ecosystems and life cycles. However, this notion has not been conceptualized and theorized as such. Here we will focus on the specific case of plant-pollinators networks and their disruption by climate change. We will show that the analysis of these situations requires integrating constraints closure and historical reasoning. Moreover, entropy enters the picture in a new way: its coarse-graining is defined by constraints closure. This framework leads to an initial account of disruption in biology: disruptions a loss of historical singularity impacting constraints closure.",
-    "container-title": "IAS-Research Talk",
-    "id": "IAS2021",
-    "issued": {
-      "date-parts": [
-        [
-          2021,
-          3,
-          16
-        ]
-      ]
-    },
-    "publisher-place": "IAS Research Centre for Life, Mind; Society - University of the Basque Country, San Sebastian, Spain.",
-    "title": "Integrating entropy, constraints closure, and historicity to understand anthropogenic disruptions",
-    "type": "paper-conference"
-  },
-  {
     "author": [
       {
         "family": "Montévil",
@@ -77,23 +94,6 @@
     },
     "publisher-place": "Université Technologique de Compiègne, Paris, France.",
     "title": "Écologie de la conception",
-    "type": "paper-conference"
-  },
-  {
-    "URL": "https://www.ciph.org/spip.php?page=activite-detail&idevt=1163",
-    "container-title": "Puissance, mécanicisme et limites du numérique : ontologie, mathématiques, éthique",
-    "id": "gaetano2021",
-    "issued": {
-      "date-parts": [
-        [
-          2021,
-          3,
-          29
-        ]
-      ]
-    },
-    "publisher-place": "Collège International de Philosophie, Paris, France.",
-    "title": "Puissance, mécanicisme et limites du numérique",
     "type": "paper-conference"
   },
   {
@@ -504,7 +504,8 @@
       "date-parts": [
         [
           2019,
-          11
+          11,
+          28
         ]
       ]
     },
@@ -514,6 +515,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://www.ciph.org/",
     "abstract": "Dans le cadre de la relativité générale, l’espace temps constitue un bloc géométrisé où la temporalité en tant que telle disparaît. Ce cadre est extrêmement éloigné de la biologie où la temporalité possède un rôle central parce que l’historicité biologique est fondamentale. Néanmoins le processus d’individuation organique s’appuie sur la capacité du vivant à être organisateur de son espace-temps. Il s’agit là d’une condition de possibilité de l’individuation dont nous développerons certains aspects remarquables.",
     "author": [
       {
@@ -527,7 +529,8 @@
       "date-parts": [
         [
           2019,
-          11
+          11,
+          28
         ]
       ]
     },
@@ -536,6 +539,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "http://geopolitics-of-risk.ens.fr/keywords/82",
     "author": [
       {
         "family": "Mohan",
@@ -552,7 +556,8 @@
       "date-parts": [
         [
           2019,
-          11
+          11,
+          6
         ]
       ]
     },
@@ -561,6 +566,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://ilbolive.unipd.it/it/event/governo-dellentropia",
     "author": [
       {
         "family": "Montévil",
@@ -573,7 +579,8 @@
       "date-parts": [
         [
           2019,
-          10
+          10,
+          9
         ]
       ]
     },
@@ -582,6 +589,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://www.salonlyonnaisdulivremaconnique.net/",
     "abstract": "La crise que constitue l’Anthropocène est souvent décrite à travers la raréfaction de ressources. Pourtant un autre aspect de cette crise est tout aussi critique et concerne aussi les humains: la désorganisation des organismes et des écosystèmes. Nous introduirons brièvement cette question et montrerons qu’elle demande des raisonnements spécifiques.",
     "author": [
       {
@@ -595,7 +603,8 @@
       "date-parts": [
         [
           2019,
-          10
+          10,
+          12
         ]
       ]
     },
@@ -604,6 +613,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://iscpif.fr/evenements/artex-journee-arts-et-sciences-des-systemes-complexes/",
     "author": [
       {
         "family": "Montévil",
@@ -616,7 +626,8 @@
       "date-parts": [
         [
           2019,
-          10
+          10,
+          11
         ]
       ]
     },
@@ -626,6 +637,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://bergson.hypotheses.org/1323",
     "author": [
       {
         "family": "Montévil",
@@ -638,7 +650,8 @@
       "date-parts": [
         [
           2019,
-          10
+          10,
+          24
         ]
       ]
     },
@@ -659,7 +672,8 @@
       "date-parts": [
         [
           2019,
-          9
+          9,
+          23
         ]
       ]
     },
@@ -668,6 +682,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://www.santafe.edu/events/thirty-years-complex-thinking-celebration-stuart-k",
     "author": [
       {
         "family": "Montévil",
@@ -680,7 +695,8 @@
       "date-parts": [
         [
           2019,
-          8
+          8,
+          21
         ]
       ]
     },
@@ -710,6 +726,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://cerisy-colloques.fr/recherchetechnologique2019/",
     "author": [
       {
         "family": "Stiegler",
@@ -726,6 +743,7 @@
       "date-parts": [
         [
           2019,
+          6,
           6
         ]
       ]
@@ -736,6 +754,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://ishpssb2019.tekniskmuseum.no/",
     "abstract": "Organization constitutes an overarching hypoth- esis that frames the intelligibility of biological objects. We offer a specific characterization of organization in terms of closure of con- straints. The adoption of organization as a principle fosters an orig- inal approach to biological stability. We elaborate on its articulation with the two other theoretical principles addressed in this session and use them to discuss what it means to access empirical objects in biology. Finally, we address measurement and precision in biology.",
     "author": [
       {
@@ -749,6 +768,7 @@
       "date-parts": [
         [
           2019,
+          7,
           7
         ]
       ]
@@ -758,6 +778,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://iri-ressources.org/collections/season-55.html",
     "author": [
       {
         "family": "Montévil",
@@ -770,7 +791,8 @@
       "date-parts": [
         [
           2019,
-          7
+          7,
+          2
         ]
       ]
     },
@@ -779,6 +801,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://twitter.com/ESHIatTUDUBLIN/status/1154710590994169861",
     "author": [
       {
         "family": "Montévil",
@@ -791,7 +814,8 @@
       "date-parts": [
         [
           2019,
-          7
+          7,
+          25
         ]
       ]
     },
@@ -800,6 +824,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://www.ihpst.cnrs.fr/activites/seminaires/seminaire-epistemod-05-mael-montevil",
     "abstract": "L’utilisation des mathématiques pour comprendre le vivant est souvent conçue à l’aune de son utilisation en physique. Pourtant, la biologie possède des spécificités qui sont parfois mobilisées pour la modélisation. En particulier, les êtres vivants sont le résultat d’une double histoire, évolutive et individuelle. Nous aborderons plusieurs conséquences de cette historicité du vivant, tant au niveau de la modélisation à proprement parler que pour l’accès aux phénomènes, dans l’expérience.",
     "author": [
       {
@@ -813,7 +838,8 @@
       "date-parts": [
         [
           2019,
-          4
+          4,
+          2
         ]
       ]
     },
@@ -822,6 +848,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://biomorphisme.hypotheses.org/1326",
     "author": [
       {
         "family": "Montévil",
@@ -834,7 +861,8 @@
       "date-parts": [
         [
           2019,
-          1
+          1,
+          25
         ]
       ]
     },
@@ -843,6 +871,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://biomorphisme.hypotheses.org/1326",
     "abstract": "Dans l’interface entre biologie et mathématiques, les formes et les processus de morphogenèse sont souvent étudiées en \"eux-même\". Nous montrerons que cette manière de procéder est insuffisante pour capturer le sens biologique de ces formes. La biologie comporte des spécificités qui se manifestent tant sur le plan philosophique que sur celui des principes théoriques : en particulier, tout processus biologique tel qu’un processus de morphogenèse ou une régulation physiologique (i) s’inscrit dans l’évolution et dans une histoire naturelle et (ii) s’intègre dans un organisme dont il dépend et auquel il participe. Nous aborderons alors le sens des formes biologiques à l’aune de ces principes, tant au niveau de la théorie qu’au niveau de la compréhension de l’accès expérimental aux objets biologiques.",
     "author": [
       {
@@ -856,7 +885,8 @@
       "date-parts": [
         [
           2019,
-          1
+          1,
+          22
         ]
       ]
     },
@@ -865,6 +895,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://enseignements-2018.ehess.fr/2018/ue/2884/",
     "author": [
       {
         "family": "Montévil",
@@ -877,7 +908,8 @@
       "date-parts": [
         [
           2019,
-          1
+          1,
+          15
         ]
       ]
     },
@@ -887,10 +919,15 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://republique-des-savoirs.fr/events/event/colloque-international-geometries-et-phenomenologies-du-vivant-limites-et-possibilites-de-la-mathematisation-complexite-et-individuation-geometry-and-phenomenology-of-the-living-limits-a/",
     "author": [
       {
+        "family": "Longo",
+        "given": "Giuseppe"
+      },
+      {
         "family": "Montévil",
-        "given": "M."
+        "given": "Maël"
       }
     ],
     "container-title": "Geometry and Phenomenology of the Living. Limits and possibilities of mathematization, complexity and individuation",
@@ -899,6 +936,7 @@
       "date-parts": [
         [
           2018,
+          12,
           12
         ]
       ]
@@ -908,6 +946,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://republique-des-savoirs.fr/events/event/3eme-rencontre-cardano-symposium-the-science-of-systems-and-life-alternative-philosophies-new-mathematics/",
     "abstract": "Biological evolution involves the appearance of new traits, new phenotypes and new processes but the mathematical understanding of such novelties is still lacking. In this paper, I argue that the notion of a new possibility should be and can be a fundamental notion in biology. This idea has been used in several models but it still lacks a proper mathematical, theoretical and epistemological framework. The notion of new possibility should be analyzed carefully since, like for the notion of probability, points of view a priori and a posteriori cannot be conflated. Moreover possibilities are virtual and it seems at first sight that adding possibilities by a retrospective theoretical move does not change the state of an object. In order to define precisely the notion of new possibilities, I will first discuss a positive notion of possibility which pertains to properties that are properly defined theoretically. This will lead us to a more precise discussion than the set-theoretic language to describe possibilities and enable us to define a robust notion of new possibilities.",
     "author": [
       {
@@ -921,7 +960,8 @@
       "date-parts": [
         [
           2018,
-          10
+          10,
+          26
         ]
       ]
     },
@@ -930,6 +970,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://gess.ethz.ch/en/news-and-events/sip-talk/sip-talk--4.html",
     "author": [
       {
         "family": "Montévil",
@@ -942,7 +983,8 @@
       "date-parts": [
         [
           2018,
-          10
+          10,
+          25
         ]
       ]
     },
@@ -951,6 +993,8 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://iscpif.fr/evenements/la-medecine-au-chevet-de-lia-medicale-necessite-dun-fondement-theorique-du-vivant-pour-aborder-les-nouvelles-technologies-de-maniere-rationnelle/",
+    "abstract": "Avec l’arrivée des algorithmes en médecine, il y a deux voies possibles. Certains pensent que l’on peut automatiser l’essentiel de la pratique médicale et dans ce cas le médecin deviendra subordonné à la machine. La médecine par la preuve ouvre déjà cette voie en standardisant la décision médicale, même si cette automatisation ne passe pas par une machine. L’alternative consiste à redonner une centralité à l’analyse du médecin et à subordonner l’automatisation et la modélisation à son regard critique. \\<br\\> La biologie théorique permet de trancher entre ces deux options et nous conduit à promouvoir la seconde. Pour le comprendre on peut introduire brièvement la question des normes biologiques. Avant la théorie de l’évolution, la théologie naturelle posait l’existence d’un ordre naturel dont les normes, statiques, étaient données par Dieu. À l’opposé, la théorie de l’évolution pose que les normes des organismes ne sont pas statiques et changent au cours du temps. Si l’on raisonne avec des normes fixes, comme dans le cadre de la théologie naturelle, les statistiques sont adéquates pour révéler les normes biologiques. À l’opposé, dans le cadre de l’évolution, le vivant se caractérise par la production de nouvelles normes qui demandent à être analysées dans leurs singularités. Alors, il semble bien que l’analyse statistique, y compris dans sa version sophistiquée sous forme d’IA, soit nécessairement incomplète pour l’analyse des organismes vivants et de la diversité de leurs organisations. Les statistiques ne peuvent donc pas remplacer le jugement du médecin confronté à un individu et ses particularités. \\<br\\> Cette brève discussion illustre le fait que l’utilisation rationnelle des moyens numériques ne saurait se passer d’une élaboration théorique en amont. Dans cette rencontre nous allons présenter ces idées et des méthodes pour appréhender les organisations biologiques dans leur complexité.",
     "author": [
       {
         "family": "Montévil",
@@ -972,7 +1016,8 @@
     "type": "paper-conference"
   },
   {
-    "abstract": "In biology, the molecular biology revolutio lead to the prevalence of a linguistic metaphor in the second half of the twentieth century. This metaphor led to a double perspective on secrecy: biologists aimed to unravel the secrets of the living, which would be revealed by reading and decoding DNA, and the secrecy between researchers competing to decode the same \"information\". This framework is now outdated, both for the understanding of life and in social practice. Biology seems to hesitate between imposing transparency, on both its practices and its objects, and recognizing the existence of several opacities.",
+    "URL": "https://cue.unibo.it/it/lectures-e-seminari/laboratorio-sulle-discipline-del-segreto",
+    "abstract": "In biology, the molecular biology revolution lead to the prevalence of a linguistic metaphor in the second half of the twentieth century. This metaphor led to a double perspective on secrecy: biologists aimed to unravel the secrets of the living, which would be revealed by reading and decoding DNA, and the secrecy between researchers competing to decode the same \"information\". This framework is now outdated, both for the understanding of life and in social practice. Biology seems to hesitate between imposing transparency, on both its practices and its objects, and recognizing the existence of several opacities.",
     "author": [
       {
         "family": "Montévil",
@@ -985,6 +1030,7 @@
       "date-parts": [
         [
           2018,
+          10,
           10
         ]
       ]
@@ -994,6 +1040,8 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://iri-ressources.org/video-776.html",
+    "abstract": "Nicholas Georgescu Rœgen and René Passet, as well as MIT, have emphasized that entropy and negentropy should be central to economic analysis. We will see that this requires us to consider anti-entropy as a dynamic factor, and to specify its role in a contributive economy, according to biology.",
     "author": [
       {
         "family": "Montévil",
@@ -1006,7 +1054,8 @@
       "date-parts": [
         [
           2018,
-          9
+          9,
+          22
         ]
       ]
     },
@@ -1015,6 +1064,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://www.serpentinegalleries.org/whats-on/work-marathon/",
     "author": [
       {
         "family": "Montévil",
@@ -1027,7 +1077,8 @@
       "date-parts": [
         [
           2018,
-          9
+          9,
+          22
         ]
       ]
     },
@@ -1036,6 +1087,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://sbglab.org/sbglab-news/a-new-mathematical-look-into-biology/",
     "abstract": "By analogy with theoretical physics, theoretical biology is not limited to mathematical modeling. Instead, theoretical biology should strive to find suitable first principles to ground the understanding of biological phenomena and ultimately frame biological experiments and mathematical models. First principles in physics are discussed in terms of symmetries and the associated conservation principles, on the one side, and optimization on the other side. In biology, we have argued instead that a strong notion of variation is fundamental. This notion encompasses new possibilities and is associated with the historicity of biological phenomena \\[3\\]. By contrast, the relative regularity of some aspects of biological organisms should be seen as the consequence of a mutual stabilization by the parts of organisms \\[2\\]. In this paper, we will focus on a last aspect which pertains to the way cellular behavior is framed theoretically: should cells of multicellular organisms be considered as spontaneously quiescent so that a stimulation would be required for them to move or proliferate, or should cells be considered as spontaneously moving and proliferating so that quiescence would be the result of constraints. We argue the latter and will show that this assumption can be used to build a model of epithelial morphogenesis in tissue culture.",
     "author": [
       {
@@ -1058,6 +1110,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://nextleap.eu/seminars/2018-6.html",
     "author": [
       {
         "family": "Montévil",
@@ -1070,7 +1123,8 @@
       "date-parts": [
         [
           2018,
-          6
+          6,
+          20
         ]
       ]
     },
@@ -1079,6 +1133,8 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://iscpif.fr/science-et-societe/hhc/#toggle-id-5",
+    "abstract": "When doing mathematical modeling, first principles are often interpreted as physical principles of conservation. In this paper, I show that properly biological first principles can also be introduced and used. Discussing this question can bring more coherence to the field and show that implicit, opposite assumptions are often made.",
     "author": [
       {
         "family": "Montévil",
@@ -1100,6 +1156,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://iscpif.fr/evenements/rencontres-scientifiques-mnhn-isc-pif/",
     "author": [
       {
         "family": "Montévil",
@@ -1112,7 +1169,8 @@
       "date-parts": [
         [
           2018,
-          6
+          6,
+          14
         ]
       ]
     },
@@ -1122,6 +1180,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "http://www.hotelpasteur.fr/articles/13",
     "author": [
       {
         "family": "Montévil",
@@ -1134,7 +1193,8 @@
       "date-parts": [
         [
           2018,
-          5
+          5,
+          30
         ]
       ]
     },
@@ -1155,7 +1215,8 @@
       "date-parts": [
         [
           2018,
-          5
+          5,
+          28
         ]
       ]
     },
@@ -1185,6 +1246,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://enmi-conf.org/wp/enmi17/",
     "abstract": "En biologie expérimentale et théorique, les approches computationnelles prennent une place croissante. Sur la base d’un exemple, j’aborderai les différentes étapes computationnelles entre l’échantillon et la discussion biologique. L’analyse morphométrique est traditionnellement effectuée directement par un observateur, mais cette méthode est de plus en plus remplacée par l’utilisation d’algorithmes. Il est alors impératif de proposer une critique de ces approches computationnelle que j’esquisserait sur la base d’une comparaison entre ces deux méthodes. Enfin, je montrerai que la notion de symétrie permet, au moins dans certains cas, d’aborder parallèlement ces questions épistémologiques et des problèmes politiques dans l’utilisation des intelligences artificielles.",
     "author": [
       {
@@ -1198,7 +1260,8 @@
       "date-parts": [
         [
           2017,
-          12
+          12,
+          19
         ]
       ]
     },
@@ -1207,6 +1270,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://www.droithumain-france.org/rencontres-droit-humain-autour-de-l-intelligence-artificielle-9-decembre-2017/",
     "author": [
       {
         "family": "Montévil",
@@ -1219,7 +1283,8 @@
       "date-parts": [
         [
           2017,
-          12
+          12,
+          9
         ]
       ]
     },
@@ -1228,6 +1293,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "http://www.utc.fr/cred/?page_id=18",
     "author": [
       {
         "family": "Montévil",
@@ -1240,7 +1306,8 @@
       "date-parts": [
         [
           2017,
-          10
+          10,
+          9
         ]
       ]
     },
@@ -1250,6 +1317,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://isyeb.mnhn.fr/fr/agenda/les-seminaires-passes-de-lisyeb-2798",
     "abstract": "En physique, les objets sont définis théoriquement par les relations qu’il entretiennent les uns avec les autres. Ce sont ces relations qui sont instanciées dans les modèles mathématiques et qui expliquent le lien profond entre physique et mathématiques. Les modèles mathématique en biologie héritent de cet épistémologie. Nous montrerons pourtant que l’historicité des objets biologiques a des conséquences profondes sur la manière dont on peut envisager ces modèles. Ces conséquences portent d’abord sur l’étude d’organismes actuels qui ne peuvent être envisagée sans leurs histoires évolutives. Elles interviennent ensuite dans la modélisation de la variation phénotypique elle même, laquelle semble bien nécessiter des changements d’espace des possibles et une théorie des contraintes biologiques.",
     "author": [
       {
@@ -1263,7 +1331,8 @@
       "date-parts": [
         [
           2017,
-          10
+          10,
+          3
         ]
       ]
     },
@@ -1272,6 +1341,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://iri-ressources.org/collections/season-45.html",
     "abstract": "En biologie expérimentale et théorique, les approches computationnelles prennent une place croissante. Pour la biologie expérimentale, je discuterai mon expérience dans un laboratoire se focalisant sur la physiologie et le développement des glandes mammaires. J’aborderai les différentes étapes computationnelles entre l’échantillon et la discussion biologique. En particulier, l’analyse morphométrique est traditionnellement faite directement, par un observateur, mais elle est faite de plus en plus par l’utilisation d’algorithmes. La comparaison entre les deux méthodes est instructive. J’aborderai aussi le rôle épistémologique particulier des analyse statistiques. En biologie théorique, j’aborderai plusieurs obstacles dans l’utilisation de modèles computationnels.",
     "author": [
       {
@@ -1285,7 +1355,8 @@
       "date-parts": [
         [
           2017,
-          6
+          6,
+          29
         ]
       ]
     },
@@ -1294,6 +1365,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "http://ishpssb2017.abfhib.org/index.html",
     "abstract": "The typical approach for mathematical modeling in biology is to apply mathematical tools and concepts which originated from theoretical principles in physics and computer sciences. Instead, the authors propose to construct a mathematical model based on proper biological principles. Specifically, they use principles identified as fundamental for the elaboration of a theory of organisms, namely i) the default state of cells and ii) the principle of organization. Cells display agency, move and proliferate unless constrained. They exert mechanical forces that i) act on collagen fibers and ii) on other cells. When fibers organize, they constrain the cells on their ability to move and to proliferate. The model exhibits a circularity that can be interpreted in terms of a closure of constraints. Implementing the mathematical model shows that constraints to the default state are sufficient to explain ductal and acinar formation, and points to a target of future research.",
     "author": [
       {
@@ -1307,7 +1379,8 @@
       "date-parts": [
         [
           2017,
-          7
+          7,
+          16
         ]
       ]
     },
@@ -1316,6 +1389,7 @@
     "type": "paper-conference"
   },
   {
+    "URL": "http://ishpssb2017.abfhib.org/index.html",
     "abstract": "In this paper, we will discuss the notion of inertia in Classical Mechanics and its possible counterparts in Theoretical Population Genetics. We will show that, in Population Genetics, changes take place in a mathematical space whose structure is not compatible with notions such as the conservation of momentum or of angular momentum. In spite of this difference, we will argue that there is a fundamental analogy holds between the two fields. The principle of inertia describes the behavior of a system when nothing acts upon it. In Mechanics, this behavior is described by the conservation of momentum. We will show that different situations may be analogous to inertia in evolution. In particular, Theoretical Population Genetics uses a similar line of reasoning in at least two cases: random genetic drift, and geometric growth. However, we will argue that genetic drift is mathematically very different from mechanical inertia as it is far richer in contingent events having lasting consequences.",
     "author": [
       {
@@ -1329,7 +1403,8 @@
       "date-parts": [
         [
           2017,
-          7
+          7,
+          16
         ]
       ]
     },
@@ -1357,6 +1432,7 @@
         "given": "C."
       }
     ],
+    "container-title": "Colloque du labex \"Who am I?\" 2016",
     "genre": "Poster",
     "id": "whoami2016",
     "issued": {
@@ -1367,9 +1443,9 @@
         ]
       ]
     },
-    "publisher-place": "Colloque du labex \"Who am I?\" 2016",
+    "publisher-place": "Université Paris 7, Paris, France.",
     "title": "Modeling mammary gland from biological first principles.",
-    "type": "no-type"
+    "type": "paper-conference"
   },
   {
     "URL": "https://sfs.snv.jussieu.fr/index.php/2017/02/13/demi-journee-stephen-jay-gould/",
@@ -1385,7 +1461,8 @@
       "date-parts": [
         [
           2017,
-          2
+          2,
+          22
         ]
       ]
     },
@@ -1408,7 +1485,8 @@
       "date-parts": [
         [
           2017,
-          2
+          2,
+          15
         ]
       ]
     },
@@ -1431,7 +1509,8 @@
       "date-parts": [
         [
           2017,
-          1
+          1,
+          12
         ]
       ]
     },
@@ -1454,7 +1533,8 @@
       "date-parts": [
         [
           2016,
-          11
+          11,
+          7
         ]
       ]
     },
@@ -1521,7 +1601,8 @@
       "date-parts": [
         [
           2016,
-          11
+          11,
+          3
         ]
       ]
     },
@@ -1530,6 +1611,7 @@
     "type": "paper-conference"
   },
   {
+    "abstract": "Dialog between Rocco Ronchi and Maël Montévil on the concept of novelty in Bergson’s work and beyond.",
     "author": [
       {
         "family": "Montévil",
@@ -1592,7 +1674,8 @@
       "date-parts": [
         [
           2016,
-          9
+          9,
+          17
         ]
       ]
     },
@@ -1620,7 +1703,8 @@
       "date-parts": [
         [
           2016,
-          7
+          7,
+          5
         ]
       ]
     },

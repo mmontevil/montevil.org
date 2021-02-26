@@ -45,6 +45,7 @@ const ICONS_LIST = {
     newer: { title: 'Newer' },
     pdf: { title: 'pdf' },
     bib: { title: 'bib' },
+    reference: { title: 'reference' },
   },
 };
 

@@ -42,6 +42,10 @@ tags: [{% for entry in keyword.split(', ') %}
       bibout: bibout,
       hasPDF: hasPDF,
       hasFullText: hasFullText,       
+      peerReview: peerReview,
+      type: type,
+      typepub: typepub,
+      lang: lang,
       page: {
           url: page.url
           },
@@ -65,8 +69,9 @@ tags: [{% for entry in keyword.split(', ') %}
 {{bibentry.abstract |safe}}
 </p>#}
 
+   {% from "macros/publabel.njk" import publabel %}
 
-  <div id="CitationAnchor" class="citationW indent"><p>{{ bibib | bibcite|divRemove|safe}}</p>
+  <div id="CitationAnchor" class="citationW indent"><p class="svgfill">{{publabel(item)|safe}} {% icon "reference", "reference" %} {{ bibib | bibcite|divRemove|safe}}</p>
   <p> {{pubuttons(item) |safe}}</p>
   </div>
 {% if  noToc %}

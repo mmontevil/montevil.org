@@ -11,14 +11,14 @@ permalink:    "talks/{{entry.issued['date-parts'][0][0]}}-{%-if entry['container
 eleventyComputed: {
   title: "{{ entry.title }}",
   location: {   
-              url: "{%- if  entry.URL -%}{{ entry.URL }}{%- endif -%}",
+              url: "{%- if  entry.URL -%}{{ entry.URL |safe}}{%- endif -%}",
         name:"{{ entry['container-title'] }} - {{ entry['publisher-place'] }}",
       },
   datepub: "{%- set date0 = entry.issued['date-parts'][0] -%}{%- if  date0 -%}{{- 0 if date0[0]<10  -}}{{- date0[0] if date0[0] else 2021 -}}-{{- 0 if (date0[1]<10 or not date0[1])  -}}{{- date0[1] if date0[1] else 1 -}}-{{- 0 if (date0[2]<10 or not date0[2])  -}}{{- date0[2] if date0[2] else 1 -}}{%- else -%}Submitted{%- endif -%}",
   orderDate: "{%- if datepub=='Submitted' -%}{{- page.date | attributeDate -}}{%- else -%}{{- datepub     -}}{%- endif -%}",
 
   illustration: {
-      src: "{%- if  bibentryconf.fields.illustration -%}/assets/talks/{{-   bibentryconf.fields.illustration -}}{%- else -%}{%- if  entry.URL -%}https://image.thum.io/get/width/640/crop/600/noanimate/{{ entry.URL }}{%- endif -%}{%- endif -%}",
+      src: "{%- if  bibentryconf.fields.illustration -%}/assets/talks/{{-   bibentryconf.fields.illustration -}}{%- else -%}{%- if  entry.URL|safe -%}https://image.thum.io/get/width/640/crop/600/noanimate/{{ entry.URL |safe}}{%- endif -%}{%- endif -%}",
       classes: "{%- if  bibentryconf.fields.illustrationclass -%}{{-   bibentryconf.fields.illustrationclass -}}{%- else -%}  noDarkFilter {%- endif -%}"
   },
   abstract: "{{bibentryconf.fields.abstract |safe}}",
@@ -28,18 +28,11 @@ eleventyComputed: {
   }
 }
 ---
-
- {{entry |bibcite2 |safe}}
+<div class="svgfill">{% icon "reference", "reference" %}
+ {{entry |bibcite2 |divRemove|safe}}</div>
 <p >
 {{abstract |safe}}
 </p>
-
-
-
-{% if video %}
-{% from "macros/videoEmbed.njk" import videoEmbed %}
-{{videoEmbed(video) | safe }}
-{% endif %}
 
 {% if program or poster %}
 <p>{% if program %}
@@ -47,8 +40,19 @@ eleventyComputed: {
 {% endif %}{% if  poster %}
 <a  href="/assets/talks/{{poster}}" class="buttonlink ">{% icon "pdf", "Poster" %}&nbsp; Poster. </a> 
 {% endif %}
+{% if video %}
+<a href="{{video}}" class="buttonlink abssvg">{% icon "video", "Video" %} Link to the Video</a> 
+{% endif %}
+
 <p>
 {% endif %}
+
+{% if video %}
+{% from "macros/videoEmbed.njk" import videoEmbed %}
+{{videoEmbed(video) | safe }}
+{% endif %}
+
+
 
 
 

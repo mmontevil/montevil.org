@@ -3,7 +3,8 @@
 
 {% macro talkCard(talk) %}
   {% set content %}
-  <p class="card__body p-summary">{{ talk.templateContent | excerpt | truncateHtml (300) | safe }}</p>
+
+  <p class="card__body p-summary svgfill">{{ talk.templateContent | excerpt | truncateHtml (300) | safe }}</p>
   {% endset %}
 
   {% set meta %}

@@ -213,7 +213,7 @@ const unescape = require('html-escaper').unescape;
 
 const imagesResponsiverTransform = (content, outputPath) => {
   if (outputPath && outputPath.endsWith('.html')) {
-    return unescape(imagesResponsiver(content, imagesResponsiverConfig));
+    return (imagesResponsiver(content, imagesResponsiverConfig));
   }
   return content;
 };

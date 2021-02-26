@@ -292,7 +292,7 @@ module.exports = {
       }}
         return res;
     },
-    title: (data) => data.bibentry.title || data.title ,
+    title: (data) => data.titlePrefix? data.titlePrefix+(data.bibentry.title || data.title) : (data.bibentry.title || data.title),
   tags: (data) => tags(data),
   //  tags2: (data) => tags(data),
   category:(data) => data.category ? (data.video ? [data.category,"video"].flat() :data.category)  : [],

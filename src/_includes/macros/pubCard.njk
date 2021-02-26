@@ -28,8 +28,8 @@
     <p class="card__body p-summary">  {{article.data.excerpt}}   </p> 
 {% endif %}
   
-  <div class="card__body p-summary smalltext"><p>{{publabel(article.data)|safe}}
-{{ article.data.bibib | bibcite|divRemove|safe}} </p></div>
+  <div class="card__body p-summary smalltext"><p class="svgfill">{{publabel(article.data)|safe}} {% icon "reference", "reference" %}
+{{ article.data.bibib | bibcite| urlize( article.title,article.page.urlitem, article.bibentry.type)|divRemove|safe}} </p></div>
 
 
  <div class="accordion">{% if not  (article.data.bibentry.abstract === undefined) %}
