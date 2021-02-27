@@ -18,7 +18,7 @@ eleventyComputed: {
   orderDate: "{%- if datepub=='Submitted' -%}{{- page.date | attributeDate -}}{%- else -%}{{- datepub     -}}{%- endif -%}",
 
   illustration: {
-      src: "{%- if  bibentryconf.fields.illustration -%}/assets/talks/{{-   bibentryconf.fields.illustration -}}{%- elif  entry.URL -%}https://image.thum.io/get/width/640/crop/600/noanimate/{{- entry.URL |safe-}}{%- endif -%}",
+      src: "{%- if  bibentryconf.fields.illustration -%}https://montevil.org/assets/talks/{{-   bibentryconf.fields.illustration -}}{%- elif  entry.URL -%}https://image.thum.io/get/width/640/crop/600/noanimate/{{- entry.URL |safe-}}{%- endif -%}",
       classes: "{%- if  bibentryconf.fields.illustrationclass -%}{{-   bibentryconf.fields.illustrationclass -}}{%- else -%}  noDarkFilter {%- endif -%}"
   },
   abstract: "{{bibentryconf.fields.abstract |safe}}",

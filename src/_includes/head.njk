@@ -63,8 +63,8 @@
   <meta name="description" content="{{ ogDescription }}" />
   <meta property="og:description" content="{{ ogDescription }}" />
 
-  <link rel="canonical" href="{{ pkg.homepage + page.url | lower }}"  />
-  <meta property="og:url" content="{{ pkg.homepage + page.url | lower }}" />
+  <link rel="canonical" href="{{ pkg.homepage + page.url | lowerize }}"  />
+  <meta property="og:url" content="{{ pkg.homepage + page.url | lowerize }}" />
 
   <meta property="og:type" content="{{ opengraph.type }}" />
   {% if opengraph.type == "article" %}
@@ -74,15 +74,34 @@
 
   {#
   https://developers.facebook.com/docs/sharing/best-practices?locale=fr_FR#images
-  https://developers.facebook.com/tools/debug/sharing/
+  https://developers.facebook.com/tools/debug/sharing/#}
   
-  <meta property="og:image" content="{% ogImage opengraph.image.title, opengraph.image.tagline %}" />
+  {% if illust %}
+ {% set srcurl-%}https://montevil.org{{-page.url-}}{{- illust-}}{%-endset%}
+ {% endif %}
+ {% if illustration and  illustration.src %}
+   {% set srcurl-%}{{-illustration.src-}}{%-endset%}
+ {% endif %}
+   {% set thumbUrl = 'https://image.thum.io/get/width/1200/crop/800/noanimate/' %}
+{% if link %}
+   {% set srcurl-%}{{-thumbUrl + link-}}{%-endset%}
+ {% endif %}
+  {% if not srcurl %}
+  {% set srcurl-%}{{-thumbUrl-}}https://montevil.org{{-page.url-}}{%-endset%}
+   {% endif %}
+  {% set titletemp-%}{{-opengraph.image.title or title-}}{%-endset%}
+  <meta property="og:image" content="{% ogImage titletemp, opengraph.image.tagline, srcurl %}" />
   <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />#}
+  <meta property="og:image:height" content="630" />
   
+  {% if video%}
+  <meta property="og:video" content="{{video}}" />
+  {%endif%}
 {# scholar metatags #}
-  {% include "description.njk" %}
-  
+{% include "description.njk" %}
+  {% if category %}
+      <meta property="product:category" content="{{category[0]}}" />
+  {% endif %}
   <link rel="alternate" type="application/rss+xml" title="Feed for all content" href="/feeds/all.xml" />
   <link rel="alternate" type="application/rss+xml" title="Feed for posts only" href="/feeds/posts.xml" />
   <link rel="alternate" type="application/rss+xml" title="Feed for links only" href="/feeds/links.xml" />
@@ -128,3 +147,4 @@
   <meta name="generator" content="Eleventy {{ build.version }}" />
 
   </head>
+{#<img src="{% ogImage titletemp, opengraph.image.tagline, srcurl %}" />#}

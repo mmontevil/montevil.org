@@ -43,4 +43,6 @@ if(type==="book"){
   return str2.replace('XXXX', url);
   
 },
+
+lowerize: (string) => {return string.toLowerCase()},
 };

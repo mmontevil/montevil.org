@@ -16,9 +16,11 @@
     {% if datepublic[2] %}
         <meta name="citation_publication_date" content="{{datepublic[0]}}/{{datepublic[1]}}/{{datepublic[2]}}">
           <meta name="citation_date" content="{{datepublic[0]}}/{{datepublic[1]}}/{{datepublic[2]}}">
+          <meta name="article:published_time" content="{{datepublic[0]}}/{{datepublic[1]}}/{{datepublic[2]}}">
     {% elif datepublic[0] %} 
         <meta name="citation_publication_date" content="{{datepublic[0]}}"> 
         <meta name="citation_date" content="{{datepublic[0]}}"> 
+        <meta name="article:published_time" content="{{datepublic[0]}}"> 
     {%endif%}
     {%else%}
     <meta name="citation_publication_date" content="{{websiteid.currentYear}}"> 
@@ -65,8 +67,8 @@
     <meta name="citation_isbn" content="{{bibentry.ISBN}}">
 {%endif%} 
 {% if bibentry.keyword %}
-    <meta name="citation_keywords" content="{{bibentry.keyword| replace(",", " ; ")}}">
-    <meta name="keywords" content="{{bibentry.keyword| replace(",", " ; ")}}">
+    <meta name="citation_keywords" content="{{bibentry.keyword}}">
+    <meta name="keywords" content="{{bibentry.keyword}}">
 {%endif%} 
 
 {% if hasPDF%}
