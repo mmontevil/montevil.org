@@ -54,7 +54,7 @@ isArchive: true
 
 
     <div id="hits">
-     <form method="get" id="search" action="http://duckduckgo.com/">
+   {#  <form method="get" id="search" action="http://duckduckgo.com/">
   <input type="hidden" name="sites" value="montevil.org"/>
   <input type="hidden" name="k8" value="var(--color-bg)"/>
   <input type="hidden" name="k9" value="var(--color-lighter-5)"/>
@@ -62,6 +62,32 @@ isArchive: true
   <label class="center"> <p class="center">Search  DuckDuckGo:</p><input type="text" name="q" maxlength="255" placeholder="Search&hellip;" class="centerBlock searchBox" /></label>
  <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
 </form>
+#}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" defer/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js" defer></script>
+<style> .aa-Item > a:hover {background-color: transparent;}
+li.aa-Item div.aa-ItemDescription{color: var(--color-primary-darker-1)};</style>
+<script type="text/javascript">
+
+window.onload = function () {
+  algoliasearchNetlify({
+    appId: 'FWO1TXJD82',
+    apiKey: '441877879034955305bd5bbcf16a8f15',
+    siteId: '9cdc232a-b341-4608-a689-551b0bcecc7b',
+    branch: 'master',
+    selector: 'div#search', 
+    hitsPerPage: 10, openOnFocus: true,
+    theme: {
+    mark: 'var(--color-emph)',                               // Color of the matching content
+    background: 'var(--color-bg)',                      // Background Color of the input and the panel
+    selected: 'var(--color-primary-lighter-7)',                        // Background Color of the selected item
+    text: 'var(--color-primary-darker-5)',                            // Color of the title of the items
+    colorSourceIcon: '#d6d6e7'                  // Color of the icon on the left of results
+  }
+  });}
+</script>
+<div id="search" class="wrap"> </div> 
+
 
       
         <ol class="cards-list">
@@ -93,20 +119,6 @@ isArchive: true
         
     
 </div>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
-<script type="text/javascript">
-  algoliasearchNetlify({
-    appId: 'FWO1TXJD82',
-    apiKey: '441877879034955305bd5bbcf16a8f15',
-    siteId: '9cdc232a-b341-4608-a689-551b0bcecc7b',
-    branch: 'master',
-    selector: 'div#search', 
-    hitsPerPage: 10, 
-  });
-</script>
-<div id="search" class="wrap"> </div> 
 
 
 {% endblock %}

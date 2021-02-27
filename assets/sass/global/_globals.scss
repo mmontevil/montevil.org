@@ -100,7 +100,7 @@
 
   --color-gold: hsl(50, 91%, 30%);
   --color-yellow-light: hsl(59, 100%, 88%);
-
+--color-emph: #35d540;
   --border-width: 0.15em;
     --color-accord: var(--color-primary-lighter-4);
     --color-caption: #666;
@@ -136,6 +136,7 @@
 [data-theme="dark"] {
   --soft-shadow: rgba(255,255,255,0.075);
 --color-link-hoveralt: white;
+--color-emph: #00ff00;
 
 --color-primary-darker-7: #f8ebf2;
 --color-primary-darker-6: #f2e0ea;
