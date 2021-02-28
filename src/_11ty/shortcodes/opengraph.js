@@ -27,7 +27,11 @@ module.exports = {
           taglineColor: '691449',
         }).replace("/upload/","/fetch/")
       : '';
-  }else{ let buff =  Buffer.from(image);
+  }else{ 
+    if(image[0]==="/")
+    {image= "https://montevil.org"+image}
+    
+    let buff =  Buffer.from(image);
 let base64data = buff.toString('base64');
     if(tagline ===''){
         return 'https://res.cloudinary.com/mmontevil/image/fetch/w_1200,h_630,c_fill,q_auto,f_auto/l_fetch:'+base64data+',w_500,h_500,c_limit/fl_layer_apply,x_-320,y_0/w_600,c_fit,co_rgb:691449,g_west,x_580,y_-100,l_text:Georgia_55:'+encodeURIComponent(title).replace('%2C','')+'/w_600,c_fit,co_rgb:a36c89,g_north_west,x_50,y_550,l_text:Georgia_40:'+encodeURIComponent('Maël Montévil')+'/https://montevil.org/assets/limbes.jpg';

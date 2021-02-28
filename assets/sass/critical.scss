@@ -610,6 +610,17 @@ hr:after {
   .autotoc ol {
      margin-left: -1.5em ;
 }
+
+.tocCenter ol{
+display: flex;
+    flex-wrap: wrap;
+}
+
+
+.tocCenter li{margin-left: 0.2em ;
+
+}
+.tocCenter li li:before{content: ".";}
 /*
 .page__body>nav{
   padding-left:1.5em;
@@ -622,11 +633,11 @@ hr:after {
 }
  .tocCenter> ol{
    margin-top:2em;
-display: flex;
+display: block;/*
 flex-direction: row ;
-   flex-wrap:wrap;
+   flex-wrap: wrap;
    justify-content: space-evenly;
-   
+   */
 }
 .textLeft  .tocCenter li{
   text-align :left}

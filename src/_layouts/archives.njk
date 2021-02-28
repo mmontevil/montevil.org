@@ -38,8 +38,13 @@ isArchive: true
       {% endif %}
     {% endblock %}
   </h1>
-  <div class="archives ">
+  <div class="archives " id="filters">
     {% include  "archiveTOC.njk" %}
+</div>
+
+   
+   {# <iframe src="https://duckduckgo.com/search.html?duck=yes&site=montevil.org&prefill=Search DuckDuckGo&bgcolor=var(--color-bg)&focus=yes" style="background-color: var(--color-lighter-5);overflow:hidden;margin:auto;padding:0;width:483px;height:60px;" frameborder="0"></iframe>#}
+
 
 <div id="myNav" class=" overlay" >
   <div class="wrap">
@@ -48,11 +53,7 @@ isArchive: true
     {% include  "archiveTOC.njk" %}
   </div>
 </div>  
-   
-   {# <iframe src="https://duckduckgo.com/search.html?duck=yes&site=montevil.org&prefill=Search DuckDuckGo&bgcolor=var(--color-bg)&focus=yes" style="background-color: var(--color-lighter-5);overflow:hidden;margin:auto;padding:0;width:483px;height:60px;" frameborder="0"></iframe>#}
 </div>
-
-
     <div id="hits">
    {#  <form method="get" id="search" action="http://duckduckgo.com/">
   <input type="hidden" name="sites" value="montevil.org"/>
@@ -71,8 +72,12 @@ isArchive: true
 li.aa-Item div.aa-ItemDescription{color: var(--color-primary-darker-1);}
  .aa-Autocomplete .aa-Form .aa-InputWrapperPrefix {
  padding-right: 0.5em;}
+ .aa-TouchOverlay .aa-TouchFormContainer {
+ margin-top: 5.5em;
+ }
  :root {
  --aa-muted-color: var(--color-primary-lighter-2);
+ --aa-background-color: var(--color-primary-lighter-7);
  }
  .aa-Autocomplete{--color-input-icon: var(--color-darkgrey);
 }
@@ -123,7 +128,7 @@ window.onload = function () {
             {% endfor %}
         </ol>    
             {% if collections[currentType+currentLang].length > 10 %}
-              <p class= "wrap">Filter by year to see more {{ currentType }}.</p>
+              <p class= "wrap"> <a href="#filters">Filter by year to see more {{ currentType }}.</a></p>
             {% endif %}
           {% endif %}
         

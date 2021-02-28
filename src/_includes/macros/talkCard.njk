@@ -2,10 +2,17 @@
 {% from "macros/card.njk" import card %}
 
 {% macro talkCard(talk) %}
-  {% set content %}
 
-  <p class="card__body p-summary svgfill">{{ talk.templateContent | excerpt | truncateHtml (300) | safe }}</p>
+
+
+  {% set content %}
+{{- talk.templateContent | excerpt | truncateHtml (300) | safe -}}
   {% endset %}
+  {%if not (content==="")%}
+  {% set content %}
+<p class="card__body p-summary svgfill">{{content}}</p>
+{% endset %}
+{%endif%}
 
   {% set meta %}
   {{ meta(talk) }}
