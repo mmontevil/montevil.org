@@ -3,7 +3,7 @@
         <div class="ais-Panel lang-list" >
        
        <div class="ais-Panel-header">Language</div>
-        <ul class="no-ais-RefinementList-list">
+        <ul class="ais-HierarchicalMenu-list">
             {%- for lang in ["all","fr","en"] -%}
             {% if 0 === collections[currentType+lang] | length -%}
                             <li class="ais-RefinementList-item ">
@@ -25,7 +25,7 @@
        </div>
         <div class="ais-Panel" >
        <div class="ais-Panel-header">Types</div>
-          <ul class="no-ais-RefinementList-list">
+          <ul class="no-ais-RefinementList-list" id="pubTypes">
             {% for type in pubtypes.types %}
             {% if 0 === collections[type+currentLang] | length -%}
                             <li class="ais-RefinementList-item {% if type in pubtypes.subtypes  -%}  ais-HierarchicalMenu-item2   {% endif %} ">
@@ -54,7 +54,7 @@
         {% block dates %}
       
             <div class="ais-Panel-header">Dates</div>
-            <div class="ais-HierarchicalMenu">
+            
               <ul class="ais-HierarchicalMenu-list">
                 {% for year in collections["yearsWith" + currentType +currentLang ] %}
                   {% if year == currentYear %}
@@ -78,7 +78,7 @@
                   {% endif %}
                 {%- endfor %}
               </ul>
-            </div><p><a class=" " href="/publications/publicationsbyYear/">Complete Publication list by year</a></p>            
+            <p><a class=" " href="/publications/publicationsbyYear/">Complete Publication list by year</a></p>            
           </div>
         {% endblock %}
      

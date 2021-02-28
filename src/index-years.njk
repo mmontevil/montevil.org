@@ -14,10 +14,10 @@ eleventyComputed:
 {%- set regExpYear = r/^[0-9]{4}$/g -%}
 {%- if not regExpYear.test(currentYear) -%}
   {%- set currentYear = false -%}
-  {%-else-%} published in {{-currentYear-}}
+  {%-else%} of {{currentYear-}}
 {%- endif -%} 
-{%- if currentLang ==="fr" -%} in french
-{%- elif currentLang ==="en" -%} in english
+{%- if currentLang ==="fr" %} in french
+{%- elif currentLang ==="en" %} in english
 {%-endif-%}'
   excerpt: "Archive of Maël Montévil's work in philosophy and theoretical biology. {{title}}"
 eleventyExcludeFromCollections: true

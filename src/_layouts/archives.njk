@@ -65,8 +65,18 @@ isArchive: true
 #}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" defer/>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js" defer></script>
-<style> .aa-Item > a:hover {background-color: transparent;}
-li.aa-Item div.aa-ItemDescription{color: var(--color-primary-darker-1)};</style>
+
+<style> 
+.aa-Item > a:hover {background-color: transparent;}
+li.aa-Item div.aa-ItemDescription{color: var(--color-primary-darker-1);}
+ .aa-Autocomplete .aa-Form .aa-InputWrapperPrefix {
+ padding-right: 0.5em;}
+ :root {
+ --aa-muted-color: var(--color-primary-lighter-2);
+ }
+ .aa-Autocomplete{--color-input-icon: var(--color-darkgrey);
+}
+</style>
 <script type="text/javascript">
 
 window.onload = function () {
@@ -76,13 +86,13 @@ window.onload = function () {
     siteId: '9cdc232a-b341-4608-a689-551b0bcecc7b',
     branch: 'master',
     selector: 'div#search', 
-    hitsPerPage: 10, openOnFocus: true,
+    hitsPerPage: 5, openOnFocus: true,
     theme: {
     mark: 'var(--color-emph)',                               // Color of the matching content
     background: 'var(--color-bg)',                      // Background Color of the input and the panel
-    selected: 'var(--color-primary-lighter-7)',                        // Background Color of the selected item
+    selected: 'var(--color-primary-lighter-6)',                        // Background Color of the selected item
     text: 'var(--color-primary-darker-5)',                            // Color of the title of the items
-    colorSourceIcon: '#d6d6e7'                  // Color of the icon on the left of results
+    colorSourceIcon: 'var(--color-darkgrey)'                 // Color of the icon on the left of results
   }
   });}
 </script>

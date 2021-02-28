@@ -1,6 +1,6 @@
 {% macro tagsCloud(tags) %}
 
-{% set minSize = 0.75 %}
+{% set minSize = 0.85 %}
 {% set maxSize = 3 %}
 {% set minWeight = 600 %}
 {% set maxWeight = 900 %}
@@ -14,9 +14,18 @@
   {% set fontWeight = (maxWeight - minWeight) * tag.factor + minWeight %}
     {% set fontOpa = (maxOpacity - minOpacity) * tag.factor + minOpacity %}
     {% set marginv = (-0.75) *2* tag.factor*(1-1/2*tag.factor) + 0.75 %}
+     {% set classcolor = "tag1" %}
+{% if tag.factor <0.875 %}{% set classcolor = "tag2" %} {% endif%}
+{% if tag.factor <0.75 %}{% set classcolor = "tag3" %} {% endif%}
+ {% if tag.factor <0.625 %}{% set classcolor = "tag4" %} {% endif%}
+  {% if tag.factor <0.5 %}{% set classcolor = "tag5" %} {% endif%}
+      {% if tag.factor <0.375 %}{% set classcolor = "tag6" %} {% endif%}
+  {% if tag.factor <0.25 %}{% set classcolor = "tag7" %} {% endif%}
+  {% if tag.factor <0.125 %}{% set classcolor = "tag8" %} {% endif%}
 
   <li>
-    <a href="{{ tagUrl }}"
+    <a href="{{ tagUrl }}" 
+      class="{{classcolor}}"
       aria-label="{{ tag.number }} content{% if tag.number > 1 %}s{% endif %} with tag {{ tag.tag }}"
       data-number="{{ tag.number }}"
       style="

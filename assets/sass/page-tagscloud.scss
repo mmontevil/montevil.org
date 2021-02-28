@@ -19,7 +19,17 @@
   justify-content: space-evenly;
     margin-block-start: 0em;
     margin-block-end: 0em;
-  a {
+    
+
+  a {    &.tag1{color: var(--color-primary-darker-5);}
+  &.tag2{color: var(--color-primary-darker-4);}
+  &.tag3{color: var(--color-primary-darker-3);}
+  &.tag4{color: var(--color-primary-darker-2);}
+        &.tag5{color: var(--color-primary-darker-1);}
+  &.tag6{color: var(--color-primary);}
+  &.tag7{color: var(--color-primary-lighter-1  );}
+  &.tag8{color: var(--color-primary-lighter-2  );}
+
     &:link,
     &:visited {
       display: inline-block;
@@ -36,7 +46,8 @@
     
         &:hover,
     &:focus,
-    &:active {background-color: transparent;
+    &:active {color: var(--color-link-hover);
+      background-color: transparent;
       animation: neon6 1s ease-in-out infinite alternate;
     }
       
