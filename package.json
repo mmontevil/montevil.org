@@ -122,7 +122,7 @@
     "workbox-expiration": "6.1.0",
     "workbox-google-analytics": "6.1.0",
     "workbox-precaching": "6.1.0",
-    "workbox-routing": "6.1.0",
+    "workbox-routing": "6.1.1",
     "workbox-strategies": "6.1.1"
   },
   "engines": {
