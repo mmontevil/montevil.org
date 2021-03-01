@@ -29,7 +29,7 @@ module.exports = {
       : '';
   }else{ 
     if(image[0]==="/")
-    {image= "https://montevil.org"+image}
+    {image= "https://montevil.org"+image;}
     
     let buff =  Buffer.from(image);
 let base64data = buff.toString('base64');

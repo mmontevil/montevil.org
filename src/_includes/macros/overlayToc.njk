@@ -8,8 +8,8 @@
   <div class="wrap">
   <div class=" overlay-content ">
   <h2 class="center titleOverToc"> {{title}}</h2>
-  {%if h2=="tocCenter"%}
-    {{ content | toc(tags=['h2', 'h3'], wrapperClass='autotoc tocCenter')|safe}}
+  {%if h2=="tocCenter" or h2=="tocCenter2" %}
+    {{ content | toc(tags=['h2', 'h3'], wrapperClass='autotoc ' + h2)|safe}}
     {%elif h2=="tocH2"%}
     {{ content | toc(tags=['h2', 'h3'], wrapperClass='autotoc indent')|safe}}
   {%else%}

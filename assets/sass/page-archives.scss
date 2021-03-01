@@ -9,164 +9,68 @@
 // ************************************************************
 
 .archives {
-/*  display: grid;
-  grid-template-columns: 1fr 1fr ;
-  grid-template-areas:
-  'refinements refinements' 
-  'hits hits ';
- 
-  grid-row-gap: var(--gap2);
-  row-gap: var(--gap2);
-*/}
-.refinements {
-  // Hide refinements on mobile
-  // TODO: find a way to allow refinements
- // display: none;
-   display: grid;
-  grid-template-columns: 1fr  ;
-        grid-template-areas: 
-      'lang '' types' 
-      '   dates' ;
-}
-/*
-@media (min-width: 20rem) {
-  .refinements  {
-    grid-column-gap: var(--gap);
-  column-gap: var(--gap);
-    grid-template-columns:   6rem 1fr;
-    grid-template-areas: 'lang-list types-list ' 'dates-menu dates-menu' ;
-  }
-}*/
-#dates-menu > .ais-HierarchicalMenu{
-  margin-bottom: var(--gap2);
-}
-#dates-menu {
-  margin-bottom: var(--gap2);
-}
-@media (min-width: 30em) {
-  .refinements  {
-    grid-column-gap: 1em;
-  column-gap: 1em;
-    grid-template-columns:  minmax(5em,5em) minmax(10em,17em) ;
-      grid-template-areas: 
-      'lang types' 
-      ' dates   dates' ;
-  }
-}
-
-@media (min-width: 50em) {
-  .refinements  {
-
-    grid-template-columns:  minmax(5em,1fr) minmax(9em,3fr) minmax(6em,2fr);
-      grid-template-areas:  '  lang types dates' ;
-  }
-
-}
-@media (min-width: 60em) {.refinements  {
-    grid-template-columns:  minmax(5em,1fr) minmax(8em,3fr) minmax(12em,3fr);
-  }
-
+    --flow-space: var(--gap3);
 }
 
 #pubTypes {columns: 2;}
 
-#dates-menu > .ais-HierarchicalMenu{
-  margin-block-start:1em;
-  
-}
-.ais-HierarchicalMenu-list{
-    margin-block-start:0em;
-    display: inline-flex;
-flex-direction: row;
-flex-wrap: wrap;
-}
- .no-ais-RefinementList-list{
-       margin-block-start:0em;
-  //  display: inline-flex;
-flex-direction: column;
-flex-wrap: wrap;
-   
+.refinements {
+  --flow-space: 0em;
+   display: grid;
+    grid-template-columns: 1fr  ;
+        grid-template-areas: 
+      'lang '' types' 
+      '   dates' ;
+      
+      @media (min-width: 30em) {
+          column-gap: 1em;
+          grid-template-columns:  minmax(5em,5em) minmax(10em,23em) ;
+          grid-template-areas: 
+            'lang types' 
+          'dates   dates' ;
+    }
+    @media (min-width: 50em) {
+          grid-template-columns:  minmax(5em,5em) minmax(9em,3fr) minmax(6em,2fr);
+          grid-template-areas:  '  lang types dates' ;
+      }
+    @media (min-width: 60em) {
+          grid-template-columns:  minmax(5em,1fr) minmax(8em,3fr) minmax(12em,3fr);
+      }
+        
+
 }
 
-#types-list,.lang-list {
-margin-top: var(--flow-space, 1em);
+
+
+
+
+
+.ais-HierarchicalMenu-list{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.ais-HierarchicalMenu-list, .no-ais-RefinementList-list{
+       margin-block-start:0.5em;
+}
+
+#types-list{
 grid-area: types;
 }
+
 .lang-list {
 grid-area: lang;
-
-}
-.lang-list >ul > li {
-margin-top: 0.4em;
-
 }
 
 #dates-menu {
 grid-area: dates;
 }
-
-#clear-refinements,
-.refinements {
-  // Hide refinements on mobile
-  // TODO: find a way to allow refinements
- // display: none;
- 
-}
-/*
-@media (min-width: 48rem) {
-  .archives {
-    grid-column-gap: var(--gap);
-  column-gap: var(--gap);
-    grid-template-columns: 1fr  1fr 13rem;
-    grid-template-areas:
-      'hits hits  refinements';
-  }
-
-  #clear-refinements,
-  .refinements {
-    display: block;
-  }
-}
-*/
-
-
-
-
-
-
-.refinements {
-  grid-area: refinements;
+.ais-Panel p{
+margin-bottom:  1em;
 }
 
-#hits {
-  grid-area: hits;
-}
 
-#pagination {
-  grid-area: pagination;
 
-  .ais-Pagination {
-    margin-top: var(--gap);
-  }
-}
-
-// ************************************************************
-// Buttons
-// ************************************************************
-
-.ais-InfiniteHits-loadPrevious,
-.ais-InfiniteHits-loadMore {
-  display: block;
-  margin: var(--gap) auto;
-}
-
-.ais-ClearRefinements-button--disabled,
-.ais-RefinementList-showMore--disabled,
-.ais-HierarchicalMenu-showMore--disabled,
-.ais-InfiniteHits-loadPrevious--disabled,
-.ais-InfiniteHits-loadMore--disabled {
-  display: none;
-}
 
 // ************************************************************
 // Refinements
@@ -175,21 +79,15 @@ grid-area: dates;
 .refinements {
   font-size: var(--font-size-m);
 
-  .ais-Panel {
-    //margin-bottom: var(--gap);
-    //  margin-top: 0;
-
-  }
-
   .ais-Panel-header {
     font-size: var(--font-size-m);
     border-bottom: 1px solid var(--color-grey);
-    
-    margin-bottom: 0.3em;
+    //margin-bottom: 0.3em;
   }
 
-  ul {    margin-bottom: 0.3em;
+  ul {     
 
+    margin-top: 1em;
     padding-left: 0;
     list-style-type: none;
   }
@@ -197,41 +95,27 @@ grid-area: dates;
 
 // HierarchicalMenu
 .ais-HierarchicalMenu-item, .ais-RefinementList-item{
-  padding-left: 0em;
-  margin:0.35em;
+  margin:0.4em;
   margin-top: 0;
 }
-.ais-HierarchicalMenu-item2 {
-  //padding-left: 1em;
+.ais-HierarchicalMenu-item2{
+  //margin-top: -0.2em;
+  font-style: italic;
 }
 .ais-HierarchicalMenu-item2:before {
-  content: ".";
- // padding-left: 1em;
+  content: "· ";
+  padding-left: 0.3em;
 }
 
-.ais-HierarchicalMenu-item--selected > div > a, .ais-RefinementList-item--selected  >a {
-  /*color: var(--color-primary-darker-2) ;
-  background-color: var(--color-primary-lighter-6);  
-  &:hover{color: var(--color-link-hover) ;
-    background-color: var(--color-primary-darker-2);
-}
-}*/
-      a, a:link,
-      a:visited {
-        color: var(--color-primary);
+
+
+.selected-A>a, .ais-HierarchicalMenu-item--selected > div > a, .ais-RefinementList-item--selected>a {
+       // color: var(--color-primary);
         text-decoration-line: underline;
         text-decoration-thickness: var(--border-width);
         text-decoration-color: var(--color-primary-lighter-2);
         -webkit-text-stroke-width: 0.05em;
-      }
-
-      a:hover,
-      a:focus {
-        color: var(--color-link-hover);
-        text-decoration: none;
-      }
-    }
-
+}
 
 // RefinementList
 //.ais-RefinementList-item--selected .ais-RefinementList-labelText {
@@ -241,7 +125,7 @@ grid-area: dates;
 // Counts
 .ais-RefinementList-count,
 .ais-HierarchicalMenu-count {
-  color: var(--color-primary-darker-6);
+  color: var(--color-primary-darker-7);
   position: relative;
   top: -0.1em;
   font-size: 0.7em;
@@ -253,37 +137,21 @@ grid-area: dates;
 
 
 
-#search{
-margin-top: 0.5em;
- margin-bottom: 0.5em; 
-}
-.ais-Panel > p{
-  margin-top: 0.5em;
-}
+
+
+
+
 
 // ************************************************************
-// Hits list
+// search
 // ************************************************************
 
-.ais-InfiniteHits-list {
-  @extend .cards-list;
-}
 
-.ais-InfiniteHits-loadMore {
-  margin-top: var(--gap3);
-}
 .searchBox{
   background-color: var(--color-primary-lighter-7);
   border-color: var(--color-primary-lighter-4);
   box-shadow: 10px 5px 5px var(--color-primary-lighter-7);
    color: var(--color-primary);
 }
-// ************************************************************
-// Before Algolia instant search loads
-// ************************************************************
-/*
-.no-ais-RefinementList-list {
-  li {
-    padding-left: 1.2em;
-  }
-}*/
+
+

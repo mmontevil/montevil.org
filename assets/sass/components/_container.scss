@@ -1,3 +1,7 @@
+@use '../global/utilities';
+
+
+
 .info,
 .success,
 .warning,
@@ -6,7 +10,7 @@
   padding: calc(var(--gap) / 3);
 
   background-color: #ccc;
-  color: #222;
+//  color: #222;
   border: var(--border-width) solid #999;
   border-radius: 0.3em;
 
@@ -31,7 +35,7 @@
   & a:hover,
   & a:focus,
   & a:active {
-    color: #fff;
+ //   color: #fff;
     background-color: var(--color-link-hover-bg);
     text-decoration: var(--color-link-hover-decoration);
   }
@@ -102,7 +106,7 @@
 }
 
 .citationW {
-  color: var(--color-primary-lighter-1);
+//  color: var(--color-primary-lighter-1);
   background-color: var(--color-primary-lighter-7);
   border-color:  var(--color-primary-lighter-3);
 
@@ -113,12 +117,12 @@
   a:link,
   a:visited {
     
-   color: var(--color-primary-darker-4)  ;
+   //color: var(--color-primary-darker-4)  ;
    // text-decoration-color: #843534;
   }
 
 }
-.citationW.citationW {  color: var(--color-primary-lighter-1);
+.citationW.citationW {  //color: var(--color-primary-lighter-1);
   background-color: var(--color-primary-lighter-7);
   border-color:  var(--color-primary-lighter-3);      
   box-shadow: 0 1px 2px var(--soft-shadow), 
@@ -128,9 +132,12 @@
     a:link,
   a:visited {
     
-   color: var(--color-primary-darker-4)  ;
+ //  color: var(--color-primary-darker-4)  ;
    // text-decoration-color: #843534;
   }
-  a:hover,a:focus{color: var(--color-link-hover);  }
+   
+@extend %flow; 
+--flow-space: var(--gap1);
+ // a:hover,a:focus{color: var(--color-link-hover);  }
 }
 

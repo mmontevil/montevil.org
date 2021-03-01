@@ -26,8 +26,8 @@ isArchive: true
   
 {% block content %}
 
-  {% set cssFilename = "page-archives.css" %}
-  {% include "add-css.njk" %}
+  <div class="wrap0 archives ">
+
 
   <h1 class= "wrap">
     {% block title %}
@@ -38,9 +38,13 @@ isArchive: true
       {% endif %}
     {% endblock %}
   </h1>
-  <div class="archives " id="filters">
+  
+  {% set cssFilename = "page-archives.css" %}
+  {% include "add-css.njk" %}
+  
+    <div  id="filters">
     {% include  "archiveTOC.njk" %}
-</div>
+    </div>
 
    
    {# <iframe src="https://duckduckgo.com/search.html?duck=yes&site=montevil.org&prefill=Search DuckDuckGo&bgcolor=var(--color-bg)&focus=yes" style="background-color: var(--color-lighter-5);overflow:hidden;margin:auto;padding:0;width:483px;height:60px;" frameborder="0"></iframe>#}
@@ -54,8 +58,8 @@ isArchive: true
   </div>
 </div>  
 </div>
-    <div id="hits">
-   {#  <form method="get" id="search" action="http://duckduckgo.com/">
+
+{#  <form method="get" id="search" action="http://duckduckgo.com/">
   <input type="hidden" name="sites" value="montevil.org"/>
   <input type="hidden" name="k8" value="var(--color-bg)"/>
   <input type="hidden" name="k9" value="var(--color-lighter-5)"/>
@@ -131,9 +135,8 @@ window.onload = function () {
               <p class= "wrap"> <a href="#filters">Filter by year to see more {{ currentType }}.</a></p>
             {% endif %}
           {% endif %}
-        
+  </div>       
     
-</div>
 
 
 {% endblock %}

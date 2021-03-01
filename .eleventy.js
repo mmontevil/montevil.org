@@ -286,12 +286,26 @@ html.render();
       'mathjax2',
       mathjax2
     ); 
- 
+ /*
   const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minifier");
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
-};
-  
+};*//*const htmlmin = require("html-minifier");
+    eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+    // Eleventy 1.0+: use this.inputPath and this.outputPath instead
+    if( outputPath.endsWith(".html") ) {
+      let minified = htmlmin.minify(content, {
+   //     minifyCSS: true,
+    //    minifyJS: true,
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified.replaceAll('\n',' ');
+    }
+
+    return content;
+  });*/
   // eleventyConfig.addPlugin(imagesResponsiver, imagesResponsiverConfig);
 
     // const htmlMinTransform = require(path.join(

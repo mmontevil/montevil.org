@@ -12,7 +12,7 @@
     margin: 0;
 
     .older-newer__older,
-    .older-newer__newer {
+    .older-newer__newer { z-index: 21;
       position: fixed;
       transition-property: transform;
       transition-duration: 0.2s;

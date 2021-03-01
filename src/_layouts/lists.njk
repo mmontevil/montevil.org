@@ -4,7 +4,7 @@ upnav: toc-site
 ---
 <div class="wrap">
 <h1 id="toc-site" class=" center">{{ title }}</h1>
-{{ content | toc(tags=['h2', 'h3'], wrapperClass='autotoc tocCenter textLeft') | safe }}
+{{ content | toc(tags=['h2', 'h3'], wrapperClass='autotoc '+tocOver+' textLeft') | safe }}
 </div>
 
 {% from "macros/overlayToc.njk" import overlayToc %}

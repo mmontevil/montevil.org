@@ -48,6 +48,8 @@
     "@11ty/eleventy-navigation": "^0.1.6",
     "@11ty/eleventy-plugin-rss": "^1.1.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.6",
+    "@algolia/algoliasearch-netlify-frontend": "^1.0.4",
+    "@algolia/netlify-plugin-crawler": "^1.0.4",
     "@babel/core": "^7.13.1",
     "@babel/preset-env": "^7.13.1",
     "@jlengstorf/get-share-image": "^0.8.0",

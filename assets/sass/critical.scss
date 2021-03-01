@@ -73,6 +73,9 @@ main {
   .wrap {
     @extend %flow;
   }
+    .wrap0 {
+    @extend %flow;
+  }
 }
 
 .wrap {
@@ -144,6 +147,14 @@ h6 {
   font-weight: 300;
 }
 
+
+h1 +h2,h2 +h3 ,h3 +h4 ,h4 +h5 ,
+h5 +h6 {
+  margin-top : 0.5em;
+}
+
+
+
 // ************************************************************
 // Links
 // Lord Vader Hates Furry Animals
@@ -207,7 +218,7 @@ a.deeplink{
     background-color: var(--color-link-hover-bg);
   }
 
-  @media (min-width: 65rem) {
+  @media (min-width: 45rem) {
     position: absolute;
     left: -3rem;
   }
@@ -413,7 +424,7 @@ figcaption {
   text-align: left;
 
   font-size: var(--font-size-s);
-  font-style: italic;
+ // font-style: italic;
   margin: 0.1em 1em;
   padding: 0.3em 0;
   color: var(--color-caption);
@@ -424,9 +435,16 @@ figcaption {
 }
 
 ul,
-ol {
+ol {@extend %flowall; 
   padding: 0 0 0 var(--gap2);
+  
 }
+
+
+
+hr {color: var(--color-grey);}
+
+
 
 // ************************************************************
 // Tables
@@ -546,8 +564,8 @@ a[href$='.kml'] {
 
 
 
-
-
+//typography
+/*
 .pull-T, .pull-V, .pull-W, .pull-Y {margin-left: -0.07em}
 .push-T, .push-V, .push-W, .push-Y {margin-right: 0.07em}
 
@@ -557,113 +575,31 @@ a[href$='.kml'] {
 .pull-A {margin-left: -0.03em}
 .push-A {margin-right: 0.03em}
 
-/* 
- Quotation mark 
- https://en.wikipedia.org/wiki/Quotation_mark) 
-*/
 
-/* Single quotation marks (') */
 .pull-single{margin-left:-.27em}
 .push-single{margin-right:.27em}
 
 .pull-double, .push-double,
 .pull-single, .push-single {display: inline-block}
 
-/* Double quotation marks (") */
+
 .pull-double{margin-left:-.46em}
 .push-double{margin-right:.46em}
-
-
-//blockquote > p{margin-left: 2em; }
-  /*
-  hr {
-    border: none;
-    border-top: 3px double #333;
-    color: #333;
-    text-align: center;
-    height: 2em;
-}
-
-hr:after {
-    background: #fff;
-    content: 'Full Text';
-    padding: 0 0.3em;
-    position: relative;
-    top: -0.8em; 
-}*/
+*/
 
 
 
 
-  
-  .autotoc li , .autotoc ol {//  padding-left:1.5em;
-     margin-top:0.5em !important;
-//   padding-left:1.5em;
-     margin-bottom: 0em;
-}
-
-  .autotoc li {
-     margin-bottom:0.3em !important;
-   text-indent: -1.5em;
-  padding-left:1.5em;
-}
-  .autotoc ol {
-     margin-left: -1.5em ;
-}
-
-.tocCenter ol{
-display: flex;
-    flex-wrap: wrap;
-}
 
 
-.tocCenter li{margin-left: 0.2em ;
 
-}
-.tocCenter li li:before{content: ".";}
-/*
-.page__body>nav{
-  padding-left:1.5em;
-     text-indent: -1.5em;
-}*/
 
-.overlay-content  .autotoc a{
-     //  text-align: center;
-  padding-bottom: 0.1em;
-}
- .tocCenter> ol{
-   margin-top:2em;
-display: block;/*
-flex-direction: row ;
-   flex-wrap: wrap;
-   justify-content: space-evenly;
-   */
-}
-.textLeft  .tocCenter li{
-  text-align :left}
-.tocCenter a{
-  padding : 0.2em;
-}
-  .tocCenter li{ margin-bottom : 0.5em!important;
-  //margin : 0.5em;
-  }
 
-hr {color: var(--color-grey);}
-  
-.selected-A>a, .ais-HierarchicalMenu-item--selected > div > a, .ais-RefinementList-item--selected>a {
-        color: var(--color-primary);
-        text-decoration-line: underline;
-        text-decoration-thickness: var(--border-width);
-        text-decoration-color: var(--color-primary-lighter-2);
-        -webkit-text-stroke-width: 0.05em;
-      
 
-      &:hover,
-      &:focus {
-        color: var(--color-link-hover);
-        text-decoration: none;
-      }
-    }
+
+
+
+
   
   .centerBlock {display: flex;
   margin-left: auto;
@@ -681,22 +617,8 @@ hr {color: var(--color-grey);}
 padding: 0;
 list-style: none;
 }
-h1 +h2 {
-  margin-top : 0.5em;
-}
 
-h2 +h3 {
-  margin-top : 0.5em;
-}
-h3 +h4 {
-  margin-top : 0.5em;
-}
-h4 +h5 {
-  margin-top : 0.5em;
-}
-h5 +h6 {
-  margin-top : 0.5em;
-}
+
 
  .titleDiag.titleHead {
   margin-bottom : 0em;
@@ -705,4 +627,4 @@ h5 +h6 {
   margin-top : 0em;
   margin-bottom : 0em;
 }
-.page__body>ul>li {margin-top: 0.4em;}
+//.itemize {margin-top: 0.4em;}

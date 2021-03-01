@@ -27,3 +27,10 @@
   }
   br{margin-top: 0;}
 }
+
+%flowall {
+  & > * {
+    margin-top: var(--flow-space, 1em);
+  }
+  br{margin-top: 0;}
+}
