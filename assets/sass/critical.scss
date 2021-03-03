@@ -38,6 +38,8 @@ html {
   overflow-y: scroll;
   scroll-margin-top: 5rem;
     // overflow-y: hidden;
+  scroll-behavior: smooth;
+
 }
 
 html:focus-within {
@@ -48,12 +50,11 @@ body {
 
   font-size: var(--font-size-m);
   font-weight: 400;
-
   color: var(--color-primary-darker-5);
   background-color: var(--color-bg);
   scroll-margin-top: 5rem;
   text-rendering: optimizeLegibility;
-  word-break: break-word;
+  word-break: normal;
   font-size-adjust: 0.5;
 
  // transition: background-color 300ms ease-in-out 0s;
@@ -179,6 +180,7 @@ a {
     padding-left: 0.1em;
     padding-right: 0.1em;
     margin-left: -0.1em;
+    overflow-wrap: anywhere;
   }
 
   &:hover,

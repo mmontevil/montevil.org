@@ -53,9 +53,9 @@ eleventyComputed:
   
 
 
- <div class="legibilityWidth wrap0all">
 
-<section class="tableContent">
+
+<section class="legibilityWidth tableContent">
  <h2 class="titleHead indent" id="toc-site"> Table of contents</h2>
   <h3 class="subtitleHead indent" > Reading time: ~{{ content   | readingTime({speed:170}) }}</h3>
 
@@ -64,7 +64,8 @@ eleventyComputed:
 
   {% from "macros/overlayToc.njk" import overlayToc %}
 {{overlayToc(content,"",title)|safe}}
-<hr>
+<hr> 
+<div class="legibilityWidth wrap0all">
  {%endif%}
  
 

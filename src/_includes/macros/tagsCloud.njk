@@ -10,7 +10,7 @@
 {% for tag in tags %}
   {% set tagUrl %}/tags/{{ tag.tag | slugify }}/{% endset %}
   {% set fontSize = (maxSize - minSize) * tag.factor + minSize %}
-  {% set fontWeight = (maxWeight - minWeight) * tag.factor + minWeight %}
+  {% set fontWeight = (((maxWeight - minWeight) * tag.factor + minWeight)//100)*100 %}
     {% set fontOpa = (maxOpacity - minOpacity) * tag.factor + minOpacity %}
     {% set marginv = (-0.75) *2* tag.factor*(1-1/2*tag.factor) + 0.75 %}
      {% set classcolor = "tag1" %}

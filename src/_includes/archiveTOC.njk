@@ -25,7 +25,7 @@
        </div>
         <div class="ais-Panel" id="types-menu{{append}}">
        <div class="ais-Panel-header">Types</div>
-          <ul class="no-ais-RefinementList-list" id="pubTypes">
+          <ul class="no-ais-RefinementList-list pubTypes">
             {% for type in pubtypes.types %}
             {% if 0 === collections[type+currentLang] | length -%}
                             <li class="ais-RefinementList-item {% if type in pubtypes.subtypes  -%}  ais-HierarchicalMenu-item2   {% endif %} ">
