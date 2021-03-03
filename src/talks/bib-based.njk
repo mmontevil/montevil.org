@@ -52,29 +52,31 @@ eleventyComputed: {
 {% endif %}
 
 
-<div class="citationW "><div>{% icon "reference", "reference" %}
+<div class="citationW "><div class="fillsvg">{% icon "reference", "reference" %}
  {{entry |bibcite2 |divRemove|safe}}</div>
  
-{% if program or poster %}
-<p>{% if program %}
+{% if program or poster or video %}<div>
+{% if program %}
 <a  href="/assets/talks/{{program| urlencode}}" class="buttonlink ">{% icon "pdf", "Program" %} Program of the event. </a> 
 {% endif %}{% if  poster %}
 <a  href="/assets/talks/{{poster| urlencode}}" class="buttonlink ">{% icon "pdf", "Poster" %} Poster. </a> 
 {% endif %}
 {% if video %}
-<a href="{{video}}" class="buttonlink abssvg ">{% icon "video", "Video" %} Link to the Video</a> 
+<a href="{{video}}" class="buttonlink abssvg ">{% icon "video", "Video" %} Link to the Video </a> 
 {% endif %}
 
-<p>
+</div>
 {% endif %}
 </div>
+<p> </p>
 
-<div  >
 {% if video %}
+<div>
 {% from "macros/videoEmbed.njk" import videoEmbed %}
 {{videoEmbed(video) | safe }}
-{% endif %}
 </div>
+{% endif %}
+
 
 
 
