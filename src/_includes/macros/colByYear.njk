@@ -11,17 +11,18 @@
     {% if datete=== undefined %}  {% set datete="Submitted" %} {%endif%}
    {% if datete !== dateit %}
         {% if dateit  !== "temp" %}
-         {#</ul> #}
+         </ol> 
          {% endif %}
          {% set dateit=datete %}
          
   <{{- htmlTag }} class="titleDiag {{htmlclass}} " id="{{prefix}}{{dateit}}">{{dateit}}</{{- htmlTag }}>
  
-    {# <ul>  #}      
+  <ol class="cards-list">
+   
     {% endif %}
 
 {{-alterpubCard(article.data)  |safe-}}
     
     {% endfor %}
-    
+    </ol> 
 {% endmacro %}

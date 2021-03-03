@@ -48,11 +48,11 @@ blockquote:not(.tweet-card) {
  //.epigraph > p:first-child { @extend blockquote; padding: 0;}
 //.epigraph> p:first-child {padding: 0;}
 
- .epigraph { @extend blockquote;    @media (min-width: 30rem) {
-  margin-left: calc(0.25*100% - 0.25*30rem);
-  margin-right: calc(0.25*100% - 0.25*30rem);
-   }  }
-
+.epigraph { @extend blockquote;     }
+.episource{
+  text-align: right;
+  margin-left: 15%;
+}
 
 blockquote:not(.tweet-card) {
    padding: 0.5em 1em 0.5em calc(2em + 3vw);

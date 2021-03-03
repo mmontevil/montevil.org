@@ -45,11 +45,10 @@ isArchive: true
     <div  id="filters">
     {% include  "archiveTOC.njk" %}
     </div>
-
    
    {# <iframe src="https://duckduckgo.com/search.html?duck=yes&site=montevil.org&prefill=Search DuckDuckGo&bgcolor=var(--color-bg)&focus=yes" style="background-color: var(--color-lighter-5);overflow:hidden;margin:auto;padding:0;width:483px;height:60px;" frameborder="0"></iframe>#}
 
-
+{% set append="overlay"%} 
 <div id="myNav" class=" overlay" >
   <div class="wrap">
   <div class=" overlay-content ">
@@ -117,8 +116,8 @@ window.onload = function () {
                 {{ itemCard(item,numbers.numbers2) }}
             {% endfor %}
        </ol>       
-            {% if collections[currentType  +currentLang + 'ByYear'][currentYear].length > 10 %}
-              <p>Filter by month to see more {{ currentType }} from year {{ currentYear }}.</p>
+            {% if (collections[currentType  +currentLang + 'ByYear'][currentYear].length > 10) and (currentType=== "archives") %}
+              <p class= "wrap"><a href="#dates-menu">Filter by type to see more {{ currentType }} from year {{ currentYear }}.</a></p>
             {% endif %}
             {% else %}
             {% for item in collections[currentType +currentLang + 'ByYear'][currentYear]  %}
@@ -132,7 +131,7 @@ window.onload = function () {
             {% endfor %}
         </ol>    
             {% if collections[currentType+currentLang].length > 10 %}
-              <p class= "wrap"> <a href="#filters">Filter by year to see more {{ currentType }}.</a></p>
+              <p class= "wrap"> <a href="#dates-menu">Filter by year to see more {{ currentType }}.</a></p>
             {% endif %}
           {% endif %}
   </div>       

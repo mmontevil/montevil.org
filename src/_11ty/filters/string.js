@@ -4,6 +4,9 @@ const slugifyString = require('../../_utils/slugify');
 
 
 module.exports = {
+  unprotect: (string) => { 
+    return string.replaceAll("\\<br\\>", "<br>"); 
+  },
   base64: (string) => {
     return Buffer.from(string).toString('base64');
   },

@@ -30,7 +30,7 @@
     {% endset %}
   {% endif %}
 
-  {% set content = link.templateContent | excerpt | striptags | safe %}
+  {% set content %} <p> {{-link.templateContent | excerpt | striptags | safe -}}</p>{%endset%}
 
   {% set meta %}
   {{ meta(link) }}

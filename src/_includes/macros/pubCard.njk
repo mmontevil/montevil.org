@@ -15,6 +15,13 @@
 
  {% if article.data.illust %}
  {% set srcurl-%}{{-article.data.page.url-}}{{- article.data.illust-}}{%-endset%}
+{%-elif article.data.bibentry.URL-%}
+{% set srcurl-%}https://image.thum.io/get/width/1200/crop/800/noanimate/{{ article.data.bibentry.URL }}{%-endset%}
+{%-elif article.data.bibentry.DOI-%}
+{% set srcurl-%}https://image.thum.io/get/width/1200/crop/800/noanimate/https://dx.doi.org/{{ article.data.bibentry.DOI }}{%-endset%}
+{%-endif-%}
+ 
+  {% if srcurl -%}
   {% set illustration = {
     src:  srcurl,
     alt:  article.data.title,

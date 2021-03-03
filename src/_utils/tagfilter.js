@@ -10,7 +10,7 @@ let substitution={
         "thermodynamics": "entropy",
   "biological evolution and ontogenesis":  ["evolution", "ontogenesis"],
     "time scale":  [ "scale", "time scale"],
-
+    "temps biologique": "time" ,
      "biological evolution": "evolution",  
           "evolution biology": "evolution",  
     "biological organisation": "organization",
@@ -37,14 +37,15 @@ let substitution={
  "morphogenese" : "morphogenesis",
  "models" : "mathematical models",
  "mathematical modeling" : "mathematical models",
-
+ "mesure" : "measurement",
+  "criticite" : "criticality",
  "mammary gland development": "mammary glands",
 "mammary gland morphogenesis": "mammary glands",
  "historicite" : "historicity",
  "epistemologie" : "epistemology",
 "combinatory theory" : "combinatorics",
 "combinatorial complexity" : "combinatorics",
-
+"variabilite" : "variability",
 
 }
 

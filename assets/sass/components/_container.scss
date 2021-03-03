@@ -5,7 +5,7 @@
 .info,
 .success,
 .warning,
-.error, .citationW {
+.error{
   clear: both;
   padding: calc(var(--gap) / 3);
 
@@ -23,8 +23,9 @@
     left: calc(var(--gap) / 2);
   }
 
-  & > * {
+  & > * {@media (min-width: 30rem) {
     padding-left: 2em;
+  }
   }
 }
 
@@ -105,39 +106,46 @@
   }
 }
 
-.citationW {
+.citationW, .tableContent {
 //  color: var(--color-primary-lighter-1);
-  background-color: var(--color-primary-lighter-7);
-  border-color:  var(--color-primary-lighter-3);
-
-  &::before {
-    content: "";
-  }
-
-  a:link,
-  a:visited {
-    
-   //color: var(--color-primary-darker-4)  ;
-   // text-decoration-color: #843534;
-  }
-
-}
-.citationW.citationW {  //color: var(--color-primary-lighter-1);
-  background-color: var(--color-primary-lighter-7);
-  border-color:  var(--color-primary-lighter-3);      
+  clear: both;
+  border-radius: 0.3em;
+  position: relative;
+  border: var(--border-width) dotted ;
+//--flow-space: var(--gap);
+  padding: calc(var(--gap) / 3);
+  background-color: var(--color-primary-lighter-8);
+  border-color:  var(--color-primary-lighter-5);
   box-shadow: 0 1px 2px var(--soft-shadow), 
               0 2px 4px var(--soft-shadow), 
               0 4px 8px var(--soft-shadow),
               0 8px 16px var(--soft-shadow);
-    a:link,
-  a:visited {
-    
- //  color: var(--color-primary-darker-4)  ;
-   // text-decoration-color: #843534;
+  @extend %flowall; 
+  & >* {--flow-space: 0.5rem;}
+
+
+  //text-decoration: none;
+}
+.tableContent {
+  --flow-space: var(--gap3);
+  border-color: transparent;
+      padding-left: 0em;
+    padding-right: 0em;
+ @media (min-width: 30rem) {
+    margin-left: -1em;
+    margin-right: -1em;
+    padding-left: 1em;
+    padding-right: 1em;
   }
-   
-@extend %flow; 
---flow-space: var(--gap1);
- // a:hover,a:focus{color: var(--color-link-hover);  }
+}
+.citationW {
+  background-color: var(--color-primary-lighter-7);
+  border-color:  var(--color-primary-lighter-3);
+
+& > * {@media (min-width: 30rem) {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  }
 }
 

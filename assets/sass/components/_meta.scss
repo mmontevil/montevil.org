@@ -15,6 +15,10 @@
   flex-wrap: wrap;
 
   list-style-type: none;
+  li{
+   --flow-space: 0;
+  }
+    
 }
 
 .meta__item {

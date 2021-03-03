@@ -90,7 +90,7 @@
   &:hover{color: var(--color-link-hover);}
 }
   
-.autotoc > ol >li >a{
+.autotoc > ol >li >a{font-variant: small-caps;
   font-size: var(--font-size-l);
   font-weight: 700;color: var(--color-primary-darker-2 );
 }
@@ -135,6 +135,7 @@
       li:before{
           content: "· ";
       }
+      li {  font-style: italic;}
     }
   ol{
     display: flex;

@@ -4,6 +4,9 @@ upnav: toc-site
 ---
 <div class="wrap">
 <h1 id="toc-site" class=" center">{{ title }}</h1>
+<hr class=" wrap ">
+
+
 {{ content | toc(tags=['h2', 'h3'], wrapperClass='autotoc '+tocOver+' textLeft') | safe }}
 </div>
 

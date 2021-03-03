@@ -26,7 +26,7 @@ scroll-snap-type: y proximity;
   @extend %clearfix;
 
   * {
-    --flow-space: 0.75em;
+    --flow-space: 0.4em;
   }
   @extend %flow;
 }
@@ -77,29 +77,11 @@ img.card__illustration {
 }
 
 .publi, .card-list__item, .titleDiag{
-   // padding: 1.5em;
- /*   padding-top: 3em;
-    padding-bottom: 2.5em;
-    margin-top: 0em;
-    margin-bottom: 0em;
-    clip-path: polygon(0 2.5vw,100% 0,100% calc(100% - 2.5vw),0 100%);
-  */  
-
    position: relative;
   margin-top: 0px;
   padding: var(--skew-padding) 0;
-
-  //margin-top: 1em;
- //   margin-bottom: 1em;
-   //  margin-bottom: var(--flow-space, 1em);
-  /*   width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;*/
 }
-.publi:before ,.card-list__item:before, .titleDiag:before, .publi:after ,.card-list__item:after{
+.publi:before ,.card-list__item:before, .titleDiag:before, .publi:after ,.card-list__item:after, .titleDiag:after{
     content: "";
     position: absolute;
     left: 0;
@@ -111,76 +93,57 @@ img.card__illustration {
     outline: 1px solid transparent;
     backface-visibility: hidden; 
     z-index: -1;
-      
-   }  
-   .publi:after ,.card-list__item:after{  //box-shadow: 10px 5px 5px black; 
+}  
 
-
-  box-shadow: 0 1px 2px var(--color-primary-lighter-3), 
+.publi, .card-list__item{  //box-shadow: 10px 5px 5px black; 
+  & > *{
+    margin-top: var(--skew-padding);
+    position: relative;
+  }
+  &:after{
+    box-shadow: 0 1px 2px var(--color-primary-lighter-3), 
               0 2px 4px var(--color-primary-lighter-3), 
               0 4px 8px var(--color-primary-lighter-3), 
               0 8px 16px var(--color-primary-lighter-3), 
-              0 16px 32px var(--color-primary-lighter-3),
-0 32px 64px var(--color-primary-lighter-3);
- 
- opacity: 0;
-  transition: opacity 0.3s ease-in-out;transition: transform 0.3s ease-in-out;
-      }
-         .publi:hover:after ,.card-list__item:hover:after{    
-           transition: opacity 0.3s ease-in-out; transition: transform 0.3s ease-in-out;
-  //box-shadow: 10px 5px 5px black; 
-           transform:  scale(1.025, 1.025);
- opacity: 0.4;
- z-index: 0;
-      }
- .publi:hover::before , .card-list__item:hover:before{  z-index: 0; 
-    transform:  scale(1.025, 1.025);
-      transition: transform 0.3s ease-in-out;
-      
-    }
-     .publi:hover >div , .card-list__item:hover> article {
-     z-index: 1; 
+              0 16px 32px var(--color-primary-lighter-3);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; 
+    transition: transform 0.3s ease-in-out;
+     } 
+  &:hover{
+      &:after{
+          transition: opacity 0.3s ease-in-out; transition: transform 0.3s ease-in-out;
           transform:  scale(1.025, 1.025);
-
-              transition: all 0.3s ease-in-out;
-              
+          opacity: 0.5;
+          z-index: 0;
+      }
+      &:before{
+          z-index: 0;
+          transform:  scale(1.025, 1.025);
+          transition: transform 0.3s ease-in-out;    
+      }
+      & > *{
+          z-index: 1; 
+          transform:  scale(1.025, 1.025);
+          transition: transform 0.3s ease-in-out;
+      }
+  }
+  &:nth-child(2n+1) {
+    &:before {
+      background: var(--color-primary-lighter-7)
     }
+  }
+  &:nth-child(2n+2) {
+    &:before {
+      background: var(--color-primary-lighter-8)
+    }
+  }
+}
 
-.publi > div,.card-list__item >article, .titleDiag h2, .titleDiag h3{
- // max-width: var(--width);
-  margin: 0em auto;
-  margin-top: var(--skew-padding);
-    margin-bottom: 0.5em;
- // padding-bottom: 1.5em;
-  position: relative;
-//  padding: var(--skew-padding) 0;
-//  border: 2px dashed #fff8;
-}
-.card-list__item >article{
-   // margin-top: var(--skew-padding);
-  margin-bottom: 0.5em;
-}
-.titleDiag h2{
-  padding: 0.5em 0;
-  margin-bottom: -1.5em;
-}
 .titleDiag .titleHead, .titleDiag .sectionHeadList{
   margin-top: calc(0.5*var(--skew-padding));
   margin-bottom: calc(0.5*var(--skew-padding));
 }
-.titleDiag + .titleDiag{padding-top: 0; margin-top:0;}
 
-.publi:nth-child(2n+1) ,.card-list__item:nth-child(2n+1) {&:before {background: var(--color-primary-lighter-7)}}
-.publi:nth-child(2n+2),.card-list__item:nth-child(2n+2) {&:before {background: var(--color-primary-lighter-8)}}
 
-.publi:nth-child(2n+1) ,.card-list__item:nth-child(2n+1) {&>.wrap>section>.content {background: var(--color-primary-lighter-7);
-  z-index: 1;
-  position:relative;
-}}
-.publi:nth-child(2n+2),.card-list__item:nth-child(2n+2) {&>.wrap>section>.content {background: var(--color-primary-lighter-8);
-  z-index: 1;
-  position:relative;
-}}
 
-.titleDiag2{margin-bottom: -0.5em}
-.cards-list{margin-top: 0em}

@@ -34,7 +34,7 @@
     &.navigation__talks {
       display: none;
 
-      @media (min-width: 47em) {
+      @media (min-width: 48em) {
         display: block;
       }
     }
@@ -124,53 +124,13 @@
     top: 0;
     z-index: 20;
 
-    // .wrap {
-    //   position: relative;
-    // }
 
-    // .signature {
-    //   display: inline-block;
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-
-    //   font-family: var(--font-family-serif);
-    //   font-weight: bold;
-    //   background-color: var(--color-primary)
-    //   color: white;
-    //   padding: 0 0.2em;
-    //   opacity: 0;
-
-    //   animation: animate-sig 1s linear;
-    //   animation-play-state: paused;
-    //   animation-delay: calc((var(--scrollTo200) - 0.5) * -1.5s);
-    // }
   }
 
-  // Inspiration:
-  //   https://www.commarts.com/
-  // Technique :
-  //   https://css-tricks.com/books/greatest-css-tricks/scroll-animation/
 
-  // .navigation ul:first-of-type {
-  //   animation: animate-nav 1s linear;
-  //   animation-play-state: paused;
-  //   animation-delay: calc(var(--scrollTo200) * -1s);
-  // }
 }
 
-// @keyframes animate-sig {
-//   to {
-//     opacity: 1;
-//   }
-// }
 
-// @keyframes animate-nav {
-//   to {
-//     margin-left: 2.5em;
-//     letter-spacing: 0.05vw;
-//   }
-// }
 
 .theme-switch-wrapper{
 display: inline-block;

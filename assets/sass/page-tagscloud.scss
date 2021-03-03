@@ -40,7 +40,7 @@
 */hyphens: auto;
       text-decoration: none;
       white-space: break-spaces;
-
+    }
    //   background-color: var(--color-primary-lighter-2);
    //   color: white;
     //  border-radius: 0.5em;
@@ -51,13 +51,12 @@
       color: var(--color-link-hover);
       background-color: transparent;
       animation: neon6 1s ease-in-out infinite alternate;
-    }
-      
-    }
-    
- 
-    
+        }
+    &:after {white-space: nowrap;
+        content: " (" attr(data-number) ")";
+        font-size: 1rem;
   }
+}}
 /*
   a {
     &.tag2 {
@@ -103,12 +102,4 @@
       }
     }
   }*/
-a::after {white-space: nowrap;
-  content: " (" attr(data-number) ")";
-  font-size: 01rem;
-}
-    
 
-  
-
-}

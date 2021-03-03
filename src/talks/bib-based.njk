@@ -28,12 +28,33 @@ eleventyComputed: {
   }
 }
 ---
-<div class="svgfill">{% icon "reference", "reference" %}
- {{entry |bibcite2 |divRemove|safe}}</div>
+{% if abstract %}
+{% if illustration.src %}
+    <img
+      alt="Cover slide from the talk “{{ title }}”"
+      src="{{ illustration.src }}"
+      class="page__illustration u-photo {{illustration.classes}}"
+      crossorigin="anonymous"
+      >
+{% endif %}
 <p >
 {{abstract |safe}}
 </p>
+{% else%}
+{% if illustration.src %}
+    <img
+      alt="Cover slide from the talk “{{ title }}”"
+      src="{{ illustration.src }}"
+      class=" page__illustration2 u-photo {{illustration.classes}}"
+      crossorigin="anonymous"
+      >
+{% endif %}
+{% endif %}
 
+
+<div class="citationW svgfill"><div>{% icon "reference", "reference" %}
+ {{entry |bibcite2 |divRemove|safe}}</div>
+ 
 {% if program or poster %}
 <p>{% if program %}
 <a  href="/assets/talks/{{program}}" class="buttonlink ">{% icon "pdf", "Program" %} Program of the event. </a> 
@@ -46,11 +67,14 @@ eleventyComputed: {
 
 <p>
 {% endif %}
+</div>
 
+<div  >
 {% if video %}
 {% from "macros/videoEmbed.njk" import videoEmbed %}
 {{videoEmbed(video) | safe }}
 {% endif %}
+</div>
 
 
 

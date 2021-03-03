@@ -18,7 +18,7 @@
   --flow-space: 0em;
    display: grid;
     grid-template-columns: 1fr  ;
-        grid-template-areas: 
+    grid-template-areas: 
       'lang '' types' 
       '   dates' ;
       
@@ -29,11 +29,11 @@
             'lang types' 
           'dates   dates' ;
     }
-    @media (min-width: 50em) {
+    @media (min-width: 52em) {
           grid-template-columns:  minmax(5em,5em) minmax(9em,3fr) minmax(6em,2fr);
           grid-template-areas:  '  lang types dates' ;
       }
-    @media (min-width: 60em) {
+    @media (min-width: 65em) {
           grid-template-columns:  minmax(5em,1fr) minmax(8em,3fr) minmax(12em,3fr);
       }
         
@@ -109,18 +109,7 @@ margin-bottom:  1em;
 
 
 
-.selected-A>a, .ais-HierarchicalMenu-item--selected > div > a, .ais-RefinementList-item--selected>a {
-       // color: var(--color-primary);
-        text-decoration-line: underline;
-        text-decoration-thickness: var(--border-width);
-        text-decoration-color: var(--color-primary-lighter-2);
-        -webkit-text-stroke-width: 0.05em;
-}
 
-// RefinementList
-//.ais-RefinementList-item--selected .ais-RefinementList-labelText {
-//  font-weight: bold;
-//}
 
 // Counts
 .ais-RefinementList-count,

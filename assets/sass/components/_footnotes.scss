@@ -8,37 +8,73 @@
 
 .footnotes {
   margin: var(--gap) 0;
+  margin-right: 0.5em;
   background-color: var(--color-lightgrey);
   color: var(--color-primary-darker-7);
   border: 1px solid var(--color-grey);
   border-radius: 0.3em;
   font-size: var(--font-size-s);
-padding-bottom: 1em;
+  padding-bottom: 1em;
+  &>p, &>div, &>aside{
+    text-indent: -2em;
+    padding-left: 2em;
+  }
+  &>*{
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+  }
   ol {
-    margin: 0;
-    padding: 1em 1em 1em 2em;
-    list-style-position: outside;
+    //margin: 0;
+    //padding: 1em 1em 1em 2em;
+    list-style: none;
+    counter-reset: my-awesome-counter;
+  }
+  li {
+    counter-increment: my-awesome-counter;
+    &:before{margin-left: -2em;
+      content: counter(my-awesome-counter);
+      display: inline-block;
+    }
+   
+    p:first-child {display: inline;}
+  }
+  a.footnote.footnote, .footnote-mark > a ,   .Footnote_20_Symbol,  .Footnote_20, .FootnoteSymbol,  .sdfootnotesym, li:before   {
+    text-decoration: none;
+    padding: 0.1em 0.4em;
+    margin-right: 0.3em;
+   // margin: 0 0.2em;
+    color: var(--color-link-hover);
+    border-radius: 30%;
+    background-color: #8f8f8f;
+      // https://css-tricks.com/touch-devices-not-judged-size/
+    @media (pointer: coarse) {
+      padding: 0.3em 0.6em;
+    }
+  }
+  [href]:first-child:not(u>a){    
+    background-color: #39f;
+    &:hover{
+      background-color: var(--color-link-hover-bg);
+    }
+  }
+  .footnote-mark > a >sup{
+    font-size: 100%;
+    top: 0em;
   }
 }
 
 .footnote-item + .footnote-item {
-  margin-top: 0.5em;
+ // margin-top: 0.5em;
 }
 
-a.footnote.footnote {
-  text-decoration: none;
-  padding: 0.1em 0.4em;
-  margin: 0 0.2em;
-  background-color: #39f;
-  color: #fff;
-  border-radius: 30%;
 
-  // https://css-tricks.com/touch-devices-not-judged-size/
-  @media (pointer: coarse) {
-    padding: 0.3em 0.6em;
-  }
-}
 
+/*
+.footnotes li:before { 
+  content: "  "; 
+  margin-left: -1em;
+}*/
+.footnotes 
 a.reversefootnote {
-  text-decoration: none;
+  //text-decoration: none;
 }

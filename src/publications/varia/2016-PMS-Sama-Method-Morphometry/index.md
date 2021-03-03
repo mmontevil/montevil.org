@@ -16,8 +16,6 @@ eleventyNavigation:
     activeKey: eleventyNavigation.key
     })  |safe }} 
 </div>
-<div class="indent">
-<hr>
 
 # What is SAMA? 
 
@@ -45,4 +43,3 @@ SAMA is released under the [Gnu Public License](http://www.gnu.org/licenses/gpl.
 *   14 august 2015: compatibility with version 3.3 of 3D imagej suite
 *   3 may 2015: first prerelease.
 
-</div>

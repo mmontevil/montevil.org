@@ -1,12 +1,11 @@
 {% macro tagsCloud(tags) %}
 
 {% set minSize = 0.85 %}
-{% set maxSize = 3 %}
+{% set maxSize = 2.5 %}
 {% set minWeight = 600 %}
 {% set maxWeight = 900 %}
 {% set minOpacity = 1 %}
 {% set maxOpacity = 1 %}
-{#class="tagscloud__tags"   class="tag{{ tag.step }}" <span style="font-size: 0.8" >({{ tag.number }})</span>#}
 <ol class="tagscloud__tags">
 {% for tag in tags %}
   {% set tagUrl %}/tags/{{ tag.tag | slugify }}/{% endset %}

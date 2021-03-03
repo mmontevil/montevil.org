@@ -23,7 +23,7 @@
         </ul>
        
        </div>
-        <div class="ais-Panel" >
+        <div class="ais-Panel" id="types-menu{{append}}">
        <div class="ais-Panel-header">Types</div>
           <ul class="no-ais-RefinementList-list" id="pubTypes">
             {% for type in pubtypes.types %}
@@ -48,7 +48,7 @@
         </div>
       
       {#</div><div id="tags-list"></div>#}
-      <div id="dates-menu" class="ais-Panel">
+      <div id="dates-menu{{append}}" class="ais-Panel">
           
       
         {% block dates %}

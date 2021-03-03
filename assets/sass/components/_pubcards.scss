@@ -146,11 +146,13 @@ display: inline-table;
         border-top-left-radius: 0em;
         margin-left: 0em;
   margin-right: 0em;
-      @media (min-width: 30rem) {
+  max-width: 32em;
+    @media (min-width: 33em) {
         padding: 0.5em;
-  margin-left: 0.25em;  
-  margin-right: calc(0.5*100% - 0.5*30rem);
-      }
+        margin-left: 0.25em; 
+    }
+  //margin-right: calc(0.5*100% - 0.5*30em);
+   //   }
 
 }
 
