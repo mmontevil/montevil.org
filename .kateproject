@@ -1,3 +1,5 @@
 {
-  "name": "Montevil website"
+  "name": "Montevil website", 
+  "files": [ { "git": 1 } ],
+  "index": true
 }

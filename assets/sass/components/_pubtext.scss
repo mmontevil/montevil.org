@@ -117,15 +117,19 @@
 .subsubsectionToc{
   margin-left: 2em;
 }
-.cmti-10,.ecti-1000,.rm-lmri-9,.Emphasis,.ecti-1000{font-style: italic;}
+.cmti-10,.ecti-1000,.rm-lmri-9,.Emphasis,.ecti-1000, .textit{font-style: italic;}
 
 dt.description, dt.dt{
   font-variant: small-caps;
 }
 
-  .cmbx-10,.ecbx-1000,.paragraphHead,.cmbx-9,.likeparagraphHead,.ec-lmbx-10{
+.caption-title, .cmbx-10,.ecbx-1000,.paragraphHead,.cmbx-9,.likeparagraphHead,.ec-lmbx-10{
   font-weight: bold;
   color: var(--color-primary-darker-1);
+}
+
+.textbf{
+  font-weight: bold;
 }
 
 .bibitem, .thebibliography > *,.referencesn>*{margin-bottom:0.7em;}
@@ -171,7 +175,10 @@ nav > ul, nav >ul >li>ul , nav >ul >li>ul>li>ul,.references,.autotoc ol {
 
 .enumerateRom{list-style-type: lower-roman;}
 
-.quote {padding-left:1.5em;  }
+.quote {
+  padding-left:1.5em;  
+  font-size: var(--font-size-s);
+}
 
 
 .frame_hsides{ margin-left: auto;
@@ -207,7 +214,10 @@ h2.abstract, h3.abstract {font-variant: normal;
   font-weight: bold;
   color: var(--color-primary);
 }
-
+.Footnote_20_anchor { 
+  vertical-align: super; 
+  font-size:58%;
+}
 
 .maketitle, div.abstract, .head{
 @extend %flowall; 
