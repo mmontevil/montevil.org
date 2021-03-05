@@ -140,7 +140,7 @@ h3 {
 
 h4 {
   font-size: var(--font-size-l);
-  font-weight: 400;
+  font-weight: 500;
 }
 
 h5 {
@@ -598,7 +598,7 @@ a[href$='.kml'] {
 
 
 
-.selected-A>a, .ais-HierarchicalMenu-item--selected > div > a, .ais-RefinementList-item--selected>a {
+.selected-B,.selected-A>a, .ais-HierarchicalMenu-item--selected > div > a, .ais-RefinementList-item--selected>a {
        // color: var(--color-primary);
         text-decoration-line: underline;
         text-decoration-thickness: var(--border-width);
@@ -606,10 +606,27 @@ a[href$='.kml'] {
         -webkit-text-stroke-width: 0.05em;
 }
 
+.selected-B{
+  //color: var(--color-primary-darker-4)!important;
+  -webkit-text-stroke-width: 0.05em!important;
+          text-decoration-color: var(--color-primary-lighter-2)!important;
 
-
-
-
+scroll-margin: 100px; 
+animation-name: target2;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out reverse;
+  animation-iteration-count: 4;
+  @keyframes target2 {
+  0% {color: inherit;
+            -webkit-text-stroke-width: 0.0em;
+  }
+  85% {color: var(--color-primary-darker-6);
+    -webkit-text-stroke-width: 0.1em;
+ text-shadow: 0 0 0.25em var(--color-primary-shine), 0 0 0.5em var(--color-primary-shine), 0 0 0.75em var(--color-primary-shine), 0 0 1em var(--color-link-hover-bg), 0 0 1.75em var(--color-link-hover-bg), 0 0 2em var(--color-link-hover-bg);
+    //backdrop-filter: blur(200px);
+  }
+}
+}
 
 
 

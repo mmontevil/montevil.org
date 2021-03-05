@@ -26,18 +26,34 @@
   li {
     margin: 0;
     padding: 0;
-
+&.navigation__tags,
     &.navigation__publications,
     &.navigation__posts,
     &.navigation__links,
     &.navigation__notes,
-    &.navigation__talks {
+    &.navigation__talks, 
+    &.navigation__feeds {
       display: none;
 
-      @media (min-width: 48em) {
+      @media (min-width: 55em) {
         display: block;
       }
-    }
+    } &.navigation__tags{
+      @media (min-width: 20em) {
+        display: block;
+      }}
+    &.navigation__feeds{
+      @media (min-width: 25em) {
+        display: block;
+      }}
+        &.navigation__publications{
+      @media (min-width: 32em) {
+        display: block;
+      }}
+            &.navigation__talks{
+      @media (min-width: 43em) {
+        display: block;
+      }}
     a,
     a:link,
     a:visited {
@@ -132,14 +148,6 @@
 
 
 
-.theme-switch-wrapper{
-display: inline-block;
-
-justify-content: center;
-vertical-align: middle; 
-    transform: scale(0.65);
-
-}
 /*
 
 .theme-switchb{transform: translate(0%, 40%);
@@ -245,8 +253,8 @@ filter: blur(1px);
 
 
 .theme-switchb {
-  --size: 2rem;
-  
+  --size: 1em;
+  display: block;
   appearance: none;
   outline: none;
   cursor: pointer;
@@ -284,8 +292,21 @@ filter: blur(1px);
   }
 
 }
+.theme-switch{
+  justify-content: center;
+vertical-align: bottom; 
+
+}
+
+
 .theme-switch-wrapper{
-  &:hover {transform: scale(0.75); 
+display: inline-block;
+padding-top: 0.2em;
+justify-content: center;
+vertical-align: bottom; 
+   transform: scale(1.1);
+ // display: inline-block;
+  &:hover {transform: scale(1.2); 
     transition: all 500ms;
 
   }

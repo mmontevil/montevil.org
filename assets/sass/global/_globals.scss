@@ -24,9 +24,9 @@
   --flow-space: 1em;
 
   // --font-family-serif: NotoSerif, Georgia, 'Times New Roman', Times, serif;
-  --font-family-serif:  Alegreya, 'Caslon Pro', Caslon, 'Liberation Serif',    'Crimson Pro', Georgia, 'Times New Roman', Times, serif;
+  --font-family-serif:   'Caslon Pro', Caslon, 'Liberation Serif',    'Crimson Pro', Georgia, 'Times New Roman', Times, serif;
   
-  --font-family-sans-serif:  'Alegreya Sans', 'Liberation Sans', 'Myriad Pro' , ClassicSans, 'Proxima Nova', 'Segoe UI',
+  --font-family-sans-serif:   'Liberation Sans', 'Myriad Pro' , ClassicSans, 'Proxima Nova', 'Segoe UI',
     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   // --font-family-monospace: 'Fira Code', 'Courier New', Courier, monospace;
@@ -79,6 +79,8 @@
 --color-primary-lighter-7a: #f6e6f7;
 --color-primary-lighter-7b: #fdf0f5;
 --color-primary-lighter-8: #fff8fb;//#fff2f7
+
+--color-primary-shine: var(--color-primary-lighter-4);
 
   // Persimmon:
   //   https://en.wikipedia.org/wiki/Shades_of_orange#Persimmon
@@ -135,7 +137,6 @@
   --soft-shadow: rgba(255,255,255,0.075);
 --color-link-hoveralt: white;
 --color-emph: #00ff00;
-
 --color-primary-darker-7: #f8ebf2;
 --color-primary-darker-6: #f2e0ea;
 --color-primary-darker-5: #edd5e3;
@@ -159,6 +160,9 @@
 --color-secondary: #40dc2e;
   --color-bg: var(--color-primary-lighter-9);
 
+--color-primary-shine: var(--color-primary-lighter-1);
+
+  
   --color-link: var(--color-primary);
   --color-link-bg: inherit;
   --color-link-decoration: var(--color-primary-lighter-6);

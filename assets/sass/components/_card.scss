@@ -7,12 +7,12 @@
 
 .cards-list {
   @extend %flow;
-
+scroll-snap-type: y mandatory;
+scroll-padding: 5em;
   clear: both;
   padding: 0;
   // margin: 0;
   list-style-type: none;
-scroll-snap-type: y proximity;
   * {
     --flow-space: var(--gap3);
   }
@@ -76,7 +76,8 @@ img.card__illustration {
   margin-right: auto;
 }
 
-.publi, .card-list__item, .titleDiag{
+.publi, .card-list__item, .titleDiag{scroll-snap-align: start; scroll-snap-stop: always;
+
    position: relative;
   margin-top: 0px;
   padding: var(--skew-padding) 0;

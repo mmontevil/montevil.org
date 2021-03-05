@@ -41,19 +41,46 @@ if (currentTheme) {
  /*****************************************************************
  * TOC
  * ****************************************************************/
+// https://gomakethings.com/finding-the-next-and-previous-sibling-elements-that-match-a-selector-with-vanilla-js/
+ var getPreviousSibling = function (elem, selector) {
 
+	// Get the previous sibling element
+	var sibling = elem.previousElementSibling;
+
+	// If the sibling matches our selector, use it
+	// If not, jump to the previous sibling and continue the loop
+	while (sibling) {
+		if (sibling.matches(selector)) return sibling;
+		sibling = sibling.previousElementSibling
+	}
+
+};
+ var findSection = function (centeredElement) {
+     if(centeredElement.classList.contains('legibilityWidth')){
+       return null;
+    }else{
+      var element=centeredElement;
+      while (element){
+        if (element.matches('.legibilityWidth > *')) return getPreviousSibling(element,"h2,h3,h4,h5").id;
+        if (element.matches('body')) return null;
+        element = element.parentNode;
+      }
+    }
+}
 /* Open */
 
 var scrollPosition = 0;
 
 var myNav=document.getElementById("myNav");
 var navToc=document.getElementById("navToc");
+var tocSelectedEle = null;
 
  function openNav   () { 
 if(myNav.style.height === "100%"){
 window.scrollTo(0, scrollPosition);
 myNav.style.height = 0;
 navToc.classList.remove("onclickbuttonon");
+if(tocSelectedEle) tocSelectedEle.classList.remove("selected-B");
 }else{
     scrollPosition = window.pageYOffset;
     if (Math.sign(scrollPosition-55)==-1){
@@ -62,6 +89,32 @@ scrollPosition =60;
 }
 myNav.style.height = "100%";
 navToc.classList.add("onclickbuttonon");
+
+const centeredElement = document.elementFromPoint(
+  document.documentElement.clientWidth/2,  document.documentElement.clientHeight*0.5 
+);
+var sectionId=findSection(centeredElement)  ;
+
+if(sectionId && sectionId!=""){}else{
+   const centeredElement2 = document.elementFromPoint(
+  document.documentElement.clientWidth/2,  document.documentElement.clientHeight*0.75 
+);
+   sectionId=findSection(centeredElement2)  ;
+}
+   
+if(sectionId && sectionId!=""){}else{
+   const centeredElement2 = document.elementFromPoint(
+  document.documentElement.clientWidth/2,  document.documentElement.clientHeight*0.25 
+);
+   sectionId=findSection(centeredElement2)  ;
+}
+   if(sectionId && sectionId!=""){
+     tocSelectedEle = document.querySelectorAll('#myNav a[href^="#'+sectionId+'"]')[0];
+    
+     tocSelectedEle.classList.add("selected-B");
+     var temp= new Promise(resolve => setTimeout(resolve, 500));
+     tocSelectedEle.scrollIntoView();
+  }
 }
 }   
 if(myNav &&navToc){
