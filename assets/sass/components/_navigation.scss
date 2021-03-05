@@ -137,9 +137,10 @@ display: inline-block;
 
 justify-content: center;
 vertical-align: middle; 
+    transform: scale(0.75);
 
 }
-
+/*
 
 .theme-switchb{transform: translate(0%, 40%);
  top: -0.2em;
@@ -224,7 +225,69 @@ filter: blur(1px);
     filter: blur(0.2px);
 }
 }
+
+
+
+*/
+
 .hiddenLabel{display:none;}
 
-.theme-switchb:hover{background-color: var(--color-link-hover-bg)} 
+
+
+
+
+
+
+
+
+
+
+
+
+.theme-switchb {
+  --size: 2rem;
+  
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  
+  width: var(--size);
+  height: var(--size);
+    border-radius: 999px;
+
+  
+  transition: all 500ms;
+  
+ 
+    --ray-size: calc(var(--size) * -0.4);
+    --offset-orthogonal: calc(var(--size) * 0.65);
+    --offset-diagonal: calc(var(--size) * 0.45);
+
+    transform: scale(0.75);
+    color: hsl(40, 100%, 50%);
+    box-shadow: 
+      inset 0 0 0 var(--size),
+      calc(var(--offset-orthogonal) * -1) 0 0 var(--ray-size),
+      var(--offset-orthogonal) 0 0 var(--ray-size),
+      0 calc(var(--offset-orthogonal) * -1) 0 var(--ray-size),
+      0 var(--offset-orthogonal) 0 var(--ray-size),
+      calc(var(--offset-diagonal) * -1) calc(var(--offset-diagonal) * -1) 0 var(--ray-size),
+      var(--offset-diagonal) var(--offset-diagonal) 0 var(--ray-size),
+      calc(var(--offset-diagonal) * -1) var(--offset-diagonal) 0 var(--ray-size),
+      var(--offset-diagonal) calc(var(--offset-diagonal) * -1) 0 var(--ray-size),
+    ;
+   filter: blur(3px);
+   &:checked {    transform: scale(1);
+     box-shadow: inset calc(var(--size) * 0.33) calc(var(--size) * -0.25) 0;
+  color: hsl(240, 100%, 95%);
+  filter: blur(0.3px);
+  }
+
+}
+.theme-switch-wrapper{
+  &:hover {transform: scale(0.85); 
+    transition: all 500ms;
+
+  }
+}
 

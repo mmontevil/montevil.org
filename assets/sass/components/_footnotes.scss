@@ -38,7 +38,7 @@
    
     p:first-child {display: inline;}
   }
-  a.footnote.footnote, .footnote-mark > a ,   .Footnote_20_Symbol,  .Footnote_20, .FootnoteSymbol,  .sdfootnotesym, li:before   {
+  a.footnote.footnote, .footnote-mark > a ,   .Footnote_20_Symbol,  .Footnote_20, .FootnoteSymbol,  .sdfootnotesym, li:before , .footnote-back  {
     text-decoration: none;
     padding: 0.1em 0.4em;
     margin-right: 0.3em;
@@ -51,7 +51,7 @@
       padding: 0.3em 0.6em;
     }
   }
-  [href]:first-child:not(u>a){    
+  &>*>*:first-child>[href]:first-child:not(u>a), &>*>[href]:first-child:not(u>a), .footnote-back{    
     background-color: #39f;
     &:hover{
       background-color: var(--color-link-hover-bg);

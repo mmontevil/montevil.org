@@ -5,8 +5,8 @@
 
 
 <div id="myNav" class=" overlay" >
-  <div class="wrap">
-  <div class=" overlay-content ">
+  <div class="wrap ">
+  <div class="legibilityWidth overlay-content ">
   <h2 class="center titleOverToc"> {{title}}</h2>
   {%if h2=="tocCenter" or h2=="tocCenter2" %}
     {{ content | toc(tags=['h2', 'h3'], wrapperClass='autotoc ' + h2)|safe}}

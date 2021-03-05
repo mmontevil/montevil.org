@@ -40,10 +40,10 @@
 // Font styles
 // ************************************************************
 
-body {
+body, .site_title{
   font-family: var(--font-family-serif);
 }
-h1,h2,h3,h4,h5 {
+h1,h2,h3,h4,h5,.autotoc, .ais-HierarchicalMenu-list, .no-ais-RefinementList-list, .centerList{
   font-family: var(--font-family-sans-serif);
 }
 

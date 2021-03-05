@@ -121,7 +121,7 @@
               0 4px 8px var(--soft-shadow),
               0 8px 16px var(--soft-shadow);
   @extend %flowall; 
-  & >* {--flow-space: 0.5rem;}
+  & >*{--flow-space: 0.5rem;}
 
 
   //text-decoration: none;

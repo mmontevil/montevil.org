@@ -60,10 +60,11 @@ eleventyComputed:
   <h3 class="subtitleHead indent" > Reading time: ~{{ content   | readingTime({speed:170}) }}</h3>
 
   {{ content | toc | safe }}
-  </section>  
+ 
 
   {% from "macros/overlayToc.njk" import overlayToc %}
 {{overlayToc(content,"",title)|safe}}
+</section>  
 <hr> 
 <div class="legibilityWidth wrap0all">
  {%endif%}

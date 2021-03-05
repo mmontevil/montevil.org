@@ -40,9 +40,9 @@
 
 
  <div class="accordion">{% if not  (article.data.bibentry.abstract === undefined) %}
-  <input type="checkbox" name="{{article.data.bibentry.id}}{{rid}}" id="{{-articleedataebibentryeid-}}{{-rid-}}" >{% endif %}
+  <input type="checkbox" name="{{-article.data.bibentry.id-}}{{-rid-}}" id="{{-article.data.bibentry.id-}}{{-rid-}}" >{% endif %}
   <p class="handle">
-   <span  class="smalltext">{{pubuttons(article.data) |safe}}</span> {% if not  (article.data.bibentry.abstract === undefined) %}<label for="{{article.data.bibentry.id}}{{rid}}" class="smalltext"><span class="abssvg folded">{% icon "chevronRight", "Link" %}</span><span class="abssvg unfolded">{% icon "chevronDown", "Link" %}</span>Abstract</label>
+   <span  class="smalltext">{{pubuttons(article.data) |safe}}</span> {% if not  (article.data.bibentry.abstract === undefined) %}<label for="{{-article.data.bibentry.id-}}{{-rid-}}" class="smalltext"><span class="abssvg folded">{% icon "chevronRight", "Link" %}</span><span class="abssvg unfolded">{% icon "chevronDown", "Link" %}</span>Abstract</label>
   </p>
   <div class="content">
      <p > <span class="paragraphHead2"> Abstract: </span>  {{ article.data.abstract  | safe }}</p >

@@ -84,42 +84,50 @@
 }
 
 .autotoc a{
-  position: relative;
-  line-height: 1.3;
-  color: var(--color-link);
-  &:hover{color: var(--color-link-hover);}
+      position: relative;
+      line-height: 1.3;
+      color: var(--color-link);
+      &:hover{
+          color: var(--color-link-hover);
+      }
 }
   
-.autotoc > ol >li >a{font-variant: small-caps;
+.autotoc > ol >li {//font-variant: small-caps;
   font-size: var(--font-size-l);
   font-weight: 700;color: var(--color-primary-darker-2 );
 }
-.autotoc > ol >li >ol>li>a{
+.autotoc > ol >li >ol>li{
     font-size: var(--font-size-l);
     font-weight: 500;  color: var(--color-primary );
 }
-.autotoc > ol >li >ol>li>ol>li>a{
+.autotoc > ol >li >ol>li>ol>li{
   font-size: var(--font-size-m);color: var(--color-primary-lighter-2 );
   font-weight: 500;
 }
-.autotoc > ol >li >ol>li>ol>li>ol>li>a{ 
+.autotoc > ol >li >ol>li>ol>li>ol>li{
   font-style: italic;color: var(--color-primary-lighter-2 );
   font-size: var(--font-size-s);
   font-weight: 300;
-}    
+}
   
 .autotoc{ 
   ol{  
-        --flow-space: 0.5em;
+     //   --flow-space: 0.5em;
         margin-left: -1.5em ;
     }
     li {
         text-indent: -1em;
         padding-left:1em;
     }
+    li{--flow-space: calc(0.35ex / 0.32) ;}
+    li:first-child{--flow-space: calc(0.15ex / 0.32) ;}
 }
-  
-
+/*
+.autotoc >ol {  
+    --flow-space: calc(0.35ex / 0.32) ;
+    & ol {--flow-space: calc(0.25ex / 0.32) ;}
+  }
+*/
 
 
 
@@ -155,6 +163,7 @@
       margin-left: 1em ;
   }
 }
+
 
 
   

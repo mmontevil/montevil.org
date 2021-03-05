@@ -24,21 +24,21 @@
   --flow-space: 1em;
 
   // --font-family-serif: NotoSerif, Georgia, 'Times New Roman', Times, serif;
-  --font-family-serif:  Alegreya, 'Minion Pro', 'Crimson Pro', Georgia, 'Times New Roman', Times, serif;
-
-  --font-family-sans-serif:  'Alegreya Sans', ClassicSans, 'Proxima Nova', 'Segoe UI',
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family-serif:  Alegreya, 'Caslon Pro', Caslon, 'Liberation Serif',    'Crimson Pro', Georgia, 'Times New Roman', Times, serif;
+  
+  --font-family-sans-serif:  'Alegreya Sans', 'Liberation Sans', 'Myriad Pro' , ClassicSans, 'Proxima Nova', 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   // --font-family-monospace: 'Fira Code', 'Courier New', Courier, monospace;
   --font-family-monospace: 'Courier New', Courier, monospace;
 
-  --font-size-base: 0.9rem;
+  --font-size-base: 1rem;
   --font-size-responsive: 0.5vw;
   --font-size-scale: 1.1;
 
   // https://every-layout.dev/rudiments/modular-scale/
   --font-size-m: calc(var(--font-size-base) + var(--font-size-responsive));
-  --font-size-m: min(calc(var(--font-size-base) + var(--font-size-responsive)),1.4rem);
+  --font-size-m: min(calc(var(--font-size-base) + var(--font-size-responsive)),1.5rem);
   
   --font-size-s: calc(var(--font-size-m) / var(--font-size-scale));
   --font-size-xs: calc(var(--font-size-s) / var(--font-size-scale));

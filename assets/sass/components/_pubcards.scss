@@ -56,9 +56,11 @@
 } 
 
 .publink {
-                      padding: 0.2em;
+                      padding: 0.1em;
 
-      
+      padding-left: 0.2em;
+            padding-right: 0.2em;
+
    // border: 1px solid var(--color-primary-lighter-5);
     color: white;
     background-color: var(--color-red);
@@ -75,8 +77,9 @@
 
 
 .publinklang {  
-                    padding: 0.2em;
-      
+                    padding: 0.1em;
+      padding-left: 0.2em;
+            padding-right: 0.2em;
         margin: 0em;
   //  border-radius: 0.3em;  
     color: var(--color-primary-lighter-7);
@@ -86,7 +89,7 @@
 .publinkwrap{   // border: 1px solid var(--color-primary-lighter-5); 
   line-height: 1;
   padding-top: 0.2em;
-  padding-bottom: 0.2em;
+  //padding-bottom: 0.2em;
 
 display: inline-table;
   border-radius: 0.5em;
@@ -168,9 +171,9 @@ z-index: 1;
 }
 
 .accordion label {
-    margin-top: 0.2em;
+   margin-top: 0.2em;
   cursor: pointer;
-  padding: 0.45em;
+  padding: 0.25em;
  // background: rgba(230,230,230,0.5);
  // padding-left: 1.3em;
 

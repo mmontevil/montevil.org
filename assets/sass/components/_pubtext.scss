@@ -75,7 +75,7 @@
 
 
 .legibilityWidth{
-      width: calc(32.5*var(--font-size-m));
+      width: calc(30*var(--font-size-m));
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -107,7 +107,7 @@
   dl dd{ 
     margin-left: 1.5em;   
     --flow-space: 0 ;
-}
+  }
 }
 
 
@@ -117,7 +117,6 @@
 .subsubsectionToc{
   margin-left: 2em;
 }
-.cmti-10,.ecti-1000,.rm-lmri-9,.Emphasis,.ecti-1000, .textit{font-style: italic;}
 
 dt.description, dt.dt{
   font-variant: small-caps;
@@ -131,10 +130,41 @@ dt.description, dt.dt{
 .textbf{
   font-weight: bold;
 }
+span.smallcaps, .small-caps,.textsc{
+  font-variant: small-caps;
+}
 
-.bibitem, .thebibliography > *,.referencesn>*{margin-bottom:0.7em;}
+.cmti-10,.ecti-1000,.rm-lmri-9,.Emphasis,.ecti-1000, .textit{font-style: italic;}
 
-.titleHead,.head,.center,.maketitle,.author, .subtitleHead{text-align: center;}
+//.Footnote_20_anchor, 
+.superLegacy { 
+ // vertical-align: super; 
+  //font-size:58%;
+font-size: 75%;
+line-height: 0;
+position: relative;
+vertical-align: baseline;
+}
+.superLegacyIt { 
+  vertical-align: super; 
+  font-size:58%;
+  font-style: italic;
+}
+.subLegacy { 
+  vertical-align: sub; 
+  font-size:58%;
+}
+.subLegacyIt { 
+  vertical-align: sub; 
+  font-size:58%;
+  font-style: italic;
+}
+
+
+
+//.bibitem, .thebibliography > *,.referencesn>*{margin-bottom:0.7em;}
+
+.titleHead,.head,.center,.maketitle, .subtitleHead{text-align: center;}
 
 .legibilityWidth .titleHead   {
   padding-left: 0; 
@@ -158,9 +188,7 @@ dt.description, dt.dt{
 
 
 
-span.smallcaps, .small-caps,.textsc{
-  font-variant: small-caps;
-}
+
 
         
         
@@ -181,7 +209,8 @@ nav > ul, nav >ul >li>ul , nav >ul >li>ul>li>ul,.references,.autotoc ol {
 }
 
 
-.frame_hsides{ margin-left: auto;
+.frame_hsides{ 
+  margin-left: auto;
   margin-right: auto;
  }
  .bibsp{display:none;}
@@ -196,17 +225,20 @@ nav > ul, nav >ul >li>ul , nav >ul >li>ul>li>ul,.references,.autotoc ol {
   padding-inline-start:0;
   list-style-type: none;
 }
+
 .ReferencesCopy2{text-indent: 0em;}
 
 .footnotes >*{margin-top: 0.5em;}
 
 
 
-h2.abstract, h3.abstract {font-variant: normal;
+h2.abstract, h3.abstract {
+  font-variant: normal;
   margin-bottom: 0.25em;
   font-weight: 600 ;
 }
-.keywords, .paragraphHead{font-weight: 600 ;
+.keywords, .paragraphHead{
+  font-weight: 600 ;
   font-style: italic;
   margin-bottom: 0.25em;
 }
@@ -214,17 +246,25 @@ h2.abstract, h3.abstract {font-variant: normal;
   font-weight: bold;
   color: var(--color-primary);
 }
-.Footnote_20_anchor { 
-  vertical-align: super; 
-  font-size:58%;
+
+
+
+.author, .authors{
+  font-size: var(--font-size-xl);
+  text-align: center;
+}
+
+.affiliation {   
+  text-align: center;
+  font-size: var(--font-size-s);
 }
 
 .maketitle, div.abstract, .head{
-@extend %flowall; 
-  
+  @extend %flowall; 
 }
 
-
+.affiliation + .affiliation{  --flow-space: calc(0.2ex / 0.32);}
+#toc-site{margin-top: 0.5em;}
 
 
 

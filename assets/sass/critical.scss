@@ -117,9 +117,9 @@ h6 {
   color: var(--color-primary-darker-2);
   position: relative;
 
-  &:not(h1) {
-    --flow-space: var(--gap3);
-  }
+  
+    
+  
 }
 
 h1 {
@@ -129,7 +129,7 @@ h1 {
 }
 
 h2 {font-variant: small-caps;
-  font-size: var(--font-size-xxl);
+  font-size: var(--font-size-xxxl);
   font-weight: 700;
 }
 
@@ -140,25 +140,25 @@ h3 {
 
 h4 {
   font-size: var(--font-size-l);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h5 {
   font-size: var(--font-size-m);
-  font-weight: 300;
+  font-weight: 400;
+  font-style: italic;
 }
 
 h6 {
-  font-style: italic;
+ 
   font-size: var(--font-size-m);
   font-weight: 300;
 }
 
 
 h1 +h2,h2 +h3 ,h3 +h4 ,h4 +h5 ,
-h5 +h6 {    --flow-space: 0.5em;
-
-  margin-top : 0.5em;
+h5 +h6 {    
+  --flow-space: 0.5em;
 }
 
 
@@ -243,10 +243,10 @@ a.deeplink{
 }
 
 @keyframes target {
-  0% {
+  0% {color: inherit;
     background-color: inherit; //filter: blur(1px);
   }
-  85% {
+  85% {color: var(--color-primary-darker-2);
     background-color: var(--color-yellow-light);
     //backdrop-filter: blur(200px);
     
@@ -444,9 +444,9 @@ figcaption {
 }
 
 ul,
-ol {@extend %flowall; 
+ol {
+  @extend %flowall; 
   padding: 0 0 0 var(--gap2);
-  
 }
 
 
@@ -667,23 +667,35 @@ article h6 {
     line-height: calc(1ex / 0.34);
     --flow-space: calc(1ex / 0.34) ;
 }
-article  {
-  p, ol, ul,dl{  
+
+  p, ol, ul,dl,li,dt{  
 
     line-height: calc(1ex / 0.32);
     --flow-space: calc(1ex / 0.32) ;
 
   }
-  ol, ul,dl{  
+  li,dt,li>p,dd>p, h3 +*, h2 +*{  
     --flow-space: calc(0.5ex / 0.32) ;
   }
+  h1 +h2, h2 +h3 , h3 +h4 ,h4 +h5 , h5 +h6 {    
+      --flow-space: calc(0.5ex / 0.32) ;
+  }
+
+
+
+
+article .titleHead{@extend h1;
+  font-variant: normal;
+      --flow-space: calc(1ex / 0.42) ;
 }
 
-
-
-.titleHead{@extend h2;
-  font-variant: normal;}
-
+article .subtitleHead{//@extend h1;
+  font-variant: normal;
+ text-align: center;
+   font-size: var(--font-size-xxl);
+margin-left: 0;
+     // --flow-space: calc(1ex / 0.42) ;
+}
 
 mjx-mtable{min-width: auto!important; }
 mjx-mspace{width: 0!important; }

@@ -50,6 +50,11 @@ blockquote:not(.tweet-card) {
 
 .epigraph { @extend blockquote;     }
 .episource{
+  font-size: var(--font-size-m);
+  margin-top: calc(0.5ex / 0.35);
+  --flow-space: calc(0.5ex / 0.35) ;
+  color: var(--color-primary-darker-5);
+  font-style: normal;
   text-align: right;
   margin-left: 15%;
 }

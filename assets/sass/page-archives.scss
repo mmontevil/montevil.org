@@ -96,11 +96,12 @@ margin-bottom:  1em;
 // HierarchicalMenu
 .ais-HierarchicalMenu-item, .ais-RefinementList-item{
   margin:0.4em;
-  margin-top: 0;
+  margin-top: 0;  //font-variant: small-caps;
 }
 .ais-HierarchicalMenu-item2{
   //margin-top: -0.2em;
   font-style: italic;
+    font-variant: normal;
 }
 .ais-HierarchicalMenu-item2:before {
   content: "· ";
