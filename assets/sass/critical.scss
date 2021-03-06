@@ -39,6 +39,12 @@ html {
   scroll-margin-top: 5rem;
     // overflow-y: hidden;
   scroll-behavior: smooth;
+  @media (hover: none){
+  scroll-snap-type: y proximity;
+//    scroll-snap-type: y mandatory;
+scroll-padding: 4em;
+  
+}
 
 }
 
@@ -55,6 +61,8 @@ body {
   scroll-margin-top: 5rem;
   text-rendering: optimizeLegibility;
   word-break: normal;
+  overflow-wrap: anywhere;
+
   font-size-adjust: 0.5;
 
  // transition: background-color 300ms ease-in-out 0s;
@@ -86,10 +94,13 @@ main {
 }
 
 .wrap {
-  width: 90vw;
+  width: 94vw;
   max-width: var(--layout-max);
     margin-left: auto;
     margin-right: auto;
+      @media (min-width: 25rem) {
+    width: 90vw;
+  }
   @media (min-width: 40rem) {
     width: 80vw;
 
@@ -126,11 +137,13 @@ h1 {
   font-size: var(--font-size-xxxxl);
   font-weight: 900;
   color: var(--color-primary);
+  scroll-snap-align: start; 
 }
 
 h2 {font-variant: small-caps;
   font-size: var(--font-size-xxxl);
   font-weight: 700;
+  scroll-snap-align: start; 
 }
 
 h3 {
@@ -439,7 +452,9 @@ figcaption {
   color: var(--color-caption);
 }
 
-.more {
+.more {  
+  scroll-snap-align: start; 
+
   margin-top: var(--gap3);
 }
 
@@ -527,6 +542,7 @@ article {
       color: #777;
     }
   }
+  --flow-space: 0;
 }
 
 // File link icons
@@ -620,9 +636,9 @@ animation-name: target2;
   0% {color: inherit;
             -webkit-text-stroke-width: 0.0em;
   }
-  85% {color: var(--color-primary-darker-6);
+  85% {color: var(--color-primary-shine-font);
     -webkit-text-stroke-width: 0.1em;
- text-shadow: 0 0 0.25em var(--color-primary-shine), 0 0 0.5em var(--color-primary-shine), 0 0 0.75em var(--color-primary-shine), 0 0 1em var(--color-link-hover-bg), 0 0 1.75em var(--color-link-hover-bg), 0 0 2em var(--color-link-hover-bg);
+ text-shadow: 0 0 0.25em var(--color-primary-shine), 0 0 0.5em var(--color-primary-shine), 0 0 0.75em var(--color-primary-shine), 0 0 1em var(--color-primary-shine2), 0 0 1.75em var(--color-primary-shine2), 0 0 2em var(--color-primary-shine2);
     //backdrop-filter: blur(200px);
   }
 }
@@ -716,3 +732,5 @@ margin-left: 0;
 
 mjx-mtable{min-width: auto!important; }
 mjx-mspace{width: 0!important; }
+
+.snapper{ scroll-snap-align: start; }

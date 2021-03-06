@@ -4,8 +4,13 @@
 
 :root {
 
-      --width: calc(min( var(--layout-max),90vw));
+      --width: calc(min( var(--layout-max),94vw));
+    @media (min-width: 25rem) {
+    --width: calc(min( var(--layout-max),90vw));
 
+  }
+
+  
   @media (min-width: 40rem) {
      --width: calc(min( var(--layout-max),80vw));
   }
@@ -32,7 +37,7 @@
   // --font-family-monospace: 'Fira Code', 'Courier New', Courier, monospace;
   --font-family-monospace: 'Courier New', Courier, monospace;
 
-  --font-size-base: 1rem;
+  --font-size-base: 0.9rem;
   --font-size-responsive: 0.5vw;
   --font-size-scale: 1.1;
 
@@ -80,7 +85,6 @@
 --color-primary-lighter-7b: #fdf0f5;
 --color-primary-lighter-8: #fff8fb;//#fff2f7
 
---color-primary-shine: var(--color-primary-lighter-4);
 
   // Persimmon:
   //   https://en.wikipedia.org/wiki/Shades_of_orange#Persimmon
@@ -104,6 +108,10 @@
   --border-width: 0.15em;
     --color-accord: var(--color-primary-lighter-4);
     --color-caption: #666;
+
+    --color-primary-shine: var(--color-primary-lighter-1);
+--color-primary-shine2: var(--color-primary-lighter-2);
+--color-primary-shine-font: white;
 
 // ************************************************************
 // Colors palette
@@ -161,7 +169,8 @@
   --color-bg: var(--color-primary-lighter-9);
 
 --color-primary-shine: var(--color-primary-lighter-1);
-
+--color-primary-shine2: var(--color-link-hover-bg);
+--color-primary-shine-font: var(--color-primary-darker-6);
   
   --color-link: var(--color-primary);
   --color-link-bg: inherit;

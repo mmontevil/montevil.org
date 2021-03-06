@@ -143,5 +143,5 @@ margin-bottom:  1em;
   box-shadow: 10px 5px 5px var(--color-primary-lighter-7);
    color: var(--color-primary);
 }
-
+.archives>*, .refinements> *{scroll-snap-align: start; }
 

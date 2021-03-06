@@ -6,7 +6,7 @@
 {% set maxWeight = 900 %}
 {% set minOpacity = 1 %}
 {% set maxOpacity = 1 %}
-<ol class="tagscloud__tags">
+<ol class="tagscloud__tags snapper">
 {% for tag in tags %}
   {% set tagUrl %}/tags/{{ tag.tag | slugify }}/{% endset %}
   {% set fontSize = (maxSize - minSize) * tag.factor + minSize %}

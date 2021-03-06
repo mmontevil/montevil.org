@@ -7,8 +7,8 @@
 
 .cards-list {
   @extend %flow;
-scroll-snap-type: y mandatory;
-scroll-padding: 5em;
+//scroll-snap-type: y mandatory;
+//scroll-padding: 5em;
   clear: both;
   padding: 0;
   // margin: 0;
@@ -23,6 +23,8 @@ scroll-padding: 5em;
 // ************************************************************
 
 .card {
+
+  margin-bottom: var(--gap);
   @extend %clearfix;
 
   * {
@@ -55,6 +57,7 @@ img.card__illustration {
 }
 
 .card__title {
+    scroll-snap-align: none; 
   margin-top: 0;
   font-size: var(--font-size-xl);
   font-weight: bold;
@@ -76,8 +79,11 @@ img.card__illustration {
   margin-right: auto;
 }
 
-.publi, .card-list__item, .titleDiag{scroll-snap-align: start; scroll-snap-stop: always;
-
+.publi, .card-list__item, .titleDiag{
+  scroll-snap-align: start; 
+  //scroll-snap-stop: always;
+//height: 100vh;
+  //width: 100vw;
    position: relative;
   margin-top: 0px;
   padding: var(--skew-padding) 0;
@@ -96,11 +102,15 @@ img.card__illustration {
     z-index: -1;
 }  
 
-.publi, .card-list__item{  //box-shadow: 10px 5px 5px black; 
+.publi, .card-list__item{          
+  //z-index: 1;
+overflow-x: clip;
+ // overflow-y: hidden;  //box-shadow: 10px 5px 5px black; 
   & > *{
     margin-top: var(--skew-padding);
     position: relative;
   }
+  @media  (hover: hover){
   &:after{
     box-shadow: 0 1px 2px var(--color-primary-lighter-3), 
               0 2px 4px var(--color-primary-lighter-3), 
@@ -114,20 +124,21 @@ img.card__illustration {
   &:hover{
       &:after{
           transition: opacity 0.3s ease-in-out; transition: transform 0.3s ease-in-out;
-          transform:  scale(1.025, 1.025);
+          transform:  scale(1, 1);
           opacity: 0.5;
           z-index: 0;
       }
       &:before{
           z-index: 0;
-          transform:  scale(1.025, 1.025);
+          transform:  scale(1, 1);
           transition: transform 0.3s ease-in-out;    
       }
       & > *{
           z-index: 1; 
-          transform:  scale(1.025, 1.025);
+          transform:  scale(1, 1);
           transition: transform 0.3s ease-in-out;
       }
+  }
   }
   &:nth-child(2n+1) {
     &:before {
@@ -145,6 +156,21 @@ img.card__illustration {
   margin-top: calc(0.5*var(--skew-padding));
   margin-bottom: calc(0.5*var(--skew-padding));
 }
-
-
-
+/*
+  @media (hover: none){
+    .cards-list {
+  scroll-snap-type: x proximity;
+  // scroll-snap-type: x mandatory;
+//scroll-padding: 4em;
+  display: flex;
+  flex-direction: row;
+  width: 94vw;
+  margin: auto;
+  overflow-x: auto;
+  overflow-y: visible;
+}
+    .card-list__item{padding-left: 0vw;padding-right: 0vw;  overflow-y: visible;
+}
+    .card-list__item:before{display: none;}
+  }
+*/
