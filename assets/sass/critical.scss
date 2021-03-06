@@ -630,7 +630,7 @@ a[href$='.kml'] {
 scroll-margin: 100px; 
 animation-name: target2;
   animation-duration: 1s;
-  animation-timing-function: ease-in-out reverse;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: 4;
   @keyframes target2 {
   0% {color: inherit;

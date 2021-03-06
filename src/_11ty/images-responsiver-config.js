@@ -19,16 +19,26 @@ const runBeforeHook = (image, document) => {
     // TODO: find a way to get a remote image's dimensions
     // TODO: some images are local but have an absolute URL
     imageUrl = imageSrc;
+   var re = /https:\/\/image.thum.io\/get\/width\/(\d*)\/crop\/(\d*)\/noanimate.*/;
+    var newstr = parseInt(imageSrc.replace(re, "$1"),10);
+     var newstr2 = parseInt(imageSrc.replace(re, "$1"),10);
+     if (image.getAttribute('width') === null && newstr>0) {
+           image.setAttribute('width', newstr);
+    image.setAttribute('height', newstr*newstr2/1000);
+
+    }
+       // https://image.thum.io/get/width/(\d*)/crop/(\d*)/noanimate
+
   } else {
     let imageDimensions;
     if (imageSrc[0] === '/') {
       // TODO: get "src/" from Eleventy config
       imageDimensions = imageSize('./src' + imageSrc);
-      imageUrl = pkg.homepage + imageSrc;
+      imageUrl = pkg.homepage + encodeURI(imageSrc);
     } else {
       // This is a relative URL
       imageDimensions = imageSize(srcPath + imageSrc);
-      imageUrl = pkg.homepage + distPath + imageSrc;
+      imageUrl = pkg.homepage + distPath + encodeURI(imageSrc);
     }
      if (image.getAttribute('width') === null) {
     image.setAttribute('width', imageDimensions.width);

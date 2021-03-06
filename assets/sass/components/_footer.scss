@@ -19,7 +19,7 @@
  // margin-left: -5%;
   margin-bottom: -1.5em;
   margin-top: 0.5em;
-  z-index: -2; 
+  z-index: 1; 
   background-color: var(--color-bg);
   // background-color: white;
 
@@ -31,7 +31,7 @@
   white-space: nowrap;
   margin: 1em 0 0 0;
   padding: 1em 0;
-  z-index: -3; 
+  z-index: 0; 
 
   // transition color and padding if background image is added with JS
   color: currentColor;
@@ -60,6 +60,8 @@
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+  a {  z-index: 0; 
+}
   a:link,
   a:visited {
     color: currentColor;
@@ -69,12 +71,13 @@
   &:focus,
   a:active {
     color: var(--color-link-hover);
-    background-color: var(--color-link-hover-bg);
   }
 
   .wrap {
-    opacity: 1;
+   // background-color: var(--color-link-hover-bg);
 
+    opacity: inherit;
+    
     @media (min-width: 15em) {
       display: flex;
       flex-direction: row;
@@ -87,7 +90,16 @@
     }
   }
 
-  p {
+  p {  small{    opacity: 0;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-name: revealFooter;
+  color: white;
+    background-color: #1c0d1d;}
+
     line-height: 2;
 
     & + p {

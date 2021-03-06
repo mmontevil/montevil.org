@@ -67,7 +67,9 @@ isArchive: true
  <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
 </form>
 #}
-<link async rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css"></noscript>
+
 <script  src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js" defer></script>
 
 <style> 
@@ -85,7 +87,7 @@ li.aa-Item div.aa-ItemDescription{color: var(--color-primary-darker-1);}
  .aa-Autocomplete{--color-input-icon: var(--color-darkgrey);
 }
 </style>
-<script type="text/javascript">
+<script >
 
 window.onload = function () {
   algoliasearchNetlify({
