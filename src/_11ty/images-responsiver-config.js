@@ -24,7 +24,8 @@ const runBeforeHook = (image, document) => {
      var newstr2 = parseInt(imageSrc.replace(re, "$1"),10);
      if (image.getAttribute('width') === null && newstr>0) {
            image.setAttribute('width', newstr);
-    image.setAttribute('height', newstr*newstr2/1000);
+    image.setAttribute('height', 
+Math.round(newstr*newstr2/1000));
 
     }
        // https://image.thum.io/get/width/(\d*)/crop/(\d*)/noanimate

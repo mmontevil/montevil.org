@@ -77,15 +77,31 @@ isArchive: true
 li.aa-Item div.aa-ItemDescription{color: var(--color-primary-darker-1);}
  .aa-Autocomplete .aa-Form .aa-InputWrapperPrefix {
  padding-right: 0.5em;}
- .aa-TouchOverlay .aa-TouchFormContainer {
- margin-top: 5.5em;
+ .aa-DetachedOverlay .aa-DetachedContainer {
+ padding-top: 5.5em;
  }
  :root {
  --aa-muted-color: var(--color-primary-lighter-2);
  --aa-background-color: var(--color-primary-lighter-7);
+ 
+  --aa-base-unit: var(--font-size-m);
+ --aa-font-size: var(--font-size-m);
+  --font-size: var(--font-size-m)!important;
+
+ --aa-spacing-factor:1;
+ --aa-spacing:calc(var(--aa-base-unit)*var(--aa-spacing-factor)*1px);
+ --aa-spacing-half:calc(var(--aa-spacing)/2);
+ --aa-icon-size: calc(--aa-base-unit*1.5);
+ --aa-primary-color:#3e34d3;
+ --aa-panel-max-height: 750px!important;
+ --color-source-icon: var(--color-primary)!important;
  }
- .aa-Autocomplete{--color-input-icon: var(--color-darkgrey);
-}
+ .aa-ItemDescription, .aa-ItemHierarchy{font-size: var(--font-size-s)!important;line-height: 1.5!important;}
+ .aa-ItemTitle, .aa-Input, .aa-SubmitButton{font-size: var(--font-size-m)!important;line-height: 1.5!important;}
+.aa-Item, .aa-ItemDescription, .aa-ItemTitle{  padding-bottom: 0.2em!important;}
+ .aa-Autocomplete{--color-input-icon: var(--color-darkgrey);}
+.aa-ItemIcon{margin-right: 0.5em!important;}
+.aa-SubmitIcon{width: auto!important;}
 </style>
 <script >
 

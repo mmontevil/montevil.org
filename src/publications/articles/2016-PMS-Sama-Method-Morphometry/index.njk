@@ -22,7 +22,7 @@ illust: pone.0153022.g002.PNG_L.png
   AMS. The content does not necessarily represent the official views of the funding agencies and the funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
 </p>
 <p class="indent"><strong>Competing interests: </strong>The authors have declared that no competing interests exist.</p>
-<h2 class="sectionHead id=" section1&#x26;#x22; id="introduction">Introduction</h2>
+<h2 class="sectionHead id="introduction">Introduction</h2>
 <p class="indent">
   The past couple of decades have witnessed great progress in optical imaging, computational analysis and modeling of biological systems. In the quest for understanding development in higher organisms, biologists are seeking imaging
   modalities that are increasingly multidimensional by relying on cutting-edge computational approaches to monitor biological phenomena with exceptional resolution, specificity and dimensionality [
@@ -65,7 +65,7 @@ illust: pone.0153022.g002.PNG_L.png
   analysis without human bias).
 </p>
 <h2 class="sectionHead" id="section2">Materials and Methods</h2>
-<h3 class="subsectionHead" id="section1">Description of SAMA</h3>
+<h3 class="subsectionHead" id="section21">Description of SAMA</h3>
 <p class="indent">
   SAMA is a novel method by which epithelial structures grown in 3D cultures can be imaged, reconstructed and analyzed with minimum human intervention and bias. It is a powerful and flexible tool for high-throughput morphological
   and statistical analysis of 3D images. Additionally, we have included an analysis to evaluate the reproducibility of results within and among experimental groups, a critical necessity in biological experiments.
@@ -77,7 +77,7 @@ illust: pone.0153022.g002.PNG_L.png
   compatible with Windows, Mac, and Unix along with downloadable source code. In addition, the website includes detailed technical description of the software with sample images for the user to download and learn how to navigate
   SAMA. Several plugins used in SAMA are available when FIJI is downloaded, while others have to be installed by the user, the details of which are available on the website.
 </p>
-<h3 class="subsectionHead" id="section2">Image processing</h3>
+<h3 class="subsectionHead" id="section22">Image processing</h3>
 <p class="indent">
   A salient requirement in image analysis is to obtain a homogenized image stack in terms of image resolution and luminosity. 3D structures with homogeneous pixel values that are significantly different from the background are
   desirable so that a threshold can be applied for segmentation. However, this is difficult to achieve because acquiring images at low magnifications (20X) often results in pixelated and poorly resolved images, leading to
@@ -102,7 +102,7 @@ illust: pone.0153022.g002.PNG_L.png
   personal computer has, the absence of which may cause the program to fail. With SAMA, users have the freedom to run de-noising or an alternative algorithm based on bilateral filtering as a stand-alone batch process function
   depending on the user’s computer memory (the stand-alone de-noising batch process is included).
 </p>
-<h3 class="subsectionHead" id="section3">User-interface</h3>
+<h3 class="subsectionHead" id="section23">User-interface</h3>
 <p class="indent">
   The SAMA plugin has two main parts—“SAMA-image” and “SAMA-analyze” (<a href="#pone-0153022-g001">Fig 1</a>). SAMA-image allows users to analyze 3D structures in three tiers. Tier 1 is fully automated and is a mandatory step for
   subsequent tiers. Users have a choice to carry out basic morphometrics, complexity (branching analysis) and lumen analysis either simultaneously or individually. Basic morphometric analysis includes counting all the structures
@@ -176,7 +176,7 @@ illust: pone.0153022.g002.PNG_L.png
     <a href="https://doi.org/10.1371/journal.pone.0153022.t001">https://doi.org/10.1371/journal.pone.0153022.t001</a>
   </figcaption>
 </figure>
-<h3 class="subsectionHead" id="section4">Computer generated images</h3>
+<h3 class="subsectionHead" id="section24">Computer generated images</h3>
 <p class="indent">
   In order to validate SAMA, we tested our software on computer generated (CG) stacks (<a href="#ponee0153022es002">S2 Fig</a>). The stacks were generated with 40 ellipsoids, which mimic an image containing 40
   epithelial structures in a z-stack obtained by confocal microscopy of 3D cultures. These CG structures are at random positions, orientation and sizes in the three axes. Lumena are smaller structures constructed
@@ -185,7 +185,7 @@ illust: pone.0153022.g002.PNG_L.png
   differs from C1 because it was made with each structure having only a 50% chance of having a lumen. Condition C4 contains structures with two ellipsoids positioned perpendicularly, to test the ability of SAMA to
   detect structures with a higher complexity. For each condition, we generated six stacks.
 </p>
-<h3 class="subsectionHead" id="section5">Three-dimensional cultures</h3>
+<h3 class="subsectionHead" id="section25">Three-dimensional cultures</h3>
 <p class="indent">
   The epithelial cells and components used in the 3D cultures of the breast used for validation of SAMA have been previously described [<a class="ref-tip" href="#ponee0153022eref011">11</a>]. Briefly, cells were suspended in a final
   volume of 1.5 mL of collagen (1 mg/ml) and poured into 12-well plates (Becton Dickinson). The mixture was allowed to congeal for 30 min at 37°C and 1.5 mL of the CD-FBS or CD-FBS medium containing estradiol alone
@@ -214,13 +214,13 @@ illust: pone.0153022.g002.PNG_L.png
   higher the value of complexity, the more convoluted or branched the structure would be.
 </p>
 <h2 class="sectionHead" id="section3">Results and Discussion</h2>
-<h3 class="subsectionHead" id="section1">Validation by computer generated images</h3>
+<h3 class="subsectionHead" id="section31">Validation by computer generated images</h3>
 <p class="indent">
   To ensure that SAMA is functional, we validated the software using computer generated model images. The model images were constructed to test several analytical functions of SAMA. SAMA provides the expected outputs from our designed
   conditions (<a href="#ponee0153022es002">S2 Fig</a>). The analysis shows that C2 has more elongated structures than C1 (p = 0.002). In C3, there are more structures with lumen (p = 0.016) and overall structures have bigger lumena (p
   = 0.002). Condition C4 has structures that are more complex than C1 for all of our measures of complexity (p&lt;0.026). As a result, SAMA performs as expected in computer generated images.
 </p>
-<h3 class="subsectionHead" id="section2">Biological Validation and Analysis</h3>
+<h3 class="subsectionHead" id="section32">Biological Validation and Analysis</h3>
 <p class="indent">
   To validate SAMA, we used images from a hormone-sensitive 3D culture of the breast [<a class="ref-tip" href="#ponee0153022eref011">11</a>]. We chose to analyze gels that have previously been analyzed using 2D image measurements as
   well as 3D computational modeling and visualization using the commercial software package, Volocity [<a class="ref-tip" href="#ponee0153022eref011">11</a>].
@@ -240,7 +240,7 @@ illust: pone.0153022.g002.PNG_L.png
   reproducible between experiments (<a href="#pone-0153022-g004">Fig 4C</a>). This enables the user to understand variability in 3D morphogenesis that is inevitable in biological experiments and observe how these inconsistencies
   distribute among the experimental groups and replicates.
 </p>
-<h3 class="subsectionHead" id="section3">SAMA versus current software</h3>
+<h3 class="subsectionHead" id="section33">SAMA versus current software</h3>
 <p class="indent">
   Currently, there are several commercial as well as open-source software packages available that combine image acquisition and analysis (<a href="#pone-0153022-t002">Table 2</a>). Among them, Imaris (Bitplane), Volocity
   (Perkin-Elmer), Image-Pro (MediaCybernetics), Amira and Metamorph (Molecular Devices) are examples of commercially available software. CellProfiler [ <a class="ref-tip" href="#ponee0153022eref024">24</a>], V3D [

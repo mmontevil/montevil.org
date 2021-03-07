@@ -1,5 +1,5 @@
 {
   "name": "Montevil website", 
-  "files": [ { "git": 1 } ],
+  "files": [ { "git": 1, "filters": ["*.njk", "*.js", "*.md", "*.txt", "*.scss"] } ],
   "index": true
 }

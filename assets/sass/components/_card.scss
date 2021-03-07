@@ -110,6 +110,7 @@ overflow-x: clip;
     margin-top: var(--skew-padding);
     position: relative;
   }
+
   @media  (hover: hover){
   &:after{
     box-shadow: 0 1px 2px var(--color-primary-lighter-3), 
@@ -123,19 +124,20 @@ overflow-x: clip;
      } 
   &:hover{
       &:after{
-          transition: opacity 0.3s ease-in-out; transition: transform 0.3s ease-in-out;
-          transform:  scale(1, 1);
+          transition: opacity 0.3s ease-in-out; 
+         transition: transform 0.3s ease-in-out;
+          transform:  none;
           opacity: 0.5;
           z-index: 0;
       }
       &:before{
           z-index: 0;
-          transform:  scale(1, 1);
+          transform:  none;
           transition: transform 0.3s ease-in-out;    
       }
       & > *{
           z-index: 1; 
-          transform:  scale(1, 1);
+          transform:  scale(1.025, 1.025);
           transition: transform 0.3s ease-in-out;
       }
   }

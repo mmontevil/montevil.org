@@ -9,7 +9,7 @@ var format = require('rehype-format')
 const sanitizeHtml = require('sanitize-html');
 var link = require('rehype-autolink-headings')
 var options={
-  behavior:"append" ,
+  behavior:"append",
   properties: {class : "deeplink"},
   content : {type: 'text', value: ' <svg class="icon" role="img" focusable="false"><use xlink:href="#symbol-anchor" /></svg> '}
 }
