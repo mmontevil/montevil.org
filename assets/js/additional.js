@@ -175,13 +175,42 @@ if (process.env.NODE_ENV === 'production') {
  * ****************************************************************/
 
 const loadFooter = () => {
-  let backgroundImageWidth = Math.ceil(window.viewport_width / 20) * 20;
-  let limbes = `url('https://res.cloudinary.com/mmontevil/image/fetch/c_limit,f_auto,q_auto,w_${backgroundImageWidth}/https://montevil.org/assets/limbes.jpg')`;
+ var widthem= window.innerWidth / parseFloat(
+  getComputedStyle(
+    document.querySelector('html')
+  )['font-size']
+);
+ 
+  let backgroundImageWidth = Math.ceil(window.viewport_width *2.6/ 20) * 20;
+  if(widthem>40) backgroundImageWidth = Math.ceil(window.viewport_width*1.7 / 20) * 20;
+  if(widthem>80) backgroundImageWidth = Math.ceil(window.viewport_width / 20) * 20;
+  
+  let limbes = `url('https://res.cloudinary.com/mmontevil/image/fetch/c_limit,f_auto,q_auto,w_${backgroundImageWidth}/https://montevil.org/assets/limbes2.jpg')`;
+ /* let limbes = `url('/assets/limbes5.jpg')`;
+
   let footer = window.document.querySelector('#footer');
   footer.style.setProperty('--limbes', limbes);
   footer.style.color = '#fff';
-  let imageRatio = Math.round((670 / 1534) * 100);
-  footer.style.padding = `${imageRatio}vw 0 1em 0`;
+  //let imageRatio = Math.round((670 / 1534) * 100);
+ // let imageRatio = Math.round((581 / 798) * 100);
+  let imageRatio = ((535 / 798) * 100);
+  
+  footer.style.padding = `calc(${imageRatio}vw) 0 1em 0`;
+  footer.style.marginLeft = `auto`;
+  footer.style.marginRight = `auto`;
+footer.style.width = `min(100%, 1200px)`;
+    footer.style.padding = `calc(min(calc(${imageRatio}vw), calc(${imageRatio}*12px))) 0 1em 0`;
+*/
+  //  let limbes = `url('/assets/limbes11.jpg')`;
+
+  let footer = window.document.querySelector('#footer');
+  footer.style.setProperty('--limbes', limbes);
+  footer.style.color = '#fff';
+  //let imageRatio = Math.round((670 / 1534) * 100);
+ // let imageRatio = Math.round((581 / 798) * 100);
+  let imageRatio = ((868 / 900) * 100);
+  
+  footer.style.padding = `calc((868 / (var(--footerW))* 100vw) ) 0 1em 0`;
 };
 
 /*****************************************************************

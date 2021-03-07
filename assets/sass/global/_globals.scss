@@ -14,9 +14,13 @@
   @media (min-width: 40rem) {
      --width: calc(min( var(--layout-max),80vw));
   }
-  
-  
-
+  --footerW: 900;
+  @media (min-width: 40rem) {
+  --footerW: 1600;
+  }
+  @media (min-width: 80rem) {
+  --footerW: 2400;
+  }
     --angle: -5deg;
   --magic-number: 0.035;
   --skew-padding: calc(var(--width) * var(--magic-number));
