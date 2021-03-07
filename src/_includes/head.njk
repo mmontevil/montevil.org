@@ -90,7 +90,8 @@
   {% set srcurl-%}{{-thumbUrl-}}https://montevil.org{{-page.url-}}{%-endset%}
    {% endif %}
   {% set titletemp-%}{{-opengraph.image.title or title-}}{%-endset%}
-  <meta property="og:image" content="{% ogImage titletemp, opengraph.image.tagline, srcurl %}" />
+  {% set tagline-%}{{-opengraph.image.tagline or location.name   or bibentry['container-title']-}}{%-endset%}
+  <meta property="og:image" content="{% ogImage titletemp, tagline, srcurl %}" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   
@@ -147,4 +148,4 @@
   <meta name="generator" content="Eleventy {{ build.version }}" />
 
   </head>
-{#<img src="{% ogImage titletemp, opengraph.image.tagline, srcurl %}" />#}
+{#<img src="{% ogImage titletemp, tagline, srcurl %}" />#}
