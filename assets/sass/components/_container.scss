@@ -47,8 +47,8 @@
   background-color: var(--color-info-bg);
   border-color: #d6c6e9;
 
-  &::before {  font-weight: bold;
-
+  &::before {  
+    font-weight: bold;
     content: "ℹ️";
   }
 

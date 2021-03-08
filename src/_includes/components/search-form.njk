@@ -6,18 +6,11 @@
 </form>
 <script>
   // Make the search form dynamic
-  window
-    .document
-    .getElementById('search')
-    .action = '/search/'
+  window.document.getElementById('search').action = '/search/'
 
   // This hidden field is only for Google fallback when there's no JavaScript
-  var sites = window
-    .document
-    .getElementById('search_sites')
-  sites
-    .parentNode
-    .removeChild(sites)
+  var sites = window.document.getElementById('search_sites')
+  sites.parentNode.removeChild(sites)
 
  
 </script>

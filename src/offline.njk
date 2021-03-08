@@ -30,13 +30,9 @@ links: [],
 tags: []
 };
 
-window
-.caches
-.open("pages")
-.then(cache => {
+window.caches.open("pages").then(cache => {
 return cache.keys();
-})
-.then(requests => {
+}).then(requests => {
 requests.forEach(request => {
   const requestUrl = new URL(request.url);
   const requestPath = requestUrl.pathname;
@@ -58,22 +54,13 @@ function addRequestToList(request, group) {
 const requestUrl = new URL(request.url);
 const requestPath = requestUrl.pathname;
 
-window
-.caches
-.open("pages")
-.then(cache => {
-  cache
-    .match(request)
-    .then(item => {
-      item
-        .text()
-        .then(pageHtml => {
+window.caches.open("pages").then(cache => {
+  cache.match(request).then(item => {
+      item.text().then(pageHtml => {
           let pageDom = document.createElement("html");
           pageDom.innerHTML = pageHtml;
 
-          let pageTitle = pageDom
-            .querySelector("h1")
-            .innerText;
+          let pageTitle = pageDom.querySelector("h1").innerText;
 
           let linkElement = document.createElement("a");
           linkElement.href = request.url;
@@ -91,19 +78,12 @@ window
           // TODO: check this
           if (pageDom.querySelector(".main footer")) {
             let pageMeta = document.createElement("footer");
-            pageMeta.innerHTML = pageDom
-              .querySelector(".main footer")
-              .innerHTML;
+            pageMeta.innerHTML = pageDom.querySelector(".main footer").innerHTML;
             liElement.appendChild(pageMeta);
           }
 
-          document
-            .querySelector("#" + group + " ul")
-            .appendChild(liElement);
-          document
-            .getElementById(group)
-            .classList
-            .remove("hidden");
+          document.querySelector("#" + group + " ul").appendChild(liElement);
+          document.getElementById(group).classList.remove("hidden");
         });
     });
 });

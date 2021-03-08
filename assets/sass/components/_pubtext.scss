@@ -136,18 +136,20 @@ span.smallcaps, .small-caps,.textsc{
 
 .cmti-10,.ecti-1000,.rm-lmri-9,.Emphasis,.ecti-1000, .textit{font-style: italic;}
 
-//.Footnote_20_anchor, 
-.superLegacy,.textsuperscript { 
+.Footnote_20_anchor, //.Footnote_20,
+.superLegacy,.textsuperscript , sup{ 
  // vertical-align: super; 
   //font-size:58%;
 font-size: 75%;
 line-height: 0;
 position: relative;
-vertical-align: baseline;
+vertical-align: super;
+padding-top: 0.05em;
 }
+.footnotes .textsuperscript{vertical-align: baseline;}
 .superLegacyIt { 
   vertical-align: super; 
-  font-size:58%;
+  font-size:75%;
   font-style: italic;
 }
 .subLegacy { 

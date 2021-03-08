@@ -1,7 +1,7 @@
 {% macro card(type = false, lang = 'en', surtitle = false,subtitle = false, title = false, url = false, illustration = false, content = false, meta = false) %}
   <li class="card-list__item">
     <article class="wrap card {{ type or '' }} h-entry" lang="{{ lang }}">
-      {% if illustration.src %}{% if not (""== illustration.src )  %}
+      {% if illustration.src %}{% if not (""== illustration.src)  %}
         <img
           alt="{{ illustration.alt }}"
        {#   width="{{ illustration.width }}"

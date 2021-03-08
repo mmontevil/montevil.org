@@ -21,15 +21,24 @@
     margin-block-start: 0em;
     margin-block-end: 0em;
 
-  a {   
-    &.tag1{color: var(--color-primary-darker-5);}
-  &.tag2{color: var(--color-primary-darker-4);}
-  &.tag3{color: var(--color-primary-darker-3);}
-  &.tag4{color: var(--color-primary-darker-2);}
-        &.tag5{color: var(--color-primary-darker-1);}
-  &.tag6{color: var(--color-primary);}
-  &.tag7{color: var(--color-primary-lighter-1  );}
-  &.tag8{color: var(--color-primary-lighter-2  );}
+  a {transition: transform,color .2s;
+    padding: 0.1em; padding-left: 0.3em;   padding-right: 0.3em;   
+    &.tag1{color: var(--color-primary-darker-5);
+      &:hover,&:focus{background-color:   var(--color-primary-darker-5);}}
+  &.tag2{color: var(--color-primary-darker-4);
+      &:hover,&:focus{background-color:   var(--color-primary-darker-4);}}
+  &.tag3{color: var(--color-primary-darker-3);
+      &:hover,&:focus{background-color:   var(--color-primary-darker-3);}}
+  &.tag4{color: var(--color-primary-darker-2);
+      &:hover,&:focus{background-color:   var(--color-primary-darker-2);}}
+        &.tag5{color: var(--color-primary-darker-1);
+      &:hover,&:focus{background-color:   var(--color-primary-darker-1);}}
+  &.tag6{color: var(--color-primary);
+      &:hover,&:focus{background-color:   var(--color-primary);}}
+  &.tag7{color: var(--color-primary-lighter-1  );
+      &:hover,&:focus{background-color:   var(--color-primary-lighter-1);}}
+  &.tag8{color: var(--color-primary-lighter-2  );
+      &:hover,&:focus{background-color:   var(--color-primary-lighter-2);}}
 
     &:link,
     &:visited {
@@ -49,9 +58,11 @@
     &:focus,
     &:active {
       color: var(--color-link-hover);
-      background-color: transparent;
-      animation: neon6 1s ease-in-out infinite alternate;
-        }}
+     // background-color: currentcolor;
+    // animation: neon6 1.5s ease-in-out infinite alternate;
+       transform: scale(1.1,1.1);
+      
+    }}
     &:after {white-space: nowrap;
         content: " (" attr(data-number) ")";
         font-size: 1rem;
