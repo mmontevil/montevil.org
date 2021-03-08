@@ -60,12 +60,6 @@
   // --layout-max: calc(50 * var(--font-size-m));
   --layout-max: 60rem;
 
-  // Color ingredients
-  --hue: 322;
-  --sat: 60%;
-  --sat-step: 4%;
-  --lum: 40%;
-  --lum-step: 7%;
 
   // Colors
   // Rebecca Purple:
@@ -116,6 +110,7 @@
     --color-primary-shine: var(--color-primary-lighter-1);
 --color-primary-shine2: var(--color-primary-lighter-2);
 --color-primary-shine-font: white;
+--color-info-bg: #dfd8f0;
 
 // ************************************************************
 // Colors palette
@@ -149,6 +144,8 @@
   --soft-shadow: rgba(255,255,255,0.075);
 --color-link-hoveralt: white;
 --color-emph: #00ff00;
+--color-info-bg: #302f34;
+
 --color-primary-darker-7: #f8ebf2;
 --color-primary-darker-6: #f2e0ea;
 --color-primary-darker-5: #edd5e3;

@@ -412,7 +412,11 @@ img.border {
   display: block;
   margin: var(--gap) auto;
 }
-
+.inlineLogo {
+  vertical-align: text-top;
+  display: inline-block;
+  height: 1em;
+}
 .portrait {
   --wobble-min: 50%;
   --wobble-max: 100%;
@@ -701,15 +705,21 @@ article h6 {
     --flow-space: calc(1ex / 0.34) ;
 }
 
+
   p, ol, ul,dl,li,dt{  
 
     line-height: calc(1ex / 0.32);
     --flow-space: calc(1ex / 0.32) ;
-
   }
-  li,dt,li>p,dd>p, h3 +*, h2 +*{  
+
+  
+  ol, ul,dl,  li,dt,li>p,dd>p, h3 +*, h2 +*{  
     --flow-space: calc(0.5ex / 0.32) ;
   }
+  .page__body {  &> ol, &>ul, &>dl{
+    --flow-space: calc(0.5ex / 0.32) ;
+  }}
+  
   h1 +h2, h2 +h3 , h3 +h4 ,h4 +h5 , h5 +h6 {    
       --flow-space: calc(0.5ex / 0.32) ;
   }

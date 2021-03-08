@@ -36,26 +36,27 @@
   & a:hover,
   & a:focus,
   & a:active {
- //   color: #fff;
+    color: var(--color-link-hover);;
     background-color: var(--color-link-hover-bg);
     text-decoration: var(--color-link-hover-decoration);
   }
 }
 
 .info {
-  color: #3c3d76;
-  background-color: #dfd8f0;
+  color: var(--color-primary-darker-5);
+  background-color: var(--color-info-bg);
   border-color: #d6c6e9;
 
-  &::before {
-    content: url(/assets/icons/info.svg);
+  &::before {  font-weight: bold;
+
+    content: "ℹ️";
   }
 
-  a:link,
+/*  a:link,
   a:visited {
     color: #2b2c54;
     text-decoration-color: #2b2c54;
-  }
+  }*/
 }
 
 .success {

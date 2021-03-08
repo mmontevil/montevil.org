@@ -59,12 +59,21 @@ https://developers.google.com/search/docs/data-types/breadcrumbs
   {% if layout == 'link' and authors %}
     <p class="page__surtitle">{{ authors.html | safe }}</p>
   {% endif %}
+  
 
+  
   {% if layout == 'note' %}
     <h1 class="page__title p-name">Note from {{ page.date | formattedDate }}</h1>
   {% else %}
     <h1 class="page__title p-name">{{ title | orphans | safe }}</h1>
   {% endif %}
+  
+  {% if layout == 'publication' and bibentry['container-title'] %}
+    <p class="page__subtitle">{{ bibentry['container-title'] | safe }}</p>
+  {% endif %}
+  {#{% if layout == 'talk' and entry['container-title'] %}
+    <p class="page__subtitle">{{ entry['container-title'] | safe }}</p>
+  {% endif %}#}
 
   {% set item = {
         date: date,

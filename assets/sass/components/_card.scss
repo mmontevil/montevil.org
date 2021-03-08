@@ -55,7 +55,10 @@ img.card__illustration {
   margin-top: 0;
   color: var(--color-darkgrey);
 }
-
+.card__subtitle { font-size: var(--font-size-l);
+  margin-top: 0;
+  color: var(--color-primary);
+}
 .card__title {
     scroll-snap-align: none; 
   margin-top: 0;
@@ -63,7 +66,7 @@ img.card__illustration {
   font-weight: bold;
   letter-spacing: -0.02em;
 
-  .card__surtitle + & {
+  .card__surtitle + &, .card__subtitle + &{
     margin-top: 0;
   }
 }

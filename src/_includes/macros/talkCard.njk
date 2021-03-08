@@ -4,6 +4,9 @@
 {% macro talkCard(talk) %}
 
 
+  {% if talk.data.entry['container-title'] -%}
+  {% set subtitleoff -%} <i>{{talk.data.entry['container-title']}}</i> {%-endset%}
+{% endif %}
 
   {% set content %}
 {{- talk.templateContent | excerpt | truncateHtml (300) | safe -}}
@@ -22,6 +25,7 @@
     type = 'talk',
     lang = talk.data.lang,
     title = talk.data.title,
+    subtitle=subtitle,
     url = talk.url,
     illustration = talk.data.illustration,
     content = content,

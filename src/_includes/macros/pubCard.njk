@@ -30,6 +30,11 @@
   } %}
 {% endif %}
 
+  {% if article.data.bibentry['container-title'] -%}
+  {% set subtitle -%} <i>{{article.data.bibentry['container-title']}}</i> {%-endset%}
+{% endif %}
+
+
   {% set content %}
   {% if article.data.excerpt %}
     <p class="card__body p-summary">  {{article.data.excerpt}}   </p> 
@@ -52,11 +57,6 @@
   </div>{% endif %}
 </div>
  
-
-  
-
-
-     
   {% endset %}
 
   {% set meta %}
@@ -65,6 +65,7 @@
 
   {{ card(
     type = 'article',
+    subtitle =subtitle,
     lang = article.data.lang,
     title = article.data.title,
     url = article.url,

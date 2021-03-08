@@ -1,4 +1,4 @@
-{% macro card(type = false, lang = 'en', surtitle = false, title = false, url = false, illustration = false, content = false, meta = false) %}
+{% macro card(type = false, lang = 'en', surtitle = false,subtitle = false, title = false, url = false, illustration = false, content = false, meta = false) %}
   <li class="card-list__item">
     <article class="wrap card {{ type or '' }} h-entry" lang="{{ lang }}">
       {% if illustration.src %}{% if not (""== illustration.src )  %}
@@ -17,6 +17,9 @@
         <h3 class="card__title p-name">
           <a href="{{ url }}" hreflang="{{ lang }}" class="u-url">{{ title | orphans | safe }}</a>
         </h3>
+      {% endif %}
+      {% if subtitle %}
+        <p class="card__subtitle">{{ subtitle | safe }}</p>
       {% endif %}
       {% if meta %}
         {{ meta | safe }}

@@ -12,13 +12,22 @@
 }
 
 .page__surtitle {
-  color: colors.$color-darkgrey;
+  color: var(--color-darkgrey);
   font-size: var(--font-size-m);
 
   & + .page__title {
     margin-top: 0;
   }
 }
+.page__subtitle {--flow-space: 0.5em;
+  color: var(--color-primary);
+  font-size: var(--font-size-l);
+margin-top: 0;
+  & + * {--flow-space: 0em;
+    
+  }
+}
+
 
 .page__illustration {
   margin-top: 0;

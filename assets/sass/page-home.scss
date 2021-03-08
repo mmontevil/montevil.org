@@ -1,6 +1,7 @@
 @use 'global/utilities';
 
-.welcome {
+.welcome {    --flow-space: 0;
+
   @extend %clearfix;
   @extend %flow;
 
