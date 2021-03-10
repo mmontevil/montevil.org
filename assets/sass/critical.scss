@@ -182,7 +182,7 @@ h5 +h6 {
 // https://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states/
 // ************************************************************
 
-a {
+a {transition: all .2s;
   &:link,
   &:visited {
     color: var(--color-link);
@@ -360,7 +360,7 @@ img {
   }
 
   &.onethird {
-    @extend .right;
+    //@extend .right;
 
     max-width: 50%;
 
@@ -384,18 +384,18 @@ img {
     }
   }
 
-  &.left {
+  &.left {display: block;
     margin: var(--gap) auto;
-
+@media (max-width: 20em) {max-width: 100%;}
     @media (min-width: 20em) {
       float: left;
       margin: 0 var(--gap) var(--gap) 0;
     }
   }
 
-  &.right {
+  &.right {display: block;
     margin: var(--gap) auto;
-
+@media (max-width: 20em) {max-width: 100%;}
     @media (min-width: 20em) {
       float: right;
       margin: 0 0 var(--gap) var(--gap);
@@ -470,7 +470,11 @@ ol {
 
 
 
-hr {color: var(--color-grey);}
+hr {border-color: var(--color-grey);
+  @media (min-width: 30em) {
+  margin-left: -1em;
+   margin-right: -1em;
+}}
 
 
 
@@ -501,6 +505,7 @@ td {
   padding: 0.3em 0.5em;
   border: 1px solid #ccc;
   vertical-align: top;
+  min-width: 3em;
 }
 
 // ************************************************************
@@ -744,3 +749,105 @@ mjx-mtable{min-width: auto!important; }
 mjx-mspace{width: 0!important; }
 
 .snapper{ scroll-snap-align: start; }
+
+
+
+
+
+
+ ul.snake {--flow-space: var(--gap);
+   padding: 0; 
+}
+
+.snake  li:after{
+   content: "";
+   display: block;
+   clear: both;
+}
+   
+.snake  li:not(.nosnake)  {
+  list-style: none;
+  border-top: 3px solid;
+ // border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+    border-image: linear-gradient(to right, #eb95cb 0%, #691449 100%);
+  border-image-slice: 1;
+  border-width: 3px;
+  margin: 0;
+  padding: 3em;
+   padding-left: 1.5em ;
+  padding-right: 1.5em; 
+  @media (min-width: 40rem) {
+    padding-left: 3em;
+  padding-right: 3em;
+  }
+ 
+  position: relative;
+ // color: black;
+  
+  //numbers
+  &:before{
+    content: attr(data-date);
+    position: absolute;
+    border-radius: 50%;
+    padding: 0em;
+    height: 1.5em;
+    width: 3em;
+    background-color: var(--color-primary-darker-4);
+    text-align: center;
+    color: var(--color-primary-lighter-8);
+    z-index: 1;
+  }
+}
+//odd number borders
+
+.snake li:not(.nosnake):nth-child(odd) {
+  border-right: 3px solid;
+  padding-left: 0;
+  
+  &:before {
+    top: 100%; 
+   // margin-left: -0.7em;
+    left: 25%; 
+    margin-top: -0.7em;
+  }
+}
+//even number borders
+.snake li:not(.nosnake):nth-child(even) {
+  border-left: 3px solid;
+  padding-right: 0;
+  
+  &:before {
+    top: 100%; 
+    left: 65%;
+    margin-top: -0.7em;
+  }
+}
+//handle first and last
+.snake li:not(.nosnake):first-child {
+  border-top: 0;
+  border-top-right-radius:0;
+  border-top-left-radius:0;
+  &:after{
+    content: " ";
+    position: absolute;
+    border-radius: 0%;
+    height: 0.75em;
+    width: 0.75em;
+    background-color: #691449;
+    margin-left: -0.35em;
+    z-index: 1;
+    top: 0%; 
+    left: 100%;
+    transform: rotate(45deg);
+  }
+}
+
+.snake li:not(.nosnake):last-child {
+  &:before {left: 0%;}
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:0;
+  border-bottom: 3px solid;
+}
+
+.invertwrapper a {&:link,&:visited{ color: black; text-decoration: none;}&:hover{ color: white; background-color: #691449;}}
+.invertwrapper{position: absolute; heigth: 100vh; width: 100vw;  top: 5em;right:0;}

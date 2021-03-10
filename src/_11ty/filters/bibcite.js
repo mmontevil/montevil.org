@@ -38,7 +38,7 @@ module.exports =  {
             lang: 'en-US'
         })
          },     
-        bibcite2: (bibfi) => {
+        bibcite3: (bibfi) => {
                   const cite =new Cite(JSON.stringify(bibfi));
      return linkifyUrls(cite.format('bibliography', {
             format: 'html',
@@ -46,5 +46,19 @@ module.exports =  {
             lang: 'en-US'
         }))
          },        
-                 
+               bibcite2: (bibfi) => {
+                  const cite =new Cite(JSON.stringify(bibfi));
+     var res= cite.format('bibliography', {
+            format: 'html',
+            template: templateName,
+            lang: 'en-US'
+        });
+         var reg = new RegExp('(http.*)<', 'gi');
+        res=res.replace(reg, '<a href=\"$1\">$1</a><');
+          return res;
+         },           
 };
+
+
+//    var find2 =find.replace(/[-[\]{}()*+?.,\\^$|]/g, "\s*.*");
+ // var reg0 = new RegExp('('+find2+')', 'gi');

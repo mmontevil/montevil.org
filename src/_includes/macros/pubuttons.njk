@@ -4,6 +4,9 @@
 {% if item.hasPDF%}
 <a  href="{{item.pdfout}}" class="buttonlink ">{% icon "pdf", "PDF" %} Manuscript </a> 
 {% endif%}
+{% if item.hasSup%}
+<a  href="{{item.pdfoutSup}}" class="buttonlink ">{% icon "pdf", "PDF" %} Supplementary </a> 
+{% endif%}
    <a href="{{item.bibout}}" class="buttonlink ">{% icon "bib", "BIB" %} Citation  </a>
    {% if not  (item.bibentry.DOI === undefined) %}
 <a href="https://dx.doi.org/{{item.bibentry.DOI}}" class="buttonlink  svgnofill">{% icon "exlink", "Link" %} Publisher </a> 

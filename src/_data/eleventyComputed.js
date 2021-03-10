@@ -295,7 +295,15 @@ module.exports = {
     title: (data) => data.titlePrefix? data.titlePrefix+(data.bibentry.title || data.title) : (data.bibentry.title || data.title),
   tags: (data) => tags(data),
   //  tags2: (data) => tags(data),
-  category:(data) => data.category ? (data.video ? [data.category,"video"].flat() :data.category)  : [],
+  category:(data) => {
+    var res=data.category ? data.category : [] ;
+    res=(data.video ? [res,"video"].flat() : res); 
+    if(res.includes('talks')){
+      res=data.entry.type=="book" ? [res,"events"].flat() : res; 
+      res=(data.bibentryconf && data.bibentryconf.fields && data.bibentryconf.fields.eventtype && data.bibentryconf.fields.eventtype =="media")? [res,"media"].flat() : res; 
+    }
+    return res;
+  },
   colKey: {
     lang: (data) => data.lang,
     date:(data) => data.orderDate,

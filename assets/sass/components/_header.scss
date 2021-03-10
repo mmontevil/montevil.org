@@ -1,4 +1,7 @@
 #header {
+ position: sticky;
+    left: 0;
+    width: min(100%,100vw);
   white-space: nowrap;
   font-size: var(--font-size-l);
   margin: 0;

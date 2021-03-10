@@ -160,10 +160,14 @@
 --color-primary-lighter-4: #75495f;
 --color-primary-lighter-5: #5a3648;
 --color-primary-lighter-6: #3c242e;
---color-primary-lighter-7: #1e1216;
+//--color-primary-lighter-7: #1e1216;
 //--color-primary-lighter-7b: #fdf0f5;
---color-primary-lighter-8: #180818;//#fff2f7
+///--color-primary-lighter-8: #180818;//#fff2f7
+--color-primary-lighter-6: #4b2d3c;
+--color-primary-lighter-7: #362029;
+--color-primary-lighter-8: #1e1216;
 --color-primary-lighter-9: #130713;
+
   // Persimmon:
   //   https://en.wikipedia.org/wiki/Shades_of_orange#Persimmon
 --color-secondary: #40dc2e;
@@ -175,11 +179,11 @@
   
   --color-link: var(--color-primary);
   --color-link-bg: inherit;
-  --color-link-decoration: var(--color-primary-lighter-6);
+  --color-link-decoration: var(--color-primary-lighter-4);
 
   --color-link-hover: black;
   --color-link-hover-bg: var(--color-primary);
-  --color-link-hover-decoration: none;
+  --color-link-hover-decoration: var(--color-primary);
 
   --color-meta: #b3b3b3;
   --color-meta-decoration: #666666;
@@ -210,12 +214,13 @@
 --inline-code-text-color: #abb2bf;
 --color-grad:0%;
 --svg-hover:'%23000';
-    img {
+    img, .invertwrapper{
     filter: hue-rotate(180deg) invert(100%);
-    
   }
-#footer {
-    filter: hue-rotate(180deg) invert(100%) grayscale(0.5);
+   .invertwrapper img {filter: none;}
+   
+#footer{
+    filter: hue-rotate(180deg) invert(100%) ;
   }
   .noDarkFilter {
     filter: none;

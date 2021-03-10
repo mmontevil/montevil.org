@@ -74,7 +74,7 @@ const promotedNb = 3;
   
 ['all','fr', 'en'].forEach(
   (lang) => {
-['publications','posts', 'links', 'notes', 'talks', 'archives','chapters','articles','varia','books','SamaDocs','video'].forEach(
+['publications','posts', 'links', 'notes', 'talks', 'archives','chapters','articles','varia','books','SamaDocs','video','events', 'media'].forEach(
   (collectionName) => {
     // collections for yearly archives
     collections[`${collectionName}${lang}ByYear`] = (collection) => {

@@ -177,6 +177,7 @@
             "language": "fr",
             "illustration": "bifurquer.png",
             "day": "14",
+            "eventtype": "media",
             "author": "A. Alombert and V. Chaix and M. Montévil",
             "title": "'Bifurquer' (Ed. LLL) de Bernard Stiegler et le collectif Internation."
         }
@@ -194,6 +195,7 @@
             "url": "https://www.rtbf.be/auvio/detail_au-bout-du-jour?id=2705708",
             "language": "fr",
             "illustration": "bifurquer.png",
+            "eventtype": "media",
             "author": " A. Alombert and M. Montévil",
             "title": "Interview par Eddy Caekelberghs"
         }
@@ -203,7 +205,7 @@
         "entrytype": "article",
         "entrykey": "lemonde2020",
         "fields": {
-            "journal": "Le monde",
+            "journal": "Le Monde",
             "year": "2020",
             "month": "5",
             "note": "Interview",
@@ -212,6 +214,7 @@
             "illustration": "1920px-Le_Monde.png",
             "illustrationclass": "viclass",
             "day": "22",
+            "eventtype": "media",
             "author": "Stéphane Foucart",
             "title": "Le bisphénol A produit des effets délétères même à très faibles doses"
         }
@@ -221,7 +224,7 @@
         "entrytype": "article",
         "entrykey": "lemonde2021",
         "fields": {
-            "journal": "Le monde",
+            "journal": "Le Monde",
             "year": "2021",
             "month": "2",
             "day": "4",
@@ -230,24 +233,9 @@
             "language": "fr",
             "illustration": "1920px-Le_Monde.png",
             "illustrationclass": "viclass",
+            "eventtype": "media",
             "author": "Stéphane Foucart and Stéphane Horel",
             "title": "L’EFSA minimise certains effets des perturbateurs endocriniens"
-        }
-    },
-    {
-        "objecttype": "entry",
-        "entrytype": "book",
-        "entrykey": "ED2020",
-        "fields": {
-            "year": "2020",
-            "month": "5",
-            "location": "IHPST, Paris, France",
-            "program": "2020-abstractEDC.pdf",
-            "abstract": " Anthropogenic effects on the living are widely described as “disruptions”. For example, climate change disrupts ecosystem interactions by random changes in seasonal activity periods, leading to bird hatching before their prey or pollinators starting their activity before plant flowering. Despite these uses and the importance of the subject, the notion of disruption has not been conceptualized and theorized in biology. In general, we hypothesize that history brings about specific situations that have a biological meaning because of this specificity, and disruptions destroy the specificity of such situations and the corresponding contribution to an organization. <br> Then, a proper concept of disruption needs to articulate (i) the analysis of a system or organization at a given time and (ii) the historical origin of this organization. A critical domain where the use of the notion of disruption has been discussed is physiology and developmental biology. Since the Wingspread conference in 1991, endocrine disruptors are an active field of research and concern for public health. This workshop aims to discuss the notion of disruption in the context of endocrine disruptors. In this domain, historicity has multiple components: the historicity of evolution and development, and also the history leading to the technological lineages of the molecules that are endocrine disruptors.",
-            "illustration": "disrupt.png",
-            "day": "20",
-            "author": "M. Montévil",
-            "title": "Journée d'étude : What does it mean for chemicals to be endocrine disruptors?"
         }
     },
     {
@@ -706,6 +694,7 @@
             "language": "fr",
             "url": "https://iscpif.fr/evenements/la-medecine-au-chevet-de-lia-medicale-necessite-dun-fondement-theorique-du-vivant-pour-aborder-les-nouvelles-technologies-de-maniere-rationnelle/",
             "abstract": "Avec l’arrivée des algorithmes en médecine, il y a deux voies possibles. Certains pensent que l’on peut automatiser l’essentiel de la pratique médicale et dans ce cas le médecin deviendra subordonné à la machine. La médecine par la preuve ouvre déjà cette voie en standardisant la décision médicale, même si cette automatisation ne passe pas par une machine. L’alternative consiste à redonner une centralité à l’analyse du médecin et à subordonner l’automatisation et la modélisation à son regard critique. <br> La biologie théorique permet de trancher entre ces deux options et nous conduit à promouvoir la seconde. Pour le comprendre on peut introduire brièvement la question des normes biologiques. Avant la théorie de l’évolution, la théologie naturelle posait l’existence d’un ordre naturel dont les normes, statiques, étaient données par Dieu. À l’opposé, la théorie de l’évolution pose que les normes des organismes ne sont pas statiques et changent au cours du temps. Si l’on raisonne avec des normes fixes, comme dans le cadre de la théologie naturelle, les statistiques sont adéquates pour révéler les normes biologiques. À l’opposé, dans le cadre de l’évolution, le vivant se caractérise par la production de nouvelles normes qui demandent à être analysées dans leurs singularités. Alors, il semble bien que l’analyse statistique, y compris dans sa version sophistiquée sous forme d’IA, soit nécessairement incomplète pour l’analyse des organismes vivants et de la diversité de leurs organisations. Les statistiques ne peuvent donc pas remplacer le jugement du médecin confronté à un individu et ses particularités. <br> Cette brève discussion illustre le fait que l’utilisation rationnelle des moyens numériques ne saurait se passer d’une élaboration théorique en amont. Dans cette rencontre nous allons présenter ces idées et des méthodes pour appréhender les organisations biologiques dans leur complexité.",
+            "day": "29",
             "author": " M. Montévil",
             "title": "Approche théorique des organismes pour la médecine"
         }
@@ -1246,23 +1235,6 @@
             "day": "4",
             "author": " M. Montévil and A. Soto",
             "title": "Theoretical approach of duct morphogenesis"
-        }
-    },
-    {
-        "objecttype": "entry",
-        "entrytype": "inproceedings",
-        "entrykey": "div_2015",
-        "fields": {
-            "booktitle": "Approches théoriques et modélisation de la diversité biologique et résilience dynamique des systèmes complexes organisés multi-échelles : du système immunitaire aux macro-écosystèmes.",
-            "year": "2015",
-            "month": "10",
-            "location": "ISC Paris, France",
-            "day": "12",
-            "url": "https://iscpif.fr/events-archive/approches-theoriques-et-modelisation-de-la-diversite-biologique-et-resilience-dynamique-des-systemes-complexes-organises-multi-echelles-du-systeme-immunitaire-aux-macro-ecosystemes/",
-            "program": "150917 programme colloque biodiversité resilience.pdf",
-            "language": "fr",
-            "author": " M. Montévil",
-            "title": "Historicity and organization"
         }
     },
     {
@@ -1846,6 +1818,180 @@
             "author": "Pocheville, Arnaud and Montévil, Maël",
             "month": "12",
             "year": "2009"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "div_2015",
+        "fields": {
+            "booktitle": "Colloque Biodiversity Resilience",
+            "year": "2015",
+            "month": "10",
+            "location": "ISC Paris, France",
+            "day": "12",
+            "url": "https://iscpif.fr/events-archive/approches-theoriques-et-modelisation-de-la-diversite-biologique-et-resilience-dynamique-des-systemes-complexes-organises-multi-echelles-du-systeme-immunitaire-aux-macro-ecosystemes/",
+            "program": "150917 programme colloque biodiversité resilience.pdf",
+            "language": "fr",
+            "abstract": "We argue that a theory of biological systems should rely on organization and variation as fundamental theoretical principles. Biological systems are organized natural systems that undergo functional variation. In this presentation we will provide a specific characterization of each principle while emphasizing their mutual relations. Organization provides the relevant kind of complexity for functional variation occur; and, in turn, variation enables the maintenance of organization over time, notably at the evolutionary scale.",
+            "author": " M. Montévil",
+            "title": "Historicity and organization"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "proceedings",
+        "entrykey": "enmi_2020org",
+        "fields": {
+            "title": "Entretiens du Nouveau Monde Industriel 2020 : prendre soin de l'informatique et des générations.",
+            "year": "2020",
+            "month": "12",
+            "location": "Centre Pompidou, Paris, France",
+            "url": "https://enmi-conf.org/wp/enmi20/",
+            "abstract": "Avant son décès le 5 août 2020, Bernard Stiegler avait projeté l’organisation des Entretiens du Nouveau Monde Industriel 2020 autour des questions de l’informatique et des générations. Lors de ce colloque, nous prolongerons le travail amorcé autour de ces questions, en nous appuyant sur les textes de Bernard Stiegler et sur les travaux des intervenants.",
+            "video": "https://iri-ressources.org/collections/season-64.html",
+            "day": "22",
+            "language": "fr",
+            "illustration": "banner_ENMI_logo_2020.jpg",
+            "author": " Anne Alombert and Victor Chaix and Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "proceedings",
+        "entrykey": "ED2020",
+        "fields": {
+            "year": "2020",
+            "month": "5",
+            "location": "IHPST, Paris, France",
+            "program": "2020-abstractEDC.pdf",
+            "abstract": " Since the Wingspread conference in 1991, endocrine disruptors are an active field of research and concern for public health. This workshop aims to discuss the notion of disruption in the context of endocrine disruptors.",
+            "illustration": "disrupt.png",
+            "day": "20",
+            "author": "M. Montévil",
+            "title": "Workshop: What does it mean for chemicals to be endocrine disruptors?"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "proceedings",
+        "entrykey": "div_2015col",
+        "fields": {
+            "title": "Colloque: Biodiversity Resilience",
+            "year": "2015",
+            "month": "10",
+            "location": "ISC Paris, France",
+            "day": "12",
+            "url": "https://iscpif.fr/events-archive/approches-theoriques-et-modelisation-de-la-diversite-biologique-et-resilience-dynamique-des-systemes-complexes-organises-multi-echelles-du-systeme-immunitaire-aux-macro-ecosystemes/",
+            "program": "150917 programme colloque biodiversité resilience.pdf",
+            "language": "fr",
+            "abstract": " La relation entre biodiversité, variabilité, adaptabilité et résilience des systèmes vivants, soumis aux perturbations imprédictibles caractéristiques des systèmes complexes, quelles que soient leurs échelles, doit être questionnée, même en l’absence de mécanismes causalistes identifiables. La rencontre interdisciplinaires entre biologistes, immunologistes, écologues, philosophes, mathématiciens, physiciens, informaticiens permettra l’étude des concepts de diversité et de variabilité dans le vivant adaptatif et de leurs rôles dans la résilience des systèmes vivants multi-échelles et organisés. <br> Le système immunitaire adaptatif en cognition de l’environnement moléculaire des êtres vivants a co-évolué pour permettre la tolérance ou destruction de tissus et du microbiote et présente une biodiversité cellulaire et moléculaire exceptionnelle. Ces systèmes représentent des modèles d’étude de l’organisation et variation de systèmes dynamiques multi-échelles tout comme les écosystèmes macroscopiques. Il s’agira donc à travers les échelles des systèmes étudiés d’établir les modalités de synergie entre biodiversité et résilience ou robustesse.",
+            "author": " Véronique Thomas-Vaslin and Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "proceedings",
+        "entrykey": "ias_2014col",
+        "fields": {
+            "title": "IAS-IHPST Workshop: Boundaries and levels of biological organization",
+            "year": "2014",
+            "month": "7",
+            "location": " Universidad del Pais Vasco (EHU/UPV) Campus de Guipuzkoa",
+            "day": "1",
+            "url": "https://ias-ihpst.ias-research.net/",
+            "program": "IAS-IHPST-Program.pdf",
+            "language": "en",
+            "abstract": "The workshop will discuss the notion of biological organization from a systemic- perspective. In particular it will focus on its intrinsic hierarchical dimension, and on the role organization plays in the understanding of the transition from pre-biotic to minimal living systems and of more complex forms of biological, cognitive and ecological systems.",
+            "author": "Leonardo Bich and Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "proceedings",
+        "entrykey": "soin_2018",
+        "fields": {
+            "title": "Colloque: Une économie contributive dans une société du soin",
+            "year": "2018",
+            "month": "3",
+            "location": "MSH Paris Nord, Saint-Denis, France",
+            "day": "13",
+            "url": "https://recherchecontributive.org/528/",
+            "program": "programme-eco-soin-mars-2018.pdf",
+            "language": "fr",
+            "abstract": "Face à l’automatisation de l’emploi et à la numérisation de l’économie, comment mettre le numérique au service d’une nouvelle économie locale, durable et contributive, en y associant une réflexion plus large prenant en compte l’éducation, le vivre-ensemble et l’urbanité ?",
+            "video": "https://iri-ressources.org/collections/collection-45.html",
+            "illustration": "flyer-eco-2018.png",
+            "author": " Plaine Commune and Maison des Sciences de l'Homme Paris Nord and Institut de Recherche et d'Innovation and Ars Industrialis"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "proceedings",
+        "entrykey": "cardano_2018col",
+        "fields": {
+            "title": "Rencontre Cardano: Transitions et crises : mathématiques, finance, écosystèmes",
+            "year": "2018",
+            "month": "5",
+            "location": "ÉNS, Paris, France",
+            "day": "28",
+            "url": "https://republique-des-savoirs.fr/events/event/rencontre-cardano/",
+            "program": "Mai-28-2018-Affiche-Transitions-et-crises.pdf",
+            "language": "fr",
+            "abstract": "Nous vous invitons à une seconde rencontre du groupe Cardano. Dans le contexte de l’anthropocène, il nous semble particulièrement utile d’interroger le rôle des mathématiques. Entre la toxicité propre aux produits chimiques non régulés et l’utilisation des mathématiques dans les marchés financiers, on réfléchira également au rôle de ces dernières pour appréhender la soutenabilité des transitions en cours.",
+            "illustration": "cardano-2018.png",
+            "author": "Cardano Group"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "proceedings",
+        "entrykey": "cardano_2018col2",
+        "fields": {
+            "title": "Symposium: The science of systems and life: alternative philosophies, new mathematics",
+            "year": "2018",
+            "month": "10",
+            "location": "ETH, Zurich, Switzerland",
+            "day": "26",
+            "url": "https://infoclio.ch/fr/symposium-science-systems-and-life-alternative-philosophies-new-mathematics",
+            "program": "Flyer_Smyp_Oct26_cor.pdf",
+            "language": "en",
+            "abstract": "We are a group of mathematicians who denounce a mathematization of the world oriented towards purely quantitative analyses and reductionism, rather than invention and construction of understanding. The prevailing use of mathematics as a search for “optimal paths” in economy, biology and general human activities supposes a pre-given universe of possibilities and is suitable for control more than for knowledge construction and a common action. Sometimes, researchers even claim that “computer programs” run organisms’ development and animal or human behavior. <br> We are instead interested in the historical emergence of meaning in changing spaces of possibilities as well as in the production of sense in science and in the personal activity of the researcher. Our current work focuses on historicity, organicity and contextuality of life; on the role of interpretation and meaning in the process of vision; on the importance of interpretation in the applications of mathematics and of a committed analysis of future projections in areas such as finance and ecology. <br> In 2017, we proposed the creation of the association Girolamo Cardano (1501- 1576: inventor of imaginary numbers, first thinker of the transformation of the living in time) that readers are invited to join: http://cardano.visions- des-sciences.eu",
+            "illustration": "2018_10_26_cardano_affiche.jpg",
+            "author": "Roy Wagner and Norman Sieroka and Cardano Group"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "proceedings",
+        "entrykey": "onteis2018col",
+        "fields": {
+            "title": "La médecine au chevet de l’IA médicale : nécessité d’un fondement théorique du vivant pour aborder les nouvelles technologies de manière rationnelle",
+            "year": "2018",
+            "month": "9",
+            "day": "29",
+            "location": "Institut des systèmes complexes, Paris, France",
+            "language": "fr",
+            "url": "https://iscpif.fr/evenements/la-medecine-au-chevet-de-lia-medicale-necessite-dun-fondement-theorique-du-vivant-pour-aborder-les-nouvelles-technologies-de-maniere-rationnelle/",
+            "abstract": "Avec l’arrivée des algorithmes en médecine, il y a deux voies possibles. Certains pensent que l’on peut automatiser l’essentiel de la pratique médicale et dans ce cas le médecin deviendra subordonné à la machine. La médecine par la preuve ouvre déjà cette voie en standardisant la décision médicale, même si cette automatisation ne passe pas par une machine. L’alternative consiste à redonner une centralité à l’analyse du médecin et à subordonner l’automatisation et la modélisation à son regard critique.",
+            "author": " M. Montévil and Nicolas André"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "proceedings",
+        "entrykey": "iea-2020col",
+        "fields": {
+            "year": "2020",
+            "month": "12",
+            "location": "Institut d'Étude Avancée, Nantes",
+            "illustration": "iea-nantes.png",
+            "language": "fr",
+            "day": "4",
+            "program": "programme-IEA-2020.pdf",
+            "abstract": "En biologie comme en médecine, le numérique joue depuis longtemps et de façon croissante le rôle d’outil technique, de la preuve statistique aux bases de données massives et à la publication. Mais elle joue aussi le rôle de modèle mathématique, voire de cadre conceptuel pour une approche théorique et pour une justification de l’action",
+            "author": "Giuseppe Longo and Maël Montévil",
+            "title": "Colloque: Vie – Numérique - Santé"
         }
     }
 ]

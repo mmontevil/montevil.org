@@ -1,4 +1,4 @@
  {
-"types": [ "publications","articles","chapters", "books","varia","talks","video", "posts","links" ],
-"subtypes": [ "articles","chapters", "books","varia","video"]
+"types": [ "publications","articles","chapters", "books","varia", "posts","talks","video","events", "media","links" ],
+"subtypes": [ "articles","chapters", "books","varia","video","events", "media"]
 }

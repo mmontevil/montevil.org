@@ -21,8 +21,9 @@
     margin-block-start: 0em;
     margin-block-end: 0em;
 
-  a {transition: transform,color .2s;
-    padding: 0.1em; padding-left: 0.3em;   padding-right: 0.3em;   
+  a {transition: all .2s;
+    border-radius: 0.15em;
+    padding-top: 0.1em; padding-bottom: 0.05em; padding-left: 0.3em;   padding-right: 0.3em;   
     &.tag1{color: var(--color-primary-darker-5);
       &:hover,&:focus{background-color:   var(--color-primary-darker-5);}}
   &.tag2{color: var(--color-primary-darker-4);

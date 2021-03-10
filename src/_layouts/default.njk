@@ -11,6 +11,7 @@
     itemtype="https://schema.org/{% if "about/" in page.inputPath %}AboutPage{% else %}WebPage{% endif %}"
     data-img-src="{% if layout %}{{- page.inputPath | dirname -}}{%-else-%}src{%-endif-%}/"
     data-img-dist="{{ page.outputPath | dirname }}/"
+    {%- if hackwidth-%}style="width:{{hackwidth}}"{%-endif-%}
   >
 
     <a class="quickaccess visually-hidden" href="#main">Jump to main content</a>

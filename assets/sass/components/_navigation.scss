@@ -1,5 +1,8 @@
 .navigation { 
-
+ position: sticky;
+    z-index: 20;
+    left: 0;
+    width: min(100%,100vw);
   border-top: solid var(--border-width) var(--color-primary-lighter-2);
 
   font-family: var(--font-family-sans-serif);
@@ -137,11 +140,8 @@
       hsla(0, 0%, var(--color-grad), 0.987) 81.8%,
       hsl(0, 0%, var(--color-grad)) 100%
     );
-    position: sticky;
     top: 0;
-    z-index: 20;
-
-
+   
   }
 
 
@@ -307,9 +307,9 @@ justify-content: center;
 vertical-align: bottom; 
    transform: scale(1.1);
  // display: inline-block;
-  &:hover {transform: scale(1.2); 
+  &:hover {transform: scale(1.4); 
     transition: all 500ms;
 
-  }
+  }      
 }
 

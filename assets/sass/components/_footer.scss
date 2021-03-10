@@ -13,6 +13,8 @@
 }
 //.blurryWrap{overflow-y: hidden;}
 .blurryHL{
+  position: sticky; left: 0;
+  width: min(100%,100vw);
   filter: blur(0.5em);
   height: 1.2em;
   width:100%;
@@ -22,14 +24,17 @@
   z-index: 1; 
   background-color: var(--color-bg);
   // background-color: white;
-
+margin-left: 0;
+margin-right: 0;
   border-color: transparent;
  // color: transparent;
 }
 
 
 
-#footer {
+#footer {position: sticky; left: 0;
+    width: min(100%,100vw);
+
   white-space: nowrap;
   margin: 1em 0 0 0;
   padding: 1em 0;
@@ -72,13 +77,14 @@
 }
   a:link,
   a:visited {
-    color: currentColor;
+    color: #eb95cb;
   }
 
   a:hover,
   &:focus,
   a:active {
-    color: var(--color-link-hover);
+    background-color: #eb95cb;
+    color: black;
   }
 
   .wrap {

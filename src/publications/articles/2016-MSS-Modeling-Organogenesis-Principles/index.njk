@@ -4,7 +4,6 @@ illust: icon_video8b.jpg
 ---
 
 <!--CompileMaths-->
-<!--appendix #x1-24000A-->
 
 <p class="titleHead" id="modeling-mammary-organogenesis-from-biological-first-principles-cells-and-their-physical-constraints">Modeling mammary organogenesis from biological first principles: cells and their physical constraints</p>
 <p class="indent authors">
@@ -740,8 +739,319 @@ generation (SHG) images, collagen fibers in white; (B) fiber density maps on mer
 </li>
   </ol>
 
-<h2 class="sectionHead"> Video</h2>
-<h3 class="subsectionHead" id="video-1-projections-of-breast-epithelial-cells-seeded-in-a-fibrilar-matrix"><i>Video 1. Projections of breast epithelial cells seeded in a fibrilar matrix.</i></h3>
+  <h2 class="sectionHead" id="x1-24000A"> Appendix</h2>
+
+  
+  <h3 class='sectionHead' id="mathA"><span class='titlemark'>A. </span> <a id='x1-1000A'></a>Mathematical description of the model</h3>
+<!-- l. 129 --><p class='noindent'>In this appendix, we describe the mathematical model of epithelial morphogenesis in collagen
+gels that we propose as a proof of concept for the use of the notion of proliferation with
+variation and motility as the default state of cells.
+</p><!-- l. 134 --><p class='indent'>  A gel is described as a three dimensional material whose properties change over
+time.
+</p><!-- l. 137 --><p class='indent'>  In our simulations, collagen and more generally the system is approximated as a three
+dimensional lattice with different dimensions corresponding to the different scalar or vector
+fields relevant to the system (collagen orientation, chemical concentrations, presence of cells,
+etc). The program has a main loop which corresponds to the update of cellular behaviors. The
+updates of collagen or chemicals are performed by sub-loops. This implementation is justified
+by the assumption that the characteristic speed of processes described by the sub-loops is
+faster than the cellular changes. All coefficients are given with respect to the time scale of the
+main loop.
+</p><!-- l. 144 --><p class='indent'>  Initially, every element of the array has a random collagen orientation with a uniform
+distribution and every element is independent of the other. The nutrient layer is set uniformly to
+<!-- l. 145 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mn>1</mn></math> and the inhibitory
+layer to <!-- l. 146 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mn>0</mn></math>. A single cell is
+typically put in position <!-- l. 147 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-open'>(</mo><mn>25</mn><mo class='MathClass-punc'>,</mo><mn>25</mn><mo class='MathClass-punc'>,</mo><mn>25</mn><mo class='MathClass-close'>)</mo></math>
+                                                                                
+                                                                                
+in a <!-- l. 147 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mn>50</mn> <mo class='MathClass-bin'>×</mo> <mn>50</mn> <mo class='MathClass-bin'>×</mo> <mn>50</mn></math>
+array.
+</p><!-- l. 149 --><p class='noindent'>
+</p>
+  <h4 class='subsectionHead' id="A1"><span class='titlemark'>A.1. </span> <a id='x1-2000A.1'></a>Collagen and forces</h4>
+<!-- l. 150 --><p class='noindent'>We only take into account the mean orientations of the fibers. This mean orientation
+provides a vector for every element of the lattice, thus defining a vector field
+<!-- l. 151 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover class='overrightarrow'><mrow><mi>C</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo></math>. Collagen orientation
+vectors have norm <!-- l. 152 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mn>1</mn></math>.
+In order to lighten the notation we will keep the normalization of the
+vectors implicit in this text. Note that for all intend and purpose, vectors
+<!-- l. 153 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover class='overrightarrow'><mrow><mi>C</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo></math> and
+<!-- l. 153 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'> <mo class='MathClass-bin'>−</mo><mover class='overrightarrow'><mrow><mi>C</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo></math> are
+equivalent because we assume that collagen fibers are not oriented; thus, this symmetry is
+respected in all equations.
+</p><!-- l. 157 --><p class='indent'>  Forces are represented by several vector fields
+<!-- l. 158 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mover class='overrightarrow'><mrow><mi>F</mi></mrow><mi class='MathClass-op'>⃗</mi></mover></mrow><mrow><mi>i</mi></mrow></msub><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo></math>, with
+<!-- l. 158 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>i</mi> <mo class='MathClass-rel'>=</mo> <mi>x</mi></math>,
+<!-- l. 158 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>y</mi></math>, or
+<!-- l. 158 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>z</mi></math>.
+<!-- l. 158 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mover class='overrightarrow'><mrow><mi>F</mi></mrow><mi class='MathClass-op'>⃗</mi></mover></mrow><mrow><mi>x</mi></mrow></msub><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo></math>
+corresponds to the force exerted by the element in position
+<!-- l. 160 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-open'>(</mo><mi>x</mi> <mo class='MathClass-bin'>−</mo> <mn>1</mn><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-close'>)</mo></math> on the element
+in position <!-- l. 161 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-close'>)</mo></math>
+at time <!-- l. 161 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>t</mi></math>.
+Note that according to the principle of reaction of classical mechanics,
+<!-- l. 162 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'> <mo class='MathClass-bin'>−</mo><msub><mrow><mover class='overrightarrow'><mrow><mi>F</mi></mrow><mi class='MathClass-op'>⃗</mi></mover></mrow><mrow><mi>x</mi></mrow></msub><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo></math> is then the force exerted
+by the element in position <!-- l. 163 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-close'>)</mo></math>
+on the element in position <!-- l. 163 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-open'>(</mo><mi>x</mi> <mo class='MathClass-bin'>−</mo> <mn>1</mn><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-close'>)</mo></math>.
+Collagen is considered as an anisotropic elastic material at short time scales. Collagen
+orientation is altered at a larger time scales. We simulate the collagen and force propagation by
+the finite difference method.
+</p><!-- l. 169 --><p class='indent'>  The anisotropy of collagen is modeled by a Young’s modulus which depends on collagen
+orientation: </p><table class='equation-star'><tr><td>
+                                                                                
+                                                                                
+<!-- l. 170 --><math display='block' class='equation' xmlns='http://www.w3.org/1998/Math/MathML'>
+                          <mrow><mo form='prefix' fence='true'> (</mo><mrow><mo class='MathClass-open'>(</mo><mn>1</mn> <mo class='MathClass-bin'>−</mo> <mi>α</mi><mo class='MathClass-close'>)</mo><mover class='overrightarrow'><mrow><mi>C</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo> <mo class='MathClass-bin'>+</mo> <mi>α</mi></mrow><mo form='postfix' fence='true'>)</mo></mrow><mo class='MathClass-open'>(</mo><mn>1</mn> <mo class='MathClass-bin'>−</mo> <mi>d</mi><mo class='MathClass-close'>)</mo>
+</math></td></tr></table>
+<!-- l. 171 --><p class='indent'>  (we use <!-- l. 171 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>d</mi> <mo class='MathClass-rel'>=</mo> <mn>0</mn><mo class='MathClass-punc'>.</mo><mn>1</mn></math>
+and <!-- l. 171 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>α</mi> <mo class='MathClass-rel'>=</mo> <mn>0</mn><mo class='MathClass-punc'>.</mo><mn>5</mn></math>).
+The representation of collagen that we use is a crude macroscopic representation, but we feel
+that it is a computationally “lightweight” approach that is sufficient to understand the
+morphogenesis of the epithelial structures of interest. Note also that both the mathematical
+and the biological models that we discuss aim ultimately to understand morphogenesis
+<span class='ecti-1095'>in vivo</span>. 3D cell cultures are already an experimental model of this phenomenon.
+As a result, there is no reason here to aim for a highly detailed representation of
+collagen.
+</p><!-- l. 183 --><p class='indent'>  Cells transmit forces in the same manner than collagen (orientation is then the orientation of
+the cytoskeleton). Cells may also exert forces; this is discussed below. However, elements which
+describe the lumen do not transmit forces.
+</p><!-- l. 187 --><p class='indent'>  Collagen changes its orientation when forces are exerted on it, more precisely
+</p>
+  <table class='equation-star'><tr><td>
+<!-- l. 189 --><math display='block' class='equation' xmlns='http://www.w3.org/1998/Math/MathML'>
+                <mover class='overrightarrow'><mrow><mi>C</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi> <mo class='MathClass-bin'>+</mo> <mn>1</mn><mo class='MathClass-close'>)</mo> <mo class='MathClass-rel'>=</mo> <mi>𝜖</mi><mover class='overrightarrow'><mrow><mi>C</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo> <mo class='MathClass-bin'>+</mo>  <mfrac><mrow><mi mathvariant='italic'>Δt</mi></mrow> 
+<mrow><msub><mrow><mi>F</mi></mrow><mrow><mn>1</mn></mrow></msub><msub><mrow><mi>τ</mi></mrow><mrow><mi>c</mi></mrow></msub></mrow></mfrac><mover class='overrightarrow'><mrow><mi>F</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo>
+</math></td></tr></table>
+<!-- l. 191 --><p class='indent'>  This equation is valid modulo a normalization and a sign factor. Here,
+<!-- l. 191 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>𝜖</mi> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-bin'>±</mo><mn>1</mn></math>
+so that the two vectors have the same orientation (a positive dot product)
+which account for the fact that collagen orientation is defined up to a factor
+<!-- l. 194 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'> <mo class='MathClass-bin'>−</mo> <mn>1</mn></math> ,as mentioned above.
+We use a relatively small <!-- l. 195 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi mathvariant='italic'>Δt</mi><mo class='MathClass-bin'>∕</mo><msub><mrow><mi>F</mi></mrow><mrow><mn>1</mn></mrow></msub><msub><mrow><mi>τ</mi></mrow><mrow><mi>c</mi></mrow></msub></math>
+(<!-- l. 195 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mn>0</mn><mo class='MathClass-punc'>.</mo><mn>01</mn></math>)
+because remodeling is a relatively slow process in comparison with mechanical equilibrium.
+This equation corresponds to an averaging of the orientation of collagen and of the
+orientation of the forces at each time step with a weight of the force that depends on its
+                                                                                
+                                                                                
+magnitude.
+</p><!-- l. 201 --><p class='indent'>  In the case of acini formation in Matrigel, we assume that cells cannot exert forces on the
+extracellular matrix. In our model, this assumption is equivalent to the assumption that the
+extracellular matrix cannot transmit forces.
+</p><!-- l. 205 --><p class='indent'>  Cells will respond to the stress exerted on it:
+<!-- tex4ht:inline --></p><!-- l. 206 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mtable class='multline-star'>
+<mtr><mtd class='multline-star'><mover class='overrightarrow'><mrow><mi>F</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo> <mo class='MathClass-rel'>=</mo><msub><mrow> <mover class='overrightarrow'><mrow><mi>F</mi></mrow><mi class='MathClass-op'>⃗</mi></mover></mrow><mrow><mi>x</mi></mrow></msub><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo> <mo class='MathClass-bin'>+</mo><msub><mrow> <mover class='overrightarrow'><mrow><mi>F</mi></mrow><mi class='MathClass-op'>⃗</mi></mover></mrow><mrow><mi>y</mi></mrow></msub><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo>
+</mtd></mtr><mtr><mtd class='multline-star'> <mo class='MathClass-bin'>+</mo><msub><mrow> <mover class='overrightarrow'><mrow><mi>F</mi></mrow><mi class='MathClass-op'>⃗</mi></mover></mrow><mrow><mi>z</mi></mrow></msub><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo> <mo class='MathClass-bin'>+</mo><msub><mrow> <mover class='overrightarrow'><mrow><mi>F</mi></mrow><mi class='MathClass-op'>⃗</mi></mover></mrow><mrow><mi>x</mi></mrow></msub><mo class='MathClass-open'>(</mo><mi>x</mi> <mo class='MathClass-bin'>+</mo> <mn>1</mn><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo>
+</mtd></mtr><mtr><mtd class='multline-star'> <mo class='MathClass-bin'>+</mo><msub><mrow> <mover class='overrightarrow'><mrow><mi>F</mi></mrow><mi class='MathClass-op'>⃗</mi></mover></mrow><mrow><mi>y</mi></mrow></msub><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi> <mo class='MathClass-bin'>+</mo> <mn>1</mn><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo> <mo class='MathClass-bin'>+</mo><msub><mrow> <mover class='overrightarrow'><mrow><mi>F</mi></mrow><mi class='MathClass-op'>⃗</mi></mover></mrow><mrow><mi>z</mi></mrow></msub><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi> <mo class='MathClass-bin'>+</mo> <mn>1</mn><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo>                                            </mtd></mtr></mtable>
+</math>
+<!-- l. 208 --><p class='nopar'>
+</p><!-- l. 212 --><p class='indent'>  Note that the different axes of this stress may be compressive or tensile independently. Also
+the expression above means that we do not distinguish shear stress from axial stress for the
+cellular response which is a simplifying approximation.
+</p><!-- l. 217 --><p class='indent'>  We also assume that the magnitude of this vector is a relevant quantity for cells:
+</p>
+  <table class='equation-star'><tr><td>
+                                                                                
+                                                                                
+<!-- l. 219 --><math display='block' class='equation' xmlns='http://www.w3.org/1998/Math/MathML'>
+                           <msub><mrow><mi>F</mi></mrow><mrow><mi>m</mi></mrow></msub><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo> <mo class='MathClass-rel'>=</mo> <mrow><mo form='prefix' fence='true'> ‖</mo><mrow><mover class='overrightarrow'><mrow><mi>F</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo></mrow><mo form='postfix' fence='true'>‖</mo></mrow>
+</math></td></tr></table>
+<!-- l. 223 --><p class='noindent'>
+</p>
+  <h4 class='subsectionHead' id="A2"><span class='titlemark'>A.2. </span> <a id='x1-3000A.2'></a> Chemical layers</h4>
+<!-- l. 224 --><p class='noindent'>We consider two chemical concentration scalar fields. The first is the “nutrient” layer which is involved
+in lumen formation. We model this layer by a diffusion equation with fixed boundary conditions
+(set to <!-- l. 225 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mn>1</mn></math>),
+and we simulate it by finite differences. Cells consume these nutrients. When the local
+concentration in nutrient is below a threshold, the cell dies which leads to lumen formation at
+the center of structures.
+</p><!-- l. 230 --><p class='indent'>  The second chemical component is the inhibitory layer discussed in the text. It is simulated
+as a chemical that decays rapidly and diffuses. Its effects are thus confined to the
+neighborhood of its sources. The sources are cells adjacent to a lumen. Because of
+these specific features, extracellular matrix deposition in the same region would have
+approximately the same distribution pattern. When this layer is above a threshold in a
+given element occupied by a cell, both proliferation and motility are impossible for
+this cell. Further work will aim to distinguish the properties of a chemical inhibitor
+and the properties of the basement membrane components secreted by epithelial
+cells.
+</p><!-- l. 237 --><p class='noindent'>
+</p>
+  <h4 class='subsectionHead' id="A3"><span class='titlemark'>A.3. </span> <a id='x1-4000A.3'></a> Cellular proliferation and motility</h4>
+<!-- l. 238 --><p class='noindent'>
+</p>
+  <h5 class='subsubsectionHead' id="A31"><span class='titlemark'>A.3.1. </span> <a id='x1-5000A.3.1'></a> Cell Movement</h5>
+<!-- l. 240 --><p class='noindent'>We model cell-cell contact interactions in a macroscopic manner. We consider
+<!-- l. 240 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>n</mi></mrow><mrow><mi mathvariant='italic'>nei</mi></mrow></msub><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo></math> the number of neighbors
+of a cell at position <!-- l. 241 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-close'>)</mo></math>.
+                                                                                
+                                                                                
+Note that we normalize the contribution of every neighbor by
+distances, so that a cell that is a neighbor with a relative position
+<!-- l. 242 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-open'>(</mo><mn>1</mn><mo class='MathClass-punc'>,</mo><mn>1</mn><mo class='MathClass-punc'>,</mo><mn>0</mn><mo class='MathClass-close'>)</mo></math> counts for
+<!-- l. 242 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mn>1</mn><mo class='MathClass-bin'>∕</mo><msqrt><mrow><mn>2</mn></mrow></msqrt></math>. We also use the
+distribution of probability <!-- l. 242 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>p</mi></mrow><mrow><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi></mrow></msub></math>
+with
+</p><!-- l. 247 --><p class='noindent'>
+<!-- tex4ht:inline --></p><!-- l. 247 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mtable class='multline-star'>
+<mtr><mtd class='multline-star'><msub><mrow><mi>p</mi></mrow><mrow><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo></mrow></msub><mo class='MathClass-open'>(</mo><mi>i</mi><mo class='MathClass-punc'>,</mo><mi>j</mi><mo class='MathClass-punc'>,</mo><mi>k</mi><mo class='MathClass-close'>)</mo> <mo class='MathClass-rel'>∝</mo> <mi>δ</mi><mo class='MathClass-open'>(</mo><mi>x</mi> <mo class='MathClass-bin'>+</mo> <mi>i</mi><mo class='MathClass-punc'>,</mo><mi>y</mi> <mo class='MathClass-bin'>+</mo> <mi>j</mi><mo class='MathClass-punc'>,</mo><mi>z</mi> <mo class='MathClass-bin'>+</mo> <mi>k</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo><msup><mrow> <mrow><mo form='prefix' fence='true'> (</mo><mrow><msub><mrow><mi>n</mi></mrow><mrow><mi mathvariant='italic'>nei</mi></mrow></msub> <mrow><mo form='prefix' fence='true'> (</mo><mrow><mi>x</mi> <mo class='MathClass-bin'>+</mo> <mi>i</mi><mo class='MathClass-punc'>,</mo><mi>y</mi> <mo class='MathClass-bin'>+</mo> <mi>j</mi><mo class='MathClass-punc'>,</mo><mi>z</mi> <mo class='MathClass-bin'>+</mo> <mi>k</mi><mo class='MathClass-punc'>,</mo><mi>t</mi></mrow><mo form='postfix' fence='true'>)</mo></mrow> <mo class='MathClass-bin'>+</mo>        <mfrac><mrow><mn>0</mn><mo class='MathClass-punc'>.</mo><mn>5</mn></mrow> 
+<mrow><msqrt><mrow><msup><mrow><mi>i</mi></mrow><mrow><mn>2</mn> </mrow> </msup> <mo class='MathClass-bin'>+</mo> <msup><mrow><mi>j</mi></mrow><mrow><mn>2</mn> </mrow> </msup> <mo class='MathClass-bin'>+</mo> <msup><mrow><mi>k</mi></mrow><mrow><mn>2</mn></mrow></msup></mrow></msqrt></mrow></mfrac> </mrow><mo form='postfix' fence='true'>)</mo></mrow> </mrow><mrow><mn>2</mn></mrow></msup>    </mtd></mtr></mtable>
+</math>
+<!-- l. 249 --><p class='nopar'>
+</p><!-- l. 252 --><p class='noindent'>where <!-- l. 252 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-open'>(</mo><mi>i</mi><mo class='MathClass-punc'>,</mo><mi>j</mi><mo class='MathClass-punc'>,</mo><mi>k</mi><mo class='MathClass-close'>)</mo> <mo class='MathClass-rel'>∈</mo><msup><mrow><mo class='MathClass-open'>{</mo><mo class='MathClass-bin'>−</mo><mn>1</mn><mo class='MathClass-punc'>,</mo><mn>0</mn><mo class='MathClass-punc'>,</mo><mn>1</mn><mo class='MathClass-close'>}</mo></mrow><mrow><mn>3</mn></mrow></msup> <mo class='MathClass-bin'>−</mo> <mo class='MathClass-open'>(</mo><mn>0</mn><mo class='MathClass-punc'>,</mo><mn>0</mn><mo class='MathClass-punc'>,</mo><mn>0</mn><mo class='MathClass-close'>)</mo></math>
+and <!-- l. 252 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>δ</mi><mo class='MathClass-open'>(</mo><mi>x</mi> <mo class='MathClass-bin'>+</mo> <mi>i</mi><mo class='MathClass-punc'>,</mo><mi>y</mi> <mo class='MathClass-bin'>+</mo> <mi>j</mi><mo class='MathClass-punc'>,</mo><mi>z</mi> <mo class='MathClass-bin'>+</mo> <mi>k</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo></math> is
+<!-- l. 252 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mn>1</mn></math> if there are no cell
+in this position or <!-- l. 252 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mn>0</mn></math>
+otherwise. Note that the counts here ignore the cell at position
+<!-- l. 253 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-close'>)</mo></math> since
+this cell is the object under influence of the other cells in our uses of this distribution. This
+distribution means that the choice of a direction is isotropic for an isolated cell. However, when
+there are other cells next to it, a cell will tend to select a direction towards the other cells even
+though the opposite is still possible.
+</p><!-- l. 259 --><p class='indent'>  In the absence of the inhibitor discussed above, cells initiate motion with a probability
+</p>
+  <table class='equation-star'><tr><td>
+                                                                                
+                                                                                
+<!-- l. 261 --><math display='block' class='equation' xmlns='http://www.w3.org/1998/Math/MathML'>
+                       <mi class='qopname'>exp</mi><mo> ⁡<!-- FUNCTION APPLICATION --> </mo><!-- nolimits --> <mrow><mo form='prefix' fence='true'> (</mo><mrow><mo class='MathClass-bin'>−</mo><mfrac><mrow><msub><mrow><mi>F</mi></mrow><mrow><mi>m</mi></mrow></msub><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo></mrow>
+      <mrow><msub><mrow><mi>f</mi></mrow><mrow><mi>m</mi></mrow></msub></mrow></mfrac>        <mo class='MathClass-bin'>−</mo><mfrac><mrow><msub><mrow><mi>n</mi></mrow><mrow><mi mathvariant='italic'>nei</mi></mrow></msub><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo></mrow> 
+     <mrow><msub><mrow><mi>n</mi></mrow><mrow><mi mathvariant='italic'>inhib</mi></mrow></msub></mrow></mfrac>      </mrow><mo form='postfix' fence='true'>)</mo></mrow>
+</math></td></tr></table>
+<!-- l. 264 --><p class='indent'>  Here, <!-- l. 264 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>f</mi></mrow><mrow><mi>m</mi></mrow></msub></math> is
+the characteristic magnitude of the inhibition of cell movement by physical forces (we use
+<!-- l. 264 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>f</mi></mrow><mrow><mi>m</mi></mrow></msub> <mo class='MathClass-rel'>=</mo> <mn>40</mn></math>).
+The inhibition of motility by cell to cell contact is described by
+<!-- l. 265 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>n</mi></mrow><mrow><mi mathvariant='italic'>inhib</mi></mrow></msub></math> (we
+use <!-- l. 265 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>n</mi></mrow><mrow><mi mathvariant='italic'>inhib</mi></mrow></msub> <mo class='MathClass-rel'>=</mo> <mn>3</mn></math>).
+Then, the possible motion follows a random direction
+<!-- l. 266 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover class='overrightarrow'><mrow><mi>r</mi></mrow><mi class='MathClass-op'>⃗</mi></mover></math> with the probability
+distribution <!-- l. 268 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>p</mi></mrow><mrow><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo></mrow></msub></math>. This motion
+leads to the new position <!-- l. 268 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-open'>(</mo><msup><mrow><mi>x</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><msup><mrow><mi>y</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><msup><mrow><mi>z</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-close'>)</mo></math>.
+The motion is performed if the following condition is met:
+</p>
+  <table class='equation-star'><tr><td>
+<!-- l. 271 --><math display='block' class='equation' xmlns='http://www.w3.org/1998/Math/MathML'>
+                <mfrac><mrow><msub><mrow><mi>n</mi></mrow><mrow><mi mathvariant='italic'>nei</mi></mrow></msub><mo class='MathClass-open'>(</mo><msup><mrow><mi>x</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><msup><mrow><mi>y</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><msup><mrow><mi>z</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo> <mo class='MathClass-bin'>+</mo> <mn>0</mn><mo class='MathClass-punc'>.</mo><mn>5</mn></mrow>
+ <mrow><msub><mrow><mi>n</mi></mrow><mrow><mi mathvariant='italic'>nei</mi></mrow></msub><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo> <mo class='MathClass-bin'>+</mo> <mn>0</mn><mo class='MathClass-punc'>.</mo><mn>5</mn></mrow></mfrac> <munder class='msub'><mrow><mo>∏</mo>
+  </mrow><mrow><mover class='overrightarrow'><mrow><mi>v</mi></mrow><mo>⃗</mo></mover></mrow></munder><msup><mrow> <mrow><mo form='prefix' fence='true'> (</mo><mrow><mfrac><mrow><mo class='MathClass-rel'>|</mo><mover class='overrightarrow'><mrow><mi>r</mi></mrow><mo>⃗</mo></mover><mo class='MathClass-punc'>.</mo><mover class='overrightarrow'><mrow><mi>v</mi></mrow><mo>⃗</mo></mover><mo class='MathClass-rel'>|</mo> <mo class='MathClass-bin'>+</mo> <mn>0</mn><mo class='MathClass-punc'>.</mo><mn>25</mn></mrow>
+ <mrow><mo class='MathClass-rel'>|</mo><mo class='MathClass-rel'>|</mo><mover class='overrightarrow'><mrow><mi>v</mi></mrow><mo>⃗</mo></mover><mo class='MathClass-rel'>|</mo><mo class='MathClass-rel'>|</mo> <mo class='MathClass-bin'>+</mo> <mn>0</mn><mo class='MathClass-punc'>.</mo><mn>25</mn></mrow></mfrac> </mrow><mo form='postfix' fence='true'>)</mo></mrow></mrow><mrow><mn>1</mn><mo class='MathClass-bin'>∕</mo><mn>3</mn></mrow></msup> <mo class='MathClass-bin'>−</mo> <mi>X</mi> <mo class='MathClass-rel'>&gt;</mo> <mn>0</mn>
+</math></td></tr></table>
+<!-- l. 274 --><p class='indent'>  where <!-- l. 274 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>X</mi></math>
+is a random variable with uniform distribution over
+<!-- l. 274 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-open'>[</mo><mn>0</mn><mo class='MathClass-punc'>,</mo><mn>1</mn><mo class='MathClass-close'>]</mo></math> and
+<!-- l. 274 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover class='overrightarrow'><mrow><mi>v</mi></mrow><mi class='MathClass-op'>⃗</mi></mover></math> is
+<!-- l. 274 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover class='overrightarrow'><mrow><mi>C</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo></math>,<!-- l. 274 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover class='overrightarrow'><mrow><mi>C</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><msup><mrow><mi>x</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><msup><mrow><mi>y</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><msup><mrow><mi>z</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo></math>
+and <!-- l. 274 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover class='overrightarrow'><mrow><mi>F</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><msup><mrow><mi>x</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><msup><mrow><mi>y</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><msup><mrow><mi>z</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo></math>.
+We thus assume that movement is facilitated towards positions where the number of
+neighboring cells is larger than in the initial position. Positions which are easier to access
+correspond to a displacement in the direction of collagen orientation and local forces. We
+combine these last effects by considering their geometric average.
+                                                                                
+                                                                                
+</p><!-- l. 282 --><p class='noindent'>
+</p>
+  <h5 class='subsubsectionHead' id="A32"><span class='titlemark'>A.3.2. </span> <a id='x1-6000A.3.2'></a> Proliferation</h5>
+<!-- l. 283 --><p class='noindent'>Every cell has an internal variable <!-- l. 283 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>𝜃</mi></math>
+which corresponds to the progress of its cell cycle. Cells may only proliferate when
+<!-- l. 284 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>𝜃</mi></math> reaches
+<!-- l. 284 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mn>1</mn></math>. In the lack of the
+inhibitor mentioned above, <!-- l. 285 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>𝜃</mi></math>
+is incremented by <!-- l. 285 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi mathvariant='italic'>Δ𝜃</mi> <mo class='MathClass-rel'>=</mo> <mi mathvariant='italic'>Δt</mi><mo class='MathClass-bin'>∕</mo><msub><mrow><mi>τ</mi></mrow><mrow><mi>p</mi></mrow></msub></math>
+(we use <!-- l. 285 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi mathvariant='italic'>Δ𝜃</mi> <mo class='MathClass-rel'>=</mo> <mn>1</mn><mo class='MathClass-bin'>∕</mo><mn>6</mn></math>) where
+<!-- l. 285 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi mathvariant='italic'>Δt</mi></math> is the duration of an iteration
+of the program and <!-- l. 286 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>τ</mi></mrow><mrow><mi>p</mi></mrow></msub></math>is
+the time required for proliferation when there are no constraints (maximal proliferation).
+</p><!-- l. 290 --><p class='indent'>  When <!-- l. 290 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>𝜃</mi></math> reaches
+<!-- l. 290 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mn>1</mn></math>, the cell attempts to
+proliferate with a probability <!-- l. 290 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi class='qopname'> exp</mi><mo> ⁡<!-- FUNCTION APPLICATION --> </mo><!-- nolimits --><mo class='MathClass-open'>(</mo><mo class='MathClass-bin'>−</mo><msub><mrow><mi>F</mi></mrow><mrow><mi>m</mi></mrow></msub><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo><mo class='MathClass-bin'>∕</mo><msub><mrow><mi>f</mi></mrow><mrow><mi>p</mi></mrow></msub><mo class='MathClass-close'>)</mo></math>
+where <!-- l. 290 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>f</mi></mrow><mrow><mi>p</mi></mrow></msub></math>
+is a characteristic magnitude of the inhibition of proliferation by physical forces (we use
+<!-- l. 291 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>f</mi></mrow><mrow><mi>p</mi></mrow></msub> <mo class='MathClass-rel'>=</mo> <mn>80</mn></math>).
+The direction in which the cell tries to proliferate is given by a combination of
+<!-- l. 292 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>F</mi><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo></math> and a random vector
+<!-- l. 293 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover class='overrightarrow'><mrow><mi>r</mi></mrow><mi class='MathClass-op'>⃗</mi></mover></math> generated on the basis of
+the probability distribution <!-- l. 294 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>p</mi></mrow><mrow><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi></mrow></msub></math>
+described for motility. This random vector leads to the position
+<!-- l. 295 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-open'>(</mo><msup><mrow><mi>x</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><msup><mrow><mi>y</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><msup><mrow><mi>z</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-close'>)</mo></math> that is
+a neighbor of the initial position. More precisely the direction of the proliferation attempt is
+given by:
+</p>
+  <table class='equation-star'><tr><td>
+<!-- l. 302 --><math display='block' class='equation' xmlns='http://www.w3.org/1998/Math/MathML'>
+               <msub><mrow><mi>𝜖</mi></mrow><mrow><mn>1</mn></mrow></msub><mover class='overrightarrow'><mrow><mi>F</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo> <mo class='MathClass-bin'>+</mo> <msub><mrow><mi>𝜖</mi></mrow><mrow><mn>2</mn></mrow></msub><msub><mrow><mi>w</mi></mrow><mrow><mi>c</mi></mrow></msub><mover class='overrightarrow'><mrow><mi>C</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo> <mo class='MathClass-bin'>+</mo> <msub><mrow><mi>w</mi></mrow><mrow><mi>r</mi></mrow></msub><msub><mrow><mi>n</mi></mrow><mrow><mi mathvariant='italic'>nei</mi></mrow></msub><mo class='MathClass-open'>(</mo><msup><mrow><mi>x</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><msup><mrow><mi>y</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><msup><mrow><mi>z</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo><mover class='overrightarrow'><mrow><mi>r</mi></mrow><mi class='MathClass-op'>⃗</mi></mover>
+</math></td></tr></table>
+<!-- l. 304 --><p class='indent'>  Let us recall that <!-- l. 304 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>C</mi></math>
+in an element occupied by a cell represents the orientation of the cytoskeleton.
+                                                                                
+                                                                                
+<!-- l. 304 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>w</mi></mrow><mrow><mi>c</mi></mrow></msub></math> is
+the impact of the cytoskeleton orientation on the direction of proliferation; we use
+<!-- l. 305 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>w</mi></mrow><mrow><mi>c</mi></mrow></msub> <mo class='MathClass-rel'>=</mo> <mn>1</mn></math>.
+<!-- l. 305 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>w</mi></mrow><mrow><mi>r</mi></mrow></msub></math> is the
+weight of the random factor. Of course, all these weights are relative to the magnitude of the
+force <!-- l. 306 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>F</mi></math>.
+<!-- l. 306 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>𝜖</mi></mrow><mrow><mi>i</mi></mrow></msub></math> are random coefficients
+with values which are either <!-- l. 307 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mn>1</mn></math>
+or <!-- l. 307 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'> <mo class='MathClass-bin'>−</mo> <mn>1</mn></math>. If
+the resulting direction in which the new cell would appear is occupied, the process is aborted
+and a proliferation attempt is performed at the next time step. Cells never stop trying to
+proliferate, but they will stop proliferating when strongly constrained.
+</p><!-- l. 312 --><p class='noindent'>
+</p>
+  <h4 class='subsectionHead' id="A4"><span class='titlemark'>A.4. </span> <a id='x1-7000A.4'></a>Cellular forces</h4>
+<!-- l. 313 --><p class='noindent'>Every cell has an internal variable <!-- l. 313 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mover class='overrightarrow'><mrow><mi>ϕ</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><mi>t</mi><mo class='MathClass-close'>)</mo></math>
+(a normalized vector) which corresponds to the retention of the direction of the former forces it
+exerted. This vector corresponds to the orientation in which the cell “chooses” to preferentially
+pull or push. The new orientation is:
+</p><!-- l. 317 --><p class='indent'>
+<!-- tex4ht:inline --></p><!-- l. 317 --><math display='block' xmlns='http://www.w3.org/1998/Math/MathML'>
+<mtable class='multline-star'>
+<mtr><mtd class='multline-star'><mover class='overrightarrow'><mrow><mi>ϕ</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><mi>t</mi> <mo class='MathClass-bin'>+</mo> <mn>1</mn><mo class='MathClass-close'>)</mo> <mo class='MathClass-rel'>=</mo> <mn>10</mn><mover class='overrightarrow'><mrow><mi>ϕ</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><mi>t</mi><mo class='MathClass-close'>)</mo> <mo class='MathClass-bin'>+</mo> <mn>2</mn><mi>X</mi> <mo class='MathClass-bin'>+</mo> <mover class='overrightarrow'><mrow><mi>F</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo>
+</mtd></mtr><mtr><mtd class='multline-star'> <mo class='MathClass-bin'>−</mo> <mn>0</mn><mo class='MathClass-punc'>.</mo><mn>5</mn><msub><mrow><mi>F</mi></mrow><mrow><mi>m</mi></mrow></msub><msup><mrow><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo></mrow><mrow><mn>2</mn></mrow></msup><mover class='overrightarrow'><mrow><mi>F</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo> <mo class='MathClass-bin'>+</mo><munder class='msub'><mrow><mo> ∑</mo>
+   </mrow><mrow><mover class='overrightarrow'><mrow><mi>v</mi></mrow><mo>⃗</mo></mover><mo class='MathClass-rel'>∈</mo><mi>A</mi></mrow></munder><mover class='overrightarrow'><mrow><mi>v</mi></mrow><mo>⃗</mo></mover><mo class='MathClass-punc'>.</mo><mover class='overrightarrow'><mrow><mi>C</mi></mrow><mo>⃗</mo></mover><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo><mover class='overrightarrow'><mrow><mi>v</mi></mrow><mo>⃗</mo></mover>                          </mtd></mtr></mtable>
+</math>
+<!-- l. 320 --><p class='nopar'>
+                                                                                
+                                                                                
+</p><!-- l. 323 --><p class='indent'>  where the sum is over the set <!-- l. 323 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>A</mi></math>
+of directions to neighbor positions which are occupied by cells.
+<!-- l. 324 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>X</mi></math> is a random
+vector of norm <!-- l. 325 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mn>1</mn></math>.
+Note that cells react to forces by amplifying small forces and opposing strong forces which we
+model by the polynomial response above.
+</p><!-- l. 329 --><p class='indent'>  The force that a cell at position <!-- l. 329 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-close'>)</mo></math>
+can exert on an adjacent element at <!-- l. 330 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-close'>)</mo> <mo class='MathClass-bin'>+</mo> <mover class='overrightarrow'><mrow><mi>v</mi></mrow><mi class='MathClass-op'>⃗</mi></mover> <mo class='MathClass-rel'>=</mo> <mo class='MathClass-open'>(</mo><msup><mrow><mi>x</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><msup><mrow><mi>y</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><msup><mrow><mi>z</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-close'>)</mo></math>
+is:
+</p>
+  <table class='equation-star'><tr><td>
+<!-- l. 333 --><math display='block' class='equation' xmlns='http://www.w3.org/1998/Math/MathML'>
+                  <mrow><mo form='prefix' fence='true'> (</mo><mrow><mrow><mo form='prefix' fence='true'> |</mo><mrow><mover class='overrightarrow'><mrow><mi>v</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-punc'>.</mo><mover class='overrightarrow'><mrow><mi>C</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo></mrow><mo form='postfix' fence='true'>|</mo></mrow> <mo class='MathClass-bin'>+</mo> <mrow><mo form='prefix' fence='true'> |</mo><mrow><mover class='overrightarrow'><mrow><mi>C</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo><mo class='MathClass-punc'>.</mo><mover class='overrightarrow'><mrow><mi>C</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><msup><mrow><mi>x</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><msup><mrow><mi>y</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><msup><mrow><mi>z</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo></mrow><mo form='postfix' fence='true'>|</mo></mrow></mrow><mo form='postfix' fence='true'>)</mo></mrow><mi>F</mi><mover class='overrightarrow'><mrow><mi>v</mi></mrow><mi class='MathClass-op'>⃗</mi></mover>
+</math></td></tr></table>
+<!-- l. 335 --><p class='indent'>  where <!-- l. 335 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>F</mi></math> is
+either <!-- l. 336 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>F</mi></mrow><mrow><mi mathvariant='italic'>cell</mi></mrow></msub></math> if the
+adjacent position <!-- l. 337 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mo class='MathClass-open'>(</mo><msup><mrow><mi>x</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><msup><mrow><mi>y</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><msup><mrow><mi>z</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-close'>)</mo></math>
+is a cell or <!-- l. 337 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>F</mi></mrow><mrow><mi mathvariant='italic'>col</mi></mrow></msub></math>
+if this position is occupied by collagen. We use, for example,
+<!-- l. 339 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>F</mi></mrow><mrow><mi mathvariant='italic'>cell</mi></mrow></msub> <mo class='MathClass-rel'>=</mo> <mn>4</mn></math> and
+<!-- l. 339 --><math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><msub><mrow><mi>F</mi></mrow><mrow><mi mathvariant='italic'>col</mi></mrow></msub> <mo class='MathClass-rel'>=</mo> <mn>3</mn></math>.
+</p><!-- l. 342 --><p class='indent'>  Then the force that the cell attempts to exert is finally:
+</p>
+  <table class='equation-star'><tr><td>
+                                                                                
+                                                                                
+<!-- l. 345 --><math display='block' class='equation' xmlns='http://www.w3.org/1998/Math/MathML'>
+              <mrow><mo form='prefix' fence='true'> (</mo><mrow><mrow><mo form='prefix' fence='true'> |</mo><mrow><mover class='overrightarrow'><mrow><mi>v</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-punc'>.</mo><mover class='overrightarrow'><mrow><mi>C</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo></mrow><mo form='postfix' fence='true'>|</mo></mrow> <mo class='MathClass-bin'>+</mo> <mrow><mo form='prefix' fence='true'> |</mo><mrow><mover class='overrightarrow'><mrow><mi>C</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><mi>x</mi><mo class='MathClass-punc'>,</mo><mi>y</mi><mo class='MathClass-punc'>,</mo><mi>z</mi><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo><mo class='MathClass-punc'>.</mo><mover class='overrightarrow'><mrow><mi>C</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><msup><mrow><mi>x</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><msup><mrow><mi>y</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><msup><mrow><mi>z</mi></mrow><mrow><mi>′</mi></mrow></msup><mo class='MathClass-punc'>,</mo><mi>t</mi><mo class='MathClass-close'>)</mo></mrow><mo form='postfix' fence='true'>|</mo></mrow></mrow><mo form='postfix' fence='true'>)</mo></mrow><mi>F</mi><mover class='overrightarrow'><mrow><mi>v</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-punc'>.</mo><mover class='overrightarrow'><mrow><mi>ϕ</mi></mrow><mi class='MathClass-op'>⃗</mi></mover><mo class='MathClass-open'>(</mo><mi>t</mi><mo class='MathClass-close'>)</mo><mover class='overrightarrow'><mrow><mi>v</mi></mrow><mi class='MathClass-op'>⃗</mi></mover>
+</math></td></tr></table>
+<!-- l. 347 --><p class='indent'>  The forces exerted by cells are added to the forces present in the collagen gel, and the new
+mechanical system is then simulated. Note that the force effectively exerted may be different
+because the mechanical simulation of the system leads to the elimination of systemic
+inconsistencies. For example in our model it is not possible for the cell to exert forces on the
+lumen.
+</p>
+
+<h3 class="sectionHead" id="video"> Video</h3>
+<h4 class="subsectionHead" id="video-1-projections-of-breast-epithelial-cells-seeded-in-a-fibrilar-matrix"><i>Video 1. Projections of breast epithelial cells seeded in a fibrilar matrix.</i></h4>
 <p class="indent">Cells emit projections in all directions soon after seeding. These cell projections are involved in collagen organization.</p>
 
 <center>
@@ -750,7 +1060,7 @@ generation (SHG) images, collagen fibers in white; (B) fiber density maps on mer
     <source src="https://montevil.theobio.org/sites/montevil.theobio.org/files/videos_morphogenesis/video1.ogv" type="video/ogg"></source>
   </video>
 </center>
-<h3 class="subsectionHead" id="video-2-breast-epithelial-cells-forming-an-acinus-in-a-non-fibrilar-matrix-at-day-4"><i>Video 2. Breast epithelial cells forming an acinus in a non-fibrilar matrix at day 4.</i></h3>
+<h4 class="subsectionHead" id="video-2-breast-epithelial-cells-forming-an-acinus-in-a-non-fibrilar-matrix-at-day-4"><i>Video 2. Breast epithelial cells forming an acinus in a non-fibrilar matrix at day 4.</i></h4>
 <p class="indent" id="x1-310022">Cells display limited motility and emit only short projections into the matrix. Cells rotate and divide resulting in the formation of an acinus, a sphere with a central lumen.</p>
 <center>
   <video class="video-js vjs-default-skin" controls data-setup="{}" id="my_video_2" preload="auto" tabindex="0" width="320" height="320">
@@ -758,7 +1068,7 @@ generation (SHG) images, collagen fibers in white; (B) fiber density maps on mer
     <source src="https://montevil.theobio.org/sites/montevil.theobio.org/files/videos_morphogenesis/video2.ogv" type="video/ogg"></source>
   </video>
 </center>
-<h3 class="subsectionHead" id="video-3-branching-duct-at-day-7-of-culture"><i>Video 3. Branching duct at day 7 of culture.</i></h3>
+<h4 class="subsectionHead" id="video-3-branching-duct-at-day-7-of-culture"><i>Video 3. Branching duct at day 7 of culture.</i></h4>
 <p class="indent" id="x1-310033">A cell detaches from the main structure and is incorporated back into the structure.</p>
 <center>
   <video class="video-js vjs-default-skin" controls data-setup="{}" id="my_video_3" preload="auto" tabindex="0" width="580" height="474">
@@ -766,7 +1076,7 @@ generation (SHG) images, collagen fibers in white; (B) fiber density maps on mer
     <source src="https://montevil.theobio.org/sites/montevil.theobio.org/files/videos_morphogenesis/video3.ogv" type="video/ogg"></source>
   </video>
 </center>
-<h3 class="subsectionHead" id="video-4-collagen-fibers-and-breast-epithelial-structures-after-6-days-in-culture"><i>Video 4. Collagen fibers and breast epithelial structures after 6 days in culture.</i></h3>
+<h4 class="subsectionHead" id="video-4-collagen-fibers-and-breast-epithelial-structures-after-6-days-in-culture"><i>Video 4. Collagen fibers and breast epithelial structures after 6 days in culture.</i></h4>
 <p class="indent"  id="x1-310044">Cells organize collagen in a collagen only matrix and the collagen bundles (green) facilitate the merging of epithelial structures.</p>
 
 <center>
@@ -775,7 +1085,7 @@ generation (SHG) images, collagen fibers in white; (B) fiber density maps on mer
     <source src="https://montevil.theobio.org/sites/montevil.theobio.org/files/videos_morphogenesis/video4.ogv" type="video/ogg"></source>
   </video>
 </center>
-<h3 class="subsectionHead" id="video-5-and-6-formation-of-a-duct-by-the-mathematical-model"><i>Video 5 and 6. Formation of a duct by the mathematical model.</i></h3>
+<h4 class="subsectionHead" id="video-5-and-6-formation-of-a-duct-by-the-mathematical-model"><i>Video 5 and 6. Formation of a duct by the mathematical model.</i></h4>
 <p class="indent" id="x1-310066">
   Cells are represented in green and the ductal lumen in orange in 3 dimensions. Cells organize collagen over time by exerting forces; in turn, collagen constrains cell proliferation and motility. These interactions lead to the emergence
   of a main direction of growth.
@@ -792,7 +1102,7 @@ generation (SHG) images, collagen fibers in white; (B) fiber density maps on mer
     <source src="https://montevil.theobio.org/sites/montevil.theobio.org/files/videos_morphogenesis/video6.ogv" type="video/ogg"></source>
   </video>
 </center>
-<h3 class="subsectionHead" id="video-7-and-8-formation-of-branching-ducts-by-the-mathematical-model"><i>Video 7 and 8. Formation of branching ducts by the mathematical model.</i></h3>
+<h4 class="subsectionHead" id="video-7-and-8-formation-of-branching-ducts-by-the-mathematical-model"><i>Video 7 and 8. Formation of branching ducts by the mathematical model.</i></h4>
 <p class="indent" id="x1-310088">
   Cells are represented in green and the ductal lumen in orange in 3 dimensions. Ducts branch spontaneously in our model (see also the end of video 5 and 6). For these simulations, we reduced the range of the inhibitor which increases the
   odds of branching.
@@ -809,7 +1119,7 @@ generation (SHG) images, collagen fibers in white; (B) fiber density maps on mer
     <source src="https://montevil.theobio.org/sites/montevil.theobio.org/files/videos_morphogenesis/video8.ogv" type="video/ogg"></source>
   </video>
 </center>
-<h3 class="subsectionHead" id="video-9-formation-of-an-acinus-by-the-mathematical-model"><i>Video 9. Formation of an acinus by the mathematical model.</i></h3>
+<h4 class="subsectionHead" id="video-9-formation-of-an-acinus-by-the-mathematical-model"><i>Video 9. Formation of an acinus by the mathematical model.</i></h4>
 <p class="indent">
   Cells are represented in green and the lumen in orange in 3 dimensions. Here, the interactions between the ECM and the cells were removed in order to mimic the effect of Matrigel. In this condition, cells proliferate and move in an
   isotropic manner leading to the formation of a rounded structure.
