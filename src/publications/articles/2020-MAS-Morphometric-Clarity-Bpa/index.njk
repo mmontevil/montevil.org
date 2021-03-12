@@ -515,19 +515,19 @@ epithelium in 3D. (D) Estimated skeleton of the epithelial tree, the color of a 
       </figcaption>
     </figure>
   </section>
-  <h4 class="subsubsectionHead to-section" id="d1e1003">Step 1.</h4>
+  <h5 class="subsubsectionHead to-section" id="d1e1003">Step 1.</h5>
   <p class="indent">
     To remove nuclei of stroma cells and noise from image acquisition, we used bilateral filtering (with spatial radius 4 and range 150) followed by the subtraction of local background. The resulting image was then used for the
     segmentation.
   </p>
-  <h4 class="subsubsectionHead to-section" id="d1e1010">Step 2.</h4>
+  <h5 class="subsubsectionHead to-section" id="d1e1010">Step 2.</h5>
   <p class="indent">
     The image was inverted, and the stroma segmented as a bright connected region, with a uniform threshold. Then, 3D Gaussian blur (radius 2) was applied to the resulting binary image to remove small structures such as blood
     vessels or adipocytes. Next, the image was inverted and the epithelium was obtained as the connected region above a given brightness, which included a point in the epithelial tree that had been manually selected. Holes in the
     epithelium, which were due to the lumen, were filled in and another Gaussian blur was performed. Finally, we performed a second selection of the connected region corresponding to the epithelium and above a given brightness. This
     second segmentation reduced possible artifacts that mostly stemmed from small blood vessels and adipocytes.
   </p>
-  <h4 class="subsubsectionHead to-section" id="d1e1018">Step 3.</h4>
+  <h5 class="subsubsectionHead to-section" id="d1e1018">Step 3.</h5>
   <p class="indent">
     Human intervention was required for comparing the segmented epithelium with the original image. Although this means that the method is semiautomatic in the strictest sense, we will continue to refer to it as automatic here to
     avoid confusion. The purpose of this comparison was, first, to assess whether all the epithelium was accurately segmented. Missing epithelium typically corresponds to a loss of brightness in deeper parts of the sample or
@@ -607,14 +607,14 @@ epithelium in 3D. (D) Estimated skeleton of the epithelial tree, the color of a 
     package to assess the meaning of dimensions resulting from PCA and the effect of treatments; for further details see “Supplementary Analysis by PCA” in the Supplemental Material.
   </p>
   <h4 class="subsubsectionHead to-section" id="d1e1134">Global analysis to identify a breaking point.</h4>
-  <h4 class="subsubsectionHead to-section" id="d1e1138">Motivation.</h4>
+  <h5 class="subsubsectionHead to-section" id="d1e1138">Motivation.</h5>
   <p class="indent">
     In PND21C, we noted that the response curve of many features seemed to possess a specific property. However, there are several problems to analyzing this situation. <i>a</i>) In many cases, individual features and specific doses
     are not statistically significant alone because variability is high and generic corrections of multiple comparisons cripple statistical significance. <i>b</i>) The recurrence of this pattern could very well stem from a common,
     random origin because different features of an animal can be correlated. <i>c</i>) Introducing a specific target of statistical analysis always bears the risk of choosing a pattern specific to the data—provided that even purely
     random data will have patterns.
   </p>
-  <h4 class="subsubsectionHead to-section" id="d1e1155">Overall strategy.</h4>
+  <h5 class="subsubsectionHead to-section" id="d1e1155">Overall strategy.</h5>
   <p class="indent">
     To build on the diversity of features measured above (<i>a</i>) and avoid errors stemming from multiple comparisons of nonindependent variables (<i>a</i> and <i>b</i>), we designed an analysis at the level of whole data sets
     combined. To validate the analysis beyond a single data set (<i>c</i>), we used the PND21C data set to formulate a precise statistical hypothesis and we used the four other animal sets of the chronic study (PND90CD, PND90SD,
@@ -625,7 +625,7 @@ epithelium in 3D. (D) Estimated skeleton of the epithelial tree, the color of a 
     are correlated. To accommodate this complex structure, we use the permutation test. Unlike traditional tests that use a standard distribution, the permutation test builds the statistic of the intended random variable on the
     basis of the data and the statistical hypothesis. Because some animals of different data sets come from the same litter, we also evaluated possible litter effects by the permutation test.
   </p>
-  <h4 class="subsubsectionHead to-section" id="d1e1184">Defining the random variable <i>X</i>.</h4>
+  <h5 class="subsubsectionHead to-section" id="d1e1184">Defining the random variable <i>X</i>.</h5>
   <p class="indent">
     The responses detected in PND21C were not U-shaped; instead they seem to be characterized by a sudden drop or a breaking point—these two latter patterns cannot be set apart on purely empirical bases. We used the PND21C data set
     to propose a variable <i>X</i> describing the presence of an overall breaking point between the consecutive treatments,
@@ -889,7 +889,7 @@ epithelium in 3D. (D) Estimated skeleton of the epithelial tree, the color of a 
       </math>
 </span>.
   </p>
-  <h4 class="subsubsectionHead to-section" id="d1e1461">Statistical test.</h4>
+  <h5 class="subsubsectionHead to-section" id="d1e1461">Statistical test.</h5>
   <p class="indent">
     To assess whether our results were significant, we used the Monte Carlo permutation test (<a class="tab-link" data-tab="pane-pcw-references" href="#c50" id="c50R">Nichols and Holmes 2002</a>). Like most statistical tests, the
     permutation test assesses whether
@@ -1260,7 +1260,7 @@ toward a smooth distribution. Number of animals per group
       </math>
 </span>to choose between the null or alternative hypothesis.
   </p>
-  <h4 class="subsubsectionHead to-section" id="d1e1815">Validation.</h4>
+  <h5 class="subsubsectionHead to-section" id="d1e1815">Validation.</h5>
   <p class="indent">
     For this method, we assessed type 1 and type 2 error rates by simulations. To this end we used distributions mimicking our data. First we used Gaussian distributions with standard deviation 1 and mean 0, <i>a</i>/2, <i>a</i>, 0,
     <i>a</i>/2, <i>a</i>, where <i>a</i> is a parameter that determines the magnitude of the breaking point (the standard deviation being 1,
@@ -1750,7 +1750,7 @@ development for this age group (see <a href="#S1">Table S1</a>). Values shown ar
     <p class="indent"><span class="figure__caption"><strong class="captionLabel">Table 1</strong> Number of observed quantities out of 94 total where the largest difference is between each consecutive condition in the PND21C data set.</span></p>
     <div class="sr-only">Table 1 has 6 columns, listing P subscript thr, Control to 2.5BPA, 2.5 negative 25BPA, 25 to 250 BPA, 250 to 2500 BPA, and 2500 to 25000 BPA.</div>
   </figcaption>
-  <table class="frame_hsides" xmlns:ali="http://www.niso.org/schemas/ali/1.0/" xmlns:oasis="http://www.niso.org/standards/z39-96/ns/oasis-exchange/table" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <table class="frame_hsides wide" xmlns:ali="http://www.niso.org/schemas/ali/1.0/" xmlns:oasis="http://www.niso.org/standards/z39-96/ns/oasis-exchange/table" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <thead>
       <tr>
         <th colspan="1" rowspan="1"><span class="equationTd inline-formula"><math alttext="p subscript thr" display="inline">
@@ -1998,7 +1998,7 @@ the same number of quantities than the initial data are met twice, but for anoth
     <p class="indent"><span class="figure__caption"><strong class="captionLabel">Table 2</strong> Number of features for which the largest change takes place between consecutive conditions in the chronic study.</span></p>
     <div class="sr-only">Table 2 has 9 columns, listing data set, Control to 2.5BPA, 2.5 BPA to 25BPA, 25 BPA to 250 BPA, 250 BPA to 2500 BPA, 2500 BPA to 25000 BPA, X (t), X subscript observed, and p.</div>
   </figcaption>
-  <table class="frame_hsides" xmlns:ali="http://www.niso.org/schemas/ali/1.0/" xmlns:oasis="http://www.niso.org/standards/z39-96/ns/oasis-exchange/table" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <table class="frame_hsides wide" xmlns:ali="http://www.niso.org/schemas/ali/1.0/" xmlns:oasis="http://www.niso.org/standards/z39-96/ns/oasis-exchange/table" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <thead>
       <tr>
         <th colspan="1" rowspan="1">Data set</th>
@@ -2163,7 +2163,7 @@ the same number of quantities than the initial data are met twice, but for anoth
 </span>.
   </p>
   <h4 class="subsubsectionHead to-section" id="d1e3000">Confirmatory analysis with PND90CD, PND90SD, 6MCD, and 6MSD data sets.</h4>
-  <h4 class="subsubsectionHead to-section" id="d1e3004">Results.</h4>
+  <h5 class="subsubsectionHead to-section" id="d1e3004">Results.</h5>
   <p class="indent">
     We used the remaining, independent data sets PND90CD, PND90SD, 6MCD, and 6MSD for a confirmatory analysis. For example, <a class="ref showTableEvent" data-id="t2" href="#t2">Table 2</a> provides details in the case of Criterion B(0.5).
     The latter leads to
@@ -2335,7 +2335,7 @@ the same number of quantities than the initial data are met twice, but for anoth
 </span>and the results of the permutation test between 25 and 250BPA in PND90CD, PND90SD, 6MCD and 6MSD data sets analyzed together.</span></p>
     <div class="sr-only">Table 3 has 6 columns, listing Criterion, X subscript observed, 95 percent of X subscript sim less than, 99.5 percent of X subscript sim less than, P subscript estimated, and P subscript estimated (litter).</div>
   </figcaption>
-  <table class="frame_hsides" xmlns:ali="http://www.niso.org/schemas/ali/1.0/" xmlns:oasis="http://www.niso.org/standards/z39-96/ns/oasis-exchange/table" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <table class="frame_hsides  wide" xmlns:ali="http://www.niso.org/schemas/ali/1.0/" xmlns:oasis="http://www.niso.org/standards/z39-96/ns/oasis-exchange/table" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <thead>
       <tr>
         <th colspan="1" rowspan="1">Criterion</th>
@@ -2492,7 +2492,7 @@ original data set than with each one of the 20 permuted data sets. Note: BPA, bi
     between 25BPA and 250BPA-exposed glands in PND21C (<a data-tab="pane-pcw-Figures" href="#f4" id="f4R4">Figure 4</a>) and a more pronounced one in PND21P (see <a href="#fS1">Figure S1</a>) and PND90P (see <a href="#fS4">Figure S4</a>). PND21P and PND90P are animal sets that
     were not used in the global analysis, thus the fact that they reproduce the same pattern qualitatively is suggestive.
   </p>
-  <h4 class="subsubsectionHead to-section" id="d1e3375">Validation.</h4>
+  <h5 class="subsubsectionHead to-section" id="d1e3375">Validation.</h5>
   <p class="indent">
     In simulations, the type 1 error rate remained close to the target with a loss of precision for
     <span class="equationTd inline-formula"><math alttext="p subscript thr equals 0.75" display="inline">
@@ -2720,7 +2720,7 @@ original data set than with each one of the 20 permuted data sets. Note: BPA, bi
 </span>).
   </p>
   <h4 class="subsubsectionHead to-section" id="d1e3576">Assessing nonmonotonicity.</h4>
-  <h4 class="subsubsectionHead to-section" id="d1e3580">In PND21C.</h4>
+  <h5 class="subsubsectionHead to-section" id="d1e3580">In PND21C.</h5>
   <p class="indent">
     A change in the trend of the response, nonmonotonicity, was observed in various measurements obtained from PND21 mammary glands. We analyzed them with a statistical model. For example, one end point was the mean variation of ductal
     thickness [standard deviation (SD) width 3D], which describes whether structures are more tubular or, the opposite, irregular. This measurement is associated with budding because small buds are not recognized as individual structures
@@ -3099,7 +3099,7 @@ lead to an AR similar to control. Note: AR, aspect ratio; BPA, bisphenol A; Cont
     The existence of various end points exhibiting a nonmonotonic response was against hypothesis (iii), which postulated that BPA is devoid of effect. The conclusion of this exploratory analysis is that nonmonotonicity can be different
     than quadratic (U-shaped) responses, and that features related to thickness, duct width, fractal dimension in 3D are of interest. The AR also exhibited an interesting pattern, but not with respect to the 25–250BPA breaking point.
   </p>
-  <h4 class="subsubsectionHead to-section" id="d1e4019">In PND90 and 6-month.</h4>
+  <h5 class="subsubsectionHead to-section" id="d1e4019">In PND90 and 6-month.</h5>
   <p class="indent">
     Nonmonotonic responses in PND90CD, PND90SD, 6MCD, and 6MSD were found which were similar to the ones in PND21C (<a data-tab="pane-pcw-Figures" href="#f9" id="f9R2">Figure 9</a>; <a href="#fS10">Figure S10</a>). More specifically, the gland weight
     (determined at necropsy) in PND90SD (<a data-tab="pane-pcw-Figures" href="#f9" id="f9R4">Figure 9A</a>) was a significant fit to our model (
@@ -3264,7 +3264,7 @@ respectively. In all cases, the complete model is not significant for all our st
 </span>).
   </p>
   <h4 class="subsubsectionHead to-section" id="d1e4213">Comparison between negative control, BPA inflection point, and positive control (0.5EE2).</h4>
-  <h4 class="subsubsectionHead to-section" id="d1e4217">In PND21C.</h4>
+  <h5 class="subsubsectionHead to-section" id="d1e4217">In PND21C.</h5>
   <p class="indent">
     Because an inflection point was detected between 25BPA and 250BPA for several features, such as sd width 3D or the fractal dimension in 3D (<a data-tab="pane-pcw-Figures" href="#f8" id="f8Rd">Figure 8</a>), we systematically investigated
     differences between 250BPA and control using the <i>t</i>-test for all features observed. We assessed the false discovery rate due to multiple testing with the threshold
@@ -3325,7 +3325,7 @@ animals. These samples are chosen because they exhibit the differences outlined 
     </figure>
   </section>
   <div class="anchor-spacer" id="acd1e4300"> </div>
-  <h4 class="subsubsectionHead to-section" id="d1e4300">Aspect ratio.</h4>
+  <h6 class="subsubsectionHead to-section" id="d1e4300">Aspect ratio.</h6>
   <p class="indent">
     Glands of rats exposed to 250BPA were rounder (had a smaller AR) (
     <span class="equationTd inline-formula"><math alttext="p equals 0.038" display="inline">
@@ -3361,7 +3361,7 @@ animals. These samples are chosen because they exhibit the differences outlined 
       </math>
 </span>). The response to BPA and EE2 were similar, consistent with hypothesis (i) (<a data-tab="pane-pcw-Figures" href="#f8" id="f8R7">Figures 8F</a> and <a data-tab="pane-pcw-Figures" href="#f10" id="f10Rb">10A</a>).
   </p>
-  <h4 class="subsubsectionHead to-section" id="d1e4343">Branching/budding.</h4>
+  <h6 class="subsubsectionHead to-section" id="d1e4343">Branching/budding.</h6>
   <p class="indent">
     The proportion of small branches (buds and small ducts
     <span class="equationTd inline-formula"><math alttext="less than 15 pixels equals 75 micrometers" display="inline">
@@ -3434,7 +3434,7 @@ animals. These samples are chosen because they exhibit the differences outlined 
       </math>
 </span>). 0.5EE2 was comparable to the control (<a data-tab="pane-pcw-Figures" href="#f10" id="f10Rd">Figure 10C</a>). This feature matches hypothesis (iia): BPA impacts a feature that EE2 does not.
   </p>
-  <h4 class="subsubsectionHead to-section" id="d1e4423">Branch length measurements.</h4>
+  <h6 class="subsubsectionHead to-section" id="d1e4423">Branch length measurements.</h6>
   <p class="indent">
     Branches were defined computationally as a path from a bifurcation to the next bifurcation. The branches were longer on average in 250BPA than in control (
     <span class="equationTd inline-formula"><math alttext="p equals 0.027" display="inline">
@@ -3502,7 +3502,7 @@ animals. These samples are chosen because they exhibit the differences outlined 
       </math>
 </span>). These results matched hypothesis (iia).
   </p>
-  <h4 class="subsubsectionHead to-section" id="d1e4492">Angle of branches.</h4>
+  <h6 class="subsubsectionHead to-section" id="d1e4492">Angle of branches.</h6>
   <p class="indent">
     When removing small structures (
     <span class="equationTd inline-formula"><math alttext="less than 75 micrometers" display="inline">
@@ -3541,7 +3541,7 @@ animals. These samples are chosen because they exhibit the differences outlined 
 </span>). 0.5EE2 seemed to have an opposite effect as 250BPA but it was not significant; therefore, hypothesis (ii) held, but we could not decide between (iia) and (iib) (<a data-tab="pane-pcw-Figures" href="#f8" id="f8R9">Figures 8D</a> and
     <a data-tab="pane-pcw-Figures" href="#f10" id="f10Rf">10F</a>).
   </p>
-  <h4 class="subsubsectionHead to-section" id="d1e4539">Topological asymmetry.</h4>
+  <h6 class="subsubsectionHead to-section" id="d1e4539">Topological asymmetry.</h6>
   <p class="indent">
     The average of the number of branching points from a branch to a terminal end (average depth of subtrees) was high when the epithelial tree was more asymmetric and low when, to the contrary, it was more balanced or compact
     topologically. Epithelial trees were more symmetric (
@@ -3578,7 +3578,7 @@ animals. These samples are chosen because they exhibit the differences outlined 
       </math>
 </span>), <a data-tab="pane-pcw-Figures" href="#f10" id="f10Rg">Figure 10G</a>. Here, BPA and EE2 had opposite effects, matching hypothesis (iib).
   </p>
-  <h4 class="subsubsectionHead to-section" id="d1e4578">Depth of the gland.</h4>
+  <h6 class="subsubsectionHead to-section" id="d1e4578">Depth of the gland.</h6>
   <p class="indent">
     Similarly, the overall size of the epithelium along the <i>z</i>-axis were lower in 250BPA than in control (
     <span class="equationTd inline-formula"><math alttext="p equals 0.048" display="inline">
@@ -3638,7 +3638,7 @@ animals. These samples are chosen because they exhibit the differences outlined 
     As illustrated in <a data-tab="pane-pcw-Figures" href="#f10" id="f10Rh">Figure 10</a>, some of the features analyzed are consistent with hypothesis (i); the response to BPA and EE2 are similar. Others are consistent with hypothesis (ii),
     where BPA impacts features that EE2 does not impact (iia) and in some cases, BPA had opposite effects than EE2 (iib).
   </p>
-  <h4 class="subsubsectionHead to-section" id="d1e4645">In PND90 and 6-month.</h4>
+  <h5 class="subsubsectionHead to-section" id="d1e4645">In PND90 and 6-month.</h5>
   <p class="indent">
     We used the same methodology as above (see <a href="#S4">Table S4</a>). In PND90CD, the gland density was lower on average in 250BPA-exposed glands than in vehicle (
     <span class="equationTd inline-formula"><math alttext="p equals 0.020" display="inline">
@@ -3967,7 +3967,7 @@ animals. These samples are chosen because they exhibit the differences outlined 
     <p class="indent"><span class="figure__caption"><strong class="captionLabel">Table 4</strong> Correlation between semiquantitative scoring and the dimensions of PCA in PND21C.</span></p>
   </figcaption>
   <div class="sr-only">Table 4 has 4 columns, listing Correlation descriptors, Dim 1 (approximate size), Dim 2 (approximate local thickness), and Dim 3 (s).</div>
-  <table class="frame_hsides" xmlns:ali="http://www.niso.org/schemas/ali/1.0/" xmlns:oasis="http://www.niso.org/standards/z39-96/ns/oasis-exchange/table" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <table class="frame_hsides  wide" xmlns:ali="http://www.niso.org/schemas/ali/1.0/" xmlns:oasis="http://www.niso.org/standards/z39-96/ns/oasis-exchange/table" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <thead>
       <tr>
         <th colspan="1" rowspan="1">Correlation descriptors</th>
@@ -4845,7 +4845,7 @@ PMID: <pub-id pub-id-type="pmid">21143857</pub-id>, <pub-id pub-id-type="doi">10
 
 <figure class="figure" id="S1">
 <figcaption><strong><a href="#S1">Table S1</a>.</strong> Semi-quantitative scoring guideline used for morphological assessment of PND 21 and PND 90 mammary gland development in whole mounts following early life BPA or EE2 exposures.</figcaption>
-<table>
+<table class="wide">
 <thead>
 <tr class="header">
 <td><strong>Age (PND)</strong></td>
@@ -4937,7 +4937,7 @@ PMID: <pub-id pub-id-type="pmid">21143857</pub-id>, <pub-id pub-id-type="doi">10
 <figure class="figure" id="S2">
 <figcaption class="caption">
 <strong><a href="#S2">Table S2</a>.</strong> Features measured by the automatic method applied to PND 21 mammary glands and complementary quantities used jointly in PCA and other analyses.</figcaption>
-<table>
+<table class="wide">
 <thead>
 <tr class="header">
 <th><strong>Type of analysis performed</strong></th>
@@ -5424,7 +5424,7 @@ PMID: <pub-id pub-id-type="pmid">21143857</pub-id>, <pub-id pub-id-type="doi">10
 </figure>
 <figure class="figure" id="S3">
 <figcaption><strong><a href="#S3">Table S3</a>.</strong> Comparison of the test variable in the data, X<sub>observed</sub>, and the statistics resulting from the permutation test for different values of the criteria A and B with datasets PND90CD, PND90SD, 6MCD and 6MSD.</figcaption>
-<table>
+<table class="wide">
 <thead>
 <tr class="odd">
 <td>Criterion</td>
@@ -5586,7 +5586,7 @@ PMID: <pub-id pub-id-type="pmid">21143857</pub-id>, <pub-id pub-id-type="doi">10
 </figure>
 <figure class="figure"  id="S4">
 <figcaption><strong><a href="#S4">Table S4</a>.</strong> Mean and standard deviation of conditions compared in the main text, in PND90CD, PND90SD, 6MCD and 6MSD. Number of animals per group n=8-10.</figcaption>
-<table><thead>
+<table class="wide"><thead>
 <tr class="odd">
 <td>Dataset</td>
 <td>Quantity</td>
@@ -5689,7 +5689,7 @@ PMID: <pub-id pub-id-type="pmid">21143857</pub-id>, <pub-id pub-id-type="doi">10
 <figure class="figure" id="S5">
 
 <figcaption><strong><a href="#S5">Table S5</a>.</strong> Incidence of benign and malignant lesions/tumors identified from A) PND 90 and B) 6-month mammary glands following either continuous or stop-dose exposures across all treatment groups.</figcaption>
-<table>
+<table class="wide">
 <thead>
 <tr class="header">
 <th><strong>PND 90 Continuous Dose (PND90CD)</strong></th>
@@ -5785,7 +5785,7 @@ PMID: <pub-id pub-id-type="pmid">21143857</pub-id>, <pub-id pub-id-type="doi">10
 </tr>
 </tbody>
 </table>
-<table>
+<table class="wide">
 <thead>
 <tr class="even">
 <td><strong>PND 90 Stop Dose (PND90SD)</strong></td>
@@ -5880,7 +5880,7 @@ PMID: <pub-id pub-id-type="pmid">21143857</pub-id>, <pub-id pub-id-type="doi">10
 </tr>
 </tbody>
 </table>
-<table>
+<table class="wide">
 <thead>
 <tr class="header">
 <th><strong>6 Month Continuous Dose (6MCD)</strong></th>
@@ -5977,7 +5977,7 @@ PMID: <pub-id pub-id-type="pmid">21143857</pub-id>, <pub-id pub-id-type="doi">10
 </tr>
 </tbody>
 </table>
-<table>
+<table class="wide">
 <thead>
 
 <tr class="header">

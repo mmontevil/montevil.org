@@ -114,6 +114,10 @@ if(sectionId && sectionId!=""){}else{
      tocSelectedEle.classList.add("selected-B");
      var temp= new Promise(resolve => setTimeout(resolve, 500));
      tocSelectedEle.scrollIntoView();
+     myNav.scrollTop -= 100;
+   //   let position = bluetocSelectedEle.getBoundingClientRect();
+  // scrolls to 20px above element
+  //window.scrollTo(position.left, position.top + window.scrollY - 20);
   }
 }
 }   

@@ -91,10 +91,18 @@
   --temp: calc(50% - 50vw + 2em);
   --tempb: calc(max(-2.5em,var(--temp)));
   margin-left: calc(min(var(--tempb), 0em));
-  padding-left: 2em;
-  text-indent: -2em;
-      //}
+      padding-left: 2em;
+      text-indent: -2em;
   }
+  
+  .wide{ 
+      --temp: calc(50% - 50vw + 2em);
+  --tempb: calc(max(-5em,var(--temp)));
+  margin-left: calc(min(var(--tempb), 0em));
+    margin-right: calc(min(var(--tempb), 0em));
+    
+  }
+  
   h3, {
       --tempb: calc(max(-2em,var(--temp)));
   }
