@@ -3,7 +3,8 @@
 
 
 {% if not gsid==""%}
-{%set authorPic -%}https://scholar.googleusercontent.com/citations?view_op=view_photo&user={{gsid}}&citpid=4{%-endset-%}
+{{gsid | donwloadAuthor}}
+{%set authorPic -%}/assets/avatars/gs/{{-gsid-}}.jpg{%-endset-%}
 {%set authorUrl -%}https://scholar.google.fr/citations?user={{-gsid-}}{%-endset-%}
 {%endif%}
 

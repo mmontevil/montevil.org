@@ -2,6 +2,7 @@ const pkg = require('../../package.json');
 const imageSize = require('image-size');
 const markdownIt = require('markdown-it');
 const md = new markdownIt();
+const fs = require('fs');
 
 const runBeforeHook = (image, document) => {
   let documentBody = document.querySelector('body');
@@ -32,7 +33,8 @@ Math.round(newstr*newstr2/1000));
 
   } else {
     let imageDimensions;
-    if (imageSrc[0] === '/') {
+    
+    if (imageSrc[0] === '/' && (fs.statSync('./src' + imageSrc).size>0)) {
       // TODO: get "src/" from Eleventy config
       imageDimensions = imageSize('./src' + imageSrc);
       imageUrl = pkg.homepage + encodeURI(imageSrc);
