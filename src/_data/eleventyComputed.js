@@ -1,7 +1,7 @@
 const twitter = require('twitter-text');
 const slugifyString = require('../_utils/slugify');
 const tagFilter = require('../_utils/tagfilter');
-
+var search = require('approx-string-match').default;
 
 
 
@@ -278,6 +278,25 @@ module.exports = {
       for (const entry in data.bibM) {
           if(data.bibM[entry].id===data.page.fileSlug){
             res = data.bibM[entry];
+          }
+      }
+        return res;
+    },
+      gsentry: (data) => {
+      var res={};
+      let size=0;
+      let title=data.title.toLowerCase();
+      if (slugifyString(title.toLowerCase())== slugifyString(("Perspectives on Organisms: Biological time, symmetries and singularities").toLowerCase())){
+        title="Perspectives on organisms";
+      }
+      title=slugifyString(title.toLowerCase());
+      
+      for (const entry in data.scholar) {
+          if(search(slugifyString(data.scholar[entry][0].bib.title.toLowerCase()), title,4).length>0){
+            if (data.scholar[entry][1].length>size){
+                res = data.scholar[entry];
+                size=data.scholar[entry][1].length;
+            }
           }
       }
         return res;

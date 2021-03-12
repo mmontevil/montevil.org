@@ -1,0 +1,31 @@
+
+{% macro author(name, gsid, people) %}
+
+
+{% if not gsid==""%}
+{%set authorPic -%}https://scholar.googleusercontent.com/citations?view_op=view_photo&user={{gsid}}&citpid=4{%-endset-%}
+{%set authorUrl -%}https://scholar.google.fr/citations?user={{-gsid-}}{%-endset-%}
+{%endif%}
+
+{% if people[name] and people[name].alias %}{%set name =people[name].alias -%}{%endif%}
+
+
+{%set temp -%}/assets/avatars/{{name |slug}}.jpg{%-endset-%}
+{% if (("src"+temp)|fExists)==true %}{%set authorPic =temp -%}{%endif%}
+
+{% if people[name] and people[name].site %}{%set authorUrl =people[name].site -%}{%endif%}
+
+<figure class="frameAuthor">
+ {% if authorPic %}
+ <img class="reaction__author__photo2 u-photo noDarkFilter" src="{{-authorPic-}}" 
+ height="48" alt=" ">
+ {%endif%}
+ <figcaption class="authorCaption">
+ {% if authorUrl-%} <a href="{{authorUrl}}">{%-endif-%}
+ {{name}}
+ {% if authorUrl-%}</a>{%-endif%}
+ </figcaption>
+ </figure>
+
+
+{% endmacro %}

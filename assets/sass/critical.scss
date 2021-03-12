@@ -412,7 +412,7 @@ img.border {
   display: block;
   margin: var(--gap) auto;
 }
-.inlineLogo {
+.inlineLogo {width: auto;
   vertical-align: text-top;
   display: inline-block;
   height: 1em;

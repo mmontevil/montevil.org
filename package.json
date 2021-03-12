@@ -132,6 +132,7 @@
   "dependencies": {
     "@rollup/plugin-babel": "^5.3",
     "@sideway/pinpoint": "^2.0.0",
+    "approx-string-match": "^1.1.0",
     "bib2json": "^0.0.1",
     "citation-js": "^0.5.0-alpha.10",
     "core-js": "^3.9",

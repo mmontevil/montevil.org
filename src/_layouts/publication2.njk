@@ -1,0 +1,70 @@
+---
+layout: content
+---
+
+{% from "macros/pubuttons.njk" import pubuttons %}
+{% set item = {
+pdfoutSup: pdfoutSup,
+hasSup: hasSup,
+      pdfout: pdfout,
+      bibout: bibout,
+      hasPDF: hasPDF,
+      hasFullText: hasFullText,       
+      peerReview: peerReview,
+      type: type,
+      typepub: typepub,
+      lang: lang,
+      page: {
+          url: page.url
+          },
+      bibentry: {
+          DOI: bibentry.DOI,
+          URL: bibentry.URL
+          }
+      }
+%}
+   {% from "macros/publabel.njk" import publabel %}
+
+
+{% if not  (excerpt === undefined) %}
+<div class="lead">
+<p> {{excerpt}}</p>
+</div>
+{%endif%}
+
+
+  <div id="CitationAnchor" class="citationW indent"><p class="svgfill">{{publabel(item)|safe}} {% icon "reference", "reference" %} {{ bibentry | bibcite2|divRemove|safe}}</p>
+  <p> {{pubuttons(item) |safe}}</p>
+  </div>
+  
+  
+  
+{% if  noToc %}
+
+   <div class="legibilityWidth wrap0all">
+<p > <span class="paragraphHead2"> Abstract: </span> 
+  {{abstract |  safe}}
+  </p>
+ </div>
+  {%else%}
+  
+<section class="legibilityWidth tableContent">
+ <h2 class="titleHead indent" id="toc-site"> Table of contents</h2>
+  <h3 class="subtitleHead indent" > Reading time: ~{{ content   | readingTime({speed:170}) }}</h3>
+
+  {{ content | toc | safe }}
+ 
+
+  {% from "macros/overlayToc.njk" import overlayToc %}
+{{overlayToc(content,"",title)|safe}}
+</section>  
+<hr> 
+ {%endif%}
+
+{{ content | addAnchor | safe }}
+
+{#
+ <div class='altmetric-embed' data-badge-type='donut' data-doi="{{bibentry.DOI}}"></div>
+
+ <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js' defer></script>
+#}

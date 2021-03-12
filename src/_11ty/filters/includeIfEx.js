@@ -10,5 +10,6 @@ module.exports =  {
     }else{
       return "";
     }
-  },       
+  }, 
+  fExists: (file) =>{return fs.existsSync(file);},
 };

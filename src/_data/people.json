@@ -1,13 +1,23 @@
 {
-  "Andy Bell": {
-    "site": "https://andy-bell.design/",
-    "twitter": "andybelldesign"
+  "G Longo": {
+    "site": "https://www.di.ens.fr/users/longo/"
   },
-  "Heydon Pickering": {
-    "twitter": "heydonworks"
+  "A Pocheville": {
+    "site": "https://arnaud.pocheville.science/"
   },
-  "Remy Sharp": {
-    "site": "https://remysharp.com/",
-    "twitter": "rem"
-  }
+  "A Soto": {
+    "alias": "AM Soto"
+  },
+  "AM Soto": {
+      "site": "https://gsbs.tufts.edu/facultyResearch/faculty/soto-ana"
+  },
+    "SA Kauffman": {
+    "alias": "S Kauffman"
+  },
+  "S Kauffman": {
+    "site": "https://scholar.google.com/citations?user=yoPM0F8AAAAJ&hl=en"
+    },
+    "J Lassègue": {
+    "site" : "http://centregeorgsimmel.ehess.fr/jean-lassegue/"
+    }
 }

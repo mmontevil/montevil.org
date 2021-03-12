@@ -1,5 +1,5 @@
 ---
-layout: content
+layout: publication2
 upnav: toc-site
 eleventyComputed:
     keyword : "{{ bibentry.keyword }}"
@@ -12,70 +12,37 @@ eleventyComputed:
     orderDate: "{%- if datepub=='Submitted' -%}{{- page.date | attributeDate -}}{%- else -%}{{- datepub     -}}{%- endif -%}"
 ---
 
-{% from "macros/pubuttons.njk" import pubuttons %}
-{% set item = {
-pdfoutSup: pdfoutSup,
-hasSup: hasSup,
-      pdfout: pdfout,
-      bibout: bibout,
-      hasPDF: hasPDF,
-      hasFullText: hasFullText,       
-      peerReview: peerReview,
-      type: type,
-      typepub: typepub,
-      lang: lang,
-      page: {
-          url: page.url
-          },
-      bibentry: {
-          DOI: bibentry.DOI,
-          URL: bibentry.URL
-          }
-      }
-%}
-   {% from "macros/publabel.njk" import publabel %}
 
-
-{% if not  (excerpt === undefined) %}
-<div class="lead">
-<p> {{excerpt}}</p>
+  <div class="legibilityWidth wrap0all">
+{{ content  | safe }}
 </div>
+ 
+ 
+ {% if gsentry[1].length >0%}
+<h2 class="sectionHead" id="backreferences">Back-references</h2>
+
+ <ol >
+{% for article in gsentry[1]%}
+ <li >
+ 
+  {% from "macros/author.njk" import author %}
+
+{% for auth in article.author_id%}
+    {{- author(article.bib.author[loop.index0], auth, people)  | safe -}}
+{%endfor%} 
+
+{% if not article.bib.pub_year=="NA"%}{{article.bib.pub_year}}. {%endif%}
+{% if article.bib.venue=="NA"%}<i>{%endif%}
+{{article.bib.title | title}}.
+{% if article.bib.venue=="NA"%}</i>{%else%}
+<i>{{article.bib.venue | title-}}</i>.{%endif%}
+{% if not article.pub_url==""%}<a href="{{article.pub_url}}">Publisher</a> {%endif%}
+{% if not article.eprint_url==""%}
+<a href="{{article.eprint_url}}">Eprint </a>
 {%endif%}
 
-
-  <div id="CitationAnchor" class="citationW indent"><p class="svgfill">{{publabel(item)|safe}} {% icon "reference", "reference" %} {{ bibentry | bibcite2|divRemove|safe}}</p>
-  <p> {{pubuttons(item) |safe}}</p>
-  </div>
-{% if  noToc %}
-   <div class="legibilityWidth wrap0all">
-<p > <span class="paragraphHead2"> Abstract: </span> 
-  {{abstract |  safe}}
-  </p>
-
-  {%else%}
-  
-
-
-
-
-<section class="legibilityWidth tableContent">
- <h2 class="titleHead indent" id="toc-site"> Table of contents</h2>
-  <h3 class="subtitleHead indent" > Reading time: ~{{ content   | readingTime({speed:170}) }}</h3>
-
-  {{ content | toc | safe }}
- 
-
-  {% from "macros/overlayToc.njk" import overlayToc %}
-{{overlayToc(content,"",title)|safe}}
-</section>  
-<hr> 
-<div class="legibilityWidth wrap0all">
- {%endif%}
- 
-
-
- 
-{{ content | addAnchor | safe }}
- </div>
-
+ </li >
+{%endfor%}
+</ol >
+{%endif%}
 
