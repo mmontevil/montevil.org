@@ -112,7 +112,8 @@ margin-right: 0;
   animation-fill-mode: forwards;
   animation-name: revealFooter;
   color: white;
-    background-color: #1c0d1d;}
+    background-color: rgba(23,13,29,0.5);}
+    
 
     line-height: 2;
 
@@ -122,6 +123,7 @@ margin-right: 0;
   }
 
   .edit {
+    background-color: rgba(23,13,29,0.5);
     margin-bottom: var(--gap);
     font-size: var(--font-size-xs);
     white-space: normal;

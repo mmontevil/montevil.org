@@ -2,7 +2,7 @@
          
 
   {% if build.env === "production" %}
-    <script>
+  {#  <script>
       window.ga = function () {
         ga.q.push(arguments)
       };
@@ -37,4 +37,7 @@
     </script>
 
     <script src="https://www.google-analytics.com/analytics.js" defer></script>
+    #}
+    <script data-goatcounter="https://montevil.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
   {% endif %}
