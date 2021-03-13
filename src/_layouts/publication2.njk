@@ -41,11 +41,7 @@ hasSup: hasSup,
   
 {% if  noToc %}
 
-   <div class="legibilityWidth wrap0all">
-<p > <span class="paragraphHead2"> Abstract: </span> 
-  {{abstract |  safe}}
-  </p>
- </div>
+
   {%else%}
   
 <section class="legibilityWidth tableContent">
@@ -61,7 +57,11 @@ hasSup: hasSup,
 <hr> 
  {%endif%}
 
-{{ content | addAnchor | safe }}
+{% if noAnchor %}
+    {{ content  | safe }}
+{% else %}
+    {{ content | addAnchor | safe }}
+{% endif %}
 
 {#
  <div class='altmetric-embed' data-badge-type='donut' data-doi="{{bibentry.DOI}}"></div>

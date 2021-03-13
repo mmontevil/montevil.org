@@ -30,10 +30,10 @@
       {% endfor %}
      
     </ul>
-    <ul class="tools" >    {% if upnav %}
+    <ul class="tools" >    {% if upnav and not noToc%}
         <li class="navigation__{{ type }}{% if url in page.url %} current" aria-current="page{% endif %}">
          {#<a href="#{{ upnav }}">TOP</a>#}
-          <a class="onclickbutton"  id="navToc"><span class="abssvg folded">{% icon "chevronRight", "Link" %}</span><span class="abssvg unfolded">{%- icon "chevronDown", "Link" -%}</span>toc</a>
+          <a class="onclickbutton"  id="navToc"><span class="abssvg folded">{% icon "chevronRight", "Link" %}</span><span class="abssvg unfolded">{%- icon "chevronDown", "Link" -%}</span><span class="normalStyle">ToC</span></a>
         </li>
         {% endif %}
       <li class="tools__search navigation_archives{% if 'archives' in page.url %} current" aria-current="page{% endif %}">
