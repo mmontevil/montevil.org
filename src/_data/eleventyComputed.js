@@ -242,6 +242,13 @@ function chooseDate(datepub,date) {
     return date;
   }
 }
+
+async function fetchCrossref(doi) {
+  // do some async things
+  return fetch('https://api.eventdata.crossref.org/v1/events?rows=500&obj-id='+doi+'&source=twitter').then(res => res.json());
+}
+//
+
 module.exports = {
   lang: (data) => { let lang=data.lang;
     if(data.bibentryconf && data.bibentryconf.fields && data.bibentryconf.fields.language){
@@ -256,6 +263,7 @@ module.exports = {
   formattedDate: (data) => formattedDate(data.lang, data.page.date),
   attributeDate: (data) => attributeDate(data.page.date),
   permalinkDate: (data) => permalinkDate(data.page.date),
+  crossref: (data) => {if(data.bibentry.DOI) return fetchCrossref(data.bibentry.DOI)}, 
   authors: {
     text: (data) => textAuthors(data),
     html: (data) => htmlAuthors(data),

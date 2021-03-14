@@ -222,7 +222,7 @@
 #footer{
     filter: hue-rotate(180deg) invert(100%) ;
   }
-  .noDarkFilter {
+  .noDarkFilter, .tweet-profile>img, .tweet-images>img{
     filter: none;
   }
 }

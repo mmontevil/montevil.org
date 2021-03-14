@@ -2,17 +2,18 @@
 
 /* card */
 .tweet-card {
-  background: white;
+  background: var(--color-primary-lighter-8);
   margin-left: auto;
   margin-right: auto;
+  --flow-space: 1em;
   padding: 1em;
-  background-color: #fff;
-  border: var(--border-width) solid colors.$color-grey;
+ // background-color: #fff;
+  border: var(--border-width) solid var(--color-grey);
   border-radius: 0.5em;
   font-size: 1em;
   line-height: 1.4;
   font-family: sans-serif;
-  color: #1c2022;
+ // color: #1c2022;
   max-width: 30em;
   text-align: left;
 
@@ -64,7 +65,7 @@
     &:link,
     &:visited {
       font-weight: bold;
-      color: #1c2022;
+      color: var(--color-darkgrey);
       line-height: 1.3;
     }
     &:hover,
@@ -76,7 +77,7 @@
   a.tweet-author-handle {
     &:link,
     &:visited {
-      color: colors.$color-darkgrey;
+      color: var(--color-darkgrey);
       font-size: var(--font-size-s);
       line-height: 1;
     }
@@ -96,7 +97,7 @@
   max-width: 100%;
   height: auto;
   margin-bottom: 0.5em;
-  border: 1px solid colors.$color-lightgrey;
+  border: 1px solid var(--color-lightgrey);
 }
 
 /* footer */
@@ -106,7 +107,7 @@
 }
 
 .tweet-card .tweet-footer a {
-  color: colors.$color-darkgrey;
+  color: var(--color-darkgrey);
   font-size: var(--font-size-s);
 }
 
@@ -122,7 +123,7 @@
 }
 
 .tweet-footer .tweet-like:hover {
-  color: colors.$color-red;
+  color: var(--color-red);
 }
 
 .tweet-footer .tweet-like-count {

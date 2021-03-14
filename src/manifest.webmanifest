@@ -5,7 +5,7 @@
   "short_name": "M. Montévil",
   "description": "working at the crossroad of theoretical biology and philosophy.",
   "scope": "/",
-  "start_url": "/?utm_source=manifest",
+  "start_url": "/",
   "display": "standalone",
   "orientation": "any",
   "theme_color": "#691449",

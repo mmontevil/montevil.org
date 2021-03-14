@@ -13,7 +13,7 @@
 {% set mentions = allMentions | webmentionsByType('mention-of') %}
 {% set mentionsSize = mentions | size  %}
 
-<h2 id="webmentions">{{ allMentionsSize }} Webmention{% if allMentionsSize > 1 %}s{% endif %}</h2>
+<h2 id="webmentions">{#{{ allMentionsSize }}#} Webmention{% if allMentionsSize > 1 %}s{% endif %}</h2>
 
 {% if likesSize > 0 %}
   <section>
@@ -42,3 +42,18 @@
     {% include "components/webmentions/mentions.njk" %}
   </section>
 {% endif %}
+
+{%for tweeted in crossref.message.events%}
+{%if  tweeted.source_id =="twitter"%}
+{% set temp-%}{{tweeted.subj.title| replace("Tweet ", "")}}{%-endset-%}
+{%if temp=="1274995148934561793"  %}{%else%}
+{%if temp=="1275912806257344515"  %}{%else%}
+{%if temp=="1123337833714835456"  %}{%else%}
+{%tweet   temp%}
+{%endif%}{%endif%}{%endif%}
+{%else%}
+{%if  tweeted.source_id =="wikipedia"%}{%else%}
+{%endif%}
+{%endif%}
+
+{% endfor %}
