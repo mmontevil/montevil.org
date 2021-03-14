@@ -60,7 +60,7 @@ img.card__illustration {
   color: var(--color-primary);
 }
 .card__title {
-    scroll-snap-align: none; 
+   // scroll-snap-align: none; 
   margin-top: 0;
   font-size: var(--font-size-xl);
   font-weight: bold;
@@ -164,7 +164,7 @@ overflow-x: clip;
 /*
   @media (hover: none){
     .cards-list {
-  scroll-snap-type: x proximity;
+  //scroll-snap-type: x proximity;
   // scroll-snap-type: x mandatory;
 //scroll-padding: 4em;
   display: flex;
