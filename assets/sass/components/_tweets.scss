@@ -19,12 +19,12 @@
 
   &:hover,
   &:focus {
-    border-color: colors.$color-twitter;
+    border-color: var(--color-twitter);
   }
 
   a:link,
   a:visited {
-    color: colors.$color-twitter;
+    color: var(--color-twitter);
     background-color: transparent;
     text-decoration: none;
   }
@@ -32,7 +32,7 @@
   a:hover,
   a:focus,
   a:active {
-    color: colors.$color-twitter;
+    color: var(--color-twitter);
     background-color: transparent;
     text-decoration: underline;
   }
@@ -70,7 +70,7 @@
     }
     &:hover,
     &:focus {
-      color: colors.$color-twitter;
+      color: var(--color-twitter);
     }
   }
 
@@ -83,7 +83,7 @@
     }
     &:hover,
     &:focus {
-      color: colors.$color-twitter;
+      color: var(--color-twitter);
     }
   }
 
@@ -112,7 +112,7 @@
 }
 
 .tweet-footer .tweet-date:hover {
-  color: colors.$color-twitter;
+  color: var(--color-twitter);
 }
 
 .tweet-footer .tweet-like {

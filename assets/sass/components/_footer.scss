@@ -77,7 +77,7 @@ margin-right: 0;
 }
   a:link,
   a:visited {
-    color: #eb95cb;
+    color: white;
   }
 
   a:hover,
@@ -112,7 +112,7 @@ margin-right: 0;
   animation-fill-mode: forwards;
   animation-name: revealFooter;
   color: white;
-    background-color: rgba(23,13,29,0.5);}
+    background-color: rgba(23,13,29,0.75);}
     
 
     line-height: 2;
@@ -123,7 +123,7 @@ margin-right: 0;
   }
 
   .edit {
-    background-color: rgba(23,13,29,0.5);
+    background-color: rgba(23,13,29,0.75);
     margin-bottom: var(--gap);
     font-size: var(--font-size-xs);
     white-space: normal;
