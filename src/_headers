@@ -22,11 +22,4 @@
  Content-Security-Policy: upgrade-insecure-requests; base-uri 'self'; img-src 'self' montevil.goatcounter.com data: cdn.jsdelivr.net gc.zgo.at res.cloudinary.com i.ytimg.com image.thum.io; script-src 'self' data: 'unsafe-inline' 'unsafe-eval'  platform.twitter.com syndication.twitter.com cdn.syndication.twimg.com cdn.jsdelivr.net gc.zgo.at ; object-src 'self' vimeo.com; connect-src 'self' res.cloudinary.com i.ytimg.com *.algolia.net *.algolianet.com *.centrepompidou.fr  cdn.jsdelivr.net gc.zgo.at ; 
   Cache-Control: public, no-cache, no-store, max-age=0, must-revalidate
   Link: <https://res.cloudinary.com>; rel=preconnect; crossorigin, <https://cdn.jsdelivr.net>; rel=preconnect; crossorigin, <https://i.ytimg.com>; rel=preconnect; crossorigin, <https://gc.zgo.at>; rel=preconnect; crossorigin
-  
-/*
-Content-Security-Policy: upgrade-insecure-requests; default-src 'none'; connect-src 'self' montevil.goatcounter.com *.algolia.net; img-src 'self' montevil.goatcounter.com res.cloudinary.com data: https://res.cloudinary.com; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js https://gc.zgo.at/count.js; style-src 'unsafe-inline' https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/; worker-src 'self'
-*/
-  /*.css
-  Cache-Control: public, max-age=31536000,immutable
-/*.js
-  Cache-Control: public, max-age=31536000,immutable
+ 
