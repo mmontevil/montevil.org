@@ -12,8 +12,8 @@ module.exports = {
     './offline.html',
     './offline-fallback.html',
     './manifest.webmanifest',
-    './publications/articles/2020*.html',
-    './publications/chapter/2020*.html',
+    './publications/articles/202*/*.html',
+    './publications/chapters/202*/*.html',
     './assets/me/Montevil-192px.png',
     './assets/me/Montevil-512px.png'
   ],
