@@ -11,7 +11,7 @@
   X-Clacks-Overhead: GNU Terry Pratchett
 
 
- Content-Security-Policy: upgrade-insecure-requests; base-uri 'self'; img-src 'self' montevil.goatcounter.com data: cdn.jsdelivr.net gc.zgo.at res.cloudinary.com i.ytimg.com image.thum.io; script-src 'self' data: 'unsafe-inline' 'unsafe-eval'  platform.twitter.com syndication.twitter.com cdn.syndication.twimg.com cdn.jsdelivr.net gc.zgo.at ; object-src 'self' vimeo.com; connect-src 'self' res.cloudinary.com i.ytimg.com *.algolia.net *.algolianet.com *.centrepompidou.fr  cdn.jsdelivr.net gc.zgo.at ; 
+ Content-Security-Policy: upgrade-insecure-requests; base-uri 'self'; img-src 'self' montevil.goatcounter.com data: cdn.jsdelivr.net gc.zgo.at res.cloudinary.com i.ytimg.com image.thum.io; script-src 'self' data: 'unsafe-inline' 'unsafe-eval'  platform.twitter.com syndication.twitter.com cdn.syndication.twimg.com cdn.jsdelivr.net gc.zgo.at ; object-src 'self' vimeo.com; connect-src 'self' res.cloudinary.com i.ytimg.com *.algolia.net *.algolianet.com *.centrepompidou.fr  cdn.jsdelivr.net gc.zgo.at montevil.goatcounter.com; 
   Cache-Control: public, no-cache, no-store, max-age=0, must-revalidate
   Link: <https://res.cloudinary.com>; rel=preconnect; crossorigin, <https://cdn.jsdelivr.net>; rel=preconnect; crossorigin, <https://i.ytimg.com>; rel=preconnect; crossorigin, <https://gc.zgo.at>; rel=preconnect; crossorigin
  

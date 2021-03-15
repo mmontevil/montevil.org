@@ -12,10 +12,11 @@ module.exports = {
     './offline.html',
     './offline-fallback.html',
     './manifest.webmanifest',
-    './publications/articles/202*/*.html',
-    './publications/chapters/202*/*.html',
+    './publications/*/202*/*.html',
+        './publications/*/sub*/*.html',
     './assets/me/Montevil-192px.png',
-    './assets/me/Montevil-512px.png'
+    './assets/me/Montevil-512px.png',
+    './publications/publicationsbyYear/*.html',
   ],
   runtimeCaching: [
     {
