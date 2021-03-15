@@ -50,18 +50,19 @@ if (currentTheme) {
 	// If the sibling matches our selector, use it
 	// If not, jump to the previous sibling and continue the loop
 	while (sibling) {
-		if (sibling.matches(selector)) return sibling;
-		sibling = sibling.previousElementSibling
+		if (sibling.matches(selector)) return sibling.id;
+		sibling = sibling.previousElementSibling;
+    if (sibling == undefined) return null;
 	}
 
 };
  var findSection = function (centeredElement) {
-     if(centeredElement.classList.contains('legibilityWidth')){
+     if(centeredElement.classList.contains('legibilityWidth')||centeredElement.classList.contains('wrap0')){
        return null;
     }else{
       var element=centeredElement;
       while (element){
-        if (element.matches('.legibilityWidth > *')) return getPreviousSibling(element,"h2,h3,h4,h5,h6").id;
+        if (element.matches('.legibilityWidth > *')||element.matches('.wrap0 > *')) return getPreviousSibling(element,"h2,h3,h4,h5,h6");
         if (element.matches('body')) return null;
         element = element.parentNode;
       }
@@ -110,7 +111,7 @@ if(sectionId && sectionId!=""){}else{
 }
    if(sectionId && sectionId!=""){
      tocSelectedEle = document.querySelectorAll('#myNav a[href^="#'+sectionId+'"]')[0];
-    
+    if(tocSelectedEle){
      tocSelectedEle.classList.add("selected-B");
      var temp= new Promise(resolve => setTimeout(resolve, 500));
      tocSelectedEle.scrollIntoView();
@@ -118,7 +119,7 @@ if(sectionId && sectionId!=""){}else{
    //   let position = bluetocSelectedEle.getBoundingClientRect();
   // scrolls to 20px above element
   //window.scrollTo(position.left, position.top + window.scrollY - 20);
-  }
+  }}
 }
 }   
 if(myNav &&navToc){

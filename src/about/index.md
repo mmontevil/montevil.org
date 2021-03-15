@@ -2,9 +2,9 @@
 title: About me
 layout: page
 lang: en
+css: ["page-about.css"]
 ---
-{% set cssFilename = "page-about.css" %}
-{% include "add-css.njk" %}
+
 
 ![Maël Montévil](/assets/me/Montevil.jpg){.logo}{.portrait}{.noDarkFilter}
 

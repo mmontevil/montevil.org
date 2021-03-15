@@ -224,7 +224,6 @@ const imagesResponsiverTransform = (content, outputPath) => {
   
    /*
   const typesetPlugin = require('eleventy-plugin-typeset');
-
   
   eleventyConfig.addPlugin(
   typesetPlugin({
@@ -303,7 +302,6 @@ module.exports = (eleventyConfig) => {
       });
       return minified.replaceAll('\n',' ');
     }
-
     return content;
   });*/
   // eleventyConfig.addPlugin(imagesResponsiver, imagesResponsiverConfig);

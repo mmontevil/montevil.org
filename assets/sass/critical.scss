@@ -1,3 +1,4 @@
+
 // https://github.com/hankchizljaw/modern-css-reset
 @use '../../node_modules/modern-css-reset/dist/reset';
 
@@ -147,17 +148,17 @@ h2 {font-variant: small-caps;
 }
 
 h3 {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-xxl);
   font-weight: 500;
 }
 
 h4 {
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-xl);
   font-weight: 500;
 }
 
 h5 {
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-l);
   font-weight: 400;
   font-style: italic;
 }
@@ -604,21 +605,14 @@ a[href$='.kml'] {
 /*
 .pull-T, .pull-V, .pull-W, .pull-Y {margin-left: -0.07em}
 .push-T, .push-V, .push-W, .push-Y {margin-right: 0.07em}
-
 .pull-O, .pull-C, .pull-o, .pull-c {margin-left: -0.04em}
 .push-O, .push-C, .push-o, .push-c {margin-right: 0.04em}
-
 .pull-A {margin-left: -0.03em}
 .push-A {margin-right: 0.03em}
-
-
 .pull-single{margin-left:-.27em}
 .push-single{margin-right:.27em}
-
 .pull-double, .push-double,
 .pull-single, .push-single {display: inline-block}
-
-
 .pull-double{margin-left:-.46em}
 .push-double{margin-right:.46em}
 */
@@ -765,4 +759,6 @@ mjx-mspace{width: 0!important; }
 .invertwrapper{position: absolute; heigth: 100vh; width: 100vw;  top: 5em;right:0;}
 
 .normalStyle {font-variant: normal;}
+
+ 
 

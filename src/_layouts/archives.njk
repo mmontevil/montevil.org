@@ -2,6 +2,7 @@
 layout: default
 title: Archives
 isArchive: true
+css: ["page-archives.css"]
 ---
 
 
@@ -33,8 +34,7 @@ isArchive: true
     {{title}}
   </h1>
   
-  {% set cssFilename = "page-archives.css" %}
-  {% include "add-css.njk" %}
+
   
     <div  id="filters">
     {% include  "archiveTOC.njk" %}

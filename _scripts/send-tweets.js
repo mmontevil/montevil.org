@@ -135,7 +135,6 @@ const main = async () => {
   let result = await Promise.all(
     [
       'https://montevil.org/feeds/twitter/links.json',
-      'https://montevil.org/feeds/twitter/notes.json',
     ].map(async (feedUrl) => {
       return fetch(feedUrl)
         .then((response) => response.json())
