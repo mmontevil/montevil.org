@@ -25,7 +25,7 @@ permalink: offline.html
 // https://googlechrome.github.io/samples/service-worker/window-caches/
 
 const cachedContent = {
-articles: [],
+publications: [],
 links: [],
 tags: []
 };
@@ -36,14 +36,14 @@ return cache.keys();
 requests.forEach(request => {
   const requestUrl = new URL(request.url);
   const requestPath = requestUrl.pathname;
-  if (/^\/articles\/[0-9]{4}\/[0-9]{2}\/./.test(requestPath)) {
-    addRequestToList(request, "cachedArticles");
+  if (/^\/publications\/*\/./.test(requestPath)) {
+    addRequestToList(request, "cachedPublications");
   } else {
-    if (/^\/links\/[0-9]{4}\/[0-9]{2}\/./.test(requestPath)) {
+    if (/^\/links\/*\/./.test(requestPath)) {
       addRequestToList(request, "cachedLinks");
     } else {
       if (/^\/notes\/[0-9]{4}\/[0-9]{2}\/./.test(requestPath)) {
-        addRequestToList(request, "cachedPublications");
+        addRequestToList(request, "cachedtags");
       }
     }
   }
