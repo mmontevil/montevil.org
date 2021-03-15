@@ -12,7 +12,7 @@ module.exports = {
     './offline.html',
     './offline-fallback.html',
     './manifest.webmanifest',
-    './publications/**/*.html'
+    './publications/articles/2020*.html'
   ],
   //dontCacheBustURLsMatching: new RegExp('.+.[a-f0-9]{8}..+'),
   //swSrc: path.join(DIST, 'service-worker.js'),
