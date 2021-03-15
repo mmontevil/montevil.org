@@ -1,9 +1,9 @@
 ---
+layout: default
 title: Archives
 isArchive: true
 ---
 
-{% extends "./default.njk" %}
 
 {% from "macros/itemCard.njk" import itemCard %}
 
@@ -30,13 +30,7 @@ isArchive: true
 
 
   <h1 class= "wrap">
-    {% block title %}
-      {% if currentType == 'archives' %}
-        Archives 
-      {% else %}
-        {{ currentType | capitalize }}        
-      {% endif %}
-    {% endblock %}
+    {{title}}
   </h1>
   
   {% set cssFilename = "page-archives.css" %}

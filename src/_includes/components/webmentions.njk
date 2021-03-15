@@ -1,5 +1,8 @@
 {% set allMentions = articleUrl | getWebmentionsForUrl %}
 {% set allMentionsSize = allMentions | size %}
+{% set tweetsize = crossref.message.events | size %}
+
+{% set allMentionsSize = allMentionsSize+tweetsize  %}
 
 {% set likes = allMentions | webmentionsByType('like-of') %}
 {% set likesSize = likes | size %}
@@ -13,7 +16,7 @@
 {% set mentions = allMentions | webmentionsByType('mention-of') %}
 {% set mentionsSize = mentions | size  %}
 
-<h2 id="webmentions">{#{{ allMentionsSize }}#} Webmention{% if allMentionsSize > 1 %}s{% endif %}</h2>
+<h2 id="webmentions">{{ allMentionsSize }} Webmention{% if allMentionsSize > 1 %}s{% endif %}</h2>
 
 {% if likesSize > 0 %}
   <section>

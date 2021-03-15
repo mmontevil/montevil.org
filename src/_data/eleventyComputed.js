@@ -2,8 +2,8 @@ const twitter = require('twitter-text');
 const slugifyString = require('../_utils/slugify');
 const tagFilter = require('../_utils/tagfilter');
 var search = require('approx-string-match').default;
-
-
+const flatcache = require('flat-cache');
+const path = require('path');
 
 const dtf = {
   en: new Intl.DateTimeFormat('en-GB', {
@@ -242,13 +242,24 @@ function chooseDate(datepub,date) {
     return date;
   }
 }
+  var cache = flatcache.load('crossref', path.resolve('./_cache'));
 
-async function fetchCrossref(doi) {
-  // do some async things
-  return fetch('https://api.eventdata.crossref.org/v1/events?rows=500&obj-id='+doi+'&source=twitter').then(res => res.json());
+async function fetchCrossref(doi,id) {
+  if(id){ 
+  const cachedData = cache.getKey(id);
+ 
+  if (!cachedData) {
+  const allPosts = await  fetch('https://api.eventdata.crossref.org/v1/events?rows=500&obj-id='+encodeURI(doi)+'&source=twitter').then(res => res.json());
+  cache.setKey(id, allPosts);
+		cache.save(true);
+		return allPosts;}
+		return cachedData;
+}else{
+  return undefined;
+}
 }
 //
-
+ 
 module.exports = {
   lang: (data) => { let lang=data.lang;
     if(data.bibentryconf && data.bibentryconf.fields && data.bibentryconf.fields.language){
@@ -263,7 +274,7 @@ module.exports = {
   formattedDate: (data) => formattedDate(data.lang, data.page.date),
   attributeDate: (data) => attributeDate(data.page.date),
   permalinkDate: (data) => permalinkDate(data.page.date),
-  crossref: (data) => {if(data.bibentry.DOI) return fetchCrossref(data.bibentry.DOI)}, 
+  crossref: (data) => {if(data.bibentry.DOI){ return fetchCrossref(data.bibentry.DOI,data.page.fileSlug)}else{if(data.bibentry.URL) return fetchCrossref(data.bibentry.URL)}}, 
   authors: {
     text: (data) => textAuthors(data),
     html: (data) => htmlAuthors(data),

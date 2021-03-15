@@ -1,6 +1,12 @@
 from scholarly import scholarly, ProxyGenerator
 from scraper_api import ScraperAPIClient
 import json 
+from dotenv import load_dotenv
+from pathlib import Path 
+import os
+env_path = Path('../') / '.env'
+load_dotenv(dotenv_path=env_path)
+SCRAPER= os.getenv("SCRAPER")
 
 class ScraperAPI(ProxyGenerator):
     def __init__(self, api_key):
@@ -22,7 +28,7 @@ class ScraperAPI(ProxyGenerator):
     def _close_session(self):
         pass  # no need to close the ScraperAPI client
 
-pg = ScraperAPI('a1f4e912c58edcfd1c25c568a39b898a')
+pg = ScraperAPI(SCRAPER)
 scholarly.use_proxy(pg)
 scholarly.set_timeout(120)
 
@@ -31,6 +37,7 @@ scholarly.set_timeout(120)
 
 
 search_query = scholarly.search_author('Maël Montévil')
+
 author = scholarly.fill(next(search_query))
 
 pubs=[scholarly.fill(pub) for pub in author['publications']]

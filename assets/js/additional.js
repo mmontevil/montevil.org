@@ -61,7 +61,7 @@ if (currentTheme) {
     }else{
       var element=centeredElement;
       while (element){
-        if (element.matches('.legibilityWidth > *')) return getPreviousSibling(element,"h2,h3,h4,h5").id;
+        if (element.matches('.legibilityWidth > *')) return getPreviousSibling(element,"h2,h3,h4,h5,h6").id;
         if (element.matches('body')) return null;
         element = element.parentNode;
       }
