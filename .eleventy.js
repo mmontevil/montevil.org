@@ -208,7 +208,6 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
       '_11ty/images-responsiver-config.js'
     ));
     const imagesResponsiver = require('images-responsiver');
-const unescape = require('html-escaper').unescape;
 
 
 const imagesResponsiverTransform = (content, outputPath) => {

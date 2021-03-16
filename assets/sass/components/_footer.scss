@@ -4,11 +4,14 @@
 
 
 @keyframes revealFooter {
-  0% {transform: scale(0.97,0.97);
-    opacity: 0;
+  0% {transform:  translate(0, 100%) scale(1,0)  ;
+    
+  }
+    20% {transform:  translate(0, 70%) scale(1,0.2)  ;
+    
   }
   100% {transform: scale(1,1);
-    opacity: 1;
+    
   }
 }
 //.blurryWrap{overflow-y: hidden;}
@@ -48,20 +51,15 @@ margin-right: 0;
   padding-top: calc((868 / (var(--footerW))* 100vw) );
   // transition color and padding if background image is added with JS
   color: currentColor;
-  transition-property: color, transform;
-  transition-delay: 0s;
-  transition-duration: 1s;
-  transition-timing-function: ease-in;
 
   // animate opacity
-  opacity: 0;
   animation-duration: 1s;
   animation-timing-function: ease-out;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-name: revealFooter;
-
+transform: scale(0);
   background-image: var(--limbes),
     linear-gradient(
       to bottom,
@@ -90,7 +88,6 @@ margin-right: 0;
   .wrap {
    // background-color: var(--color-link-hover-bg);
 
-    opacity: inherit;
     
     @media (min-width: 15em) {
       display: flex;
@@ -104,13 +101,8 @@ margin-right: 0;
     }
   }
 
-  p {  small{    opacity: 0;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  animation-delay: 1s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-name: revealFooter;
+  p { color: white; small{    
+
   color: white;
     background-color: rgba(23,13,29,0.75);}
     

@@ -1,6 +1,7 @@
 
 {% macro author(name, gsid, people) %}
 
+{%set authorPic -%}/assets/avatars/gs/dummy.jpg{%-endset-%}
 
 {% if not gsid==""%}
 {{gsid | donwloadAuthor}}
@@ -19,7 +20,7 @@
 <figure class="frameAuthor">
  {% if authorPic %}
  <img class="reaction__author__photo2 u-photo noDarkFilter" src="{{-authorPic-}}" 
- height="48" alt="Photo of {{name}}">
+ height="48" alt="{{name}}">
  {%endif%}
  <figcaption class="authorCaption">
  {% if authorUrl-%} <a href="{{authorUrl}}">{%-endif-%}
