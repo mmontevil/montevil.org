@@ -80,18 +80,18 @@
   https://developers.facebook.com/tools/debug/sharing/#}
   
   {% if illust %}
- {% set srcurl-%}https://montevil.org{{-page.url-}}{{- illust-}}{%-endset%}
- {% endif %}
- {% if illustration and  illustration.src %}
-   {% set srcurl-%}{{-illustration.src-}}{%-endset%}
- {% endif %}
-   {% set thumbUrl = 'https://image.thum.io/get/width/1200/crop/800/noanimate/' %}
+{% set srcurl-%}https://montevil.org{{-page.url-}}{{- illust-}}{%-endset%}
+{% endif %}
+{% if illustration and  illustration.src %}
+  {% set srcurl-%}{{-illustration.src-}}{%-endset%}
+{% endif %}
+  {% set thumbUrl = 'https://image.thum.io/get/width/1200/crop/800/noanimate/' %}
 {% if link %}
-   {% set srcurl-%}{{-thumbUrl + link-}}{%-endset%}
- {% endif %}
+  {% set srcurl-%}{{-thumbUrl + link-}}{%-endset%}
+{% endif %}
   {% if not srcurl %}
   {% set srcurl-%}{{-thumbUrl-}}https://montevil.org{{-page.url-}}{%-endset%}
-   {% endif %}
+  {% endif %}
   {% set titletemp-%}{{-opengraph.image.title or title-}}{%-endset%}
   {% set tagline-%}{{-opengraph.image.tagline or location.name   or bibentry['container-title']-}}{%-endset%}
   <meta property="og:image" content="{% ogImage titletemp, tagline, srcurl %}" />
@@ -141,7 +141,7 @@
     type="application/opensearchdescription+xml"
     title="{{websiteid.name}}"
     href="{{websiteid.url}}/opensearch.xml" />
- #}
+#}
   {# rel-me (should be in visible links) #}
   <link rel="me" href="https://twitter.com/{{websiteid.twitter}}" />
 

@@ -140,6 +140,7 @@
     "eleventy-plugin-typeset": "^1.0.0",
     "mathjax-full": "^3.1.2",
     "moment-timezone": "^0.5.33",
+    "postcss-var-optimize": "^0.0.4",
     "rehype": "^11.0.0",
     "rehype-add-classes": "^1.0.0",
     "rehype-format": "^3.1.0",

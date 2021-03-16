@@ -432,7 +432,7 @@ function updateConnectivityStatus() {
         text: notificationText,
         type: notificationType,
         icon: notificationIcon,
-        duration: 5000,
+        duration: 7000,
       }).showToast();
     }
   }
