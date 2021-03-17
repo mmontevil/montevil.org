@@ -8,110 +8,77 @@
   }
 }
 
+.tag_item{
+  margin: 0.1em;
+  margin-left: 0.2em;
+}
 
 .tagscloud__tags {
   list-style-type: none;
   padding: 0;
-  &>*{
- margin-top: 0;}
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-
-  a {transition: all .2s;
+  
+}
+  .tag0 {
+    line-height: 1;
+    transition: all .2s;
     border-radius: 0.15em;
-    padding-top: 0.1em; padding-bottom: 0.05em; padding-left: 0.3em;   padding-right: 0.3em;   
-    &.tag1{color: var(--color-primary-darker-5);
-      &:hover,&:focus{background-color:   var(--color-primary-darker-5);}}
-  &.tag2{color: var(--color-primary-darker-4);
-      &:hover,&:focus{background-color:   var(--color-primary-darker-4);}}
-  &.tag3{color: var(--color-primary-darker-3);
-      &:hover,&:focus{background-color:   var(--color-primary-darker-3);}}
-  &.tag4{color: var(--color-primary-darker-2);
-      &:hover,&:focus{background-color:   var(--color-primary-darker-2);}}
-        &.tag5{color: var(--color-primary-darker-1);
-      &:hover,&:focus{background-color:   var(--color-primary-darker-1);}}
-  &.tag6{color: var(--color-primary);
-      &:hover,&:focus{background-color:   var(--color-primary);}}
-  &.tag7{color: var(--color-primary-lighter-1  );
-      &:hover,&:focus{background-color:   var(--color-primary-lighter-1);}}
-  &.tag8{color: var(--color-primary-lighter-2  );
-      &:hover,&:focus{background-color:   var(--color-primary-lighter-2);}}
-
+    padding: 0.075em; 
+    
+    padding-left: 0.5em;   padding-right: 0.5em;  
+  //  border: 1px solid transparent; 
     &:link,
     &:visited {
       display: inline-block;
-      margin: 0.075em 0.1em;
-   /*  margin: 0.2em 0.3em;
-       padding: 0.1em 0.3em;
-*/hyphens: auto;
+      margin: 0.2em 0.1em;
+
+      hyphens: auto;
       text-decoration: none;
       white-space: break-spaces;
     }
-   //   background-color: var(--color-primary-lighter-2);
-   //   color: white;
-    //  border-radius: 0.5em;
     @media (hover: hover){
         &:hover,
     &:focus,
     &:active {
+     // border-color: var(--color-primary-darker-5);
       color: var(--color-link-hover);
-     // background-color: currentcolor;
-    // animation: neon6 1.5s ease-in-out infinite alternate;
        transform: scale(1.1,1.1);
-      
-    }}
+    }
+    }
     &:after {white-space: nowrap;
         content: " (" attr(data-number) ")";
         font-size: 1rem;
   }
-}}
-/*
-  a {
-    &.tag2 {
-      &:link,
-      &:visited {
-        background-color: var(--color-primary-lighter-1);
-      }
-    }
-
-    &.tag3 {
-      &:link,
-      &:visited {
-        background-color: var(--color-primary);
-      }
-    }
-
-    &.tag4 {
-      &:link,
-      &:visited {
-        background-color: var(--color-primary-darker-1);
-      }
-    }
-
-    &.tag5 {
-      &:link,
-      &:visited {
-        background-color: var(--color-primary-darker-2);
-      }
-    }
-
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: var(--color-secondary);
-      outline: none;
-      text-decoration: underline;
-
-      &.tag2,
-      &.tag3,
-      &.tag4,
-      &.tag5 {
-        background-color: var(--color-secondary);
-      }
-    }
-  }*/
-
+}
+   .tag1{
+     &:link, &:visited { color: var(--color-primary-darker-5);}
+      &:hover,&:focus{color: var(--color-link-hover); background-color:   var(--color-primary-darker-5);}
+  }
+  .tag2{
+    &:link, &:visited {color: var(--color-primary-darker-4);}
+      &:hover,&:focus{color: var(--color-link-hover);background-color:   var(--color-primary-darker-4);}
+  }
+  .tag3{
+    &:link, &:visited {color: var(--color-primary-darker-3);}
+      &:hover,&:focus{color: var(--color-link-hover);background-color:   var(--color-primary-darker-3);}
+  }
+  .tag4{
+    &:link, &:visited {color: var(--color-primary-darker-2);}
+      &:hover,&:focus{color: var(--color-link-hover);background-color:   var(--color-primary-darker-2);}
+  }
+  .tag5{
+    &:link, &:visited {color: var(--color-primary-darker-1);}
+      &:hover,&:focus{color: var(--color-link-hover); background-color:   var(--color-primary-darker-1);}
+  }
+  .tag6{&:link, &:visited {color: var(--color-primary);}
+      &:hover,&:focus{color: var(--color-link-hover);background-color:   var(--color-primary);}
+  }
+  .tag7{&:link, &:visited {color: var(--color-primary-lighter-1  );}
+      &:hover,&:focus{color: var(--color-link-hover);background-color:   var(--color-primary-lighter-1);}
+  }
+  .tag8{&:link, &:visited {color: var(--color-primary-lighter-2  );}
+      &:hover,&:focus{color: var(--color-link-hover); background-color:   var(--color-primary-lighter-2);}
+  }

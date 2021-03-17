@@ -1,9 +1,10 @@
 ---
 title: Troubleshooting
 date: 2016-05-08
+excerpt: "Documentation for Software for Automated Morphological Analysis : troubleshooting."
 eleventyNavigation:
   key: Trouble
-  parent: Troubleshooting
+  parent: SAMA
   order: 7
 ---
 # Check list

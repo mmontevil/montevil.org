@@ -89,11 +89,26 @@
     h2, h3,h4,h5,h6 , dt{
      // @media (min-width: 30rem) {
   --temp: calc(50% - 50vw + 2em);
-  --tempb: calc(max(-2.5em,var(--temp)));
+  --tempb: calc(max(-2em,var(--temp)));
+  margin-left: calc(min(var(--tempb), 0em));
+      padding-left: 1em;
+      text-indent: -1em;
+  }
+  /*  h3, {
+      --tempb: calc(max(-2em,var(--temp)));
+  }
+  h4,h5,h6,dt{
+    --tempb: calc(max(-1em,var(--temp)));
+  }*/
+  /*dt{
+     // @media (min-width: 30rem) {
+  --temp: calc(50% - 50vw + 2em);
+    --tempb: calc(max(-1em,var(--temp)));
   margin-left: calc(min(var(--tempb), 0em));
       padding-left: 2em;
       text-indent: -2em;
-  }
+  }*/
+
   
   .wide{ 
       --temp: calc(50% - 50vw + 2em);
@@ -103,12 +118,7 @@
     
   }
   
-  h3, {
-      --tempb: calc(max(-2em,var(--temp)));
-  }
-  h4,h5,h6,dt{
-    --tempb: calc(max(-1em,var(--temp)));
-  }
+
   ul li,ol,dl{ 
     @extend %flow; 
   }
@@ -119,30 +129,20 @@
 }
 
 
-.subsectionToc{
-  margin-left: 1em;
-}
-.subsubsectionToc{
-  margin-left: 2em;
-}
+
 
 dt.description, dt.dt{
   font-variant: small-caps;
 }
 
-.caption-title, .cmbx-10,.ecbx-1000,.paragraphHead,.cmbx-9,.likeparagraphHead,.ec-lmbx-10{
+.caption-title,.paragraphHead, dt.description{
   font-weight: bold;
   color: var(--color-primary-darker-1);
 }
 
-.textbf{
-  font-weight: bold;
-}
-span.smallcaps, .small-caps,.textsc{
-  font-variant: small-caps;
-}
-
-.cmti-10,.ecti-1000,.rm-lmri-9,.Emphasis,.ecti-1000, .textit{font-style: italic;}
+.textbf{font-weight: bold;}
+ .small-caps{font-variant: small-caps;}
+.cmti-10{font-style: italic;}
 
 .Footnote_20_anchor, //.Footnote_20,
 .superLegacy,.textsuperscript , sup{ 

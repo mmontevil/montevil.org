@@ -1,6 +1,7 @@
 ---
 title: Installation of SAMA
 date: 2016-05-02
+excerpt: "Documentation for Software for Automated Morphological Analysis : Installation of SAMA and its dependencies."
 eleventyNavigation:
   key: Installation
   parent: SAMA
@@ -31,10 +32,7 @@ This plugin can be installed by going to _help> update fiji_. And in the new win
 
 # Installation of Sama
 
-*   Download SAMA:
-
-[http://montevil.theobio.org/sites/montevil.theobio.org/files/sama/Sama.zip](http://montevil.theobio.org/sites/montevil.theobio.org/files/sama/Sama.zip)
-
+*   Download SAMA: [{% icon "download", "zip" -%}&nbsp;http://montevil.theobio.org/sites/montevil.theobio.org/files/sama/Sama.zip](http://montevil.theobio.org/sites/montevil.theobio.org/files/sama/Sama.zip)
 *   Extract Sama.zip and copy the SAMA folder in the plugins folder of FIJI.
 *   (Re)start FIJI.
 *   In FIJI , run _Plugin>Sama>install or update R component_. Then select install in the dialog and hit ok. This process will install the required R packages, including the R SAMA components.

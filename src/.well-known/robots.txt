@@ -2,3 +2,9 @@ Sitemap: https://montevil.org/sitemap.xml
 
 User-agent: *
 Allow: /
+Disallow: /tags/*
+Disallow: /all/*
+Disallow: /fr/*
+Disallow: /en/*
+Disallow: /offline.html
+Disallow: /offline-fallback.html

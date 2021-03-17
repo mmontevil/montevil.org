@@ -1,6 +1,6 @@
 ---
 title: SAMA-images
-excerpt:  3D structures are counted and parameters that define shape, volume and position are measured.
+excerpt: "Documentation for Software for Automated Morphological Analysis : configuration and launch of the image analysis."
 date: 2016-05-04
 eleventyNavigation:
   key: images

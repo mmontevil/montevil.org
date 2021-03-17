@@ -129,51 +129,60 @@ h6 {
   color: var(--color-primary-darker-2);
   position: relative;
   margin-block-end: 0;
-  
-    
-  
 }
 
 h1 {
   font-size: var(--font-size-xxxxl);
   font-weight: 900;
   color: var(--color-primary);
+     line-height: calc(1ex / 0.42);
+    --flow-space: calc(0*1ex / 0.42) ;
   //scroll-snap-align: start; 
 }
 
 h2 {font-variant: small-caps;
   font-size: var(--font-size-xxxl);
   font-weight: 700;
+      line-height: calc(1ex / 0.42);
+    --flow-space: calc(1ex / 0.42) ;
   //scroll-snap-align: start; 
 }
 
 h3 {
   font-size: var(--font-size-xxl);
   font-weight: 500;
+      line-height: calc(1ex / 0.38);
+    --flow-space: calc(1ex / 0.38) ;
 }
 
 h4 {
   font-size: var(--font-size-xl);
   font-weight: 500;
+      line-height: calc(1ex / 0.37);
+    --flow-space: calc(1ex / 0.37) ;
 }
 
 h5 {
   font-size: var(--font-size-l);
   font-weight: 400;
   font-style: italic;
+     line-height: calc(1ex / 0.35);
+    --flow-space: calc(1ex / 0.35) ;
 }
 
 h6 {
  
   font-size: var(--font-size-m);
   font-weight: 300;
+   line-height: calc(1ex / 0.34);
+    --flow-space: calc(1ex / 0.34) ;
 }
 
 
-h1 +h2,h2 +h3 ,h3 +h4 ,h4 +h5 ,
-h5 +h6 {    
-  --flow-space: 0.5em;
-}
+  
+
+
+
 
 
 
@@ -434,7 +443,7 @@ img.border {
 
 // https://chrisruppel.com/blog/css-animation-border-radius/
 @keyframes portrait-wobble {
-  0% {border-radius:   var(--wobble-min)/var(--wobble-max);}
+ // 0% {border-radius:   var(--wobble-min)/var(--wobble-max);}
   33% {
     border-radius:   var(--wobble-max) var(--wobble-min) /var(--wobble-min) var(--wobble-max);
   }
@@ -460,8 +469,6 @@ figcaption {
 }
 
 .more {  
-  //scroll-snap-align: start; 
-
   margin-top: var(--gap3);
 }
 
@@ -523,12 +530,13 @@ sup {
 //  position: relative;
 }
 
-sup {  vertical-align: super;
-
+sup {  
+  vertical-align: super;
   //top: -0.5em;
 }
 
-sub {vertical-align: sub;
+sub {
+  vertical-align: sub;
  // bottom: -0.25em;
 }
 
@@ -557,27 +565,9 @@ article {
   --flow-space: 0;
 }
 
-// File link icons
-a[href$='.zip'],
-a[href$='.kml'] {
-  padding-left: 1.6em;
-  background-size: 1.4em 1.4em;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
 
-a[href$='.zip'] {
-  background-image: url(/assets/icons/zip.svg);
-}
 
-a[href$='.kml'] {
-  background-image: url(/assets/icons/kml.svg);
-}
 
-// Hidden for everyone
-.hidden {
-  display: none;
-}
 
 .quickaccess {
   &:link,
@@ -619,11 +609,11 @@ a[href$='.kml'] {
 
 
 
-.selected-B,.selected-A>a, .ais-HierarchicalMenu-item--selected > div > a, .ais-RefinementList-item--selected>a {
+.selected-B,.selected-A{
        // color: var(--color-primary);
-        text-decoration-line: underline;
+     &:link,&:visited{   text-decoration-line: underline;
         text-decoration-thickness: var(--border-width);
-        text-decoration-color: var(--color-primary-lighter-2);
+        text-decoration-color: var(--color-primary-lighter-2);}
         -webkit-text-stroke-width: 0.05em;
 }
 
@@ -658,6 +648,16 @@ animation-name: target2;
   margin-right: auto;
   display: block;
 }
+.hidden {
+  display: none;
+}
+.normalStyle {font-variant: normal;}
+.smalltext {
+  font-size: var(--font-size-s);
+}
+
+
+
 
 
 
@@ -678,54 +678,28 @@ animation-name: target2;
 }
 
 
-article { 
-  h1  {
-    line-height: calc(1ex / 0.42);
-    --flow-space: calc(0*1ex / 0.42) ;
-}
 
- h2{
-    line-height: calc(1ex / 0.42);
-    --flow-space: calc(1ex / 0.42) ;
-}
 
- h3 {
-    line-height: calc(1ex / 0.38);
-    --flow-space: calc(1ex / 0.38) ;
-}
-
- h4 {
-    line-height: calc(1ex / 0.37);
-    --flow-space: calc(1ex / 0.37) ;
-}
- h5 {
-    line-height: calc(1ex / 0.35);
-    --flow-space: calc(1ex / 0.35) ;
-}
- h6 { 
-    line-height: calc(1ex / 0.34);
-    --flow-space: calc(1ex / 0.34) ;
-}
-   h2 +p , h3 +p ,h4 +p , h5 +p, h6+p{--flow-space: calc(0.5ex / 0.32);}
-}
-
-  p, ol, ul,dl,li,dt{  
-
+  p,dt{  
     line-height: calc(1ex / 0.32);
     --flow-space: calc(1ex / 0.32) ;
   }
 
-  
-  ol, ul,dl,  li,dt,li>p,dd>p, h3 +*, h2 +*{  
-    --flow-space: calc(0.5ex / 0.32) ;
+  h2 +p , h3 +p ,h4 +p , h5 +p, h6+p, h1 +h2, h2 +h3 , h3 +h4 ,h4 +h5 , h5 +h6
+  {
+    --flow-space: calc(0.5ex / 0.32);
   }
-  .page__body {  &> ol, &>ul, &>dl{
+ol, ul,dl,  li,dt,li>p,dd>p{  
     --flow-space: calc(0.5ex / 0.32) ;
-  }}
+}
+
+
+
   
-  h1 +h2, h2 +h3 , h3 +h4 ,h4 +h5 , h5 +h6 {    
-      --flow-space: calc(0.5ex / 0.32) ;
-  }
+
+
+  
+
 
 
 
@@ -758,7 +732,22 @@ mjx-mspace{width: 0!important; }
 .invertwrapper a {&:link,&:visited{ color: black; text-decoration: none;}&:hover{ color: white; background-color: #691449;}}
 .invertwrapper{position: absolute; heigth: 100vh; width: 100vw;  top: 5em;right:0;}
 
-.normalStyle {font-variant: normal;}
 
  
+//.abssvg,
+ .svgnofill{
+         vertical-align: middle;
+      font-size: 0.95em;
+      stroke: currentColor;
+      stroke-width: 0.15em;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    
+} 
 
+  .svgfill {
+      vertical-align: middle;
+      font-size: 1em;
+      fill: currentColor;
+    }

@@ -53,8 +53,12 @@
   width: 1em;
   height: 1em;
   margin: 0 0.3em 0 0;
-  fill: currentColor;
+  fill: none;
   vertical-align: middle;
+        stroke: currentColor;
+      stroke-width: 2px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
 }
 
 .toast-info {

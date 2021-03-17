@@ -2,6 +2,13 @@
 layout: content
 ---
 
+
+{% if excerpt  %}
+<p class="lead"> {{excerpt}}</p>
+{%endif%}
+
+
+
 {% from "macros/pubuttons.njk" import pubuttons %}
 {% set item = {
 pdfoutSup: pdfoutSup,
@@ -26,14 +33,8 @@ hasSup: hasSup,
    {% from "macros/publabel.njk" import publabel %}
 
 
-{% if not  (excerpt === undefined) %}
-<div class="lead">
-<p> {{excerpt}}</p>
-</div>
-{%endif%}
 
-
-  <div id="CitationAnchor" class="citationW indent"><p class="svgfill">{{publabel(item)|safe}} {% icon "reference", "reference" %} {{ bibentry | bibcite2|divRemove|safe}}</p>
+  <div id="CitationAnchor" class="citationW indent"><p >{{publabel(item)|safe}} {% icon "reference", "reference" %} {{ bibentry | bibcite2|divRemove|safe}}</p>
   <p> {{pubuttons(item) |safe}}</p>
   </div>
   

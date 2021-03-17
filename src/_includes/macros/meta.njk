@@ -35,7 +35,7 @@
       <li class="date meta__item meta__location">
         {% icon "location", "Location" %}
         {% if item.data.location.url %}
-          <a href="{{ item.data.location.url }}">{{ item.data.location.name |safe}}</a>
+          <a href="{{ item.data.location.url }}" class="metalink">{{ item.data.location.name |safe}}</a>
         {% else %}
           {{ item.data.location.name |safe}}
         {% endif %}
@@ -48,7 +48,7 @@
         {% set comma = joiner(", ") %}
         {%- for tag in item.data.tags -%}
           {{ comma() }}
-          <a href="/tags/{{ tag | slugify }}/" rel="tag" class="p-category">{{ tag }}</a>
+          <a href="/tags/{{ tag | slugify }}/" rel="tag" class="p-category metalink">{{ tag }}</a>
         {%- endfor -%}
       </li>
     {% endif %}
@@ -74,7 +74,7 @@
     {% if permalink %}
       <li class="permalink meta__item">
         {% icon "link", "Permalink" %}
-        <a href="{{ item.url }}" class="u-url">permalink</a>
+        <a href="{{ item.url }}" class="u-url metalink">permalink</a>
       </li>
     {% endif %}
   </ul>

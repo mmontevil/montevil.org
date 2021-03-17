@@ -161,6 +161,10 @@ overflow-x: clip;
   margin-top: calc(0.5*var(--skew-padding));
   margin-bottom: calc(0.5*var(--skew-padding));
 }
+
+.meta__item, p+.meta{
+--flow-space: 0;
+}
 /*
   @media (hover: none){
     .cards-list {

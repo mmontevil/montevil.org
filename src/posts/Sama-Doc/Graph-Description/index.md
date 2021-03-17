@@ -1,6 +1,7 @@
 ---
 title: Graph descriptions
 date: 2016-05-06
+excerpt: "Documentation for Software for Automated Morphological Analysis : graphs and their interpretation."
 eleventyNavigation:
   key: Graph
   parent: SAMA

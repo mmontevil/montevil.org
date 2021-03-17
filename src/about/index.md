@@ -20,10 +20,12 @@ I am a *theoretical biologist* working at the crossroads of experimental biology
 </div>
 {% endset %}
 
-
+<section class="wrap">
 {{links|safe}}
 
 You may also have a look at my [list of publications](/publications/publicationsbyType/) on this site or on a [thematic map of my publications]({% link_to "map" %}).
+
+</section>
 
 # Short CV
 

@@ -40,7 +40,7 @@
     <p class="card__body p-summary">  {{article.data.excerpt}}   </p> 
 {% endif %}
   
-  <div class="card__body p-summary smalltext"><p class="svgfill">{{publabel(article.data)|safe}} {% icon "reference", "reference" %}
+  <div class="card__body p-summary smalltext"><p >{{publabel(article.data)|safe}} {% icon "reference", "reference" %}
 {{ article.data.bibentry | bibcite2| urlize( article.data.title,article.data.page.url, article.data.bibentry.type)|divRemove|safe}} </p></div>
 
 

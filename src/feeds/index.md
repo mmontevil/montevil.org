@@ -6,7 +6,7 @@ lang: en
 ---
 
 ![Feed logo](/assets/logos/feed.png){.logo}
-
+<section class="wrap">
 You can follow my publications with several feeds.
 
 Here are the feeds:
@@ -16,6 +16,8 @@ Here are the feeds:
 - [latest links](/feeds/links.xml)
 - [latest talks](/feeds/talks.xml)
 - [latest contents from all types](/feeds/all.xml)
+
+</section>
 
 ::: info
 If you wonder what "feeds" are, go read [About Feeds](https://aboutfeeds.com/) to understand how they allow you "to subscribe to websites and get the latest content in one place".

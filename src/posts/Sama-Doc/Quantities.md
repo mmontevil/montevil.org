@@ -1,6 +1,7 @@
 ---
 title: Quantities
 date: 2016-05-07
+excerpt: "Documentation for Software for Automated Morphological Analysis : quantities evaluated and their interpretation."
 eleventyNavigation:
   key: Quantities
   parent: SAMA

@@ -47,8 +47,8 @@ illust: logistic.png
     make explicit the necessity of an outcome. For more on this issue, see [<a href="#x1-170053">3</a>].
   </li>
   <li class="itemize">
-    The study of a part <span class="ecti-1000">X </span>of an organism is not completely meaningful by itself. Instead, the inscription of this part inside the organism and in particular the role that this part plays is a mandatory
-    object of study to assess the biological relevance of the properties of <span class="ecti-1000">X </span>that are under study. As such, the modelization of <span class="ecti-1000">X per se </span>is insufficient and requires a
+    The study of a part <span class="cmti-10">X </span>of an organism is not completely meaningful by itself. Instead, the inscription of this part inside the organism and in particular the role that this part plays is a mandatory
+    object of study to assess the biological relevance of the properties of <span class="cmti-10">X </span>that are under study. As such, the modelization of <span class="cmti-10">X per se </span>is insufficient and requires a
     supplementary discussion [<a href="#x1-170074">4</a>].
   </li>
 </ul>
@@ -61,14 +61,14 @@ illust: logistic.png
   A theoretical way to organize the mathematical modeling of cell behaviors is to propose a default state, that is to say to make explicit a state of reference that takes place without the need of particular constraints, input or signal.
   We think that proliferation with variation and motility should be used as a default state [<a href="#x1-170116">6</a>,
   <a href="#x1-170137">7</a>]. Under this assumption, cells spontaneously proliferate. By contrast, quiescence should be explained by constraints explicitly limiting or even preventing cell
-  proliferation. The same reasoning applies <span class="ecti-1000">mutadis mutandis </span>to motility. This assumption has been used to model mammary gland morphogenesis and helps to systematize the mathematical analysis of cellular
+  proliferation. The same reasoning applies <span class="cmti-10">mutadis mutandis </span>to motility. This assumption has been used to model mammary gland morphogenesis and helps to systematize the mathematical analysis of cellular
   populations [<a href="#x1-170158">8</a>].
 </p>
 <p class="indent">
   In this chapter we will focus on model writing. Our aim is not to emphasize the technical aspects of mathematical analysis. Instead, this text aims to help biologists to understand modelization in order to better interact with modelers.
   Reciprocally, we also highlight theoretical specificities of biology which may be of help to modelers. Of course, the usual way to divide chapters in this book series is not entirely appropriate for the topic of our chapter. We still
   kept this structure and follow it in a metaphorical sense. In materials, we are describing key conceptual and mathematical ingredients of models. In methods, we will focus on the writing and analysis of models
-  <span class="ecti-1000">per se</span>.
+  <span class="cmti-10">per se</span>.
 </p>
 <h2 class="sectionHead" id="2--materials"><span class="titlemark" id="x1-20002">2 </span>Materials</h2>
 <h3 class="subsectionHead" id="21--parameters-and-states"><span class="titlemark" id="x1-30002e1">2.1 </span>Parameters and states</h3>
@@ -87,12 +87,12 @@ illust: logistic.png
 <ul class="itemize1">
   <li class="itemize">
     Parameters that will be used explicitly in the model are parameters whose value is required to deduce the behavior of the system. The dynamics of the system depends explicitly on the value of these parameters.
-    <span class="ecti-1000">A fortiori</span>, parameters that correspond to different treatments leading to a response will fall under this category. Note that the importance of some parameters usually
+    <span class="cmti-10">A fortiori</span>, parameters that correspond to different treatments leading to a response will fall under this category. Note that the importance of some parameters usually
     appear in other steps of modeling.
   </li>
   <li class="itemize">
     Theoretical parameters correspond to parameters that we know are relevant and even mandatory for the process to take place but that we can keep implicit in our model. For example, the concentration of oxygen in the media is usually
-    not made explicit in a model of an <span class="ecti-1000">in vitro</span> experiment even though it is relevant for the very survival of the cells studied. Of course, there is usually a cornucopia of this sort of parameters, for
+    not made explicit in a model of an <span class="cmti-10">in vitro</span> experiment even though it is relevant for the very survival of the cells studied. Of course, there is usually a cornucopia of this sort of parameters, for
     example the many components of the serum.
   </li>
 </ul>
@@ -101,11 +101,11 @@ illust: logistic.png
   The state of an object describes its situation at a given time. The state is composed of one or several quantities, see note <a href="#x1-160053">3</a>. By contrast with parameters, the
   notion of state is restricted to those aspects of the system which will change as a result of explicit causes or randomness intrinsic to the system described. The usual approach, inherited from physics, is to propose a set of possible
   states that does not change during the dynamics. Then the changes of the system will be changes of states while staying among these possible states. For example, we can describe a cell population in a very simple manner by the number of
-  cells <span class="ecti-1000">n(t)</span>. Then, the state space is all the possible values for <span class="ecti-1000">n</span>, that is to say the positive integers.
+  cells <span class="cmti-10">n(t)</span>. Then, the state space is all the possible values for <span class="cmti-10">n</span>, that is to say the positive integers.
 </p>
 <p class="indent">
-  Usually, the changes of state depend on the state of the system which means that the state has a causal power, which can be either direct or indirect. A direct causal power is illustrated by <span class="ecti-1000">n </span>which is the
-  number of cells that are actively proliferating in the example above and thus trigger the changes in <span class="ecti-1000">n</span>. An indirect causal power corresponds, for example, to the position of a cell provided that some
+  Usually, the changes of state depend on the state of the system which means that the state has a causal power, which can be either direct or indirect. A direct causal power is illustrated by <span class="cmti-10">n </span>which is the
+  number of cells that are actively proliferating in the example above and thus trigger the changes in <span class="cmti-10">n</span>. An indirect causal power corresponds, for example, to the position of a cell provided that some
   positions are too crowded for cells to proliferate.
 </p>
 <h4 class="subsubsectionHead" id="213--parameter-versus-state"><span class="titlemark" id="x1-60002e1e3">2.1.3 </span>Parameter versus state</h4>
@@ -131,7 +131,7 @@ illust: logistic.png
 </p>
 <ul class="itemize1">
   <li class="itemize">
-    Equations that relate different quantities of the state space. For example, if we have <span class="ecti-1000">n </span>the total number of cells and two possible cell types with cell counts <span class="ecti-1000">n</span><sub class="textsubscript"><span class="ecti-0900">1</span></sub> and <span class="ecti-1000">n</span><sub class="textsubscript"><span class="ecti-0900">2</span></sub>, then we will always have<sub class="textsubscript"> </sub>
+    Equations that relate different quantities of the state space. For example, if we have <span class="cmti-10">n </span>the total number of cells and two possible cell types with cell counts <span class="cmti-10">n</span><sub class="textsubscript"><span class="cmti-10">1</span></sub> and <span class="cmti-10">n</span><sub class="textsubscript"><span class="cmti-10">2</span></sub>, then we will always have<sub class="textsubscript"> </sub>
     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
       <msub>
         <mrow>
@@ -154,7 +154,7 @@ illust: logistic.png
         </mrow>
       </msub>
     </math>
-    <span class="ecti-1000">.</span> As a result, it is sufficient to describe how two of these variables change in order obtain the third one.
+    <span class="cmti-10">.</span> As a result, it is sufficient to describe how two of these variables change in order obtain the third one.
   </li>
   <li class="itemize">
     Equations that describe a change of state as a function of the state. These equations typically take two different forms, depending on the representation of time which may be either continuous or discrete, see note
@@ -170,7 +170,7 @@ illust: logistic.png
       </mstyle>
       <mo class="MathClass-bin">∕</mo>
       <mi>τ</mi>
-    </math>. This equation means that the change of <span class="ecti-1000">n </span>(<span class="ecti-1000">dn) </span>during a short time (<span class="ecti-1000">dt) </span>is equal to <span class="ecti-1000">ndt/</span>
+    </math>. This equation means that the change of <span class="cmti-10">n </span>(<span class="cmti-10">dn) </span>during a short time (<span class="cmti-10">dt) </span>is equal to <span class="cmti-10">ndt/</span>
     
     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
       <mi>τ</mi>
@@ -296,18 +296,18 @@ illust: logistic.png
     </mstyle>
     <mo class="MathClass-bin">∕</mo>
     <mi>τ</mi>
-  </math>. What is the meaning of such an equation ? This equation states that the change of <span class="ecti-1000">n, dn/dt, </span>is proportional to <span class="ecti-1000">n</span>. 1) In conformity, with the
+  </math>. What is the meaning of such an equation ? This equation states that the change of <span class="cmti-10">n, dn/dt, </span>is proportional to <span class="cmti-10">n</span>. 1) In conformity, with the
   cell theory, there is no spontaneous generation. There is no migration from outside the system described, which is an assumption proper to a given situation. The only source of cells is then cell proliferation. 2) Every cell divides at
-  a given rate, independently. As a conclusion, the appearance of new cells is proportional to the number of cells which are dividing unconstrained, that is to say <span class="ecti-1000">n</span>. A cell needs a duration of
+  a given rate, independently. As a conclusion, the appearance of new cells is proportional to the number of cells which are dividing unconstrained, that is to say <span class="cmti-10">n</span>. A cell needs a duration of
   
   <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
     <mi>τ</mi>
   </math> to generate two cells (that is to say increase the cell count by one) which is exemplified by the fact that for
-  <span class="ecti-1000">n=1, dn/dt=1/</span>
+  <span class="cmti-10">n=1, dn/dt=1/</span>
   
   <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
     <mi>τ</mi>
-  </math><span class="ecti-1000">.</span>
+  </math><span class="cmti-10">.</span>
 </p>
 <p class="indent">
   Alternatively, this equation is equivalent to
@@ -347,8 +347,8 @@ illust: logistic.png
   which is equal to 1/
   <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
     <mi>τ</mi>
-  </math> for all values of <span class="ecti-1000">n. </span>Doubling <span class="ecti-1000">n </span>thus requires to double
-  <span class="ecti-1000">dn/dt. </span>In this sense, the joint transformation
+  </math> for all values of <span class="cmti-10">n. </span>Doubling <span class="cmti-10">n </span>thus requires to double
+  <span class="cmti-10">dn/dt. </span>In this sense, the joint transformation
   
   <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
     <mstyle class="text">
@@ -376,7 +376,7 @@ illust: logistic.png
     <mn>2</mn>
     <mi>n</mi>
   </math> is a symmetry, that is to say a transformation that leaves invariant a key aspect of the system
-  <span class="ecti-1000">. </span>This transformation leads from one time point to another. Discussing symmetries of equations is a method to show their meaning. Here, in a sense, the size of the population does not matter. Symmetries
+  <span class="cmti-10">. </span>This transformation leads from one time point to another. Discussing symmetries of equations is a method to show their meaning. Here, in a sense, the size of the population does not matter. Symmetries
   can also be multi-scale, for example fractal analysis is based on a symmetry between the different scales that is very fruitful in biology [<a href="#x1-170179">9</a>,
   <a href="#x1-1701910">10</a>].
 </p>
@@ -478,17 +478,17 @@ illust: logistic.png
     </tbody>
   </table>
   <p class="noindent">
-    where <span class="ecti-1000">k </span>is the maximum of the population. Le us remark that we have written the equation in two different forms, we come back on this in note
+    where <span class="cmti-10">k </span>is the maximum of the population. Le us remark that we have written the equation in two different forms, we come back on this in note
     <a href="#x1-160137">7</a>. The solution of this equation is the classical logistic function.
   </p>
   <p class="indent">
     Note however that this equation has symmetries which are dubious from a biological viewpoint : the way the population takes off is identical to the way it saturates because the logistic equation has a center of symmetry,
-    <span class="ecti-1000">A </span>in figure, see also [<a href="#x1-1702111">11</a>].
+    <span class="cmti-10">A </span>in figure, see also [<a href="#x1-1702111">11</a>].
   </p>
   <figure class="figure">
     <img alt="The logistic function." src="logistic.png" width="500" class="zoom" />
     <figcaption class="caption">
-      <strong>Figure 1 : </strong><span class="ecti-1000">The logistic function. </span>This function is often used to model a growth with constraints leading to a saturation. However, this function possess a center of symmetry, A, which
+      <strong>Figure 1 : </strong><span class="cmti-10">The logistic function. </span>This function is often used to model a growth with constraints leading to a saturation. However, this function possess a center of symmetry, A, which
       implies that the initial exponential growth is exactly equivalent to the way the growth saturates. This is biologically problematic : there is an initial lag phase and the saturation trigger causes that are not significant in the
       initial growth leading for example to cell death [<a href="#x1-1702312">12</a>].
     </figcaption>
@@ -527,7 +527,7 @@ illust: logistic.png
   </li>
   <li class="itemize">
     Analyze the level of description that is mandatory for the model to explain the target phenomenon. Usually, the simplest the description is the better. When cells do not constrain each other, describing cells by their count
-    <span class="ecti-1000">n </span>is sufficient. By contrast, if cells constrain each other, for example if they are in organized 3d structures it can be necessary to take into account the position of each individual cell which leads
+    <span class="cmti-10">n </span>is sufficient. By contrast, if cells constrain each other, for example if they are in organized 3d structures it can be necessary to take into account the position of each individual cell which leads
     to a list of positions
     
     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
@@ -623,7 +623,7 @@ illust: logistic.png
     it is possible to consider how the shape of a duct is sustained over time.
   </li>
   <li class="itemize">
-    Stability analysis. A very common analytic method is to find equibria, that is to say situations where the changes stop (<span class="ecti-1000">dx/dt=0 </span>for all state variable <span class="ecti-1000">x</span>). For example,
+    Stability analysis. A very common analytic method is to find equibria, that is to say situations where the changes stop (<span class="cmti-10">dx/dt=0 </span>for all state variable <span class="cmti-10">x</span>). For example,
     
     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
       <mstyle class="text">
@@ -645,8 +645,8 @@ illust: logistic.png
         </mrow>
       </mfenced>
     </math>
-    has two equilibria for <span class="ecti-1000">n=k </span>and <span class="ecti-1000">n=0</span>. Stability analysis look at the consequences of equation near an equilibrium point. Near the equilibrium value
-    <span class="ecti-1000">n</span><sub class="textsubscript"><span class="ecti-0900">e</span></sub>,
+    has two equilibria for <span class="cmti-10">n=k </span>and <span class="cmti-10">n=0</span>. Stability analysis look at the consequences of equation near an equilibrium point. Near the equilibrium value
+    <span class="cmti-10">n</span><sub class="textsubscript"><span class="cmti-10">e</span></sub>,
     
     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
       <msub>
@@ -821,11 +821,11 @@ illust: logistic.png
       </mstyle>
     </math>
     therefore this variation is amplified and this equilibrium is not stable. We should not forget the biology here. For a population of cells or animals of a given large size, a small variation is possible. However, a small variation from
-    a population of size 0 is only possible through migration because spontaneous generation does not happen. Nevertheless this analysis shows that a small population, close to <span class="ecti-1000">n=0</span>, should not collapse but
+    a population of size 0 is only possible through migration because spontaneous generation does not happen. Nevertheless this analysis shows that a small population, close to <span class="cmti-10">n=0</span>, should not collapse but
     instead will expand.
   </p>
   <p class="indent">
-    Near <span class="ecti-1000">k</span>, let us write
+    Near <span class="cmti-10">k</span>, let us write
     
     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
       <mstyle class="text">
@@ -998,7 +998,7 @@ illust: logistic.png
     leads to a negative feedback, therefore the equilibrium is stable.
   </p></li>
   <li class="itemize">
-    Special cases. In some situations, qualitatively remarkable behaviors appear for specific values of the parameters. Studying these cases is interesting <span class="ecti-1000">per se, e</span>ven though the odds for parameters to
+    Special cases. In some situations, qualitatively remarkable behaviors appear for specific values of the parameters. Studying these cases is interesting <span class="cmti-10">per se, e</span>ven though the odds for parameters to
     have specific value are slim without an explicit reason for this paramter to be set at this value. However, in biology the value of some parameters are the result of biological evolution and specific value can become relevant when
     the associated qualitative behavior is biologically meaningful [<a href="#x1-1702513">13</a>,<a href="#x1-1702714">14</a>].
   </li>
@@ -1045,15 +1045,15 @@ illust: logistic.png
     
     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
       <mi>τ</mi>
-    </math> the characteristic time for a cell division and <span class="ecti-1000">k </span>which is the maximum size of the population. By contrast,
-    <span class="ecti-1000">a </span>and especially <span class="ecti-1000">b </span>are less meaningful. These key parameters and their meaning are an outcome of models and at the same time should be the target of precise experiments
+    </math> the characteristic time for a cell division and <span class="cmti-10">k </span>which is the maximum size of the population. By contrast,
+    <span class="cmti-10">a </span>and especially <span class="cmti-10">b </span>are less meaningful. These key parameters and their meaning are an outcome of models and at the same time should be the target of precise experiments
     to explore the validity of models.
   </li>
 </ul>
 <h4 class="subsubsectionHead" id="322--numerical-methods--simulations"><span class="titlemark" id="x1-140003e2e2">3.2.2 </span>Numerical methods – simulations</h4>
 <p class="noindent">
   Simulations have a major strength and a major weakness. Their strength lies in their ability to handle complicated situations that are not tractable analytically. Their weakness is that each simulation run provides a particular
-  trajectory which cannot <span class="ecti-1000">a priori </span>be assumed to be representative of the dynamical possibilities of the model.
+  trajectory which cannot <span class="cmti-10">a priori </span>be assumed to be representative of the dynamical possibilities of the model.
 </p>
 <p class="indent">
   In this sense, the outcome of simulations may be compared to empirical results, except that simulation are transparent : it is possible to track all variables of interest over time. Of course, the outcome of simulations is artificial
@@ -1088,7 +1088,7 @@ illust: logistic.png
     
     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
       <mi>τ</mi>
-    </math> corresponds to the division rate of the cells without the constraint that is represented by <span class="ecti-1000">k</span>.
+    </math> corresponds to the division rate of the cells without the constraint that is represented by <span class="cmti-10">k</span>.
     
     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
       <mi>τ</mi>
@@ -1099,8 +1099,8 @@ illust: logistic.png
     </math> is what physicists call an effective parameter it carries implicitly constraints beyond the explicit constraints of the model.
   </li>
   <li class="enumerate" id="x1-160053">
-    A state may be composed of several quantities, let’s say <span class="ecti-1000">k, n, m</span>. It is possible to write the state by the three quantities independently or to join them in one vector
-    <span class="ecti-1000">X=(k,n,m)</span>. The two viewpoints are of course equivalent but they lead to different mathematical methods and ways to see the problem. The second viewpoint shows that it is always valid to consider that
+    A state may be composed of several quantities, let’s say <span class="cmti-10">k, n, m</span>. It is possible to write the state by the three quantities independently or to join them in one vector
+    <span class="cmti-10">X=(k,n,m)</span>. The two viewpoints are of course equivalent but they lead to different mathematical methods and ways to see the problem. The second viewpoint shows that it is always valid to consider that
     the state is a single mathematical object and not just a plurality of quantities.
   </li>
   <li class="enumerate" id="x1-160074">
@@ -1116,7 +1116,7 @@ illust: logistic.png
   </li>
   <li class="enumerate" id="x1-160116">
     Probabilities over continuous possibilities are somewhat subtle. Let us show why : let us say that all directions are equivalent, thus all angles in the interval [0,360[ are equivalent. They are equivalent, so
-    their probabilities are all the same value <span class="ecti-1000">p. </span>However, there is an infinite number of possible angles, so the sum of all the probabilities of all possibilities would be infinite. Over the continuum,
+    their probabilities are all the same value <span class="cmti-10">p. </span>However, there is an infinite number of possible angles, so the sum of all the probabilities of all possibilities would be infinite. Over the continuum,
     probabilities are assigned to sets and in particular to intervals, not individual possibilities.
   </li>
   <li class="enumerate" id="x1-160137">
@@ -1173,8 +1173,8 @@ illust: logistic.png
       <mo class="MathClass-bin">∕</mo>
       <mi>τ</mi>
     </math>
-    implies that when n/k is very small by comparison with 1, cells are not constraining each other. On the opposite, when <span class="ecti-1000">n=k </span>there is no proliferation. The consequence of cells constraining each other
-    can be interpreted as a proportion <span class="ecti-1000">1-n/k </span>of cells proliferating and a proportion <span class="ecti-1000">n/k </span>of cells not proliferating. Now, there is another way to write the same term which is
+    implies that when n/k is very small by comparison with 1, cells are not constraining each other. On the opposite, when <span class="cmti-10">n=k </span>there is no proliferation. The consequence of cells constraining each other
+    can be interpreted as a proportion <span class="cmti-10">1-n/k </span>of cells proliferating and a proportion <span class="cmti-10">n/k </span>of cells not proliferating. Now, there is another way to write the same term which is
     :
     
     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
@@ -1205,8 +1205,8 @@ illust: logistic.png
     
     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
       <mi>τ</mi>
-    </math><span class="ecti-1000">/(1-n/k)</span> and the more cells there are, the longer the division time becomes. This division time becomes infinite when
-    <span class="ecti-1000">n=k </span>which means that cells are quiescent. These two interpretations are biologically different. In the first interpretation, a proportion of cells are completely constrained while the other proliferate
+    </math><span class="cmti-10">/(1-n/k)</span> and the more cells there are, the longer the division time becomes. This division time becomes infinite when
+    <span class="cmti-10">n=k </span>which means that cells are quiescent. These two interpretations are biologically different. In the first interpretation, a proportion of cells are completely constrained while the other proliferate
     freely. In the second, all cells are impacted equally. Nevertheless, the initial term is compatible with both interpretations and they hhave the same consequences at this level of analysis.
   </li>
   <li class="enumerate" id="x1-160158">
@@ -1216,8 +1216,8 @@ illust: logistic.png
   </li>
   <li class="enumerate" id="x1-160179">
     It is very common in modeling to use the words “small” and “large”. A small (resp. large) quantity is a quantity that is assumed to be small (resp. large) enough so that a given approximation can be performed.
-    For example, a large time in the context of the logistic equation means that the population is approximately at the maximum <span class="ecti-1000">k</span>. Similarly, infinite and large are very close notions in most practical
-    cases. For example, a very large capacity <span class="ecti-1000">k </span>leads to
+    For example, a large time in the context of the logistic equation means that the population is approximately at the maximum <span class="cmti-10">k</span>. Similarly, infinite and large are very close notions in most practical
+    cases. For example, a very large capacity <span class="cmti-10">k </span>leads to
     
     <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
       <mstyle class="text">
@@ -1248,7 +1248,7 @@ illust: logistic.png
       <mo class="MathClass-bin">∕</mo>
       <mi>τ</mi>
     </math>
-    which is an exponential growth as long as <span class="ecti-1000">n </span>is far smaller than <span class="ecti-1000">k.</span>
+    which is an exponential growth as long as <span class="cmti-10">n </span>is far smaller than <span class="cmti-10">k.</span>
   </li>
 </ol>
 <h2 class="likesectionHead" id="x1-170004">References</h2>

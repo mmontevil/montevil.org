@@ -61,16 +61,20 @@ css: ["page-archives.css"]
  <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
 </form>
 #}
+
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css"></noscript>
 
 <script  src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js" defer></script>
 
-<style>.aa-Item > a:hover {background-color: transparent;}
-li.aa-Item div.aa-ItemDescription{color: var(--color-primary-darker-1);}.aa-Autocomplete.aa-Form.aa-InputWrapperPrefix {
- padding-right: 0.5em;}.aa-DetachedOverlay.aa-DetachedContainer {
- padding-top: 5.5em;
- }
+<style>
+.aa-Item > a:hover {background-color: transparent;}
+li.aa-Item div.aa-ItemDescription{color: var(--color-primary-darker-1);}
+.aa-Autocomplete.aa-Form.aa-InputWrapperPrefix {
+ padding-right: 0.5em;}
+.aa-DetachedFormContainer{margin-bottom: 0.7em;}
+ .aa-DetachedContainer{padding-top: 5em;}
+ .aa-DetachedCancelButton{width: 6em;}
  :root {
  --aa-muted-color: var(--color-primary-lighter-2);
  --aa-background-color: var(--color-primary-lighter-7);
@@ -105,10 +109,13 @@ window.onload = function () {
     text: 'var(--color-primary-darker-5)',                            // Color of the title of the items
     colorSourceIcon: 'var(--color-darkgrey)'                 // Color of the icon on the left of results
   }
-  });}
+  });
+  let label=document.getElementsByClassName("aa-Autocomplete")[0];
+  label.removeAttribute("role");
+  label.removeAttribute("aria-labelledby");
+  }
 </script>
 <div id="search" class="wrap" style="height:32px;"> </div> 
-
 
       
         <ol class="cards-list">

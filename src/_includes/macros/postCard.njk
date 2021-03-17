@@ -3,7 +3,9 @@
 
 {% macro postCard(article) %}
   {% set content %}
-  <p class="card__body p-summary">{{ article.templateContent | excerpt | striptags | safe }}</p>
+  <p class="card__body p-summary">{%if article.data.excerpt%}{{article.data.excerpt | safe}}{%else%}
+  {{ article.templateContent | excerpt | striptags | safe }}{%endif%}
+  </p>
   {% endset %}
 
   {% set meta %}

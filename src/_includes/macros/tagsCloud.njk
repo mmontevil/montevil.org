@@ -22,9 +22,9 @@
   {% if tag.factor <0.25 %}{% set classcolor = "tag7" %} {% endif%}
   {% if tag.factor <0.125 %}{% set classcolor = "tag8" %} {% endif%}
 
-  <li>
+  <li class="tag_item">
     <a href="{{ tagUrl }}" 
-      class="{{classcolor}}"
+      class="tag0 {{classcolor}}"
       aria-label="{{ tag.number }} content{% if tag.number > 1 %}s{% endif %} with tag {{ tag.tag }}"
       data-number="{{ tag.number }}"
       style="

@@ -27,15 +27,15 @@ SAMA aims to describe morphological aspects of many objects observed in 3d, in p
 
 SAMA is released under the [Gnu Public License](http://www.gnu.org/licenses/gpl.html).
 
-[Download SAMA](http://montevil.theobio.org/sites/montevil.theobio.org/files/sama/Sama.zip) (compatible with windows, mac OSX and Linux)
+[{% icon "download", "zip" -%}&nbsp;Download SAMA](http://montevil.theobio.org/sites/montevil.theobio.org/files/sama/Sama.zip) (compatible with windows, mac OSX and Linux)
 
-[Download example dataset](http://montevil.theobio.org/sites/montevil.theobio.org/files/sama/example_SAMA.zip)
+[{% icon "download", "zip" -%}&nbsp;Download example dataset](http://montevil.theobio.org/sites/montevil.theobio.org/files/sama/example_SAMA.zip)
 
-[Alternative, computer generated example dataset.](http://montevil.theobio.org/sites/montevil.theobio.org/files/sama/cgi.zip)
+[{% icon "download", "zip" -%}&nbsp;Alternative, computer generated example dataset.](http://montevil.theobio.org/sites/montevil.theobio.org/files/sama/cgi.zip)
 
-[Source code](http://montevil.theobio.org/sites/montevil.theobio.org/files/sama/Rbind_source.zip) for the Rbind plugin
+[{% icon "download", "zip" -%}&nbsp;Source code](http://montevil.theobio.org/sites/montevil.theobio.org/files/sama/Rbind_source.zip) for the Rbind plugin
 
-[Documentation](http://montevil.theobio.org/sites/montevil.theobio.org/files/sama/Sama-Documentation.pdf) for SAMA in pdf.
+[{% icon "download", "zip" -%}&nbsp;Documentation](http://montevil.theobio.org/sites/montevil.theobio.org/files/sama/Sama-Documentation.pdf) for SAMA in pdf.
 
 ## Changelog
 

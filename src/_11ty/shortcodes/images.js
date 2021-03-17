@@ -1,5 +1,10 @@
 module.exports = {
-  icon: (id, label) => `<svg class="icon" role="img" aria-label="${label}" focusable="false"><use xlink:href="#symbol-${id}" /></svg>`,
+  icon: (id, label) =>{
+    let svgclass="svgnofill";
+    if( id== "pdf" || id=="bib" || id=="reference") svgclass="svgfill";
+    return `<svg class="icon ${svgclass}" role="img" aria-label="${label}" focusable="false"><use xlink:href="#symbol-${id}" /></svg>`
+    
+  },
   archiveIllustration: (src, width, height, alt) => {
     let image = `
 <img

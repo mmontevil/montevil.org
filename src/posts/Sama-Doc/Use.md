@@ -1,6 +1,7 @@
 ---
 title: How to use SAMA?
 date: 2016-05-03
+excerpt: "Documentation for Software for Automated Morphological Analysis : an overview of SAMA use and principles."
 eleventyNavigation:
   key: use
   parent: SAMA
@@ -18,7 +19,7 @@ Sama-analyze gathers the output of sama-images and enables to represent, analyze
 
 # Example dataset
 
-The simplest way to first use SAMA and check your installation is to download the sample set of images available [here](http://montevil.theobio.org/sites/montevil.theobio.org/files/sama/example_SAMA.zip) and follow the steps below.
+The simplest way to first use SAMA and check your installation is to download the sample set of images available [here&nbsp;{% icon "download", "zip" -%}](http://montevil.theobio.org/sites/montevil.theobio.org/files/sama/example_SAMA.zip) and follow the steps below.
 
 *   Unzip Example_SAMA.zip.
 *   In Plugin > Sama, run SAMA-images and uncheck the lumen options in tiers 1, 2 and 3\. Only Basic morphometrics and Branching measurement should be checked.
@@ -29,7 +30,7 @@ The simplest way to first use SAMA and check your installation is to download th
 
 # Folders
 
-_ ***Important:*** create a folder where the analysis of the dataset will take place, and put all the source image files in a subfolder of this main folder._
+***Important:*** _create a folder where the analysis of the dataset will take place, and put all the source image files in a subfolder of this main folder._
 
 SAMA will create other subfolders as follows:
 

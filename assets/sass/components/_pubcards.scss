@@ -2,15 +2,7 @@
 
 .buttonlink {
  // white-space:nowrap;
-  svg {
-      vertical-align: middle;
-      font-size: 1em;
-      stroke: currentColor;
-      stroke-width: 2px;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      fill: currentColor;
-    }
+
       display: inline-table;
         padding: 0.12em 0.2em;
                 margin: 0.1em;
@@ -36,24 +28,9 @@
     color: var(--color-link-hover);
   }
 }
-.smalltext {
-  font-size: var(--font-size-xs);
-}
-.svgnofill{
-    svg {      vertical-align: middle;
-      fill: none;
-    }
-} 
-.abssvg{margin-right:0;
-    svg {      vertical-align: middle;
-      font-size: 1.2em;
-      stroke: currentColor;
-      stroke-width: 2px;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      fill: none;
-    }
-} 
+
+
+
 
 .publink {
                       padding: 0.2em;
@@ -200,12 +177,5 @@ display: none;}
       background-color: var(--color-link-hover-bg);
 }
 
-.svgfill {
- // white-space:nowrap;
-  svg {
-      vertical-align: middle;
-      font-size: 1em;
-      fill: currentColor;
-    }
-}
+
 

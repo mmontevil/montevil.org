@@ -7,7 +7,7 @@
 {% set rid -%}{{-itemdata.title| slug-}}{%-endset%}
 
     {% set aref %}<a href={{itemdata.page.url}}>{{-itemdata.title-}}</a>{%endset%}
-  <li  class="publi"><div  class="wrap"><p class="svgfill">{{publabel(itemdata)|safe}} {% icon "reference", "reference" %} {{ itemdata.bibentry | bibcite2|divRemove| urlize( itemdata.title,itemdata.page.url, itemdata.bibentry.type)|safe}}</p>
+  <li  class="publi"><div  class="wrap"><p >{{publabel(itemdata)|safe}} {% icon "reference", "reference" %} {{ itemdata.bibentry | bibcite2|divRemove| urlize( itemdata.title,itemdata.page.url, itemdata.bibentry.type)|safe}}</p>
   
  <section class="accordion ">{% if not  (itemdata.bibentry.abstract === undefined) %}<input type="checkbox" name="{{itemdata.bibentry.id}}{{rid}}" id="{{-itemdata.bibentry.id-}}{{-rid-}}" >{% endif %}
   <p class="handle">  

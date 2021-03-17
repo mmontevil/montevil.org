@@ -12,6 +12,10 @@ eleventyComputed:
     lang="{{ lang }}">
 
 
+{% if excerpt  %}
+<p class="lead"> {{excerpt}}</p>
+{%endif%}
+
 
 
     {#<h1 class="page__title p-name">{{ title | orphans | safe }}</h1>#}
@@ -24,7 +28,7 @@ eleventyComputed:
     
     {{ collections.all | eleventyNavigation | eleventyNavigationToHtml(
     {
-    activeListItemClass: "selected-A", 
+    activeAnchorClass: "selected-A", 
     activeKey: eleventyNavigation.key
     }) | safe }}
     </div>
@@ -42,7 +46,7 @@ eleventyComputed:
   
     {{ collections.all | eleventyNavigation | eleventyNavigationToHtml(
     {
-    activeListItemClass: "selected-A", 
+    activeAnchorClass: "selected-A", 
     activeKey: eleventyNavigation.key
     }) | safe }}
     </div>

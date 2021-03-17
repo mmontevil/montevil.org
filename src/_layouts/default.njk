@@ -39,11 +39,11 @@
     {% include "components/navigation.njk" %}
 
     <main id="main">
-      <div class="wrap0">{#class="wrap"#}
+      {#class="wrap"#}
         {% block content %}
         {{ content | safe }}
         {% endblock %}
-      </div>
+      
     </main>
  
     {% include "components/footer.njk" %}

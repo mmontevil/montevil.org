@@ -1,6 +1,7 @@
 ---
 title: SAMA-analyze
 date: 2016-05-05
+excerpt: "Documentation for Software for Automated Morphological Analysis : configuration and launch of the statistical analysis."
 eleventyNavigation:
   key: analyze
   parent: SAMA
