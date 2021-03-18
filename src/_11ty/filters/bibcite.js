@@ -49,8 +49,8 @@ module.exports =  {
         }))
          },        
                bibcite2: (bibfi) => {
-                 if (bibfi in memoizedCite) {
-    return memoizedCite[bibfi];
+                 if (bibfi.id in memoizedCite) {
+    return memoizedCite[bibfi.id];
   } else {
                   const cite =new Cite(JSON.stringify(bibfi));
      var res= cite.format('bibliography', {
@@ -60,7 +60,7 @@ module.exports =  {
         });
          var reg = new RegExp('(http.*)<', 'gi');
         res=res.replace(reg, '<a href=\"$1\">$1</a><');
-        memoizedCite[bibfi] = res;
+        memoizedCite[bibfi.id] = res;
           return res;
          }},           
 };
