@@ -649,7 +649,7 @@ animation-name: target2;
   margin-right: auto;
   display: block;
 }
-.hidden {
+.hidden ,.sr-only{
   display: none;
 }
 .normalStyle {font-variant: normal;}

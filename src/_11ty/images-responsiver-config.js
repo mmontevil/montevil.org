@@ -138,6 +138,13 @@ module.exports = {
     steps: 3,
     sizes: '32px',
   },
+  reaction__author__photo2: {
+    fallbackWidth: 48,
+    minWidth: 48,
+    maxWidth: 96,
+    steps: 2,
+    sizes: '48px',
+  },
   logo: {
     fallbackWidth: 200,
     minWidth: 100,

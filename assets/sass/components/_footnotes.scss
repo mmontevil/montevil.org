@@ -46,16 +46,19 @@
     color: var(--color-link-hover);
     border-radius: 30%;
     background-color: #8f8f8f;
-      // https://css-tricks.com/touch-devices-not-judged-size/
+    /*[href]{    
+    background-color: #39f;}
+    &:hover{
+      background-color: var(--color-link-hover-bg);
+    }*/
+    //}
+    
     @media (pointer: coarse) {
       padding: 0.3em 0.6em;
     }
-  }
-  &>*>*:first-child>[href]:first-child:not(u>a), &>*>[href]:first-child:not(u>a), .footnote-back{    
-    background-color: #39f;
-    &:hover{
-      background-color: var(--color-link-hover-bg);
-    }
+    
+  //&>*>*:first-child>[href="#*"]:first-child:not(u>a), &>*>[href]:first-child:not(u>a), .footnote-back
+
   }
   .footnote-mark > a >sup{
     font-size: 100%;

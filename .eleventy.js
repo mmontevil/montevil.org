@@ -210,7 +210,7 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
     const imagesResponsiver = require('images-responsiver');
 
 
-const imagesResponsiverTransform = (content, outputPath) => {
+const imagesResponsiverTransform = async (content,outputPath) => {
   if (outputPath && outputPath.endsWith('.html')) {
     return (imagesResponsiver(content, imagesResponsiverConfig));
   }
