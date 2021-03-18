@@ -7,10 +7,11 @@ upnav: toc-site
 <hr class=" wrap ">
 
 
-{{ content | toc(tags=['h2', 'h3'], wrapperClass='autotoc '+tocOver+' textLeft') | safe }}
-</div>
 
 {% from "macros/overlayToc.njk" import overlayToc %}
 {{overlayToc(content,tocOver,title)|safe}}
+</div>
+
+
 
 {{ content | safe }}

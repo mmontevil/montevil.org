@@ -3,6 +3,7 @@ hasPDF: false
 noToc: false
 hasFullText: false
 noAnchor: true
+lang: fr
 tags: 
     - time
     - criticality

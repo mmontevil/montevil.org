@@ -231,7 +231,7 @@ const imagesResponsiverTransform = (content, outputPath) => {
     // etc.
   })
 );*/
- const options = {
+/* const options = {
   disable: ['ligatures'] // array of typeset feature(s) to disable
 };
 const typeset = require('typeset');
@@ -240,7 +240,7 @@ const typeseter = (content, outputPath) => {
     return typeset(content,options);
   }
   return content;
-};
+};*/
  /* eleventyConfig.addTransform(
       'typeseter',
       typeseter
@@ -264,7 +264,7 @@ const mathjax2 = async (content, outputPath) => {
 
 const adaptor = liteAdaptor({fontSize: 16});
 AssistiveMmlHandler(RegisterHTMLHandler(adaptor));
-
+//RegisterHTMLHandler(adaptor);
 //
 //  Create input and output jax and a document using them on the content from the HTML file
 //
@@ -276,16 +276,16 @@ const html = mathjax.document(content, {InputJax: mathml, OutputJax: chtml});
 //  Typeset the document
 //
 html.render();
-let content2=adaptor.doctype(html.document)+adaptor.outerHTML(adaptor.root(html.document));
+//let content2=
  //
-
+/*
 let minified = htmlmin.minify(content2, {
         minifyCSS: true,
         useShortDoctype: true,
         removeComments: true
       });
-    
-  return content2 ;
+   */ 
+  return  adaptor.doctype(html.document)+adaptor.outerHTML(adaptor.root(html.document));;
     
   }
   return content;

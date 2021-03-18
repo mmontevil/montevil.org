@@ -1,6 +1,6 @@
 
 
-{% macro overlayToc(content,h2=false,title="") %}
+{% macro overlayToc(content,h2=false,title="",printToc=true) %}
 
 
 
@@ -9,15 +9,20 @@
   <div class="legibilityWidth overlay-content ">
   <h2 class="center titleOverToc"> {{title}}</h2>
   {%if h2=="tocCenter" or h2=="tocCenter2" %}
-    {{ content | toc(tags=['h2', 'h3'], wrapperClass='autotoc ' + h2)|safe}}
+  
+    {%set tocRen%}{{ content | toc(tags=['h2', 'h3'], wrapperClass='autotoc ' + h2)|safe}}{%endset%}
+    {{tocRen |safe}}
     {%elif h2=="tocH2"%}
-    {{ content | toc(tags=['h2', 'h3'], wrapperClass='autotoc indent')|safe}}
+    {%set tocRen%}{{ content | toc(tags=['h2', 'h3'], wrapperClass='autotoc indent')|safe}}{%endset%}
+    {{tocRen |safe}}
   {%else%}
    <nav class=" autotoc indent"><ol ><li><a href="#CitationAnchor"  class="buttonInToc"> <i>Citation & Download</i> {% icon "pdf", "PDF" %} {% icon "bib", "BIB" %}</a></li></ol></nav>
- {{ content | toc | safe }}
+ {%set tocRen%}{{ content | toc | safe }}{%endset%}
+ {{tocRen |safe}}
   {%endif%}
   </div>
 </div>
 </div>
+{%if printToc%}{{tocRen |safe}}{%endif%}
 
 {% endmacro %}

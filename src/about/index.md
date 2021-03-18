@@ -21,11 +21,16 @@ I am a *theoretical biologist* working at the crossroads of experimental biology
 {% endset %}
 
 <section class="wrap">
+
+# Publications
+
 {{links|safe}}
 
 You may also have a look at my [list of publications](/publications/publicationsbyType/) on this site or on a [thematic map of my publications]({% link_to "map" %}).
 
 </section>
+
+<section class="wrap">
 
 # Short CV
 
@@ -40,6 +45,8 @@ You may also have a look at my [list of publications](/publications/publications
 * ![IHPST](/assets/talks/ENS.png){.logo}I obtained my Phd under the supervision of [Giuseppe Longo](https://www.di.ens.fr/users/longo/) in [LIENS](https://www.di.ens.fr/), École Normale Supérieure and doctoral school [Frontières du vivant](https://www.fdv-paris.org/), in [Paris V, Descartes](https://www.univ-paris5.fr/).{data-date="2008"}
 
 {.snake}
+
+</section>
 
 {#See [videos]({% link_to "video" %})#}
 

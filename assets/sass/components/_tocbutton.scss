@@ -23,7 +23,8 @@
 }
 
 /* Position the content inside the overlay */
-.overlay-content {  scroll-margin-top: 5rem;
+.overlay-content {  
+  scroll-margin-top: 5rem;
   position: relative;
   top: 1.5em; /* 25% from the top */
   width: 100%; /* 100% width */
@@ -159,11 +160,12 @@
 }
 
 .tocCenter2{ 
-  ol{
+  
+  ol{ --flow-space: 0.4em;
       display: flex;
       flex-wrap: wrap;
   }
-  li{  
+  li,li:first-child{  --flow-space: 0.4em;
       margin-left: 1em ;
   }
 }

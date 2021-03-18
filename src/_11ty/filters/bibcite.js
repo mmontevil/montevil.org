@@ -11,6 +11,8 @@ const Cite = require("citation-js")
 const config = Cite.plugins.config.get("@csl");
 config.templates.add(templateName, template)
 
+let memoizedCite = {};
+
 module.exports =  {
 
     urlify: (text)  => {
@@ -47,6 +49,9 @@ module.exports =  {
         }))
          },        
                bibcite2: (bibfi) => {
+                 if (bibfi in memoizedCite) {
+    return memoizedCite[bibfi];
+  } else {
                   const cite =new Cite(JSON.stringify(bibfi));
      var res= cite.format('bibliography', {
             format: 'html',
@@ -55,8 +60,9 @@ module.exports =  {
         });
          var reg = new RegExp('(http.*)<', 'gi');
         res=res.replace(reg, '<a href=\"$1\">$1</a><');
+        memoizedCite[bibfi] = res;
           return res;
-         },           
+         }},           
 };
 
 

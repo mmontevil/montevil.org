@@ -9,7 +9,7 @@
     {% set aref %}<a href={{itemdata.page.url}}>{{-itemdata.title-}}</a>{%endset%}
   <li  class="publi"><div  class="wrap"><p >{{publabel(itemdata)|safe}} {% icon "reference", "reference" %} {{ itemdata.bibentry | bibcite2|divRemove| urlize( itemdata.title,itemdata.page.url, itemdata.bibentry.type)|safe}}</p>
   
- <section class="accordion ">{% if not  (itemdata.bibentry.abstract === undefined) %}<input type="checkbox" name="{{itemdata.bibentry.id}}{{rid}}" id="{{-itemdata.bibentry.id-}}{{-rid-}}" >{% endif %}
+ <div class="accordion ">{% if not  (itemdata.bibentry.abstract === undefined) %}<input type="checkbox" name="{{itemdata.bibentry.id}}{{rid}}" id="{{-itemdata.bibentry.id-}}{{-rid-}}" >{% endif %}
   <p class="handle">  
     <span class="smalltext">{{pubuttons(itemdata) |safe}}</span>{% if not  (itemdata.bibentry.abstract === undefined) %}<label for="{{-itemdata.bibentry.id-}}{{-rid-}}" class="smalltext"><span class="abssvg folded">{% icon "chevronRight", "Link" %}</span><span class="abssvg unfolded">{% icon "chevronDown", "Link" %}</span>Abstract</label> 
   </p>
@@ -19,7 +19,7 @@
 <p > <span class="paragraphHead2"><em> Keywords: </em></span> {{ itemdata.keyword  | safe }}</p >
   {% endif %}
   </div> {% endif %}
-</section>
+</div>
   </div>
   </li>
 {% endmacro %}

@@ -94,6 +94,10 @@
       padding-left: 1em;
       text-indent: -1em;
   }
+  .foonoteHead{  margin-left: 1em ;
+      padding-left: 0;
+      text-indent: 0;}
+  
   /*  h3, {
       --tempb: calc(max(-2em,var(--temp)));
   }
@@ -252,7 +256,7 @@ h2.abstract, h3.abstract {
   font-style: italic;
   margin-bottom: 0.25em;
 }
-.paragraphHead2{
+.paragraphHead2, .id{
   font-weight: bold;
   color: var(--color-primary);
 }
@@ -274,6 +278,7 @@ h2.abstract, h3.abstract {
 }
 
 .affiliation + .affiliation{  --flow-space: calc(0.2ex / 0.32);}
+
 #toc-site{margin-top: 0.5em;}
 
 .Tableau10 td, .Tableau10 th,.Tableau11 td, .Tableau11 th{border: none;}

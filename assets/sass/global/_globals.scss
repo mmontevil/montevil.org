@@ -176,8 +176,9 @@
   --hue: 322;
   --sat: 68%;
   --lum: 75%;
-  --sat-step: -4%;
+  --sat-step: -6%;
   --lum-step: -8%;
+  
   @for $i from 1 through 9 {
     --color-primary-lighter-#{$i}: hsl(
       var(--hue),

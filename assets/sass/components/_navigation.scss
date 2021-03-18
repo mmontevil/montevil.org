@@ -84,6 +84,7 @@
         color: var(--color-link-hover);
         text-decoration: none;
       }
+      a:active { color: white;}
     }
   }
   li:nth-child(1)> a{padding-left:0}
