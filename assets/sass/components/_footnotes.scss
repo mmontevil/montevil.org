@@ -38,7 +38,8 @@
    
     p:first-child {display: inline;}
   }
-  a.footnote.footnote, .footnote-mark > a ,   .Footnote_20_Symbol,  .Footnote_20, .FootnoteSymbol,  .sdfootnotesym, li:before , .footnote-back  {
+
+  a.footnote.footnote, .footnote-mark > a,   .Footnote_20_Symbol,  .Footnote_20, .FootnoteSymbol,  .sdfootnotesym, li:before , .footnote-back  {
     text-decoration: none;
     padding: 0.1em 0.4em;
     margin-right: 0.3em;
@@ -46,11 +47,9 @@
     color: var(--color-link-hover);
     border-radius: 30%;
     background-color: #8f8f8f;
-    /*[href]{    
+    &:link, &:visited {    
     background-color: #39f;}
-    &:hover{
-      background-color: var(--color-link-hover-bg);
-    }*/
+  
     //}
     
     @media (pointer: coarse) {
@@ -60,10 +59,19 @@
   //&>*>*:first-child>[href="#*"]:first-child:not(u>a), &>*>[href]:first-child:not(u>a), .footnote-back
 
   }
+  a.footnote.footnote, .footnote-mark > a, .Footnote_20_Symbol,  .Footnote_20, .FootnoteSymbol,  .sdfootnotesym , .footnote-back{
+    &:link, &:visited {    
+    background-color: #39f;}  
+    &[href]:hover{
+      background-color: var(--color-link-hover-bg);
+    }}
+  
   .footnote-mark > a >sup{
     font-size: 100%;
     top: 0em;
   }
+  .footnote-back{margin-left: 0.2em;}
+
 }
 
 

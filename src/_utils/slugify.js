@@ -1,17 +1,11 @@
 const slugify = require('@sindresorhus/slugify');
-
+const memoize = require('fast-memoize')
 // slugify is called 1000s of times, let's memoize it
-let memoizedSlugs = {};
 
-module.exports = (string) => {
-  if (string in memoizedSlugs) {
-    return memoizedSlugs[string];
-  } else {
-    let slug = slugify(string, {
+slugify0=(string) =>  slugify(string, {
       decamelize: false,
       customReplacements: [['%', ' ']],
     });
-    memoizedSlugs[string] = slug;
-    return slug;
-  }
-};
+
+
+module.exports = memoize(slugify0);

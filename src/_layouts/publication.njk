@@ -28,7 +28,7 @@ eleventyComputed:
   {% from "macros/author.njk" import author %}
 
 {% for auth in article.author_id%}
-    {{- author(article.bib.author[loop.index0], auth, people)  | safe -}}
+ {% authors article.bib.author[loop.index0], auth, people %}
 {%endfor%} 
 
 {% if not article.bib.pub_year=="NA"%}{{article.bib.pub_year}}. {%endif%}

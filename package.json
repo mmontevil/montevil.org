@@ -138,6 +138,7 @@
     "eleventy-plugin-nesting-toc": "^1.2.0",
     "eleventy-plugin-reading-time": "^0.0.1",
     "eleventy-plugin-typeset": "^1.0.0",
+    "linkedom": "^0.5.5",
     "mathjax-full": "^3.1.2",
     "moment-timezone": "^0.5.33",
     "postcss-var-optimize": "^0.0.4",

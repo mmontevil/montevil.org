@@ -207,7 +207,7 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
       config.dir.src,
       '_11ty/images-responsiver-config.js'
     ));
-    const imagesResponsiver = require('images-responsiver');
+    const imagesResponsiver = require('./src/_utils/responsiver.js');
 
 
 const imagesResponsiverTransform = async (content,outputPath) => {
@@ -276,7 +276,7 @@ const html = mathjax.document(content, {InputJax: mathml, OutputJax: chtml});
 //  Typeset the document
 //
 html.render();
-//let content2=
+let content2=adaptor.doctype(html.document)+adaptor.outerHTML(adaptor.root(html.document));
  //
 /*
 let minified = htmlmin.minify(content2, {
@@ -284,8 +284,8 @@ let minified = htmlmin.minify(content2, {
         useShortDoctype: true,
         removeComments: true
       });
-   */ 
-  return  adaptor.doctype(html.document)+adaptor.outerHTML(adaptor.root(html.document));;
+   */
+  return  content2;
     
   }
   return content;

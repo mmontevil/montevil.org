@@ -1,18 +1,22 @@
-const cheerio = require('cheerio');
 const truncateHtml = require('truncate-html');
 const entities = require('entities');
-
+/*
 var rehype = require('rehype')
 var link = require('rehype-autolink-headings')
 var options={
   behavior:"append" ,
   properties: {class : "deeplink"},
   content : {type: 'text', value: 'svgPlaceHolder'}
-}
+}*/
 var replaceall = require("replaceall");
+const addAnchordom = require('../../_utils/addAnchordom');
+
 
 module.exports = {
-  addAnchor: (content) => {
+   addAnchor: (content) => {
+         return addAnchordom(content);
+   },
+ /* addAnchor2: (content) => {
    var file000="";
     rehype().data('settings', {fragment: true}).use(link,options).process(String(content), function(err, file) {
     var res=String( file);
@@ -24,7 +28,7 @@ res=res.replace(regexp1,'<svg class="icon" role="img" focusable="false" aria-lab
 file000=res;
   })
     return file000;
-  },
+  },*/
   divRemove: (content) => {
      const regex = /(<div ((?!(>)).|\n)+>)|(<\/div>)/gm;
     return content.replace(regex, '');
@@ -38,18 +42,6 @@ file000=res;
   },
   encodeEntities: (content) => {
     return entities.encodeHTML(content);
-  },
-  cleanForAlgolia: (html) => {
-    // Remove some elements with Cheerio: footnote links, heading links
-    // Cheerio can't load videos, so we get a fallback message we have to remove
-    // TODO: Use BasicHTML?
-    const $ = cheerio.load(html);
-    $('sup.footnote-ref, a.footnote-backref, a.deeplink, div.giphy').remove();
-    html = $.html();
-    html = entities.decodeHTML(html);
-    html = html.replace("'", '’');
-
-    return html;
   },
   removeEmojis: (content) => {
     // https://thekevinscott.com/emojis-in-javascript/
