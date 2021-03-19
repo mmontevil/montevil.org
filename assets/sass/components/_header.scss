@@ -9,6 +9,7 @@
 z-index:100;
   color: var(--color-link-hover);
   background: var(--color-primary);
+  background: linear-gradient(var(--color-primary),var(--color-primary-lighter-1));
   border-top: solid var(--border-width) var(--color-primary-lighter-3);
 
   .wrap {

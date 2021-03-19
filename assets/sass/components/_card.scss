@@ -147,12 +147,18 @@ overflow-x: clip;
   }
   &:nth-child(2n+1) {
     &:before {
-      background: var(--color-primary-lighter-7)
+    //  background: var(--color-primary-lighter-7)
+      background: linear-gradient(var(--color-primary-lighter-7),var(--color-primary-lighter-8),var(--color-primary-lighter-7)),
+      linear-gradient(66deg,var(--color-primary-lighter-7),var(--color-primary-lighter-8))
+      ;
     }
   }
   &:nth-child(2n+2) {
     &:before {
-      background: var(--color-primary-lighter-8)
+         background: linear-gradient(var(--color-primary-lighter-8),var(--color-primary-lighter-9),var(--color-primary-lighter-8)),
+         linear-gradient(66deg, var(--color-primary-lighter-8),var(--color-primary-lighter-9),var(--color-primary-lighter-8))
+         ;
+      //background: var(--color-primary-lighter-8)
     }
   }
 }
