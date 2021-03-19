@@ -11,18 +11,18 @@ eleventyComputed:
   title: Contents tagged “{{ tag.tag }}”
 permalink: /tags/{{ tag.slug }}/
 ---
-<h2 class=wrap>{{title}} </h2>
+<h2 class=wrap>{{title}}
+</h2>
 {% from "macros/itemCard.njk" import itemCard %}
-
 
 {% if tag.logo or tag.description %}
   <div class="intro clearfix indent snapper">
     {% if tag.logo %}
-      <img src="/{{ tag.logo }}" class="logo" />
+      <img src="/{{ tag.logo }}" class="logo"/>
     {% endif %}
 
     {% if tag.description %}
-        {{ tag.description | markdownify | safe }}
+      {{ tag.description | markdownify | safe }}
     {% endif %}
   </div>
 {% endif %}
@@ -36,7 +36,7 @@ permalink: /tags/{{ tag.slug }}/
 <ol class="cards-list">
   {% set contentItems = collections['archivesall'] |hasTag(tag.tag) |reverse%}
   {% for item in contentItems | reverse %}
-      {{ itemCard(item,numbers.numbers2) }}
+    {{ itemCard(item,numbers.numbers2) }}
   {% endfor %}
 </ol>
 <p class="more wrap">See <a href="/tags/">all tags</a>.</p>

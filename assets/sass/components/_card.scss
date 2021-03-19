@@ -7,8 +7,8 @@
 
 .cards-list {
   @extend %flow;
-//scroll-snap-type: y mandatory;
-//scroll-padding: 5em;
+  //scroll-snap-type: y mandatory;
+  //scroll-padding: 5em;
   clear: both;
   padding: 0;
   // margin: 0;
@@ -23,7 +23,6 @@
 // ************************************************************
 
 .card {
-
   margin-bottom: var(--gap);
   @extend %clearfix;
 
@@ -55,18 +54,20 @@ img.card__illustration {
   margin-top: 0;
   color: var(--color-darkgrey);
 }
-.card__subtitle { font-size: var(--font-size-l);
+.card__subtitle {
+  font-size: var(--font-size-l);
   margin-top: 0;
   color: var(--color-primary);
 }
 .card__title {
-   // scroll-snap-align: none; 
+  // scroll-snap-align: none;
   margin-top: 0;
   font-size: var(--font-size-xl);
   font-weight: bold;
   letter-spacing: -0.02em;
 
-  .card__surtitle + &, .card__subtitle + &{
+  .card__surtitle + &,
+  .card__subtitle + & {
     margin-top: 0;
   }
 }
@@ -82,94 +83,119 @@ img.card__illustration {
   margin-right: auto;
 }
 
-.publi, .card-list__item, .titleDiag{
-  scroll-snap-align: start; 
+.publi,
+.card-list__item,
+.titleDiag {
+  scroll-snap-align: start;
   //scroll-snap-stop: always;
-//height: 100vh;
+  //height: 100vh;
   //width: 100vw;
-   position: relative;
+  position: relative;
   margin-top: 0px;
   padding: var(--skew-padding) 0;
 }
-.publi:before ,.card-list__item:before, .titleDiag:before, .publi:after ,.card-list__item:after, .titleDiag:after{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    transform: skewy(var(--angle));
-    transform-origin: 50% 0;
-    outline: 1px solid transparent;
-    backface-visibility: hidden; 
-    z-index: -1;
-}  
+.publi:before,
+.card-list__item:before,
+.titleDiag:before,
+.publi:after,
+.card-list__item:after,
+.titleDiag:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: skewy(var(--angle));
+  transform-origin: 50% 0;
+  outline: 1px solid transparent;
+  backface-visibility: hidden;
+  z-index: -1;
+}
 
-.publi, .card-list__item{          
+.publi,
+.card-list__item {
   //z-index: 1;
-overflow-x: clip;
- // overflow-y: hidden;  //box-shadow: 10px 5px 5px black; 
-  & > *{
+  overflow-x: clip;
+  // overflow-y: hidden;  //box-shadow: 10px 5px 5px black;
+  & > * {
     margin-top: var(--skew-padding);
     position: relative;
   }
 
-  @media  (hover: hover){
-  &:after{
-    box-shadow: 0 1px 2px var(--color-primary-darker-1), 
-              0 2px 4px var(--color-primary-darker-1), 
-              0 4px 8px var(--color-primary-darker-1), 
-              0 8px 16px var(--color-primary-darker-1), 
-              0 16px 32px var(--color-primary-darker-1);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out; 
-    transition: transform 0.3s ease-in-out;
-     } 
-  &:hover{
-      &:after{
-          transition: opacity 0.3s ease-in-out; 
-         transition: transform 0.3s ease-in-out;
-          transform:  none;
-          opacity: 0.5;
-          z-index: 0;
+  @media (hover: hover) {
+    &:after {
+      box-shadow: 0 1px 2px var(--color-primary-darker-1),
+        0 2px 4px var(--color-primary-darker-1),
+        0 4px 8px var(--color-primary-darker-1),
+        0 8px 16px var(--color-primary-darker-1),
+        0 16px 32px var(--color-primary-darker-1);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out;
+    }
+    &:hover {
+      &:after {
+        transition: opacity 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out;
+        transform: none;
+        opacity: 0.5;
+        z-index: 0;
       }
-      &:before{
-          z-index: 0;
-          transform:  none;
-          transition: transform 0.3s ease-in-out;    
+      &:before {
+        z-index: 0;
+        transform: none;
+        transition: transform 0.3s ease-in-out;
       }
-      & > *{
-          z-index: 1; 
-          transform:  scale(1.025, 1.025);
-          transition: transform 0.3s ease-in-out;
+      & > * {
+        z-index: 1;
+        transform: scale(1.025, 1.025);
+        transition: transform 0.3s ease-in-out;
       }
-  }
-  }
-  &:nth-child(2n+1) {
-    &:before {
-    //  background: var(--color-primary-lighter-7)
-      background: linear-gradient(var(--color-primary-lighter-7),var(--color-primary-lighter-8),var(--color-primary-lighter-7)),
-      linear-gradient(66deg,var(--color-primary-lighter-7),var(--color-primary-lighter-8))
-      ;
     }
   }
-  &:nth-child(2n+2) {
+  &:nth-child(2n + 1) {
     &:before {
-         background: linear-gradient(var(--color-primary-lighter-8),var(--color-primary-lighter-9),var(--color-primary-lighter-8)),
-         linear-gradient(66deg, var(--color-primary-lighter-8),var(--color-primary-lighter-9),var(--color-primary-lighter-8))
-         ;
+      //  background: var(--color-primary-lighter-7)
+      background: linear-gradient(
+          var(--color-primary-lighter-7),
+          var(--color-primary-lighter-8),
+          var(--color-primary-lighter-7)
+        ),
+        linear-gradient(
+          66deg,
+          var(--color-primary-lighter-7),
+          var(--color-primary-lighter-8)
+        );
+    }
+  }
+  &:nth-child(2n + 2) {
+    &:before {
+      background: linear-gradient(
+          var(--color-primary-lighter-8),
+          var(--color-primary-lighter-9),
+          var(--color-primary-lighter-8)
+        ),
+        linear-gradient(
+          66deg,
+          var(--color-primary-lighter-8),
+          var(--color-primary-lighter-9),
+          var(--color-primary-lighter-8)
+        );
       //background: var(--color-primary-lighter-8)
     }
   }
 }
 
-.titleDiag .titleHead, .titleDiag .sectionHeadList{
-  margin-top: calc(0.5*var(--skew-padding));
-  margin-bottom: calc(0.5*var(--skew-padding));
+.titleDiag .titleHead,
+.titleDiag .sectionHeadList {
+  margin-top: calc(0.5 * var(--skew-padding));
+  margin-bottom: calc(0.5 * var(--skew-padding));
 }
 
-.meta__item, p+.meta{
---flow-space: 0;
+.meta__item,
+p + .meta {
+  --flow-space: 0;
 }
 /*
   @media (hover: none){

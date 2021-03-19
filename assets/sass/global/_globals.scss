@@ -1,31 +1,26 @@
 //@use 'colors';
 
-
-
 :root {
-
-      --width: calc(min( var(--layout-max),94vw));
-    @media (min-width: 25rem) {
-    --width: calc(min( var(--layout-max),90vw));
-
+  --width: calc(min(var(--layout-max), 94vw));
+  @media (min-width: 25rem) {
+    --width: calc(min(var(--layout-max), 90vw));
   }
 
-  
   @media (min-width: 40rem) {
-     --width: calc(min( var(--layout-max),80vw));
+    --width: calc(min(var(--layout-max), 80vw));
   }
   --footerW: 900;
   @media (min-width: 40rem) {
-  --footerW: 1600;
+    --footerW: 1600;
   }
   @media (min-width: 80rem) {
-  --footerW: 2400;
+    --footerW: 2400;
   }
-    --angle: -5deg;
+  --angle: -5deg;
   --magic-number: 0.035;
   --skew-padding: calc(var(--width) * var(--magic-number));
   //--clip-padding: calc(var(--full-width) * var(--magic-number));
-  
+
   --gap: 1rem;
   --gap2: calc(2 * var(--gap));
   --gap3: calc(3 * var(--gap));
@@ -33,10 +28,12 @@
   --flow-space: 1em;
 
   // --font-family-serif: NotoSerif, Georgia, 'Times New Roman', Times, serif;
-  --font-family-serif:   'Caslon Pro', Caslon, 'Liberation Serif',    'Crimson Pro', Georgia, 'Times New Roman', Times, serif;
-  
-  --font-family-sans-serif:   'Liberation Sans', 'Myriad Pro' , ClassicSans, 'Proxima Nova', 'Segoe UI',
-    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-family-serif: 'Caslon Pro', Caslon, 'Liberation Serif', 'Crimson Pro',
+    Georgia, 'Times New Roman', Times, serif;
+
+  --font-family-sans-serif: 'Liberation Sans', 'Myriad Pro', ClassicSans,
+    'Proxima Nova', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
 
   // --font-family-monospace: 'Fira Code', 'Courier New', Courier, monospace;
   --font-family-monospace: 'Courier New', Courier, monospace;
@@ -47,8 +44,11 @@
 
   // https://every-layout.dev/rudiments/modular-scale/
   --font-size-m: calc(var(--font-size-base) + var(--font-size-responsive));
-  --font-size-m: min(calc(var(--font-size-base) + var(--font-size-responsive)),1.5rem);
-  
+  --font-size-m: min(
+    calc(var(--font-size-base) + var(--font-size-responsive)),
+    1.5rem
+  );
+
   --font-size-s: calc(var(--font-size-m) / var(--font-size-scale));
   --font-size-xs: calc(var(--font-size-s) / var(--font-size-scale));
   --font-size-l: calc(var(--font-size-m) * var(--font-size-scale));
@@ -59,7 +59,6 @@
 
   // --layout-max: calc(50 * var(--font-size-m));
   --layout-max: 60rem;
-
 
   // Colors
   // Rebecca Purple:
@@ -87,7 +86,7 @@
 --color-primary-lighter-m: white;
 */
 
---color-primary: hsl(323,68%,25%);
+  --color-primary: hsl(323, 68%, 25%);
   --hue: 323;
   --sat: 68%;
   --lum: 25%;
@@ -99,10 +98,10 @@
       calc(var(--sat) + #{$i} * var(--sat-step)),
       calc(var(--lum) + #{$i} * var(--lum-step))
     );
-  } 
---sat-step2: 3%;
---lum-step2: -3%;
-  
+  }
+  --sat-step2: 3%;
+  --lum-step2: -3%;
+
   @for $i from 1 through 9 {
     --color-primary-darker-#{$i}: hsl(
       var(--hue),
@@ -112,7 +111,7 @@
   }
   // Persimmon:
   //   https://en.wikipedia.org/wiki/Shades_of_orange#Persimmon
---color-secondary: hsl(calc(var(--hue) - 180), var(--sat) , 30%);
+  --color-secondary: hsl(calc(var(--hue) - 180), var(--sat), 30%);
 
   // Persimmon:
   //   https://en.wikipedia.org/wiki/Shades_of_orange#Persimmon
@@ -122,7 +121,7 @@
   --color-link: var(--color-primary);
   --color-link-bg: inherit;
   --color-link-decoration: var(--color-primary-lighter-6);
---color-link-hoveralt: black;
+  --color-link-hoveralt: black;
   --color-link-hover: white;
   --color-link-hover-bg: var(--color-primary);
   --color-link-hover-decoration: none;
@@ -132,63 +131,60 @@
 
   --color-gold: hsl(50, 91%, 30%);
   --color-yellow-light: hsl(59, 100%, 88%);
---color-emph: #35d540;
+  --color-emph: #35d540;
   --border-width: 0.15em;
-    --color-accord: var(--color-primary-lighter-4);
-    --color-caption: #666;
+  --color-accord: var(--color-primary-lighter-4);
+  --color-caption: #666;
 
-    --color-primary-shine: var(--color-primary-lighter-1);
---color-primary-shine2: var(--color-primary-lighter-2);
---color-primary-shine-font: white;
---color-info-bg: #dfd8f0;
+  --color-primary-shine: var(--color-primary-lighter-1);
+  --color-primary-shine2: var(--color-primary-lighter-2);
+  --color-primary-shine-font: white;
+  --color-info-bg: #dfd8f0;
 
-// ************************************************************
-// Colors palette
-// ************************************************************
---color-green: #3f7e00;
---color-blue: #2570ba;
---color-red: #ca2828;
---color-purple: #4d11ff;
+  // ************************************************************
+  // Colors palette
+  // ************************************************************
+  --color-green: #3f7e00;
+  --color-blue: #2570ba;
+  --color-red: #ca2828;
+  --color-purple: #4d11ff;
 
---color-lightgrey: #eee;
---color-grey: #bbb;
---color-darkgrey: #555;
---color-xlightgrey: #fafafa;
+  --color-lightgrey: #eee;
+  --color-grey: #bbb;
+  --color-darkgrey: #555;
+  --color-xlightgrey: #fafafa;
 
---color-twitter: #0b74b0;
+  --color-twitter: #0b74b0;
 
-// Colors from Prism OneDark theme
---inline-code-background-color: #282c34;
---inline-code-text-color: #abb2bf;
---color-grad:100%;
+  // Colors from Prism OneDark theme
+  --inline-code-background-color: #282c34;
+  --inline-code-text-color: #abb2bf;
+  --color-grad: 100%;
 
- .noDarkFilter {
+  .noDarkFilter {
     filter: none;
   }
---soft-shadow: rgba(0,0,0,0.05);
-
+  --soft-shadow: rgba(0, 0, 0, 0.05);
 }
- 
 
-[data-theme="dark"] {
-
---color-primary: hsl(322,68%,75%);
+[data-theme='dark'] {
+  --color-primary: hsl(322, 68%, 75%);
   --hue: 322;
   --sat: 68%;
   --lum: 75%;
   --sat-step: -6%;
   --lum-step: -8%;
-  
+
   @for $i from 1 through 9 {
     --color-primary-lighter-#{$i}: hsl(
       var(--hue),
       calc(var(--sat) + #{$i} * var(--sat-step)),
       calc(var(--lum) + #{$i} * var(--lum-step))
     );
-  } 
---sat-step2: 3%;
---lum-step2: 3%;
-  
+  }
+  --sat-step2: 3%;
+  --lum-step2: 3%;
+
   @for $i from 1 through 9 {
     --color-primary-darker-#{$i}: hsl(
       var(--hue),
@@ -198,24 +194,24 @@
   }
   // Persimmon:
   //   https://en.wikipedia.org/wiki/Shades_of_orange#Persimmon
---color-secondary: hsl(calc(var(--hue) - 180), var(--sat) , 30%);
---color-bg: var(--color-primary-lighter-9);
+  --color-secondary: hsl(calc(var(--hue) - 180), var(--sat), 30%);
+  --color-bg: var(--color-primary-lighter-9);
 
---soft-shadow: rgba(255,255,255,0.075);
---color-link-hoveralt: blue;
---color-emph: #00ff00;
---color-info-bg: #272859;
---color-twitter: #1da1f2;
- --color-caption: #dccccc;
-   --color-link-hover: black;
+  --soft-shadow: rgba(255, 255, 255, 0.075);
+  --color-link-hoveralt: blue;
+  --color-emph: #00ff00;
+  --color-info-bg: #272859;
+  --color-twitter: #1da1f2;
+  --color-caption: #dccccc;
+  --color-link-hover: black;
   --color-meta: #c1aaaa;
   --color-gold: hsl(50, 91%, 30%);
   --color-yellow-light: hsl(171, 68%, 25%);
- 
---color-primary-shine: var(--color-primary-lighter-1);
---color-primary-shine2: var(--color-link-hover-bg);
---color-primary-shine-font: var(--color-primary-darker-6);
-  
+
+  --color-primary-shine: var(--color-primary-lighter-1);
+  --color-primary-shine2: var(--color-link-hover-bg);
+  --color-primary-shine-font: var(--color-primary-darker-6);
+
   --color-link: var(--color-primary);
   --color-link-bg: inherit;
   --color-link-decoration: var(--color-primary-lighter-4);
@@ -225,45 +221,44 @@
 
   --color-meta-decoration: var(--color-primary-lighter-2);
 
-
-
   --border-width: 0.15em;
-    --color-accord: var(--color-primary-lighter-4);
-   
+  --color-accord: var(--color-primary-lighter-4);
 
-// ************************************************************
-// Colors palette
-// ************************************************************
---color-green: #3f7e00;
---color-blue: #194d7e;
---color-red: #af2222;
---color-purple: #4d11ff;
---color-lightgrey: #313131;
---color-grey: #444444;
---color-darkgrey: #aaaaaa;
---color-xlightgrey: #050505;
---color-twitter: #0d91e2;
+  // ************************************************************
+  // Colors palette
+  // ************************************************************
+  --color-green: #3f7e00;
+  --color-blue: #194d7e;
+  --color-red: #af2222;
+  --color-purple: #4d11ff;
+  --color-lightgrey: #313131;
+  --color-grey: #444444;
+  --color-darkgrey: #aaaaaa;
+  --color-xlightgrey: #050505;
+  --color-twitter: #0d91e2;
 
-// Colors from Prism OneDark theme
---inline-code-background-color: #282c34;
---inline-code-text-color: #abb2bf;
---color-grad:0%;
+  // Colors from Prism OneDark theme
+  --inline-code-background-color: #282c34;
+  --inline-code-text-color: #abb2bf;
+  --color-grad: 0%;
 
-img, .invertwrapper{
+  img,
+  .invertwrapper {
     filter: hue-rotate(180deg) invert(100%);
   }
-   .invertwrapper img {filter: none;}
-   
-#footer{
-    filter: hue-rotate(180deg) invert(100%) ;
+  .invertwrapper img {
+    filter: none;
   }
-  .noDarkFilter, .tweet-profile>img, .tweet-images>img{
+
+  #footer {
+    filter: hue-rotate(180deg) invert(100%);
+  }
+  .noDarkFilter,
+  .tweet-profile > img,
+  .tweet-images > img {
     filter: none;
   }
 }
-
-
-
 
 /*
 --color-primary-darker-7: #f8ebf2;
@@ -307,13 +302,6 @@ img, .invertwrapper{
 --color-primary-lighter-8: #1e060e;
 --color-primary-lighter-m: #100310;
 */
-
-
-
-
-
-
-
 
 /*
 

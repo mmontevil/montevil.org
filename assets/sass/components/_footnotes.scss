@@ -15,11 +15,13 @@
   border-radius: 0.3em;
   font-size: var(--font-size-s);
   padding-bottom: 1em;
-  &>p, &>div, &>aside{
+  & > p,
+  & > div,
+  & > aside {
     text-indent: -2em;
     padding-left: 2em;
   }
-  &>*{
+  & > * {
     margin-left: 0.4rem;
     margin-right: 0.4rem;
   }
@@ -31,55 +33,72 @@
   }
   li {
     counter-increment: my-awesome-counter;
-    &:before{margin-left: -2em;
+    &:before {
+      margin-left: -2em;
       content: counter(my-awesome-counter);
       display: inline-block;
     }
-   
-    p:first-child {display: inline;}
+
+    p:first-child {
+      display: inline;
+    }
   }
 
-  a.footnote.footnote, .footnote-mark > a,   .Footnote_20_Symbol,  .Footnote_20, .FootnoteSymbol,  .sdfootnotesym, li:before , .footnote-back  {
+  a.footnote.footnote,
+  .footnote-mark > a,
+  .Footnote_20_Symbol,
+  .Footnote_20,
+  .FootnoteSymbol,
+  .sdfootnotesym,
+  li:before,
+  .footnote-back {
     text-decoration: none;
     padding: 0.1em 0.4em;
     margin-right: 0.3em;
-   // margin: 0 0.2em;
+    // margin: 0 0.2em;
     color: var(--color-link-hover);
     border-radius: 30%;
     background-color: #8f8f8f;
-    &:link, &:visited {    
-    background-color: #39f;}
-  
+    &:link,
+    &:visited {
+      background-color: #39f;
+    }
+
     //}
-    
+
     @media (pointer: coarse) {
       padding: 0.3em 0.6em;
     }
-    
-  //&>*>*:first-child>[href="#*"]:first-child:not(u>a), &>*>[href]:first-child:not(u>a), .footnote-back
 
+    //&>*>*:first-child>[href="#*"]:first-child:not(u>a), &>*>[href]:first-child:not(u>a), .footnote-back
   }
-  a.footnote.footnote, .footnote-mark > a, .Footnote_20_Symbol,  .Footnote_20, .FootnoteSymbol,  .sdfootnotesym , .footnote-back{
-    &:link, &:visited {    
-    background-color: #39f;}  
-    &[href]:hover{
+  a.footnote.footnote,
+  .footnote-mark > a,
+  .Footnote_20_Symbol,
+  .Footnote_20,
+  .FootnoteSymbol,
+  .sdfootnotesym,
+  .footnote-back {
+    &:link,
+    &:visited {
+      background-color: #39f;
+    }
+    &[href]:hover {
       background-color: var(--color-link-hover-bg);
-    }}
-  
-  .footnote-mark > a >sup{
+    }
+  }
+
+  .footnote-mark > a > sup {
     font-size: 100%;
     top: 0em;
   }
-  .footnote-back{margin-left: 0.2em;}
-
+  .footnote-back {
+    margin-left: 0.2em;
+  }
 }
-
-
-
 
 /*
 .footnotes li:before { 
   content: "  "; 
   margin-left: -1em;
 }*/
-

@@ -1,103 +1,119 @@
- 
 @use '../global/utilities';
 
-
 .inlineimg {
-  display: inline; 
-      text-align: center;
+  display: inline;
+  text-align: center;
 }
-.figure{
-      text-align: center;
+.figure {
+  text-align: center;
 }
 
-.picgrid, .picgrid3{ align-items: end;
+.picgrid,
+.picgrid3 {
+  align-items: end;
   display: grid;
   grid-gap: 0.5em;
   grid-template-columns: 1fr;
 }
 
-.picgrid{
+.picgrid {
   grid-template-rows: repeat(4, minmax(0px, auto));
-  grid-template-areas:  "img1" "sub1"
-                        "img2" "sub2"; 
+  grid-template-areas:
+    'img1' 'sub1'
+    'img2' 'sub2';
 }
-.picgrid3{
+.picgrid3 {
   grid-template-rows: repeat(6, minmax(0px, auto));
-  grid-template-areas:  "img1" "sub1"
-                        "img2" "sub2"
-                        "img3" "sub3";
+  grid-template-areas:
+    'img1' 'sub1'
+    'img2' 'sub2'
+    'img3' 'sub3';
 }
 
-.img1, .img2, .img3
-{  display: grid;
+.img1,
+.img2,
+.img3 {
+  display: grid;
 }
-.img1{grid-area: img1;}
-.img2{grid-area: img2;}
-.img3{grid-area: img3;}
-  
-.sub1, .sub2, .sub3{  
+.img1 {
+  grid-area: img1;
+}
+.img2 {
+  grid-area: img2;
+}
+.img3 {
+  grid-area: img3;
+}
+
+.sub1,
+.sub2,
+.sub3 {
   display: grid;
   text-align: left;
 }
-.sub1{  grid-area: sub1;}
-.sub2 {  grid-area: sub2;}
-.sub3{grid-area: sub3; }
+.sub1 {
+  grid-area: sub1;
+}
+.sub2 {
+  grid-area: sub2;
+}
+.sub3 {
+  grid-area: sub3;
+}
 
-@media screen and (min-width: 768px)
-{
-  .picgrid
-  {
+@media screen and (min-width: 768px) {
+  .picgrid {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:  "img1 img2"
-                                           " sub1 sub2";
+    grid-template-areas:
+      'img1 img2'
+      ' sub1 sub2';
   }
-    .picgrid3
-  {
+  .picgrid3 {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:  "img1 img2 img3"
-                                           " sub1 sub2 sub3";
+    grid-template-areas:
+      'img1 img2 img3'
+      ' sub1 sub2 sub3';
   }
 }
 
-
-
-
-.sectionHeadList{margin-top:1em;margin-bottom:0em;
-  text-align: center;  
+.sectionHeadList {
+  margin-top: 1em;
+  margin-bottom: 0em;
+  text-align: center;
   font-size: var(--font-size-xxxxl);
 }
 
-
-
-
-
-
-
-
-.legibilityWidth{
-      width: calc(30*var(--font-size-m));
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
- // width: 60ch;
+.legibilityWidth {
+  width: calc(30 * var(--font-size-m));
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  // width: 60ch;
   //  max-width: 100%;
-   /*   @media (min-width: 30rem) {
+  /*   @media (min-width: 30rem) {
   margin-left: calc(0.25*100% - 0.25*30rem);
   margin-right: calc(0.25*100% - 0.25*30rem);
       }*/
 
-    h2, h3,h4,h5,h6 , dt{
-     // @media (min-width: 30rem) {
-  --temp: calc(50% - 50vw + 2em);
-  --tempb: calc(max(-2em,var(--temp)));
-  margin-left: calc(min(var(--tempb), 0em));
-      padding-left: 1em;
-      text-indent: -1em;
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  dt {
+    // @media (min-width: 30rem) {
+    --temp: calc(50% - 50vw + 2em);
+    --tempb: calc(max(-2em, var(--temp)));
+    margin-left: calc(min(var(--tempb), 0em));
+    padding-left: 1em;
+    text-indent: -1em;
   }
-  .foonoteHead{  margin-left: 1em ;
-      padding-left: 0;
-      text-indent: 0;}
-  
+  .foonoteHead {
+    margin-left: 1em;
+    padding-left: 0;
+    text-indent: 0;
+  }
+
   /*  h3, {
       --tempb: calc(max(-2em,var(--temp)));
   }
@@ -113,177 +129,204 @@
       text-indent: -2em;
   }*/
 
-  
-  .wide{ 
-      --temp: calc(50% - 50vw + 2em);
-  --tempb: calc(max(-5em,var(--temp)));
-  margin-left: calc(min(var(--tempb), 0em));
+  .wide {
+    --temp: calc(50% - 50vw + 2em);
+    --tempb: calc(max(-5em, var(--temp)));
+    margin-left: calc(min(var(--tempb), 0em));
     margin-right: calc(min(var(--tempb), 0em));
-    
   }
-  
 
-  ul li,ol,dl{ 
-    @extend %flow; 
+  ul li,
+  ol,
+  dl {
+    @extend %flow;
   }
-  dl dd{ 
-    margin-left: 1.5em;   
-    --flow-space: 0 ;
+  dl dd {
+    margin-left: 1.5em;
+    --flow-space: 0;
   }
 }
 
-
-
-
-dt.description, dt.dt{
+dt.description,
+dt.dt {
   font-variant: small-caps;
 }
 
-.caption-title,.paragraphHead, dt.description{
+.caption-title,
+.paragraphHead,
+dt.description {
   font-weight: bold;
   color: var(--color-primary-darker-1);
 }
 
-.textbf{font-weight: bold;}
- .small-caps{font-variant: small-caps;}
-.cmti-10{font-style: italic;}
+.textbf {
+  font-weight: bold;
+}
+.small-caps {
+  font-variant: small-caps;
+}
+.cmti-10 {
+  font-style: italic;
+}
 
 .Footnote_20_anchor, //.Footnote_20,
-.superLegacy,.textsuperscript , sup{ 
- // vertical-align: super; 
+.superLegacy,.textsuperscript , sup {
+  // vertical-align: super;
   //font-size:58%;
-font-size: 75%;
-line-height: 0;
-position: relative;
-vertical-align: super;
-padding-top: 0.05em;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: super;
+  padding-top: 0.05em;
 }
-.footnotes .textsuperscript{vertical-align: baseline;}
-.superLegacyIt { 
-  vertical-align: super; 
-  font-size:75%;
+.footnotes .textsuperscript {
+  vertical-align: baseline;
+}
+.superLegacyIt {
+  vertical-align: super;
+  font-size: 75%;
   font-style: italic;
 }
-.subLegacy { 
-  vertical-align: sub; 
-  font-size:58%;
+.subLegacy {
+  vertical-align: sub;
+  font-size: 58%;
 }
-.subLegacyIt { 
-  vertical-align: sub; 
-  font-size:58%;
+.subLegacyIt {
+  vertical-align: sub;
+  font-size: 58%;
   font-style: italic;
 }
-
-
 
 //.bibitem, .thebibliography > *,.referencesn>*{margin-bottom:0.7em;}
 
-.titleHead,.head,.center,.maketitle, .subtitleHead{text-align: center;}
+.titleHead,
+.head,
+.center,
+.maketitle,
+.subtitleHead {
+  text-align: center;
+}
 
-.legibilityWidth .titleHead   {
-  padding-left: 0; 
+.legibilityWidth .titleHead {
+  padding-left: 0;
   text-indent: 0;
   margin-left: 0;
-  &+*{
-      --flow-space: var(--gap3) ;
+  & + * {
+    --flow-space: var(--gap3);
   }
-  &+.subtitleHead{
-      --flow-space: 0.5em ;
-  }    
+  & + .subtitleHead {
+    --flow-space: 0.5em;
+  }
 }
-.subtitleHead{  
-  &+*{
-      --flow-space: var(--gap3) ;
+.subtitleHead {
+  & + * {
+    --flow-space: var(--gap3);
   }
 }
 
 //.head{margin-bottom: 2em;}
 
-
-
-
-
-
-        
-        
-nav > ul, nav >ul >li>ul , nav >ul >li>ul>li>ul,.references,.autotoc ol {
+nav > ul,
+nav > ul > li > ul,
+nav > ul > li > ul > li > ul,
+.references,
+.autotoc ol {
   list-style-type: none;
 }
 
-
-.td11{font-size: var(--font-size-s);}
-
-.frame_hsides{font-size: var(--font-size-xs);}
-
-.enumerateRom{list-style-type: lower-roman;}
-
-.quote {
-  padding-left:1.5em;  
+.td11 {
   font-size: var(--font-size-s);
 }
 
-
-.frame_hsides{ 
-  margin-left: auto;
-  margin-right: auto;
- }
- .bibsp{display:none;}
-
- .bibitem, .thebibliography >p, .thebibliography >div, .references__item {
-   text-indent: -1.5em;
-   padding-left:1.5em;
-   font-size: var(--font-size-s);
+.frame_hsides {
+  font-size: var(--font-size-xs);
 }
 
-.thebibliography{   
-  padding-inline-start:0;
+.enumerateRom {
+  list-style-type: lower-roman;
+}
+
+.quote {
+  padding-left: 1.5em;
+  font-size: var(--font-size-s);
+}
+
+.frame_hsides {
+  margin-left: auto;
+  margin-right: auto;
+}
+.bibsp {
+  display: none;
+}
+
+.bibitem,
+.thebibliography > p,
+.thebibliography > div,
+.references__item {
+  text-indent: -1.5em;
+  padding-left: 1.5em;
+  font-size: var(--font-size-s);
+}
+
+.thebibliography {
+  padding-inline-start: 0;
   list-style-type: none;
 }
 
-.ReferencesCopy2{text-indent: 0em;}
+.ReferencesCopy2 {
+  text-indent: 0em;
+}
 
-.footnotes >*{margin-top: 0.5em;}
+.footnotes > * {
+  margin-top: 0.5em;
+}
 
-
-
-h2.abstract, h3.abstract {
+h2.abstract,
+h3.abstract {
   font-variant: normal;
   margin-bottom: 0.25em;
-  font-weight: 600 ;
+  font-weight: 600;
 }
-.keywords, .paragraphHead{
-  font-weight: 600 ;
+.keywords,
+.paragraphHead {
+  font-weight: 600;
   font-style: italic;
   margin-bottom: 0.25em;
 }
-.paragraphHead2, .id{
+.paragraphHead2,
+.id {
   font-weight: bold;
   color: var(--color-primary);
 }
 
-
-
-.author, .authors{
+.author,
+.authors {
   font-size: var(--font-size-xl);
   text-align: center;
 }
 
-.affiliation {   
+.affiliation {
   text-align: center;
   font-size: var(--font-size-s);
 }
 
-.maketitle, div.abstract, .head{
-  @extend %flowall; 
+.maketitle,
+div.abstract,
+.head {
+  @extend %flowall;
 }
 
-.affiliation + .affiliation{  --flow-space: calc(0.2ex / 0.32);}
+.affiliation + .affiliation {
+  --flow-space: calc(0.2ex / 0.32);
+}
 
-#toc-site{margin-top: 0.5em;}
+#toc-site {
+  margin-top: 0.5em;
+}
 
-.Tableau10 td, .Tableau10 th,.Tableau11 td, .Tableau11 th{border: none;}
-
-
-
-
-
+.Tableau10 td,
+.Tableau10 th,
+.Tableau11 td,
+.Tableau11 th {
+  border: none;
+}

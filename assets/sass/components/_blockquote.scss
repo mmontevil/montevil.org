@@ -1,25 +1,26 @@
 @use '../global/functions';
 @use '../global/utilities';
-.epigraph{padding: 0 !important;
-  &::before {left: -0.5em!important;
-   @media (max-width: 40rem) { 
-     left: 0em !important;
-     float: left; 
-       display: inline-block;
+.epigraph {
+  padding: 0 !important;
+  &::before {
+    left: -0.5em !important;
+    @media (max-width: 40rem) {
+      left: 0em !important;
+      float: left;
+      display: inline-block;
       width: 0.5em;
-    height: 0.75em;
-    margin-bottom: -0.25em;
-        position: relative!important;
-   }
+      height: 0.75em;
+      margin-bottom: -0.25em;
+      position: relative !important;
+    }
   }
-  
 }
 blockquote:not(.tweet-card) {
   @extend %flow;
 
-//  margin-left: 0;
- // margin-right: 0;
- 
+  //  margin-left: 0;
+  // margin-right: 0;
+
   min-height: 3em;
 
   font-size: var(--font-size-l);
@@ -36,8 +37,7 @@ blockquote:not(.tweet-card) {
     color: var(--color-primary-lighter-2);
     font-size: calc(4em + 5vw);
     font-style: normal;
-    line-height: 1; 
-
+    line-height: 1;
   }
 
   blockquote {
@@ -45,14 +45,16 @@ blockquote:not(.tweet-card) {
     font-style: normal;
   }
 }
- //.epigraph > p:first-child { @extend blockquote; padding: 0;}
+//.epigraph > p:first-child { @extend blockquote; padding: 0;}
 //.epigraph> p:first-child {padding: 0;}
 
-.epigraph { @extend blockquote;     }
-.episource{
+.epigraph {
+  @extend blockquote;
+}
+.episource {
   font-size: var(--font-size-m);
   margin-top: calc(0.5ex / 0.35);
-  --flow-space: calc(0.5ex / 0.35) ;
+  --flow-space: calc(0.5ex / 0.35);
   color: var(--color-primary-darker-5);
   font-style: normal;
   text-align: right;
@@ -60,5 +62,5 @@ blockquote:not(.tweet-card) {
 }
 
 blockquote:not(.tweet-card) {
-   padding: 0.5em 1em 0.5em calc(2em + 3vw);
+  padding: 0.5em 1em 0.5em calc(2em + 3vw);
 }

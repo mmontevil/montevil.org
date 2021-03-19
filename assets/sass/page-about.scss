@@ -1,36 +1,35 @@
-
-
- ul.snake {--flow-space: var(--gap);
-   padding: 0; 
+ul.snake {
+  --flow-space: var(--gap);
+  padding: 0;
 }
 
-.snake  li:after{
-   content: "";
-   display: block;
-   clear: both;
+.snake li:after {
+  content: '';
+  display: block;
+  clear: both;
 }
-   
-.snake  li:not(.nosnake)  {
+
+.snake li:not(.nosnake) {
   list-style: none;
   border-top: 3px solid;
- // border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
-    border-image: linear-gradient(to right, #eb95cb 0%, #691449 100%);
+  // border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+  border-image: linear-gradient(to right, #eb95cb 0%, #691449 100%);
   border-image-slice: 1;
   border-width: 3px;
   margin: 0;
   padding: 3em;
-   padding-left: 1.5em ;
-  padding-right: 1.5em; 
+  padding-left: 1.5em;
+  padding-right: 1.5em;
   @media (min-width: 40rem) {
     padding-left: 3em;
-  padding-right: 3em;
+    padding-right: 3em;
   }
- 
+
   position: relative;
- // color: black;
-  
+  // color: black;
+
   //numbers
-  &:before{
+  &:before {
     content: attr(data-date);
     position: absolute;
     border-radius: 50%;
@@ -48,11 +47,11 @@
 .snake li:not(.nosnake):nth-child(odd) {
   border-right: 3px solid;
   padding-left: 0;
-  
+
   &:before {
-    top: 100%; 
-   // margin-left: -0.7em;
-    left: 25%; 
+    top: 100%;
+    // margin-left: -0.7em;
+    left: 25%;
     margin-top: -0.7em;
   }
 }
@@ -60,9 +59,9 @@
 .snake li:not(.nosnake):nth-child(even) {
   border-left: 3px solid;
   padding-right: 0;
-  
+
   &:before {
-    top: 100%; 
+    top: 100%;
     left: 65%;
     margin-top: -0.7em;
   }
@@ -70,10 +69,10 @@
 //handle first and last
 .snake li:not(.nosnake):first-child {
   border-top: 0;
-  border-top-right-radius:0;
-  border-top-left-radius:0;
-  &:after{
-    content: " ";
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  &:after {
+    content: ' ';
     position: absolute;
     border-radius: 0%;
     height: 0.75em;
@@ -81,16 +80,17 @@
     background-color: #691449;
     margin-left: -0.35em;
     z-index: 1;
-    top: 0%; 
+    top: 0%;
     left: 100%;
     transform: rotate(45deg);
   }
 }
 
 .snake li:not(.nosnake):last-child {
-  &:before {left: 0%;}
-  border-bottom-right-radius:0;
-  border-bottom-left-radius:0;
+  &:before {
+    left: 0%;
+  }
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
   border-bottom: 3px solid;
 }
-

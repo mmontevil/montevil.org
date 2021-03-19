@@ -1,5 +1,5 @@
-
-module.exports = {/*
+module.exports = {
+  /*
   eleventyComputed: {
     bibentry: (data) => {
       var res={};
@@ -12,10 +12,6 @@ module.exports = {/*
     }, },
     */
   // tags: (data) => tags(data),
-
-
-
-
   /*  tags: (data) => {
       if (data.content === undefined) {
         return data.tags || [];
@@ -27,8 +23,5 @@ module.exports = {/*
         tags = [...new Set([].concat(...tags, ...data.tags))];
       }
       return tags;
-    },*/  
-
-   
-    
-  };
+    },*/
+};

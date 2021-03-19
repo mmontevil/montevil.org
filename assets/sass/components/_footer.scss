@@ -2,53 +2,53 @@
 // Footer
 // ************************************************************
 
-
 @keyframes revealFooter {
-  0% {transform:  translate(0, 100%) scale(1,0)  ;
-    
+  0% {
+    transform: translate(0, 100%) scale(1, 0);
   }
-    20% {transform:  translate(0, 70%) scale(1,0.2)  ;
-    
+  20% {
+    transform: translate(0, 70%) scale(1, 0.2);
   }
-  100% {transform: scale(1,1);
-    
+  100% {
+    transform: scale(1, 1);
   }
 }
 //.blurryWrap{overflow-y: hidden;}
-.blurryHL{
-  position: sticky; left: 0;
-  width: min(100%,100vw);
+.blurryHL {
+  position: sticky;
+  left: 0;
+  width: min(100%, 100vw);
   filter: blur(0.5em);
   height: 1.2em;
-  width:100%;
- // margin-left: -5%;
+  width: 100%;
+  // margin-left: -5%;
   margin-bottom: -1.5em;
   margin-top: var(--gap3);
-  z-index: 1; 
+  z-index: 1;
   background-color: var(--color-bg);
   // background-color: white;
-margin-left: 0;
-margin-right: 0;
+  margin-left: 0;
+  margin-right: 0;
   border-color: transparent;
- // color: transparent;
+  // color: transparent;
 }
 
-
-
-#footer {position: sticky; left: 0;
-    width: min(100%,100vw);
+#footer {
+  position: sticky;
+  left: 0;
+  width: min(100%, 100vw);
 
   white-space: nowrap;
   margin: 1em 0 0 0;
   padding: 1em 0;
-  //z-index: -5; 
-   //position: fixed;
- // bottom: 0;
-   /*position: sticky;
+  //z-index: -5;
+  //position: fixed;
+  // bottom: 0;
+  /*position: sticky;
   bottom: 0;
   left: 0;
   width: 100%;*/
-  padding-top: calc((868 / (var(--footerW))* 100vw) );
+  padding-top: calc((868 / (var(--footerW)) * 100vw));
   // transition color and padding if background image is added with JS
   color: currentColor;
 
@@ -59,20 +59,15 @@ margin-right: 0;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-name: revealFooter;
-transform: scale(0);
+  transform: scale(0);
   background-image: var(--limbes),
-    linear-gradient(
-      to bottom,
-      #ffffff,
-      #c5c5c5 50%,
-       #282828 80%,
-      #1a1a1a
-    );
+    linear-gradient(to bottom, #ffffff, #c5c5c5 50%, #282828 80%, #1a1a1a);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  a {  z-index: 0; 
-}
+  a {
+    z-index: 0;
+  }
   a:link,
   a:visited {
     color: white;
@@ -86,9 +81,8 @@ transform: scale(0);
   }
 
   .wrap {
-   // background-color: var(--color-link-hover-bg);
+    // background-color: var(--color-link-hover-bg);
 
-    
     @media (min-width: 15em) {
       display: flex;
       flex-direction: row;
@@ -101,11 +95,12 @@ transform: scale(0);
     }
   }
 
-  p { color: white; small{    
-
-  color: white;
-    background-color: rgba(23,13,29,0.75);}
-    
+  p {
+    color: white;
+    small {
+      color: white;
+      background-color: rgba(23, 13, 29, 0.75);
+    }
 
     line-height: 2;
 
@@ -115,7 +110,7 @@ transform: scale(0);
   }
 
   .edit {
-    background-color: rgba(23,13,29,0.75);
+    background-color: rgba(23, 13, 29, 0.75);
     margin-bottom: var(--gap);
     font-size: var(--font-size-xs);
     white-space: normal;

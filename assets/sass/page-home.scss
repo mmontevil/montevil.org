@@ -1,6 +1,7 @@
 @use 'global/utilities';
 
-.welcome {    --flow-space: 0;
+.welcome {
+  --flow-space: 0;
 
   @extend %clearfix;
   @extend %flow;
@@ -11,8 +12,7 @@
 
 .welcome__name {
   font-size: var(--font-size-xxxl);
-//  color: var(--color-primary);
-
+  //  color: var(--color-primary);
 
   @media (min-width: 20em) {
     margin-top: 0;
