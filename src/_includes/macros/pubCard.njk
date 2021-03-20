@@ -20,13 +20,15 @@
 {%-elif article.data.bibentry.DOI-%}
 {% set srcurl-%}https://image.thum.io/get/width/1200/crop/800/noanimate/https://dx.doi.org/{{ article.data.bibentry.DOI }}{%-endset%}
 {%-endif-%} 
+
  
   {% if srcurl -%}
   {% set illustration = {
     src:  srcurl,
     alt:  article.data.title,
     width: 1200,
-    height: 800
+    height: 800,
+    classes: article.data.illustClass
   } %}
 {% endif %}
 

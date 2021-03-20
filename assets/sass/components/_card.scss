@@ -116,7 +116,8 @@ img.card__illustration {
 .publi,
 .card-list__item {
   //z-index: 1;
-  overflow-x: clip;
+  //overflow-x: hidden;
+  // overflow-y: visible;
   // overflow-y: hidden;  //box-shadow: 10px 5px 5px black;
   & > * {
     margin-top: var(--skew-padding);

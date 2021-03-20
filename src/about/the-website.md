@@ -3,7 +3,7 @@ title: About this website
 layout: page
 lang: en
 ---
-![11ty logo](/assets/logos/eleventy.png){.logo}
+![11ty logo](/assets/logos/eleventy.png){.logo}{.noDarkFilter}
 ::: lead
 **This web site is static**, its main engine is [Eleventy](https://www.11ty.dev/).  
 It is inspired by [Nicolas Hoizey website](https://nicolas-hoizey.com/). 

@@ -306,8 +306,9 @@ svg {
   vertical-align: text-bottom;
 }
 
-video {
-  background-color: #eee;
+video{
+  max-width: 100%;
+  background-color: transparent;
 }
 
 .giphy {
@@ -645,9 +646,8 @@ article {
 
 .centerBlock {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+  justify-content: center;
+ // display: block;
 }
 .hidden,
 .sr-only {

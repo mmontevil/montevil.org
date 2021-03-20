@@ -330,3 +330,28 @@ div.abstract,
 .Tableau11 th {
   border: none;
 }
+
+table.equation, table.equation-star, .legibilityWidth  mjx-container[jax="CHTML"][display="true"]{
+   --temp: calc(50% - 50vw +30px);
+    --tempb: calc(max(-5em, var(--temp)));
+    margin-left: calc(min(var(--temp), 0em));
+    margin-right: calc(min(var(--temp), 0em));
+ scrollbar-width: none;
+  overflow-x: auto;
+  display: block;
+}
+  table.equation, table.equation-star{
+  tbody{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  td{border:none;}
+  tr{align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+}
