@@ -691,16 +691,14 @@ FileETag None
 # ##############################################################################
 # # REDIRECTS                                                                  #
 # ##############################################################################
-/sites/montevil.theobio.org/files/(.*\.(mp4,ogg,ogv,webm,mp3,avi,zip))  https://legacy.theobio.org/\1  302
-/sites/montevil.theobio.org/files/sama/(.*)  https://legacy.theobio.org/sama/\1  302
 
 
 
-#RewriteCond %{REQUEST_URI} /sites/montevil.theobio.org/files/(.*\.(mp4,ogg,ogv,webm,mp3,avi,zip))$
-#RewriteRule . https://legacy.theobio.org/%1 [R=301,L]
+RewriteCond %{REQUEST_URI} /sites/montevil.theobio.org/files/(.*\.(mp4,ogg,ogv,webm,mp3,avi,zip))$
+RewriteRule . https://legacy.theobio.org/%1 [R=302,L]
 
-#RewriteCond %{REQUEST_URI} /sites/montevil.theobio.org/files/sama/(.*)$
-#RewriteRule . https://%{HTTP_HOST}/%1 [R=301,L]
+RewriteCond %{REQUEST_URI} /sites/montevil.theobio.org/files/sama/(.*)$
+RewriteRule . https://legacy.theobio.org/sama/%1 [R=302,L]
 
 
 # ------------------------------------------------------------------------------
