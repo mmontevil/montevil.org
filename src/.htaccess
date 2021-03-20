@@ -694,10 +694,10 @@ FileETag None
 
 
 
-RewriteCond %{REQUEST_URI} ^/sites/montevil.theobio.org/files/.*\.(mp4,ogg,ogv,webm,mp3,avi,zip)$
+RewriteCond %{REQUEST_URI} ^.*/sites/montevil.theobio.org/files/.*\.(mp4,ogg,ogv,webm,mp3,avi,zip)$
 RewriteRule ^(.*) https://legacy.theobio.org/$1 [R=302,L]
 
-RewriteCond %{REQUEST_URI} ^/sites/montevil.theobio.org/files/sama/.*$
+RewriteCond %{REQUEST_URI} ^.*/sites/montevil.theobio.org/files/sama/.*$
 RewriteRule ^(.*) https://legacy.theobio.org/$1 [R=302,L]
 
 
