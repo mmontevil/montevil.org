@@ -235,6 +235,13 @@ AddDefaultCharset utf-8
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+RewriteCond %{REQUEST_URI} ^.*/sites/montevil.theobio.org/files/.*\.(mp4|ogg|ogv|webm|mp3|avi|zip)$ [NC]
+RewriteRule ^(.*) https://legacy.theobio.org/$1 [R=302,L,NC]
+
+RewriteCond %{REQUEST_URI} ^.*/sites/montevil.theobio.org/files/sama/.*$ [NC]
+RewriteRule ^(.*) https://legacy.theobio.org/$1 [R=302,L]
+
+
 # Remove www.
 RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteRule ^(.*) https://montevil.org/$1 [QSA,R=301,L]
@@ -692,13 +699,6 @@ FileETag None
 # # REDIRECTS                                                                  #
 # ##############################################################################
 
-
-
-RewriteCond %{REQUEST_URI} ^.*/sites/montevil.theobio.org/files/.*\.(mp4|ogg|ogv|webm|mp3|avi|zip)$
-RewriteRule ^(.*) https://legacy.theobio.org/$1 [R=302,L]
-
-RewriteCond %{REQUEST_URI} ^.*/sites/montevil.theobio.org/files/sama/.*$
-RewriteRule ^(.*) https://legacy.theobio.org/$1 [R=302,L]
 
 
 # ------------------------------------------------------------------------------
