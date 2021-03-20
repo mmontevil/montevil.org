@@ -6,12 +6,10 @@
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   Feature-Policy: accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'
   Accept-CH: Downlink,RTT,Device-Memory,Save-Data,DPR,Width
-  Report-To: {"group":"default","max_age":31536000,"endpoints":[{"url":"https://nhocom.report-uri.com/a/d/g"}],"include_subdomains":true}
-  NEL: {"report_to":"default","max_age":31536000,"include_subdomains":true,"failure_fraction":0.5}
   X-Clacks-Overhead: GNU Terry Pratchett
 
 
- Content-Security-Policy: upgrade-insecure-requests; base-uri 'self'; img-src 'self' montevil.goatcounter.com data: cdn.jsdelivr.net gc.zgo.at res.cloudinary.com i.ytimg.com image.thum.io; script-src 'self' data: 'unsafe-inline' 'unsafe-eval'  platform.twitter.com syndication.twitter.com cdn.syndication.twimg.com cdn.jsdelivr.net gc.zgo.at ; object-src 'self' vimeo.com; connect-src 'self' res.cloudinary.com i.ytimg.com *.algolia.net *.algolianet.com *.centrepompidou.fr  cdn.jsdelivr.net gc.zgo.at montevil.goatcounter.com; 
+ Content-Security-Policy: upgrade-insecure-requests; base-uri 'self'; img-src 'self' montevil.goatcounter.com data: cdn.jsdelivr.net gc.zgo.at res.cloudinary.com i.ytimg.com image.thum.io; script-src 'self' data: 'unsafe-inline' 'unsafe-eval'  platform.twitter.com syndication.twitter.com cdn.syndication.twimg.com cdn.jsdelivr.net gc.zgo.at ; object-src 'self' vimeo.com; connect-src 'self' res.cloudinary.com i.ytimg.com *.algolia.net *.algolianet.com *.centrepompidou.fr  cdn.jsdelivr.net gc.zgo.at *.theobio.org montevil.goatcounter.com; 
   Cache-Control: public, no-cache, no-store, max-age=0, must-revalidate
   Link: <https://res.cloudinary.com>; rel=preconnect; crossorigin, <https://cdn.jsdelivr.net>; rel=preconnect; crossorigin, <https://i.ytimg.com>; rel=preconnect; crossorigin, <https://gc.zgo.at>; rel=preconnect; crossorigin
  
