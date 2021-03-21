@@ -4,7 +4,6 @@ const DIST = '_site';
 
 module.exports = {
   globDirectory: DIST,
-   importScripts: ['./assets/javascript/cloudinaryPlugin.min.js'],
   globPatterns: [
     './js/additional-es.*.js',
     './index.html',
@@ -90,26 +89,6 @@ module.exports = {
       }
     }
   },
-  {
-      urlPattern: '/api/news',
-      handler: 'StaleWhileRevalidate',
-      options: {
-        cacheName: 'api-cache',
-      }
-    },
-   {
-      urlPattern: new RegExp('^https:\/\/res\.cloudinary\.com\/.*'),
-      handler: 'CacheFirst',
-      options: {
-        cacheName: 'cloudinary-images',
-            expiration: {
-        maxEntries: 32,
-        maxAgeSeconds: 24 * 60 * 60 // 24 hours
-      },
-        plugins: [{
-          requestWillFetch: async ({ request }) => cloudinaryPlugin.requestWillFetch(request)
-        }]}
-    },
   {
     urlPattern: /.*/i,
     handler: 'NetworkFirst',
