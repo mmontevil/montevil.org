@@ -51,7 +51,7 @@ module.exports = {
     options: {
       cacheName: 'static-font-assets',
       expiration: {
-        maxEntries: 4,
+        maxEntries: 10,
         maxAgeSeconds: 7 * 24 * 60 * 60 // 7 days
       }
     }
