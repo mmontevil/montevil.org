@@ -94,10 +94,7 @@
   margin-left: calc(0.25*100% - 0.25*30rem);
   margin-right: calc(0.25*100% - 0.25*30rem);
       }*/
-  @media (hover: hover) {
-      &> *{content-visibility: auto;
-   contain-intrinsic-size: 500px;}
-  }
+
   h2,
   h3,
   h4,
