@@ -4,7 +4,7 @@ const DIST = '_site';
 
 module.exports = {
   globDirectory: DIST,
-   importScripts: ['./assets/js/cloudinaryPlugin.js'],
+   importScripts: ['./assets/javascript/cloudinaryPlugin.min.js'],
   globPatterns: [
     './js/additional-es.*.js',
     './index.html',
