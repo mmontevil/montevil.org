@@ -89,7 +89,13 @@ module.exports = {
         maxAgeSeconds: 24 * 60 * 60 // 24 hours
       }
     }
-  },
+  },{
+      urlPattern: '/api/news',
+      handler: 'staleWhileRevalidate',
+      options: {
+        cacheName: 'api-cache',
+      }
+    },
    {
       urlPattern: new RegExp('^https:\/\/res\.cloudinary\.com\/.*'),
       handler: 'CacheFirst',
