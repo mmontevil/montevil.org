@@ -39,7 +39,7 @@ The publications below should be available.
 <script>
 // https://googlechrome.github.io/samples/service-worker/window-caches/
 
-['others','workbox-precache-v2-https://montevil.org/'].forEach(
+['htmlpages','workbox-precache-v2-https://montevil.org/'].forEach(
   (cacheName) => {
 
 window.caches.open(cacheName).then(cache => {
@@ -85,19 +85,24 @@ window.caches.open(cacheName).then(cache => {
           pElement.appendChild(linkElement);
 
           let liElement = document.createElement("li");
-          liElement.className = "card-list__item";
-          liElement.appendChild(pElement);
+          liElement.className = "card-list__item ";
+          
+          let pageWrap = document.createElement("div");
+          pageWrap.className = "card";
+
+          pageWrap.appendChild(pElement);
+          liElement.appendChild(pageWrap);
 
           // TODO: check this 
         if (pageDom.querySelector("#CitationAnchor")) {
             let pageMeta = document.createElement("div");
             let pageMeta0 = document.createElement("div");
 
-            pageMeta0.innerHTML = pageDom.querySelector("#CitationAnchor p:first-child, #CitationAnchor div:first-child ").innerHTML;
-            pageMeta.className = "wrap";
+            pageMeta0.innerHTML = pageDom.querySelector("#CitationAnchor *:first-child, #CitationAnchor div:first-child ").innerHTML;
+            pageMeta.className = "wrap ";
             pageMeta.appendChild(pageMeta0);
 
-            liElement.appendChild(pageMeta);
+            pageWrap.appendChild(pageMeta);
           }
 
 

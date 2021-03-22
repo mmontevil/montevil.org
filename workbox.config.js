@@ -88,6 +88,18 @@ module.exports = {
         maxAgeSeconds: 24 * 60 * 60 // 24 hours
       }
     }
+  },,
+  {
+    urlPattern:  /\.(?:html|\/)$/i,
+    handler: 'NetworkFirst',
+    options: {
+      cacheName: 'htmlpages',
+      expiration: {
+        maxEntries: 64,
+        maxAgeSeconds: 24 * 60 * 60 // 24 hours
+      },
+      networkTimeoutSeconds: 10
+    }
   },
   {
     urlPattern: /.*/i,
