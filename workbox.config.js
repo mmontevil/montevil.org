@@ -15,8 +15,7 @@ module.exports = {
     './publications/*/202*/*.html',
         './publications/*/sub*/*.html',
     './assets/me/Montevil-192px.png',
-    './assets/me/Montevil-512px.png',
-    './publications/publicationsbyYear/*.html',
+    './assets/me/Montevil-512px.png'
   ],
   runtimeCaching: [
   {
@@ -90,7 +89,7 @@ module.exports = {
     }
   },
   {
-    urlPattern:  /\.(?:html|\/)$/i,
+    urlPattern:  /(?:\.html|\/)$/i,
     handler: 'NetworkFirst',
     options: {
       cacheName: 'htmlpages',
@@ -102,12 +101,24 @@ module.exports = {
     }
   },
   {
+    urlPattern: /count\?/i,
+    handler: 'NetworkFirst',
+    options: {
+      cacheName: 'api',
+      expiration: {
+        maxEntries: 5,
+        maxAgeSeconds: 24 * 60 * 60 // 24 hours
+      },
+      networkTimeoutSeconds: 10
+    }
+  },
+  {
     urlPattern: /.*/i,
     handler: 'NetworkFirst',
     options: {
       cacheName: 'others',
       expiration: {
-        maxEntries: 32,
+        maxEntries: 64,
         maxAgeSeconds: 24 * 60 * 60 // 24 hours
       },
       networkTimeoutSeconds: 10
