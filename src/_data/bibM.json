@@ -50,6 +50,7 @@
     "keyword": "Individuation",
     "page": "77 - 82",
     "title": "Toward a theory of organisms: Three founding principles in search of a useful integration",
+    "title-short": "Toward a theory of organisms",
     "type": "article-journal",
     "volume": "122"
   },
@@ -105,7 +106,7 @@
     },
     "publisher": "Code, Github/Zenoto; Zenodo",
     "title": "Code for: Disruption of biological processes in the Anthropocene: the case of phenological mismatch",
-    "type": "no-type",
+    "type": "",
     "version": "v0.51"
   },
   {
@@ -143,6 +144,9 @@
     ],
     "container-title": "Personalized Medicine in the Making: Philosophical Perspectives from Biology to Healthcare",
     "id": "2021-Montevil-Theory-Accuracy-Medicine",
+    "issued": {
+      "date-parts": []
+    },
     "keyword": "Normativity, Organization, Personalized Medicine, Technology, theoretical biology",
     "publisher": "Springer; Springer",
     "title": "Conceptual and theoretical specifications for accuracy in medicine",
@@ -158,8 +162,11 @@
     ],
     "container-title": "Ecorev’",
     "id": "2021-Montevil-Stiegler-Sciences-Entropocene",
+    "issued": {
+      "date-parts": []
+    },
     "title": "Sciences et Entropocène : Autour de Qu’appelle-t-on panser? 2 de Bernard Stiegler",
-    "title-short": "Sciences et Entropocène",
+    "title-short": "Sciences et Entropocène ",
     "type": "article-journal"
   },
   {
@@ -197,7 +204,7 @@
       ]
     },
     "keyword": "Animals, Biological Evolution, Biophysics/methods, Cell Division, Mice, Models, Morphogenesis, Thermodynamics",
-    "note": "PMC5505559\\[pmcid\\]",
+    "note": "PMC5505559[pmcid]",
     "page": "955-968",
     "title": "In search of principles for a Theory of Organisms",
     "type": "article-journal",
@@ -213,13 +220,16 @@
     ],
     "container-title": "AI and society",
     "id": "submitted-Montevil-Entropies-Anthropocene",
+    "issued": {
+      "date-parts": []
+    },
     "keyword": "entropy, anti-entropy, resources, organization, disruption, Anthropocene",
     "title": "Entropies and the Anthropocene crisis",
     "type": "article-journal"
   },
   {
     "URL": "https://internation.world/",
-    "abstract": "The industrial economy took shape between the late eighteenth century and the nineteenth century, initially in Western Europe and then in North America. Besides technical production, it involves technological production – the integration of sciences in order to produce indus-trial goods –, to the strict extent that, as Marx showed, capitalism makes knowledge and its economic valorization its primary element. \\<br\\> Newton’s physics and the metaphysics that goes with it originated the epistemic (in Michel Foucault’s sense) and epistemological (in Gaston Bachelard’s sense) framework of this great transformation. In this transformation, otium (productive leisure time) submits to negotium (worldly affairs, business). All along, mathematics has been applied with ever more powerful and performative calculating machines. \\<br\\> After precursors such as Nicholas Georgescu-Roegen, himself inspired by Alfred Lotka, we maintain that political economy in what is now called the Anthropocene (whose features were delineated by Vladimir Vernadsky in 1926) is a challenge that requires a fundamental reconsideration of these epistemic frameworks and epistemological frameworks. With Dar-win, living beings became part of a historical process of becoming. In humans, knowledge is a performative part of this process that shapes and reshapes lifestyles in order to tame the im-pact of technical novelties.",
+    "abstract": "The industrial economy took shape between the late eighteenth century and the nineteenth century, initially in Western Europe and then in North America. Besides technical production, it involves technological production – the integration of sciences in order to produce indus-trial goods –, to the strict extent that, as Marx showed, capitalism makes knowledge and its economic valorization its primary element. <br> Newton’s physics and the metaphysics that goes with it originated the epistemic (in Michel Foucault’s sense) and epistemological (in Gaston Bachelard’s sense) framework of this great transformation. In this transformation, otium (productive leisure time) submits to negotium (worldly affairs, business). All along, mathematics has been applied with ever more powerful and performative calculating machines. <br> After precursors such as Nicholas Georgescu-Roegen, himself inspired by Alfred Lotka, we maintain that political economy in what is now called the Anthropocene (whose features were delineated by Vladimir Vernadsky in 1926) is a challenge that requires a fundamental reconsideration of these epistemic frameworks and epistemological frameworks. With Dar-win, living beings became part of a historical process of becoming. In humans, knowledge is a performative part of this process that shapes and reshapes lifestyles in order to tame the im-pact of technical novelties.",
     "author": [
       {
         "family": "Montévil",
@@ -258,7 +268,7 @@
   {
     "ISBN": "9791020908575",
     "URL": "https://books.google.fr/books?id=sjvpDwAAQBAJ",
-    "abstract": "L’économie industrielle a pris forme entre la fin du XVIIIe siècle et le XIXe siècle – d’abord en Europe occidentale puis en Amérique du Nord. Outre les productions techniques, elle aura conduit à des productions technologiques – mobilisant des sciences pour produire des biens industriels – : comme Marx l’aura montré en 1857, le capitalisme fait du savoir et de sa valorisation économique son élément premier. \\<br\\> La physique de Newton et la métaphysique qui l’accompagne sont à l’origine du cadre épistémique (au sens de Michel Foucault) et épistémologique (au sens de Gaston Bachelard) de cette grande transformation – qui est la condition de ce que Karl Polanyi appellera lui-même « la grande transformation ». Dans cette transformation, l’otium (le temps de loisirs productifs) se soumet au negotium (les affaires du monde). Pendant ce temps, les mathématiques sont appliquées à travers des machines à calculer toujours plus puissantes et performatives – appelées computers après la deuxième guerre mondiale. \\<br\\> Après des précurseurs tels que Nicholas Georgescu-Roegen, lui-même inspiré par Alfred Lotka, nous soutiendrons dans le présent ouvrage que l’économie politique, dans ce qui est appelé l’ère Anthropocène (thématisée en 2000 par Paul Krutzen, et dont les caractéristiques ont été décrites par Vladimir Vernadsky dès 19263) est un défi qui nécessite un réexamen fondamental de ces cadres épistémiques et épistémologiques. \\<br\\> Avec Darwin, les êtres vivants sont devenus partie intégrante d’un processus historique en constant devenir. Chez l’homme, les savoirs sont une partie de ce processus qui est performative, au double sens de ce mot : à la fois au sens de l’efficience et au sens de la prescription. Ce processus devient exosomatique, c’est à dire extra-corporel, comme le montre Lotka, qui façonne et remodèle les modes de vie afin, notamment, de limiter les effets négatifs des nouveautés techniques.",
+    "abstract": "L’économie industrielle a pris forme entre la fin du XVIIIe siècle et le XIXe siècle – d’abord en Europe occidentale puis en Amérique du Nord. Outre les productions techniques, elle aura conduit à des productions technologiques – mobilisant des sciences pour produire des biens industriels – : comme Marx l’aura montré en 1857, le capitalisme fait du savoir et de sa valorisation économique son élément premier. <br> La physique de Newton et la métaphysique qui l’accompagne sont à l’origine du cadre épistémique (au sens de Michel Foucault) et épistémologique (au sens de Gaston Bachelard) de cette grande transformation – qui est la condition de ce que Karl Polanyi appellera lui-même « la grande transformation ». Dans cette transformation, l’otium (le temps de loisirs productifs) se soumet au negotium (les affaires du monde). Pendant ce temps, les mathématiques sont appliquées à travers des machines à calculer toujours plus puissantes et performatives – appelées computers après la deuxième guerre mondiale. <br> Après des précurseurs tels que Nicholas Georgescu-Roegen, lui-même inspiré par Alfred Lotka, nous soutiendrons dans le présent ouvrage que l’économie politique, dans ce qui est appelé l’ère Anthropocène (thématisée en 2000 par Paul Krutzen, et dont les caractéristiques ont été décrites par Vladimir Vernadsky dès 19263) est un défi qui nécessite un réexamen fondamental de ces cadres épistémiques et épistémologiques. <br> Avec Darwin, les êtres vivants sont devenus partie intégrante d’un processus historique en constant devenir. Chez l’homme, les savoirs sont une partie de ce processus qui est performative, au double sens de ce mot : à la fois au sens de l’efficience et au sens de la prescription. Ce processus devient exosomatique, c’est à dire extra-corporel, comme le montre Lotka, qui façonne et remodèle les modes de vie afin, notamment, de limiter les effets négatifs des nouveautés techniques.",
     "author": [
       {
         "family": "Montévil",
@@ -320,7 +330,7 @@
       ]
     },
     "title": "Entretien sur l’entropie, le vivant et la technique : Première partie",
-    "title-short": "Entretien sur l’entropie, le vivant et la technique",
+    "title-short": "Entretien sur l’entropie, le vivant et la technique ",
     "type": "article-journal",
     "volume": "1"
   },
@@ -346,7 +356,7 @@
       ]
     },
     "title": "Entretien sur l’entropie, le vivant et la technique : Deuxième partie",
-    "title-short": "Entretien sur l’entropie, le vivant et la technique",
+    "title-short": "Entretien sur l’entropie, le vivant et la technique ",
     "type": "article-journal",
     "volume": "2"
   },
@@ -412,6 +422,7 @@
     "page": "81-97",
     "publisher": "John Wiley & Sons, Ltd",
     "title": "From the Century of the Gene to that of the Organism: Introduction to New Theoretical Perspectives",
+    "title-short": "From the Century of the Gene to that of the Organism",
     "type": "chapter"
   },
   {
@@ -442,6 +453,7 @@
     "keyword": "Coherent structures, Critical transitions, downward causation, Hidden variables, Levels of organization, Symmetries, Systems biology",
     "page": "77-92",
     "title": "From physics to biology by extending criticality and symmetry breakings: An update",
+    "title-short": "From physics to biology by extending criticality and symmetry breakings",
     "type": "article-journal",
     "volume": "9"
   },
@@ -470,6 +482,7 @@
     },
     "page": "611",
     "title": "The Identity of Organisms in Scientific Practice: Integrating Historical and Relational Conceptions",
+    "title-short": "The Identity of Organisms in Scientific Practice",
     "type": "article-journal",
     "volume": "11"
   },
@@ -508,7 +521,6 @@
     ],
     "container-title": "Rendiconti di Matematica e delle sue Applicazioni",
     "id": "2019-Montevil-First-Principles-Biology",
-    "issue": "3-4",
     "issued": {
       "date-parts": [
         [
@@ -533,7 +545,6 @@
     ],
     "container-title": "Intellectica",
     "id": "2020-Montevil-Turing-Biology",
-    "issue": "1",
     "issued": {
       "date-parts": [
         [
@@ -557,6 +568,9 @@
     ],
     "container-title": "Biomorphisme",
     "id": "2021-Sens-Formes-biologie",
+    "issued": {
+      "date-parts": []
+    },
     "publisher": "NAIMA",
     "title": "Le sens des formes en biologie",
     "type": "chapter"
@@ -665,6 +679,7 @@
     "keyword": "Theoretical principle, Organization, Constraints, Closure, Stability, Organicism",
     "page": "24-35",
     "title": "Theoretical principles for biology: Organization",
+    "title-short": "Theoretical principles for biology",
     "type": "article-journal",
     "volume": "122"
   },
@@ -705,6 +720,7 @@
     "keyword": "Variability, Historicity, Genericity, Biological randomness, Organization, Theory of organisms",
     "page": "36-50",
     "title": "Theoretical principles for biology: Variation",
+    "title-short": "Theoretical principles for biology",
     "type": "article-journal",
     "volume": "122"
   },
@@ -743,6 +759,7 @@
     "keyword": "Ductal morphogenesis, Mathematical models, Organicism, Organizational closure, Acinar morphogenesis, Mammary gland morphogenesis",
     "page": "58-69",
     "title": "Modeling mammary organogenesis from biological first principles: Cells and their physical constraints",
+    "title-short": "Modeling mammary organogenesis from biological first principles",
     "type": "article-journal",
     "volume": "122"
   },
@@ -802,6 +819,7 @@
     "page": "1-82",
     "publisher": "Elsevier",
     "title": "From the century of the genome to the century of the organism: New theoretical approaches",
+    "title-short": "From the century of the genome to the century of the organism",
     "type": "article-journal"
   },
   {
@@ -867,6 +885,7 @@
     "keyword": "Novelty, Possibility space, Biological functions, Organization, Emergence",
     "page": "4555-4581",
     "title": "Possibility spaces and the notion of novelty: from music to biology",
+    "title-short": "Possibility spaces and the notion of novelty",
     "type": "article-journal",
     "volume": "196"
   },
@@ -937,13 +956,13 @@
     "page": "315-342",
     "publisher": "CNRS éditions",
     "title": "Répétition et réversibilité dans l’évolution : La génétique des populations théorique",
-    "title-short": "Répétition et réversibilité dans l’évolution",
+    "title-short": "Répétition et réversibilité dans l’évolution ",
     "type": "chapter"
   },
   {
     "DOI": "10.1007/978-3-319-53725-2_13",
     "ISBN": "978-3-319-53725-2",
-    "abstract": "Repetitiveness and reversibility have long been considered as characteristic features of scientific knowledge. In theoretical population genetics, repetitiveness is illustrated by a number of genetic equilibria realized under specific conditions. Since these equilibria are maintained despite a continual flux of changes in the course of generations (reshuffling of genes, reproduction…), it can legitimately be said that population genetics reveals important properties of invariance through transformation. Time-reversibility is a more controversial subject. Here, the parallel with classical mechanics is much weaker. Time-reversibility is unquestionable in some stochastic models, but at the cost of a special, probabilistic concept of reversibility. But it does not seem to be a property of the most basic deterministic models describing the dynamics of evolutionary change at the level of populations and genes. Furthermore, various meanings of ‘reversibility’ are distinguished. In particular, time-reversibility should not be confused with retrodictability.",
+    "abstract": "Repetitiveness and reversibility have long been considered as characteristic features of scientific knowledge. In theoretical population genetics, repetitiveness is illustrated by a number of genetic equilibria realized under specific conditions. Since these equilibria are maintained despite a continual flux of changes in the course of generations (reshuffling of genes, reproduction…), it can legitimately be said that population genetics reveals important properties of invariance through transformation. Time-reversibility is a more controversial subject. Here, the parallel with classical mechanics is much weaker. Time-reversibility is unquestionable in some stochastic models, but at the cost of a special, probabilistic concept of reversibility. But it does not seem to be a property of the most basic deterministic models describing the dynamics of evolutionary change at the level of populations and genes. Furthermore, various meanings of “reversibility” are distinguished. In particular, time-reversibility should not be confused with retrodictability.",
     "author": [
       {
         "family": "Gayon",
@@ -978,6 +997,7 @@
     "publisher": "Springer International Publishing",
     "publisher-place": "Cham",
     "title": "Repetition and Reversibility in Evolution: Theoretical Population Genetics",
+    "title-short": "Repetition and Reversibility in Evolution",
     "type": "chapter"
   },
   {
@@ -1052,7 +1072,6 @@
     "abstract": "Background: Mammary gland morphogenesis involves ductal elongation, branching, and budding. All of these processes are mediated by stroma - epithelium interactions. Biomechanical factors, such as matrix stiffness, have been established as important factors in these interactions. For example, epithelial cells fail to form normal acinar structures in vitro in 3D gels that exceed the stiffness of a normal mammary gland. Additionally, heterogeneity in the spatial distribution of acini and ducts within individual collagen gels suggests that local organization of the matrix may guide morphogenesis. Here, we quantified the effects of both bulk material stiffness and local collagen fiber arrangement on epithelial morphogenesis. Results: The formation of ducts and acini from single cells and the reorganization of the collagen fiber network were quantified using time-lapse confocal microscopy. MCF10A cells organized the surrounding collagen fibers during the first twelve hours after seeding. Collagen fiber density and alignment relative to the epithelial surface significantly increased within the first twelve hours and were a major influence in the shaping of the mammary epithelium. The addition of Matrigel to the collagen fiber network impaired cell-mediated reorganization of the matrix and increased the probability of spheroidal acini rather than branching ducts. The mechanical anisotropy created by regions of highly aligned collagen fibers facilitated elongation and branching, which was significantly correlated with fiber organization. In contrast, changes in bulk stiffness were not a strong predictor of this epithelial morphology. Conclusions: Localized regions of collagen fiber alignment are required for ductal elongation and branching suggesting the importance of local mechanical anisotropy in mammary epithelial morphogenesis. Similar principles may govern the morphology of branching and budding in other tissues and organs.",
     "author": [
       {
-        "comma-suffix": false,
         "family": "Barnes",
         "given": "L. AND Quinn",
         "suffix": "C. AND Speroni"
@@ -1073,6 +1092,7 @@
     "page": "e93325",
     "publisher": "Public Library of Science",
     "title": "From Single Cells to Tissues: Interactions between the Matrix and Human Breast Cells in Real Time",
+    "title-short": "From Single Cells to Tissues",
     "type": "article-journal",
     "volume": "9"
   },
@@ -1102,12 +1122,13 @@
     "publisher": "Springer",
     "publisher-place": "Heidelberg",
     "title": "Perspectives on Organisms: Biological time, symmetries and singularities",
+    "title-short": "Perspectives on Organisms",
     "type": "book"
   },
   {
     "DOI": "10.1007/978-3-642-27654-5_22",
     "ISBN": "978-3-642-27654-5",
-    "abstract": "In this text, we revisit part of the analysis of anti-entropy in \\[4\\] and develop further theoretical reflections. In particular, we analyze how randomness, an essential component of biological variability, is associated to the growth of biological organization, both in ontogenesis and in evolution. This approach, in particular, focuses on the role of global entropy production and provides a tool for a mathematical understanding of some fundamental observations by Gould on the increasing phenotypic complexity along evolution. Lastly, we analyze the situation in terms of theoretical symmetries, in order to further specify the biological meaning of anti-entropy as well as its strong link with randomness.",
+    "abstract": "In this text, we revisit part of the analysis of anti-entropy in [4] and develop further theoretical reflections. In particular, we analyze how randomness, an essential component of biological variability, is associated to the growth of biological organization, both in ontogenesis and in evolution. This approach, in particular, focuses on the role of global entropy production and provides a tool for a mathematical understanding of some fundamental observations by Gould on the increasing phenotypic complexity along evolution. Lastly, we analyze the situation in terms of theoretical symmetries, in order to further specify the biological meaning of anti-entropy as well as its strong link with randomness.",
     "author": [
       {
         "family": "Longo",
@@ -1178,11 +1199,12 @@
     },
     "keyword": "criticality, biological time, anti-entropy, theoretical biology, symmetry, allometry, incompleteness",
     "title": "The Inert vs. the Living State of Matter: Extended Criticality, Time Geometry, Anti-Entropy — an overview",
+    "title-short": "The Inert vs. the Living State of Matter",
     "type": "article-journal",
     "volume": "3"
   },
   {
-    "abstract": "Cette thèse se place dans le contexte d’une démarche théorique en biologie, s’inspirant, sans toutefois s’y réduire, des méthodes d’objectivation utilisées en physique. Pour cela, nous rapportons les possibles symétries et invariants biologiques sous forme de “lois d’échelles” empiriques (allométrie et fractales en particulier), ainsi que la variabilité associée. Nous abordons ensuite plusieurs aspects du temps biologique. Nous considérons une dimension temporelle supplémentaire, correspondant à l’autonomie de certains rythmes biologiques. Nous développons aussi une approche de la protension, comme principe d’organisation locale de la temporalité biologique.\\<br\\> La notion de symétrie ayant un statut fondationel pour les théories physiques, nous interrogeons ensuite leur rôles en biologie. Partant de la notion de criticité étendue, nous proposons que la dynamique du vivant soit régie par une omniprésence des changements de symétries, constituant dès lors une historicité irréductible et conférant un statut théorique particulier à l’object et à la mesure en biologie. Nous appréhendons aussi la notion d’anti-entropie comme mesure d’un potentiel de variabilité.\\<br\\> Nous nous intéressons ensuite à la question des niveaux d’organisation, par deux voies complémentaires. Nous l’abordons dans un premier temps par la notion de clôture organisationnelle. Ensuite nous la considérons comme associée à des singularités fortes, telles que dans les situations critiques. Enfin, nous esquissons un schème opératoriel de l’unité de l’organisme, qui combine un grand nombre des aspects préalablement exposés.",
+    "abstract": "Cette thèse se place dans le contexte d’une démarche théorique en biologie, s’inspirant, sans toutefois s’y réduire, des méthodes d’objectivation utilisées en physique. Pour cela, nous rapportons les possibles symétries et invariants biologiques sous forme de “lois d’échelles” empiriques (allométrie et fractales en particulier), ainsi que la variabilité associée. Nous abordons ensuite plusieurs aspects du temps biologique. Nous considérons une dimension temporelle supplémentaire, correspondant à l’autonomie de certains rythmes biologiques. Nous développons aussi une approche de la protension, comme principe d’organisation locale de la temporalité biologique.<br> La notion de symétrie ayant un statut fondationel pour les théories physiques, nous interrogeons ensuite leur rôles en biologie. Partant de la notion de criticité étendue, nous proposons que la dynamique du vivant soit régie par une omniprésence des changements de symétries, constituant dès lors une historicité irréductible et conférant un statut théorique particulier à l’object et à la mesure en biologie. Nous appréhendons aussi la notion d’anti-entropie comme mesure d’un potentiel de variabilité.<br> Nous nous intéressons ensuite à la question des niveaux d’organisation, par deux voies complémentaires. Nous l’abordons dans un premier temps par la notion de clôture organisationnelle. Ensuite nous la considérons comme associée à des singularités fortes, telles que dans les situations critiques. Enfin, nous esquissons un schème opératoriel de l’unité de l’organisme, qui combine un grand nombre des aspects préalablement exposés.",
     "author": [
       {
         "family": "Montévil",
@@ -1221,7 +1243,6 @@
     ],
     "container-title": "Theory in Biosciences",
     "id": "2011-LM-Protention-Retention-Biology",
-    "issue": "2",
     "issued": {
       "date-parts": [
         [
@@ -1416,7 +1437,7 @@
     "note": "Article invité",
     "publisher": "Hermann",
     "title": "Géométrie du temps biologique : rythmes et protension",
-    "title-short": "Géométrie du temps biologique",
+    "title-short": "Géométrie du temps biologique ",
     "type": "paper-conference"
   },
   {
@@ -1530,7 +1551,8 @@
     },
     "publisher": "National Toxicology Program (NTP)",
     "title": "NTP. CLARITY-BPA. Chemical Effects in Biological Systems (CEBS): Mammary Gland",
-    "type": "no-type"
+    "title-short": "NTP. CLARITY-BPA. Chemical Effects in Biological Systems (CEBS)",
+    "type": ""
   },
   {
     "author": [
@@ -1562,7 +1584,6 @@
     ],
     "container-title": "Revue d’histoire des sciences",
     "id": "2019-Montevil-Varennes-Models",
-    "issue": "2",
     "issued": {
       "date-parts": [
         [
@@ -1572,7 +1593,7 @@
     },
     "page": "451-453",
     "title": "Analyses d’ouvrages : Franck VARENNE, From models to simulations",
-    "title-short": "Analyses d’ouvrages",
+    "title-short": "Analyses d’ouvrages ",
     "type": "article-journal",
     "volume": "72"
   },
@@ -1592,7 +1613,6 @@
     ],
     "container-title": "Logical Methods in Computer Science",
     "id": "2017-LM-Logic-Physics-Biology",
-    "issue": "4",
     "issued": {
       "date-parts": [
         [
@@ -1604,6 +1624,7 @@
     },
     "keyword": "Incompleteness, symmetries, randomness, critical transitions, biological evolution and ontogenesis",
     "title": "From Logic to Biology via Physics: a survey",
+    "title-short": "From Logic to Biology via Physics",
     "type": "article-journal",
     "volume": "13"
   },
@@ -1732,7 +1753,6 @@
     "abstract": "Three-dimensional (3D) culture models are critical tools for understanding tissue morphogenesis. A key requirement for their analysis is the ability to reconstruct the tissue into computational models that allow quantitative evaluation of the formed structures. Here, we present Software for Automated Morphological Analysis (SAMA), a method by which epithelial structures grown in 3D cultures can be imaged, reconstructed and analyzed with minimum human intervention. SAMA allows quantitative analysis of key features of epithelial morphogenesis such as ductal elongation, branching and lumen formation that distinguish different hormonal treatments. SAMA is a user-friendly set of customized macros operated via FIJI (http://fiji.sc/Fiji), an open-source image analysis platform in combination with a set of functions in R (http://www.r-project.org/), an open-source program for statistical analysis. SAMA enables a rapid, exhaustive and quantitative 3D analysis of the shape of a population of structures in a 3D image. SAMA is cross-platform, licensed under the GPLv3 and available at http://montevil.theobio.org/content/sama.",
     "author": [
       {
-        "comma-suffix": false,
         "family": "Paulose",
         "given": "Maël AND Speroni",
         "suffix": "Tessie AND Montévil"
@@ -1753,6 +1773,7 @@
     "page": "1-14",
     "publisher": "Public Library of Science",
     "title": "SAMA: A Method for 3D Morphological Analysis",
+    "title-short": "SAMA",
     "type": "article-journal",
     "volume": "11"
   },
@@ -1786,6 +1807,7 @@
     "publisher": "Editions Materiologiques; Editions Materiologiques",
     "publisher-place": "Paris",
     "title": "Changements de symétrie, criticité et aléatoire : Mathématiques et objectivation du vivant",
+    "title-short": "Changements de symétrie, criticité et aléatoire ",
     "type": "chapter"
   },
   {
@@ -1884,6 +1906,7 @@
     "publisher-place": "Paris",
     "status": "2017",
     "title": "Du siècle du gène à celui de l’organisme : introduction à de nouvelles perspectives théoriques",
+    "title-short": "Du siècle du gène à celui de l’organisme ",
     "type": "chapter"
   },
   {

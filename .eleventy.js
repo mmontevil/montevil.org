@@ -226,7 +226,7 @@ const imagesResponsiverTransform = async (content,outputPath) => {
   
   eleventyConfig.addPlugin(
   typesetPlugin({
-    only: '.article-text', // Run only on HTML content within a certain CSS selector
+//    only: '.article-text', // Run only on HTML content within a certain CSS selector
     disable: ['ligatures'], // Disable typesetting feature 'smallCaps'
     // etc.
   })
@@ -240,8 +240,8 @@ const typeseter = (content, outputPath) => {
     return typeset(content,options);
   }
   return content;
-};*/
- /* eleventyConfig.addTransform(
+};
+  eleventyConfig.addTransform(
       'typeseter',
       typeseter
     ); */

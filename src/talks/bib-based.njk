@@ -52,7 +52,7 @@ eleventyComputed: {
 {% endif %}
 
 
-<div class="citationW "><div >{% icon "reference", "reference" %}
+<div class="citationW "><div id="CitationAnchor">{% icon "reference", "reference" %}
  {{entry |bibcite2 |divRemove|safe}}</div>
  
 {% if program or poster or video %}<div>

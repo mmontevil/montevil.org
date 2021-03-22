@@ -9,32 +9,40 @@ permalink: offline.html
 <p class=" indent">Even if you're not connected, you can read some pages, including the ones <a href="/about/">about me</a> and <a href="/about/the-website.html">about the website</a>.</p>
 <p>
 
-<a href="/publications/publicationsbyYear/"> Recent publications</a> should be available too. 
+The publications below should be available. 
 </p>
-
-<section class="hidden" id="cachedArticles">
-  <h2>Articles</h2>
-  <ol class="cards-list"></ol>
-</section>
-<section class="hidden"  id="cachedLinks">
-  <h2>Links</h2>
-  <ol class="cards-list"></ol>
-</section>
-<section class="hidden"  id="cachedPublications">
-  <h2>Publications</h2>
-  <ol class="cards-list"></ol>
-</section>
 </div>
+
+<section class="hidden"  id="cachedPublications">
+
+  <h2 class="wrap titleDiag titleDiag2">Publications</h2>
+
+  <ol class="cards-list"></ol>
+</section>
+
+<section class="hidden" id="cachedPosts">
+
+  <h2 class="wrap titleDiag titleDiag2">Posts</h2>
+
+  <ol class="cards-list"></ol>
+</section>
+
+<section class="hidden"  id="cachedTalks">
+
+  <h2 class="wrap titleDiag titleDiag2">Talks</h2>
+
+  <ol class="cards-list"></ol>
+</section>
+
+
+
 <script>
 // https://googlechrome.github.io/samples/service-worker/window-caches/
 
-const cachedContent = {
-publications: [],
-links: [],
-tags: []
-};
+['others','workbox-precache-v2-https://montevil.org/'].forEach(
+  (cacheName) => {
 
-window.caches.open("pages").then(cache => {
+window.caches.open(cacheName).then(cache => {
 return cache.keys();
 }).then(requests => {
 requests.forEach(request => {
@@ -42,12 +50,13 @@ requests.forEach(request => {
   const requestPath = requestUrl.pathname;
   if (/^\/publications\/*\/./.test(requestPath)) {
     addRequestToList(request, "cachedPublications");
+    
   } else {
-    if (/^\/links\/*\/./.test(requestPath)) {
-      addRequestToList(request, "cachedLinks");
+    if (/^\/talks\/*\/./.test(requestPath)) {
+      addRequestToList(request, "cachedTalks");
     } else {
-      if (/^\/notes\/[0-9]{4}\/[0-9]{2}\/./.test(requestPath)) {
-        addRequestToList(request, "cachedtags");
+      if (/^\/posts\/*\/./.test(requestPath)) {
+        addRequestToList(request, "cachedPosts");
       }
     }
   }
@@ -58,38 +67,46 @@ function addRequestToList(request, group) {
 const requestUrl = new URL(request.url);
 const requestPath = requestUrl.pathname;
 
-window.caches.open("pages").then(cache => {
+window.caches.open(cacheName).then(cache => {
   cache.match(request).then(item => {
+  
       item.text().then(pageHtml => {
           let pageDom = document.createElement("html");
           pageDom.innerHTML = pageHtml;
-
+          
           let pageTitle = pageDom.querySelector("h1").innerText;
-
           let linkElement = document.createElement("a");
-          linkElement.href = request.url;
+          linkElement.href = requestPath;
           linkElement.className = "u-url";
           linkElement.textContent = pageTitle;
 
           let pElement = document.createElement("p");
-          pElement.className = "card__title p-name";
+          pElement.className = "card__title p-name wrap";
           pElement.appendChild(linkElement);
 
           let liElement = document.createElement("li");
-          liElement.className = "item";
+          liElement.className = "card-list__item";
           liElement.appendChild(pElement);
 
-          // TODO: check this
-          if (pageDom.querySelector(".main footer")) {
-            let pageMeta = document.createElement("footer");
-            pageMeta.innerHTML = pageDom.querySelector(".main footer").innerHTML;
+          // TODO: check this 
+        if (pageDom.querySelector("#CitationAnchor")) {
+            let pageMeta = document.createElement("div");
+            let pageMeta0 = document.createElement("div");
+
+            pageMeta0.innerHTML = pageDom.querySelector("#CitationAnchor p:first-child, #CitationAnchor div:first-child ").innerHTML;
+            pageMeta.className = "wrap";
+            pageMeta.appendChild(pageMeta0);
+
             liElement.appendChild(pageMeta);
           }
 
-          document.querySelector("#" + group + " ul").appendChild(liElement);
+
+          document.querySelector("#" + group + " > ol").appendChild(liElement);
           document.getElementById(group).classList.remove("hidden");
         });
     });
 });
 }
+})
+
 </script>
