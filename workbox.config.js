@@ -116,13 +116,25 @@ module.exports = {
     }
   },
   {
-    urlPattern: /count\?/i,
+    urlPattern: /^https:\/\/res\.cloudinary\.com\/.*/i,
     handler: 'NetworkFirst',
     options: {
-      cacheName: 'api',
+      cacheName: 'cloudinary',
+      expiration: {
+        maxEntries: 64,
+        maxAgeSeconds: 24 * 60 * 60 // 24 hours
+      },
+      networkTimeoutSeconds: 10
+    }
+  },
+  {
+    urlPattern: /^https:\/\/montevil\.goatcounter\.com\/.*/i,
+    handler: 'NetworkFirst',
+    options: {
+      cacheName: 'counter',
       expiration: {
         maxEntries: 5,
-        maxAgeSeconds: 24 * 60 * 60 // 24 hours
+        maxAgeSeconds: 10 // 24 hours
       },
       networkTimeoutSeconds: 10
     }
