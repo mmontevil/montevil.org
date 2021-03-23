@@ -89,6 +89,18 @@ module.exports = {
     }
   },
   {
+    urlPattern: /lazy/i,
+    handler: 'NetworkFirst',
+    options: {
+      cacheName: 'lazyhtml',
+      expiration: {
+        maxEntries: 10,
+        maxAgeSeconds: 24 * 60 * 60 // 24 hours
+      },
+      networkTimeoutSeconds: 10
+    }
+  },
+  {
     urlPattern:  /(?:\.html|\/)$/i,
     handler: 'NetworkFirst',
     options: {
