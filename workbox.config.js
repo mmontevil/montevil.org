@@ -97,7 +97,10 @@ module.exports = {
         maxEntries: 64,
         maxAgeSeconds: 24 * 60 * 60 // 24 hours
       },
-      networkTimeoutSeconds: 10
+      networkTimeoutSeconds: 10,
+      precacheFallback: {
+        fallbackURL: './offline.html',
+      }
     }
   },
   {
