@@ -158,31 +158,26 @@ img.card__illustration {
   &:nth-child(2n + 1) {
     &:before {
       //  background: var(--color-primary-lighter-7)
-      background: linear-gradient(
-          var(--color-primary-lighter-7),
-          var(--color-primary-lighter-8),
-          var(--color-primary-lighter-7)
-        ),
-        linear-gradient(
-          66deg,
-          var(--color-primary-lighter-7),
-          var(--color-primary-lighter-8)
-        );
+    //  background: linear-gradient(260deg, var(--color-primary-lighter-7), var(--color-primary-lighter-8));
+      background-color: var(--color-primary-lighter-7);
+ //     background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+//background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+
+//box-shadow: 2px 3px 20px black, 0 0 125px #8f5922 inset;
+  /* v2.1 : borders effect with SVG : try to play with scale to change them */
+  
+  /* v2.2 : Noise added for a vellum paper effect */
+ 
+
     }
   }
   &:nth-child(2n + 2) {
     &:before {
-      background: linear-gradient(
-          var(--color-primary-lighter-8),
-          var(--color-primary-lighter-9),
-          var(--color-primary-lighter-8)
-        ),
-        linear-gradient(
-          66deg,
-          var(--color-primary-lighter-8),
-          var(--color-primary-lighter-9),
-          var(--color-primary-lighter-8)
-        );
+     // background: linear-gradient(0deg, var(--color-primary-lighter-8), var(--color-primary-lighter-9));
+      background-color: var(--color-primary-lighter-8);
+    //  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  //    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+    
       //background: var(--color-primary-lighter-8)
     }
   }

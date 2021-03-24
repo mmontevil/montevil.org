@@ -2,6 +2,7 @@
 excerpt: Documentation for Software for Automated Morphological Analysis, a method by which epithelial structures grown in 3D cultures can be imaged, reconstructed and analyzed.
 noToc: true
 hasFullText: false
+noAnchor: true
 titlePrefix: "Documentation for "
 eleventyNavigation:
   key: SAMA
