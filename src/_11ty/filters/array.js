@@ -1,5 +1,3 @@
-
-
 module.exports = {
   size: (array) => {
     return !array ? 0 : array.length;
@@ -17,21 +15,20 @@ module.exports = {
     return [...new Set(array)];
   },
   splarray: (string) => {
-    res="a"
-    if(string === undefined)
-    {}  else{
-     let arr =string.split(', ');
-     let res ="";
-     for (const key in arr) {
-      res=res+"   - '"+arr[key]+"'\n";
-    }
-    res=res+"";
+    res = 'a';
+    if (string === undefined) {
+    } else {
+      let arr = string.split(', ');
+      let res = '';
+      for (const key in arr) {
+        res = res + "   - '" + arr[key] + "'\n";
+      }
+      res = res + '';
     }
     return res;
   },
   splarray2: (string) => {
-     let arr =string.split(', ');
+    let arr = string.split(', ');
     return arr;
   },
-  
 };

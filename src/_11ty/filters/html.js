@@ -8,15 +8,14 @@ var options={
   properties: {class : "deeplink"},
   content : {type: 'text', value: 'svgPlaceHolder'}
 }*/
-var replaceall = require("replaceall");
+var replaceall = require('replaceall');
 const addAnchordom = require('../../_utils/addAnchordom');
 
-
 module.exports = {
-   addAnchor: (content) => {
-         return addAnchordom(content);
-   },
- /* addAnchor2: (content) => {
+  addAnchor: (content) => {
+    return addAnchordom(content);
+  },
+  /* addAnchor2: (content) => {
    var file000="";
     rehype().data('settings', {fragment: true}).use(link,options).process(String(content), function(err, file) {
     var res=String( file);
@@ -30,9 +29,9 @@ file000=res;
     return file000;
   },*/
   divRemove: (content) => {
-     const regex = /(<div ((?!(>)).|\n)+>)|(<\/div>)/gm;
+    const regex = /(<div ((?!(>)).|\n)+>)|(<\/div>)/gm;
     return content.replace(regex, '');
-  },  
+  },
   cleanDeepLinks: (content) => {
     const regex = /<a class="deeplink"((?!(<\/a>)).|\n)+<\/a>/gm;
     return content.replace(regex, '');
@@ -69,7 +68,6 @@ file000=res;
         /<p( [^>]*)?>(((?!(<\/p>)).|\n)+)<\/p>/,
         '$2'
       );
-      
     }
 
     return excerpt;

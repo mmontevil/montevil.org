@@ -10,40 +10,32 @@ module.exports = function (collection) {
   collection.getAll().forEach(function (item) {
     let itemTags = [];
     if ('tags' in item.data) {
-    itemTags = item.data.tags;
+      itemTags = item.data.tags;
     }
-      // TODO: deal with hashtags only once
-      if (item.data.layout === 'note') {
-        itemTags = [
-          ...new Set(
-            [].concat(
-              ...itemTags,
-              ...hashtagsToTags(item.template.frontMatter.content)
-            )
-          ),
-        ];
-      }
+    // TODO: deal with hashtags only once
+    if (item.data.layout === 'note') {
+      itemTags = [
+        ...new Set(
+          [].concat(
+            ...itemTags,
+            ...hashtagsToTags(item.template.frontMatter.content)
+          )
+        ),
+      ];
+    }
     //  if (item.data.layout === 'publication') {
-  let tagst = [];
-  if(item.data.keyword){
-            tagst =item.data.keyword.split(',') ;
+    let tagst = [];
+    if (item.data.keyword) {
+      tagst = item.data.keyword.split(',');
     }
-        itemTags = [
-          ...new Set(
-            [].concat(
-              ...itemTags,
-              ...tagst
-            )
-          ),
-        ];
-            itemTags=tagFilter(itemTags);
-     // }
-      for (const tag of itemTags) {
-        let number = (tagsCollection.get(tag) || 0) + 1;
-        max = Math.max(max, number);
-        tagsCollection.set(tag, number);
-      }
-    
+    itemTags = [...new Set([].concat(...itemTags, ...tagst))];
+    itemTags = tagFilter(itemTags);
+    // }
+    for (const tag of itemTags) {
+      let number = (tagsCollection.get(tag) || 0) + 1;
+      max = Math.max(max, number);
+      tagsCollection.set(tag, number);
+    }
   });
 
   // We assume there is at least one tag with only one content

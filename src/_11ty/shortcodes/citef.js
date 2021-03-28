@@ -1,10 +1,5 @@
-
-
-
-
-module.exports =  {
+module.exports = {
   citef: (file2) => {
-      return file2.split()
+    return file2.split();
   },
-
 };

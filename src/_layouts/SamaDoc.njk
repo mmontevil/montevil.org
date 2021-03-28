@@ -16,7 +16,13 @@ eleventyComputed:
 <p class="lead"> {{excerpt}}</p>
 {%endif%}
 
-
+{% set hop%}
+::: lead
+See [the article]({% link_to "articles/2016-PMS-Sama-Method-Morphometry" %}).
+:::
+{% endset %}
+{{hop | markdownify | safe }}
+<hr>
 
     {#<h1 class="page__title p-name">{{ title | orphans | safe }}</h1>#}
 

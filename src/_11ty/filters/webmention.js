@@ -11,9 +11,7 @@ const getWebmentions = memoize(() => {
 });
 
 function isSelf(entry) {
-  return (
-    entry.url.match(/^https:\/\/twitter.com\/MMontevil\//) 
-  );
+  return entry.url.match(/^https:\/\/twitter.com\/MMontevil\//);
 }
 
 const getUrlsHistory = memoize((url) => {

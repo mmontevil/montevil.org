@@ -12,6 +12,7 @@ tags:
     - fractals
     - epistemology
     - space-time
+    - closure
 ---
 
 

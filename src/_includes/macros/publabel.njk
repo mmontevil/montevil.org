@@ -1,7 +1,21 @@
  
- {% macro publabel(item) %}
+{% macro publabel(item) %}
  <span class="  publinkwrap">
- <span class="  publinklang">{{-item.lang-}}</span> {%- if item.typepub === "Article"-%}
- <span class="publink ">Article</span>{%- elif item.typepub === "chapter" -%}<span class="publink publinkchap ">Chapter</span>{%- elif item.type === "varia" -%}{%- elif item.typepub === "book" -%}<span class="publink publinkBook ">Book</span>{%- endif-%}{%- if item.peerReview-%}<span class="publink  pubPeerReview">Peer-reviewed</span> 
+ <span class="  publinklang">{{-item.lang-}}</span>
+ {%- if item.typepub === "Article"-%}
+ <span class="publink ">Article</span>
+ {%- elif item.typepub === "chapter" -%}
+ <span class="publink publinkchap ">Chapter</span>
+ {%- elif item.typepub === "software" -%}
+  <span class="publink publinkSoftware ">Software</span>
+  {%- elif item.typepub === "commentary" -%}
+  <span class="publink publinkCommentary">Commentary</span>
+  {%- elif item.typepub === "data" -%}
+  <span class="publink publinkData ">Data</span>
+ {%- elif item.typepub === "book" -%}
+ <span class="publink publinkBook ">Book</span>
+ {%- endif-%}
+ {%- if item.peerReview-%}
+ <span class="publink  pubPeerReview">Peer-reviewed</span> 
 {% endif%} </span> 
-   {% endmacro %}
+{% endmacro %}

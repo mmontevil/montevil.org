@@ -4,7 +4,7 @@ module.exports = function (collection) {
   let max = 0;
 
   collection.getAll().forEach(function (item) {
-    if ("tags" in item.data) {
+    if ('tags' in item.data) {
       let itemTags = item.data.tags;
 
       for (const tag of itemTags) {
@@ -21,14 +21,19 @@ module.exports = function (collection) {
   const tags = [];
   tagsCollection.forEach((number, tag) => {
     if (number >= minContentsNumber) {
-      let factor = (Math.log(number) ) / (maxLog );
-      tags.push({ 'tag': tag, 'number': number, 'factor': factor, 'step': Math.ceil(factor * 2) + 1 });
+      let factor = Math.log(number) / maxLog;
+      tags.push({
+        tag: tag,
+        number: number,
+        factor: factor,
+        step: Math.ceil(factor * 2) + 1,
+      });
     }
   });
 
   tags.sort((a, b) => {
     return a.tag.localeCompare(b.tag, 'en', { ignorePunctuation: true });
-  })
+  });
 
   return tags;
 };

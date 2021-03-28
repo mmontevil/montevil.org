@@ -18,7 +18,7 @@
   }
   --angle: -5deg;
   --magic-number: 0.035;
-  --skew-padding: calc(var(--width) * var(--magic-number));
+  --skew-padding: calc(max(var(--width),1000px) * var(--magic-number));
   //--clip-padding: calc(var(--full-width) * var(--magic-number));
 
   --gap: 1rem;
@@ -129,7 +129,6 @@
   --color-meta: #4c4c4c;
   --color-meta-decoration: #999;
 
-  --color-gold: hsl(50, 91%, 30%);
   --color-yellow-light: hsl(59, 100%, 88%);
   --color-emph: #35d540;
   --border-width: 0.15em;
@@ -144,11 +143,19 @@
   // ************************************************************
   // Colors palette
   // ************************************************************
+  --color-gold: hsl(50, 91%, 30%);
   --color-green: #3f7e00;
   --color-blue: #2570ba;
   --color-red: #ca2828;
-  --color-purple: #4d11ff;
 
+  --color-chap: #2570ba;
+  --color-art: #A32600;
+  --color-book: #52711E ; 
+  --color-soft:  #B88100;
+  --color-data: #7C5427;
+  --color-com:  #513B29 ;
+  --color-rev:   #57A300;
+  
   --color-lightgrey: #eee;
   --color-grey: #bbb;
   --color-darkgrey: #555;

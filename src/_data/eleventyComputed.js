@@ -142,16 +142,17 @@ function tags(data) {
   if (data.layout === 'note') {
     tags = twitter.extractHashtags(twitter.htmlEscape(data.content));
   }
-    if (data.layout === 'publication') {if(data.keyword){
-            tags = data.keyword.split(',')   ;
+  if (data.layout === 'publication') {
+    if (data.keyword) {
+      tags = data.keyword.split(',');
     }
   }
-  if (data.tags !== undefined ) {
+  if (data.tags !== undefined) {
     // merge and deduplicate
     tags = [...new Set([].concat(...tags, ...data.tags))];
-    tags=tagFilter(tags);
+    tags = tagFilter(tags);
   }
-  
+
   tags.sort((a, b) => {
     return a.localeCompare(b, 'en', { ignorePunctuation: true });
   });
@@ -205,7 +206,7 @@ function ogImageTitle(data) {
     return data.pkg.title;
   }
   switch (data.layout) {
-     case 'publication':   
+    case 'publication':
     case 'post':
     case 'link':
     case 'talk':
@@ -231,50 +232,67 @@ function ogImageTagline(data) {
   }
   return '';
 }
-function chooseDate(datepub,date) {
-  if (datepub){
-    if (datepub ==" Submitted"){
+function chooseDate(datepub, date) {
+  if (datepub) {
+    if (datepub == ' Submitted') {
       return date;
-    }else{
+    } else {
       return datepub;
     }
-  }else{
+  } else {
     return date;
   }
 }
-  var cache = flatcache.load('crossref', path.resolve('./_cache'));
+var cache = flatcache.load('crossref', path.resolve('./_cache'));
 
-async function fetchCrossref(doi,id) {
-  if(id){ 
-  const cachedData = cache.getKey(id);
- 
-  if (!cachedData) {
-  const allPosts = await  fetch('https://api.eventdata.crossref.org/v1/events?rows=500&obj-id='+encodeURI(doi)+'&source=twitter').then(res => res.json());
-  cache.setKey(id, allPosts);
-		cache.save(true);
-		return allPosts;}
-		return cachedData;
-}else{
-  return undefined;
-}
+async function fetchCrossref(doi, id) {
+  if (id) {
+    const cachedData = cache.getKey(id);
+
+    if (!cachedData) {
+      const allPosts = await fetch(
+        'https://api.eventdata.crossref.org/v1/events?rows=500&obj-id=' +
+          encodeURI(doi) +
+          '&source=twitter'
+      ).then((res) => res.json());
+      cache.setKey(id, allPosts);
+      cache.save(true);
+      return allPosts;
+    }
+    return cachedData;
+  } else {
+    return undefined;
+  }
 }
 //
- 
+
 module.exports = {
-  lang: (data) => { let lang=data.lang;
-    if(data.bibentryconf && data.bibentryconf.fields && data.bibentryconf.fields.language){
-      lang=data.bibentryconf.fields.language;
+  lang: (data) => {
+    let lang = data.lang;
+    if (
+      data.bibentryconf &&
+      data.bibentryconf.fields &&
+      data.bibentryconf.fields.language
+    ) {
+      lang = data.bibentryconf.fields.language;
     }
-    if('fr'===lang || 'en'===lang ){
-        return  lang; }
-      else{
-        return 'en';
-      }},
+    if ('fr' === lang || 'en' === lang) {
+      return lang;
+    } else {
+      return 'en';
+    }
+  },
   //orderDate0: (data) => chooseDate(data.datepub,data.page.date),
   formattedDate: (data) => formattedDate(data.lang, data.page.date),
   attributeDate: (data) => attributeDate(data.page.date),
   permalinkDate: (data) => permalinkDate(data.page.date),
-  crossref: (data) => {if(data.bibentry.DOI){ return fetchCrossref(data.bibentry.DOI,data.page.fileSlug)}else{if(data.bibentry.URL) return fetchCrossref(data.bibentry.URL)}}, 
+  crossref: (data) => {
+    if (data.bibentry.DOI) {
+      return fetchCrossref(data.bibentry.DOI, data.page.fileSlug);
+    } else {
+      if (data.bibentry.URL) return fetchCrossref(data.bibentry.URL);
+    }
+  },
   authors: {
     text: (data) => textAuthors(data),
     html: (data) => htmlAuthors(data),
@@ -293,58 +311,79 @@ module.exports = {
   },
   lead: (data) => lead(data),
   bibentry: (data) => {
-      var res={};
-      for (const entry in data.bibM) {
-          if(data.bibM[entry].id===data.page.fileSlug){
-            res = data.bibM[entry];
-          }
+    var res = {};
+    for (const entry in data.bibM) {
+      if (data.bibM[entry].id === data.page.fileSlug) {
+        res = data.bibM[entry];
       }
-        return res;
-    },
-      gsentry: (data) => {
-      var res={};
-      let size=0;
-      let title=data.title.toLowerCase();
-      if (slugifyString(title.toLowerCase())== slugifyString(("Perspectives on Organisms: Biological time, symmetries and singularities").toLowerCase())){
-        title="Perspectives on organisms";
+    }
+    return res;
+  },
+  gsentry: (data) => {
+    var res = {};
+    let size = 0;
+    let title = data.title.toLowerCase();
+    if (
+      slugifyString(title.toLowerCase()) ==
+      slugifyString(
+        'Perspectives on Organisms: Biological time, symmetries and singularities'.toLowerCase()
+      )
+    ) {
+      title = 'Perspectives on organisms';
+    }
+    title = slugifyString(title.toLowerCase());
+
+    for (const entry in data.scholar) {
+      if (
+        search(
+          slugifyString(data.scholar[entry][0].bib.title.toLowerCase()),
+          title,
+          4
+        ).length > 0
+      ) {
+        if (data.scholar[entry][1].length > size) {
+          res = data.scholar[entry];
+          size = data.scholar[entry][1].length;
+        }
       }
-      title=slugifyString(title.toLowerCase());
-      
-      for (const entry in data.scholar) {
-          if(search(slugifyString(data.scholar[entry][0].bib.title.toLowerCase()), title,4).length>0){
-            if (data.scholar[entry][1].length>size){
-                res = data.scholar[entry];
-                size=data.scholar[entry][1].length;
-            }
-          }
-      }
-        return res;
-    },
-      bibentryconf: (data) => {
-      var res={};
-      if (data.entry){
+    }
+    return res;
+  },
+  bibentryconf: (data) => {
+    var res = {};
+    if (data.entry) {
       for (const entry in data.bibconf2) {
-          if(data.bibconf2[entry].entrykey===data.entry.id){
-            res = data.bibconf2[entry];
-          }
-      }}
-        return res;
-    },
-    title: (data) => data.titlePrefix? data.titlePrefix+(data.bibentry.title || data.title) : (data.bibentry.title || data.title),
+        if (data.bibconf2[entry].entrykey === data.entry.id) {
+          res = data.bibconf2[entry];
+        }
+      }
+    }
+    return res;
+  },
+  title: (data) =>
+    data.titlePrefix
+      ? data.titlePrefix + (data.bibentry.title || data.title)
+      : data.bibentry.title || data.title,
   tags: (data) => tags(data),
   //  tags2: (data) => tags(data),
-  category:(data) => {
-    var res=data.category ? data.category : [] ;
-    res=(data.video ? [res,"video"].flat() : res); 
-    if(res.includes('talks')){
-      res=data.entry.type=="book" ? [res,"events"].flat() : res; 
-      res=(data.bibentryconf && data.bibentryconf.fields && data.bibentryconf.fields.eventtype && data.bibentryconf.fields.eventtype =="media")? [res,"media"].flat() : res; 
+  category: (data) => {
+    var res = data.category ? data.category : [];
+    res = data.video ? [res, 'video'].flat() : res;
+    if (res.includes('talks')) {
+      res = data.entry.type == 'book' ? [res, 'events'].flat() : res;
+      res =
+        data.bibentryconf &&
+        data.bibentryconf.fields &&
+        data.bibentryconf.fields.eventtype &&
+        data.bibentryconf.fields.eventtype == 'media'
+          ? [res, 'media'].flat()
+          : res;
     }
     return res;
   },
   colKey: {
     lang: (data) => data.lang,
-    date:(data) => data.orderDate,
-    category:(data) => data.category
+    date: (data) => data.orderDate,
+    category: (data) => data.category,
   },
 };

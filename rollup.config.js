@@ -26,14 +26,13 @@ const JS_NAME =
     : '[name]-[format].js';
 
 const plugins_critical = [
-  replace({preventAssignment:true, 
+  replace({
+    preventAssignment: true,
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
   }),
   nodeResolve({ browser: true }),
   commonjs(),
-  babel({ babelHelpers: 'bundled',
-    exclude: 'node_modules/**',
-  }),
+  babel({ babelHelpers: 'bundled', exclude: 'node_modules/**' }),
   process.env.NODE_ENV === 'production' && terser(),
   process.env.NODE_ENV === 'production' &&
     entrypointHashmanifest({
@@ -43,12 +42,11 @@ const plugins_critical = [
 
 // only in production, for old browsers
 const plugins_additional_iife = [
-  replace({preventAssignment:true, 
-    'process.env.NODE_ENV': 'production',
-  }),
+  replace({ preventAssignment: true, 'process.env.NODE_ENV': 'production' }),
   nodeResolve({ browser: true }),
   commonjs(),
-  babel({babelHelpers: 'bundled',
+  babel({
+    babelHelpers: 'bundled',
     // exclude: 'node_modules/**',
     presets: ['@babel/preset-env'],
   }),
@@ -59,12 +57,14 @@ const plugins_additional_iife = [
 ];
 
 const plugins_additional_es = [
-  replace({preventAssignment:true, 
+  replace({
+    preventAssignment: true,
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
   }),
   nodeResolve({ browser: true }),
-  
-  babel({babelHelpers: 'bundled',
+
+  babel({
+    babelHelpers: 'bundled',
     // exclude: 'node_modules/**',
     presets: [
       [
@@ -84,8 +84,6 @@ const plugins_additional_es = [
       manifestName: path.join(HASH, 'hashes_additional_es.json'),
     }),
 ];
-
-
 
 const targets = [
   {
@@ -108,7 +106,7 @@ const targets = [
       sourcemap: true,
     },
     plugins: plugins_additional_es,
-  }                          
+  },
 ];
 
 if (process.env.NODE_ENV === 'production') {

@@ -1,7 +1,7 @@
 const markdownIt = require('markdown-it');
  
  const fs = require('fs');
-const linkifyUrls = require('linkify-urls');
+//const linkifyUrls = require('linkify-urls');
 const Cite = require('citation-js');
 const path = require('path');
 

@@ -6,14 +6,12 @@
 
 global.window = global;
 
-import {DOMParser, parseHTML} from 'linkedom';
+import { DOMParser, parseHTML } from 'linkedom';
 
 function createDocumentFromHTML(html, customElements) {
-  const document = (new DOMParser).parseFromString(html, 'text/html');
-return document;
+  const document = new DOMParser().parseFromString(html, 'text/html');
+  return document;
 }
-
-
 
 /* ****************************
  * Other dependencies

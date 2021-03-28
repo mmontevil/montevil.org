@@ -3,12 +3,17 @@ excerpt: Documentation for Software for Automated Morphological Analysis, a meth
 noToc: true
 hasFullText: false
 noAnchor: true
+typepub: software
 titlePrefix: "Documentation for "
 eleventyNavigation:
   key: SAMA
   title: What is SAMA?
 ---
+::: lead
+See [the article]({% link_to "articles/2016-PMS-Sama-Method-Morphometry" %}).
+:::
 
+<hr>
 
 <div class="centerList" >
 {{ collections.all | eleventyNavigation | eleventyNavigationToHtml(

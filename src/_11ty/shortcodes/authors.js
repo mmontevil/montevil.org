@@ -44,11 +44,11 @@ temp="/assets/avatars/"+slugify(name)+".jpg";
  
  if (people[name] && people[name].site) { authorUrl =people[name].site;}
  
-let content= `<figure class="frameAuthor">
+let content= `<figure class="frameAuthor h-card">
  <img class="reaction__author__photo2 u-photo noDarkFilter" src="`+authorPic+`" 
  height="48" alt="`+name+`">
  <figcaption class="authorCaption">`
- +( authorUrl=="" ? name :  `<a href="`+authorUrl+`">`+name+`</a>`)+`
+ +( authorUrl=="" ? `<span class="p-name">`+name+ `</span>`:  `<a href="`+authorUrl+`" class="p-name u-url">`+name+`</a>`)+`
  </figcaption>
  </figure>`;
       return content;
