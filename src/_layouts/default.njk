@@ -16,22 +16,24 @@
 
     <a class="quickaccess visually-hidden" href="#main">Jump to main content</a>
 
+   
+    
     <header id="header" >
-      <div class="wrap snapper h-card">
+      <div class="wrap snapper ">
         {% if page.url == "/" %}
-          <h1 class="site_title p-name">{{websiteid.titleshort}}</h1>
+          <h1 class="site_title">{{websiteid.titleshort}}</h1>
         {% else %}
           <p class="site_title">
-            <a class="u-uid u-url p-name" href="/" rel="me" title="Homepage">{{websiteid.titleshort}}</a>
+            <a class="" href="/" rel="me" title="Homepage">{{websiteid.titleshort}}</a>
           </p>
         {% endif %}
         <ul class="elsewhere">
-          <li><a href="https://twitter.com/{{websiteid.twitter}}" title="Link to my Twitter profile"  rel="me" class="u-url">{% icon "twitter", "Link to my Twitter profile" %}</a></li>
-          <li><a href="{{websiteid.academia}}" title="Link to my Academia profile" class="u-url"  rel="me">{% icon "academia", "Link to my academia profile" %}</a></li>
-          <li><a href="https://www.researchgate.net/profile/{{websiteid.researchgate}}" title="Link to my Researchgate profile"  class="u-url" rel="me">{% icon "researchgate", "Link to my Researchgate profile" %}</a></li>
-          <li><a href="https://scholar.google.fr/citations?user={{websiteid.scholaruser}}" title="Link to my google scholar profile"  class="u-url"  rel="me">{% icon "googlescholar", "Link to my google scholar page" %}</a></li>
-          <li><a href="https://orcid.org/{{websiteid.orcid}}" title="Link to my Orcid profile"  class="u-url" rel="me">{% icon "orcid", "Link to my orcid page" %}</a></li>
-          <li><a href="https://github.com/{{websiteid.github}}" title="Link to my GitHub profile"  rel="me" class="u-url">{% icon "github", "Link to my GitHub profile" %}</a></li>
+          <li><a href="https://twitter.com/{{websiteid.twitter}}" title="Link to my Twitter profile"  rel="me" >{% icon "twitter", "Link to my Twitter profile" %}</a></li>
+          <li><a href="{{websiteid.academia}}" title="Link to my Academia profile"   rel="me">{% icon "academia", "Link to my academia profile" %}</a></li>
+          <li><a href="https://www.researchgate.net/profile/{{websiteid.researchgate}}" title="Link to my Researchgate profile"   rel="me">{% icon "researchgate", "Link to my Researchgate profile" %}</a></li>
+          <li><a href="https://scholar.google.fr/citations?user={{websiteid.scholaruser}}" title="Link to my google scholar profile"    rel="me">{% icon "googlescholar", "Link to my google scholar page" %}</a></li>
+          <li><a href="https://orcid.org/{{websiteid.orcid}}" title="Link to my Orcid profile"   rel="me">{% icon "orcid", "Link to my orcid page" %}</a></li>
+          <li><a href="https://github.com/{{websiteid.github}}" title="Link to my GitHub profile"  rel="me" >{% icon "github", "Link to my GitHub profile" %}</a></li>
         </ul>
       </div>
     </header>

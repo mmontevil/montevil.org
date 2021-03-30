@@ -23,7 +23,7 @@ var download = function(uri, filename, callback){
     return undefined;
   };
 
-const authors0= (name, gsid, people) => {
+const authors0= (name, gsid, people, auth,nbAuteurs) => {
   let authorPic="/assets/avatars/gs/dummy.jpg";
   let authorUrl="";
   if (gsid !==""){
@@ -43,12 +43,18 @@ temp="/assets/avatars/"+slugify(name)+".jpg";
  }
  
  if (people[name] && people[name].site) { authorUrl =people[name].site;}
+ let authclass="";
+ if(auth){
+   authclass="p-author";
+}
+ let imgclass="";
+ if( auth && nbAuteurs==1){imgclass=" hidden ";}
  
-let content= `<figure class="frameAuthor h-card">
- <img class="reaction__author__photo2 u-photo noDarkFilter" src="`+authorPic+`" 
+let content= `<figure class="frameAuthor `+authclass+` h-card">
+ <img class="reaction__author__photo2 u-photo noDarkFilter  `+imgclass+` " src="`+authorPic+`" 
  height="48" alt="`+name+`">
  <figcaption class="authorCaption">`
- +( authorUrl=="" ? `<span class="p-name">`+name+ `</span>`:  `<a href="`+authorUrl+`" class="p-name u-url">`+name+`</a>`)+`
+ +( authorUrl=="" ? `<span class="p-name">`+name+ `</span>`:  `<a href="`+authorUrl+`" class="p-name u-url metalink">`+name+`</a>`)+`
  </figcaption>
  </figure>`;
       return content;
@@ -59,7 +65,7 @@ const authors1=memoize(authors0);
 
 
 module.exports = {
- authors: (name, gsid, people) =>authors1(name, gsid, people) ,
+ authors: (name, gsid, people,auth=false,nbAuteurs=0 ) =>authors1(name, gsid, people,auth,nbAuteurs) ,
 };
 
 

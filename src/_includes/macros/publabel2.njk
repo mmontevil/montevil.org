@@ -1,0 +1,21 @@
+ 
+{% macro publabel2(item) %}
+ 
+ <span class="  publinklang2">{{-item.lang-}}</span>
+ {%- if item.typepub === "Article"-%}
+ <li class="publink2  meta__item">{% icon "book", "book" %} Article</li>
+ {%- elif item.typepub === "chapter" -%}
+ <li class="publink2 meta__item publinkchap2 ">{% icon "book", "book" %} Chapter</li>
+ {%- elif item.typepub === "software" -%}
+  <li class="publink2 meta__item publinkSoftware2 ">{% icon "book", "book" %} Software</li>
+  {%- elif item.typepub === "commentary" -%}
+  <li class="publink2 meta__item publinkCommentary2">{% icon "book", "book" %} Commentary</li>
+  {%- elif item.typepub === "data" -%}
+  <li class="publink2 meta__item publinkData2 ">{% icon "book", "book" %} Data</li>
+ {%- elif item.typepub === "book" -%}
+ <li class="publink2 meta__item publinkBook2 ">{% icon "book", "book" %} Book</li>
+ {%- endif-%}
+ {%- if item.peerReview-%}
+ <li class="publink2 meta__item  pubPeerReview2">{% icon "thumb", "thumb" %} Peer-reviewed</li> 
+{% endif%} 
+{% endmacro %}

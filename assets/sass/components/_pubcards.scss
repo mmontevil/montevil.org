@@ -37,6 +37,7 @@
   color: white;
   background-color: var(--color-art);
 }
+
 .publinkchap {
   background-color: var(--color-chap);
 }
@@ -89,6 +90,40 @@
   //padding-top: 0;
   overflow: hidden;
 }
+
+.publink2 { 
+  svg {
+    stroke: currentColor;}
+  padding-right: 0.2em;
+  color: var(--color-art);
+}
+
+.publinklang2 {
+  padding-right: 0.2em;
+}
+
+.publinkchap2 {
+  color: var(--color-chap);
+}
+
+.publinkBook2 {
+  color: var(--color-book);
+}
+.publinkSoftware2{
+  color: var(--color-soft);
+}
+.publinkCommentary2{
+  color: var(--color-com);
+
+}
+.publinkData2{
+     color: var(--color-data);
+}
+
+.pubPeerReview2 {
+  color: var(--color-rev);
+}
+
 
 .accordion > input[type='checkbox'] {
   position: absolute;

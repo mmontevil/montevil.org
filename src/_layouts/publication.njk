@@ -10,6 +10,8 @@ eleventyComputed:
     pdfoutSup: "/assets/pdf/{{page.fileSlug}}-sup.pdf"
     datepub: "{%- set date0 = bibentry.issued['date-parts'][0] -%}{%- if  date0 -%}{{- 0 if date0[0]<10  -}}{{- date0[0] if date0[0] else 2021 -}}-{{- 0 if (date0[1]<10 or not date0[2])  -}}{{- date0[1] if date0[1] else 01 -}}-{{- 0 if (date0[2]<10 or not date0[2])  -}}{{- date0[2] if date0[2] else 01 -}}{%- else -%}Submitted{%- endif -%}"
     orderDate: "{%- if datepub=='Submitted' -%}{{- page.date | attributeDate -}}{%- else -%}{{- datepub     -}}{%- endif -%}"
+    nbAuteurs:  "{{bibentry.author | length}}"    
+    auteurs: "{%- for auth in bibentry.author -%}{% authors auth.given[0]+' '+auth.family, '', people,true, nbAuteurs %}{%-endfor-%}"
 ---
 
 
@@ -25,7 +27,6 @@ eleventyComputed:
 {% for article in gsentry[1]%}
  <li >
  
-  {% from "macros/author.njk" import author %}
 
 {% for auth in article.author_id%}
  {% authors article.bib.author[loop.index0], auth, people %}

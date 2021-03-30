@@ -11,7 +11,8 @@
             "month": "3",
             "day": "16",
             "url": "https://www.ias-research.net/blog/event/ias-research-talk-mael-montevil-universite-paris-1-ihpst/?instance_id=278",
-            "abstract": "The term \"disruption\" is commonly used in the literature to describe anthropogenic damages on ecosystems and life cycles. However, this notion has not been conceptualized and theorized as such. Here we will focus on the specific case of plant-pollinators networks and their disruption by climate change. We will show that the analysis of these situations requires integrating constraints closure and historical reasoning. Moreover, entropy enters the picture in a new way: its coarse-graining is defined by constraints closure. This framework leads to an initial account of disruption in biology: disruptions a loss of historical singularity impacting constraints closure."
+            "abstract": "The term \"disruption\" is commonly used in the literature to describe anthropogenic damages on ecosystems and life cycles. However, this notion has not been conceptualized and theorized as such. Here we will focus on the specific case of plant-pollinators networks and their disruption by climate change. We will show that the analysis of these situations requires integrating constraints closure and historical reasoning. Moreover, entropy enters the picture in a new way: its coarse-graining is defined by constraints closure. This framework leads to an initial account of disruption in biology: disruptions a loss of historical singularity impacting constraints closure.",
+            "author": "M. Montévil"
         }
     },
     {
@@ -27,7 +28,8 @@
             "day": "29",
             "program": "CHIURAZZI_BAT_Colloque.pdf",
             "url": "https://www.ciph.org/spip.php?page=activite-detail&idevt=1163",
-            "annonce": "true"
+            "annonce": "true",
+            "author": "M. Montévil"
         }
     },
     {
@@ -1913,6 +1915,7 @@
         "entrytype": "proceedings",
         "entrykey": "soin_2018",
         "fields": {
+            "author": " Plaine Commune and Maison des Sciences de l'Homme Paris Nord and Institut de Recherche et d'Innovation and Ars Industrialis",
             "title": "Colloque: Une économie contributive dans une société du soin",
             "year": "2018",
             "month": "3",
@@ -1923,8 +1926,7 @@
             "language": "fr",
             "abstract": "Face à l’automatisation de l’emploi et à la numérisation de l’économie, comment mettre le numérique au service d’une nouvelle économie locale, durable et contributive, en y associant une réflexion plus large prenant en compte l’éducation, le vivre-ensemble et l’urbanité ?",
             "video": "https://iri-ressources.org/collections/collection-45.html",
-            "illustration": "flyer-eco-2018.png",
-            "author": " Plaine Commune and Maison des Sciences de l'Homme Paris Nord and Institut de Recherche et d'Innovation and Ars Industrialis"
+            "illustration": "flyer-eco-2018.png"
         }
     },
     {
@@ -1932,6 +1934,7 @@
         "entrytype": "proceedings",
         "entrykey": "cardano_2018col",
         "fields": {
+            "author": "Cardano Group",
             "title": "Rencontre Cardano: Transitions et crises : mathématiques, finance, écosystèmes",
             "year": "2018",
             "month": "5",
@@ -1941,8 +1944,7 @@
             "program": "Mai-28-2018-Affiche-Transitions-et-crises.pdf",
             "language": "fr",
             "abstract": "Nous vous invitons à une seconde rencontre du groupe Cardano. Dans le contexte de l’anthropocène, il nous semble particulièrement utile d’interroger le rôle des mathématiques. Entre la toxicité propre aux produits chimiques non régulés et l’utilisation des mathématiques dans les marchés financiers, on réfléchira également au rôle de ces dernières pour appréhender la soutenabilité des transitions en cours.",
-            "illustration": "cardano-2018.png",
-            "author": "Cardano Group"
+            "illustration": "cardano-2018.png"
         }
     },
     {

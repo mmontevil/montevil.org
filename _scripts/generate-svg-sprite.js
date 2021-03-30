@@ -13,6 +13,10 @@ const ICONS_FOLDERS = {
 // icon filename + title for accessibility
 const ICONS_LIST = {
   feather: {
+      'message-square' : {name: 'message', title: 'message' },
+      'book-open' : {name: 'book', title: 'book' },
+      'thumbs-up': {name: 'thumb', title: 'thumb' },
+            user: {name: 'user', title: 'user' },
         film: {name: 'video', title: 'Video' },
     anchor: { title: 'Anchor' },
     calendar: { name: 'date', title: 'Date' },

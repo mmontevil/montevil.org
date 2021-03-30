@@ -9,16 +9,28 @@ css: ["page-about.css"]
 ![Maël Montévil](/assets/me/Montevil.jpg){.logo}{.portrait}{.noDarkFilter}{.u-photo}
 
 ::: lead
-I am a *theoretical biologist* working at the crossroads of [experimental biology]{.p-category}, mathematics, and philosophy. I work both on the ways to understand living things and to take care of them in the Anthropocene, among [many more specific topics](/tags/).
+I am a *theoretical biologist* working at the crossroads of experimental biology, mathematics, and philosophy. I work both on the ways to understand living things and to take care of them in the Anthropocene, among [many more specific topics](/tags/). {.p-note}
 ::: 
-{.p-note}
 
-<span class="p-name">Maël Montévil</span><a class="u-url" href="https://montevil.org"></a>, <span class="p-honorific-suffix">Ph.D.</span>, <span class="p-locality">Paris</span>, <span class="p-country-name">France</span>
+
+ <ul class=" horizontalFlex">
+          <li><a href="https://twitter.com/{{websiteid.twitter}}" title="Link to my Twitter profile"  rel="me" class="u-url" >{% icon "twitter", "Link to my Twitter profile" %}</a></li>
+          <li><a href="{{websiteid.academia}}" title="Link to my Academia profile"   rel="me" class="u-url">{% icon "academia", "Link to my academia profile" %}</a></li>
+          <li><a href="https://www.researchgate.net/profile/{{websiteid.researchgate}}" title="Link to my Researchgate profile"   rel="me" class="u-url">{% icon "researchgate", "Link to my Researchgate profile" %}</a></li>
+          <li><a href="https://scholar.google.fr/citations?user={{websiteid.scholaruser}}" title="Link to my google scholar profile"    rel="me" class="u-url">{% icon "googlescholar", "Link to my google scholar page" %}</a></li>
+          <li><a href="https://orcid.org/{{websiteid.orcid}}" title="Link to my Orcid profile"   rel="me" class="u-url">{% icon "orcid", "Link to my orcid page" %}</a></li>
+          <li><a href="https://github.com/{{websiteid.github}}" title="Link to my GitHub profile"  rel="me" class="u-url" >{% icon "github", "Link to my GitHub profile" %}</a></li>
+</ul>
+
+<a class="p-name u-url u-uid" href="https://montevil.org">Maël Montévil</a>, <span class="p-honorific-suffix">Ph.D.</span>, <span class="p-locality">Paris</span>, <span class="p-country-name">France</span>
 <a class="u-email" href="mailto:mael.montevil@gmail.com">mael.montevil@gmail.com</a>, <span class="p-nickname">mmontevil</span> (Twitter, Skype,  Github)
+
+
+
+
 Affiliation: 
  [IHSPT](https://www.ihpst.cnrs.fr/){.p-org}{.h-card}, [Université Paris I Panthéon Sorbonne](https://www.pantheonsorbonne.fr/){.p-org}{.h-card}
  [Institut de Recherche et d'Innovation](https://www.iri.centrepompidou.fr/){.p-org}{.h-card}
-
 
 
 </div>

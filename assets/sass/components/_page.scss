@@ -6,7 +6,7 @@
   @extend %flow;
 
   .lazy {
-    --flow-space: var(--gap3);
+    --flow-space: 0;
     @extend %flow;
   }
 }
@@ -65,4 +65,38 @@ img.page__illustration2 {
 }
 .page__title + .page__meta {
   --flow-space: 0.5em;
+}
+.mousewrap{overflow: hidden;
+  margin-bottom: calc(-1*var(--gap2) - 0.3em);
+
+}
+svg.mouse { 
+  transform : translateX(-5em) ;
+  font-size: 2em;
+   margin-bottom: -0.1em;
+
+    animation-name            : displaceContent;
+    animation-duration        : 30s;
+    animation-iteration-count : infinite;
+    animation-fill-mode       : both;
+    animation-timing-function: linear;
+}
+@keyframes displaceContent {
+    15% { transform :  translateX(-5em) }
+    30%   { transform : translateX(100vw) }
+    65%  {transform :  translateX(100vw) rotateX(180deg) rotateZ(180deg)}
+     85% { transform : translateX(-5em)  rotateX(180deg) rotateZ(180deg)}
+    /* slide down to make room for advertisements */
+}
+
+.fade-2 {   
+  --flow-space: var(--gap2);
+  //border-width: 0 0 1px;
+  //  border-style: solid;
+  color: var(--color-primary);
+ background-image: linear-gradient(to right, rgba(var(--color-primary-rgb), 0), rgba(var(--color-primary-rgb), 1),rgba(var(--color-primary-rgb), 0)); 
+ border: 0;
+ height: 2px;
+
+     // box-shadow: 0 0 10px 1px black;
 }

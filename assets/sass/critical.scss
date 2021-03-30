@@ -489,11 +489,12 @@ ol {
 hr {
   border-color: var(--color-grey);
   @media (min-width: 30em) {
+    article{
     margin-left: -1em;
     margin-right: -1em;
   }
+  }
 }
-
 // ************************************************************
 // Tables
 // ************************************************************

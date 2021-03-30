@@ -85,7 +85,7 @@
 --color-primary-lighter-8: #fff8fb;//#fff2f7
 --color-primary-lighter-m: white;
 */
-
+--color-primary-rgb: 107,20,74;
   --color-primary: hsl(323, 68%, 25%);
   --hue: 323;
   --sat: 68%;
@@ -148,13 +148,13 @@
   --color-blue: #2570ba;
   --color-red: #ca2828;
 
-  --color-chap: #2570ba;
-  --color-art: #A32600;
-  --color-book: #52711E ; 
-  --color-soft:  #B88100;
+  --color-chap: #1c558b;
+  --color-art: #a30000;
+  --color-book: #00714f; 
+  --color-soft:  #885f00;
   --color-data: #7C5427;
   --color-com:  #513B29 ;
-  --color-rev:   #57A300;
+  --color-rev:   #396800;
   
   --color-lightgrey: #eee;
   --color-grey: #bbb;
@@ -176,6 +176,7 @@
 
 [data-theme='dark'] {
   --color-primary: hsl(322, 68%, 75%);
+  --color-primary-rgb: 235,148,203;
   --hue: 322;
   --sat: 68%;
   --lum: 75%;
@@ -250,7 +251,7 @@
   --color-grad: 0%;
 
   img,
-  .invertwrapper {
+  .invertwrapper, .publink2{
     filter: hue-rotate(180deg) invert(100%);
   }
   .invertwrapper img {
