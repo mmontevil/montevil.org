@@ -1,7 +1,7 @@
  
 {% macro publabel2(item) %}
- 
- <span class="  publinklang2">{{-item.lang-}}</span>
+ <li class=" meta__item ">{% icon "message", "message" %}
+ <span class="  publinklang2">{{-item.lang-}}</span></li>
  {%- if item.typepub === "Article"-%}
  <li class="publink2  meta__item">{% icon "book", "book" %} Article</li>
  {%- elif item.typepub === "chapter" -%}

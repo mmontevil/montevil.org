@@ -12,9 +12,9 @@
   {% if item.data.auteurs %}
   <li class=" meta__item authItem">{% icon "user", "user" %} {{ item.data.auteurs| safe}}
   </li>
-  <li class=" meta__item ">{% icon "message", "message" %}
+  
   {{publabel2(item.data)|safe}}
-</li>
+
   {% endif %} 
     {% if item.data.video %}
      <li class=" meta__item ">
