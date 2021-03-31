@@ -11,11 +11,11 @@
    {% if not  (item.bibentry.DOI === undefined) %}
 <a href="https://dx.doi.org/{{item.bibentry.DOI}}" class="buttonlink  ">{% icon "exlink", "Link" %} Publisher </a> 
   {% else %}{% if not  (item.bibentry.URL === undefined) %}
-<a href="{{item.bibentry.URL}}" class="buttonlink  ">{% icon "exlink", "Link" %} Publisher </a> 
+<a href="{{item.bibentry.URL}}" class="buttonlink  u-syndication" rel="syndication">{% icon "exlink", "Link" %} Publisher </a> 
   {% endif %}  {% endif %}
   {% if item.hasFullText%}
-<a href="{{item.page.url}}" class="buttonlink  ">{% icon "link", "Link" %} Full text </a> 
+<a href="{{item.page.url}}" class="buttonlink  u-url">{% icon "link", "Link" %} Full text </a> 
 {% else%}
-<a href="{{item.page.url}}" class="buttonlink  ">{% icon "link", "Link" %} Details </a> 
+<a href="{{item.page.url}}" class="buttonlink  u-url">{% icon "link", "Link" %} Details </a> 
 {% endif%}
 {% endmacro %}

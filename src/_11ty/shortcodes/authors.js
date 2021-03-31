@@ -52,7 +52,9 @@ temp="/assets/avatars/"+slugify(name)+".jpg";
  
 let content= `<figure class="frameAuthor `+authclass+` h-card">`;
 
- if( auth && nbAuteurs==1){}else{
+ if( auth && nbAuteurs==1){ content=content+`<img class="reaction__author__photo2 u-photo noDarkFilter  hidden " src="`+authorPic+`" 
+ height="48"  width="48" alt="`+name+`">`;
+}else{
  content=content+`<img class="reaction__author__photo2 u-photo noDarkFilter   " src="`+authorPic+`" 
  height="48" alt="`+name+`">`;
  }
