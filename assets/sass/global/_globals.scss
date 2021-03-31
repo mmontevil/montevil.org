@@ -200,6 +200,8 @@
       calc(var(--lum) + #{$i} * var(--lum-step2))
     );
   }
+  
+  
   // Persimmon:
   //   https://en.wikipedia.org/wiki/Shades_of_orange#Persimmon
   --color-secondary: hsl(calc(var(--hue) - 180), var(--sat), 30%);
@@ -232,6 +234,9 @@
   --border-width: 0.15em;
   --color-accord: var(--color-primary-lighter-4);
 
+  
+  
+  
   // ************************************************************
   // Colors palette
   // ************************************************************
@@ -245,13 +250,22 @@
   --color-xlightgrey: #050505;
   --color-twitter: #0d91e2;
 
+  --color-chap: #13c0ff;
+  --color-art: #ff5500;
+  --color-book: #00d692; 
+  --color-soft:  #eeee00;
+  --color-data: #e79e00;
+  --color-com:  #b6855c ;
+  --color-rev:   #6bc300;
+  
+  
   // Colors from Prism OneDark theme
   --inline-code-background-color: #282c34;
   --inline-code-text-color: #abb2bf;
   --color-grad: 0%;
 
   img,
-  .invertwrapper, .publink2{
+  .invertwrapper{
     filter: hue-rotate(180deg) invert(100%);
   }
   .invertwrapper img {

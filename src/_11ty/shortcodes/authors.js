@@ -47,13 +47,17 @@ temp="/assets/avatars/"+slugify(name)+".jpg";
  if(auth){
    authclass="p-author";
 }
- let imgclass="";
- if( auth && nbAuteurs==1){imgclass=" hidden ";}
+
+
  
-let content= `<figure class="frameAuthor `+authclass+` h-card">
- <img class="reaction__author__photo2 u-photo noDarkFilter  `+imgclass+` " src="`+authorPic+`" 
- height="48" alt="`+name+`">
- <figcaption class="authorCaption">`
+let content= `<figure class="frameAuthor `+authclass+` h-card">`;
+
+ if( auth && nbAuteurs==1){}else{
+ content=content+`<img class="reaction__author__photo2 u-photo noDarkFilter   " src="`+authorPic+`" 
+ height="48" alt="`+name+`">`;
+ }
+ 
+content=content+ `<figcaption class="authorCaption">`
  +( authorUrl=="" ? `<span class="p-name">`+name+ `</span>`:  `<a href="`+authorUrl+`" class="p-name u-url metalink">`+name+`</a>`)+`
  </figcaption>
  </figure>`;

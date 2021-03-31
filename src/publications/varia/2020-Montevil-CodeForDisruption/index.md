@@ -1,5 +1,5 @@
 ---
-excerpt: Paper to be published.
+excerpt: "CRAN R code to analyze disruption of plant-pollinator networks for the article: Disruption of biological processes in the Anthropocene: the case of phenological mismatch."
 noToc: true
 hasPDF: false
 hasFullText: false

@@ -74,6 +74,8 @@ img.card__illustration {
 
 .card__body {
   @extend %flow;
+  
+    font-size: var(--font-size-l);
 }
 
 // TODO: remove?

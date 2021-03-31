@@ -12,10 +12,10 @@
   {% if item.data.auteurs %}
   <li class=" meta__item authItem">{% icon "user", "user" %} {{ item.data.auteurs| safe}}
   </li>
-  
+  {% endif %} 
   {{publabel2(item.data)|safe}}
 
-  {% endif %} 
+  
     {% if item.data.video %}
      <li class=" meta__item ">
         {% icon "video", "Video" %} Recording available
@@ -52,12 +52,14 @@
     {% endif %}
     {% set tagsSize = item.data.tags | size %}
     {% if tagsSize > 0 %}
-      <li class="tags meta__item card__tags">
+      <li class="tags meta__item card__tags ">
+      <span class="nobreak">
         {% icon "tags", "Tags" %}
         {% set comma = joiner(", ") %}
         {%- for tag in item.data.tags -%}
           {{ comma() }}
           <a href="/tags/{{ tag | slugify }}/" rel="tag" class="p-category metalink">{{ tag }}</a>
+          {%- if loop.first%}</span>{%endif-%}
         {%- endfor -%}
       </li>
     {% endif %}
