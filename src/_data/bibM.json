@@ -43,12 +43,15 @@
     "issued": {
       "date-parts": [
         [
-          2016
+          2016,
+          8,
+          4
         ]
       ]
     },
-    "keyword": "Individuation",
-    "page": "77 - 82",
+    "keyword": "Default state, Biological organization, Organizational closure, Variation, Individuation",
+    "page": "77-82",
+    "publisher": "Elsevier BV",
     "title": "Toward a theory of organisms: Three founding principles in search of a useful integration",
     "title-short": "Toward a theory of organisms",
     "type": "article-journal",
@@ -56,6 +59,8 @@
   },
   {
     "DOI": "10.24019/jtavr.7",
+    "ISSN": "2532-0831",
+    "abstract": "We developed 3D culture methods that reproduce in vitro mammary gland ductal morphogenesis. We are proposing a conceptual framework to understand morphogenetic events based on epistemologically sound biological principles instead of the common practice of using only physical principles. More specifically, our theoretical framework is based on the principle that the default state of cells is proliferation with variation and motility. We emphasize the role played by the agency of cells embedded in a gel and the circularity that is relevant for the intended process, whereby cells act upon other cells and on matrix elements, and are subject to the agentivity of neighboring cells. This circularity strongly differs from classical linear causality. Finally, our approach opens up the study of causal determination to multilevel explanations rather than to reductive ones involving only molecules in general and genes in particular.",
     "author": [
       {
         "family": "Montevil",
@@ -76,10 +81,15 @@
     "issued": {
       "date-parts": [
         [
-          2016
+          2016,
+          12,
+          31
         ]
       ]
     },
+    "keyword": "Morphogenesis, extracellular matrix, theoretical principles, default state of cells, modelization.",
+    "page": "45-49",
+    "publisher": "Fondazione Vasculab impresa sociale ONLUS",
     "title": "Theoretical approach of ductal morphogenesis",
     "type": "article-journal",
     "volume": "1"
@@ -131,6 +141,7 @@
       ]
     },
     "keyword": "Historicity, Organization, Epistemology, Mathematical modeling, Constraints",
+    "publisher": "Springer Science and Business Media LLC",
     "title": "Historicity at the heart of biology",
     "type": "article-journal"
   },
@@ -168,7 +179,8 @@
     "issued": {
       "date-parts": [
         [
-          2021
+          2021,
+          3
         ]
       ]
     },
@@ -213,8 +225,9 @@
       ]
     },
     "keyword": "Animals, Biological Evolution, Biophysics/methods, Cell Division, Mice, Models, Morphogenesis, Thermodynamics",
-    "note": "PMC5505559[pmcid]",
+    "note": "26648040[pmid]",
     "page": "955-968",
+    "publisher": "Springer Science and Business Media LLC",
     "title": "In search of principles for a Theory of Organisms",
     "type": "article-journal",
     "volume": "40"
@@ -267,7 +280,9 @@
     "issued": {
       "date-parts": [
         [
-          2020
+          2020,
+          1,
+          10
         ]
       ]
     },
@@ -385,11 +400,13 @@
     ],
     "chapter-number": "22",
     "container-title": "Life Sciences, Information Sciences",
-    "id": "2018-ML-Big-Data-Biology",
+    "id": "2018-ML-Big-Data-Biology-ISLS",
     "issued": {
       "date-parts": [
         [
-          2018
+          2018,
+          3,
+          25
         ]
       ]
     },
@@ -419,11 +436,31 @@
     ],
     "chapter-number": "9",
     "container-title": "Life Sciences, Information Sciences",
+    "editor": [
+      {
+        "family": "Gaudin",
+        "given": "T."
+      },
+      {
+        "family": "Lacroix",
+        "given": "D."
+      },
+      {
+        "family": "Maurel",
+        "given": "M.‐C."
+      },
+      {
+        "family": "Pomerol",
+        "given": "J.‐C."
+      }
+    ],
     "id": "2018-MLS-Gene-Century-Organism",
     "issued": {
       "date-parts": [
         [
-          2018
+          2018,
+          3,
+          25
         ]
       ]
     },
@@ -452,15 +489,19 @@
     "chapter-number": "77",
     "container-title": "Acta Europeana Systemica",
     "id": "2019-LM-Extending-Criticality-Extended",
+    "issue": "1",
     "issued": {
       "date-parts": [
         [
-          2019
+          2020,
+          7,
+          7
         ]
       ]
     },
     "keyword": "Coherent structures, Critical transitions, downward causation, Hidden variables, Levels of organization, Symmetries, Systems biology",
     "page": "77-92",
+    "publisher": "Universite Catholique de Louvain",
     "title": "From physics to biology by extending criticality and symmetry breakings: An update",
     "title-short": "From physics to biology by extending criticality and symmetry breakings",
     "type": "article-journal",
@@ -485,11 +526,14 @@
     "issued": {
       "date-parts": [
         [
-          2020
+          2020,
+          6,
+          17
         ]
       ]
     },
     "page": "611",
+    "publisher": "Frontiers Media SA",
     "title": "The Identity of Organisms in Scientific Practice: Integrating Historical and Relational Conceptions",
     "title-short": "The Identity of Organisms in Scientific Practice",
     "type": "article-journal",
@@ -510,7 +554,9 @@
     "issued": {
       "date-parts": [
         [
-          2018
+          2018,
+          7,
+          1
         ]
       ]
     },
@@ -612,6 +658,7 @@
     },
     "keyword": "TOFT, reductionism, organicism, levels of organization, SMT",
     "page": "37-48",
+    "publisher": "Sapienza Università Editrice",
     "title": "The Hitchhiker’s Guide to the Cancer Galaxy: How two critics missed their destination",
     "title-short": "The Hitchhiker’s Guide to the Cancer Galaxy",
     "type": "article-journal",
@@ -645,12 +692,15 @@
     "issued": {
       "date-parts": [
         [
-          2016
+          2016,
+          7,
+          2
         ]
       ]
     },
     "keyword": "Default state, Theory, Organicism, Emergence, Mathematical symmetries, Biological organization",
     "page": "16-23",
+    "publisher": "Elsevier BV",
     "title": "The biological default state of cell proliferation with variation and motility, a fundamental principle for a theory of organisms",
     "type": "article-journal",
     "volume": "122"
@@ -687,6 +737,7 @@
     },
     "keyword": "Theoretical principle, Organization, Constraints, Closure, Stability, Organicism",
     "page": "24-35",
+    "publisher": "Elsevier BV",
     "title": "Theoretical principles for biology: Organization",
     "title-short": "Theoretical principles for biology",
     "type": "article-journal",
@@ -728,6 +779,7 @@
     },
     "keyword": "Variability, Historicity, Genericity, Biological randomness, Organization, Theory of organisms",
     "page": "36-50",
+    "publisher": "Elsevier BV",
     "title": "Theoretical principles for biology: Variation",
     "title-short": "Theoretical principles for biology",
     "type": "article-journal",
@@ -761,12 +813,15 @@
     "issued": {
       "date-parts": [
         [
-          2016
+          2016,
+          8,
+          18
         ]
       ]
     },
     "keyword": "Ductal morphogenesis, Mathematical models, Organicism, Organizational closure, Acinar morphogenesis, Mammary gland morphogenesis",
     "page": "58-69",
+    "publisher": "Elsevier BV",
     "title": "Modeling mammary organogenesis from biological first principles: Cells and their physical constraints",
     "title-short": "Modeling mammary organogenesis from biological first principles",
     "type": "article-journal",
@@ -819,10 +874,13 @@
     ],
     "container-title": "Progress in Biophysics and Molecular Biology, Special issue",
     "id": "2016-SLN-Century-Organism",
+    "issue": "1",
     "issued": {
       "date-parts": [
         [
-          2016
+          2016,
+          10,
+          1
         ]
       ]
     },
@@ -830,9 +888,11 @@
     "publisher": "Elsevier",
     "title": "From the century of the genome to the century of the organism: New theoretical approaches",
     "title-short": "From the century of the genome to the century of the organism",
-    "type": "article-journal"
+    "type": "article-journal",
+    "volume": "122"
   },
   {
+    "ISBN": "978 88 8080 313 3",
     "abstract": "Some authors assert that the analysis of huge databases could replace the scientific method. On the contrary, we argue that the best way to make these new technologies bear fruits is to frame them with theories concerning the phenomena of interest. Such theories hint to the observable that should be taken into account and the mathematical structures that may link them. In biology, we argue that the community urgently needs an overarching theory of organisms that would provide a precise framework to understand lifecycles. Among other benefits, such a theory should make explicit what we can and cannot predict in principle.",
     "author": [
       {
@@ -855,7 +915,7 @@
         "given": "David"
       }
     ],
-    "id": "2018-ML-BigDataBiological",
+    "id": "2018-ML-Big-Data-Biology",
     "issued": {
       "date-parts": [
         [
@@ -894,6 +954,7 @@
     },
     "keyword": "Novelty, Possibility space, Biological functions, Organization, Emergence",
     "page": "4555-4581",
+    "publisher": "Springer Science and Business Media LLC",
     "title": "Possibility spaces and the notion of novelty: from music to biology",
     "title-short": "Possibility spaces and the notion of novelty",
     "type": "article-journal",
@@ -959,7 +1020,9 @@
     "issued": {
       "date-parts": [
         [
-          2018
+          2018,
+          10,
+          18
         ]
       ]
     },
@@ -1031,13 +1094,14 @@
       "date-parts": [
         [
           2015,
-          3,
-          6
+          5,
+          7
         ]
       ]
     },
     "keyword": "Biological organisation, Closure, Constraints, Symmetries, Time scales",
     "page": "179-191",
+    "publisher": "Elsevier BV",
     "title": "Biological organisation as closure of constraints",
     "type": "article-journal",
     "volume": "372"
@@ -1074,6 +1138,7 @@
     },
     "keyword": "Biological rhythms, Allometry, Biological rhythms, Circadian rhythms, Heartbeats, Rate variability",
     "page": "474-484",
+    "publisher": "Elsevier BV",
     "title": "A 2-dimensional geometry for biological time",
     "type": "article-journal",
     "volume": "106"
@@ -1089,13 +1154,20 @@
       }
     ],
     "container-title": "PLoS ONE",
+    "editor": [
+      {
+        "family": "Egles",
+        "given": "Christophe"
+      }
+    ],
     "id": "2014-BSQ-Tissues-Collagen-Time",
     "issue": "4",
     "issued": {
       "date-parts": [
         [
           2014,
-          4
+          4,
+          1
         ]
       ]
     },
@@ -1126,7 +1198,9 @@
     "issued": {
       "date-parts": [
         [
-          2014
+          2014,
+          1,
+          8
         ]
       ]
     },
@@ -1170,13 +1244,15 @@
     "issued": {
       "date-parts": [
         [
-          2012
+          2012,
+          1,
+          18
         ]
       ]
     },
     "keyword": "Entropy Production, Biological Evolution, Irreversible Process, Combinatorial Complexity, Biological Organization",
     "page": "289-308",
-    "publisher": "Springer",
+    "publisher": "Springer Berlin Heidelberg",
     "publisher-place": "Berlin, Heidelberg",
     "title": "Randomness Increases Order in Biological Evolution",
     "type": "chapter",
@@ -1209,6 +1285,7 @@
       ]
     },
     "keyword": "criticality, biological time, anti-entropy, theoretical biology, symmetry, allometry, incompleteness",
+    "publisher": "Frontiers Media SA",
     "title": "The Inert vs. the Living State of Matter: Extended Criticality, Time Geometry, Anti-Entropy — an overview",
     "title-short": "The Inert vs. the Living State of Matter",
     "type": "article-journal",
@@ -1255,6 +1332,7 @@
     ],
     "container-title": "Theory in Biosciences",
     "id": "2011-LM-Protention-Retention-Biology",
+    "issue": "2, 2",
     "issued": {
       "date-parts": [
         [
@@ -1299,6 +1377,7 @@
     },
     "keyword": "Symmetries, Systems biology, Critical transitions, Levels of organization, Hidden variables, Coherent structures, downward causation",
     "page": "340-347",
+    "publisher": "Elsevier BV",
     "title": "From physics to biology by extending criticality and symmetry breakings",
     "type": "article-journal",
     "volume": "106"
@@ -1327,7 +1406,8 @@
       "date-parts": [
         [
           2012,
-          7
+          7,
+          1
         ]
       ]
     },
@@ -1370,7 +1450,9 @@
     "issued": {
       "date-parts": [
         [
-          2014
+          2014,
+          3,
+          20
         ]
       ]
     },
@@ -1403,18 +1485,21 @@
       "date-parts": [
         [
           2012,
-          7
+          7,
+          17
         ]
       ]
     },
     "keyword": "bottom-up, extended criticality, levels of organization, organism, renormalization, singularity",
     "note": "invited paper",
+    "publisher": "Frontiers Media SA",
     "title": "From bottom-up approaches to levels of organization and extended critical transitions",
     "type": "article-journal",
     "volume": "3"
   },
   {
     "ISBN": "978-2705681555",
+    "URL": "https://www.editions-hermann.fr/livre/9782705681555",
     "abstract": "Le vivant possède une phénoménalité particulière et originale. Comme cadre et siège de cette phénoménalité, l’organisation temporelle des organismes est elle-même d’une grande richesse. Ainsi, l’on rencontre dans l’activité biologique des cas de cyclicité : cycle cardiaque, cycle respiratoire, rythmes cérébraux, cycles circadiens, cycle de vie, etc. ; et d’autre part il s’y présente, parfois même au sein de ces cycles, des phénomènes dont la nature semble plutôt être caractérisée par une irréversibilité fondamentale : cognition, nutrition, développement, vieillissement, évolution, ...Il nous semble dès lors impératif, pour aborder théoriquement — et donc aussi empiriquement — ces phénomènes, de les considérer dans un cadre où la question de la temporalité soit abordée de manière adéquate.",
     "author": [
       {
@@ -1442,7 +1527,8 @@
       "date-parts": [
         [
           2012,
-          1
+          1,
+          25
         ]
       ]
     },
@@ -1476,6 +1562,7 @@
     },
     "keyword": "Biological measurement, evolution, experiments, strains, symmetry, systematics",
     "page": "35",
+    "publisher": "Springer Science and Business Media LLC",
     "title": "Measurement in biology is methodized by theory",
     "type": "article-journal",
     "volume": "34"
@@ -1520,6 +1607,7 @@
       ]
     },
     "page": "057001",
+    "publisher": "Environmental Health Perspectives",
     "title": "A combined morphometric and statistical approach to assess non-monotonicity in the developing mammary gland of rats in the CLARITY-BPA study",
     "type": "article-journal",
     "volume": "128"
@@ -1567,26 +1655,7 @@
     "type": ""
   },
   {
-    "author": [
-      {
-        "family": "Montévil",
-        "given": "Maël"
-      }
-    ],
-    "id": "2015-MontevilSymetrie-Objectivation-Vivant-2",
-    "issued": {
-      "date-parts": [
-        [
-          2011,
-          10
-        ]
-      ]
-    },
-    "publisher": "Mémoire de Thèse - Université Paris V",
-    "title": "Temps biologique et transitions critiques étendues - Vers une objectivation de l’état vivant de la matière",
-    "type": "book"
-  },
-  {
+    "URL": "https://www.cairn.info/revue-d-histoire-des-sciences-2019-2-page-411.htm?contenu=article",
     "abstract": "L’invention et le développement des ordinateurs a ouvert de nouvelles possibilités pour la modélisation. En physique, l’existence de théories mathématisées permet d’utiliser l’ordinateur pour calculer des solutions approchées à des problèmes déjà bien circonscrits théoriquement et épistémologiquement. En biologie, par contre, il n’existe pas de théorie jouant ce rôle épistémologique, et l’informatique a permis l’émergence de pratiques de modélisation combinant plusieurs cadres mathématiques. L’ouvrage de Franck Varenne porte sur ces pratiques novatrices, leur histoire et leur épistémologie, à travers le cas des simulations de morphogenèse d’arbres et plus généralement de plantes.",
     "author": [
       {
@@ -1635,6 +1704,8 @@
       ]
     },
     "keyword": "Incompleteness, symmetries, randomness, critical transitions, biological evolution and ontogenesis",
+    "page": "Issue 4 ; 1860-5974",
+    "publisher": "Episciences.org",
     "title": "From Logic to Biology via Physics: a survey",
     "title-short": "From Logic to Biology via Physics",
     "type": "article-journal",
@@ -1662,7 +1733,9 @@
     "issued": {
       "date-parts": [
         [
-          2018
+          2018,
+          11,
+          9
         ]
       ]
     },
@@ -1675,6 +1748,7 @@
   },
   {
     "DOI": "10.1007/978-3-319-30526-4",
+    "ISBN": "9783319808307",
     "abstract": "Computer simulations brought remarkable novelties to knowledge construction. In this chapter, we first distinguish between mathematical modeling, computer implementations of these models and purely computational approaches. In all three cases, different answers are provided to the questions the observer may have concerning the processes under investigation. These differences will be highlighted by looking at the different theoretical symmetries of each frame. In the latter case, the peculiarities of agent-based or object oriented languages allow to discuss the role of phase spaces in mathematical analyses of physical versus biological dynamics. Symmetry breaking and randomness are finally correlated in the various contexts where they may be observed.",
     "author": [
       {
@@ -1705,11 +1779,12 @@
     "issued": {
       "date-parts": [
         [
-          2017
+          2018
         ]
       ]
     },
     "keyword": "Phase Space, Symmetry Breaking, Chaotic Dynamic, Object Oriented Programming, Genetically Modify Organism",
+    "page": "843-856",
     "publisher": "Springer",
     "title": "Comparing Symmetries in Models and Simulations",
     "type": "chapter"
@@ -1752,10 +1827,12 @@
       "date-parts": [
         [
           2014,
-          9
+          9,
+          8
         ]
       ]
     },
+    "page": "187-201",
     "publisher": "Microsoft Research",
     "title": "Introduction to New Perspectives in Biology",
     "type": "chapter"
@@ -1766,18 +1843,44 @@
     "author": [
       {
         "family": "Paulose",
-        "given": "Maël AND Speroni",
-        "suffix": "Tessie AND Montévil"
+        "given": "Tessie"
+      },
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      },
+      {
+        "family": "Speroni",
+        "given": "Lucia"
+      },
+      {
+        "family": "Cerruti",
+        "given": "Florent"
+      },
+      {
+        "family": "Sonnenschein",
+        "given": "Carlos"
+      },
+      {
+        "family": "Soto",
+        "given": "Ana M."
       }
     ],
     "container-title": "PLoS ONE",
+    "editor": [
+      {
+        "family": "Seagroves",
+        "given": "Tiffany"
+      }
+    ],
     "id": "2016-PMS-Sama-Method-Morphometry",
     "issue": "4",
     "issued": {
       "date-parts": [
         [
           2016,
-          4
+          4,
+          1
         ]
       ]
     },
@@ -1790,6 +1893,7 @@
     "volume": "11"
   },
   {
+    "ISBN": "978-2-919694-93-8",
     "URL": "https://materiologiques.com/fr/modelisations-simulations-systemes-complexes-2425-5661/206-le-vivant-critique-et-chaotique-9782919694938.html",
     "abstract": "Ce texte présente un modèle pour le temps biologique ainsi qu’un certain nombre d’idées plus générales sur l’articulation entre mathématiques et objets biologiques, fondées sur des propositions théoriques. Nous décrivons d’abord un modèle géométrisant le temps des mammifères, basé en partie sur la notion d’allométrie. Ce modèle permet de mettre en évidence la structure de la variabilité des rythmes biologiques et de discriminer cas sains et cas pathologiques. Nous utilisons cet exemple pour illustrer les principes permettant la mathématisation. Nous discutons comment s’articulent mathématiques et définition théorique des objets physiques. Nous mettons en particulier l’accent sur le rôle que jouent les symétries théoriques pour justifier ces définitions, tant au niveau de la constitution d’un espace de description que de l’obtention d’équations déterminant la trajectoire suivie par un objet. Nous abordons aussi les transitions de phases comme situations paradigmatiques où les symétries d’un système changent. Ceci nous amène à proposer que les objets biologiques (organismes, cellules) sont caractérisés par une instabilité de leurs symétries théoriques. Les objets prennent alors un sens différent de celui qu’ils ont en physique : ils font preuve de variabilité et sont fondamentalement historiques. Ceci n’empêche pas la présence d’éléments de stabilité chez le vivant, mais les symétries biologiques prennent un sens différent des symétries fondamentales de la physique.",
     "author": [
@@ -1813,7 +1917,9 @@
     "issued": {
       "date-parts": [
         [
-          2015
+          2015,
+          8,
+          1
         ]
       ]
     },
@@ -1860,7 +1966,9 @@
     "issued": {
       "date-parts": [
         [
-          2017
+          2017,
+          9,
+          1
         ]
       ]
     },
@@ -1948,7 +2056,9 @@
     "issued": {
       "date-parts": [
         [
-          2014
+          2014,
+          11,
+          25
         ]
       ]
     },
@@ -1979,7 +2089,9 @@
     "issued": {
       "date-parts": [
         [
-          2014
+          2014,
+          11,
+          27
         ]
       ]
     },
@@ -2009,7 +2121,9 @@
     "issued": {
       "date-parts": [
         [
-          2014
+          2014,
+          1,
+          8
         ]
       ]
     },
@@ -2030,6 +2144,7 @@
     ],
     "container-title": "Science & Education",
     "id": "2017-Montevil-Garson-Functions",
+    "issue": "7-9",
     "issued": {
       "date-parts": [
         [
@@ -2039,9 +2154,12 @@
         ]
       ]
     },
-    "note": "book review of A Critical Overview of Biological Functions, Justin Garson (2016).",
+    "note": "Book review of A Critical Overview of Biological Functions, Justin Garson (2016).",
+    "page": "1071-1073",
+    "publisher": "Springer Science and Business Media LLC",
     "title": "Philosophical Accounts of Biological Functions",
-    "type": "article-journal"
+    "type": "article-journal",
+    "volume": "26"
   },
   {
     "DOI": "10.1016/j.chaos.2013.03.008",
@@ -2071,6 +2189,7 @@
     },
     "keyword": "Conservation properties, symmetries, biological causality, phase space, unpredictability, phylogenetic drift, enablement",
     "page": "64-79",
+    "publisher": "Elsevier BV",
     "title": "Extended criticality, phase spaces and enablement in biology",
     "type": "article-journal",
     "volume": "55"

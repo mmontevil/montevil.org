@@ -9,7 +9,7 @@
 {% endif%}
    <a href="{{item.bibout}}" class="buttonlink ">{% icon "bib", "BIB" %} Citation  </a>
    {% if not  (item.bibentry.DOI === undefined) %}
-<a href="https://dx.doi.org/{{item.bibentry.DOI}}" class="buttonlink  ">{% icon "exlink", "Link" %} Publisher </a> 
+<a href="https://dx.doi.org/{{item.bibentry.DOI}}" class="buttonlink  u-syndication" rel="syndication">{% icon "exlink", "Link" %} Publisher </a> 
   {% else %}{% if not  (item.bibentry.URL === undefined) %}
 <a href="{{item.bibentry.URL}}" class="buttonlink  u-syndication" rel="syndication">{% icon "exlink", "Link" %} Publisher </a> 
   {% endif %}  {% endif %}

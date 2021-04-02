@@ -1,0 +1,23 @@
+---
+layout: null
+permalink: /feeds/twitter/publications.json
+---
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": "Publications - {{websiteid.name}}",
+  "home_page_url": "{{ pkg.homepage }}/publications/",
+  "feed_url": "{{ pkg.homepage }}/feeds/twitter/publications.json",
+  "items": [
+  {% for entry in collections.publicationsall | limit(50) %}
+    {%- set absoluteEntryUrl -%}{{ entry.url | url | absoluteUrl(pkg.homepage) }}{%- endset -%}
+    {
+      "id": "{{ absoluteEntryUrl }}",
+      "url": "{{ absoluteEntryUrl }}",
+      "title": "💬 Note from {{ entry.date | date("Do MMMM YYYY [at] H:mm:ss") }}",
+      "date_published": "{{ entry.date | rssDate }}",
+      "content_text": "{{ entry.data.excerpt | safe }}\n {{ absoluteEntryUrl }}{{ entry.data.title |dump}}",
+      "attachments": {{ entry.template.frontMatter.content | imagesAsAttachments(absoluteEntryUrl) | safe }}      
+    }{%- if not loop.last -%},{%- endif -%}
+  {% endfor %}
+  ]
+}

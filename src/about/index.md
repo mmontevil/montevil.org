@@ -36,7 +36,7 @@ Affiliation:
 </div>
 
 {%set links%}
-<div>
+<div style="--flow-space: 1em;">
 <a  class="buttonlink" href=/assets/pdf/publications_Montevil2-en.pdf >{% icon "pdf", "pdf" %}  Publications </a>
 <a class="buttonlink" href=/assets/pdf/cv_Montevil_2019_en.pdf >{% icon "pdf", "pdf" %}  CV </a>
 <a class="buttonlink" href=/assets/bib/bibM.bib >{% icon "bib", "bib" %}  Publication references </a>
@@ -47,10 +47,11 @@ Affiliation:
 
 # Publications
 
+
+
+You may have a look at my [list of publications](/publications/publicationsbyType/) on this site or on a [thematic map of my publications]({% link_to "map" %}).
+
 {{links|safe}}
-
-You may also have a look at my [list of publications](/publications/publicationsbyType/) on this site or on a [thematic map of my publications]({% link_to "map" %}).
-
 </section>
 
 <section class="wrap">

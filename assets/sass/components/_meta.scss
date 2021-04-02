@@ -46,7 +46,7 @@ align-items: flex-end;*/
   --color-link: var(--color-meta);
   --color-link-decoration: var(--color-meta-decoration);
   text-decoration-thickness: 1px;
-  padding: 0.2em 0.1em;
+ // padding: 0.2em 0.1em;
 }
 
  .authItem{ 
@@ -58,7 +58,7 @@ align-items: flex-end;*/
 .meta__item {
   figure{
     margin: 0;
-    margin-left: 0.3em;
+    margin-top: 0.3em;
 //   display: inline; 
    // display: inline-flex;
    // align-items: baseline;
@@ -71,4 +71,6 @@ align-items: flex-end;*/
     font-size: var(--font-size-s);
     margin-top: 0;}
 }
-.publink2, .meta__date,.nobreak{white-space: nowrap;}
+.publink2, .meta__date,.nobreak, .publinklang2{
+  white-space: nowrap;
+}
