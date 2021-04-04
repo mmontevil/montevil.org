@@ -28,12 +28,9 @@
           </p>
         {% endif %}
         <ul class="elsewhere">
-          <li><a href="https://twitter.com/{{websiteid.twitter}}" title="Link to my Twitter profile"  rel="me" >{% icon "twitter", "Link to my Twitter profile" %}</a></li>
-          <li><a href="{{websiteid.academia}}" title="Link to my Academia profile"   rel="me">{% icon "academia", "Link to my academia profile" %}</a></li>
-          <li><a href="https://www.researchgate.net/profile/{{websiteid.researchgate}}" title="Link to my Researchgate profile"   rel="me">{% icon "researchgate", "Link to my Researchgate profile" %}</a></li>
-          <li><a href="https://scholar.google.fr/citations?user={{websiteid.scholaruser}}" title="Link to my google scholar profile"    rel="me">{% icon "googlescholar", "Link to my google scholar page" %}</a></li>
-          <li><a href="https://orcid.org/{{websiteid.orcid}}" title="Link to my Orcid profile"   rel="me">{% icon "orcid", "Link to my orcid page" %}</a></li>
-          <li><a href="https://github.com/{{websiteid.github}}" title="Link to my GitHub profile"  rel="me" >{% icon "github", "Link to my GitHub profile" %}</a></li>
+        {% for entry in websiteid.sameAs %}
+          <li><a rel="me" href="{{entry.url}}" title="{{entry.alt}}"  >{% icon entry.icon, entry.alt %}</a></li>
+          {% endfor %}
         </ul>
       </div>
     </header>

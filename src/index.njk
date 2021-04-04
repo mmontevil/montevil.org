@@ -38,17 +38,9 @@ JSON-LD for:
     
     
  <div class="hidden">
-          <a href="https://twitter.com/{{websiteid.twitter}}" title="Link to my Twitter profile"  rel="me" class="u-url" >Twitter</a>
-          
-          <a href="{{websiteid.academia}}" title="Link to my Academia profile"   rel="me" class="u-url">Academia</a>
-          
-          <a href="https://www.researchgate.net/profile/{{websiteid.researchgate}}" title="Link to my Researchgate profile"   rel="me" class="u-url"> </a>
-          
-          <a href="https://scholar.google.fr/citations?user={{websiteid.scholaruser}}" title="Link to my google scholar profile"    rel="me" class="u-url"> </a>
-          
-          <a href="https://orcid.org/{{websiteid.orcid}}" title="Link to my Orcid profile"   rel="me" class="u-url"></a>
-          
-          <a href="https://github.com/{{websiteid.github}}" title="Link to my GitHub profile"  rel="me" class="u-url" ></a>
+{% for entry in websiteid.sameAs %}
+  <a rel="me" href="{{entry.url}}" title="{{entry.alt}}"  class="u-url"  >{{ entry.icon}}</a>
+{% endfor %}
           
           <a class="p-name u-url u-uid" href="https://montevil.org">Maël Montévil</a>, <span class="p-honorific-suffix">Ph.D.</span>, <span class="p-locality">Paris</span>, <span class="p-country-name">France</span>
 <a class="u-email" href="mailto:mael.montevil@gmail.com">mael.montevil@gmail.com</a>, <span class="p-nickname">mmontevil</span> (Twitter, Skype,  Github)
@@ -66,6 +58,9 @@ I work in
 
 
 <div class="mousewrap">
+
+<svg width="8.63mm" height="8.85mm" version="1.1" viewBox="0 0 26.63 25.85" xmlns="http://www.w3.org/2000/svg"  class="svgfill mouse cheese"><g transform="translate(-93.72 -81.11)"><g transform=" rotate(4.421 121.9 606.8)" fill-rule="evenodd"><path d="m80.58 92.43-18.98 13.86z" fill="#e9e9ff"/><path d="m55.28 90.8v19.82l25.31-18.19-7.313 5.088z" fill="#353564"/><path d="m55.28 90.8 6.326-6.603 18.98 8.225-7.313 5.088z" fill="#4d4d9f"/><path d="m55.28 110.6 6.326-4.335 18.98-13.86z" fill="#afafde"/><path d="m61.6 84.2v22.08l18.98-13.86z" fill="#e5ec0f"/><path d="m55.28 90.8 6.326-6.603v22.08l-6.326 4.335z" fill="#d2cb17"/></g><ellipse cx="109.7" cy="92.03" rx="2.959" ry="3.249" fill="#c6ca0e"/><ellipse cx="105.3" cy="87.65" rx="1.093" ry=".8438" fill="#d3cf1e"/></g></svg>
+
 
 <svg  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 25 25" class="svgfill mouse">
   

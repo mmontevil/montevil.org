@@ -331,7 +331,7 @@ div.abstract,
   border: none;
 }
 
-table.equation, table.equation-star, .legibilityWidth  mjx-container[jax="CHTML"][display="true"]{
+table.equation, table.equation-star, .legibilityWidth   mjx-container[jax="CHTML"][display="true"]{
    --temp: calc(50% - 50vw +30px);
     --tempb: calc(max(-5em, var(--temp)));
     margin-left: calc(min(var(--temp), 0em));
@@ -340,6 +340,11 @@ table.equation, table.equation-star, .legibilityWidth  mjx-container[jax="CHTML"
   overflow-x: auto;
   display: block;
 }
+.legibilityWidth  .equation  mjx-container[jax="CHTML"][display="true"]{
+   --temp: 0;
+    --tempb: 0;
+}
+
   table.equation, table.equation-star{
   tbody{
     display: block;
@@ -354,4 +359,11 @@ table.equation, table.equation-star, .legibilityWidth  mjx-container[jax="CHTML"
     justify-content: center;
     
   }
+}
+
+mjx-mtable {
+  min-width: auto !important;
+}
+mjx-mspace {
+  width: 0 !important;
 }

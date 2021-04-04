@@ -8,12 +8,14 @@ titlePrefix: "Documentation for "
 eleventyNavigation:
   key: SAMA
   title: What is SAMA?
+seeAlso: 
+    grub: "articles/2016-PMS-Sama-Method-Morphometry"
+    text: See the corresponding  
+    textLink: article
 ---
-::: lead
-See [the article]({% link_to "articles/2016-PMS-Sama-Method-Morphometry" %}).
-:::
 
-<hr>
+</div>
+
 
 <div class="centerList" >
 {{ collections.all | eleventyNavigation | eleventyNavigationToHtml(
@@ -22,6 +24,9 @@ See [the article]({% link_to "articles/2016-PMS-Sama-Method-Morphometry" %}).
     activeKey: eleventyNavigation.key
     })  |safe }} 
 </div>
+<hr>
+  <div class="legibilityWidth wrap0all">
+
 
 # What is SAMA? 
 

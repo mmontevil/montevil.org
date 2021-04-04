@@ -8,7 +8,7 @@
 module.exports = {
   icon: (id, label) => {
     let svgclass = 'svgnofill';
-    if (id == 'pdf' || id == 'bib' || id == 'reference'|| id == 'twitter'|| id == 'academia'|| id == 'researchgate'|| id == 'googlescholar'|| id == 'orcid'|| id == 'github') svgclass = 'svgfill';
+    if (id == 'pdf' || id == 'bib' || id == 'reference'|| id == 'twitter'|| id == 'academia'|| id == 'researchgate'|| id == 'googlescholar'|| id == 'orcid'|| id == 'github'|| id == 'mastodon'|| id == 'hal') svgclass = 'svgfill';
     return `<svg class="icon ${svgclass}" role="img" aria-label="${label}" focusable="false"><use xlink:href="#symbol-${id}" /></svg>`;
   },
   archiveIllustration: (src, width, height, alt) => {

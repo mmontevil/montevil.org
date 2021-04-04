@@ -1,6 +1,7 @@
 ---
 layout: publication2
 upnav: toc-site
+css: ["page-text.css"]
 eleventyComputed:
     keyword : "{{ bibentry.keyword }}"
     abstract : "{%- if bibentry.abstract -%}{{ bibentry.abstract | unprotect  | urlify | safe}}{%- endif -%}"

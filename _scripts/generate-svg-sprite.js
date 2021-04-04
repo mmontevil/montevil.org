@@ -35,16 +35,15 @@ const ICONS_LIST = {
     'chevrons-right': { name: 'chevronRight', title: 'chevron-right' },  
   },
   simple: {
-    flickr: { title: 'Flickr' },
     github: { title: 'GitHub' },
     mastodon: { title: 'Mastodon' },
     researchgate: { title: 'researchgate' }, 
     academia: { title: 'academia' }, 
     googlescholar: { title: 'gscholar' }, 
     orcid: { title: 'orcid' },   
-
   },
   local: {
+    hal: { title: 'hal' },
     older: { title: 'Older' },
     newer: { title: 'Newer' },
     pdf: { title: 'pdf' },

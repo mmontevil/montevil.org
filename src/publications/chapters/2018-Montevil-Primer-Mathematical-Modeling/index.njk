@@ -21,7 +21,7 @@ illustClass:
   of this chapter is to facilitate the interaction between biologists and mathematical modelers. We focus on the case of cell proliferation and motility in the context of multicellular organisms.
 </p>
 <p class="indent"><span class="paragraphHead">Keywords : </span>mathematical modeling, proliferation, theory, equations, parameters</p>
-<h2 class="sectionHead" id="1--introduction"><span class="titlemark" id="x1-10001">1 </span>Introduction</h2>
+<h2 class="sectionHead" id="1-introduction"><span class="titlemark" id="x1-10001">1 </span>Introduction</h2>
 <p class="noindent">
   Mathematical modeling may serve many purposes such as performing quantitative predictions or making sense of a situation where reciprocal interactions are beyond informal analyses. For example, describing the properties of the diferent
   ionic channels of a neuron individually is not sufficient to understand how their combination entails the formation of action potentials. We need a mathematical analysis such as the one performed by the Hodgkin-Huxley model to gain such
@@ -71,9 +71,9 @@ illustClass:
   kept this structure and follow it in a metaphorical sense. In materials, we are describing key conceptual and mathematical ingredients of models. In methods, we will focus on the writing and analysis of models
   <span class="cmti-10">per se</span>.
 </p>
-<h2 class="sectionHead" id="2--materials"><span class="titlemark" id="x1-20002">2 </span>Materials</h2>
-<h3 class="subsectionHead" id="21--parameters-and-states"><span class="titlemark" id="x1-30002e1">2.1 </span>Parameters and states</h3>
-<h4 class="subsubsectionHead" id="211--parameters"><span class="titlemark" id="x1-40002e1e1">2.1.1 </span>Parameters</h4>
+<h2 class="sectionHead" id="2-materials"><span class="titlemark" id="x1-20002">2 </span>Materials</h2>
+<h3 class="subsectionHead" id="21-parameters-and-states"><span class="titlemark" id="x1-30002e1">2.1 </span>Parameters and states</h3>
+<h4 class="subsubsectionHead" id="211-parameters"><span class="titlemark" id="x1-40002e1e1">2.1.1 </span>Parameters</h4>
 <p class="noindent">
   Parameters are quantities that play a role in the system but which are not significantly impacted by the system’s behavior at the time scale of the phenomenon under study. From an experimentalist’s point of view, there are two kinds of
   parameters. Some parameters correspond to a quantity that is explicitly set by the experimenter such as the temperature, the size of a plate or the concentration of a relevant compound in the media. Other parameters correspond to
@@ -97,7 +97,7 @@ illustClass:
     example the many components of the serum.
   </li>
 </ul>
-<h4 class="subsubsectionHead" id="212---state-space"><span class="titlemark" id="x1-50002e1e2">2.1.2 </span>State space</h4>
+<h4 class="subsubsectionHead" id="212-state-space"><span class="titlemark" id="x1-50002e1e2">2.1.2 </span>State space</h4>
 <p class="noindent">
   The state of an object describes its situation at a given time. The state is composed of one or several quantities, see note <a href="#x1-160053">3</a>. By contrast with parameters, the
   notion of state is restricted to those aspects of the system which will change as a result of explicit causes or randomness intrinsic to the system described. The usual approach, inherited from physics, is to propose a set of possible
@@ -109,7 +109,7 @@ illustClass:
   number of cells that are actively proliferating in the example above and thus trigger the changes in <span class="cmti-10">n</span>. An indirect causal power corresponds, for example, to the position of a cell provided that some
   positions are too crowded for cells to proliferate.
 </p>
-<h4 class="subsubsectionHead" id="213--parameter-versus-state"><span class="titlemark" id="x1-60002e1e3">2.1.3 </span>Parameter versus state</h4>
+<h4 class="subsubsectionHead" id="213-parameter-versus-state"><span class="titlemark" id="x1-60002e1e3">2.1.3 </span>Parameter versus state</h4>
 <p class="noindent">
   Deciding whether a given quantity should be described as a parameter or as an element of the state space is a theoretical decision that is sometimes difficult, see also note
   <a href="#x1-160074">4</a>. The heart of the matter is to analyze the role of this quantity but it also depends on the modeling aims.
@@ -120,7 +120,7 @@ illustClass:
   <li class="itemize">Do we want to perform precise quantitative predictions ? If yes, then the quantity should be a part of the state space and a parameter otherwise.</li>
 </ul>
 <p class="noindent">In the following, we will call “description space” the combination of the state space and parameters.</p>
-<h3 class="subsectionHead" id="22--equations"><span class="titlemark" id="x1-70002e2">2.2 </span>Equations</h3>
+<h3 class="subsectionHead" id="22-equations"><span class="titlemark" id="x1-70002e2">2.2 </span>Equations</h3>
 <p class="noindent">
   Equations are often seen as intimidating by experimental biologists. Our aim here and in the following subsection is to help demystify them. In the modeling process, equations are the final explicitation of how changes occur and causes
   act in a model. As a result understanding them is of paramount importance to understand the assumptions of a model.
@@ -283,7 +283,7 @@ illustClass:
     </math>. Defining a dynamics requires at least one such equation to bind together the different time points, that is to say to bind causes and their effects.
   </li>
 </ul>
-<h3 class="subsectionHead" id="23--invariants-and-symmetries"><span class="titlemark" id="x1-80002e3">2.3 </span>Invariants and symmetries</h3>
+<h3 class="subsectionHead" id="23-invariants-and-symmetries"><span class="titlemark" id="x1-80002e3">2.3 </span>Invariants and symmetries</h3>
 <p class="noindent">
   We have discussed the role of equations, now let us expand on their structure. Let us start with the equation mentioned above :
   
@@ -499,7 +499,7 @@ illustClass:
     is often required when the knowledge of the underlying phenomenon is not sufficient.
   </li>
 </ul>
-<h3 class="subsectionHead" id="24--theoretical-principles"><span class="titlemark" id="x1-90002e4">2.4 </span>Theoretical principles</h3>
+<h3 class="subsectionHead" id="24-theoretical-principles"><span class="titlemark" id="x1-90002e4">2.4 </span>Theoretical principles</h3>
 <p class="noindent">Theoretical principles are powerful tools to write equations that convey biological meaning. Let us provide a few examples.</p>
 <ul class="itemize1">
   <li class="itemize">Cell theory implies that cells come from the proliferation of other cells and excludes spontaneous generation.</li>
@@ -513,8 +513,8 @@ illustClass:
     such as the logistic model is not about all these factors and should not be interpreted as such. Instead, it assumes proliferation on the one side and one or several factors that constrain proliferation on the other side.
   </li>
 </ul>
-<h2 class="sectionHead" id="3--methods"><span class="titlemark" id="x1-100003">3 </span>Methods</h2>
-<h3 class="subsectionHead" id="31--model-writing"><span class="titlemark" id="x1-110003e1">3.1 </span>Model writing</h3>
+<h2 class="sectionHead" id="3-methods"><span class="titlemark" id="x1-100003">3 </span>Methods</h2>
+<h3 class="subsectionHead" id="31-model-writing"><span class="titlemark" id="x1-110003e1">3.1 </span>Model writing</h3>
 <p class="noindent">
   Model writing may have different levels of precision and ambition. Models can be a proof of concept, that is to say the genuine proof that some hypotheses explain a given behavior or even proofs of the theoretical possibility of a
   behavior. Proof of concept do not include a complete proof that the natural phenomenon genuinely behave like the model. On the opposite end of the spectrum, models may aim at quantitative predictions. Usually, it is good practice to
@@ -608,9 +608,9 @@ illustClass:
   Writing a model is similar to the chess game in that the anticipation of all these steps from the beginning helps. The steps that we have described are all required but a central aspect of modeling is to gain a precise intuition of what
   determines the system’s behavior. Once this intuition is gained, it guides the specification of the model at all step. Reciprocally, these steps help to gain such an intuition.
 </p>
-<h3 class="subsectionHead" id="32--model-analysis"><span class="titlemark" id="x1-120003e2">3.2 </span>Model analysis</h3>
+<h3 class="subsectionHead" id="32-model-analysis"><span class="titlemark" id="x1-120003e2">3.2 </span>Model analysis</h3>
 <p class="noindent">In this section, we will not cover all the main ways to analyze model since this subject is far too vast and depends on the mathematical structures used in the models. Instead, we will focus on the outcome of model analyses.</p>
-<h4 class="subsubsectionHead" id="321---analytic-methods"><span class="titlemark" id="x1-130003e2e1">3.2.1 </span>Analytic methods</h4>
+<h4 class="subsubsectionHead" id="321-analytic-methods"><span class="titlemark" id="x1-130003e2e1">3.2.1 </span>Analytic methods</h4>
 <p class="noindent">Analytic methods consist in the mathematical analysis of a model. They should always be preferred to simulations when the model is tractable, even at the cost of using simplifying hypotheses.</p>
 <ul class="itemize1">
   <li class="itemize">
@@ -1051,7 +1051,7 @@ illustClass:
     to explore the validity of models.
   </li>
 </ul>
-<h4 class="subsubsectionHead" id="322--numerical-methods--simulations"><span class="titlemark" id="x1-140003e2e2">3.2.2 </span>Numerical methods – simulations</h4>
+<h4 class="subsubsectionHead" id="322-numerical-methods-simulations"><span class="titlemark" id="x1-140003e2e2">3.2.2 </span>Numerical methods – simulations</h4>
 <p class="noindent">
   Simulations have a major strength and a major weakness. Their strength lies in their ability to handle complicated situations that are not tractable analytically. Their weakness is that each simulation run provides a particular
   trajectory which cannot <span class="cmti-10">a priori </span>be assumed to be representative of the dynamical possibilities of the model.
@@ -1065,7 +1065,7 @@ illustClass:
   simulations and mathematical care is required to ensure that the qualitative features of simulations are feature of the mathematical model and not artifacts of the transposition of the model into a computer program. A subfield of
   mathematics, numerical analysis, is devoted to this issue.
 </p>
-<h4 class="subsubsectionHead" id="323--results"><span class="titlemark" id="x1-150003e2e3">3.2.3 </span>Results</h4>
+<h4 class="subsubsectionHead" id="323-results"><span class="titlemark" id="x1-150003e2e3">3.2.3 </span>Results</h4>
 <p class="noindent">We want to emphasize two points to conclude this section.</p>
 <p class="indent">
   First, it is not sufficient for a model to provide the qualitative or even quantitative behavior expected for this model to be correct. The validation of a model is based on the validation of a process and of the way this process takes
@@ -1078,7 +1078,7 @@ illustClass:
   to perform this kind of analysis [<a href="#x1-1702915">15</a>,<a href="#x1-170074">4</a>] but it can also be performed informally by
   looking at the consequences of the part considered for the rest of the organism.
 </p>
-<h2 class="sectionHead" id="4--notes"><span class="titlemark" id="x1-160004">4 </span>Notes</h2>
+<h2 class="sectionHead" id="4-notes"><span class="titlemark" id="x1-160004">4 </span>Notes</h2>
 <ol class="enumerate1">
   <li class="enumerate" id="x1-16002x1">
     <span id="x1-160011"></span>In biology, behavior usually has an ethological meaning and evolution refers to the theory evolution. In the mathematical context, these words have a broader meaning. They both typically refer to the properties

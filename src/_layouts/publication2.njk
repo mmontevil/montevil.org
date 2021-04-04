@@ -39,7 +39,9 @@ hasSup: hasSup,
   <p> {{pubuttons(item) |safe}}</p>
   </div>
   
-  
+  {% if seeAlso%}
+<p>{{seeAlso.text}} <a href="{% link_to seeAlso.grub %}">{{seeAlso.textLink}}</a>.</p>
+{%endif%}
   
 {% if  noToc %}
 
@@ -64,8 +66,4 @@ hasSup: hasSup,
     {{ content | addAnchor | safe }}
 {% endif %}
 
-{#
- <div class='altmetric-embed' data-badge-type='donut' data-doi="{{bibentry.DOI}}"></div>
 
- <script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js' defer></script>
-#}

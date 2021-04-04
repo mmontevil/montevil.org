@@ -13,17 +13,15 @@ I am a *theoretical biologist* working at the crossroads of experimental biology
 ::: 
 
 
- <ul class=" horizontalFlex">
-          <li><a href="https://twitter.com/{{websiteid.twitter}}" title="Link to my Twitter profile"  rel="me" class="u-url" >{% icon "twitter", "Link to my Twitter profile" %}</a></li>
-          <li><a href="{{websiteid.academia}}" title="Link to my Academia profile"   rel="me" class="u-url">{% icon "academia", "Link to my academia profile" %}</a></li>
-          <li><a href="https://www.researchgate.net/profile/{{websiteid.researchgate}}" title="Link to my Researchgate profile"   rel="me" class="u-url">{% icon "researchgate", "Link to my Researchgate profile" %}</a></li>
-          <li><a href="https://scholar.google.fr/citations?user={{websiteid.scholaruser}}" title="Link to my google scholar profile"    rel="me" class="u-url">{% icon "googlescholar", "Link to my google scholar page" %}</a></li>
-          <li><a href="https://orcid.org/{{websiteid.orcid}}" title="Link to my Orcid profile"   rel="me" class="u-url">{% icon "orcid", "Link to my orcid page" %}</a></li>
-          <li><a href="https://github.com/{{websiteid.github}}" title="Link to my GitHub profile"  rel="me" class="u-url" >{% icon "github", "Link to my GitHub profile" %}</a></li>
-</ul>
 
-<a class="p-name u-url u-uid" href="https://montevil.org">Maël Montévil</a>, <span class="p-honorific-suffix">Ph.D.</span>, <span class="p-locality">Paris</span>, <span class="p-country-name">France</span>
-<a class="u-email" href="mailto:mael.montevil@gmail.com">mael.montevil@gmail.com</a>, <span class="p-nickname">mmontevil</span> (Twitter, Skype,  Github)
+<p>
+<a class="p-name u-url u-uid" href="https://montevil.org">Maël Montévil</a>, <span class="p-honorific-suffix">Ph.D.</span>, <span class="p-locality">Paris</span>, <span class="p-country-name">France</span>. Email: <a class="u-email" href="mailto:mael.montevil@gmail.com">mael.montevil@gmail.com</a>
+</p>
+ <ul class=" horizontalFlex">
+{% for entry in websiteid.sameAs %}
+  <li><a rel="me" href="{{entry.url}}" title="{{entry.alt}}"  class="u-url"  >{% icon entry.icon, entry.alt %}</a></li>
+{% endfor %}
+</ul>
 
 
 

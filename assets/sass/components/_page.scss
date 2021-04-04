@@ -71,9 +71,11 @@ img.page__illustration2 {
 
 }
 svg.mouse { 
-  transform : translateX(-5em) ;
   font-size: 2em;
    margin-bottom: -0.1em;
+   
+   
+  transform : translateX(-5em) ;
 
     animation-name            : displaceContent;
     animation-duration        : 30s;
@@ -81,14 +83,43 @@ svg.mouse {
     animation-fill-mode       : both;
     animation-timing-function: linear;
 }
+svg.cheese {
+  margin-right: -0.6em;
+ 
+  transform : translateX(-5em) ;
+
+    animation-name            : displaceContent2;
+    animation-duration        : 30s;
+    animation-iteration-count : infinite;
+    animation-fill-mode       : both;
+    animation-timing-function: linear;
+}
+
+
+
 @keyframes displaceContent {
     15% { transform :  translateX(-5em) }
-    30%   { transform : translateX(100vw) }
+    30%   { transform : translateX(100vw);
+    }
     65%  {transform :  translateX(100vw) rotateX(180deg) rotateZ(180deg)}
      85% { transform : translateX(-5em)  rotateX(180deg) rotateZ(180deg)}
     /* slide down to make room for advertisements */
 }
-
+@keyframes displaceContent2 {
+    15% { transform :  translateX(-5em);
+      opacity: 0;
+    }
+    30%   { transform : translateX(100vw);
+      opacity: 0;
+    }
+    65%  {transform : translateX(100vw) rotateX(180deg) rotateZ(180deg) scale(0.55,0.55);
+      opacity: 1;
+    }
+     85% { transform :  translateX(-5em)  rotateX(180deg) rotateZ(180deg) scale(0.55,0.55);
+       opacity: 1;
+    }
+    /* slide down to make room for advertisements */
+}
 .fade-2 {   
   --flow-space: var(--gap2);
   //border-width: 0 0 1px;

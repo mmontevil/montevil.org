@@ -1,7 +1,6 @@
 // https://github.com/hankchizljaw/modern-css-reset
 @use '../../node_modules/modern-css-reset/dist/reset';
-
-@use 'global/colors';
+//@use 'global/colors';
 @use 'global/utilities';
 @use 'global/globals';
 @use 'global/accessibility';
@@ -16,14 +15,12 @@
 @use 'components/meta';
 @use 'components/card';
 @use 'components/page';
-@use 'components/tocbutton';
 @use 'components/tweets';
 @use 'components/container';
 @use 'components/toast';
 @use 'components/notification';
 @use 'components/footnotes';
 @use 'components/pubcards';
-@use 'components/pubtext';
 @use 'components/reactions';
 @use 'highlight/_prism-onedark';
 @use 'components/footer';
@@ -44,6 +41,12 @@ html {
     //    scroll-snap-type: y mandatory;
     scroll-padding: 4em;
   }
+  @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+  
 }
 
 html:focus-within {
@@ -650,8 +653,7 @@ article {
   justify-content: center;
  // display: block;
 }
-.hidden,
-.sr-only {
+.hidden{
   display: none;
 }
 .normalStyle {
@@ -689,9 +691,7 @@ h1 + h2,
 h2 + h3,
 h3 + h4,
 h4 + h5,
-h5 + h6 {
-  --flow-space: calc(0.5ex / 0.32);
-}
+h5 + h6,
 ol,
 ul,
 dl,
@@ -701,6 +701,7 @@ li > p,
 dd > p {
   --flow-space: calc(0.5ex / 0.32);
 }
+
 
 article .titleHead {
   @extend h1;
@@ -717,12 +718,6 @@ article .subtitleHead {
   // --flow-space: calc(1ex / 0.42) ;
 }
 
-mjx-mtable {
-  min-width: auto !important;
-}
-mjx-mspace {
-  width: 0 !important;
-}
 
 //.snapper{ scroll-snap-align: start; }
 

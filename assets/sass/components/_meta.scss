@@ -74,3 +74,61 @@ align-items: flex-end;*/
 .publink2, .meta__date,.nobreak, .publinklang2{
   white-space: nowrap;
 }
+
+
+
+
+.publink2 { 
+  a:link,a:visited{
+  color: currentColor;
+  text-decoration-color: currentColor;
+  }
+  svg {stroke: currentColor;}
+  padding-right: 0.2em;
+  color: var(--color-art);
+    a:hover,
+  a:focus {background-color:  var(--color-art);
+    color: var(--color-link-hover);
+  }
+a:active {
+    color: #fff;
+}
+
+}
+.publinklang2 {
+  padding-right: 0.2em;
+}
+
+.publinkchap2 {
+  a:hover,
+  a:focus {background-color: var(--color-chap);
+  }
+  color: var(--color-chap);
+}
+
+.publinkBook2 {  a:hover,
+  a:focus {background-color: var(--color-book);
+  }
+  color: var(--color-book);
+}
+.publinkSoftware2 { a:hover,
+  a:focus {background-color: var(--color-soft);
+  }
+  color: var(--color-soft);
+}
+.publinkCommentary2 {a:hover,
+  a:focus {background-color: var(--color-com);
+  }
+  color: var(--color-com);
+}
+.publinkData2 {a:hover,
+  a:focus {background-color: var(--color-data);
+  }
+     color: var(--color-data);
+}
+
+.pubPeerReview2 {a:hover,
+  a:focus {background-color: var(--color-rev);
+  }
+  color: var(--color-rev);
+}

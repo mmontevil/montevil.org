@@ -44,8 +44,12 @@ const runBeforeHook = (image, document) => {
     }
      if (image.getAttribute('width') === null) {
     image.setAttribute('width', imageDimensions.width);
-     }
     image.setAttribute('height', imageDimensions.height);
+     }else{
+      image.setAttribute('height', 
+Math.round(imageDimensions.height/imageDimensions.width*image.getAttribute('width')));
+    }
+    
     image.setAttribute('src', imageUrl);
   }
   image.dataset.responsiver = image.className;
@@ -77,7 +81,7 @@ const runAfterHook = (image, document) => {
     figCaption.innerHTML =
       (caption ? caption : '') +
       (zoom
-        ? `<p class="zoom ">&#128269; See <a href="${imageUrl}">full size</a></p>`
+        ? `<p class="zoom ">&#128269; See <a href="https://res.cloudinary.com/mmontevil/image/fetch/q_auto,f_auto/${imageUrl}">full size</a></p>`
         : '');
     figure.appendChild(image.cloneNode(true));
     figure.appendChild(figCaption);

@@ -1,5 +1,6 @@
 ---
 layout: content
+css: ["page-text.css"]
 eleventyComputed:
     orderDate: "{{-page.date | attributeDate-}}"
     title: "SAMA documentation - {{title}}"
@@ -22,7 +23,7 @@ See [the article]({% link_to "articles/2016-PMS-Sama-Method-Morphometry" %}).
 :::
 {% endset %}
 {{hop | markdownify | safe }}
-<hr>
+
 
     {#<h1 class="page__title p-name">{{ title | orphans | safe }}</h1>#}
 
@@ -38,7 +39,7 @@ See [the article]({% link_to "articles/2016-PMS-Sama-Method-Morphometry" %}).
     activeKey: eleventyNavigation.key
     }) | safe }}
     </div>
-    
+    <hr>
      <div class="legibilityWidth wrap0all">
   {# <h2>Table of content:</h2>
    {{ content | toc(tags=['h2', 'h3'], wrapperClass='autotoc ') | safe }}

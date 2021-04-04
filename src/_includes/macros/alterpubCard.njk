@@ -1,5 +1,5 @@
     {% from "macros/pubuttons.njk" import pubuttons %}
-   {% from "macros/publabel.njk" import publabel %}
+   {% from "macros/publabel2.njk" import publabel2 %}
 
 {% macro alterpubCard(itemdata) %}
 
@@ -7,7 +7,7 @@
 {% set rid -%}{{-itemdata.title| slug-}}{%-endset%}
 
     {% set aref %}<a href={{itemdata.page.url}}>{{-itemdata.title-}}</a>{%endset%}
-  <li  class="publi"><div  class="wrap"><p >{{publabel(itemdata)|safe}} {% icon "reference", "reference" %} {{ itemdata.bibentry | bibcite2|divRemove| urlize( itemdata.title,itemdata.page.url, itemdata.bibentry.type)|safe}}</p>
+  <li  class="publi"><div  class="wrap"><ul class="inlinemeta" >{{publabel2(itemdata)|safe}}</ul> <p>{% icon "reference", "reference" %} {{ itemdata.bibentry | bibcite2|divRemove| urlize( itemdata.title,itemdata.page.url, itemdata.bibentry.type)|safe}}</p>
   
  <div class="accordion ">{% if not  (itemdata.bibentry.abstract === undefined) %}<input type="checkbox" name="{{itemdata.bibentry.id}}{{rid}}" id="{{-itemdata.bibentry.id-}}{{-rid-}}" >{% endif %}
   <p class="handle">  

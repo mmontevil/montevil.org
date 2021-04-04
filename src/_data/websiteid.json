@@ -13,6 +13,39 @@
         "color":"#691449",
   "url":  "https://montevil.org",
   "source": "https://github.com/mmontevil/montevil.org",
-  "sameAs": ["https://twitter.com/mmontevil", "https://univ-paris1.academia.edu/Ma%C3%ABlMont%C3%A9vil", "https://www.researchgate.net/profile/Mael_Montevil"]
+  "sameAs": [
+  {"url": "https://scholar.social/@mmontevil",
+  "icon": "mastodon",
+  "alt": "Link to my Mastodon profile"
+  },
+  {"url": "https://twitter.com/mmontevil",
+  "icon": "twitter",
+  "alt": "Link to my Twitter profile"
+  },
+      {"url": "https://github.com/mmontevil",
+  "icon": "github",
+  "alt": "Link to my GitHub profile"
+  },
+  {"url": "https://univ-paris1.academia.edu/Ma%C3%ABlMont%C3%A9vil",
+  "icon": "academia",
+  "alt": "Link to my Academia profile"
+  },
+  {"url": "https://www.researchgate.net/profile/Mael_Montevil",
+  "icon": "researchgate",
+  "alt": "Link to my Researchgate profile"
+  },
+  {"url": "https://scholar.google.fr/citations?user=5eOo9hQAAAAJ",
+  "icon": "googlescholar",
+  "alt": "Link to my google scholar profile"
+  },
+    {"url": "https://orcid.org/0000-0001-7177-5995",
+  "icon": "orcid",
+  "alt": "Link to my Orcid profile"
+  },
+    {"url": "https://hal.archives-ouvertes.fr/search/index/?q=%2A&authIdHal_s=mael-montevil",
+  "icon": "hal",
+  "alt": "Link to my HAL profile"
+  }
+  ]
 }
  
