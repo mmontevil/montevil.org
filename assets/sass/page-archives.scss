@@ -17,14 +17,14 @@
 .pubTypes {
   display: flex;
   flex-direction: column;
-  max-height: 12em;
+  max-height: 13em;
 li{
   --flow-space: 0;
   //flex: 1 100%;
 margin-bottom: var(--gap-ms);
  }
- .ais-HierarchicalMenu-item2  {margin-bottom: var(--gap-xxs);}
- li:not(.ais-HierarchicalMenu-item2)+.ais-HierarchicalMenu-item2{margin-top: calc(-1*var(--gap-s));}
+ .ais-HierarchicalMenu-item2  {margin-bottom: var(--gap-xs);}
+ li:not(.ais-HierarchicalMenu-item2)+.ais-HierarchicalMenu-item2{margin-top: calc(-1*var(--gap-xs));}
   .ais-HierarchicalMenu-item2+li:not(.ais-HierarchicalMenu-item2){margin-top: calc(1*var(--gap-xs));}
  flex-wrap: wrap;
 }

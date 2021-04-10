@@ -251,7 +251,7 @@ const typeseter = (content, outputPath) => {
       'mathjax2',
       mathjax2
     );
- 
+ /*
   eleventyConfig.addTransform(`htmlmin`, function (content, outputPath) {
     if (outputPath && outputPath.endsWith(`.html`) && (! outputPath.endsWith(`2011-LM-Biology-Extending-Criticality/index.html`))&& (! outputPath.endsWith(`xtended/index.html`)) ) {
       //console.log(outputPath);
@@ -281,7 +281,7 @@ useShortDoctype: true
     }
     return content;
   });
- 
+ */
  /*
   const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minifier");
 module.exports = (eleventyConfig) => {

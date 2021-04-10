@@ -22,9 +22,9 @@ I am a *theoretical biologist* working at the crossroads of experimental biology
 Contact: 
 * <a class="u-email" href="mailto:mael.montevil@gmail.com">{% icon "mail", "Email" %} mael.montevil@gmail.com</a>. 
 * Also on: <ul class=" horizontalFlex">
-{% for entry in websiteid.sameAs %}
+{%- for entry in websiteid.sameAs -%}
   <li><a rel="me" href="{{entry.url}}" title="{{entry.alt}}"  class="u-url"  >{% icon entry.icon, entry.alt %}</a></li>
-{% endfor %}
+{%- endfor -%}
 </ul>
 
 

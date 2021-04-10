@@ -74,8 +74,11 @@ const runAfterHook = (image, document) => {
       lightbox.appendChild(image.cloneNode(true));
       lightbox.classList.add("glightbox");
       lightbox.setAttribute('href', "https://res.cloudinary.com/mmontevil/image/fetch/q_auto,f_auto/"+imageUrl);
+      lightbox.setAttribute('aria-label','Full size');
+
       if (image.classList.contains('darkFilter')){
         lightbox.setAttribute('data-lightbox-classes','darkFilter');
+
       }
       let count=0;
       let temp=image.nextSibling ;

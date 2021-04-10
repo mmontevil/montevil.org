@@ -65,7 +65,30 @@ css: ["page-archives.css"]
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css"></noscript>
 
-<script  src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js" defer></script>
+<script  src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js" async onload="
+algoliasearchNetlify({
+    appId: 'FWO1TXJD82',
+    apiKey: '441877879034955305bd5bbcf16a8f15',
+    siteId: '9cdc232a-b341-4608-a689-551b0bcecc7b',
+    branch: 'master',
+    selector: 'div#search', 
+    hitsPerPage: 5, openOnFocus: true,
+    theme: {
+    mark: 'var(--color-emph)',                               // Color of the matching content
+    background: 'var(--color-bg)',                      // Background Color of the input and the panel
+    selected: 'var(--color-primary-lighter-7)',                        // Background Color of the selected item
+    text: 'var(--color-primary-darker-5)',                            // Color of the title of the items
+    colorSourceIcon: 'var(--color-darkgrey)'                 // Color of the icon on the left of results
+  }
+  });
+    let label=document.getElementsByClassName('aa-Autocomplete')[0];
+  label.removeAttribute('role');
+  label.removeAttribute('aria-labelledby');
+  "
+
+>
+
+</script>
 
 <style>
 .aa-Item > a:hover {background-color: transparent;}
@@ -92,29 +115,7 @@ li.aa-Item div.aa-ItemDescription{color: var(--color-primary-darker-1);}
  --color-source-icon: var(--color-primary)!important;
  }.aa-ItemDescription,.aa-ItemHierarchy{font-size: var(--font-size-s)!important;line-height: 1.5!important;}.aa-ItemTitle,.aa-Input,.aa-SubmitButton{font-size: var(--font-size-m)!important;line-height: 1.5!important;}.aa-Item,.aa-ItemDescription,.aa-ItemTitle{  padding-bottom: 0.2em!important;}.aa-Autocomplete{--color-input-icon: var(--color-darkgrey);}.aa-ItemIcon{margin-right: 0.5em!important;}.aa-SubmitIcon{width: auto!important;}
 </style>
-<script >
 
-window.onload = function () {
-  algoliasearchNetlify({
-    appId: 'FWO1TXJD82',
-    apiKey: '441877879034955305bd5bbcf16a8f15',
-    siteId: '9cdc232a-b341-4608-a689-551b0bcecc7b',
-    branch: 'master',
-    selector: 'div#search', 
-    hitsPerPage: 5, openOnFocus: true,
-    theme: {
-    mark: 'var(--color-emph)',                               // Color of the matching content
-    background: 'var(--color-bg)',                      // Background Color of the input and the panel
-    selected: 'var(--color-primary-lighter-7)',                        // Background Color of the selected item
-    text: 'var(--color-primary-darker-5)',                            // Color of the title of the items
-    colorSourceIcon: 'var(--color-darkgrey)'                 // Color of the icon on the left of results
-  }
-  });
-  let label=document.getElementsByClassName("aa-Autocomplete")[0];
-  label.removeAttribute("role");
-  label.removeAttribute("aria-labelledby");
-  }
-</script>
 <div id="search" class="wrap" style="height:32px;"> </div> 
 
       

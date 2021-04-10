@@ -692,6 +692,10 @@ annytab.lightbox = (function () {
     // Reset variables to default values
     function resetVariables(lb)
     {
+        lb.image0 = null;
+        lb.wrapper = null;
+        lb.padding = null;
+
         lb.current_slide = null;
         lb.last_slide = null;
         lb.container = null;
@@ -877,9 +881,9 @@ annytab.lightbox = (function () {
         // Get references
                         this.padding = this.container.querySelector('.annytab-lightbox-padding');
 
-       /*         this.margin = this.container.querySelector('.annytab-lightbox-margin');
+                this.margin = this.container.querySelector('.annytab-lightbox-margin');
 this.image0 = this.container.querySelector('.annytab-lightbox-image');
-        this.wrapper = this.container.querySelector('.annytab-lightbox-wrapper');*/
+        this.wrapper = this.container.querySelector('.annytab-lightbox-wrapper');
         this.close_button = this.container.querySelector('.annytab-lightbox-close');
                 this.zoom_button = this.container.querySelector('.annytab-lightbox-zoom');
         this.caption_container = this.container.querySelector('.annytab-lightbox-caption');
