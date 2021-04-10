@@ -3,7 +3,7 @@
     {# <span class="signature"><span title="Maël">M</span><span title=" Montévil">M</span></span> #}
     <ul class="menu" >
       <li class="navigation__home{% if page.url == '/' %} current" aria-current="page{% endif %}">
-        <a href="/">home</a>
+        <a href="/">Home</a>
       </li>
       {% for type in[
       'publications',
@@ -25,7 +25,7 @@
         {% endif %}
         
         <li class="navigation__{{ type }}{% if url in page.url %} current" aria-current="page{% endif %}">
-          <a href="{{ url }}">{{ type }}</a>
+          <a href="{{ url }}">{{ type |title}}</a>
         </li>
       {% endfor %}
      
@@ -37,7 +37,7 @@
         </li>
         {% endif %}
       <li class="tools__search navigation_archives{% if 'archives' in page.url %} current" aria-current="page{% endif %}">
-        <a href="/all/archives/">{% icon "search", "Search" %} archives</a>
+        <a href="/all/archives/">{% icon "search", "Search" %} Archives</a>
       </li>
       <li class="tools__search">
       <div class="theme-switch-wrapper">

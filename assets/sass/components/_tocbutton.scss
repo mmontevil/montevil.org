@@ -15,16 +15,18 @@
     var(--color-primary-lighter-7) 100%
   );
   overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.25s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  transition-property: all;
+  transition: 0.35s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
   overflow-y: scroll;
   overscroll-behavior: contain;
+  --flow-space: 0;
 }
 
 /* Position the content inside the overlay */
 .overlay-content {
   scroll-margin-top: 5rem;
   position: relative;
-  top: 1.5em; /* 25% from the top */
+  top: var(--gap-l); /* 25% from the top */
   width: 100%; /* 100% width */
   margin-top: 3em; /* 30px top margin to avoid conflict with the close button on smaller screens */
   margin-bottom: 10em;
@@ -33,16 +35,16 @@
 .buttonInToc {
   svg {
     vertical-align: middle;
-    font-size: 1em;
+    font-size: var(--gap-m);
     fill: currentColor;
   }
-  margin-bottom: -0.5em;
+  margin-bottom: calc(-1*var(--gap-xs));
 }
 
 .onclickbutton {
   svg {
     vertical-align: middle;
-    font-size: 1em;
+    font-size: var(--gap-m);
     stroke: currentColor;
     stroke-width: 2px;
     stroke-linecap: round;
@@ -93,23 +95,23 @@
   }
 }
 
-.autotoc > ol > li {
+.autotoc  .tocLevel1{
   //font-variant: small-caps;
   font-size: var(--font-size-l);
   font-weight: 700;
   color: var(--color-primary-darker-2);
 }
-.autotoc > ol > li > ol > li {
+.autotoc .tocLevel2 {
   font-size: var(--font-size-l);
   font-weight: 500;
   color: var(--color-primary);
 }
-.autotoc > ol > li > ol > li > ol > li {
+.autotoc .tocLevel3 {
   font-size: var(--font-size-m);
   color: var(--color-primary-lighter-2);
   font-weight: 400;
 }
-.autotoc > ol > li > ol > li > ol > li > ol > li {
+.autotoc .tocLevel4 {
   font-style: italic;
   color: var(--color-primary-lighter-2);
   font-size: var(--font-size-s);
@@ -122,14 +124,14 @@
     padding: 0em;
   }
   li {
-    text-indent: -1em;
-    padding-left: 1em;
+    text-indent: calc(-1*var(--gap-m));
+    padding-left: var(--gap-m);
   }
   li {
-    --flow-space: calc(0.35ex / 0.32);
+    --flow-space: var(--gap-xs);
   }
   li:first-child {
-    --flow-space: calc(0.15ex / 0.32);
+    --flow-space: var(--gap-xxs);
   }
 }
 /*
@@ -140,18 +142,19 @@
 */
 
 .tocCenter {
-  li {
-    --flow-space: 0.4em;
+  li {list-style-type: none;
+    --flow-space: var(--gap-xs);
     // margin-bottom : 0.5em!important;
-    margin-left: 0.4em;
-
-    li:before {
+    margin-left: var(--gap-xs);
+}
+   
+  .tocLevel2{
+      font-style: italic;
+  }
+   .tocLevel2:before {
       content: '· ';
     }
-    li {
-      font-style: italic;
-    }
-  }
+   .tocLevel2:first-child{--flow-space: var(--gap-xs);}
   ol {
     display: flex;
     flex-wrap: wrap;
@@ -163,13 +166,13 @@
 
 .tocCenter2 {
   ol {
-    --flow-space: 0.4em;
+    --flow-space: var(--gap-xs);
     display: flex;
     flex-wrap: wrap;
   }
   li,
-  li:first-child {
-    --flow-space: 0.4em;
-    margin-left: 1em;
+  li:first-child {list-style-type: none;
+    --flow-space: var(--gap-xs);
+    margin-left: var(--gap-m);
   }
 }

@@ -6,14 +6,16 @@
 }
 .figure {
   text-align: center;
+  figcaption{margin-top: var(--gap-l); }
 }
 
 .picgrid,
 .picgrid3 {
   align-items: end;
   display: grid;
-  grid-gap: 0.5em;
+  grid-gap: var(--gap-4xs);
   grid-template-columns: 1fr;
+  figcaption{margin-top: 0;}
 }
 
 .picgrid {
@@ -76,12 +78,7 @@
   }
 }
 
-.sectionHeadList {
-  margin-top: 1em;
-  margin-bottom: 0em;
-  text-align: center;
-  font-size: var(--font-size-xxxxl);
-}
+
 
 .legibilityWidth {
   width: calc(30 * var(--font-size-m));
@@ -105,11 +102,11 @@
     --temp: calc(50% - 50vw + 2em);
     --tempb: calc(max(-2em, var(--temp)));
     margin-left: calc(min(var(--tempb), 0em));
-    padding-left: 1em;
-    text-indent: -1em;
+    padding-left: var(--gap-m);
+    text-indent: calc(-1*var(--gap-m));
   }
   .foonoteHead {
-    margin-left: 1em;
+    margin-left: var(--gap-m);
     padding-left: 0;
     text-indent: 0;
   }
@@ -142,7 +139,7 @@
     @extend %flow;
   }
   dl dd {
-    margin-left: 1.5em;
+    margin-left: var(--gap-l);
     --flow-space: 0;
   }
 }
@@ -215,20 +212,18 @@ dt.description {
     --flow-space: var(--gap3);
   }
   & + .subtitleHead {
-    --flow-space: 0.5em;
+    --flow-space: var(--gap-s);
   }
 }
 .subtitleHead {
   & + * {
-    --flow-space: var(--gap3);
+    --flow-space: var(--gap-xxl);
   }
 }
 
 //.head{margin-bottom: 2em;}
 
-nav > ul,
-nav > ul > li > ul,
-nav > ul > li > ul > li > ul,
+
 .references,
 .autotoc ol {
   list-style-type: none;
@@ -247,7 +242,7 @@ nav > ul > li > ul > li > ul,
 }
 
 .quote {
-  padding-left: 1.5em;
+  padding-left: var(--gap-l);
   font-size: var(--font-size-s);
 }
 
@@ -263,8 +258,8 @@ nav > ul > li > ul > li > ul,
 .thebibliography > p,
 .thebibliography > div,
 .references__item {
-  text-indent: -1.5em;
-  padding-left: 1.5em;
+  text-indent: calc(-1*var(--gap-l));
+  padding-left: var(--gap-l);
   font-size: var(--font-size-s);
 }
 
@@ -277,21 +272,23 @@ nav > ul > li > ul > li > ul,
   text-indent: 0em;
 }
 
-.footnotes > * {
-  margin-top: 0.5em;
+.footnotes {
+  @extend %flowall;
+ &>*{  --flow-space: var(--gap-s);}
+
 }
 
 h2.abstract,
 h3.abstract {
-  font-variant: normal;
-  margin-bottom: 0.25em;
+ // font-variant: normal;
+//  margin-bottom: var(--gap-3xs);
   font-weight: 600;
 }
 .keywords,
 .paragraphHead {
   font-weight: 600;
   font-style: italic;
-  margin-bottom: 0.25em;
+  margin-bottom: var(--gap-xs);
 }
 .paragraphHead2,
 .id {
@@ -309,7 +306,9 @@ h3.abstract {
   text-align: center;
   font-size: var(--font-size-s);
 }
-
+.authors +.affiliation {
+  --flow-space: var(--gap-s);
+}
 .maketitle,
 div.abstract,
 .head {
@@ -317,19 +316,22 @@ div.abstract,
 }
 
 .affiliation + .affiliation {
-  --flow-space: calc(0.2ex / 0.32);
+  --flow-space: var(--gap-xs);
 }
 
 #toc-site {
-  margin-top: 0.5em;
+  margin-top: var(--gap-xs);
 }
 
 .Tableau10 td,
 .Tableau10 th,
 .Tableau11 td,
 .Tableau11 th {
+  margin-left: auto;
+  margin-right: auto;
   border: none;
 }
+
 
 table.equation, table.equation-star, .legibilityWidth   mjx-container[jax="CHTML"][display="true"]{
    --temp: calc(50% - 50vw +30px);
@@ -340,9 +342,12 @@ table.equation, table.equation-star, .legibilityWidth   mjx-container[jax="CHTML
   overflow-x: auto;
   display: block;
 }
-.legibilityWidth  .equation  mjx-container[jax="CHTML"][display="true"]{
-   --temp: 0;
-    --tempb: 0;
+
+.legibilityWidth  .equation  mjx-container[jax="CHTML"][display="true"],
+ .legibilityWidth  .Tableau10  mjx-container[jax="CHTML"][display="true"]{
+   margin-left: 0;
+    margin-right: 0;
+    display: inline;
 }
 
   table.equation, table.equation-star{

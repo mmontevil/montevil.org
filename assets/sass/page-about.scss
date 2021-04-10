@@ -1,5 +1,8 @@
+@use 'components/pubcards';
+
+
 ul.snake {
-  --flow-space: var(--gap);
+  --flow-space: var(--gap-m);
   padding: 0;
 }
 
@@ -17,12 +20,12 @@ ul.snake {
   border-image-slice: 1;
   border-width: 3px;
   margin: 0;
-  padding: 3em;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  padding: var(--gap-xl);
+  padding-left: var(--gap-l);
+  padding-right: var(--gap-l);
   @media (min-width: 40rem) {
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: var(--gap-xl);
+    padding-right: var(--gap-xl);
   }
 
   position: relative;
@@ -34,8 +37,8 @@ ul.snake {
     position: absolute;
     border-radius: 50%;
     padding: 0em;
-    height: 1.5em;
-    width: 3em;
+    height: var(--gap-l);
+    width: var(--gap-xxl);
     background-color: var(--color-primary-darker-4);
     text-align: center;
     color: var(--color-primary-lighter-8);
@@ -47,23 +50,23 @@ ul.snake {
 .snake li:not(.nosnake):nth-child(odd) {
   border-right: 3px solid;
   padding-left: 0;
-
+border-left: 0;
   &:before {
     top: 100%;
     // margin-left: -0.7em;
     left: 25%;
-    margin-top: -0.7em;
+    margin-top: calc(-1*var(--gap-s));
   }
 }
 //even number borders
 .snake li:not(.nosnake):nth-child(even) {
   border-left: 3px solid;
   padding-right: 0;
-
+border-right: 0;
   &:before {
     top: 100%;
     left: 65%;
-    margin-top: -0.7em;
+    margin-top: calc(-1*var(--gap-s));
   }
 }
 //handle first and last
@@ -71,19 +74,38 @@ ul.snake {
   border-top: 0;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
+  padding-top: 0;
   &:after {
     content: ' ';
     position: absolute;
     border-radius: 0%;
-    height: 0.75em;
-    width: 0.75em;
+    height: var(--gap-s);
+    width: var(--gap-s);
     background-color: #691449;
-    margin-left: -0.35em;
+    margin-left: calc(-0.4*var(--gap-s));
     z-index: 1;
     top: 0%;
     left: 100%;
     transform: rotate(45deg);
   }
+}
+
+.horizontalFlex{
+  font-size: var(--font-size-l);
+      list-style: none;
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+     // justify-content: space-evenly;
+      flex-wrap: wrap;
+        padding: 0;
+        padding-inline-start: 0;
+      margin-top: 0; 
+      margin-bottom: 0;
+      margin-left: var(--gap-l);
+     gap : var(--gap-m); 
+     li{--flow-space: 0;}
+      a{padding-bottom: var(--gap-3xs);}
 }
 
 .snake li:not(.nosnake):last-child {

@@ -21,18 +21,16 @@
   --skew-padding: calc(max(var(--width),1000px) * var(--magic-number));
   //--clip-padding: calc(var(--full-width) * var(--magic-number));
 
-  --gap: 1rem;
-  --gap2: calc(2 * var(--gap));
-  --gap3: calc(3 * var(--gap));
 
-  --flow-space: 1em;
+
+  --flow-space: var(--gap-m);
 
   // --font-family-serif: NotoSerif, Georgia, 'Times New Roman', Times, serif;
   --font-family-serif: 'Caslon Pro', Caslon, 'Liberation Serif', 'Crimson Pro',
     Georgia, 'Times New Roman', Times, serif;
 
-  --font-family-sans-serif: 'Liberation Sans', 'Myriad Pro', ClassicSans,
-    'Proxima Nova', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+  --font-family-sans-serif:   'Proxima Nova', ClassicSans, 'Myriad Pro',  Roboto, 'Liberation Sans',
+     'Segoe UI', Oxygen, Ubuntu, Cantarell, 
     'Helvetica Neue', sans-serif;
 
   // --font-family-monospace: 'Fira Code', 'Courier New', Courier, monospace;
@@ -48,15 +46,41 @@
     calc(var(--font-size-base) + var(--font-size-responsive)),
     1.5rem
   );
-
-  --font-size-s: calc(var(--font-size-m) / var(--font-size-scale));
+  
   --font-size-xs: calc(var(--font-size-s) / var(--font-size-scale));
+  --font-size-s: calc(var(--font-size-m) / var(--font-size-scale));
   --font-size-l: calc(var(--font-size-m) * var(--font-size-scale));
   --font-size-xl: calc(var(--font-size-l) * var(--font-size-scale));
   --font-size-xxl: calc(var(--font-size-xl) * var(--font-size-scale));
   --font-size-xxxl: calc(var(--font-size-xxl) * var(--font-size-scale));
   --font-size-xxxxl: calc(var(--font-size-xxxl) * var(--font-size-scale));
 
+  --gap-scale: 1.5;
+  
+--gap-5xs: calc(var(--gap-4xs) / var(--gap-scale));//0.087
+  --gap-4xs: calc(var(--gap-3xs) / var(--gap-scale));//0.13
+   --gap-3xs: calc(var(--gap-xxs) / var(--gap-scale));//0.2
+  --gap-xxs: calc(var(--gap-xs) / var(--gap-scale)); //0.3
+  --gap-xs: calc(var(--gap-s) / var(--gap-scale)); //0.44
+  --gap-s: calc(var(--gap-m) / var(--gap-scale)); //0.66
+  --gap-ms: calc(var(--gap-m) / 1.22); //0.82
+  --gap-m: 1em;
+    --gap-ml: calc(var(--gap-m) * 1.22); //1.22
+  --gap-l: calc(var(--gap-m) * var(--gap-scale)); //1.5
+ --gap-xl: calc(var(--gap-l) * var(--gap-scale)); //2.25 
+  --gap-xxl: calc(var(--gap-xl) * var(--gap-scale)); //3.33
+    --gap-3xl: calc(var(--gap-xxl) * var(--gap-scale)); //3.33
+        --gap-4xl: calc(var(--gap-3xl) * var(--gap-scale)); //3.33
+
+/*    --gap: 1rem;
+  --gap2: calc(2 * var(--gap));
+  --gap3: calc(3 * var(--gap));
+  */
+  //--gap-3xl: calc(var(--gap-xxl) * var(--font-size-scale));//2.8
+  //--gap-4xl: calc(var(--gap-3xl) * var(--font-size-scale));//3.7
+  //--gap-5xl: calc(var(--gap-4xl) * var(--font-size-scale));
+
+  
   // --layout-max: calc(50 * var(--font-size-m));
   --layout-max: 60rem;
 
@@ -105,7 +129,7 @@
   --color-meta: #4c4c4c;
   --color-meta-decoration: #af0000;
 
-  --color-yellow-light: hsl(59, 100%, 88%);
+  --color-yellow-light: hsl(171, 68%, 70%);//hsl(59, 100%, 88%);
   --color-emph: #35d540;
   --border-width: 0.15em;
   --color-accord: var(--color-primary-lighter-4);
@@ -147,6 +171,8 @@
   .noDarkFilter {
     filter: none;
   }
+  a:hover .darkFilterT{filter:  hue-rotate(180deg) invert(100%);}
+    
   --soft-shadow: rgba(0, 0, 0, 0.05);
 }
 
@@ -240,7 +266,7 @@
   --inline-code-text-color: #abb2bf;
   --color-grad: 0%;
 
-  img,
+  .darkFilter,
   .invertwrapper{
     filter: hue-rotate(180deg) invert(100%);
   }
@@ -256,4 +282,7 @@
   .tweet-images > img {
     filter: none;
   }
+  a:hover .darkFilterT{filter: none;}
 }
+
+

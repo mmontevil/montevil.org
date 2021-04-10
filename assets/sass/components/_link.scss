@@ -1,8 +1,8 @@
 @use '../global/colors';
 
 .page .link__url {
-  margin-top: var(--gap2);
-  margin-bottom: var(--gap2);
+  margin-top: var(--gap-xl);
+  margin-bottom: var(--gap-xl);
   font-size: var(--font-size-xxl);
 
   a {

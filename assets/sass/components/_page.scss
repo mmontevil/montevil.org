@@ -20,9 +20,10 @@
   }
 }
 .page__subtitle {
-  --flow-space: 0.5em;
+  --flow-space: var(--gap-xs);
   color: var(--color-primary);
-  font-size: var(--font-size-l);
+  font-size: var(--font-size-xxl);
+  font-style: italic;
   margin-top: 0;
   & + * {
     --flow-space: 0em;
@@ -35,7 +36,7 @@
   @media (min-width: 40em) {
     float: right;
     max-width: 40%;
-    margin: 0 0 1em 1em;
+    margin: 0 0 var(--gap-m) var(--gap-m);
   }
 }
 
@@ -57,77 +58,13 @@ img.page__illustration2 {
 .page__body {
   @extend %flowall;
 
-  margin-top: var(--gap2);
+  margin-top: var(--gap-l);
 
   & > * {
-    --flow-space: var(--gap3);
+    --flow-space: var(--gap-l);
   }
 }
 .page__title + .page__meta {
-  --flow-space: 0.5em;
-}
-.mousewrap{overflow: hidden;
-  margin-bottom: calc(-1*var(--gap2) - 0.3em);
-
-}
-svg.mouse { 
-  font-size: 2em;
-   margin-bottom: -0.1em;
-   
-   
-  transform : translateX(-5em) ;
-
-    animation-name            : displaceContent;
-    animation-duration        : 30s;
-    animation-iteration-count : infinite;
-    animation-fill-mode       : both;
-    animation-timing-function: linear;
-}
-svg.cheese {
-  margin-right: -0.6em;
- 
-  transform : translateX(-5em) ;
-
-    animation-name            : displaceContent2;
-    animation-duration        : 30s;
-    animation-iteration-count : infinite;
-    animation-fill-mode       : both;
-    animation-timing-function: linear;
+  --flow-space: var(--gap-xs);
 }
 
-
-
-@keyframes displaceContent {
-    15% { transform :  translateX(-5em) }
-    30%   { transform : translateX(100vw);
-    }
-    65%  {transform :  translateX(100vw) rotateX(180deg) rotateZ(180deg)}
-     85% { transform : translateX(-5em)  rotateX(180deg) rotateZ(180deg)}
-    /* slide down to make room for advertisements */
-}
-@keyframes displaceContent2 {
-    15% { transform :  translateX(-5em);
-      opacity: 0;
-    }
-    30%   { transform : translateX(100vw);
-      opacity: 0;
-    }
-    65%  {transform : translateX(100vw) rotateX(180deg) rotateZ(180deg) scale(0.55,0.55);
-      opacity: 1;
-    }
-     85% { transform :  translateX(-5em)  rotateX(180deg) rotateZ(180deg) scale(0.55,0.55);
-       opacity: 1;
-    }
-    /* slide down to make room for advertisements */
-}
-.fade-2 {   
-  --flow-space: var(--gap2);
-  //border-width: 0 0 1px;
-  //  border-style: solid;
-  color: var(--color-primary);
- background-image: linear-gradient(to right, rgba(var(--color-primary-rgb), 0), rgba(var(--color-primary-rgb), 1),rgba(var(--color-primary-rgb), 0)); 
- border: 0;
- height: 2px;
-
-     // box-shadow: 0 0 10px 1px black;
-}

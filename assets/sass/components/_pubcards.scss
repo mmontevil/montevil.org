@@ -2,18 +2,18 @@
   // white-space:nowrap;
 
   display: inline-table;
-  padding: 0.12em 0.2em;
-  margin: 0.1em;
-  margin-bottom: 0.2em;
+  margin: var(--gap-4xs);
+  margin-bottom: var(--gap-3xs);
 
   padding-top: 0em;
   border: 1px solid var(--color-primary-lighter-5);
-  border-radius: 0.5em;
+  border-radius: var(--gap-xs);
   color: var(--color-link);
   // background-color: var(--color-primary-lighter-8);
   box-shadow: 0 1px 2px var(--soft-shadow), 0 2px 4px var(--soft-shadow),
     0 4px 8px var(--soft-shadow);
-
+    
+  &:link, &:visited{padding: var(--gap-5xs) var(--gap-xs);}
   &:hover,
   &:focus {
     background-color: var(--color-link-hover-bg);
@@ -100,43 +100,62 @@
   display: none;
   overflow-y: hidden;
   height: 0;
-  transition: height 0.3s ease;
+ // transition: height 3s ease;
   box-shadow: 0 1px 2px var(--soft-shadow), 0 2px 4px var(--soft-shadow),
     0 4px 8px var(--soft-shadow), 0 8px 16px var(--soft-shadow);
+   // transition-property: all;
+  //transition: 5s
+    opacity: 0;
+     animation: fade_in_show 0.7s
 }
+
+@keyframes fade_in_show {
+     0% {
+          opacity: 0
+     }
+
+     100% {
+          opacity: 1
+     }
+}
+
 
 .accordion > input[type='checkbox']:checked ~ .content {
   height: auto;
   overflow: visible;
   display: block;
+      opacity: 1;
+
 }
 
 .accordion label {
   display: inline-block;
   border: 1px solid var(--color-accord);
-  border-radius: 0.5em;
+  border-radius: var(--gap-xs);
   box-shadow: 0 1px 2px var(--soft-shadow), 0 2px 4px var(--soft-shadow),
     0 4px 8px var(--soft-shadow);
   z-index: 0;
 }
 
 .accordion {
-  margin-top: 0.1em !important;
-  margin-bottom: 0em;
+  --flow-space: var(--gap-s);
+ // margin-top: var(--gap-4xs) !important;
+  //margin-bottom: 0em;
+   
 }
 
 .accordion > input[type='checkbox']:checked ~ .content {
-  padding: 0.25em;
+  padding: var(--gap-3xs);
   border: 1px solid var(--color-accord);
-  border-radius: 0.5em;
+  border-radius: var(--gap-xs);
   border-top-left-radius: 0em;
   border-top-left-radius: 0em;
   margin-left: 0em;
   margin-right: 0em;
   max-width: 32em;
   @media (min-width: 33em) {
-    padding: 0.5em;
-    margin-left: 0.25em;
+    padding: var(--gap-xs);
+    margin-left: var(--gap-3xs);
   }
   //margin-right: calc(0.5*100% - 0.5*30em);
   //   }
@@ -151,13 +170,17 @@
 
 .accordion > input[type='checkbox']:checked ~ .handle label {
   border-bottom-right-radius: 0em;
-  border-bottom-left-radius: 0em;
+  border-bottom-left-radius: 0.3em;
+  padding-bottom: var(--gap-xs);
 }
 
 .accordion label {
-  margin-top: 0.2em;
+//  margin-top: var(--gap-5xs);
   cursor: pointer;
-  padding: 0.25em;
+  padding: var(--gap-xs);
+  padding-top: var(--gap-5xs);
+  padding-bottom: var(--gap-5xs);
+
   // background: rgba(230,230,230,0.5);
   // padding-left: 1.3em;
 }
@@ -173,7 +196,7 @@
 }
 
 .content > p:nth-child(2) {
-  margin-top: 0.5em;
+  margin-top: var(--gap-xs);
 }
 
 .accordion label:hover,
@@ -182,3 +205,10 @@
   background-color: var(--color-link-hover-bg);
 }
 .inlinemeta{padding: 0;}
+.paragraphHead2{
+  font-weight: bold;
+  color: var(--color-primary);
+}
+h4, h5{
+  color: var(--color-primary);
+}

@@ -2,8 +2,8 @@
 
 .notification {
   display: flex;
-  font-size: 1.2rem;
-  padding: 0.4em 0.7em;
+  font-size: var(--gap-ml);
+  padding: var(--gap-xs) var(--gap-s);
 
   background-color: #ccc;
   color: #222;
@@ -28,10 +28,10 @@
 }
 
 .notification__icon {
-  font-size: 1.8em;
-  width: 1em;
-  height: 1em;
-  margin: 0 0.3em 0 0;
+  font-size: var(--gap-l);
+  width: var(--gap-m);
+  height: var(--gap-m);
+  margin: 0 var(--gap-xxs) 0 0;
   fill: currentColor;
   vertical-align: middle;
 }

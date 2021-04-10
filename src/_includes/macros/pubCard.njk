@@ -42,21 +42,26 @@
     <p class="card__body p-summary">  {{article.data.excerpt}}   </p> 
     {%elif article.data.abstract%}
      <p class="card__body p-summary">  {{article.data.abstract | truncate(300)}}   </p> 
-    
+ 
 {% endif %}
-  
-  
+  {#  <details class="card__body p-summary">  <summary>Abstract</summary>
+    {{article.data.abstract }}
+    </details> 
+  <details > <summary  class="buttonlink">Citation   </summary>  
+  {% icon "reference", "reference" %}
+{{ article.data.bibentry | bibcite2| urlize( article.data.title,article.data.page.url, article.data.bibentry.type)|divRemove|safe}} </details> #}
 
 
 
  <div class="accordion">
   <input type="checkbox" name="{{-article.data.bibentry.id-}}{{-rid-}}" id="{{-article.data.bibentry.id-}}{{-rid-}}" >
   <p class="handle">
-   <span  class="smalltext">{{pubuttons(article.data) |safe}}</span> 
+    
    <label for="{{-article.data.bibentry.id-}}{{-rid-}}" class="smalltext"><span class="abssvg folded">{% icon "chevronRight", "Link" %}</span><span class="abssvg unfolded">{% icon "chevronDown", "Link" %}</span>
    {% if not  (article.data.bibentry.abstract === undefined) %}Abstract & 
    {% endif %} Citation
    </label>
+   <span  class="smalltext">{{pubuttons(article.data) |safe}}</span>
   </p>
   <div class="content wrap">
   

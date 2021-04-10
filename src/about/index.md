@@ -13,11 +13,15 @@ I am a *theoretical biologist* working at the crossroads of experimental biology
 ::: 
 
 
+# Basic informations
 
 <p>
-<a class="p-name u-url u-uid" href="https://montevil.org">Maël Montévil</a>, <span class="p-honorific-suffix">Ph.D.</span>, <span class="p-locality">Paris</span>, <span class="p-country-name">France</span>. Email: <a class="u-email" href="mailto:mael.montevil@gmail.com">mael.montevil@gmail.com</a>
+<a class="p-name u-url u-uid" href="https://montevil.org">Maël Montévil</a>, <span class="p-honorific-suffix">Ph.D.</span>, <span class="p-locality">Paris</span>, <span class="p-country-name">France</span>. 
 </p>
- <ul class=" horizontalFlex">
+
+Contact: 
+* <a class="u-email" href="mailto:mael.montevil@gmail.com">{% icon "mail", "Email" %} mael.montevil@gmail.com</a>. 
+* Also on: <ul class=" horizontalFlex">
 {% for entry in websiteid.sameAs %}
   <li><a rel="me" href="{{entry.url}}" title="{{entry.alt}}"  class="u-url"  >{% icon entry.icon, entry.alt %}</a></li>
 {% endfor %}
@@ -25,29 +29,31 @@ I am a *theoretical biologist* working at the crossroads of experimental biology
 
 
 
-
 Affiliation: 
- [IHSPT](https://www.ihpst.cnrs.fr/){.p-org}{.h-card}, [Université Paris I Panthéon Sorbonne](https://www.pantheonsorbonne.fr/){.p-org}{.h-card}
- [Institut de Recherche et d'Innovation](https://www.iri.centrepompidou.fr/){.p-org}{.h-card}
+* [IHSPT](https://www.ihpst.cnrs.fr/){.p-org}{.h-card}, [Université Paris I Panthéon Sorbonne](https://www.pantheonsorbonne.fr/){.p-org}{.h-card}
+* [Institut de Recherche et d'Innovation](https://www.iri.centrepompidou.fr/){.p-org}{.h-card}
+
+
+Downloadable  <a class="" href=/assets/pdf/cv_Montevil_2019_en.pdf >CV{% icon "pdf", "pdf" %}</a>.
+
 
 
 </div>
 
-{%set links%}
-<div style="--flow-space: 1em;">
-<a  class="buttonlink" href=/assets/pdf/publications_Montevil2-en.pdf >{% icon "pdf", "pdf" %}  Publications </a>
-<a class="buttonlink" href=/assets/pdf/cv_Montevil_2019_en.pdf >{% icon "pdf", "pdf" %}  CV </a>
-<a class="buttonlink" href=/assets/bib/bibM.bib >{% icon "bib", "bib" %}  Publication references </a>
-</div>
-{% endset %}
+
 
 <section class="wrap">
 
 # Publications
 
+{%set links%}
+<div style="--flow-space: 1em;">
+<a  class="buttonlink" href=/assets/pdf/publications_Montevil2-en.pdf >{% icon "pdf", "pdf" %}  Publications </a>
+<a class="buttonlink" href=/assets/bib/bibM.bib >{% icon "bib", "bib" %}  Publication references </a>
+</div>
+{% endset %}
 
-
-You may have a look at my [list of publications](/publications/publicationsbyType/) on this site or on a [thematic map of my publications]({% link_to "map" %}).
+You may have a look at my [list of publications](/publications/publicationsbyType/)  or on a [thematic map of my publications]({% link_to "map" %}). You may also download my publication list formatted in pdf or in bibtex format.
 
 {{links|safe}}
 </section>
@@ -55,6 +61,9 @@ You may have a look at my [list of publications](/publications/publicationsbyTyp
 <section class="wrap">
 
 # Short CV
+
+Downloadable   <a class="" href=/assets/pdf/cv_Montevil_2019_en.pdf >long CV{% icon "pdf", "pdf" %}</a>.
+
 
 * I am currently a researcher at {data-date="2018"}
     * ![Paris 1 logo](/assets/logos/paris1.svg){.onethird}{.right}[IHSPT](https://www.ihpst.cnrs.fr/){.p-org}{.h-card}, [Université Paris I Panthéon Sorbonne](https://www.pantheonsorbonne.fr/){.p-org}{.h-card}, with a grant of the [Cogito Foundation](https://www.cogitofoundation.ch/en/home){.p-org}{.h-card}: "Understanding the Anthropocene: towards a philosophy of biological disruptions." 

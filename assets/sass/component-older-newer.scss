@@ -21,7 +21,7 @@
     }
   
     .older-newer__older {
-      left: var(--gap2);
+      left: var(--gap-m);
 
       &:hover {
         transform: rotate(-15deg);
@@ -29,7 +29,7 @@
     }
 
     .older-newer__newer {
-      right: var(--gap2);
+      right: var(--gap-m);
 
       &:hover {
         transform: rotate(15deg);
@@ -39,9 +39,9 @@
 
   a:link,
   a:visited {
-    padding: 0.1em 0.2em;
-    width: 1em;
-    height: 1em;
+    padding: var(--gap-4xs) var(--gap-3xs);
+    width: var(--gap-m);
+    height: var(--gap-m);
     color: var(--color-grey);
   }
 
@@ -63,10 +63,10 @@
 }
 
 .older-newer {
-  margin: 3em 0;
-  padding: var(--gap);
+  margin: var(--gap-xxl) 0;
+  padding: var(--gap-m);
    clear: both;
---flow-space: var(--gap3);
+--flow-space: var(--gap-xxl);
   list-style-type: none;
 
   display: grid;
@@ -74,17 +74,17 @@
   grid-template-areas:
     'prev prev'
     'next next';
-  grid-column-gap: calc(5 * var(--gap));
-  column-gap: calc(5 * var(--gap));
-  grid-row-gap: var(--gap);
-  row-gap: var(--gap);
+  grid-column-gap: var(--gap-3xl);
+  column-gap:  var(--gap-3xl);
+  grid-row-gap: var(--gap-m);
+  row-gap: var(--gap-m);
 
   @media (min-width: 48rem) {
     grid-template-areas: 'prev next';
   }
 
   border: solid 1px var(--color-primary-lighter-3);
-  border-radius: 0.3em;
+  border-radius: var(--gap-xs);
   background-color: var(--color-primary-lighter-7);
 
   svg {

@@ -1,10 +1,12 @@
-@keyframes neon6 {
+/*@keyframes neon6 {
   from {
     text-shadow: 0 0 0.25em var(--color-primary-lighter-1),
       0 0 0.5em var(--color-primary-lighter-1),
       0 0 0.75em var(--color-primary-lighter-1),
-      0 0 1em var(--color-link-hover-bg), 0 0 1.75em var(--color-link-hover-bg),
-      0 0 2em var(--color-link-hover-bg), 0 0 2.5em var(--color-link-hover-bg);
+      0 0 1em var(--color-link-hover-bg), 
+      0 0 1.75em var(--color-link-hover-bg),
+      0 0 2em var(--color-link-hover-bg), 
+      0 0 2.5em var(--color-link-hover-bg);
   }
   to {
     text-shadow: 0 0 0.5em var(--color-primary-lighter-1),
@@ -14,11 +16,11 @@
       0 0 4em var(--color-link-hover-bg), 0 0 5em var(--color-link-hover-bg),
       0 0 6em var(--color-link-hover-bg);
   }
-}
+}*/
 
 .tag_item {
-  margin: 0.1em;
-  margin-left: 0.2em;
+  margin: var(--gap-3xs);
+  margin-left: var(--gap-xxs);
 }
 
 .tagscloud__tags {
@@ -33,15 +35,15 @@
   line-height: 1;
   transition: all 0.2s;
   border-radius: 10% 50%/30% 10%;;
-  padding-top: 0.075em;
-  padding-bottom: 0.2em;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  padding-top: var(--gap-4xs);
+  padding-bottom: var(--gap-3xs);
+  padding-left: var(--gap-xs);
+  padding-right: var(--gap-xs);
   //  border: 1px solid transparent;
   &:link,
   &:visited {
     display: inline-block;
-    margin: 0.2em 0.1em;
+    margin: var(--gap-3xs) var(--gap-4xs);
 
     hyphens: auto;
     text-decoration: none;

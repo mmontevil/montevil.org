@@ -21,10 +21,11 @@
       {% if subtitle %}
         <p class="card__subtitle">{{ subtitle | safe }}</p>
       {% endif %}
-      {% if meta %}
-        {{ meta | safe }}
+      {% if meta %} 
+        {{ meta | safe }} <hr>
       {% endif %}
       {% if content %}
+     
           {{ content | safe }}
         
       {% endif %}

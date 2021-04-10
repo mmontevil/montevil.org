@@ -7,23 +7,23 @@
 }
 
 .footnotes {
-  margin: var(--gap) 0;
-  margin-right: 0.5em;
+  margin: var(--gap-m) 0;
+  margin-right:  var(--gap-s);
   background-color: var(--color-lightgrey);
   color: var(--color-primary-darker-7);
   border: 1px solid var(--color-grey);
   border-radius: 0.3em;
   font-size: var(--font-size-s);
-  padding-bottom: 1em;
+  padding-bottom:  var(--gap-m);
   & > p,
   & > div,
   & > aside {
-    text-indent: -2em;
-    padding-left: 2em;
+    text-indent:  calc(-1*var(--gap-l));
+    padding-left:  var(--gap-l);
   }
   & > * {
-    margin-left: 0.4rem;
-    margin-right: 0.4rem;
+    margin-left: var(--gap-xs);
+    margin-right: var(--gap-xs);
   }
   ol {
     //margin: 0;
@@ -34,7 +34,7 @@
   li {
     counter-increment: my-awesome-counter;
     &:before {
-      margin-left: -2em;
+      margin-left: calc(-1*var(--gap-xl));
       content: counter(my-awesome-counter);
       display: inline-block;
     }
@@ -53,8 +53,8 @@
   li:before,
   .footnote-back {
     text-decoration: none;
-    padding: 0.1em 0.4em;
-    margin-right: 0.3em;
+    padding: var(--gap-5xs) var(--gap-xxs);
+    margin-right: var(--gap-xxs);
     // margin: 0 0.2em;
     color: var(--color-link-hover);
     border-radius: 30%;
@@ -67,7 +67,7 @@
     //}
 
     @media (pointer: coarse) {
-      padding: 0.3em 0.6em;
+      padding: var(--gap-xxs) var(--gap-s);
     }
 
     //&>*>*:first-child>[href="#*"]:first-child:not(u>a), &>*>[href]:first-child:not(u>a), .footnote-back
@@ -93,7 +93,7 @@
     top: 0em;
   }
   .footnote-back {
-    margin-left: 0.2em;
+    margin-left: var(--gap-xs);
   }
 }
 

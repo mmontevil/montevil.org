@@ -70,8 +70,35 @@ const runAfterHook = (image, document) => {
  // let img3 = [...image.classList].indexOf('img3') !== -1;
 //var classs=""
   //if(img1){classs="sub1"; }
-  
-  if (caption || zoom) {
+  const lightbox = document.createElement('a');
+      lightbox.appendChild(image.cloneNode(true));
+      lightbox.classList.add("glightbox");
+      lightbox.setAttribute('href', "https://res.cloudinary.com/mmontevil/image/fetch/q_auto,f_auto/"+imageUrl);
+      if (image.classList.contains('darkFilter')){
+        lightbox.setAttribute('data-lightbox-classes','darkFilter');
+      }
+      let count=0;
+      let temp=image.nextSibling ;
+      while (temp ){
+      if(temp.tagName=="FIGCAPTION"){
+            lightbox.setAttribute('data-lightbox-caption', escape(temp.innerHTML));
+             // temp=undefined;'data-lightbox-classes'
+      }
+     // }else{
+        let temp0=temp;
+        temp= temp.nextSibling;
+       // console.log(temp);
+        if(count==0 && temp==null && temp0.parentElement.parentElement.tagName=="FIGURE")
+        {
+          temp=temp0.parentElement.nextSibling;
+          count=1;
+         // console.log(temp);
+        }
+      //}
+      }
+      
+      
+  if ((caption || zoom) && (1==0)) {
     const figure = document.createElement('figure');
     figure.classList.add(...image.classList);
     // TODO: decide weither classes should be removed from the image or not
@@ -81,11 +108,17 @@ const runAfterHook = (image, document) => {
     figCaption.innerHTML =
       (caption ? caption : '') +
       (zoom
-        ? `<p class="zoom ">&#128269; See <a href="https://res.cloudinary.com/mmontevil/image/fetch/q_auto,f_auto/${imageUrl}">full size</a></p>`
+        ? `<p class="zoom ">&#128269; See <a href="https://res.cloudinary.com/mmontevil/image/fetch/q_auto,f_auto/${imageUrl}" class="">full size</a></p>`
         : '');
-    figure.appendChild(image.cloneNode(true));
+      
+
+    figure.appendChild(lightbox.cloneNode(true));
     figure.appendChild(figCaption);
     image.replaceWith(figure);
+  }else{
+    /*  if (image.classLists.contains("noDarkFilter")){
+      }else{lightbox.classList.add("imageInvert");}*/
+    image.replaceWith(lightbox);
   }
 };
 
@@ -112,6 +145,14 @@ module.exports = {
     maxWidth: 1120,
     sizes: '(max-width: 20rem) 45vw, (max-width: 67rem) 60vw, 40rem',
     classes: ['twothirds'],
+  },
+    giant: {
+    fallbackWidth: 2700,
+    minWidth: 2700,
+    maxWidth: 2700,
+    steps: 1,
+    sizes: '2700px',
+    classes: ['giant'],
   },
   onehalf: {
     fallbackWidth: 400,

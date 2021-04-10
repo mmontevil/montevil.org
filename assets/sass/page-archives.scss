@@ -2,21 +2,35 @@
 @use 'global/utilities';
 @use 'global/globals';
 @use 'components/tocbutton';
+@use 'components/card';
+@use 'components/pubcards';
+
 
 // ************************************************************
 // Layout
 // ************************************************************
 
 .archives {
-  --flow-space: var(--gap3);
+  --flow-space: var(--gap-xl);
 }
 
 .pubTypes {
-  columns: 2;
+  display: flex;
+  flex-direction: column;
+  max-height: 12em;
+li{
+  --flow-space: 0;
+  //flex: 1 100%;
+margin-bottom: var(--gap-ms);
+ }
+ .ais-HierarchicalMenu-item2  {margin-bottom: var(--gap-xxs);}
+ li:not(.ais-HierarchicalMenu-item2)+.ais-HierarchicalMenu-item2{margin-top: calc(-1*var(--gap-s));}
+  .ais-HierarchicalMenu-item2+li:not(.ais-HierarchicalMenu-item2){margin-top: calc(1*var(--gap-xs));}
+ flex-wrap: wrap;
 }
 
 .refinements {
-  --flow-space: 0em;
+  --flow-space: 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
@@ -25,13 +39,13 @@
 
   @media (min-width: 30em) {
     column-gap: 1em;
-    grid-template-columns: minmax(5em, 5em) minmax(10em, 23em);
+    grid-template-columns: minmax(10em, 23em) minmax(5em, 5em) ;
     grid-template-areas:
-      'lang types'
+      'types lang'
       'dates   dates';
   }
   @media (min-width: 52em) {
-    grid-template-columns: minmax(5em, 5em) minmax(9em, 3fr) minmax(6em, 2fr);
+    grid-template-columns: minmax(5em, 5em) minmax(16em, 3fr) minmax(6em, 3fr);
     grid-template-areas: '  lang types dates';
   }
   @media (min-width: 65em) {
@@ -46,6 +60,7 @@
 
 .lang-list {
   grid-area: lang;
+  ul{@media (min-width: 65em) {flex-direction: column;}}
 }
 
 #dates-menu,
@@ -53,7 +68,7 @@
   grid-area: dates;
 }
 .ais-Panel p {
-  margin-bottom: 1em;
+  margin-bottom: var(--gap-s);
 }
 
 // ************************************************************
@@ -68,41 +83,42 @@
 
 .ais-HierarchicalMenu-list,
 .no-ais-RefinementList-list {
-  margin-block-start: 0.5em;
-  padding-left: 0.2em;
+  margin-block-start: var(--gap-ms);
+  padding-left: var(--gap-xs);
   list-style-type: none;
 }
 
 .ais-Panel-header {
+  margin-top: var(--gap-m);
   font-size: var(--font-size-m);
   border-bottom: 1px solid var(--color-grey);
 }
 
 .ais-HierarchicalMenu-item,
 .ais-RefinementList-item {
-  --flow-space: calc(0.5ex / 0.32);
+  --flow-space: var(--gap-s);
   &:first-child {
     --flow-space: 0;
   }
 }
 
 .ais-HierarchicalMenu-item2 {
-  --flow-space: calc(0.3ex / 0.32);
+  --flow-space: var(--gap-xs);
   font-style: italic;
   font-variant: normal;
 }
 
 ul.ais-HierarchicalMenu-list {
-  margin-left: calc(-0.5ex / 0.32);
+  margin-left: calc(-1*var(--gap-ms));
 }
 .ais-HierarchicalMenu-list li {
   --flow-space: 0;
-  margin-bottom: calc(0.3ex / 0.32);
-  padding-left: calc(0.6ex / 0.32);
+  margin-bottom: var(--gap-s);
+  padding-left: var(--gap-ms);
 }
 .ais-HierarchicalMenu-item2:before {
   content: '·';
-  padding-left: 0.2em;
+  padding-left: var(--gap-xs);
 }
 
 // Counts
@@ -110,12 +126,12 @@ ul.ais-HierarchicalMenu-list {
 .ais-HierarchicalMenu-count {
   color: var(--color-primary-darker-7);
   position: relative;
-  top: -0.1em;
+  top: calc(-1*var(--gap-4xs));
   font-size: 0.7em;
-  margin-left: 0.2em;
-  padding: 0.1em 0.5em;
+  margin-left: var(--gap-3xs);
+  padding: var(--gap-4xs) var(--gap-xs);
   background-color: var(--color-lightgrey);
-  border-radius: 1em;
+  border-radius: var(--gap-m);
 }
 
 // ************************************************************

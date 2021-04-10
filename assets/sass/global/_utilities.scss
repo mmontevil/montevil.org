@@ -23,14 +23,14 @@
 // https://piccalil.li/quick-tip/flow-css-utility/
 %flow {
   & > * + * {
-    margin-top: var(--flow-space, 1.5em);
+    margin-top: var(--flow-space, var(--gap-l));
   }
   br{margin-top: 0;}
 }
 
 %flowall {
   & > * {
-    margin-top: var(--flow-space, 1em);
+    margin-top: var(--flow-space, var(--gap-l));
   }
   br{margin-top: 0;}
 }

@@ -7,7 +7,7 @@
 .warning,
 .error{
   clear: both;
-  padding: calc(var(--gap) / 3);
+  padding: var(--gap-m) ;
 
   background-color: #ccc;
 //  color: #222;
@@ -19,12 +19,12 @@
 
   &::before {
     position: absolute;
-    top: calc(var(--gap) / 2);
-    left: calc(var(--gap) / 2);
+    top: var(--gap-m);
+    left: var(--gap-m) ;
   }
 
   & > * {@media (min-width: 30rem) {
-    padding-left: 2em;
+    padding-left: var(--gap-m);
   }
   }
 }
@@ -42,7 +42,7 @@
   }
 }
 
-.info {padding-left: 2em;
+.info {padding-left:  var(--gap-xl);
   color: var(--color-primary-darker-5);
   background-color: var(--color-info-bg);
   border-color: #d6c6e9;
@@ -114,7 +114,7 @@
   position: relative;
   border: var(--border-width) dotted ;
 //--flow-space: var(--gap);
-  padding: calc(var(--gap) / 3);
+  padding: var(--gap-xs) ;
   background-color: var(--color-primary-lighter-8);
   border-color:  var(--color-primary-lighter-5);
   box-shadow: 0 1px 2px var(--soft-shadow), 
@@ -122,21 +122,21 @@
               0 4px 8px var(--soft-shadow),
               0 8px 16px var(--soft-shadow);
   @extend %flowall; 
-  & >*{--flow-space: 0.5rem;}
+  & >*{--flow-space: var(--gap-s);}
 
 
   //text-decoration: none;
 }
 .tableContent {
-  --flow-space: var(--gap3);
+  --flow-space: var(--gap-xxl);
   border-color: transparent;
       padding-left: 0em;
     padding-right: 0em;
  @media (min-width: 30rem) {
-    margin-left: -1em;
-    margin-right: -1em;
-    padding-left: 1em;
-    padding-right: 1em;
+    margin-left: calc(-1*var(--gap-m));
+    margin-right: calc(-1*var(--gap-m));
+    padding-left: var(--gap-m);
+    padding-right: var(--gap-m);
   }
 }
 .citationW {
@@ -144,8 +144,8 @@
   border-color:  var(--color-primary-lighter-3);
 
 & > * {@media (min-width: 30rem) {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: var(--gap-xl);
+    padding-right: var(--gap-xl);
   }
   }
 }

@@ -13,6 +13,7 @@ const ICONS_FOLDERS = {
 // icon filename + title for accessibility
 const ICONS_LIST = {
   feather: {
+      mail: {name: 'mail', title: 'mail' },
       'message-square' : {name: 'message', title: 'message' },
       'book-open' : {name: 'book', title: 'book' },
       'thumbs-up': {name: 'thumb', title: 'thumb' },

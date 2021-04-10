@@ -2,15 +2,15 @@
 
 .toast {
   display: inline-block;
-  font-size: 1.2rem;
-  padding: 0.4em 0.7em;
+  font-size: var(--font-size-l);
+  padding: var(--gap-xs) var(--gap-s);
   position: fixed;
 
   background-color: #ccc;
   color: #222;
   border: 1px solid #999;
-  border-radius: 0.5em;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  border-radius: var(--gap-xs);
+  box-shadow: 0 3px var(--gap-xs) rgba(0, 0, 0, 0.5);
 
   opacity: 0;
   transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -24,7 +24,7 @@
   margin-right: auto;
   left: 0;
   right: 0;
-  bottom: 15px;
+  bottom: var(--gap-m);
   z-index: 10;
 }
 
@@ -45,14 +45,14 @@
 
 .toast-close {
   opacity: 0.4;
-  padding: 0 0.3em;
+  padding: 0 var(--gap-xxs);
 }
 
 .toast-icon {
-  font-size: 1.8em;
+  font-size: var(--gap-xl);
   width: 1em;
   height: 1em;
-  margin: 0 0.3em 0 0;
+  margin: 0 var(--gap-xxs) 0 0;
   fill: none;
   vertical-align: middle;
   stroke: currentColor;

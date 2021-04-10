@@ -3,15 +3,17 @@
 .epigraph {
   padding: 0 !important;
   &::before {
-    left: -0.5em !important;
+    left: calc(-1*var(--gap-xs)) !important;
+    margin-left: calc(-1*var(--gap-5xs));
     @media (max-width: 40rem) {
       left: 0em !important;
       float: left;
       display: inline-block;
-      width: 0.5em;
-      height: 0.75em;
-      margin-bottom: -0.25em;
+      width: var(--gap-xs);
+      height: var(--gap-s);
+      margin-bottom: calc(-1*var(--gap-3xs));
       position: relative !important;
+      padding-right: var(--gap-xs);
     }
   }
 }
@@ -21,7 +23,7 @@ blockquote:not(.tweet-card) {
   //  margin-left: 0;
   // margin-right: 0;
 
-  min-height: 3em;
+  min-height: var(--gap-xxl);
 
   font-size: var(--font-size-l);
   font-style: italic;
@@ -38,6 +40,7 @@ blockquote:not(.tweet-card) {
     font-size: calc(4em + 5vw);
     font-style: normal;
     line-height: 1;
+   // padding-left: 0.1em;
   }
 
   blockquote {
@@ -62,5 +65,5 @@ blockquote:not(.tweet-card) {
 }
 
 blockquote:not(.tweet-card) {
-  padding: 0.5em 1em 0.5em calc(2em + 3vw);
+  padding: var(--gap-xs) var(--gap-m) var(--gap-xs) calc(2em + 3vw);
 }

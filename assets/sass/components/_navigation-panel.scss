@@ -1,9 +1,9 @@
 .centerList {
-  padding: 0.5em;
+  padding: var(--gap-xs);
 
   border: 1px solid var(--color-primary-lighter-5);
   border-radius: 0.4em;
-  margin: 0.5em;
+  margin: var(--gap-xs);
   & > * {
     display: inline-block;
   }
@@ -15,16 +15,16 @@
     display: block;
     padding: 0;
     list-style: none;
-    --flow-space: 0.25em;
-    padding-left: 0.4em;
+    --flow-space: var(--gap-xxs);
+    padding-left: var(--gap-xss);
   }
   & > ul > li > ul {
     display: inline-flex;
     flex-wrap: wrap;
     list-style: none;
-    --flow-space: 0.25em;
+    --flow-space: var(--gap-3xs);
     & > li {
-      margin-left: 1em;
+      margin-left: var(--gap-m);
       font-style: italic;
       &:before {
         content: '· ';

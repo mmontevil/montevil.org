@@ -3,6 +3,7 @@ hasPDF: false
 illust: cover.png
 hasFullText: false
 noToc: false
+noAnchor: true
 tags: 
     - time
     - criticality

@@ -1,8 +1,8 @@
 @use '../global/colors';
 
 pre {
-  margin-left: -0.5em;
-  margin-right: -0.5em;
+  margin-left: calc(-1*var(--gap-xs));
+  margin-right: calc(-1*var(--gap-xs));
   overflow-x: scroll;
   word-break: normal;
 }
@@ -10,8 +10,8 @@ pre {
 code,
 kbd {
   font-size: 0.9em;
-  padding: 0.1em 0.3em;
-  border-radius: 0.2em;
+  padding: var(--gap-4xs) var(--gap-xxs);
+  border-radius: var(--gap-3xs);
 }
 
 code {
@@ -22,7 +22,7 @@ code {
   pre & {
     display: block;
     overflow-x: scroll;
-    padding: 0.3em 0.5em;
+    padding: var(--gap-xxs) var(--gap-xs);
     background-color: colors.$inline-code-background-color;
     color: colors.$inline-code-text-color;
   }

@@ -1,6 +1,23 @@
 [
     {
         "objecttype": "entry",
+        "entrytype": "proceedings",
+        "entrykey": "agnotology_2021",
+        "fields": {
+            "title": "Science in the storm: GMOs, agnotology, theory",
+            "location": "ISC, Paris, France.",
+            "year": "2021",
+            "month": "4",
+            "day": "19",
+            "annonce": "true",
+            "url": "https://iscpif.fr/evenements/science-in-the-storm-gmos-agnotology-theory/",
+            "abstract": "Private interests sometimes indulge in disrupting scientific knowledge. The study of these strategies with human sciences’ methods is called agnotology. In today’s event, we will discuss this matter from the perspective of scientists who were directly confronted with this kind of practice. We will also explore the notion that increasing theoretical accuracy in fields such as biology, especially molecular biology, would increase the resilience of the scientific endeavor when facing such disruptions.",
+            "illustration": "Legos-GMO.png",
+            "author": "M. Montévil and Victor Chaix"
+        }
+    },
+    {
+        "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "IAS2021",
         "fields": {
