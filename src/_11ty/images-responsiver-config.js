@@ -78,13 +78,14 @@ const runAfterHook = (image, document) => {
 
       if (image.classList.contains('darkFilter')){
         lightbox.setAttribute('data-lightbox-classes','darkFilter');
-
       }
       let count=0;
       let temp=image.nextSibling ;
+      let captionfound=false;
       while (temp ){
       if(temp.tagName=="FIGCAPTION"){
             lightbox.setAttribute('data-lightbox-caption', escape(temp.innerHTML));
+            captionfound=true;
              // temp=undefined;'data-lightbox-classes'
       }
      // }else{
@@ -99,7 +100,7 @@ const runAfterHook = (image, document) => {
         }
       //}
       }
-      
+      if(!captionfound && image.getAttribute('alt') ) lightbox.setAttribute('data-lightbox-caption', image.getAttribute('alt') );
       
   if ((caption || zoom) && (1==0)) {
     const figure = document.createElement('figure');

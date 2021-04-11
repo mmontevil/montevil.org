@@ -751,7 +751,9 @@ annytab.lightbox = (function () {
         {
             window.onload = lb.container.addEventListener('click', function (event) {
                 // Prevent default click behaviour
-                event.preventDefault();
+            if (!event.target.contains(lb.caption_container)){
+                //event.preventDefault();
+            }
                 // Close the lightbox
                 if (event.target.contains(lb.wrapper) === true)
                 {

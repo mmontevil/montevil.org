@@ -66,6 +66,12 @@ css: ["page-archives.css"]
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css"></noscript>
 
 <script  src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js" async onload="
+  "
+>
+
+</script>
+<script>
+window.addEventListener('load', function (event){
 algoliasearchNetlify({
     appId: 'FWO1TXJD82',
     apiKey: '441877879034955305bd5bbcf16a8f15',
@@ -84,10 +90,7 @@ algoliasearchNetlify({
     let label=document.getElementsByClassName('aa-Autocomplete')[0];
   label.removeAttribute('role');
   label.removeAttribute('aria-labelledby');
-  "
-
->
-
+  });
 </script>
 
 <style>

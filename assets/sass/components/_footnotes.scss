@@ -61,7 +61,7 @@
     background-color: #8f8f8f;
     &:link,
     &:visited {
-      background-color: #39f;
+      background-color: var(--color-footnote-bg);
     }
 
     //}
@@ -81,7 +81,7 @@
   .footnote-back {
     &:link,
     &:visited {
-      background-color: #39f;
+      background-color: var(--color-footnote-bg);
     }
     &[href]:hover {
       background-color: var(--color-link-hover-bg);
