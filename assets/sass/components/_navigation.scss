@@ -8,8 +8,7 @@
   font-family: var(--font-family-sans-serif);
   font-variant: small-caps;
   font-size: var(--font-size-m);
-
-  padding: 0 0 var(--gap-xl);
+  padding: var(--gap-xxs) 0 var(--gap-xl);
   overflow-x: auto;
   -webkit-overflow-scrolling: auto;
   overflow-x: hidden;

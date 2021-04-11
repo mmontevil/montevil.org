@@ -17,7 +17,7 @@ class ScraperAPI(ProxyGenerator):
         
         super(ScraperAPI, self).__init__()
         
-        self._TIMEOUT = 120
+        self._TIMEOUT = 60
         self._session = self._client
         self._session.proxies = {}
         
@@ -30,8 +30,8 @@ class ScraperAPI(ProxyGenerator):
 
 pg = ScraperAPI(SCRAPER)
 scholarly.use_proxy(pg)
-scholarly.set_timeout(120)
-
+#scholarly.set_timeout(120)
+scholarly.set_timeout(60)
 
 
 
@@ -40,7 +40,7 @@ search_query = scholarly.search_author('Maël Montévil')
 
 author = scholarly.fill(next(search_query))
 
-pubs=[scholarly.fill(pub) for pub in author['publications']]
+pubs=[scholarly.fill(pub) for pub in author['publications'] if (pub['num_citations']>0)]
 
 pubs2=[ [pub, (list(scholarly.citedby(pub)))] for pub in pubs if 'citedby_url' in pub]
 

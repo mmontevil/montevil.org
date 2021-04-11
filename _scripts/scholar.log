@@ -1,0 +1,84 @@
+DEBUG:stem:System call (failed): tor --version (error: [Errno 2] No such file or directory: 'tor')
+DEBUG:stem:System call: tor --version (runtime: 0.01)
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:System call: tor --version (runtime: 0.01)
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:System call: tor --version (runtime: 0.01)
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0003)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0003)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0003)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0003)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:System call: tor --version (runtime: 0.01)
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:System call: tor --version (runtime: 0.01)
+DEBUG:stem:System call: tor --version (runtime: 0.01)
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:System call: tor --version (runtime: 0.01)
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
