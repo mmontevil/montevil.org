@@ -3,12 +3,7 @@ from scholarly import scholarly, ProxyGenerator
 import json 
 from dotenv import load_dotenv
 from pathlib import Path 
-import os
-from scraper_api import ScraperAPIClient
 
-env_path = Path('../') / '.env'
-load_dotenv(dotenv_path=env_path)
-SCRAPER= os.getenv("SCRAPER")
 
 proxy_generator = ProxyGenerator()
 proxy_generator.Tor_Internal(tor_cmd = 'tor')
