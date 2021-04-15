@@ -1,0 +1,15 @@
+---
+layout: lists
+title: Publication list by year
+tocOver: tocCenter2
+permalink: /publications.html
+css: ["page-home.css"]
+---
+   {% from "macros/colByYear.njk" import colByYear %}
+   <p class=" wrap center">See also the <a class=" " href="/publications/publicationsbyType/">complete Publication list by category</a></p>
+   <p class="center">or a <a class="" href="{% link_to "map" %}">thematic map of  publications</a></p>
+       <hr class=" wrap ">
+
+{{ colByYear(collections.publicationsall) |safe}}
+     
+ {# </ul>#}

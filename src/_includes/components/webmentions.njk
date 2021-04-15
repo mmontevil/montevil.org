@@ -15,7 +15,7 @@
 
 {% set mentions = allMentions | webmentionsByType('mention-of') %}
 {% set mentionsSize = mentions | size  %}
-
+<aside class="wrap">
 <h2 id="webmentions">{{ allMentionsSize }} Webmention{% if allMentionsSize > 1 %}s{% endif %}</h2>
 
 {% if likesSize > 0 %}
@@ -60,3 +60,4 @@
 {%endif%}
 
 {% endfor %}
+</aside>

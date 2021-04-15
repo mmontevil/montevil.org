@@ -90,7 +90,7 @@ img.card__illustration {
 
 .publi,
 .card-list__item,
-.titleDiag {
+.titleDiag {  --flow-space: 0;
   scroll-snap-align: start;
   //scroll-snap-stop: always;
   //height: 100vh;

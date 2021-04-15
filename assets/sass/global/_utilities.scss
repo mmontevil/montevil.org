@@ -22,14 +22,14 @@
 
 // https://piccalil.li/quick-tip/flow-css-utility/
 %flow {
-  & > * + * {
+  & > *:not(script) + * {
     margin-top: var(--flow-space, var(--gap-l));
   }
   br{margin-top: 0;}
 }
 
 %flowall {
-  & > * {
+  & > *:not(script) {
     margin-top: var(--flow-space, var(--gap-l));
   }
   br{margin-top: 0;}
