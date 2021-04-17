@@ -17,7 +17,7 @@ eleventyComputed: {
   datepub: "{%- set date0 = entry.issued['date-parts'][0] -%}{%- if  date0 -%}{{- 0 if date0[0]<10  -}}{{- date0[0] if date0[0] else 2021 -}}-{{- 0 if (date0[1]<10 or not date0[1])  -}}{{- date0[1] if date0[1] else 1 -}}-{{- 0 if (date0[2]<10 or not date0[2])  -}}{{- date0[2] if date0[2] else 1 -}}{%- else -%}Submitted{%- endif -%}",
   orderDate: "{%- if datepub=='Submitted' -%}{{- page.date |    attributeDate -}}{%- else -%}{{- datepub     -}}{%- endif -%}",
       nbAuteurs:  "{{entry.author | length}}"    ,
-      auteurs: "{%- for auth in entry.author -%}{% if  auth.given %}{% authors auth.given[0]+' '+auth.family, '', people,true, nbAuteurs %}{%else%} {% authors auth.literal, '', people,true, nbAuteurs %}{%endif%}{%-endfor-%}",
+      auteurs: "{%- for auth in entry.author -%}{%- authors auth.given[0]+' '+auth.family, '', people,true, nbAuteurs -%}{%- if loop.revindex >2 -%}, {%endif-%}{%- if loop.revindex ===2 %} & {%endif-%}{%- if loop.revindex ===1 %}.{%endif-%}{%-endfor-%}",
   illustration: {
       src: "{%- if  bibentryconf.fields.illustration -%}/assets/talks/{{-   bibentryconf.fields.illustration -}}{%- elif  entry.URL -%}https://image.thum.io/get/width/640/crop/600/noanimate/{{- entry.URL |safe-}}{%- endif -%}",
       classes: "{%- if  bibentryconf.fields.illustrationclass -%}{{-   bibentryconf.fields.illustrationclass -}}{%- else -%}  noDarkFilter {%- endif -%}"

@@ -1,5 +1,46 @@
 [
   {
+    "URL": "https://www.philosophy-world-democracy.org/vaccines-germs-and-knowledge",
+    "abstract": "Vaccines for COVID-19 have led to questions, debates, and polemics on both their safety and the political and geopolitical dimension of their use. We propose to take a step back on both the history of this practice and how current theories in immunology understand it. Both can contribute to providing a rational assessment of COVID-19 vaccines. This assessment cannot consider vaccine as an isolated procedure, and we discuss its intergradation with the broader question of knowledge and politics in the COVID-19 pandemic.",
+    "author": [
+      {
+        "family": "Montevil",
+        "given": "M."
+      }
+    ],
+    "container-title": "Philosophy World Democracy",
+    "id": "2021-Montevil-vaccines-germs-knowledge",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          4,
+          15
+        ]
+      ]
+    },
+    "keyword": "epistemology, immunology, politics",
+    "title": "Vaccines, Germs, and Knowledge",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "Biologists increasingly report anthropogenic disruptions of both organisms and ecosystems, suggesting that these processes are a fundamental, qualitative component of the Anthropocene crisis, seemingly generating disorder. Nonetheless, the notion of disruption has not yet been theorized as such in biology. To progress on this matter, we build on a specific case. Relatively minor temperature changes disrupt plant-pollinator synchrony, tearing apart the web of life. Understanding this phenomenon requires a specific rationale since models describing them use both historical and systemic reasoning. Specifically, history justifies that the system is initially in a narrow part of the possibility space where it is viable, and the disruption randomizes this configuration. Building on this rationale, we develop a formal framework inspired by Boltzmann’s entropy. This framework defines the randomization of the system and leads to analyze its consequences systematically. Notably, maximum randomization does not lead to the complete collapse of the ecosystem. Moreover, pollinators’ robustness mostly increases viability for low randomizations, while resilience enhances viability after high randomizations. Applying this framework to empirical networks, we show historical trends depending on latitude, providing further evidence of climate change’s impact on ecosystems via phenology changes. These results lead to an initial definition of disruption in ecology. When a specific historical outcome contributes to a system’s viability, disruption is the randomization of this outcome, decreasing this viability.",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "",
+    "id": "submitted-Montevil-Disruption-Phenology",
+    "issued": {
+      "date-parts": []
+    },
+    "title": "Disruption of biological processes in the Anthropocene: the case of phenological mismatch",
+    "title-short": "Disruption of biological processes in the Anthropocene",
+    "type": "article-journal"
+  },
+  {
     "DOI": "10.1016/j.pbiomolbio.2016.07.006",
     "ISSN": "0079-6107",
     "abstract": "Abstract Organisms, be they uni- or multi-cellular, are agents capable of creating their own norms; they are continuously harmonizing their ability to create novelty and stability, that is, they combine plasticity with robustness. Here we articulate the three principles for a theory of organisms, namely: the default state of proliferation with variation and motility, the principle of variation and the principle of organization. These principles profoundly change both biological observables and their determination with respect to the theoretical framework of physical theories. This radical change opens up the possibility of anchoring mathematical modeling in biologically proper principles.",

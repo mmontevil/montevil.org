@@ -231,7 +231,7 @@
             "url": "https://www.lemonde.fr/planete/article/2020/05/22/le-bisphenol-a-produit-des-consequences-deleteres-meme-a-tres-faibles-doses_6040388_3244.html",
             "language": "fr",
             "illustration": "1920px-Le_Monde.png",
-            "illustrationclass": "viclass",
+            "illustrationclass": "viclass darkFilter",
             "day": "22",
             "eventtype": "media",
             "author": "Stéphane Foucart",
@@ -251,7 +251,7 @@
             "url": "https://www.lemonde.fr/planete/article/2021/02/03/l-autorite-europeenne-de-securite-des-aliments-accusee-de-minimiser-certains-effets-des-perturbateurs-endocriniens_6068682_3244.html",
             "language": "fr",
             "illustration": "1920px-Le_Monde.png",
-            "illustrationclass": "viclass",
+            "illustrationclass": "viclass darkFilter",
             "eventtype": "media",
             "author": "Stéphane Foucart and Stéphane Horel",
             "title": "L’EFSA minimise certains effets des perturbateurs endocriniens"
@@ -474,7 +474,7 @@
             "location": "ÉNS, Paris, France",
             "language": "fr",
             "illustration": "ENS.png",
-            "illustrationclass": "viclass",
+            "illustrationclass": "viclass darkFilter",
             "author": " M. Montévil",
             "title": "Mesurer le vivant"
         }
@@ -881,7 +881,7 @@
             "location": "Muséum national d'Histoire naturelle, Paris, France",
             "language": "fr",
             "ilustration": "mnhn.png",
-            "illustrationclass": "viclass",
+            "illustrationclass": "viclass darkFilter",
             "author": " M. Montévil",
             "title": "Enjeux de l’historicité du vivant pour la modélisation mathématique en biologie"
         }
@@ -1040,7 +1040,7 @@
             "url": "https://sfs.snv.jussieu.fr/index.php/2017/02/13/demi-journee-stephen-jay-gould/",
             "language": "fr",
             "illustration": "ENS.png",
-            "illustrationclass": "viclass",
+            "illustrationclass": "viclass darkFilter",
             "author": " M. Montévil",
             "title": "Raisonnements physico-mathématiques et historicité du vivant: actualité d'une tension conceptuelle cruciale chez Gould"
         }
@@ -1154,7 +1154,7 @@
             "language": "fr",
             "illustration": "ENS.png",
             "abstract": "Dialog between Rocco Ronchi and Maël Montévil on the concept of novelty in Bergson's work and beyond.",
-            "illustrationclass": "viclass",
+            "illustrationclass": "viclass darkFilter",
             "author": " M. Montévil and R. Ronchi",
             "title": "La nouveauté en biologie : discussion autour des concepts de Bergson"
         }
@@ -1219,7 +1219,7 @@
             "month": "12",
             "location": "MNHN, Paris, France",
             "illustration": "mnhn.png",
-            "illustrationclass": " viclass",
+            "illustrationclass": "viclass darkFilter",
             "day": "8",
             "abstract": "In this presentation we will discuss three theoretical principles for biology: the principle of organization, the principle of variation and the default state of cells. We will propose possible applications to understand hormone action.",
             "author": " M. Montévil",
@@ -1547,6 +1547,7 @@
             "illustration": "iea-nantes.png",
             "language": "fr",
             "day": "12",
+            "illustrationclass": "viclass darkFilter",
             "author": " M. Montévil",
             "title": "La notion de mesure : de la physique à la biologie"
         }
@@ -1594,7 +1595,7 @@
             "month": "11",
             "location": "Muséum National d’Histoire Naturelle, Paris",
             "illustration": "mnhn.png",
-            "illustrationclass": " viclass"
+            "illustrationclass": "viclass darkFilter"
         }
     },
     {
@@ -2012,6 +2013,7 @@
             "day": "4",
             "program": "programme-IEA-2020.pdf",
             "abstract": "En biologie comme en médecine, le numérique joue depuis longtemps et de façon croissante le rôle d’outil technique, de la preuve statistique aux bases de données massives et à la publication. Mais elle joue aussi le rôle de modèle mathématique, voire de cadre conceptuel pour une approche théorique et pour une justification de l’action",
+            "illustrationclass": "viclass darkFilter",
             "author": "Giuseppe Longo and Maël Montévil",
             "title": "Colloque: Vie – Numérique - Santé"
         }
