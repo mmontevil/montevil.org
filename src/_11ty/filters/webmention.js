@@ -11,7 +11,7 @@ const getWebmentions = memoize(() => {
 });
 
 function isSelf(entry) {
-  return entry.url.match(/^https:\/\/twitter.com\/MMontevil\//);
+  return entry.url.match(/^https:\/\/twitter.com\/MMontevil\//) && ! entry.url.match(/\#/);
 }
 
 const getUrlsHistory = memoize((url) => {
@@ -61,10 +61,10 @@ module.exports = {
       console.log('No URL for webmention matching');
       return [];
     }
-    let urlsList = getUrlsHistory(url);
+    let urlsList = getUrlsHistory(url.toLowerCase());
     return getWebmentions()
       .filter((entry) => {
-        return urlsList.includes(entry['wm-target']);
+        return urlsList.includes(entry['wm-target'].toLowerCase());
       })
       .filter((entry) => !isSelf(entry));
   }),

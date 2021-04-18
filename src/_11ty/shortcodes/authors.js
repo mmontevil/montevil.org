@@ -1,6 +1,7 @@
 
 const fs = require('fs');
-const slugify = require('@sindresorhus/slugify');
+//const slugify = require('@sindresorhus/slugify');
+const slugify = require('../../_utils/slugify');
 const memoize = require('fast-memoize')
 
     request = require('request');

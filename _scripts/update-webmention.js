@@ -23,7 +23,7 @@ async function fetchWebmentions(since, perPage = 10000) {
 
   let url = `${WEBMENTION_URL}/mentions.jf2?domain=${domain}&token=${WEBMENTION_TOKEN}&per-page=${perPage}`;
   if (since) url += `&since=${since}`; // only fetch new mentions
-
+console.log(url);
   const response = await fetch(url);
   if (!response.ok) {
     return null;

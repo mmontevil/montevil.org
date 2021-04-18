@@ -245,24 +245,31 @@ function chooseDate(datepub, date) {
 }
 var cache = flatcache.load('crossref', path.resolve('./_cache'));
 
-async function fetchCrossref(doi, id) {
-  if (id) {
+async function fetchCrossref(doi, id, type) {
+  
     const cachedData = cache.getKey(id);
-
+var allPosts ='[]';
     if (!cachedData) {
-      const allPosts = await fetch(
+      if (type==="doi") {
+      var allPosts = await fetch(
         'https://api.eventdata.crossref.org/v1/events?rows=500&obj-id=' +
           encodeURI(doi) +
           '&source=twitter'
       ).then((res) => res.json());
+      }else{
+          if (type==="url") {
+              var allPosts = await fetch(
+            'https://api.eventdata.crossref.org/v1/events?rows=500&obj-url=' +
+              encodeURI(doi) +
+              '&source=twitter'
+              ).then((res) => res.json());
+      }
+      }
       cache.setKey(id, allPosts);
       cache.save(true);
       return allPosts;
     }
     return cachedData;
-  } else {
-    return undefined;
-  }
 }
 //
 
@@ -288,9 +295,9 @@ module.exports = {
   permalinkDate: (data) => permalinkDate(data.page.date),
   crossref: (data) => {
     if (data.bibentry.DOI) {
-      return fetchCrossref(data.bibentry.DOI, data.page.fileSlug);
+      return fetchCrossref(data.bibentry.DOI, data.page.fileSlug,"doi");
     } else {
-      if (data.bibentry.URL) return fetchCrossref(data.bibentry.URL);
+      if (data.bibentry.URL) return fetchCrossref(data.bibentry.URL,data.page.fileSlug,"url");
     }
   },
   authors: {

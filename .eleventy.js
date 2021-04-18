@@ -71,7 +71,7 @@ eleventyConfig.setDataDeepMerge(true);
   const embedEverythingElse = require('eleventy-plugin-embed-everything');
   eleventyConfig.addPlugin(embedEverythingElse, {
     youtube: {
-      options: {
+      //options: {
         lite: {
           css: {
             path: '/assets/javascript/vendors/yt-lite/lite-yt-embed.css',
@@ -80,7 +80,7 @@ eleventyConfig.setDataDeepMerge(true);
             path: '/assets/javascript/vendors/yt-lite/lite-yt-embed.js',
           },
         },
-      },
+      //},
     },
   });
 
@@ -111,7 +111,8 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
   const markdownItFootnote = require('markdown-it-footnote');
 
-  const slugify = require('@sindresorhus/slugify');
+ // const slugify = require('@sindresorhus/slugify');
+ const slugify = require('./src/_utils/slugify');
   const markdownItAnchor = require('markdown-it-anchor');
   const markdownItAnchorOptions = {
     permalink: true,
