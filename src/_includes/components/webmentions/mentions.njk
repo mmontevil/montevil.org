@@ -55,6 +55,13 @@
           {% endif %}
         </div>
       {% endif %}
+      {% for imgsrc in webmention.images %}
+          <img
+            class="twothirds"
+            src="{{imgsrc}}"
+            >
+      {%endfor%}
+      
       {% if webmention.url %}
         <ul class="meta">
 
@@ -81,6 +88,12 @@
             {% endif %}
             <a class="u-url" href="{{ webmention.url }}">Source</a>
           </li>
+          {% if webmention.favorite_count %}
+          <li class="meta__item ">
+            
+              {% icon "like", "like" %}
+            {{webmention.favorite_count}}
+          </li> {% endif %}
         </ul>
       {% endif %}
     </li>

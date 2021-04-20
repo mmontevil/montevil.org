@@ -19,6 +19,7 @@ const ICONS_LIST = {
       'thumbs-up': {name: 'thumb', title: 'thumb' },
             user: {name: 'user', title: 'user' },
         film: {name: 'video', title: 'Video' },
+           heart: {name: 'like', title: 'like' },
     anchor: { title: 'Anchor' },
     calendar: { name: 'date', title: 'Date' },
     info: { title: 'Info' },

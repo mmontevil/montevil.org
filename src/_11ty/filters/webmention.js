@@ -4,10 +4,12 @@ const { readFromCache } = require('../../_utils/cache');
 const rootUrl = require('../../../package.json').homepage;
 
 const WEBMENTION_CACHE = '_cache/webmentions.json';
+const TWIT_WEBMENTION_CACHE = '_cache/tweetsMentions.json';
 
 const getWebmentions = memoize(() => {
   const cached = readFromCache(WEBMENTION_CACHE);
-  return cached.webmentions;
+  const cached2 =Object.values(readFromCache(TWIT_WEBMENTION_CACHE));
+  return cached.webmentions.concat(cached2);
 });
 
 function isSelf(entry) {

@@ -2,7 +2,7 @@
 {% set allMentionsSize = allMentions | size %}
 {% set tweetsize = crossref.message.events | size %}
 
-{% set allMentionsSize = allMentionsSize+tweetsize  %}
+{% set allMentionsSize = allMentionsSize  %}
 
 {% set likes = allMentions | webmentionsByType('like-of') %}
 {% set likesSize = likes | size %}
@@ -52,7 +52,10 @@
 {%if temp=="1274995148934561793"  %}{%else%}
 {%if temp=="1275912806257344515"  %}{%else%}
 {%if temp=="1123337833714835456"  %}{%else%}
-{%tweet   temp%}
+{#{%tweet   temp%} #}
+{%set temp0 %}
+{% tweettomention   temp, {cacheDirectory: '_cache'},  "https://montevil.org"+articleUrl %}
+{% endset%}
 {%endif%}{%endif%}{%endif%}
 {%else%}
 {%if  tweeted.source_id =="wikipedia"%}{%else%}

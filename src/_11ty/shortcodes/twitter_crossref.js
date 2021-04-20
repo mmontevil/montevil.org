@@ -3,19 +3,22 @@ const request = require('request-promise')
 const { promises: fs } = require("fs");
 const syncFs = require('fs')
 
-const { writeToCache, readFromCache } = require('../src/_utils/cache');
+//const { writeToCache, readFromCache } = require('../src/_utils/cache');
 
+let cachedTweets =  getCachedTweets( {
+    cacheDirectory: '_cache'
+  });
 
 async function getTweet(tweetId, options,target) {
 
     // if we using cache and not cache busting, check there first
     if (options.cacheDirectory && !process.env.CACHE_BUST) {
-        let cachedTweets = await getCachedTweets(options);
+        
         let cachedTweet = cachedTweets[tweetId]
 
         // if we have a cached tweet, use that
         if (cachedTweet) {
-            return formatTweet(cachedTweet, options)
+            return null;
         }
         // else continue on
     }
@@ -26,16 +29,16 @@ async function getTweet(tweetId, options,target) {
         let liveTweet = await fetchTweet(tweetId)
 
         let tweetViewModel = processTweet(liveTweet,target)
- console.log(tweetViewModel);
+ //console.log(tweetViewModel);
       /*  tweetViewModel.html = renderTweet(tweetViewModel)
-
+*/
         // cache tweet
         if (options.cacheDirectory) {
             await addTweetToCache(tweetViewModel, options)
         }
-*/
+
         // build
-        return tweetViewModel;
+        return null;
     } else {
         console.warn("Remeber to add your twitter credentials as environement variables")
         console.warn("Read More at https://github.com/KyleMit/eleventy-plugin-embed-tweet#setting-env-variables")
@@ -47,7 +50,7 @@ async function getTweet(tweetId, options,target) {
         `<blockquote class="twitter-tweet"><a href="https://twitter.com/user/status/${tweetId}"></a></blockquote>` +
         `<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>`
 
-    return htmlTweet
+    return null
 }
 
 /* Twitter API Call */
@@ -76,7 +79,7 @@ async function fetchTweet(tweetId) {
     try {
         let response = await request.get(apiURI, { oauth: auth });
         let tweet = JSON.parse(response);
-         console.log(tweet)
+         //console.log(tweet)
         return tweet;
 
     } catch (error) {
@@ -116,6 +119,7 @@ function processTweet(tweet,target) {
           
     // build tweet with properties we want
     let tweetViewModel = {
+      id_str,
       type,
       author,
       url,
@@ -225,7 +229,68 @@ function getOldText(text, indices) {
 }
 
 
+/* caching / file access */
+async function getCachedTweets(options) {
+    let cachePath = getCachedTweetPath(options)
 
+    try {
+        let file = await fs.readFile(cachePath, "utf8")
+        cachedTweets = JSON.parse(file) || {}
+
+        return cachedTweets
+
+    } catch (error) {
+        // otherwise, empty array is fine
+        console.log(error)
+        return {}
+    }
+}
+
+async function addTweetToCache(tweet, options) {
+    try {
+        // get cache
+     //  let cachedTweets = await getCachedTweets(options)
+
+        // add new tweet
+        cachedTweets[tweet.id_str] = tweet
+
+        // build new cache string
+        let tweetsJSON = JSON.stringify(cachedTweets, 2, 2)
+
+        let cachePath = getCachedTweetPath(options)
+        let cacheDir = require("path").dirname(cachePath)
+
+        // makre sure directory exists
+        await fs.mkdir(cacheDir, { recursive: true })
+
+        syncFs.writeFileSync(cachePath, tweetsJSON)
+
+        console.log(`Writing ${cachePath}`)
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+function getCachedTweetPath(options) {
+    let path = require("path")
+
+    // get directory for main thread
+    let appPath = require.main.filename // C:\user\github\app\node_modules\@11ty\eleventy\cmd.js
+    let pos = appPath.indexOf("node_modules")
+    let appRoot = appPath.substr(0, pos) // C:\user\github\app\
+
+    // build cache file path
+    let cachePath = path.join(appRoot, options.cacheDirectory, "tweetsMentions.json")
+
+    return cachePath
+}
+
+module.exports = {
+  tweettomention: (tweetId, options,target) => {
+     let aa=getTweet(tweetId, options,target);
+    return undefined;
+  }
+}
 //let liveTweet = getTweet('1273201272485810176',{},"test");
 
 //let liveTweet = getTweet('1273196572122255360',{});
