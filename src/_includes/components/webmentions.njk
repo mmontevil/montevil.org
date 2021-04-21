@@ -1,8 +1,11 @@
 {% set allMentions = articleUrl | getWebmentionsForUrl %}
 {% set allMentionsSize = allMentions | size %}
-{% set tweetsize = crossref.message.events | size %}
 
-{% set allMentionsSize = allMentionsSize  %}
+{% set citationSize = 0 %}
+{% if gsentry and gsentry[1].length >0%}
+ {% set citationSize =gsentry[1].length%}
+{% endif %}
+{% set allMentionsSize = allMentionsSize+citationSize  %}
 
 {% set likes = allMentions | webmentionsByType('like-of') %}
 {% set likesSize = likes | size %}
@@ -16,7 +19,14 @@
 {% set mentions = allMentions | webmentionsByType('mention-of') %}
 {% set mentionsSize = mentions | size  %}
 <aside class="wrap">
-<h2 id="webmentions">{{ allMentionsSize }} Webmention{% if allMentionsSize > 1 %}s{% endif %}</h2>
+<h2 id="webmentions">{{ allMentionsSize }} mention{% if allMentionsSize > 1 %}s{% endif %}</h2>
+{% if citationSize > 0 %}
+  <section>
+    <h3>{{ citationSize }} citation{% if citationSize > 1 %}s{% endif %}</h3>
+    {% include "components/webmentions/citedby.njk" %}
+  </section>
+{% endif %}
+
 
 {% if likesSize > 0 %}
   <section>
@@ -31,6 +41,8 @@
     {% include "components/webmentions/reposts.njk" %}
   </section>
 {% endif %}
+
+
 
 {% if repliesSize > 0 %}
   <section>

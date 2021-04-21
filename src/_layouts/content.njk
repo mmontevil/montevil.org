@@ -76,9 +76,10 @@ https://developers.google.com/search/docs/data-types/breadcrumbs
   {% endif %}#}
 
   {% set item = {
+  
         date: date,
       url: page.url,
-    data: {
+    data: {gsentry: gsentry,
       layout: layout,
       lang: lang,
       title: title,

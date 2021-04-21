@@ -15,14 +15,19 @@
     {%elif h2=="tocH2"%}
     {%set tocRen%}{{ content | toc(tags=['h2', 'h3'], wrapperClass='autotoc indent')|safe}}{%endset%}
     {{tocRen |safe}}
+    
   {%else%}
    <nav class=" autotoc indent"><ol ><li><a href="#CitationAnchor"  class="buttonInToc"> <i>Citation & Download</i> {% icon "pdf", "PDF" %} {% icon "bib", "BIB" %}</a></li></ol></nav>
  {%set tocRen%}{{ content | toc | safe }}{%endset%}
  {{tocRen |safe}}
+ <nav class=" autotoc indent"><ol ><li  class="tocLevel1"><a href="#webmentions">Mentions</a></li></ol></nav>
   {%endif%}
   </div>
 </div>
 </div>
-{%if printToc%}{{tocRen |safe}}{%endif%}
+{%if printToc%}
+{{tocRen |safe}}
+<nav class=" autotoc indent"><ol ><li  class="tocLevel1"><a href="#webmentions">Mentions</a></li></ol></nav>
+{%endif%}
 
 {% endmacro %}

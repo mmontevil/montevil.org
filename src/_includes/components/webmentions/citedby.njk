@@ -1,0 +1,28 @@
+ 
+
+ {% if gsentry and gsentry[1].length >0%}
+
+ <ol class="citedBy">
+{% for article in gsentry[1]%}
+ <li >
+ 
+
+{% for auth in article.author_id%}
+ {% authors article.bib.author[loop.index0], auth, people %}
+ {%- if loop.revindex >2 -%}, {%endif-%}{%- if loop.revindex ===2 %} & {%endif-%}{%- if loop.revindex ===1 %}.{%endif-%}
+{%endfor%} 
+
+{% if not article.bib.pub_year=="NA"%}{{article.bib.pub_year}}. {%endif%}
+{% if article.bib.venue=="NA"%}<i>{%endif%}
+{{article.bib.title | title}}.
+{% if article.bib.venue=="NA"%}</i>{%else%}
+<i>{{article.bib.venue | title-}}</i>.{%endif%}
+{% if not article.pub_url==""%}<a href="{{article.pub_url}}">Publisher</a> {%endif%}
+{% if not article.eprint_url==""%}
+<a href="{{article.eprint_url}}">Eprint </a>
+{%endif%}
+
+ </li >
+{%endfor%}
+</ol >
+{%endif%}

@@ -75,10 +75,14 @@
     {% endif %}
     {% set mentions = item.url | getWebmentionsForUrl %}
     {% set mentionsSize = mentions | size %}
+    {% if  item.data.gsentry and item.data.gsentry[1]%}
+    {% set mentionsSize = mentionsSize+item.data.gsentry[1].length %}
+    {% endif %}
+    
     {% if mentionsSize > 0 %}
       <li class="webmentions meta__item meta__count">
         {% icon "comments", "Webmentions" %}
-        <a href="{{ item.url }}#webmentions">{{ mentionsSize }} webmention{% if mentionsSize > 1 %}s{% endif %}
+        <a href="{{ item.url }}#webmentions">{{ mentionsSize }} mention{% if mentionsSize > 1 %}s{% endif %}
         </a>
       </li>
     {% endif %}

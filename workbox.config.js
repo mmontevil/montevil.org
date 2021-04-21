@@ -3,6 +3,9 @@ const path = require('path');
 const DIST = '_site';
 
 module.exports = {
+    skipWaiting: true,
+  clientsClaim: true,
+  navigateFallback: '/offline-fallback.html',
   globDirectory: DIST,
   globPatterns: [
     './js/additional-es.*.js',
