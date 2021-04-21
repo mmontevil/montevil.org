@@ -27,7 +27,9 @@
 </div>
 {%if printToc%}
 {{tocRen |safe}}
+{%if h2=="" %}
 <nav class=" autotoc indent"><ol ><li  class="tocLevel1"><a href="#webmentions">Mentions</a></li></ol></nav>
+{%endif%}
 {%endif%}
 
 {% endmacro %}
