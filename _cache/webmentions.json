@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2021-04-19T16:58:01.315Z",
+  "lastFetched": "2021-04-21T22:19:41.215Z",
   "webmentions": [
     {
       "type": "entry",
@@ -299,6 +299,24 @@
       },
       "in-reply-to": "https://montevil.org/",
       "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Philosophy of Science Communication",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/608d63ea81cc760a279c3772245dfeb5c7e9d0d6eeb2188d0c6bbdcd9f3f77ad.jpg",
+        "url": "https://twitter.com/PhilSciComm"
+      },
+      "url": "https://twitter.com/MMontevil/status/1383438858604351506#favorited-by-1138035753668292608",
+      "published": "2021-04-20T17:20:30Z",
+      "wm-received": "2021-04-20T17:20:30Z",
+      "wm-id": 1127688,
+      "wm-source": "https://brid.gy/like/twitter/MMontevil/1383438858604351506/1138035753668292608",
+      "wm-target": "https://montevil.org/publications/articles/2021-montevil-vaccines-germs-knowledge/",
+      "like-of": "https://montevil.org/publications/articles/2021-montevil-vaccines-germs-knowledge/",
+      "wm-property": "like-of",
       "wm-private": false
     }
   ]

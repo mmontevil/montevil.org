@@ -1416,5 +1416,37 @@
     "wm-private": false,
     "images": [],
     "favorite_count": 0
+  },
+  "1384749712939659264": {
+    "id_str": "1384749712939659264",
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Josquin Debaz",
+      "screen_name": "josquindebaz",
+      "photo": "https://pbs.twimg.com/profile_images/1338827506812669952/CeNVOQ0R_normal.jpg",
+      "url": "https://t.co/MR7yolQXN4"
+    },
+    "url": "https://twitter.com/josquindebaz/status/1384749712939659264",
+    "published": "2021-04-21T06:03:53+00:00",
+    "wm-received": "2021-04-21T06:03:53+00:00",
+    "wm-id": "1384749712939659264",
+    "name": "Sciences et entropocène\n{Maël Montévil}\nhttps://t.co/OnQVBhh1Va https://t.co/khlLOE0doO",
+    "content": {
+      "content-type": "text/html",
+      "value": "Sciences et entropocène<br/>{Maël Montévil}<br/><a href=\"https://hal.archives-ouvertes.fr/hal-03200927\">hal.archives-ouvertes.fr/hal-03200927</a> ",
+      "html": "Sciences et entropocène<br/>{Maël Montévil}<br/><a href=\"https://hal.archives-ouvertes.fr/hal-03200927\">hal.archives-ouvertes.fr/hal-03200927</a> ",
+      "text": "Sciences et entropocène\n{Maël Montévil}\nhttps://t.co/OnQVBhh1Va https://t.co/khlLOE0doO"
+    },
+    "wm-source": "https://www.crossref.org/",
+    "wm-target": "https://montevil.org/publications/articles/2021-Montevil-Stiegler-Sciences-Entropocene/",
+    "mention-of": "https://montevil.org/publications/articles/2021-Montevil-Stiegler-Sciences-Entropocene/",
+    "repost-of": "https://montevil.org/publications/articles/2021-Montevil-Stiegler-Sciences-Entropocene/",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "images": [
+      "https://pbs.twimg.com/media/EzeehRLWQAA4kmt.png"
+    ],
+    "favorite_count": 1
   }
 }
