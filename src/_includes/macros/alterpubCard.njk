@@ -8,7 +8,21 @@
 
     {% set aref %}<a href={{itemdata.page.url}}>{{-itemdata.title-}}</a>{%endset%}
   <li  class="publi"><div  class="wrap"><ul class="inlinemeta" >{{publabel2(itemdata)|safe}}</ul> <p>{% icon "reference", "reference" %} {{ itemdata.bibentry | bibcite2|divRemove| urlize( itemdata.title,itemdata.page.url, itemdata.bibentry.type)|safe}}</p>
-  
+  {% if not  (itemdata.bibentry.abstract === undefined) %}
+<details class=" citation abstract"> 
+     <summary> Abstract</summary>
+     <div class="abstract wrap"> <p>  
+     {{ itemdata.bibentry.abstract  | safe }}</p >
+     
+     {% if not  (itemdata.bibentry.keyword === undefined) %}
+          <p > <span class="paragraphHead2"><em> Keywords: </em></span>  {{ itemdata.bibentry.keyword  | safe }}</p >
+           {% endif %}
+  </div>
+</details>
+{% endif %}
+<div class="smalltext handle">{{pubuttons(itemdata) |safe}}</div>
+
+{#
  <div class="accordion ">{% if not  (itemdata.bibentry.abstract === undefined) %}<input type="checkbox" name="{{itemdata.bibentry.id}}{{rid}}" id="{{-itemdata.bibentry.id-}}{{-rid-}}" >{% endif %}
   <p class="handle">  
     <span class="smalltext">{{pubuttons(itemdata) |safe}}</span>{% if not  (itemdata.bibentry.abstract === undefined) %}<label for="{{-itemdata.bibentry.id-}}{{-rid-}}" class="smalltext"><span class="abssvg folded">{% icon "chevronRight", "Link" %}</span><span class="abssvg unfolded">{% icon "chevronDown", "Link" %}</span>Abstract</label> 
@@ -19,7 +33,7 @@
 <p > <span class="paragraphHead2"><em> Keywords: </em></span> {{ itemdata.keyword  | safe }}</p >
   {% endif %}
   </div> {% endif %}
-</div>
+</div>#}
   </div>
   </li>
 {% endmacro %}

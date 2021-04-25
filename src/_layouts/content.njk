@@ -124,6 +124,10 @@ https://developers.google.com/search/docs/data-types/breadcrumbs
     {% else %}
       {{ content | safe }}
     {% endif %}
+    
+      {% set articleUrl = page.url %}
+  {% include "components/webmentions.njk" %}
+
   </div>
 
 
@@ -150,7 +154,5 @@ https://developers.google.com/search/docs/data-types/breadcrumbs
     </li>
   </ul>
 
-  {% set articleUrl = page.url %}
-  {% include "components/webmentions.njk" %}
 
   </article>

@@ -17,7 +17,7 @@ import { DOMParser, parseHTML } from 'linkedom';
 
 
 
-const adaptor = liteAdaptor({fontSize: 16});
+const adaptor = liteAdaptor({fontSize: 16,cjkCharWidth: 0, unknownCharWidth: 0, unknownCharHeight: 0});
 AssistiveMmlHandler(RegisterHTMLHandler(adaptor));
 //RegisterHTMLHandler(adaptor);
 //

@@ -1,6 +1,27 @@
 {
-  "lastFetched": "2021-04-21T22:19:41.215Z",
+  "lastFetched": "2021-04-23T15:56:09.869Z",
   "webmentions": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Philosophy World Democracy",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/d3d699405802a3d4cc2a79ea896d14db3f7534eb4090030f1e43ddfd3f7bce65.jpg",
+        "url": "https://twitter.com/PhilosophyWD"
+      },
+      "url": "https://twitter.com/PhilosophyWD/status/1383442518105149443",
+      "published": "2021-04-17T15:29:34+00:00",
+      "wm-received": "2021-04-23T15:55:55Z",
+      "wm-id": 1131407,
+      "wm-source": "https://brid.gy/repost/twitter/MMontevil/1383438858604351506/1383442518105149443",
+      "wm-target": "https://montevil.org/publications/articles/2021-montevil-vaccines-germs-knowledge/",
+      "content": {
+        "text": "With biology and #philosophy, I bring some background on #Vaccines, the strengths and limitations of the corresponding scientific knowledge,"
+      },
+      "repost-of": "https://montevil.org/publications/articles/2021-montevil-vaccines-germs-knowledge/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {

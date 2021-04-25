@@ -38,53 +38,76 @@
 
 
   {% set content %}
+  {% if article.data.excerpt or article.data.abstract%}
   {% if article.data.excerpt %}
     <p class="card__body p-summary">  {{article.data.excerpt}}   </p> 
     {%elif article.data.abstract%}
      <p class="card__body p-summary">  {{article.data.abstract | truncate(300)}}   </p> 
  
 {% endif %}
-<hr>
-  {#  <details class="card__body p-summary">  <summary>Abstract</summary>
-    {{article.data.abstract }}
-    </details> 
-  <details > <summary  class="buttonlink">Citation   </summary>  
-  {% icon "reference", "reference" %}
-{{ article.data.bibentry | bibcite2| urlize( article.data.title,article.data.page.url, article.data.bibentry.type)|divRemove|safe}} </details> #}
+
+{% if not  (article.data.abstract === undefined) %}
+<details class=" citation abstract"> 
+     <summary> Abstract</summary>
+     <div class="abstract wrap"> <p>  
+     {{ article.data.abstract  | safe }}</p >
+     
+     {% if not  (article.data.bibentry.keyword === undefined) %}
+          <p > <span class="paragraphHead2"><em> Keywords: </em></span>  {{ article.data.keyword  | safe }}</p >
+           {% endif %}
+  </div>
+</details>
+{% endif %}
+
+    
+
+{% endif %}
 
 
+<div class="handle smalltext">
+<details class="citation"> <summary  >Citation </summary>  
+ <div> {% icon "reference", "reference" %}
+{{ article.data.bibentry | bibcite2| urlize( article.data.title,article.data.page.url, article.data.bibentry.type)|divRemove|safe}} </div></details> 
+{{pubuttons(article.data) |safe}}
 
+  </div>
+  
+
+
+ {# 
+{% if not  (article.data.bibentry.abstract === undefined) %}
  <div class="accordion">
   <input type="checkbox" name="{{-article.data.bibentry.id-}}{{-rid-}}" id="{{-article.data.bibentry.id-}}{{-rid-}}" >
   <p class="handle">
     
    <label for="{{-article.data.bibentry.id-}}{{-rid-}}" class="smalltext"><span class="abssvg folded">{% icon "chevronRight", "Link" %}</span><span class="abssvg unfolded">{% icon "chevronDown", "Link" %}</span>
-   {% if not  (article.data.bibentry.abstract === undefined) %}Abstract & 
-   {% endif %} Citation
+   Abstract 
+    
    </label>
+  
+   
    <span  class="smalltext">{{pubuttons(article.data) |safe}}</span>
   </p>
   <div class="content wrap">
   
-  {% if not  (article.data.bibentry.abstract === undefined) %}
+  
      <h4 > Abstract: </h4> <p class="p-summary">  
      {{ article.data.abstract  | safe }}</p >
-     {% endif %}
+     
      
      {% if not  (article.data.bibentry.keyword === undefined) %}
           <p > <span class="paragraphHead2"><em> Keywords: </em></span>  {{ article.data.keyword  | safe }}</p >
            {% endif %}
            
-       <h5 > Citation: </h5>    
+      <h5 > Citation: </h5>    
              <div class=" "><p >
-  {# {{publabel(article.data)|safe}} #}
+   
   {% icon "reference", "reference" %}
 {{ article.data.bibentry | bibcite2| urlize( article.data.title,article.data.page.url, article.data.bibentry.type)|divRemove|safe}} </p></div>
            
   </div>
   
-  
-</div>
+</div>{% endif %}#}
  
   {% endset %}
 

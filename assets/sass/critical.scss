@@ -956,3 +956,28 @@ article .subtitleHead {
     margin-left: auto;
     margin-right: auto;
     }}
+
+    
+    details > summary > * {
+  display: inline;
+}
+details > summary {
+
+  //background-color: #fdb;
+  cursor: pointer;
+}
+
+    details[open] >:not(summary) {
+  animation: animateDown 0.3s linear forwards;
+}
+
+@keyframes animateDown {
+  0% {
+    opacity: 0;
+    transform: translatey(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translatey(0);
+  }
+}
