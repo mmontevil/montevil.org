@@ -36,9 +36,9 @@ hasSup: hasSup,
 
 
 
-  <div id="CitationAnchor" class="citationW indent"><p > {#{{publabel(item)|safe}} #}{% icon "reference", "reference" %} {{ bibentry | bibcite2|divRemove|safe}}</p>
-  <p> {{pubuttons(item) |safe}}</p>
-  </div>
+  <aside id="CitationAnchor" class="citationW indent"><p > {#{{publabel(item)|safe}} #}{% icon "reference", "reference" %} {{ bibentry | bibcite2|divRemove|safe}}</p>
+  <div class="handle notop"> {{pubuttons(item) |safe}}</div>
+  </aside>
   
   {% if seeAlso%}
 <p>{{seeAlso.text}} <a href="{% link_to seeAlso.grub %}">{{seeAlso.textLink}}</a>.</p>

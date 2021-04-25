@@ -217,7 +217,7 @@ dt.description {
 }
 .subtitleHead {
   & + * {
-    --flow-space: var(--gap-xxl);
+    --flow-space: var(--gap-xl);
   }
 }
 
@@ -411,6 +411,8 @@ mjx-mspace {
   min-width: 9em;
 }
 
-
-
-
+.minih2{
+font-size: var(--font-size-l);
+}
+.notop{--flow-space: 0;
+margin-top: 0;}
