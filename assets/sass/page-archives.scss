@@ -144,3 +144,18 @@ ul.ais-HierarchicalMenu-list {
   box-shadow: 10px 5px 5px var(--color-primary-lighter-7);
   color: var(--color-primary);
 }
+
+input.aa-Input::placeholder{color: var(--color-primary-lighter-3);}
+button.aa-SubmitButton{border-radius: 0.04em;}
+.aa-Form .aa-InputWrapperPrefix button.aa-SubmitButton:hover > svg {color: var(--color-link-hover);
+  vertical-align: sub;
+}
+.aa-DetachedSearchButton:hover .aa-DetachedSearchButtonPlaceholder{color: var(--color-link-hover);}
+
+ .aa-DetachedSearchButtonPlaceholder{ color: var(--color-primary-lighter-3);}
+ 
+.aa-DetachedSearchButton:hover .aa-DetachedSearchButtonIcon{color: var(--color-link-hover);}
+
+.aa-DetachedContainer .aa-DetachedFormContainer .aa-DetachedCancelButton:hover {
+color: var(--color-link-hover);
+}

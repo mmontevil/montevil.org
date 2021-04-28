@@ -55,6 +55,7 @@ img.page__illustration2 {
   margin-right: auto;
   max-width: calc(min(max(66%, 30em), 100%));
 }
+/*
 .page__body {
   @extend %flowall;
 
@@ -63,7 +64,7 @@ img.page__illustration2 {
   & > * {
     --flow-space: var(--gap-l);
   }
-}
+}*/
 .page__title + .page__meta {
   --flow-space: var(--gap-xs);
 }

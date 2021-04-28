@@ -1,5 +1,15 @@
 ---
 layout: content
 ---
-
+ <img
+        alt="Screenshot of “{{ title }}”"
+        width="1200"
+        height="800"
+        src="https://image.thum.io/get/width/1200/crop/800/noanimate/{{ link }}"
+        class="page__illustration u-photo noDarkFilter"
+        crossorigin="anonymous"
+        >
+      <p class="link__url">
+        <a href="{{ link }}" class="u-bookmark-of">{{ link | replace('_', '_&shy;') | safe }}</a>
+      </p>
 {{ content | safe }}

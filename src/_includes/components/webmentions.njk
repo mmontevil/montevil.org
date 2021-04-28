@@ -18,7 +18,7 @@
 
 {% set mentions = allMentions | webmentionsByType('mention-of') %}
 {% set mentionsSize = mentions | size  %}
-<hr>
+
 <aside class="wrap webmention">
 <h2 id="webmentions">{{ allMentionsSize }} mention{% if allMentionsSize > 1 %}s{% endif %}</h2>
 {% if citationSize > 0 %}
@@ -31,10 +31,12 @@
 
 {% if likesSize > 0 %}
   <details class="mention"> <summary>
-    <h3>{{ likesSize }} like{% if likesSize > 1 %}s{% endif %}</h3></summary> 
+    <h3>{{ likesSize }} like{% if likesSize > 1 %}s{% endif %}</h3>
+    </summary> 
     {% include "components/webmentions/likes.njk" %}
   </details>
 {% endif %}
+
 
 {% if repostsSize > 0 %}
   <details class="mention"> <summary>

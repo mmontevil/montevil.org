@@ -13,10 +13,10 @@ permalink: /feeds/twitter/publications.json
     {
       "id": "{{ absoluteEntryUrl }}",
       "url": "{{ absoluteEntryUrl }}",
-      "title": "💬 Note from {{ entry.date | date("Do MMMM YYYY [at] H:mm:ss") }}",
+      "title": "📖 New {{ entry.data.typepub }}: {{ entry.data.title }}",
       "date_published": "{{ entry.date | rssDate }}",
-      "content_text": "{{ entry.data.excerpt | safe }}\n {{ absoluteEntryUrl }}{{ entry.data.title |dump}}",
-      "attachments": {{ entry.template.frontMatter.content | imagesAsAttachments(absoluteEntryUrl) | safe }}      
+      "content_text": "📖 New {{ entry.data.typepub }}: {{ entry.data.title }}\n  {{ entry.data.excerpt | safe }}\n {% for tag in entry.data.tags -%}#{{ tag | tagToHashtag }} {% endfor -%}\n{{ absoluteEntryUrl }} ",
+      "attachments": [{%- if entry.data.illust-%}{{ absoluteEntryUrl }}{{ entry.data.illust }}{%- endif -%}]
     }{%- if not loop.last -%},{%- endif -%}
   {% endfor %}
   ]

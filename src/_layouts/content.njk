@@ -37,13 +37,8 @@ https://developers.google.com/search/docs/data-types/breadcrumbs
     ]
   }
 </script>
-
-<article
-    class="page wrap h-entry"
-    lang="{{ lang }}">
-
-
-  <ul class="older-newer__shortcuts">
+<nav>
+<ul class="older-newer__shortcuts">
     <li class="older-newer__older">
       {% if olderContent %}
         <a href="{{ olderContent.url }}" aria-label="older {{ layout }}">{% icon "older", "Older" %}</a>
@@ -55,12 +50,18 @@ https://developers.google.com/search/docs/data-types/breadcrumbs
       {% endif %}
     </li>
   </ul>
+  </nav>
+  
+<article
+    class="page wrap h-entry"
+    lang="{{ lang }}">
+
+<header class="wrap">
+  
 
   {% if layout == 'link' and authors %}
     <p class="page__surtitle">{{ authors.html | safe }}</p>
   {% endif %}
-  
-
   
   {% if layout == 'note' %}
     <h1 class="page__title p-name">Note from {{ page.date | formattedDate }}</h1>
@@ -71,6 +72,7 @@ https://developers.google.com/search/docs/data-types/breadcrumbs
   {% if layout == 'publication' and bibentry['container-title'] %}
     <p class="page__subtitle">{{ bibentry['container-title'] | safe }}</p>
   {% endif %}
+  
   {#{% if layout == 'talk' and entry['container-title'] %}
     <p class="page__subtitle">{{ entry['container-title'] | safe }}</p>
   {% endif %}#}
@@ -100,37 +102,44 @@ https://developers.google.com/search/docs/data-types/breadcrumbs
       }
   } %}
   {% from "macros/meta.njk" import meta %}
+  
   <aside class="page__meta">
     {{ meta(item) }}
     <hr>
   </aside>
+  
+{% if layout == 'publication' %}
+    {% include "components/header-publication.njk" %}
+{% endif %}
+{% if layout == 'SamaDoc' %}
+    {% include "components/header-samaDoc.njk" %}
+{% endif %}
+</header>
+  
+  
+  <div class="page__body e-content legibilityWidth wrap0all">
 
-  <div class="page__body e-content">
-    {% if layout == 'link' %}
-      <img
-        alt="Screenshot of “{{ title }}”"
-        width="1200"
-        height="800"
-        src="https://image.thum.io/get/width/1200/crop/800/noanimate/{{ link }}"
-        class="page__illustration u-photo noDarkFilter"
-        crossorigin="anonymous"
-        >
-      <p class="link__url">
-        <a href="{{ link }}" class="u-bookmark-of">{{ link | replace('_', '_&shy;') | safe }}</a>
-      </p>
-    {% endif %}
+    
     {% if layout == 'note' %}
       {{ content | noteToHtml | safe }}
     {% else %}
       {{ content | safe }}
     {% endif %}
-    
+  </div>
+  
+  
+  <footer class="wrap0">
+  
+  
+{% if layout == 'SamaDoc' %}
+    {% include "components/footer-samaDoc.njk" %}
+{% endif %}
+
+<hr>
       {% set articleUrl = page.url %}
   {% include "components/webmentions.njk" %}
-
-  </div>
-
-
+  
+<nav>
   <ul class="older-newer">
     <li class="older-newer__older">
       {% if olderContent %}
@@ -153,6 +162,6 @@ https://developers.google.com/search/docs/data-types/breadcrumbs
       {% endif %}
     </li>
   </ul>
-
-
+</nav>
+</footer>
   </article>

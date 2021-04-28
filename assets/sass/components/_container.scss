@@ -113,7 +113,7 @@
   border-radius: 0.3em;
   position: relative;
   border: var(--border-width) dotted ;
-//--flow-space: var(--gap);
+--flow-space: var(--gap-xl);
   padding: var(--gap-xs) ;
   background-color: var(--color-primary-lighter-8);
   border-color:  var(--color-primary-lighter-5);
@@ -128,7 +128,7 @@
   //text-decoration: none;
 }
 .tableContent {
-  --flow-space: var(--gap-xxl);
+  --flow-space: var(--gap-xl);
   border-color: transparent;
       padding-left: 0em;
     padding-right: 0em;

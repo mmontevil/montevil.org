@@ -492,7 +492,7 @@ ol {
   padding: 0 0 0 var(--gap-xl);
 }
 
-hr {
+hr { --flow-space: var(--gap-l);
   border-color: var(--color-grey);
   @media (min-width: 30em) {
     article{
@@ -575,7 +575,7 @@ article {
       color: #777;
     }
   }
-  --flow-space: 0;
+ // --flow-space: 0;
 }
 
 .quickaccess {
@@ -680,9 +680,7 @@ article {
 }
 //.itemize {margin-top: 0.4em;}
 
-.maketitle {
-  --flow-space: var(--gap-xxl);
-}
+
 
 p,
 dt {

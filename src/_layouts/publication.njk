@@ -1,5 +1,5 @@
 ---
-layout: publication2
+layout: content
 upnav: toc-site
 css: ["page-text.css"]
 eleventyComputed:
@@ -16,9 +16,15 @@ eleventyComputed:
 ---
 
 
-  <div class="legibilityWidth wrap0all">
-{{ content  | safe }}
-</div>
+ 
+ {# <div class="legibilityWidth wrap0all"> </div>#}
+ 
+{% if noAnchor %}
+    {{ content  | safe }}
+{% else %}
+    {{ content | addAnchor | safe }}
+{% endif %}
+
  
  {#
  {% if gsentry[1].length >0%}

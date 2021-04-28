@@ -8,61 +8,19 @@ eleventyComputed:
 
 
 
-<article
-    class="page wrap h-entry"
-    lang="{{ lang }}">
-
-
-{% if excerpt  %}
-<p class="lead"> {{excerpt}}</p>
-{%endif%}
-
-{% set hop%}
-::: lead
-See [the article]({% link_to "articles/2016-PMS-Sama-Method-Morphometry" %}).
-:::
-{% endset %}
-{{hop | markdownify | safe }}
-
-
-    {#<h1 class="page__title p-name">{{ title | orphans | safe }}</h1>#}
 
 
 
-  <div class=" page__body e-content indent wrap0">
-  <div class="centerList">
-    <h2>Navigation:</h2> 
-    
-    {{ collections.all | eleventyNavigation | eleventyNavigationToHtml(
-    {
-    activeAnchorClass: "selected-A", 
-    activeKey: eleventyNavigation.key
-    }) | safe }}
-    </div>
-    <hr>
-     <div class="legibilityWidth wrap0all">
-  {# <h2>Table of content:</h2>
-   {{ content | toc(tags=['h2', 'h3'], wrapperClass='autotoc ') | safe }}
-  #}
       {{ content | safe }}
-      </div>
+    
   
-  <div class="centerList">
-      <h2>Navigation:</h2> 
+ 
+  
 
-  
-    {{ collections.all | eleventyNavigation | eleventyNavigationToHtml(
-    {
-    activeAnchorClass: "selected-A", 
-    activeKey: eleventyNavigation.key
-    }) | safe }}
-    </div>
-  
-  </div>
 
 
 
   
 
-  </article>
+
 

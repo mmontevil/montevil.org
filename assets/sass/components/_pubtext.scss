@@ -416,3 +416,8 @@ font-size: var(--font-size-l);
 }
 .notop{--flow-space: 0;
 margin-top: 0;}
+
+.maketitle {
+  --flow-space: var(--gap-xl);
+}
+.abstract>p{--flow-space: var(--gap-m);}

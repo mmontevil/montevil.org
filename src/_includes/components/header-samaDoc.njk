@@ -1,0 +1,23 @@
+ 
+{% if excerpt  %}
+<p class="lead"> {{excerpt}}</p>
+{%endif%}
+
+{% set hop%}
+::: lead
+See [the article]({% link_to "articles/2016-PMS-Sama-Method-Morphometry" %}).
+:::
+{% endset %}
+{{hop | markdownify | safe }}
+
+
+  <div class="centerList">
+    <h2>Navigation:</h2> 
+    
+    {{ collections.all | eleventyNavigation | eleventyNavigationToHtml(
+    {
+    activeAnchorClass: "selected-A", 
+    activeKey: eleventyNavigation.key
+    }) | safe }}
+    </div>
+    <hr>

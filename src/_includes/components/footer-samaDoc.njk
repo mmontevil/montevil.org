@@ -1,0 +1,10 @@
+ <div class="centerList">
+      <h2>Navigation:</h2> 
+
+  
+    {{ collections.all | eleventyNavigation | eleventyNavigationToHtml(
+    {
+    activeAnchorClass: "selected-A", 
+    activeKey: eleventyNavigation.key
+    }) | safe }}
+    </div>
