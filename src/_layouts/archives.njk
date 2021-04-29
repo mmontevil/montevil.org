@@ -29,38 +29,30 @@ css: ["page-archives.css"]
 
   <div class="wrap0 archives ">
 
-
+<header class="wrap0">
   <h1 class= "wrap">
     {{title}}
   </h1>
   
 
   
-    <div  id="filters">
+    <nav  id="filters">
     {% include  "archiveTOC.njk" %}
-    </div>
+    </nav>
    
-   {# <iframe src="https://duckduckgo.com/search.html?duck=yes&site=montevil.org&prefill=Search DuckDuckGo&bgcolor=var(--color-bg)&focus=yes" style="background-color: var(--color-lighter-5);overflow:hidden;margin:auto;padding:0;width:483px;height:60px;" frameborder="0"></iframe>#}
+
 
 {% set append="overlay"%} 
-<div id="myNav" class=" overlay" >
+<aside id="myNav" class=" overlay" >
   <div class="wrap">
-  <div class=" overlay-content ">
+  <nav class=" overlay-content ">
   <h2 class="center titleOverToc"> {{title}}</h2>
     {% include  "archiveTOC.njk" %}
-  </div>
+  </nav>
 </div>  
-</div>
+</aside>
 
-{#  <form method="get" id="search" action="http://duckduckgo.com/">
-  <input type="hidden" name="sites" value="montevil.org"/>
-  <input type="hidden" name="k8" value="var(--color-bg)"/>
-  <input type="hidden" name="k9" value="var(--color-lighter-5)"/>
-  <input type="hidden" name="kt" value="h"/>
-  <label class="center"> <p class="center">Search  DuckDuckGo:</p><input type="text" name="q" maxlength="255" placeholder="Search&hellip;" class="centerBlock searchBox" /></label>
- <input type="submit" value="DuckDuckGo Search" style="visibility: hidden;" />
-</form>
-#}
+
 
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css"></noscript>
@@ -123,7 +115,7 @@ li.aa-Item div.aa-ItemDescription{color: var(--color-primary-darker-1);}
 </style>
 
 <div id="search" class="wrap" style="height:32px;"> </div> 
-
+</header>
       
         <ol class="cards-list">
 

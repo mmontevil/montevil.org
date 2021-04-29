@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2021-04-26T14:12:16.377Z",
+  "lastFetched": "2021-04-29T11:40:09.580Z",
   "webmentions": [
     {
       "type": "entry",
@@ -353,6 +353,84 @@
       "wm-received": "2021-04-26T13:33:26Z",
       "wm-id": 1133211,
       "wm-source": "https://brid.gy/like/twitter/MMontevil/1386483260818087936/842820930523054081",
+      "wm-target": "https://montevil.org/publications/articles/2020-montevil-turing-biology/",
+      "like-of": "https://montevil.org/publications/articles/2020-montevil-turing-biology/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Revue Intellectica",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/1d3f69cc8ed9f57c7c6070b4106a30e1776c5d182630ba79a7cc43683d1582b5.jpg",
+        "url": "https://twitter.com/RIntellectica"
+      },
+      "url": "https://twitter.com/RIntellectica/status/1387672485890494467",
+      "published": "2021-04-29T07:37:57+00:00",
+      "wm-received": "2021-04-29T08:20:17Z",
+      "wm-id": 1136265,
+      "wm-source": "https://brid.gy/repost/twitter/MMontevil/1386483260818087936/1387672485890494467",
+      "wm-target": "https://montevil.org/publications/articles/2020-montevil-turing-biology/",
+      "content": {
+        "text": "📖 Nouvel Article en preprint: De l’œuvre de Turing aux défis contemporains pour la compréhension mathématique du vivant. @RIntellectica\n#bio"
+      },
+      "repost-of": "https://montevil.org/publications/articles/2020-montevil-turing-biology/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sylvain Hanneton",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/5cea0388f33128544a8d16539f8e6c8815006f7c3a8a033d7c1bb895fc10e915.jpg",
+        "url": "https://twitter.com/shanneton"
+      },
+      "url": "https://twitter.com/shanneton/status/1387673931826479108",
+      "published": "2021-04-29T07:43:41+00:00",
+      "wm-received": "2021-04-29T08:20:42Z",
+      "wm-id": 1136267,
+      "wm-source": "https://brid.gy/repost/twitter/MMontevil/1386483260818087936/1387673931826479108",
+      "wm-target": "https://montevil.org/publications/articles/2020-montevil-turing-biology/",
+      "content": {
+        "text": "📖 Nouvel Article en preprint: De l’œuvre de Turing aux défis contemporains pour la compréhension mathématique du vivant. @RIntellectica\n#bio"
+      },
+      "repost-of": "https://montevil.org/publications/articles/2020-montevil-turing-biology/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sylvain Hanneton",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/5cea0388f33128544a8d16539f8e6c8815006f7c3a8a033d7c1bb895fc10e915.jpg",
+        "url": "https://twitter.com/shanneton"
+      },
+      "url": "https://twitter.com/MMontevil/status/1386483260818087936#favorited-by-17713594",
+      "published": "2021-04-29T08:20:37Z",
+      "wm-received": "2021-04-29T08:20:37Z",
+      "wm-id": 1136266,
+      "wm-source": "https://brid.gy/like/twitter/MMontevil/1386483260818087936/17713594",
+      "wm-target": "https://montevil.org/publications/articles/2020-montevil-turing-biology/",
+      "like-of": "https://montevil.org/publications/articles/2020-montevil-turing-biology/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Revue Intellectica",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/1d3f69cc8ed9f57c7c6070b4106a30e1776c5d182630ba79a7cc43683d1582b5.jpg",
+        "url": "https://twitter.com/RIntellectica"
+      },
+      "url": "https://twitter.com/MMontevil/status/1386483260818087936#favorited-by-1259853820861038592",
+      "published": "2021-04-29T08:20:44Z",
+      "wm-received": "2021-04-29T08:20:44Z",
+      "wm-id": 1136268,
+      "wm-source": "https://brid.gy/like/twitter/MMontevil/1386483260818087936/1259853820861038592",
       "wm-target": "https://montevil.org/publications/articles/2020-montevil-turing-biology/",
       "like-of": "https://montevil.org/publications/articles/2020-montevil-turing-biology/",
       "wm-property": "like-of",

@@ -109,6 +109,17 @@ I work in
   </ol>
  {% endif %}
 {% endfor %}
+
+{% for article in collections.latestvideoall | sortByOrder2 | reverse%}
+    {% if loop.first%}
+        <h2   class="wrap titleDiag titleDiag2">Latest videos</h2>
+         <ol class="cards-list">
+    {% endif %}
+    {{ talkCard(article) }}
+{% if loop.last%}
+  </ol>
+ {% endif %}
+{% endfor %}
     <p class="wrap more ">See <a href="/all/talks/">all talks</a>…</p>
 
 
