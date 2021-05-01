@@ -356,6 +356,14 @@ module.exports = {
     }
     return res;
   },
+   tweetsMentions: (data) => {
+    if(data.tweets_mentions){
+      return data.tweets_mentions;
+    }
+     if(data.bibentryconf && data.bibentryconf.fields && data.bibentryconf.fields.twittermention){
+      return data.bibentryconf.fields.twittermention.split(", ");
+    }
+  },
   bibentryconf: (data) => {
     var res = {};
     if (data.entry) {

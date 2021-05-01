@@ -9,7 +9,7 @@ let cachedTweets =  getCachedTweets( {
     cacheDirectory: '_cache'
   });
 
-async function getTweet(tweetId, options,target) {
+async function getTweet(tweetId, options,target,source) {
 
     // if we using cache and not cache busting, check there first
     if (options.cacheDirectory && !process.env.CACHE_BUST) {
@@ -28,7 +28,7 @@ async function getTweet(tweetId, options,target) {
     if (hasAuth()) {
         let liveTweet = await fetchTweet(tweetId)
 
-        let tweetViewModel = processTweet(liveTweet,target)
+        let tweetViewModel = processTweet(liveTweet,target,source)
  //console.log(tweetViewModel);
       /*  tweetViewModel.html = renderTweet(tweetViewModel)
 */
@@ -90,7 +90,7 @@ async function fetchTweet(tweetId) {
 }
 
 /* transform tweets */
-function processTweet(tweet,target) {
+function processTweet(tweet,target,source) {
 
     // parse complicated stuff
     let images = getTweetImages(tweet)
@@ -128,7 +128,7 @@ function processTweet(tweet,target) {
       'wm-id': wmid,
       name,
       content,
-      "wm-source": "https://www.crossref.org/",
+      "wm-source": source,
       "wm-target": target ,
       "mention-of": target,
       "repost-of": target,
@@ -286,8 +286,8 @@ function getCachedTweetPath(options) {
 }
 
 module.exports = {
-  tweettomention: (tweetId, options,target) => {
-     let aa=getTweet(tweetId, options,target);
+  tweettomention: (tweetId, options,target,source) => {
+     let aa=getTweet(tweetId, options,target,source);
     return undefined;
   }
 }

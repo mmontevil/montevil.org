@@ -61,6 +61,10 @@
   </details>
 {% endif %}
 
+{%for temp in tweetsMentions%}{%set temp0 %}
+{% tweettomention   temp, {cacheDirectory: '_cache'},  "https://montevil.org"+articleUrl, "none" %}{% endset%}
+{%endfor%}
+
 {%for tweeted in crossref.message.events%}
 {%if  tweeted.source_id =="twitter"%}
 {% set temp-%}{{tweeted.subj.title| replace("Tweet ", "")}}{%-endset-%}
@@ -69,7 +73,7 @@
 {%if temp=="1123337833714835456"  %}{%else%}
 {#{%tweet   temp%} #}
 {%set temp0 %}
-{% tweettomention   temp, {cacheDirectory: '_cache'},  "https://montevil.org"+articleUrl %}
+{% tweettomention   temp, {cacheDirectory: '_cache'},  "https://montevil.org"+articleUrl, "https://www.crossref.org/" %}
 {% endset%}
 {%endif%}{%endif%}{%endif%}
 {%else%}
