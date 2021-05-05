@@ -55,7 +55,7 @@ while (!reachedEnd)
     let cachePath = path.join(appRoot, "_cache", "rgLikeMentions.json")
     let cachePath2 = path.join(appRoot, "src/_data/", "bibM.json")
 
-    
+      
     
 let res={};
 
@@ -65,6 +65,12 @@ let driver = await new Builder().forBrowser('firefox').build();
 const documentInitialised = () =>  
    driver.executeScript("return 'initialised'");
 try {
+   if (syncFs.existsSync(cachePath)){
+      let fileres = await fs.readFile(cachePath, "utf8")
+      res=JSON.parse(fileres) || {}
+   }
+   
+   
    let file = await fs.readFile(cachePath2, "utf8")
         bib = Object.values(JSON.parse(file)) || []
   
@@ -148,7 +154,9 @@ let typepub=""
            mentioned= "https://montevil.org/publications/articles/"  +idd+"/"
      if(typepub=="chapter")
             mentioned= "https://montevil.org/publications/chapters/"  +idd+"/"
-    
+     if(typepub=="book")
+            mentioned= "https://montevil.org/publications/books/"  +idd+"/"
+            
       let type= "card";
     let url= link0;
     let author = {type, name, photo,url }
@@ -175,7 +183,9 @@ let typepub=""
       "wm-property": wmproperty,
       "wm-private": false,
     }
+    if(res[id_str]){}else{
     res[id_str]=tweetViewModel;
+    }
  }
    /**/
      /*

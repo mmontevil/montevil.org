@@ -1,6 +1,7 @@
 {% set cloudinaryPrefix = 'https://res.cloudinary.com/mmontevil/image/fetch/c_fill,f_auto,q_auto,' %}
 <ol class="reactions__list reactions--in-reply-to">
   {% for webmention in replies %}
+      
     <li id="webmention-{{ webmention['wm-id'] }}" class="reactions__item h-cite
         {% if webmention.author == undefined %}reaction--no-author{% endif %}
         {% if webmention.author.photo == undefined %}reaction--no-photo{% endif %}
@@ -8,11 +9,12 @@
       {% if webmention.author.url != "" %}
         <a class="u-url p-author h-card" href="{{ webmention.author.url }}">
           {% if webmention.author.photo != "" %}
+          {%-set photourl-%}{%- downloadAvatar webmention.author.photo -%}{%-endset-%}
             <img
               class="reaction__author__photo u-photo"
               src="/assets/avatars/default.svg"
-              data-src="{{ cloudinaryPrefix }}w_48,h_48/{{ webmention.author.photo }}"
-              data-srcset="{{ cloudinaryPrefix }}w_48,h_48/{{ webmention.author.photo }} 1x, {{ cloudinaryPrefix }}w_96,h_96/{{ webmention.author.photo }} 2x"
+              data-src="{{ cloudinaryPrefix }}w_48,h_48/{{ photourl }}"
+              data-srcset="{{ cloudinaryPrefix }}w_48,h_48/{{ photourl }} 1x, {{ cloudinaryPrefix }}w_96,h_96/{{ photourl }} 2x"
               width= "48"
               height="48"
               alt="{{ webmention.author.name }} avatar"
@@ -55,7 +57,14 @@
           {% endif %}
         </div>
       {% endif %}
-
+      {% for imgsrc in webmention.images %}
+      {%-set imgurl-%}{%- downloadAvatar imgsrc -%}{%-endset-%}
+          <img
+            class="twothirds"
+            alt="mention illustration"
+            src="{{imgurl}}"
+            >
+      {%endfor%}
       {% if webmention.url %}
         <ul class="meta">
 

@@ -42,6 +42,10 @@ let driver = await new Builder().forBrowser('firefox').build();
 const documentInitialised = () =>  
    driver.executeScript("return 'initialised'");
 try {
+     if (syncFs.existsSync(cachePath)){
+      let fileres = await fs.readFile(cachePath, "utf8")
+      res=JSON.parse(fileres) || {}
+   }
    let file = await fs.readFile(cachePath2, "utf8")
         maintweets = Object.values(JSON.parse(file)) || []
   
@@ -98,8 +102,9 @@ for ( x in l){
       "wm-property": wmproperty,
       "wm-private": false,
     }
-    
+    if(res[id_str]){}else{
     res[id_str]=tweetViewModel;
+    }
     xx=xx+1;
   }
 }

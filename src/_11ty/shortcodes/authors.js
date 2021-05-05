@@ -23,6 +23,21 @@ var download = function(uri, filename, callback){
   }
     return undefined;
   };
+  var  filename= (url) =>{
+        let  url0=url.replace("_normal","");
+        let filename0 = url0.substring(url0.lastIndexOf('/')+1);
+      return filename0;
+  }
+    var  downloadAvatar= (url) =>{
+      let url0=url.replace("_normal","");
+      
+    if(!fs.existsSync('src/assets/avatars/mentions/'+filename(url0))){
+    download(url0, 'src/assets/avatars/mentions/'+filename(url0) , function(){
+    console.log('downloaded '+filename(url0));
+});
+  }
+    return 'https://montevil.org/assets/avatars/mentions/'+filename(url0);
+  };
 
 const authors0= (name, gsid, people, auth,nbAuteurs) => {
   let authorPic="/assets/avatars/gs/dummy.jpg";
@@ -73,6 +88,7 @@ const authors1=memoize(authors0);
 
 module.exports = {
  authors: (name, gsid, people,auth=false,nbAuteurs=0 ) =>authors1(name, gsid, people,auth,nbAuteurs) ,
+ downloadAvatar: (url) =>downloadAvatar(url),
 };
 
 

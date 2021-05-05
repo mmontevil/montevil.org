@@ -37,7 +37,7 @@
     "build:netlify": "cross-env NODE_ENV=production npm-run-all --sequential clean --parallel build:js build:sass --sequential build:eleventy serviceworker:inject",
     "webmention": "node ./_scripts/update-webmention.js",
     "likes": "node ./_scripts/twitterLikes.js",
-        "rglikes": "node ./_scripts/researchgatesLikes.js",
+    "rglikes": "node ./_scripts/researchgatesLikes.js",
     "tweets": "node ./_scripts/send-tweets.js",
     "sprite": "node ./_scripts/generate-svg-sprite.js",
     "bib": "(cd BIB; ./updatebib.sh)",

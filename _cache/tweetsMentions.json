@@ -5072,5 +5072,36 @@
     "wm-private": false,
     "images": [],
     "favorite_count": 0
+  },
+  "1389520087657418758": {
+    "id_str": "1389520087657418758",
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Kate Nave",
+      "screen_name": "KathrynNave",
+      "photo": "https://pbs.twimg.com/profile_images/1384484809234284556/pj1jxog7_normal.jpg",
+      "url": "https://t.co/Eo2hJrZCJU"
+    },
+    "url": "https://twitter.com/KathrynNave/status/1389520087657418758",
+    "published": "2021-05-04T09:59:39+00:00",
+    "wm-received": "2021-05-04T09:59:39+00:00",
+    "wm-id": "1389520087657418758",
+    "name": "@_fernando_rosas Metabolic self-production! Favourite formalisation being Montévil, Mossio (and Moreno)'s constraint-closure. https://t.co/b8ZEM1Ri6S.",
+    "content": {
+      "content-type": "text/html",
+      "value": "<a href=\"https://twitter.com/_fernando_rosas\">@_fernando_rosas</a> Metabolic self-production! Favourite formalisation being Montévil, Mossio (and Moreno)'s constraint-closure. <a href=\"https://www.sciencedirect.com/science/article/abs/pii/S0022519315001009#:~:text=We%20propose%20a%20conceptual%20and,as%20a%20closure%20of%20constraints.&text=We%20then%20argue%20that%2C%20in,contribute%20to%20maintaining%20each%20other\">www.sciencedirect.com/science/article/abs/pii/S0022519315001009#:~:text=We%20propose%20a%20conceptual%20and,as%20a%20closure%20of%20constraints.&text=We%20then%20argue%20that%2C%20in,contribute%20to%20maintaining%20each%20other</a>.",
+      "html": "<a href=\"https://twitter.com/_fernando_rosas\">@_fernando_rosas</a> Metabolic self-production! Favourite formalisation being Montévil, Mossio (and Moreno)'s constraint-closure. <a href=\"https://www.sciencedirect.com/science/article/abs/pii/S0022519315001009#:~:text=We%20propose%20a%20conceptual%20and,as%20a%20closure%20of%20constraints.&text=We%20then%20argue%20that%2C%20in,contribute%20to%20maintaining%20each%20other\">www.sciencedirect.com/science/article/abs/pii/S0022519315001009#:~:text=We%20propose%20a%20conceptual%20and,as%20a%20closure%20of%20constraints.&text=We%20then%20argue%20that%2C%20in,contribute%20to%20maintaining%20each%20other</a>.",
+      "text": "@_fernando_rosas Metabolic self-production! Favourite formalisation being Montévil, Mossio (and Moreno)'s constraint-closure. https://t.co/b8ZEM1Ri6S."
+    },
+    "wm-source": "https://www.crossref.org/",
+    "wm-target": "https://montevil.org/publications/articles/2015-MM-Organisation-Closure-Constraints/",
+    "mention-of": "https://montevil.org/publications/articles/2015-MM-Organisation-Closure-Constraints/",
+    "repost-of": "https://montevil.org/publications/articles/2015-MM-Organisation-Closure-Constraints/",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "images": [],
+    "favorite_count": 7,
+    "retweetUpdated": "2021-05-05"
   }
 }

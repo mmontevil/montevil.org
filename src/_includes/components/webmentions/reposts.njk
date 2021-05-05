@@ -1,6 +1,7 @@
 {% set cloudinaryPrefix = 'https://res.cloudinary.com/mmontevil/image/fetch/c_fill,f_auto,q_auto,' %}
 <ol class="reactions__list reactions--repost-of">
   {% for webmention in reposts %}
+      {%-set photourl-%}{%- downloadAvatar webmention.author.photo -%}{%-endset-%}
     <li id="webmention-{{ webmention['wm-id'] }}" class="reactions__item">
       {% if "https://twitter.com/" in webmention.url %}
         <a class="u-url p-author h-card" href="{{ webmention.url }}">
@@ -10,8 +11,8 @@
       <img
         class="reaction__author__photo u-photo"
         src="/assets/avatars/default.svg"
-        data-src="{{ cloudinaryPrefix }}w_48,h_48/{{ webmention.author.photo }}"
-        data-srcset="{{ cloudinaryPrefix }}w_48,h_48/{{ webmention.author.photo }} 1x, {{ cloudinaryPrefix }}w_96,h_96/{{ webmention.author.photo }} 2x"
+        data-src="{{ cloudinaryPrefix }}w_48,h_48/{{ photourl }}"
+        data-srcset="{{ cloudinaryPrefix }}w_48,h_48/{{ photourl }} 1x, {{ cloudinaryPrefix }}w_96,h_96/{{ photourl }} 2x"
         width= "48"
         height="48"
         alt="{{ webmention.author.name }} avatar"
