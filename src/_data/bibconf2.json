@@ -443,6 +443,7 @@
             "language": "fr",
             "illustration": "Artex.png",
             "url": "https://iscpif.fr/evenements/artex-journee-arts-et-sciences-des-systemes-complexes/",
+            "twittermention": "1182612556386635777",
             "author": " M. Montévil",
             "title": "Espaces des possibles et nouveauté : de la musique à la biologie"
         }
@@ -494,6 +495,7 @@
             "location": "The Santa Fe Institute, Santa Fe, NM, USA",
             "program": "Kauffman Final Conference Schedule.pdf",
             "url": "https://www.santafe.edu/events/thirty-years-complex-thinking-celebration-stuart-k",
+            "twittermention": "1164306221547053057",
             "author": " M. Montévil",
             "title": "No Entailing Laws but Enablement in the Evolution of the Biosphere"
         }
@@ -544,6 +546,7 @@
             "program": "ISHPSSB2019_Book_of_abstracts.pdf",
             "abstract": "Organization constitutes an overarching hypoth- esis that frames the intelligibility of biological objects. We offer a specific characterization of organization in terms of closure of con- straints. The adoption of organization as a principle fosters an orig- inal approach to biological stability. We elaborate on its articulation with the two other theoretical principles addressed in this session and use them to discuss what it means to access empirical objects in biology. Finally, we address measurement and precision in biology.",
             "url": "https://ishpssb2019.tekniskmuseum.no/",
+            "twittermention": "1148894179025666049, 1148894548300652544, 1148894830556303360, 1148894079364870145, 1148897163545600000, 1148898018168594432",
             "author": " M. Montévil",
             "title": "Principle of organization, integration of the principles and application --- Precision biology: concepts and measurements"
         }
@@ -577,6 +580,7 @@
             "location": "Technological University Dublin, Dublin, Irlande",
             "illustration": "dubl.jpeg",
             "url": "https://twitter.com/ESHIatTUDUBLIN/status/1154710590994169861",
+            "twittermention": "1154710590994169861",
             "author": " M. Montévil",
             "title": "Why theorization has to make a comeback if we are to meet the challenges of the Anthropocene."
         }
@@ -771,7 +775,7 @@
             "illustration": "work1.png",
             "url": "https://www.serpentinegalleries.org/whats-on/work-marathon/",
             "day": "22",
-            "twittermention": "1118506998071472128",
+            "twittermention": "1118506998071472128, 1043457218379698176, 1043471465989980161",
             "author": " M. Montévil",
             "title": "Entropy and the anthropocene"
         }
@@ -804,6 +808,7 @@
             "video": "https://www.youtube.com/watch?v=a1I4iOzpPd0",
             "language": "fr",
             "url": "https://nextleap.eu/seminars/2018-6.html",
+            "webmention": "1267665020869136384, 1010969411694616576, 1010966099347890176",
             "author": " M. Montévil",
             "title": "Entropy and functions"
         }
@@ -820,6 +825,7 @@
             "language": "fr",
             "abstract": "When doing mathematical modeling, first principles are often interpreted as physical principles of conservation. In this paper, I show that properly biological first principles can also be introduced and used. Discussing this question can bring more coherence to the field and show that implicit, opposite assumptions are often made.",
             "url": "https://iscpif.fr/science-et-societe/hhc/#toggle-id-5",
+            "twittermention": "1011654132267212801",
             "author": " M. Montévil",
             "title": "Quels principes premiers pour comprendre la morphogenèse biologique?"
         }
@@ -905,6 +911,7 @@
             "abstract": "En biologie expérimentale et théorique, les approches computationnelles prennent une place croissante. Sur la base d’un exemple, j’aborderai les différentes étapes computationnelles entre l’échantillon et la discussion biologique. L’analyse morphométrique est traditionnellement effectuée directement par un observateur, mais cette méthode est de plus en plus remplacée par l’utilisation d’algorithmes. Il est alors impératif de proposer une critique de ces approches computationnelle que j’esquisserait sur la base d’une comparaison entre ces deux méthodes. Enfin, je montrerai que la notion de symétrie permet, au moins dans certains cas, d’aborder parallèlement ces questions épistémologiques et des problèmes politiques dans l’utilisation des intelligences artificielles.",
             "illustration": "banner-enmis-logo-2017.jpg",
             "url": "https://enmi-conf.org/wp/enmi17/",
+            "twittermention": "945650379089498112, 943431955189727232, 950139523459112960",
             "author": " M. Montévil",
             "title": "Quelques opacités computationnelles: de la biologie aux décisions humaines"
         }
@@ -991,6 +998,7 @@
             "program": "Conference-program-ISHPSSB-2017.pdf",
             "illustration": "ish-2017.png",
             "url": "http://ishpssb2017.abfhib.org/index.html",
+            "twittermention": "913334175385743360, 913334758431748096, 913334954506854400",
             "author": " M. Montévil",
             "title": "Modeling mammary organogenesis from biological first principles: The default state of cells and its physical constraints."
         }
@@ -1570,6 +1578,7 @@
             "url": "https://www.pitt.edu/~pittcntr/Events/All/Lunchtime_talks/lunchtime_2013-14/abstracts/feb_14_details.html",
             "illustration": "cathedraloflearning.jpg",
             "day": "11",
+            "twittermention": "430587710827274240",
             "author": " M. Montévil",
             "title": "Biological objects and measurement"
         }

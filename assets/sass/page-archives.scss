@@ -159,3 +159,15 @@ button.aa-SubmitButton{border-radius: 0.04em;}
 .aa-DetachedContainer .aa-DetachedFormContainer .aa-DetachedCancelButton:hover {
 color: var(--color-link-hover);
 }
+
+.fade-2 {   
+  --flow-space: var(--gap-l);
+  //border-width: 0 0 1px;
+  //  border-style: solid;
+  color: var(--color-primary);
+ background-image: linear-gradient(to right, rgba(var(--color-primary-rgb), 0), rgba(var(--color-primary-rgb), 1),rgba(var(--color-primary-rgb), 0)); 
+ border: 0;
+ height: 2px;
+
+     // box-shadow: 0 0 10px 1px black;
+}

@@ -24,6 +24,7 @@ const ICONS_LIST = {
     calendar: { name: 'date', title: 'Date' },
     info: { title: 'Info' },
     'map-pin': { name: 'location', title: 'Location' },
+    'map': { name: 'map', title: 'event' },
     'message-circle': { name: 'comments', title: 'Webmention' },
     search: { title: 'Search' },
     tag: { name: 'tags', title: 'Tag' },

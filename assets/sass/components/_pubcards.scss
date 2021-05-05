@@ -221,7 +221,7 @@ h4, h5{
 
   //background-color: #fdb;
   cursor: pointer;
-  padding: .25rem 1rem;
+  padding: var(--gap-5xs) var(--gap-xs);
     border: 1px solid var(--color-primary-lighter-5);
   border-radius: var(--gap-xs);
   color: var(--color-link);

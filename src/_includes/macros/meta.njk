@@ -40,16 +40,27 @@
         </time>
       </li>
     {% endif %}
-    {% if item.data.location.name  %}
+    {% if item.data.location.event  %}
+      <li class="date meta__item meta__location">
+        {% icon "map", "event" %}
+        {% if item.data.location.url %}
+          <a href="{{ item.data.location.url }}" class="metalink">{{ item.data.location.event |safe}}</a>
+        {% else %}
+          {{ item.data.location.event |safe}}
+        {% endif %}
+      </li>
+    {% endif %}
+        {% if item.data.location.name  %}
       <li class="date meta__item meta__location">
         {% icon "location", "Location" %}
-        {% if item.data.location.url %}
+        {% if item.data.location.url2 %}
           <a href="{{ item.data.location.url }}" class="metalink">{{ item.data.location.name |safe}}</a>
         {% else %}
           {{ item.data.location.name |safe}}
         {% endif %}
       </li>
     {% endif %}
+    
     {% set tagsSize = item.data.tags | size %}
     {% if tagsSize > 0 %}
       <li class="tags meta__item card__tags ">

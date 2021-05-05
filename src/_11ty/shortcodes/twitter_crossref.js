@@ -2,45 +2,53 @@ require('dotenv').config()
 const request = require('request-promise')
 const { promises: fs } = require("fs");
 const syncFs = require('fs')
-
+const moment= require('moment');
+let  day=moment().format('YYYY-MM-DD');
 //const { writeToCache, readFromCache } = require('../src/_utils/cache');
 
-let cachedTweets =  getCachedTweets( {
-    cacheDirectory: '_cache'
-  });
+
 
 async function getTweet(tweetId, options,target,source) {
 
     // if we using cache and not cache busting, check there first
-    if (options.cacheDirectory && !process.env.CACHE_BUST) {
-        
-        let cachedTweet = cachedTweets[tweetId]
-
-        // if we have a cached tweet, use that
-        if (cachedTweet) {
-            return null;
-        }
-        // else continue on
-    }
 
 
     // if we have env variables, go get tweet
     if (hasAuth()) {
-        let liveTweet = await fetchTweet(tweetId)
-
-        let tweetViewModel = processTweet(liveTweet,target,source)
- //console.log(tweetViewModel);
-      /*  tweetViewModel.html = renderTweet(tweetViewModel)
-*/
-        // cache tweet
-        if (options.cacheDirectory) {
-            await addTweetToCache(tweetViewModel, options)
-        }
-
-        // build
+      let changed=false;
+       let cachedTweet = cachedTweets[tweetId]
+       let tweetViewModel={}
+       if (cachedTweet) {
+            tweetViewModel=cachedTweet;
+        }else{
+            let liveTweet = await fetchTweet(tweetId)
+             tweetViewModel = processTweet(liveTweet,target,source)
+            changed=true;
+            cachedTweets[tweetViewModel['id_str']] = tweetViewModel
+          }
+        
+        if(tweetViewModel["wm-property"]=="mention-of" ){
+          if( tweetViewModel['retweetUpdated']!==day ){
+            let livereTweet = await fetchreTweet(tweetId)
+            tweetViewModel['retweetUpdated']=day;
+            //console.log(tweetViewModel)
+            changed=true;
+            cachedTweets[tweetViewModel['id_str']] = tweetViewModel;
+            for (i in livereTweet){
+                let tweetViewModel2 = processTweet(livereTweet[i],target,source)
+                cachedTweet = cachedTweets[tweetViewModel2['id_str']]
+                if(!cachedTweet){
+                  changed=true;
+                  cachedTweets[tweetViewModel2['id_str']] = tweetViewModel2
+                }
+          }
+        }}
+        if( changed)
+            await saveCache( options)
+            
         return null;
     } else {
-        console.warn("Remeber to add your twitter credentials as environement variables")
+        console.warn("Remember to add your twitter credentials as environement variables")
         console.warn("Read More at https://github.com/KyleMit/eleventy-plugin-embed-tweet#setting-env-variables")
             // else continue on
     }
@@ -81,6 +89,24 @@ async function fetchTweet(tweetId) {
         let tweet = JSON.parse(response);
          //console.log(tweet)
         return tweet;
+
+    } catch (error) {
+        // unhappy path - continue to other fallbacks
+        console.log(error)
+        return {}
+    }
+}
+
+async function fetchreTweet(tweetId) {
+    // fetch tweet
+    let apiURI = `https://api.twitter.com/1.1/statuses/retweets/${tweetId}.json?tweet_mode=extended`
+    let auth = getAuth()
+    
+    try {
+        let response = await request.get(apiURI, { oauth: auth });
+        let tweets = JSON.parse(response);
+         //console.log(tweet)
+        return tweets;
 
     } catch (error) {
         // unhappy path - continue to other fallbacks
@@ -246,13 +272,13 @@ async function getCachedTweets(options) {
     }
 }
 
-async function addTweetToCache(tweet, options) {
+async function saveCache( options) {
     try {
         // get cache
      //  let cachedTweets = await getCachedTweets(options)
 
         // add new tweet
-        cachedTweets[tweet.id_str] = tweet
+       
 
         // build new cache string
         let tweetsJSON = JSON.stringify(cachedTweets, 2, 2)
@@ -285,6 +311,7 @@ function getCachedTweetPath(options) {
     return cachePath
 }
 
+const asyncReplace = require('string-replace-async')
 module.exports = {
   tweettomention: (tweetId, options,target,source) => {
      let aa=getTweet(tweetId, options,target,source);

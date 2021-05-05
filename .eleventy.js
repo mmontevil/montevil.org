@@ -1,7 +1,40 @@
 const glob = require('fast-glob');
 const path = require('path');
 const config = require('./pack11ty.config.js');
+const { promises: fs } = require("fs");
+const syncFs = require('fs')
 
+ cachedTweets =  getCachedTweets( {
+    cacheDirectory: '_cache'
+  });
+async function getCachedTweets(options) {
+    let cachePath = getCachedTweetPath(options)
+
+    try {
+        let file = await fs.readFile(cachePath, "utf8")
+        cachedTweets = JSON.parse(file) || {}
+
+        return cachedTweets
+
+    } catch (error) {
+        // otherwise, empty array is fine
+        console.log(error)
+        return {}
+    }
+}
+function getCachedTweetPath(options) {
+    let path = require("path")
+
+    // get directory for main thread
+    let appPath = require.main.filename // C:\user\github\app\node_modules\@11ty\eleventy\cmd.js
+    let pos = appPath.indexOf("node_modules")
+    let appRoot = appPath.substr(0, pos) // C:\user\github\app\
+
+    // build cache file path
+    let cachePath = path.join(appRoot, options.cacheDirectory, "tweetsMentions.json")
+
+    return cachePath
+}
 
 module.exports = function (eleventyConfig) {
   // ------------------------------------------------------------------------

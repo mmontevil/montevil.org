@@ -36,6 +36,8 @@
     "call:lambdas": "netlify functions:invoke --name deploy-succeeded",
     "build:netlify": "cross-env NODE_ENV=production npm-run-all --sequential clean --parallel build:js build:sass --sequential build:eleventy serviceworker:inject",
     "webmention": "node ./_scripts/update-webmention.js",
+    "likes": "node ./_scripts/twitterLikes.js",
+        "rglikes": "node ./_scripts/researchgatesLikes.js",
     "tweets": "node ./_scripts/send-tweets.js",
     "sprite": "node ./_scripts/generate-svg-sprite.js",
     "bib": "(cd BIB; ./updatebib.sh)",
@@ -114,7 +116,7 @@
     "rollup-plugin-visualizer": "~5.4.1",
     "sanitize-html": "^2.3.3",
     "sass": "~1.32.12",
-    "simple-icons": "~4.21.0",
+    "simple-icons": "~4.22.0",
     "svgstore": "^3.0.0-2",
     "to-vfile": "^6.1.0",
     "truncate-html": "^1.0.3",
@@ -149,6 +151,8 @@
     "rehype-add-classes": "^1.0.0",
     "rehype-format": "^3.1.0",
     "rehype-slug": "^4.0.1",
-    "rollup-plugin-entrypoint-hashmanifest": "github:balloob/rollup-plugin-entrypoint-hashmanifest#patch-1"
+    "rollup-plugin-entrypoint-hashmanifest": "github:balloob/rollup-plugin-entrypoint-hashmanifest#patch-1",
+    "selenium-webdriver": "*",
+    "string-replace-async": "^1.2.1"
   }
 }
