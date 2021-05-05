@@ -30,7 +30,7 @@ hasSup: hasSup,
 %}
    {% from "macros/publabel.njk" import publabel %}
 
-  {% if not  (abstract === undefined) %}
+  {% if not  (abstract === undefined) and not  (abstract === "")%}
 <details class=" citation abstract"> 
      <summary> <h3>Abstract<h3></summary>
      <div class="abstract wrap p-summary"> <p>  

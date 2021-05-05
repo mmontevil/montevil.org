@@ -77,7 +77,10 @@
 {% endset%}
 {%endif%}{%endif%}{%endif%}
 {%else%}
-{%if  tweeted.source_id =="wikipedia"%}{%else%}
+{%if  tweeted.source_id =="wikipedia"%}
+{%set temp0 %}
+{% wikiMention tweeted, {cacheDirectory: '_cache'},  "https://montevil.org"+articleUrl %}{% endset%}
+{%else%}
 {%endif%}
 {%endif%}
 

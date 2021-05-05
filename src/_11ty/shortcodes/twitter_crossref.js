@@ -29,8 +29,16 @@ async function getTweet(tweetId, options,target,source) {
         
         if(tweetViewModel["wm-property"]=="mention-of" ){
           if( tweetViewModel['retweetUpdated']!==day ){
-            let livereTweet = await fetchreTweet(tweetId)
-            tweetViewModel['retweetUpdated']=day;
+            
+                let livereTweet = await fetchreTweet(tweetId)
+                
+            if(livereTweet){
+              tweetViewModel['retweetUpdated']=day;
+            }else{
+              tweetViewModel['retweetUpdated']="2019-01-01";
+            }
+              
+            
             //console.log(tweetViewModel)
             changed=true;
             cachedTweets[tweetViewModel['id_str']] = tweetViewModel;
@@ -42,21 +50,19 @@ async function getTweet(tweetId, options,target,source) {
                   cachedTweets[tweetViewModel2['id_str']] = tweetViewModel2
                 }
           }
-        }}
-        if( changed)
+        }
+        }
+        if( changed){
             await saveCache( options)
-            
+            console.log(tweetId)
+        }
         return null;
+        
     } else {
         console.warn("Remember to add your twitter credentials as environement variables")
         console.warn("Read More at https://github.com/KyleMit/eleventy-plugin-embed-tweet#setting-env-variables")
             // else continue on
     }
-
-    // finally fallback to client-side injection
-    var htmlTweet =
-        `<blockquote class="twitter-tweet"><a href="https://twitter.com/user/status/${tweetId}"></a></blockquote>` +
-        `<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>`
 
     return null
 }
@@ -109,9 +115,8 @@ async function fetchreTweet(tweetId) {
         return tweets;
 
     } catch (error) {
-        // unhappy path - continue to other fallbacks
         console.log(error)
-        return {}
+        return false
     }
 }
 
@@ -163,7 +168,7 @@ function processTweet(tweet,target,source) {
       images,
       favorite_count,
     }
-//
+
     return tweetViewModel
 }
 
@@ -255,35 +260,11 @@ function getOldText(text, indices) {
 }
 
 
-/* caching / file access */
-async function getCachedTweets(options) {
-    let cachePath = getCachedTweetPath(options)
-
-    try {
-        let file = await fs.readFile(cachePath, "utf8")
-        cachedTweets = JSON.parse(file) || {}
-
-        return cachedTweets
-
-    } catch (error) {
-        // otherwise, empty array is fine
-        console.log(error)
-        return {}
-    }
-}
-
 async function saveCache( options) {
     try {
-        // get cache
-     //  let cachedTweets = await getCachedTweets(options)
-
-        // add new tweet
-       
-
-        // build new cache string
         let tweetsJSON = JSON.stringify(cachedTweets, 2, 2)
 
-        let cachePath = getCachedTweetPath(options)
+        let cachePath = getCachedTweetPath(options, "tweetsMentions.json")
         let cacheDir = require("path").dirname(cachePath)
 
         // makre sure directory exists
@@ -296,8 +277,24 @@ async function saveCache( options) {
         console.log(error)
     }
 }
+async function saveCacheWiki( options) {
+    try {
+        let tweetsJSON = JSON.stringify(cachedWiki, 2, 2)
 
-function getCachedTweetPath(options) {
+        let cachePath = getCachedTweetPath(options, "wikiMentions.json")
+        let cacheDir = require("path").dirname(cachePath)
+
+        // makre sure directory exists
+        await fs.mkdir(cacheDir, { recursive: true })
+
+        syncFs.writeFileSync(cachePath, tweetsJSON)
+
+        console.log(`Writing ${cachePath}`)
+    } catch (error) {
+        console.log(error)
+    }
+}
+function getCachedTweetPath(options, filename) {
     let path = require("path")
 
     // get directory for main thread
@@ -306,17 +303,75 @@ function getCachedTweetPath(options) {
     let appRoot = appPath.substr(0, pos) // C:\user\github\app\
 
     // build cache file path
-    let cachePath = path.join(appRoot, options.cacheDirectory, "tweetsMentions.json")
+    let cachePath = path.join(appRoot, options.cacheDirectory, filename)
 
     return cachePath
 }
+
+function wikiMention(data,options,target) {
+  if(cachedWiki[data.id]){
+      return null
+  }else{
+    
+  let images = []
+    let created_at = data.occurred_at
+    let id_str= data.id
+    // destructure only properties we care about
+
+    let  name="Wikipedia  — "+data.subj.title
+    let  photo="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png"
+    let temp=data.subj.url.split("/")
+     let url=temp[0]+"/"+temp[1]+"/"+temp[2]
+     url=data.subj.url
+    let type= "card"
+    let author = {type, name, photo,url }
+
+    let html=""
+    let value=html
+    let text= html
+    let content = {"content-type": "text/html", value, html, text}
+         type= "entry"
+        url=data.subj.url
+        published=created_at
+        wmreceived=published 
+        wmid=id_str
+        name=text
+        wmproperty= "mention-of"
+          source=data.subj.url
+    // build tweet with properties we want
+    let tweetViewModel = {
+      id_str,
+      type,
+      author,
+      url,
+      published,
+      'wm-received': wmreceived,
+      'wm-id': wmid,
+      name,
+      content,
+      "wm-source": source,
+      "wm-target": target ,
+      "mention-of": target,
+      "repost-of": target,
+      "wm-property": wmproperty,
+      "wm-private": false,
+      images,
+    }
+  cachedWiki[tweetViewModel['id_str']] = tweetViewModel;
+    saveCacheWiki(options)
+}}
+
 
 const asyncReplace = require('string-replace-async')
 module.exports = {
   tweettomention: (tweetId, options,target,source) => {
      let aa=getTweet(tweetId, options,target,source);
     return undefined;
-  }
+  },
+  wikiMention: (data,options,target) => {
+     let aa= wikiMention(data,options,target);
+    return undefined;
+  },
 }
 //let liveTweet = getTweet('1273201272485810176',{},"test");
 

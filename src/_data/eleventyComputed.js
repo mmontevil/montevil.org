@@ -245,25 +245,65 @@ function chooseDate(datepub, date) {
 }
 var cache = flatcache.load('crossref', path.resolve('./_cache'));
 
+function uniqByKeepLast(a, key) {
+    return [
+        ...new Map(
+            a.map(x => [key(x), x])
+        ).values()
+    ]
+}
+
+
 async function fetchCrossref(doi, id, type) {
   
     const cachedData = cache.getKey(id);
-var allPosts ='[]';
+
     if (!cachedData) {
+      var allPosts ='[]';
       if (type==="doi") {
-      var allPosts = await fetch(
+       allPosts = await fetch(
         'https://api.eventdata.crossref.org/v1/events?rows=500&obj-id=' +
           encodeURI(doi) +
-          '&source=twitter'
+         '&source=twitter'
       ).then((res) => res.json());
       }else{
           if (type==="url") {
-              var allPosts = await fetch(
+               allPosts = await fetch(
             'https://api.eventdata.crossref.org/v1/events?rows=500&obj-url=' +
               encodeURI(doi) +
               '&source=twitter'
               ).then((res) => res.json());
       }
+      }
+var allPosts2 ='[]';
+      if (type==="doi") {
+       allPosts2 = await fetch(
+        'https://api.eventdata.crossref.org/v1/events?rows=500&obj-id=' +
+          encodeURI(doi) +
+         '&source=wikipedia'
+      ).then((res) => res.json());
+      }else{
+          if (type==="url") {
+               allPosts2 = await fetch(
+            'https://api.eventdata.crossref.org/v1/events?rows=500&obj-url=' +
+              encodeURI(doi) +
+              '&source=wikipedia'
+              ).then((res) => res.json());
+      }
+      }  
+     
+      if(allPosts2.message.events){
+        for (i in allPosts2.message.events){
+          if(allPosts2.message.events[i].subj.url.length > allPosts2.message.events[i].subj.pid.length){
+            /*console.log(allPosts2.message.events[i].subj.url.length)
+            console.log(allPosts2.message.events[i].subj.pid.length)
+            colsole.log("-----")*/
+            let temp= allPosts2.message.events[i].subj.url;
+          allPosts2.message.events[i].subj.url= allPosts2.message.events[i].subj.pid;
+          allPosts2.message.events[i].subj.pid=temp;
+        }}
+          allPosts2=uniqByKeepLast(allPosts2.message.events, x=>x.subj.url);
+          allPosts.message.events=allPosts.message.events.concat(allPosts2);
       }
       cache.setKey(id, allPosts);
       cache.save(true);

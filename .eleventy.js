@@ -8,21 +8,35 @@ const syncFs = require('fs')
     cacheDirectory: '_cache'
   });
 async function getCachedTweets(options) {
-    let cachePath = getCachedTweetPath(options)
+    let cachePath = getCachedPath(options, "tweetsMentions.json")
 
     try {
         let file = await fs.readFile(cachePath, "utf8")
         cachedTweets = JSON.parse(file) || {}
-
         return cachedTweets
 
     } catch (error) {
-        // otherwise, empty array is fine
         console.log(error)
         return {}
     }
 }
-function getCachedTweetPath(options) {
+cachedWiki =  getCachedWiki( {
+    cacheDirectory: '_cache'
+  });
+async function getCachedWiki(options) {
+    let cachePath = getCachedPath(options, "wikiMentions.json")
+
+    try {
+        let file = await fs.readFile(cachePath, "utf8")
+        cachedWiki  = JSON.parse(file) || {}
+        return cachedWiki 
+
+    } catch (error) {
+        console.log(error)
+        return {}
+    }
+}
+function getCachedPath(options, filename) {
     let path = require("path")
 
     // get directory for main thread
@@ -31,7 +45,7 @@ function getCachedTweetPath(options) {
     let appRoot = appPath.substr(0, pos) // C:\user\github\app\
 
     // build cache file path
-    let cachePath = path.join(appRoot, options.cacheDirectory, "tweetsMentions.json")
+    let cachePath = path.join(appRoot, options.cacheDirectory, filename)
 
     return cachePath
 }
