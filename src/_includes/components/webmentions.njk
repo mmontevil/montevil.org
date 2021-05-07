@@ -24,9 +24,9 @@
 
 {%set twitturl -%}https://twitter.com/intent/tweet?text={{- title +"@mmontevil" | urlencode-}}&url={{- pkg.homepage + page.url | lowerize   | urlencode-}}{%-endset%}
 
-React on <a href="{{syndication.twitter or twitturl}}" rel="noopener" target="_blank">{% icon "twitter", "twitter" %} Twitter</a> {% if syndication.mastodon%}
+React on <a class="buttonlink{%if syndication.twitter%} u-syndication{%endif%}" href="{{syndication.twitter or twitturl}}" {%if syndication.twitter%}rel="syndication"{%endif%} rel="noopener" target="_blank">{% icon "twitter", "twitter" %} Twitter</a> {% if syndication.mastodon%}
 or 
-<a href="{{syndication.mastodon}}" rel="noopener" target="_blank">{% icon "mastodon", "mastodon" %} Mastodon</a>
+<a class="buttonlink{%if syndication.mastodon%} u-syndication{%endif%}" href="{{syndication.mastodon}}" rel="noopener" {%if syndication.mastodon%}rel="syndication"{%endif%} target="_blank">{% icon "mastodon", "mastodon" %} Mastodon</a>
 {%endif %}
 
 {% if citationSize > 0 %}
