@@ -41,7 +41,8 @@
     "tweets": "node ./_scripts/send-tweets.js",
     "sprite": "node ./_scripts/generate-svg-sprite.js",
     "bib": "(cd BIB; ./updatebib.sh)",
-    "update": "npm-run-all start0 bib sprite webmention"
+    "update": "npm-run-all start0 bib sprite webmention",
+    "updateall": "npm-run-all start0 bib sprite webmention rglikes likes"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
@@ -60,13 +61,13 @@
     "babel-loader": "^8.2.2",
     "bent": "^7.3.12",
     "citation-js": "^0.5.0",
-    "core-js": "^3.11",
+    "core-js": "^3.12",
     "cross-env": "^7.0.3",
     "cross-spawn": "^7.0.3",
     "cssnano": "^5.0.2",
     "debug": "^4.3.1",
     "deepmerge": "^4.2.2",
-    "dotenv": "^8.6.0",
+    "dotenv": "^9.0.0",
     "element-remove": "^1.0.4",
     "eleventy-plugin-embed-everything": "^1.13.1",
     "eleventy-plugin-embed-tweet": "^0.3.1",
@@ -123,7 +124,7 @@
     "twitter": "^1.7.1",
     "twitter-text": "^3.1.0",
     "typeset": "^0.3.1",
-    "vfile-reporter": "^6.0.2",
+    "vfile-reporter": "^7.0.0",
     "workbox-broadcast-update": "6.1.5",
     "workbox-cacheable-response": "6.1.5",
     "workbox-cli": "^6.1.5",
@@ -134,7 +135,7 @@
     "workbox-strategies": "6.1.5"
   },
   "engines": {
-    "node": ">=15"
+    "node": ">=16"
   },
   "private": true,
   "dependencies": {

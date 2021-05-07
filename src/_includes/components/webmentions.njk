@@ -21,6 +21,14 @@
 
 <aside class="wrap webmention">
 <h2 id="webmentions">{{ allMentionsSize }} mention{% if allMentionsSize > 1 %}s{% endif %}</h2>
+
+{%set twitturl -%}https://twitter.com/intent/tweet?text={{- title +"@mmontevil" | urlencode-}}&url={{- pkg.homepage + page.url | lowerize   | urlencode-}}{%-endset%}
+
+React on <a href="{{syndication.twitter or twitturl}}" rel="noopener" target="_blank">{% icon "twitter", "twitter" %} Twitter</a> {% if syndication.mastodon%}
+or 
+<a href="{{syndication.mastodon}}" rel="noopener" target="_blank">{% icon "mastodon", "mastodon" %} Mastodon</a>
+{%endif %}
+
 {% if citationSize > 0 %}
   <details class="mention">
    <summary> <h3 > {{ citationSize }} citation{% if citationSize > 1 %}s{% endif %} </h3></summary> 

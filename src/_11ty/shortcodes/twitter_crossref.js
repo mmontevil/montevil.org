@@ -1,9 +1,13 @@
 require('dotenv').config()
 const request = require('request-promise')
+const bent = require('bent')
+const getstring = bent('string')
 const { promises: fs } = require("fs");
 const syncFs = require('fs')
 const moment= require('moment');
 let  day=moment().format('YYYY-MM-DD');
+import {DOMParser, parseHTML} from 'linkedom';
+function JSDOM(html) { return parseHTML(html); }
 //const { writeToCache, readFromCache } = require('../src/_utils/cache');
 
 
@@ -42,14 +46,15 @@ async function getTweet(tweetId, options,target,source) {
             //console.log(tweetViewModel)
             changed=true;
             cachedTweets[tweetViewModel['id_str']] = tweetViewModel;
-            for (i in livereTweet){
+            if (livereTweet){
+            for (let i in livereTweet){
                 let tweetViewModel2 = processTweet(livereTweet[i],target,source)
                 cachedTweet = cachedTweets[tweetViewModel2['id_str']]
                 if(!cachedTweet){
                   changed=true;
                   cachedTweets[tweetViewModel2['id_str']] = tweetViewModel2
                 }
-          }
+          }}
         }
         }
         if( changed){
@@ -140,11 +145,11 @@ function processTweet(tweet,target,source) {
     let content = {"content-type": "text/html", value, html, text}
          type= "entry"
         url="https://twitter.com/"+screen_name+"/status/"+id_str
-        published=created_at
-        wmreceived=published 
-        wmid=id_str
+      let  published=created_at
+      let  wmreceived=published 
+    let    wmid=id_str
         name=full_text
-        wmproperty= "mention-of"
+     let   wmproperty= "mention-of"
         if(retweeted_status)
           wmproperty= "repost-of"
           
@@ -174,7 +179,7 @@ function processTweet(tweet,target,source) {
 
 function getTweetImages(tweet) {
     let images = []
-    for (media of tweet.entities.media || []) {
+    for (let media of tweet.entities.media || []) {
         images.push(media.media_url_https)
     }
     return images
@@ -210,28 +215,28 @@ function getTweetTextHtml(tweet) {
     let replacements = []
 
     // hashtags
-    for (hashtag of tweet.entities.hashtags || []) {
+    for (let hashtag of tweet.entities.hashtags || []) {
         let oldText = getOldText(tweet.full_text, hashtag.indices)
         let newText = `<a href="https://twitter.com/hashtag/${oldText.substr(1)}">${oldText}</a>`
         replacements.push({ oldText, newText })
     }
 
     // users
-    for (user of tweet.entities.user_mentions || []) {
+    for (let user of tweet.entities.user_mentions || []) {
         let oldText = getOldText(tweet.full_text, user.indices)
         let newText = `<a href="https://twitter.com/${oldText.substr(1)}">${oldText}</a>`
         replacements.push({ oldText, newText })
     }
 
     // urls
-    for (url of tweet.entities.urls || []) {
+    for (let url of tweet.entities.urls || []) {
         let oldText = getOldText(tweet.full_text, url.indices)
         let newText = `<a href="${url.expanded_url}">${url.expanded_url.replace(/https?:\/\//,"")}</a>`
         replacements.push({ oldText, newText })
     }
 
     // media
-    for (media of tweet.entities.media || []) {
+    for (let media of tweet.entities.media || []) {
         let oldText = getOldText(tweet.full_text, media.indices)
         let newText = `` // get rid of img url in tweet text
         replacements.push({ oldText, newText })
@@ -239,7 +244,7 @@ function getTweetTextHtml(tweet) {
 
     // make updates at the end
     let htmlText = tweet.full_text
-    for (rep of replacements) {
+    for (let rep of replacements) {
         htmlText = htmlText.replace(rep.oldText, rep.newText)
     }
 
@@ -308,7 +313,56 @@ function getCachedTweetPath(options, filename) {
     return cachePath
 }
 
-function wikiMention(data,options,target) {
+async function findParagraph(data) {
+  let res= ""
+  let url= data.subj['api-url']
+  let doi=data.obj.pid.split('.org/')[1]
+  try{
+  let page=await getstring(url)
+  //console.log(page)
+  const {document, window} = new  JSDOM(page);
+  let temp=doi.split('/')[1]
+  let els = document.querySelectorAll("a[href$='"+encodeURIComponent(temp)+"']");
+  let elem=els[0]
+  while ((elem.tagName!=="LI") && ( elem!==null))
+  {elem=elem.parentNode
+  }
+  let liId=elem.id;
+  let els2 = document.querySelectorAll("a[href$='#"+liId+"']");
+  let els3= new Set();
+  for (let elem0 of els2){
+    let wrapper = document.createElement('span');
+    wrapper.classList.add('highlightCited')
+    elem0.parentNode.insertBefore(wrapper, elem0);
+    wrapper.appendChild(elem0);
+    let elemt=elem0
+      while (( elemt!==null) &&(elemt.tagName!=="P") && (elemt.tagName!=="LI")  ){
+        elemt=elemt.parentNode
+  }
+  if ( elemt!==null){
+  els3.add(elemt);
+  }
+}
+  for (let elem0 of els3){
+    res= res+"<p>[...] "+elem0.innerHTML+"</p>"
+  }
+
+    temp=data.subj.url.split("/")
+     let urlroot=temp[0]+"/"+temp[1]+"/"+temp[2]+"/wiki/"
+  res=res.replaceAll('href="./','href="'+urlroot)
+ return res;
+ 
+  }catch (error) {
+        console.log(error)
+        return false
+    }
+  
+  return undefined
+}
+
+
+async function wikiMention(data,options,target) {
+  
   if(cachedWiki[data.id]){
       return null
   }else{
@@ -319,25 +373,29 @@ function wikiMention(data,options,target) {
     // destructure only properties we care about
 
     let  name="Wikipedia  — "+data.subj.title
-    let  photo="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png"
+    let  photo="https://montevil.org/assets/avatars/mentions/wikipedia-logo.png"
     let temp=data.subj.url.split("/")
      let url=temp[0]+"/"+temp[1]+"/"+temp[2]
      url=data.subj.url
     let type= "card"
     let author = {type, name, photo,url }
 
-    let html=""
+    let html=await findParagraph(data);
+    if(!html){
+      html=""
+    }
+    
     let value=html
     let text= html
     let content = {"content-type": "text/html", value, html, text}
          type= "entry"
         url=data.subj.url
-        published=created_at
-        wmreceived=published 
-        wmid=id_str
+      let  published=created_at
+     let   wmreceived=published 
+       let wmid=id_str
         name=text
-        wmproperty= "mention-of"
-          source=data.subj.url
+      let  wmproperty= "mention-of"
+        let  source=data.subj.url
     // build tweet with properties we want
     let tweetViewModel = {
       id_str,
@@ -354,12 +412,15 @@ function wikiMention(data,options,target) {
       "mention-of": target,
       "repost-of": target,
       "wm-property": wmproperty,
-      "wm-private": false,
+      "wm-private": (html==false),
       images,
     }
+   // if(html){
   cachedWiki[tweetViewModel['id_str']] = tweetViewModel;
     saveCacheWiki(options)
-}}
+   // }
+}
+}
 
 
 const asyncReplace = require('string-replace-async')

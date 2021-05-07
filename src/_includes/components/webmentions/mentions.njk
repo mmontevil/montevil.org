@@ -50,9 +50,9 @@
       {% if webmention.content %}
         <div class="p-content">
           {% if webmention.content['content-type'] == 'text/html' %}
-            {{ webmention.content.html | truncateHtml(500) | safe }}
+            {{ webmention.content.html | truncateHtml(2000) | safe }}
           {% else %}
-            {{ webmention.content.text | truncate(500, true, '…') }}
+            {{ webmention.content.text | truncate(2000, true, '…') }}
           {% endif %}
         </div>
       {% endif %}
