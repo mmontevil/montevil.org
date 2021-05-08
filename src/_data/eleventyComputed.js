@@ -4,6 +4,8 @@ const tagFilter = require('../_utils/tagfilter');
 var search = require('approx-string-match').default;
 const flatcache = require('flat-cache');
 const path = require('path');
+const { writeToCache, readFromCache } = require('../_utils/cache');
+const PLUM_CACHE = '_cache/plumMention.json';
 
 const dtf = {
   en: new Intl.DateTimeFormat('en-GB', {
@@ -169,7 +171,6 @@ function headTitle(data) {
   if (data.page.url === '/') {
     return `<title itemprop="name">${data.pkg.title}</title>`;
   }
-
   // if (data.layout === 'note') {
   //   return `<title>${lead(data).slice(0, 50)} - ${
   //     data.pkg.author.name
@@ -244,6 +245,7 @@ function chooseDate(datepub, date) {
   }
 }
 var cache = flatcache.load('crossref', path.resolve('./_cache'));
+var plumCache=readFromCache(PLUM_CACHE);
 
 function uniqByKeepLast(a, key) {
     return [
@@ -262,14 +264,14 @@ async function fetchCrossref(doi, id, type) {
       var allPosts ='[]';
       if (type==="doi") {
        allPosts = await fetch(
-        'https://api.eventdata.crossref.org/v1/events?rows=500&obj-id=' +
+        'https://api.eventdata.crossref.org/v1/events?rows=1000&obj-id=' +
           encodeURI(doi) +
          '&source=twitter'
       ).then((res) => res.json());
       }else{
           if (type==="url") {
                allPosts = await fetch(
-            'https://api.eventdata.crossref.org/v1/events?rows=500&obj-url=' +
+            'https://api.eventdata.crossref.org/v1/events?rows=1000&obj-url=' +
               encodeURI(doi) +
               '&source=twitter'
               ).then((res) => res.json());
@@ -278,14 +280,14 @@ async function fetchCrossref(doi, id, type) {
 var allPosts2 ='[]';
       if (type==="doi") {
        allPosts2 = await fetch(
-        'https://api.eventdata.crossref.org/v1/events?rows=500&obj-id=' +
+        'https://api.eventdata.crossref.org/v1/events?rows=1000&obj-id=' +
           encodeURI(doi) +
          '&source=wikipedia'
       ).then((res) => res.json());
       }else{
           if (type==="url") {
                allPosts2 = await fetch(
-            'https://api.eventdata.crossref.org/v1/events?rows=500&obj-url=' +
+            'https://api.eventdata.crossref.org/v1/events?rows=1000&obj-url=' +
               encodeURI(doi) +
               '&source=wikipedia'
               ).then((res) => res.json());
@@ -329,7 +331,6 @@ module.exports = {
       return 'en';
     }
   },
-  //orderDate0: (data) => chooseDate(data.datepub,data.page.date),
   formattedDate: (data) => formattedDate(data.lang, data.page.date),
   attributeDate: (data) => attributeDate(data.page.date),
   permalinkDate: (data) => permalinkDate(data.page.date),
@@ -397,12 +398,19 @@ module.exports = {
     return res;
   },
    tweetsMentions: (data) => {
+     let res=[];
+     
+     if (data.bibentry &&data.bibentry.DOI){
+          res=res.concat(plumCache[data.bibentry.DOI]);
+     }
     if(data.tweets_mentions){
-      return data.tweets_mentions;
+      const newArr = data.tweets_mentions.filter(el => el !== undefined);
+       res=res.concat(newArr);
     }
      if(data.bibentryconf && data.bibentryconf.fields && data.bibentryconf.fields.twittermention){
-      return data.bibentryconf.fields.twittermention.split(", ");
+      res=res.concat(data.bibentryconf.fields.twittermention.split(", "));
     }
+    return res;
   },
   bibentryconf: (data) => {
     var res = {};
@@ -436,9 +444,9 @@ module.exports = {
     }
     return res;
   },
-  colKey: {
+ /* colKey: {
     lang: (data) => data.lang,
     date: (data) => data.orderDate,
     category: (data) => data.category,
-  },
+  },*/
 };

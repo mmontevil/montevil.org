@@ -5489,3 +5489,1243 @@ INFO:scholarly:Getting https://scholar.google.com/scholar?cites=3721114717236458
 INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9146', 'https': 'socks5://127.0.0.1:9146'}
 INFO:scholarly:Getting https://scholar.google.com/scholar?cites=1168660703126383278,5769476330134509166
 INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9146', 'https': 'socks5://127.0.0.1:9146'}
+INFO:scholarly:Attempting to start owned Tor as the proxy
+DEBUG:stem:System call: tor --version (runtime: 0.03)
+INFO:scholarly:Proxy works!
+INFO:scholarly:Enabling proxies: http=socks5://127.0.0.1:9003 https=socks5://127.0.0.1:9003
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=search_authors&mauthors=Ma%C3%ABl%20Mont%C3%A9vil
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Found 1 authors
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&user=5eOo9hQAAAAJ&pagesize=100
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:d1gkVwhDpl0C
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:Zph67rFs4hoC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:LPZeul_q3PIC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:kRWSkSYxWN8C
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:BrmTIyaxlBUC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:4DMP91E08xMC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:YOwf2qJgpHMC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:mVmsd5A6BfQC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:9ZlFYXVOiuMC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:qxL8FJ1GzNcC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:0EnyYjriUFMC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:Y0pCki6q_DkC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:aqlVkmm33-oC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:UeHWp8X0CEIC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:u-x6o8ySG0sC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:9yKSN-GCB0IC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:ZHo1McVdvXMC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:2osOgNQ5qMEC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:qjMakFHDy7sC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:_kc_bZDykSQC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:iH-uZ7U-co4C
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:RYcK_YlVTxYC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:M3ejUd6NZC8C
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:Se3iqnhoufwC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:r0BpntZqJG4C
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:KxtntwgDAa4C
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:dshw04ExmUIC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:_Qo2XoVZTnwC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:Wp0gIr-vW9MC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:VL0QpB8kHFEC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:KlAtU1dfN6UC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:UxriW0iASnsC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:5ugPr518TE4C
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:kNdYIx-mwKoC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:roLk4NBRz8UC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:_FxGoFyzp5QC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:nb7KW1ujOQ8C
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:35N4QoGY0k4C
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:2P1L_qKh6hAC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:wbdj-CoPYUoC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:ufrVoPGSRksC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:eQOLeE2rZwMC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:zYLM7Y9cAGgC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:hkOj_22Ku90C
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:08ZZubdj9fEC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:JV2RwH3_ST0C
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:M3NEmzRMIkIC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:eflP2zaiRacC
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/citations?hl=en&view_op=view_citation&citation_for_view=5eOo9hQAAAAJ:j3f4tGmQtD8C
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=2664675988189654514,11678091597971341852,12511620932438053051,9693452709443669995,6167489915897988168,15466856365792661490,9997565686589463415,227622359021315771,8714461746182392431,3098207149923676678,741495726525989857
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=2664675988189654514,11678091597971341852,12511620932438053051,9693452709443669995,6167489915897988168,15466856365792661490,9997565686589463415,227622359021315771,8714461746182392431,3098207149923676678,741495726525989857&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=2664675988189654514,11678091597971341852,12511620932438053051,9693452709443669995,6167489915897988168,15466856365792661490,9997565686589463415,227622359021315771,8714461746182392431,3098207149923676678,741495726525989857&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=30&hl=en&as_sdt=2005&sciodt=0,5&cites=2664675988189654514,11678091597971341852,12511620932438053051,9693452709443669995,6167489915897988168,15466856365792661490,9997565686589463415,227622359021315771,8714461746182392431,3098207149923676678,741495726525989857&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=40&hl=en&as_sdt=2005&sciodt=0,5&cites=2664675988189654514,11678091597971341852,12511620932438053051,9693452709443669995,6167489915897988168,15466856365792661490,9997565686589463415,227622359021315771,8714461746182392431,3098207149923676678,741495726525989857&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=50&hl=en&as_sdt=2005&sciodt=0,5&cites=2664675988189654514,11678091597971341852,12511620932438053051,9693452709443669995,6167489915897988168,15466856365792661490,9997565686589463415,227622359021315771,8714461746182392431,3098207149923676678,741495726525989857&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=60&hl=en&as_sdt=2005&sciodt=0,5&cites=2664675988189654514,11678091597971341852,12511620932438053051,9693452709443669995,6167489915897988168,15466856365792661490,9997565686589463415,227622359021315771,8714461746182392431,3098207149923676678,741495726525989857&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=70&hl=en&as_sdt=2005&sciodt=0,5&cites=2664675988189654514,11678091597971341852,12511620932438053051,9693452709443669995,6167489915897988168,15466856365792661490,9997565686589463415,227622359021315771,8714461746182392431,3098207149923676678,741495726525989857&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=80&hl=en&as_sdt=2005&sciodt=0,5&cites=2664675988189654514,11678091597971341852,12511620932438053051,9693452709443669995,6167489915897988168,15466856365792661490,9997565686589463415,227622359021315771,8714461746182392431,3098207149923676678,741495726525989857&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=90&hl=en&as_sdt=2005&sciodt=0,5&cites=2664675988189654514,11678091597971341852,12511620932438053051,9693452709443669995,6167489915897988168,15466856365792661490,9997565686589463415,227622359021315771,8714461746182392431,3098207149923676678,741495726525989857&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=100&hl=en&as_sdt=2005&sciodt=0,5&cites=2664675988189654514,11678091597971341852,12511620932438053051,9693452709443669995,6167489915897988168,15466856365792661490,9997565686589463415,227622359021315771,8714461746182392431,3098207149923676678,741495726525989857&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=110&hl=en&as_sdt=2005&sciodt=0,5&cites=2664675988189654514,11678091597971341852,12511620932438053051,9693452709443669995,6167489915897988168,15466856365792661490,9997565686589463415,227622359021315771,8714461746182392431,3098207149923676678,741495726525989857&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=120&hl=en&as_sdt=2005&sciodt=0,5&cites=2664675988189654514,11678091597971341852,12511620932438053051,9693452709443669995,6167489915897988168,15466856365792661490,9997565686589463415,227622359021315771,8714461746182392431,3098207149923676678,741495726525989857&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=130&hl=en&as_sdt=2005&sciodt=0,5&cites=2664675988189654514,11678091597971341852,12511620932438053051,9693452709443669995,6167489915897988168,15466856365792661490,9997565686589463415,227622359021315771,8714461746182392431,3098207149923676678,741495726525989857&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=140&hl=en&as_sdt=2005&sciodt=0,5&cites=2664675988189654514,11678091597971341852,12511620932438053051,9693452709443669995,6167489915897988168,15466856365792661490,9997565686589463415,227622359021315771,8714461746182392431,3098207149923676678,741495726525989857&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=150&hl=en&as_sdt=2005&sciodt=0,5&cites=2664675988189654514,11678091597971341852,12511620932438053051,9693452709443669995,6167489915897988168,15466856365792661490,9997565686589463415,227622359021315771,8714461746182392431,3098207149923676678,741495726525989857&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=160&hl=en&as_sdt=2005&sciodt=0,5&cites=2664675988189654514,11678091597971341852,12511620932438053051,9693452709443669995,6167489915897988168,15466856365792661490,9997565686589463415,227622359021315771,8714461746182392431,3098207149923676678,741495726525989857&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=170&hl=en&as_sdt=2005&sciodt=0,5&cites=2664675988189654514,11678091597971341852,12511620932438053051,9693452709443669995,6167489915897988168,15466856365792661490,9997565686589463415,227622359021315771,8714461746182392431,3098207149923676678,741495726525989857&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=5715512211526556221,3900630348746021571,14845969391047998323
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=5715512211526556221,3900630348746021571,14845969391047998323&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=5715512211526556221,3900630348746021571,14845969391047998323&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=30&hl=en&as_sdt=2005&sciodt=0,5&cites=5715512211526556221,3900630348746021571,14845969391047998323&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=40&hl=en&as_sdt=2005&sciodt=0,5&cites=5715512211526556221,3900630348746021571,14845969391047998323&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=50&hl=en&as_sdt=2005&sciodt=0,5&cites=5715512211526556221,3900630348746021571,14845969391047998323&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=60&hl=en&as_sdt=2005&sciodt=0,5&cites=5715512211526556221,3900630348746021571,14845969391047998323&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=70&hl=en&as_sdt=2005&sciodt=0,5&cites=5715512211526556221,3900630348746021571,14845969391047998323&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=80&hl=en&as_sdt=2005&sciodt=0,5&cites=5715512211526556221,3900630348746021571,14845969391047998323&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0004)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=90&hl=en&as_sdt=2005&sciodt=0,5&cites=5715512211526556221,3900630348746021571,14845969391047998323&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=100&hl=en&as_sdt=2005&sciodt=0,5&cites=5715512211526556221,3900630348746021571,14845969391047998323&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=110&hl=en&as_sdt=2005&sciodt=0,5&cites=5715512211526556221,3900630348746021571,14845969391047998323&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=120&hl=en&as_sdt=2005&sciodt=0,5&cites=5715512211526556221,3900630348746021571,14845969391047998323&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=130&hl=en&as_sdt=2005&sciodt=0,5&cites=5715512211526556221,3900630348746021571,14845969391047998323&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=140&hl=en&as_sdt=2005&sciodt=0,5&cites=5715512211526556221,3900630348746021571,14845969391047998323&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=150&hl=en&as_sdt=2005&sciodt=0,5&cites=5715512211526556221,3900630348746021571,14845969391047998323&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=4852108190471418098,10445407832914456369
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=4852108190471418098,10445407832914456369&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=4852108190471418098,10445407832914456369&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=30&hl=en&as_sdt=2005&sciodt=0,5&cites=4852108190471418098,10445407832914456369&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=40&hl=en&as_sdt=2005&sciodt=0,5&cites=4852108190471418098,10445407832914456369&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=50&hl=en&as_sdt=2005&sciodt=0,5&cites=4852108190471418098,10445407832914456369&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=60&hl=en&as_sdt=2005&sciodt=0,5&cites=4852108190471418098,10445407832914456369&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=70&hl=en&as_sdt=2005&sciodt=0,5&cites=4852108190471418098,10445407832914456369&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=80&hl=en&as_sdt=2005&sciodt=0,5&cites=4852108190471418098,10445407832914456369&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=90&hl=en&as_sdt=2005&sciodt=0,5&cites=4852108190471418098,10445407832914456369&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=4852108190471418098
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=4852108190471418098&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=4852108190471418098&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=30&hl=en&as_sdt=2005&sciodt=0,5&cites=4852108190471418098&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=40&hl=en&as_sdt=2005&sciodt=0,5&cites=4852108190471418098&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=50&hl=en&as_sdt=2005&sciodt=0,5&cites=4852108190471418098&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=60&hl=en&as_sdt=2005&sciodt=0,5&cites=4852108190471418098&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=70&hl=en&as_sdt=2005&sciodt=0,5&cites=4852108190471418098&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=80&hl=en&as_sdt=2005&sciodt=0,5&cites=4852108190471418098&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=90&hl=en&as_sdt=2005&sciodt=0,5&cites=4852108190471418098&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=12632103780634164419,5181395678434829648,2473116897903295655,10002834686767704089,358918672728789475
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=12632103780634164419,5181395678434829648,2473116897903295655,10002834686767704089,358918672728789475&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=12632103780634164419,5181395678434829648,2473116897903295655,10002834686767704089,358918672728789475&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=30&hl=en&as_sdt=2005&sciodt=0,5&cites=12632103780634164419,5181395678434829648,2473116897903295655,10002834686767704089,358918672728789475&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=40&hl=en&as_sdt=2005&sciodt=0,5&cites=12632103780634164419,5181395678434829648,2473116897903295655,10002834686767704089,358918672728789475&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=50&hl=en&as_sdt=2005&sciodt=0,5&cites=12632103780634164419,5181395678434829648,2473116897903295655,10002834686767704089,358918672728789475&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=60&hl=en&as_sdt=2005&sciodt=0,5&cites=12632103780634164419,5181395678434829648,2473116897903295655,10002834686767704089,358918672728789475&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=70&hl=en&as_sdt=2005&sciodt=0,5&cites=12632103780634164419,5181395678434829648,2473116897903295655,10002834686767704089,358918672728789475&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=1770161116342702157
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=en&as_sdt=2005&sciodt=0,5&cites=1770161116342702157&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=20&hl=en&as_sdt=2005&sciodt=0,5&cites=1770161116342702157&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=30&hl=en&as_sdt=2005&sciodt=0,5&cites=1770161116342702157&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=40&hl=en&as_sdt=2005&sciodt=0,5&cites=1770161116342702157&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=50&hl=en&as_sdt=2005&sciodt=0,5&cites=1770161116342702157&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=60&hl=en&as_sdt=2005&sciodt=0,5&cites=1770161116342702157&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=4155184641133877240
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=en&as_sdt=400005&sciodt=0,14&cites=4155184641133877240&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=20&hl=en&as_sdt=400005&sciodt=0,14&cites=4155184641133877240&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=30&hl=en&as_sdt=400005&sciodt=0,14&cites=4155184641133877240&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=40&hl=en&as_sdt=400005&sciodt=0,14&cites=4155184641133877240&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=50&hl=en&as_sdt=400005&sciodt=0,14&cites=4155184641133877240&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=60&hl=en&as_sdt=400005&sciodt=0,14&cites=4155184641133877240&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=16129116195643093666,773813859190906706
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=en&as_sdt=400005&sciodt=0,14&cites=16129116195643093666,773813859190906706&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=20&hl=en&as_sdt=400005&sciodt=0,14&cites=16129116195643093666,773813859190906706&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=30&hl=en&as_sdt=400005&sciodt=0,14&cites=16129116195643093666,773813859190906706&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=40&hl=en&as_sdt=400005&sciodt=0,14&cites=16129116195643093666,773813859190906706&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=50&hl=en&as_sdt=400005&sciodt=0,14&cites=16129116195643093666,773813859190906706&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=18250374387545461369,12888433451185381391
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=en&as_sdt=400005&sciodt=0,14&cites=18250374387545461369,12888433451185381391&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=20&hl=en&as_sdt=400005&sciodt=0,14&cites=18250374387545461369,12888433451185381391&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=30&hl=en&as_sdt=400005&sciodt=0,14&cites=18250374387545461369,12888433451185381391&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=40&hl=en&as_sdt=400005&sciodt=0,14&cites=18250374387545461369,12888433451185381391&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=50&hl=en&as_sdt=400005&sciodt=0,14&cites=18250374387545461369,12888433451185381391&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=5259315240522078883,2404119441869757351
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=en&as_sdt=400005&sciodt=0,14&cites=5259315240522078883,2404119441869757351&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=20&hl=en&as_sdt=400005&sciodt=0,14&cites=5259315240522078883,2404119441869757351&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=30&hl=en&as_sdt=400005&sciodt=0,14&cites=5259315240522078883,2404119441869757351&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=40&hl=en&as_sdt=400005&sciodt=0,14&cites=5259315240522078883,2404119441869757351&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=17354431604212838610
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=de&as_sdt=2005&sciodt=0,5&cites=17354431604212838610&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=20&hl=de&as_sdt=2005&sciodt=0,5&cites=17354431604212838610&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=30&hl=de&as_sdt=2005&sciodt=0,5&cites=17354431604212838610&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=40&hl=de&as_sdt=2005&sciodt=0,5&cites=17354431604212838610&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=8270402351913720206
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=de&as_sdt=2005&sciodt=0,5&cites=8270402351913720206&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=20&hl=de&as_sdt=2005&sciodt=0,5&cites=8270402351913720206&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=30&hl=de&as_sdt=2005&sciodt=0,5&cites=8270402351913720206&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=15887205930739736158
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=de&as_sdt=2005&sciodt=0,5&cites=15887205930739736158&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=20&hl=de&as_sdt=2005&sciodt=0,5&cites=15887205930739736158&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=30&hl=de&as_sdt=2005&sciodt=0,5&cites=15887205930739736158&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=6279232591254414708
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=de&as_sdt=2005&sciodt=0,5&cites=6279232591254414708&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=20&hl=de&as_sdt=2005&sciodt=0,5&cites=6279232591254414708&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=30&hl=de&as_sdt=2005&sciodt=0,5&cites=6279232591254414708&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=3170671714693139429
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=de&as_sdt=2005&sciodt=0,5&cites=3170671714693139429&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=20&hl=de&as_sdt=2005&sciodt=0,5&cites=3170671714693139429&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Timeout Exception ConnectTimeout while fetching page: (MaxRetryError("SOCKSHTTPSConnectionPool(host='scholar.google.com', port=443): Max retries exceeded with url: /scholar?start=20&hl=de&as_sdt=2005&sciodt=0,5&cites=3170671714693139429&scipsc= (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x7f45e66b11c0>, 'Connection to scholar.google.com timed out. (connect timeout=10)'))"),)
+INFO:scholarly:Increasing timeout and retrying within same session.
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got an access denied error (403).
+INFO:scholarly:We can use another connection... let's try that.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0003)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0003)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=30&hl=de&as_sdt=2005&sciodt=0,5&cites=3170671714693139429&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=7874640635990704429,10277694629386643100,3819229967319702974
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=en&as_sdt=5,43&sciodt=0,43&cites=7874640635990704429,10277694629386643100,3819229967319702974&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=20&hl=en&as_sdt=5,43&sciodt=0,43&cites=7874640635990704429,10277694629386643100,3819229967319702974&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=30&hl=en&as_sdt=5,43&sciodt=0,43&cites=7874640635990704429,10277694629386643100,3819229967319702974&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=11437967451188546121,16950385541288564740,18358103918602603231
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=en&as_sdt=5,43&sciodt=0,43&cites=11437967451188546121,16950385541288564740,18358103918602603231&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=20&hl=en&as_sdt=5,43&sciodt=0,43&cites=11437967451188546121,16950385541288564740,18358103918602603231&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=30&hl=en&as_sdt=5,43&sciodt=0,43&cites=11437967451188546121,16950385541288564740,18358103918602603231&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=4538826938494562968
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=en&as_sdt=5,43&sciodt=0,43&cites=4538826938494562968&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=20&hl=en&as_sdt=5,43&sciodt=0,43&cites=4538826938494562968&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=30&hl=en&as_sdt=5,43&sciodt=0,43&cites=4538826938494562968&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=13804486329402855616,16026341598281412798,10132482875122586386,14743974300235144616
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=en&as_sdt=5,43&sciodt=0,43&cites=13804486329402855616,16026341598281412798,10132482875122586386,14743974300235144616&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=20&hl=en&as_sdt=5,43&sciodt=0,43&cites=13804486329402855616,16026341598281412798,10132482875122586386,14743974300235144616&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=16799827301464007103,7113935007488422697
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=en&as_sdt=5,43&sciodt=0,43&cites=16799827301464007103,7113935007488422697&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=20&hl=en&as_sdt=5,43&sciodt=0,43&cites=16799827301464007103,7113935007488422697&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=4090400650085096621
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=en&as_sdt=5,43&sciodt=0,43&cites=4090400650085096621&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=9261841417364640074
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=en&as_sdt=5,43&sciodt=0,43&cites=9261841417364640074&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=12744643570570331247,16065557637151526939,7878154622448961362
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=en&as_sdt=5,43&sciodt=0,43&cites=12744643570570331247,16065557637151526939,7878154622448961362&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=1164847138384825083,17003579812168578052
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=en&as_sdt=5,43&sciodt=0,43&cites=1164847138384825083,17003579812168578052&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=9786251442563674284
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?start=10&hl=en&as_sdt=5,43&sciodt=0,43&cites=9786251442563674284&scipsc=
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=11924761687776369025
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=18130400744406916761
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=18130769644934103598
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=12288298847901939996,5043929148226030070
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=9721982139184558249
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=10057446612598738959
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=9198065831372125201
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=17820488526469044819
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Got a captcha request.
+INFO:scholarly:Exception InvalidArgumentException while fetching page: ('ftpProxy must not contain a scheme: socks5://127.0.0.1:9003', None, None)
+INFO:scholarly:Retrying with a new session.
+INFO:scholarly:Refreshing Tor ID...
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=6357930104118972145
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=5458894294431118626
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=16564281514769423362
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=17303509371358056970
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=18217776460364401280,10136821280354096440
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=17236738393728471786
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=2539048460193364640
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=5933641631173208186
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=3836406378433863744
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=12830240049257102522
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=8335461404304603265
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=5849801243093240234
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=8996255557301356332
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=16792323187140053142
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=3721114717236458811
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
+INFO:scholarly:Getting https://scholar.google.com/scholar?cites=1168660703126383278,5769476330134509166
+INFO:scholarly:Session proxy config is {'http': 'socks5://127.0.0.1:9003', 'https': 'socks5://127.0.0.1:9003'}
