@@ -25,6 +25,12 @@
     color: var(--color-link-hover);
   }
 }
+a.buttonlink.buttonemph {&:link, &:visited{background-color: var(--color-emph-bg);}
+  &:hover,
+  &:focus {
+    background-color: var(--color-emph-bg-hv);}
+}
+
 /*
 .publink {
   padding: 0.2em;

@@ -155,7 +155,9 @@
   --color-data: #7C5427;
   --color-com:  #513B29 ;
   --color-rev:   #3d6f01;
-  
+  --color-emph-bg: rgb(212, 255, 211);
+    --color-emph-bg-hv: #0e9c0a;
+
   --color-lightgrey: #eee;
   --color-grey: #bbb;
   --color-darkgrey: #555;
@@ -176,7 +178,7 @@
     
   --soft-shadow: rgba(0, 0, 0, 0.05);
 }
-
+/* purgecss ignore */
 [data-theme='dark'] {
   --color-primary: hsl(322, 68%, 75%);
   --color-primary-rgb: 235,148,203;
@@ -252,6 +254,8 @@
   --color-darkgrey: #aaaaaa;
   --color-xlightgrey: #050505;
   --color-twitter: #0d91e2;
+  --color-emph-bg: rgb(29, 27, 78);
+  --color-emph-bg-hv: #b19cfd;
 
   --color-chap: #13c0ff;
   --color-art: #ff5500;
@@ -285,5 +289,5 @@
   }
   a:hover .darkFilterT{filter: none;}
 }
-
+/*! purgecss end ignore */
 

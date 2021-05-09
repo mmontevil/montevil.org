@@ -3,10 +3,10 @@ const path = require('path');
 const config = require('./pack11ty.config.js');
 const { promises: fs } = require("fs");
 const syncFs = require('fs')
+ const slugify = require('./src/_utils/slugify');
 
- cachedTweets =  getCachedTweets( {
-    cacheDirectory: '_cache'
-  });
+
+
 async function getCachedTweets(options) {
     let cachePath = getCachedPath(options, "tweetsMentions.json")
 
@@ -20,9 +20,7 @@ async function getCachedTweets(options) {
         return {}
     }
 }
-cachedWiki =  getCachedWiki( {
-    cacheDirectory: '_cache'
-  });
+
 async function getCachedWiki(options) {
     let cachePath = getCachedPath(options, "wikiMentions.json")
 
@@ -50,7 +48,23 @@ function getCachedPath(options, filename) {
     return cachePath
 }
 
+
+ cachedTweets =  getCachedTweets( {
+    cacheDirectory: '_cache'
+  });
+cachedWiki =  getCachedWiki( {
+    cacheDirectory: '_cache'
+  });
+
+
+
+
+
+
+
 module.exports = function (eleventyConfig) {
+  
+
   // ------------------------------------------------------------------------
   // Collections
   // ------------------------------------------------------------------------
@@ -97,6 +111,10 @@ eleventyConfig.setDataDeepMerge(true);
       });
     });
 
+   const purge = require('./src/_utils/purgecss');
+eleventyConfig.addNunjucksAsyncShortcode("purgeCss", async function(content,cssFiles) {
+    return await purge(content,cssFiles);
+  });
   
   // ------------------------------------------------------------------------
   // Plugins
@@ -159,7 +177,6 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
   const markdownItFootnote = require('markdown-it-footnote');
 
  // const slugify = require('@sindresorhus/slugify');
- const slugify = require('./src/_utils/slugify');
   const markdownItAnchor = require('markdown-it-anchor');
   const markdownItAnchorOptions = {
     permalink: true,
@@ -330,6 +347,11 @@ useShortDoctype: true
     return content;
   });
 
+/*  const tinyCSS = require('@sardine/eleventy-plugin-tinycss');
+
+  eleventyConfig.addPlugin(tinyCSS);*/
+
+  
  /*
   const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minifier");
 module.exports = (eleventyConfig) => {
@@ -371,8 +393,8 @@ module.exports = (eleventyConfig) => {
   eleventyConfig
     .addPassthroughCopy(
       path.join(config.dir.src, '**/*.{jpg,png,gif,svg,kmz,zip,css,bib,pdf,webp,mov}')
-    )
-    .addPassthroughCopy(path.join(config.dir.src, 'assets'))
+    );
+    eleventyConfig.addPassthroughCopy(path.join(config.dir.src, 'assets'))
     .addPassthroughCopy(path.join(config.dir.src, '.well-known'))
     .addPassthroughCopy(path.join(config.dir.src, '.htaccess'))
     .addPassthroughCopy(path.join(config.dir.src, '_headers'))

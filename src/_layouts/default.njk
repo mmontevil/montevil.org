@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html lang="{{lang or "en"}}" class="no-js">
- {% if excerpt and not excerpt=="" %}
-{% set pageExcerpt =excerpt %}
-{%else%}
-{% set pageExcerpt = content | excerpt %}
-{%endif%}
-  {% include "head.njk" %}
-  <body
-    itemscope
-    itemtype="https://schema.org/{% if "about/" in page.inputPath %}AboutPage{% else %}WebPage{% endif %}"
-    data-img-src="{% if layout %}{{- page.inputPath | dirname -}}{%-else-%}src{%-endif-%}/"
-    data-img-dist="{{ page.outputPath | dirname }}/"
-    {%- if hackwidth-%}style="width:{{hackwidth}}"{%-endif-%}
-  >
+---
+layout: default0
+---
 
     <a class="quickaccess visually-hidden" href="#main">Jump to main content</a>
 
@@ -63,6 +51,4 @@
     
    
     {% endif %}
-  </body>
 
-</html>

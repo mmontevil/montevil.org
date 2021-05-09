@@ -128,7 +128,7 @@ const runAfterHook = (image, document) => {
 
 module.exports = {
   default: {
-    selector: ':not(picture) img[src]:not([srcset]):not([src$=".svg"])',
+    selector: ':not(picture) img[src]:not([srcset]):not([src$=".svg"]):not([src^="https://res.cloudinary.com"])',
     resizedImageUrl: (src, width) =>
       // https://cloudinary.com/blog/automatic_responsive_images_with_client_hints#comment-3190517665
       `https://res.cloudinary.com/mmontevil/image/fetch/q_auto,f_auto,w_auto:100:${width},c_limit/${src}`,
@@ -181,11 +181,11 @@ module.exports = {
     classes: ['onefourth', 'right'],
   },
   avatar: {
-    fallbackWidth: 32,
-    minWidth: 32,
-    maxWidth: 64,
+    fallbackWidth: 48,
+    minWidth: 48,
+    maxWidth: 96,
     steps: 3,
-    sizes: '32px',
+    sizes: '48px',
   },
   reaction__author__photo2: {
     fallbackWidth: 48,

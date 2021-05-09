@@ -37,6 +37,33 @@ https://developers.google.com/search/docs/data-types/breadcrumbs
     ]
   }
 </script>
+
+
+
+{% from "macros/pubuttons.njk" import pubuttons %}
+{% set item = {
+
+pdfoutSup: pdfoutSup,
+hasSup: hasSup,
+      pdfout: pdfout,
+      bibout: bibout,
+      hasPDF: hasPDF,
+   
+      hasFullText: hasFullText,       
+      peerReview: peerReview,
+      type: type,
+      typepub: typepub,
+      lang: lang,
+      page: {
+          url: page.url
+          },
+      bibentry: {
+          DOI: bibentry.DOI,
+          URL: bibentry.URL
+          }
+      }
+%}
+
 <nav>
 <ul class="older-newer__shortcuts">
     <li class="older-newer__older">
@@ -48,6 +75,11 @@ https://developers.google.com/search/docs/data-types/breadcrumbs
       {% if newerContent %}
         <a href="{{ newerContent.url }}" aria-label="newer {{ layout }}">{% icon "newer", "Newer" %}</a>
       {% endif %}
+    </li>
+     <li class="sidebuttons">
+      {% if layout=="publication" %}
+      {{pubuttons(item) |safe}}
+       {% endif %}
     </li>
   </ul>
   </nav>

@@ -2,7 +2,7 @@
  
 {% macro pubuttons(item) %}
 {% if item.hasPDF%}
-<a  href="{{item.pdfout}}" class="buttonlink ">{% icon "pdf", "PDF" %} Manuscript </a> 
+<a  href="{{item.pdfout}}" class="buttonlink buttonemph">{% icon "pdf", "PDF" %} Manuscript </a> 
 {% endif%}
 {% if item.hasSup%}
 <a  href="{{item.pdfoutSup}}" class="buttonlink ">{% icon "pdf", "PDF" %} Supplementary </a> 

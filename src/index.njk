@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-css: ["page-home.css"]
+css: ["page-home.css","page-tagscloud.css"]
 eleventyExcludeFromCollections: true
 ---
  
@@ -153,7 +153,32 @@ I work in
  #}
  <hr class="fade-2">
  
-  <div class=" lazy "></div>
+ {# <div class=" lazy "></div>#}
+  
+  {% from "macros/linkCard.njk" import linkCard %}
+<h2 class="wrap titleDiag" >Recent links</h2>
+<ol class="cards-list">
+<li class="cards-list">
+  {% for link in collections.linksall | limit(4) %}
+    {{ linkCard(link) }}
+  {% endfor %}
+</li>
+</ol>
+<p class="more wrap">Discover <a href="/links/">all links</a>…</p>
+
+
+
+
+<hr class="fade-2">
+
+{% from "macros/tagsCloud.njk" import tagsCloud %}
+<div class="wrap">
+<h2 class="titleDiag">Main topics</h2>
+<p>These are the tags the most used on the site to set content topics:</p>
+{{ tagsCloud(collections.mainTags) }}
+<p class="more">Browse <a href="/tags/">all tags</a>…</p>
+</div>
+
 </div>
 
 

@@ -12,7 +12,7 @@
     margin: 0;
 
     .older-newer__older,
-    .older-newer__newer { z-index: 21;
+    .older-newer__newer, .sidebuttons{ z-index: 21;
       position: fixed;
       transition-property: transform;
       transition-duration: 0.2s;
@@ -36,22 +36,39 @@
       }
     }
   }
-
-  a:link,
-  a:visited {
-    padding: var(--gap-4xs) var(--gap-3xs);
+  .older-newer__older,
+    .older-newer__newer{
+      padding: var(--gap-4xs) var(--gap-3xs);
     width: var(--gap-m);
     height: var(--gap-m);
-    color: var(--color-grey);
-  }
-
-  a:hover,
+     a:link,
+  a:visited {color: var(--color-grey);}
+        a:hover,
   a:focus {
     color: var(--color-primary);
     background-color: transparent;
   }
+    }
+ 
+  
+   
+  
 
-  svg {
+
+  .sidebuttons{ 
+    right: 0.5em;
+    //top: calc(1em + 3vw);
+  //  transform:  translateY(calc(5em + 3vw));
+ bottom: 2em;
+  //  width:  calc((100vw-var(--layout-max))/2);
+ width: unset;
+     height: unset;
+    font-size: var(--font-size-m);
+    grid-area: button;
+     justify-self: end;
+    display: grid;
+}
+   .svgnofill{
     width: 1em;
     height: 1em;
     fill: none;
@@ -73,14 +90,17 @@
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     'prev prev'
-    'next next';
+    'next next'
+     'button button'
+    ;
   grid-column-gap: var(--gap-3xl);
   column-gap:  var(--gap-3xl);
   grid-row-gap: var(--gap-m);
   row-gap: var(--gap-m);
 
   @media (min-width: 48rem) {
-    grid-template-areas: 'prev next';
+    grid-template-areas: 'prev next'
+                                           'prev   button';
   }
 
   border: solid 1px var(--color-primary-lighter-3);
@@ -103,4 +123,5 @@
     grid-area: next;
     justify-self: end;
   }
+
 }

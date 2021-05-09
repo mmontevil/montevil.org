@@ -1,8 +1,12 @@
 {% if build.env == 'production' %}
-  {% set css %}
+  {% set css0 %}
   {%- include_raw config.dir.dist + "/css/" + hashes_css[cssFilename] -%}
   {% endset %}
-  <style>{{-css | safe-}}</style>
+ {%if nopurge%}
+      <style>{{-  css0 | safe -}}</style>
+ {%else%}
+        <style>{%- purgeCss content, css0 -%}</style>
+  {%endif%}
 {% else %}
   <link rel="stylesheet" href="/css/{{ cssFilename }}" />
 {% endif %}

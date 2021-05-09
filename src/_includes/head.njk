@@ -14,9 +14,9 @@
 
   {% set cssFilename = "critical.css" %}
   {% include "add-css.njk" %}
-{% for cssFilename in css %}
+{% asyncEach cssFilename in css %}
     {% include "add-css.njk" %}
-{% endfor %}
+{% endeach %}
 
   {% if build.env == 'production' %}
     {% set criticalJs %}
