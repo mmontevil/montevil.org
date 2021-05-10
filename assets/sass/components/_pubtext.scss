@@ -377,40 +377,6 @@ mjx-mspace {
 
 .webmention{ --flow-space: var(--gap-m);}
 
-.mention > summary {
-
-  //background-color: #fdb;
-  cursor: pointer;
-  padding: .25rem 1rem;
-    border: 1px solid var(--color-primary-lighter-5);
-  border-radius: var(--gap-xs);
-  color: var(--color-link);
-  // background-color: var(--color-primary-lighter-8);
-  box-shadow: 0 1px 2px var(--soft-shadow), 0 2px 4px var(--soft-shadow),
-    0 4px 8px var(--soft-shadow);
-    &:hover{
-    background-color: var(--color-link-hover-bg);
-    color: var(--color-link-hover);
-    border: 1px solid var(--color-primary-lighter-5);
-  }
-  &:hover h3{color: var(--color-link-hover);}
-  width: max-content;
-
-}
-.mention[open]> summary{ border-radius: var(--gap-xs) var(--gap-xs) 0 0;}
-
-
-.mention > ol {
- // border: 2px solid #fdb;
-     border: 1px solid var(--color-primary-lighter-5);
-  border-radius: 0  var(--gap-xs) var(--gap-xs) var(--gap-xs);
-  margin-top: 0;
-  padding-right: var(--gap-xs);
-  padding-bottom: var(--gap-s);
-  max-width: max-content;
-  min-width: 9em;
-}
-
 .minih2{
 font-size: var(--font-size-l);
 }

@@ -239,7 +239,11 @@ h4, h5{
     color: var(--color-link-hover);
     border: 1px solid var(--color-primary-lighter-5);
   }
-  &:hover h3{color: var(--color-link-hover);}
+  h2,h3{font-size: var(--font-size-xxl);}
+  &:hover h3,&:hover h2{
+    color: var(--color-link-hover);
+    
+  }
   width: max-content;
 
 }

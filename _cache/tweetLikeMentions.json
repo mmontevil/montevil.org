@@ -4498,5 +4498,25 @@
     "like-of": "https://montevil.org/publications/chapters/2017-LM-Comparing-Symmetries-Models/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1273196572122255360bonaventura177": {
+    "id_str": "1273196572122255360bonaventura177",
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Bomin",
+      "screen_name": "bonaventura177",
+      "photo": "https://pbs.twimg.com/profile_images/994939417373523968/dE8KjKnw_normal.jpg",
+      "url": "https://twitter.com/bonaventura177"
+    },
+    "url": "https://twitter.com/Leo_Bich/status/1273196572122255360/likes",
+    "published": "2021-05-10",
+    "wm-received": "2021-05-10",
+    "wm-id": "1273196572122255360bonaventura177",
+    "wm-source": "https://twitter.com/Leo_Bich/status/1273196572122255360/likes",
+    "wm-target": "https://montevil.org/publications/articles/2020-MM-Identity-Organism/",
+    "like-of": "https://montevil.org/publications/articles/2020-MM-Identity-Organism/",
+    "wm-property": "like-of",
+    "wm-private": false
   }
 }

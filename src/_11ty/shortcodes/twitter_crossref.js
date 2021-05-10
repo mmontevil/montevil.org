@@ -26,7 +26,7 @@ async function getTweet(tweetId, options,target,source) {
             tweetViewModel=cachedTweet;
         }else{
             let liveTweet = await fetchTweet(tweetId)
-             tweetViewModel = processTweet(liveTweet,target,source)
+             tweetViewModel = processTweet(liveTweet, target,source)
             changed=true;
             cachedTweets[tweetViewModel['id_str']] = tweetViewModel
           }
@@ -48,7 +48,7 @@ async function getTweet(tweetId, options,target,source) {
             cachedTweets[tweetViewModel['id_str']] = tweetViewModel;
             if (livereTweet){
             for (let i in livereTweet){
-                let tweetViewModel2 = processTweet(livereTweet[i],target,source)
+                let tweetViewModel2 = processTweet(livereTweet[i], target,source)
                 cachedTweet = cachedTweets[tweetViewModel2['id_str']]
                 if(!cachedTweet){
                   changed=true;
@@ -138,6 +138,9 @@ function processTweet(tweet,target,source) {
     let { name, screen_name, profile_image_url_https, url } = tweet.user
     let type= "card"
     let photo=profile_image_url_https
+    if (!url){
+      url="https://twitter.com/"+screen_name;
+    }
     let author = {type, name, screen_name, photo,url }
     let text=full_text
     let value=htmlText

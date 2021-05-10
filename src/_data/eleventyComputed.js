@@ -371,6 +371,7 @@ module.exports = {
     var res = {};
     let size = 0;
     let title = data.title.toLowerCase();
+    if (data.layout=="publication"){
     if (
       slugifyString(title.toLowerCase()) ==
       slugifyString(
@@ -394,7 +395,7 @@ module.exports = {
           size = data.scholar[entry][1].length;
         }
       }
-    }
+    }}
     return res;
   },
    tweetsMentions: (data) => {
