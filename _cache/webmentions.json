@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2021-05-10T23:59:40.402Z",
+  "lastFetched": "2021-05-11T09:30:16.919Z",
   "webmentions": [
     {
       "type": "entry",
@@ -514,6 +514,27 @@
       "wm-target": "https://montevil.org/publications/articles/2021-montevil-stiegler-sciences-entropocene/",
       "like-of": "https://montevil.org/publications/articles/2021-montevil-stiegler-sciences-entropocene/",
       "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Daniel Ross",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/c9e22985b90093de3305ad6278da6a4947b52ecce329d81abf665e4c404174f2.jpg",
+        "url": "https://twitter.com/DJRoss70"
+      },
+      "url": "https://twitter.com/DJRoss70/status/1391960577140875265",
+      "published": "2021-05-11T03:37:17+00:00",
+      "wm-received": "2021-05-11T04:11:25Z",
+      "wm-id": 1151127,
+      "wm-source": "https://brid.gy/repost/twitter/MMontevil/1391897167028162566/1391960577140875265",
+      "wm-target": "https://montevil.org/publications/articles/2021-montevil-stiegler-sciences-entropocene/",
+      "content": {
+        "text": "📖 Nouvel article en preprint : Sciences et entropocène. Autour de Qu’appelle-t-on panser ? de Bernard Stiegler, publié dans @RevueEcoRev \n#antiEntropy #disruption #entropy #organization #pharmacology #COVID19  \ndoi.org/10.3917/ecorev…\nmontevil.org/publications/a…"
+      },
+      "repost-of": "https://montevil.org/publications/articles/2021-montevil-stiegler-sciences-entropocene/",
+      "wm-property": "repost-of",
       "wm-private": false
     }
   ]

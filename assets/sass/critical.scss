@@ -744,6 +744,11 @@ article .subtitleHead {
   width: 100vw;
   top: 5em;
   right: 0;
+  overflow-x: scroll; 
+  height:2700px;
+ @media (min-width: 500px) { 
+   overflow-x: visible;
+ }
 }
 
 //.abssvg,
