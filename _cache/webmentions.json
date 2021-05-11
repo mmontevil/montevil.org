@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2021-05-07T01:26:02.593Z",
+  "lastFetched": "2021-05-10T23:59:40.402Z",
   "webmentions": [
     {
       "type": "entry",
@@ -496,6 +496,24 @@
       "wm-target": "https://montevil.org/publications/articles/2021-montevil-vaccines-germs-knowledge/",
       "repost-of": "https://montevil.org/publications/articles/2021-montevil-vaccines-germs-knowledge/",
       "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Olivier Marchand",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/511d5e7454c7e6fa5255e46dc75e38b13c2b05da17aeacd048c8afa8ecbdfe38.jpg",
+        "url": "https://twitter.com/OlivierM2019"
+      },
+      "url": "https://twitter.com/MMontevil/status/1391897167028162566#favorited-by-1154351347694804992",
+      "published": "2021-05-10T23:57:50Z",
+      "wm-received": "2021-05-10T23:57:50Z",
+      "wm-id": 1150948,
+      "wm-source": "https://brid.gy/like/twitter/MMontevil/1391897167028162566/1154351347694804992",
+      "wm-target": "https://montevil.org/publications/articles/2021-montevil-stiegler-sciences-entropocene/",
+      "like-of": "https://montevil.org/publications/articles/2021-montevil-stiegler-sciences-entropocene/",
+      "wm-property": "like-of",
       "wm-private": false
     }
   ]

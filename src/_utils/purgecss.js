@@ -23,9 +23,11 @@ const purge =async function (content,cssFiles) {
       extension: 'html'
           }],
         css: [{raw: cssFiles}],
-        safelist: [/data-theme$/, /.*lightbox.*/]
+          safelist: {
+      greedy: [/data-theme$/, /.*lightbox.*/, /.*equation.*/,/.*mjx.*/]
+    }
       });
-     
+    
      // console.log(cssFiles)
       let cssMerge = ''
       
