@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2021-05-11T09:30:16.919Z",
+  "lastFetched": "2021-05-11T18:58:04.038Z",
   "webmentions": [
     {
       "type": "entry",
@@ -533,6 +533,24 @@
       "content": {
         "text": "📖 Nouvel article en preprint : Sciences et entropocène. Autour de Qu’appelle-t-on panser ? de Bernard Stiegler, publié dans @RevueEcoRev \n#antiEntropy #disruption #entropy #organization #pharmacology #COVID19  \ndoi.org/10.3917/ecorev…\nmontevil.org/publications/a…"
       },
+      "repost-of": "https://montevil.org/publications/articles/2021-montevil-stiegler-sciences-entropocene/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Silmathoron",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/747a2243930f44bb035f7668584376c9b6a3e632ee9eee4d55b69837a090be92.png",
+        "url": "https://mastodon.cloud/@silmathoron"
+      },
+      "url": "https://scholar.social/@mmontevil/106213564070620012#reblogged-by-137604",
+      "published": "2021-05-11T18:57:38Z",
+      "wm-received": "2021-05-11T18:57:38Z",
+      "wm-id": 1152062,
+      "wm-source": "https://brid.gy/repost/mastodon/@mmontevil@scholar.social/106213564070620012/137604",
+      "wm-target": "https://montevil.org/publications/articles/2021-montevil-stiegler-sciences-entropocene/",
       "repost-of": "https://montevil.org/publications/articles/2021-montevil-stiegler-sciences-entropocene/",
       "wm-property": "repost-of",
       "wm-private": false
