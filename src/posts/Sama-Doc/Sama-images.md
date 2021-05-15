@@ -20,7 +20,7 @@ _**Important:**_
 *   *Compute convex hull:* This is an option for the basic morphometrics. By default this has been unchecked. While this option gives complementary parameters about the shape of the structures, we rely on a function of 3D suite which is not completely stable and may abort the process.
 *   *Lumen measurement:* In this step, the images are processed and stored in SAMA-prelumen analysis for further analysis in Tiers 2 and 3.
 *   *Branching measurement:* In this step, the images are processed and branching is analyzed by the 3d Skeleton plugin.
-*   *Thickness measurement:* By default this has been unchecked because it requires BoneJ. Similar to Convex hull option, this option gives useful parameters about the branching of the structures but is memory-consuming. See: Hildebrand T, Rüegsegger P (1997) A new method for the model-independent assessment of thickness in three-dimensional images. J. Microsc. 185: 67-75\. doi:[10.1046/j.1365-2818.1997.1340694.x](http://dx.doi.org/10.1046/j.1365-2818.1997.1340694.x).
+*   *Thickness measurement:* By default this has been unchecked because it requires BoneJ. Similar to Convex hull option, this option gives useful parameters about the branching of the structures but is memory-consuming. See: Hildebrand T, Rüegsegger P (1997) A new method for the model-independent assessment of thickness in three-dimensional images. J. Microsc. 185: 67-75\. doi:[10.1046/j.1365-2818.1997.1340694.x](https://doi.org/10.1046/j.1365-2818.1997.1340694.x).
 
 # Tier 2:
 

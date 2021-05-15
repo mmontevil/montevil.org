@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2021-05-11T18:58:04.038Z",
+  "lastFetched": "2021-05-13T22:30:48.867Z",
   "webmentions": [
     {
       "type": "entry",
@@ -553,6 +553,214 @@
       "wm-target": "https://montevil.org/publications/articles/2021-montevil-stiegler-sciences-entropocene/",
       "repost-of": "https://montevil.org/publications/articles/2021-montevil-stiegler-sciences-entropocene/",
       "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Nicolas Hoizey",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/c21eff209ada91f6fe7e85dade06b7cd289b2c253324148110fe5c4ae2cb8021.jpg",
+        "url": "https://twitter.com/nhoizey"
+      },
+      "url": "https://twitter.com/nhoizey/status/1392372078498701313",
+      "published": "2021-05-12T06:52:27+00:00",
+      "wm-received": "2021-05-12T14:40:04Z",
+      "wm-id": 1153316,
+      "wm-source": "https://brid.gy/repost/twitter/MMontevil/1392291491448492041/1392372078498701313",
+      "wm-target": "https://montevil.org/",
+      "content": {
+        "text": "I've redone my #academic website using @eleven_ty  It is fun to play with various data sources like @CrossrefOrg api as a complement to #webmention. I also took some inspiration and code from @nhoizey \nmontevil.org"
+      },
+      "repost-of": "https://montevil.org/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Nicolas Hoizey",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/c21eff209ada91f6fe7e85dade06b7cd289b2c253324148110fe5c4ae2cb8021.jpg",
+        "url": "https://twitter.com/nhoizey"
+      },
+      "url": "https://twitter.com/nhoizey/status/1392372576391999494",
+      "published": "2021-05-12T06:54:25+00:00",
+      "wm-received": "2021-05-12T07:05:44Z",
+      "wm-id": 1152994,
+      "wm-source": "https://brid.gy/comment/twitter/MMontevil/1392291491448492041/1392372576391999494",
+      "wm-target": "https://montevil.org/",
+      "content": {
+        "html": "I'm glad providing my code for free helped! 👍\n<a class=\"u-mention\" href=\"https://montevil.org/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/CrossrefOrg\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/MMontevil\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/eleven_ty\"></a>",
+        "text": "I'm glad providing my code for free helped! 👍"
+      },
+      "in-reply-to": "https://montevil.org/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Nicolas Hoizey",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/c21eff209ada91f6fe7e85dade06b7cd289b2c253324148110fe5c4ae2cb8021.jpg",
+        "url": "https://twitter.com/nhoizey"
+      },
+      "url": "https://twitter.com/MMontevil/status/1392291491448492041#favorited-by-6308712",
+      "published": "2021-05-12T07:05:11Z",
+      "wm-received": "2021-05-12T07:05:11Z",
+      "wm-id": 1152993,
+      "wm-source": "https://brid.gy/like/twitter/MMontevil/1392291491448492041/6308712",
+      "wm-target": "https://montevil.org/",
+      "like-of": "https://montevil.org/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eleventy",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/64ed7c5b6f8f7dc61e11ff6a926eeb6a94e686473efdb5a7c697a4a87f4e411a.jpg",
+        "url": "https://twitter.com/eleven_ty"
+      },
+      "url": "https://twitter.com/eleven_ty/status/1392485109023006722",
+      "published": "2021-05-12T14:21:35+00:00",
+      "wm-received": "2021-05-12T14:40:04Z",
+      "wm-id": 1153315,
+      "wm-source": "https://brid.gy/repost/twitter/MMontevil/1392291491448492041/1392485109023006722",
+      "wm-target": "https://montevil.org/",
+      "content": {
+        "text": "I've redone my #academic website using @eleven_ty  It is fun to play with various data sources like @CrossrefOrg api as a complement to #webmention. I also took some inspiration and code from @nhoizey \nmontevil.org"
+      },
+      "repost-of": "https://montevil.org/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eleventy",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/64ed7c5b6f8f7dc61e11ff6a926eeb6a94e686473efdb5a7c697a4a87f4e411a.jpg",
+        "url": "https://twitter.com/eleven_ty"
+      },
+      "url": "https://twitter.com/MMontevil/status/1392291491448492041#favorited-by-949639269433380864",
+      "published": "2021-05-12T14:39:54Z",
+      "wm-received": "2021-05-12T14:39:54Z",
+      "wm-id": 1153313,
+      "wm-source": "https://brid.gy/like/twitter/MMontevil/1392291491448492041/949639269433380864",
+      "wm-target": "https://montevil.org/",
+      "like-of": "https://montevil.org/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Karel Léorier 🇫🇷",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/d5822a546552aa20758d9cb11a367c01125021a7a1ece7dd4168462134e785d9.jpg",
+        "url": "https://twitter.com/kleorier"
+      },
+      "url": "https://twitter.com/MMontevil/status/1392291491448492041#favorited-by-874670672080982016",
+      "published": "2021-05-12T14:40:03Z",
+      "wm-received": "2021-05-12T14:40:03Z",
+      "wm-id": 1153314,
+      "wm-source": "https://brid.gy/like/twitter/MMontevil/1392291491448492041/874670672080982016",
+      "wm-target": "https://montevil.org/",
+      "like-of": "https://montevil.org/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "illtron",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/33259e96cc7f30f5dfe221d50d7efe7da1f497e4b966a2a918daafbcd2dd3d2c.jpg",
+        "url": "https://twitter.com/freshyill"
+      },
+      "url": "https://twitter.com/MMontevil/status/1392291491448492041#favorited-by-2365831",
+      "published": "2021-05-12T14:40:28Z",
+      "wm-received": "2021-05-12T14:40:28Z",
+      "wm-id": 1153317,
+      "wm-source": "https://brid.gy/like/twitter/MMontevil/1392291491448492041/2365831",
+      "wm-target": "https://montevil.org/",
+      "like-of": "https://montevil.org/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Starfall Projects",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/caf40e0aeb4b30364b0b014054c8967edf9eccfe166a3421016108291280c071.jpg",
+        "url": "https://twitter.com/starfalldocs"
+      },
+      "url": "https://twitter.com/MMontevil/status/1392291491448492041#favorited-by-2867913753",
+      "published": "2021-05-12T15:24:37Z",
+      "wm-received": "2021-05-12T15:24:37Z",
+      "wm-id": 1153328,
+      "wm-source": "https://brid.gy/like/twitter/MMontevil/1392291491448492041/2867913753",
+      "wm-target": "https://montevil.org/",
+      "like-of": "https://montevil.org/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eric Wallace",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/5a02571e30b5ee7d4cf5bdebf69e9ab5d536adfc20d7a5a11016dcb3988d12e2.jpg",
+        "url": "https://twitter.com/ecrosstexas"
+      },
+      "url": "https://twitter.com/MMontevil/status/1392291491448492041#favorited-by-758056",
+      "published": "2021-05-13T02:37:02Z",
+      "wm-received": "2021-05-13T02:37:02Z",
+      "wm-id": 1154460,
+      "wm-source": "https://brid.gy/like/twitter/MMontevil/1392291491448492041/758056",
+      "wm-target": "https://montevil.org/",
+      "like-of": "https://montevil.org/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chris Aldrich",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4410412a431cda5b1b79cd70d3a369571c2ab26e2b20a8c7d1a55796687a47ed.jpg",
+        "url": "https://twitter.com/ChrisAldrich"
+      },
+      "url": "https://twitter.com/MMontevil/status/1392291491448492041#favorited-by-13645402",
+      "published": "2021-05-13T03:39:29Z",
+      "wm-received": "2021-05-13T03:39:29Z",
+      "wm-id": 1154533,
+      "wm-source": "https://brid.gy/like/twitter/MMontevil/1392291491448492041/13645402",
+      "wm-target": "https://montevil.org/",
+      "like-of": "https://montevil.org/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "ROTO-RUB",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/254548817df6b42c557521761a9f913b350fa6892934bae5612c34894578f907.jpg",
+        "url": "https://twitter.com/RotoRub"
+      },
+      "url": "https://twitter.com/MMontevil/status/1392291491448492041#favorited-by-1234805184737484801",
+      "published": "2021-05-13T16:14:14Z",
+      "wm-received": "2021-05-13T16:14:14Z",
+      "wm-id": 1155065,
+      "wm-source": "https://brid.gy/like/twitter/MMontevil/1392291491448492041/1234805184737484801",
+      "wm-target": "https://montevil.org/",
+      "like-of": "https://montevil.org/",
+      "wm-property": "like-of",
       "wm-private": false
     }
   ]

@@ -61,7 +61,7 @@ let mentioned=maintweets[tid]['wm-target'];
   
   await driver.get(urltargetlike);
   await driver.wait(() => documentInitialised(), 10000);
-  await sleep(2000);
+  await sleep(4000);
 
 l= await driver.findElements(By.xpath("//div[@aria-label='Timeline: Liked by']/div/div/div/div[@data-testid='UserCell']/div/div/div/a"));
 m= await driver.findElements(By.xpath("//div[@aria-label='Timeline: Liked by']/div/div/div/div[@data-testid='UserCell']/div/div/div/a/div/div/div/img"));
@@ -70,7 +70,7 @@ for ( x in l){
   let link=await l[x].getAttribute("href");
   if(link.substring(0, 20)==="https://twitter.com/"){
     console.log(link.substring(20));
-    let photo=await m[xx].getAttribute("src");; 
+    let photo=await m[xx].getAttribute("src"); 
     let type= "card";
     let screen_name=link.substring(20);
   let temp= await driver.findElements(By.xpath("//div[@aria-label='Timeline: Liked by']/div/div/div/div[@data-testid='UserCell']/div/div[2]/div/div/a[@href='/"+screen_name +"']/div[1]/div[1]"));
