@@ -4,57 +4,16 @@ const config = require('./pack11ty.config.js');
 const { promises: fs } = require("fs");
 const syncFs = require('fs')
  const slugify = require('./src/_utils/slugify');
+const { writeToCache, readFromCache } = require('./src/_utils/cache');
 
 
 
-async function getCachedTweets(options) {
-    let cachePath = getCachedPath(options, "tweetsMentions.json")
-
-    try {
-        let file = await fs.readFile(cachePath, "utf8")
-        cachedTweets = JSON.parse(file) || {}
-        return cachedTweets
-
-    } catch (error) {
-        console.log(error)
-        return {}
-    }
-}
-
-async function getCachedWiki(options) {
-    let cachePath = getCachedPath(options, "wikiMentions.json")
-
-    try {
-        let file = await fs.readFile(cachePath, "utf8")
-        cachedWiki  = JSON.parse(file) || {}
-        return cachedWiki 
-
-    } catch (error) {
-        console.log(error)
-        return {}
-    }
-}
-function getCachedPath(options, filename) {
-    let path = require("path")
-
-    // get directory for main thread
-    let appPath = require.main.filename // C:\user\github\app\node_modules\@11ty\eleventy\cmd.js
-    let pos = appPath.indexOf("node_modules")
-    let appRoot = appPath.substr(0, pos) // C:\user\github\app\
-
-    // build cache file path
-    let cachePath = path.join(appRoot, options.cacheDirectory, filename)
-
-    return cachePath
-}
 
 
- cachedTweets =  getCachedTweets( {
-    cacheDirectory: '_cache'
-  });
-cachedWiki =  getCachedWiki( {
-    cacheDirectory: '_cache'
-  });
+
+cachedTweets =  readFromCache(  '_cache/tweetsMentions.json',alt={});
+cachedWiki =  readFromCache(  '_cache/wikiMentions.json',alt={});
+cachedPeople =  readFromCache(  '_cache/people.json',alt={});
 
 
 
@@ -64,7 +23,11 @@ cachedWiki =  getCachedWiki( {
 
 module.exports = function (eleventyConfig) {
   
-
+  eleventyConfig.on('afterBuild', () => {
+      writeToCache(cachedPeople, '_cache/people.json');
+   // writeToCache(cachedWiki, '_cache/wikiMentions.json');
+   // writeToCache(cachedTweets, '_cache/tweetsMentions.json');
+  });
   // ------------------------------------------------------------------------
   // Collections
   // ------------------------------------------------------------------------

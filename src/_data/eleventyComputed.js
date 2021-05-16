@@ -368,8 +368,7 @@ module.exports = {
     return res;
   },
   gsentry: (data) => {
-    var res = {};
-    let size = 0;
+    var res = [];
     let title = data.title.toLowerCase();
     if (data.layout=="publication"){
     if (
@@ -380,8 +379,9 @@ module.exports = {
     ) {
       title = 'Perspectives on organisms';
     }
+    
     title = slugifyString(title.toLowerCase());
-
+    let temp=0;
     for (const entry in data.scholar) {
       if (
         search(
@@ -389,19 +389,20 @@ module.exports = {
           title,
           4
         ).length > 0
-      ) {
-        if (data.scholar[entry][1].length > size) {
-          res = data.scholar[entry];
-          size = data.scholar[entry][1].length;
-        }
+      ) {temp=temp+1;
+          res =res.concat( data.scholar[entry]);        
       }
-    }}
+    }
+     // if ( temp>1 ){console.log(data.title)} 
+      
+    }
+   
     return res;
   },
    tweetsMentions: (data) => {
      let res=[];
      
-     if (data.bibentry &&data.bibentry.DOI){
+     if (data.bibentry &&data.bibentry.DOI && plumCache[data.bibentry.DOI] ){
           res=res.concat(plumCache[data.bibentry.DOI]);
      }
     if(data.tweets_mentions){

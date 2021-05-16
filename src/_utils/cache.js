@@ -9,21 +9,23 @@ const writeToCache = (data, file) => {
   if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir);
   }
+  console.log("write to "+file)
   // write data to cache json file
-  fs.writeFile(file, fileContent, (err) => {
+  fs.writeFile(file, fileContent, {encoding:'utf8'} , (err) => {
     if (err) throw err;
   });
+  
 };
 
 // get cache contents from json file
-const readFromCache = (file) => {
+const readFromCache = (file,alt=false) => {
   if (fs.existsSync(file)) {
-    const cacheFile = fs.readFileSync(file);
+    const cacheFile = fs.readFileSync(file, {encoding:'utf8'});
     return JSON.parse(cacheFile);
   }
 
   // no cache found.
-  return false;
+  return alt;
 };
 
 module.exports = {

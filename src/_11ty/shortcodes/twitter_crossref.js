@@ -376,6 +376,7 @@ async function wikiMention(data,options,target) {
     // destructure only properties we care about
 
     let  name="Wikipedia  — "+data.subj.title
+    let title=name
     let  photo="https://montevil.org/assets/avatars/mentions/wikipedia-logo.png"
     let temp=data.subj.url.split("/")
      let url=temp[0]+"/"+temp[1]+"/"+temp[2]
@@ -421,12 +422,13 @@ async function wikiMention(data,options,target) {
    // if(html){
   cachedWiki[tweetViewModel['id_str']] = tweetViewModel;
     saveCacheWiki(options)
-   // }
+  console.log("Added mention:"+title) 
+  // }
 }
 }
 
 
-const asyncReplace = require('string-replace-async')
+//const asyncReplace = require('string-replace-async')
 module.exports = {
   tweettomention: (tweetId, options,target,source) => {
      let aa=getTweet(tweetId, options,target,source);

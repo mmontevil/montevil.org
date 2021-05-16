@@ -20,6 +20,7 @@
       ]
     },
     "keyword": "epistemology, immunology, politics",
+    "note": "https://montevil.org/publications/articles/2021-Montevil-vaccines-germs-knowledge/",
     "title": "Vaccines, Germs, and Knowledge",
     "type": "article-journal"
   },
@@ -36,6 +37,7 @@
     "issued": {
       "date-parts": []
     },
+    "note": "https://montevil.org/publications/articles/submitted-Montevil-Disruption-Phenology/",
     "title": "Disruption of biological processes in the Anthropocene: the case of phenological mismatch",
     "title-short": "Disruption of biological processes in the Anthropocene",
     "type": "article-journal"
@@ -91,6 +93,7 @@
       ]
     },
     "keyword": "Default state, Biological organization, Organizational closure, Variation, Individuation",
+    "note": "https://montevil.org/publications/articles/2016-SLN-Conclusion-Century-Organism/",
     "page": "77-82",
     "publisher": "Elsevier BV",
     "title": "Toward a theory of organisms: Three founding principles in search of a useful integration",
@@ -129,6 +132,7 @@
       ]
     },
     "keyword": "Morphogenesis, extracellular matrix, theoretical principles, default state of cells, modelization.",
+    "note": "https://montevil.org/publications/articles/2016-Theory-Morphogenesis/",
     "page": "45-49",
     "publisher": "Fondazione Vasculab impresa sociale ONLUS",
     "title": "Theoretical approach of ductal morphogenesis",
@@ -155,6 +159,7 @@
         ]
       ]
     },
+    "note": "https://montevil.org/publications/varia/2020-Montevil-CodeForDisruption/",
     "publisher": "Code, Github/Zenoto; Zenodo",
     "title": "Code for: Disruption of biological processes in the Anthropocene: the case of phenological mismatch",
     "type": "",
@@ -182,6 +187,7 @@
       ]
     },
     "keyword": "Historicity, Organization, Epistemology, Mathematical modeling, Constraints",
+    "note": "https://montevil.org/publications/articles/2020-Montevil-Historicity-Heart-Biology/",
     "publisher": "Springer Science and Business Media LLC",
     "title": "Historicity at the heart of biology",
     "type": "article-journal"
@@ -213,13 +219,13 @@
       "date-parts": []
     },
     "keyword": "Normativity, Organization, Personalized Medicine, Technology, theoretical biology",
+    "note": "https://montevil.org/publications/chapters/2021-Montevil-Theory-Accuracy-Medicine/",
     "publisher": "Springer",
     "title": "Conceptual and theoretical specifications for accuracy in medicine",
     "type": "chapter"
   },
   {
     "DOI": "10.3917/ecorev.050.0109",
-    "URL": "10.3917/ecorev.050.0109",
     "abstract": "En examinant le second tome de Qu’appelle-t-on panser (1), le théoricien de la biologie et épistémologue Maël Montévil, qui a collaboré avec Bernard Stiegler à la fois sur des questions théoriques et sur des expérimentations territoriales, s’arrête sur le rôle des sciences dans l’Anthropocène pour souligner leur difficulté à penser cette ère et, ce faisant, à prendre soin des vivants, humains et non-humains, des techniques et des sciences elles-mêmes. Stiegler soulignait l’importance de la question de l’entropie, conduisant au concept d’entropocène. L’auteur introduit et illustre ce concept pour montrer sa pertinence d’un point de vue physique, biologique et social. Ce faisant, il insiste sur la parenté mais aussi sur les différences entre ces phénomènes. Dans le cas des humains, les savoirs jouent un rôle central pour lutter contre l’entropie, et les sciences pourraient retrouver leur compte en contribuant au développement – urgent – de savoirs territoriaux.",
     "author": [
       {
@@ -239,6 +245,7 @@
         ]
       ]
     },
+    "note": "https://montevil.org/publications/articles/2021-Montevil-Stiegler-Sciences-Entropocene/",
     "page": "109-125",
     "publisher": "Association EcoRev’",
     "title": "Sciences et entropocène. Autour de Qu’appelle-t-on panser ? de Bernard Stiegler",
@@ -280,7 +287,7 @@
       ]
     },
     "keyword": "Animals, Biological Evolution, Biophysics/methods, Cell Division, Mice, Models, Morphogenesis, Thermodynamics",
-    "note": "26648040[pmid]",
+    "note": "https://montevil.org/publications/articles/2015-LMS-Search-Principles-Organisms/",
     "page": "955-968",
     "publisher": "Springer Science and Business Media LLC",
     "title": "In search of principles for a Theory of Organisms",
@@ -288,7 +295,7 @@
     "volume": "40"
   },
   {
-    "URL": "https://montevil.org/publications/articles/2021-Montevil-Entropies-Anthropocene/",
+    "DOI": "10.1007/s00146-021-01221-0",
     "abstract": "The Anthropocene crisis is frequently described as the rarefaction of resources or resources per capita. However, both energy and minerals correspond to fundamentally conserved quantities from the perspective of physics. A specific concept is required to understand the rarefaction of available resources. This concept, entropy, pertains to energy and matter configurations and not just to their sheer amount. <br> However, the physics concept of entropy is insufficient to understand biological and social organizations. Biological phenomena display both historicity and systemic properties. A biological organization, the ability of a specific living being to last over time, results from history, expresses itself by systemic properties, and may require generating novelties The concept of anti-entropy stems from the combination of these features. We propose that Anthropocene changes disrupt biological organizations by randomizing them, that is, decreasing anti-entropy. Moreover, second-order disruptions correspond to the decline of the ability to produce functional novelties, that is, to produce anti-entropy.",
     "author": [
       {
@@ -299,9 +306,16 @@
     "container-title": "AI and society",
     "id": "2021-Montevil-Entropies-Anthropocene",
     "issued": {
-      "date-parts": []
+      "date-parts": [
+        [
+          2021,
+          5,
+          15
+        ]
+      ]
     },
     "keyword": "entropy, anti-entropy, resources, organization, disruption, Anthropocene",
+    "note": "https://montevil.org/publications/articles/2021-Montevil-Entropies-Anthropocene/",
     "title": "Entropies and the Anthropocene crisis",
     "type": "article-journal"
   },
@@ -342,6 +356,7 @@
         ]
       ]
     },
+    "note": "https://montevil.org/publications/chapters/2020-MSL-Anthropocene-Exosomatization-Negentropy/",
     "title": "Anthropocene, exosomatization and negentropy",
     "type": "chapter"
   },
@@ -383,6 +398,7 @@
         ]
       ]
     },
+    "note": "https://montevil.org/publications/chapters/2020-MSL-Anthropocene-Exosomatisation-Negentropie/",
     "page": "57-80",
     "publisher": "Les liens qui libèrent",
     "title": "Anthropocène, exosomatisation et néguentropie",
@@ -409,6 +425,7 @@
         ]
       ]
     },
+    "note": "https://montevil.org/publications/articles/2019-SM-Entretien-Entropie-1/",
     "title": "Entretien sur l’entropie, le vivant et la technique : Première partie",
     "title-short": "Entretien sur l’entropie, le vivant et la technique ",
     "type": "article-journal",
@@ -435,6 +452,7 @@
         ]
       ]
     },
+    "note": "https://montevil.org/publications/articles/2019-SM-Entretien-Entropie-2/",
     "title": "Entretien sur l’entropie, le vivant et la technique : Deuxième partie",
     "title-short": "Entretien sur l’entropie, le vivant et la technique ",
     "type": "article-journal",
@@ -467,6 +485,7 @@
       ]
     },
     "keyword": "big data, biology, carcinogenesis process, combinatory theory, ergodic theory, immense digital databases, Ramsey theory",
+    "note": "https://montevil.org/publications/chapters/2018-ML-Big-Data-Biology/",
     "page": "243-248",
     "publisher": "John Wiley & Sons, Ltd",
     "title": "Big Data, Knowledge and Biology",
@@ -521,6 +540,7 @@
       ]
     },
     "keyword": "cell theory, evolution biology, mathematical structures, organism biology, philosophical position, physical theories, theoretical symmetries",
+    "note": "https://montevil.org/publications/chapters/2018-MLS-Gene-Century-Organism/",
     "page": "81-97",
     "publisher": "John Wiley & Sons, Ltd",
     "title": "From the Century of the Gene to that of the Organism: Introduction to New Theoretical Perspectives",
@@ -556,6 +576,7 @@
       ]
     },
     "keyword": "Coherent structures, Critical transitions, downward causation, Hidden variables, Levels of organization, Symmetries, Systems biology",
+    "note": "https://montevil.org/publications/articles/2019-LM-Extending-Criticality-Extended/",
     "page": "77-92",
     "publisher": "Universite Catholique de Louvain",
     "title": "From physics to biology by extending criticality and symmetry breakings: An update",
@@ -588,6 +609,7 @@
         ]
       ]
     },
+    "note": "https://montevil.org/publications/articles/2020-MM-Identity-Organism/",
     "page": "611",
     "publisher": "Frontiers Media SA",
     "title": "The Identity of Organisms in Scientific Practice: Integrating Historical and Relational Conceptions",
@@ -616,6 +638,7 @@
         ]
       ]
     },
+    "note": "https://montevil.org/publications/varia/2018-Montevil-Perspective-from-theory/",
     "page": "377-379",
     "title": "A Few Pending Challenges from the Perspective of a Theory of Organisms",
     "type": "article-journal",
@@ -640,6 +663,7 @@
       ]
     },
     "keyword": "Allometry, first principles, Historicity, invariants, theoretical biology, Variability",
+    "note": "https://montevil.org/publications/articles/2019-Montevil-First-Principles-Biology/",
     "page": "177-189",
     "title": "Which first principles for mathematical modelling in biology?",
     "type": "article-journal",
@@ -664,6 +688,7 @@
       ]
     },
     "keyword": "anti-entropie, entropie, épistémologie, historicité, morphogenèse, Turing",
+    "note": "https://montevil.org/publications/articles/2020-Montevil-Turing-Biology/",
     "page": "237-253",
     "title": "De l’œuvre de Turing aux défis contemporains pour la compréhension mathématique du vivant",
     "type": "article-journal",
@@ -682,6 +707,7 @@
     "issued": {
       "date-parts": []
     },
+    "note": "https://montevil.org/publications/chapters/2021-Sens-Formes-biologie/",
     "publisher": "NAIMA",
     "title": "Le sens des formes en biologie",
     "type": "chapter"
@@ -713,6 +739,7 @@
       ]
     },
     "keyword": "TOFT, reductionism, organicism, levels of organization, SMT",
+    "note": "https://montevil.org/publications/articles/2017-MP-Hitchhikers-Guide-Cancer/",
     "page": "37-48",
     "publisher": "Sapienza Università Editrice",
     "title": "The Hitchhiker’s Guide to the Cancer Galaxy: How two critics missed their destination",
@@ -755,6 +782,7 @@
       ]
     },
     "keyword": "Default state, Theory, Organicism, Emergence, Mathematical symmetries, Biological organization",
+    "note": "https://montevil.org/publications/articles/2016-SLM-Theoretical-Principle-Default-State/",
     "page": "16-23",
     "publisher": "Elsevier BV",
     "title": "The biological default state of cell proliferation with variation and motility, a fundamental principle for a theory of organisms",
@@ -792,6 +820,7 @@
       ]
     },
     "keyword": "Theoretical principle, Organization, Constraints, Closure, Stability, Organicism",
+    "note": "https://montevil.org/publications/articles/2016-MML-Theoretical-Principles-Organization/",
     "page": "24-35",
     "publisher": "Elsevier BV",
     "title": "Theoretical principles for biology: Organization",
@@ -834,6 +863,7 @@
       ]
     },
     "keyword": "Variability, Historicity, Genericity, Biological randomness, Organization, Theory of organisms",
+    "note": "https://montevil.org/publications/articles/2016-MMP-Theoretical-Principles-Variation/",
     "page": "36-50",
     "publisher": "Elsevier BV",
     "title": "Theoretical principles for biology: Variation",
@@ -876,6 +906,7 @@
       ]
     },
     "keyword": "Ductal morphogenesis, Mathematical models, Organicism, Organizational closure, Acinar morphogenesis, Mammary gland morphogenesis",
+    "note": "https://montevil.org/publications/articles/2016-MSS-Modeling-Organogenesis-Principles/",
     "page": "58-69",
     "publisher": "Elsevier BV",
     "title": "Modeling mammary organogenesis from biological first principles: Cells and their physical constraints",
@@ -940,6 +971,7 @@
         ]
       ]
     },
+    "note": "https://montevil.org/publications/books/2016-SLN-Century-Organism/",
     "page": "1-82",
     "publisher": "Elsevier",
     "title": "From the century of the genome to the century of the organism: New theoretical approaches",
@@ -980,6 +1012,7 @@
       ]
     },
     "keyword": "Big Data, biological variation, cancer biology, knowledge, theory",
+    "note": "https://montevil.org/publications/chapters/2018-ML-Big-Data-Biology/",
     "page": "133-144",
     "publisher": "CNR Edizioni",
     "publisher-place": "Roma",
@@ -1009,6 +1042,7 @@
       ]
     },
     "keyword": "Novelty, Possibility space, Biological functions, Organization, Emergence",
+    "note": "https://montevil.org/publications/articles/2019-Montevil-Possibility-Spaces-Novelty/",
     "page": "4555-4581",
     "publisher": "Springer Science and Business Media LLC",
     "title": "Possibility spaces and the notion of novelty: from music to biology",
@@ -1044,6 +1078,7 @@
         ]
       ]
     },
+    "note": "https://montevil.org/publications/chapters/2017-MM-Une-Breve-Discussion/",
     "publisher": "Editions Matériologiques",
     "title": "Une brève discussion sur la science autour d’un verre",
     "type": "chapter"
@@ -1083,6 +1118,7 @@
       ]
     },
     "keyword": "génétique des populations, répétition, rétrodiction, réversibilité",
+    "note": "https://montevil.org/publications/chapters/2018-GM-Repetition-Reversibilite/",
     "page": "315-342",
     "publisher": "CNRS éditions",
     "title": "Répétition et réversibilité dans l’évolution : La génétique des populations théorique",
@@ -1123,6 +1159,7 @@
       ]
     },
     "keyword": "population genetics, repetition, retrodiction, reversibility",
+    "note": "https://montevil.org/publications/chapters/2017-GM-Repetition-Reversibility-Evolution/",
     "page": "275-314",
     "publisher": "Springer International Publishing",
     "publisher-place": "Cham",
@@ -1156,6 +1193,7 @@
       ]
     },
     "keyword": "Biological organisation, Closure, Constraints, Symmetries, Time scales",
+    "note": "https://montevil.org/publications/articles/2015-MM-Organisation-Closure-Constraints/",
     "page": "179-191",
     "publisher": "Elsevier BV",
     "title": "Biological organisation as closure of constraints",
@@ -1193,6 +1231,7 @@
       ]
     },
     "keyword": "Biological rhythms, Allometry, Biological rhythms, Circadian rhythms, Heartbeats, Rate variability",
+    "note": "https://montevil.org/publications/articles/2011-BLM-2D-Time-Biology/",
     "page": "474-484",
     "publisher": "Elsevier BV",
     "title": "A 2-dimensional geometry for biological time",
@@ -1271,6 +1310,7 @@
       ]
     },
     "keyword": "Collagens, Morphogenesis, Extracellular matrix, Gels, Anisotropy, Stiffness, Scanning electron microscopy, Mammary gland development",
+    "note": "https://montevil.org/publications/articles/2014-BSQ-Tissues-Collagen-Time/",
     "page": "e93325",
     "publisher": "Public Library of Science",
     "title": "From Single Cells to Tissues: Interactions between the Matrix and Human Breast Cells in Real Time",
@@ -1303,6 +1343,7 @@
         ]
       ]
     },
+    "note": "https://montevil.org/publications/books/2014-LM-Perspectives-Organisms/",
     "publisher": "Springer",
     "publisher-place": "Heidelberg",
     "title": "Perspectives on Organisms: Biological time, symmetries and singularities",
@@ -1350,6 +1391,7 @@
       ]
     },
     "keyword": "Entropy Production, Biological Evolution, Irreversible Process, Combinatorial Complexity, Biological Organization",
+    "note": "https://montevil.org/publications/chapters/2012-LM-Randomness-Order-Evolution/",
     "page": "289-308",
     "publisher": "Springer Berlin Heidelberg",
     "publisher-place": "Berlin, Heidelberg",
@@ -1384,6 +1426,7 @@
       ]
     },
     "keyword": "criticality, biological time, anti-entropy, theoretical biology, symmetry, allometry, incompleteness",
+    "note": "https://montevil.org/publications/articles/2012-LM-Inert-Vs-Living/",
     "publisher": "Frontiers Media SA",
     "title": "The Inert vs. the Living State of Matter: Extended Criticality, Time Geometry, Anti-Entropy — an overview",
     "title-short": "The Inert vs. the Living State of Matter",
@@ -1411,6 +1454,7 @@
       ]
     },
     "keyword": "criticité, symmétries, historicité, variabilité, temps biologique, organisme, mesure, renormalisation",
+    "note": "https://montevil.org/publications/books/2011-Montevil-Temps-Biologique-These/",
     "publisher": "Université Paris V - Descartes",
     "title": "Temps biologique et transitions critiques étendues - Vers une objectivation de l’état vivant de la matière",
     "type": "thesis"
@@ -1442,6 +1486,7 @@
       ]
     },
     "keyword": "Memory and Cognition, protention, retention, biological time",
+    "note": "https://montevil.org/publications/articles/2011-LM-Protention-Retention-Biology/",
     "page": "107-117",
     "publisher": "Springer Berlin / Heidelberg",
     "title": "Protention and retention in biological systems",
@@ -1475,6 +1520,7 @@
       ]
     },
     "keyword": "Symmetries, Systems biology, Critical transitions, Levels of organization, Hidden variables, Coherent structures, downward causation",
+    "note": "https://montevil.org/publications/articles/2011-LM-Biology-Extending-Criticality/",
     "page": "340-347",
     "publisher": "Elsevier BV",
     "title": "From physics to biology by extending criticality and symmetry breakings",
@@ -1511,6 +1557,7 @@
       ]
     },
     "keyword": "conservation properties, symmetries, biological causality",
+    "note": "https://montevil.org/publications/chapters/2012-LMK-No-Entailing-Laws-Enablement/",
     "publisher": "GECCO’12; ACM",
     "publisher-place": "New York, NY, USA",
     "title": "No entailing laws, but enablement in the evolution of the biosphere",
@@ -1555,6 +1602,7 @@
         ]
       ]
     },
+    "note": "https://montevil.org/publications/chapters/2014-LMP-Incompressible-Complexite/",
     "publisher": "Odile Jacob",
     "title": "L’incompressible complexité du réel et la construction évolutive du simple",
     "type": "chapter"
@@ -1590,7 +1638,7 @@
       ]
     },
     "keyword": "bottom-up, extended criticality, levels of organization, organism, renormalization, singularity",
-    "note": "invited paper",
+    "note": "https://montevil.org/publications/articles/2012-LMP-Levels-Organization-Criticality/",
     "publisher": "Frontiers Media SA",
     "title": "From bottom-up approaches to levels of organization and extended critical transitions",
     "type": "article-journal",
@@ -1631,7 +1679,7 @@
         ]
       ]
     },
-    "note": "Article invité",
+    "note": "https://montevil.org/publications/chapters/2012-Montevil-Geometrie-Temps-Biologique/",
     "publisher": "Hermann",
     "title": "Géométrie du temps biologique : rythmes et protension",
     "title-short": "Géométrie du temps biologique ",
@@ -1660,6 +1708,7 @@
       ]
     },
     "keyword": "Biological measurement, evolution, experiments, strains, symmetry, systematics",
+    "note": "https://montevil.org/publications/articles/2019-Montevil-Measurement-Biology-Theory/",
     "page": "35",
     "publisher": "Springer Science and Business Media LLC",
     "title": "Measurement in biology is methodized by theory",
@@ -1705,6 +1754,7 @@
         ]
       ]
     },
+    "note": "https://montevil.org/publications/articles/2020-MAS-Morphometric-Clarity-Bpa/",
     "page": "057001",
     "publisher": "Environmental Health Perspectives",
     "title": "A combined morphometric and statistical approach to assess non-monotonicity in the developing mammary gland of rats in the CLARITY-BPA study",
@@ -1748,6 +1798,7 @@
         ]
       ]
     },
+    "note": "https://montevil.org/publications/varia/2018-MAS-NtpClarityBpa/",
     "publisher": "National Toxicology Program (NTP)",
     "title": "NTP. CLARITY-BPA. Chemical Effects in Biological Systems (CEBS): Mammary Gland",
     "title-short": "NTP. CLARITY-BPA. Chemical Effects in Biological Systems (CEBS)",
@@ -1771,6 +1822,7 @@
         ]
       ]
     },
+    "note": "https://montevil.org/publications/varia/2019-Montevil-Varennes-Models",
     "page": "451-453",
     "title": "Analyses d’ouvrages : Franck Varenne, From models to simulations",
     "title-short": "Analyses d’ouvrages ",
@@ -1803,6 +1855,7 @@
       ]
     },
     "keyword": "Incompleteness, symmetries, randomness, critical transitions, biological evolution and ontogenesis",
+    "note": "https://montevil.org/publications/articles/2017-LM-Logic-Physics-Biology/",
     "page": "Issue 4 ; 1860-5974",
     "publisher": "Episciences.org",
     "title": "From Logic to Biology via Physics: a survey",
@@ -1839,6 +1892,7 @@
       ]
     },
     "keyword": "Equations, Mathematical modeling, Parameters, Proliferation, Theory",
+    "note": "https://montevil.org/publications/chapters/2018-Montevil-Primer-Mathematical-Modeling/",
     "page": "41-55",
     "publisher": "Springer",
     "publisher-place": "New York, NY",
@@ -1883,6 +1937,7 @@
       ]
     },
     "keyword": "Phase Space, Symmetry Breaking, Chaotic Dynamic, Object Oriented Programming, Genetically Modify Organism",
+    "note": "https://montevil.org/publications/chapters/2017-LM-Comparing-Symmetries-Models/",
     "page": "843-856",
     "publisher": "Springer",
     "title": "Comparing Symmetries in Models and Simulations",
@@ -1931,6 +1986,7 @@
         ]
       ]
     },
+    "note": "https://montevil.org/publications/chapters/2014-LM-Introduction-New-Perspectives/",
     "page": "187-201",
     "publisher": "Microsoft Research",
     "title": "Introduction to New Perspectives in Biology",
@@ -1984,6 +2040,7 @@
       ]
     },
     "keyword": "Open source software, Image analysis, Ellipsoids, Morphogenesis, Computer software, Morphometry, Image processing, Branching morphogenesis",
+    "note": "https://montevil.org/publications/articles/2016-PMS-Sama-Method-Morphometry/",
     "page": "1-14",
     "publisher": "Public Library of Science",
     "title": "SAMA: A Method for 3D Morphological Analysis",
@@ -2022,6 +2079,7 @@
         ]
       ]
     },
+    "note": "https://montevil.org/publications/chapters/2015-Montevil-Symetrie-Objectivation-Vivant/",
     "publisher": "Editions Materiologiques; Editions Materiologiques",
     "publisher-place": "Paris",
     "title": "Changements de symétrie, criticité et aléatoire : Mathématiques et objectivation du vivant",
@@ -2071,6 +2129,7 @@
         ]
       ]
     },
+    "note": "https://montevil.org/publications/chapters/2017-LM-Big-Data-Connaissance/",
     "page": "233-238",
     "publisher": "ISTE-Editions.",
     "publisher-place": "Paris",
@@ -2123,6 +2182,7 @@
         ]
       ]
     },
+    "note": "https://montevil.org/publications/chapters/2017-MLS-Siecle-Organisme/",
     "page": "76-90",
     "publisher": "ISTE-Editions.",
     "publisher-place": "Paris",
@@ -2162,6 +2222,7 @@
       ]
     },
     "keyword": "Adenosine deaminase deficiency, Ecosystem engineering, Gene therapy, Intraorganismal ecology, Nongenetic inheritance, Severe combined immunodeficiency",
+    "note": "https://montevil.org/publications/articles/2014-PMF-Ecological-Models-Cells-Genes/",
     "page": "414-422",
     "publisher": "Springer Netherlands",
     "title": "Ecological Models for Gene Therapy. II. Niche Construction, Nongenetic Inheritance, and Ecosystem Perturbations",
@@ -2195,6 +2256,7 @@
       ]
     },
     "keyword": "Ecosystem engineering, Inertial dynamics, Intraorganismal ecology, Niche construction, Nongenetic inheritance",
+    "note": "https://montevil.org/publications/articles/2014-PM-Ecological-Models-Cells/",
     "page": "401-413",
     "publisher": "Springer Netherlands",
     "title": "Ecological Models for Gene Therapy. I. Models for Intraorganismal Ecology",
@@ -2227,6 +2289,7 @@
       ]
     },
     "keyword": "Scaling; variability; allometry; fractals; regulation; criticality",
+    "note": "https://montevil.org/publications/chapters/2014-LM-ScalingScaleSymmetries/",
     "page": "23-73",
     "publisher": "Springer Berlin Heidelberg",
     "title": "Scaling and Scale Symmetries in Biological Systems",
@@ -2253,7 +2316,7 @@
         ]
       ]
     },
-    "note": "Book review of A Critical Overview of Biological Functions, Justin Garson (2016).",
+    "note": "https://montevil.org/publications/varia/2017-Montevil-Garson-Functions/",
     "page": "1071-1073",
     "publisher": "Springer Science and Business Media LLC",
     "title": "Philosophical Accounts of Biological Functions",
@@ -2287,6 +2350,7 @@
       ]
     },
     "keyword": "Conservation properties, symmetries, biological causality, phase space, unpredictability, phylogenetic drift, enablement",
+    "note": "https://montevil.org/publications/articles/2013-LM-Extended-Criticality-Enablement/",
     "page": "64-79",
     "publisher": "Elsevier BV",
     "title": "Extended criticality, phase spaces and enablement in biology",

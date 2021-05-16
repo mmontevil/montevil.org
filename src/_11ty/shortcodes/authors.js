@@ -2,6 +2,8 @@
 const fs = require('fs');
 //const slugify = require('@sindresorhus/slugify');
 const slugify = require('../../_utils/slugify');
+const { writeToCache, readFromCache } = require('../../_utils/cache');
+
 const memoize = require('fast-memoize')
 
     request = require('request');
@@ -64,7 +66,29 @@ temp="/assets/avatars/"+slugify(name)+".jpg";
    authclass="p-author";
 }
 
-
+if(!cachedPeople[name]){
+  let person = {
+    'shortname': name,
+    'photo': authorPic,
+    'url': authorUrl,
+    'gsid':gsid ,
+  }
+  cachedPeople[name]=person;
+}else{
+ let person =cachedPeople[name]
+ if ((!person.url || person.url=="")&& authorUrl!=="" )
+ {person.url=authorUrl;
+   cachedPeople[name]=person;
+ }
+  if ((!person.gsid || person.gsid=="")&& gsid!=="" )
+ {person.gsid=gsid;
+   cachedPeople[name]=person;
+ }
+   if ((!person.photo || person.photo=="/assets/avatars/gs/dummy.jpg")&& authorPic!=="/assets/avatars/gs/dummy.jpg" )
+ {person.photo=authorPic;
+   cachedPeople[name]=person;
+ }
+}
  
 let content= `<figure class="frameAuthor `+authclass+` h-card">`;
 
