@@ -48,9 +48,9 @@ for (url of urls){
   res[slugifyString(entry.shortname)].url=urlRes;
 }
 let nameel= await driver.findElement(By.xpath("//div[@id='gsc_prf_in']"));
-res[slugifyString(entry.shortname)].fullName=await nameel.getText();
+res[slugifyString(entry.shortname)].fullName=await nameel.getText().replaceAll('"','');
 let affiliationel= await driver.findElement(By.xpath("//div[@id='gsc_prf_i']/div[@class='gsc_prf_il']"));
-res[slugifyString(entry.shortname)].affiliation=await affiliationel.getText();
+res[slugifyString(entry.shortname)].affiliation=await affiliationel.getText().replaceAll('"','');
 //console.log(res[entry.shortname].affiliation)
 }
 }
