@@ -15,7 +15,7 @@ var download = function(uri, filename, callback){
 
     }); 
 }
-          
+
   
   var  donwloadAuthor= (id) =>{
     if(!fs.existsSync('src/assets/avatars/gs/'+id+'.jpg')){
@@ -41,18 +41,25 @@ var download = function(uri, filename, callback){
     return 'https://montevil.org/assets/avatars/mentions/'+filename(url0);
   };
 
-const authors0= (name, gsid, people, auth,nbAuteurs) => {
+const authors0= (name, gsid, people, auth,nbAuteurs,fullname0) => {
   let authorPic="/assets/avatars/gs/dummy.jpg";
   let authorUrl="";
+  let affiliation="";
+  let tooltip='title="'
+   if (people[name] && people[name].alias ){
+      name =people[name].alias
+  }
+   if (gsid=="" && people[name] && people[name].gsid ){
+      gsid =people[name].gsid
+  }
+
   if (gsid !==""){
       donwloadAuthor(gsid);
       authorPic ="/assets/avatars/gs/"+gsid+".jpg";
       authorUrl="https://scholar.google.fr/citations?user="+gsid;
   }
 
- if (people[name] && people[name].alias ){
-   name =people[name].alias
-}
+
 
 
 temp="/assets/avatars/"+slugify(name)+".jpg";
@@ -65,32 +72,48 @@ temp="/assets/avatars/"+slugify(name)+".jpg";
  if(auth){
    authclass="p-author";
 }
+let fullName=name;
 
-if(!cachedPeople[name]){
+   if(fullname0){
+    fullName=fullname0;
+   }
+
+if(!cachedPeople[slugify(name)]){
   let person = {
     'shortname': name,
     'photo': authorPic,
     'url': authorUrl,
-    'gsid':gsid ,
+    'gsid':gsid
   }
-  cachedPeople[name]=person;
+  cachedPeople[slugify(name)]=person;
+  if(fullname0){
+  cachedPeople[slugify(name)].fullName=fullName;
+  }
 }else{
- let person =cachedPeople[name]
+ let person =cachedPeople[slugify(name)]
+  if (fullname0 && fullname0!=="")
+    if( (!person.fullName) ||(person.fullName && (person.fullName.length < fullname0.length)))
+    person.fullName=fullname0;
  if ((!person.url || person.url=="")&& authorUrl!=="" )
- {person.url=authorUrl;
-   cachedPeople[name]=person;
- }
+    person.url=authorUrl;
   if ((!person.gsid || person.gsid=="")&& gsid!=="" )
- {person.gsid=gsid;
-   cachedPeople[name]=person;
- }
+      person.gsid=gsid;
    if ((!person.photo || person.photo=="/assets/avatars/gs/dummy.jpg")&& authorPic!=="/assets/avatars/gs/dummy.jpg" )
- {person.photo=authorPic;
-   cachedPeople[name]=person;
- }
-}
+      person.photo=authorPic;
  
-let content= `<figure class="frameAuthor `+authclass+` h-card">`;
+ cachedPeople[slugify(name)]=person;
+
+ if (person.url && person.url!=="")
+      authorUrl=person.url;
+ if (person.fullName && (person.fullName!==""))
+   fullName=person.fullName 
+ if (person.affiliation && person.affiliation!=="")
+      affiliation=", "+person.affiliation
+}
+
+tooltip=tooltip+fullName+affiliation+'"' 
+ 
+let content= `<figure class="frameAuthor `+authclass+` h-card" `+tooltip+`>`;
 
  if( auth && nbAuteurs==1){ content=content+`<img class="reaction__author__photo2 u-photo noDarkFilter  hidden " src="`+authorPic+`" 
  height="48"  width="48" alt="`+name+`">`;
@@ -100,7 +123,7 @@ let content= `<figure class="frameAuthor `+authclass+` h-card">`;
  }
  
 content=content+ `<figcaption class="authorCaption">`
- +( authorUrl=="" ? `<span class="p-name">`+name+ `</span>`:  `<a href="`+authorUrl+`" class="p-name u-url metalink">`+name+`</a>`)+`
+ +( authorUrl=="" ? `<span class="p-name">`+name+ `</span>`:  `<a href="`+authorUrl+`" class="p-name u-url metalink" >`+name+`</a>`)+`
  </figcaption>
  </figure>`;
       return content;
@@ -111,7 +134,7 @@ const authors1=memoize(authors0);
 
 
 module.exports = {
- authors: (name, gsid, people,auth=false,nbAuteurs=0 ) =>authors1(name, gsid, people,auth,nbAuteurs) ,
+ authors: (name, gsid, people,auth=false,nbAuteurs=0,fullname=undefined ) =>authors1(name, gsid, people,auth,nbAuteurs,fullname) ,
  downloadAvatar: (url) =>downloadAvatar(url),
 };
 

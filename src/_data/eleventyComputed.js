@@ -6,6 +6,7 @@ const flatcache = require('flat-cache');
 const path = require('path');
 const { writeToCache, readFromCache } = require('../_utils/cache');
 const PLUM_CACHE = '_cache/plumMention.json';
+const { tweettomention, wikiMention } = require('../_utils/twitter_crossref');
 
 const dtf = {
   en: new Intl.DateTimeFormat('en-GB', {
@@ -335,11 +336,30 @@ module.exports = {
   attributeDate: (data) => attributeDate(data.page.date),
   permalinkDate: (data) => permalinkDate(data.page.date),
   crossref: (data) => {
+    let res=undefined
     if (data.bibentry.DOI) {
-      return fetchCrossref(data.bibentry.DOI, data.page.fileSlug,"doi");
+      res=  fetchCrossref(data.bibentry.DOI, data.page.fileSlug,"doi");
     } else {
-      if (data.bibentry.URL) return fetchCrossref(data.bibentry.URL,data.page.fileSlug,"url");
+      if (data.bibentry.URL) 
+        res=  fetchCrossref(data.bibentry.URL,data.page.fileSlug,"url");
     }
+    return res;
+  },
+  dummy0: (data) =>{
+    let temp=[];
+        if (data.crossref &&data.crossref.message){
+    for (i in data.crossref.message.events){
+      let eventm=data.crossref.message.events[i];
+      if  (eventm.source_id =="twitter"){
+        let tweet=eventm.subj.title.replace("Tweet ", "");
+        if(! ["1274995148934561793","1275912806257344515","1123337833714835456"].includes(tweet))
+         temp=tweettomention(tweet, {cacheDirectory: '_cache'},  "https://montevil.org"+data.page.url, "https://www.crossref.org/") ;
+      }
+      if  (eventm.source_id =="wikipedia"){
+         temp=wikiMention(eventm, {cacheDirectory: '_cache'},  "https://montevil.org"+data.page.url, "https://www.crossref.org/") ;
+      }
+    }}
+    return temp;
   },
   authors: {
     text: (data) => textAuthors(data),
@@ -411,6 +431,9 @@ module.exports = {
     }
      if(data.bibentryconf && data.bibentryconf.fields && data.bibentryconf.fields.twittermention){
       res=res.concat(data.bibentryconf.fields.twittermention.split(", "));
+    }
+    for (i in res){
+        let temp=tweettomention(res[i], {cacheDirectory: '_cache'},  "https://montevil.org"+data.page.url, "none") ;
     }
     return res;
   },

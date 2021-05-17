@@ -41,6 +41,7 @@
     "tweets": "node ./_scripts/send-tweets.js",
     "sprite": "node ./_scripts/generate-svg-sprite.js",
     "plum": "node ./_scripts/plum.js",
+        "people": "node ./_scripts/updateAuthors.js",
     "bib": "(cd BIB; ./updatebib.sh)",
     "update": "npm-run-all start0 bib sprite webmention",
     "updateall": "npm-run-all start0 bib sprite webmention plum start0  rglikes likes  start0"

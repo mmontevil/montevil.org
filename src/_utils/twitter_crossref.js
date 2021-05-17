@@ -58,8 +58,8 @@ async function getTweet(tweetId, options,target,source) {
         }
         }
         if( changed){
-            await saveCache( options)
-            console.log(tweetId)
+         //   await saveCache( options)
+            console.log("save tweet "+tweetId)
         }
         return null;
         
@@ -268,53 +268,8 @@ function getOldText(text, indices) {
 }
 
 
-async function saveCache( options) {
-    try {
-        let tweetsJSON = JSON.stringify(cachedTweets, 2, 2)
 
-        let cachePath = getCachedTweetPath(options, "tweetsMentions.json")
-        let cacheDir = require("path").dirname(cachePath)
 
-        // makre sure directory exists
-        await fs.mkdir(cacheDir, { recursive: true })
-
-        syncFs.writeFileSync(cachePath, tweetsJSON)
-
-        console.log(`Writing ${cachePath}`)
-    } catch (error) {
-        console.log(error)
-    }
-}
-async function saveCacheWiki( options) {
-    try {
-        let tweetsJSON = JSON.stringify(cachedWiki, 2, 2)
-
-        let cachePath = getCachedTweetPath(options, "wikiMentions.json")
-        let cacheDir = require("path").dirname(cachePath)
-
-        // makre sure directory exists
-        await fs.mkdir(cacheDir, { recursive: true })
-
-        syncFs.writeFileSync(cachePath, tweetsJSON)
-
-        console.log(`Writing ${cachePath}`)
-    } catch (error) {
-        console.log(error)
-    }
-}
-function getCachedTweetPath(options, filename) {
-    let path = require("path")
-
-    // get directory for main thread
-    let appPath = require.main.filename // C:\user\github\app\node_modules\@11ty\eleventy\cmd.js
-    let pos = appPath.indexOf("node_modules")
-    let appRoot = appPath.substr(0, pos) // C:\user\github\app\
-
-    // build cache file path
-    let cachePath = path.join(appRoot, options.cacheDirectory, filename)
-
-    return cachePath
-}
 
 async function findParagraph(data) {
   let res= ""
@@ -421,9 +376,10 @@ async function wikiMention(data,options,target) {
     }
    // if(html){
   cachedWiki[tweetViewModel['id_str']] = tweetViewModel;
-    saveCacheWiki(options)
-  console.log("Added mention:"+title) 
+  //  saveCacheWiki(options)
+  console.log("Added wikipedia mention:"+title) 
   // }
+  return undefined;
 }
 }
 

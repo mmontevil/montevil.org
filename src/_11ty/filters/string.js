@@ -42,7 +42,17 @@ module.exports = {
     var str2 = str.replace(reg, '<a href="XXXX">$1</a>');
     return str2.replace('XXXX', url);
   },
-
+  initials: (string) => {
+    let res=string[0];
+    let list=string.replaceAll('-',' ').replaceAll('  ',' ').split(' ');
+    for (i in list){
+      if(i>0){
+        res=res+list[i][0]
+      }
+    }
+      
+    return res;
+  },
   lowerize: (string) => {
     return string.toLowerCase();
   },

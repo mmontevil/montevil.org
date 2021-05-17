@@ -25,8 +25,8 @@ module.exports = function (eleventyConfig) {
   
   eleventyConfig.on('afterBuild', () => {
       writeToCache(cachedPeople, '_cache/people.json');
-   // writeToCache(cachedWiki, '_cache/wikiMentions.json');
-   // writeToCache(cachedTweets, '_cache/tweetsMentions.json');
+    writeToCache(cachedWiki, '_cache/wikiMentions.json');
+    writeToCache(cachedTweets, '_cache/tweetsMentions.json');
   });
   // ------------------------------------------------------------------------
   // Collections

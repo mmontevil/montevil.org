@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2021-05-13T22:30:48.867Z",
+  "lastFetched": "2021-05-17T02:28:52.603Z",
   "webmentions": [
     {
       "type": "entry",
@@ -758,6 +758,24 @@
       "wm-received": "2021-05-13T16:14:14Z",
       "wm-id": 1155065,
       "wm-source": "https://brid.gy/like/twitter/MMontevil/1392291491448492041/1234805184737484801",
+      "wm-target": "https://montevil.org/",
+      "like-of": "https://montevil.org/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Camilo Caquimbo",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/1ccd45a251f814c3546297462707f92c51f219f8f8d2c9a68a8d8c328c96fef8.jpg",
+        "url": "https://twitter.com/CCaquimbo"
+      },
+      "url": "https://twitter.com/MMontevil/status/1392291491448492041#favorited-by-447532863",
+      "published": "2021-05-16T23:49:35Z",
+      "wm-received": "2021-05-16T23:49:35Z",
+      "wm-id": 1160146,
+      "wm-source": "https://brid.gy/like/twitter/MMontevil/1392291491448492041/447532863",
       "wm-target": "https://montevil.org/",
       "like-of": "https://montevil.org/",
       "wm-property": "like-of",
