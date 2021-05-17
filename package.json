@@ -41,7 +41,7 @@
     "tweets": "node ./_scripts/send-tweets.js",
     "sprite": "node ./_scripts/generate-svg-sprite.js",
     "plum": "node ./_scripts/plum.js",
-        "people": "node ./_scripts/updateAuthors.js",
+    "people": "node ./_scripts/updateAuthors.js",
     "bib": "(cd BIB; ./updatebib.sh)",
     "update": "npm-run-all start0 bib sprite webmention",
     "updateall": "npm-run-all start0 bib sprite webmention plum start0  rglikes likes  start0"
@@ -71,7 +71,7 @@
     "deepmerge": "^4.2.2",
     "dotenv": "^9.0.2",
     "element-remove": "^1.0.4",
-    "eleventy-plugin-embed-everything": "^1.13.1",
+    "eleventy-plugin-embed-everything": "^1.13.2",
     "eleventy-plugin-embed-tweet": "^0.3.1",
     "eleventy-plugin-images-responsiver": "^1.8.2",
     "eleventy-plugin-link_to": "^0.4.0",
