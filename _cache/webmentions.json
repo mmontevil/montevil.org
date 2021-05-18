@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2021-05-17T02:28:52.603Z",
+  "lastFetched": "2021-05-18T01:41:00.801Z",
   "webmentions": [
     {
       "type": "entry",
@@ -778,6 +778,81 @@
       "wm-source": "https://brid.gy/like/twitter/MMontevil/1392291491448492041/447532863",
       "wm-target": "https://montevil.org/",
       "like-of": "https://montevil.org/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "B.",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/ea8f33785de2a8a2e27cd798f3a7b8468956fc186b7057b6e053ea4cb6dd089c.jpg",
+        "url": "https://twitter.com/robywebo"
+      },
+      "url": "https://twitter.com/robywebo/status/1394287555458355205",
+      "published": "2021-05-17T13:43:52+00:00",
+      "wm-received": "2021-05-17T14:26:51Z",
+      "wm-id": 1160847,
+      "wm-source": "https://brid.gy/repost/twitter/MMontevil/1394284708473806849/1394287555458355205",
+      "wm-target": "https://montevil.org/publications/articles/2021-montevil-entropies-anthropocene/",
+      "content": {
+        "text": "📖 New Article: Entropies and the Anthropocene crisis.\nEntropy is a transversal notion to understand current crisis. In biology, an \"opposite\" is needed to account for (dis-)organizations.\n #anthropocene #philosophy #entropy\ndoi.org/10.1007/s00146… montevil.org/publications/a…"
+      },
+      "repost-of": "https://montevil.org/publications/articles/2021-montevil-entropies-anthropocene/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Clément Gaillard",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4b61503f56704b095e541a4ef214de44391531ea3fd937566751b1a5dd151948.jpg",
+        "url": "https://twitter.com/therealgaillard"
+      },
+      "url": "https://twitter.com/MMontevil/status/1394284708473806849#favorited-by-912966566",
+      "published": "2021-05-17T14:26:52Z",
+      "wm-received": "2021-05-17T14:26:52Z",
+      "wm-id": 1160848,
+      "wm-source": "https://brid.gy/like/twitter/MMontevil/1394284708473806849/912966566",
+      "wm-target": "https://montevil.org/publications/articles/2021-montevil-entropies-anthropocene/",
+      "like-of": "https://montevil.org/publications/articles/2021-montevil-entropies-anthropocene/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Victor Chaix",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/281867dacf16a8df6cd807cee819ee00c16f0d948260d4b0e3f8fa3a491c339e.jpg",
+        "url": "https://twitter.com/Victor_Chaix"
+      },
+      "url": "https://twitter.com/MMontevil/status/1394284708473806849#favorited-by-2975650298",
+      "published": "2021-05-17T20:51:45Z",
+      "wm-received": "2021-05-17T20:51:45Z",
+      "wm-id": 1161285,
+      "wm-source": "https://brid.gy/like/twitter/MMontevil/1394284708473806849/2975650298",
+      "wm-target": "https://montevil.org/publications/articles/2021-montevil-entropies-anthropocene/",
+      "like-of": "https://montevil.org/publications/articles/2021-montevil-entropies-anthropocene/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Guilhem VINCENT",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/1f04db42e1037ceeff16fc5264f0a0e409cef63f86a3956b9fb766da38fd1a8c.jpg",
+        "url": "https://twitter.com/aArchitecton"
+      },
+      "url": "https://twitter.com/MMontevil/status/1394284708473806849#favorited-by-470605252",
+      "published": "2021-05-17T23:48:07Z",
+      "wm-received": "2021-05-17T23:48:07Z",
+      "wm-id": 1161363,
+      "wm-source": "https://brid.gy/like/twitter/MMontevil/1394284708473806849/470605252",
+      "wm-target": "https://montevil.org/publications/articles/2021-montevil-entropies-anthropocene/",
+      "like-of": "https://montevil.org/publications/articles/2021-montevil-entropies-anthropocene/",
       "wm-property": "like-of",
       "wm-private": false
     }

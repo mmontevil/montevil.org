@@ -24,7 +24,7 @@ const purge =async function (content,cssFiles) {
           }],
         css: [{raw: cssFiles}],
           safelist: {
-      greedy: [/data-theme$/, /.*lightbox.*/, /.*equation.*/,/.*mjx.*/]
+      greedy: [/data-theme$/, /.*lightbox.*/, /.*equation.*/,/.*mjx.*/,/.*selected-B.*/]
     }
       });
     
