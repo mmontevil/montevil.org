@@ -4518,5 +4518,65 @@
     "like-of": "https://montevil.org/publications/articles/2020-MM-Identity-Organism/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1394284708473806849aArchitecton": {
+    "id_str": "1394284708473806849aArchitecton",
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Guilhem VINCENT",
+      "screen_name": "aArchitecton",
+      "photo": "https://pbs.twimg.com/profile_images/1292522550828969989/2pi_Pffo_normal.jpg",
+      "url": "https://twitter.com/aArchitecton"
+    },
+    "url": "https://twitter.com/MMontevil/status/1394284708473806849/likes",
+    "published": "2021-05-19",
+    "wm-received": "2021-05-19",
+    "wm-id": "1394284708473806849aArchitecton",
+    "wm-source": "https://twitter.com/MMontevil/status/1394284708473806849/likes",
+    "wm-target": "https://montevil.org/publications/articles/2021-Montevil-Entropies-Anthropocene/",
+    "like-of": "https://montevil.org/publications/articles/2021-Montevil-Entropies-Anthropocene/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1394284708473806849Victor_Chaix": {
+    "id_str": "1394284708473806849Victor_Chaix",
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Victor Chaix",
+      "screen_name": "Victor_Chaix",
+      "photo": "https://pbs.twimg.com/profile_images/1366710957871951874/F3NVFJyc_normal.jpg",
+      "url": "https://twitter.com/Victor_Chaix"
+    },
+    "url": "https://twitter.com/MMontevil/status/1394284708473806849/likes",
+    "published": "2021-05-19",
+    "wm-received": "2021-05-19",
+    "wm-id": "1394284708473806849Victor_Chaix",
+    "wm-source": "https://twitter.com/MMontevil/status/1394284708473806849/likes",
+    "wm-target": "https://montevil.org/publications/articles/2021-Montevil-Entropies-Anthropocene/",
+    "like-of": "https://montevil.org/publications/articles/2021-Montevil-Entropies-Anthropocene/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1394284708473806849therealgaillard": {
+    "id_str": "1394284708473806849therealgaillard",
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Clément Gaillard",
+      "screen_name": "therealgaillard",
+      "photo": "https://pbs.twimg.com/profile_images/1371404629662179331/z_7AtISx_normal.jpg",
+      "url": "https://twitter.com/therealgaillard"
+    },
+    "url": "https://twitter.com/MMontevil/status/1394284708473806849/likes",
+    "published": "2021-05-19",
+    "wm-received": "2021-05-19",
+    "wm-id": "1394284708473806849therealgaillard",
+    "wm-source": "https://twitter.com/MMontevil/status/1394284708473806849/likes",
+    "wm-target": "https://montevil.org/publications/articles/2021-Montevil-Entropies-Anthropocene/",
+    "like-of": "https://montevil.org/publications/articles/2021-Montevil-Entropies-Anthropocene/",
+    "wm-property": "like-of",
+    "wm-private": false
   }
 }
