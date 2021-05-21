@@ -10,6 +10,6 @@ layout: content
         crossorigin="anonymous"
         >
       <p class="link__url">
-        <a href="{{ link }}" class="u-bookmark-of">{{ link | replace('_', '_&shy;') | safe }}</a>
+        <a href="{{ link }}" class="u-bookmark-of">{{ link  | safe }}</a>
       </p>
 {{ content | safe }}

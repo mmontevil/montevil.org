@@ -4999,9 +4999,9 @@
   },
   "l-de-girolamo": {
     "shortname": "L De Girolamo",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/-cHmy7cAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=-cHmy7cAAAAJ",
+    "gsid": "-cHmy7cAAAAJ"
   },
   "p-de-luca": {
     "shortname": "P De Luca",
@@ -5259,5 +5259,11 @@
     "photo": "/assets/avatars/gs/hDbuxIYAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=hDbuxIYAAAAJ",
     "gsid": "hDbuxIYAAAAJ"
+  },
+  "a-poltorak": {
+    "shortname": "A Poltorak",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": ""
   }
 }
