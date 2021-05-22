@@ -352,7 +352,7 @@ module.exports = {
       let eventm=data.crossref.message.events[i];
       if  (eventm.source_id =="twitter"){
         let tweet=eventm.subj.title.replace("Tweet ", "");
-        if(! ["1274995148934561793","1275912806257344515","1123337833714835456"].includes(tweet))
+        if(! ["1274995148934561793","1275912806257344515","1123337833714835456","1394392626598645766"].includes(tweet))
          temp=tweettomention(tweet, {cacheDirectory: '_cache'},  "https://montevil.org"+data.page.url, "https://www.crossref.org/") ;
       }
       if  (eventm.source_id =="wikipedia"){

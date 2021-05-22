@@ -40,7 +40,7 @@ try {
     if (gsid){
     await driver.get("https://scholar.google.fr/citations?user="+gsid),
     await driver.wait(() => documentInitialised(), 10000);
-  await sleep(2110);
+  await sleep(3110);
 let urls= await driver.findElements(By.xpath("//div[@id='gsc_prf_ivh']/a"));
 
 for (url of urls){
@@ -48,9 +48,11 @@ for (url of urls){
   res[slugifyString(entry.shortname)].url=urlRes;
 }
 let nameel= await driver.findElement(By.xpath("//div[@id='gsc_prf_in']"));
-res[slugifyString(entry.shortname)].fullName=await nameel.getText().replaceAll('"','');
+res[slugifyString(entry.shortname)].fullName=await nameel.getText();
+res[slugifyString(entry.shortname)].fullName=res[slugifyString(entry.shortname)].fullName.replaceAll('"','');
 let affiliationel= await driver.findElement(By.xpath("//div[@id='gsc_prf_i']/div[@class='gsc_prf_il']"));
-res[slugifyString(entry.shortname)].affiliation=await affiliationel.getText().replaceAll('"','');
+res[slugifyString(entry.shortname)].affiliation=await affiliationel.getText();
+res[slugifyString(entry.shortname)].affiliation=res[slugifyString(entry.shortname)].affiliation.replaceAll('"','');
 //console.log(res[entry.shortname].affiliation)
 }
 }
