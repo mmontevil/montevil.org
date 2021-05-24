@@ -112,6 +112,7 @@ for ( x in l){
 
 }
 }finally {    
+  await driver.quit();
 
     let likeJSON = JSON.stringify(res, 2, 2);
     syncFs.writeFileSync(cachePath, likeJSON)

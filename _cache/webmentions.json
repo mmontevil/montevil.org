@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2021-05-18T01:41:00.801Z",
+  "lastFetched": "2021-05-23T22:35:58.243Z",
   "webmentions": [
     {
       "type": "entry",
@@ -851,6 +851,24 @@
       "wm-received": "2021-05-17T23:48:07Z",
       "wm-id": 1161363,
       "wm-source": "https://brid.gy/like/twitter/MMontevil/1394284708473806849/470605252",
+      "wm-target": "https://montevil.org/publications/articles/2021-montevil-entropies-anthropocene/",
+      "like-of": "https://montevil.org/publications/articles/2021-montevil-entropies-anthropocene/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Olivier Marchand",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/6777465b33ce7b582a82d0e8009a7fe8eb0983fc3f097b8255f0399c8d2769a8.jpg",
+        "url": "https://twitter.com/OlivierM2019"
+      },
+      "url": "https://twitter.com/MMontevil/status/1394284708473806849#favorited-by-1154351347694804992",
+      "published": "2021-05-23T12:40:15Z",
+      "wm-received": "2021-05-23T12:40:15Z",
+      "wm-id": 1167507,
+      "wm-source": "https://brid.gy/like/twitter/MMontevil/1394284708473806849/1154351347694804992",
       "wm-target": "https://montevil.org/publications/articles/2021-montevil-entropies-anthropocene/",
       "like-of": "https://montevil.org/publications/articles/2021-montevil-entropies-anthropocene/",
       "wm-property": "like-of",

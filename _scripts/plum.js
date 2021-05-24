@@ -61,6 +61,7 @@ console.log(res)
   
 }
 finally {    
+ await driver.quit();
 
     let likeJSON = JSON.stringify(res, 2, 2);
     syncFs.writeFileSync(cachePath, likeJSON)

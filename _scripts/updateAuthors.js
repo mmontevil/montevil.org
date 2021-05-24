@@ -59,7 +59,7 @@ res[slugifyString(entry.shortname)].affiliation=res[slugifyString(entry.shortnam
   
 }
 finally {    
-
+ await driver.quit();
     let likeJSON = JSON.stringify(res, 2, 2);
     syncFs.writeFileSync(cachePath, likeJSON)
   }

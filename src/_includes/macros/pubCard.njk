@@ -46,7 +46,7 @@
  
 {% endif %}
 
-{% if not  (article.data.abstract === undefined) %}
+{% if (article.data.abstract !== undefined) and (article.data.abstract !== "") %}
 <details class=" citation abstract"> 
      <summary> Abstract</summary>
      <div class="abstract wrap"> <p>  
