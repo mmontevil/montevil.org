@@ -6,6 +6,14 @@ eleventyNavigation:
   key: analyze
   parent: SAMA
   order: 4
+illustration: 
+  src: /posts/Sama-Doc/sama1.png
+tags: 
+  - computer software
+  - image analysis
+  - image processing
+  - morphometry
+  - open source software
 ---
 
 _This plugin analyzes all the data generated from images processed in SAMA-images._

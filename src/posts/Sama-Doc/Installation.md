@@ -6,6 +6,14 @@ eleventyNavigation:
   key: Installation
   parent: SAMA
   order: 1
+illustration: 
+  src: /posts/Sama-Doc/sama1.png
+tags: 
+  - computer software
+  - image analysis
+  - image processing
+  - morphometry
+  - open source software
 ---
 
 # Dependencies

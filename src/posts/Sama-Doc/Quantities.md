@@ -6,6 +6,14 @@ eleventyNavigation:
   key: Quantities
   parent: SAMA
   order: 6
+illustration: 
+  src: /posts/Sama-Doc/sama1.png
+tags: 
+  - computer software
+  - image analysis
+  - image processing
+  - morphometry
+  - open source software
 ---
 
 Summary of the relevant quantities, by order of appearance in the pdf produced.

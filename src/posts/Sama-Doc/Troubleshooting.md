@@ -6,6 +6,14 @@ eleventyNavigation:
   key: Trouble
   parent: SAMA
   order: 7
+illustration: 
+  src: /posts/Sama-Doc/sama1.png
+tags: 
+  - computer software
+  - image analysis
+  - image processing
+  - morphometry
+  - open source software
 ---
 # Check list
 

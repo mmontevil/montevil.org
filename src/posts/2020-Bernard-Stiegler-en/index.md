@@ -4,6 +4,8 @@ noToc: true
 lang: en
 date: 2020-08-18
 title: Bernard Stiegler (1952-2020)
+illustration:
+  src: "/assets/avatars/b-stiegler.jpg"
 ---
 
 

@@ -6,6 +6,14 @@ eleventyNavigation:
   key: Graph
   parent: SAMA
   order: 5
+illustration: 
+  src: "/posts/Sama-Doc/sama1.png"
+tags: 
+  - computer software
+  - image analysis
+  - image processing
+  - morphometry
+  - open source software
 ---
 
 

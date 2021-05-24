@@ -5,6 +5,7 @@ hasPDF: true
 hasFullText: true
 typepub: commentary 
 lang: fr
+illust: b-stiegler.jpg
 ---
 
 # Bernard Stiegler (1952-2020)

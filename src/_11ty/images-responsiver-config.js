@@ -32,8 +32,15 @@ const runBeforeHook = (image, document) => {
 
   } else {
     let imageDimensions;
-    
-    if (imageSrc[0] === '/' && (fs.statSync('./src' + imageSrc).size>0)) {
+    let temp=0; 
+ /*   if(imageSrc.includes('stiegler')){
+      console.log(imageSrc)
+    }*/
+     if (imageSrc[0] === '/' ){
+       temp= (fs.statSync('./src' + imageSrc).size);
+    }
+
+    if (imageSrc[0] === '/' && (temp>0)) {
       // TODO: get "src/" from Eleventy config
       imageDimensions = imageSize('./src' + imageSrc);
       imageUrl = pkg.homepage + encodeURI(imageSrc);
