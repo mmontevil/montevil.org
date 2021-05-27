@@ -2,6 +2,24 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "pharmaconumerique",
+        "fields": {
+            "title": "Pharmacologie du numérique",
+            "booktitle": "Atelier prendre soin du numérique",
+            "location": "Chaire numérique et citoyenneté, Institut Catholique de Paris",
+            "year": "2021",
+            "month": "5",
+            "day": "31",
+            "program": "Atelier Prendre soin du numérique (004)-2.pdf",
+            "url": "https://www.icp.fr/recherche/chaires/chaire-numerique-et-citoyennete",
+            "annonce": "true",
+            "abstract": "Gérald Moore introduira la séance en présentant le contexte dopaminergique qu’il étudie. Inculquée par l’idéologie de « la guerre contre la drogue », la tendance est actuellement de concevoir l’addiction en terme de pathologie d’un « cerveau malade ». Une reconnaissance approfondie du système dopaminergique de récompense nous permet cependant de comprendre combien les maladies dites « hyperdopaminergjques» contemporaines dont l’addiction proviennent d’une réponse neurologique « rationnelle et adaptative » à nos environnements à la fois stressants et sous-stimulants. Pour atténuer notre consommation excessive du numérique, il faudrait aussi focaliser nos efforts sur l’amélioration des espaces non-numériques - ce qui pourrait également et paradoxalement prendre la forme de leur augmentation numérique. Marie-Claude Bossière présentera ensuite les pathologies observées et discutées dans le contexte de la Clinique Contributive que l’IRI a mis en place en Seine-Saint-Denis pour permettre aux parents de prendre soin collectivement de la surexposition de leurs jeunes enfants aux écrans. Mael Montévil conclura la séance en présentant les dimensions épistémologiques, pharmacologiques et organologiques déterminantes pour prendre soin du numérique.",
+            "author": "Marie-Claude Bossière and Maël Montévil and Gerald Moore"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
         "entrykey": "origin2021",
         "fields": {
             "title": "Historical origins and the theoretical definition of objects in biology",
