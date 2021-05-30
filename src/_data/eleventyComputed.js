@@ -31,9 +31,6 @@ function attributeDate(date) {
   return dtfDigits.format(date).split('/').reverse().join('-');
 }
 
-function permalinkDate(date) {
-  return dtfDigits.format(date).split('/').reverse().join('/');
-}
 
 function formattedDate(lang, date) {
   return dtf[lang || 'en'].format(date);
@@ -334,7 +331,6 @@ module.exports = {
   },
   formattedDate: (data) => formattedDate(data.lang, data.page.date),
   attributeDate: (data) => attributeDate(data.page.date),
-  permalinkDate: (data) => permalinkDate(data.page.date),
   crossref: (data) => {
     let res=undefined
     if (data.bibentry.DOI) {
@@ -346,17 +342,18 @@ module.exports = {
     return res;
   },
   dummy0: (data) =>{
-    let temp=[];
+    let temp=data.page.url;
         if (data.crossref &&data.crossref.message){
     for (i in data.crossref.message.events){
       let eventm=data.crossref.message.events[i];
       if  (eventm.source_id =="twitter"){
         let tweet=eventm.subj.title.replace("Tweet ", "");
         if(! ["1274995148934561793","1275912806257344515","1123337833714835456","1394392626598645766"].includes(tweet))
-         temp=tweettomention(tweet, {cacheDirectory: '_cache'},  "https://montevil.org"+data.page.url, "https://www.crossref.org/") ;
+         temp=tweettomention(tweet,  "https://montevil.org"+data.page.url, "https://www.crossref.org/") ;
       }
       if  (eventm.source_id =="wikipedia"){
-         temp=wikiMention(eventm, {cacheDirectory: '_cache'},  "https://montevil.org"+data.page.url, "https://www.crossref.org/") ;
+        
+         temp=wikiMention(eventm,   "https://montevil.org"+data.page.url, "https://www.crossref.org/") ;
       }
     }}
     return temp;
@@ -433,7 +430,7 @@ module.exports = {
       res=res.concat(data.bibentryconf.fields.twittermention.split(", "));
     }
     for (i in res){
-        let temp=tweettomention(res[i], {cacheDirectory: '_cache'},  "https://montevil.org"+data.page.url, "none") ;
+        let temp=tweettomention(res[i],  "https://montevil.org"+data.page.url, "none") ;
     }
     return res;
   },
@@ -453,7 +450,6 @@ module.exports = {
       ? data.titlePrefix + (data.bibentry.title || data.title)
       : data.bibentry.title || data.title,
   tags: (data) => tags(data),
-  //  tags2: (data) => tags(data),
   category: (data) => {
     var res = data.category ? data.category : [];
     res = data.video ? [res, 'video'].flat() : res;

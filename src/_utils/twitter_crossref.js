@@ -12,7 +12,7 @@ function JSDOM(html) { return parseHTML(html); }
 
 
 
-async function getTweet(tweetId, options,target,source) {
+async function getTweet(tweetId,target,source) {
 
     // if we using cache and not cache busting, check there first
 
@@ -319,12 +319,15 @@ async function findParagraph(data) {
 }
 
 
-async function wikiMention(data,options,target) {
+async function wikiMention(data,target,source) {
   
   if(cachedWiki[data.id]){
       return null
   }else{
-    
+    for (const [key, value] of Object.entries(cachedWiki)) {
+      if ((value['wm-target']==target)&&(value.url==data.subj.url))
+          delete cachedWiki[key];
+    }
   let images = []
     let created_at = data.occurred_at
     let id_str= data.id
@@ -354,7 +357,7 @@ async function wikiMention(data,options,target) {
        let wmid=id_str
         name=text
       let  wmproperty= "mention-of"
-        let  source=data.subj.url
+      //  let  source=data.subj.url
     // build tweet with properties we want
     let tweetViewModel = {
       id_str,
@@ -386,12 +389,12 @@ async function wikiMention(data,options,target) {
 
 //const asyncReplace = require('string-replace-async')
 module.exports = {
-  tweettomention: (tweetId, options,target,source) => {
-     let aa=getTweet(tweetId, options,target,source);
+  tweettomention: (tweetId,target,source) => {
+     let aa=getTweet(tweetId,target,source);
     return undefined;
   },
-  wikiMention: (data,options,target) => {
-     let aa= wikiMention(data,options,target);
+  wikiMention: (data,target,source) => {
+     let aa= wikiMention(data,target,source);
     return undefined;
   },
 }

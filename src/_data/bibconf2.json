@@ -14,6 +14,7 @@
             "url": "https://www.icp.fr/recherche/chaires/chaire-numerique-et-citoyennete",
             "annonce": "true",
             "abstract": "Gérald Moore introduira la séance en présentant le contexte dopaminergique qu’il étudie. Inculquée par l’idéologie de « la guerre contre la drogue », la tendance est actuellement de concevoir l’addiction en terme de pathologie d’un « cerveau malade ». Une reconnaissance approfondie du système dopaminergique de récompense nous permet cependant de comprendre combien les maladies dites « hyperdopaminergjques» contemporaines dont l’addiction proviennent d’une réponse neurologique « rationnelle et adaptative » à nos environnements à la fois stressants et sous-stimulants. Pour atténuer notre consommation excessive du numérique, il faudrait aussi focaliser nos efforts sur l’amélioration des espaces non-numériques - ce qui pourrait également et paradoxalement prendre la forme de leur augmentation numérique. Marie-Claude Bossière présentera ensuite les pathologies observées et discutées dans le contexte de la Clinique Contributive que l’IRI a mis en place en Seine-Saint-Denis pour permettre aux parents de prendre soin collectivement de la surexposition de leurs jeunes enfants aux écrans. Mael Montévil conclura la séance en présentant les dimensions épistémologiques, pharmacologiques et organologiques déterminantes pour prendre soin du numérique.",
+            "language": "fr",
             "author": "Marie-Claude Bossière and Maël Montévil and Gerald Moore"
         }
     },
@@ -85,6 +86,7 @@
             "url": "https://www.ciph.org/spip.php?page=activite-detail&idevt=1163",
             "annonce": "true",
             "abstract": "L’analogie entre le vivant et l’ordinateur a été introduite avec circonspection par Schrödinger, et s’est largement propagée depuis, rarement avec un sens technique précis. Les critiques sur cette perspective sont nombreuses. Nous insisterons sur le fait que cette perspective est mobilisée pour justifier ce que l’on peut appeler un « hypermécanicisme » qui est un « hyperréductionisme », par comparaison avec la mécanique classique et plus généralement la physique ou la méthode cartésienne. À l’opposé de la métaphore computationnelle, mais aussi de la réduction aux cadres physiques, nous contribuons à élaborer un cadre épistémologique et théorique pour comprendre le vivant. Dans ce cadre, l’historicité est centrale et les régularités susceptibles de mathématisation sont des contraintes dont l’existence est fondamentalement précaire et historiquement contingente. Nous proposons alors de réinterpréter l’ordinateur, non, plus comme machine de Turing mais comme constitué de contraintes. Ceci permet de comprendre que le calcul au sens de Church-Turing n’est qu’une partie de la détermination théorique de ce qui se passe effectivement dans un ordinateur, lequel se place dans un contexte plus large (utilisateur, ordinateurs en réseau, propriétés du matériel, ...) et dans une historicité technologique tant matérielle que logicielle (qui n’a de sens que dans ce contexte plus large).",
+            "language": "fr",
             "author": "M. Montévil"
         }
     },
@@ -100,6 +102,7 @@
             "location": "Maison de la Santé, Saint-Denis",
             "abstract": "Depuis deux ans, le philosophe Bernard Stiegler, récemment disparu, a initié une recherche-action sur la prévention aux effets des écrans chez les enfants, pilotée par l’IRI (Institut de Recherche et d’Innovation du Centre Pompidou). Une série d’ateliers est menée au sein de la PMI Pierre Sémard de Saint-Denis, mobilisant professionnelles de la PMI, chercheurs de l’IRI, et parents. Constitué en groupe de recherche contributive, ces acteurs accueillent de nouveaux parents et favorisent les échanges de savoir entre les participants, pour prévenir des effets des écrans sur le développement des jeunes enfants et inventer ensemble de nouvelles manière d’éduquer nos enfants à l’ère numérique.",
             "illustration": "maisonSante.png",
+            "language": "fr",
             "author": "Marie-Claude Bossière and M. Montévil and Anne Kunvari and PMI Pierre Sémard and Hakima Yacouben",
             "title": "Les ateliers de prévention des effets des écrans à la PMI Pierre Sémard de Saint-Denis"
         }
@@ -112,6 +115,7 @@
             "booktitle": "Séminaire du GIS-UTSH (Unité technologies et sciences de l'Homme)",
             "year": "2021",
             "location": "Université Technologique de Compiègne, Paris, France.",
+            "language": "fr",
             "author": "M. Montévil and Victor Petit",
             "title": "Écologie de la conception"
         }

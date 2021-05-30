@@ -12,7 +12,10 @@ css: ["page-about.css"]
 I am a *theoretical biologist* working at the crossroads of experimental biology, mathematics, and philosophy. I work both on the ways to understand living things and to take care of them in the Anthropocene, among [many more specific topics](/tags/). {.p-note}
 ::: 
 
+ # Key concepts:
+ <a href="/tags/historicity">historicity</a>,  <a href="/tags/organization">organization</a> as <a href="/tags/closure">closure</a> of <a href="/tags/constraints">constraints</a>, <a href="/tags/anti-entropy">anti-entropy</a>, <a href="/tags/symmetry">symmetry changes</a>, <a href="/tags/measurement">biological measurement</a>, <a href="/tags/disruption">disruption</a>
 
+ 
 # Basic informations
 
 <p>
@@ -23,7 +26,7 @@ Contact:
 * <a class="u-email" href="mailto:mael.montevil@gmail.com">{% icon "mail", "Email" %} mael.montevil@gmail.com</a>. 
 * Also on: <ul class=" horizontalFlex">
 {%- for entry in websiteid.sameAs -%}
-  <li><a rel="me" href="{{entry.url}}" title="{{entry.alt}}"  class="u-url"  >{% icon entry.icon, entry.alt %}</a></li>
+  <li><a rel="me" href="{{entry.url}}" title="{{entry.alt}}"  class="u-url"  >{% icon entry.icon, entry.alt %}</a></li> 
 {%- endfor -%}
 </ul>
 
@@ -34,7 +37,7 @@ Affiliation:
 * [Institut de Recherche et d'Innovation](https://www.iri.centrepompidou.fr/){.p-org}{.h-card}
 
 
-Downloadable  <a class="" href=/assets/pdf/cv_Montevil_2019_en.pdf >CV{% icon "pdf", "pdf" %}</a>.
+Downloadable  <a class="" href=/assets/pdf/cv_Montevil_2019_en.pdf >CV {% icon "pdf", "pdf" %}</a>.
 
 
 
@@ -48,7 +51,7 @@ Downloadable  <a class="" href=/assets/pdf/cv_Montevil_2019_en.pdf >CV{% icon "p
 
 {%set links%}
 <div style="--flow-space: 1em;">
-<a  class="buttonlink" href=/assets/pdf/publications_Montevil2-en.pdf >{% icon "pdf", "pdf" %}  Publications </a>
+<a  class="buttonlink" href=/assets/pdf/publications_Montevil2-en.pdf >{% icon "pdf", "pdf" %}  Publications </a> 
 <a class="buttonlink" href=/assets/bib/bibM.bib >{% icon "bib", "bib" %}  Publication references </a>
 </div>
 {% endset %}
@@ -62,7 +65,7 @@ You may have a look at my [list of publications](/publications/publicationsbyTyp
 
 # Short CV
 
-Downloadable   <a class="" href=/assets/pdf/cv_Montevil_2019_en.pdf >long CV{% icon "pdf", "pdf" %}</a>.
+Downloadable   <a class="" href=/assets/pdf/cv_Montevil_2019_en.pdf >long CV {% icon "pdf", "pdf" %}</a>.
 
 
 * I am currently a researcher at {data-date="2018"}
