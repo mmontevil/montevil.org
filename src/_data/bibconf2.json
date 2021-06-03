@@ -2,6 +2,25 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "2021-enmi-prep",
+        "fields": {
+            "title": "Intermittence, rythmes et anti-entropie dans le vivant",
+            "booktitle": "La société intermittente – la vie dans le (négu)anthropocène ?",
+            "location": "Cité Fertile, Pantin",
+            "year": "2021",
+            "month": "6",
+            "day": "21",
+            "abstract": "Le vivant comporte bon nombre de rythmes, des rythmes ayant une origine externe, comme les rythmes circadiens ou circannuels, et des rythmes internes comme les cycles cardiaques ou respiratoires. Quel est le lien entre ces rythmes, le maintien des organisations biologiques face à la croissance tendancielle de l'entropie, mais aussi leur rôle dans des changements d'organisation. Plus précisément, l'anti-entropie correspond aux organisations biologique, prises comme résultat singulier de l'histoire biologique, évolutive et développementale, et parvenant à durer du fait même de cette singularité, par le maintient actif des composants d'un organisme. La production d'anti-entropie, elle, correspond à l'approfondissement de cette singularité, par l'apparition de nouveautés fonctionnelle. Nous discuterons en particulier le cas du sommeil, typiquement associé à un rythme externe et du développement correspondant à un rythme interne au prisme de la question de l'anti-entropie et de la production d'anti-entropie.",
+            "annonce": "true",
+            "program": "ARGUMENTAIRE_ENMI2021.pdf",
+            "illustration": "ENMIpréparatoires_Affiche.png",
+            "url": "https://www.iri.centrepompidou.fr/non-classe/entretiens-preparatoires-2021/",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
         "entrykey": "2021-complex",
         "fields": {
             "title": "‘Reflecting team’ intervention with Keynote commentators",
