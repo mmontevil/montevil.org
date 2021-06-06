@@ -3,7 +3,7 @@ const path = require('path');
 const DIST = '_site';
 
 module.exports = {
-    skipWaiting: true,
+  skipWaiting: true,
   clientsClaim: true,
   globDirectory: DIST,
   globPatterns: [
@@ -31,7 +31,7 @@ module.exports = {
         cacheName: 'start-url',
         expiration: {
           maxEntries: 1,
-          maxAgeSeconds:  60 *60, // 1 hours
+          maxAgeSeconds: 60 * 60, // 1 hours
         },
       },
     },
@@ -154,7 +154,5 @@ module.exports = {
       },
     },
   ],
-  //dontCacheBustURLsMatching: new RegExp('.+.[a-f0-9]{8}..+'),
-  //swSrc: path.join(DIST, 'service-worker.js'),
   swDest: path.join(DIST, 'service-worker.js'),
 };

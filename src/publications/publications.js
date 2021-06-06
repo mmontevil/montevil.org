@@ -1,4 +1,3 @@
- 
 module.exports = {
-    abstract: data => data.abstract,
+  abstract: (data) => data.abstract,
 };

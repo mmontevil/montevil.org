@@ -1,8 +1,8 @@
 {
-  "illustClass" : "noDarkFilter",
+  "illustClass": "noDarkFilter",
   "layout": "publication",
   "lang": "en",
   "category": ["publications"],
-      "hasPDF": true,
-      "hasFullText": true
+  "hasPDF": true,
+  "hasFullText": true
 }

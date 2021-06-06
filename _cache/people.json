@@ -2589,7 +2589,9 @@
     "shortname": "I Hernandez",
     "photo": "/assets/avatars/gs/RCtCMvkAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=RCtCMvkAAAAJ",
-    "gsid": "RCtCMvkAAAAJ"
+    "gsid": "RCtCMvkAAAAJ",
+    "fullName": "Isaac Hernández",
+    "affiliation": "Université de Toulouse"
   },
   "j-jaeger": {
     "shortname": "J Jaeger",
@@ -2627,7 +2629,7 @@
     "url": "http://www.robertocazzollagatti.com/",
     "gsid": "0yBmy5YAAAAJ",
     "fullName": "Roberto Cazzolla Gatti, Ph.D.",
-    "affiliation": "Associate professor, Tomsk State University, Russia - Research Fellow, Konrad Lorenz Institute"
+    "affiliation": "Associate professor, Tomsk State University, Russia - Senior Research Fellow, KLI Austria"
   },
   "b-fath": {
     "shortname": "B Fath",
@@ -5308,5 +5310,33 @@
     "photo": "/assets/avatars/gs/dummy.jpg",
     "url": "",
     "gsid": ""
+  },
+  "f-de-pretis": {
+    "shortname": "F De Pretis",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": ""
+  },
+  "w-peden": {
+    "shortname": "W Peden",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": ""
+  },
+  "j-landes": {
+    "shortname": "J Landes",
+    "photo": "/assets/avatars/gs/zrC0JkQAAAAJ.jpg",
+    "url": "https://jlandes.wordpress.com/",
+    "gsid": "zrC0JkQAAAAJ",
+    "fullName": "Jürgen Landes",
+    "affiliation": "LMU Munich"
+  },
+  "b-osimani": {
+    "shortname": "B Osimani",
+    "photo": "/assets/avatars/gs/Yqx4ARoAAAAJ.jpg",
+    "url": "https://univpm.academia.edu/barbaraosimani",
+    "gsid": "Yqx4ARoAAAAJ",
+    "fullName": "Osimani",
+    "affiliation": "Associate Professor, Univpm, Ancona"
   }
 }

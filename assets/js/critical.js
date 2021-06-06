@@ -1,9 +1,7 @@
 (function (window) {
   // Change the `no-js` class on <html> to `js`
-  window.document.documentElement.className = window.document.documentElement.className.replace(
-    'no-js',
-    'js'
-  );
+  window.document.documentElement.className =
+    window.document.documentElement.className.replace('no-js', 'js');
 
   // get device pixel ratio in dppx
   // https://github.com/ryanve/res/blob/master/src/index.js
@@ -47,11 +45,10 @@
   // );
 })(window);
 
-   
-            const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+const currentTheme = localStorage.getItem('theme')
+  ? localStorage.getItem('theme')
+  : null;
 
 if (currentTheme) {
-    document.documentElement.setAttribute('data-theme', currentTheme);
-
+  document.documentElement.setAttribute('data-theme', currentTheme);
 }
-  

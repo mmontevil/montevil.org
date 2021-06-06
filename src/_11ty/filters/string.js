@@ -43,14 +43,14 @@ module.exports = {
     return str2.replace('XXXX', url);
   },
   initials: (string) => {
-    let res=string[0];
-    let list=string.replaceAll('-',' ').replaceAll('  ',' ').split(' ');
-    for (i in list){
-      if(i>0){
-        res=res+list[i][0]
+    let res = string[0];
+    let list = string.replaceAll('-', ' ').replaceAll('  ', ' ').split(' ');
+    for (i in list) {
+      if (i > 0) {
+        res = res + list[i][0];
       }
     }
-      
+
     return res;
   },
   lowerize: (string) => {

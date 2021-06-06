@@ -1,11 +1,7 @@
- 
 module.exports = {
-  
-    purge: {
+  purge: {
     options: {
-      safelist: [
-        /data-theme$/,
-      ],
+      safelist: [/data-theme$/],
     },
   },
-}
+};

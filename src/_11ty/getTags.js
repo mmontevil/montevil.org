@@ -1,4 +1,3 @@
-
 const fs = require('fs');
 const hashtagsToTags = require('../_utils/hashtags').hashtagsToTags;
 const tagFilter = require('../_utils/tagfilter');

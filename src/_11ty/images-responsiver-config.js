@@ -20,27 +20,26 @@ const runBeforeHook = (image, document) => {
     // TODO: find a way to get a remote image's dimensions
     // TODO: some images are local but have an absolute URL
     imageUrl = imageSrc;
-   var re = /https:\/\/image.thum.io\/get\/width\/(\d*)\/crop\/(\d*)\/noanimate.*/;
-    var newstr = parseInt(imageSrc.replace(re, "$1"),10);
-     var newstr2 = parseInt(imageSrc.replace(re, "$1"),10);
-     if (image.getAttribute('width') === null && newstr>0) {
-           image.setAttribute('width', newstr);
-    image.setAttribute('height', Math.round(newstr*newstr2/1000));
-
+    var re =
+      /https:\/\/image.thum.io\/get\/width\/(\d*)\/crop\/(\d*)\/noanimate.*/;
+    var newstr = parseInt(imageSrc.replace(re, '$1'), 10);
+    var newstr2 = parseInt(imageSrc.replace(re, '$1'), 10);
+    if (image.getAttribute('width') === null && newstr > 0) {
+      image.setAttribute('width', newstr);
+      image.setAttribute('height', Math.round((newstr * newstr2) / 1000));
     }
-       // https://image.thum.io/get/width/(\d*)/crop/(\d*)/noanimate
-
+    // https://image.thum.io/get/width/(\d*)/crop/(\d*)/noanimate
   } else {
     let imageDimensions;
-    let temp=0; 
- /*   if(imageSrc.includes('stiegler')){
+    let temp = 0;
+    /*   if(imageSrc.includes('stiegler')){
       console.log(imageSrc)
     }*/
-     if (imageSrc[0] === '/' ){
-       temp= (fs.statSync('./src' + imageSrc).size);
+    if (imageSrc[0] === '/') {
+      temp = fs.statSync('./src' + imageSrc).size;
     }
 
-    if (imageSrc[0] === '/' && (temp>0)) {
+    if (imageSrc[0] === '/' && temp > 0) {
       // TODO: get "src/" from Eleventy config
       imageDimensions = imageSize('./src' + imageSrc);
       imageUrl = pkg.homepage + encodeURI(imageSrc);
@@ -49,14 +48,19 @@ const runBeforeHook = (image, document) => {
       imageDimensions = imageSize(srcPath + imageSrc);
       imageUrl = pkg.homepage + distPath + encodeURI(imageSrc);
     }
-     if (image.getAttribute('width') === null) {
-    image.setAttribute('width', imageDimensions.width);
-    image.setAttribute('height', imageDimensions.height);
-     }else{
-      image.setAttribute('height', 
-Math.round(imageDimensions.height/imageDimensions.width*image.getAttribute('width')));
+    if (image.getAttribute('width') === null) {
+      image.setAttribute('width', imageDimensions.width);
+      image.setAttribute('height', imageDimensions.height);
+    } else {
+      image.setAttribute(
+        'height',
+        Math.round(
+          (imageDimensions.height / imageDimensions.width) *
+            image.getAttribute('width')
+        )
+      );
     }
-    
+
     image.setAttribute('src', imageUrl);
   }
   image.dataset.responsiver = image.className;
@@ -72,44 +76,51 @@ const runAfterHook = (image, document) => {
   }
 
   let zoom = [...image.classList].indexOf('zoom') !== -1;
- // let img1 = [...image.classList].indexOf('img1') !== -1;
- // let img2 = [...image.classList].indexOf('img2') !== -1;
- // let img3 = [...image.classList].indexOf('img3') !== -1;
-//var classs=""
+  // let img1 = [...image.classList].indexOf('img1') !== -1;
+  // let img2 = [...image.classList].indexOf('img2') !== -1;
+  // let img3 = [...image.classList].indexOf('img3') !== -1;
+  //var classs=""
   //if(img1){classs="sub1"; }
   const lightbox = document.createElement('a');
-      lightbox.appendChild(image.cloneNode(true));
-      lightbox.classList.add("glightbox");
-      lightbox.setAttribute('href', "https://res.cloudinary.com/mmontevil/image/fetch/q_auto,f_auto/"+imageUrl);
-      lightbox.setAttribute('aria-label','Full size');
+  lightbox.appendChild(image.cloneNode(true));
+  lightbox.classList.add('glightbox');
+  lightbox.setAttribute(
+    'href',
+    'https://res.cloudinary.com/mmontevil/image/fetch/q_auto,f_auto/' + imageUrl
+  );
+  lightbox.setAttribute('aria-label', 'Full size');
 
-      if (image.classList.contains('darkFilter')){
-        lightbox.setAttribute('data-lightbox-classes','darkFilter');
-      }
-      let count=0;
-      let temp=image.nextSibling ;
-      let captionfound=false;
-      while (temp ){
-      if(temp.tagName=="FIGCAPTION"){
-            lightbox.setAttribute('data-lightbox-caption', escape(temp.innerHTML));
-            captionfound=true;
-             // temp=undefined;'data-lightbox-classes'
-      }
-     // }else{
-        let temp0=temp;
-        temp= temp.nextSibling;
-       // console.log(temp);
-        if(count==0 && temp==null && temp0.parentElement.parentElement.tagName=="FIGURE")
-        {
-          temp=temp0.parentElement.nextSibling;
-          count=1;
-         // console.log(temp);
-        }
-      //}
-      }
-      if(!captionfound && image.getAttribute('alt') ) lightbox.setAttribute('data-lightbox-caption', image.getAttribute('alt') );
-      
-  if ((caption || zoom) && (1==0)) {
+  if (image.classList.contains('darkFilter')) {
+    lightbox.setAttribute('data-lightbox-classes', 'darkFilter');
+  }
+  let count = 0;
+  let temp = image.nextSibling;
+  let captionfound = false;
+  while (temp) {
+    if (temp.tagName == 'FIGCAPTION') {
+      lightbox.setAttribute('data-lightbox-caption', escape(temp.innerHTML));
+      captionfound = true;
+      // temp=undefined;'data-lightbox-classes'
+    }
+    // }else{
+    let temp0 = temp;
+    temp = temp.nextSibling;
+    // console.log(temp);
+    if (
+      count == 0 &&
+      temp == null &&
+      temp0.parentElement.parentElement.tagName == 'FIGURE'
+    ) {
+      temp = temp0.parentElement.nextSibling;
+      count = 1;
+      // console.log(temp);
+    }
+    //}
+  }
+  if (!captionfound && image.getAttribute('alt'))
+    lightbox.setAttribute('data-lightbox-caption', image.getAttribute('alt'));
+
+  if ((caption || zoom) && 1 == 0) {
     const figure = document.createElement('figure');
     figure.classList.add(...image.classList);
     // TODO: decide weither classes should be removed from the image or not
@@ -121,12 +132,11 @@ const runAfterHook = (image, document) => {
       (zoom
         ? `<p class="zoom ">&#128269; See <a href="https://res.cloudinary.com/mmontevil/image/fetch/q_auto,f_auto/${imageUrl}" class="">full size</a></p>`
         : '');
-      
 
     figure.appendChild(lightbox.cloneNode(true));
     figure.appendChild(figCaption);
     image.replaceWith(figure);
-  }else{
+  } else {
     /*  if (image.classLists.contains("noDarkFilter")){
       }else{lightbox.classList.add("imageInvert");}*/
     image.replaceWith(lightbox);
@@ -135,7 +145,8 @@ const runAfterHook = (image, document) => {
 
 module.exports = {
   default: {
-    selector: ':not(picture) img[src]:not([srcset]):not([src$=".svg"]):not([src^="https://res.cloudinary.com"])',
+    selector:
+      ':not(picture) img[src]:not([srcset]):not([src$=".svg"]):not([src^="https://res.cloudinary.com"])',
     resizedImageUrl: (src, width) =>
       // https://cloudinary.com/blog/automatic_responsive_images_with_client_hints#comment-3190517665
       `https://res.cloudinary.com/mmontevil/image/fetch/q_auto,f_auto,w_auto:100:${width},c_limit/${src}`,
@@ -157,7 +168,7 @@ module.exports = {
     sizes: '(max-width: 20rem) 45vw, (max-width: 67rem) 60vw, 40rem',
     classes: ['twothirds'],
   },
-    giant: {
+  giant: {
     fallbackWidth: 2700,
     minWidth: 2700,
     maxWidth: 2700,
@@ -170,7 +181,7 @@ module.exports = {
     minWidth: 180,
     maxWidth: 800,
     sizes: '(max-width: 67rem) 45vw, 30rem',
-    classes: ['onehalf','img1','img2','img3'],
+    classes: ['onehalf', 'img1', 'img2', 'img3'],
   },
   onethird: {
     fallbackWidth: 300,

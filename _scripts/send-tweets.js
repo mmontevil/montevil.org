@@ -133,9 +133,7 @@ const publishItem = async (item) => {
 const main = async () => {
   // TODO: use Promise.allSettled to continue even if one is rejected
   let result = await Promise.all(
-    [
-      'https://montevil.org/feeds/twitter/links.json',
-    ].map(async (feedUrl) => {
+    ['https://montevil.org/feeds/twitter/links.json'].map(async (feedUrl) => {
       return fetch(feedUrl)
         .then((response) => response.json())
         .then(processFeed)

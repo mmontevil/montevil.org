@@ -1,37 +1,25 @@
 const glob = require('fast-glob');
 const path = require('path');
 const config = require('./pack11ty.config.js');
-const { promises: fs } = require("fs");
-const syncFs = require('fs')
- const slugify = require('./src/_utils/slugify');
+const { promises: fs } = require('fs');
+const syncFs = require('fs');
+const slugify = require('./src/_utils/slugify');
 const { writeToCache, readFromCache } = require('./src/_utils/cache');
 
-
-
-
-
-
-cachedTweets =  readFromCache(  '_cache/tweetsMentions.json',alt={});
-cachedWiki =  readFromCache(  '_cache/wikiMentions.json',alt={});
-cachedPeople =  readFromCache(  '_cache/people.json',alt={});
-
-
-
-
-
-
+cachedTweets = readFromCache('_cache/tweetsMentions.json', (alt = {}));
+cachedWiki = readFromCache('_cache/wikiMentions.json', (alt = {}));
+cachedPeople = readFromCache('_cache/people.json', (alt = {}));
 
 module.exports = function (eleventyConfig) {
-  
   eleventyConfig.on('afterBuild', () => {
-      writeToCache(cachedPeople, '_cache/people.json');
+    writeToCache(cachedPeople, '_cache/people.json');
     writeToCache(cachedWiki, '_cache/wikiMentions.json');
     writeToCache(cachedTweets, '_cache/tweetsMentions.json');
   });
   // ------------------------------------------------------------------------
   // Collections
   // ------------------------------------------------------------------------
-eleventyConfig.setDataDeepMerge(true);
+  eleventyConfig.setDataDeepMerge(true);
   glob
     .sync(path.join(config.dir.src, '_11ty/collections/*.js'))
     .forEach((file) => {
@@ -74,11 +62,14 @@ eleventyConfig.setDataDeepMerge(true);
       });
     });
 
-   const purge = require('./src/_utils/purgecss');
-eleventyConfig.addNunjucksAsyncShortcode("purgeCss", async function(content,cssFiles) {
-    return await purge(content,cssFiles);
-  });
-  
+  const purge = require('./src/_utils/purgecss');
+  eleventyConfig.addNunjucksAsyncShortcode(
+    'purgeCss',
+    async function (content, cssFiles) {
+      return await purge(content, cssFiles);
+    }
+  );
+
   // ------------------------------------------------------------------------
   // Plugins
   // ------------------------------------------------------------------------
@@ -100,31 +91,32 @@ eleventyConfig.addNunjucksAsyncShortcode("purgeCss", async function(content,cssF
   eleventyConfig.addPlugin(embedEverythingElse, {
     youtube: {
       //options: {
-        lite: {
-          css: {
-            path: '/assets/javascript/vendors/yt-lite/lite-yt-embed.css',
-          },
-          js: {
-            path: '/assets/javascript/vendors/yt-lite/lite-yt-embed.js',
-          },
+      lite: {
+        css: {
+          path: '/assets/javascript/vendors/yt-lite/lite-yt-embed.css',
         },
+        js: {
+          path: '/assets/javascript/vendors/yt-lite/lite-yt-embed.js',
+        },
+      },
       //},
     },
   });
 
   eleventyConfig.addPlugin(require('eleventy-plugin-link_to'));
-  
-const readingTime = require('eleventy-plugin-reading-time');
-  
-eleventyConfig.addPlugin(readingTime);
 
+  const readingTime = require('eleventy-plugin-reading-time');
 
-const pluginTOC = require('eleventy-plugin-nesting-toc')
- 
-  eleventyConfig.addPlugin(pluginTOC,{tags:['h2','h3', 'h4', 'h5', 'h6'], wrapperClass:' autotoc indent '})
-const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+  eleventyConfig.addPlugin(readingTime);
+
+  const pluginTOC = require('eleventy-plugin-nesting-toc');
+
+  eleventyConfig.addPlugin(pluginTOC, {
+    tags: ['h2', 'h3', 'h4', 'h5', 'h6'],
+    wrapperClass: ' autotoc indent ',
+  });
+  const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
-
 
   // ------------------------------------------------------------------------
   // Markdown plugins
@@ -139,7 +131,7 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
   const markdownItFootnote = require('markdown-it-footnote');
 
- // const slugify = require('@sindresorhus/slugify');
+  // const slugify = require('@sindresorhus/slugify');
   const markdownItAnchor = require('markdown-it-anchor');
   const markdownItAnchorOptions = {
     permalink: true,
@@ -228,8 +220,8 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
   // Transforms
   // ------------------------------------------------------------------------
 
-  if (process.env.NODE_ENV === 'production' ){
-   // const imagesResponsiver = require('eleventy-plugin-images-responsiver');
+  if (process.env.NODE_ENV === 'production') {
+    // const imagesResponsiver = require('eleventy-plugin-images-responsiver');
     const imagesResponsiverConfig = require(path.join(
       __dirname,
       config.dir.src,
@@ -237,19 +229,18 @@ const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
     ));
     const imagesResponsiver = require('./src/_utils/responsiver.js');
 
-
-const imagesResponsiverTransform = async (content,outputPath) => {
-  if (outputPath && outputPath.endsWith('.html')) {
-    return (imagesResponsiver(content, imagesResponsiverConfig));
-  }
-  return content;
-};
-  eleventyConfig.addTransform(
+    const imagesResponsiverTransform = async (content, outputPath) => {
+      if (outputPath && outputPath.endsWith('.html')) {
+        return imagesResponsiver(content, imagesResponsiverConfig);
+      }
+      return content;
+    };
+    eleventyConfig.addTransform(
       'imagesResponsiver',
       imagesResponsiverTransform
     );
-  
-   /*
+
+    /*
   const typesetPlugin = require('eleventy-plugin-typeset');
   
   eleventyConfig.addPlugin(
@@ -259,7 +250,7 @@ const imagesResponsiverTransform = async (content,outputPath) => {
     // etc.
   })
 );*/
-/* const options = {
+    /* const options = {
   disable: ['ligatures'] // array of typeset feature(s) to disable
 };
 const typeset = require('typeset');
@@ -273,75 +264,47 @@ const typeseter = (content, outputPath) => {
       'typeseter',
       typeseter
     ); */
- const mathjax2 = require('./src/_11ty/mathjax.js');
+    const mathjax2 = require('./src/_11ty/mathjax.js');
 
- eleventyConfig.addTransform(
-      'mathjax2',
-      mathjax2
-    );
- 
-  eleventyConfig.addTransform(`htmlmin`, function (content, outputPath) {
-    if (outputPath && outputPath.endsWith(`.html`) && (! outputPath.endsWith(`2011-LM-Biology-Extending-Criticality/index.html`))&& (! outputPath.endsWith(`xtended/index.html`)) ) {
-      //console.log(outputPath);
-      return require(`html-minifier`).minify(content, {
-      //  useShortDoctype: true,
-        removeComments: true,
-        collapseWhitespace: true,
-        conservativeCollapse: true,
-                minifyCSS: false,
-collapseInlineTagWhitespace: true,
-collapseBooleanAttributes: true,
-decodeEntities: true,
-includeAutoGeneratedTags: false,
-minifyJS: false,
-minifyURLs: true,
-preventAttributesEscaping: true,
-processConditionalComments: true,
-removeAttributeQuotes: true,
-removeEmptyAttributes: true,
-removeOptionalTags: true,
-removeRedundantAttributes: true,
-removeScriptTypeAttributes: true,
-removeStyleLinkTypeAttributes: true,
-trimCustomFragments: true,
-useShortDoctype: true          
-      });
-    }
-    return content;
-  });
+    eleventyConfig.addTransform('mathjax2', mathjax2);
 
-/*  const tinyCSS = require('@sardine/eleventy-plugin-tinycss');
+    eleventyConfig.addTransform(`htmlmin`, function (content, outputPath) {
+      if (
+        outputPath &&
+        outputPath.endsWith(`.html`) &&
+        !outputPath.endsWith(
+          `2011-LM-Biology-Extending-Criticality/index.html`
+        ) &&
+        !outputPath.endsWith(`xtended/index.html`)
+      ) {
+        //console.log(outputPath);
+        return require(`html-minifier`).minify(content, {
+          //  useShortDoctype: true,
+          removeComments: true,
+          collapseWhitespace: true,
+          conservativeCollapse: true,
+          minifyCSS: false,
+          collapseInlineTagWhitespace: true,
+          collapseBooleanAttributes: true,
+          decodeEntities: true,
+          includeAutoGeneratedTags: false,
+          minifyJS: false,
+          minifyURLs: true,
+          preventAttributesEscaping: true,
+          processConditionalComments: true,
+          removeAttributeQuotes: true,
+          removeEmptyAttributes: true,
+          removeOptionalTags: true,
+          removeRedundantAttributes: true,
+          removeScriptTypeAttributes: true,
+          removeStyleLinkTypeAttributes: true,
+          trimCustomFragments: true,
+          useShortDoctype: true,
+        });
+      }
+      return content;
+    });
 
-  eleventyConfig.addPlugin(tinyCSS);*/
-
-  
- /*
-  const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minifier");
-module.exports = (eleventyConfig) => {
-  eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
-};*//*const htmlmin = require("html-minifier");
-    eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
-    // Eleventy 1.0+: use this.inputPath and this.outputPath instead
-    if( outputPath.endsWith(".html") ) {
-      let minified = htmlmin.minify(content, {
-   //     minifyCSS: true,
-    //    minifyJS: true,
-        useShortDoctype: true,
-        removeComments: true,
-        collapseWhitespace: true
-      });
-      return minified.replaceAll('\n',' ');
-    }
-    return content;
-  });*/
-  // eleventyConfig.addPlugin(imagesResponsiver, imagesResponsiverConfig);
-
-    // const htmlMinTransform = require(path.join(
-    //   __dirname,
-    //   config.dir.src,
-    //   '_transforms/html-min-transform.js'
-    // ));
-    // eleventyConfig.addTransform('htmlmin', htmlMinTransform);
   }
 
   // ------------------------------------------------------------------------
@@ -353,11 +316,14 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addWatchTarget('_site/js/');
   eleventyConfig.addWatchTarget('_site/css/');
 
+  eleventyConfig.addPassthroughCopy(
+    path.join(
+      config.dir.src,
+      '**/*.{jpg,png,gif,svg,kmz,zip,css,bib,pdf,webp,mov}'
+    )
+  );
   eleventyConfig
-    .addPassthroughCopy(
-      path.join(config.dir.src, '**/*.{jpg,png,gif,svg,kmz,zip,css,bib,pdf,webp,mov}')
-    );
-    eleventyConfig.addPassthroughCopy(path.join(config.dir.src, 'assets'))
+    .addPassthroughCopy(path.join(config.dir.src, 'assets'))
     .addPassthroughCopy(path.join(config.dir.src, '.well-known'))
     .addPassthroughCopy(path.join(config.dir.src, '.htaccess'))
     .addPassthroughCopy(path.join(config.dir.src, '_headers'))

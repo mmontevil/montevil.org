@@ -30,7 +30,7 @@ async function fetchWebmentions(since, perPage = 10000) {
     return null;
   }
   const feed = await response.json();
-  const webmentions = feed.children; 
+  const webmentions = feed.children;
   let cleanedWebmentions = cleanWebmentions(webmentions);
   if (cleanedWebmentions.length === 0) {
     console.log('[Webmention] No new webmention');

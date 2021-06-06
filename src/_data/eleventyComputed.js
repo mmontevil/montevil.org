@@ -12,14 +12,13 @@ const WEBMENTION_CACHE = '_cache/webmentions.json';
 const TWITL_WEBMENTION_CACHE = '_cache/tweetLikeMentions.json';
 const RG_WEBMENTION_CACHE = '_cache/rgLikeMentions.json';
 
-function getExtWebmentions () {
+function getExtWebmentions() {
   const cached = readFromCache(WEBMENTION_CACHE);
-    const cached3 =Object.values(readFromCache(TWITL_WEBMENTION_CACHE));
-    const cached4 =Object.values(readFromCache(RG_WEBMENTION_CACHE));
+  const cached3 = Object.values(readFromCache(TWITL_WEBMENTION_CACHE));
+  const cached4 = Object.values(readFromCache(RG_WEBMENTION_CACHE));
   return cached.webmentions.concat(cached3).concat(cached4);
-};
-const extWebmentions=getExtWebmentions();
-
+}
+const extWebmentions = getExtWebmentions();
 
 // dates
 const dtf = {
@@ -45,7 +44,6 @@ function attributeDate(date) {
   return dtfDigits.format(date).split('/').reverse().join('-');
 }
 
-
 function formattedDate(lang, date) {
   return dtf[lang || 'en'].format(date);
 }
@@ -61,7 +59,6 @@ function chooseDate(datepub, date) {
     return date;
   }
 }
-
 
 function removeEmojis(content) {
   // https://thekevinscott.com/emojis-in-javascript/
@@ -118,7 +115,6 @@ function htmlAuthors(data) {
 }
 
 // metadata
-
 
 function title(data) {
   switch (data.layout) {
@@ -266,93 +262,91 @@ function ogImageTagline(data) {
 
 // utility for mentions
 function isSelf(entry) {
-  return entry.url.match(/^https:\/\/twitter.com\/MMontevil\//) && ! entry.url.match(/\#/) || entry.author.screen_name=="MMontevil";
+  return (
+    (entry.url.match(/^https:\/\/twitter.com\/MMontevil\//) &&
+      !entry.url.match(/\#/)) ||
+    entry.author.screen_name == 'MMontevil'
+  );
 }
 
 function webmentionsByType(mentions, mentionType) {
   if (mentions)
     return mentions.filter((entry) => entry['wm-property'] === mentionType);
 
-    return [];
+  return [];
 }
-  
+
+function uniqByKeepLast(a, key) {
+  return [...new Map(a.map((x) => [key(x), x])).values()];
+}
 // Crossref and Plum mentions
 
 var cache = flatcache.load('crossref', path.resolve('./_cache'));
-var plumCache=readFromCache(PLUM_CACHE);
-
-function uniqByKeepLast(a, key) {
-    return [
-        ...new Map(
-            a.map(x => [key(x), x])
-        ).values()
-    ]
-}
-
+var plumCache = readFromCache(PLUM_CACHE);
 
 async function fetchCrossref(doi, id, type) {
-  
-    const cachedData = cache.getKey(id);
+  const cachedData = cache.getKey(id);
 
-    if (!cachedData) {
-      var allPosts ='[]';
-      if (type==="doi") {
-       allPosts = await fetch(
+  if (!cachedData) {
+    var allPosts = '[]';
+    if (type === 'doi') {
+      allPosts = await fetch(
         'https://api.eventdata.crossref.org/v1/events?rows=1000&obj-id=' +
           encodeURI(doi) +
-         '&source=twitter'
+          '&source=twitter'
       ).then((res) => res.json());
-      }else{
-          if (type==="url") {
-               allPosts = await fetch(
-            'https://api.eventdata.crossref.org/v1/events?rows=1000&obj-url=' +
-              encodeURI(doi) +
-              '&source=twitter'
-              ).then((res) => res.json());
+    } else {
+      if (type === 'url') {
+        allPosts = await fetch(
+          'https://api.eventdata.crossref.org/v1/events?rows=1000&obj-url=' +
+            encodeURI(doi) +
+            '&source=twitter'
+        ).then((res) => res.json());
       }
-      }
-var allPosts2 ='[]';
-      if (type==="doi") {
-       allPosts2 = await fetch(
+    }
+    var allPosts2 = '[]';
+    if (type === 'doi') {
+      allPosts2 = await fetch(
         'https://api.eventdata.crossref.org/v1/events?rows=1000&obj-id=' +
           encodeURI(doi) +
-         '&source=wikipedia'
+          '&source=wikipedia'
       ).then((res) => res.json());
-      }else{
-          if (type==="url") {
-               allPosts2 = await fetch(
-            'https://api.eventdata.crossref.org/v1/events?rows=1000&obj-url=' +
-              encodeURI(doi) +
-              '&source=wikipedia'
-              ).then((res) => res.json());
+    } else {
+      if (type === 'url') {
+        allPosts2 = await fetch(
+          'https://api.eventdata.crossref.org/v1/events?rows=1000&obj-url=' +
+            encodeURI(doi) +
+            '&source=wikipedia'
+        ).then((res) => res.json());
       }
-      }  
-     
-      if(allPosts2.message.events){
-        for (i in allPosts2.message.events){
-          if(allPosts2.message.events[i].subj.url.length > allPosts2.message.events[i].subj.pid.length){
-            /*console.log(allPosts2.message.events[i].subj.url.length)
+    }
+
+    if (allPosts2.message.events) {
+      for (i in allPosts2.message.events) {
+        if (
+          allPosts2.message.events[i].subj.url.length >
+          allPosts2.message.events[i].subj.pid.length
+        ) {
+          /*console.log(allPosts2.message.events[i].subj.url.length)
             console.log(allPosts2.message.events[i].subj.pid.length)
             colsole.log("-----")*/
-            let temp= allPosts2.message.events[i].subj.url;
-          allPosts2.message.events[i].subj.url= allPosts2.message.events[i].subj.pid;
-          allPosts2.message.events[i].subj.pid=temp;
-        }}
-          allPosts2=uniqByKeepLast(allPosts2.message.events, x=>x.subj.url);
-          allPosts.message.events=allPosts.message.events.concat(allPosts2);
+          let temp = allPosts2.message.events[i].subj.url;
+          allPosts2.message.events[i].subj.url =
+            allPosts2.message.events[i].subj.pid;
+          allPosts2.message.events[i].subj.pid = temp;
+        }
       }
-      cache.setKey(id, allPosts);
-      cache.save(true);
-      return allPosts;
+      allPosts2 = uniqByKeepLast(allPosts2.message.events, (x) => x.subj.url);
+      allPosts.message.events = allPosts.message.events.concat(allPosts2);
     }
-    return cachedData;
+    cache.setKey(id, allPosts);
+    cache.save(true);
+    return allPosts;
+  }
+  return cachedData;
 }
 
 //
-
-
-
-
 
 //Exports
 
@@ -403,84 +397,112 @@ module.exports = {
   gsentry: (data) => {
     var res = [];
     let title = data.title.toLowerCase();
-    if (data.layout=="publication"){
-    if (
-      slugifyString(title.toLowerCase()) ==
-      slugifyString(
-        'Perspectives on Organisms: Biological time, symmetries and singularities'.toLowerCase()
-      )
-    ) {
-      title = 'Perspectives on organisms';
-    }
-    
-    title = slugifyString(title.toLowerCase());
-    let temp=0;
-    for (const entry in data.scholar) {
+    if (data.layout == 'publication') {
       if (
-        search(
-          slugifyString(data.scholar[entry][0].bib.title.toLowerCase()),
-          title,
-          4
-        ).length > 0
-      ) {temp=temp+1;
-          res =res.concat( data.scholar[entry]);        
+        slugifyString(title.toLowerCase()) ==
+        slugifyString(
+          'Perspectives on Organisms: Biological time, symmetries and singularities'.toLowerCase()
+        )
+      ) {
+        title = 'Perspectives on organisms';
       }
-    }      
-    }   
+
+      title = slugifyString(title.toLowerCase());
+      let temp = 0;
+      for (const entry in data.scholar) {
+        if (
+          search(
+            slugifyString(data.scholar[entry][0].bib.title.toLowerCase()),
+            title,
+            4
+          ).length > 0
+        ) {
+          temp = temp + 1;
+          res = res.concat(data.scholar[entry]);
+        }
+      }
+    }
     return res;
   },
 
-  allMentions: (data) =>{
+  allMentions: (data) => {
     if (!data.computeMentions) {
       return [];
     }
     // get crossref data
 
-    let crossref=undefined
+    let crossref = undefined;
     if (data.bibentry.DOI) {
-        crossref=fetchCrossref(data.bibentry.DOI, data.page.fileSlug,"doi");
+      crossref = fetchCrossref(data.bibentry.DOI, data.page.fileSlug, 'doi');
     } else {
-        if (data.bibentry.URL) 
-            crossref=fetchCrossref(data.bibentry.URL,data.page.fileSlug,"url");
+      if (data.bibentry.URL)
+        crossref = fetchCrossref(data.bibentry.URL, data.page.fileSlug, 'url');
     }
-    
+
     // get crossref mentions
-    
-    let temp=data.page.url;
-    if (crossref && crossref.message){
-        for (i in crossref.message.events){
-            let eventm=crossref.message.events[i];
-            if  (eventm.source_id =="twitter"){
-                let tweet=eventm.subj.title.replace("Tweet ", "");
-                if(! ["1274995148934561793","1275912806257344515","1123337833714835456","1394392626598645766"].includes(tweet))
-                    temp=tweettomention(tweet,  "https://montevil.org"+data.page.url, "https://www.crossref.org/") ;
-            }
-            if  (eventm.source_id =="wikipedia"){
-                temp=wikiMention(eventm,   "https://montevil.org"+data.page.url, "https://www.crossref.org/") ;
-            }
+
+    let temp = data.page.url;
+    if (crossref && crossref.message) {
+      for (i in crossref.message.events) {
+        let eventm = crossref.message.events[i];
+        if (eventm.source_id == 'twitter') {
+          let tweet = eventm.subj.title.replace('Tweet ', '');
+          if (
+            ![
+              '1274995148934561793',
+              '1275912806257344515',
+              '1123337833714835456',
+              '1394392626598645766',
+            ].includes(tweet)
+          )
+            temp = tweettomention(
+              tweet,
+              'https://montevil.org' + data.page.url,
+              'https://www.crossref.org/'
+            );
         }
+        if (eventm.source_id == 'wikipedia') {
+          temp = wikiMention(
+            eventm,
+            'https://montevil.org' + data.page.url,
+            'https://www.crossref.org/'
+          );
+        }
+      }
     }
-    
-    // Get Plum, manual, and talk tweets 
-    
-     let res=[];
-     if (data.bibentry &&data.bibentry.DOI && plumCache[data.bibentry.DOI] ){
-          res=res.concat(plumCache[data.bibentry.DOI]);
-     }
-    if(data.tweets_mentions){
-      const newArr = data.tweets_mentions.filter(el => el !== undefined);
-       res=res.concat(newArr);
+
+    // Get Plum, manual, and talk tweets
+
+    let res = [];
+    if (data.bibentry && data.bibentry.DOI && plumCache[data.bibentry.DOI]) {
+      res = res.concat(plumCache[data.bibentry.DOI]);
     }
-     if(data.bibentryconf && data.bibentryconf.fields && data.bibentryconf.fields.twittermention){
-      res=res.concat(data.bibentryconf.fields.twittermention.split(", "));
+    if (data.tweets_mentions) {
+      const newArr = data.tweets_mentions.filter((el) => el !== undefined);
+      res = res.concat(newArr);
     }
-    for (i in res){
-        let temp=tweettomention(res[i],  "https://montevil.org"+data.page.url, "none") ;
+    if (
+      data.bibentryconf &&
+      data.bibentryconf.fields &&
+      data.bibentryconf.fields.twittermention
+    ) {
+      res = res.concat(data.bibentryconf.fields.twittermention.split(', '));
     }
-    
+    for (i in res) {
+      let temp = tweettomention(
+        res[i],
+        'https://montevil.org' + data.page.url,
+        'none'
+      );
+    }
+
     // mentions for this url
-    let urlsList = [encodeURI("https://montevil.org"+data.page.url).toLowerCase()];
-    return extWebmentions.concat(Object.values(cachedTweets)).concat(Object.values(cachedWiki))
+    let urlsList = [
+      encodeURI('https://montevil.org' + data.page.url).toLowerCase(),
+    ];
+    return extWebmentions
+      .concat(Object.values(cachedTweets))
+      .concat(Object.values(cachedWiki))
       .filter((entry) => {
         return urlsList.includes(encodeURI(entry['wm-target'].toLowerCase()));
       })
@@ -491,24 +513,49 @@ module.exports = {
           parseInt(a.published.replace(new RegExp('\\' + '-', 'gi'), ''))
       );
   },
-  citationSize: (data)=>{
-      let citationSize=0;
-     if  (data.gsentry && data.gsentry[1] &&data.gsentry[1].length >0)
-          citationSize =data.gsentry[1].length;
-  
-     return citationSize
+  citationSize: (data) => {
+    let citationSize = 0;
+    if (data.gsentry && data.gsentry[1] && data.gsentry[1].length > 0)
+      citationSize = data.gsentry[1].length;
+
+    return citationSize;
   },
-  allMentionsSize: (data)=>{
-    return data.allMentions.length+data.citationSize;
+  allMentionsSize: (data) => {
+    return (
+      data.likesSize +
+      data.repostsSize +
+      data.repliesSize +
+      data.mentionsSize +
+      data.citationSize
+    );
   },
-   likes: (data)=>{return webmentionsByType(data.allMentions,'like-of') },
-   likesSize: (data) =>{return data.likes.length},
-   reposts: (data)=>{return webmentionsByType(data.allMentions,'repost-of') },
-   repostsSize: (data) =>{return data.reposts.length},
-   replies: (data)=>{return webmentionsByType(data.allMentions,'in-reply-of') },
-   repliesSize: (data)=>{return data.replies.length},
-   mentions: (data)=>{return webmentionsByType(data.allMentions,'mention-of') },
-   mentionsSize: (data) =>{return data.mentions.length},
+  likes: (data) => {
+    return uniqByKeepLast(
+      webmentionsByType(data.allMentions, 'like-of'),
+      (x) => x.author.url
+    );
+  },
+  likesSize: (data) => {
+    return data.likes.length;
+  },
+  reposts: (data) => {
+    return webmentionsByType(data.allMentions, 'repost-of');
+  },
+  repostsSize: (data) => {
+    return data.reposts.length;
+  },
+  replies: (data) => {
+    return webmentionsByType(data.allMentions, 'in-reply-of');
+  },
+  repliesSize: (data) => {
+    return data.replies.length;
+  },
+  mentions: (data) => {
+    return webmentionsByType(data.allMentions, 'mention-of');
+  },
+  mentionsSize: (data) => {
+    return data.mentions.length;
+  },
 
   bibentryconf: (data) => {
     var res = {};
@@ -541,7 +588,7 @@ module.exports = {
     }
     return res;
   },
- /* colKey: {
+  /* colKey: {
     lang: (data) => data.lang,
     date: (data) => data.orderDate,
     category: (data) => data.category,

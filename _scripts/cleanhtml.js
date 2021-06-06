@@ -1,37 +1,47 @@
- 
-var fs = require('fs')
-var slug = require('rehype-slug')
+var fs = require('fs');
+var slug = require('rehype-slug');
 
-var rehype = require('rehype')
- var vfile = require('to-vfile')
-var report = require('vfile-reporter')
-var format = require('rehype-format')
+var rehype = require('rehype');
+var vfile = require('to-vfile');
+var report = require('vfile-reporter');
+var format = require('rehype-format');
 const sanitizeHtml = require('sanitize-html');
 
-
 rehype()
-  .data('settings', {fragment: true})
+  .data('settings', { fragment: true })
   .use(slug)
-  .process(fs.readFileSync('index.njk'), function(err, file0) {
-    
-      rehype().data('settings', {fragment: true})
-  .use(format)
-  .process(file0, function (err, file) {
-    console.error(report(err || file))
-var res=sanitizeHtml(String( file), {
-  allowedTags: false,
-  allowedAttributes: false,
-});
-res=res.replaceAll('mfenced close=")" open separators','mfenced close=")" open="(" separators');
-res=res.replaceAll('mfenced close="∥" open separators','mfenced close="∥" open="∥" separators');
-res=res.replaceAll('mfenced close="]" open separators','mfenced close="]" open="[" separators');
-    fs.writeFile('index.njk',res.substring(res.indexOf("\n") + 1), (err) => {
-  if (err) throw err;
-  console.log('The file has been saved!');
-});
-  })
-    
-  })
+  .process(fs.readFileSync('index.njk'), function (err, file0) {
+    rehype()
+      .data('settings', { fragment: true })
+      .use(format)
+      .process(file0, function (err, file) {
+        console.error(report(err || file));
+        var res = sanitizeHtml(String(file), {
+          allowedTags: false,
+          allowedAttributes: false,
+        });
+        res = res.replaceAll(
+          'mfenced close=")" open separators',
+          'mfenced close=")" open="(" separators'
+        );
+        res = res.replaceAll(
+          'mfenced close="∥" open separators',
+          'mfenced close="∥" open="∥" separators'
+        );
+        res = res.replaceAll(
+          'mfenced close="]" open separators',
+          'mfenced close="]" open="[" separators'
+        );
+        fs.writeFile(
+          'index.njk',
+          res.substring(res.indexOf('\n') + 1),
+          (err) => {
+            if (err) throw err;
+            console.log('The file has been saved!');
+          }
+        );
+      });
+  });
 
 /*
 var addClasses = require('rehype-add-classes')
@@ -59,4 +69,3 @@ const { contents } = processor.processSync(vfile({ contents: html }));
 
 console.log(contents);
 */
-

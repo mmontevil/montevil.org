@@ -1,7 +1,7 @@
 {
   "typepub": "book",
   "peerReview": false,
-    "category": ["books"],
-    "noToc": true,
-      "hasPDF": false
+  "category": ["books"],
+  "noToc": true,
+  "hasPDF": false
 }
