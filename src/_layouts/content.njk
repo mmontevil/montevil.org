@@ -1,6 +1,7 @@
 ---
 layout: default
 css: ["component-older-newer.css"]
+computeMentions: true
 eleventyComputed:
     orderDate: "{{-page.date | attributeDate-}}"
 ---
@@ -113,12 +114,14 @@ hasSup: hasSup,
   
         date: date,
       url: page.url,
-    data: {gsentry: gsentry,
+    data: {
+      gsentry: gsentry,
       layout: layout,
       lang: lang,
       title: title,
       tags: tags,
       datepub:datepub,
+      allMentionsSize:allMentionsSize,
       peerReview: peerReview,
          auteurs: auteurs,
           type: type,

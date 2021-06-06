@@ -1,4 +1,4 @@
-const {Builder, By, Key, until} = require('selenium-webdriver');
+const {Builder, By, Key, until,Actions} = require('selenium-webdriver');
 const moment= require('moment');
 const { promises: fs } = require("fs");
 const syncFs = require('fs')
@@ -63,8 +63,27 @@ let mentioned=maintweets[tid]['wm-target'];
   await driver.wait(() => documentInitialised(), 10000);
   await sleep(6000);
 
+/*scr= await driver.findElements(By.xpath("//div[@aria-labelledby='modal-header']/div/div[2]/div/div"));
+for(i in [1,2,3,4,5])  {try {
+driver.executeScript("arguments[0].scrollBy(0,500)", scr);}finally {    }
+    await sleep(500);
+}*/
+    
+
+m= await driver.findElements(By.xpath("//div[@aria-label='Timeline: Liked by']/div/div/div/div[@data-testid='UserCell']/div/div/div/a/div/div/div/img"));
+
+if(m.length >0)
+{  
+  
+ driver.executeScript("arguments[0].scrollIntoView();", m[m.length-1]);
+      await sleep(750);
+m= await driver.findElements(By.xpath("//div[@aria-label='Timeline: Liked by']/div/div/div/div[@data-testid='UserCell']/div/div/div/a/div/div/div/img"));
+ driver.executeScript("arguments[0].scrollIntoView();", m[m.length-1]);
+      await sleep(750);
+}
 l= await driver.findElements(By.xpath("//div[@aria-label='Timeline: Liked by']/div/div/div/div[@data-testid='UserCell']/div/div/div/a"));
 m= await driver.findElements(By.xpath("//div[@aria-label='Timeline: Liked by']/div/div/div/div[@data-testid='UserCell']/div/div/div/a/div/div/div/img"));
+  
 xx=0;
 for ( x in l){
   let link=await l[x].getAttribute("href");

@@ -2587,9 +2587,9 @@
   },
   "i-hernandez": {
     "shortname": "I Hernandez",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/RCtCMvkAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=RCtCMvkAAAAJ",
+    "gsid": "RCtCMvkAAAAJ"
   },
   "j-jaeger": {
     "shortname": "J Jaeger",
@@ -5302,5 +5302,11 @@
     "url": "",
     "gsid": "",
     "fullName": "Gerald Moore"
+  },
+  "j-meng": {
+    "shortname": "J Meng",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": ""
   }
 }

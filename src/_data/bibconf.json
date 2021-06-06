@@ -77,6 +77,30 @@
     "type": "paper-conference"
   },
   {
+    "URL": "https://meetings.cshl.edu/meetings.aspx?meet=ISH&year=21",
+    "abstract": "The notion of disruption is used broadly in the scientific literature to describe anthropogenic, detrimental effects on living beings, from organisms to ecosystems. However, this notion is missing a proper theoretical and conceptual elaboration. Why do living beings display specific vulnerabilities to some perturbations that are described as triggering disruptions? In particular, what distinguishes endocrine disruptions from mere perturbations? We discuss the notion of disruption in the case of endocrine disruptors by first building on examples. We contend that disruptions are the randomization of natural history outcomes that contribute to viability. In the case of endocrine disruptions, development complexifies the picture, and it was the first argument for the specificity of this phenomenon. Another critical aspect of the analysis is the technological lineages leading to new molecules from the disrupted biological lineages’ perspective. By conceptualizing and theorizing disruptions further, we hope to contribute to the scientific knowledge of these phenomena, build bridges between different fields studying different kinds of biological disruptions, and facilitate their understanding by the general public.",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "Wingspread@30: Birth and development of endocrine disruption science, Part II — ISHPSSB 2021",
+    "id": "ish2021",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          7,
+          19
+        ]
+      ]
+    },
+    "title": "Theorizing biological disruptions: the case of endocrine disruptors",
+    "title-short": "Theorizing biological disruptions",
+    "type": "paper-conference"
+  },
+  {
     "URL": "https://sciorigin.weebly.com",
     "abstract": "In the structure of the main theories of physics, origins play a limited role. For example, the Noether theorem, the fundamental theorem to understand the connection between conservative quantities (for example, energy) and symmetries (for example, time translations), requires a starting point, but we can choose the latter arbitrarily. Symmetry breaking represents a kind of origin, the appearance of a new pattern; however, it remains limited to the choice of a pattern among predefined ones. In less technical terms, the objects described by physics (except maybe cosmology) are generic: their interactions and transformations are described by abstract mathematical structures that apply identically to classes of concrete objects. For example, the speed of light in the vacuum is the same irrespective of the origin of the observed beam of light. <br> In biology, the situation is strikingly different. Even though mathematical modeling often builds on the reasoning of physics, these models are limited to very limited aspects of the intended organisms. By contrast, the phylogenetic classification of living beings introduced a very original rationale. Instead of defining objects by invariants relations, it defines objects by their historical origin, their last common ancestor. This perspective provides accuracy to biological definitions, provided that biological objects generate novelties over time. This approach has limitations when we want to understand the physiology or the development of organisms and how they last over time. <br> Then, we argue that biology requires a perspective that integrates relational, systemic perspectives and historical definitions, i.e., definitions based on the common origin of a class of objects. Integrating these distinct epistemological stances requires significant epistemological and formal innovations. It implies that the definition of biological objects is not just about the relationship between their parts at a given time; it also requires the reference to their past.",
     "author": [

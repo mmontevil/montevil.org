@@ -12,7 +12,7 @@
  {%- if loop.revindex >2 -%}, {%endif-%}{%- if loop.revindex ===2 %} & {%endif-%}{%- if loop.revindex ===1 %}.{%endif-%}
 {%endfor%} 
 
-{% if not article.bib.pub_year=="NA"%}{{article.bib.pub_year}}. {%endif%}
+{% if article.bib.pub_year!=="NA"%}{{article.bib.pub_year}}. {%endif%}
 {% if article.bib.venue=="NA"%}<i>{%endif%}
 {{article.bib.title | title}}.
 {% if article.bib.venue=="NA"%}</i>{%else%}

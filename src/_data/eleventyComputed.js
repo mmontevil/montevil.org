@@ -8,6 +8,20 @@ const { writeToCache, readFromCache } = require('../_utils/cache');
 const PLUM_CACHE = '_cache/plumMention.json';
 const { tweettomention, wikiMention } = require('../_utils/twitter_crossref');
 
+const WEBMENTION_CACHE = '_cache/webmentions.json';
+const TWITL_WEBMENTION_CACHE = '_cache/tweetLikeMentions.json';
+const RG_WEBMENTION_CACHE = '_cache/rgLikeMentions.json';
+
+function getExtWebmentions () {
+  const cached = readFromCache(WEBMENTION_CACHE);
+    const cached3 =Object.values(readFromCache(TWITL_WEBMENTION_CACHE));
+    const cached4 =Object.values(readFromCache(RG_WEBMENTION_CACHE));
+  return cached.webmentions.concat(cached3).concat(cached4);
+};
+const extWebmentions=getExtWebmentions();
+
+
+// dates
 const dtf = {
   en: new Intl.DateTimeFormat('en-GB', {
     year: 'numeric',
@@ -36,6 +50,19 @@ function formattedDate(lang, date) {
   return dtf[lang || 'en'].format(date);
 }
 
+function chooseDate(datepub, date) {
+  if (datepub) {
+    if (datepub == ' Submitted') {
+      return date;
+    } else {
+      return datepub;
+    }
+  } else {
+    return date;
+  }
+}
+
+
 function removeEmojis(content) {
   // https://thekevinscott.com/emojis-in-javascript/
   return content.replace(
@@ -43,6 +70,8 @@ function removeEmojis(content) {
     ''
   );
 }
+
+// authors for citations
 
 function textAuthors(data) {
   let text = '';
@@ -87,6 +116,9 @@ function htmlAuthors(data) {
   }
   return html;
 }
+
+// metadata
+
 
 function title(data) {
   switch (data.layout) {
@@ -231,17 +263,21 @@ function ogImageTagline(data) {
   }
   return '';
 }
-function chooseDate(datepub, date) {
-  if (datepub) {
-    if (datepub == ' Submitted') {
-      return date;
-    } else {
-      return datepub;
-    }
-  } else {
-    return date;
-  }
+
+// utility for mentions
+function isSelf(entry) {
+  return entry.url.match(/^https:\/\/twitter.com\/MMontevil\//) && ! entry.url.match(/\#/) || entry.author.screen_name=="MMontevil";
 }
+
+function webmentionsByType(mentions, mentionType) {
+  if (mentions)
+    return mentions.filter((entry) => entry['wm-property'] === mentionType);
+
+    return [];
+}
+  
+// Crossref and Plum mentions
+
 var cache = flatcache.load('crossref', path.resolve('./_cache'));
 var plumCache=readFromCache(PLUM_CACHE);
 
@@ -311,7 +347,14 @@ var allPosts2 ='[]';
     }
     return cachedData;
 }
+
 //
+
+
+
+
+
+//Exports
 
 module.exports = {
   lang: (data) => {
@@ -331,33 +374,6 @@ module.exports = {
   },
   formattedDate: (data) => formattedDate(data.lang, data.page.date),
   attributeDate: (data) => attributeDate(data.page.date),
-  crossref: (data) => {
-    let res=undefined
-    if (data.bibentry.DOI) {
-      res=  fetchCrossref(data.bibentry.DOI, data.page.fileSlug,"doi");
-    } else {
-      if (data.bibentry.URL) 
-        res=  fetchCrossref(data.bibentry.URL,data.page.fileSlug,"url");
-    }
-    return res;
-  },
-  dummy0: (data) =>{
-    let temp=data.page.url;
-        if (data.crossref &&data.crossref.message){
-    for (i in data.crossref.message.events){
-      let eventm=data.crossref.message.events[i];
-      if  (eventm.source_id =="twitter"){
-        let tweet=eventm.subj.title.replace("Tweet ", "");
-        if(! ["1274995148934561793","1275912806257344515","1123337833714835456","1394392626598645766"].includes(tweet))
-         temp=tweettomention(tweet,  "https://montevil.org"+data.page.url, "https://www.crossref.org/") ;
-      }
-      if  (eventm.source_id =="wikipedia"){
-        
-         temp=wikiMention(eventm,   "https://montevil.org"+data.page.url, "https://www.crossref.org/") ;
-      }
-    }}
-    return temp;
-  },
   authors: {
     text: (data) => textAuthors(data),
     html: (data) => htmlAuthors(data),
@@ -409,16 +425,45 @@ module.exports = {
       ) {temp=temp+1;
           res =res.concat( data.scholar[entry]);        
       }
-    }
-     // if ( temp>1 ){console.log(data.title)} 
-      
-    }
-   
+    }      
+    }   
     return res;
   },
-   tweetsMentions: (data) => {
+
+  allMentions: (data) =>{
+    if (!data.computeMentions) {
+      return [];
+    }
+    // get crossref data
+
+    let crossref=undefined
+    if (data.bibentry.DOI) {
+        crossref=fetchCrossref(data.bibentry.DOI, data.page.fileSlug,"doi");
+    } else {
+        if (data.bibentry.URL) 
+            crossref=fetchCrossref(data.bibentry.URL,data.page.fileSlug,"url");
+    }
+    
+    // get crossref mentions
+    
+    let temp=data.page.url;
+    if (crossref && crossref.message){
+        for (i in crossref.message.events){
+            let eventm=crossref.message.events[i];
+            if  (eventm.source_id =="twitter"){
+                let tweet=eventm.subj.title.replace("Tweet ", "");
+                if(! ["1274995148934561793","1275912806257344515","1123337833714835456","1394392626598645766"].includes(tweet))
+                    temp=tweettomention(tweet,  "https://montevil.org"+data.page.url, "https://www.crossref.org/") ;
+            }
+            if  (eventm.source_id =="wikipedia"){
+                temp=wikiMention(eventm,   "https://montevil.org"+data.page.url, "https://www.crossref.org/") ;
+            }
+        }
+    }
+    
+    // Get Plum, manual, and talk tweets 
+    
      let res=[];
-     
      if (data.bibentry &&data.bibentry.DOI && plumCache[data.bibentry.DOI] ){
           res=res.concat(plumCache[data.bibentry.DOI]);
      }
@@ -432,8 +477,39 @@ module.exports = {
     for (i in res){
         let temp=tweettomention(res[i],  "https://montevil.org"+data.page.url, "none") ;
     }
-    return res;
+    
+    // mentions for this url
+    let urlsList = [encodeURI("https://montevil.org"+data.page.url).toLowerCase()];
+    return extWebmentions.concat(Object.values(cachedTweets)).concat(Object.values(cachedWiki))
+      .filter((entry) => {
+        return urlsList.includes(encodeURI(entry['wm-target'].toLowerCase()));
+      })
+      .filter((entry) => !isSelf(entry))
+      .sort(
+        (a, b) =>
+          parseInt(b.published.replace(new RegExp('\\' + '-', 'gi'), '')) -
+          parseInt(a.published.replace(new RegExp('\\' + '-', 'gi'), ''))
+      );
   },
+  citationSize: (data)=>{
+      let citationSize=0;
+     if  (data.gsentry && data.gsentry[1] &&data.gsentry[1].length >0)
+          citationSize =data.gsentry[1].length;
+  
+     return citationSize
+  },
+  allMentionsSize: (data)=>{
+    return data.allMentions.length+data.citationSize;
+  },
+   likes: (data)=>{return webmentionsByType(data.allMentions,'like-of') },
+   likesSize: (data) =>{return data.likes.length},
+   reposts: (data)=>{return webmentionsByType(data.allMentions,'repost-of') },
+   repostsSize: (data) =>{return data.reposts.length},
+   replies: (data)=>{return webmentionsByType(data.allMentions,'in-reply-of') },
+   repliesSize: (data)=>{return data.replies.length},
+   mentions: (data)=>{return webmentionsByType(data.allMentions,'mention-of') },
+   mentionsSize: (data) =>{return data.mentions.length},
+
   bibentryconf: (data) => {
     var res = {};
     if (data.entry) {
