@@ -386,4 +386,7 @@ margin-top: 0;}
 .maketitle {
   --flow-space: var(--gap-xl);
 }
+.mentionsHeader{
+  --flow-space: var(--gap-m);
+}
 .abstract>p{--flow-space: var(--gap-m);}
