@@ -1741,9 +1741,9 @@
   },
   "y-zhang": {
     "shortname": "Y Zhang",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/usZp7zIAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=usZp7zIAAAAJ",
+    "gsid": "usZp7zIAAAAJ"
   },
   "le-marshall": {
     "shortname": "LE Marshall",
@@ -5338,5 +5338,17 @@
     "gsid": "Yqx4ARoAAAAJ",
     "fullName": "Osimani",
     "affiliation": "Associate Professor, Univpm, Ancona"
+  },
+  "a-guenin-carlut": {
+    "shortname": "A Guénin–Carlut",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": ""
+  },
+  "p-pontecorvi": {
+    "shortname": "P Pontecorvi",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": ""
   }
 }
