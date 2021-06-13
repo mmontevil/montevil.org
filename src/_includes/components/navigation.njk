@@ -1,18 +1,29 @@
 <nav class="navigation" >
   <div class="wrap">
-    {# <span class="signature"><span title="Maël">M</span><span title=" Montévil">M</span></span> #}
-    <ul class="menu" >
+    {# <span class="signature"><span title="Maël">M</span><span title=" Montévil">M</span></span> #}<ul class="menu" >
+   
       <li class="navigation__home{% if page.url == '/' %} current" aria-current="page{% endif %}">
         <a href="/">Home</a>
       </li>
+         {#</ul>    <li class="tools__search navigation_archives{% if 'archives' in page.url %} current" aria-current="page{% endif %}">
+        <a href="/all/archives/">{%- icon "archives", "archives" -%} Archives</a>
+      </li>
+     <li>#}
+      <li class="tools__search navigation__archives{% if 'archives' in page.url %} current" aria-current="page{% endif %}">
+     <a href="/all/archives/">{%- icon "archives", "archives" -%} Archives</a>
+     </li>    
+     <li class="navigation__{{ type }}">
+     <details><summary><ul class="menu" >
+<li class="navigation__{{ type }}"><span class="cat">Categories</span></li>
+     </ul>
+     </summary>
+     
+      <ul class="submenu">
       {% for type in[
       'publications',
-        'posts',
-        'links',
         'talks',
-        'tags',
-        'feeds',
-        'about'
+        'posts',
+        'links'
       ] %}
       
        {% if type in [
@@ -25,10 +36,46 @@
         {% endif %}
         
         <li class="navigation__{{ type }}{% if url in page.url %} current" aria-current="page{% endif %}">
-          <a href="{{ url }}">{{ type |title}}</a>
+          <a href="{{ url }}">
+          {% if type == "tags" %}{% icon "tags", "tag" %}{%- endif -%}
+           {% if type == "feeds" %}{% icon "rss", "rss" %}{%- endif -%}
+           {% if type == "about" %}{% icon "user", "about" %}{%- endif -%}{#   {% if type !== "feeds" and type !== "tags" %} #}{{- type |title -}}
+        {#  {% endif %}#}
+          </a>
         </li>
       {% endfor %}
+     </ul></details></li>
      
+      {% for type in [
+        'tags',
+        'feeds',
+        'about'
+      ] %}
+          <li class="navigation__{{ type }}{% if url in page.url %} current" aria-current="page{% endif %}">
+          <a href="{{ url }}">
+          {% if type == "tags" %}{% icon "tags", "tag" %}{%- endif -%}
+           {% if type == "feeds" %}{% icon "rss", "rss" %}{%- endif -%}
+           {% if type == "about" %}{% icon "user", "about" %}{%- endif -%}{{- type |title -}}
+        
+          </a></li>
+       {% endfor %}
+     
+     
+    {# </li>
+           {% for type in [
+        'tags',
+        'feeds',
+        'about'
+      ] %}
+          <li class="navigation__{{ type }}{% if url in page.url %} current" aria-current="page{% endif %}">
+          <a href="{{ url }}">
+          {% if type == "tags" %}{% icon "tags", "tag" %}{%- endif -%}
+           {% if type == "feeds" %}{% icon "rss", "rss" %}{%- endif -%}
+           {% if type == "about" %}{% icon "user", "about" %}{%- endif -%}{{- type |title -}}
+        
+          </a>
+       {% endfor %}
+       #}
     </ul>
     <ul class="tools" >    {% if upnav and not noToc%}
         <li class="navigation__{{ type }}{% if url in page.url %} current" aria-current="page{% endif %}">
@@ -36,9 +83,7 @@
           <a class="onclickbutton"  id="navToc"><span class="abssvg folded">{% icon "chevronRight", "Link" %}</span><span class="abssvg unfolded">{%- icon "chevronDown", "Link" -%}</span><span class="normalStyle">ToC</span></a>
         </li>
         {% endif %}
-      <li class="tools__search navigation_archives{% if 'archives' in page.url %} current" aria-current="page{% endif %}">
-        <a href="/all/archives/">{% icon "search", "Search" %} Archives</a>
-      </li>
+
       <li class="tools__search">
       <div class="theme-switch-wrapper">
     <label class=" tools__search  theme-switch" for="checkbox" title="night mode">

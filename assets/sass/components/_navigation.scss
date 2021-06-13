@@ -22,15 +22,24 @@
   ul {
     margin: 0;
     padding: 0;
-    display: flex;
+    display: inline-flex;
     list-style-type: none;
     justify-content: space-between;
-    gap: var(--gap-3xs);
+    gap: var(--gap-xs);
   }
-
+  .submenu{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.3em;
+  }
+  details ul {list-style-position: inside;
+  margin-left: -0.4em;
+  }
   li {
     margin: 0;
     padding: 0;
+    &.navigation__archives,
+    &.navigation__home,
     &.navigation__tags,
     &.navigation__publications,
     &.navigation__posts,
@@ -45,16 +54,26 @@
       }
     }
     &.navigation__tags {
-      @media (min-width: 20em) {
+      @media (min-width: 46em) {
         display: block;
       }
     }
     &.navigation__feeds {
-      @media (min-width: 25em) {
+      @media (min-width: 40em) {
         display: block;
       }
     }
-    &.navigation__publications {
+       &.navigation__home {
+      @media (min-width: 35em) {
+        display: block;
+      }
+    }
+    &.navigation__archives {
+      @media (min-width: 30em) {
+        display: block;
+      }
+    }
+   /* &.navigation__publications {
       @media (min-width: 32em) {
         display: block;
       }
@@ -63,8 +82,26 @@
       @media (min-width: 43em) {
         display: block;
       }
+    }*/
+   &.navigation__publications {
+      
+        display: block;
+      
     }
-    a,
+    &.navigation__talks {
+        display: block;
+      
+    }
+       &.navigation__posts {
+        display: block;
+      
+    }
+    &.navigation__links {
+        display: block;
+      
+    }
+    
+    a, .cat,
     a:link,
     a:visited {
       display: inline-block;

@@ -1,6 +1,13 @@
 module.exports = {
   icon: (id, label) => {
     let svgclass = 'svgnofill';
+    if (id =='rss' ||
+     id =='user' ||
+      id =='thumb'||
+       id =='date'
+    ){
+      svgclass="svgnofill svgup";
+    }
     if (
       id == 'pdf' ||
       id == 'bib' ||

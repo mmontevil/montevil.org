@@ -764,7 +764,9 @@ article .subtitleHead {
   stroke-linejoin: round;
   fill: none;
 }
-
+.svgup {
+    vertical-align: text-top;
+}
 .svgfill {
   vertical-align: middle;
   font-size: 1em;

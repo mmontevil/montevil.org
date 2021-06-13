@@ -13,6 +13,7 @@ const ICONS_FOLDERS = {
 // icon filename + title for accessibility
 const ICONS_LIST = {
   feather: {
+      layers: { name: 'archives', title: 'archives' },
     mail: { name: 'mail', title: 'mail' },
     'message-square': { name: 'message', title: 'message' },
     'book-open': { name: 'book', title: 'book' },
@@ -26,6 +27,7 @@ const ICONS_LIST = {
     'map-pin': { name: 'location', title: 'Location' },
     map: { name: 'map', title: 'event' },
     'message-circle': { name: 'comments', title: 'Webmention' },
+    rss: { name: 'rss', title: 'rss' },
     search: { title: 'Search' },
     tag: { name: 'tags', title: 'Tag' },
     twitter: { title: 'Twitter' },
