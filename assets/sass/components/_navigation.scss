@@ -18,7 +18,44 @@
     flex-wrap: nowrap;
     justify-content: space-between;
   }
-
+  details {
+   //background-color: hsla(0,0%,var(--color-grad),.55);
+      background-repeat: no-repeat;
+    // based on https://larsenwork.com/easing-gradients/
+    /*  background-image: linear-gradient(
+         to left,
+         hsla(0, 0%, 100%, 0),
+         cubic-bezier(0.4, 0, 0, 1),
+         hsla(0, 0%, 100%, 1)
+       );*/
+    background-image: 
+    /*linear-gradient(
+      to top,
+      hsla(0, 0%, var(--color-grad), 0) 0%,
+      hsla(0, 0%, var(--color-grad), 0.104) 1%,
+        hsla(0, 0%, var(--color-grad), 0.25) 3%,                                 
+      hsla(0, 0%, var(--color-grad), 0.55) 5%,
+      hsla(0, 0%, var(--color-grad), 0.648) 33.1%,
+      hsla(0, 0%, var(--color-grad), 0.741) 38.5%,
+      hsla(0, 0%, var(--color-grad), 0.825) 45.7%,
+      hsla(0, 0%, var(--color-grad), 0.896) 55%,
+      hsla(0, 0%, var(--color-grad), 0.951) 66.9%,
+      hsla(0, 0%, var(--color-grad), 0.987) 95%,
+      hsl(0, 0%, var(--color-grad)) 100%),*/
+      linear-gradient(to left,
+      hsla(0, 0%, var(--color-grad), 0) 0%,
+      hsla(0, 0%, var(--color-grad), 0.1) 30%,
+        hsla(0, 0%, var(--color-grad), 0.2) 40%,                                 
+      hsla(0, 0%, var(--color-grad), 0.35) 50%,
+      hsla(0, 0%, var(--color-grad), 0.6) 60%,
+      hsla(0, 0%, var(--color-grad), 0.6) 95%,
+      hsla(0, 0%, var(--color-grad), 0.3) 97%,
+      hsla(0, 0%, var(--color-grad), 0.2) 98%,
+      hsla(0, 0%, var(--color-grad), 0.1) 99%,
+      hsl(0, 0%, var(--color-grad),0) 100%);
+    left: 0;
+  
+  }
   ul {
     margin: 0;
     padding: 0;
@@ -32,8 +69,10 @@
     flex-direction: column;
     padding-left: 0.3em;
   }
-  details ul {list-style-position: inside;
-  margin-left: -0.4em;
+  details ul {
+    list-style-position: inside;
+    margin-left: -0.4em;
+    //background-color: hsla(0,0%,var(--color-grad),.013);
   }
   li {
     margin: 0;

@@ -37,10 +37,9 @@
         
         <li class="navigation__{{ type }}{% if url in page.url %} current" aria-current="page{% endif %}">
           <a href="{{ url }}">
-          {% if type == "tags" %}{% icon "tags", "tag" %}{%- endif -%}
-           {% if type == "feeds" %}{% icon "rss", "rss" %}{%- endif -%}
-           {% if type == "about" %}{% icon "user", "about" %}{%- endif -%}{#   {% if type !== "feeds" and type !== "tags" %} #}{{- type |title -}}
-        {#  {% endif %}#}
+      
+           {{- type |title -}}
+        
           </a>
         </li>
       {% endfor %}
@@ -51,6 +50,7 @@
         'feeds',
         'about'
       ] %}
+      {% set url = '/' + type + '/' %}
           <li class="navigation__{{ type }}{% if url in page.url %} current" aria-current="page{% endif %}">
           <a href="{{ url }}">
           {% if type == "tags" %}{% icon "tags", "tag" %}{%- endif -%}
