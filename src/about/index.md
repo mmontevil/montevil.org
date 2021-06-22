@@ -13,7 +13,7 @@ I am a *theoretical biologist* working at the crossroads of experimental biology
 ::: 
 
  # Key concepts:
- <a href="/tags/historicity">historicity</a>,  <a href="/tags/organization">organization</a> as <a href="/tags/closure">closure</a> of <a href="/tags/constraints">constraints</a>, <a href="/tags/anti-entropy">anti-entropy</a>, <a href="/tags/symmetry">symmetry changes</a>, <a href="/tags/measurement">biological measurement</a>, <a href="/tags/disruption">disruption</a>
+ <a href="/tags/historicity">historicity</a>,  <a href="/tags/organization">organization</a> as <a href="/tags/closure">closure</a> of <a href="/tags/constraints">constraints</a>, <a href="/tags/anti-entropy">anti-entropy</a>, <a href="/tags/symmetries">symmetry changes</a>, <a href="/tags/measurement">biological measurement</a>, <a href="/tags/disruption">disruption</a>
 
  
 # Basic informations
