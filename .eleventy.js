@@ -4,6 +4,8 @@ const config = require('./pack11ty.config.js');
 const { promises: fs } = require('fs');
 const syncFs = require('fs');
 const slugify = require('./src/_utils/slugify');
+//import slugify from '@sindresorhus/slugify';
+
 const { writeToCache, readFromCache } = require('./src/_utils/cache');
 
 cachedTweets = readFromCache('_cache/tweetsMentions.json', (alt = {}));

@@ -1,7 +1,7 @@
-//const slugify = require('@sindresorhus/slugify');
+const slugify = require('@sindresorhus/slugify');
 
 //import slugify from '@sindresorhus/slugify';
-const slugify = require('slugify');
+//const slugify = require('slugify');
 
 const memoize = require('fast-memoize');
 // slugify is called 1000s of times, let's memoize it
