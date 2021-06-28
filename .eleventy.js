@@ -133,11 +133,11 @@ module.exports = function (eleventyConfig) {
 
   // const slugify = require('@sindresorhus/slugify');
   const markdownItAnchor = require('markdown-it-anchor');
-  /*
+
     const markdownItAnchorOptions = {
     permalink: markdownItAnchor.permalink.ariaHidden({
       assistiveText: title => `Permalink to “${title}”`,
-      placement: 'before',
+      placement: 'after',
       visuallyHiddenClass: 'visually-hidden',
         class: 'deeplink',
     symbol:
@@ -148,8 +148,8 @@ module.exports = function (eleventyConfig) {
       return slugify(s);
     },
   };
-  */
-  
+ 
+    /*
   const markdownItAnchorOptions = {
     permalink: true,
     permalinkClass: 'deeplink',
@@ -159,7 +159,7 @@ module.exports = function (eleventyConfig) {
     slugify: function (s) {
       return slugify(s);
     },
-  };
+  }; */
   
 
   const markdownItAttributes = require('markdown-it-attrs');

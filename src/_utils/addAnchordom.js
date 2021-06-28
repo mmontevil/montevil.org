@@ -9,6 +9,7 @@ function addAnchordom(html) {
     const link = document.createElement('a');
     link.classList.add('deeplink');
     link.setAttribute('href', '#' + titleId);
+     link.setAttribute('aria-hidden', 'true');
     link.innerHTML =
       '<svg class="icon" role="img" focusable="false" aria-label="Anchor"><use xlink:href="#symbol-anchor" /></svg>';
     title.appendChild(link);
