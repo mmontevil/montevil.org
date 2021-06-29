@@ -4,11 +4,12 @@
   //display: inline-block;
   margin: var(--gap-4xs);
   margin-bottom: var(--gap-3xs);
+  padding-top: 0;
 
-  padding-top: 0em;
+  color: var(--color-link);
+
   border: 1px solid var(--color-primary-lighter-5);
   border-radius: var(--gap-xs);
-  color: var(--color-link);
   // background-color: var(--color-primary-lighter-8);
   box-shadow: 0 1px 2px var(--soft-shadow), 0 2px 4px var(--soft-shadow),
     0 4px 8px var(--soft-shadow);
@@ -16,13 +17,16 @@
   &:link, &:visited{padding: var(--gap-5xs) var(--gap-xs);}
   &:hover,
   &:focus {
-    background-color: var(--color-link-hover-bg);
     color: var(--color-link-hover);
+
     border: 1px solid var(--color-primary-lighter-5);
+
+    background-color: var(--color-link-hover-bg);
   }
   &:active {
-    background-color: var(--color-secondary);
     color: var(--color-link-hover);
+
+    background-color: var(--color-secondary);
   }
 }
 a.buttonlink.buttonemph {&:link, &:visited{background-color: var(--color-emph-bg);}
@@ -213,8 +217,8 @@ a.buttonlink.buttonemph {&:link, &:visited{background-color: var(--color-emph-bg
 
 .inlinemeta{padding: 0;}
 .paragraphHead2{
-  font-weight: bold;
   color: var(--color-primary);
+  font-weight: bold;
 }
 
 h4, h5{
@@ -224,40 +228,44 @@ h4, h5{
 
 
 .citation > summary {
-
-  //background-color: #fdb;
-  cursor: pointer;
+  width: max-content;
   padding: var(--gap-5xs) var(--gap-xs);
+
+  color: var(--color-link);
+
     border: 1px solid var(--color-primary-lighter-5);
   border-radius: var(--gap-xs);
-  color: var(--color-link);
   // background-color: var(--color-primary-lighter-8);
   box-shadow: 0 1px 2px var(--soft-shadow), 0 2px 4px var(--soft-shadow),
     0 4px 8px var(--soft-shadow);
+
+  //background-color: #fdb;
+  cursor: pointer;
     &:hover{
-    background-color: var(--color-link-hover-bg);
     color: var(--color-link-hover);
+
     border: 1px solid var(--color-primary-lighter-5);
+
+    background-color: var(--color-link-hover-bg);
   }
   h2,h3{font-size: var(--font-size-xxl);}
   &:hover h3,&:hover h2{
     color: var(--color-link-hover);
     
   }
-  width: max-content;
 
 }
 .citation[open]> summary{ border-radius: var(--gap-xs) var(--gap-xs) 0 0;}
 .citation[open]{width: 100%;}
 
 .citation > div {
+  min-width: 9em;
+  max-width: max-content;
+  margin-top: 0;
+  padding: var(--gap-s) var(--gap-xs);
  // border: 2px solid #fdb;
      border: 1px solid var(--color-primary-lighter-5);
   border-radius: 0   var(--gap-xs)  var(--gap-xs) var(--gap-xs);
-  margin-top: 0;
-  padding: var(--gap-s) var(--gap-xs);
-  max-width: max-content;
-  min-width: 9em;
 }
 
 .citation > .abstract {
@@ -265,20 +273,20 @@ h4, h5{
   border-radius: 0  0 var(--gap-xs) var(--gap-xs);
 }
 
-.handle{justify-content: space-between;
+.handle{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;justify-content: space-between;
 &>*{margin-top: var(--gap-m);}
 }
 .citation > .abstract{max-width: 32em;}
 
 details .abstract {
-  margin-left: auto;
     margin-right: auto;
+  margin-left: auto;
 }
-.abstract> summary{max-width: 32em;  
-  margin-left: auto;
-    margin-right: auto;
-width: auto;
+.abstract> summary{
+width: auto;max-width: 32em;
 margin-top: var(--gap-m);
+    margin-right: auto;  
+  margin-left: auto;
 }

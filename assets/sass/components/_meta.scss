@@ -1,25 +1,26 @@
 @use '../global/colors';
 
 .meta {
+display: block;
   // because cards lists are lists in Algolia lists but not elsewhere,
   // and Firefox applies a 0 start and end margin to ul in an ul/ol
   margin-bottom: 0;
-
   padding: 0;
-  color: var(--color-meta);
 
-  font-family: var(--font-family-sans-serif);
+  color: var(--color-meta);
   font-size: var(--font-size-s);
-display: block;
+  font-family: var(--font-family-sans-serif);
 /*  display: flex;
   flex-wrap: wrap;
 align-items: flex-end;*/
   list-style-type: none;
+
   overflow: visible;
   
 }
 .card hr{--flow-space: var(--gap-xxs);
   margin-bottom: var(--gap-s);
+
   border: 0;
   	border-top: 1px solid var(--color-grey);
 
@@ -28,9 +29,9 @@ hr+.meta{
   --flow-space: var(--gap-3xs);
 }*/
 .meta__item {
-  display: inline;
 //  margin-left: 1.5em;
   --flow-space: var(--gap-3xs);
+  display: inline;
 
   &:not(:last-child) {
     margin-right: var(--gap-m);
@@ -76,9 +77,10 @@ hr+.meta{
   }
   .reaction__author__photo2 {height: 48px;}
   figcaption.authorCaption{
+    margin-top: 0;
+
     color: var(--color-meta);
-    font-size: var(--font-size-s);
-    margin-top: 0;}
+    font-size: var(--font-size-s);}
 }
 .publink2, .meta__date,.nobreak, .publinklang2{
   white-space: nowrap;
@@ -87,17 +89,20 @@ hr+.meta{
 
 
 
-.publink2 { 
+.publink2 {
+  padding-right: var(--gap-3xs);
+
+  color: var(--color-art); 
   a:link,a:visited{
   color: currentColor;
   text-decoration-color: currentColor;
   }
   svg {stroke: currentColor;}
-  padding-right: var(--gap-3xs);
-  color: var(--color-art);
     a:hover,
-  a:focus {background-color:  var(--color-art);
+  a:focus {
     color: var(--color-link-hover);
+
+background-color:  var(--color-art);
   }
 a:active {
     color: #fff;
@@ -109,35 +114,35 @@ a:active {
 }
 
 .publinkchap2 {
+  color: var(--color-chap);
   a:hover,
   a:focus {background-color: var(--color-chap);
   }
-  color: var(--color-chap);
 }
 
-.publinkBook2 {  a:hover,
+.publinkBook2 {
+  color: var(--color-book);  a:hover,
   a:focus {background-color: var(--color-book);
   }
-  color: var(--color-book);
 }
-.publinkSoftware2 { a:hover,
+.publinkSoftware2 {
+  color: var(--color-soft); a:hover,
   a:focus {background-color: var(--color-soft);
   }
-  color: var(--color-soft);
 }
-.publinkCommentary2 {a:hover,
+.publinkCommentary2 {
+  color: var(--color-com);a:hover,
   a:focus {background-color: var(--color-com);
   }
-  color: var(--color-com);
 }
-.publinkData2 {a:hover,
+.publinkData2 {
+     color: var(--color-data);a:hover,
   a:focus {background-color: var(--color-data);
   }
-     color: var(--color-data);
 }
 
-.pubPeerReview2 {a:hover,
+.pubPeerReview2 {
+  color: var(--color-rev);a:hover,
   a:focus {background-color: var(--color-rev);
   }
-  color: var(--color-rev);
 }

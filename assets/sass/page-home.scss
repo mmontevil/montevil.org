@@ -4,11 +4,11 @@
 .welcome {
   --flow-space: 0;
 
+  margin-top: var(--gap-xl);
+  margin-bottom: 0;
+
   @extend %clearfix;
   @extend %flow;
-
-  margin-top: var(--gap-xl);
-  margin-bottom: 0vw;
 }
 
 .welcome__name {
@@ -31,22 +31,24 @@
 
 
 .mousewrap{
-  overflow: hidden;
   margin-bottom: calc(-1*var(--gap-l) - var(--gap-xxs));
 
+  overflow: hidden;
+
 }
-svg.mouse { 
+svg.mouse {
+   margin-bottom: -0.1em; 
+
   font-size: 2em;
-   margin-bottom: -0.1em;
    
    
   transform : translateX(-5em) ;
 
     animation-name            : displaceContent;
     animation-duration        : 30s;
+    animation-timing-function: linear;
     animation-iteration-count : infinite;
     animation-fill-mode       : both;
-    animation-timing-function: linear;
 }
 svg.cheese {
   margin-right: -0.6em;
@@ -55,44 +57,46 @@ svg.cheese {
 
     animation-name            : displaceContent2;
     animation-duration        : 30s;
+    animation-timing-function: linear;
     animation-iteration-count : infinite;
     animation-fill-mode       : both;
-    animation-timing-function: linear;
 }
 
 
 
 @keyframes displaceContent {
-    15% { transform :  translateX(-5em) }
+    15% { transform :  translateX(-5em); }
     30%   { transform : translateX(100vw);
     }
-    65%  {transform :  translateX(100vw) rotateX(180deg) rotateZ(180deg)}
-     85% { transform : translateX(-5em)  rotateX(180deg) rotateZ(180deg)}
+    65%  {transform :  translateX(100vw) rotateX(180deg) rotateZ(180deg);}
+     85% { transform : translateX(-5em)  rotateX(180deg) rotateZ(180deg);}
     /* slide down to make room for advertisements */
 }
 @keyframes displaceContent2 {
-    15% { transform :  translateX(-5em);
-      opacity: 0;
+    15% {
+      opacity: 0; transform :  translateX(-5em);
     }
-    30%   { transform : translateX(100vw);
-      opacity: 0;
+    30%   {
+      opacity: 0; transform : translateX(100vw);
     }
-    65%  {transform : translateX(100vw) rotateX(180deg) rotateZ(180deg) scale(0.55,0.55);
-      opacity: 1;
+    65%  {
+      opacity: 1;transform : translateX(100vw) rotateX(180deg) rotateZ(180deg) scale(0.55,0.55);
     }
-     85% { transform :  translateX(-5em)  rotateX(180deg) rotateZ(180deg) scale(0.55,0.55);
-       opacity: 1;
+     85% {
+       opacity: 1; transform :  translateX(-5em)  rotateX(180deg) rotateZ(180deg) scale(0.55,0.55);
     }
     /* slide down to make room for advertisements */
 }
 .fade-2 {   
   --flow-space: var(--gap-l);
+ height: 2px;
   //border-width: 0 0 1px;
   //  border-style: solid;
-  color: var(--color-primary);
- background-image: linear-gradient(to right, rgba(var(--color-primary-rgb), 0), rgba(var(--color-primary-rgb), 1),rgba(var(--color-primary-rgb), 0)); 
+  color: var(--color-primary); 
+
  border: 0;
- height: 2px;
+
+ background-image: linear-gradient(to right, rgba(var(--color-primary-rgb), 0), rgba(var(--color-primary-rgb), 1),rgba(var(--color-primary-rgb), 0));
 
      // box-shadow: 0 0 10px 1px black;
 }

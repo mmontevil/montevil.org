@@ -4,38 +4,42 @@
   padding: 0 !important;
   &::before {
     left: calc(-1*var(--gap-xs)) !important;
+
     margin-left: calc(-1*var(--gap-5xs));
     @media (max-width: 40rem) {
-      left: 0em !important;
-      float: left;
+      position: relative !important;
+      left: 0 !important;
+
       display: inline-block;
+      float: left;
+
       width: var(--gap-xs);
       height: var(--gap-s);
       margin-bottom: calc(-1*var(--gap-3xs));
-      position: relative !important;
       padding-right: var(--gap-xs);
     }
   }
 }
 blockquote:not(.tweet-card) {
-  @extend %flow;
+
+  position: relative;
 
   //  margin-left: 0;
   // margin-right: 0;
 
   min-height: var(--gap-xxl);
 
+  color: var(--color-primary);
   font-size: var(--font-size-l);
   font-style: italic;
-  color: var(--color-primary);
-
-  position: relative;
+  @extend %flow;
 
   &::before {
     position: absolute;
-    left: 0;
     top: 0;
+    left: 0;
     content: functions.unicode('201C');
+
     color: var(--color-primary-lighter-2);
     font-size: calc(4em + 5vw);
     font-style: normal;
@@ -44,8 +48,9 @@ blockquote:not(.tweet-card) {
   }
 
   blockquote {
-    background-color: var(--color-primary-lighter-7);
     font-style: normal;
+
+    background-color: var(--color-primary-lighter-7);
   }
 }
 //.epigraph > p:first-child { @extend blockquote; padding: 0;}
@@ -55,13 +60,14 @@ blockquote:not(.tweet-card) {
   @extend blockquote;
 }
 .episource {
-  font-size: var(--font-size-m);
-  margin-top: calc(0.5ex / 0.35);
   --flow-space: calc(0.5ex / 0.35);
+  margin-top: calc(0.5ex / 0.35);
+  margin-left: 15%;
+
   color: var(--color-primary-darker-5);
+  font-size: var(--font-size-m);
   font-style: normal;
   text-align: right;
-  margin-left: 15%;
 }
 
 blockquote:not(.tweet-card) {

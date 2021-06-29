@@ -1,67 +1,79 @@
 /* The Overlay (background) */
 .overlay {
+  --flow-space: 0;
+  position: fixed; /* Stay in place */
+  top: 0;
+  left: 0;
+  z-index: 22; /* Sit on top */
+
+  width: 100%;
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 0;
-  width: 100%;
-  position: fixed; /* Stay in place */
-  z-index: 22; /* Sit on top */
-  left: 0;
-  top: 0;
-  background-color: var(--color-primary-lighter-7);
+
   background: radial-gradient(
     circle,
     var(--color-link-hover) 0%,
     var(--color-primary-lighter-8) 55%,
     var(--color-primary-lighter-7) 100%
   );
+  background-color: var(--color-primary-lighter-7);
+
   overflow-x: hidden; /* Disable horizontal scroll */
-  transition-property: all;
-  transition: 0.35s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
   overflow-y: scroll;
+
+  transition: 0.35s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  transition-property: all;
   overscroll-behavior: contain;
-  --flow-space: 0;
 }
 
 /* Position the content inside the overlay */
 .overlay-content {
   scroll-margin-top: 5rem;
+
   position: relative;
   top: var(--gap-l); /* 25% from the top */
+
   width: 100%; /* 100% width */
   margin-top: 3em; /* 30px top margin to avoid conflict with the close button on smaller screens */
   margin-bottom: 5em;
 }
 
 .buttonInToc {
+  margin-bottom: calc(-1*var(--gap-xs));
   svg {
-    vertical-align: middle;
     font-size: var(--gap-m);
+    vertical-align: middle;
+
     fill: currentColor;
   }
-  margin-bottom: calc(-1*var(--gap-xs));
 }
 
 .onclickbutton {
+  padding-top: 0;
+
+  color: var(--color-link);
+
+  transition: transform, color 0.2s;
   svg {
-    vertical-align: middle;
     font-size: var(--gap-m);
+    vertical-align: middle;
+
+    fill: currentColor;
     stroke: currentColor;
     stroke-width: 2px;
     stroke-linecap: round;
     stroke-linejoin: round;
-    fill: currentColor;
   }
-  padding-top: 0em;
-  color: var(--color-link);
-  transition: transform, color 0.2s;
   &:hover,
   &:focus {
-    background-color: var(--color-link-hover-bg);
     color: var(--color-link-hover);
+
+    background-color: var(--color-link-hover-bg);
   }
   &:active {
-    background-color: var(--color-secondary);
     color: var(--color-link-hover);
+
+    background-color: var(--color-secondary);
   }
   .unfolded {
     display: none;
@@ -78,54 +90,57 @@
 }
 
 .legibilityWidth .titleOverToc {
-  padding-left: 0em;
-  text-indent: 0;
-  font-size: var(--font-size-xxxl);
-  font-weight: 600;
-  line-height: 1.3;
   margin-bottom: 1em;
+  padding-left: 0;
+
+  font-weight: 600;
+  font-size: var(--font-size-xxxl);
+  line-height: 1.3;
+  text-indent: 0;
 }
 
 .autotoc a {
   position: relative;
-  line-height: 1.3;
+
   color: var(--color-link);
+  line-height: 1.3;
   &:hover {
     color: var(--color-link-hover);
   }
 }
 
 .autotoc  .tocLevel1{
+  color: var(--color-primary-darker-2);
+  font-weight: 700;
   //font-variant: small-caps;
   font-size: var(--font-size-l);
-  font-weight: 700;
-  color: var(--color-primary-darker-2);
 }
 .autotoc .tocLevel2 {
-  font-size: var(--font-size-l);
-  font-weight: 500;
   color: var(--color-primary);
+  font-weight: 500;
+  font-size: var(--font-size-l);
 }
 .autotoc .tocLevel3 {
-  font-size: var(--font-size-m);
   color: var(--color-primary-lighter-2);
   font-weight: 400;
+  font-size: var(--font-size-m);
 }
 .autotoc .tocLevel4 {
-  font-style: italic;
   color: var(--color-primary-lighter-2);
-  font-size: var(--font-size-s);
   font-weight: 400;
+  font-size: var(--font-size-s);
+  font-style: italic;
 }
 
 .autotoc {
   ol {
     //   --flow-space: 0.5em;
-    padding: 0em;
+    padding: 0;
   }
   li {
-    text-indent: calc(-1*var(--gap-m));
     padding-left: var(--gap-m);
+
+    text-indent: calc(-1*var(--gap-m));
   }
   li {
     --flow-space: var(--gap-xs);
@@ -142,16 +157,18 @@
 */
 
 .tocCenter {
-  li {list-style-type: none;
+  li {
     --flow-space: var(--gap-xs);
     // margin-bottom : 0.5em!important;
     margin-left: var(--gap-xs);
+
+list-style-type: none;
 }
    
   .tocLevel2{
       font-style: italic;
   }
-   .tocLevel2:before {
+   .tocLevel2::before {
       content: '· ';
     }
    .tocLevel2:first-child{--flow-space: var(--gap-xs);}
@@ -171,8 +188,10 @@
     flex-wrap: wrap;
   }
   li,
-  li:first-child {list-style-type: none;
+  li:first-child {
     --flow-space: var(--gap-xs);
     margin-left: var(--gap-m);
+
+list-style-type: none;
   }
 }

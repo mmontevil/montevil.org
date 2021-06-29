@@ -1,17 +1,20 @@
 .navigation {
   position: sticky;
-  z-index: 23;
   left: 0;
-  width: min(100%, 100vw);
-  border-top: solid var(--border-width) var(--color-primary-lighter-2);
+  z-index: 23;
 
+  width: min(100%, 100vw);
+  padding: var(--gap-xxs) 0 var(--gap-xl);
+
+  font-size: var(--font-size-m);
   font-family: var(--font-family-sans-serif);
   font-variant: small-caps;
-  font-size: var(--font-size-m);
-  padding: var(--gap-xxs) 0 var(--gap-xl);
+
+  border-top: solid var(--border-width) var(--color-primary-lighter-2);
+
   overflow-x: auto;
-  -webkit-overflow-scrolling: auto;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: auto;
   .wrap {
     display: flex;
     flex-direction: row;
@@ -19,8 +22,7 @@
     justify-content: space-between;
   }
   details {
-   //background-color: hsla(0,0%,var(--color-grad),.55);
-      background-repeat: no-repeat;
+    left: 0;
     // based on https://larsenwork.com/easing-gradients/
     /*  background-image: linear-gradient(
          to left,
@@ -53,25 +55,30 @@
       hsla(0, 0%, var(--color-grad), 0.2) 98%,
       hsla(0, 0%, var(--color-grad), 0.1) 99%,
       hsl(0, 0%, var(--color-grad),0) 100%);
-    left: 0;
+   //background-color: hsla(0,0%,var(--color-grad),.55);
+      background-repeat: no-repeat;
   
   }
   ul {
+    display: inline-flex;
+    gap: var(--gap-xs);
+    justify-content: space-between;
+
     margin: 0;
     padding: 0;
-    display: inline-flex;
+
     list-style-type: none;
-    justify-content: space-between;
-    gap: var(--gap-xs);
   }
   .submenu{
     display: flex;
     flex-direction: column;
+
     padding-left: 0.3em;
   }
   details ul {
-    list-style-position: inside;
     margin-left: -0.4em;
+
+    list-style-position: inside;
     //background-color: hsla(0,0%,var(--color-grad),.013);
   }
   li {
@@ -144,10 +151,12 @@
     a:link,
     a:visited {
       display: inline-block;
+
       margin: var(--border-width) 0 0 0;
-      padding: 0em var(--gap-4xs) 0em;
-      text-decoration: none;
+      padding: 0 var(--gap-4xs) 0;
+
       white-space: nowrap;
+      text-decoration: none;
     }
 
     &.current {
@@ -201,7 +210,7 @@
   }
 
   .navigation {
-    background-repeat: no-repeat;
+    top: 0;
     // based on https://larsenwork.com/easing-gradients/
     //   linear-gradient(
     //     to top,
@@ -228,7 +237,7 @@
       hsla(0, 0%, var(--color-grad), 0.987) 81.8%,
       hsl(0, 0%, var(--color-grad)) 100%
     );
-    top: 0;
+    background-repeat: no-repeat;
   }
 }
 
@@ -328,23 +337,21 @@ filter: blur(1px);
 
 .theme-switchb {
   --size: 1em;
-  display: block;
-  appearance: none;
-  outline: none;
-  cursor: pointer;
-
-  width: var(--size);
-  height: var(--size);
-  border-radius: 999px;
-
-  transition: all 500ms;
 
   --ray-size: calc(var(--size) * -0.4);
   --offset-orthogonal: calc(var(--size) * 0.65);
   --offset-diagonal: calc(var(--size) * 0.45);
+  display: block;
 
-  transform: scale(0.75);
+  width: var(--size);
+  height: var(--size);
+
   color: hsl(40, 100%, 50%);
+
+  border-radius: 999px;
+
+  outline: none;
+
   box-shadow: inset 0 0 0 var(--size),
     calc(var(--offset-orthogonal) * -1) 0 0 var(--ray-size),
     var(--offset-orthogonal) 0 0 var(--ray-size),
@@ -355,28 +362,43 @@ filter: blur(1px);
     var(--offset-diagonal) var(--offset-diagonal) 0 var(--ray-size),
     calc(var(--offset-diagonal) * -1) var(--offset-diagonal) 0 var(--ray-size),
     var(--offset-diagonal) calc(var(--offset-diagonal) * -1) 0 var(--ray-size);
+
+  cursor: pointer;
+
   filter: blur(3px);
+  transform: scale(0.75);
+
+  appearance: none;
+
+  transition: all 500ms;
   &:checked {
-    transform: scale(1);
-    box-shadow: inset calc(var(--size) * 0.33) calc(var(--size) * -0.25) 0;
     color: hsl(240, 100%, 95%);
+
+    box-shadow: inset calc(var(--size) * 0.33) calc(var(--size) * -0.25) 0;
+
     filter: blur(0.3px);
+    transform: scale(1);
   }
 }
 .theme-switch {
   justify-content: center;
+
   vertical-align: bottom;
 }
 
 .theme-switch-wrapper {
   display: inline-block;
-  padding-top: var(--gap-3xs);
   justify-content: center;
+
+  padding-top: var(--gap-3xs);
+
   vertical-align: bottom;
+
   transform: scale(1.1);
   // display: inline-block;
   &:hover {
     transform: scale(1.4);
+
     transition: all 500ms;
   }
 }

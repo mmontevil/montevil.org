@@ -2,6 +2,7 @@
 
 .inlineimg {
   display: inline;
+
   text-align: center;
 }
 .figure {
@@ -11,25 +12,25 @@
 
 .picgrid,
 .picgrid3 {
-  align-items: end;
   display: grid;
-  grid-gap: var(--gap-4xs);
   grid-template-columns: 1fr;
+  grid-gap: var(--gap-4xs);
+  align-items: end;
   figcaption{margin-top: 0;}
 }
 
 .picgrid {
-  grid-template-rows: repeat(4, minmax(0px, auto));
   grid-template-areas:
     'img1' 'sub1'
     'img2' 'sub2';
+  grid-template-rows: repeat(4, minmax(0, auto));
 }
 .picgrid3 {
-  grid-template-rows: repeat(6, minmax(0px, auto));
   grid-template-areas:
     'img1' 'sub1'
     'img2' 'sub2'
     'img3' 'sub3';
+  grid-template-rows: repeat(6, minmax(0, auto));
 }
 
 .img1,
@@ -51,6 +52,7 @@
 .sub2,
 .sub3 {
   display: grid;
+
   text-align: left;
 }
 .sub1 {
@@ -65,16 +67,16 @@
 
 @media screen and (min-width: 768px) {
   .picgrid {
-    grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       'img1 img2'
       ' sub1 sub2';
+    grid-template-columns: repeat(2, 1fr);
   }
   .picgrid3 {
-    grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
       'img1 img2 img3'
       ' sub1 sub2 sub3';
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -83,8 +85,8 @@
 .legibilityWidth {
   width: calc(30 * var(--font-size-m));
   max-width: 100%;
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   // width: 60ch;
   //  max-width: 100%;
   /*   @media (min-width: 30rem) {
@@ -103,11 +105,13 @@
     --tempb: calc(max(-2em, var(--temp)));
     margin-left: calc(min(var(--tempb), 0em));
     padding-left: var(--gap-m);
+
     text-indent: calc(-1*var(--gap-m));
   }
   .foonoteHead {
     margin-left: var(--gap-m);
     padding-left: 0;
+
     text-indent: 0;
   }
 
@@ -129,8 +133,8 @@
   .wide {
     --temp: calc(50% - 50vw + 2em);
     --tempb: calc(max(-5em, var(--temp)));
-    margin-left: calc(min(var(--tempb), 0em));
     margin-right: calc(min(var(--tempb), 0em));
+    margin-left: calc(min(var(--tempb), 0em));
   }
 
   ul li,
@@ -139,8 +143,8 @@
     @extend %flow;
   }
   dl dd {
-    margin-left: var(--gap-l);
     --flow-space: 0;
+    margin-left: var(--gap-l);
   }
 }
 
@@ -152,8 +156,8 @@ dt.dt {
 .caption-title,
 .paragraphHead,
 dt.description {
-  font-weight: bold;
   color: var(--color-primary-darker-1);
+  font-weight: bold;
 }
 
 .textbf {
@@ -168,30 +172,31 @@ dt.description {
 
 .Footnote_20_anchor, //.Footnote_20,
 .superLegacy,.textsuperscript , sup {
+  position: relative;
+
+  padding-top: 0.05em;
   // vertical-align: super;
   //font-size:58%;
   font-size: 75%;
   line-height: 0;
-  position: relative;
   vertical-align: super;
-  padding-top: 0.05em;
 }
 .footnotes .textsuperscript {
   vertical-align: baseline;
 }
 .superLegacyIt {
-  vertical-align: super;
   font-size: 75%;
   font-style: italic;
+  vertical-align: super;
 }
 .subLegacy {
-  vertical-align: sub;
   font-size: 58%;
+  vertical-align: sub;
 }
 .subLegacyIt {
-  vertical-align: sub;
   font-size: 58%;
   font-style: italic;
+  vertical-align: sub;
 }
 
 //.bibitem, .thebibliography > *,.referencesn>*{margin-bottom:0.7em;}
@@ -205,9 +210,10 @@ dt.description {
 }
 
 .legibilityWidth .titleHead {
-  padding-left: 0;
-  text-indent: 0;
   margin-left: 0;
+  padding-left: 0;
+
+  text-indent: 0;
   & + * {
     --flow-space: var(--gap3);
   }
@@ -243,12 +249,13 @@ dt.description {
 
 .quote {
   padding-left: var(--gap-l);
+
   font-size: var(--font-size-s);
 }
 
 .frame_hsides {
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 }
 .bibsp {
   display: none;
@@ -258,20 +265,22 @@ dt.description {
 .thebibliography > p,
 .thebibliography > div,
 .references__item {
-  text-indent: calc(-1*var(--gap-l));
   padding-left: var(--gap-l);
+
   font-size: var(--font-size-s);
+  text-indent: calc(-1*var(--gap-l));
 }
 
 .thebibliography {
   padding-inline-start: 0;
+
   list-style-type: none;
 }
 .thebibliographynb {
 list-style-type: decimal;
 }
 .ReferencesCopy2 {
-  text-indent: 0em;
+  text-indent: 0;
 }
 
 .footnotes {
@@ -288,14 +297,15 @@ h3.abstract {
 }
 .keywords,
 .paragraphHead {
+  margin-bottom: var(--gap-xs);
+
   font-weight: 600;
   font-style: italic;
-  margin-bottom: var(--gap-xs);
 }
 .paragraphHead2,
 .id {
-  font-weight: bold;
   color: var(--color-primary);
+  font-weight: bold;
 }
 
 .author,
@@ -305,8 +315,8 @@ h3.abstract {
 }
 
 .affiliation {
-  text-align: center;
   font-size: var(--font-size-s);
+  text-align: center;
 }
 .authors +.affiliation {
   --flow-space: var(--gap-s);
@@ -329,8 +339,9 @@ div.abstract,
 .Tableau10 th,
 .Tableau11 td,
 .Tableau11 th {
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
+
   border: none;
 }
 
@@ -338,32 +349,36 @@ div.abstract,
 table.equation, table.equation-star, .legibilityWidth   mjx-container[jax="CHTML"][display="true"]{
    --temp: calc(50% - 50vw +30px);
     --tempb: calc(max(-5em, var(--temp)));
-    margin-left: calc(min(var(--temp), 0em));
-    margin-right: calc(min(var(--temp), 0em));
- scrollbar-width: none;
-  overflow-x: auto;
   display: block;
+
+    margin-right: calc(min(var(--temp), 0em));
+    margin-left: calc(min(var(--temp), 0em));
+
+  overflow-x: auto;
+ scrollbar-width: none;
 }
 
 .legibilityWidth  .equation  mjx-container[jax="CHTML"][display="true"],
  .legibilityWidth  .Tableau10  mjx-container[jax="CHTML"][display="true"]{
-   margin-left: 0;
-    margin-right: 0;
     display: inline;
+
+    margin-right: 0;
+   margin-left: 0;
 }
 
   table.equation, table.equation-star{
   tbody{
     display: block;
-    margin-left: auto;
+
     margin-right: auto;
+    margin-left: auto;
   }
   td{border:none;}
-  tr{align-items: center;
+  tr{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center;align-items: center;
     
   }
 }

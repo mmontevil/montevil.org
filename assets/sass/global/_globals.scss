@@ -2,20 +2,7 @@
 
 :root {
   --width: calc(min(var(--layout-max), 94vw));
-  @media (min-width: 25rem) {
-    --width: calc(min(var(--layout-max), 90vw));
-  }
-
-  @media (min-width: 40rem) {
-    --width: calc(min(var(--layout-max), 80vw));
-  }
   --footerW: 900;
-  @media (min-width: 40rem) {
-    --footerW: 1600;
-  }
-  @media (min-width: 80rem) {
-    --footerW: 2400;
-  }
   --angle: -5deg;
   --magic-number: 0.035;
   --skew-padding: calc(max(var(--width),1000px) * var(--magic-number));
@@ -57,9 +44,9 @@
 
   --gap-scale: 1.5;
   
---gap-5xs: calc(var(--gap-4xs) / var(--gap-scale));//0.087
-  --gap-4xs: calc(var(--gap-3xs) / var(--gap-scale));//0.13
-   --gap-3xs: calc(var(--gap-xxs) / var(--gap-scale));//0.2
+--gap-5xs: calc(var(--gap-4xs) / var(--gap-scale));
+  --gap-4xs: calc(var(--gap-3xs) / var(--gap-scale));
+   --gap-3xs: calc(var(--gap-xxs) / var(--gap-scale));
   --gap-xxs: calc(var(--gap-xs) / var(--gap-scale)); //0.3
   --gap-xs: calc(var(--gap-s) / var(--gap-scale)); //0.44
   --gap-s: calc(var(--gap-m) / var(--gap-scale)); //0.66
@@ -92,23 +79,8 @@
   --lum: 25%;
   --sat-step: -7%;
   --lum-step: 9%;
-  @for $i from 1 through 9 {
-    --color-primary-lighter-#{$i}: hsl(
-      var(--hue),
-      calc(var(--sat) + #{$i} * var(--sat-step)),
-      calc(var(--lum) + #{$i} * var(--lum-step))
-    );
-  }
   --sat-step2: 3%;
   --lum-step2: -3%;
-
-  @for $i from 1 through 9 {
-    --color-primary-darker-#{$i}: hsl(
-      var(--hue),
-      calc(var(--sat) + #{$i} * var(--sat-step2)),
-      calc(var(--lum) + #{$i} * var(--lum-step2))
-    );
-  }
   // Persimmon:
   //   https://en.wikipedia.org/wiki/Shades_of_orange#Persimmon
   --color-secondary: hsl(calc(var(--hue) - 180), var(--sat), 30%);
@@ -129,7 +101,7 @@
   --color-meta: #4c4c4c;
   --color-meta-decoration: #af0000;
 
-  --color-yellow-light: hsl(171, 68%, 70%);//hsl(59, 100%, 88%);
+  --color-yellow-light: hsl(171, 68%, 70%);
   --color-emph: #35d540;
   --border-width: 0.15em;
   --color-accord: var(--color-primary-lighter-4);
@@ -170,13 +142,41 @@
   --inline-code-background-color: #282c34;
   --inline-code-text-color: #abb2bf;
   --color-grad: 100%;
+    
+  --soft-shadow: rgba(0, 0, 0, 0.05);
+  @media (min-width: 25rem) {
+    --width: calc(min(var(--layout-max), 90vw));
+  }
+
+  @media (min-width: 40rem) {
+    --width: calc(min(var(--layout-max), 80vw));
+  }
+  @media (min-width: 40rem) {
+    --footerW: 1600;
+  }
+  @media (min-width: 80rem) {
+    --footerW: 2400;
+  }
+  @for $i from 1 through 9 {
+    --color-primary-lighter-#{$i}: hsl(
+      var(--hue),
+      calc(var(--sat) + #{$i} * var(--sat-step)),
+      calc(var(--lum) + #{$i} * var(--lum-step))
+    );
+  }
+
+  @for $i from 1 through 9 {
+    --color-primary-darker-#{$i}: hsl(
+      var(--hue),
+      calc(var(--sat) + #{$i} * var(--sat-step2)),
+      calc(var(--lum) + #{$i} * var(--lum-step2))
+    );
+  }
 
   .noDarkFilter {
     filter: none;
   }
-  a:hover .darkFilterT{filter:  hue-rotate(180deg) invert(100%);}
-    
-  --soft-shadow: rgba(0, 0, 0, 0.05);
+  a:hover .darkFilterT{filter:  hue-rotate(180deg) invert(100%);}//0.087//0.13//0.2//hsl(59, 100%, 88%);
 }
 /* purgecss ignore */
 [data-theme='dark'] {
@@ -187,24 +187,8 @@
   --lum: 75%;
   --sat-step: -6%;
   --lum-step: -8%;
-
-  @for $i from 1 through 9 {
-    --color-primary-lighter-#{$i}: hsl(
-      var(--hue),
-      calc(var(--sat) + #{$i} * var(--sat-step)),
-      calc(var(--lum) + #{$i} * var(--lum-step))
-    );
-  }
   --sat-step2: 3%;
   --lum-step2: 3%;
-
-  @for $i from 1 through 9 {
-    --color-primary-darker-#{$i}: hsl(
-      var(--hue),
-      calc(var(--sat) + #{$i} * var(--sat-step2)),
-      calc(var(--lum) + #{$i} * var(--lum-step2))
-    );
-  }
   
   
   // Persimmon:
@@ -214,7 +198,7 @@
 
   --soft-shadow: rgba(255, 255, 255, 0.075);
   --color-link-hoveralt: blue;
-  --color-emph: #00ff00;
+  --color-emph: #0f0;
   --color-info-bg: #272859;
   --color-twitter: #1da1f2;
   --color-caption: #dccccc;
@@ -250,17 +234,17 @@
   --color-red: #af2222;
   --color-purple: #4d11ff;
   --color-lightgrey: #313131;
-  --color-grey: #444444;
-  --color-darkgrey: #aaaaaa;
+  --color-grey: #444;
+  --color-darkgrey: #aaa;
   --color-xlightgrey: #050505;
   --color-twitter: #0d91e2;
   --color-emph-bg: rgb(29, 27, 78);
   --color-emph-bg-hv: #b19cfd;
 
   --color-chap: #13c0ff;
-  --color-art: #ff5500;
+  --color-art: #f50;
   --color-book: #00d692; 
-  --color-soft:  #eeee00;
+  --color-soft:  #ee0;
   --color-data: #e79e00;
   --color-com:  #b6855c ;
   --color-rev:   #6bc300;
@@ -270,6 +254,22 @@
   --inline-code-background-color: #282c34;
   --inline-code-text-color: #abb2bf;
   --color-grad: 0%;
+
+  @for $i from 1 through 9 {
+    --color-primary-lighter-#{$i}: hsl(
+      var(--hue),
+      calc(var(--sat) + #{$i} * var(--sat-step)),
+      calc(var(--lum) + #{$i} * var(--lum-step))
+    );
+  }
+
+  @for $i from 1 through 9 {
+    --color-primary-darker-#{$i}: hsl(
+      var(--hue),
+      calc(var(--sat) + #{$i} * var(--sat-step2)),
+      calc(var(--lum) + #{$i} * var(--lum-step2))
+    );
+  }
 
   .darkFilter,
   .invertwrapper{

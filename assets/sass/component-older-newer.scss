@@ -1,23 +1,27 @@
 .older-newer__shortcuts {
   display: none;
-
-  list-style-type: none;
-  padding: 0;
   justify-content: space-between;
+
+  padding: 0;
 
   font-size: calc(1em + 2vw);
 
+  list-style-type: none;
+
   @media (min-width: 75rem) {
     display: flex;
+
     margin: 0;
 
     .older-newer__older,
-    .older-newer__newer, .sidebuttons{ z-index: 21;
-      position: fixed;
-      transition-property: transform;
-      transition-duration: 0.2s;
-      transition-timing-function: ease-in-out;
+    .older-newer__newer, .sidebuttons{
+      position: fixed; z-index: 21;
+
       transform-origin: 50% 50%;
+
+      transition-property: transform;
+      transition-timing-function: ease-in-out;
+      transition-duration: 0.2s;
     }
   
     .older-newer__older {
@@ -38,14 +42,15 @@
   }
   .older-newer__older,
     .older-newer__newer{
-      padding: var(--gap-4xs) var(--gap-3xs);
     width: var(--gap-m);
     height: var(--gap-m);
+      padding: var(--gap-4xs) var(--gap-3xs);
      a:link,
   a:visited {color: var(--color-grey);}
         a:hover,
   a:focus {
     color: var(--color-primary);
+
     background-color: transparent;
   }
     }
@@ -55,22 +60,25 @@
   
 
 
-  .sidebuttons{ 
-    right: 0.5em;
+  .sidebuttons{
+    grid-area: button;
     //top: calc(1em + 3vw);
   //  transform:  translateY(calc(5em + 3vw));
- bottom: 2em;
+ bottom: 2em; 
+    right: 0.5em;
+
+    display: grid;
+     justify-self: end;
   //  width:  calc((100vw-var(--layout-max))/2);
  width: unset;
      height: unset;
+
     font-size: var(--font-size-m);
-    grid-area: button;
-     justify-self: end;
-    display: grid;
 }
    .svgnofill{
     width: 1em;
     height: 1em;
+
     fill: none;
     stroke: currentColor;
     stroke-width: 2px;
@@ -80,32 +88,36 @@
 }
 
 .older-newer {
-  margin: var(--gap-xxl) 0;
-  padding: var(--gap-m);
-   clear: both;
 --flow-space: var(--gap-xxl);
-  list-style-type: none;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-template-areas:
     'prev prev'
     'next next'
      'button button'
     ;
-  grid-column-gap: var(--gap-3xl);
-  column-gap:  var(--gap-3xl);
+  grid-template-columns: 1fr 1fr;
   grid-row-gap: var(--gap-m);
+  grid-column-gap: var(--gap-3xl);
+   clear: both;
+
+  margin: var(--gap-xxl) 0;
+  padding: var(--gap-m);
+
+  column-gap:  var(--gap-3xl);
+
+  border: solid 1px var(--color-primary-lighter-3);
+  border-radius: var(--gap-xs);
+
+  background-color: var(--color-primary-lighter-7);
+
+  list-style-type: none;
   row-gap: var(--gap-m);
 
   @media (min-width: 48rem) {
     grid-template-areas: 'prev next'
                                            'prev   button';
   }
-
-  border: solid 1px var(--color-primary-lighter-3);
-  border-radius: var(--gap-xs);
-  background-color: var(--color-primary-lighter-7);
 
   svg {
     fill: none;
@@ -121,6 +133,7 @@
 
   .older-newer__newer {--flow-space: 0;
     grid-area: next;
+
     justify-self: end;
   }
 

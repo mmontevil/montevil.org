@@ -9,34 +9,41 @@
 .footnotes {
   margin: var(--gap-m) 0;
   margin-right:  var(--gap-s);
-  background-color: var(--color-lightgrey);
+  padding-bottom:  var(--gap-m);
+
   color: var(--color-primary-darker-7);
+  font-size: var(--font-size-s);
+
   border: 1px solid var(--color-grey);
   border-radius: 0.3em;
-  font-size: var(--font-size-s);
-  padding-bottom:  var(--gap-m);
+
+  background-color: var(--color-lightgrey);
   & > p,
   & > div,
   & > aside {
-    text-indent:  calc(-1*var(--gap-l));
     padding-left:  var(--gap-l);
+
+    text-indent:  calc(-1*var(--gap-l));
   }
   & > * {
-    margin-left: var(--gap-xs);
     margin-right: var(--gap-xs);
+    margin-left: var(--gap-xs);
   }
   ol {
     //margin: 0;
     //padding: 1em 1em 1em 2em;
     list-style: none;
+
     counter-reset: my-awesome-counter;
   }
   li {
     counter-increment: my-awesome-counter;
-    &:before {
-      margin-left: calc(-1*var(--gap-xl));
+    &::before {
       content: counter(my-awesome-counter);
+
       display: inline-block;
+
+      margin-left: calc(-1*var(--gap-xl));
     }
 
     p:first-child {
@@ -50,24 +57,26 @@
   .Footnote_20,
   .FootnoteSymbol,
   .sdfootnotesym,
-  li:before,
+  li::before,
   .footnote-back {
-    text-decoration: none;
-    padding: var(--gap-5xs) var(--gap-xxs);
     margin-right: var(--gap-xxs);
+    padding: var(--gap-5xs) var(--gap-xxs);
     // margin: 0 0.2em;
     color: var(--color-link-hover);
+    text-decoration: none;
+
     border-radius: 30%;
+
     background-color: #8f8f8f;
-    &:link,
-    &:visited {
-      background-color: var(--color-footnote-bg);
-    }
 
     //}
 
     @media (pointer: coarse) {
       padding: var(--gap-xxs) var(--gap-s);
+    }
+    &:link,
+    &:visited {
+      background-color: var(--color-footnote-bg);
     }
 
     //&>*>*:first-child>[href="#*"]:first-child:not(u>a), &>*>[href]:first-child:not(u>a), .footnote-back
@@ -89,8 +98,9 @@
   }
 
   .footnote-mark > a > sup {
+    top: 0;
+
     font-size: 100%;
-    top: 0em;
   }
   .footnote-back {
     margin-left: var(--gap-xs);

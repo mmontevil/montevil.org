@@ -1,32 +1,36 @@
 .centerList {
+  margin: var(--gap-xs);
   padding: var(--gap-xs);
 
   border: 1px solid var(--color-primary-lighter-5);
   border-radius: 0.4em;
-  margin: var(--gap-xs);
   & > * {
     display: inline-block;
   }
   & > ul {
-    display: flex;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    padding: 0;
-    list-style: none;
     --flow-space: var(--gap-xxs);
+    display: flex;
+    display: block;
+
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
     padding-left: var(--gap-xss);
+
+    list-style: none;
   }
   & > ul > li > ul {
+    --flow-space: var(--gap-3xs);
     display: inline-flex;
     flex-wrap: wrap;
+
     list-style: none;
-    --flow-space: var(--gap-3xs);
     & > li {
       margin-left: var(--gap-m);
+
       font-style: italic;
-      &:before {
+      &::before {
         content: '· ';
       }
     }
