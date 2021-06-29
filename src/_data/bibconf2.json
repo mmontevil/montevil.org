@@ -180,6 +180,26 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "rtbfc2021",
+        "fields": {
+            "booktitle": "Fictions d’Hier – Sciences d’aujourd’hui",
+            "year": "2021",
+            "month": "6",
+            "location": "Tendances Première, La première, RTBF",
+            "url": "https://www.rtbf.be/auvio/detail_fictions-d-hier-sciences-d-aujourd-hui-episode-1?id=2785997",
+            "video": "https://www.rtbf.be/auvio/detail_fictions-d-hier-sciences-d-aujourd-hui-episode-1?id=2785997",
+            "language": "fr",
+            "illustration": "tenet.jpg",
+            "day": "28",
+            "eventtype": "media",
+            "abstract": "Véronique Thyberghien m'a interviewé pour sa série d'été, s'appuyant sur la science fiction pour aborder des questions scientifiques contemporaines. J'aborde l'organisation biologique et l'anti-entropie, ainsi que ses disruptions dans l'Anthropocène.",
+            "author": "Véronique Thyberghien",
+            "title": " Tenet : L’entropie inversée ou l’inversion du temps"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
         "entrykey": "utc2021",
         "fields": {
             "booktitle": "Séminaire Phiteco",
@@ -292,6 +312,7 @@
             "month": "9",
             "location": "La première, RTBF",
             "url": "https://www.rtbf.be/auvio/detail_tendances-premiere?id=2679861",
+            "video": "https://www.rtbf.be/auvio/detail_tendances-premiere?id=2679861",
             "language": "fr",
             "illustration": "bifurquer.png",
             "day": "14",
@@ -311,6 +332,7 @@
             "day": "19",
             "location": "La première, RTBF",
             "url": "https://www.rtbf.be/auvio/detail_au-bout-du-jour?id=2705708",
+            "video": "https://www.rtbf.be/auvio/detail_au-bout-du-jour?id=2705708",
             "language": "fr",
             "illustration": "bifurquer.png",
             "eventtype": "media",
