@@ -4958,5 +4958,25 @@
     "like-of": "https://montevil.org/publications/books/2014-LM-Perspectives-Organisms/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1408914071542501380OlivierM2019": {
+    "id_str": "1408914071542501380OlivierM2019",
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Olivier Marchand",
+      "screen_name": "OlivierM2019",
+      "photo": "https://pbs.twimg.com/profile_images/1396248067385569285/s3gxCoZT_normal.jpg",
+      "url": "https://twitter.com/OlivierM2019"
+    },
+    "url": "https://twitter.com/MMontevil/status/1408914071542501380/likes",
+    "published": "2021-07-01",
+    "wm-received": "2021-07-01",
+    "wm-id": "1408914071542501380OlivierM2019",
+    "wm-source": "https://twitter.com/MMontevil/status/1408914071542501380/likes",
+    "wm-target": "https://montevil.org/talks/2021-fictions-d-hier-sciences-d-aujourd-hui-tenet/",
+    "like-of": "https://montevil.org/talks/2021-fictions-d-hier-sciences-d-aujourd-hui-tenet/",
+    "wm-property": "like-of",
+    "wm-private": false
   }
 }

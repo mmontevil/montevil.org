@@ -2417,9 +2417,9 @@
   },
   "jc-pomerol": {
     "shortname": "JC Pomerol",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/5urxPVwAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=5urxPVwAAAAJ",
+    "gsid": "5urxPVwAAAAJ"
   },
   "meb-de-ortiz-pgcert": {
     "shortname": "MEB de Ortiz PGCert",
@@ -10126,5 +10126,41 @@
     "url": "",
     "gsid": "",
     "fullName": "Véronique Thyberghien"
+  },
+  "ams-carlos-sonnenschein": {
+    "shortname": "AMS CARLOS SONNENSCHEIN",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": ""
+  },
+  "go-longo": {
+    "shortname": "GO Longo",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": ""
+  },
+  "a-serafi": {
+    "shortname": "A Serafi",
+    "photo": "/assets/avatars/gs/t8jt8rUAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=t8jt8rUAAAAJ",
+    "gsid": "t8jt8rUAAAAJ"
+  },
+  "m-van-duursen": {
+    "shortname": "M van Duursen",
+    "photo": "/assets/avatars/gs/6Uk91GYAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=6Uk91GYAAAAJ",
+    "gsid": "6Uk91GYAAAAJ"
+  },
+  "c-calude": {
+    "shortname": "C Calude",
+    "photo": "/assets/avatars/gs/6-ioCW8AAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=6-ioCW8AAAAJ",
+    "gsid": "6-ioCW8AAAAJ"
+  },
+  "n-kutama": {
+    "shortname": "N Kutama",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": ""
   }
 }

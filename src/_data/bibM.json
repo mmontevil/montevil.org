@@ -716,6 +716,7 @@
     "volume": "72"
   },
   {
+    "URL": "https://www.naimaunlimited.com/biblio/biomorphisme-approches-sensibles-et-conceptuelles-des-formes-du-vivant/",
     "abstract": "Dans l’interface entre biologie et mathématiques, les formes et les processus de morphogenèse sont souvent étudiées pour eux-mêmes. Nous pensons que cette manière de procéder est insuffisante pour capturer le sens biologique de ces formes. La biologie comporte des spécificités qui se manifestent tant sur le plan philosophique que sur celui des principes théoriques : en particulier, tout processus biologique tel qu’un processus de morphogenèse ou une régulation physiologique (i) s’inscrit dans l’évolution et dans une histoire naturelle et (ii) s’intègre dans un organisme dont il dépend et auquel il participe. Nous aborderons alors le sens des formes biologiques à l’aune de ces principes, tant au niveau de la théorie qu’au niveau de la compréhension de l’accès expérimental aux objets biologiques.",
     "author": [
       {
@@ -723,10 +724,32 @@
         "given": "Maël"
       }
     ],
-    "container-title": "Biomorphisme",
+    "container-title": "Biomorphisme. Approches sensibles et conceptuelles des formes du vivant",
+    "editor": [
+      {
+        "family": "Romand",
+        "given": "David"
+      },
+      {
+        "family": "Bernard",
+        "given": "Julien"
+      },
+      {
+        "family": "Pic",
+        "given": "Sylvie"
+      },
+      {
+        "family": "Arnaud",
+        "given": "Jean"
+      }
+    ],
     "id": "2021-Sens-Formes-biologie",
     "issued": {
-      "date-parts": []
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
     },
     "note": "https://montevil.org/publications/chapters/2021-Sens-Formes-biologie/",
     "publisher": "NAIMA",
