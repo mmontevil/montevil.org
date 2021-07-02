@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2021-06-27T15:14:23.164Z",
+  "lastFetched": "2021-07-01T20:56:16.972Z",
   "webmentions": [
     {
       "type": "entry",
@@ -907,6 +907,24 @@
       "wm-source": "https://brid.gy/like/twitter/MMontevil/1408914071542501380/1154351347694804992",
       "wm-target": "https://montevil.org/publications/articles/2021-montevil-stiegler-sciences-entropocene/",
       "like-of": "https://montevil.org/publications/articles/2021-montevil-stiegler-sciences-entropocene/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Olivier Marchand",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/6777465b33ce7b582a82d0e8009a7fe8eb0983fc3f097b8255f0399c8d2769a8.jpg",
+        "url": "https://twitter.com/OlivierM2019"
+      },
+      "url": "https://twitter.com/MMontevil/status/1410522746401050624#favorited-by-1154351347694804992",
+      "published": "2021-07-01T10:12:24Z",
+      "wm-received": "2021-07-01T10:12:24Z",
+      "wm-id": 1206997,
+      "wm-source": "https://brid.gy/like/twitter/MMontevil/1410522746401050624/1154351347694804992",
+      "wm-target": "https://montevil.org/publications/chapters/2021-sens-formes-biologie/",
+      "like-of": "https://montevil.org/publications/chapters/2021-sens-formes-biologie/",
       "wm-property": "like-of",
       "wm-private": false
     }
