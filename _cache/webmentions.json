@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2021-07-01T20:56:16.972Z",
+  "lastFetched": "2021-07-03T15:18:05.490Z",
   "webmentions": [
     {
       "type": "entry",
@@ -923,6 +923,120 @@
       "wm-received": "2021-07-01T10:12:24Z",
       "wm-id": 1206997,
       "wm-source": "https://brid.gy/like/twitter/MMontevil/1410522746401050624/1154351347694804992",
+      "wm-target": "https://montevil.org/publications/chapters/2021-sens-formes-biologie/",
+      "like-of": "https://montevil.org/publications/chapters/2021-sens-formes-biologie/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "icvw",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/fcd3ed9d48a1e33df656cf4fc51e6625ac4253b28a9ebba432b045c05b5e4e12.jpg",
+        "url": "https://scholar.social/@icvw"
+      },
+      "url": "https://scholar.social/@mmontevil/106504527687996355#favorited-by-197591",
+      "published": "2021-07-02T08:10:02Z",
+      "wm-received": "2021-07-02T08:10:02Z",
+      "wm-id": 1207751,
+      "wm-source": "https://brid.gy/like/mastodon/@mmontevil@scholar.social/106504527687996355/197591",
+      "wm-target": "https://montevil.org/publications/chapters/2021-sens-formes-biologie/",
+      "like-of": "https://montevil.org/publications/chapters/2021-sens-formes-biologie/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Manuel A. Monroy C.",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/ed5696816d47eacec05a00449f1aad7566f2fb44fa32b85753d699a574d4cbe1.png",
+        "url": "https://scholar.social/@monroym"
+      },
+      "url": "https://scholar.social/@mmontevil/106504527687996355#reblogged-by-212811",
+      "published": "2021-07-02T08:10:10Z",
+      "wm-received": "2021-07-02T08:10:10Z",
+      "wm-id": 1207752,
+      "wm-source": "https://brid.gy/repost/mastodon/@mmontevil@scholar.social/106504527687996355/212811",
+      "wm-target": "https://montevil.org/publications/chapters/2021-sens-formes-biologie/",
+      "repost-of": "https://montevil.org/publications/chapters/2021-sens-formes-biologie/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "AAGT - Ars Industrialis",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/eac99b009e36b620acfb35ec804368d5bb768bbb03ea3e9ce4f98a6bf122cef0.jpg",
+        "url": "https://twitter.com/ArsIndustrialis"
+      },
+      "url": "https://twitter.com/ArsIndustrialis/status/1410920570640867331",
+      "published": "2021-07-02T11:17:32+00:00",
+      "wm-received": "2021-07-02T11:49:53Z",
+      "wm-id": 1207877,
+      "wm-source": "https://brid.gy/repost/twitter/MMontevil/1410522746401050624/1410920570640867331",
+      "wm-target": "https://montevil.org/publications/chapters/2021-sens-formes-biologie/",
+      "content": {
+        "text": "Le résultat d'un superbe projet croisant regards scientifiques et artistiques sur le vivant est paru chez @NaimaEditions \nMa contribution est accessible ici: montevil.org/publications/c…\nBiomorphisme. Approches sensibles et conceptuelles des formes du vivant naimaunlimited.com/biblio/biomorp…"
+      },
+      "repost-of": "https://montevil.org/publications/chapters/2021-sens-formes-biologie/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mathieu Triclot",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/c32a1cc15af1482ea38cc7466a89245d9f8701bfd2aff8d2e2745f5e193d772f.jpg",
+        "url": "https://twitter.com/MathieuTriclot"
+      },
+      "url": "https://twitter.com/MathieuTriclot/status/1410923583686205447",
+      "published": "2021-07-02T11:29:30+00:00",
+      "wm-received": "2021-07-02T11:49:51Z",
+      "wm-id": 1207876,
+      "wm-source": "https://brid.gy/repost/twitter/MMontevil/1410522746401050624/1410923583686205447",
+      "wm-target": "https://montevil.org/publications/chapters/2021-sens-formes-biologie/",
+      "content": {
+        "text": "Le résultat d'un superbe projet croisant regards scientifiques et artistiques sur le vivant est paru chez @NaimaEditions \nMa contribution est accessible ici: montevil.org/publications/c…\nBiomorphisme. Approches sensibles et conceptuelles des formes du vivant naimaunlimited.com/biblio/biomorp…"
+      },
+      "repost-of": "https://montevil.org/publications/chapters/2021-sens-formes-biologie/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sylvia Fredriksson",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/7ca3a90780f8a477236f6bc30d5961d8599ea673335507356962f0dbc1021c4d.jpg",
+        "url": "https://twitter.com/s_fredriksson"
+      },
+      "url": "https://twitter.com/MMontevil/status/1410522746401050624#favorited-by-90048502",
+      "published": "2021-07-02T11:49:49Z",
+      "wm-received": "2021-07-02T11:49:49Z",
+      "wm-id": 1207874,
+      "wm-source": "https://brid.gy/like/twitter/MMontevil/1410522746401050624/90048502",
+      "wm-target": "https://montevil.org/publications/chapters/2021-sens-formes-biologie/",
+      "like-of": "https://montevil.org/publications/chapters/2021-sens-formes-biologie/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Guilhem VINCENT",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/1f04db42e1037ceeff16fc5264f0a0e409cef63f86a3956b9fb766da38fd1a8c.jpg",
+        "url": "https://twitter.com/aArchitecton"
+      },
+      "url": "https://twitter.com/MMontevil/status/1410522746401050624#favorited-by-470605252",
+      "published": "2021-07-02T11:49:50Z",
+      "wm-received": "2021-07-02T11:49:50Z",
+      "wm-id": 1207875,
+      "wm-source": "https://brid.gy/like/twitter/MMontevil/1410522746401050624/470605252",
       "wm-target": "https://montevil.org/publications/chapters/2021-sens-formes-biologie/",
       "like-of": "https://montevil.org/publications/chapters/2021-sens-formes-biologie/",
       "wm-property": "like-of",
