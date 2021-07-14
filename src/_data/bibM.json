@@ -1,5 +1,37 @@
 [
   {
+    "abstract": "Pour progresser sur la question du rapport entre l’informatique et le calculable, je propose de réinterpréter l’objet de l’informatique théorique puis de faire un détour par la biologie théorique où la question d’un symbole qui empêche de calculer se pose. Enfin, je reviens vers l’informatique en transférant de manière critique certains concepts issus de mes travaux en biologie théorique.",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "Prendre Soin de l’informatique et Des Générations",
+    "editor": [
+      {
+        "family": "Alombert",
+        "given": "Anne"
+      },
+      {
+        "family": "Chaix",
+        "given": "Victor"
+      },
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "id": "2021-Montevil-Informatique-theorique-Stiegler",
+    "issued": {
+      "date-parts": []
+    },
+    "note": "https://montevil.org/publications/chapters/2021-Montevil-Informatique-theorique-Stiegler/",
+    "publisher": "Fip",
+    "title": "Il faut qu’il y ait en informatique théorique un symbole tel qu’il empêche de calculer",
+    "type": "chapter"
+  },
+  {
     "URL": "https://www.philosophy-world-democracy.org/vaccines-germs-and-knowledge",
     "abstract": "Vaccines for COVID-19 have led to questions, debates, and polemics on both their safety and the political and geopolitical dimension of their use. We propose to take a step back on both the history of this practice and how current theories in immunology understand it. Both can contribute to providing a rational assessment of COVID-19 vaccines. This assessment cannot consider vaccine as an isolated procedure, and we discuss its intergradation with the broader question of knowledge and politics in the COVID-19 pandemic.",
     "author": [
