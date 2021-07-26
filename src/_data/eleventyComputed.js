@@ -284,6 +284,19 @@ function uniqByKeepLast(a, key) {
 var cache = flatcache.load('crossref', path.resolve('./_cache'));
 var plumCache = readFromCache(PLUM_CACHE);
 
+async function fetching(response) {
+  {
+      try {
+       const data = await response.json()
+       console.log('response data?', data)
+     } catch(error) {
+       console.log('Error happened here!')
+       console.error(error)
+       console.log(response)
+     }
+    }
+}
+
 async function fetchCrossref(doi, id, type) {
   const cachedData = cache.getKey(id);
 
@@ -293,15 +306,15 @@ async function fetchCrossref(doi, id, type) {
       allPosts = await fetch(
         'https://api.eventdata.crossref.org/v1/events?rows=1000&obj-id=' +
           encodeURI(doi) +
-          '&source=twitter'
-      ).then((res) => res.json());
+          '&source=twitter',  {method: 'GET', headers: {'Content-Type': 'application/json'}}
+      ).then((res) => res.json() );
     } else {
       if (type === 'url') {
         allPosts = await fetch(
-          'https://api.eventdata.crossref.org/v1/events?rows=1000&obj-url=' +
+          'https://api.eventdata.crossref.org/v1/events?rows=1000&obj.url=' +
             encodeURI(doi) +
-            '&source=twitter'
-        ).then((res) => res.json());
+            '&source=twitter',  {method: 'GET', headers: {'Content-Type': 'application/json'}}
+        ).then((res) => res.json() );
       }
     }
     var allPosts2 = '[]';
@@ -309,15 +322,15 @@ async function fetchCrossref(doi, id, type) {
       allPosts2 = await fetch(
         'https://api.eventdata.crossref.org/v1/events?rows=1000&obj-id=' +
           encodeURI(doi) +
-          '&source=wikipedia'
-      ).then((res) => res.json());
+          '&source=wikipedia',  {method: 'GET', headers: {'Content-Type': 'application/json'}}
+      ).then((res) => res.json() );
     } else {
       if (type === 'url') {
         allPosts2 = await fetch(
-          'https://api.eventdata.crossref.org/v1/events?rows=1000&obj-url=' +
+          'https://api.eventdata.crossref.org/v1/events?rows=1000&obj.url=' +
             encodeURI(doi) +
-            '&source=wikipedia'
-        ).then((res) => res.json());
+            '&source=wikipedia', {method: 'GET', headers: {'Content-Type': 'application/json'}}
+        ).then((res) => res.json() );
       }
     }
 
