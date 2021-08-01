@@ -69,7 +69,7 @@
     "deepmerge": "^4.2.2",
     "dotenv": "^10.0.0",
     "element-remove": "^1.0.4",
-    "eleventy-plugin-embed-everything": "^1.13.2",
+    "eleventy-plugin-embed-everything": "^1.13.3",
     "eleventy-plugin-embed-tweet": "^0.3.1",
     "eleventy-plugin-images-responsiver": "^1.9.1",
     "eleventy-plugin-link_to": "^0.4.0",
