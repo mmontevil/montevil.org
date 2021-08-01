@@ -1,5 +1,31 @@
 [
   {
+    "URL": "https://www.philosophy-world-democracy.org/computational-empiricism",
+    "abstract": "What do mainstream scientists acknowledge as original scientific contributions? In other words, what is the current épistémè in natural sciences? This essay attempts to characterize this épistémè as computational empiricism. Scientific works are primarily empirical, generating data and computational, to analyze them and reproduce them with models. This épistémè values primarily the investigation of specific phenomena and thus leads to the fragmentation of sciences. It also promotes attention-catching results showing limits of earlier theories. However, it consumes these theories since it does not renew them, leading more and more fields to be in a state of theory disruption.",
+    "author": [
+      {
+        "family": "Montevil",
+        "given": "M."
+      }
+    ],
+    "container-title": "Philosophy World Democracy",
+    "id": "2021-Montevil-episteme-computational-empiricism",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          7,
+          31
+        ]
+      ]
+    },
+    "keyword": "theory, statistical tests, empiricism, models, computation",
+    "note": "https://montevil.org/publications/articles/2021-Montevil-vaccines-germs-knowledge/",
+    "title": "Computational empiricism : the reigning épistémè of the sciences",
+    "title-short": "Computational empiricism ",
+    "type": "article-journal"
+  },
+  {
     "abstract": "Pour progresser sur la question du rapport entre l’informatique et le calculable, je propose de réinterpréter l’objet de l’informatique théorique puis de faire un détour par la biologie théorique où la question d’un symbole qui empêche de calculer se pose. Enfin, je reviens vers l’informatique en transférant de manière critique certains concepts issus de mes travaux en biologie théorique.",
     "author": [
       {

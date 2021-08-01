@@ -2,6 +2,24 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "2021-lecco",
+        "fields": {
+            "title": "La disrupzione del vivente nell'Antropocene",
+            "booktitle": "Baite filosofiche",
+            "location": "Lecco",
+            "year": "2021",
+            "month": "7",
+            "day": "30",
+            "annonce": "true",
+            "program": "Lecco.pdf",
+            "illustration": "baite-filosofiche.png",
+            "url": "https://c-r-a-m-s.jimdo.com/qtp-attiviamoci-c4c/baite-filosofiche/",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
         "entrykey": "2021-enmi-prep",
         "fields": {
             "title": "Intermittence, rythmes et anti-entropie dans le vivant",

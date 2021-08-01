@@ -669,3 +669,19 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1627383340459	geckodriver	INFO	Listening on 127.0.0.1:60623
+1627383349286	geckodriver	INFO	Listening on 127.0.0.1:40641
+1627383509287	geckodriver	INFO	Listening on 127.0.0.1:60683
+1627383573410	geckodriver	INFO	Listening on 127.0.0.1:55349
+1627383581199	geckodriver	INFO	Listening on 127.0.0.1:37861
+1627383657365	geckodriver	INFO	Listening on 127.0.0.1:40287
+1627383666478	geckodriver	INFO	Listening on 127.0.0.1:50443
+1627383678114	geckodriver	INFO	Listening on 127.0.0.1:37289
+1627383737484	geckodriver	INFO	Listening on 127.0.0.1:51495
+1627383745552	geckodriver	INFO	Listening on 127.0.0.1:47741
+1627539547061	geckodriver	INFO	Listening on 127.0.0.1:37741
+1627539554850	geckodriver	INFO	Listening on 127.0.0.1:55121
+1627539649963	geckodriver	INFO	Listening on 127.0.0.1:60515
+1627539688556	geckodriver	INFO	Listening on 127.0.0.1:33163
+1627539755739	geckodriver	INFO	Listening on 127.0.0.1:42605
+1627539763454	geckodriver	INFO	Listening on 127.0.0.1:33371
