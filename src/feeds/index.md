@@ -6,7 +6,7 @@ lang: en
 ---
 <div class="wrap">
 
-![Feed logo](/assets/logos/feed.png){.logo}{.noDarkFilter}
+![Feed logo](/assets/logos/feed.png){.logo}{.right}{.noDarkFilter}
 
 You can follow my publications with several feeds.
 

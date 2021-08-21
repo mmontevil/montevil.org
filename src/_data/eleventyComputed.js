@@ -502,6 +502,7 @@ module.exports = {
       res = res.concat(data.bibentryconf.fields.twittermention.split(', '));
     }
     for (i in res) {
+
       let temp = tweettomention(
         res[i],
         'https://montevil.org' + data.page.url,
@@ -543,6 +544,9 @@ module.exports = {
     );
   },
   likes: (data) => {
+     /*     if (encodeURI('https://montevil.org' + data.page.url).toLowerCase()=="https://montevil.org/publications/articles/2021-montevil-episteme-computational-empiricism/"){
+        console.log(webmentionsByType(data.allMentions, 'in-reply-of').);
+      }*/
     return uniqByKeepLast(
       webmentionsByType(data.allMentions, 'like-of'),
       (x) => x.author.url
@@ -558,7 +562,7 @@ module.exports = {
     return data.reposts.length;
   },
   replies: (data) => {
-    return webmentionsByType(data.allMentions, 'in-reply-of');
+    return webmentionsByType(data.allMentions, 'in-reply-to');
   },
   repliesSize: (data) => {
     return data.replies.length;

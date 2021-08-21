@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2021-08-03T07:57:06.334Z",
+  "lastFetched": "2021-08-06T19:31:52.466Z",
   "webmentions": [
     {
       "type": "entry",
@@ -1295,6 +1295,28 @@
       "type": "entry",
       "author": {
         "type": "card",
+        "name": "Cole Mathis",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4767da213559ee55a9a310ba0dcc4f03d95fd94d4cbc91084d91146961c06d98.jpg",
+        "url": "https://twitter.com/colemathis__"
+      },
+      "url": "https://twitter.com/colemathis__/status/1422258003655471106",
+      "published": "2021-08-02T18:08:27+00:00",
+      "wm-received": "2021-08-03T09:08:31Z",
+      "wm-id": 1236039,
+      "wm-source": "https://brid.gy/comment/twitter/MMontevil/1421997260494282756/1422258003655471106",
+      "wm-target": "https://montevil.org/publications/articles/2021-montevil-episteme-computational-empiricism/",
+      "content": {
+        "html": "Also, happy to continue the conversation in more detail on the <a href=\"https://twitter.com/oolen_org\">@oolen_org</a> forum!\n<a class=\"u-mention\" href=\"https://montevil.org/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/MMontevil\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/PhilosophyWD\"></a>\n<a class=\"u-mention\" href=\"https://www.philosophy-world-democracy.org/computational-empiricism\"></a>",
+        "text": "Also, happy to continue the conversation in more detail on the @oolen_org forum!"
+      },
+      "in-reply-to": "https://montevil.org/publications/articles/2021-montevil-episteme-computational-empiricism/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
         "name": "OoLEN",
         "photo": "https://webmention.io/avatar/pbs.twimg.com/865d166efa25d2dc4c0952af225ccdc68eeca2216bba19097f553243035f7b32.png",
         "url": "https://twitter.com/oolen_org"
@@ -1346,6 +1368,88 @@
       "wm-target": "https://montevil.org/publications/articles/2021-montevil-episteme-computational-empiricism/",
       "like-of": "https://montevil.org/publications/articles/2021-montevil-episteme-computational-empiricism/",
       "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Maël Montévil",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/07d1c3aa87b72ef79821aeff5c951ad71a4db85137dac8642d43af64650b1106.jpg",
+        "url": "https://twitter.com/MMontevil"
+      },
+      "url": "https://twitter.com/MMontevil/status/1422483175238942722",
+      "published": "2021-08-03T09:03:12+00:00",
+      "wm-received": "2021-08-03T09:08:57Z",
+      "wm-id": 1236040,
+      "wm-source": "https://brid.gy/comment/twitter/MMontevil/1421997260494282756/1422483175238942722",
+      "wm-target": "https://montevil.org/publications/articles/2021-montevil-episteme-computational-empiricism/",
+      "content": {
+        "html": "Thank you! Indeed, it is an informal current and a trend. However, to my knowledge it is quite pervasive, reaching even humanities. Of course it is more advanced in some fields than others, and there are exceptions. I will say more in my editorial - it is part of a special issue.\n<a class=\"u-mention\" href=\"https://twitter.com/PhilosophyWD\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/colemathis__\"></a>\n<a class=\"u-mention\" href=\"https://www.philosophy-world-democracy.org/computational-empiricism\"></a>",
+        "text": "Thank you! Indeed, it is an informal current and a trend. However, to my knowledge it is quite pervasive, reaching even humanities. Of course it is more advanced in some fields than others, and there are exceptions. I will say more in my editorial - it is part of a special issue."
+      },
+      "in-reply-to": "https://montevil.org/publications/articles/2021-montevil-episteme-computational-empiricism/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Gerald Moore",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/e48baf62073e6ee16a702cba7c544da8498ae73abdebd8805e661ad2494f472e.jpg",
+        "url": "https://twitter.com/profgeraldmoore"
+      },
+      "url": "https://twitter.com/profgeraldmoore/status/1422531965727748099",
+      "published": "2021-08-03T12:17:04+00:00",
+      "wm-received": "2021-08-03T12:57:59Z",
+      "wm-id": 1236207,
+      "wm-source": "https://brid.gy/repost/twitter/MMontevil/1421997260494282756/1422531965727748099",
+      "wm-target": "https://montevil.org/publications/articles/2021-montevil-episteme-computational-empiricism/",
+      "content": {
+        "text": "📖 New Article in @PhilosophyWD: Computational empiricism : the reigning épistémè of the sciences\n\n#Science #Philosophy\n\nmontevil.org/publications/a…\nphilosophy-world-democracy.org/computational-…"
+      },
+      "repost-of": "https://montevil.org/publications/articles/2021-montevil-episteme-computational-empiricism/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Gerald Moore",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/e48baf62073e6ee16a702cba7c544da8498ae73abdebd8805e661ad2494f472e.jpg",
+        "url": "https://twitter.com/profgeraldmoore"
+      },
+      "url": "https://twitter.com/MMontevil/status/1421997260494282756#favorited-by-1415668539130667008",
+      "published": "2021-08-03T12:57:51Z",
+      "wm-received": "2021-08-03T12:57:51Z",
+      "wm-id": 1236206,
+      "wm-source": "https://brid.gy/like/twitter/MMontevil/1421997260494282756/1415668539130667008",
+      "wm-target": "https://montevil.org/publications/articles/2021-montevil-episteme-computational-empiricism/",
+      "like-of": "https://montevil.org/publications/articles/2021-montevil-episteme-computational-empiricism/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "The Sociability of Sleep",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/8ae0722a80f0b184a54917909b40a2eac28088c829a77353995977725284fcf8.jpg",
+        "url": "https://twitter.com/sociable_sleep"
+      },
+      "url": "https://twitter.com/sociable_sleep/status/1422552201977901057",
+      "published": "2021-08-03T13:37:29+00:00",
+      "wm-received": "2021-08-03T14:07:00Z",
+      "wm-id": 1236250,
+      "wm-source": "https://brid.gy/repost/twitter/MMontevil/1421997260494282756/1422552201977901057",
+      "wm-target": "https://montevil.org/publications/articles/2021-montevil-episteme-computational-empiricism/",
+      "content": {
+        "text": "📖 New Article in @PhilosophyWD: Computational empiricism : the reigning épistémè of the sciences\n\n#Science #Philosophy\n\nmontevil.org/publications/a…\nphilosophy-world-democracy.org/computational-…"
+      },
+      "repost-of": "https://montevil.org/publications/articles/2021-montevil-episteme-computational-empiricism/",
+      "wm-property": "repost-of",
       "wm-private": false
     }
   ]

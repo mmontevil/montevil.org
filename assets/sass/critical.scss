@@ -418,7 +418,7 @@ img {
   &.logo {
 
     max-width: 50%;
-    @extend .right;
+   // @extend .right;
 
     @media (min-width: 20em) {
       max-width: 33%;
