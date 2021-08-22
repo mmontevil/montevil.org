@@ -69,7 +69,10 @@ Downloadable   <a class="" href=/assets/pdf/cv_Montevil_2019_en.pdf >long CV {% 
 
  
 
-* ![CNRS](/assets/logos/cnrs.png){.logo}{.left}![ENS](/assets/talks/ENS.png){.logo}{.right}{.darkFilter}Starting october 1st, I will be a researcher (chargé de recherche) in [CNRS](http://www.cnrs.fr/){.p-org}{.h-card}, working in [Centre Cavaillès](https://www.republique-des-savoirs.fr/centre-cavailles){.p-org}{.h-card} [École Normale Supérieure](https://www.ens.fr/){.p-org}{.h-card}.I will work on the concept of disruption in biology, and more genrally the theoretical foundations of biology. I will also touch on more general philosophical questions.{data-date="2021"}
+* ![CNRS](/assets/logos/cnrs.png){.logo}{.left}![ENS](/assets/talks/ENS.png){.logo}{.right}{.darkFilter}Starting october 1st, I will be a researcher (chargé de recherche) in [CNRS](http://www.cnrs.fr/){.p-org}{.h-card}, working in [Centre Cavaillès](https://www.republique-des-savoirs.fr/centre-cavailles){.p-org}{.h-card} [École Normale Supérieure](https://www.ens.fr/){.p-org}{.h-card}.
+I will work on the concept of <a href="/tags/disruption">disruption</a> in biology.
+I will also continue to my work on the theoretical foundations of biology, especially biological historicity and organization, and their challenges for mathematization. 
+I will also touch on more general philosophical questions.{data-date="2021"}
 * I am currently a researcher at {data-date="2018"}
     * ![Paris 1 logo](/assets/logos/paris1.svg){.onethird}{.right}{.darkFilter}[IHSPT](https://www.ihpst.cnrs.fr/){.p-org}{.h-card}, [Université Paris I Panthéon Sorbonne](https://www.pantheonsorbonne.fr/){.p-org}{.h-card}, with a grant of the [Cogito Foundation](https://www.cogitofoundation.ch/en/home){.p-org}{.h-card}: "Understanding the Anthropocene: towards a philosophy of biological disruptions." 
     Building on advanced concepts in theoretical biology, this project aims to understand the [notion of disruption]({% link_to "tags/disruption/" %}) in this field. {.nosnake}
