@@ -34,7 +34,7 @@ let res = {};
       if (gsid) {
         console.log('https://scholar.google.fr/citations?user=' + gsid);
         await driver.get('https://scholar.google.fr/citations?user=' + gsid),
-          await driver.wait(() => documentInitialised(), 10000);
+          await driver.wait(() => documentInitialised(), 12000);
         await sleep(3110);
         let urls = await driver.findElements(
           By.xpath("//div[@id='gsc_prf_ivh']/a")

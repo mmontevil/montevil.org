@@ -205,3 +205,93 @@ DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
 INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
 DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
 INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:System call: tor --version (runtime: 0.03)
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:System call: tor --version (runtime: 0.04)
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:System call: tor --version (runtime: 0.05)
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0002)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0001)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0017)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+DEBUG:stem:GETCONF __owningcontrollerprocess (runtime: 0.0007)
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "read of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"
+INFO:stem:Error while receiving a control message (SocketClosed): received exception "peek of closed file"

@@ -390,9 +390,9 @@
   },
   "w-peden": {
     "shortname": "W Peden",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/sHEhiSoAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=sHEhiSoAAAAJ",
+    "gsid": "sHEhiSoAAAAJ"
   },
   "j-landes": {
     "shortname": "J Landes",
@@ -992,9 +992,11 @@
   },
   "p-pontecorvi": {
     "shortname": "P Pontecorvi",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/qW-cgKIAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=qW-cgKIAAAAJ",
+    "gsid": "qW-cgKIAAAAJ",
+    "fullName": "Paola Pontecorvi",
+    "affiliation": "PhD student, Sapienza University of Rome"
   },
   "ob-naimark": {
     "shortname": "OB Naimark",
@@ -3150,7 +3152,7 @@
     "url": "https://www.immuconcept.org/conceptual-biology-medicine/",
     "gsid": "p9gyTC4AAAAJ",
     "fullName": "Thomas Pradeu",
-    "affiliation": "Senior Researcher (permanent) at CNRS, ImmunoConcEpT, University of Bordeaux; IHPST (Pantheon"
+    "affiliation": "Research Professor (permanent) at CNRS, ImmunoConcEpT, University of Bordeaux; IHPST-Sorbonne"
   },
   "jf-moreau": {
     "shortname": "JF Moreau",
@@ -5563,5 +5565,75 @@
     "photo": "/assets/avatars/gs/dummy.jpg",
     "url": "",
     "gsid": ""
+  },
+  "e-cassirer": {
+    "shortname": "E Cassirer",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": ""
+  },
+  "g-simondon": {
+    "shortname": "G Simondon",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": ""
+  },
+  "n-lauber": {
+    "shortname": "N Lauber",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": ""
+  },
+  "c-flamm": {
+    "shortname": "C Flamm",
+    "photo": "/assets/avatars/gs/83OKBdcAAAAJ.jpg",
+    "url": "http://www.tbi.univie.ac.at/~xtof/",
+    "gsid": "83OKBdcAAAAJ",
+    "fullName": "Christoph Flamm",
+    "affiliation": "Associate Professor, Department of Theoretical Chemistry, University of Vienna"
+  },
+  "p-palacios": {
+    "shortname": "P Palacios",
+    "photo": "/assets/avatars/gs/LHLw_n8AAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=LHLw_n8AAAAJ",
+    "gsid": "LHLw_n8AAAAJ",
+    "fullName": "Patricia Palacios",
+    "affiliation": "University of Salzburg"
+  },
+  "e-mizraji": {
+    "shortname": "E Mizraji",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": ""
+  },
+  "jl-natale": {
+    "shortname": "JL Natale",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": ""
+  },
+  "g-reye": {
+    "shortname": "G Reye",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": ""
+  },
+  "x-huang": {
+    "shortname": "X Huang",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": ""
+  },
+  "lm-haupt": {
+    "shortname": "LM Haupt",
+    "photo": "/assets/avatars/gs/7VWxRSsAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=7VWxRSsAAAAJ",
+    "gsid": "7VWxRSsAAAAJ"
+  },
+  "rj-murphy": {
+    "shortname": "RJ Murphy",
+    "photo": "/assets/avatars/gs/ByJMyk0AAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=ByJMyk0AAAAJ",
+    "gsid": "ByJMyk0AAAAJ"
   }
 }
