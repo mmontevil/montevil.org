@@ -102,15 +102,15 @@
   "b-stiegler": {
     "shortname": "B Stiegler",
     "photo": "/assets/avatars/b-stiegler.jpg",
-    "url": "",
-    "gsid": "",
+    "url": "https://scholar.google.fr/citations?user=5eOo9hQAAAAJ",
+    "gsid": "5eOo9hQAAAAJ",
     "fullName": "Bernard Stiegler"
   },
   "g-longo": {
     "shortname": "G Longo",
     "photo": "/assets/avatars/g-longo.jpg",
     "url": "https://www.di.ens.fr/users/longo/",
-    "gsid": "",
+    "gsid": "5eOo9hQAAAAJ",
     "fullName": "Giuseppe Longo"
   },
   "l-speroni": {
@@ -125,7 +125,7 @@
     "shortname": "AM Soto",
     "photo": "/assets/avatars/am-soto.jpg",
     "url": "https://gsbs.tufts.edu/facultyResearch/faculty/soto-ana",
-    "gsid": "",
+    "gsid": "J6kLmsIAAAAJ",
     "fullName": "Ana M. Soto"
   },
   "c-sonnenschein": {
@@ -162,8 +162,8 @@
   "n-perret": {
     "shortname": "N Perret",
     "photo": "/assets/avatars/n-perret.jpg",
-    "url": "",
-    "gsid": "",
+    "url": "https://scholar.google.fr/citations?user=VmTCfroAAAAJ",
+    "gsid": "VmTCfroAAAAJ",
     "fullName": "N. Perret"
   },
   "a-pocheville": {
@@ -313,8 +313,8 @@
   "f-bailly": {
     "shortname": "F Bailly",
     "photo": "/assets/avatars/f-bailly.jpg",
-    "url": "",
-    "gsid": ""
+    "url": "https://scholar.google.fr/citations?user=5eOo9hQAAAAJ",
+    "gsid": "5eOo9hQAAAAJ"
   },
   "r-ferriere": {
     "shortname": "R Ferrière",
@@ -365,8 +365,8 @@
   "j-gayon": {
     "shortname": "J Gayon",
     "photo": "/assets/avatars/j-gayon.jpg",
-    "url": "",
-    "gsid": ""
+    "url": "https://scholar.google.fr/citations?user=5eOo9hQAAAAJ",
+    "gsid": "5eOo9hQAAAAJ"
   },
   "s-kauffman": {
     "shortname": "S Kauffman",
@@ -384,15 +384,17 @@
   },
   "f-de-pretis": {
     "shortname": "F De Pretis",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/sHEhiSoAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=sHEhiSoAAAAJ",
+    "gsid": "sHEhiSoAAAAJ"
   },
   "w-peden": {
     "shortname": "W Peden",
     "photo": "/assets/avatars/gs/sHEhiSoAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=sHEhiSoAAAAJ",
-    "gsid": "sHEhiSoAAAAJ"
+    "gsid": "sHEhiSoAAAAJ",
+    "fullName": "William Peden",
+    "affiliation": "Affiliation inconnue"
   },
   "j-landes": {
     "shortname": "J Landes",
@@ -448,9 +450,9 @@
   },
   "wb-miller-jr": {
     "shortname": "WB Miller Jr",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/dvijs08AAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=dvijs08AAAAJ",
+    "gsid": "dvijs08AAAAJ"
   },
   "js-torday": {
     "shortname": "JS Torday",
@@ -470,9 +472,9 @@
   },
   "m-turalska": {
     "shortname": "M Turalska",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/rEKMzQcAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=rEKMzQcAAAAJ",
+    "gsid": "rEKMzQcAAAAJ"
   },
   "e-geneston": {
     "shortname": "E Geneston",
@@ -498,9 +500,9 @@
   },
   "mg-masiello": {
     "shortname": "MG Masiello",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/r1nj3NAAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=r1nj3NAAAAAJ",
+    "gsid": "r1nj3NAAAAAJ"
   },
   "sh-hendi": {
     "shortname": "SH Hendi",
@@ -558,9 +560,9 @@
   },
   "jj-frost": {
     "shortname": "JJ Frost",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/qrZ788cAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=qrZ788cAAAAJ",
+    "gsid": "qrZ788cAAAAJ"
   },
   "kj-pienta": {
     "shortname": "KJ Pienta",
@@ -586,9 +588,9 @@
   },
   "e-kim": {
     "shortname": "E Kim",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/LxK5HvkAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=LxK5HvkAAAAJ",
+    "gsid": "LxK5HvkAAAAJ"
   },
   "a-zia": {
     "shortname": "A Zia",
@@ -608,9 +610,9 @@
   },
   "b-beckage": {
     "shortname": "B Beckage",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/m0szDyQAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=m0szDyQAAAAJ",
+    "gsid": "m0szDyQAAAAJ"
   },
   "pk-maini": {
     "shortname": "PK Maini",
@@ -622,15 +624,15 @@
   },
   "lm-tenkes": {
     "shortname": "LM Tenkes",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/LxK5HvkAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=LxK5HvkAAAAJ",
+    "gsid": "LxK5HvkAAAAJ"
   },
   "m-joly": {
     "shortname": "M Joly",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/Xn4b_xsAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=Xn4b_xsAAAAJ",
+    "gsid": "Xn4b_xsAAAAJ"
   },
   "phc-rondo": {
     "shortname": "PHC Rondó",
@@ -824,9 +826,9 @@
   },
   "a-svenkeson": {
     "shortname": "A Svenkeson",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/rEKMzQcAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=rEKMzQcAAAAJ",
+    "gsid": "rEKMzQcAAAAJ"
   },
   "a-jawad": {
     "shortname": "A Jawad",
@@ -1000,9 +1002,9 @@
   },
   "ob-naimark": {
     "shortname": "OB Naimark",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/SkzBtGYAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=SkzBtGYAAAAJ",
+    "gsid": "SkzBtGYAAAAJ"
   },
   "vv-grishko": {
     "shortname": "VV Grishko",
@@ -1102,9 +1104,9 @@
   },
   "p-mistani": {
     "shortname": "P Mistani",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/KKUAx0sAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=KKUAx0sAAAAJ",
+    "gsid": "KKUAx0sAAAAJ"
   },
   "s-pakravan": {
     "shortname": "S Pakravan",
@@ -1190,9 +1192,9 @@
   },
   "jm-arnau-navarro": {
     "shortname": "JM Arnau Navarro",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/JKt3ReoAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=JKt3ReoAAAAJ",
+    "gsid": "JKt3ReoAAAAJ"
   },
   "ni-moldovan": {
     "shortname": "NI Moldovan",
@@ -1332,9 +1334,9 @@
   },
   "ayu-mejgal": {
     "shortname": "АЮ Мейгал",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/MfaDMfMAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=MfaDMfMAAAAJ",
+    "gsid": "MfaDMfMAAAAJ"
   },
   "nv-voronova": {
     "shortname": "НВ Воронова",
@@ -1364,7 +1366,7 @@
     "url": "http://www.rug.nl/staff/frank.vanclay/",
     "gsid": "QQpjd6MAAAAJ",
     "fullName": "Frank Vanclay",
-    "affiliation": "Director, Urban & Regional Studies Institute, Faculty of Spatial Sciences, University of Groningen"
+    "affiliation": "Head, Department of Cultural Geography, Faculty of Spatial Sciences, University of Groningen"
   },
   "ay-meigal": {
     "shortname": "AY Meigal",
@@ -1408,15 +1410,15 @@
   },
   "mf-sweeney": {
     "shortname": "MF Sweeney",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/VmTCfroAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=VmTCfroAAAAJ",
+    "gsid": "VmTCfroAAAAJ"
   },
   "n-hasan": {
     "shortname": "N Hasan",
     "photo": "/assets/avatars/n-hasan.jpg",
-    "url": "",
-    "gsid": ""
+    "url": "https://scholar.google.fr/citations?user=VmTCfroAAAAJ",
+    "gsid": "VmTCfroAAAAJ"
   },
   "sg-baker": {
     "shortname": "SG Baker",
@@ -1450,9 +1452,9 @@
   },
   "nj-hogrebe": {
     "shortname": "NJ Hogrebe",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/hTf3dXAAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=hTf3dXAAAAAJ",
+    "gsid": "hTf3dXAAAAAJ"
   },
   "jw-reinhardt": {
     "shortname": "JW Reinhardt",
@@ -1494,9 +1496,9 @@
   },
   "k-skerl": {
     "shortname": "K Skerl",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/MW7sjLQAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=MW7sjLQAAAAJ",
+    "gsid": "MW7sjLQAAAAJ"
   },
   "s-vinnicombe": {
     "shortname": "S Vinnicombe",
@@ -1604,9 +1606,9 @@
   },
   "da-nelson": {
     "shortname": "DA Nelson",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/WqqE7TwAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=WqqE7TwAAAAJ",
+    "gsid": "WqqE7TwAAAAJ"
   },
   "m-larsen": {
     "shortname": "M Larsen",
@@ -1668,9 +1670,9 @@
   },
   "jv-serbo": {
     "shortname": "JV Serbo",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/_9FtmK8AAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=_9FtmK8AAAAJ",
+    "gsid": "_9FtmK8AAAAJ"
   },
   "s-kuo": {
     "shortname": "S Kuo",
@@ -1710,9 +1712,9 @@
   },
   "le-marshall": {
     "shortname": "LE Marshall",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/Ejfu0mYAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=Ejfu0mYAAAAJ",
+    "gsid": "Ejfu0mYAAAAJ"
   },
   "r-koomullil": {
     "shortname": "R Koomullil",
@@ -2062,9 +2064,9 @@
   },
   "f-kuchling": {
     "shortname": "F Kuchling",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/q_4u0aoAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=q_4u0aoAAAAJ",
+    "gsid": "q_4u0aoAAAAJ"
   },
   "k-friston": {
     "shortname": "K Friston",
@@ -2396,9 +2398,9 @@
   },
   "e-de-angelis": {
     "shortname": "E De Angelis",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/J6kLmsIAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=J6kLmsIAAAAJ",
+    "gsid": "J6kLmsIAAAAJ"
   },
   "a-hossaini": {
     "shortname": "A Hossaini",
@@ -2414,9 +2416,9 @@
   },
   "t-gaudin": {
     "shortname": "T Gaudin",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/5urxPVwAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=5urxPVwAAAAJ",
+    "gsid": "5urxPVwAAAAJ"
   },
   "mc-maurel": {
     "shortname": "MC Maurel",
@@ -2568,9 +2570,9 @@
   },
   "th-booij": {
     "shortname": "TH Booij",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/r9M2QkcAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=r9M2QkcAAAAJ",
+    "gsid": "r9M2QkcAAAAJ"
   },
   "ls-price": {
     "shortname": "LS Price",
@@ -2604,9 +2606,9 @@
   },
   "htt-nhu": {
     "shortname": "HTT Nhu",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/JUeJiHIAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=JUeJiHIAAAAJ",
+    "gsid": "JUeJiHIAAAAJ"
   },
   "rae-drigo": {
     "shortname": "RAE Drigo",
@@ -2664,9 +2666,9 @@
   },
   "n-thein": {
     "shortname": "N Thein",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/UTBq0lsAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=UTBq0lsAAAAJ",
+    "gsid": "UTBq0lsAAAAJ"
   },
   "k-hamamoto": {
     "shortname": "K Hamamoto",
@@ -2698,9 +2700,9 @@
   },
   "x-gu": {
     "shortname": "X Gu",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/ZfM9rTMAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=ZfM9rTMAAAAJ",
+    "gsid": "ZfM9rTMAAAAJ"
   },
   "rtk-kwok": {
     "shortname": "RTK Kwok",
@@ -2794,9 +2796,9 @@
   },
   "l-dobrzynski": {
     "shortname": "L Dobrzyński",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/j9pdAloAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=j9pdAloAAAAJ",
+    "gsid": "j9pdAloAAAAJ"
   },
   "kw-fornalski": {
     "shortname": "KW Fornalski",
@@ -2880,9 +2882,9 @@
   },
   "e-roux": {
     "shortname": "E Roux",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/fcGpT6EAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=fcGpT6EAAAAJ",
+    "gsid": "fcGpT6EAAAAJ"
   },
   "m-marhl": {
     "shortname": "M Marhl",
@@ -3030,9 +3032,9 @@
   },
   "jm-brooke": {
     "shortname": "JM Brooke",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/IdGZl7YAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=IdGZl7YAAAAJ",
+    "gsid": "IdGZl7YAAAAJ"
   },
   "ss-james": {
     "shortname": "SS James",
@@ -3054,7 +3056,7 @@
     "url": "https://scholar.google.fr/citations?user=53VqJ0UAAAAJ",
     "gsid": "53VqJ0UAAAAJ",
     "fullName": "Tuomas Yrttimaa",
-    "affiliation": "Early-stage researcher, School of Forest Sciences, University of Eastern Finland"
+    "affiliation": "PhD, School of Forest Sciences, University of Eastern Finland"
   },
   "a-hammond": {
     "shortname": "A Hammond",
@@ -3303,16 +3305,16 @@
   "j-bongard": {
     "shortname": "J Bongard",
     "photo": "/assets/avatars/gs/Dj-kPasAAAAJ.jpg",
-    "url": "http://www.cs.uvm.edu/~jbongard/",
+    "url": "https://jbongard.github.io/",
     "gsid": "Dj-kPasAAAAJ",
     "fullName": "Josh Bongard",
     "affiliation": "Professor of Computer Science, University of Vermont"
   },
   "p-siregar": {
     "shortname": "P Siregar",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/SmBZkboAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=SmBZkboAAAAJ",
+    "gsid": "SmBZkboAAAAJ"
   },
   "n-julen": {
     "shortname": "N Julen",
@@ -3414,9 +3416,9 @@
   },
   "n-palfreyman": {
     "shortname": "N Palfreyman",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/5K0oDZIAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=5K0oDZIAAAAJ",
+    "gsid": "5K0oDZIAAAAJ"
   },
   "j-miller-young": {
     "shortname": "J Miller-Young",
@@ -3458,9 +3460,9 @@
   },
   "mb-campero": {
     "shortname": "MB Campero",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/1sAn1SgAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=1sAn1SgAAAAJ",
+    "gsid": "1sAn1SgAAAAJ"
   },
   "c-favre": {
     "shortname": "C Favre",
@@ -3702,9 +3704,9 @@
   },
   "j-alexander": {
     "shortname": "J Alexander",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/yZENZF8AAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=yZENZF8AAAAJ",
+    "gsid": "yZENZF8AAAAJ"
   },
   "e-cukierman": {
     "shortname": "E Cukierman",
@@ -3758,9 +3760,9 @@
   },
   "j-heng": {
     "shortname": "J Heng",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/zotSzmQAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=zotSzmQAAAAJ",
+    "gsid": "zotSzmQAAAAJ"
   },
   "hh-heng": {
     "shortname": "HH Heng",
@@ -3846,9 +3848,9 @@
   },
   "f-wu": {
     "shortname": "F Wu",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/ovmqgJoAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=ovmqgJoAAAAJ",
+    "gsid": "ovmqgJoAAAAJ"
   },
   "x-wu": {
     "shortname": "X Wu",
@@ -3938,9 +3940,9 @@
   },
   "axs-dos-santos": {
     "shortname": "AXS Dos Santos",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/4rfisdkAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=4rfisdkAAAAJ",
+    "gsid": "4rfisdkAAAAJ"
   },
   "p-liberali": {
     "shortname": "P Liberali",
@@ -3956,7 +3958,7 @@
     "url": "https://scholar.google.fr/citations?user=6UfvKyMAAAAJ",
     "gsid": "6UfvKyMAAAAJ",
     "fullName": "Aline Xavier da Silveira dos Santos",
-    "affiliation": "Institute of Molecular and Clinical Ophthalmology Basel IOB"
+    "affiliation": "Institute for Translational Bioengineering (ITB), pRED, Roche"
   },
   "a-po": {
     "shortname": "A Po",
@@ -3976,9 +3978,9 @@
   },
   "f-tretter": {
     "shortname": "F Tretter",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/Cnx7XskAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=Cnx7XskAAAAJ",
+    "gsid": "Cnx7XskAAAAJ"
   },
   "o-wolkenhauer": {
     "shortname": "O Wolkenhauer",
@@ -4032,9 +4034,9 @@
   },
   "s-jaswal": {
     "shortname": "S Jaswal",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/JDqBHfYAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=JDqBHfYAAAAJ",
+    "gsid": "JDqBHfYAAAAJ"
   },
   "v-anand": {
     "shortname": "V Anand",
@@ -4128,7 +4130,7 @@
     "url": "http://www.guttinger.co.uk/",
     "gsid": "rBc2pYYAAAAJ",
     "fullName": "Stephan Guttinger",
-    "affiliation": "Teaching Fellow, Philosophy, Durham University"
+    "affiliation": "Lecturer, Philosophy of Data/Data Ethics, University of Exeter"
   },
   "mj-reiss": {
     "shortname": "MJ Reiss",
@@ -4264,9 +4266,9 @@
   },
   "d-czamanski": {
     "shortname": "D Czamanski",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/qkLxA0wAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=qkLxA0wAAAAJ",
+    "gsid": "qkLxA0wAAAAJ"
   },
   "d-broitman": {
     "shortname": "D Broitman",
@@ -4278,9 +4280,9 @@
   },
   "g-liang": {
     "shortname": "G Liang",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/5WKqkyQAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=5WKqkyQAAAAJ",
+    "gsid": "5WKqkyQAAAAJ"
   },
   "h-chen": {
     "shortname": "H Chen",
@@ -4466,9 +4468,9 @@
   },
   "s-cauci": {
     "shortname": "S Cauci",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/oqc4jTcAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=oqc4jTcAAAAJ",
+    "gsid": "oqc4jTcAAAAJ"
   },
   "m-vigano": {
     "shortname": "M Viganò",
@@ -4530,9 +4532,9 @@
   },
   "jj-heindel": {
     "shortname": "JJ Heindel",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/O_5EebsAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=O_5EebsAAAAJ",
+    "gsid": "O_5EebsAAAAJ"
   },
   "s-belcher": {
     "shortname": "S Belcher",
@@ -4654,9 +4656,9 @@
   },
   "cr-barouki": {
     "shortname": "CR Barouki",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/Z7f-ntIAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=Z7f-ntIAAAAJ",
+    "gsid": "Z7f-ntIAAAAJ"
   },
   "e-tarroja": {
     "shortname": "E Tarroja",
@@ -4996,9 +4998,9 @@
   },
   "m-carrion-alvarez": {
     "shortname": "M Carrión Álvarez",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/_BZK3XEAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=_BZK3XEAAAAJ",
+    "gsid": "_BZK3XEAAAAJ"
   },
   "d-ehnts": {
     "shortname": "D Ehnts",
@@ -5040,9 +5042,9 @@
   },
   "z-xu": {
     "shortname": "Z Xu",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/UOw9DkIAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=UOw9DkIAAAAJ",
+    "gsid": "UOw9DkIAAAAJ"
   },
   "g-cheng": {
     "shortname": "G Cheng",
@@ -5060,9 +5062,9 @@
   },
   "jp-chanteau": {
     "shortname": "JP Chanteau",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/B3lirlgAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=B3lirlgAAAAJ",
+    "gsid": "B3lirlgAAAAJ"
   },
   "p-grouiez": {
     "shortname": "P Grouiez",
@@ -5124,9 +5126,9 @@
   },
   "a-labrousse": {
     "shortname": "A Labrousse",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/q32S-sAAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=q32S-sAAAAAJ",
+    "gsid": "q32S-sAAAAAJ"
   },
   "j-vercueil": {
     "shortname": "J Vercueil",
@@ -5220,9 +5222,9 @@
   },
   "a-kaiser": {
     "shortname": "A Kaiser",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/-RfVRCYAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=-RfVRCYAAAAJ",
+    "gsid": "-RfVRCYAAAAJ"
   },
   "s-hustvedt": {
     "shortname": "S Hustvedt",
@@ -5444,9 +5446,9 @@
   },
   "s-michel": {
     "shortname": "S Michel",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/q32S-sAAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=q32S-sAAAAAJ",
+    "gsid": "q32S-sAAAAAJ"
   },
   "m-villalobos": {
     "shortname": "M Villalobos",
@@ -5542,9 +5544,9 @@
   },
   "m-castellan": {
     "shortname": "M Castellan",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/n-it_EQAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=n-it_EQAAAAJ",
+    "gsid": "n-it_EQAAAAJ"
   },
   "m-piazza": {
     "shortname": "M Piazza",
@@ -5580,9 +5582,9 @@
   },
   "n-lauber": {
     "shortname": "N Lauber",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/83OKBdcAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=83OKBdcAAAAJ",
+    "gsid": "83OKBdcAAAAJ"
   },
   "c-flamm": {
     "shortname": "C Flamm",
@@ -5614,9 +5616,9 @@
   },
   "g-reye": {
     "shortname": "G Reye",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/7VWxRSsAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=7VWxRSsAAAAJ",
+    "gsid": "7VWxRSsAAAAJ"
   },
   "x-huang": {
     "shortname": "X Huang",
@@ -5628,12 +5630,16 @@
     "shortname": "LM Haupt",
     "photo": "/assets/avatars/gs/7VWxRSsAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=7VWxRSsAAAAJ",
-    "gsid": "7VWxRSsAAAAJ"
+    "gsid": "7VWxRSsAAAAJ",
+    "fullName": "Associate Professor Larisa M Haupt",
+    "affiliation": "Principal Research Fellow, Centre for Genomics and Personalised Health, QUT"
   },
   "rj-murphy": {
     "shortname": "RJ Murphy",
     "photo": "/assets/avatars/gs/ByJMyk0AAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=ByJMyk0AAAAJ",
-    "gsid": "ByJMyk0AAAAJ"
+    "gsid": "ByJMyk0AAAAJ",
+    "fullName": "Ryan J Murphy",
+    "affiliation": "PhD Student, Queensland University of Technology"
   }
 }

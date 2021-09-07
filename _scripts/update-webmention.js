@@ -1,6 +1,7 @@
 // https://sia.codes/posts/webmentions-eleventy-in-depth/
 
-const fetch = require('node-fetch');
+//const fetch = require('node-fetch');
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 const unionBy = require('lodash/unionBy');
 const sanitizeHTML = require('sanitize-html');
 const domain = new URL(require('../package.json').homepage).hostname;

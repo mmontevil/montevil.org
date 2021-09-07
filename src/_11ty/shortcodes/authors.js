@@ -48,6 +48,9 @@ var downloadAvatar = (url) => {
 };
 
 const authors0 = (name, gsid, people, auth, nbAuteurs, fullname0) => {
+  if (name==undefined){
+    return undefined;
+  }else{
   let authorPic = '/assets/avatars/gs/dummy.jpg';
   let authorUrl = '';
   let affiliation = '';
@@ -158,6 +161,7 @@ const authors0 = (name, gsid, people, auth, nbAuteurs, fullname0) => {
  </figcaption>
  </figure>`;
   return content;
+  }
 };
 
 const authors1 = memoize(authors0);
