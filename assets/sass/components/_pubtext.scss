@@ -405,3 +405,10 @@ margin-top: 0;}
   --flow-space: var(--gap-m);
 }
 .abstract>p{--flow-space: var(--gap-m);}
+
+
+.sidebuttons > .buttonlink{
+    backdrop-filter: blur(10px);
+    background-color:  var(--color-trans);
+}
+

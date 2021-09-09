@@ -172,8 +172,14 @@
       calc(var(--lum) + #{$i} * var(--lum-step2))
     );
   }
-
-  .noDarkFilter {
+  --color-trans: hsla(
+      var(--hue),
+      calc(var(--sat) + 9 * var(--sat-step)),
+      calc(var(--lum) + 9 * var(--lum-step)),
+      0.6
+    );
+  
+.noDarkFilter {
     filter: none;
   }
   a:hover .darkFilterT{filter:  hue-rotate(180deg) invert(100%);}//0.087//0.13//0.2//hsl(59, 100%, 88%);
@@ -254,7 +260,13 @@
   --inline-code-background-color: #282c34;
   --inline-code-text-color: #abb2bf;
   --color-grad: 0%;
-
+  --color-trans: hsla(
+      var(--hue),
+      calc(var(--sat) + 9 * var(--sat-step)),
+      calc(var(--lum) + 9 * var(--lum-step)),
+      0.4
+    );
+  
   @for $i from 1 through 9 {
     --color-primary-lighter-#{$i}: hsl(
       var(--hue),
