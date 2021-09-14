@@ -5665,5 +5665,23 @@
     "photo": "/assets/avatars/gs/dummy.jpg",
     "url": "",
     "gsid": ""
+  },
+  "as-serafi": {
+    "shortname": "AS Serafi",
+    "photo": "/assets/avatars/gs/t8jt8rUAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=t8jt8rUAAAAJ",
+    "gsid": "t8jt8rUAAAAJ"
+  },
+  "g-toepfer": {
+    "shortname": "G Toepfer",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": ""
+  },
+  "a-natsch": {
+    "shortname": "A Natsch",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": ""
   }
 }
