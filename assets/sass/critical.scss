@@ -320,6 +320,7 @@ img {
   max-width: 100%;
 
   opacity: 1;
+  -moz-force-broken-image-icon: 1;
 
   transition: opacity 0.3s;
 }

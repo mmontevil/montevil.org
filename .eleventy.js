@@ -136,6 +136,8 @@ module.exports = function (eleventyConfig) {
   // const slugify = require('@sindresorhus/slugify');
   const markdownItAnchor = require('markdown-it-anchor');
 
+  
+  /*
     const markdownItAnchorOptions = {
     permalink: markdownItAnchor.permalink.ariaHidden({
       assistiveText: title => `Permalink to “${title}”`,
@@ -150,7 +152,7 @@ module.exports = function (eleventyConfig) {
       return slugify(s);
     },
   };
- 
+ */
     /*
   const markdownItAnchorOptions = {
     permalink: true,
@@ -163,6 +165,40 @@ module.exports = function (eleventyConfig) {
     },
   }; */
   
+    
+      const linkAfterHeader = markdownItAnchor.permalink.linkAfterHeader({
+    class: 'deeplink',
+    symbol:
+      '<svg class="icon" role="img" focusable="false" tabindex="-1" viewBox="0 0 24 24" width="1em" height="1em"><use xlink:href="#symbol-anchor" /></svg>',
+    style: 'visually-hidden',
+    visuallyHiddenClass: 'visually-hidden',
+    assistiveText: (title) => `Permalink to heading ${title}`,
+  });
+  const markdownItAnchorOptions = {
+    level: [2, 3, 4],
+    slugify,
+    permalink(slug, opts, state, idx) {
+      state.tokens.splice(
+        idx,
+        0,
+        Object.assign(new state.Token('div_open', 'div', 1), {
+          attrs: [['class', 'heading-wrapper']],
+          block: true,
+        })
+      );
+
+      state.tokens.splice(
+        idx + 4,
+        0,
+        Object.assign(new state.Token('div_close', 'div', -1), {
+          block: true,
+        })
+      );
+
+      linkAfterHeader(slug, opts, state, idx + 1);
+    },
+  };
+    
 
   const markdownItAttributes = require('markdown-it-attrs');
 
