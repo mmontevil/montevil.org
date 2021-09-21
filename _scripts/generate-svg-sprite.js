@@ -84,6 +84,7 @@ Object.entries(ICONS_LIST).forEach(([source, icons]) => {
     sprite.add(`symbol-${properties.name || icon}`, svgFile, {
       // Add attributes for accessibility
       symbolAttrs: {
+        focusable: false,
         'aria-label': properties.title,
         role: 'img',
       },

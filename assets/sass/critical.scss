@@ -60,7 +60,7 @@ body {
   font-size-adjust: 0.5;
   word-break: normal;
   overflow-wrap: anywhere;
-
+  accent-color: var(--color-primary);
   background-color: var(--color-bg);
   scroll-margin-top: 5rem;
   text-rendering: optimizeLegibility;
@@ -478,16 +478,15 @@ img.border {
   vertical-align: text-top;
 }
 .portrait {
-  --wobble-min: 50%;
-  --wobble-max: 100%;
+ // --wobble-min: 50%;
+ // --wobble-max: 100%;
   border-color: var(--color-primary-lighter-3);
   border-style: solid;
   border-width: var(--border-width);
-  border-radius: var(--wobble-min) / var(--wobble-max);
-
+  border-radius: 10% 100% / 100% 10% 200% 20%;
   background-image: linear-gradient(55deg, #000, #000);
-
-  animation: portrait-wobble 8s ease-in-out alternate infinite;
+//var(--wobble-min) / var(--wobble-max);
+ // animation: portrait-wobble 8s ease-in-out alternate infinite;
 }
 
 // https://chrisruppel.com/blog/css-animation-border-radius/

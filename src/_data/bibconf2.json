@@ -40,6 +40,24 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "2021-Ensser",
+        "fields": {
+            "title": "Organization, historicity and causality",
+            "booktitle": "Context ,Causality, and Consequences: from robust evidence to timely action in biology, ecology, law and public policy",
+            "location": "Berne",
+            "year": "2021",
+            "month": "11",
+            "day": "26",
+            "annonce": "true",
+            "language": "en",
+            "url": "https://ensser.org/events/2021/invitation-public-event-context-causality-and-consequences-from-robust-evidence-to-timely-action-in-biology-ecology-law-and-public-policy/",
+            "abstract": " Two models dominate reflection on causality, namely mechanisms and physics. The former focuses on very local processes, while the latter focuses on ahistorical systems. We argue that neither is a sufficient framework for biology. Instead, in biology, parts of a system collectively maintain each other, which enables us to understand how biological systems maintain themselves. This perspective corresponds notably to autopoiesis and closure of constraints, and is sometimes called organization. In this view, the part maintain each other, leading to circularities. It implies that a systemic mode of thinking is critical to understand these phenomena. However, they are also historical: the organization they maintain is the singular result of evolution, and they change over time. It follows that causality in biology has two distinct features. First, it has a circular dimension: how do singular organizations maintain themselves? Second, it has to include historical changes: how do we understand the appearance of novelty?",
+            "author": " Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
         "entrykey": "2021-cracovie",
         "fields": {
             "title": "What Should We Do With Our Entropies? Restoring the Function of Scientific Controversies for Rethinking/Redesigning Economy",
@@ -261,7 +279,7 @@
             "month": "6",
             "location": "Tendances Première, La première, RTBF",
             "url": "https://www.rtbf.be/auvio/detail_fictions-d-hier-sciences-d-aujourd-hui-episode-1?id=2785997",
-            "video": "http://rtbf-pod.fl.freecaster.net/pod/rtbf/geo/open/P/P0LSaVZmSk.mp3",
+            "video": "https://rtbf-pod.fl.freecaster.net/pod/rtbf/geo/open/P/P0LSaVZmSk.mp3",
             "language": "fr",
             "illustration": "tenet.jpg",
             "day": "28",
