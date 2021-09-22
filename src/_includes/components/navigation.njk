@@ -10,7 +10,7 @@
       </li>
      <li>#}
       <li class="tools__search navigation__archives{% if 'archives' in page.url %} current" aria-current="page{% endif %}">
-     <a href="/all/archives/">{%- icon "archives", "archives" -%} Archives</a>
+     <a href="/all/archives/">{%- icon "archives", "archives" %} Archives</a>
      </li>    
      <li class="navigation__{{ type }}">
      <details><summary><ul class="menu" >
@@ -55,7 +55,7 @@
           <a href="{{ url }}">
           {% if type == "tags" %}{% icon "tags", "tag" %}{%- endif -%}
            {% if type == "feeds" %}{% icon "rss", "rss" %}{%- endif -%}
-           {% if type == "about" %}{% icon "user", "about" %}{%- endif -%}{{- type |title -}}
+           {% if type == "about" %}{% icon "user", "about" %}{%- endif %} {{ type |title -}}
         
           </a></li>
        {% endfor %}

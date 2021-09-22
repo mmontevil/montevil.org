@@ -410,7 +410,7 @@ img {
 
     max-width: 50%;
 
-    @media (min-width: 20em) {
+    @media (min-width: 30em) {
       max-width: 33%;
     }
   }
@@ -421,12 +421,30 @@ img {
     max-width: 50%;
    // @extend .right;
 
-    @media (min-width: 20em) {
+    @media (min-width: 30em) {
       max-width: 33%;
     }
 
+    @media (min-width: 40em) {
+      max-width: 25%;
+    }
+  }
+  &.biglogo {
+    max-width: 35%;
+   // @extend .right;
+
+    @media (min-width: 20em) {
+      max-width: 30%;
+    }
     @media (min-width: 30em) {
       max-width: 25%;
+    }
+
+    @media (min-width: 40em) {
+      max-width: 20%;
+    }
+        @media (min-width: 50em) {
+      max-width: 15%;
     }
   }
 
@@ -464,7 +482,7 @@ img.border {
   border: 3px solid var(--color-primary-lighter-5);
 }
 
-.logo {
+.logo, .biglogo {
   display: block;
 
   margin: var(--gap-m) auto;

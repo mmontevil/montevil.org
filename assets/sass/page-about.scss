@@ -5,6 +5,7 @@ ul.snake {
   --flow-space: var(--gap-m);
   padding: 0;
   padding-top: 1em;
+  margin-bottom: var(--gap-xl);
 }
 
 .snake li::after {
@@ -19,7 +20,7 @@ ul.snake {
   position: relative;
 
   margin: 0;
-  padding: var(--gap-xl);
+  padding: var(--gap-xxl);
   padding-right: var(--gap-l);
   padding-left: var(--gap-l);
 
@@ -134,6 +135,6 @@ border-right: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   &::before {
-    left: 0%;
+    right: 0%;
   }
 }

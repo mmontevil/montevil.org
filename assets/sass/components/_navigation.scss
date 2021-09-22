@@ -70,10 +70,16 @@
     list-style-type: none;
   }
   .submenu{
+    font-size: var(--font-size-s);
     display: flex;
     flex-direction: column;
-
-    padding-left: 0.3em;
+//font-variant: none;
+    li:nth-child(1) > a {padding: 0 var(--gap-4xs) 0;}
+ a{
+   
+   color: var(--color-primary-lighter-1);}
+ a:hover, a:focus {color: var(--color-link-hover);}
+    padding-left: 1em;
   } 
   summary:marker{
     color: var(--color-link);
