@@ -79,6 +79,7 @@ hasSup: hasSup,
     </li>
      <li class="sidebuttons">
       {% if layout=="publication" %}
+       {#{{ content | toc(tags=['h2'], wrapperClass='autotoc sidetoc')|safe}}#}
       {{pubuttons(item) |safe}}
        {% endif %}
     </li>

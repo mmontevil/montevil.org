@@ -410,8 +410,10 @@ margin-top: 0;}
 .abstract>p{--flow-space: var(--gap-m);}
 
 
-.sidebuttons > .buttonlink{
+.sidebuttons > .buttonlink, .sidebuttons > .sidetoc{
+  &.autotoc  .tocLevel1 {
+    font-size: var(--font-size-s);
+}
     backdrop-filter: blur(10px);
     background-color:  var(--color-trans);
 }
-
