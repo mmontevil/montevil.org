@@ -30,13 +30,17 @@ async function login(driver) {
 }
 async function scrolldown(driver) {
   var reachedEnd = false;
-  oldCount = await driver.findElements(By.css('.nova-o-stack__item')).length;
+  var oldCount = await driver.findElements(By.css('.nova-legacy-o-stack__item')).length;
 
   while (!reachedEnd) {
+        await sleep(1000);
     await driver.findElement(By.css('body')).sendKeys(Key.END);
-    await sleep(1500);
-    newCount = await driver.findElements(By.css('.nova-o-stack__item'));
-    newCount = newCount.length;
+    await sleep(2500);
+    var newCount0 = await driver.findElements(By.css('.nova-legacy-o-stack__item'));
+    newCount = newCount0.length;
+    console.log("scroll");
+    console.log(newCount);
+    console.log(oldCount);
 
     if (newCount == oldCount) {
       reachedEnd = true;
@@ -77,7 +81,7 @@ let res = {};
     await scrolldown(driver);
     await sleep(5000);
     listpub = await driver.findElements(
-      By.xpath("//div[@class='nova-v-publication-item__stack-item']/div/a")
+      By.xpath("//div[@class='nova-legacy-v-publication-item__stack-item']/div/a")
     );
     titles = [];
     urls = [];
@@ -107,7 +111,7 @@ let res = {};
         for (var i = 0; i < 100; i++) {
           let button = await driver.findElement(
             By.xpath(
-              "//div[@class='content-layout']/div[3]/div/div[2]/div/div/div/button[2]"
+              "//div[@class='content-layout']/div[3]/div/div[2]/div/div/div/div/button[2]"
             )
           );
           let test = await button.getAttribute('class');
@@ -121,12 +125,12 @@ let res = {};
         // name= await driver.findElements(By.xpath("//div[@class='content-layout']/div[3]/div/div[2]/div/div/div/div/div/div/div/div/div/div/div/div[2]/div"));
         link = await driver.findElements(
           By.xpath(
-            "//div[@class='content-layout']/div[3]/div/div[2]/div/div/div/div/div/div/div/div/div/div/div/div[1]/a"
+            "//div[@class='content-layout']/div[3]/div/div[2]/div/div/div/div/div/div/div/div/div/div/div/div/div[1]/a"
           )
         );
         pic = await driver.findElements(
           By.xpath(
-            "//div[@class='content-layout']/div[3]/div/div[2]/div/div/div/div/div/div/div/div/div/div/div/div[1]/a/img"
+            "//div[@class='content-layout']/div[3]/div/div[2]/div/div/div/div/div/div/div/div/div/div/div/div/div[1]/a/img"
           )
         );
 
@@ -134,7 +138,9 @@ let res = {};
           name = await pic[entry].getAttribute('alt');
           link0 = await link[entry].getAttribute('href');
           photo = await pic[entry].getAttribute('src');
-
+          console.log(name);
+           console.log(link0);
+           console.log(photo);
           title0 = slugifyString(title.toLowerCase());
           let size = 0;
           let idd = '';
