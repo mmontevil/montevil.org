@@ -76,6 +76,11 @@ const authors0 = (name, gsid, people, auth, nbAuteurs, fullname0) => {
   if (people[name] && people[name].site) {
     authorUrl = people[name].site;
   }
+    if (people[name] && people[name].affiliation) {
+    affiliation =  people[name].affiliation;
+  }
+  
+  
   let authclass = '';
   if (auth) {
     authclass = 'p-author';
@@ -92,6 +97,7 @@ const authors0 = (name, gsid, people, auth, nbAuteurs, fullname0) => {
       photo: authorPic,
       url: authorUrl,
       gsid: gsid,
+      affiliation: affiliation,
     };
     cachedPeople[slugify(name)] = person;
     if (fullname0) {

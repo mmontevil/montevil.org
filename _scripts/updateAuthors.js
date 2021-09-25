@@ -31,7 +31,7 @@ let res = {};
 
     for (entry of authors) {
       let gsid = entry.gsid;
-      if (gsid) {
+      if (gsid && gsid!= "") {
         console.log('https://scholar.google.fr/citations?user=' + gsid);
         await driver.get('https://scholar.google.fr/citations?user=' + gsid),
           await driver.wait(() => documentInitialised(), 12000);

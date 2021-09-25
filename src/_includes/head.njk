@@ -43,6 +43,14 @@
   {% set ogImageTitle = '' %}
   {% set ogImageTagline = '' %}
 
+   {% if excerpt and not excerpt=="" %}
+{% set pageExcerpt =excerpt %}
+{%elif abstract and not abstract==""%}
+  {% set pageExcerpt =abstract %}
+{%else%}
+{% set pageExcerpt = content | excerpt %}
+{%endif%}
+  
   {% if page.url == "/" %}
     {% set ogTitle = pkg.title %}
     {% set ogDescription = pkg.description %}
@@ -67,9 +75,7 @@
   {% endif %}
 
   <meta property="og:title" content="{{ opengraph.title }}" />
-  <meta name="description" content="{{ ogDescription }}" />
-  <meta property="og:description" content="{{ ogDescription }}" />
-
+<meta name="description" property="og:description" content="{{ ogDescription}}" />
   <link rel="canonical" href="{{ pkg.homepage + page.url | lowerize }}"  />
   <meta property="og:url" content="{{ pkg.homepage + page.url | lowerize }}" />
 

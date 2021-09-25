@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{lang or "en"}}" class="no-js">
- {% if excerpt and not excerpt=="" %}
-{% set pageExcerpt =excerpt %}
-{%else%}
-{% set pageExcerpt = content | excerpt %}
-{%endif%}
+
   {% include "head.njk" %}
   <body
     itemscope
