@@ -16,6 +16,7 @@ async function login(driver) {
   const documentInitialised = () =>
     driver.executeScript("return 'initialised'");
   await driver.get('https://twitter.com/login');
+    await sleep(10000);
   await driver.wait(() => documentInitialised(), 10000);
   await sleep(1000);
   await driver

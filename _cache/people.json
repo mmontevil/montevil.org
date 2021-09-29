@@ -1112,9 +1112,9 @@
   },
   "p-mistani": {
     "shortname": "P Mistani",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/2Uos2_gAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=2Uos2_gAAAAJ",
+    "gsid": "2Uos2_gAAAAJ"
   },
   "s-pakravan": {
     "shortname": "S Pakravan",
@@ -5686,5 +5686,40 @@
     "url": "https://gsbs.tufts.edu/facultyResearch/staff/schaeberle-cheryl",
     "gsid": "",
     "affiliation": "Tufts University School of Medicine"
+  },
+  "e-axer": {
+    "shortname": "E Axer",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "e-geulen": {
+    "shortname": "E Geulen",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "a-heimes": {
+    "shortname": "A Heimes",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "vrv-rialle": {
+    "shortname": "VRV Rialle",
+    "photo": "/assets/avatars/gs/qHgWcCgAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=qHgWcCgAAAAJ",
+    "gsid": "qHgWcCgAAAAJ",
+    "affiliation": ""
+  },
+  "e-lambert": {
+    "shortname": "E Lambert",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
   }
 }

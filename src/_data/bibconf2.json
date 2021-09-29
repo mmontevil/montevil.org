@@ -128,6 +128,7 @@
             "program": "ARGUMENTAIRE_ENMI2021.pdf",
             "illustration": "ENMIpréparatoires_Affiche.png",
             "url": "https://www.iri.centrepompidou.fr/non-classe/entretiens-preparatoires-2021/",
+            "video": "https://www.youtube.com/watch?v=vZo5xZxU0Ac",
             "author": "Maël Montévil"
         }
     },
@@ -165,6 +166,23 @@
             "location": "Chaire numérique et citoyenneté, Institut Catholique de Paris",
             "language": "fr",
             "author": "Marie-Claude Bossière and Maël Montévil and Gerald Moore"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2021-interview",
+        "fields": {
+            "title": "Interview par Christian Mrasilevici",
+            "booktitle": "Faire vivre la pensée de Bernard Stiegler",
+            "location": "Rencontres et Débats Autrement",
+            "year": "2021",
+            "month": "8",
+            "day": "17",
+            "annonce": "true",
+            "language": "fr",
+            "video": "https://www.youtube.com/watch?v=3YJteHjWm24",
+            "author": " Maël Montévil"
         }
     },
     {

@@ -11,10 +11,18 @@ css: ["page-about.css"]
 ::: lead
 I am a *theoretical biologist* working at the crossroads of experimental biology, mathematics, and philosophy. I work both on the ways to understand living things and to take care of them in the Anthropocene, among [many more specific topics](/tags/). {.p-note}
 ::: 
+ </div>
+ 
 
- # Key concepts:
+ 
+ <section class="wrap0all">
+ 
+# Key concepts:
  <a href="/tags/historicity">historicity</a>,  <a href="/tags/organization">organization</a> as <a href="/tags/closure">closure</a> of <a href="/tags/constraints">constraints</a>, <a href="/tags/anti-entropy">anti-entropy</a>, <a href="/tags/symmetries">symmetry changes</a>, <a href="/tags/measurement">biological measurement</a>, <a href="/tags/disruption">disruption</a>
 
+</section>
+
+ <section class="wrap0all">
  
 # Basic informations
 
@@ -41,11 +49,11 @@ Downloadable  <a class="" href=/assets/pdf/cv_Montevil_2019_en.pdf >CV {% icon "
 
 
 
-</div>
+</section>
 
 
 
-<section class="wrap">
+<section class="wrap0all">
 
 # Publications
 
@@ -61,7 +69,7 @@ You may have a look at my [list of publications](/publications/publicationsbyTyp
 {{links|safe}}
 </section>
 
-<section class="wrap">
+<section class="wrap0all">
 
 # Short CV
 
