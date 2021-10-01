@@ -1,24 +1,31 @@
-<nav class="navigation" >
+<nav class="navigation" id="Nav" >
   <div class="wrap">
-    {# <span class="signature"><span title="Maël">M</span><span title=" Montévil">M</span></span> #}<ul class="menu" >
+  
+  
+      
+  
+    <ul class="menu" >
+   
+   
    
       <li class="navigation__home{% if page.url == '/' %} current" aria-current="page{% endif %}">
+
+      
+      
+      
         <a href="/">Home</a>
       </li>
-         {#</ul>    <li class="tools__search navigation_archives{% if 'archives' in page.url %} current" aria-current="page{% endif %}">
-        <a href="/all/archives/">{%- icon "archives", "archives" -%} Archives</a>
-      </li>
-     <li>#}
-      <li class="tools__search navigation__archives{% if 'archives' in page.url %} current" aria-current="page{% endif %}">
-     <a href="/all/archives/">{%- icon "archives", "archives" %} Archives</a>
-     </li>    
-     <li class="navigation__{{ type }}">
-     <details><summary><ul class="menu" >
-<li class="navigation__{{ type }}"><span class="cat">Categories</span></li>
-     </ul>
-     </summary>
+        
      
-      <ul class="submenu">
+     
+     <li class="selected tools__search navigation_archives{% if 'archives' in page.url %} current" aria-current="page{% endif %}">
+        <a href="/all/archives/" id="Item02" aria-current="page">{%- icon "archives", "archives" %}  Archives</a>
+        <button type="button" id="btnItem02" class="onclickbutton navButton" aria-controls="SubItem02" aria-expanded="false" aria-label="Show" aria-labelledby="btnItem02 Item02" onclick="toggleSubNav(this.id);">
+ 
+        {%- icon "chevronUp", "Link" -%}
+          </button>
+    {#    <ul id="SubItem02" style="display:none;"  class="submenu">
+      
       {% for type in[
       'publications',
         'talks',
@@ -43,8 +50,24 @@
           </a>
         </li>
       {% endfor %}
-     </ul></details></li>
+     </ul>
+     #}
+     {% set append="overlay"%} 
+      {% set currentLang = page.url | split("/") | offset(1) | first %}
+    {% set currentType = page.url | split("/") | offset(2) | first %}
+{% set currentYear = page.url | split("/") | offset(3) | first %}
+{% set regExpYear = r/^[0-9]{4}$/g %}
+{% if not regExpYear.test(currentYear) %}
+  {% set currentYear = false %}
+{% endif %}
      
+       <nav  id="SubItem02" style="display:none;"  class="submenu">
+    {% include  "archiveTOC.njk" %}
+    </nav>
+     
+      </li>
+      
+   
       {% for type in [
         'tags',
         'feeds',
@@ -61,27 +84,15 @@
        {% endfor %}
      
      
-    {# </li>
-           {% for type in [
-        'tags',
-        'feeds',
-        'about'
-      ] %}
-          <li class="navigation__{{ type }}{% if url in page.url %} current" aria-current="page{% endif %}">
-          <a href="{{ url }}">
-          {% if type == "tags" %}{% icon "tags", "tag" %}{%- endif -%}
-           {% if type == "feeds" %}{% icon "rss", "rss" %}{%- endif -%}
-           {% if type == "about" %}{% icon "user", "about" %}{%- endif -%}{{- type |title -}}
-        
-          </a>
-       {% endfor %}
-       #}
+
     </ul>
-    <ul class="tools" >    {% if upnav and not noToc%}
-        <li class="navigation__{{ type }}{% if url in page.url %} current" aria-current="page{% endif %}">
-         {#<a href="#{{ upnav }}">TOP</a>#}
-          <a class="onclickbutton"  id="navToc"><span class="abssvg folded">{% icon "chevronRight", "Link" %}</span><span class="abssvg unfolded">{%- icon "chevronDown", "Link" -%}</span><span class="normalStyle">ToC</span></a>
+    <ul class="tools" >    
+    {% if upnav and not noToc%}
+        <li class="navigation__{{ type }}{% if url in page.url %} current" aria-current="page{% endif %}"><span class="normalStyle">Map</span>
+          <button class="onclickbutton navButton"  id="navToc">{%- icon "chevronUp", "Link" -%}
+          </button>
         </li>
+        
         {% endif %}
 
       <li class="tools__search">

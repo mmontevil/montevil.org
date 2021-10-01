@@ -48,46 +48,9 @@
   }
 }
 
-.onclickbutton {
-  padding-top: 0;
 
-  color: var(--color-link);
 
-  transition: transform, color 0.2s;
-  svg {
-    font-size: var(--gap-m);
-    vertical-align: middle;
 
-    fill: currentColor;
-    stroke: currentColor;
-    stroke-width: 2px;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-  }
-  &:hover,
-  &:focus {
-    color: var(--color-link-hover);
-
-    background-color: var(--color-link-hover-bg);
-  }
-  &:active {
-    color: var(--color-link-hover);
-
-    background-color: var(--color-secondary);
-  }
-  .unfolded {
-    display: none;
-  }
-}
-
-.onclickbuttonon {
-  .folded {
-    display: none;
-  }
-  .unfolded {
-    display: inline;
-  }
-}
 
 .legibilityWidth .titleOverToc {
   margin-bottom: 1em;

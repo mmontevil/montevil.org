@@ -31,4 +31,7 @@ module.exports = {
     let arr = string.split(', ');
     return arr;
   },
+    isnotin: ( el,array) => {
+    return !array.includes(el);
+  },
 };

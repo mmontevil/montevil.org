@@ -18,11 +18,7 @@ css: ["page-archives.css"]
   {% set currentYear = false %}
 {% endif %}
 
-{% set currentMonth = page.url | split("/") | offset(4) | first %}
-{% set regExpMonth = r/^[0-9]{2}$/g %}
-{% if not regExpMonth.test(currentMonth) %}
-  {% set currentMonth = false %}
-{% endif %}
+
   
   
 {% block content %}
@@ -41,7 +37,7 @@ css: ["page-archives.css"]
     </nav>
    
 
-
+{#
 {% set append="overlay"%} 
 <aside id="myNav" class=" overlay" >
   <div class="wrap">
@@ -51,7 +47,7 @@ css: ["page-archives.css"]
   </nav>
 </div>  
 </aside>
-
+#}
 
 
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
