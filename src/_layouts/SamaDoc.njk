@@ -1,4 +1,5 @@
 ---
+upnav: true
 layout: content
 css: ["page-text.css"]
 eleventyComputed:
@@ -7,6 +8,8 @@ eleventyComputed:
 ---
 
 
+  {% from "macros/overlayToc.njk" import overlayToc %}
+{{overlayToc(content,"tocCenter",title,printToc=false,about=true)|safe}}
 
 
 

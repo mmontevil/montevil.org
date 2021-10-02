@@ -59,16 +59,7 @@
     --gap-3xl: calc(var(--gap-xxl) * var(--gap-scale)); //3.33
         --gap-4xl: calc(var(--gap-3xl) * var(--gap-scale)); //3.33
 
-/*    --gap: 1rem;
-  --gap2: calc(2 * var(--gap));
-  --gap3: calc(3 * var(--gap));
-  */
-  //--gap-3xl: calc(var(--gap-xxl) * var(--font-size-scale));//2.8
-  //--gap-4xl: calc(var(--gap-3xl) * var(--font-size-scale));//3.7
-  //--gap-5xl: calc(var(--gap-4xl) * var(--font-size-scale));
 
-  
-  // --layout-max: calc(50 * var(--font-size-m));
   --layout-max: 60rem;
 
 
@@ -81,12 +72,7 @@
   --lum-step: 9%;
   --sat-step2: 3%;
   --lum-step2: -3%;
-  // Persimmon:
-  //   https://en.wikipedia.org/wiki/Shades_of_orange#Persimmon
   --color-secondary: hsl(calc(var(--hue) - 180), var(--sat), 30%);
-
-  // Persimmon:
-  //   https://en.wikipedia.org/wiki/Shades_of_orange#Persimmon
 
   --color-bg: white;
 

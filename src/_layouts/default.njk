@@ -27,7 +27,11 @@ layout: default0
     {% include "components/navigation.njk" %}
 
     <main id="main">
-      {#class="wrap"#}
+      {% if title=="Home"%}
+        {% from "macros/overlayToc.njk" import overlayToc %}
+        {{overlayToc(content,"tocCenter",title,printToc=false,about=true)|safe}}
+        {%endif%}
+        
         {% block content %}
         {{ content | safe }}
         {% endblock %}
@@ -38,10 +42,7 @@ layout: default0
     {% include "svg-sprite.svg" %}
 
     {% if build.env == 'production' %}
-      {#
-      https://buzut.net/configurer-rollup-bundles-esm-cjs/
-      https://v8.dev/features/modules#browser
-      #}
+
       <script async type="module" src="/js/{{ hashes_additional_es['assets/js/additional.js']}}"></script>
       <script defer nomodule src="/js/{{ hashes_additional_iife['assets/js/additional.js']}}"></script>
       

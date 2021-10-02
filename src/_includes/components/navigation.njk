@@ -24,34 +24,7 @@
  
         {%- icon "chevronUp", "Link" -%}
           </button>
-    {#    <ul id="SubItem02" style="display:none;"  class="submenu">
-      
-      {% for type in[
-      'publications',
-        'talks',
-        'posts',
-        'links'
-      ] %}
-      
-       {% if type in [
-      'publications',
-        'posts',
-        'links',
-        'talks'] %} {% set url = '/all/' + type + '/' %}
-        {% else %}
-        {% set url = '/' + type + '/' %}
-        {% endif %}
-        
-        <li class="navigation__{{ type }}{% if url in page.url %} current" aria-current="page{% endif %}">
-          <a href="{{ url }}">
-      
-           {{- type |title -}}
-        
-          </a>
-        </li>
-      {% endfor %}
-     </ul>
-     #}
+
      {% set append="overlay"%} 
       {% set currentLang = page.url | split("/") | offset(1) | first %}
     {% set currentType = page.url | split("/") | offset(2) | first %}

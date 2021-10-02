@@ -2,7 +2,7 @@
 
 .inlineimg {
   display: inline;
-
+  
   text-align: center;
 }
 .figure {
@@ -21,15 +21,15 @@
 
 .picgrid {
   grid-template-areas:
-    'img1' 'sub1'
-    'img2' 'sub2';
+  'img1' 'sub1'
+  'img2' 'sub2';
   grid-template-rows: repeat(4, minmax(0, auto));
 }
 .picgrid3 {
   grid-template-areas:
-    'img1' 'sub1'
-    'img2' 'sub2'
-    'img3' 'sub3';
+  'img1' 'sub1'
+  'img2' 'sub2'
+  'img3' 'sub3';
   grid-template-rows: repeat(6, minmax(0, auto));
 }
 
@@ -52,7 +52,7 @@
 .sub2,
 .sub3 {
   display: grid;
-
+  
   text-align: left;
 }
 .sub1 {
@@ -68,14 +68,14 @@
 @media screen and (min-width: 768px) {
   .picgrid {
     grid-template-areas:
-      'img1 img2'
-      ' sub1 sub2';
+    'img1 img2'
+    ' sub1 sub2';
     grid-template-columns: repeat(2, 1fr);
   }
   .picgrid3 {
     grid-template-areas:
-      'img1 img2 img3'
-      ' sub1 sub2 sub3';
+    'img1 img2 img3'
+    ' sub1 sub2 sub3';
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -87,13 +87,8 @@
   max-width: 100%;
   margin-right: auto;
   margin-left: auto;
-  // width: 60ch;
-  //  max-width: 100%;
-  /*   @media (min-width: 30rem) {
-  margin-left: calc(0.25*100% - 0.25*30rem);
-  margin-right: calc(0.25*100% - 0.25*30rem);
-      }*/
-
+  
+  
   h2,
   h3,
   h4,
@@ -105,38 +100,24 @@
     --tempb: calc(max(-2em, var(--temp)));
     margin-left: calc(min(var(--tempb), 0em));
     padding-left: var(--gap-m);
-
+    
     text-indent: calc(-1*var(--gap-m));
   }
   .foonoteHead {
     margin-left: var(--gap-m);
     padding-left: 0;
-
+    
     text-indent: 0;
   }
-
-  /*  h3, {
-      --tempb: calc(max(-2em,var(--temp)));
-  }
-  h4,h5,h6,dt{
-    --tempb: calc(max(-1em,var(--temp)));
-  }*/
-  /*dt{
-     // @media (min-width: 30rem) {
-  --temp: calc(50% - 50vw + 2em);
-    --tempb: calc(max(-1em,var(--temp)));
-  margin-left: calc(min(var(--tempb), 0em));
-      padding-left: 2em;
-      text-indent: -2em;
-  }*/
-
+  
+  
   .wide {
     --temp: calc(50% - 50vw + 2em);
     --tempb: calc(max(-5em, var(--temp)));
     margin-right: calc(min(var(--tempb), 0em));
     margin-left: calc(min(var(--tempb), 0em));
   }
-
+  
   ul li,
   ol,
   dl {
@@ -173,10 +154,7 @@ dt.description {
 .Footnote_20_anchor, //.Footnote_20,
 .superLegacy,.textsuperscript , sup {
   position: relative;
-
   padding-top: 0.05em;
-  // vertical-align: super;
-  //font-size:58%;
   font-size: 75%;
   line-height: 0;
   vertical-align: super;
@@ -199,7 +177,6 @@ dt.description {
   vertical-align: sub;
 }
 
-//.bibitem, .thebibliography > *,.referencesn>*{margin-bottom:0.7em;}
 
 .titleHead,
 .head,
@@ -212,7 +189,7 @@ dt.description {
 .legibilityWidth .titleHead {
   margin-left: 0;
   padding-left: 0;
-
+  
   text-indent: 0;
   & + * {
     --flow-space: var(--gap3);
@@ -227,7 +204,6 @@ dt.description {
   }
 }
 
-//.head{margin-bottom: 2em;}
 
 
 .references,
@@ -249,7 +225,7 @@ dt.description {
 
 .quote {
   padding-left: var(--gap-l);
-
+  
   font-size: var(--font-size-s);
 }
 
@@ -266,18 +242,18 @@ dt.description {
 .thebibliography > div,
 .references__item {
   padding-left: var(--gap-l);
-
+  
   font-size: var(--font-size-s);
   text-indent: calc(-1*var(--gap-l));
 }
 
 .thebibliography {
   padding-inline-start: 0;
-
+  
   list-style-type: none;
 }
 .thebibliographynb {
-list-style-type: decimal;
+  list-style-type: decimal;
 }
 .ReferencesCopy2 {
   text-indent: 0;
@@ -285,20 +261,18 @@ list-style-type: decimal;
 
 .footnotes {
   @extend %flowall;
- &>*{  --flow-space: var(--gap-s);}
-
+  &>*{  --flow-space: var(--gap-s);}
+  
 }
 
 h2.abstract,
 h3.abstract {
- // font-variant: normal;
-//  margin-bottom: var(--gap-3xs);
   font-weight: 600;
 }
 .keywords,
 .paragraphHead {
   margin-bottom: var(--gap-xs);
-
+  
   font-weight: 600;
   font-style: italic;
 }
@@ -327,7 +301,7 @@ div.abstract,
   @extend %flowall;
 }
 .abstractitle{
-    font-size: var(--font-size-xl);
+  font-size: var(--font-size-xl);
 }
 
 .affiliation + .affiliation {
@@ -335,7 +309,7 @@ div.abstract,
 }
 
 #toc-site {
-  margin-top: var(--gap-xs);
+margin-top: var(--gap-xs);
 }
 
 .Tableau10 td,
@@ -344,39 +318,39 @@ div.abstract,
 .Tableau11 th {
   margin-right: auto;
   margin-left: auto;
-
   border: none;
 }
 
 
 table.equation, table.equation-star, .legibilityWidth   mjx-container[jax="CHTML"][display="true"]{
-   --temp: calc(50% - 50vw +30px);
-    --tempb: calc(max(-5em, var(--temp)));
+  --temp: calc(50% - 50vw +30px);
+  --tempb: calc(max(-5em, var(--temp)));
   display: block;
-
-    margin-right: calc(min(var(--temp), 0em));
-    margin-left: calc(min(var(--temp), 0em));
-
+  
+  margin-right: calc(min(var(--temp), 0em));
+  margin-left: calc(min(var(--temp), 0em));
+  
   overflow-x: auto;
- scrollbar-width: none;
+  scrollbar-width: none;
 }
 
 .legibilityWidth  .equation  mjx-container[jax="CHTML"][display="true"],
- .legibilityWidth  .Tableau10  mjx-container[jax="CHTML"][display="true"]{
-    display: inline;
-
-    margin-right: 0;
-   margin-left: 0;
+.legibilityWidth  .Tableau10  mjx-container[jax="CHTML"][display="true"]{
+  display: inline;
+  
+  margin-right: 0;
+  margin-left: 0;
 }
 
-  table.equation, table.equation-star{
+table.equation, table.equation-star{
   tbody{
     display: block;
-
     margin-right: auto;
     margin-left: auto;
   }
-  td{border:none;}
+  td{
+    border:none;
+  }
   tr{
     display: flex;
     flex-direction: row;
@@ -393,27 +367,32 @@ mjx-mspace {
   width: 0 !important;
 }
 
-.webmention{ --flow-space: var(--gap-m);}
-
-.minih2{
-font-size: var(--font-size-l);
-}
-.notop{--flow-space: 0;
-margin-top: 0;}
-
-.maketitle {
-  --flow-space: var(--gap-xl);
-}
-.mentionsHeader{
+.webmention{ 
   --flow-space: var(--gap-m);
 }
-.abstract>p{--flow-space: var(--gap-m);}
 
-
-.sidebuttons > .buttonlink, .sidebuttons > .sidetoc{
-  &.autotoc  .tocLevel1 {
-    font-size: var(--font-size-s);
+.minih2{
+  font-size: var(--font-size-l);
 }
+.notop{
+  --flow-space: 0;
+  margin-top: 0;
+}
+  
+  .maketitle {
+    --flow-space: var(--gap-xl);
+  }
+  .mentionsHeader{
+    --flow-space: var(--gap-m);
+  }
+  .abstract>p{--flow-space: var(--gap-m);}
+  
+  
+  .sidebuttons > .buttonlink, .sidebuttons > .sidetoc{
+    &.autotoc  .tocLevel1 {
+      font-size: var(--font-size-s);
+    }
     backdrop-filter: blur(10px);
     background-color:  var(--color-trans);
-}
+  }
+  

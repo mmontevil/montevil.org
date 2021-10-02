@@ -74,40 +74,7 @@
   
 
 
- {# 
-{% if not  (article.data.bibentry.abstract === undefined) %}
- <div class="accordion">
-  <input type="checkbox" name="{{-article.data.bibentry.id-}}{{-rid-}}" id="{{-article.data.bibentry.id-}}{{-rid-}}" >
-  <p class="handle">
-    
-   <label for="{{-article.data.bibentry.id-}}{{-rid-}}" class="smalltext"><span class="abssvg folded">{% icon "chevronRight", "Link" %}</span><span class="abssvg unfolded">{% icon "chevronDown", "Link" %}</span>
-   Abstract 
-    
-   </label>
-  
-   
-   <span  class="smalltext">{{pubuttons(article.data) |safe}}</span>
-  </p>
-  <div class="content wrap">
-  
-  
-     <h4 > Abstract: </h4> <p class="p-summary">  
-     {{ article.data.abstract  | safe }}</p >
-     
-     
-     {% if not  (article.data.bibentry.keyword === undefined) %}
-          <p > <span class="paragraphHead2"><em> Keywords: </em></span>  {{ article.data.keyword  | safe }}</p >
-           {% endif %}
-           
-      <h5 > Citation: </h5>    
-             <div class=" "><p >
-   
-  {% icon "reference", "reference" %}
-{{ article.data.bibentry | bibcite2| urlize( article.data.title,article.data.page.url, article.data.bibentry.type)|divRemove|safe}} </p></div>
-           
-  </div>
-  
-</div>{% endif %}#}
+ 
  
   {% endset %}
 

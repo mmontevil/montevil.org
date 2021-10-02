@@ -60,6 +60,22 @@ function chooseDate(datepub, date) {
   }
 }
 
+const _MS_PER_DAY = 1000 * 60 * 60 * 24;
+
+function dateDiffInDays(a, b) {
+  // Discard the time and time-zone information.
+  const utc1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
+  const utc2 = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());
+
+  return Math.floor((utc2 - utc1) / _MS_PER_DAY);
+}
+
+function age(date) {
+  var today = new Date();  
+  var date0 = new Date(date); 
+  return Math.abs(dateDiffInDays(today, date0));
+}
+
 function removeEmojis(content) {
   // https://thekevinscott.com/emojis-in-javascript/
   return content.replace(
@@ -381,6 +397,7 @@ module.exports = {
   },
   formattedDate: (data) => formattedDate(data.lang, data.page.date),
   attributeDate: (data) => attributeDate(data.page.date),
+  age: (data) => age(data.orderDate),
   authors: {
     text: (data) => textAuthors(data),
     html: (data) => htmlAuthors(data),
@@ -543,6 +560,15 @@ module.exports = {
       data.citationSize
     );
   },
+  mentionsScore: (data) => {
+    return ((
+      data.likesSize/5 +
+      data.repostsSize/4 +
+      data.repliesSize/3 +
+      data.mentionsSize/3 +
+      data.citationSize)/(data.age+175)
+    );
+  },  
   likes: (data) => {
      /*     if (encodeURI('https://montevil.org' + data.page.url).toLowerCase()=="https://montevil.org/publications/articles/2021-montevil-episteme-computational-empiricism/"){
         console.log(webmentionsByType(data.allMentions, 'in-reply-of').);

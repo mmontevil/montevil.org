@@ -3,6 +3,7 @@ title: About me
 layout: page
 lang: en
 css: ["page-about.css"]
+upnav: true
 ---
 <div class="h-card wrap">
 

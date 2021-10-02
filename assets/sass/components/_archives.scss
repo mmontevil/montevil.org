@@ -10,16 +10,14 @@
 .pubTypes {
   display: flex;
   flex-direction: column;
- flex-wrap: wrap;
-
+  flex-wrap: wrap;
+  
   max-height: 14em;
-li{
- // --flow-space: 0;
-  //flex: 1 100%;
-margin-bottom: var(--gap-ms);
- }
- .ais-HierarchicalMenu-item2  {margin-bottom: var(--gap-xs);}
- li:not(.ais-HierarchicalMenu-item2)+.ais-HierarchicalMenu-item2{margin-top: calc(-1*var(--gap-xs));}
+  li{
+    margin-bottom: var(--gap-ms);
+  }
+  .ais-HierarchicalMenu-item2  {margin-bottom: var(--gap-xs);}
+  li:not(.ais-HierarchicalMenu-item2)+.ais-HierarchicalMenu-item2{margin-top: calc(-1*var(--gap-xs));}
   .ais-HierarchicalMenu-item2+li:not(.ais-HierarchicalMenu-item2){margin-top: calc(1*var(--gap-xs));}
 }
 
@@ -27,16 +25,16 @@ margin-bottom: var(--gap-ms);
   --flow-space: 0;
   display: grid;
   grid-template-areas:
-    'lang ' ' types'
-    '   dates';
+  'lang ' ' types'
+  '   dates';
   grid-template-columns: 1fr;
-
+  
   @media (min-width: 30em) {
     grid-template-areas:
-      'types lang'
-      'dates   dates';
+    'types lang'
+    'dates   dates';
     grid-template-columns: minmax(10em, 23em) minmax(5em, 5em) ;
-
+    
     column-gap: 1em;
   }
   @media (min-width: 52em) {
@@ -50,7 +48,7 @@ margin-bottom: var(--gap-ms);
 
 #types-list,
 #types-listoverlay {
-  grid-area: types;
+grid-area: types;
 }
 
 .lang-list {
@@ -60,7 +58,7 @@ margin-bottom: var(--gap-ms);
 
 #dates-menu,
 #dates-menuoverlay {
-  grid-area: dates;
+grid-area: dates;
 }
 .ais-Panel p {
   margin-bottom: var(--gap-s);
@@ -81,23 +79,20 @@ margin-bottom: var(--gap-ms);
   margin-block-start: var(--gap-ms);
   margin-block-end: var(--gap-m);
   padding-left: var(--gap-xs);
-
+  
   list-style-type: none;
 }
 
 .ais-Panel-header {
   margin-top: var(--gap-m);
-
+  
   font-size: var(--font-size-m);
-
+  
   border-bottom: 1px solid var(--color-grey);
 }
 
 .ais-HierarchicalMenu-item {
   --flow-space: 0;
-/*  &:first-child {
-    --flow-space: 0;
-  }*/
 }
 
 .ais-HierarchicalMenu-item2 {
@@ -116,7 +111,7 @@ ul.ais-HierarchicalMenu-list {
 }
 .ais-HierarchicalMenu-item2::before {
   content: '·';
-
+  
   padding-left: var(--gap-xs);
 }
 
@@ -125,14 +120,14 @@ ul.ais-HierarchicalMenu-list {
 .ais-HierarchicalMenu-count {
   position: relative;
   top: calc(-1*var(--gap-4xs));
-
+  
   margin-left: var(--gap-3xs);
   padding: var(--gap-4xs) var(--gap-xs);
-
+  
   color: var(--color-primary-darker-7);
   font-size: 0.7em;
-
+  
   border-radius: var(--gap-m);
-
+  
   background-color: var(--color-lightgrey);
 }

@@ -3,6 +3,7 @@ layout: default
 title: Home
 css: ["page-home.css","page-tagscloud.css"]
 eleventyExcludeFromCollections: true
+upnav: true
 ---
  
 
@@ -91,7 +92,7 @@ I work in
     <hr class="fade-2">
  
   {% from "macros/pubCard.njk" import pubCard %}
-  <h2   class="wrap titleDiag titleDiag2">Latest Publications</h2>
+  <h2   class="wrap titleDiag titleDiag2" id="latest-publications">Latest Publications</h2>
   <ol class="cards-list">
     {% for article in collections.latestpublicationsall %}
       {{ pubCard(article,numbers.numbers2) }}
@@ -102,11 +103,22 @@ I work in
     <hr class="fade-2">
 
    
+     <h2   class="wrap titleDiag titleDiag2" id="pop-publications">Popular Publications</h2>
+  <ol class="cards-list">
+    {% for article in collections.publicationsall |topubs  | limit(3)%}
+      {{ pubCard(article,numbers.numbers2) }}
+    {% endfor %}
+  </ol>
+    <p class="wrap more ">Read <a href="/all/publications/">all publications</a>…</p>
+   
+    <hr class="fade-2">
+   
+   
    {% from "macros/talkCard.njk" import talkCard %}    
     
 {% for article in collections.futureTalks | sortByOrder2%}
     {% if loop.first%}
-        <h2   class="wrap titleDiag titleDiag2">Forthcoming Talks</h2>
+        <h2   class="wrap titleDiag titleDiag2" id="forthcoming-talks">Forthcoming Talks</h2>
          <ol class="cards-list">
     {% endif %}
     {{ talkCard(article) }}
@@ -117,7 +129,7 @@ I work in
 
 {% for article in collections.latestvideoall | sortByOrder2 | reverse%}
     {% if loop.first%}
-        <h2   class="wrap titleDiag titleDiag2">Latest videos</h2>
+        <h2   class="wrap titleDiag titleDiag2"  id="latest-videos">Latest videos</h2>
          <ol class="cards-list">
     {% endif %}
     {{ talkCard(article) }}
@@ -132,7 +144,7 @@ I work in
 
  {% from "macros/postCard.njk" import postCard %}    
 
-  <h2 class="wrap titleDiag titleDiag2">Latest posts</h2>
+  <h2 class="wrap titleDiag titleDiag2" id="latest-posts">Latest posts</h2>
 
   <ol class="cards-list">
     {% for article in collections.latestpostsall %}
@@ -143,7 +155,7 @@ I work in
   
   {#
   <div class="titleDiag titleDiag2">
-  <h2 class="wrap">Older noteworthy articles</h2>
+  <h2 class="wrap" id="older">Older noteworthy articles</h2>
     </div>
 
   
@@ -157,11 +169,10 @@ I work in
   <p class="wrap more ">Read <a href="/all/posts/">all posts</a>…</p>
  #}
  <hr class="fade-2">
- 
- {# <div class=" lazy "></div>#}
+
   
   {% from "macros/linkCard.njk" import linkCard %}
-<h2 class="wrap titleDiag" >Recent links</h2>
+<h2 class="wrap titleDiag" id="recent-links">Recent links</h2>
 <ol class="cards-list">
 <li class="cards-list">
   {% for link in collections.linksall | limit(4) %}
@@ -178,7 +189,7 @@ I work in
 
 {% from "macros/tagsCloud.njk" import tagsCloud %}
 <div class="wrap">
-<h2 class="titleDiag">Main topics</h2>
+<h2 class="titleDiag" id="topics">Main topics</h2>
 <p>These are the tags the most used on the site to set content topics:</p>
 {{ tagsCloud(collections.mainTags) }}
 <p class="more">Browse <a href="/tags/">all tags</a>…</p>

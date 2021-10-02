@@ -5,6 +5,15 @@ permalink: "{{ page.filePathStem }}.html"
 
 <article class="wrap main " lang="{{ lang }}">
   <h1>{{ title }}</h1>
+
+  
+{#  <nav class="legibilityWidth tableContent">#}
+  {% from "macros/overlayToc.njk" import overlayToc %}
+{{overlayToc(content,"tocCenter",title,printToc=false,about=true)|safe}}
+{#</nav>  #}
+  
+  
+  
   <div class="page__body e-content wrap0all">
     {{ content | safe }}
   </div>

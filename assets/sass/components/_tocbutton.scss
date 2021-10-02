@@ -112,12 +112,7 @@
     --flow-space: var(--gap-xxs);
   }
 }
-/*
-.autotoc >ol {  
-    --flow-space: calc(0.35ex / 0.32) ;
-    & ol {--flow-space: calc(0.25ex / 0.32) ;}
-  }
-*/
+
 
 .tocCenter {
   li {

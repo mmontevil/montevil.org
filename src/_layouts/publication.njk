@@ -15,7 +15,7 @@ eleventyComputed:
     auteurs: "{%- for auth in bibentry.author -%}{%- authors auth.given[0]+' '+auth.family, '', people,true, nbAuteurs -%}{%- if loop.revindex >2 -%}, {%endif-%}{%- if loop.revindex ===2 %} & {%endif-%}{%- if loop.revindex ===1 %}.{%endif-%}{%-endfor-%}"
 ---
 
-
+{{mentionsScore}}
  
  {# <div class="legibilityWidth wrap0all"> </div>#}
  
