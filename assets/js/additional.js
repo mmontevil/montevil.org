@@ -99,7 +99,7 @@ function openNav() {
           allButtons[i].setAttribute("aria-label", "Show");
         //   allButtons[i].innerHTML = arrowShow;
       }   
-      var allSubMenus = document.querySelectorAll(".navButton + ul");
+      var allSubMenus = document.querySelectorAll(".navButton + nav");
         for (var i = 0; i < allSubMenus.length; i++) {
           allSubMenus[i].style.display = "none";
         }

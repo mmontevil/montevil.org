@@ -20,15 +20,23 @@ async function login(driver) {
   await driver.wait(() => documentInitialised(), 10000);
   await sleep(1000);
   await driver
-    .findElement(By.xpath("//input[@name='session[username_or_email]']"))
+    .findElement(By.xpath("//input"))
     .sendKeys(TWITTER_LOGIN);
+     await sleep(500);
+       await driver
+    .findElement(By.xpath("//input"))
+    .sendKeys(Key.ENTER);
+     await sleep(1000);
   await driver
-    .findElement(By.xpath("//input[@name='session[password]']"))
+    .findElement(By.xpath("//input"))
     .sendKeys(TWITTER_MDP);
-  await sleep(1000);
-  await driver
-    .findElement(By.xpath("//div[@data-testid='LoginForm_Login_Button']"))
-    .click();
+    await sleep(500);
+        await driver
+    .findElement(By.xpath("//input"))
+    .sendKeys(Key.ENTER);
+  await sleep(2000);
+  
+ // await driver.findElement(By.xpath("//div[@data-testid='LoginForm_Login_Button']")).click();
 }
 
 let path = require('path');

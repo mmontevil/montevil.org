@@ -2900,9 +2900,9 @@
   },
   "n-nunes-neto": {
     "shortname": "N Nunes-Neto",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/JnJzOVkAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=JnJzOVkAAAAJ",
+    "gsid": "JnJzOVkAAAAJ"
   },
   "jm-brooke": {
     "shortname": "JM Brooke",
@@ -5727,6 +5727,13 @@
     "photo": "/assets/avatars/gs/dummy.jpg",
     "url": "",
     "gsid": "",
+    "affiliation": ""
+  },
+  "c-wolfe": {
+    "shortname": "C Wolfe",
+    "photo": "/assets/avatars/gs/7jQpkyYAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=7jQpkyYAAAAJ",
+    "gsid": "7jQpkyYAAAAJ",
     "affiliation": ""
   }
 }

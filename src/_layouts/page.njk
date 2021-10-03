@@ -8,8 +8,11 @@ permalink: "{{ page.filePathStem }}.html"
 
   
 {#  <nav class="legibilityWidth tableContent">#}
+{% if upnav %}
   {% from "macros/overlayToc.njk" import overlayToc %}
 {{overlayToc(content,"tocCenter",title,printToc=false,about=true)|safe}}
+{% endif %}
+
 {#</nav>  #}
   
   
