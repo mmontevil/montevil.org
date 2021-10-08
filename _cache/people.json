@@ -4582,9 +4582,9 @@
   },
   "m-buzzoni": {
     "shortname": "M Buzzoni",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": ""
+    "photo": "/assets/avatars/gs/gD1uT9EAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=gD1uT9EAAAAJ",
+    "gsid": "gD1uT9EAAAAJ"
   },
   "f-michelini": {
     "shortname": "F Michelini",
@@ -5734,6 +5734,27 @@
     "photo": "/assets/avatars/gs/7jQpkyYAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=7jQpkyYAAAAJ",
     "gsid": "7jQpkyYAAAAJ",
+    "affiliation": ""
+  },
+  "sj-colleta": {
+    "shortname": "SJ Colleta",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "dap-de-campos-zuccari": {
+    "shortname": "DAP de Campos Zuccari",
+    "photo": "/assets/avatars/gs/RfaneNAAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=RfaneNAAAAAJ",
+    "gsid": "RfaneNAAAAAJ",
+    "affiliation": ""
+  },
+  "vrvrvrv-rialle": {
+    "shortname": "VRVRVRV Rialle",
+    "photo": "/assets/avatars/gs/qHgWcCgAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=qHgWcCgAAAAJ",
+    "gsid": "qHgWcCgAAAAJ",
     "affiliation": ""
   }
 }
