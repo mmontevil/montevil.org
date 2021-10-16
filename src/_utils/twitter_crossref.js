@@ -30,7 +30,7 @@ async function getTweet(tweetId, target, source) {
     }
 
     if (tweetViewModel['wm-property'] == 'mention-of') {
-      if (tweetViewModel['retweetUpdated'] !== day) {
+      if (tweetViewModel['retweetUpdated'] !== day && tweetId!== '1274042713973940224' && tweetId!== '1274390945623085057') {
         let livereTweet = await fetchreTweet(tweetId);
 
         if (livereTweet) {
