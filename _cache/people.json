@@ -1110,7 +1110,7 @@
     "photo": "/assets/avatars/gs/kWU2FCkAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=kWU2FCkAAAAJ",
     "gsid": "kWU2FCkAAAAJ",
-    "affiliation": "PhD, Department of Experimental Medicine, Sapienza University of Rome",
+    "affiliation": "VIMM, Padua",
     "fullName": "Mirko Minini"
   },
   "n-hasan": {
@@ -3012,10 +3012,11 @@
   },
   "s-beshkov": {
     "shortname": "S Beshkov",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
-    "affiliation": ""
+    "photo": "/assets/avatars/gs/Ua5gBF4AAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=Ua5gBF4AAAAJ",
+    "gsid": "Ua5gBF4AAAAJ",
+    "affiliation": "National Museum of Natural History, Sofia",
+    "fullName": "Stoyan Beshkov"
   },
   "p-chvojka": {
     "shortname": "P Chvojka",
@@ -3190,7 +3191,7 @@
     "url": "http://www.joaoclaudio.com.br/",
     "gsid": "VPwzvhAAAAAJ",
     "affiliation": "Instituto Federal do Ceará",
-    "fullName": "JOÃO CLÁUDIO NUNES CARVALHO"
+    "fullName": "João Cláudio Nunes Carvalho"
   },
   "meb-de-ortiz-pgcert": {
     "shortname": "MEB de Ortiz PGCert",
@@ -3749,9 +3750,10 @@
   "g-militello": {
     "shortname": "G Militello",
     "photo": "/assets/avatars/gs/P--mLB4AAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=P--mLB4AAAAJ",
+    "url": "https://www.ias-research.net/people/guglielmo-militello/",
     "gsid": "P--mLB4AAAAJ",
-    "affiliation": ""
+    "affiliation": "Independent Scholar",
+    "fullName": "Guglielmo Militello"
   },
   "d-kopina": {
     "shortname": "D Kopina",
@@ -4304,7 +4306,7 @@
     "photo": "/assets/avatars/gs/0yBmy5YAAAAJ.jpg",
     "url": "http://www.robertocazzollagatti.com/",
     "gsid": "0yBmy5YAAAAJ",
-    "affiliation": "Associate professor of Biological Diversity and Conservation at University of Bologna, Italy",
+    "affiliation": "Associate Professor of Biological Diversity and Conservation at University of Bologna, Italy",
     "fullName": "Roberto Cazzolla Gatti, Ph.D."
   },
   "b-fath": {
@@ -6187,8 +6189,52 @@
   "v-rialle": {
     "shortname": "V Rialle",
     "photo": "/assets/avatars/gs/qHgWcCgAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=qHgWcCgAAAAJ",
+    "url": "http://www.rialle.fr/",
     "gsid": "qHgWcCgAAAAJ",
+    "affiliation": "maître de conférence-praticien hospitalier émérite, Université Grenoble Alpes",
+    "fullName": "Vincent Rialle"
+  },
+  "c-dwarf": {
+    "shortname": "C Dwarf",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "lm-cloud": {
+    "shortname": "LM Cloud",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "m-way": {
+    "shortname": "M Way",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "sm-cloud": {
+    "shortname": "SM Cloud",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "jb-falandays": {
+    "shortname": "JB Falandays",
+    "photo": "/assets/avatars/gs/JlcD1lEAAAAJ.jpg",
+    "url": "http://jbfalandays.com/",
+    "gsid": "JlcD1lEAAAAJ",
+    "affiliation": "University of California, Merced",
+    "fullName": "J. Benjamin Falandays"
+  },
+  "vm-brito-junior": {
+    "shortname": "VM Brito Júnior",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
     "affiliation": ""
   }
 }
