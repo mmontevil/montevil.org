@@ -76,7 +76,7 @@
     "eleventy-plugin-link_to": "^0.4.0",
     "eleventy-plugin-nesting-toc": "github:mmontevil/eleventy-plugin-nesting-toc",
     "eleventy-plugin-reading-time": "^0.0.1",
-    "eleventy-plugin-youtube-embed": "1.6.4",
+    "eleventy-plugin-youtube-embed": "1.6.5",
     "encoding": "^0.1.13",
     "entities": "^3.0.1",
     "fast-glob": "^3.2.7",
