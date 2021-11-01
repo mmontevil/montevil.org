@@ -61,7 +61,7 @@
     "@sindresorhus/slugify": "1.1.0",
     "approx-string-match": "^1.1.0",
     "autoprefixer": "^10.3.7",
-    "babel-loader": "^8.2.2",
+    "babel-loader": "^8.2.3",
     "bent": "^7.3.12",
     "citation-js": "^0.5.1",
     "core-js": "^3.18",
