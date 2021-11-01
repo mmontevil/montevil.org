@@ -64,7 +64,7 @@
     "babel-loader": "^8.2.2",
     "bent": "^7.3.12",
     "citation-js": "^0.5.1",
-    "core-js": "^3.18",
+    "core-js": "^3.19",
     "cssnano": "5.0.8",
     "debug": "^4.3.2",
     "deepmerge": "^4.2.2",
