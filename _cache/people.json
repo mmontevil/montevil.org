@@ -1734,7 +1734,7 @@
     "photo": "/assets/avatars/gs/hA2IaXkAAAAJ.jpg",
     "url": "https://www.ibe.upf-csic.es/valverde",
     "gsid": "hA2IaXkAAAAJ",
-    "affiliation": "Institute for Evolutionary Biology - Spanish National Research Council",
+    "affiliation": "Institute of Evolutionary Biology - Spanish National Research Council",
     "fullName": "Sergi Valverde"
   },
   "s-ohse": {
@@ -4972,7 +4972,7 @@
     "url": "https://scholar.google.fr/citations?user=drNygRoAAAAJ",
     "gsid": "drNygRoAAAAJ",
     "affiliation": "Université de Fribourg",
-    "fullName": "Plateau olivia"
+    "fullName": "Plateau Olivia"
   },
   "m-linde-medina": {
     "shortname": "M Linde-Medina",
@@ -5392,10 +5392,10 @@
   "a-gare": {
     "shortname": "A Gare",
     "photo": "/assets/avatars/gs/mjpw0hMAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=mjpw0hMAAAAJ",
-    "gsid": "mjpw0hMAAAAJ",
     "affiliation": "Philosophy and Cultural Inquiry, Swinburne University",
-    "fullName": "Arran Gare"
+    "fullName": "Arran Gare",
+    "url": "https://scholar.google.fr/citations?user=4TXYdO4AAAAJ",
+    "gsid": "4TXYdO4AAAAJ"
   },
   "l-tesfatsion": {
     "shortname": "L Tesfatsion",
@@ -5541,7 +5541,7 @@
     "url": "https://scholar.google.fr/citations?user=4dJjaEoAAAAJ",
     "gsid": "4dJjaEoAAAAJ",
     "affiliation": "Affiliation inconnue",
-    "fullName": "Jonathan Bard"
+    "fullName": "Jonathan B L Bard"
   },
   "m-carrion-alvarez": {
     "shortname": "M Carrión Álvarez",
@@ -5623,7 +5623,7 @@
     "photo": "/assets/avatars/gs/B3lirlgAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=B3lirlgAAAAJ",
     "gsid": "B3lirlgAAAAJ",
-    "affiliation": "Associate Professor of Economics, Université de Paris",
+    "affiliation": "Associate Professor of Economics, Université de Paris, Ladyss (UMR CNRS 7533)",
     "fullName": "Pascal GROUIEZ"
   },
   "plc-van-geert": {
@@ -6232,6 +6232,28 @@
   },
   "vm-brito-junior": {
     "shortname": "VM Brito Júnior",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "efsa-scientific-committee": {
+    "shortname": "EFSA Scientific Committee",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "s-more": {
+    "shortname": "S More",
+    "photo": "/assets/avatars/gs/b0CUkswAAAAJ.jpg",
+    "url": "https://people.ucd.ie/simon.more",
+    "gsid": "b0CUkswAAAAJ",
+    "affiliation": "UCD Centre for Veterinary Epidemiology and Risk Analysis, School of Veterinary Medicine, University",
+    "fullName": "Simon J More"
+  },
+  "d-benford": {
+    "shortname": "D Benford",
     "photo": "/assets/avatars/gs/dummy.jpg",
     "url": "",
     "gsid": "",

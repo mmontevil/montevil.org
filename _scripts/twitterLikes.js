@@ -26,14 +26,10 @@ async function login(driver) {
        await driver
     .findElement(By.xpath("//input"))
     .sendKeys(Key.ENTER);
-     await sleep(1000);
-  await driver
-    .findElement(By.xpath("//input"))
-    .sendKeys(TWITTER_MDP);
-    await sleep(500);
-        await driver
-    .findElement(By.xpath("//input"))
-    .sendKeys(Key.ENTER);
+     await sleep(2000);
+  await driver.findElement(By.xpath("//input[@name='password']")).sendKeys(TWITTER_MDP);
+    await sleep(1000);
+        await driver.findElement(By.xpath("//input[@name='password']")).sendKeys(Key.ENTER);
   await sleep(2000);
   
  // await driver.findElement(By.xpath("//div[@data-testid='LoginForm_Login_Button']")).click();

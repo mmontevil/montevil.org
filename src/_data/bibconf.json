@@ -1,5 +1,51 @@
 [
   {
+    "URL": "https://enmi-conf.org/wp/enmi21/",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "Entretiens du nouveau monde industriel : La société intermittente, la vie dans le négu(anthropocène)",
+    "id": "2021-enmi",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          11,
+          29
+        ]
+      ]
+    },
+    "title": "L’intermittence du vivant : pathologies et régénération",
+    "title-short": "L’intermittence du vivant ",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://www.u-picardie.fr/journee-d-etudes-georges-ganguilhem-la-philosophie-et-ses-dehors--648096.kjsp",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "Journée d’étude Georges Canguilhem : la philosophie et ses dehors",
+    "id": "2021-cang",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          11,
+          20
+        ]
+      ]
+    },
+    "title": "Normativité et infidélités du milieu",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://uclouvain.be/fr/instituts-recherche/isp/evenements/theoretical-biology-some-strategic-perspectives.html",
     "abstract": "There is a lack of theoretical elaboration in biology, particularly in the study of organisms’ life cycles. The underlying problem is the emergence of an episteme that structurally neglects these questions. In the case of biology, certain issues need to be addressed with precision, notably the articulation between systemic (physicalist or organicist) and historical (evolutionary but also developmental) reasoning. As an example of application, we will present the question of what disruption means in theoretical biology.",
     "author": [
       {
@@ -7,7 +53,7 @@
         "given": "Maël"
       }
     ],
-    "container-title": "Plus d’une discipline : actualité de La vie la mort",
+    "container-title": "Life and cognition seminar series",
     "id": "2021-louvain",
     "issued": {
       "date-parts": [
