@@ -1962,9 +1962,9 @@
   "f-otalora-luna": {
     "shortname": "F Otálora-Luna",
     "photo": "/assets/avatars/gs/LKwWPioAAAAJ.jpg",
-    "url": "https://drive.google.com/open?id=0B_zWr3zJJf_aVS10UllGLXJrNEE&authuser=0",
+    "url": "https://www.uvu.edu/directory/employee/?id=cHFEc3lFK1FkY0tya3FUTCtJNXcrQT09",
     "gsid": "LKwWPioAAAAJ",
-    "affiliation": "University of Richmond, VA, USA",
+    "affiliation": "Utah Valley University, Utah, USA",
     "fullName": "Fernando OTÁLORA-LUNA"
   },
   "e-aldana": {
@@ -3460,7 +3460,7 @@
     "photo": "/assets/avatars/gs/Wk8kppcAAAAJ.jpg",
     "url": "https://www.johannesjaeger.eu/",
     "gsid": "Wk8kppcAAAAJ",
-    "affiliation": "Complexity Science Hub (CSH) Vienna / Institut d'Études Avancées (IEA) Paris",
+    "affiliation": "Freelance, associated with Complexity Science Hub (CSH) Vienna",
     "fullName": "Johannes Jaeger"
   },
   "l-dobrzynski": {
@@ -5392,7 +5392,7 @@
   "a-gare": {
     "shortname": "A Gare",
     "photo": "/assets/avatars/gs/mjpw0hMAAAAJ.jpg",
-    "affiliation": "Philosophy and Cultural Inquiry, Swinburne University",
+    "affiliation": "Associate Professor of Philosophy and Cultural Inquiry, Swinburne University of Technology",
     "fullName": "Arran Gare",
     "url": "https://scholar.google.fr/citations?user=4TXYdO4AAAAJ",
     "gsid": "4TXYdO4AAAAJ"
@@ -6258,5 +6258,21 @@
     "url": "",
     "gsid": "",
     "affiliation": ""
+  },
+  "e-saridakis": {
+    "shortname": "E Saridakis",
+    "photo": "/assets/avatars/gs/JLXgweUAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=JLXgweUAAAAJ",
+    "gsid": "JLXgweUAAAAJ",
+    "affiliation": "Researcher C, NCSR Demokritos",
+    "fullName": "Emmanuel Saridakis"
+  },
+  "d-dwivedi": {
+    "shortname": "D Dwivedi",
+    "photo": "/assets/avatars/d-dwivedi.jpg",
+    "url": "https://scholar.google.co.in/citations?user=91n7gC0AAAAJ&hl=en",
+    "gsid": "91n7gC0AAAAJ",
+    "affiliation": "Department of Humanities and Social Sciences, Indian Institute of Technology Delhi",
+    "fullName": "Divya Dwivedi"
   }
 }

@@ -1,5 +1,35 @@
 [
   {
+    "abstract": "Quel nouveau départ pour la philosophie ? S’il ne s’agit pas de s’affranchir des travaux antérieurs, ni de suivre la géopolitique restrictive du corpus heideggerien qui contrôle la politique post-décoloniale, comment constituer un nouveau corpus pour la philosophie ? Et quels sont les véritables enjeux de la philosophie au XXIe siècle ?",
+    "author": [
+      {
+        "family": "Dwivedi",
+        "given": "Divya"
+      },
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      },
+      {
+        "family": "Mohan",
+        "given": "Shaj"
+      }
+    ],
+    "container-title": "",
+    "id": "Anastasis-2021",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          11,
+          23
+        ]
+      ]
+    },
+    "title": "L’anastase de la philosophie",
+    "type": "paper-conference"
+  },
+  {
     "URL": "https://enmi-conf.org/wp/enmi21/",
     "author": [
       {
@@ -18,8 +48,7 @@
         ]
       ]
     },
-    "title": "L’intermittence du vivant : pathologies et régénération",
-    "title-short": "L’intermittence du vivant ",
+    "title": "Intermittence, rythmes et anti-entropie dans le vivant",
     "type": "paper-conference"
   },
   {

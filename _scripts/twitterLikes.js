@@ -98,7 +98,7 @@ driver.executeScript("arguments[0].scrollBy(0,500)", scr);}finally {    }
       );
       m = await driver.findElements(
         By.xpath(
-          "//div[@aria-label='Timeline: Liked by']/div/div/div/div[@data-testid='UserCell']/div/div/div/a/div/div/div/img"
+          "//div[@aria-label='Timeline: Liked by']/div/div/div/div[@data-testid='UserCell']/div/div/div/a/div/div/div[2]/div/img"
         )
       );
 

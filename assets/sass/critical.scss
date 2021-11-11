@@ -462,8 +462,16 @@ img {
 
       margin: 0 var(--gap-m) var(--gap-m) 0;
     }
+    
   }
-
+  &.portraitSmall {
+    clear: both;
+    max-height: 5em;
+    float: left;
+    display: block;
+     margin-right:  var(--gap-m) ;
+     margin-bottom:  var(--gap-m) ;
+  }
   &.right {
     display: block;
 

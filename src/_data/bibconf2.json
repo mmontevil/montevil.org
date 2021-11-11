@@ -2,9 +2,27 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "Anastasis-2021",
+        "fields": {
+            "title": "L'anastase de la philosophie",
+            "booktitle": "",
+            "location": "École Normale Supérieure, Paris",
+            "year": "2021",
+            "month": "11",
+            "day": "23",
+            "annonce": "true",
+            "language": "fr",
+            "program": "ENS-Anastase de la philosophie.pdf",
+            "abstract": "Quel nouveau départ pour la philosophie ? S'il ne s'agit pas de s'affranchir des travaux antérieurs, ni de suivre la géopolitique restrictive du corpus heideggerien qui contrôle la politique post-décoloniale, comment constituer un nouveau corpus pour la philosophie ? Et quels sont les véritables enjeux de la philosophie au XXIe siècle ?",
+            "author": "Divya Dwivedi and Maël Montévil and Shaj Mohan"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
         "entrykey": "2021-enmi",
         "fields": {
-            "title": "L'intermittence du vivant : pathologies et régénération",
+            "title": "Intermittence, rythmes et anti-entropie dans le vivant",
             "booktitle": "Entretiens du nouveau monde industriel : La société intermittente, la vie dans le négu(anthropocène)",
             "location": "Centre Pompidou",
             "year": "2021",
@@ -52,6 +70,8 @@
             "abstract": "There is a lack of theoretical elaboration in biology, particularly in the study of organisms' life cycles. The underlying problem is the emergence of an episteme that structurally neglects these questions. In the case of biology, certain issues need to be addressed with precision, notably the articulation between systemic (physicalist or organicist) and historical (evolutionary but also developmental) reasoning. As an example of application, we will present the question of what disruption means in theoretical biology.",
             "url": "https://uclouvain.be/fr/instituts-recherche/isp/evenements/theoretical-biology-some-strategic-perspectives.html",
             "illustration": "Louvain2021.png",
+            "video": "https://www.youtube.com/watch?v=K89LIFKsLcg",
+            "twittermention": "1457470327655649286",
             "author": "Maël Montévil"
         }
     },
