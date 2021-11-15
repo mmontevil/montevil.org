@@ -3,7 +3,8 @@
 
 *13h30, 23 Novembre 2021*  
 *Amphithéâtre Evariste Galois (plan ci-dessous)* 
-*École Normale Supérieure, 45 rue d’Ulm, Paris*  {.center}
+*École Normale Supérieure, 45 rue d’Ulm, Paris*
+*Possibilité de suivre l'évènement en visio*{.center}
 
 *Inscription obligatoire auprès de : mael.montevil@gmail.com*
 *‘Passe sanitaire’ demandé*
@@ -24,7 +25,8 @@ Ce débat est en cours de publication sur  https://www.philosophy-world-democrac
 
 *13h30, November 23, 2021*  
 *Amphithéâtre Evariste Galois (map below)*  
-*École Normale Supérieure, 45 rue d’Ulm*  {.center}
+*École Normale Supérieure, 45 rue d’Ulm*
+*Also by visioconference*{.center}
 
 *Registration required with: mael.montevil@gmail.com*
 *‘Pass sanitaire’ is required*
