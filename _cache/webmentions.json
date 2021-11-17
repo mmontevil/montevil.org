@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2021-08-06T19:31:52.466Z",
+  "lastFetched": "2021-11-17T09:54:23.902Z",
   "webmentions": [
     {
       "type": "entry",
@@ -1450,6 +1450,49 @@
       },
       "repost-of": "https://montevil.org/publications/articles/2021-montevil-episteme-computational-empiricism/",
       "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Philosophy World Democracy",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/d3d699405802a3d4cc2a79ea896d14db3f7534eb4090030f1e43ddfd3f7bce65.jpg",
+        "url": "https://twitter.com/PhilosophyWD"
+      },
+      "url": "https://twitter.com/PhilosophyWD/status/1460095404842749952",
+      "published": "2021-11-15T04:00:46+00:00",
+      "wm-received": "2021-11-15T18:57:59Z",
+      "wm-id": 1305503,
+      "wm-source": "https://brid.gy/post/twitter/MMontevil/1460095404842749952",
+      "wm-target": "https://montevil.org/talks/2021--l-ana/",
+      "photo": [
+        "https://pbs.twimg.com/media/FENMJsXVIAQY9gV.jpg"
+      ],
+      "content": {
+        "html": "The Anastasis of Philosophy\n13h30, 23 Novembre 2021\nAmphithéâtre Evariste Galois \nÉcole Normale Supérieure, 45 rue d’Ulm, Paris\nThe debate is published on <a href=\"https://www.philosophy-world-democracy.org/other-beginning\">philosophy-world-democracy.org/other-beginning</a> \nRegistration\n<a href=\"https://montevil.org/talks/2021--l-ana/\">montevil.org/talks/2021--l-…</a>",
+        "text": "The Anastasis of Philosophy\n13h30, 23 Novembre 2021\nAmphithéâtre Evariste Galois \nÉcole Normale Supérieure, 45 rue d’Ulm, Paris\nThe debate is published on philosophy-world-democracy.org/other-beginning \nRegistration\nmontevil.org/talks/2021--l-…"
+      },
+      "mention-of": "https://montevil.org/talks/2021--l-ana/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Philosophy World Democracy",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/d3d699405802a3d4cc2a79ea896d14db3f7534eb4090030f1e43ddfd3f7bce65.jpg",
+        "url": "https://twitter.com/PhilosophyWD"
+      },
+      "url": "https://twitter.com/MMontevil/status/1460022389933232134#favorited-by-1276764409545687040",
+      "published": "2021-11-15T18:57:53Z",
+      "wm-received": "2021-11-15T18:57:53Z",
+      "wm-id": 1305502,
+      "wm-source": "https://brid.gy/like/twitter/MMontevil/1460022389933232134/1276764409545687040",
+      "wm-target": "https://montevil.org/talks/2021--l-ana/",
+      "like-of": "https://montevil.org/talks/2021--l-ana/",
+      "wm-property": "like-of",
       "wm-private": false
     }
   ]
