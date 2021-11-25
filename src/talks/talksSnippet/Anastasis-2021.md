@@ -3,7 +3,7 @@
 
 *13h30, 23 Novembre 2021*  
 *Amphithéâtre Evariste Galois (plan ci-dessous)* 
-*École Normale Supérieure, 45 rue d’Ulm, Paris*
+*École Normale Supérieure, 45 rue d’Ulm, Paris* 
 *Possibilité de suivre l'évènement en visio*{.center}
 
 *Inscription obligatoire auprès de : mael.montevil@gmail.com*
