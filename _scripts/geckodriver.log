@@ -1509,3 +1509,54 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1637056846735	geckodriver	INFO	Listening on 127.0.0.1:48345
 1637056853822	geckodriver	INFO	Listening on 127.0.0.1:33139
 1637056945303	geckodriver	INFO	Listening on 127.0.0.1:36297
+1637971466516	geckodriver	INFO	Listening on 127.0.0.1:54819
+1637971467509	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilesi4Ec8"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1637971470989	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilesi4Ec8/search.json.mozlz4", (void 0)))
+1637971476459	Marionette	INFO	Listening on port 46761
+1637971476591	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+Marionette threw an error: TypeError: browsingContext.currentWindowGlobal is null
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.jsm:326:29
+
+1637971499044	Marionette	INFO	Stopped listening on port 46761
+1637971507536	geckodriver	INFO	Listening on 127.0.0.1:49411
+1637971508546	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile98BPV8"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1637971511560	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile98BPV8/search.json.mozlz4", (void 0)))
+1637971516869	Marionette	INFO	Listening on port 46451
+1637971516972	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1637971552149	Marionette	INFO	Stopped listening on port 46451
+1637971561186	geckodriver	INFO	Listening on 127.0.0.1:57105
+1637971562191	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilefmmX87"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1637971565444	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilefmmX87/search.json.mozlz4", (void 0)))
+1637971570691	Marionette	INFO	Listening on port 35263
+1637971571029	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1637971590065	Marionette	INFO	Stopped listening on port 35263
+1637971598902	geckodriver	INFO	Listening on 127.0.0.1:33081
+1637971598909	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilesHw5K3"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1637971602016	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilesHw5K3/search.json.mozlz4", (void 0)))
+1637971607959	Marionette	INFO	Listening on port 33485
+1637971608070	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1638120348298	geckodriver	INFO	Listening on 127.0.0.1:33127
+1638120408289	geckodriver	INFO	Listening on 127.0.0.1:40035
+1638120416585	geckodriver	INFO	Listening on 127.0.0.1:52701
+1638120426165	geckodriver	INFO	Listening on 127.0.0.1:57523
+1638120630819	geckodriver	INFO	Listening on 127.0.0.1:54165

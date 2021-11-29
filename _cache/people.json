@@ -6288,5 +6288,47 @@
     "url": "",
     "gsid": "",
     "affiliation": ""
+  },
+  "ip-medecins": {
+    "shortname": "IP MÉDECINS",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "pdes-sages-femmes": {
+    "shortname": "PDES SAGES-FEMMES",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "l-bjoerneborn": {
+    "shortname": "L Björneborn",
+    "photo": "/assets/avatars/gs/ryfQaSIAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=ryfQaSIAAAAJ",
+    "gsid": "ryfQaSIAAAAJ",
+    "affiliation": ""
+  },
+  "ma-pires": {
+    "shortname": "MA Pires",
+    "photo": "/assets/avatars/gs/QGFA5PAAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=QGFA5PAAAAAJ",
+    "gsid": "QGFA5PAAAAAJ",
+    "affiliation": ""
+  },
+  "n-crokidakis": {
+    "shortname": "N Crokidakis",
+    "photo": "/assets/avatars/gs/gILd2-cAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=gILd2-cAAAAJ",
+    "gsid": "gILd2-cAAAAJ",
+    "affiliation": ""
+  },
+  "smd-queiros": {
+    "shortname": "SMD Queirós",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
   }
 }
