@@ -861,8 +861,6 @@
   "b-mechtley": {
     "shortname": "B Mechtley",
     "photo": "/assets/avatars/gs/-HWDLa0AAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=-HWDLa0AAAAJ",
-    "gsid": "-HWDLa0AAAAJ",
     "affiliation": "Arizona State University",
     "fullName": "Brandon Mechtley"
   },
@@ -1808,7 +1806,7 @@
   "t-costa": {
     "shortname": "T Costa",
     "photo": "/assets/avatars/gs/bg_HxsMAAAAJ.jpg",
-    "url": "http://www.focuslab.org/the-team/",
+    "url": "https://www.triennalepsicologia.unito.it/do/docenti.pl/Show?_id=tcosta#tab-profilo",
     "gsid": "bg_HxsMAAAAJ",
     "affiliation": "Professor, University of Turin, Italy - Computational Neuroscience Group Coordinator, GCS fMRI",
     "fullName": "Tommaso Costa"
@@ -1925,14 +1923,13 @@
     "shortname": "V Patrascu",
     "photo": "/assets/avatars/gs/mQotNcAAAAAJ.jpg",
     "url": "http://fie.valahia.ro/",
-    "gsid": "mQotNcAAAAAJ",
     "affiliation": "Valahia University of Targoviste",
     "fullName": "Vasile Patrascu"
   },
   "t-brischetto-costa": {
     "shortname": "T Brischetto Costa",
     "photo": "/assets/avatars/gs/bg_HxsMAAAAJ.jpg",
-    "url": "http://www.focuslab.org/the-team/",
+    "url": "https://www.triennalepsicologia.unito.it/do/docenti.pl/Show?_id=tcosta#tab-profilo",
     "gsid": "bg_HxsMAAAAJ",
     "affiliation": "Professor, University of Turin, Italy - Computational Neuroscience Group Coordinator, GCS fMRI",
     "fullName": "Tommaso Costa"
@@ -2114,9 +2111,10 @@
   "j-kopel": {
     "shortname": "J Kopel",
     "photo": "/assets/avatars/gs/RjYLcXkAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=RjYLcXkAAAAJ",
+    "url": "https://www.researchgate.net/profile/Jonathan_Kopel",
     "gsid": "RjYLcXkAAAAJ",
-    "affiliation": ""
+    "affiliation": "Texas Tech University Health Sciences Center",
+    "fullName": "Jonathan Kopel"
   },
   "m-el-haj": {
     "shortname": "M El-Haj",
@@ -2549,9 +2547,10 @@
   "p-lu": {
     "shortname": "P Lu",
     "photo": "/assets/avatars/gs/xvjkdUkAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=xvjkdUkAAAAJ",
+    "url": "https://thelulab.cn/",
     "gsid": "xvjkdUkAAAAJ",
-    "affiliation": ""
+    "affiliation": "ShanghaiTech University",
+    "fullName": "Pengfei Lu"
   },
   "y-chen": {
     "shortname": "Y Chen",
@@ -2733,7 +2732,7 @@
   "s-wang": {
     "shortname": "S Wang",
     "photo": "/assets/avatars/gs/b2ZrFa0AAAAJ.jpg",
-    "url": "https://web.stevens.edu/facultyprofile/?id=2375",
+    "url": "https://www.shangwanglab.org/",
     "gsid": "b2ZrFa0AAAAJ",
     "affiliation": "Stevens Institute of Technology",
     "fullName": "Shang Wang"
@@ -3533,9 +3532,9 @@
   "d-vecchi": {
     "shortname": "D Vecchi",
     "photo": "/assets/avatars/gs/XLruzNAAAAAJ.jpg",
-    "url": "http://cfcul.fc.ul.pt/equipa/dvecchi.php",
+    "url": "https://cfcul.ciencias.ulisboa.pt/equipa/davide-vecchi/",
     "gsid": "XLruzNAAAAAJ",
-    "affiliation": "FCT Research Fellow, University of Lisbon",
+    "affiliation": "Research Fellow, FCUL, University of Lisbon",
     "fullName": "Davide Vecchi"
   },
   "i-siekmann": {
@@ -5049,10 +5048,11 @@
   },
   "ja-flaws": {
     "shortname": "JA Flaws",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
-    "affiliation": ""
+    "photo": "/assets/avatars/gs/auKthEEAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=auKthEEAAAAJ",
+    "gsid": "auKthEEAAAAJ",
+    "affiliation": "University of Illinois at Urbana-Champaign",
+    "fullName": "Jodi A Flaws"
   },
   "gs-prins": {
     "shortname": "GS Prins",
@@ -5300,7 +5300,6 @@
     "shortname": "N Fitzpatrick",
     "photo": "/assets/avatars/gs/rOpI57UAAAAJ.jpg",
     "url": "http://www.gradcam.ie/",
-    "gsid": "rOpI57UAAAAJ",
     "affiliation": "Technological University Dublin",
     "fullName": "Prof. Noel Fitzpatrick"
   },
@@ -6075,7 +6074,7 @@
     "photo": "/assets/avatars/gs/oV01Zq4AAAAJ.jpg",
     "url": "http://www.nue.okstate.edu/Index_Publications.htm",
     "gsid": "oV01Zq4AAAAJ",
-    "affiliation": "Oklahoma State University",
+    "affiliation": "University of Nebraska Lincoln",
     "fullName": "Lawrence Aula"
   },
   "e-eickhoff": {
@@ -6272,7 +6271,7 @@
     "photo": "/assets/avatars/d-dwivedi.jpg",
     "url": "https://scholar.google.co.in/citations?user=91n7gC0AAAAJ&hl=en",
     "gsid": "91n7gC0AAAAJ",
-    "affiliation": "Department of Humanities and Social Sciences, Indian Institute of Technology Delhi",
+    "affiliation": "Indian Institute of Technology",
     "fullName": "Divya Dwivedi"
   },
   "m-okada": {
@@ -6306,23 +6305,26 @@
   "l-bjoerneborn": {
     "shortname": "L Björneborn",
     "photo": "/assets/avatars/gs/ryfQaSIAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=ryfQaSIAAAAJ",
+    "url": "https://ku-dk.academia.edu/bjorneborn",
     "gsid": "ryfQaSIAAAAJ",
-    "affiliation": ""
+    "affiliation": "University of Copenhagen, Department of Communication",
+    "fullName": "Lennart Björneborn"
   },
   "ma-pires": {
     "shortname": "MA Pires",
     "photo": "/assets/avatars/gs/QGFA5PAAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=QGFA5PAAAAAJ",
+    "url": "https://www.researchgate.net/profile/Marcelo-Pires-2",
     "gsid": "QGFA5PAAAAAJ",
-    "affiliation": ""
+    "affiliation": "PhD in Physics at the Brazilian Center for Research in Physics (CBPF)",
+    "fullName": "Marcelo Amanajas Pires"
   },
   "n-crokidakis": {
     "shortname": "N Crokidakis",
     "photo": "/assets/avatars/gs/gILd2-cAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=gILd2-cAAAAJ",
+    "url": "https://profs1.if.uff.br/nuno/",
     "gsid": "gILd2-cAAAAJ",
-    "affiliation": ""
+    "affiliation": "Institute of Physics, Universidade Federal Fluminense, Rio de Janeiro, Brazil",
+    "fullName": "Nuno Crokidakis"
   },
   "smd-queiros": {
     "shortname": "SMD Queirós",
@@ -6336,20 +6338,37 @@
     "photo": "/assets/avatars/gs/88eboUQAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=88eboUQAAAAJ",
     "gsid": "88eboUQAAAAJ",
-    "affiliation": ""
+    "affiliation": "Research Officer, A*STAR Singapore",
+    "fullName": "Bui Thuy Tien"
   },
   "m-helmy": {
     "shortname": "M Helmy",
     "photo": "/assets/avatars/gs/Ccx_2agAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=Ccx_2agAAAAJ",
+    "url": "http://individual.utoronto.ca/mohamedhelmy",
     "gsid": "Ccx_2agAAAAJ",
-    "affiliation": ""
+    "affiliation": "Senior Specialist at Bioinformatics Institute (BII), A*STAR",
+    "fullName": "Mohamed Helmy"
   },
   "kn-fountoulakis": {
     "shortname": "KN Fountoulakis",
     "photo": "/assets/avatars/gs/VOeE3isAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=VOeE3isAAAAJ",
+    "url": "http://www.psychiatry.gr/",
     "gsid": "VOeE3isAAAAJ",
+    "affiliation": "Aristotle University of Thessaloniki Greece",
+    "fullName": "Konstantinos Fountoulakis"
+  },
+  "e-lacombe": {
+    "shortname": "E Lacombe",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "m-tahar": {
+    "shortname": "M Tahar",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
     "affiliation": ""
   }
 }
