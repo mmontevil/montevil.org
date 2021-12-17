@@ -2,6 +2,24 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "3S-2022",
+        "fields": {
+            "title": "La technologie au prisme de la biologie théorique",
+            "booktitle": "3S Seminar: Sustainability of Socio-Technical Systems, 4th edition",
+            "location": "Université de Technologie de Troyes, Troyes",
+            "year": "2022",
+            "month": "01",
+            "day": "13",
+            "annonce": "true",
+            "language": "fr",
+            "illustration": "seminar-3S.jpg",
+            "url": "https://recherche.utt.fr/interdisciplinary-research-on-society-technology-environment-interactions-insyte/seminar-3s",
+            "author": " Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
         "entrykey": "Anastasis-2021",
         "fields": {
             "title": "L'anastase de la philosophie",
