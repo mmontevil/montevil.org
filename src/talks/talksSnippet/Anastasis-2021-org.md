@@ -20,8 +20,6 @@ Quel est ce nouveau départ de la philosophie ? S'il ne s'agit pas de s'affranc
 
 Ce débat est en cours de publication sur  https://www.philosophy-world-democracy.org/other-beginning
 
-![Affiche](/assets/talks/Affiche-Anastase-Philo.jpg){.centerBlock}
-
 
 # The anastasis of philosophy  {.titleHead}
 
@@ -57,8 +55,6 @@ The debate is published on https://www.philosophy-world-democracy.org/other-begi
 
 
 ![Shaj Mohan](/assets/avatars/s-mohan.jpg){.portraitSmall} [Shaj Mohan]{.sc}, philosophe basé dans le sous-continent. Il est l'auteur avec Divya Dwivedi du livre "Gandhi and Philosophy: On Theological Anti-politics" (Préface de Jean-Luc Nancy, Bloomsbury Academic, UK, 2019) 
-
-
 
 # Lieu / Location
                

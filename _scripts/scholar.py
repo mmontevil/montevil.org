@@ -6,8 +6,13 @@ from pathlib import Path
 
 
 proxy_generator = ProxyGenerator()
-proxy_generator.Tor_Internal(tor_cmd = 'tor')
-scholarly.use_proxy(proxy_generator)
+success = proxy_generator.Tor_Internal(tor_cmd = 'tor')
+scholarly.use_proxy(proxy_generator,proxy_generator)
+
+#pg = ProxyGenerator()
+#success = pg.FreeProxies()
+#scholarly.use_proxy(pg)
+
 
 search_query = scholarly.search_author('Maël Montévil')
 

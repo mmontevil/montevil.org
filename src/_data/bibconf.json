@@ -25,19 +25,11 @@
     "abstract": "Quel nouveau départ pour la philosophie ? S’il ne s’agit pas de s’affranchir des travaux antérieurs, ni de suivre la géopolitique restrictive du corpus heideggerien qui contrôle la politique post-décoloniale, comment constituer un nouveau corpus pour la philosophie ? Et quels sont les véritables enjeux de la philosophie au XXIe siècle ?",
     "author": [
       {
-        "family": "Dwivedi",
-        "given": "Divya"
-      },
-      {
         "family": "Montévil",
         "given": "Maël"
-      },
-      {
-        "family": "Mohan",
-        "given": "Shaj"
       }
     ],
-    "container-title": "",
+    "container-title": "L’anastase de la philosophie",
     "id": "Anastasis-2021",
     "issued": {
       "date-parts": [
@@ -48,7 +40,7 @@
         ]
       ]
     },
-    "title": "L’anastase de la philosophie",
+    "title": "Anastase de la philosophie, anastase des sciences",
     "type": "paper-conference"
   },
   {
@@ -3126,6 +3118,60 @@
     },
     "title": "Historicity and organization",
     "type": "paper-conference"
+  },
+  {
+    "abstract": "Quel nouveau départ pour la philosophie ? S’il ne s’agit pas de s’affranchir des travaux antérieurs, ni de suivre la géopolitique restrictive du corpus heideggerien qui contrôle la politique post-décoloniale, comment constituer un nouveau corpus pour la philosophie ? Et quels sont les véritables enjeux de la philosophie au XXIe siècle ?",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      },
+      {
+        "family": "Longo",
+        "given": "Giuseppe"
+      }
+    ],
+    "id": "seminaire-IEA-2020-2021",
+    "issued": {
+      "date-parts": [
+        [
+          2021
+        ]
+      ]
+    },
+    "title": "Séminaire 2020-2021 : Vie - Numérique - Santé",
+    "title-short": "Séminaire 2020-2021 ",
+    "type": "book"
+  },
+  {
+    "abstract": "Quel nouveau départ pour la philosophie ? S’il ne s’agit pas de s’affranchir des travaux antérieurs, ni de suivre la géopolitique restrictive du corpus heideggerien qui contrôle la politique post-décoloniale, comment constituer un nouveau corpus pour la philosophie ? Et quels sont les véritables enjeux de la philosophie au XXIe siècle ?",
+    "author": [
+      {
+        "family": "Dwivedi",
+        "given": "Divya"
+      },
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      },
+      {
+        "family": "Mohan",
+        "given": "Shaj"
+      }
+    ],
+    "id": "Anastasis-2021-org",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          11,
+          23
+        ]
+      ]
+    },
+    "title": "Évènement : L’anastase de la philosophie",
+    "title-short": "Évènement ",
+    "type": "book"
   },
   {
     "URL": "https://enmi-conf.org/wp/enmi20/",

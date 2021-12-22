@@ -4938,9 +4938,9 @@
   },
   "mj-reiss": {
     "shortname": "MJ Reiss",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
+    "photo": "/assets/avatars/gs/f_2y4PwAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=f_2y4PwAAAAJ",
+    "gsid": "f_2y4PwAAAAJ",
     "affiliation": ""
   },
   "v-fleury": {
@@ -6373,6 +6373,13 @@
   },
   "v-puig": {
     "shortname": "V Puig",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "m-masi": {
+    "shortname": "M Masi",
     "photo": "/assets/avatars/gs/dummy.jpg",
     "url": "",
     "gsid": "",

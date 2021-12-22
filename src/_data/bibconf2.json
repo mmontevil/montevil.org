@@ -22,8 +22,8 @@
         "entrytype": "inproceedings",
         "entrykey": "Anastasis-2021",
         "fields": {
-            "title": "L'anastase de la philosophie",
-            "booktitle": "",
+            "title": "Anastase de la philosophie, anastase des sciences",
+            "booktitle": "L'anastase de la philosophie",
             "location": "École Normale Supérieure, Paris",
             "year": "2021",
             "month": "11",
@@ -34,7 +34,7 @@
             "abstract": "Quel nouveau départ pour la philosophie ? S'il ne s'agit pas de s'affranchir des travaux antérieurs, ni de suivre la géopolitique restrictive du corpus heideggerien qui contrôle la politique post-décoloniale, comment constituer un nouveau corpus pour la philosophie ? Et quels sont les véritables enjeux de la philosophie au XXIe siècle ?",
             "illustration": "anastasis.jpg",
             "twittermention": "1459859910825426948, 1460095404842749952, 1462742390272364544",
-            "author": "Divya Dwivedi and Maël Montévil and Shaj Mohan"
+            "author": "Maël Montévil"
         }
     },
     {
@@ -2228,6 +2228,40 @@
             "abstract": "We argue that a theory of biological systems should rely on organization and variation as fundamental theoretical principles. Biological systems are organized natural systems that undergo functional variation. In this presentation we will provide a specific characterization of each principle while emphasizing their mutual relations. Organization provides the relevant kind of complexity for functional variation occur; and, in turn, variation enables the maintenance of organization over time, notably at the evolutionary scale.",
             "author": " M. Montévil",
             "title": "Historicity and organization"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "proceedings",
+        "entrykey": "seminaire-IEA-2020-2021",
+        "fields": {
+            "title": "Séminaire 2020-2021 : Vie - Numérique - Santé",
+            "location": "Institute d'Études Avancées de Nantes",
+            "year": "2021",
+            "annonce": "true",
+            "language": "fr",
+            "abstract": "Quel nouveau départ pour la philosophie ? S'il ne s'agit pas de s'affranchir des travaux antérieurs, ni de suivre la géopolitique restrictive du corpus heideggerien qui contrôle la politique post-décoloniale, comment constituer un nouveau corpus pour la philosophie ? Et quels sont les véritables enjeux de la philosophie au XXIe siècle ?",
+            "illustration": "iea-nantes.png",
+            "author": " Maël Montévil and Giuseppe Longo"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "proceedings",
+        "entrykey": "Anastasis-2021-org",
+        "fields": {
+            "title": "Évènement : L'anastase de la philosophie",
+            "location": "École Normale Supérieure, Paris",
+            "year": "2021",
+            "month": "11",
+            "day": "23",
+            "annonce": "true",
+            "language": "fr",
+            "program": "ENS-Anastase de la philosophie.pdf",
+            "abstract": "Quel nouveau départ pour la philosophie ? S'il ne s'agit pas de s'affranchir des travaux antérieurs, ni de suivre la géopolitique restrictive du corpus heideggerien qui contrôle la politique post-décoloniale, comment constituer un nouveau corpus pour la philosophie ? Et quels sont les véritables enjeux de la philosophie au XXIe siècle ?",
+            "illustration": "Affiche-Anastase-Philo.jpg",
+            "twittermention": "1459859910825426948, 1460095404842749952, 1462742390272364544",
+            "author": "Divya Dwivedi and Maël Montévil and Shaj Mohan"
         }
     },
     {
