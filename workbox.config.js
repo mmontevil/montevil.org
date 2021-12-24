@@ -141,6 +141,18 @@ module.exports = {
         networkTimeoutSeconds: 10,
       },
     },
+        {
+      urlPattern: /^https:\/\/savoirs\.ens\.fr\/.*/i,
+      handler: 'NetworkFirst',
+      options: {
+        cacheName: 'counter',
+        expiration: {
+          maxEntries: 1,
+          maxAgeSeconds: 10, // 24 hours
+        },
+        networkTimeoutSeconds: 10,
+      },
+    },
     {
       urlPattern: /.*/i,
       handler: 'NetworkFirst',
