@@ -1,4 +1,26 @@
  
+# Orateurs et enregistrements
+               
+
+
+![Shaj Mohan](/assets/avatars/s-mohan.jpg){.portraitSmall} [Shaj Mohan]{.sc}, philosophe basé dans le sous-continent. Il est l'auteur avec Divya Dwivedi du livre "Gandhi and Philosophy: On Theological Anti-politics" (Préface de Jean-Luc Nancy, Bloomsbury Academic, UK, 2019) 
+
+![Recording](https://savoirs.ens.fr/uploads/sons/2021_11_23_mohan.mp3)
+
+
+       
+![Maël Montévil](/assets/avatars/m-montevil.jpg){.portraitSmall} [Maël Montévil]{.sc}, philosophe et théoreticien de la biologie. Il est le co-auteur avec Giuseppe Longo de *Perspectives on organisms*. Il est chargé de recherche au CNRS, Centre Cavaillès, USR3608 – République des Savoirs, ÉNS.
+
+
+![Recording](https://savoirs.ens.fr//uploads/sons/2021_11_23_montevil.mp3)
+
+               
+![Divya Dwivedi](/assets/avatars/d-dwivedi.jpg){.portraitSmall} [Divya Dwivedi]{.sc}, philosophe et auteur basé en Inde. Elle est professeure associée de philosophie et de littérature, Department of Humanities and Social Sciences, Indian Institute of Technology Delhi. 
+
+![Recording](https://savoirs.ens.fr/uploads/sons/2021_11_23_dwivedi.mp3)
+
+
+
 # L'anastase de la philosophie {.titleHead}
 
 *13h30, 23 Novembre 2021*  
@@ -44,19 +66,6 @@ What is the new beginning for philosophy? If it is not a question of freeing our
 
 The debate is published on https://www.philosophy-world-democracy.org/other-beginning
 
-# Orateurs
-               
-               
-![Divya Dwivedi](/assets/avatars/d-dwivedi.jpg){.portraitSmall} [Divya Dwivedi]{.sc}, philosophe et auteur basé en Inde. Elle est professeure associée de philosophie et de littérature, Department of Humanities and Social Sciences, Indian Institute of Technology Delhi. 
-
-
-
-       
-![Maël Montévil](/assets/avatars/m-montevil.jpg){.portraitSmall} [Maël Montévil]{.sc}, philosophe et théoreticien de la biologie. Il est chargé de recherche au CNRS, Centre Cavaillès, USR3608 – République des Savoirs, ÉNS.
-
-
-
-![Shaj Mohan](/assets/avatars/s-mohan.jpg){.portraitSmall} [Shaj Mohan]{.sc}, philosophe basé dans le sous-continent. Il est l'auteur avec Divya Dwivedi du livre "Gandhi and Philosophy: On Theological Anti-politics" (Préface de Jean-Luc Nancy, Bloomsbury Academic, UK, 2019) 
 
 
 

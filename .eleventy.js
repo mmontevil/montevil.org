@@ -136,7 +136,7 @@ module.exports = function (eleventyConfig) {
   // const slugify = require('@sindresorhus/slugify');
   const markdownItAnchor = require('markdown-it-anchor');
 
-  
+  const { html5Media } = require('markdown-it-html5-media');
   
     const markdownItAnchorOptions = {
     permalink: markdownItAnchor.permalink.ariaHidden({
@@ -262,6 +262,7 @@ module.exports = function (eleventyConfig) {
     .use(markdownItAttributes)
     .use(markdownItSpan)
     .use(markdownItAbbr)
+    .use(html5Media)
     .use(markdownItContainer, 'lead') // Chapô in French
     .use(markdownItContainer, 'info')
     .use(markdownItContainer, 'success')
