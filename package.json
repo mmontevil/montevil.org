@@ -158,7 +158,7 @@
     "cheerio": "*",
     "clean-css": "^5.2.2",
     "eleventy-plugin-toc": "^1.1.5",
-    "eslint": "8.5.0",
+    "eslint": "8.6.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-prettier": "4.0.0",
     "esm": "^3.2.25",
