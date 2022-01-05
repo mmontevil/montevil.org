@@ -4,7 +4,9 @@ const config = require('./pack11ty.config.js');
 const { promises: fs } = require('fs');
 const syncFs = require('fs');
 const slugify = require('./src/_utils/slugify');
+//const slugify = require("slugify");
 //import slugify from '@sindresorhus/slugify';
+//const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
 const { writeToCache, readFromCache } = require('./src/_utils/cache');
 
@@ -12,7 +14,9 @@ cachedTweets = readFromCache('_cache/tweetsMentions.json', (alt = {}));
 cachedWiki = readFromCache('_cache/wikiMentions.json', (alt = {}));
 cachedPeople = readFromCache('_cache/people.json', (alt = {}));
 
-module.exports = function (eleventyConfig) {
+module.exports = function (eleventyConfig) {  
+  //eleventyConfig.addPlugin(UpgradeHelper);
+
   eleventyConfig.on('afterBuild', () => {
     writeToCache(cachedPeople, '_cache/people.json');
     writeToCache(cachedWiki, '_cache/wikiMentions.json');

@@ -1002,7 +1002,7 @@
     "photo": "/assets/avatars/gs/JWxhafEAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=JWxhafEAAAAJ",
     "gsid": "JWxhafEAAAAJ",
-    "affiliation": "CNRS Research Fellow",
+    "affiliation": "CNRS Researcher",
     "fullName": "Angélique Stéphanou"
   },
   "e-fanchon": {
@@ -1219,7 +1219,7 @@
     "photo": "/assets/avatars/gs/IMaBd4sAAAAJ.jpg",
     "url": "http://physics.shirazu.ac.ir/physics/people/faculty/Seyed-Hossein-Hendi",
     "gsid": "IMaBd4sAAAAJ",
-    "affiliation": "Associate Professor of Physics, Shiraz University",
+    "affiliation": "Professor of Physics, Shiraz University",
     "fullName": "Seyed Hossein Hendi"
   },
   "s-panahiyan": {
@@ -1678,7 +1678,7 @@
     "photo": "/assets/avatars/gs/qW-cgKIAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=qW-cgKIAAAAJ",
     "gsid": "qW-cgKIAAAAJ",
-    "affiliation": "PhD student, Sapienza University of Rome",
+    "affiliation": "RTDA MED/46, Sapienza University of Rome",
     "fullName": "Paola Pontecorvi"
   },
   "ob-naimark": {
@@ -1732,7 +1732,7 @@
     "photo": "/assets/avatars/gs/hA2IaXkAAAAJ.jpg",
     "url": "https://www.ibe.upf-csic.es/valverde",
     "gsid": "hA2IaXkAAAAJ",
-    "affiliation": "Institute of Evolutionary Biology - Spanish National Research Council",
+    "affiliation": "CSIC Tenured Scientist at Institute of Evolutionary Biology - Spanish National Research Council",
     "fullName": "Sergi Valverde"
   },
   "s-ohse": {
@@ -3399,9 +3399,9 @@
   "bz-tang": {
     "shortname": "BZ Tang",
     "photo": "/assets/avatars/gs/66uptgsAAAAJ.jpg",
-    "url": "http://ihome.ust.hk/~tangbenz/",
+    "url": "https://sse.cuhk.edu.cn/en/faculty/tangbenzhong",
     "gsid": "66uptgsAAAAJ",
-    "affiliation": "Chair Professor of Chemistry, Hong Kong University of Science and Technology",
+    "affiliation": "Distinguished Presidential Chair Professor, The Chinese University of Hong Kong, Shenzhen",
     "fullName": "Ben Zhong Tang"
   },
   "ac-ehresmann": {
@@ -4686,7 +4686,7 @@
   "t-veloz": {
     "shortname": "T Veloz",
     "photo": "/assets/avatars/gs/q7HbZQ4AAAAJ.jpg",
-    "url": "https://people.ok.ubc.ca/tomveloz/homepage.htm",
+    "url": "https://clea.research.vub.be/en/tomas-veloz",
     "gsid": "q7HbZQ4AAAAJ",
     "affiliation": "Postdoctoral Researcher, Vrije Universiteit Brussel",
     "fullName": "Tomas Veloz"
@@ -4939,9 +4939,10 @@
   "mj-reiss": {
     "shortname": "MJ Reiss",
     "photo": "/assets/avatars/gs/f_2y4PwAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=f_2y4PwAAAAJ",
+    "url": "https://iris.ucl.ac.uk/iris/browse/profile?upi=MJREI02",
     "gsid": "f_2y4PwAAAAJ",
-    "affiliation": ""
+    "affiliation": "UCL Institute of Education",
+    "fullName": "Michael Reiss"
   },
   "v-fleury": {
     "shortname": "V Fleury",
@@ -5442,7 +5443,7 @@
     "url": "https://scholar.google.fr/citations?user=7ZaEjk4AAAAJ",
     "gsid": "7ZaEjk4AAAAJ",
     "affiliation": "Centre for Ecological Research",
-    "fullName": "Eörs Szathmáry, Director General"
+    "fullName": "Eörs Szathmáry, research professor"
   },
   "a-mastrogiorgio": {
     "shortname": "A Mastrogiorgio",
@@ -6380,6 +6381,35 @@
   },
   "m-masi": {
     "shortname": "M Masi",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "b-fertig": {
+    "shortname": "B Fertig",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "w-fang": {
+    "shortname": "W Fang",
+    "photo": "/assets/avatars/gs/p2uuPm4AAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=p2uuPm4AAAAJ",
+    "gsid": "p2uuPm4AAAAJ",
+    "affiliation": "Assistant Professor in Department of Philosophy, Tongji University",
+    "fullName": "Wei Fang"
+  },
+  "a-notopoylos": {
+    "shortname": "Α Νοτόπουλος",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "undefined-undefined": {
+    "shortname": "undefined undefined",
     "photo": "/assets/avatars/gs/dummy.jpg",
     "url": "",
     "gsid": "",

@@ -2,6 +2,7 @@ const fs = require('fs');
 const hashtagsToTags = require('../_utils/hashtags').hashtagsToTags;
 const tagFilter = require('../_utils/tagfilter');
 const slugify = require('../_utils/slugify');
+//const slugify = require("slugify");
 
 module.exports = function (collection) {
   let tagsCollection = new Map();
