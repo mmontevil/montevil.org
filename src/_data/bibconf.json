@@ -1,5 +1,28 @@
 [
   {
+    "URL": "https://enseignements.ehess.fr/2021-2022/ue/954",
+    "abstract": "",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "UE954 - Dynamiques post-structurelles",
+    "id": "EHESS-2022",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          1,
+          17
+        ]
+      ]
+    },
+    "title": "Architectonique théorique en biologie et applications",
+    "type": "paper-conference"
+  },
+  {
     "URL": "https://recherche.utt.fr/interdisciplinary-research-on-society-technology-environment-interactions-insyte/seminar-3s",
     "author": [
       {
@@ -20,6 +43,78 @@
     },
     "title": "La technologie au prisme de la biologie théorique",
     "type": "paper-conference"
+  },
+  {
+    "URL": "https://www.philosophy-world-democracy.org/events",
+    "abstract": "Nancy a toujours été proche des préoccupations majeures de la philosophie – temps, être, espace, négativité, forme, image. Se souvenir de lui, c’est recommencer d’une manière plurielle avec lui pour assurer sa levée plus que sa relève dans l’avenir de la pensée.",
+    "author": [
+      {
+        "family": "Dwivedi",
+        "given": "Divya"
+      },
+      {
+        "family": "Lèbre",
+        "given": "Jérôme"
+      },
+      {
+        "family": "Mohan",
+        "given": "Shaj"
+      },
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      },
+      {
+        "family": "Warin",
+        "given": "François"
+      }
+    ],
+    "id": "JL-Nancy-2022",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          1,
+          22
+        ]
+      ]
+    },
+    "title": "Jean-Luc Nancy : Anastasis de la pensée",
+    "title-short": "Jean-Luc Nancy ",
+    "type": "book"
+  },
+  {
+    "abstract": "En hommage à Bernard Stiegler. Présentation du livre Prendre soin de l’informatique et des générations, par Anne Alombert, Victor Chaix, Maël Montévil et Vincent Puig, suivie d’une discussion collective en présence de certains des auteurs.",
+    "author": [
+      {
+        "family": "Alombert",
+        "given": "Anne"
+      },
+      {
+        "family": "Chaix",
+        "given": "Victor"
+      },
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      },
+      {
+        "family": "Puig",
+        "given": "Vincent"
+      }
+    ],
+    "id": "fyp-2021",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          12,
+          1
+        ]
+      ]
+    },
+    "title": "Présentation de \"Prendre soin de l’informatique et des générations\"",
+    "type": "book"
   },
   {
     "abstract": "Quel nouveau départ pour la philosophie ? S’il ne s’agit pas de s’affranchir des travaux antérieurs, ni de suivre la géopolitique restrictive du corpus heideggerien qui contrôle la politique post-décoloniale, comment constituer un nouveau corpus pour la philosophie ? Et quels sont les véritables enjeux de la philosophie au XXIe siècle ?",

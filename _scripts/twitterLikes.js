@@ -76,8 +76,8 @@ driver.executeScript("arguments[0].scrollBy(0,500)", scr);}finally {    }
 
       m = await driver.findElements(
         By.xpath(
-          "//div[@aria-label='Timeline: Liked by']/div/div/div/div[@data-testid='UserCell']/div/div/div/a/div/div/div/img"
-        )
+          "//div[@aria-label='Timeline: Liked by']/div/div/div/div[@data-testid='UserCell']/div/div[1]/div/div/div[2]/div/div[2]/div/a/div[3]/div/div[2]/div/img"
+          )
       );
 
       if (m.length > 0) {
@@ -85,7 +85,7 @@ driver.executeScript("arguments[0].scrollBy(0,500)", scr);}finally {    }
         await sleep(750);
         m = await driver.findElements(
           By.xpath(
-            "//div[@aria-label='Timeline: Liked by']/div/div/div/div[@data-testid='UserCell']/div/div/div/a/div/div/div/img"
+            "//div[@aria-label='Timeline: Liked by']/div/div/div/div[@data-testid='UserCell']/div/div[1]/div/div/div[2]/div/div[2]/div/a/div[3]/div/div[2]/div/img"
           )
         );
         driver.executeScript('arguments[0].scrollIntoView();', m[m.length - 1]);
@@ -93,17 +93,17 @@ driver.executeScript("arguments[0].scrollBy(0,500)", scr);}finally {    }
       }
       l = await driver.findElements(
         By.xpath(
-          "//div[@aria-label='Timeline: Liked by']/div/div/div/div[@data-testid='UserCell']/div/div/div/a"
+          "//div[@aria-label='Timeline: Liked by']/div/div/div/div[@data-testid='UserCell']/div/div[1]/div/div/div[2]/div/div[2]/div/a"
         )
       );
       m = await driver.findElements(
         By.xpath(
-          "//div[@aria-label='Timeline: Liked by']/div/div/div/div[@data-testid='UserCell']/div/div/div/a/div/div/div[2]/div/img"
+          "//div[@aria-label='Timeline: Liked by']/div/div/div/div[@data-testid='UserCell']/div/div[1]/div/div/div[2]/div/div[2]/div/a/div[3]/div/div[2]/div/img"
         )
       );
 
       xx = 0;
-      for (x in l) {
+      for (x in l) {console.log("1");
         let link = await l[x].getAttribute('href');
         if (link.substring(0, 20) === 'https://twitter.com/') {
           console.log(link.substring(20));
@@ -131,6 +131,7 @@ driver.executeScript("arguments[0].scrollBy(0,500)", scr);}finally {    }
           let source = urltargetlike;
           let target = mentioned;
           // build tweet with properties we want
+          console.log(id_str);
           let tweetViewModel = {
             id_str,
             type,

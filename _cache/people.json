@@ -6377,7 +6377,8 @@
     "photo": "/assets/avatars/gs/dummy.jpg",
     "url": "",
     "gsid": "",
-    "affiliation": ""
+    "affiliation": "",
+    "fullName": "Vincent Puig"
   },
   "m-masi": {
     "shortname": "M Masi",
@@ -6414,5 +6415,29 @@
     "url": "",
     "gsid": "",
     "affiliation": ""
+  },
+  "mmevp-anne-alombert": {
+    "shortname": "MMeVP Anne Alombert",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": "",
+    "fullName": "Maël Montévil et Vincent Puig Anne Alombert"
+  },
+  "j-lebre": {
+    "shortname": "J Lèbre",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": "",
+    "fullName": "Jérôme Lèbre"
+  },
+  "f-warin": {
+    "shortname": "F Warin",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": "",
+    "fullName": "François Warin"
   }
 }

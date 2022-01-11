@@ -2,6 +2,24 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "EHESS-2022",
+        "fields": {
+            "title": "Architectonique théorique en biologie et applications",
+            "booktitle": "UE954 - Dynamiques post-structurelles",
+            "location": "Centre d'analyse et de mathématique sociales (CAMS) , EHESS, Paris",
+            "year": "2022",
+            "month": "01",
+            "day": "17",
+            "annonce": "true",
+            "language": "fr",
+            "url": "https://enseignements.ehess.fr/2021-2022/ue/954",
+            "abstract": "",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
         "entrykey": "3S-2022",
         "fields": {
             "title": "La technologie au prisme de la biologie théorique",
@@ -15,6 +33,43 @@
             "illustration": "seminar-3S.jpg",
             "url": "https://recherche.utt.fr/interdisciplinary-research-on-society-technology-environment-interactions-insyte/seminar-3s",
             "author": " Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "proceedings",
+        "entrykey": "JL-Nancy-2022",
+        "fields": {
+            "title": "Jean-Luc Nancy : Anastasis de la pensée",
+            "location": "ÉNS et Centre Pompidou, Paris",
+            "year": "2022",
+            "month": "01",
+            "day": "22",
+            "annonce": "true",
+            "language": "fr",
+            "abstract": "Nancy a toujours été proche des préoccupations majeures de la philosophie – temps, être, espace, négativité, forme, image. Se souvenir de lui, c’est recommencer d’une manière plurielle avec lui pour assurer sa levée plus que sa relève dans l’avenir de la pensée.",
+            "illustration": "Jean-Luc Nancy.webp",
+            "url": "https://www.philosophy-world-democracy.org/events",
+            "author": "Divya Dwivedi and Jérôme Lèbre and Shaj Mohan and Maël Montévil and François Warin"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "proceedings",
+        "entrykey": "fyp-2021",
+        "fields": {
+            "title": "Présentation de \"Prendre soin de l’informatique et des générations\"",
+            "location": "Librairie Tram, Paris",
+            "year": "2021",
+            "month": "12",
+            "day": "1",
+            "annonce": "true",
+            "language": "fr",
+            "abstract": "En hommage à Bernard Stiegler. Présentation du livre Prendre soin de l’informatique et des générations, par Anne Alombert, Victor Chaix, Maël Montévil et Vincent Puig, suivie d’une discussion collective en présence de certains des auteurs.",
+            "illustration": "coverfyp.jpg",
+            "video": "https://www.youtube.com/watch?v=M09cQcMoek8",
+            "twittermention": "1479677260135157761, 1480227639323287556, 1479822519892733957",
+            "author": "Anne Alombert and Victor Chaix and Maël Montévil and Vincent Puig"
         }
     },
     {

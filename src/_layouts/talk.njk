@@ -1,12 +1,14 @@
 ---
 layout: content
+upnav: toc-site
+css: ["page-text.css"]
 eleventyComputed:
     orderDate: "{{-page.date | attributeDate-}}"
 ---
 
 
-
-  
+    {% from "macros/overlayToc.njk" import overlayToc %}
+{{overlayToc(content,"",title, printToc=false)|safe}}
  
     {{ content | safe }}
 

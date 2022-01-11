@@ -323,14 +323,15 @@ async function fetchCrossref(doi, id, type) {
         'https://api.eventdata.crossref.org/v1/events?rows=1000&obj-id=' +
           encodeURI(doi) +
           '&source=twitter',  {method: 'GET', headers: {'Content-Type': 'application/json'}}
-      ).then((res) => res.json() );
+      ).then((res) =>{console.log(res);  res.json();} );
     } else {
       if (type === 'url') {
         allPosts = await fetch(
           'https://api.eventdata.crossref.org/v1/events?rows=1000&obj.url=' +
             encodeURI(doi) +
             '&source=twitter',  {method: 'GET', headers: {'Content-Type': 'application/json'}}
-        ).then((res) => res.json() );
+        ).then((res) => {console.log(res); 
+                                  res.json();} );
       }
     }
     var allPosts2 = '[]';
@@ -339,14 +340,14 @@ async function fetchCrossref(doi, id, type) {
         'https://api.eventdata.crossref.org/v1/events?rows=1000&obj-id=' +
           encodeURI(doi) +
           '&source=wikipedia',  {method: 'GET', headers: {'Content-Type': 'application/json'}}
-      ).then((res) => res.json() );
+      ).then((res) => {console.log(res);  res.json();} );
     } else {
       if (type === 'url') {
         allPosts2 = await fetch(
           'https://api.eventdata.crossref.org/v1/events?rows=1000&obj.url=' +
             encodeURI(doi) +
             '&source=wikipedia', {method: 'GET', headers: {'Content-Type': 'application/json'}}
-        ).then((res) => res.json() );
+        ).then((res) =>  {console.log(res);  res.json();});
       }
     }
 
