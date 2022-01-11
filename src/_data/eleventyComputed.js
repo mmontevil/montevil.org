@@ -317,7 +317,7 @@ async function fetchCrossref(doi, id, type) {
   const cachedData = cache.getKey(id);
 
   if (!cachedData) {
-    var allPosts = '[]';
+    
     if (type === 'doi') {
       allPosts = await fetch(
         'https://api.eventdata.crossref.org/v1/events?rows=1000&obj-id=' +
@@ -334,7 +334,9 @@ async function fetchCrossref(doi, id, type) {
                                   res.json();} );
       }
     }
-    var allPosts2 = '[]';
+
+    if(allPosts.message["next-cursor"]){
+      var allPosts2 = '[]';
     if (type === 'doi') {
       allPosts2 = await fetch(
         'https://api.eventdata.crossref.org/v1/events?rows=1000&obj-id=' +
@@ -350,8 +352,8 @@ async function fetchCrossref(doi, id, type) {
         ).then((res) =>  {console.log(res);  res.json();});
       }
     }
-
-    if (allPosts2.message.events) {
+   if ( allPosts2.message){
+    if ( allPosts2.message.events && allPosts2.message.events!=[]) {
       for (i in allPosts2.message.events) {
         if (
           allPosts2.message.events[i].subj.url.length >
@@ -368,7 +370,7 @@ async function fetchCrossref(doi, id, type) {
       }
       allPosts2 = uniqByKeepLast(allPosts2.message.events, (x) => x.subj.url);
       allPosts.message.events = allPosts.message.events.concat(allPosts2);
-    }
+    }}}
     cache.setKey(id, allPosts);
     cache.save(true);
     return allPosts;
