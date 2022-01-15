@@ -313,66 +313,110 @@ async function fetching(response) {
     }
 }
 
+const delay = ms => new Promise(r => setTimeout(r, ms));
+
+async function fetchCrossref00(doi, id, type, source,cursor=undefined) {
+      await delay(200);
+    if (type === 'doi') {
+      var idtype='obj-id';
+    } else {
+      if (type === 'url') {
+        var idtype='obj.url';
+      }
+       }
+       if (cursor){
+        var cursort="&cursor="+cursor;
+       }else{
+         var cursort="";
+      }
+      allPosts = await fetch(
+        'https://api.eventdata.crossref.org/v1/events?'+'mailto=montevil@crans.org'+cursort+'&rows=1000&'+idtype+'=' +
+          encodeURI(doi) +
+          '&source='+source,  {method: 'GET', headers: {'Content-Type': 'application/json'}}
+      ).then((res) => {
+        if (!res.ok) {
+          console.log(res);
+          return "a";
+        }
+              return  res.json();
+            });
+     
+  return allPosts;
+}
+
+async function fetchCrossref0(doi, id, type, source) {
+    var allPosts =fetchCrossref00(doi, id, type, source);
+    
+    if(allPosts && allPosts.message){
+      if (allPosts.message['total-results']>1000){
+            await delay(200);
+      var allPosts2 =fetchCrossref00(doi, id, type, source,allPosts.message['next-cursor'] );
+        if(allPosts2=="a"){
+          allpost="a";
+        }else{
+          if (allPosts2.message){
+            allPosts.message.events = allPosts.message.events.concat(allPosts2.message.events);
+
+          }
+        }
+        
+      }}
+      
+    return allPosts;
+}
+
+
+
+
+
 async function fetchCrossref(doi, id, type) {
   const cachedData = cache.getKey(id);
 
   if (!cachedData) {
-    
-    if (type === 'doi') {
-      allPosts = await fetch(
-        'https://api.eventdata.crossref.org/v1/events?rows=1000&obj-id=' +
-          encodeURI(doi) +
-          '&source=twitter',  {method: 'GET', headers: {'Content-Type': 'application/json'}}
-      ).then((res) =>{console.log(res);  res.json();} );
-    } else {
-      if (type === 'url') {
-        allPosts = await fetch(
-          'https://api.eventdata.crossref.org/v1/events?rows=1000&obj.url=' +
-            encodeURI(doi) +
-            '&source=twitter',  {method: 'GET', headers: {'Content-Type': 'application/json'}}
-        ).then((res) => {console.log(res); 
-                                  res.json();} );
-      }
-    }
 
-    if(allPosts.message["next-cursor"]){
-      var allPosts2 = '[]';
-    if (type === 'doi') {
-      allPosts2 = await fetch(
-        'https://api.eventdata.crossref.org/v1/events?rows=1000&obj-id=' +
-          encodeURI(doi) +
-          '&source=wikipedia',  {method: 'GET', headers: {'Content-Type': 'application/json'}}
-      ).then((res) => {console.log(res);  res.json();} );
-    } else {
-      if (type === 'url') {
-        allPosts2 = await fetch(
-          'https://api.eventdata.crossref.org/v1/events?rows=1000&obj.url=' +
-            encodeURI(doi) +
-            '&source=wikipedia', {method: 'GET', headers: {'Content-Type': 'application/json'}}
-        ).then((res) =>  {console.log(res);  res.json();});
-      }
+    var allPosts = await fetchCrossref0(doi, id, type, 'twitter');
+    if(!allPosts){
+      var allPosts = '[]';
     }
-   if ( allPosts2.message){
+    var allPosts2 = await fetchCrossref0(doi, id, type,'wikipedia');
+    if(!allPosts2){
+      var allPosts2 = '[]';
+    }
+        if(allPosts=="a"){
+      console.log("aaaaaaaaaaaaaaaaaaaaaa");
+    }
+            if(allPosts2=="a"){
+      console.log("bbbbbbbbbbbbbbbbbbbb");
+    }
+      
+     if ( allPosts2.message){
     if ( allPosts2.message.events && allPosts2.message.events!=[]) {
       for (i in allPosts2.message.events) {
         if (
           allPosts2.message.events[i].subj.url.length >
           allPosts2.message.events[i].subj.pid.length
         ) {
-          /*console.log(allPosts2.message.events[i].subj.url.length)
-            console.log(allPosts2.message.events[i].subj.pid.length)
-            colsole.log("-----")*/
           let temp = allPosts2.message.events[i].subj.url;
           allPosts2.message.events[i].subj.url =
             allPosts2.message.events[i].subj.pid;
           allPosts2.message.events[i].subj.pid = temp;
         }
       }
-      allPosts2 = uniqByKeepLast(allPosts2.message.events, (x) => x.subj.url);
-      allPosts.message.events = allPosts.message.events.concat(allPosts2);
-    }}}
-    cache.setKey(id, allPosts);
-    cache.save(true);
+      allPosts2ev = uniqByKeepLast(allPosts2.message.events, (x) => x.subj.url);
+    }}
+    
+  if( allPosts.message && allPosts2.message ) {
+          allPosts.message.events = allPosts.message.events.concat(allPosts2ev);
+  }
+      if( allPosts=="[]" && allPosts2.message ) {
+          allPosts = allPosts2;
+          allPosts2.message.events =allPosts2ev;
+  }
+    
+    if (allPosts != "a" && allPosts2 != "a"){
+      cache.setKey(id, allPosts);
+      cache.save(true);
+    }else{ }
     return allPosts;
   }
   return cachedData;
@@ -469,9 +513,10 @@ module.exports = {
       crossref = fetchCrossref(data.bibentry.DOI, data.page.fileSlug, 'doi');
     } else {
       if (data.bibentry.URL)
-        crossref = fetchCrossref(data.bibentry.URL, data.page.fileSlug, 'url');
+        crossref =  fetchCrossref(data.bibentry.URL, data.page.fileSlug, 'url');
     }
-
+   crossref= cache.getKey(data.page.fileSlug);
+ 
     // get crossref mentions
 
     let temp = data.page.url;
@@ -488,6 +533,7 @@ module.exports = {
               '1394392626598645766',
             ].includes(tweet)
           )
+           
             temp = tweettomention(
               tweet,
               'https://montevil.org' + data.page.url,
@@ -495,6 +541,7 @@ module.exports = {
             );
         }
         if (eventm.source_id == 'wikipedia') {
+         
           temp = wikiMention(
             eventm,
             'https://montevil.org' + data.page.url,

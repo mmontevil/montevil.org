@@ -834,7 +834,7 @@
     "photo": "/assets/avatars/gs/bMQzqyAAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=bMQzqyAAAAAJ",
     "gsid": "bMQzqyAAAAAJ",
-    "affiliation": "Staff Scientist at City of Hope Comprehensive Cancer Center",
+    "affiliation": "Assistant Research Professor at City of Hope Comprehensive Cancer Center",
     "fullName": "Vikram Adhikarla"
   },
   "me-tabacchi": {
@@ -1733,7 +1733,7 @@
     "url": "https://www.ibe.upf-csic.es/valverde",
     "gsid": "hA2IaXkAAAAJ",
     "affiliation": "CSIC Tenured Scientist at Institute of Evolutionary Biology - Spanish National Research Council",
-    "fullName": "Sergi Valverde"
+    "fullName": "Sergi Valverde (ORCID: 0000-0002-2150-9610)"
   },
   "s-ohse": {
     "shortname": "S Ohse",
@@ -2446,10 +2446,10 @@
   "l-arendt": {
     "shortname": "L Arendt",
     "photo": "/assets/avatars/gs/h6MqS8YAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=h6MqS8YAAAAJ",
+    "url": "https://www.vetmed.wisc.edu/lab/arendt/",
     "gsid": "h6MqS8YAAAAJ",
-    "affiliation": "Assistant Professor, University of Wisconsin-Madison",
-    "fullName": "Lisa M. Arendt"
+    "affiliation": "Associate Professor, University of Wisconsin-Madison",
+    "fullName": "Lisa Arendt"
   },
   "aj-steeves": {
     "shortname": "AJ Steeves",
@@ -6439,5 +6439,43 @@
     "gsid": "",
     "affiliation": "",
     "fullName": "François Warin"
+  },
+  "sp-wilson": {
+    "shortname": "SP Wilson",
+    "photo": "/assets/avatars/gs/uWLCFdAAAAAJ.jpg",
+    "url": "http://spwilson.staff.shef.ac.uk/",
+    "gsid": "uWLCFdAAAAAJ",
+    "affiliation": "University of Sheffield",
+    "fullName": "Stuart Wilson"
+  },
+  "tj-prescott": {
+    "shortname": "TJ Prescott",
+    "photo": "/assets/avatars/gs/u2T4wjgAAAAJ.jpg",
+    "url": "https://www.sheffield.ac.uk/dcs/people/academic/tprescott",
+    "gsid": "u2T4wjgAAAAJ",
+    "affiliation": "Professor of Cognitive Robotics, University of Sheffield, UK",
+    "fullName": "Tony J Prescott"
+  },
+  "rt-simanke": {
+    "shortname": "RT Simanke",
+    "photo": "/assets/avatars/gs/5rSXAg4AAAAJ.jpg",
+    "url": "https://www.ufjf.br/ppgpsicologia/apresentacao-do-curso/corpo-docente/",
+    "gsid": "5rSXAg4AAAAJ",
+    "affiliation": "Universidade Federal de Juiz de Fora",
+    "fullName": "RICHARD THEISEN SIMANKE"
+  },
+  "jlh-ferreira": {
+    "shortname": "JLH Ferreira",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "f-giorgi": {
+    "shortname": "F Giorgi",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
   }
 }
