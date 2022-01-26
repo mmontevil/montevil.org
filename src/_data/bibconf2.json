@@ -1,6 +1,24 @@
 [
     {
         "objecttype": "entry",
+        "entrytype": "proceedings",
+        "entrykey": "lust-philosophy-2022",
+        "fields": {
+            "title": "Life, Lust, Philosophy",
+            "location": "Salle Beckett, ÉNS, Paris",
+            "year": "2022",
+            "month": "01",
+            "day": "27",
+            "annonce": "true",
+            "language": "fr",
+            "url": "https://republique-des-savoirs.fr/events/event/conference-life-lust-philosophy/",
+            "abstract": "In July 2021, Jean-Luc Nancy, Divya Dwivedi and Shaj Mohan began a debate by taking up the themes of Heidegger on the end of philosophy and the other beginning of philosophy. If philosophy is not able to go beyond the determination of Heidegger as metaphysics, it will not survive long, even as inanity. In this debate, currently published in Philosophy World Democracy, Divya Dwivedi insists on the idea that philosophy encounters a stasis through its acceptance of the versions of Heidegger's \"ontico-ontological difference\", behind which hides the \"Oriental-Occidental \". This stasis also stems from what Bernard Stiegler called for disruption, in which the responses of society, and in particular philosophy and criticism, are still late on technological changes. Maël Montévil argues that the analysis of this stasis must address the nature of the separation of philosophy and science for what he calls “bastard materialism”. To go beyond this stasis, literally, for the Ana-stasis of philosophy, Shaj Mohan proposes that we should be in the zone of \"the obscure experience\" while we explore new logic and Faculties. For this task Mohan asks us to discard classical laws of thought. Sergio Benevenuto published the text “The Eternal Ends of Philosophy” as a réponse to the debate and in it he questions the primacy of “philia” in philosophy. Instead, for another beginning he proposes “Eros” or “Lust” as a the passion.",
+            "illustration": "benvenuto-sergio.jpg",
+            "author": "Sergio Benvenuto and Divya Dwivedi and Shaj Mohan and Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "EHESS-2022",
         "fields": {
@@ -50,6 +68,7 @@
             "abstract": "Nancy a toujours été proche des préoccupations majeures de la philosophie – temps, être, espace, négativité, forme, image. Se souvenir de lui, c’est recommencer d’une manière plurielle avec lui pour assurer sa levée plus que sa relève dans l’avenir de la pensée.",
             "illustration": "Jean-Luc Nancy.webp",
             "url": "https://www.philosophy-world-democracy.org/events",
+            "twittermention": "1479677260135157761, 1480227639323287556, 1479822519892733957",
             "author": "Divya Dwivedi and Jérôme Lèbre and Shaj Mohan and Maël Montévil and François Warin"
         }
     },
@@ -68,7 +87,6 @@
             "abstract": "En hommage à Bernard Stiegler. Présentation du livre Prendre soin de l’informatique et des générations, par Anne Alombert, Victor Chaix, Maël Montévil et Vincent Puig, suivie d’une discussion collective en présence de certains des auteurs.",
             "illustration": "coverfyp.jpg",
             "video": "https://www.youtube.com/watch?v=M09cQcMoek8",
-            "twittermention": "1479677260135157761, 1480227639323287556, 1479822519892733957",
             "author": "Anne Alombert and Victor Chaix and Maël Montévil and Vincent Puig"
         }
     },
@@ -190,6 +208,7 @@
             "abstract": "Les désorganisations du vivant, dues aussi bien au changement climatique qu'aux pollutions chimiques (par les perturbateurs endocriniens), sont souvent décrites en termes de disruption. Pourtant, en biologie, la notion de disruption n'a pas encore été théorisée. Nous pensons que conceptualiser ces disruptions demande d'approfondir l'articulation entre la connaissance de la dimension systémique du vivant et de sa dimension historique. En particulier, en biologie les espaces de configurations possibles apparaissent et changent au cours du temps, mais seulement certaines configurations parmi elles sont viables - ce qui conduit à deux aspects de l'historicité biologique. La disruption serait alors la perte de ces configurations singulières, une forme de randomisation et de désindividuation, conduisant à une perte de viabilité.",
             "illustration": "AfficheCardano2021.jpeg",
             "program": "AfficheCardano2021.pdf",
+            "video": "https://savoirs.ens.fr/uploads/videos//diffusion/2021_10_21_montevil.mp4",
             "author": " Maël Montévil"
         }
     },

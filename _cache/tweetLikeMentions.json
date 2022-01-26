@@ -7378,5 +7378,65 @@
     "like-of": "https://montevil.org/talks/2021--prese/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1456959094938554372DarthOued": {
+    "id_str": "1456959094938554372DarthOued",
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Darth Oued.",
+      "screen_name": "DarthOued",
+      "photo": "https://pbs.twimg.com/profile_images/1461413786452115456/4_8ifhus_normal.jpg",
+      "url": "https://twitter.com/DarthOued"
+    },
+    "url": "https://twitter.com/Icarus98378742/status/1456959094938554372/likes",
+    "published": "2022-01-19",
+    "wm-received": "2022-01-19",
+    "wm-id": "1456959094938554372DarthOued",
+    "wm-source": "https://twitter.com/Icarus98378742/status/1456959094938554372/likes",
+    "wm-target": "https://montevil.org/publications/chapters/2012-LMK-No-Entailing-Laws-Enablement/",
+    "like-of": "https://montevil.org/publications/chapters/2012-LMK-No-Entailing-Laws-Enablement/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1465309933302435851Man_Ouyang": {
+    "id_str": "1465309933302435851Man_Ouyang",
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Man Ouyang (欧阳曼)",
+      "screen_name": "Man_Ouyang",
+      "photo": "https://pbs.twimg.com/profile_images/1384292374524747779/wH85s08z_normal.jpg",
+      "url": "https://twitter.com/Man_Ouyang"
+    },
+    "url": "https://twitter.com/GiacomoGilmozzi/status/1465309933302435851/likes",
+    "published": "2022-01-19",
+    "wm-received": "2022-01-19",
+    "wm-id": "1465309933302435851Man_Ouyang",
+    "wm-source": "https://twitter.com/GiacomoGilmozzi/status/1465309933302435851/likes",
+    "wm-target": "https://montevil.org/talks/2021-entretiens-du-nouveau-monde-industriel-la-societe-intermittente-la-vie-dans-le-negu-anthropocene-inter/",
+    "like-of": "https://montevil.org/talks/2021-entretiens-du-nouveau-monde-industriel-la-societe-intermittente-la-vie-dans-le-negu-anthropocene-inter/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1378450079653191688kohn_gregory": {
+    "id_str": "1378450079653191688kohn_gregory",
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Gregory Kohn",
+      "screen_name": "kohn_gregory",
+      "photo": "https://pbs.twimg.com/profile_images/1402293274086363141/zlZBMl1Q_normal.jpg",
+      "url": "https://twitter.com/kohn_gregory"
+    },
+    "url": "https://twitter.com/pp0196/status/1378450079653191688/likes",
+    "published": "2022-01-21",
+    "wm-received": "2022-01-21",
+    "wm-id": "1378450079653191688kohn_gregory",
+    "wm-source": "https://twitter.com/pp0196/status/1378450079653191688/likes",
+    "wm-target": "https://montevil.org/publications/chapters/2012-LMK-No-Entailing-Laws-Enablement/",
+    "like-of": "https://montevil.org/publications/chapters/2012-LMK-No-Entailing-Laws-Enablement/",
+    "wm-property": "like-of",
+    "wm-private": false
   }
 }

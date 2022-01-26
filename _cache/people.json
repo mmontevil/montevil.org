@@ -1924,7 +1924,8 @@
     "photo": "/assets/avatars/gs/mQotNcAAAAAJ.jpg",
     "url": "http://fie.valahia.ro/",
     "affiliation": "Valahia University of Targoviste",
-    "fullName": "Vasile Patrascu"
+    "fullName": "Vasile Patrascu",
+    "gsid": "mQotNcAAAAAJ"
   },
   "t-brischetto-costa": {
     "shortname": "T Brischetto Costa",
@@ -4941,7 +4942,7 @@
     "photo": "/assets/avatars/gs/f_2y4PwAAAAJ.jpg",
     "url": "https://iris.ucl.ac.uk/iris/browse/profile?upi=MJREI02",
     "gsid": "f_2y4PwAAAAJ",
-    "affiliation": "UCL Institute of Education",
+    "affiliation": "IOE, UCL's Faculty of Education and Society",
     "fullName": "Michael Reiss"
   },
   "v-fleury": {
@@ -6473,6 +6474,50 @@
   },
   "f-giorgi": {
     "shortname": "F Giorgi",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "a-guenin": {
+    "shortname": "A GUÉNIN",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "wi-schoellhorn": {
+    "shortname": "WI Schöllhorn",
+    "photo": "/assets/avatars/gs/vgqiO4EAAAAJ.jpg",
+    "url": "https://sport.uni-mainz.de/schoellhorn-prof-dr-wolfgang/",
+    "gsid": "vgqiO4EAAAAJ",
+    "affiliation": "University of Mainz",
+    "fullName": "Wolfgang I. Schöllhorn"
+  },
+  "n-rizzi": {
+    "shortname": "N Rizzi",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "s-benvenuto": {
+    "shortname": "S Benvenuto",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": "",
+    "fullName": "Sergio Benvenuto"
+  },
+  "swm-li": {
+    "shortname": "SWM Li",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "r-trappes": {
+    "shortname": "R Trappes",
     "photo": "/assets/avatars/gs/dummy.jpg",
     "url": "",
     "gsid": "",
