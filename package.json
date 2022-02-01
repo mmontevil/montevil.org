@@ -68,7 +68,7 @@
     "cssnano": "5.0.16",
     "debug": "^4.3.3",
     "deepmerge": "^4.2.2",
-    "dotenv": "^14.3.2",
+    "dotenv": "^15.0.0",
     "element-remove": "^1.0.4",
     "eleventy-plugin-embed-everything": "^1.14.0",
     "eleventy-plugin-embed-tweet": "^0.3.1",
