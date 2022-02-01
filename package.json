@@ -51,7 +51,7 @@
     "@11ty/eleventy": "1.0.0",
     "@11ty/eleventy-navigation": "^0.3.2",
     "@11ty/eleventy-plugin-rss": "^1.1.2",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.2.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
     "@babel/core": "^7.16.12",
     "@babel/preset-env": "^7.16.11",
     "@rollup/plugin-babel": "^5.3",
