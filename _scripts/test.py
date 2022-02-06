@@ -19,7 +19,7 @@ pg = ProxyGenerator()
 success = pg.ScraperAPI(SCRAPER)
 scholarly.use_proxy(pg,pg)
 
-search_query = scholarly.search_author('Maël Montévil')
+search_query = scholarly.search_author('Sabrina Leichnitz')
 
 author = scholarly.fill(next(search_query))
 

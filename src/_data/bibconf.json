@@ -196,6 +196,7 @@
   },
   {
     "URL": "https://www.u-picardie.fr/journee-d-etudes-georges-ganguilhem-la-philosophie-et-ses-dehors--648096.kjsp",
+    "abstract": "Les concepts de Canguilhem sont très pertinents pour certains débats scientifique et technologiques contemporains, ce qui peut être montré avec le concept de normativité. Ce dernier permet de critiquer l’horizon de la médecine par la preuve, et plus récemment de l’usage des données et de l’apprentissage profond en médecine, bref l’usage de machines statistiques pour le soin médical. De plus ce concept rencontre la question débattue actuellement du rôle des organismes, de la physiologie et du développement, dans l’évolution. Dans la synthèse moderne, les organismes sont d’abord des avatars passifs de leurs génomes, alors que si l’on intègre le concept de normativité, ils possèdent la capacité de générer de nouvelles normes. Cette question est cruciale pour évaluer la réponse du vivant au réchauffement climatique et plus généralement aux bouleversements rapides de l’Anthropocène.",
     "author": [
       {
         "family": "Montévil",
@@ -3249,7 +3250,7 @@
     "type": "paper-conference"
   },
   {
-    "abstract": "Quel nouveau départ pour la philosophie ? S’il ne s’agit pas de s’affranchir des travaux antérieurs, ni de suivre la géopolitique restrictive du corpus heideggerien qui contrôle la politique post-décoloniale, comment constituer un nouveau corpus pour la philosophie ? Et quels sont les véritables enjeux de la philosophie au XXIe siècle ?",
+    "abstract": "En biologie comme en médecine, le numérique joue depuis longtemps et de façon croissante le rôle d’outil technique, de la preuve statistique aux bases de données massives et à la publication. Comment s’articulent la connaissance du vivant, la pratique du soin et ces nouvelles technologies?",
     "author": [
       {
         "family": "Montévil",
@@ -3270,6 +3271,34 @@
     },
     "title": "Séminaire 2020-2021 : Vie - Numérique - Santé",
     "title-short": "Séminaire 2020-2021 ",
+    "type": "book"
+  },
+  {
+    "abstract": "En biologie comme en médecine, le numérique joue depuis longtemps et de façon croissante le rôle d’outil technique, de la preuve statistique aux bases de données massives et à la publication. Comment s’articulent la connaissance du vivant, la pratique du soin et ces nouvelles technologies?",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      },
+      {
+        "family": "Longo",
+        "given": "Giuseppe"
+      },
+      {
+        "family": "Chollat-Namy",
+        "given": "Marie"
+      }
+    ],
+    "id": "seminaire-IEA-2021-2022",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Séminaire 2021-2022 : Vie - Numérique - Santé",
+    "title-short": "Séminaire 2021-2022 ",
     "type": "book"
   },
   {

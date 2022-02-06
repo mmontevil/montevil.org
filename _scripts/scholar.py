@@ -7,7 +7,7 @@ from pathlib import Path
 
 proxy_generator = ProxyGenerator()
 success = proxy_generator.Tor_Internal(tor_cmd = 'tor')
-scholarly.use_proxy(proxy_generator,proxy_generator)
+scholarly.use_proxy(proxy_generator)
 
 #pg = ProxyGenerator()
 #success = pg.FreeProxies()
