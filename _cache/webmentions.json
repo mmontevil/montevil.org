@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2021-11-17T09:54:23.902Z",
+  "lastFetched": "2022-02-23T18:38:38.056Z",
   "webmentions": [
     {
       "type": "entry",
@@ -1493,6 +1493,28 @@
       "wm-target": "https://montevil.org/talks/2021--l-ana/",
       "like-of": "https://montevil.org/talks/2021--l-ana/",
       "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Generalista Hola Jenny Lee",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/b228ce6723aea9eb9b6556a7adc74ed41309a4aa1e4f77342340f3a2f99442ba.jpg",
+        "url": "https://twitter.com/NOQUEPASO"
+      },
+      "url": "https://twitter.com/NOQUEPASO/status/1494687339234402307",
+      "published": "2022-02-18T14:56:46+00:00",
+      "wm-received": "2022-02-18T23:12:50Z",
+      "wm-id": 1353265,
+      "wm-source": "https://brid.gy/post/twitter/MMontevil/1494687339234402307",
+      "wm-target": "https://montevil.org/publications/chapters/2017-gm-repetition-reversibility-evolution/",
+      "content": {
+        "html": "evoluciones colectivas + theoretical population genetics\n<a href=\"https://www.youtube.com/watch?v=b0lGu0PgapU\">youtube.com/watch?v=b0lGu0…</a>\n\n<a href=\"https://www.sciencedaily.com/releases/2018/10/181025142037.htm\">sciencedaily.com/releases/2018/…</a>\n\n<a href=\"https://montevil.org/publications/chapters/2017-gm-repetition-reversibility-evolution/\">montevil.org/publications/c…</a>",
+        "text": "evoluciones colectivas + theoretical population genetics\nyoutube.com/watch?v=b0lGu0…\n\nsciencedaily.com/releases/2018/…\n\nmontevil.org/publications/c…"
+      },
+      "mention-of": "https://montevil.org/publications/chapters/2017-gm-repetition-reversibility-evolution/",
+      "wm-property": "mention-of",
       "wm-private": false
     }
   ]
