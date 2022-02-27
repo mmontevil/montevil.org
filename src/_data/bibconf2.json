@@ -2,6 +2,42 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "2022-Trends1",
+        "fields": {
+            "title": "C1: What is this animal? How the past does (and does not) define the present in biology",
+            "booktitle": "Trends in Studying the Deep Past",
+            "location": "Gradska biblioteka/Belgrade City Library, Rimska sala/Roman hall, Knez Mihailova 56, Belgrade",
+            "year": "2022",
+            "month": "03",
+            "day": "16",
+            "annonce": "true",
+            "language": "en",
+            "abstract": "In biology, the question of origins often refers to the origin of life; however, it is far broader and, in a sense, has far more pervasive ramifications. All organisms carry differences and can be the beginning of a new lineage. This perspective is central to the phylogenetic classification of living beings. In this course, we will discuss this approach from an epistemological angle. We will also show that, beyond the specific method, its epistemology permeates biology, for example, the reporting of experiments. Overall, we will discuss how the historical nature of biological objects can be used as a lever to define them theoretically and how this approach differs profoundly from the ones in physics.",
+            "url": "https://sciorigin.weebly.com/events.html",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2022-Trends2",
+        "fields": {
+            "title": "C2: Historicity, biological organizations and their disruptions",
+            "booktitle": "Trends in Studying the Deep Past",
+            "location": "Gradska biblioteka/Belgrade City Library, Rimska sala/Roman hall, Knez Mihailova 56, Belgrade",
+            "year": "2022",
+            "month": "03",
+            "day": "23",
+            "annonce": "true",
+            "language": "en",
+            "abstract": "In biology, despite the elements exposed in the previous session, the epistemology of physics remains pervasive. For example, mathematical models are typically designed and analyzed like in physics, from population genetic to biological morphogenesis. Then, we should rethink theorizing in biology to accommodate historicity but still leverage some methods coming from physics. Articulating both epistemologies opens a wealth of challenges and methodological opportunities. To illustrate this, we discuss what is often informally called disruption in biology and is a significant part of both biodiversity loss and public health issues. These disruptions require both the insight of historical and systemic thinking.",
+            "url": "https://sciorigin.weebly.com/events.html",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
         "entrykey": "ElHani-2022",
         "fields": {
             "title": "How should we think scientifically about biological objects?",
