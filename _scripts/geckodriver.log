@@ -169,3 +169,8 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1646612434667	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"170.155.5.235:8080","sslProxy":"170.155.5.235:8080"}
 1646622452538	geckodriver	INFO	Listening on 127.0.0.1:51009
 1646647383388	geckodriver	INFO	Listening on 127.0.0.1:38341
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
