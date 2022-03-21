@@ -2,6 +2,24 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "2022-ISC",
+        "fields": {
+            "title": "La disruption du vivant dans l'Anthropocène",
+            "booktitle": "FRCCS French Regional Conference on Complex Systems 2022",
+            "location": "Institut des systèmes complexes - Paris Île de France",
+            "year": "2022",
+            "month": "6",
+            "day": "22",
+            "annonce": "true",
+            "language": "fr",
+            "abstract": "Les biologistes évoquent souvent la disruption des organisations biologiques ou des écosystèmes. Il s'agit par exemple de la disruption des relations écosystémiques par le changement climatique ou des perturbateurs endocriniens, endocrine disruptors en anglais. La notion de disruption correspond-elle a un phénomène original ? Elle devrait être alors distincte du concept de perturbation tel que développé en physique et utilisé pour analyser toute sorte de système. Nous montrerons comment cette question de la disruption en biologie soulève et demande de traiter des questions fondamentales en biologie théorique et discuterons plusieurs cas.",
+            "url": "https://iscpif.fr/evenements/conference-systemes-complexes/",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
         "entrykey": "2022-Trends1",
         "fields": {
             "title": "C1: What is this animal? How the past does (and does not) define the present in biology",

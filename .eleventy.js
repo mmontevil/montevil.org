@@ -382,9 +382,9 @@ const typeseter = (content, outputPath) => {
   eleventyConfig.addPassthroughCopy(
     path.join(
       config.dir.src,
-      '**/*.{jpg,jpeg,png,gif,svg,kmz,zip,css,bib,pdf,webp,mov,woff,ttf,woff2,ico}'
+      '**/*.{jpg,jpeg,png,gif,svg,kmz,zip,css,bib,pdf,webp,mov,woff,ttf,woff2,ico,htm}'
     )
-  ).addPassthroughCopy(path.join(config.dir.src, 'assets**/*.{css,js}'))
+  ).addPassthroughCopy(path.join(config.dir.src, 'assets**/*.{css,js,htl}'))
     .addPassthroughCopy(path.join(config.dir.src, '.well-known/*.{txt}'))
     .addPassthroughCopy(path.join(config.dir.src, '.htaccess'))
     .addPassthroughCopy(path.join(config.dir.src, '_headers'))
