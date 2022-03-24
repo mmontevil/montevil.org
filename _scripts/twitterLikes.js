@@ -112,7 +112,7 @@ driver.executeScript("arguments[0].scrollBy(0,500)", scr);}finally {    }
           let screen_name = link.substring(20);
           let temp = await driver.findElements(
             By.xpath(
-              "//div[@aria-label='Timeline: Liked by']/div/div/div/div[@data-testid='UserCell']/div/div[2]/div/div/a[@href='/" +
+              "//a[@href='/" +
                 screen_name +
                 "']/div[1]/div[1]"
             )
