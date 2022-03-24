@@ -5,6 +5,6 @@
 
 <iframe  height="1000"
     style="border: none"
-    src="/assets/varia/pmi-protected.html"></iframe>
+    src="/assets/talks/pmi-protected.htm"></iframe>
 
 
