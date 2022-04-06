@@ -7658,5 +7658,25 @@
     "like-of": "https://montevil.org/publications/books/2021-Internation-Bifurcate/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1394284708473806849ClementGaill": {
+    "id_str": "1394284708473806849ClementGaill",
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "",
+      "screen_name": "ClementGaill",
+      "photo": "https://pbs.twimg.com/profile_images/1371404629662179331/z_7AtISx_normal.jpg",
+      "url": "https://twitter.com/ClementGaill"
+    },
+    "url": "https://twitter.com/MMontevil/status/1394284708473806849/likes",
+    "published": "2022-04-05",
+    "wm-received": "2022-04-05",
+    "wm-id": "1394284708473806849ClementGaill",
+    "wm-source": "https://twitter.com/MMontevil/status/1394284708473806849/likes",
+    "wm-target": "https://montevil.org/publications/articles/2021-Montevil-Entropies-Anthropocene/",
+    "like-of": "https://montevil.org/publications/articles/2021-Montevil-Entropies-Anthropocene/",
+    "wm-property": "like-of",
+    "wm-private": false
   }
 }

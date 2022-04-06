@@ -6876,9 +6876,10 @@
   "f-heylighen": {
     "shortname": "F Heylighen",
     "photo": "/assets/avatars/gs/jt7BHBUAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=jt7BHBUAAAAJ",
+    "url": "https://clea.research.vub.be/en/FrancisHeylighen",
     "gsid": "jt7BHBUAAAAJ",
-    "affiliation": ""
+    "affiliation": "Director Center Leo Apostel, Vrije Universiteit Brussel",
+    "fullName": "Francis Heylighen"
   },
   "s-beigi": {
     "shortname": "S Beigi",
@@ -6908,13 +6909,65 @@
     "photo": "/assets/avatars/gs/5eWA41YAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=5eWA41YAAAAJ",
     "gsid": "5eWA41YAAAAJ",
-    "affiliation": ""
+    "affiliation": "PhD Student, University of Toronto",
+    "fullName": "Auguste Nahas"
   },
   "ana-soto": {
     "shortname": "ANA SOTO",
     "photo": "/assets/avatars/gs/dummy.jpg",
     "url": "",
     "gsid": "",
+    "affiliation": ""
+  },
+  "a-bardin": {
+    "shortname": "A Bardin",
+    "photo": "/assets/avatars/gs/0yEj7dy1RRkC.jpg",
+    "url": "https://www.brookes.ac.uk/social-sciences/staff-and-students/academic-staff/?wid=academic-staff&op=full&uid=p0078309",
+    "gsid": "0yEj7dy1RRkC",
+    "affiliation": "Senior Lecturer in Politics, Oxford Brookes University",
+    "fullName": "Andrea Bardin"
+  },
+  "m-ferrari": {
+    "shortname": "M Ferrari",
+    "photo": "/assets/avatars/gs/wjwnBL0AAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=wjwnBL0AAAAJ",
+    "gsid": "wjwnBL0AAAAJ",
+    "affiliation": "Professore Ordinario di Odontostomatologia Università di Siena",
+    "fullName": "Marco Ferrari"
+  },
+  "dj-aqeel": {
+    "shortname": "DJ Aqeel",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "v-hansis": {
+    "shortname": "V Hansis",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "mc-pedrinho": {
+    "shortname": "MC Pedrinho",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "t-quinn": {
+    "shortname": "T Quinn",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "n-demirkus": {
+    "shortname": "N DEMİRKUŞ",
+    "photo": "/assets/avatars/gs/cxur2AQAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=cxur2AQAAAAJ",
+    "gsid": "cxur2AQAAAAJ",
     "affiliation": ""
   }
 }
