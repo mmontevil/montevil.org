@@ -7678,5 +7678,45 @@
     "like-of": "https://montevil.org/publications/articles/2021-Montevil-Entropies-Anthropocene/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1323310677289742337maar_ea": {
+    "id_str": "1323310677289742337maar_ea",
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "",
+      "screen_name": "maar_ea",
+      "photo": "https://pbs.twimg.com/profile_images/1517284860989259779/XEyCAW-s_normal.jpg",
+      "url": "https://twitter.com/maar_ea"
+    },
+    "url": "https://twitter.com/RotoRub/status/1323310677289742337/likes",
+    "published": "2022-04-27",
+    "wm-received": "2022-04-27",
+    "wm-id": "1323310677289742337maar_ea",
+    "wm-source": "https://twitter.com/RotoRub/status/1323310677289742337/likes",
+    "wm-target": "https://montevil.org/publications/articles/2020-MM-Identity-Organism/",
+    "like-of": "https://montevil.org/publications/articles/2020-MM-Identity-Organism/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1476786747023319044kashikashian": {
+    "id_str": "1476786747023319044kashikashian",
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "",
+      "screen_name": "kashikashian",
+      "photo": "https://pbs.twimg.com/profile_images/1472695411207192577/AWyxv0xm_normal.jpg",
+      "url": "https://twitter.com/kashikashian"
+    },
+    "url": "https://twitter.com/DJRoss70/status/1476786747023319044/likes",
+    "published": "2022-04-27",
+    "wm-received": "2022-04-27",
+    "wm-id": "1476786747023319044kashikashian",
+    "wm-source": "https://twitter.com/DJRoss70/status/1476786747023319044/likes",
+    "wm-target": "https://montevil.org/publications/books/2021-Internation-Bifurcate/",
+    "like-of": "https://montevil.org/publications/books/2021-Internation-Bifurcate/",
+    "wm-property": "like-of",
+    "wm-private": false
   }
 }

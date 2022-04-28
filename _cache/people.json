@@ -764,9 +764,9 @@
   "a-mcculloch": {
     "shortname": "A McCulloch",
     "photo": "/assets/avatars/gs/KQp4FpkAAAAJ.jpg",
-    "url": "http://cmrg.ucsd.edu/AndrewMcCulloch",
+    "url": "http://cmrg.ucsd.edu/people/andrew-d-mcculloch-ph-d/",
     "gsid": "KQp4FpkAAAAJ",
-    "affiliation": "Distinguished Professor of Bioengineering and Medicine, UC San Diego",
+    "affiliation": "Shu Chien Chancellor's Endowed Chair in Engineering and Medicine, UC San Diego",
     "fullName": "Andrew McCulloch"
   },
   "o-naimark": {
@@ -5624,7 +5624,7 @@
     "photo": "/assets/avatars/gs/B3lirlgAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=B3lirlgAAAAJ",
     "gsid": "B3lirlgAAAAJ",
-    "affiliation": "Associate Professor of Economics, Université de Paris, Ladyss (UMR CNRS 7533)",
+    "affiliation": "Associate Professor of Economics, Université Paris Cité, Ladyss (UMR CNRS 7533)",
     "fullName": "Pascal GROUIEZ"
   },
   "plc-van-geert": {
@@ -6349,7 +6349,7 @@
     "photo": "/assets/avatars/gs/Ccx_2agAAAAJ.jpg",
     "url": "http://individual.utoronto.ca/mohamedhelmy",
     "gsid": "Ccx_2agAAAAJ",
-    "affiliation": "Senior Specialist at Bioinformatics Institute (BII), A*STAR",
+    "affiliation": "Research Scientist at Bioinformatics Institute (BII), A*STAR",
     "fullName": "Mohamed Helmy"
   },
   "kn-fountoulakis": {
@@ -6369,10 +6369,11 @@
   },
   "m-tahar": {
     "shortname": "M Tahar",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
-    "affiliation": ""
+    "photo": "/assets/avatars/gs/YeWmYxQAAAAJ.jpg",
+    "url": "https://univ-tlse2.academia.edu/MathildeTahar",
+    "gsid": "YeWmYxQAAAAJ",
+    "affiliation": "Université Toulouse Jean-Jaurès",
+    "fullName": "Mathilde Tahar"
   },
   "v-puig": {
     "shortname": "V Puig",
@@ -6653,7 +6654,7 @@
   "pj-hellyer": {
     "shortname": "PJ Hellyer",
     "photo": "/assets/avatars/gs/yeh8p1EAAAAJ.jpg",
-    "url": "http://www.phier.co.uk/",
+    "url": "https://kclpure.kcl.ac.uk/portal/en/persons/pete-hellyer(735c9c5d-df51-4b76-9eb1-f10323abb774).html",
     "gsid": "yeh8p1EAAAAJ",
     "affiliation": "King's College London",
     "fullName": "Peter J. Hellyer"
@@ -6966,8 +6967,62 @@
   "n-demirkus": {
     "shortname": "N DEMİRKUŞ",
     "photo": "/assets/avatars/gs/cxur2AQAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=cxur2AQAAAAJ",
+    "url": "http://www.nadidem.net/nasip/",
     "gsid": "cxur2AQAAAAJ",
+    "affiliation": "Yüzüncü Yıl Üniversitesi Biyoloji Profesörü",
+    "fullName": "Nasip DEMİRKUŞ"
+  },
+  "m-cortes": {
+    "shortname": "M Cortês",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "ar-liddle": {
+    "shortname": "AR Liddle",
+    "photo": "/assets/avatars/gs/KlXsKawAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=KlXsKawAAAAJ",
+    "gsid": "KlXsKawAAAAJ",
+    "affiliation": "University of Lisbon",
+    "fullName": "Andrew Liddle"
+  },
+  "l-smolin": {
+    "shortname": "L Smolin",
+    "photo": "/assets/avatars/gs/-_NhnG4AAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=-_NhnG4AAAAJ",
+    "gsid": "-_NhnG4AAAAJ",
+    "affiliation": "Perimeter Institute",
+    "fullName": "Lee Smolin"
+  },
+  "g-piccinini": {
+    "shortname": "G Piccinini",
+    "photo": "/assets/avatars/gs/sVwspDQAAAAJ.jpg",
+    "url": "https://www.umsl.edu/~philo/People/piccinini/",
+    "gsid": "sVwspDQAAAAJ",
+    "affiliation": "Curators' Distinguished Professor of Philosophy, University of Missouri - St. Louis",
+    "fullName": "Gualtiero Piccinini"
+  },
+  "s-leal": {
+    "shortname": "S Leal",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "t-ishida": {
+    "shortname": "T Ishida",
+    "photo": "/assets/avatars/gs/XStQy4cAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=XStQy4cAAAAJ",
+    "gsid": "XStQy4cAAAAJ",
+    "affiliation": "National Fisheries University",
+    "fullName": "Takeshi Ishida"
+  },
+  "wf-deans": {
+    "shortname": "WF Deans",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
     "affiliation": ""
   }
 }

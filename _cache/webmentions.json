@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2022-02-23T18:38:38.056Z",
+  "lastFetched": "2022-04-27T01:01:49.802Z",
   "webmentions": [
     {
       "type": "entry",
@@ -1514,6 +1514,28 @@
         "text": "evoluciones colectivas + theoretical population genetics\nyoutube.com/watch?v=b0lGu0…\n\nsciencedaily.com/releases/2018/…\n\nmontevil.org/publications/c…"
       },
       "mention-of": "https://montevil.org/publications/chapters/2017-gm-repetition-reversibility-evolution/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "johnkellden",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/e27453c92abb199c33f7710ad1d4934b23d7022a52ac567fec4b049764bfde4c.jpg",
+        "url": "https://twitter.com/johnkellden"
+      },
+      "url": "https://twitter.com/johnkellden/status/1513118241928982529",
+      "published": "2022-04-10T11:34:35+00:00",
+      "wm-received": "2022-04-10T12:55:16Z",
+      "wm-id": 1377937,
+      "wm-source": "https://brid.gy/post/twitter/MMontevil/1513118241928982529",
+      "wm-target": "https://montevil.org/publications/articles/2019-montevil-possibility-spaces-novelty/",
+      "content": {
+        "html": "Possibility Space: Notations \n\nPossibility spaces and the notion of novelty: from music to biology\n<a href=\"https://montevil.org/publications/articles/2019-montevil-possibility-spaces-novelty/\">montevil.org/publications/a…</a>",
+        "text": "Possibility Space: Notations \n\nPossibility spaces and the notion of novelty: from music to biology\nmontevil.org/publications/a…"
+      },
+      "mention-of": "https://montevil.org/publications/articles/2019-montevil-possibility-spaces-novelty/",
       "wm-property": "mention-of",
       "wm-private": false
     }
