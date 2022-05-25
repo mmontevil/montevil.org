@@ -1109,7 +1109,9 @@
     "shortname": "M Minini",
     "photo": "/assets/avatars/gs/kWU2FCkAAAAJ.jpg",
     "affiliation": "VIMM, Padua",
-    "fullName": "Mirko Minini"
+    "fullName": "Mirko Minini",
+    "url": "https://scholar.google.fr/citations?user=kWU2FCkAAAAJ",
+    "gsid": "kWU2FCkAAAAJ"
   },
   "n-hasan": {
     "shortname": "N Hasan",
@@ -7204,5 +7206,21 @@
     "gsid": "AMq4hjIAAAAJ",
     "affiliation": "University College London",
     "fullName": "Olwenn Martin"
+  },
+  "m-nissen": {
+    "shortname": "M Nissen",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": "",
+    "fullName": "Morten Nissen"
+  },
+  "n-mylonas": {
+    "shortname": "N Mylonas",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": "",
+    "fullName": "Nikolaos Mylonas"
   }
 }
