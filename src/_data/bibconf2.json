@@ -1,6 +1,78 @@
 [
     {
         "objecttype": "entry",
+        "entrytype": "proceedings",
+        "entrykey": "Paris-Seminar-2022",
+        "fields": {
+            "title": "The Anastasis of philosophy — seminar",
+            "location": "École Normale Supérieure",
+            "year": "2022",
+            "month": "5",
+            "day": "31",
+            "annonce": "true",
+            "language": "en",
+            "abstract": "The multiple crises of philosophy (conceptual, institutional, vocational, political, economic) which have constituted a situation of more than crisis—a criticalisation—from which philosophy will not be able to recover into anything resembling what it was in the past. However, these moments of crises also offer a chance to question what were properly philosophical evils and initiate an inventive era of philosophy which will be able to comprehend a new relation with other disciplines including the sciences, psychoanalysis, politics, and technology. The analytic of the stasis of philosophy began with the tradition of deconstruction through Jacques Derrida, Jean-Luc Nancy, and Bernard Stiegler. Today we already have glimpses of philosophy in anastasis, or the experience of philosophy coming over stasis. The four speakers will outline and discuss the other beginning of philosophy.",
+            "url": "https://republique-des-savoirs.fr/events/event/seminaire-the-anastasis-of-philosophy/",
+            "author": " Divya Dwivedi and Shaj Mohan and Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "proceedings",
+        "entrykey": "2022-marseille",
+        "fields": {
+            "title": "Écrans, parents, enfants, comment co-habiter?",
+            "location": "CMA Chartreux, 13004 108 Boulevard Françoise Duparc Marseille",
+            "year": "2022",
+            "month": "05",
+            "day": "17",
+            "annonce": "true",
+            "language": "fr",
+            "program": "Programme seminaire ecran Marseille.pdf",
+            "illustration": "marseille.png",
+            "abstract": "Partager autour de nos initiatives et de nos expériences de terrain. Journée animée par des membres de la Clinique Contributive de l’IRI (institut de recherche et d’innovation)",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2022-ISTP",
+        "fields": {
+            "title": "Texts as Technologies of Community Building: The Contributive Research Approach",
+            "booktitle": "International Society for theoretical Psychology 2022 - Building Community: Theoretical Psychology in the Service of Social Issues.",
+            "location": "Sacramento State University, USA",
+            "year": "2022",
+            "month": "5",
+            "day": "27",
+            "annonce": "true",
+            "language": "en",
+            "abstract": "The concept of ‘contributive research’ was introduced by Bernard Stiegler for the multiple, bifurcating ways communities of care are created and cultivated through the production of knowledge, as opposed to the consumption of information. From this perspective, participation in a community constitutes a transformative experience of trans-individuation, oriented toward the re-appropriation of technological artefacts as an ethico-political response to the global challenges of the Anthropocene. The concept shares many qualities with other strands of interventionist research such as collaborative, dialogical, action, practice and participatory research. In this virtual salon we intend to investigate the relevance of the ‘contributive research’ approach for the field of theoretical psychology, suggesting an open, experimental and hermeneutic process of trans-individuation where communities are built through the reflection on and discussion of scientific, aesthetic and other textual representations. According to this approach, and following Stiegler’s theory of grammatization, texts are technological artefacts which constitute communities by rendering knowledge technically reproducible and simultaneously subject to differentiation and bifurcation. We do not aim to present cases of the ‘application’ of contributive research as a ‘method’. Rather, we conceptualize 4 cases of the interaction of emergent communal care and agency with research and with other forms of representation.",
+            "url": "https://web.cvent.com/event/071e40ef-a9da-4263-bbfe-1df458fea096/summary",
+            "illustration": "istp.webp",
+            "author": "Morten Nissen and Maël Montévil and Gerald Moore and Nikolaos Mylonas"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2022-EJP",
+        "fields": {
+            "title": "Fundamental theory and epistemology of biology, and applications to the Anthropocene",
+            "booktitle": "Georgetown Environmental Justice Program Seminar",
+            "location": "Georgetown university, Washington DC, USA",
+            "year": "2022",
+            "month": "5",
+            "day": "26",
+            "annonce": "true",
+            "language": "en",
+            "abstract": "Biology is a science where, evolution possibly put aside, theories are not significantly developed. Nevertheless, at the theoretical and epistemological level, we argue that biology raises major challenges, notably in contrast with the theorizations of physics. In a nutshell, biology has to accommodate objects endowed with historicity: the ways they live are the result of their history, and they continue to generate history by the appearance of functional novelties. At the same time, they have organizations that require systemic understanding. We will introduce some aspects of this theoretical situation and show how it leads to peculiar vulnerabilities of the living that have acute manifestations in the Anthropocene. In that regard, we will discuss disruptions in biology, from ecosystems to early cognitive and psychological human development, and some responses to them.",
+            "url": "https://environmentaljustice.georgetown.edu/",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2022-ISC",
         "fields": {

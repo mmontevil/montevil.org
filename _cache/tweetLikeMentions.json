@@ -7718,5 +7718,25 @@
     "like-of": "https://montevil.org/publications/books/2021-Internation-Bifurcate/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1498399393728192513selfi29290306": {
+    "id_str": "1498399393728192513selfi29290306",
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "",
+      "screen_name": "selfi29290306",
+      "photo": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+      "url": "https://twitter.com/selfi29290306"
+    },
+    "url": "https://twitter.com/RobertNSchlesi1/status/1498399393728192513/likes",
+    "published": "2022-05-13",
+    "wm-received": "2022-05-13",
+    "wm-id": "1498399393728192513selfi29290306",
+    "wm-source": "https://twitter.com/RobertNSchlesi1/status/1498399393728192513/likes",
+    "wm-target": "https://montevil.org/publications/articles/2011-LM-Biology-Extending-Criticality/",
+    "like-of": "https://montevil.org/publications/articles/2011-LM-Biology-Extending-Criticality/",
+    "wm-property": "like-of",
+    "wm-private": false
   }
 }
