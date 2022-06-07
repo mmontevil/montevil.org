@@ -5818,9 +5818,9 @@
   },
   "l-fichtner": {
     "shortname": "L Fichtner",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
+    "photo": "/assets/avatars/gs/IWQDdpIAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=IWQDdpIAAAAJ",
+    "gsid": "IWQDdpIAAAAJ",
     "affiliation": ""
   },
   "a-sloman": {
@@ -5863,9 +5863,9 @@
   },
   "j-lamb": {
     "shortname": "J Lamb",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
+    "photo": "/assets/avatars/gs/KLX0mZwAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=KLX0mZwAAAAJ",
+    "gsid": "KLX0mZwAAAAJ",
     "affiliation": ""
   },
   "tr-gulden": {
@@ -7222,5 +7222,19 @@
     "gsid": "",
     "affiliation": "",
     "fullName": "Nikolaos Mylonas"
+  },
+  "a-angelini": {
+    "shortname": "A Angelini",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "g-cattani": {
+    "shortname": "G Cattani",
+    "photo": "/assets/avatars/gs/yB_9ACoAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=yB_9ACoAAAAJ",
+    "gsid": "yB_9ACoAAAAJ",
+    "affiliation": ""
   }
 }

@@ -18,7 +18,7 @@ _Seminar 2._ _7 juin, 14h – 16h, Salle Gallois, ÉNS, 45 rue d&#39;Ulm, Paris_
 
 In Heidegger&#39;s model of philosophy the principle which generates metaphysics is termed &quot;the ontico-ontological difference&quot; or &quot;the difference of Being&quot;. The ambiguous genitive indicates the very meaning of Being; the meaning of the &quot;difference&quot; would tell us the essence of Being. Upon investigation, Heidegger&#39;s texts regularly reveal the investments he made in the conception of &quot;the west&quot;, which are quite distinct from what we come to understand today as the name of a military alliance. Instead, this concept &quot;the west&quot; is invested simultaneously in recovering and covering over a certain &quot;east&quot; which propels it, with which it also seeks to distinguish itself. These investments in turn reveal another difference – the occidental-oriental difference – as something that is neither ontic nor ontological and yet that accompanies and regulates the meaning of the difference of Being. This second difference belongs to what we call Hypophysics (first foreshadowed by Kant who did not elaborate on it), which we will have to learn to diagnose if philosophy is to be released from the end foretold for it.
 
-**Discussants: tbd**
+**Discussants: Maël Montévil**
 
 _Seminar 3. 14 juin, 14h - 16h, salle Weil,_ _ÉNS, 45 rue d&#39;Ulm, Paris_
 
