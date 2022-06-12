@@ -2,6 +2,24 @@
     {
         "objecttype": "entry",
         "entrytype": "proceedings",
+        "entrykey": "2022-rome",
+        "fields": {
+            "title": "The other beginning of philosophy",
+            "location": "Istituto Psicoanalitico per le Ricerche Sociali, Roma, Italy",
+            "year": "2022",
+            "month": "05",
+            "day": "19",
+            "annonce": "true",
+            "language": "fr",
+            "illustration": "roma-2022.jpg",
+            "abstract": "Partager autour de nos initiatives et de nos expériences de terrain. Journée animée par des membres de la Clinique Contributive de l’IRI (institut de recherche et d’innovation)",
+            "twittermention": "1526982301158195200",
+            "author": "Divya Dwivedi and Shaj Mohan and Maël Montévil and Benedetta Todaro"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "proceedings",
         "entrykey": "Paris-Seminar-2022",
         "fields": {
             "title": "The Anastasis of philosophy — seminar",
@@ -13,6 +31,7 @@
             "language": "en",
             "abstract": "The multiple crises of philosophy (conceptual, institutional, vocational, political, economic) which have constituted a situation of more than crisis—a criticalisation—from which philosophy will not be able to recover into anything resembling what it was in the past. However, these moments of crises also offer a chance to question what were properly philosophical evils and initiate an inventive era of philosophy which will be able to comprehend a new relation with other disciplines including the sciences, psychoanalysis, politics, and technology. The analytic of the stasis of philosophy began with the tradition of deconstruction through Jacques Derrida, Jean-Luc Nancy, and Bernard Stiegler. Today we already have glimpses of philosophy in anastasis, or the experience of philosophy coming over stasis. The four speakers will outline and discuss the other beginning of philosophy.",
             "url": "https://republique-des-savoirs.fr/events/event/seminaire-the-anastasis-of-philosophy/",
+            "twittermention": "1533837406113353731, 1535881857597902849, 1535679583537836034, 1534236773613723652, 1534084643670065154, 1533431697546661890, 1533138516108001282, 1531306334393614336, 1530814464039206913",
             "author": " Divya Dwivedi and Shaj Mohan and Maël Montévil"
         }
     },
@@ -135,10 +154,11 @@
             "location": "History, Philosophy and Biology Teaching Lab, Universidade Federal da Bahia",
             "year": "2022",
             "month": "06",
-            "day": "07",
+            "day": "09",
             "annonce": "true",
             "language": "en",
             "abstract": "Scholars used Aristotelian reasoning in combination with theology to understand living beings, leading to natural theology, where god was the guarantee of biological norms. Transformism, notably Darwin, provided an alternative to this view; however, this alternative had to be acknowledged by scientists when the model of science was classical mechanics. It followed that thinking about biological objects remained similar to physics thinking, where norms are laws, or at least invariants and symmetries. The recurring analogies with technological objects, recently computers, as viewed by engineers (and not users or anthropology) also contributed to this theoretical and epistemological bias and confusion. On the opposite, we can think about biological objects differently, on renewed theoretical bases, by starting from theoretical principles that are sound in this field. Then, instead of fast analogies, numerous new questions, methods, and reasoning have to be fleshed out.",
+            "video": "https://www.youtube.com/watch?v=ZGsRqIpm7TI",
             "author": "Maël Montévil"
         }
     },
