@@ -1,6 +1,25 @@
 [
     {
         "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2022-Parcours-scientifique",
+        "fields": {
+            "booktitle": "Parcours scientifiques",
+            "year": "2022",
+            "month": "4",
+            "location": "Fréquence protestante",
+            "url": "https://frequenceprotestante.com/events/pensee-theorique-et-sens-des-limites-en-science/",
+            "video": "https://audio.audiomeans.fr/file/ibmlCTiMLk/bcddb2e7-a7b5-416f-9248-4d5d856b75dd.mp3",
+            "language": "fr",
+            "day": "30",
+            "eventtype": "media",
+            "abstract": "Nous recevons Maël Montévil, chercheur CNRS à l’ÉNS de Paris (République des Savoirs). La science demande une pensé théorique : celle-ci propose un regard sur la nature, oblige à en expliciter les principes, guide l’expérience, pose des limites à la connaissance et à l’action. Elle permet une éthique de la connaissance, c’est-à-dire “savoir faire un pas de côté” par rapport à ses propres conceptions et formuler une pensée critique, pour en comprendre les limites, et souvent ouvrir ainsi de nouvelles questions. Nous comparerons les situations en physique et biologie pour cerner ce qui est science par rapport à une technoscience négligeant la connaissance et déformant l’action sur le vivant. Nous réfléchirons de manière critique sur le rôle des données, leur interprétation et modélisation computationnelles, sur les mythes du génocentrisme en biologie qui rendent difficile de penser l’organisme en contexte. Nous esquisserons des parcours différents en train de se construire.",
+            "author": "Giuseppe Longo and Maël Montévil",
+            "title": "Pensée théorique et sens des limites en science"
+        }
+    },
+    {
+        "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "2022-rome",
         "fields": {

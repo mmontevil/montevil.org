@@ -1,0 +1,603 @@
+---
+illust: Turing.jpg
+hasPDF: true
+hasFullText: true
+date: 2022-06-13
+excerpt: "A new look at theoretical computer sciences by changing perspective with a biological approach."
+---
+
+<!--CompileMaths-->
+
+
+<p class="titleHead">Understanding living beings by analogy with computers or understanding computers as an emanation of the living</p>
+<p class="authors">Maël Montévil</p>
+
+<section class='abstract' role='doc-abstract'> 
+<h3 class='abstracttitle'>
+<span class='ecbx-0900'>Abstract</span>
+</h3>
+      <p class='noindent'> The analogy between living beings and computers was introduced with circumspection
+      by Schrödinger and has been widely propagated since, rarely with a precise technical
+      meaning. Critics of this perspective are numerous. We emphasize that this perspective
+      is mobilized to justify what may be called a regressive reductionism by comparison with
+      physics or the Cartesian method. 
+     </p> <p class='indent'>   Other views on the living are possible, and we focus on an epistemological and
+      theoretical  framework  where  historicity  is  central,  and  the  regularities  susceptible
+      to mathematization are constraints whose existence is fundamentally precarious and
+      historically contingent. 
+     </p> <p class='indent'>   We then propose to reinterpret the computer, no longer as a Turing machine but as
+      constituted by constraints. This move allows us to understand that computation in the
+      sense of Church-Turing is only a part of the theoretical determination of what actually
+      happens in a computer when considering them in their larger theoretical context where
+      historicity is also central. 
+</p>
+        <p class='noindent'><span class='paragraphHead' id='keywords' id='x1-1000' >  <span class='ecbx-0900'>Keywords:</span></span>
+       Theoretical computer sciences, theoretical biology, exosomatisation, constraints,
+      calculability, epistemology 
+</p>
+</section>
+  
+   <h3 class='sectionHead' id='introduction'><span class='titlemark'>1   </span> <a id='x1-20001'></a>Introduction</h3>
+ <p class='noindent'>Theoretical computer science comes primarily from the debates in mathematical logic at the
+beginning of the 20th century. With the appearance of contradictions in mathematics in the late
+19th century, mathematicians and philosophers turned to logic, and the formalization of
+mathematical proof, to ground the latter on a reliable basis.
+</p> <p class='indent'>   However, Gödel’s theorems challenged this project by showing the intrinsic limits of
+logical formalisms. Gödel’s theorems simultaneously introduced the notions of coding
+and the incalculable. The latter is, thus, in a sense, an origin of computer science and
+computers. Indeed, the incompleteness demonstrated by Gödel means that some assertions,
+formulable in a logical theory rich enough to accommodate arithmetic, are neither provable
+nor refutable in the same theory. Theoretical computer science is thus more precise
+and subtle than some contemporary regressive rhetoric asserting that everything is
+computable (<a id='x1-2001'></a> Anderson <a href='#cite.0@anderson2008end'>2008</a>). These discourses nevertheless focus on a slightly different
+question than the one at the origin of computer science. Gödel’s theorems are entirely
+within mathematical logic, whereas these discourses are primarily about the relationship
+between computer science and the natural and social sciences. We will come back to this
+point.
+</p> <p class='indent'>   One of the consequences of the work in mathematical logic is the design of the computer,
+notably via the work of Turing. Turing indeed introduced a logical formalism based on the schema
+of a machine that reads and writes on a tape, according to finite, automatic rules. This formal
+machine is equivalent to other logical formalisms defining computation: Church-Turing thesis
+posits the equivalence of the various formalisms defining what is computable. Note that this thesis
+has a rare epistemological status in the field of mathematics. It cannot be proven because there is
+no formal definition of all possible formalisms. We need, for example, two formalisms
+to prove that they are equivalent and obtain a theorem that is limited to these two
+formalisms.
+                                                                            
+                                                                            
+</p> <p class='indent'>   Computers thus come from a logical-mathematical question: what can we deduce from axioms,
+or, in terms of Turing machines, what computational processes terminate? We insist
+on this central point: these mathematical frameworks enable us to understand what
+the machine can do. The rule of the computation performed by the machine and its
+inputs are given by hypothesis. Thus, from the logics’ perspective, it has the status of an
+axiom.
+</p> <p class='indent'>   Theoretical computer sciences do not account for the role of programmers and users that
+generate computers, their programs, and input. As such, it has a limited scope. In this context,
+Bernard Stiegler argued for the need for a new perspective for theoretical computer sciences,
+embracing its position in an exorganological framework in a discontinuous continuity with
+biology. Then computers emanate from human activities and, at the same time, transform
+them.
+</p> <p class='indent'>   When computers were designed, biology was investigating the nature of heredity, that is to say,
+the resemblance between subsequent generations and, most importantly, the appearance of
+heritable variations that are the basis of the Darwinian framework. The physicist Erwin
+Schrödinger speculated that the material support of heredity was some aperiodic crystal, thus a
+discreet structure (<a id='x1-2002'></a> Schrödinger <a href='#cite.0@schrodinger'>1944</a>). Building on this idea, he proposed that the
+notion of "code script" could be the basis of heredity, thus introducing the analogy
+between the new emerging machines and the living. In this sense, evolution would provide
+the programs, and organisms would unfold them. As a seasoned theoretical physicist,
+Schrödinger draws the consequences of this assumption, notably the laplacian structure of
+determination that follows, that is, the deterministic and predictable nature of the
+processes hypothesized. After the subsequent discovery of DNA and notably the work of
+Jacob and Monod (<a id='x1-2003'></a> Monod <a href='#cite.0@Monod'>1970</a>), the analogy between living beings and computers
+shaped biological sciences, especially molecular biology and, more broadly, experimental
+biology.
+</p> <p class='indent'>   What are then the relationships between the concepts of theoretical computer science and the
+living? Should the living be understood with these concepts, should the two fields be sharply
+separated, or could biological concepts renew the perspective on computers?
+</p> <p class='indent'>   This article will first come back to the transfer of computer science concepts to
+understand living beings and criticize them. Then we will introduce some recent concepts and
+theoretical frameworks from biology, moving away from the epistemology of both physics
+and computer science in favor of a new articulation between natural phenomena and
+mathematics — we emphasize the central question of historicity in that regard. Finally, based
+on these concepts, but without reducing the question to them, we will reconsider the
+theoretical perspective on computers from an exorganological perspective in the sense of
+Stiegler.
+</p>  
+   <h3 class='sectionHead' id='the-shortcomings-of-understanding-biological-organizations-as-genetic-programs'><span class='titlemark'>2   </span> <a id='x1-30002'></a>The shortcomings of understanding biological organizations as genetic programs</h3>
+ <p class='noindent'>As mentioned in the introduction, the use of the computer program paradigm in biology initially
+targeted heredity. It also built on the Weissmanian schema, namely the idea that the support of
+heredity determines the organism without being determined by it. The subsequent discovery of
+DNA led to the molecular biology revolution.
+</p> <p class='indent'>   It is not the place here to discuss in depth the history and the general criticism of this
+conception (this has been done elsewere, e.g.<a id='x1-3001'></a>  Keller <a href='#cite.0@keller1995refiguring'>1995</a><a id='x1-3002'></a> ; Longo et al. <a href='#cite.0@longo2012'>2012</a><a id='x1-3003'></a> ; Longo and Mossio
+<a href='#cite.0@doi:10.1080/03080188.2020.1798588'>2020</a><a id='x1-3004'></a> ; Walsh <a href='#cite.0@doi:10.1080/03080188.2020.1795803'>2020</a><a id='x1-3005'></a> ; Soto and Sonnenschein <a href='#cite.0@doi:10.1080/03080188.2020.1794389'>2020</a>). Instead, we will focus on the practical outcome
+of this paradigm, chiefly the molecular biology practice—this practice couples two distinct
+dimensions concerning the computer analogy.
+</p> <p class='indent'>   First, this analogy led to precise empirical practices. Biologists investigate the interaction
+between molecules around the DNA (such as RNA, proteins), often correlating them
+experimentally — and only experimentally — to very macroscopic aspects, such as shapes,
+processes, or behaviors. Dramatic examples are the putative genes of homosexuality or intelligence.
+In this practice, the passage from the molecular to the macroscopic level is never made
+explicit theoretically. A kind of deus ex machina is required to articulate the two levels.
+Incidentally, this shortcoming is reminiscent of the epistemological concerns with vitalism
+beyond the metaphysical ones. The vital forces were sometimes described by analogy with
+classical physics forces; however, they were not made explicit; they were also ad hoc
+                                                                            
+                                                                            
+explanations.
+</p> <p class='indent'>   Second, to fill this vacuum or provide the illusion to do so, biologists build on a vague
+discourse. In a nutshell, the DNA contains the information for the development and physiology of
+the phenotype; biologically relevant processes follow a program that should be the object
+of biological investigation. Therefore, biologists assert that they are elucidating the
+underlying program by examining interactions between molecules originating from DNA. In
+a sense, DNA becomes a kind of first immobile engine; any explanation of relevant
+biological phenomena must go back to it. In practice, this approach is justified by the hope
+to find magic bullets, allowing to cure or transform the living according to a specific
+end.
+</p> <p class='indent'>   Biologists never work on the putative program synthetically; it is only investigated locally by
+small manipulations, or recently, a little more broadly by high-throughput methods. Nevertheless,
+the gap with the phenotypes remains complete.
+</p> <p class='indent'>   This perspective goes with a mechanical view of the living to fit the Laplacian nature of the
+Turing machine — against the view of Turing himself (<a id='x1-3006'></a> Turing <a href='#cite.0@turing1950'>1950</a><a id='x1-3007'></a> , <a href='#cite.0@Turing1952'>1952</a>). This view and the
+Weissmanian schema conflict with physics developments since Newton, where reciprocal causality
+is a principle. Moreover, physics developed a rich perspective where mathematics is central,
+provides the backbone of theories, and brings forth absolute limits to the possible hubris of
+scientism, for example, against the possibility of perpetual motion or the ability to predict every
+phenomenon.
+</p> <p class='indent'>   By contrast, the mathematical developments of molecular biology are limited to statistical
+inference. Causal mathematical schemes are mostly limited to linear causation. This
+situation is paradoxical because, for biologists, molecular biology is a physicalization
+of biology. It is not entirely false since molecular biology understands the substrate
+of heredity in physics terms; however, its understanding of phenotypes remains very
+limited.
+</p> <p class='indent'>   Let us emphasize that this methodology and perspective is not a reductionism in the usual
+sense of the word. For example, the Cartesian schema requires decomposing an object to
+understand its parts and then to recompose it, at least theoretically. Molecular biology only
+performs the decomposition step. The postulated primacy of DNA ascertains that the
+decomposition is relevant, but there is no theoretical recomposition. In practice, the observation of
+the phenotype replaces observations. Accordingly, this perspective does not fit the physics picture
+of reductionism. In physics, reductionism means describing a system at the microscopic level of
+description; by contrast, in molecular biology, it means looking only at specific microscopic parts
+of the system. Molecular biology considers itself a physicalism, but it is more reductionist
+than physics itself. In this context, mainstream molecular biology does not work on its
+theoretical constructs. Another illustration is the system concept that is ubiquitous in
+physics and mostly limited to the minor subfield of systems biology in the study of
+organisms. To conclude, this reductionism is more a regressive tendency than a genuine
+reductionism.
+</p>  
+   <h3 class='sectionHead' id='constraints-and-historicity-in-theoretical-biology'><span class='titlemark'>3   </span> <a id='x1-40003'></a>Constraints and historicity in theoretical biology</h3>
+ <p class='noindent'>In this section, we will introduce some recent concepts of theoretical biology that provide an
+alternative to the computer metaphors and emphasize the question of the role of mathematics in
+the field, a question that is also relevant for computer science.
+</p> <p class='indent'>   The starting point of these concepts is the theorization of the historicity of the living, obviously
+in line with the theory of evolution. Unlike population genetics, our focus is not the
+mathematization of specific evolutionary mechanisms. Instead, we focus on the theoretical and
+epistemological counterpart of this historical character of life, particularly concerning its
+mathematization.
+</p> <p class='indent'>   Mathematization in the natural sciences comes historically from physics, and it is the
+most refined in this field. The situation may be described concisely by stating that this
+mathematization is based on the idea that the changes taking place in a phenomenon can be
+understood by an invariance more fundamental than these changes (<a id='x1-4001'></a> Bailly and Longo <a href='#cite.0@bailly2011'>2011</a>).
+Accordingly, the space of possibilities is pre-given. The trajectories or final structures
+of a phenomenon derive from predefined structures, such as the symmetries given by
+theoretical principles; for example, the space-time symmetries of Galilean, special or general
+                                                                            
+                                                                            
+relativities.
+</p> <p class='indent'>   If we take the historicity of life phenomena seriously, we can no longer understand change by
+underlying invariance. On the opposite, it is not only necessary to understand how the forms of
+living beings change. We also need to understand the changes in their physiologies, their modes of
+reproduction, their functions, the structure of their heredity, and the invariants that we sometimes
+seem to be able to discover by looking at certain specimens. It is then a question of postulating
+historicity, and notably the fact that living beings can vary in a strong sense, that is to say
+without underlying invariance (<a id='x1-4002'></a> Montévil et al. <a href='#cite.0@chaptervariation'>2016</a>). Once this point is taken, we do not need
+to abandon the concept of invariance in biology, but specific invariance no longer stems
+from first principles. A given invariance is then local, limited to a more or less broad
+class of living beings, and contingent in the sense that some specimen may escape it.
+We have called these local invariants constraints (<a id='x1-4003'></a> Montévil and Mossio <a href='#cite.0@Montevil2015c'>2015</a><a id='x1-4004'></a> ; Soto
+et al. <a href='#cite.0@chapterccl'>2016</a>).
+</p> <p class='indent'>   Constraints have several theoretical roles. First, they canalize and structure transformation
+processes. For example, DNA canalizes the processes of protein production. Similarly, the bones of
+the arm limit the possible movements of the latter. In doing so, the constraints enable processes
+that would not take place without the constraints. For example, without DNA, randomly formed
+proteins would rarely be functional, and without the bones of the arm, most of its movements
+would not be possible. Constraints also limit, among other things, the default state of cells:
+proliferation and motility.
+</p> <p class='indent'>   Second, another remarkable property of constraints in an organism is that they maintain
+themselves collectively via constrained processes (Montévil and Mossio <a href='#cite.0@Montevil2015c'>2015</a>). Thus, DNA
+sequences constrain the transcription of messenger RNA, which constrains the production of
+proteins, and, among the latter, some constrain various processes that maintain the structure of
+DNA. The same type of circularity is found at much more macroscopic levels, for example,
+between vertebrates’ organs. This property, called the closure of constraints, does not mean
+that the organism maintains itself identically. It just maintains its constraints so that
+they last against the spontaneous growth of their entropy and disappearance of their
+invariance (which remains local and, in a sense, contingent since they have a historical
+origin).
+</p> <p class='indent'>   Finally, constraints play a diachronic causal role in the sense that they allow the appearance of
+novelties (Montévil et al. <a href='#cite.0@chaptervariation'>2016</a>). Thus, for example, articulated jaws have allowed the appearance
+of teeth and all sorts of functions such as the protection of eggs in certain ray-finned fish (for
+example <span class='ecti-1000'>Opistognathus aurifrons</span>), the transport of youngs, or articulated speech in <span class='ecti-1000'>Homo
+ sapiens</span> .
+</p> <p class='indent'>   If the concept of constraints addresses certain aspects of a given organism, it does not entirely
+define this organism in a given context. In physics, the theoretical definition of an object stems
+from its invariants and symmetries, and more generally, by a mathematized theoretical framework.
+It follows that the theoretical object is generic so that all electrons, for example, follow the same
+equations — they have no singularity in the philosophical sense. This point has very practical
+consequences. For example, the light speed in the vacuum defines the meter. It is an
+invariant introduced by Einstein and corresponds to the speed of any light ray in a
+vacuum (or any photon from a corpuscular perspective). The ability to define objects
+theoretically in this way also allows some separation between the concrete object and the
+theoretical object: it is unnecessary to anchor the theoretical object to a specific concrete
+object. For example, the standard meter is only a practical device; if destroyed, physicists
+could construct a new one with the same length with very high precision. In biology,
+there are no such theoretical constructs because, on the one hand, organisms embed a
+multiplicity of particular constraints that appeared over time, and, on the other hand, these
+constraints continue to change, even under standardized laboratory conditions (<a id='x1-4005'></a> Montévil
+<a href='#cite.0@montevilmeasure'>2019</a>).
+</p> <p class='indent'>   It is then interesting to recall the remarkable epistemological originality of the phylogenetic
+method of classification of living organisms (<a id='x1-4006'></a> Lecointre and Le Guyader <a href='#cite.0@lecointre2001classification'>2006</a>). This method does
+not aim to describe the living beings by the relations between their parts and invariance in these
+relations, as in physics. Instead, biologists define classes as the set of descendants of a
+common ancestor. The latter is theoretical; biologists do not identify it concretely. In
+practice, specimens are therefore analyzed by their estimated similarities, provided that the
+latter is evidence of their relatedness. For instance, mammals have shared characters
+that birds do not have. Therefore they most likely have a common ancestor that birds
+do not have and form a class. In a sense, since biological objects cannot be described
+by invariants derived from their theoretical determination, biologists rely on another
+                                                                            
+                                                                            
+type of invariance: the shared past of these objects, a past defined by the genealogy
+underlying the theory of evolution. Moreover, since biologists define the objects by their
+past, this theoretical framework can accommodate unpredictable and unprestatable
+variations.
+</p> <p class='indent'>   This method has a second point which is significant for us. The operational definition of a class
+can neither be based on a common ancestor because the latter is unknown nor on the invariance of
+its causal structure because the latter varies. It, therefore, requires reference to a particular
+specimen, called a holotype. The holotype is not the common ancestor used to define a class but
+rather a reference point for fixing the meaning of a name in the classification. The
+name is then extended to the intended class, provided that the specimen is part of it.
+Contrary to physics, the reference to concrete objects is necessary for this classification’s
+epistemology. By extension, it is necessary for biology because the classification gives the
+names of the objects it studies (at the organism level). Of course, in the experimental
+practice of biology, other elements can be added to the definition of a biological organism,
+such as the known genealogy, when it corresponds to animals raised in laboratories and
+the environment in which they live. However, these considerations do not change the
+epistemological move of defining objects largely by their past rather than by what they
+do.
+</p> <p class='indent'>   Mathematical writing, in physics, is based on the invariance of relations between
+relevant quantities. However, this method does not correspond to the theoretical and
+epistemological conditions of biology. In order to build on the epistemology of historicity
+outlined above, a new type of symbol has been introduced in theoretical biology, noted
+ <math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>χ</mi></math> (<a id='x1-4007'></a>
+Montévil and Mossio <a href='#cite.0@momoidentity2019'>2020</a>). This theoretical object is a symbol rather than a quantity or a
+variable, like in physics’ formalisms, because this symbol’s epistemology requires the reference to a
+concrete object, for example, a holotype in the phylogenetic classification. This general approach
+can be adjusted to the diversity of the situations encountered.
+</p> <p class='indent'>   This symbol fulfills several epistemological roles. First of all, it enables us to account explicitly
+for definitions of objects by their past within their formal description — though the nature of
+ <math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>χ</mi></math> is not
+formal in any usual sense. It also aims at accommodating, within these formalisms, the possibility
+of variations whose nature cannot be predicted; that is, the appearance of novelty in a strong
+sense. Again, this does not mean abandoning constraints as local invariance but formally
+articulating them to this kind of symbol. Then, for example, we can account for constraints whose
+primary function is to generate novelties whose nature is not pre-given. The articulation of
+ <math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>χ</mi></math> and
+constraints allows the latter to be explicitly historicized. However, this framework implies that a
+possible variation can always break the validity of a precise constraint. The latter is more or
+less frequent and significant depending on the constraints and experimental conditions
+considered.
+</p> <p class='indent'>   The symbol  <math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>χ</mi></math>
+accounts for a part of the theoretical determination of the biological object that is not captured by
+an underlying invariance and therefore does not allow for computations, particularly concerning
+the appearance of functional novelties. The originality of this approach is the articulation of this
+incalculable with precise epistemological and methodological considerations that account for
+essential elements of biology: the classification of living organisms and numerous aspects of
+experimental practices. These considerations are frequently forgotten in other fields of
+biology, typically experimental biology, because of epistemological perspectives inherited
+from physics, without these fields meeting the theoretical conditions of these physical
+theories (the definition of explicit, general theoretical invariants and the subsequent
+mathematical definitions of theoretical objects). Here, the new symbol comes from the
+crossing of two epistemologies, the relational epistemology of mathematical modeling as
+practiced in physics, and manifested here through the concept of constraints and the
+historical epistemology coming firstly from evolutionary biology — it is also relevant for
+development.
+</p>  
+   <h3 class='sectionHead' id='towards-a-new-theoretical-computer-science'><span class='titlemark'>4   </span> <a id='x1-50004'></a>Towards a new theoretical computer science</h3>
+                                                                            
+                                                                            
+ <p class='noindent'>In order to progress on the question of the relationship between computer science and the living,
+we propose to reinterpret the object of theoretical computer science and then transfer some
+concepts of theoretical biology in this field while keeping a critical view on this transfer. In this
+sense, this work is a contribution to answer the call of Bernard Stiegler to rethink the foundations
+of computer sciences (<a id='x1-5001'></a> Stiegler <a href='#cite.0@stieglerinfo'>2020</a>).
+</p>  
+   <h4 class='subsectionHead' id='theoretical-computer-science-as-a-human-science'><span class='titlemark'>4.1   </span> <a id='x1-60004.1'></a>Theoretical computer science as a human science</h4>
+ <p class='noindent'>The perspective of calculability and the Church-Turing thesis mentioned in the introduction has
+been an end for the design of computers, machines allowing to perform calculations in
+the sense of Church-Turing’s thesis. The calculations carried out by a computer are
+then defined by programs by abstracting from the material, concrete realization of the
+machine. An essential part of classical theoretical computer science is the elaboration of
+a diversity of formalisms allowing to think differently about what a program is, but
+always with the idea that these formal changes do not transform what is computable
+(except for simple languages that do not allow to compute all the functions of Turing
+machines).
+</p> <p class='indent'>   Conceiving theoretical computer science from the calculation of the isolated machine was
+justified at the origin of computers when the main difficulty consisted in making this
+new type of machine exist. It seemed all the more justified since the computer was
+posed as the mechanization of the part of the human mind that philosophers like Frege
+thought to be the most rational and the most reliable, that is, logic. Today computers are
+omnipresent, in various forms, and networked. In this context, this perspective seems to
+us quite insufficient because it does not consider the consequences of computers on
+noesis.
+</p> <p class='indent'>   Our answer to Bernard Stiegler’s call to rebase theoretical computer science consists of
+changing its theoretical object. Rather than considering the machine carrying out its
+calculation in isolation, considering the machines in connection with noetic beings, that is,
+thinking beings in the sense that thinking brings about the capacity to take care of a new
+situation.
+</p> <p class='indent'>   This theoretical move has several immediate consequences. The first is that theoretical
+computer science should not limit itself to considering the effects of programmers and users on
+machines but should also consider the effects of machines on noetic beings. In particular, given
+that computers depend on human knowledge to exist and if computer science leads to an
+excessive proletarianization, that is to say to a loss of this knowledge, then it risks
+leading to the destruction of its own conditions of possibility. Theoretical informatics
+could then possess an internal coherence, but it would nevertheless be fundamentally
+irrational.
+</p> <p class='indent'>   The second consequence of this move is that classical theoretical computer science only deals
+with a very particular case, where the machine is left alone to perform its computation.
+However, this is not what concrete computers typically do, they are used interactively,
+and programmers and users commonly transform the rules of their computations. It
+follows that classical theoretical computer science does not allow us to understand the
+actual (observable) trajectories of these objects that are computers. From this point
+of view, classical theoretical computer science would become a limit case of the new
+theoretical computer science in the same way that classical mechanics is a limit case of
+general relativity, the case where velocities and masses are small. In computer science, it
+would be the case where the input and programming of the machine are given, and the
+machine computes in isolation. In this sense, classical computer science is the limit case
+where its functional insolation sensu Dwivedi and Mohan (<a id='x1-6001'></a> Dwivedi <a href='#cite.0@divyasanscolonial'>2020</a>) is considered
+absolute.
+</p> <p class='indent'>   Admittedly, there are theoretical approaches to deal with parallelism, for example, when
+several users online are trying to order a single available concert seat. However, these approaches
+only ensure that the program always follows the purposes of the programmer, his employer, or
+client). In this case, the problem is to ensure that only one user can pay for this single available
+space — the problem is then equivalent to the technical issues of parallelism (several calculations
+carried out in parallel, in an asynchronous way, which introduces randomness just like the
+activities of the users acting in parallel), which go beyond the strict framework of Turing
+                                                                            
+                                                                            
+machines, provided the latter are deterministic (<a id='x1-6002'></a> Longo, Palamidessi, and Thierry <a href='#cite.0@longo:hal-00445553'>2010</a>). However,
+these approaches are very far from theorizing user activities and the consequence of computers on
+them.
+</p> <p class='indent'>   On the other hand, a framework, or rather the convergence of two frameworks, can be
+considered a sketch of extended theoretical computer science — a biased and particularly
+pathogenic sketch. As taught at Stanford, it is the convergence between computer and cognitive
+sciences, which is the basis of many platforms and video game mechanics designed to
+make the user addict, and more generally, to make his behavior follow the publisher’s
+interests. This convergence does not think about biological and psychological development,
+although it aims at education in some cases, and it does not address the question of noesis,
+thinking, beyond some simple properties. However, it does emphasize the importance
+of considering a theoretical alternative to this convergence, an alternative that is not
+oriented towards a short-term economic opportunity but the care for computers and
+noesis.
+</p>  
+   <h4 class='subsectionHead' id='insights-from-theoretical-biology'><span class='titlemark'>4.2   </span> <a id='x1-70004.2'></a>Insights from theoretical biology</h4>
+ <p class='noindent'>We would now like to suggest that some concepts of theoretical biology could be mobilized to give
+new perspectives to theoretical computer science. In the previous discussion, we emphasized
+questions of theoretical biology that we also think are relevant to rethinking computer science.
+However, this type of discussion always requires a critical distance. Some concepts, such as the
+default state of cells, have no obvious counterpart in computer science. On the other hand, noesis
+is not a biological concept.
+</p> <p class='indent'>   Nevertheless, some biological concepts reflect on the articulation between historicity and
+mathematics, and their relevance is somewhat straightforward provided that we acknowledge the
+different theoretical contexts. In a sense, historicity is specific to the living, but the study of the
+living is not limited to biology. Human beings, human societies, and the artifacts they produce also
+participate in the living, with theoretical particularities, notably noesis. Bernard Stiegler worked
+on artifacts such as pen and paper, or computers, with the concept of exomatisation introduced by
+Lotka (<a id='x1-7001'></a> Lotka <a href='#cite.0@lotka1945law'>1945</a>), that is to say, the idea that these objects are similar to organs constructed
+outside biological bodies. From this perspective, there is continuity between artifacts and parts of
+organisms.
+</p> <p class='indent'>   Along this line, the first concept that we think relevant is the concept of constraint. A
+constraint is, first of all, a local invariance maintained far from maximum entropy. Thus, a
+computer or smartphone hardware is a constraint on the dissipation of free energy in electrical
+form, coming from the mains or a battery. They are also a constraint for programmers and users
+because they do not change and have a causal role in these processes. Let us add that, still, at the
+hardware level, the concept of closure between constraints is relevant. The hardware must be
+maintained, whether by upkeep, often limited to removing the dust that accumulates in the
+ventilation of a computer, or more often by replacing components or entire machines —
+the latter undergo entropy growth, which leads to their malfunction. The components
+where these phenomena are most noticeable are batteries, whose capacity decreases over
+time, and storage devices, such as hard disks and SSDs, which work thanks to a certain
+redundancy, such as the use of extra sectors to replace defective ones. Hardware also
+has a diachronic role because it contributes to making possible the appearance of new
+constraints, including the production of new hardware (today, it takes computers to build
+computers).
+</p> <p class='indent'>   The concept of constraint is also relevant to understand software. Software canalizes,
+in particular, the user’s activity, but it does not determine it as strongly as physical
+principles determine the behavior of its objects. As in the case of hardware, software code is
+actively maintained, notably by copying processes that allow it to last beyond the life
+of its medium. What programmers call software maintenance is, however, distinct. It
+means ensuring that software still works after updating the software it depends on
+and fixing security flaws that may be detected. Thinking of software as a constraint
+means that, just as the geometry and rigidity of the bones in an arm both constrain and
+enable its movement, software constrains what is possible while enabling or facilitating
+specific processes. In biology, some constraints have primarily the function of maintaining
+other constraints, while others, called propulsive constraints, have a more fundamentally
+                                                                            
+                                                                            
+diachronic role, participating in the appearance of new constraints. Let us note that,
+transposed into this vocabulary, tertiary retentions, like writing, are themselves also
+constraints.
+</p> <p class='indent'>   At this point, it is interesting to compare the concepts of constraint and pharmakon. These
+concepts do not precisely cover the same issues, the concept of constraint being more local — it
+does not by itself include the question of the role of these constraints in an organization.
+Nevertheless, constraints have the ambivalence of the pharmakon in the sense that a constraint
+limits possibilities while constituting them. In this case, the question of the opening or
+closing of possibilities concerning software is eminently pharmacological... and a pressing
+question. The articulation between computer science and cognitive science mentioned above
+serves to tune the user’s behavior to the editor’s interests. In that case, it is typically by
+strategies based on a pathological addiction, where the capacity of users to produce new
+possibilities is strongly degraded. These questions naturally lead back to design and the
+question of the ends of design that should now be embedded in theoretical computer
+sciences.
+</p> <p class='indent'>   Let us note that, on the side of programming, classical theoretical computer science is only
+concerned with the functioning of programs, thus leaving aside the changes of these programs, i.e.,
+the programming processes. In a sense, these changes are paradoxically one of their central
+concerns. With the Church-Turing thesis, we have seen that all formalisms are considered
+equivalent in terms of what they allow to compute. In concrete practice, this means that all
+sufficiently rich languages allow computing the same functions. Why, then, introduce new
+formalisms and programming languages? The main reason, in our opinion, is that these different
+approaches to computation allow treating problems from different perspectives and that some
+problems are easier to approach from one perspective or another. Moreover, in practice, languages
+can have a higher or lower level of abstraction from what happens in the concrete hardware
+architecture, abstraction having advantages like ease and portability to different architectures,
+and disadvantages like less precise process control and generally lower speed. Thinking
+of programming languages themselves, and more specifically their implementation in
+code-interpreting software such as compilers, as constraints helps to overcome this paradox. They
+act as a constraint both on the compilation or execution of code and programmers’
+activity.
+</p> <p class='indent'>   This analysis is also relevant for the code itself, which acts as a constraint on two distinct
+processes. The code defines software as a constraint, and at the same time, it plays the role of a
+peer-readable text. This dual role manifests itself in particular through the comments, which have
+no role in the execution of the code but serve to facilitate its understanding. If this understanding
+sometimes has a pedagogical role, it also aims to allow the code to be reworked and changed. The
+comments thus play a diachronic role; in other words, they constitute propulsive constraints. In
+the same way, this dual role appears for the code used by the machine in the frequent
+compromise between optimization and readability. Let us quote Donald Knuth on this
+question:
+</p>  <blockquote class=' epigraph'>
+      <p class='noindent'>Programmers  waste  enormous  amounts  of  time  thinking  about,  or  worrying
+     about,  the  speed  of  noncritical  parts  of  their  programs,  and  these  attempts
+     at  efficiency  actually  have  a  strong  negative  impact  when  debugging  and
+     maintenance are considered. We should forget about small efficiencies, say about
+     97% of the time: premature optimization is the root of all evil. Yet we should
+     not pass up our opportunities in that critical 3%. (<a id='x1-7002'></a> Knuth <a href='#cite.0@10.1145/356635.356640'>1974</a>)</p></blockquote>
+ <p class='indent'>   Thinking about computer science with the concept of constraint also aims to rethink the link
+between computer science and mathematics. Classical theoretical computer science emanates from
+mathematics, and the mathematics used is essentially discrete. These mathematics correspond to
+situations where the measure can be perfect in principle, and the determination is Laplacian, as
+Turing himself underlines (<a id='x1-7003'></a> Turing <a href='#cite.0@turing1950'>1950</a>). On the other hand, we have introduced the
+concept of constraint precisely to account for the limits of the mathematical description of
+biological objects. These limits stem from the collision of two distinct epistemologies, the
+one of historicity and the relational one. Introducing this concept in computer science
+means that computer science’s theoretical object does not follow a stable mathematical
+framework but has fundamental historicity. If we consider a given computer, the trajectory
+                                                                            
+                                                                            
+followed is no longer the unfolding of a program on a given input but a permanent
+relation between exosomatic constraints (hardware, software) and the user. A fortiori, this
+point of view is essential when the user changes the code of the software he uses — or,
+in a rarer but essential way, when he participates in the design and construction of
+hardware.
+</p> <p class='indent'>   Bernard Stiegler often referred to Paul Claudel’s sentence: "There must be in the
+poem a number such that it prevents counting" (<a id='x1-7004'></a> Petit <a href='#cite.0@stieglerMauss'>2019</a>). In computer science, to
+accommodate the incalculable without abandoning calculation, he defended the idea
+of introducing incalculable fields into this domain, notably to (re)give a role to
+deliberation (<a id='x1-7005'></a> Stiegler et al. <a href='#cite.0@stiegler2020bifurquer'>2020</a>). This perspective and the discussion on constraints
+lead us to consider introducing in theoretical computer science something like the
+ <math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>χ</mi></math> symbol
+introduced in biology. We do not yet have an elaborate framework for this, but we can introduce
+some remarks. Here, the contribution of the phylogenetic classification of living beings is no
+longer really relevant, but the definition of the user by his history can be — thus joining
+medicine where the history of the patient is essential. The theoretical manipulation of
+ <math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>χ</mi></math> depends on the issues
+at stake. For example,  <math display='inline' xmlns='http://www.w3.org/1998/Math/MathML'><mi>χ</mi></math>
+makes it possible to convey that knowledge is never purely synchronic; it is primarily diachronic.
+They are above all carried by singular persons and groups, which is epistemologically similar to
+the use of types in biology classification.
+</p> <p class='indent'>   To conclude, theoretical computer science can be seen from two angles which, although
+distinct, are strongly linked. It can be a framework for designing machines and software, and it
+can also be a framework for understanding what these machines do. One could object
+to thinking of computer science with the concept of constraint, that this concept is
+relevant primarily for this second sense of theoretical computer science, oriented towards
+understanding. However, this is precisely not the issue here because a theory allowing a more
+precise understanding of what computers do aims at feeding practice by leaving aside a
+reductionist conception of computer science where only the isolated machine and its capacities
+would count. At the same time, the user and the programmer are considered radically
+unknown. Against this dichotomy, rebasing theoretical computer science thus aims at
+reinserting the noesis in computer science as a fundamental question for the work of
+engineers.
+</p>  
+     <h3 class='sectionHead' id='references' id='x1-80004.2' >  References</h3>
+   <ol  class='thebibliography'>    <li class='bibitem' id='cite.0@anderson2008end' >  Anderson, C. 2008. “The end of theory: The data deluge makes the scientific method
+    obsolete.” <span class='ecti-1000'>Wired magazine </span>16 (7): 16–07.
+     </li>
+  <li class='bibitem' id='cite.0@bailly2011' >  Bailly, F., and G. Longo. 2011. <span class='ecti-1000'>Mathematics and the natural sciences; The Physical
+     Singularity of Life. </span> London: Imperial College Press. <a class='url' href='https://doi.org/10.1142/p774'>https://doi.org/10.1142/p774</a>.
+     </li>
+  <li class='bibitem' id='cite.0@divyasanscolonial' >  Dwivedi,  D.  2020.  “Through  the  Great  Isolation:  Sans-colonial.”  <span class='ecti-1000'>Philosophy  World
+     Democracy.</span> 
+     </li>
+  <li class='bibitem' id='cite.0@keller1995refiguring' >  Keller, E. F. 1995. <span class='ecti-1000'>Refiguring life: Metaphors of twentieth-century biology. </span>Columbia
+    University Press.
+     </li>
+  <li class='bibitem' id='cite.0@10.1145/356635.356640' >  Knuth, D. E. 1974. “Structured Programming with Go to Statements.” <span class='ecti-1000'>ACM Comput.
+     Surv.  </span> (New  York,  NY,  USA)  6,  no.  4  (December):  261–301.  <span class='small-caps'>issn</span> :  0360-0300.
+    <a class='url' href='https://doi.org/10.1145/356635.356640'>https://doi.org/10.1145/356635.356640</a>.
+     </li>
+  <li class='bibitem' id='cite.0@lecointre2001classification' >  Lecointre, G., and H. Le Guyader. 2006. <span class='ecti-1000'>Classification phylogénétique du vivant. </span>Belin.
+     </li>
+  <li class='bibitem' id='cite.0@longo2012' >  Longo, G., P.-A. Miquel, C. Sonnenschein, and A. M. Soto. 2012. “Is information a
+    proper
+    observable for biological organization?”  <span class='ecti-1000'>Progress in Biophysics and Molecular biology</span>
+    109 (3): 108–114. <span class='small-caps'>issn</span> : 0079-6107. <a class='url' href='https://doi.org/10.1016/j.pbiomolbio.2012.06.004'>https://doi.org/10.1016/j.pbiomolbio.2012.06.004</a>.
+     </li>
+  <li class='bibitem' id='cite.0@doi:10.1080/03080188.2020.1798588' >  Longo,  G.,  and  M.  Mossio.  2020.  “Geocentrism  vs  genocentrism:  theories  without
+    metaphors,  metaphors  without  theories.”  <span class='ecti-1000'>Interdisciplinary  Science  Reviews  </span>45  (3):
+    380–405. <a class='url' href='https://doi.org/10.1080/03080188.2020.1798588'>https://doi.org/10.1080/03080188.2020.1798588</a>.
+     </li>
+  <li class='bibitem' id='cite.0@longo:hal-00445553' >  Longo, G., C. Palamidessi, and P. Thierry. 2010. “Randomnes: four questions and some
+    challenges.” In <span class='ecti-1000'>Randomnes: 5 questions, </span>edited by H. Zenil. Automatic Press / VIP.
+     </li>
+  <li class='bibitem' id='cite.0@lotka1945law' >  Lotka, A. J. 1945. “The law of evolution as a maximal principle.” <span class='ecti-1000'>Human Biology </span>17
+    (3): 167–194.
+     </li>
+  <li class='bibitem' id='cite.0@Monod' >  Monod, J. 1970. <span class='ecti-1000'>Le hasard et la nécessité. </span>Seuil, Paris.
+     </li>
+  <li class='bibitem' id='cite.0@montevilmeasure' >  Montévil,            M.            2019.            “Measurement            in            biology
+    is methodized by theory.” <span class='ecti-1000'>Biology &amp; Philosophy </span>34, no. 3 (April): 35. <span class='small-caps'>issn</span> : 1572-8404.
+    <a class='url' href='https://doi.org/10.1007/s10539-019-9687-x'>https://doi.org/10.1007/s10539-019-9687-x</a>.
+     </li>
+  <li class='bibitem' id='cite.0@Montevil2015c' >  Montévil,   M.,   and   M.   Mossio.   2015.   “Biological   organisation   as   closure   of
+    constraints.”  <span class='ecti-1000'>Journal  of  Theoretical  Biology  </span>372  (May):  179–191.  <span class='small-caps'>issn</span> :  0022-5193.
+    <a class='url' href='https://doi.org/10.1016/j.jtbi.2015.02.029'>https://doi.org/10.1016/j.jtbi.2015.02.029</a>.
+     </li>
+  <li class='bibitem' id='cite.0@momoidentity2019' >  _________. 2020. “The Identity of Organisms in Scientific Practice: Integrating Historical
+    and Relational Conceptions.” <span class='ecti-1000'>Frontiers in Physiology </span>11 (June): 611. <span class='small-caps'>issn</span> : 1664-042X.
+    <a class='url' href='https://doi.org/10.3389/fphys.2020.00611'>https://doi.org/10.3389/fphys.2020.00611</a>.
+     </li>
+  <li class='bibitem' id='cite.0@chaptervariation' >  Montévil, M., M. Mossio, A. Pocheville, and G. Longo. 2016. “Theoretical principles for
+    biology: Variation.” <span class='ecti-1000'>Progress in Biophysics and Molecular Biology </span>122, no. 1 (August):
+    36–50. <span class='small-caps'>issn</span> : 0079-6107. <a class='url' href='https://doi.org/10.1016/j.pbiomolbio.2016.08.005'>https://doi.org/10.1016/j.pbiomolbio.2016.08.005</a>.
+     </li>
+  <li class='bibitem' id='cite.0@stieglerMauss' >  Petit, C. 2019. “L’impact de la technologie sur l’emploi, l’économie et la société (4).
+    Entretien avec Bernard Stiegler.” <span class='ecti-1000'>Revue du MAUSS permanente, </span>(May).
+     </li>
+  <li class='bibitem' id='cite.0@schrodinger' >  Schrödinger, E. 1944. <span class='ecti-1000'>What Is Life? </span>Londre: Cambridge University Press.
+                                                                            
+                                                                            
+     </li>
+  <li class='bibitem' id='cite.0@chapterccl' >  Soto, A. M., G. Longo, P.-A. Miquel, M. Montevil, M. Mossio, N. Perret, A. Pocheville,
+    and C. Sonnenschein. 2016. “Toward a theory of organisms: Three founding principles
+    in search of a useful integration.” <span class='ecti-1000'>Progress in Biophysics and Molecular Biology </span>122, no.
+    1 (August): 77–82. <span class='small-caps'>issn</span> : 0079-6107. <a class='url' href='https://doi.org/10.1016/j.pbiomolbio.2016.07.006'>https://doi.org/10.1016/j.pbiomolbio.2016.07.006</a>.
+     </li>
+  <li class='bibitem' id='cite.0@doi:10.1080/03080188.2020.1794389' >  Soto,  A. M.,  and  C.  Sonnenschein.  2020.  “Information,  programme,  signal:  dead
+    metaphors that negate the agency of organisms.”  PMID: 33100483, <span class='ecti-1000'>Interdisciplinary
+     Science Reviews </span> 45 (3): 331–343. <a class='url' href='https://doi.org/10.1080/03080188.2020.1794389'>https://doi.org/10.1080/03080188.2020.1794389</a>.
+     </li>
+  <li class='bibitem' id='cite.0@stieglerinfo' >  Stiegler, B. 2020. “Noodiversité et technodiversité. Eléments pour une refondation
+    économique basée sur une refondation de l’informatique théorique.” <span class='ecti-1000'>PUnpublished.</span>
+     </li>
+  <li class='bibitem' id='cite.0@stiegler2020bifurquer' >  Stiegler, B., Collectif Internation, J. Clezio, and A. Supiot. 2020. <span class='ecti-1000'>Bifurquer: Il n’y a pas
+     d’alternative. </span> Les liens qui libèrent, June. <span class='small-caps'>isbn</span> : 9791020908575.
+     </li>
+  <li class='bibitem' id='cite.0@turing1950' >  Turing, A. M. 1950. “Computing machinery and intelligence.” <span class='ecti-1000'>Mind </span>59 (236): 433–460.
+     </li>
+  <li class='bibitem' id='cite.0@Turing1952' >  _________.  1952.  “The  Chemical  Basis  of  Morphogenesis.”  <span class='ecti-1000'>Philosophical  Transactions
+     of  the  Royal  Society  of  London.  Series  B,  Biological  Sciences  </span> 237  (641):  37–72.
+    <a class='url' href='https://doi.org/10.1098/rstb.1952.0012'>https://doi.org/10.1098/rstb.1952.0012</a>.
+     </li>
+  <li class='bibitem' id='cite.0@doi:10.1080/03080188.2020.1795803' >  Walsh, D. M. 2020. “Action, program, metaphor.” <span class='ecti-1000'>Interdisciplinary Science Reviews </span>45
+    (3): 344–359. <a class='url' href='https://doi.org/10.1080/03080188.2020.1795803'>https://doi.org/10.1080/03080188.2020.1795803</a>.</p></dd></dl>
+    
+
+

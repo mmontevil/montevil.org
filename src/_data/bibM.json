@@ -1,5 +1,31 @@
 [
   {
+    "URL": "http://troposonline.org/",
+    "abstract": "The analogy between living beings and computers was introduced with circumspection by Schrödinger and has been widely propagated since, rarely with a precise technical meaning. Critics of this perspective are numerous. We emphasize that this perspective is mobilized to justify what may be called a regressive reductionism by comparison with physics or the Cartesian method. <br> Other views on the living are possible, and we focus on an epistemological and theoretical framework where historicity is central, and the regularities susceptible to mathematization are constraints whose existence is fundamentally precarious and historically contingent. <br> We then propose to reinterpret the computer, no longer as a Turing machine but as constituted by constraints. This move allows us to understand that computation in the sense of Church-Turing is only a part of the theoretical determination of what actually happens in a computer when considering them in their larger theoretical context where historicity is also central.",
+    "author": [
+      {
+        "family": "Montevil",
+        "given": "M."
+      }
+    ],
+    "container-title": "trópoς. Rivista di ermeneutica e critica filosofica",
+    "id": "2022-Montevil-uncomputable-living-computers",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          12,
+          31
+        ]
+      ]
+    },
+    "note": "The Future as a Problem. Between Philosophy and Cultural Studies",
+    "title": "Understanding living beings by analogy with computers or understanding computers as an emanation of the living",
+    "type": "article-journal",
+    "volume": "13"
+  },
+  {
     "URL": "https://hal.archives-ouvertes.fr/hal-03574022",
     "abstract": "What do mainstream scientists acknowledge as original scientific contributions? In other words, what is the current épistémè in natural sciences? This essay attempts to characterize this épistémè as computational empiricism. Scientific works are primarily empirical, generating data and computational, to analyze them and reproduce them with models. This épistémè values primarily the investigation of specific phenomena and thus leads to the fragmentation of sciences. It also promotes attention-catching results showing limits of earlier theories. However, it consumes these theories since it does not renew them, leading more and more fields to be in a state of theory disruption.",
     "author": [
