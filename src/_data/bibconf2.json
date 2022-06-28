@@ -4,6 +4,23 @@
         "entrytype": "inproceedings",
         "entrykey": "2022-Parcours-scientifique",
         "fields": {
+            "booktitle": "De la philosophie à l’organologie, et au-delà ? Penser le devenir des savoirs dans l’exosomatisation numérique",
+            "year": "2022",
+            "month": "6",
+            "location": "Maison de la recherche, Université Paris 8",
+            "language": "fr",
+            "day": "21",
+            "program": "programme colloque organologie.pdf",
+            "url": "De la philosophie à l’organologie, et au-delà ? Penser le devenir des savoirs dans l’exosomatisation numérique",
+            "author": "Maël Montévil",
+            "title": "Organologie et biologie"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2022-Parcours-scientifique",
+        "fields": {
             "booktitle": "Parcours scientifiques",
             "year": "2022",
             "month": "4",

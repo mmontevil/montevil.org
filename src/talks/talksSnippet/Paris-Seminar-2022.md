@@ -38,4 +38,4 @@ _Seminar 4. 28_ _juin, 18h30 – 20h30, Salle Gallois, ÉNS, 45 rue d&#39;Ulm, P
 
 The multiple crises of philosophy (conceptual, institutional, vocational, political, economic) which have constituted a situation of more than crisis—a criticalisation—from which philosophy will not be able to recover into anything resembling what it was in the past. However, these moments of crises also offer a chance to question what were properly _philosophical evils_ and initiate an inventive era of philosophy which will be able to comprehend a new relation with other disciplines including the sciences, psychoanalysis, politics, and technology. The analytic of the stasis of philosophy began with the tradition of deconstruction through Jacques Derrida, Jean-Luc Nancy, and Bernard Stiegler. Today we already have glimpses of philosophy in anastasis, or the experience of philosophy coming over stasis. The four speakers will outline and discuss _the other beginning of philosophy_.
 
-**Discussant: Benedetta Todaro** 
+**Discussant:  Jérôme Lèbre** 
