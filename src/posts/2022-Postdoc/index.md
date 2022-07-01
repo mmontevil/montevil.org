@@ -4,6 +4,9 @@ noToc: true
 lang: en
 date: 2022-06-01
 title:  Postdoctoral position
+tweets_mentions:
+  - "1541530781297700865" 
+  - "1541397329365925894"
 ---
 
 We are searching for a recent doctoral graduate with extensive training in computational modeling to work as a postdoctoral fellow in an international project (Boston, USA-Paris, France) entitled “Toward a science of intrinsic purposiveness: shaping development” that covers philosophy, biological theory, mathematical modeling, and biological experimentation. The overall aim of the project is to put forward an understanding of developmental and morphogenetic processes centered on organicist principles. 

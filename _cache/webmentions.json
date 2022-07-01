@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2022-04-27T01:01:49.802Z",
+  "lastFetched": "2022-06-30T20:57:52.119Z",
   "webmentions": [
     {
       "type": "entry",
@@ -1536,6 +1536,50 @@
         "text": "Possibility Space: Notations \n\nPossibility spaces and the notion of novelty: from music to biology\nmontevil.org/publications/a…"
       },
       "mention-of": "https://montevil.org/publications/articles/2019-montevil-possibility-spaces-novelty/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Luiz Pessoa",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/f65c516af7acc07fcd25961523b2d59ae158b61cd31bb1e814d3b3c9d620da59.jpg",
+        "url": "https://twitter.com/PessoaBrain"
+      },
+      "url": "https://twitter.com/PessoaBrain/status/1539586787433189377",
+      "published": "2022-06-22T12:31:08+00:00",
+      "wm-received": "2022-06-23T12:16:34Z",
+      "wm-id": 1421545,
+      "wm-source": "https://brid.gy/post/twitter/MMontevil/1539586787433189377",
+      "wm-target": "https://montevil.org/posts/2022-postdoc/",
+      "content": {
+        "html": "Exciting postdoc position: interdisciplinary project about 𝗮𝘂𝘁𝗼𝗻𝗼𝗺𝘆 𝗮𝗻𝗱 𝗱𝗲𝘃𝗲𝗹𝗼𝗽𝗺𝗲𝗻𝘁, with Matteo Mossio, Ana Soto and Maël Montévil: **modeling of biological systems** at Tufts University (Boston): <a href=\"https://montevil.org/posts/2022-postdoc/\">montevil.org/posts/2022-pos…</a>",
+        "text": "Exciting postdoc position: interdisciplinary project about 𝗮𝘂𝘁𝗼𝗻𝗼𝗺𝘆 𝗮𝗻𝗱 𝗱𝗲𝘃𝗲𝗹𝗼𝗽𝗺𝗲𝗻𝘁, with Matteo Mossio, Ana Soto and Maël Montévil: **modeling of biological systems** at Tufts University (Boston): montevil.org/posts/2022-pos…"
+      },
+      "mention-of": "https://montevil.org/posts/2022-postdoc/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Roberto Toro (🐘 @r3rt0@mstdn.social)",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/422cebf904665d1d338d256cbcc0fdeea5d06bac4da24524177937f48582c5b2.jpg",
+        "url": "https://twitter.com/R3RT0"
+      },
+      "url": "https://twitter.com/R3RT0/status/1541397329365925894",
+      "published": "2022-06-27T12:25:35+00:00",
+      "wm-received": "2022-06-27T12:35:37Z",
+      "wm-id": 1423095,
+      "wm-source": "https://brid.gy/post/twitter/MMontevil/1541397329365925894",
+      "wm-target": "https://montevil.org/posts/2022-postdoc/",
+      "content": {
+        "html": "Fantastic 𝐩𝐨𝐬𝐭𝐝𝐨𝐜 𝐨𝐩𝐩𝐨𝐫𝐭𝐮𝐧𝐢𝐭𝐲 for someone interested to work at the frontier between philosophy, development and modelling: “Toward a science of intrinsic purposiveness: shaping development”\nWith Ana Soto, Maël Montévil and Matteo Mossio\n<a href=\"https://montevil.org/posts/2022-postdoc\">montevil.org/posts/2022-pos…</a>\n\n<a class=\"u-mention\" href=\"https://montevil.org/posts/2022-postdoc/\"></a>",
+        "text": "Fantastic 𝐩𝐨𝐬𝐭𝐝𝐨𝐜 𝐨𝐩𝐩𝐨𝐫𝐭𝐮𝐧𝐢𝐭𝐲 for someone interested to work at the frontier between philosophy, development and modelling: “Toward a science of intrinsic purposiveness: shaping development”\nWith Ana Soto, Maël Montévil and Matteo Mossio\nmontevil.org/posts/2022-pos…"
+      },
+      "mention-of": "https://montevil.org/posts/2022-postdoc/",
       "wm-property": "mention-of",
       "wm-private": false
     }
