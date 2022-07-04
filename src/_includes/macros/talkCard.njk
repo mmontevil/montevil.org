@@ -9,7 +9,7 @@
 {% endif %}
 
   {% set content %}
-{{- talk.templateContent | excerpt | truncateHtml (300) | safe -}}
+{{- talk.templateContent | excerpt | striptags | safe -}}
   {% endset %}
   {%if not (content==="")%}
   {% set content %}
