@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2022-06-30T20:57:52.119Z",
+  "lastFetched": "2022-07-07T23:49:51.245Z",
   "webmentions": [
     {
       "type": "entry",
@@ -1578,6 +1578,28 @@
       "content": {
         "html": "Fantastic 𝐩𝐨𝐬𝐭𝐝𝐨𝐜 𝐨𝐩𝐩𝐨𝐫𝐭𝐮𝐧𝐢𝐭𝐲 for someone interested to work at the frontier between philosophy, development and modelling: “Toward a science of intrinsic purposiveness: shaping development”\nWith Ana Soto, Maël Montévil and Matteo Mossio\n<a href=\"https://montevil.org/posts/2022-postdoc\">montevil.org/posts/2022-pos…</a>\n\n<a class=\"u-mention\" href=\"https://montevil.org/posts/2022-postdoc/\"></a>",
         "text": "Fantastic 𝐩𝐨𝐬𝐭𝐝𝐨𝐜 𝐨𝐩𝐩𝐨𝐫𝐭𝐮𝐧𝐢𝐭𝐲 for someone interested to work at the frontier between philosophy, development and modelling: “Toward a science of intrinsic purposiveness: shaping development”\nWith Ana Soto, Maël Montévil and Matteo Mossio\nmontevil.org/posts/2022-pos…"
+      },
+      "mention-of": "https://montevil.org/posts/2022-postdoc/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Connor McShaffrey",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/3132624e95e03130291fb81635a057eddfeff12240210cc0ff949a8e66d38155.jpg",
+        "url": "https://twitter.com/Con_McShaff"
+      },
+      "url": "https://twitter.com/Con_McShaff/status/1544412454209323009",
+      "published": "2022-07-05T20:06:37+00:00",
+      "wm-received": "2022-07-05T21:29:45Z",
+      "wm-id": 1427861,
+      "wm-source": "https://brid.gy/post/twitter/MMontevil/1544412454209323009",
+      "wm-target": "https://montevil.org/posts/2022-postdoc/",
+      "content": {
+        "html": "An interesting post-doctoral position for anyone interested in the intersection of modeling and theoretical/developmental biology! \n <a href=\"https://montevil.org/posts/2022-postdoc/\">montevil.org/posts/2022-pos…</a>",
+        "text": "An interesting post-doctoral position for anyone interested in the intersection of modeling and theoretical/developmental biology! \n montevil.org/posts/2022-pos…"
       },
       "mention-of": "https://montevil.org/posts/2022-postdoc/",
       "wm-property": "mention-of",

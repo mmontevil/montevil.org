@@ -241,3 +241,73 @@ Exiting due to channel error.
 1653083191815	geckodriver	INFO	Listening on 127.0.0.1:48201
 1653083225604	geckodriver	INFO	Listening on 127.0.0.1:33147
 1653417143017	geckodriver	INFO	Listening on 127.0.0.1:60465
+1657788529228	geckodriver	INFO	Listening on 127.0.0.1:55883
+1657788529748	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "34025" "-no-remote" "-profile" "/tmp/rust_mozprofileJydifi"
+*** You are running in headless mode.
+1657788530034	Marionette	INFO	Marionette enabled
+1657788530036	Marionette	INFO	Listening on port 39197
+WebDriver BiDi listening on ws://localhost:34025
+1657788530100	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1657788530102	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"20.81.62.32:3128","sslProxy":"20.81.62.32:3128"}
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileJydifi/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:34025/devtools/browser/2506dd4a-3491-4b34-bf91-01fa44c7709b
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1657788566901	geckodriver	INFO	Listening on 127.0.0.1:35463
+1657788566921	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "37575" "-no-remote" "-profile" "/tmp/rust_mozprofilebHyCkO"
+*** You are running in headless mode.
+1657788567229	Marionette	INFO	Marionette enabled
+1657788567231	Marionette	INFO	Listening on port 42205
+WebDriver BiDi listening on ws://localhost:37575
+1657788567383	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1657788567383	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"20.81.62.32:3128","sslProxy":"20.81.62.32:3128"}
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilebHyCkO/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:37575/devtools/browser/4abc2fda-828a-4f99-a169-ed93fedbfced
+JavaScript error: https://www.google.com/sorry/index?continue=https://scholar.google.com/scholar%3Fhl%3Den%26num%3D20%26cites%3D5458894294431118626&hl=en&q=EgQ04CW8GJyxv5YGIhB8lOXpzDZoNrn2rpAQlcKbMgFy, line 1: SyntaxError: expected expression, got ','
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1657803229859	geckodriver::marionette	ERROR	Failed to close browser connection: Transport endpoint is not connected (os error 107)
+1657803229861	geckodriver	INFO	Listening on 127.0.0.1:34499
+1657803229882	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "38979" "-no-remote" "-profile" "/tmp/rust_mozprofilepRROpt"
+*** You are running in headless mode.
+1657803230153	Marionette	INFO	Marionette enabled
+1657803230155	Marionette	INFO	Listening on port 43525
+WebDriver BiDi listening on ws://localhost:38979
+1657803230209	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1657803230211	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"20.81.62.32:3128","sslProxy":"20.81.62.32:3128"}
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilepRROpt/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:38979/devtools/browser/99b79062-c217-4039-8d36-5f175eaace79
+Exiting due to channel error.
+Exiting due to channel error.
+1657803231262	geckodriver::marionette	ERROR	Failed to close browser connection: Transport endpoint is not connected (os error 107)
+1657803260340	geckodriver	INFO	Listening on 127.0.0.1:44301
+1657803260370	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "51291" "-no-remote" "-profile" "/tmp/rust_mozprofiletujZ9V"
+*** You are running in headless mode.
+1657803260697	Marionette	INFO	Marionette enabled
+1657803260699	Marionette	INFO	Listening on port 34609
+WebDriver BiDi listening on ws://localhost:51291
+1657803260855	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1657803260856	RemoteAgent	INFO	Proxy settings initialised: {"proxyType":"manual","httpProxy":"8.219.97.248:80","sslProxy":"8.219.97.248:80"}
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletujZ9V/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://localhost:51291/devtools/browser/efff2426-8440-44e0-8f59-ae3344962a84
+1657803275070	Marionette	INFO	Stopped listening on port 34609
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.jsm
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 1996\"  data: no]"
+1657803278345	geckodriver	INFO	Listening on 127.0.0.1:33087
+1657803278368	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "36899" "-no-remote" "-profile" "/tmp/rust_mozprofileR6LvdJ"
+*** You are running in headless mode.
