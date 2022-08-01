@@ -60,7 +60,7 @@
     "@rollup/plugin-replace": "^4.0.0",
     "@sindresorhus/slugify": "1.1.0",
     "approx-string-match": "^1.1.0",
-    "autoprefixer": "^10.4.7",
+    "autoprefixer": "^10.4.8",
     "babel-loader": "^8.2.5",
     "bent": "^7.3.12",
     "citation-js": "^0.6.3",
