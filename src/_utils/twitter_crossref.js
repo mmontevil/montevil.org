@@ -104,7 +104,11 @@ async function fetchTweet(tweetId) {
     return tweet;
   } catch (error) {
     // unhappy path - continue to other fallbacks
+    if (error.statusCode==429 ){
+      console.log("Twitter Rate limit");
+    }else{
     console.log(error);
+    }
     return {};
   }
 }
@@ -120,7 +124,12 @@ async function fetchreTweet(tweetId) {
     //console.log(tweet)
     return tweets;
   } catch (error) {
+    if (error.statusCode==429 ){
+      console.log("Twitter Rate limit");
+    }else{
     console.log(error);
+    }
+ //   console.log(error);
     return false;
   }
 }
