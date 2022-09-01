@@ -70,7 +70,7 @@
     "cssnano": "5.1.12",
     "debug": "^4.3.4",
     "deepmerge": "^4.2.2",
-    "dotenv": "^16.0.1",
+    "dotenv": "^16.0.2",
     "element-remove": "^1.0.4",
     "eleventy-plugin-embed-everything": "^1.14.1",
     "eleventy-plugin-embed-tweet": "^0.3.1",
