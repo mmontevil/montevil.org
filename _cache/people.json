@@ -4469,9 +4469,9 @@
   },
   "mm-james": {
     "shortname": "MM James",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
+    "photo": "/assets/avatars/gs/TTlXYvsAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=TTlXYvsAAAAJ",
+    "gsid": "TTlXYvsAAAAJ",
     "affiliation": ""
   },
   "a-cooper": {
@@ -7513,6 +7513,13 @@
   },
   "sd-queiros": {
     "shortname": "SD Queirós",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "f-pellet": {
+    "shortname": "F PELLET",
     "photo": "/assets/avatars/gs/dummy.jpg",
     "url": "",
     "gsid": "",

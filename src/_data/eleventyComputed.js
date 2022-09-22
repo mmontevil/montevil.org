@@ -508,6 +508,8 @@ module.exports = {
     if (!data.computeMentions) {
       return [];
     }
+        let tempp=[];
+
     // get crossref data
 
     let crossref = undefined;
@@ -551,10 +553,10 @@ module.exports = {
           );
         }
       }
+            tempp=tempp.concat(temp);
     }
 
     // Get Plum, manual, and talk tweets
-
     let res = [];
     if (data.bibentry && data.bibentry.DOI && plumCache[data.bibentry.DOI]) {
       res = res.concat(plumCache[data.bibentry.DOI]);
@@ -570,6 +572,7 @@ module.exports = {
     ) {
       res = res.concat(data.bibentryconf.fields.twittermention.split(', '));
     }
+   
     for (i in res) {
 
       let temp = tweettomention(
@@ -577,6 +580,7 @@ module.exports = {
         'https://montevil.org' + data.page.url,
         'none'
       );
+      tempp=tempp.concat(temp);
     }
 
     // mentions for this url

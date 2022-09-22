@@ -2,6 +2,57 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "2022-IIT-Delhi-care",
+        "fields": {
+            "booktitle": "Care, philosophy and medical humanities -- colloquium",
+            "year": "2022",
+            "month": "9",
+            "location": "Indian Institute of Technology Delhi, New Delhi, India",
+            "language": "en",
+            "abstract": "What does it mean and what would it take to: “establish, without hierarchy, all “that” which cannot be stolen from us: silence, a future, caring for the dead, daily freedoms, quality of life, physical and psychic health, long spans of time, the possibility of living and becoming; but also the ways that make it possible to prevent such thefts from taking place: proof of care, a climate of care, field surveys, the right to experiment, the productivity of vulnerability, and, more generally, furtivity—the clever and imaginative ways of dealing with life's and systems' hurdles” (Cynthia Fleury and Antoine Fenoglio 2022)? This colloquium is devoted to the need for imagining other ways of thinking health and care, ethical approach to health, patient-oriented and institutional care, interrogating medicalization and equally the chasms between the clinic and the world in a time of exacerbating inequalities and erosion of welfare.",
+            "day": "26",
+            "url": "https://hss.iitd.ac.in/event/care-philosophy-and-medical-humanities-%E2%80%93-colloquium",
+            "program": "Fleury colloque IIT Delhi Care, Philosophy and Medical humanities.pdf",
+            "author": "Maël Montévil",
+            "title": "Disruption, Care and Knowledge"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2022-IIT-Delhi",
+        "fields": {
+            "booktitle": "HSS Tuesday Seminar",
+            "year": "2022",
+            "month": "9",
+            "location": "Indian Institute of Technology Delhi, New Delhi, India",
+            "language": "en",
+            "abstract": "Technology and sciences, notably biology, have entered a stasis whereby the nature of the answers provided are remarkably unchanging. For example, most of biological technoscientific research aims to fix problem by finding a molecule that would interact with an intended target. We argue that this stasis is the result of a decline in theoretical work, and notably a weak relationship with philosophy. Then theoretical shortcomings and contradiction are no longer overcome by renewed perspectives, instead outdated frameworks remain undead leading to inconsistent discourses. To overcome this stasis, we propose to introduce a bastardized epistemology, both in biology and technology, that would articulate both systemic and historical reasoning.",
+            "day": "13",
+            "url": "https://hss.iitd.ac.in/event/technology-and-biology-anthropocene-overcoming-stasis",
+            "author": "Maël Montévil",
+            "title": "Technology and Biology in the Anthropocene: Overcoming the Stasis"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2022-organicism-castelnaudary",
+        "fields": {
+            "booktitle": "Organicism in Castelnaudary",
+            "year": "2022",
+            "month": "9",
+            "location": "Castelnaudary",
+            "language": "en",
+            "day": "12",
+            "program": "PROGRAM Organicism in Castelnaudary.pdf",
+            "author": "Maël Montévil",
+            "title": "The bastard epistemology of organicism"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
         "entrykey": "2022-organologie-biologie",
         "fields": {
             "booktitle": "De la philosophie à l’organologie, et au-delà ? Penser le devenir des savoirs dans l’exosomatisation numérique",
@@ -11,7 +62,7 @@
             "language": "fr",
             "day": "21",
             "program": "programme colloque organologie.pdf",
-            "url": "De la philosophie à l’organologie, et au-delà ? Penser le devenir des savoirs dans l’exosomatisation numérique",
+            "url": "https://ireph.parisnanterre.fr/actualites/%C2%AB-de-la-philosophie-a-lorganologie-et-au-dela%C2%A0-penser-le-devenir-des-savoirs-dans-lexosomatisation-numerique-%C2%BB",
             "video": "https://www.youtube.com/watch?v=Qav87V3wk1I",
             "author": "Maël Montévil",
             "title": "Organologie et biologie"
