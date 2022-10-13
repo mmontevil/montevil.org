@@ -311,3 +311,220 @@ console.error: "Error during quit-application-granted: [Exception... \"File erro
 1657803278345	geckodriver	INFO	Listening on 127.0.0.1:33087
 1657803278368	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "36899" "-no-remote" "-profile" "/tmp/rust_mozprofileR6LvdJ"
 *** You are running in headless mode.
+1665536867198	geckodriver	INFO	Listening on 127.0.0.1:47199
+1665536867706	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "44265" "-no-remote" "-profile" "/tmp/rust_mozprofileIsGgz4"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1665536867974	Marionette	INFO	Marionette enabled
+1665536867977	Marionette	INFO	Listening on port 40691
+WebDriver BiDi listening on ws://127.0.0.1:44265
+1665536868051	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileIsGgz4/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://127.0.0.1:44265/devtools/browser/8cfb50c1-d808-454d-ba21-adf96d2dd673
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1665617309181	geckodriver	INFO	Listening on 127.0.0.1:49717
+1665617309233	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "60431" "-no-remote" "-profile" "/tmp/rust_mozprofileAZhJLW"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1665617309507	Marionette	INFO	Marionette enabled
+1665617309509	Marionette	INFO	Listening on port 41487
+WebDriver BiDi listening on ws://127.0.0.1:60431
+1665617309561	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileAZhJLW/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://127.0.0.1:60431/devtools/browser/fcd61aec-af5c-4af7-bd43-e340ec4f830d
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1665617326002	geckodriver	INFO	Listening on 127.0.0.1:44979
+1665617326023	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "58627" "-no-remote" "-profile" "/tmp/rust_mozprofile313LFH"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1665617326302	Marionette	INFO	Marionette enabled
+1665617326304	Marionette	INFO	Listening on port 35659
+WebDriver BiDi listening on ws://127.0.0.1:58627
+1665617326359	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile313LFH/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://127.0.0.1:58627/devtools/browser/87d7b50b-6985-49ee-8035-93143a623f30
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1665617335464	geckodriver	INFO	Listening on 127.0.0.1:46619
+1665617335487	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "54091" "-no-remote" "-profile" "/tmp/rust_mozprofilezUKEIx"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1665617345260	geckodriver	INFO	Listening on 127.0.0.1:42173
+1665617345284	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "50273" "-no-remote" "-profile" "/tmp/rust_mozprofile4nxnSA"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1665617345566	Marionette	INFO	Marionette enabled
+1665617345568	Marionette	INFO	Listening on port 40799
+WebDriver BiDi listening on ws://127.0.0.1:50273
+1665617345625	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+Exiting due to channel error.
+Exiting due to channel error.
+1665617391280	geckodriver	INFO	Listening on 127.0.0.1:41215
+1665617391330	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "35495" "-no-remote" "-profile" "/tmp/rust_mozprofileJcLIs4"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1665617391600	Marionette	INFO	Marionette enabled
+1665617391603	Marionette	INFO	Listening on port 36781
+WebDriver BiDi listening on ws://127.0.0.1:35495
+1665617391655	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileJcLIs4/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://127.0.0.1:35495/devtools/browser/784c0c88-ab37-473f-9488-56fc6bf2521c
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1665617406729	geckodriver	INFO	Listening on 127.0.0.1:59235
+1665617406758	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "50389" "-no-remote" "-profile" "/tmp/rust_mozprofileyyKft4"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1665617407049	Marionette	INFO	Marionette enabled
+1665617407051	Marionette	INFO	Listening on port 38875
+WebDriver BiDi listening on ws://127.0.0.1:50389
+1665617407104	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileyyKft4/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://127.0.0.1:50389/devtools/browser/caa54a5a-c073-4af6-be93-22f528319386
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1665617413835	geckodriver	INFO	Listening on 127.0.0.1:54233
+1665617413856	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "36681" "-no-remote" "-profile" "/tmp/rust_mozprofileSXQ2ep"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1665617414138	Marionette	INFO	Marionette enabled
+1665617414140	Marionette	INFO	Listening on port 33381
+WebDriver BiDi listening on ws://127.0.0.1:36681
+1665617414192	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileSXQ2ep/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://127.0.0.1:36681/devtools/browser/b656517d-3930-4d17-be25-a34c7fe91a39
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1665617453660	geckodriver	INFO	Listening on 127.0.0.1:33643
+1665617453701	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "39913" "-no-remote" "-profile" "/tmp/rust_mozprofileMTH73k"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1665617453977	Marionette	INFO	Marionette enabled
+1665617453978	Marionette	INFO	Listening on port 37201
+WebDriver BiDi listening on ws://127.0.0.1:39913
+1665617454032	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileMTH73k/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://127.0.0.1:39913/devtools/browser/1063dd77-b85f-4e37-8d47-d031c37019d5
+Exiting due to channel error.
+Exiting due to channel error.
+1665617459197	geckodriver	INFO	Listening on 127.0.0.1:51369
+1665617459219	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "53663" "-no-remote" "-profile" "/tmp/rust_mozprofileIhTuPp"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1665617459495	Marionette	INFO	Marionette enabled
+1665617459497	Marionette	INFO	Listening on port 35501
+WebDriver BiDi listening on ws://127.0.0.1:53663
+1665617459548	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileIhTuPp/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://127.0.0.1:53663/devtools/browser/10f16623-6682-4331-a970-fd963e7bb845
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1665617496328	geckodriver	INFO	Listening on 127.0.0.1:48395
+1665617496349	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "56153" "-no-remote" "-profile" "/tmp/rust_mozprofileKW4aSs"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1665617496619	Marionette	INFO	Marionette enabled
+1665617496621	Marionette	INFO	Listening on port 36947
+WebDriver BiDi listening on ws://127.0.0.1:56153
+1665617496680	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+Exiting due to channel error.
+Exiting due to channel error.
+1665617503260	geckodriver	INFO	Listening on 127.0.0.1:46229
+1665617503280	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "42075" "-no-remote" "-profile" "/tmp/rust_mozprofilejUEj1r"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1665617503559	Marionette	INFO	Marionette enabled
+1665617503561	Marionette	INFO	Listening on port 33985
+WebDriver BiDi listening on ws://127.0.0.1:42075
+1665617503612	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilejUEj1r/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://127.0.0.1:42075/devtools/browser/ae1abdc2-582f-4c20-89e8-a5ea42c18a50
+Exiting due to channel error.
+Exiting due to channel error.
+1665617522459	geckodriver	INFO	Listening on 127.0.0.1:40441
+1665617522483	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "36045" "-no-remote" "-profile" "/tmp/rust_mozprofiler5rf6x"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1665617522762	Marionette	INFO	Marionette enabled
+1665617522764	Marionette	INFO	Listening on port 40651
+WebDriver BiDi listening on ws://127.0.0.1:36045
+1665617522816	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiler5rf6x/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://127.0.0.1:36045/devtools/browser/d21b4146-fcd2-4486-9f54-ca5f0e6c8532
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1665617530381	geckodriver	INFO	Listening on 127.0.0.1:44315
+1665617530407	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "37063" "-no-remote" "-profile" "/tmp/rust_mozprofilee2eMbS"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1665617530694	Marionette	INFO	Marionette enabled
+1665617530696	Marionette	INFO	Listening on port 45257
+WebDriver BiDi listening on ws://127.0.0.1:37063
+1665617530755	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilee2eMbS/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://127.0.0.1:37063/devtools/browser/a2d3990c-5a18-4c97-aaab-8f78ca9613df
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1665617544153	geckodriver	INFO	Listening on 127.0.0.1:39969
+1665617544196	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "52101" "-no-remote" "-profile" "/tmp/rust_mozprofilewQ0WT3"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1665617544471	Marionette	INFO	Marionette enabled
+1665617544473	Marionette	INFO	Listening on port 43677
+WebDriver BiDi listening on ws://127.0.0.1:52101
+1665617544528	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilewQ0WT3/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://127.0.0.1:52101/devtools/browser/86552e0c-2894-4349-af35-049966746a44
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1665617579118	geckodriver	INFO	Listening on 127.0.0.1:42143
+1665617579140	mozrunner::runner	INFO	Running command: "/bin/firefox" "--marionette" "--headless" "--remote-debugging-port" "52905" "-no-remote" "-profile" "/tmp/rust_mozprofilebaXGfX"
+*** You are running in headless mode.
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+1665617579424	Marionette	INFO	Marionette enabled
+1665617579425	Marionette	INFO	Listening on port 41583
+WebDriver BiDi listening on ws://127.0.0.1:52905
+1665617579478	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilebaXGfX/search.json.mozlz4", (void 0)))
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+Exiting due to channel error.
+Exiting due to channel error.

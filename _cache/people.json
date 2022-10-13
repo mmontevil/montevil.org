@@ -53,7 +53,7 @@
     "url": "",
     "gsid": "",
     "affiliation": "",
-    "fullName": "Victor Chaix"
+    "fullName": "Victor Chaix."
   },
   "a-kunvari": {
     "shortname": "A Kunvari",
@@ -7524,5 +7524,20 @@
     "url": "",
     "gsid": "",
     "affiliation": ""
+  },
+  "j-parent": {
+    "shortname": "J Parent",
+    "photo": "/assets/avatars/gs/tSvD5eAAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=tSvD5eAAAAAJ",
+    "gsid": "tSvD5eAAAAAJ",
+    "affiliation": ""
+  },
+  "jap-escobar": {
+    "shortname": "JAP Escobar",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": "",
+    "fullName": "José Antonio Pérez Escobar"
   }
 }

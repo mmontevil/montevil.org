@@ -1,15 +1,108 @@
 [
   {
+    "URL": "https://republique-des-savoirs.fr/events/event/from-foundations-of-mathematics-to-the-epistemology-of-new-interfaces-a-colloquium-in-honor-of-ana-soto-and-giuseppe-longo/",
+    "abstract": "In this colloquium, we celebrate the 75th birthdays of Giuseppe Longo and Ana Soto. We have chosen to show their distinct trajectories and then how they intersect while working on the foundations of theoretical knowledge with a biology focus. In this respect, both Giuseppe Longo and Ana Soto maintain a close relationship with philosophy and philosophers. At the same time, both are also involved in “the life of the polis”, this is, addressing the repercussions of science in society and the environment, both as scientists and intellectuals.",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      },
+      {
+        "family": "Bravi",
+        "given": "Barbara"
+      },
+      {
+        "family": "Escobar",
+        "given": "José Antonio Pérez"
+      }
+    ],
+    "id": "2022-Giuseppe-Ana",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          10
+        ]
+      ]
+    },
+    "title": "Intersecting paths across mathematics, biology, and epistemology: A colloquium in honor of Giuseppe Longo and Ana Soto",
+    "title-short": "Intersecting paths across mathematics, biology, and epistemology",
+    "type": "book"
+  },
+  {
+    "URL": "https://blogs.mediapart.fr/les-amis-de-la-generation-thunberg/blog/170922/vers-une-nouvelle-revolution-industrielle-l-entropie-et-ses-enjeux",
+    "abstract": "Podcast et retranscription de l’entretien autour du 1er chapitre du livre \"Bifurquer\", sur les enjeux scientifiques, technologiques et politiques de la notion d’entropie. La discussion a eu lieu entre Bernard Stiegler, Maël Montévil, Marie Chollat-Namy et Victor Chaix, le 1er juillet 2020 - notre dernière rencontre avec le philosophe et fondateur de l’association.",
+    "author": [
+      {
+        "family": "Stiegler",
+        "given": "Bernard"
+      },
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      },
+      {
+        "family": "Chollat-Namy",
+        "given": "Marie"
+      },
+      {
+        "family": "Chaix",
+        "given": "Victor"
+      }
+    ],
+    "container-title": "Entretien autour de Bifurquer",
+    "id": "2022-entretien-entropie",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          9,
+          19
+        ]
+      ]
+    },
+    "title": "Vers une nouvelle révolution industrielle ? L’entropie et ses enjeux",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://events.3ds.com/science-age-of-experience-2022/future-of-lifesciences-for-better-health",
+    "abstract": "Science in the Age of Experience is a reference event for science leaders dedicated to improving lives and accelerating progress towards a more sustainable future.",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      },
+      {
+        "family": "Soto",
+        "given": "Ana"
+      }
+    ],
+    "container-title": "cience in the age of experience",
+    "id": "2022-science-age-experience",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          9,
+          29
+        ]
+      ]
+    },
+    "title": "Changing paradigms in cancer research: The role of theory",
+    "title-short": "Changing paradigms in cancer research",
+    "type": "paper-conference"
+  },
+  {
     "URL": "https://hss.iitd.ac.in/event/care-philosophy-and-medical-humanities-%E2%80%93-colloquium",
-    "abstract": "What does it mean and what would it take to: “establish, without hierarchy, all ‘that’ which cannot be stolen from us: silence, a future, caring for the dead, daily freedoms, quality of life, physical and psychic health, long spans of time, the possibility of living and becoming; but also the ways that make it possible to prevent such thefts from taking place: proof of care, a climate of care, field surveys, the right to experiment, the productivity of vulnerability, and, more generally, furtivity—the clever and imaginative ways of dealing with life’s and systems’ hurdles” (Cynthia Fleury and Antoine Fenoglio 2022)? This colloquium is devoted to the need for imagining other ways of thinking health and care, ethical approach to health, patient-oriented and institutional care, interrogating medicalization and equally the chasms between the clinic and the world in a time of exacerbating inequalities and erosion of welfare.",
+    "abstract": "Disruptions are described in both the cases of biological organizations and human health int he scientific literature, but without a precise conceptualization of this notion yet. We have argued that disruptions are the loss of past novelties that contribute to an organization (first order disruptions) or of the ability to generate such novelties (second order disruptions). We focus on a specific case of disruption, the disruption of babies and toddler cognitive and psychologicological developpement by digital media, and the response that was developped with Bernard Stiegler and experimented in Saint-Denis (France), namely contributive research where care puts knowledge at the forefront.",
     "author": [
       {
         "family": "Montévil",
         "given": "Maël"
       }
     ],
-    "container-title": "Care, philosophy and medical humanities – colloquium",
-    "id": "2022-IIT-Delhi-care",
+    "container-title": "Care, philosophy and Medical Humanities",
+    "id": "2022-care-IIT",
     "issued": {
       "date-parts": [
         [
@@ -23,7 +116,6 @@
     "type": "paper-conference"
   },
   {
-    "URL": "https://hss.iitd.ac.in/event/technology-and-biology-anthropocene-overcoming-stasis",
     "abstract": "Technology and sciences, notably biology, have entered a stasis whereby the nature of the answers provided are remarkably unchanging. For example, most of biological technoscientific research aims to fix problem by finding a molecule that would interact with an intended target. We argue that this stasis is the result of a decline in theoretical work, and notably a weak relationship with philosophy. Then theoretical shortcomings and contradiction are no longer overcome by renewed perspectives, instead outdated frameworks remain undead leading to inconsistent discourses. To overcome this stasis, we propose to introduce a bastardized epistemology, both in biology and technology, that would articulate both systemic and historical reasoning.",
     "author": [
       {
@@ -31,8 +123,8 @@
         "given": "Maël"
       }
     ],
-    "container-title": "HSS tuesday seminar",
-    "id": "2022-IIT-Delhi",
+    "container-title": "HSS Tuesday Seminar",
+    "id": "2022-technology-biology-IIT",
     "issued": {
       "date-parts": [
         [
@@ -42,8 +134,8 @@
         ]
       ]
     },
-    "title": "Technology and biology in the anthropocene: Overcoming the stasis",
-    "title-short": "Technology and biology in the anthropocene",
+    "title": "Technology and Biology in the Anthropocene: Overcoming the Stasis",
+    "title-short": "Technology and Biology in the Anthropocene",
     "type": "paper-conference"
   },
   {
@@ -53,7 +145,7 @@
         "given": "Maël"
       }
     ],
-    "container-title": "Organicism in castelnaudary",
+    "container-title": "Organicism in Castelnaudary",
     "id": "2022-organicism-castelnaudary",
     "issued": {
       "date-parts": [
@@ -177,7 +269,7 @@
         ]
       ]
     },
-    "title": "The anastasis of philosophy — seminar",
+    "title": "The Anastasis of philosophy — seminar",
     "type": "book"
   },
   {
@@ -222,7 +314,7 @@
         "given": "Nikolaos"
       }
     ],
-    "container-title": "International society for theoretical psychology 2022 - building community: Theoretical psychology in the service of social issues.",
+    "container-title": "International Society for theoretical Psychology 2022 - Building Community: Theoretical Psychology in the Service of Social Issues.",
     "id": "2022-ISTP",
     "issued": {
       "date-parts": [
@@ -233,8 +325,8 @@
         ]
       ]
     },
-    "title": "Texts as technologies of community building: The contributive research approach",
-    "title-short": "Texts as technologies of community building",
+    "title": "Texts as Technologies of Community Building: The Contributive Research Approach",
+    "title-short": "Texts as Technologies of Community Building",
     "type": "paper-conference"
   },
   {
@@ -246,7 +338,7 @@
         "given": "Maël"
       }
     ],
-    "container-title": "Georgetown environmental justice program seminar",
+    "container-title": "Georgetown Environmental Justice Program Seminar",
     "id": "2022-EJP",
     "issued": {
       "date-parts": [
@@ -257,7 +349,7 @@
         ]
       ]
     },
-    "title": "Fundamental theory and epistemology of biology, and applications to the anthropocene",
+    "title": "Fundamental theory and epistemology of biology, and applications to the Anthropocene",
     "type": "paper-conference"
   },
   {
@@ -269,7 +361,7 @@
         "given": "Maël"
       }
     ],
-    "container-title": "FRCCS french regional conference on complex systems 2022",
+    "container-title": "FRCCS French Regional Conference on Complex Systems 2022",
     "id": "2022-ISC",
     "issued": {
       "date-parts": [
@@ -280,7 +372,7 @@
         ]
       ]
     },
-    "title": "La disruption du vivant dans l’anthropocène",
+    "title": "La disruption du vivant dans l’Anthropocène",
     "type": "paper-conference"
   },
   {
@@ -292,7 +384,7 @@
         "given": "Maël"
       }
     ],
-    "container-title": "Trends in studying the deep past",
+    "container-title": "Trends in Studying the Deep Past",
     "id": "2022-Trends1",
     "issued": {
       "date-parts": [
@@ -316,7 +408,7 @@
         "given": "Maël"
       }
     ],
-    "container-title": "Trends in studying the deep past",
+    "container-title": "Trends in Studying the Deep Past",
     "id": "2022-Trends2",
     "issued": {
       "date-parts": [
@@ -339,7 +431,7 @@
         "given": "Maël"
       }
     ],
-    "container-title": "Seminar of the history, philosophy and biology teaching lab",
+    "container-title": "Seminar of the History, Philosophy and Biology Teaching Lab",
     "id": "ElHani-2022",
     "issued": {
       "date-parts": [
@@ -384,7 +476,7 @@
         ]
       ]
     },
-    "title": "Life, lust, philosophy",
+    "title": "Life, Lust, Philosophy",
     "type": "book"
   },
   {
@@ -396,7 +488,7 @@
         "given": "Maël"
       }
     ],
-    "container-title": "UE954 - dynamiques post-structurelles",
+    "container-title": "UE954 - Dynamiques post-structurelles",
     "id": "EHESS-2022",
     "issued": {
       "date-parts": [
@@ -418,7 +510,7 @@
         "given": "Maël"
       }
     ],
-    "container-title": "3S seminar: Sustainability of socio-technical systems, 4th edition",
+    "container-title": "3S Seminar: Sustainability of Socio-Technical Systems, 4th edition",
     "id": "3S-2022",
     "issued": {
       "date-parts": [
@@ -467,8 +559,8 @@
         ]
       ]
     },
-    "title": "Jean-luc nancy : Anastasis de la pensée",
-    "title-short": "Jean-luc nancy ",
+    "title": "Jean-Luc Nancy : Anastasis de la pensée",
+    "title-short": "Jean-Luc Nancy ",
     "type": "book"
   },
   {
@@ -501,7 +593,7 @@
         ]
       ]
     },
-    "title": "Présentation de \"prendre soin de l’informatique et des générations\"",
+    "title": "Présentation de \"Prendre soin de l’informatique et des générations\"",
     "type": "book"
   },
   {
@@ -557,7 +649,7 @@
         "given": "Maël"
       }
     ],
-    "container-title": "Journée d’étude georges canguilhem : La philosophie et ses dehors",
+    "container-title": "Journée d’étude Georges Canguilhem : la philosophie et ses dehors",
     "id": "2021-cang",
     "issued": {
       "date-parts": [
@@ -591,7 +683,7 @@
         ]
       ]
     },
-    "title": "Theoretical biology: Some strategic perspectives",
+    "title": "Theoretical biology: some strategic perspectives",
     "title-short": "Theoretical biology",
     "type": "paper-conference"
   },
@@ -603,7 +695,7 @@
         "given": "Maël"
       }
     ],
-    "container-title": "Plus d’une discipline : Actualité de la vie la mort",
+    "container-title": "Plus d’une discipline : actualité de La vie la mort",
     "id": "2021-lvlm",
     "issued": {
       "date-parts": [
@@ -614,7 +706,7 @@
         ]
       ]
     },
-    "title": "Vivant et grammatisation : Questionnements du point de vue de la biologie théorique contemporaine",
+    "title": "Vivant et grammatisation : questionnements du point de vue de la biologie théorique contemporaine",
     "title-short": "Vivant et grammatisation ",
     "type": "paper-conference"
   },
@@ -627,7 +719,7 @@
         "given": "Maël"
       }
     ],
-    "container-title": "Rencontre cardano (v) : « la nature et ses souvenirs. La révolution combinatoire de la biologie et ses dangers",
+    "container-title": "Rencontre Cardano (V) : « La nature et ses souvenirs. La révolution combinatoire de la biologie et ses dangers",
     "id": "2021-cardano",
     "issued": {
       "date-parts": [
@@ -650,7 +742,7 @@
         "given": "Maël"
       }
     ],
-    "container-title": "Séminaire cavaillès",
+    "container-title": "Séminaire Cavaillès",
     "id": "2021-cavailles",
     "issued": {
       "date-parts": [
@@ -673,7 +765,7 @@
         "given": "Maël"
       }
     ],
-    "container-title": "Context ,causality, and consequences: From robust evidence to timely action in biology, ecology, law and public policy",
+    "container-title": "Context ,Causality, and Consequences: from robust evidence to timely action in biology, ecology, law and public policy",
     "id": "2021-Ensser",
     "issued": {
       "date-parts": [
@@ -707,7 +799,7 @@
         "given": "Maël"
       }
     ],
-    "container-title": "Open eyes economy summit",
+    "container-title": "Open Eyes Economy Summit",
     "id": "2021-cracovie",
     "issued": {
       "date-parts": [
@@ -718,7 +810,7 @@
         ]
       ]
     },
-    "title": "What should we do with our entropies? Restoring the function of scientific controversies for rethinking/redesigning economy",
+    "title": "What Should We Do With Our Entropies? Restoring the Function of Scientific Controversies for Rethinking/Redesigning Economy",
     "type": "paper-conference"
   },
   {
@@ -740,7 +832,7 @@
         ]
       ]
     },
-    "title": "La disrupzione del vivente nell’antropocene",
+    "title": "La disrupzione del vivente nell’Antropocene",
     "type": "paper-conference"
   },
   {
@@ -775,7 +867,7 @@
         "given": "Maël"
       }
     ],
-    "container-title": "Online workshop: Modes of thinking (in) complexity",
+    "container-title": "Online Workshop: Modes of Thinking (in) Complexity",
     "id": "2021-complex",
     "issued": {
       "date-parts": [
@@ -786,7 +878,7 @@
         ]
       ]
     },
-    "title": "“Reflecting team” intervention with keynote commentators",
+    "title": "“Reflecting team” intervention with Keynote commentators",
     "type": "paper-conference"
   },
   {
@@ -827,7 +919,7 @@
         "given": "Maël"
       }
     ],
-    "container-title": "Faire vivre la pensée de bernard stiegler",
+    "container-title": "Faire vivre la pensée de Bernard Stiegler",
     "id": "2021-interview",
     "issued": {
       "date-parts": [
@@ -838,7 +930,7 @@
         ]
       ]
     },
-    "title": "Interview par christian mrasilevici",
+    "title": "Interview par Christian Mrasilevici",
     "type": "paper-conference"
   },
   {
@@ -850,7 +942,7 @@
         "given": "Maël"
       }
     ],
-    "container-title": "Wingspread@30: Birth and development of endocrine disruption science, part II — ISHPSSB 2021",
+    "container-title": "Wingspread@30: Birth and development of endocrine disruption science, Part II — ISHPSSB 2021",
     "id": "ish2021",
     "issued": {
       "date-parts": [
@@ -861,7 +953,7 @@
         ]
       ]
     },
-    "title": "Theorizing biological disruptions: The case of endocrine disruptors",
+    "title": "Theorizing biological disruptions: the case of endocrine disruptors",
     "title-short": "Theorizing biological disruptions",
     "type": "paper-conference"
   },
@@ -874,7 +966,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Sciences of the origin: The challenges of the selection effects and biases",
+    "container-title": "Sciences of the origin: the challenges of the selection effects and biases",
     "id": "origin2021",
     "issued": {
       "date-parts": [
@@ -924,7 +1016,7 @@
         "given": "M."
       }
     ],
-    "container-title": "IAS-research talk",
+    "container-title": "IAS-Research Talk",
     "id": "IAS2021",
     "issued": {
       "date-parts": [
@@ -947,7 +1039,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Puissance, mécanicisme et limites du numérique : Ontologie, mathématiques, éthique",
+    "container-title": "Puissance, mécanicisme et limites du numérique : ontologie, mathématiques, éthique",
     "id": "gaetano2021",
     "issued": {
       "date-parts": [
@@ -984,7 +1076,7 @@
         "given": "Hakima"
       }
     ],
-    "container-title": "Midi-santé",
+    "container-title": "Midi-Santé",
     "id": "midisante_2020",
     "issued": {
       "date-parts": [
@@ -995,7 +1087,7 @@
         ]
       ]
     },
-    "title": "Les ateliers de prévention des effets des écrans à la PMI pierre sémard de saint-denis",
+    "title": "Les ateliers de prévention des effets des écrans à la PMI Pierre Sémard de Saint-Denis",
     "type": "paper-conference"
   },
   {
@@ -1009,7 +1101,7 @@
         "given": "Victor"
       }
     ],
-    "container-title": "Séminaire du GIS-UTSH (unité technologies et sciences de l’homme)",
+    "container-title": "Séminaire du GIS-UTSH (Unité technologies et sciences de l’Homme)",
     "id": "UT2020",
     "issued": {
       "date-parts": [
@@ -1030,7 +1122,7 @@
         "given": "Véronique"
       }
     ],
-    "container-title": "Fictions d’hier – sciences d’aujourd’hui",
+    "container-title": "Fictions d’Hier – Sciences d’aujourd’hui",
     "id": "rtbfc2021",
     "issued": {
       "date-parts": [
@@ -1054,7 +1146,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Séminaire phiteco",
+    "container-title": "Séminaire Phiteco",
     "id": "utc2021",
     "issued": {
       "date-parts": [
@@ -1065,7 +1157,7 @@
         ]
       ]
     },
-    "title": "Bernard stiegler et l’entropie",
+    "title": "Bernard Stiegler et l’entropie",
     "type": "paper-conference"
   },
   {
@@ -1076,7 +1168,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Séminaire \"bifurquer\"",
+    "container-title": "Séminaire \"Bifurquer\"",
     "id": "sembifu_2020",
     "issued": {
       "date-parts": [
@@ -1087,7 +1179,7 @@
         ]
       ]
     },
-    "title": "Entropie et anthropocène",
+    "title": "Entropie et Anthropocène",
     "type": "paper-conference"
   },
   {
@@ -1122,7 +1214,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Entretiens du nouveau monde industriel 2020 : Prendre soin de l’informatique et des générations.",
+    "container-title": "Entretiens du Nouveau Monde Industriel 2020 : prendre soin de l’informatique et des générations.",
     "id": "enmi_2020",
     "issued": {
       "date-parts": [
@@ -1144,7 +1236,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Memory for the future. Thinking with bernard stiegler",
+    "container-title": "Memory for the Future. Thinking with Bernard Stiegler",
     "id": "memory_2020",
     "issued": {
       "date-parts": [
@@ -1155,7 +1247,7 @@
         ]
       ]
     },
-    "title": "The plaine commune project",
+    "title": "The Plaine Commune project",
     "type": "paper-conference"
   },
   {
@@ -1196,7 +1288,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Tendances première",
+    "container-title": "Tendances Première",
     "id": "rtbfa2020",
     "issued": {
       "date-parts": [
@@ -1207,7 +1299,7 @@
         ]
       ]
     },
-    "title": "’Bifurquer’ (ed. LLL) de bernard stiegler et le collectif internation.",
+    "title": "’Bifurquer’ (Ed. LLL) de Bernard Stiegler et le collectif Internation.",
     "type": "paper-conference"
   },
   {
@@ -1222,7 +1314,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Au bout du jour",
+    "container-title": "Au bout du Jour",
     "id": "rtbfb2020",
     "issued": {
       "date-parts": [
@@ -1233,7 +1325,7 @@
         ]
       ]
     },
-    "title": "Interview par eddy caekelberghs",
+    "title": "Interview par Eddy Caekelberghs",
     "type": "paper-conference"
   },
   {
@@ -1256,7 +1348,7 @@
       ]
     },
     "note": "Interview",
-    "title": "Le bisphénol a produit des effets délétères même à très faibles doses",
+    "title": "Le bisphénol A produit des effets délétères même à très faibles doses",
     "type": "article-journal"
   },
   {
@@ -1293,7 +1385,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Séminaire pharmakon",
+    "container-title": "Séminaire Pharmakon",
     "id": "immun2020",
     "issued": {
       "date-parts": [
@@ -1304,7 +1396,7 @@
         ]
       ]
     },
-    "title": "(Pour)quoi l’immunologie chez sloterdijk ?",
+    "title": "(Pour)quoi l’immunologie chez Sloterdijk ?",
     "type": "paper-conference"
   },
   {
@@ -1323,7 +1415,7 @@
         "given": "Michal"
       }
     ],
-    "container-title": "Anthropocenes: Reworking of the wound",
+    "container-title": "Anthropocenes: Reworking of the Wound",
     "id": "Katowice2020",
     "issued": {
       "date-parts": [
@@ -1334,7 +1426,7 @@
         ]
       ]
     },
-    "title": "Panel: Towards anti-entropic exorganisms and exorganisations in the anthropocene. Bioeconomics, institutions, localities",
+    "title": "Panel: Towards anti-entropic exorganisms and exorganisations in the Anthropocene. Bioeconomics, Institutions, Localities",
     "title-short": "Panel",
     "type": "paper-conference"
   },
@@ -1347,7 +1439,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Personalized medicine : A multidisciplinary approach to complexity",
+    "container-title": "Personalized Medicine : A Multidisciplinary Approach to Complexity",
     "id": "personalized2020",
     "issued": {
       "date-parts": [
@@ -1391,7 +1483,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Pour fournir des éléments de réponse à antónio guterres et greta thunberg",
+    "container-title": "Pour fournir des éléments de réponse à António Guterres et Greta Thunberg",
     "id": "geneva2020",
     "issued": {
       "date-parts": [
@@ -1423,7 +1515,7 @@
         ]
       ]
     },
-    "title": "Systèmes et biologie : Enjeux théoriques et épistémologique",
+    "title": "Systèmes et biologie : enjeux théoriques et épistémologique",
     "title-short": "Systèmes et biologie ",
     "type": "paper-conference"
   },
@@ -1462,7 +1554,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Chaire géopolitique du risque",
+    "container-title": "Chaire Géopolitique du Risque",
     "id": "shaj_2019",
     "issued": {
       "date-parts": [
@@ -1484,7 +1576,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Le gouvernement de l’entropie — il governo dell’entropia",
+    "container-title": "Le gouvernement de l’entropie — Il governo dell’entropia",
     "id": "padoue_2019",
     "issued": {
       "date-parts": [
@@ -1495,7 +1587,7 @@
         ]
       ]
     },
-    "title": "L’anthropocène comme désorganisation du vivant",
+    "title": "L’Anthropocène comme désorganisation du vivant",
     "type": "paper-conference"
   },
   {
@@ -1507,7 +1599,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Rencontres culturelles maçonniques de lyon : Sciences(s) et humanisme",
+    "container-title": "Rencontres culturelles maçonniques de Lyon : sciences(s) et humanisme",
     "id": "fm_2019",
     "issued": {
       "date-parts": [
@@ -1518,7 +1610,7 @@
         ]
       ]
     },
-    "title": "L’anthropocène comme désorganisation du vivant",
+    "title": "L’Anthropocène comme désorganisation du vivant",
     "type": "paper-conference"
   },
   {
@@ -1529,7 +1621,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Journée arts & sciences des systèmes complexes : artex",
+    "container-title": "Journée Arts & Sciences des systèmes complexes : Artex",
     "id": "isc_2019",
     "issued": {
       "date-parts": [
@@ -1540,7 +1632,7 @@
         ]
       ]
     },
-    "title": "Espaces des possibles et nouveauté : De la musique à la biologie",
+    "title": "Espaces des possibles et nouveauté : de la musique à la biologie",
     "title-short": "Espaces des possibles et nouveauté ",
     "type": "paper-conference"
   },
@@ -1552,7 +1644,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Physical time, biological time: Bergsonism today",
+    "container-title": "Physical Time, Biological Time: Bergsonism Today",
     "id": "bergson_2019",
     "issued": {
       "date-parts": [
@@ -1595,7 +1687,7 @@
         "given": "M."
       }
     ],
-    "container-title": "80 shades of stu - 30 years of complexity",
+    "container-title": "80 Shades of Stu - 30 Years of Complexity",
     "id": "sf_2019",
     "issued": {
       "date-parts": [
@@ -1606,7 +1698,7 @@
         ]
       ]
     },
-    "title": "No entailing laws but enablement in the evolution of the biosphere",
+    "title": "No Entailing Laws but Enablement in the Evolution of the Biosphere",
     "type": "paper-conference"
   },
   {
@@ -1616,7 +1708,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Discussion avec sabina leonelli",
+    "container-title": "Discussion avec Sabina Leonelli",
     "id": "Sableon_2019",
     "issued": {
       "date-parts": [
@@ -1626,7 +1718,7 @@
         ]
       ]
     },
-    "title": "Introduction: Sabina leonelli, la recherche scientifique à l’ère des big data",
+    "title": "Introduction: Sabina Leonelli, La recherche scientifique à l’ère des Big Data",
     "title-short": "Introduction",
     "type": "paper-conference"
   },
@@ -1653,7 +1745,7 @@
         ]
       ]
     },
-    "title": "La recherche technologique à l’IRI : Méthode pour une clinique contributive.",
+    "title": "La recherche technologique à l’IRI : méthode pour une clinique contributive.",
     "title-short": "La recherche technologique à l’IRI ",
     "type": "paper-conference"
   },
@@ -1666,7 +1758,7 @@
         "given": "M."
       }
     ],
-    "container-title": "2019 meeting of the international society for history, philosophy and social studies of biology (ISHPSSB)",
+    "container-title": "2019 Meeting of the International Society for History, Philosophy and Social Studies of Biology (ISHPSSB)",
     "id": "oslo_2019",
     "issued": {
       "date-parts": [
@@ -1677,8 +1769,8 @@
         ]
       ]
     },
-    "title": "Principle of organization, integration of the principles and application — precision biology: Concepts and measurements",
-    "title-short": "Principle of organization, integration of the principles and application — precision biology",
+    "title": "Principle of organization, integration of the principles and application — Precision biology: concepts and measurements",
+    "title-short": "Principle of organization, integration of the principles and application — Precision biology",
     "type": "paper-conference"
   },
   {
@@ -1689,7 +1781,7 @@
         "given": "M."
       }
     ],
-    "container-title": "ENMI préparatoire 2019: Disruption, massive destruction and organization of an ’internation’ in the sense of marcel mauss",
+    "container-title": "ENMI Préparatoire 2019: Disruption, massive destruction and organization of an ’internation’ in the sense of Marcel Mauss",
     "id": "enmiprep_2019",
     "issued": {
       "date-parts": [
@@ -1700,8 +1792,8 @@
         ]
       ]
     },
-    "title": "Groupe 1 epistemology: Anthropocene, exosomatization and negentropy",
-    "title-short": "Groupe 1 epistemology",
+    "title": "Groupe 1 Epistemology: Anthropocene, exosomatization and negentropy",
+    "title-short": "Groupe 1 Epistemology",
     "type": "paper-conference"
   },
   {
@@ -1712,7 +1804,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Environment, sustainability and health institute paper club meeting",
+    "container-title": "Environment, Sustainability and Health Institute Paper Club Meeting",
     "id": "gradcam_2019",
     "issued": {
       "date-parts": [
@@ -1723,7 +1815,7 @@
         ]
       ]
     },
-    "title": "Why theorization has to make a comeback if we are to meet the challenges of the anthropocene.",
+    "title": "Why theorization has to make a comeback if we are to meet the challenges of the Anthropocene.",
     "type": "paper-conference"
   },
   {
@@ -1768,7 +1860,7 @@
         ]
       ]
     },
-    "title": "Table ronde « enjeux politiques et écologiques du biomorphisme »",
+    "title": "Table ronde « Enjeux politiques et écologiques du biomorphisme »",
     "type": "paper-conference"
   },
   {
@@ -1813,7 +1905,7 @@
         ]
       ]
     },
-    "title": "L’individuation biologique : Approche épistémologique et théorique",
+    "title": "L’individuation biologique : approche épistémologique et théorique",
     "title-short": "L’individuation biologique ",
     "type": "paper-conference"
   },
@@ -1829,7 +1921,7 @@
         "given": "Maël"
       }
     ],
-    "container-title": "Geometry and phenomenology of the living. Limits and possibilities of mathematization, complexity and individuation",
+    "container-title": "Geometry and Phenomenology of the Living. Limits and possibilities of mathematization, complexity and individuation",
     "id": "ENS2018",
     "issued": {
       "date-parts": [
@@ -1840,8 +1932,8 @@
         ]
       ]
     },
-    "title": "Historicity at the heart of biology: A challenge for mathematical thinking",
-    "title-short": "Historicity at the heart of biology",
+    "title": "Historicity at the Heart of Biology: a Challenge for Mathematical Thinking",
+    "title-short": "Historicity at the Heart of Biology",
     "type": "paper-conference"
   },
   {
@@ -1853,7 +1945,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Symposium: The science of systems and life: Alternative philosophies, new mathematics",
+    "container-title": "Symposium: The Science of Systems and Life: Alternative Philosophies, new Mathematics",
     "id": "zurich2018",
     "issued": {
       "date-parts": [
@@ -1875,7 +1967,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Science in perspective talk #4",
+    "container-title": "Science in Perspective Talk #4",
     "id": "sip2018",
     "issued": {
       "date-parts": [
@@ -1886,7 +1978,7 @@
         ]
       ]
     },
-    "title": "The coding of life. Breakthroughs and blind spots in the mathematisation of the life sciences.",
+    "title": "The coding of life. Breakthroughs and Blind Spots in the Mathematisation of the Life Sciences.",
     "type": "paper-conference"
   },
   {
@@ -1898,7 +1990,7 @@
         "given": "M."
       }
     ],
-    "container-title": "La médecine au chevet de l’IA médicale : Nécessité d’un fondement théorique du vivant pour aborder les nouvelles technologies de manière rationnelle",
+    "container-title": "La médecine au chevet de l’IA médicale : nécessité d’un fondement théorique du vivant pour aborder les nouvelles technologies de manière rationnelle",
     "id": "onteis2018",
     "issued": {
       "date-parts": [
@@ -1921,7 +2013,7 @@
         "given": "M."
       }
     ],
-    "container-title": "International workshop: Laboratory on the disciplines of secrecy",
+    "container-title": "International Workshop: Laboratory on the disciplines of secrecy",
     "id": "bolognesemio",
     "issued": {
       "date-parts": [
@@ -1944,7 +2036,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Work marathon",
+    "container-title": "Work Marathon",
     "id": "sepentine2_2018",
     "issued": {
       "date-parts": [
@@ -1955,7 +2047,7 @@
         ]
       ]
     },
-    "title": "Round table: Mathematics, life sciences, finance, work and economy",
+    "title": "Round table: Mathematics, Life sciences, Finance, Work and Economy",
     "title-short": "Round table",
     "type": "paper-conference"
   },
@@ -1967,7 +2059,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Work marathon",
+    "container-title": "Work Marathon",
     "id": "sepentine_2018",
     "issued": {
       "date-parts": [
@@ -1990,7 +2082,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Attempts of a mathematical uprising for restructuring biomedical sciences",
+    "container-title": "Attempts of a Mathematical Uprising for Restructuring Biomedical Sciences",
     "id": "simai_2018",
     "issued": {
       "date-parts": [
@@ -2011,7 +2103,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Séminaire nextLeap: Information & entropy",
+    "container-title": "Séminaire nextLeap: Information & Entropy",
     "id": "nextleap_2018",
     "issued": {
       "date-parts": [
@@ -2034,7 +2126,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Happy hour conference # 2 : morphogenesis",
+    "container-title": "Happy Hour Conference # 2 : Morphogenesis",
     "id": "ischappy_2018",
     "issued": {
       "date-parts": [
@@ -2055,7 +2147,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Histoire naturelle et systèmes complexes – problématiques, méthodes et enjeux",
+    "container-title": "Histoire Naturelle et Systèmes Complexes – Problématiques, méthodes et enjeux",
     "id": "mnhn2_2018",
     "issued": {
       "date-parts": [
@@ -2066,7 +2158,7 @@
         ]
       ]
     },
-    "title": "Les organisations biologiques entre interdépendances systémiques et historicité : Le cas des disruptions dues au changement climatique",
+    "title": "Les organisations biologiques entre interdépendances systémiques et historicité : le cas des disruptions dues au changement climatique",
     "title-short": "Les organisations biologiques entre interdépendances systémiques et historicité ",
     "type": "paper-conference"
   },
@@ -2078,7 +2170,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Quelle modèle économique pour l’hôtel pasteur?",
+    "container-title": "Quelle modèle économique pour l’hôtel Pasteur?",
     "id": "pasteur_2018",
     "issued": {
       "date-parts": [
@@ -2089,7 +2181,7 @@
         ]
       ]
     },
-    "title": "Le projet d’économie contributive à plaine commune",
+    "title": "Le projet d’économie contributive à Plaine Commune",
     "type": "paper-conference"
   },
   {
@@ -2099,7 +2191,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Transitions et crises : Mathématiques, finance, écosystèmes",
+    "container-title": "Transitions et crises : mathématiques, finance, écosystèmes",
     "id": "cardano_2018",
     "issued": {
       "date-parts": [
@@ -2142,7 +2234,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Entretiens du nouveau monde industriel 11 : Bêtise et intelligence artificielles.",
+    "container-title": "Entretiens du Nouveau Monde Industriel 11 : bêtise et intelligence artificielles.",
     "id": "enmi_2017",
     "issued": {
       "date-parts": [
@@ -2153,7 +2245,7 @@
         ]
       ]
     },
-    "title": "Quelques opacités computationnelles: De la biologie aux décisions humaines",
+    "title": "Quelques opacités computationnelles: de la biologie aux décisions humaines",
     "title-short": "Quelques opacités computationnelles",
     "type": "paper-conference"
   },
@@ -2187,7 +2279,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Séminaire de l’équipe cognitive research and enaction design",
+    "container-title": "Séminaire de l’équipe Cognitive Research and Enaction Design",
     "id": "utc_2017",
     "issued": {
       "date-parts": [
@@ -2198,7 +2290,7 @@
         ]
       ]
     },
-    "title": "Comprendre le vivant : Quel rôle pour les mathématiques ?",
+    "title": "Comprendre le vivant : quel rôle pour les mathématiques ?",
     "title-short": "Comprendre le vivant ",
     "type": "paper-conference"
   },
@@ -2211,7 +2303,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Séminaire de l’institut de systématique, évolution, biodiversité",
+    "container-title": "Séminaire de l’Institut de Systématique, Évolution, Biodiversité",
     "id": "museum_2017",
     "issued": {
       "date-parts": [
@@ -2257,7 +2349,7 @@
         "given": "M."
       }
     ],
-    "container-title": "2017 meeting of the international society for history, philosophy and social studies of biology (ISHPSSB)",
+    "container-title": "2017 Meeting of the International Society for History, Philosophy and Social Studies of Biology (ISHPSSB)",
     "id": "saopaulo_2017",
     "issued": {
       "date-parts": [
@@ -2281,7 +2373,7 @@
         "given": "M."
       }
     ],
-    "container-title": "2017 meeting of the international society for history, philosophy and social studies of biology (ISHPSSB)",
+    "container-title": "2017 Meeting of the International Society for History, Philosophy and Social Studies of Biology (ISHPSSB)",
     "id": "saopaulo2_2017",
     "issued": {
       "date-parts": [
@@ -2292,7 +2384,7 @@
         ]
       ]
     },
-    "title": "What counterpart to the principle of inertia in population genetics ?",
+    "title": "What counterpart to the principle of inertia in Population Genetics ?",
     "type": "paper-conference"
   },
   {
@@ -2315,7 +2407,7 @@
         "given": "C."
       }
     ],
-    "container-title": "Colloque du labex \"who am i?\" 2016",
+    "container-title": "Colloque du labex \"Who am I?\" 2016",
     "genre": "Poster",
     "id": "whoami2016",
     "issued": {
@@ -2338,7 +2430,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Demi-journée stephen jay gould",
+    "container-title": "Demi-journée Stephen Jay Gould",
     "id": "gould17",
     "issued": {
       "date-parts": [
@@ -2349,7 +2441,7 @@
         ]
       ]
     },
-    "title": "Raisonnements physico-mathématiques et historicité du vivant: Actualité d’une tension conceptuelle cruciale chez gould",
+    "title": "Raisonnements physico-mathématiques et historicité du vivant: actualité d’une tension conceptuelle cruciale chez Gould",
     "title-short": "Raisonnements physico-mathématiques et historicité du vivant",
     "type": "paper-conference"
   },
@@ -2362,7 +2454,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Colloque : Modèles mathématiques et prévisions: Leurs usages et abus dans les sciences humaines et les sciences de la nature",
+    "container-title": "Colloque : Modèles mathématiques et prévisions: leurs usages et abus dans les sciences humaines et les sciences de la nature",
     "id": "nantes17",
     "issued": {
       "date-parts": [
@@ -2373,7 +2465,7 @@
         ]
       ]
     },
-    "title": "Critique de la raison physico-mathématique en biologie : Comment comprendre la morphogénèse chez le vivant?",
+    "title": "Critique de la raison physico-mathématique en biologie : comment comprendre la morphogénèse chez le vivant?",
     "title-short": "Critique de la raison physico-mathématique en biologie ",
     "type": "paper-conference"
   },
@@ -2408,7 +2500,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Discussion autour de la modélisation de cellules en interactions (h. Bersini, m. montévil)",
+    "container-title": "Discussion autour de la modélisation de cellules en interactions (H. Bersini, M. Montévil)",
     "id": "isc16",
     "issued": {
       "date-parts": [
@@ -2419,7 +2511,7 @@
         ]
       ]
     },
-    "title": "Modélisation de l’organogénèse mammaire à partir de principes biologiques premiers: Les cellules et leurs contraintes physiques.",
+    "title": "Modélisation de l’organogénèse mammaire à partir de principes biologiques premiers: les cellules et leurs contraintes physiques.",
     "title-short": "Modélisation de l’organogénèse mammaire à partir de principes biologiques premiers",
     "type": "paper-conference"
   },
@@ -2431,7 +2523,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Master de philosophie, parcours « logique et philosophie des sciences » (LOPHISC), cours de philosophie de la biologie (M1)",
+    "container-title": "Master de philosophie, Parcours « Logique et philosophie des sciences » (LOPHISC), Cours de Philosophie de la Biologie (M1)",
     "id": "coursihpst",
     "issued": {
       "date-parts": [
@@ -2452,7 +2544,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Master de philosophie, parcours « logique et philosophie des sciences » (LOPHISC), cours de philosophie de la biologie (M1)",
+    "container-title": "Master de philosophie, Parcours « Logique et philosophie des sciences » (LOPHISC), Cours de Philosophie de la Biologie (M1)",
     "id": "coursihpst2",
     "issued": {
       "date-parts": [
@@ -2474,7 +2566,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Colloque cathy dufour 2016 : Symétries, invariances et classifications.",
+    "container-title": "Colloque Cathy Dufour 2016 : Symétries, invariances et classifications.",
     "id": "nancy16",
     "issued": {
       "date-parts": [
@@ -2511,7 +2603,7 @@
         ]
       ]
     },
-    "title": "La nouveauté en biologie : Discussion autour des concepts de bergson",
+    "title": "La nouveauté en biologie : discussion autour des concepts de Bergson",
     "title-short": "La nouveauté en biologie ",
     "type": "paper-conference"
   },
@@ -2523,7 +2615,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Séminaire smile",
+    "container-title": "Séminaire Smile",
     "id": "smile16",
     "issued": {
       "date-parts": [
@@ -2557,7 +2649,7 @@
         ]
       ]
     },
-    "title": "Principes théoriques pour les organismes : Principes de variation et d’organisation. ",
+    "title": "Principes théoriques pour les organismes : principes de variation et d’organisation. ",
     "title-short": "Principes théoriques pour les organismes ",
     "type": "paper-conference"
   },
@@ -2574,7 +2666,7 @@
         "given": "M."
       }
     ],
-    "container-title": "International workshop: Stability and variation in biological systems",
+    "container-title": "International Workshop: Stability and Variation in Biological Systems",
     "id": "sanseb16",
     "issued": {
       "date-parts": [
@@ -2585,7 +2677,7 @@
         ]
       ]
     },
-    "title": "Modeling mammary organogenesis from biological first principles: Cells and their physical constraints",
+    "title": "Modeling mammary organogenesis from biological first principles: cells and their physical constraints",
     "title-short": "Modeling mammary organogenesis from biological first principles",
     "type": "paper-conference"
   },
@@ -2597,7 +2689,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Séminaire laboratoire : Evolution des régulations endocriniennes",
+    "container-title": "Séminaire Laboratoire : Evolution des Régulations Endocriniennes",
     "id": "barbara2015",
     "issued": {
       "date-parts": [
@@ -2620,7 +2712,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Who am i? Labex retreat",
+    "container-title": "Who am I? Labex Retreat",
     "id": "labex_2015",
     "issued": {
       "date-parts": [
@@ -2647,7 +2739,7 @@
         "given": "A."
       }
     ],
-    "container-title": "The III international vasculab conference",
+    "container-title": "The III International Vasculab Conference",
     "id": "napoli_2015",
     "issued": {
       "date-parts": [
@@ -2746,7 +2838,7 @@
         "given": "M."
       }
     ],
-    "container-title": "La pensée des sciences. Rôles des pratiques épistémologiques dans la fabrication contemporaine des savoirs scientifiques",
+    "container-title": "La Pensée des Sciences. Rôles des pratiques épistémologiques dans la fabrication contemporaine des savoirs scientifiques",
     "id": "nice_2015",
     "issued": {
       "date-parts": [
@@ -2771,7 +2863,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Séminaire explabio",
+    "container-title": "Séminaire Explabio",
     "id": "explabio_2015",
     "issued": {
       "date-parts": [
@@ -2798,7 +2890,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Biological complexity and organization: Theoretical approaches and applications",
+    "container-title": "Biological complexity and organization: theoretical approaches and applications",
     "id": "pascal_2015",
     "issued": {
       "date-parts": [
@@ -2809,7 +2901,7 @@
         ]
       ]
     },
-    "title": "Theoretical principles for biology: Organization and variation",
+    "title": "Theoretical principles for biology: organization and variation",
     "title-short": "Theoretical principles for biology",
     "type": "paper-conference"
   },
@@ -2826,7 +2918,7 @@
         "given": "P. A."
       }
     ],
-    "container-title": "Séminaire de la chaire blaise pascal d’a. soto",
+    "container-title": "Séminaire de la chaire Blaise Pascal d’A. Soto",
     "id": "pascal2015",
     "issued": {
       "date-parts": [
@@ -2852,7 +2944,7 @@
         "given": "M."
       }
     ],
-    "container-title": "L’évaluation face aux enjeux globaux — biologie, techniques et vulnérabilités",
+    "container-title": "L’évaluation face aux enjeux globaux — Biologie, techniques et vulnérabilités",
     "id": "evaglo2014",
     "issued": {
       "date-parts": [
@@ -2879,7 +2971,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Séminaire de biologie de m. gromov",
+    "container-title": "Séminaire de biologie de M. Gromov",
     "id": "IHES2014",
     "issued": {
       "date-parts": [
@@ -2905,7 +2997,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Evolution, development and cancer",
+    "container-title": "Evolution, Development and Cancer",
     "id": "carlos2014",
     "issued": {
       "date-parts": [
@@ -2928,7 +3020,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Ve congrès de la société de philosophie des sciences. Métaphysique des sciences.",
+    "container-title": "Ve Congrès de la Société de Philosophie des Sciences. Métaphysique des sciences.",
     "id": "sps2014",
     "issued": {
       "date-parts": [
@@ -2949,7 +3041,7 @@
         "given": "M."
       }
     ],
-    "container-title": "École de printemps de la société francophone de biologie théorique. Le vivant critique et chaotique.",
+    "container-title": "École de printemps de la Société Francophone de Biologie Théorique. Le vivant critique et chaotique.",
     "id": "stflour2014",
     "issued": {
       "date-parts": [
@@ -2971,7 +3063,7 @@
         "given": "M."
       }
     ],
-    "container-title": "School of science and technology",
+    "container-title": "School of Science and Technology",
     "id": "cam2",
     "issued": {
       "date-parts": [
@@ -2993,7 +3085,7 @@
         "given": "M."
       }
     ],
-    "container-title": "School of science and technology",
+    "container-title": "School of Science and Technology",
     "id": "cam1",
     "issued": {
       "date-parts": [
@@ -3016,7 +3108,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Séminaire du CAMS, systèmes complexes en sciences sociales",
+    "container-title": "Séminaire du CAMS, Systèmes complexes en sciences sociales",
     "id": "cams",
     "issued": {
       "date-parts": [
@@ -3027,7 +3119,7 @@
         ]
       ]
     },
-    "title": "La notion de mesure : De la physique à la biologie.",
+    "title": "La notion de mesure : de la physique à la biologie.",
     "title-short": "La notion de mesure ",
     "type": "paper-conference"
   },
@@ -3039,7 +3131,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Cours: Complexité biologique et organisation : Démarches théoriques et applications expérimentales.",
+    "container-title": "Cours: complexité biologique et organisation : démarches théoriques et applications expérimentales.",
     "id": "ensbp",
     "issued": {
       "date-parts": [
@@ -3061,7 +3153,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Cours: Complexité biologique et organisation : Démarches théoriques et applications expérimentales.",
+    "container-title": "Cours: Complexité biologique et organisation : démarches théoriques et applications expérimentales.",
     "id": "mhnm",
     "issued": {
       "date-parts": [
@@ -3092,7 +3184,7 @@
         ]
       ]
     },
-    "title": "La notion de mesure : De la physique à la biologie",
+    "title": "La notion de mesure : de la physique à la biologie",
     "title-short": "La notion de mesure ",
     "type": "paper-conference"
   },
@@ -3126,7 +3218,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Soto and sonnenschein lab",
+    "container-title": "Soto and Sonnenschein lab",
     "id": "mtufts",
     "issued": {
       "date-parts": [
@@ -3136,7 +3228,7 @@
         ]
       ]
     },
-    "title": "Collagen organization in 3D cultures, from physical to biological self-organization",
+    "title": "Collagen organization in 3D cultures, From physical to biological self-organization",
     "type": "paper-conference"
   },
   {
@@ -3154,7 +3246,7 @@
         "given": "A."
       }
     ],
-    "container-title": "Evolution des formes : Contraintes - adaptation",
+    "container-title": "Evolution des Formes : Contraintes - Adaptation",
     "id": "po12",
     "issued": {
       "date-parts": [
@@ -3164,7 +3256,7 @@
         ]
       ]
     },
-    "title": "Symmetry changes and enablement in the evolution of the biosphere: Their impact on biological theoretizing",
+    "title": "Symmetry changes and enablement in the evolution of the biosphere: their impact on biological theoretizing",
     "title-short": "Symmetry changes and enablement in the evolution of the biosphere",
     "type": "paper-conference"
   },
@@ -3188,7 +3280,7 @@
         "given": "G."
       }
     ],
-    "container-title": "Meeting of the international society for history, philosophy and social studies of biology",
+    "container-title": "Meeting of the International Society for History, Philosophy and Social Studies of Biology",
     "id": "ssml",
     "issued": {
       "date-parts": [
@@ -3223,7 +3315,7 @@
         ]
       ]
     },
-    "title": "Intra-organismal ecology: Niche construction and gene therapy",
+    "title": "Intra-organismal ecology: niche construction and gene therapy",
     "title-short": "Intra-organismal ecology",
     "type": "paper-conference"
   },
@@ -3259,7 +3351,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Journée d’études l’anneau des disciplines",
+    "container-title": "Journée d’études L’anneau des disciplines",
     "id": "mm9",
     "issued": {
       "date-parts": [
@@ -3287,7 +3379,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Workshop on artificial autonomy ECAL 2011",
+    "container-title": "Workshop on Artificial Autonomy ECAL 2011",
     "id": "mm11b",
     "issued": {
       "date-parts": [
@@ -3313,7 +3405,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Self-organization in biology: Scope and limits",
+    "container-title": "Self-Organization in Biology: scope and limits",
     "id": "mm11a",
     "issued": {
       "date-parts": [
@@ -3324,7 +3416,7 @@
         ]
       ]
     },
-    "title": "From physics to biology by symmetry breakings",
+    "title": "From Physics to Biology by symmetry breakings",
     "type": "paper-conference"
   },
   {
@@ -3347,7 +3439,7 @@
         ]
       ]
     },
-    "title": "Géométrie du temps biologique : Rythmes et protension",
+    "title": "Géométrie du temps biologique : rythmes et protension",
     "title-short": "Géométrie du temps biologique ",
     "type": "paper-conference"
   },
@@ -3362,7 +3454,7 @@
         "given": "A."
       }
     ],
-    "container-title": "Workshop: Multilevel causation",
+    "container-title": "Workshop: multilevel causation",
     "id": "mm10a",
     "issued": {
       "date-parts": [
@@ -3373,8 +3465,8 @@
         ]
       ]
     },
-    "title": "Multilevel causation and criticality: From physics to biology",
-    "title-short": "Multilevel causation and criticality",
+    "title": "Multilevel Causation and criticality: from physics to biology",
+    "title-short": "Multilevel Causation and criticality",
     "type": "paper-conference"
   },
   {
@@ -3385,7 +3477,7 @@
         "given": "M."
       }
     ],
-    "container-title": "LIGC 2009 \"egalité, identité, isomorphisme\"",
+    "container-title": "LIGC 2009 \"Egalité, identité, isomorphisme\"",
     "id": "mm09c",
     "issued": {
       "date-parts": [
@@ -3410,7 +3502,7 @@
         "given": "A."
       }
     ],
-    "container-title": "Les paradigmes de l’écologie : Modélisation, économie, et éthique de l’environnement",
+    "container-title": "Les paradigmes de l’écologie : modélisation, économie, et éthique de l’environnement",
     "id": "mm09b",
     "issued": {
       "date-parts": [
@@ -3421,7 +3513,7 @@
         ]
       ]
     },
-    "title": "Niche écologique: Splendeurs et décadence",
+    "title": "Niche écologique: splendeurs et décadence",
     "title-short": "Niche écologique",
     "type": "paper-conference"
   },
@@ -3444,7 +3536,7 @@
         ]
       ]
     },
-    "title": "Explorer la singularité physique du vivant: Temps biologique, criticité étendue et anti-entropie.",
+    "title": "Explorer la singularité physique du vivant: temps biologique, criticité étendue et anti-entropie.",
     "title-short": "Explorer la singularité physique du vivant",
     "type": "paper-conference"
   },
@@ -3467,7 +3559,7 @@
         ]
       ]
     },
-    "title": "Commentaire de réseaux de régulation biologiques et causalité complexe (annick lesne)",
+    "title": "Commentaire de Réseaux de régulation biologiques et causalité complexe (Annick Lesne)",
     "type": "paper-conference"
   },
   {
@@ -3507,7 +3599,7 @@
       ]
     },
     "publisher-place": "16th International Congress of Endocrinology and Endocrine Society’s 96th Annual Meeting & Expo ICE/ENDO 2014, Chicago",
-    "title": "A novel 3D model to study the link between hormonal exposure and mammographic density in breast cancer",
+    "title": "A Novel 3D Model to Study the Link Between Hormonal Exposure and Mammographic Density in Breast Cancer",
     "type": ""
   },
   {
@@ -3551,7 +3643,7 @@
       ]
     },
     "publisher-place": "16th International Congress of Endocrinology and Endocrine Society’s 96th Annual Meeting & Expo ICE/ENDO 2014, Chicago",
-    "title": "Development of software for automated morphology analysis (SAMA) to analyze morphogenic effects of mammotrophic hormones in vitro",
+    "title": "Development of Software for Automated Morphology Analysis (SAMA) to analyze morphogenic effects of mammotrophic hormones in vitro",
     "type": ""
   },
   {
@@ -3589,7 +3681,7 @@
         "given": "M."
       }
     ],
-    "container-title": "Colloque biodiversity resilience",
+    "container-title": "Colloque Biodiversity Resilience",
     "id": "div_2015",
     "issued": {
       "date-parts": [
@@ -3623,7 +3715,7 @@
         ]
       ]
     },
-    "title": "Séminaire 2020-2021 : Vie - numérique - santé",
+    "title": "Séminaire 2020-2021 : Vie - Numérique - Santé",
     "title-short": "Séminaire 2020-2021 ",
     "type": "book"
   },
@@ -3651,7 +3743,7 @@
         ]
       ]
     },
-    "title": "Séminaire 2021-2022 : Vie - numérique - santé",
+    "title": "Séminaire 2021-2022 : Vie - Numérique - Santé",
     "title-short": "Séminaire 2021-2022 ",
     "type": "book"
   },
@@ -3712,8 +3804,8 @@
         ]
       ]
     },
-    "title": "Entretiens du nouveau monde industriel 2020 : Prendre soin de l’informatique et des générations.",
-    "title-short": "Entretiens du nouveau monde industriel 2020 ",
+    "title": "Entretiens du Nouveau Monde Industriel 2020 : prendre soin de l’informatique et des générations.",
+    "title-short": "Entretiens du Nouveau Monde Industriel 2020 ",
     "type": "book"
   },
   {
@@ -3761,7 +3853,7 @@
         ]
       ]
     },
-    "title": "Colloque: Biodiversity resilience",
+    "title": "Colloque: Biodiversity Resilience",
     "title-short": "Colloque",
     "type": "book"
   },
@@ -3788,8 +3880,8 @@
         ]
       ]
     },
-    "title": "IAS-IHPST workshop: Boundaries and levels of biological organization",
-    "title-short": "IAS-IHPST workshop",
+    "title": "IAS-IHPST Workshop: Boundaries and levels of biological organization",
+    "title-short": "IAS-IHPST Workshop",
     "type": "book"
   },
   {
@@ -3841,8 +3933,8 @@
         ]
       ]
     },
-    "title": "Rencontre cardano: Transitions et crises : Mathématiques, finance, écosystèmes",
-    "title-short": "Rencontre cardano",
+    "title": "Rencontre Cardano: Transitions et crises : mathématiques, finance, écosystèmes",
+    "title-short": "Rencontre Cardano",
     "type": "book"
   },
   {
@@ -3871,7 +3963,7 @@
         ]
       ]
     },
-    "title": "Symposium: The science of systems and life: Alternative philosophies, new mathematics",
+    "title": "Symposium: The science of systems and life: alternative philosophies, new mathematics",
     "title-short": "Symposium",
     "type": "book"
   },
@@ -3898,7 +3990,7 @@
         ]
       ]
     },
-    "title": "La médecine au chevet de l’IA médicale : Nécessité d’un fondement théorique du vivant pour aborder les nouvelles technologies de manière rationnelle",
+    "title": "La médecine au chevet de l’IA médicale : nécessité d’un fondement théorique du vivant pour aborder les nouvelles technologies de manière rationnelle",
     "title-short": "La médecine au chevet de l’IA médicale ",
     "type": "book"
   },
@@ -3924,7 +4016,7 @@
         ]
       ]
     },
-    "title": "Colloque: Vie – numérique - santé",
+    "title": "Colloque: Vie – Numérique - Santé",
     "title-short": "Colloque",
     "type": "book"
   }
