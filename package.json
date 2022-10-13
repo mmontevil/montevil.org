@@ -61,7 +61,7 @@
     "@rollup/plugin-node-resolve": "^15.0.0",
     "@rollup/plugin-replace": "^5.0.0",
     "@sindresorhus/slugify": "1.1.2",
-    "approx-string-match": "^1.1.0",
+    "approx-string-match": "^2.0.0",
     "autoprefixer": "^10.4.12",
     "babel-loader": "^8.2.5",
     "bent": "^7.3.12",
