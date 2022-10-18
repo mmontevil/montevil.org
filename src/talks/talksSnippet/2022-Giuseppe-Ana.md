@@ -67,11 +67,11 @@ _From the semantics of programming languages to the Condorcet paradox._
 
 14:00 Introduction by Mathias Girel (Responsable du Centre Cavaillès, Maître de conférences ENS-PSL, UAR 3608 République des Savoirs, ENS-Collège de France-CNRS)
 
-14:10 Nicolas Cabaton (INRAE, Research Center in Food Toxicology, Université de Toulouse, INRAE, ENVT, INP-Purpan, UPS)
-_Endocrine disruptors: from their epistemology to our exposome, invading our daily products, until reaching our plates..._
-
-14:40 Barbara Demeneix (in streaming) (Professeure émérite, Physiologie moléculaire et adaptation, UMR 7221, Muséum National d'Histoire Naturelle)
+14:10 Barbara Demeneix (in streaming) (Professeure émérite, Physiologie moléculaire et adaptation, UMR 7221, Muséum National d'Histoire Naturelle)
 _From Wingspread and Even More_
+
+14:40 _ Nicolas Cabaton (INRAE, Research Center in Food Toxicology, Université de Toulouse, INRAE, ENVT, INP-Purpan, UPS)
+_Endocrine disruptors: from their epistemology to our exposome, invading our daily products, until reaching our plates..._
 
 15:10 Round table with Ana Soto
 

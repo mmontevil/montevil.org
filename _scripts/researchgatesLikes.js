@@ -19,8 +19,8 @@ async function login(driver) {
     driver.executeScript("return 'initialised'");
   await driver.get('https://www.researchgate.net/login');
   await driver.wait(() => documentInitialised(), 10000);
-  await sleep(1000);
-  await driver.findElement(By.xpath("//button[@mode='secondary'][3]")).click();
+  await sleep(2000);
+  await driver.findElement(By.xpath("//button[@mode='primary']")).click();
   await driver.findElement(By.name('login')).sendKeys(RG_LOGIN);
   await driver.findElement(By.name('password')).sendKeys(RG_MDP);
   await sleep(1000);

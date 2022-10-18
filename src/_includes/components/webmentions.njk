@@ -3,8 +3,9 @@
 {% set allMentionsSize = allMentions | size %}
 
 {% set citationSize = 0 %}
-{% if gsentry and gsentry[1].length >0%}
- {% set citationSize =gsentry[1].length%}
+{{ gsentry | dump(2) }}
+{% if gsentry and gsentry.citing.length >0%}
+ {% set citationSize =gsentry.citing.length%}
 {% endif %}
 {% set allMentionsSize = allMentionsSize+citationSize  %}
 

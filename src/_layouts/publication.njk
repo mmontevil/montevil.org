@@ -27,28 +27,28 @@ eleventyComputed:
 
  
  {#
- {% if gsentry[1].length >0%}
+ {% if gsentry.citing.length >0%}
  <aside class="wrap">
 <h2 class="sectionHead" id="citedby">Cited by</h2>
 
  <ol class="citedBy">
-{% for article in gsentry[1]%}
+{% for article in gsentry[0].citing%}
  <li >
  
 
-{% for auth in article.author_id%}
- {% authors article.bib.author[loop.index0], auth, people %}
+{% for auth in article.authorsid%}
+ {% authors article.authors[loop.index0], auth, people %}
  {%- if loop.revindex >2 -%}, {%endif-%}{%- if loop.revindex ===2 %} & {%endif-%}{%- if loop.revindex ===1 %}.{%endif-%}
 {%endfor%} 
 
-{% if not article.bib.pub_year=="NA"%}{{article.bib.pub_year}}. {%endif%}
-{% if article.bib.venue=="NA"%}<i>{%endif%}
-{{article.bib.title | title}}.
-{% if article.bib.venue=="NA"%}</i>{%else%}
-<i>{{article.bib.venue | title-}}</i>.{%endif%}
-{% if not article.pub_url==""%}<a href="{{article.pub_url}}">Publisher</a> {%endif%}
-{% if not article.eprint_url==""%}
-<a href="{{article.eprint_url}}">Eprint </a>
+{% if not article.year=="NA"%}{{article.year}}. {%endif%}
+{% if article.journal=="NA"%}<i>{%endif%}
+{{article.title | title}}.
+{% if article.journal=="NA"%}</i>{%else%}
+<i>{{article.journal | title-}}</i>.{%endif%}
+{% if not article.mainlink==""%}<a href="{{article.mainlink}}">Publisher</a> {%endif%}
+{% if not article.pdflink==""%}
+<a href="{{article.pdflink}}">Eprint </a>
 {%endif%}
 
  </li >

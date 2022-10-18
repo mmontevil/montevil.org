@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2022-07-07T23:49:51.245Z",
+  "lastFetched": "2022-10-15T02:26:53.897Z",
   "webmentions": [
     {
       "type": "entry",
@@ -1602,6 +1602,28 @@
         "text": "An interesting post-doctoral position for anyone interested in the intersection of modeling and theoretical/developmental biology! \n montevil.org/posts/2022-pos…"
       },
       "mention-of": "https://montevil.org/posts/2022-postdoc/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Maël Montévil",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/07d1c3aa87b72ef79821aeff5c951ad71a4db85137dac8642d43af64650b1106.jpg",
+        "url": "https://twitter.com/MMontevil"
+      },
+      "url": "https://twitter.com/MMontevil/status/1580522641945169920",
+      "published": "2022-10-13T11:35:37+00:00",
+      "wm-received": "2022-10-14T07:12:42Z",
+      "wm-id": 1538248,
+      "wm-source": "https://brid.gy/post/twitter/MMontevil/1580522641945169920",
+      "wm-target": "https://montevil.org/talks/2022--inter/",
+      "content": {
+        "html": "On the 21 and 22 October, there will be a Colloquium in honor of Giuseppe Longo and Ana Soto in <a href=\"https://twitter.com/ENS_ULM\">@ENS_ULM</a>  with <a href=\"https://twitter.com/ArsIndustrialis\">@ArsIndustrialis</a> for their 150th birthday (combined) \n<a href=\"https://republique-des-savoirs.fr/events/event/from-foundations-of-mathematics-to-the-epistemology-of-new-interfaces-a-colloquium-in-honor-of-ana-soto-and-giuseppe-longo/\">republique-des-savoirs.fr/events/event/f…</a>\n<a href=\"https://montevil.org/talks/2022--inter/\">montevil.org/talks/2022--in…</a>",
+        "text": "On the 21 and 22 October, there will be a Colloquium in honor of Giuseppe Longo and Ana Soto in @ENS_ULM  with @ArsIndustrialis for their 150th birthday (combined) \nrepublique-des-savoirs.fr/events/event/f…\nmontevil.org/talks/2022--in…"
+      },
+      "mention-of": "https://montevil.org/talks/2022--inter/",
       "wm-property": "mention-of",
       "wm-private": false
     }

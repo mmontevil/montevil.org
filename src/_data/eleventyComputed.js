@@ -488,16 +488,16 @@ module.exports = {
 
       title = slugifyString(title.toLowerCase());
       let temp = 0;
-      for (const entry in data.scholar) {
+      for (const entry in data.scholar2) {
         if (
           search(
-            slugifyString(data.scholar[entry][0].bib.title.toLowerCase()),
+            slugifyString(data.scholar2[entry].title.toLowerCase()),
             title,
             4
           ).length > 0
         ) {
           temp = temp + 1;
-          res = res.concat(data.scholar[entry]);
+          res = data.scholar2[entry];
         }
       }
     }
@@ -602,8 +602,8 @@ module.exports = {
   },
   citationSize: (data) => {
     let citationSize = 0;
-    if (data.gsentry && data.gsentry[1] && data.gsentry[1].length > 0)
-      citationSize = data.gsentry[1].length;
+    if (data.gsentry && data.gsentry.citing && data.gsentry.citing.length > 0)
+      citationSize = data.gsentry.citing.length;
 
     return citationSize;
   },

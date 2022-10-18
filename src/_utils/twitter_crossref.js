@@ -30,7 +30,7 @@ async function getTweet(tweetId, target, source) {
     }
 
     if (tweetViewModel['wm-property'] == 'mention-of') {
-      if (tweetViewModel['retweetUpdated'] !== day && tweetId!== '1274042713973940224' && tweetId!== '1274390945623085057') {
+      if (tweetViewModel['retweetUpdated'] !== day && tweetId!== '1274042713973940224' && tweetId!== '1274390945623085057'  && tweetId!== '903698254621274112'  && tweetId!== '903700965777428481'&& tweetId!== '1533431697546661890' ) {
         let livereTweet = await fetchreTweet(tweetId);
 
         if (livereTweet) {

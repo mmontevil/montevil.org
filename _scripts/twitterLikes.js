@@ -3,6 +3,7 @@ const moment = require('moment');
 const { promises: fs } = require('fs');
 const syncFs = require('fs');
 require('dotenv').config();
+const chrome = require('selenium-webdriver/chrome');
 
 const TWITTER_MDP = process.env.TWITTER_MDP;
 const TWITTER_LOGIN = process.env.TWITTER_LOGIN;
@@ -13,12 +14,18 @@ function sleep(ms) {
   });
 }
 async function login(driver) {
-  const documentInitialised = () =>
-    driver.executeScript("return 'initialised'");
+  const documentInitialised = () => driver.executeScript("return 'initialised'");
   await driver.get('https://twitter.com/login');
     await sleep(10000);
   await driver.wait(() => documentInitialised(), 10000);
   await sleep(1000);
+try{  
+  await driver.findElements(By.id("close")).click();
+        await sleep(1000);
+}catch{}
+  await driver
+    .findElement(By.xpath("//input"))
+    .click();
   await driver
     .findElement(By.xpath("//input"))
     .sendKeys(TWITTER_LOGIN);
@@ -45,9 +52,16 @@ let cachePath2 = path.join(appRoot, '_cache', 'tweetsMentions.json');
 let res = {};
 
 (async function example() {
-  let driver = await new Builder().forBrowser('firefox').build();
-  const documentInitialised = () =>
-    driver.executeScript("return 'initialised'");
+  let driver = await new Builder().withCapabilities({
+        'goog:chromeOptions': {
+            excludeSwitches: [
+                'enable-automation',
+                'useAutomationExtension',
+            ],
+        },
+    })
+    .forBrowser('chrome').build();
+  const documentInitialised = () => driver.executeScript("return 'initialised'");
   try {
     if (syncFs.existsSync(cachePath)) {
       let fileres = await fs.readFile(cachePath, 'utf8');
