@@ -28,9 +28,14 @@ async function getTweet(tweetId, target, source) {
       changed = true;
       cachedTweets[tweetViewModel['id_str']] = tweetViewModel;
     }
-
+    const deletedTweets=['1257446833674125315',
+'1274042713973940224',
+ '1274390945623085057',
+'903698254621274112',
+'903700965777428481',
+'1533431697546661890']; 
     if (tweetViewModel['wm-property'] == 'mention-of') {
-      if (tweetViewModel['retweetUpdated'] !== day && tweetId!== '1274042713973940224' && tweetId!== '1274390945623085057'  && tweetId!== '903698254621274112'  && tweetId!== '903700965777428481'&& tweetId!== '1533431697546661890' ) {
+      if (tweetViewModel['retweetUpdated'] !== day && !deletedTweets.includes(tweetId)) {
         let livereTweet = await fetchreTweet(tweetId);
 
         if (livereTweet) {

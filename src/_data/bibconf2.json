@@ -1,6 +1,25 @@
 [
     {
         "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2022-save-our-seeds",
+        "fields": {
+            "booktitle": "The Alphabet of Complexity Webinar Series",
+            "year": "2022",
+            "month": "11",
+            "location": "Save Our Seeds",
+            "language": "en",
+            "abstract": "This webinar will be our eleventh meeting within the series of The Alphabet of Complexity webinars. The letter K (as in “kaleidoscope”) will guide us through the main questions of the day: What are the paradigms we live by? What are the implications of research which is genome-centred and how to compare it with the research based on the organism-oriented scientific paradigm? The lectures of three key speakers (Giuseppe Longo, Angelika Hilbeck, Maël Montévil) will be followed by a discussion on how these specific paradigms can inform our actions for the purity of seeds and against GMOs.",
+            "day": "9",
+            "url": "https://www.saveourseeds.org/index.php?id=4230",
+            "illustration": "saveourseeds.webp",
+            "twittermention": "1584439488939315200",
+            "author": "Giuseppe Longo and Angelika Hilbeck and Maël Montévil",
+            "title": "K as in \"kaleidoscope\""
+        }
+    },
+    {
+        "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "2022-Giuseppe-Ana",
         "fields": {
@@ -16,6 +35,7 @@
             "twittermention": "1580522641945169920",
             "illustration": "longo-soto.png",
             "program": "Colloquium-Longo-Soto.pdf",
+            "video": "https://youtu.be/laiXb0REVcs",
             "author": " Maël Montévil and Barbara Bravi and José Antonio Pérez Escobar"
         }
     },

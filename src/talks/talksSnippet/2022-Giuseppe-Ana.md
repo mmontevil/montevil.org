@@ -39,6 +39,8 @@ Online: zoom (email one of the organizers)
 
 #### **Morning - Session 1: The Society of Cells.**  Chair: Matteo Mossio
 
+https://youtu.be/laiXb0REVcs 
+
 09:30 General introduction by the organizers
 
 09:45 Carlos Sonnenschein (Department of Immunology, Tufts University School of Medicine. Associated to Centre Cavaillès)
@@ -53,6 +55,8 @@ _A propos de « la société de cellules », de Soto et Sonnenschein_
 
 #### **Morning - Session 2: Foundations of Mathematics and Computing.** Chair: Barbara Bravi
 
+https://youtu.be/JysWF0DYZqY 
+
 11:15 Simone Martini (Università di Bologna Dipartimento di Informatica, Scienza e Ingegneria)
 _Giving meaning to computations: the birth of a mathematical theory of computation_
 
@@ -64,6 +68,8 @@ _From the semantics of programming languages to the Condorcet paradox._
 12:30 – 14:00 Lunch
 
 #### **Afternoon - Session 3: Endocrine disruptors.**  Chair: Mathias Girel
+
+https://youtu.be/4LnjaXetGB0 
 
 14:00 Introduction by Mathias Girel (Responsable du Centre Cavaillès, Maître de conférences ENS-PSL, UAR 3608 République des Savoirs, ENS-Collège de France-CNRS)
 
@@ -78,6 +84,8 @@ _Endocrine disruptors: from their epistemology to our exposome, invading our dai
 15:40 Break
 
 #### **Afternoon - Session 4: Interface of Mathematics with Physics and Biology.**  Chair: Josè Antonio Perez Escobar
+
+https://youtu.be/7yjVe2sBf4Q 
 
 16:00 Short introduction by Josè Antonio Perez Escobar
 
@@ -100,6 +108,8 @@ _Assemblage dynamics_
 
 #### **Morning - Session 5: Theory of Organisms.**  Chair: Alberto Vianelli
 
+https://youtu.be/rjUx0-njoiA 
+
 9:30 Short introduction by Maël Montévil
 
 9:40 Angelika Hilbeck (in streaming) (Institute for Integrative Biology in the Department of Environmental Systems Science at ETH Zurich and ENSSER)
@@ -112,6 +122,8 @@ _A brilliant theory can be destroyed by a single experiment._ _But does it also 
 
 10:55 Break
 
+https://youtu.be/lICkiJa6WbU 
+
 11:10 Matteo Mossio (CNRS, Institut d'histoire et de philosophie des sciences et des techniques, UMR 8590, Paris 1)
 _Organisms as autonomous systems_
 
@@ -123,6 +135,8 @@ _Towards a theory of organisms: state and directions_
 13:00-14:30 Lunch
 
 #### **Afternoon - Session 6: Interface with humanities.**  Chair: Paul-Antoine Miquel
+
+https://youtu.be/Y9-7HveU4Gk 
 
 14:30 Short introduction by Paul-Antoine Miquel
 
@@ -138,6 +152,8 @@ _tbd_
 
 #### **Afternoon - Session 7: Taking care of the biosphere.**  Chair: Marie Chollat
 
+https://youtu.be/phYRAFnefRM 
+
 16:10 Introduction by Marie Chollat (Co-vice présidente de l'AAGT, Ingénieure Agroparistech, Docteur en Onco-immunologie)
 
 16:20 Andrea Angelini (EA 4008 - Laboratoire d'études et de recherches sur les logiques contemporaines de la philosophie, Université Paris 8 Vincennes Saint-Denis)
@@ -151,4 +167,7 @@ _Disruption relationnelle et développement des jeunes humains d'aujourd'hui_
 18:00 Conclusions by Giuseppe Longo and Ana Soto
 
 18:10 **Cocktail**
+
+
+
 
