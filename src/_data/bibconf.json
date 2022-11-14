@@ -1,5 +1,52 @@
 [
   {
+    "URL": "https://enmi-conf.org/wp/enmi22/",
+    "abstract": "Le terme de disruption est utilisé largement en biologie, mais il a été peu théorisé. Qu’est ce qui distingue les disruptions des perturbations ou du concept très générique de \"disturbances\" en écologie? Nous défendrons l’idée que les disruptions demandent de comprendre le vivant à la fois dans son historicité et de manière systémique. Au cours du temps, notamment évolutif, le vivant se transforme et fait apparaître des traits singuliers, qui sont fonctionnels grâce à leurs singularités. Ceci constitue ce que nous avons appelé par ailleurs l’anti-entropie. Alors le premier type de disruption est la randomisation de cette singularité, conduisant à une perte de viabilité, qu’il s’agit toutefois de définir avec précision. Il y a cependant un deuxième type de disruption. Si le premier type correspond à la perte du résultat de l’histoire constituant une organisation, le deuxième type correspond à la perte de la capacité à produire des nouveautés fonctionnelles. Dans les deux cas, les disruptions sont un aspect essentiellement qualitatif de l’Anthropocène et de ce qui atteint à la fois la biodiversité et la santé humaine.",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "ENMI 2022. Organisation du Vivant, Organologie des Savoirs Technodiversité, biodiversité, noodiversité : nouveaux régimes de l’habiter",
+    "id": "2022-ENMI",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          12,
+          15
+        ]
+      ]
+    },
+    "title": "Qu’appelle-t-on disruption en biologie?",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://www.unesco.org/fr/articles/journee-mondiale-de-la-philosophie-2022-lhumain-qui-vient",
+    "abstract": "Les biologistes décrivent actuellement une multitude de disruptions ayant lieu à tous les niveaux d’organisation du vivant, humains et non-humains. Ces disruptions proviennent principalement des technologies, qu’il s’agisse de la machine thermique issue de la première révolution industrielle, et du changement climatique subséquent, de la chimie avec notamment les perturbateurs endocriniens qui en sont issus, ou du numérique avec l’immixtion des écrans dans la relation parents-jeunes enfants (dans le cas des humains). Les infidélités du milieu ne sont pas étrangères au vivant comme le soulignait Canguilhem, mais la spécificité de ces disruption est leur rythme qui excède les capacité normative du vivant, humain et non-humain, conduisant à une contrepartie biologique de ce que Stiegler appelait la disruption comme régime actuel des sociétés humaines.<br> Nous insisterons sur les conséquences de ces disruptions concernant le développement humain, biologique et psychique, et nous indiquerons des réponses possibles face à ces disruptions.",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "L’humain qui vient",
+    "id": "2022-unesco",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          17
+        ]
+      ]
+    },
+    "title": "Technologie et vivant : disruption et normativité",
+    "title-short": "Technologie et vivant ",
+    "type": "paper-conference"
+  },
+  {
     "URL": "https://www.saveourseeds.org/index.php?id=4230",
     "abstract": "This webinar will be our eleventh meeting within the series of The Alphabet of Complexity webinars. The letter K (as in “kaleidoscope”) will guide us through the main questions of the day: What are the paradigms we live by? What are the implications of research which is genome-centred and how to compare it with the research based on the organism-oriented scientific paradigm? The lectures of three key speakers (Giuseppe Longo, Angelika Hilbeck, Maël Montévil) will be followed by a discussion on how these specific paradigms can inform our actions for the purity of seeds and against GMOs.",
     "author": [
@@ -29,6 +76,36 @@
     },
     "title": "K as in \"kaleidoscope\"",
     "type": "paper-conference"
+  },
+  {
+    "URL": "https://republique-des-savoirs.fr/events/event/7264/",
+    "abstract": "The other beginning of philosophy arrives through a rethinking of the very meaning of beginning. The beginning in this case involves those philosophical works and intuitions from out of which one begins. The political and ethical questions arose from within and from outside of the philosophical archives of the past that are also demanding a new sense for \"the history of philosophy. The deepest pre-conceptions of metaphysics which informs the sciences are being evaluated from out of the stasis in which several of the scientific pursuits find themselves today. For these reasons, the meaning of beginning is nothing simple.",
+    "author": [
+      {
+        "family": "Dwivedi",
+        "given": "Divya"
+      },
+      {
+        "family": "Mohan",
+        "given": "Shaj"
+      },
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "id": "2022-begining",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          11,
+          21
+        ]
+      ]
+    },
+    "title": "Principles of Beginning",
+    "type": "book"
   },
   {
     "URL": "https://republique-des-savoirs.fr/events/event/from-foundations-of-mathematics-to-the-epistemology-of-new-interfaces-a-colloquium-in-honor-of-ana-soto-and-giuseppe-longo/",

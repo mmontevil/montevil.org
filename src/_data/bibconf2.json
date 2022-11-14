@@ -2,6 +2,42 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "2022-ENMI",
+        "fields": {
+            "booktitle": "ENMI 2022. Organisation du Vivant, Organologie des Savoirs Technodiversité, biodiversité, noodiversité : nouveaux régimes de l’habiter",
+            "year": "2022",
+            "month": "12",
+            "location": "Centre Pompidou Paris",
+            "language": "fr",
+            "abstract": "Le terme de disruption est utilisé largement en biologie, mais il a été peu théorisé. Qu'est ce qui distingue les disruptions des perturbations ou du concept très générique de \"disturbances\" en écologie? Nous défendrons l'idée que les disruptions demandent de comprendre le vivant à la fois dans son historicité et de manière systémique. Au cours du temps, notamment évolutif, le vivant se transforme et fait apparaître des traits singuliers, qui sont fonctionnels grâce à leurs singularités. Ceci constitue ce que nous avons appelé par ailleurs l'anti-entropie. Alors le premier type de disruption est la randomisation de cette singularité, conduisant à une perte de viabilité, qu'il s'agit toutefois de définir avec précision. Il y a cependant un deuxième type de disruption. Si le premier type correspond à la perte du résultat de l'histoire constituant une organisation, le deuxième type correspond à la perte de la capacité à produire des nouveautés fonctionnelles. Dans les deux cas, les disruptions sont un aspect essentiellement qualitatif de l’Anthropocène et de ce qui atteint à la fois la biodiversité et la santé humaine.",
+            "day": "15",
+            "url": "https://enmi-conf.org/wp/enmi22/",
+            "author": "Maël Montévil",
+            "title": "Qu'appelle-t-on disruption en biologie?"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2022-unesco",
+        "fields": {
+            "booktitle": "L'humain qui vient",
+            "year": "2022",
+            "month": "11",
+            "location": "UNESCO Paris",
+            "language": "fr",
+            "abstract": "Les biologistes décrivent actuellement une multitude de disruptions ayant lieu à tous les niveaux d’organisation du vivant, humains et non-humains. Ces disruptions proviennent principalement des technologies, qu’il s’agisse de la machine thermique issue de la première révolution industrielle, et du changement climatique subséquent, de la chimie avec notamment les perturbateurs endocriniens qui en sont issus, ou du numérique avec l’immixtion des écrans dans la relation parents-jeunes enfants (dans le cas des humains). Les infidélités du milieu ne sont pas étrangères au vivant comme le soulignait Canguilhem, mais la spécificité de ces disruption est leur rythme qui excède les capacité normative du vivant, humain et non-humain, conduisant à une contrepartie biologique de ce que Stiegler appelait la disruption comme régime actuel des sociétés humaines.<br> Nous insisterons sur les conséquences de ces disruptions concernant le développement humain, biologique et psychique, et nous indiquerons des réponses possibles face à ces disruptions.",
+            "day": "17",
+            "url": "https://www.unesco.org/fr/articles/journee-mondiale-de-la-philosophie-2022-lhumain-qui-vient",
+            "program": "Colloque_UNESCO_Le_Fresnoy_Programme_16_17_18_nov_2022_04_11_22.pdf",
+            "illustration": "unesco.png",
+            "author": "Maël Montévil",
+            "title": "Technologie et vivant : disruption et normativité"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
         "entrykey": "2022-save-our-seeds",
         "fields": {
             "booktitle": "The Alphabet of Complexity Webinar Series",
@@ -16,6 +52,24 @@
             "twittermention": "1584439488939315200",
             "author": "Giuseppe Longo and Angelika Hilbeck and Maël Montévil",
             "title": "K as in \"kaleidoscope\""
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "proceedings",
+        "entrykey": "2022-begining",
+        "fields": {
+            "title": "Principles of Beginning",
+            "location": "10h30-12h30, Salle des Actes, École Normale Supérieure",
+            "year": "2022",
+            "month": "11",
+            "day": "21",
+            "annonce": "true",
+            "language": "en",
+            "abstract": "The other beginning of philosophy arrives through a rethinking of the very meaning of beginning. The beginning in this case involves those philosophical works and intuitions from out of which one begins. The political and ethical questions arose from within and from outside of the philosophical archives of the past that are also demanding a new sense for \"the history of philosophy. The deepest pre-conceptions of metaphysics which informs the sciences are being evaluated from out of the stasis in which several of the scientific pursuits find themselves today. For these reasons, the meaning of beginning is nothing simple.",
+            "illustration": "anastasis.jpg",
+            "url": "https://republique-des-savoirs.fr/events/event/7264/",
+            "author": "Divya Dwivedi and Shaj Mohan and Maël Montévil"
         }
     },
     {
@@ -194,6 +248,7 @@
             "day": "31",
             "annonce": "true",
             "language": "en",
+            "illustration": "anastasis.jpg",
             "abstract": "The multiple crises of philosophy (conceptual, institutional, vocational, political, economic) which have constituted a situation of more than crisis—a criticalisation—from which philosophy will not be able to recover into anything resembling what it was in the past. However, these moments of crises also offer a chance to question what were properly philosophical evils and initiate an inventive era of philosophy which will be able to comprehend a new relation with other disciplines including the sciences, psychoanalysis, politics, and technology. The analytic of the stasis of philosophy began with the tradition of deconstruction through Jacques Derrida, Jean-Luc Nancy, and Bernard Stiegler. Today we already have glimpses of philosophy in anastasis, or the experience of philosophy coming over stasis. The four speakers will outline and discuss the other beginning of philosophy.",
             "url": "https://republique-des-savoirs.fr/events/event/seminaire-the-anastasis-of-philosophy/",
             "twittermention": "1533837406113353731, 1535881857597902849, 1535679583537836034, 1534236773613723652, 1534084643670065154, 1533431697546661890, 1533138516108001282, 1531306334393614336, 1530814464039206913",

@@ -90,16 +90,17 @@ driver.executeScript("arguments[0].scrollBy(0,500)", scr);}finally {    }
 
       m = await driver.findElements(
         By.xpath(
-          "//div[@aria-label='Timeline: Liked by']/div/div/div/div[@data-testid='UserCell']/div/div[1]/div/div/div[2]/div/div[2]/div/a/div[3]/div/div[2]/div/img"
+          "//div[@aria-label='Timeline: Liked by']/div/div/div/div/div/div[1]/div/div/div/div/div/div[2]/div/a/div[3]/div/div[2]/div/img"
           )
       );
 
+      
       if (m.length > 0) {
         driver.executeScript('arguments[0].scrollIntoView();', m[m.length - 1]);
         await sleep(750);
         m = await driver.findElements(
           By.xpath(
-            "//div[@aria-label='Timeline: Liked by']/div/div/div/div[@data-testid='UserCell']/div/div[1]/div/div/div[2]/div/div[2]/div/a/div[3]/div/div[2]/div/img"
+            "//div[@aria-label='Timeline: Liked by']/div/div/div/div/div/div[1]/div/div/div/div/div/div[2]/div/a/div[3]/div/div[2]/div/img"
           )
         );
         driver.executeScript('arguments[0].scrollIntoView();', m[m.length - 1]);
@@ -107,12 +108,12 @@ driver.executeScript("arguments[0].scrollBy(0,500)", scr);}finally {    }
       }
       l = await driver.findElements(
         By.xpath(
-          "//div[@aria-label='Timeline: Liked by']/div/div/div/div[@data-testid='UserCell']/div/div[1]/div/div/div[2]/div/div[2]/div/a"
+          "//div[@aria-label='Timeline: Liked by']/div/div/div/div/div/div[1]/div/div/div/div/div/div[2]/div/a"
         )
       );
       m = await driver.findElements(
         By.xpath(
-          "//div[@aria-label='Timeline: Liked by']/div/div/div/div[@data-testid='UserCell']/div/div[1]/div/div/div[2]/div/div[2]/div/a/div[3]/div/div[2]/div/img"
+          "//div[@aria-label='Timeline: Liked by']/div/div/div/div/div/div[1]/div/div/div/div/div/div[2]/div/a/div[3]/div/div[2]/div/img"
         )
       );
 
