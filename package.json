@@ -112,7 +112,7 @@
     "postcss-cli": "^10.0.0",
     "postcss-hash": "^3.0.0",
     "postcss-var-optimize": "^0.0.4",
-    "prettier": "^2.7.1",
+    "prettier": "^2.8.0",
     "prettier-stylelint": "~0.4.2",
     "replaceall": "^0.1.6",
     "request": "^2.88.2",
