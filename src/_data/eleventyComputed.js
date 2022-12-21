@@ -8,7 +8,7 @@ const { writeToCache, readFromCache } = require('../_utils/cache');
 const PLUM_CACHE = '_cache/plumMention.json';
 const { tweettomention, wikiMention } = require('../_utils/twitter_crossref');
 //const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
-//const fetch = require('node-fetch');
+const fetch = require('node-fetch');
 
 const WEBMENTION_CACHE = '_cache/webmentions.json';
 const TWITL_WEBMENTION_CACHE = '_cache/tweetLikeMentions.json';

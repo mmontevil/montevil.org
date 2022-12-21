@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2022-10-15T02:26:53.897Z",
+  "lastFetched": "2022-12-18T01:41:23.995Z",
   "webmentions": [
     {
       "type": "entry",
@@ -1624,6 +1624,28 @@
         "text": "On the 21 and 22 October, there will be a Colloquium in honor of Giuseppe Longo and Ana Soto in @ENS_ULM  with @ArsIndustrialis for their 150th birthday (combined) \nrepublique-des-savoirs.fr/events/event/f…\nmontevil.org/talks/2022--in…"
       },
       "mention-of": "https://montevil.org/talks/2022--inter/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Noam Assayag",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4252df2de842c903ff833a21239310d391257e4506553a1e367165b049c8b4df.png",
+        "url": "https://twitter.com/Norkhat"
+      },
+      "url": "https://twitter.com/Norkhat/status/1603325376612155392",
+      "published": "2022-12-15T09:45:32+00:00",
+      "wm-received": "2022-12-16T07:17:54Z",
+      "wm-id": 1581987,
+      "wm-source": "https://brid.gy/post/twitter/MMontevil/1603325376612155392",
+      "wm-target": "https://montevil.org/",
+      "content": {
+        "html": "Quelle belle entrée en matière ! \nOn peut trouver plus de ressources sur ces recherche entre biologie théorique, disruption et viabilité de systèmes sur le site de <a href=\"https://twitter.com/MMontevil\">@mmontevil</a> (Maël Montevil)\nc’est ici :  <a href=\"https://montevil.org/\">montevil.org</a> avec plein d’articles et de liens. \n\n<a href=\"https://twitter.com/search?q=%23Enmi22\">#Enmi22</a> ==",
+        "text": "Quelle belle entrée en matière ! \nOn peut trouver plus de ressources sur ces recherche entre biologie théorique, disruption et viabilité de systèmes sur le site de @mmontevil (Maël Montevil)\nc’est ici :  montevil.org avec plein d’articles et de liens. \n\n#Enmi22 =="
+      },
+      "mention-of": "https://montevil.org/",
       "wm-property": "mention-of",
       "wm-private": false
     }

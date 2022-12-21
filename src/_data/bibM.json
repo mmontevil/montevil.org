@@ -1,5 +1,154 @@
 [
   {
+    "abstract": "Physics has several concepts of randomness that build on the idea that the possibilities are pre-given. By contrast, an increasing number of theoretical biologists attempt to introduce new possibilities, that is to say, changes of possibility space – an idea already discussed by Bergson and that was not genuinely pursued scientifically until recently (except, in a sense, in systematics, i.e, the method to classify living beings). <br> Then, randomness operates at the level of possibilities themselves and is the basis of the historicity of biological objects. We emphasize that this concept of randomness is not only relevant when aiming to predict the future. Instead, it shapes biological organizations and ecosystems. As an illustration, we argue that a critical issue of the Anthropocene is the disruption of the biological organizations that natural history has shaped, leading to a collapse of biological possibilities.",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "Figures of Chance",
+    "editor": [
+      {
+        "family": "Duprat",
+        "given": "Anne"
+      },
+      {
+        "literal": "others"
+      }
+    ],
+    "id": "2023-Montevil-chance-randomness-biology",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "How does randomness shape the living?",
+    "type": "chapter"
+  },
+  {
+    "abstract": "The program Plaine Commune, contributive learning territory, started in late 2016. It emerged from the theoretical work of Bernard Stiegler and the Ars Industrialis group. The contributive economy is a strategy to disrupt technological disruption by developing knowledge in all its forms. This program has led to several concrete working groups in Plaine Commune, while others are still developing. Mainly, work is taking place on the economy, digital urbanism, and young children’s development in the context of the overuse of digital media. Here, we focus on the group on digital media and young children’s development and how academics and inhabitant works integrate.",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "Memories for the Future: Thinking with Bernard Stiegler",
+    "editor": [
+      {
+        "family": "Buseyne",
+        "given": "Bart"
+      },
+      {
+        "family": "Tsagdis",
+        "given": "Georgios"
+      },
+      {
+        "family": "Willemarck",
+        "given": "Paul"
+      }
+    ],
+    "id": "2023-Montevil-Stiegler-memory-future",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "title": "Plaine Commune, contributive learning territory",
+    "type": "chapter"
+  },
+  {
+    "abstract": "Unlike inert objects, organisms and their cells have the ability to initiate activity by themselves, and thus change their properties or states even in the absence of an external cause. This crucial difference led us to search for principles suitable for the study organisms. We propose that cells follow the default state of proliferation with variation and motility, a principle of biological inertia. This means that in the presence of sufficient nutrients, cells will express their default state. We also propose a principle of variation that addresses two central features of organisms, variation and historicity. To address interdependence between parts, we use a third principle, the principle of organization: more specifically, the notion of the closure of constraints. Within this theoretical framework, constraints are specific theoretical entities defined by their relative stability with respect to the processes they constrain. Constraints are mutually dependent in an organized system and act on the default state. <br>Here we discuss the application and articulation of these principles for mathematical modeling of morphogenesis in a specific case, that of mammary ductal morphogenesis, with an emphasis on the default state. Our model has both a biological component, the cells, and a physical component, the matrix that contains collagen fibers. Cells are agents that move and proliferate unless constrained; they exert mechanical forces that i) act on collagen fibers and ii) on other cells. As fibers are organized, they constrain the cells’ ability to move and to proliferate. This model exhibits a circularity that can be interpreted in terms of the closure of constraints. Implementing our mathematical model shows that constraints to the default state are sufficient to explain the formation of mammary epithelial structures. Finally, the success of this modeling effort suggests a step-wise approach whereby additional constraints imposed by the tissue and the organism can be examined in silico and rigorously tested by in vitro and in vivo experiments, in accordance with the organicist perspective we embrace.",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      },
+      {
+        "family": "Soto",
+        "given": "Ana"
+      }
+    ],
+    "container-title": "Organization in Biology: Foundational Enquiries into a Scientific Blindspot",
+    "editor": [
+      {
+        "family": "Mossio",
+        "given": "Matteo"
+      }
+    ],
+    "id": "2023-MS-organisation-modeling-principles",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "publisher": "Springer Nature",
+    "title": "Modeling organogenesis from biological first principles",
+    "type": "chapter"
+  },
+  {
+    "ISBN": "9781784058135",
+    "URL": "https://www.istegroup.com/fr/produit/la-revolution-contributive/",
+    "abstract": "La révolution contributive résulte du passage rapide à une conception dominante des systèmes (techniques, sociaux, organisationnels, culturels, etc.) où chacun des composants des systèmes co-élabore la performance du tout, en dehors de tout pilotage et contrôle centralisé et extérieur au système. Elle réinvente fondamentalement la relation sujetobjet.La révolution contributive en cours est globale et profonde. Elle apparaît comme une solution possible à la crise économique, écologique et politique qui frappe les sociétés contemporaines, elle concerne tout le champ épistémologique, des sciences jusqu’aux organisations sociales (épistémè).",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "La révolution contributive",
+    "editor": [
+      {
+        "family": "Giorgini",
+        "given": "Pierre"
+      }
+    ],
+    "id": "2022-Postface-Giorgini",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          1,
+          1
+        ]
+      ]
+    },
+    "publisher": "ISTE Editions",
+    "title": "Postface de La révolution contributive, 2022, Pierre Giorgini",
+    "type": "chapter"
+  },
+  {
+    "ISBN": "9782957534746",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "La philosophie et ses dehors",
+    "id": "2023-Montevil-Canguilhem-actualite-normativite",
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          1,
+          1
+        ]
+      ]
+    },
+    "publisher": "Centre Lauragais d’Études Scientifiques",
+    "title": "Normativité et infidélités du milieu : actualités biologiques de Canguilhem",
+    "title-short": "Normativité et infidélités du milieu ",
+    "type": "chapter"
+  },
+  {
     "URL": "https://www.philosophy-world-democracy.org/other-beginning/penser-au-dela-de-lidentite-philosophie-et-sciences",
     "abstract": "Ce texte est le séminaire public donné le 31 mai à l’École Normale Supérieure de Paris. Les sciences se sont écartées de la philosophie. Si la philosophie est entrée en stasis et se porte vers un nécessaire Autre Commencement de la Philosophie, alors les sciences aussi sont à un autre commencement. L’Anastasis des sciences exige une enquête sur la persistance des concepts théologiques en leur sein et en même temps la découverte de nouveaux principes par lesquels les sciences peuvent recommencer de telle manière qu’elles soient libérées des fardeaux métaphysiques. Les homologies d’un autre commencement des sciences sont déjà visibles dans les crises conceptuelles, y compris dans les concepts de singularité en physique et d’immunité en biologie. Pour commencer à nouveau, une épistémologie bâtarde est proposée comme nouveau rapport entre les sciences et la famille bâtarde de la déconstruction.",
     "author": [
@@ -24,7 +173,8 @@
     "type": "article-journal"
   },
   {
-    "URL": "http://troposonline.org/",
+    "DOI": "10.53136/97912218011945",
+    "URL": "https://www.aracneeditrice.eu/it/pubblicazioni/tropos-ada-tenuti-ada-tenuti-gaetano-chiurazzi-emilio-carlo-corriero-giuseppe-longo-mael-montevil-teresa-numerico-francesca-perotto-davide-pilotto-9791221801194.html",
     "abstract": "The analogy between living beings and computers was introduced with circumspection by Schrödinger and has been widely propagated since, rarely with a precise technical meaning. Critics of this perspective are numerous. We emphasize that this perspective is mobilized to justify what may be called a regressive reductionism by comparison with physics or the Cartesian method. <br> Other views on the living are possible, and we focus on an epistemological and theoretical framework where historicity is central, and the regularities susceptible to mathematization are constraints whose existence is fundamentally precarious and historically contingent. <br> We then propose to reinterpret the computer, no longer as a Turing machine but as constituted by constraints. This move allows us to understand that computation in the sense of Church-Turing is only a part of the theoretical determination of what actually happens in a computer when considering them in their larger theoretical context where historicity is also central.",
     "author": [
       {
@@ -32,15 +182,15 @@
         "given": "M."
       }
     ],
-    "container-title": "trópoς. Rivista di ermeneutica e critica filosofica",
+    "container-title": "Trópoς. Rivista di ermeneutica e critica filosofica",
     "id": "2022-Montevil-uncomputable-living-computers",
     "issue": "2",
     "issued": {
       "date-parts": [
         [
           2022,
-          12,
-          31
+          8,
+          5
         ]
       ]
     },

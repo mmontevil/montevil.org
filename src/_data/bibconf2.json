@@ -2,7 +2,42 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "2022-MeMoDEvo",
+        "fields": {
+            "booktitle": "Qbio symposium MeMoDEvo: Mechanics Morphogenesis Development and Evolution",
+            "year": "2022",
+            "month": "12",
+            "location": "Pasteur Paris",
+            "language": "en",
+            "abstract": " The Qbio initiative at Institut Pasteur is organising a two-day symposium in Paris on December 12th and 13th 2022 which will cover the interplay between mechanics, evolution, morphogenesis and development. This symposium is meant to be an open platform for discussion between physicists, mathematicians and biologists on relevant biological questions, and to foster interactions between topics/systems which normally have few occasions to interact.",
+            "day": "12",
+            "url": "https://neuroanatomy.github.io/MeMoDEvo/",
+            "author": "Ana Soto and Maël Montévil",
+            "title": "Modeling organogenesis from biological first principles"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "proceedings",
         "entrykey": "2022-ENMI",
+        "fields": {
+            "title": "Organisation du Vivant, Organologie des Savoirs : Technodiversité, biodiversité, noodiversité : nouveaux régimes de l’habiter",
+            "location": "Centre Pompidou",
+            "year": "2022",
+            "month": "12",
+            "day": "15",
+            "annonce": "true",
+            "language": "fr",
+            "abstract": "Pour repenser l’anthropos à lumière de l’entropocène, nous proposons de revenir aux racines philosophiques et historiques ou, en d’autres termes, à une épistémologie historique qui permette d’exercer une critique de l’alliance qui s’est construite, au cours d’un siècle et à partir d’une pensée scientifique emprise de mécanicisme, entre un nouveau scientisme, la technoscience du numérique, et les formes contemporaines de la gouvernance. En s’appuyant sur des notions floues d’information et de programme génétiques, aux conséquences fortes, on a produit une technoscience qui déborde aujourd’hui sur le vivant. Dans le même temps, les développements technologiques issus des révolutions industrielles successives désorganisent profondément le vivant, conduisant à ce qui est couramment appelé la sixième extinction de masse de l’histoire de la Terre, appelant une réforme du rapport entre technologie et vivant. <br> De nombreuses études critiques font état du rôle politique des nouvelles technologies du numérique, dans ses deux développements les plus importants, l’informatique et l’intelligence artificielle, et dans leurs conséquences pour la compréhension du vivant. Les réseaux informatiques permettent une centralisation nouvelle de l’information, voire la gestion des activités humaines par des monopoles privés et par des gouvernements aux ambitions autoritaires croissantes. Des machines nous reconnaissent et nous suivent, proposent des réponses à des questions mal posées, en raison du formatage programmé qui précède et canalise nos pensées, nos actions et nos désirs. Numérique et biologique constituent aujourd’hui le nouveau milieu noétique dont nous devons prendre soin.",
+            "illustration": "banner_ENMI_logo_2022.jpg",
+            "url": "https://enmi-conf.org/wp/enmi22/",
+            "author": "Giuseppe Longo and Vincent Loubière and Maël Montévil and Vincent Puig"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2022-ENMI2",
         "fields": {
             "booktitle": "ENMI 2022. Organisation du Vivant, Organologie des Savoirs Technodiversité, biodiversité, noodiversité : nouveaux régimes de l’habiter",
             "year": "2022",
@@ -12,8 +47,25 @@
             "abstract": "Le terme de disruption est utilisé largement en biologie, mais il a été peu théorisé. Qu'est ce qui distingue les disruptions des perturbations ou du concept très générique de \"disturbances\" en écologie? Nous défendrons l'idée que les disruptions demandent de comprendre le vivant à la fois dans son historicité et de manière systémique. Au cours du temps, notamment évolutif, le vivant se transforme et fait apparaître des traits singuliers, qui sont fonctionnels grâce à leurs singularités. Ceci constitue ce que nous avons appelé par ailleurs l'anti-entropie. Alors le premier type de disruption est la randomisation de cette singularité, conduisant à une perte de viabilité, qu'il s'agit toutefois de définir avec précision. Il y a cependant un deuxième type de disruption. Si le premier type correspond à la perte du résultat de l'histoire constituant une organisation, le deuxième type correspond à la perte de la capacité à produire des nouveautés fonctionnelles. Dans les deux cas, les disruptions sont un aspect essentiellement qualitatif de l’Anthropocène et de ce qui atteint à la fois la biodiversité et la santé humaine.",
             "day": "15",
             "url": "https://enmi-conf.org/wp/enmi22/",
+            "twittermention": "1603324706517618688",
             "author": "Maël Montévil",
             "title": "Qu'appelle-t-on disruption en biologie?"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2022-ENMI3",
+        "fields": {
+            "booktitle": "ENMI 2022. Organisation du Vivant, Organologie des Savoirs Technodiversité, biodiversité, noodiversité : nouveaux régimes de l’habiter",
+            "year": "2022",
+            "month": "12",
+            "location": "Centre Pompidou Paris",
+            "language": "fr",
+            "day": "15",
+            "url": "https://enmi-conf.org/wp/enmi22/",
+            "author": "Alain Damasio and Ariel Kyrou and Maël Montévil.",
+            "title": "Entretien"
         }
     },
     {
@@ -28,9 +80,10 @@
             "language": "fr",
             "abstract": "Les biologistes décrivent actuellement une multitude de disruptions ayant lieu à tous les niveaux d’organisation du vivant, humains et non-humains. Ces disruptions proviennent principalement des technologies, qu’il s’agisse de la machine thermique issue de la première révolution industrielle, et du changement climatique subséquent, de la chimie avec notamment les perturbateurs endocriniens qui en sont issus, ou du numérique avec l’immixtion des écrans dans la relation parents-jeunes enfants (dans le cas des humains). Les infidélités du milieu ne sont pas étrangères au vivant comme le soulignait Canguilhem, mais la spécificité de ces disruption est leur rythme qui excède les capacité normative du vivant, humain et non-humain, conduisant à une contrepartie biologique de ce que Stiegler appelait la disruption comme régime actuel des sociétés humaines.<br> Nous insisterons sur les conséquences de ces disruptions concernant le développement humain, biologique et psychique, et nous indiquerons des réponses possibles face à ces disruptions.",
             "day": "17",
-            "url": "https://www.unesco.org/fr/articles/journee-mondiale-de-la-philosophie-2022-lhumain-qui-vient",
+            "url": "https://www.lefresnoy.net/fr/evenement/colloque-lhumain-qui-vient-unesco",
             "program": "Colloque_UNESCO_Le_Fresnoy_Programme_16_17_18_nov_2022_04_11_22.pdf",
             "illustration": "unesco.png",
+            "video": "https://www.youtube.com/watch?v=TeQNqrdsJBM&t=12031s",
             "author": "Maël Montévil",
             "title": "Technologie et vivant : disruption et normativité"
         }
@@ -96,6 +149,26 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "2022-Giuseppe-Ana-moi",
+        "fields": {
+            "title": "Towards a theory of organisms State and directions",
+            "booktitle": "Intersecting paths across mathematics, biology, and epistemology: A colloquium in honor of Giuseppe Longo and Ana Soto",
+            "location": "École Normale Supérieure",
+            "year": "2022",
+            "month": "10",
+            "day": "21-22",
+            "annonce": "true",
+            "language": "fr",
+            "url": "https://republique-des-savoirs.fr/events/event/from-foundations-of-mathematics-to-the-epistemology-of-new-interfaces-a-colloquium-in-honor-of-ana-soto-and-giuseppe-longo/",
+            "illustration": "longo-soto.png",
+            "program": "Colloquium-Longo-Soto.pdf",
+            "video": "https://youtu.be/laiXb0REVcs",
+            "author": " Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
         "entrykey": "2022-entretien-entropie",
         "fields": {
             "booktitle": "Entretien autour de Bifurquer",
@@ -118,7 +191,7 @@
         "entrytype": "inproceedings",
         "entrykey": "2022-science-age-experience",
         "fields": {
-            "booktitle": "cience in the age of experience",
+            "booktitle": "Science in the age of experience",
             "year": "2022",
             "month": "9",
             "location": "Palais des Congrès, Versailles, France",
@@ -161,6 +234,7 @@
             "language": "en",
             "abstract": "Technology and sciences, notably biology, have entered a stasis whereby the nature of the answers provided are remarkably unchanging. For example, most of biological technoscientific research aims to fix problem by finding a molecule that would interact with an intended target. We argue that this stasis is the result of a decline in theoretical work, and notably a weak relationship with philosophy. Then theoretical shortcomings and contradiction are no longer overcome by renewed perspectives, instead outdated frameworks remain undead leading to inconsistent discourses. To overcome this stasis, we propose to introduce a bastardized epistemology, both in biology and technology, that would articulate both systemic and historical reasoning.",
             "day": "13",
+            "url": "https://hss.iitd.ac.in/event/technology-and-biology-anthropocene-overcoming-stasis",
             "author": "Maël Montévil",
             "title": "Technology and Biology in the Anthropocene: Overcoming the Stasis"
         }
@@ -455,6 +529,25 @@
             "url": "https://www.philosophy-world-democracy.org/events",
             "twittermention": "1479677260135157761, 1480227639323287556, 1479822519892733957",
             "author": "Divya Dwivedi and Jérôme Lèbre and Shaj Mohan and Maël Montévil and François Warin"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "JL-Nancy-mm-2022",
+        "fields": {
+            "title": "Biologie et étrangeté du corps",
+            "booktitle": "Jean-Luc Nancy : Anastasis de la pensée",
+            "location": "ÉNS et Centre Pompidou, Paris",
+            "year": "2022",
+            "month": "01",
+            "day": "22",
+            "annonce": "true",
+            "language": "fr",
+            "abstract": "Nancy a toujours été proche des préoccupations majeures de la philosophie – temps, être, espace, négativité, forme, image. Se souvenir de lui, c’est recommencer d’une manière plurielle avec lui pour assurer sa levée plus que sa relève dans l’avenir de la pensée.",
+            "illustration": "Jean-Luc Nancy.webp",
+            "url": "https://www.philosophy-world-democracy.org/events",
+            "author": "Maël Montévil"
         }
     },
     {
@@ -2719,6 +2812,7 @@
             "language": "fr",
             "abstract": "En biologie comme en médecine, le numérique joue depuis longtemps et de façon croissante le rôle d’outil technique, de la preuve statistique aux bases de données massives et à la publication. Comment s'articulent la connaissance du vivant, la pratique du soin et ces nouvelles technologies?",
             "illustration": "iea-nantes.png",
+            "url": "https://www.iea-nantes.fr/fr/vie-numerique-sante-2021-2022/",
             "author": " Maël Montévil and Giuseppe Longo and Marie Chollat-Namy"
         }
     },
