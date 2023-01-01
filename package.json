@@ -123,7 +123,7 @@
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-visualizer": "~5.8.3",
-    "sanitize-html": "^2.8.0",
+    "sanitize-html": "^2.8.1",
     "sass": "~1.57.0",
     "simple-icons": "~8.1.0",
     "svgstore": "^3.0.1",
