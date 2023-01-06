@@ -28,10 +28,10 @@ let res = {};
     let file = await fs.readFile(cachePath, 'utf8');
     res = JSON.parse(file) || {};
     let authors = Object.values(JSON.parse(file)) || [];
-
+    let outdated=["91n7gC0AAAAJ","NaC6mSsAAAAJ","r0hRIEwAAAAJ","us2IQTMAAAAJ"];
     for (entry of authors) {
       let gsid = entry.gsid;
-      if (gsid && gsid!= "") {
+      if (gsid && gsid!= "" && !outdated.includes(gsid)) {
         console.log('https://scholar.google.fr/citations?user=' + gsid);
         await driver.get('https://scholar.google.fr/citations?user=' + gsid),
           await driver.wait(() => documentInitialised(), 12000);

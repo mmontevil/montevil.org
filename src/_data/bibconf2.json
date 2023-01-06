@@ -48,6 +48,7 @@
             "day": "15",
             "url": "https://enmi-conf.org/wp/enmi22/",
             "twittermention": "1603324706517618688",
+            "video": "https://media.iri.centrepompidou.fr/video/enmi/2022/enmi22_jour1_session1_2022-12-15.mp4",
             "author": "Maël Montévil",
             "title": "Qu'appelle-t-on disruption en biologie?"
         }
@@ -64,6 +65,7 @@
             "language": "fr",
             "day": "15",
             "url": "https://enmi-conf.org/wp/enmi22/",
+            "video": "https://media.iri.centrepompidou.fr/video/enmi/2022/enmi22_jour1_table_ronde_2022-12-15.mp4",
             "author": "Alain Damasio and Ariel Kyrou and Maël Montévil.",
             "title": "Entretien"
         }
@@ -479,18 +481,18 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
-        "entrykey": "EHESS-2022",
+        "entrykey": "EHESS-2023",
         "fields": {
             "title": "Architectonique théorique en biologie et applications",
             "booktitle": "UE954 - Dynamiques post-structurelles",
             "location": "Centre d'analyse et de mathématique sociales (CAMS) , EHESS, Paris",
-            "year": "2022",
+            "year": "2023",
             "month": "01",
-            "day": "17",
+            "day": "16",
             "annonce": "true",
             "language": "fr",
             "url": "https://enseignements.ehess.fr/2021-2022/ue/954",
-            "abstract": "Si la physique, notamment la mécanique classique, a largement été mobilisée comme modèle de la compréhension théorique de la nature, la biologie a dans une certaine mesure, réussi à s'en détacher avec la théorie de l'évolution, une théorie où l'historicité est première. Néanmoins, cette innovation épistémologique et méthodologique n'est pas miscible avec la méthode de théorisation physique et il s'ensuit une étrange cohabitation dont les enjeux sont rarement traités. Nous proposerons des directions pour repenser la théorisation en biologie, et montrerons que ce travail permet de mieux comprendre des phénomènes biologiques cruciaux : la disruption des organisations biologique dans l'Anthropocène.",
+            "abstract": "Si la physique, notamment la mécanique classique, a largement été mobilisée comme modèle de la compréhension théorique de la nature, la biologie a dans une certaine mesure, réussi à s'en détacher avec la théorie de l'évolution, une théorie où l'historicité est première. Néanmoins, cette innovation épistémologique et méthodologique n'est pas miscible avec la méthode de théorisation physique et il s'ensuit une étrange cohabitation dont les enjeux sont rarement traités. Nous proposerons des directions pour repenser la théorisation en biologie en insistant sur le concept de nouveau possible. Nous montrerons aussi que ce travail permet de mieux comprendre des phénomènes biologiques cruciaux : la disruption des organisations biologique dans l'Anthropocène.",
             "author": "Maël Montévil"
         }
     },
