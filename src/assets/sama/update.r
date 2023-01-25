@@ -4,5 +4,5 @@
 #
 version=0.997;
 file=paste("Rsama_",version,".tar.gz",sep="");
-download.file(paste("http://montevil.org/assets/sama/",file,sep=""),file);
+download.file(paste("https://montevil.org/assets/sama/",file,sep=""),file);
 install.packages(file,repos = NULL,type="source")
