@@ -1,5 +1,27 @@
 [
   {
+    "URL": "https://www.designsociety.org/1255/16th+Design+Theory+Workshop+2023",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "16th SIG Design Theory Paris Workshop",
+    "id": "2023-novelties",
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          1,
+          30
+        ]
+      ]
+    },
+    "title": "On biological novelties",
+    "type": "paper-conference"
+  },
+  {
     "URL": "https://neuroanatomy.github.io/MeMoDEvo/",
     "abstract": "The Qbio initiative at Institut Pasteur is organising a two-day symposium in Paris on December 12th and 13th 2022 which will cover the interplay between mechanics, evolution, morphogenesis and development. This symposium is meant to be an open platform for discussion between physicists, mathematicians and biologists on relevant biological questions, and to foster interactions between topics/systems which normally have few occasions to interact.",
     "author": [

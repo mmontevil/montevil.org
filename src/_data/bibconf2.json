@@ -2,6 +2,22 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "2023-novelties",
+        "fields": {
+            "booktitle": "16th SIG Design Theory Paris Workshop",
+            "year": "2023",
+            "month": "01",
+            "location": "EPF Business School",
+            "language": "en",
+            "day": "30",
+            "url": "https://www.designsociety.org/1255/16th+Design+Theory+Workshop+2023",
+            "author": "Maël Montévil",
+            "title": "On biological novelties"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
         "entrykey": "2022-MeMoDEvo",
         "fields": {
             "booktitle": "Qbio symposium MeMoDEvo: Mechanics Morphogenesis Development and Evolution",

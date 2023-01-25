@@ -4480,9 +4480,9 @@
   },
   "c-favre": {
     "shortname": "C Favre",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
+    "photo": "/assets/avatars/gs/1sAn1SgAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=1sAn1SgAAAAJ",
+    "gsid": "1sAn1SgAAAAJ",
     "affiliation": ""
   },
   "n-palfreyman": {
@@ -7626,6 +7626,13 @@
   },
   "p-vignola": {
     "shortname": "P Vignola",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "s-goldwasser": {
+    "shortname": "S Goldwasser",
     "photo": "/assets/avatars/gs/dummy.jpg",
     "url": "",
     "gsid": "",
