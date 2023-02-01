@@ -150,7 +150,7 @@
   },
   "private": true,
   "dependencies": {
-    "@11ty/eleventy-upgrade-help": "^1.0.1",
+    "@11ty/eleventy-upgrade-help": "^2.0.5",
     "bib2json": "^0.0.1",
     "check-html-links": "^0.2.4",
     "cheerio": "*",
