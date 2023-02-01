@@ -52,7 +52,7 @@
     "updatetweets": " npm-run-all --sequential build sleepshort build sleep build sleepshort build"
   },
   "devDependencies": {
-    "@11ty/eleventy": "2.0.0-canary.18",
+    "@11ty/eleventy": "2.0.0-canary.35",
     "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
