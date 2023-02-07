@@ -1,4 +1,4 @@
-version=0.997;
+version=0.9971;
 
 #source("http://montevil.theobio.org/sites/montevil.theobio.org/files/sama/install.r")
 #source("/home/kamome/Work/cana/confocal3Dculture/t47d/install.r")
