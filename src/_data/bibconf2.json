@@ -2,6 +2,39 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "2023-canguilhem",
+        "fields": {
+            "booktitle": "Le normal et le pathologique, 80 ans après",
+            "year": "2023",
+            "month": "05",
+            "location": "Salle Jean Jaurès, ENS",
+            "language": "fr",
+            "day": "24",
+            "illustration": "ENS.png",
+            "author": "Maël Montévil",
+            "title": "Disruption et normativité du vivant dans l'Anthropocène"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2023-heterogenese",
+        "fields": {
+            "booktitle": "UE954 - Dynamiques Post-Structurelles",
+            "year": "2023",
+            "month": "01",
+            "location": "EHESS",
+            "language": "en",
+            "day": "17",
+            "url": "https://enseignements.ehess.fr/2021-2022/ue/954",
+            "illustration": "ehess.jpg",
+            "author": "Maël Montévil",
+            "title": "Architectonique théorique en biologie et applications"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
         "entrykey": "2023-novelties",
         "fields": {
             "booktitle": "16th SIG Design Theory Paris Workshop",
@@ -12,6 +45,7 @@
             "day": "30",
             "url": "https://www.designsociety.org/1255/16th+Design+Theory+Workshop+2023",
             "program": "DT SIG 16th Program.pdf",
+            "illustration": "logoSIG_Design_website.jpg",
             "author": "Maël Montévil",
             "title": "On biological novelties"
         }
@@ -198,7 +232,7 @@
             "abstract": "Podcast et retranscription de l’entretien autour du 1er chapitre du livre \"Bifurquer\", sur les enjeux scientifiques, technologiques et politiques de la notion d'entropie. La discussion a eu lieu entre Bernard Stiegler, Maël Montévil, Marie Chollat-Namy et Victor Chaix, le 1er juillet 2020 - notre dernière rencontre avec le philosophe et fondateur de l'association.",
             "day": "19",
             "url": "https://blogs.mediapart.fr/les-amis-de-la-generation-thunberg/blog/170922/vers-une-nouvelle-revolution-industrielle-l-entropie-et-ses-enjeux",
-            "video": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1346220814",
+            "video": "https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/1346220814",
             "eventtype": "media",
             "illustration": "entretien-bif-2.jpg",
             "author": "Bernard Stiegler and Maël Montévil and Marie Chollat-Namy and Victor Chaix",
@@ -1336,7 +1370,7 @@
             "illustration": "ilgovernodellentropiaweb.jpg",
             "program": "gov-entropia.pdf",
             "url": "https://ilbolive.unipd.it/it/event/governo-dellentropia",
-            "video": "https://media.iri.centrepompidou.fr/video/temp/Video III - Il governo dell%27entropia.MP4",
+            "video": "https://media.iri.centrepompidou.fr/video/temp/Video III - Il governo dell'entropia.MP4",
             "author": " M. Montévil",
             "title": "L'Anthropocène comme désorganisation du vivant"
         }
