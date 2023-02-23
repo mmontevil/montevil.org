@@ -22,6 +22,7 @@
   },
   {
     "URL": "https://enseignements.ehess.fr/2021-2022/ue/954",
+    "abstract": "Si la physique, notamment la mécanique classique, a largement été mobilisée comme modèle de la compréhension théorique de la nature, la biologie a dans une certaine mesure, réussi à s’en détacher avec la théorie de l’évolution, une théorie où l’historicité est première. Néanmoins, cette innovation épistémologique et méthodologique n’est pas miscible avec la méthode de théorisation physique et il s’ensuit une étrange cohabitation dont les enjeux sont rarement traités. Nous proposerons des directions pour repenser la théorisation en biologie en insistant sur le concept de nouveau possible. Nous montrerons aussi que ce travail permet de mieux comprendre des phénomènes biologiques cruciaux : la disruption des organisations biologique dans l’Anthropocène.",
     "author": [
       {
         "family": "Montévil",
@@ -765,29 +766,6 @@
     },
     "title": "Life, Lust, Philosophy",
     "type": "book"
-  },
-  {
-    "URL": "https://enseignements.ehess.fr/2021-2022/ue/954",
-    "abstract": "Si la physique, notamment la mécanique classique, a largement été mobilisée comme modèle de la compréhension théorique de la nature, la biologie a dans une certaine mesure, réussi à s’en détacher avec la théorie de l’évolution, une théorie où l’historicité est première. Néanmoins, cette innovation épistémologique et méthodologique n’est pas miscible avec la méthode de théorisation physique et il s’ensuit une étrange cohabitation dont les enjeux sont rarement traités. Nous proposerons des directions pour repenser la théorisation en biologie en insistant sur le concept de nouveau possible. Nous montrerons aussi que ce travail permet de mieux comprendre des phénomènes biologiques cruciaux : la disruption des organisations biologique dans l’Anthropocène.",
-    "author": [
-      {
-        "family": "Montévil",
-        "given": "Maël"
-      }
-    ],
-    "container-title": "UE954 - Dynamiques post-structurelles",
-    "id": "EHESS-2023",
-    "issued": {
-      "date-parts": [
-        [
-          2023,
-          1,
-          16
-        ]
-      ]
-    },
-    "title": "Architectonique théorique en biologie et applications",
-    "type": "paper-conference"
   },
   {
     "URL": "https://recherche.utt.fr/interdisciplinary-research-on-society-technology-environment-interactions-insyte/seminar-3s",

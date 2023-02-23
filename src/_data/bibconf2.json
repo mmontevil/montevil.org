@@ -28,6 +28,7 @@
             "day": "17",
             "url": "https://enseignements.ehess.fr/2021-2022/ue/954",
             "illustration": "ehess.jpg",
+            "abstract": "Si la physique, notamment la mécanique classique, a largement été mobilisée comme modèle de la compréhension théorique de la nature, la biologie a dans une certaine mesure, réussi à s'en détacher avec la théorie de l'évolution, une théorie où l'historicité est première. Néanmoins, cette innovation épistémologique et méthodologique n'est pas miscible avec la méthode de théorisation physique et il s'ensuit une étrange cohabitation dont les enjeux sont rarement traités. Nous proposerons des directions pour repenser la théorisation en biologie en insistant sur le concept de nouveau possible. Nous montrerons aussi que ce travail permet de mieux comprendre des phénomènes biologiques cruciaux : la disruption des organisations biologique dans l'Anthropocène.",
             "author": "Maël Montévil",
             "title": "Architectonique théorique en biologie et applications"
         }
@@ -527,24 +528,6 @@
             "illustration": "benvenuto-sergio.jpg",
             "twittermention": "1486291988643258369",
             "author": "Sergio Benvenuto and Divya Dwivedi and Shaj Mohan and Maël Montévil"
-        }
-    },
-    {
-        "objecttype": "entry",
-        "entrytype": "inproceedings",
-        "entrykey": "EHESS-2023",
-        "fields": {
-            "title": "Architectonique théorique en biologie et applications",
-            "booktitle": "UE954 - Dynamiques post-structurelles",
-            "location": "Centre d'analyse et de mathématique sociales (CAMS) , EHESS, Paris",
-            "year": "2023",
-            "month": "01",
-            "day": "16",
-            "annonce": "true",
-            "language": "fr",
-            "url": "https://enseignements.ehess.fr/2021-2022/ue/954",
-            "abstract": "Si la physique, notamment la mécanique classique, a largement été mobilisée comme modèle de la compréhension théorique de la nature, la biologie a dans une certaine mesure, réussi à s'en détacher avec la théorie de l'évolution, une théorie où l'historicité est première. Néanmoins, cette innovation épistémologique et méthodologique n'est pas miscible avec la méthode de théorisation physique et il s'ensuit une étrange cohabitation dont les enjeux sont rarement traités. Nous proposerons des directions pour repenser la théorisation en biologie en insistant sur le concept de nouveau possible. Nous montrerons aussi que ce travail permet de mieux comprendre des phénomènes biologiques cruciaux : la disruption des organisations biologique dans l'Anthropocène.",
-            "author": "Maël Montévil"
         }
     },
     {
