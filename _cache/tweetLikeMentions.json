@@ -11658,5 +11658,45 @@
     "like-of": "https://montevil.org/publications/articles/2015-MM-Organisation-Closure-Constraints/",
     "wm-property": "like-of",
     "wm-private": false
+  },
+  "1323310677289742337katatsum0ori": {
+    "id_str": "1323310677289742337katatsum0ori",
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "",
+      "screen_name": "katatsum0ori",
+      "photo": "https://pbs.twimg.com/profile_images/1613046042236182530/Bum51QfP_normal.jpg",
+      "url": "https://twitter.com/katatsum0ori"
+    },
+    "url": "https://twitter.com/RotoRub/status/1323310677289742337/likes",
+    "published": "2023-04-29",
+    "wm-received": "2023-04-29",
+    "wm-id": "1323310677289742337katatsum0ori",
+    "wm-source": "https://twitter.com/RotoRub/status/1323310677289742337/likes",
+    "wm-target": "https://montevil.org/publications/articles/2020-MM-Identity-Organism/",
+    "like-of": "https://montevil.org/publications/articles/2020-MM-Identity-Organism/",
+    "wm-property": "like-of",
+    "wm-private": false
+  },
+  "1460095404842749952ineptumartifex": {
+    "id_str": "1460095404842749952ineptumartifex",
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "",
+      "screen_name": "ineptumartifex",
+      "photo": "https://pbs.twimg.com/profile_images/1649747428222836737/OzUlJTPU_normal.jpg",
+      "url": "https://twitter.com/ineptumartifex"
+    },
+    "url": "https://twitter.com/PhilosophyWD/status/1460095404842749952/likes",
+    "published": "2023-04-29",
+    "wm-received": "2023-04-29",
+    "wm-id": "1460095404842749952ineptumartifex",
+    "wm-source": "https://twitter.com/PhilosophyWD/status/1460095404842749952/likes",
+    "wm-target": "https://montevil.org/talks/2021--l-ana/",
+    "like-of": "https://montevil.org/talks/2021--l-ana/",
+    "wm-property": "like-of",
+    "wm-private": false
   }
 }

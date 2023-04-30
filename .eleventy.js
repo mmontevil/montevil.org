@@ -13,9 +13,10 @@ const { writeToCache, readFromCache } = require('./src/_utils/cache');
 cachedTweets = readFromCache('_cache/tweetsMentions.json', (alt = {}));
 cachedWiki = readFromCache('_cache/wikiMentions.json', (alt = {}));
 cachedPeople = readFromCache('_cache/people.json', (alt = {}));
+//const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
+
 
 module.exports = function (eleventyConfig) {  
-  //eleventyConfig.addPlugin(UpgradeHelper);
 
   eleventyConfig.on('afterBuild', () => {
     writeToCache(cachedPeople, '_cache/people.json');
@@ -369,6 +370,7 @@ const typeseter = (content, outputPath) => {
     });
 
   }
+ // eleventyConfig.addPlugin(UpgradeHelper);
 
   // ------------------------------------------------------------------------
   // Eleventy configuration
@@ -394,11 +396,7 @@ const typeseter = (content, outputPath) => {
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.setQuietMode(true);
 
-  eleventyConfig.setBrowserSyncConfig({
-    ui: false,
-    ghostMode: false,
-    files: ['_site/css/*.css', '_site/js/*.js'],
-  });
+
 
   return {
     templateFormats: ['md', 'njk'],
