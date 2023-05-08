@@ -11036,7 +11036,7 @@
   {
     "title": "Theoretical principles for biology: Organization",
     "citingLink": "https://scholar.google.fr/scholar?oi=bibs&hl=en&cites=1770161116342702157",
-    "citenumber": "97",
+    "citenumber": 97,
     "citing": [
       {
         "title": "AIEgens for biological process monitoring and disease theranostics",
@@ -13926,7 +13926,7 @@
   {
     "title": "Theoretical principles for biology: Variation",
     "citingLink": "https://scholar.google.fr/scholar?oi=bibs&hl=en&cites=16129116195643093666,773813859190906706",
-    "citenumber": 87,
+    "citenumber": "88",
     "citing": [
       {
         "title": "Carcinogenesis explained within the context of a theory of organisms",
@@ -14604,7 +14604,7 @@
         "journal": "Evolutionary causation",
         "gid": "JFfarqHCNusJ",
         "pdflink": "https://www.academia.edu/download/57655954/pocheville-darwinian-20181028.pdf",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=3baoDwAAQBAJ&oi=fnd&pg=PA265&ots=EE4ub-ZhBp&sig=hFuYPAtHf8AWb0xN2RJKMlQPXII"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=3baoDwAAQBAJ&oi=fnd&pg=PA265&ots=EE4v6-Uhwo&sig=Mhfvznk98Hzga1vO58nkXRbTO24"
       },
       {
         "title": "[PDF] Dynamic structures in evo-devo: From morphogenetic fields to evolving organisms",
@@ -14775,6 +14775,26 @@
         "gid": "dgp_cGPrxqEJ",
         "pdflink": "https://link.springer.com/article/10.1007/s13752-020-00365-4",
         "mainlink": "https://link.springer.com/article/10.1007/s13752-020-00365-4"
+      },
+      {
+        "title": "Only three principal components account for inter-embryo variability of the spindle length over time.",
+        "authors": [
+          "Y Le Cunff",
+          "L Chesneau",
+          "S Pastezeur",
+          "X Pinson"
+        ],
+        "authorsid": [
+          "kVGP0MoAAAAJ",
+          "",
+          "",
+          ""
+        ],
+        "year": "2023",
+        "journal": "bioRxiv",
+        "gid": "_Cm3gaWyr8kJ",
+        "pdflink": "https://www.biorxiv.org/content/biorxiv/early/2023/05/01/2023.05.01.538870.full.pdf",
+        "mainlink": "https://www.biorxiv.org/content/10.1101/2023.05.01.538870.abstract"
       },
       {
         "title": "Complexity from Adaptive-Symmetries Breaking: Global Minima in the Statistical Mechanics of Deep Neural Networks",
@@ -15152,7 +15172,7 @@
         "journal": "Sciences de la vie",
         "gid": "ySvc-AzEZ8MJ",
         "pdflink": "https://hal.science/hal-02398771/document",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=809mDwAAQBAJ&oi=fnd&pg=PA233&ots=ELeD9r8l__&sig=-29vQh6cvYBXXdfqA63_cA5jEjs"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=809mDwAAQBAJ&oi=fnd&pg=PA233&ots=ELeE4r3lWS&sig=i2k3Eg_7SBFELGeVSodlFCbZGWg"
       },
       {
         "title": "A Few Pending Challenges from the Perspective of a Theory of Organisms",
@@ -27103,7 +27123,7 @@
   {
     "title": "Anthropocène, exosomatisation et néguentropie",
     "citingLink": "https://scholar.google.fr/scholar?oi=bibs&hl=en&cites=9721982139184558249,10567193547891213382,9011518860337368672",
-    "citenumber": 31,
+    "citenumber": "33",
     "citing": [
       {
         "title": "Entropies and the Anthropocene crisis",
@@ -27213,7 +27233,7 @@
         "journal": "",
         "gid": "r0pA6jo79wAJ",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=LcY4EAAAQBAJ&oi=fnd&pg=PP1&ots=1DAQUS0B4E&sig=cgaP_C5-l0TbVsqs_06152-Ef-Q"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=LcY4EAAAQBAJ&oi=fnd&pg=PP1&ots=1DASOSXF7I&sig=N2w42Mw2abHHz71sE4r2vd7lgLs"
       },
       {
         "title": "[PDF] Awareness steps and hints for total innovation and intergeneration enhancement in silver economy",
@@ -27350,6 +27370,20 @@
         "mainlink": "https://www.berghahnjournals.com/view/journals/durkheimian-studies/25/1/ds250103.xml"
       },
       {
+        "title": "A Simondon-Deleuzean Characterization of Engineering Design",
+        "authors": [
+          "J Aravena-Reyes"
+        ],
+        "authorsid": [
+          ""
+        ],
+        "year": "2023",
+        "journal": "… and Engineering: Dialogues Across Disciplines and …",
+        "gid": "1Rka2idqvO0J",
+        "pdflink": "",
+        "mainlink": "https://link.springer.com/chapter/10.1007/978-3-031-25233-4_6"
+      },
+      {
         "title": "Sciences et entropocène: Autour de Qu'appelle-t-on panser? de Bernard Stiegler",
         "authors": [
           "M Montévil"
@@ -27364,7 +27398,7 @@
         "mainlink": "https://www.cairn.info/revue-ecorev-2021-1-page-109.htm"
       },
       {
-        "title": "Book review: Warsaw Housing Cooperative: City in Action",
+        "title": "[PDF] Book review: Warsaw Housing Cooperative: City in Action",
         "authors": [
           "F Chwałczyk"
         ],
@@ -27374,7 +27408,7 @@
         "year": "2022",
         "journal": "",
         "gid": "Frfgft91FQwJ",
-        "pdflink": "",
+        "pdflink": "https://journals.sagepub.com/doi/pdf/10.1177/07255136221075399",
         "mainlink": "https://journals.sagepub.com/doi/pdf/10.1177/07255136221075399"
       },
       {
@@ -27476,6 +27510,20 @@
         "mainlink": "https://library.oapen.org/bitstream/handle/20.500.12657/60316/1/10.15203-99106-086-4.pdf#page=37"
       },
       {
+        "title": "AI don't care",
+        "authors": [
+          "ME Benamo"
+        ],
+        "authorsid": [
+          ""
+        ],
+        "year": "2023",
+        "journal": "Desde el Sur",
+        "gid": "kk_N84E1crkJ",
+        "pdflink": "https://revistas.cientifica.edu.pe/index.php/desdeelsur/article/download/1404/1136",
+        "mainlink": "https://revistas.cientifica.edu.pe/index.php/desdeelsur/article/view/1404"
+      },
+      {
         "title": "Bernard Stiegler y la salud organológica",
         "authors": [
           "P Vignola"
@@ -27486,7 +27534,7 @@
         "year": "2022",
         "journal": "Latin American Journal of Humanities …",
         "gid": "uuSoyJG9T_0J",
-        "pdflink": "https://revistas.educaidscientific.com/index.php/lajhed/article/download/17/44",
+        "pdflink": "https://revistas.educaidscientific.com/index.php/lajhed/article/download/17/57",
         "mainlink": "https://revistas.educaidscientific.com/index.php/lajhed/article/view/17"
       },
       {

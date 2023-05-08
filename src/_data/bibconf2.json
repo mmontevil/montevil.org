@@ -18,6 +18,22 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "2023-Cardano-P8",
+        "fields": {
+            "booktitle": "L'hétérogenèse entre mathématiques, philosophie et politique",
+            "year": "2023",
+            "month": "05",
+            "location": "Université Paris 8 – Vincennes - Saint Denis",
+            "language": "fr",
+            "day": "12",
+            "url": "https://llcp.univ-paris8.fr/demie-journee-d-etudes-groupe-girolamo-cardano-l-heterogenese-entre",
+            "author": "Maël Montévil",
+            "title": "Dimensions de l'historicité du vivant : de l'épistémologie à l'Anthropocène"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
         "entrykey": "2023-heterogenese",
         "fields": {
             "booktitle": "UE954 - Dynamiques Post-Structurelles",
@@ -253,6 +269,7 @@
             "day": "29",
             "url": "https://events.3ds.com/science-age-of-experience-2022/future-of-lifesciences-for-better-health",
             "abstract": "Science in the Age of Experience is a reference event for science leaders dedicated to improving lives and accelerating progress towards a more sustainable future.",
+            "video": "https://www.youtube.com/watch?v=OXFT_I2nfpQ",
             "author": " Maël Montévil and Ana Soto",
             "title": "Changing paradigms in cancer research: The role of theory"
         }
