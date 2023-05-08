@@ -13926,7 +13926,7 @@
   {
     "title": "Theoretical principles for biology: Variation",
     "citingLink": "https://scholar.google.fr/scholar?oi=bibs&hl=en&cites=16129116195643093666,773813859190906706",
-    "citenumber": "88",
+    "citenumber": 88,
     "citing": [
       {
         "title": "Carcinogenesis explained within the context of a theory of organisms",
@@ -17365,7 +17365,7 @@
   {
     "title": "Toward a theory of organisms: Three founding principles in search of a useful integration",
     "citingLink": "https://scholar.google.fr/scholar?oi=bibs&hl=en&cites=15887205930739736158",
-    "citenumber": 59,
+    "citenumber": "60",
     "citing": [
       {
         "title": "Genome chaos: Creating new genomic information essential for cancer macroevolution",
@@ -17494,7 +17494,7 @@
         "year": "2021",
         "journal": "Progress in biophysics and molecular biology",
         "gid": "yx2H4r0kdMAJ",
-        "pdflink": "",
+        "pdflink": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8571715/",
         "mainlink": "https://www.sciencedirect.com/science/article/pii/S0079610721000742"
       },
       {
@@ -17674,22 +17674,6 @@
         "mainlink": "https://www.tandfonline.com/doi/abs/10.1080/03080188.2020.1794389"
       },
       {
-        "title": "[HTML] The essence of life revisited: how theories can shed light on it",
-        "authors": [
-          "A Cornish-Bowden",
-          "ML Cárdenas"
-        ],
-        "authorsid": [
-          "",
-          ""
-        ],
-        "year": "2022",
-        "journal": "Theory in Biosciences",
-        "gid": "XMyoME_xhmMJ",
-        "pdflink": "https://link.springer.com/article/10.1007/s12064-021-00342-w",
-        "mainlink": "https://link.springer.com/article/10.1007/s12064-021-00342-w"
-      },
-      {
         "title": "[HTML] Modeling organogenesis from biological first principles",
         "authors": [
           "M Montévil",
@@ -17704,6 +17688,22 @@
         "gid": "W2mmcFnDuk8J",
         "pdflink": "https://montevil.org/publications/chapters/2023-ms-organisation-modeling-principles/",
         "mainlink": "https://montevil.org/publications/chapters/2023-ms-organisation-modeling-principles/"
+      },
+      {
+        "title": "[HTML] The essence of life revisited: how theories can shed light on it",
+        "authors": [
+          "A Cornish-Bowden",
+          "ML Cárdenas"
+        ],
+        "authorsid": [
+          "",
+          ""
+        ],
+        "year": "2022",
+        "journal": "Theory in Biosciences",
+        "gid": "XMyoME_xhmMJ",
+        "pdflink": "https://link.springer.com/article/10.1007/s12064-021-00342-w",
+        "mainlink": "https://link.springer.com/article/10.1007/s12064-021-00342-w"
       },
       {
         "title": "Some resonances between Eastern thought and Integral Biomathics in the framework of the WLIMES formalism for modeling living systems",
@@ -18090,6 +18090,22 @@
         "mainlink": "https://link.springer.com/chapter/10.1007/978-3-030-52086-1_5"
       },
       {
+        "title": "¿ Qué es la filosofía de la biología organismal?",
+        "authors": [
+          "AF Tejeda",
+          "M Martín-Villuendas"
+        ],
+        "authorsid": [
+          "",
+          "EzsbEKQAAAAJ"
+        ],
+        "year": "2023",
+        "journal": "ArtefaCToS. Journal of Science …",
+        "gid": "_-diM_LIRAQJ",
+        "pdflink": "https://revistas.usal.es/cinco/index.php/artefactos/article/download/31409/29471",
+        "mainlink": "https://revistas.usal.es/cinco/index.php/artefactos/article/view/31409"
+      },
+      {
         "title": "[PDF] What Is a Cognizing Subject? Construction, Autonomy and Original Causation.",
         "authors": [
           "N Palfreyman",
@@ -18159,7 +18175,7 @@
         "journal": "Deleuze and Evolutionary Theory",
         "gid": "cLvJ9P8sdUcJ",
         "pdflink": "https://www.academia.edu/download/58494305/05_Miquel__Deterritorialisation_Proofs.pdf",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=snsxEAAAQBAJ&oi=fnd&pg=PA97&ots=ExPNTfdc_y&sig=qDKfPOIZyIZdvTc9rOmsiODO0vo"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=snsxEAAAQBAJ&oi=fnd&pg=PA97&ots=ExPPQjcaXr&sig=GhnbBTyGJMLWmPt_zRj-MmL2rSE"
       },
       {
         "title": "[HTML] TOWARDS LIFE-KNOWLEDGE",
@@ -18207,7 +18223,7 @@
         "journal": "… II: From Smart Power Grids to …",
         "gid": "oY2v5o2iB8wJ",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=R6Z-DwAAQBAJ&oi=fnd&pg=PA86&ots=pZQNtjtekl&sig=8aLe10JPz17RY5h75ZVLADdo0lw"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=R6Z-DwAAQBAJ&oi=fnd&pg=PA86&ots=pZQPqnsche&sig=mMQlF13Yd-F9-CjATGLhEnQRziE"
       },
       {
         "title": "[HTML] A Few Pending Challenges from the Perspective of a Theory of Organisms",
@@ -27123,7 +27139,7 @@
   {
     "title": "Anthropocène, exosomatisation et néguentropie",
     "citingLink": "https://scholar.google.fr/scholar?oi=bibs&hl=en&cites=9721982139184558249,10567193547891213382,9011518860337368672",
-    "citenumber": "33",
+    "citenumber": 33,
     "citing": [
       {
         "title": "Entropies and the Anthropocene crisis",
