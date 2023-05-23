@@ -1489,9 +1489,9 @@
   },
   "r-lanfredini": {
     "shortname": "R Lanfredini",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
+    "photo": "/assets/avatars/gs/bc8tcucAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=bc8tcucAAAAJ",
+    "gsid": "bc8tcucAAAAJ",
     "affiliation": ""
   },
   "ayu-mejgal": {
@@ -8179,6 +8179,13 @@
     "photo": "/assets/avatars/gs/EzsbEKQAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=EzsbEKQAAAAJ",
     "gsid": "EzsbEKQAAAAJ",
+    "affiliation": ""
+  },
+  "h-van-eyghen": {
+    "shortname": "H Van Eyghen",
+    "photo": "/assets/avatars/gs/8XSxntQAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=8XSxntQAAAAJ",
+    "gsid": "8XSxntQAAAAJ",
     "affiliation": ""
   }
 }
