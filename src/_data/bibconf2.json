@@ -2,6 +2,21 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "2023-interface",
+        "fields": {
+            "title": "Biology lies at an epistemological interface",
+            "booktitle": "Sustainable interfaces for complex systems analysis and understanding – Spacetime in the living systems and their integral development",
+            "location": "Campus Bio-Medico, University of Rome, Rome, Italie.",
+            "year": "2023",
+            "month": "7",
+            "day": "10",
+            "annonce": "true",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
         "entrykey": "ish2023",
         "fields": {
             "title": "Historicity and theory",
@@ -10,7 +25,7 @@
             "year": "2023",
             "month": "7",
             "day": "12",
-            "url": "https://site.pheedloop.com/event/ISHPSSB2023/home",
+            "url": "https://site.pheedloop.com/event/ISHPSSB2023/schedule/SESVXGB9YGYHF2SM6",
             "annonce": "true",
             "abstract": "This Diverse Format Session will discuss some biological principles and notions that, we submit, should be integrated into the theoretical concepts of biology. Overall, these notions delineate an organism-centered biological science, by shifting the focus to the wholes rather than their parts. In particular, the session will examine how the adoption of these principles and notions fundamentally challenges the received view on biological explanation. <br> The first notion is purposiveness. There is recent literature suggesting that biological organization can be interpreted as self-determining, and thereby intrinsically purposive (Mossio & Bich, 2017). Accepting the intrinsic purposiveness notion implies accepting a circular determination between the parts and the whole and thus a challenge to a mechanistic explanation of biological organization. The second notion is variation. In some recent studies (Montévil et al., 2016), biological variation is understood in terms of the emergence of changes that cannot be prestated. As such, biological variation challenges the very possibility of generalized formal models in biology. The third notion (Soto et al, 2016), is the biological default state according to which cells constantly grow, change shape, proliferate, and move. Because of this default state, the explanation of biological phenomena involving motility and proliferation is reversed, to the extent that what is to be accounted for is their absence (quiescence). The fourth notion is agency, which designates the capacity of organisms to behave in interaction with the environment and other organisms in a purposeful, normative, and functional way. Among other things, the conception of organisms as agents radically modifies evolutionary explanations (Jäger, 2023), insofar as agents are not only the result of selective processes, but they also actively shape selective processes. <br> The session will consist of four short presentations (15 minutes each, maximum), followed by a discussion of 30 minutes at least, in which we will explore the capacity of these concepts to advance biological explanation, as well as their (deep) conceptual connections.",
             "language": "en",
