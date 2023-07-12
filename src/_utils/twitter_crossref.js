@@ -38,7 +38,12 @@ async function getTweet(tweetId, target, source) {
                          '1366912406887096320',
                          '1457470327655649286',
                          '1428447401535229964',
-                         '1619519440286265344'
+                         '1619519440286265344',
+                         '1263525252526563328',
+                         '587663098657423360',
+                         '768500840294473730',
+                         '27885838712754178',
+                         '927885838712754178','1645560374719131652'
                         ]; 
     if (tweetViewModel['wm-property'] == 'mention-of') {
       if (tweetViewModel['retweetUpdated'] !== day && !deletedTweets.includes(tweetId)) {

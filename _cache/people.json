@@ -34,9 +34,9 @@
   "am-soto": {
     "shortname": "AM Soto",
     "photo": "/assets/avatars/am-soto.jpg",
-    "url": "https://gsbs.tufts.edu/facultyResearch/faculty/soto-ana",
-    "gsid": "",
-    "affiliation": "Tufts University School of Medicine and ÉNS",
+    "url": "https://gsbs.tufts.edu/facultyResearch/faculty/soto-ana/research",
+    "gsid": "yQYjCJkAAAAJ",
+    "affiliation": "Professor, tufts University School of Medicine",
     "fullName": "Ana M. Soto"
   },
   "b-stiegler": {
@@ -878,7 +878,7 @@
   "m-jamil": {
     "shortname": "M Jamil",
     "photo": "/assets/avatars/gs/U8uOLIoAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=U8uOLIoAAAAJ",
+    "url": "https://sns.nust.edu.pk/faculty/mubasher-jamil/",
     "gsid": "U8uOLIoAAAAJ",
     "affiliation": "National University of Sciences and Technology, Islamabad",
     "fullName": "Mubasher Jamil"
@@ -1288,10 +1288,11 @@
   },
   "ana-soto": {
     "shortname": "ANA SOTO",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
-    "affiliation": ""
+    "photo": "/assets/avatars/gs/yQYjCJkAAAAJ.jpg",
+    "url": "https://gsbs.tufts.edu/facultyResearch/faculty/soto-ana/research",
+    "gsid": "yQYjCJkAAAAJ",
+    "affiliation": "Professor, tufts University School of Medicine",
+    "fullName": "Ana M Soto"
   },
   "j-torday": {
     "shortname": "J Torday",
@@ -1492,7 +1493,8 @@
     "photo": "/assets/avatars/gs/bc8tcucAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=bc8tcucAAAAJ",
     "gsid": "bc8tcucAAAAJ",
-    "affiliation": ""
+    "affiliation": "Università di firenze",
+    "fullName": "Roberta Lanfredini"
   },
   "ayu-mejgal": {
     "shortname": "АЮ Мейгал",
@@ -1564,7 +1566,7 @@
     "photo": "/assets/avatars/gs/laZZC60AAAAJ.jpg",
     "url": "https://avelguenin.github.io/",
     "gsid": "laZZC60AAAAJ",
-    "affiliation": "Kairos Research, Active Inference Lab",
+    "affiliation": "University of Sussex, Kairos Research, Active Inference Lab",
     "fullName": "Avel GUÉNIN--CARLUT"
   },
   "r-giovagnoli": {
@@ -1594,7 +1596,7 @@
     "photo": "/assets/avatars/gs/laZZC60AAAAJ.jpg",
     "url": "https://avelguenin.github.io/",
     "gsid": "laZZC60AAAAJ",
-    "affiliation": "Kairos Research, Active Inference Lab",
+    "affiliation": "University of Sussex, Kairos Research, Active Inference Lab",
     "fullName": "Avel GUÉNIN--CARLUT"
   },
   "a-piombarolo": {
@@ -1640,8 +1642,7 @@
     "photo": "/assets/avatars/gs/7Y9_mzEAAAAJ.jpg",
     "affiliation": "University of Freiburg",
     "fullName": "Sebastian Ohse",
-    "url": "https://scholar.google.fr/citations?user=7Y9_mzEAAAAJ",
-    "gsid": "7Y9_mzEAAAAJ"
+    "url": "https://scholar.google.fr/citations?user=7Y9_mzEAAAAJ"
   },
   "m-zare": {
     "shortname": "M Zare",
@@ -1694,7 +1695,7 @@
     "photo": "/assets/avatars/gs/2Uos2_gAAAAJ.jpg",
     "url": "http://www.pouriamistani.com/",
     "gsid": "2Uos2_gAAAAJ",
-    "affiliation": "NVIDIA",
+    "affiliation": "Genentech",
     "fullName": "Pouria A. Mistani"
   },
   "s-pakravan": {
@@ -2426,7 +2427,7 @@
     "url": "https://scholar.google.fr/citations?user=bV_hNooAAAAJ",
     "gsid": "bV_hNooAAAAJ",
     "affiliation": "Masaryk University, Faculty of Medicine",
-    "fullName": "Zuzana Koledová"
+    "fullName": "Zuzana Sumbalová Koledová"
   },
   "p-lu": {
     "shortname": "P Lu",
@@ -2670,7 +2671,8 @@
     "photo": "/assets/avatars/gs/wDkCMWMAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=wDkCMWMAAAAJ",
     "gsid": "wDkCMWMAAAAJ",
-    "affiliation": ""
+    "affiliation": "Affiliation inconnue",
+    "fullName": "Joel Berry"
   },
   "m-ouyang": {
     "shortname": "M Ouyang",
@@ -2827,10 +2829,11 @@
   },
   "e-jablonka": {
     "shortname": "E Jablonka",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
-    "affiliation": ""
+    "photo": "/assets/avatars/gs/3_cxKxwAAAAJ.jpg",
+    "url": "https://english.tau.ac.il/profile/jablonka",
+    "gsid": "3_cxKxwAAAAJ",
+    "affiliation": "Tel Aviv University",
+    "fullName": "Eva Jablonka"
   },
   "s-ginsburg": {
     "shortname": "S Ginsburg",
@@ -2935,8 +2938,7 @@
     "photo": "/assets/avatars/gs/hra1-ZQAAAAJ.jpg",
     "affiliation": "Sapienza University",
     "fullName": "Sara Proietti",
-    "url": "https://scholar.google.fr/citations?user=hra1-ZQAAAAJ",
-    "gsid": "hra1-ZQAAAAJ"
+    "url": "https://scholar.google.fr/citations?user=hra1-ZQAAAAJ"
   },
   "s-huang": {
     "shortname": "S Huang",
@@ -3155,7 +3157,7 @@
     "photo": "/assets/avatars/gs/gMVeWQkAAAAJ.jpg",
     "url": "https://sse.cuhk.edu.cn/en/faculty/tangbenzhong",
     "gsid": "gMVeWQkAAAAJ",
-    "affiliation": "Distinguished Presidential Chair Professor, The Chinese University of Hong Kong, Shenzhen",
+    "affiliation": "X.Q. Deng Presidential Chair Professor, The Chinese University of Hong Kong, Shenzhen",
     "fullName": "Ben Zhong Tang"
   },
   "c-wright": {
@@ -3183,9 +3185,9 @@
   },
   "b-situ": {
     "shortname": "B Situ",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
+    "photo": "/assets/avatars/gs/MUMKsJwAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=MUMKsJwAAAAJ",
+    "gsid": "MUMKsJwAAAAJ",
     "affiliation": ""
   },
   "z-zhao": {
@@ -3715,7 +3717,7 @@
     "photo": "/assets/avatars/gs/UTBq0lsAAAAJ.jpg",
     "url": "http://adinugroho.staff.ugm.ac.id/",
     "gsid": "UTBq0lsAAAAJ",
-    "affiliation": "Associate Professor and Head, Dept. of Electrical and Information Eng., Universitas Gadjah Mada",
+    "affiliation": "Professor of Biomedical Engineering, Universitas Gadjah Mada",
     "fullName": "Hanung Adi Nugroho"
   },
   "ta-morris": {
@@ -3880,7 +3882,7 @@
   "t-veloz": {
     "shortname": "T Veloz",
     "photo": "/assets/avatars/gs/q7HbZQ4AAAAJ.jpg",
-    "url": "https://clea.research.vub.be/en/tomas-veloz",
+    "url": "https://clea.research.vub.be/tomas-veloz",
     "gsid": "q7HbZQ4AAAAJ",
     "affiliation": "Postdoctoral Researcher, Vrije Universiteit Brussel",
     "fullName": "Tomas Veloz"
@@ -3989,9 +3991,9 @@
   "a-gambarotto": {
     "shortname": "A Gambarotto",
     "photo": "/assets/avatars/gs/QZ-lUAoAAAAJ.jpg",
-    "url": "https://uclouvain.academia.edu/AndreaGambarotto",
+    "url": "https://www.ias-research.net/people/andrea-gambarotto/",
     "gsid": "QZ-lUAoAAAAJ",
-    "affiliation": "Université Catholique de Louvain",
+    "affiliation": "Universidad del País Vasco (UPV/EHU)",
     "fullName": "andrea gambarotto"
   },
   "a-nahas": {
@@ -4005,7 +4007,7 @@
   "f-heylighen": {
     "shortname": "F Heylighen",
     "photo": "/assets/avatars/gs/jt7BHBUAAAAJ.jpg",
-    "url": "https://clea.research.vub.be/en/FrancisHeylighen",
+    "url": "https://clea.research.vub.be/FrancisHeylighen",
     "gsid": "jt7BHBUAAAAJ",
     "affiliation": "Director Center Leo Apostel, Vrije Universiteit Brussel",
     "fullName": "Francis Heylighen"
@@ -4363,7 +4365,7 @@
     "photo": "/assets/avatars/gs/iRQs0y8AAAAJ.jpg",
     "url": "http://www.tim-taylor.com/",
     "gsid": "iRQs0y8AAAAJ",
-    "affiliation": "Monash University & University of London",
+    "affiliation": "University of London",
     "fullName": "Tim Taylor"
   },
   "t-uller": {
@@ -4379,8 +4381,8 @@
     "photo": "/assets/avatars/gs/LuNBbMEAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=LuNBbMEAAAAJ",
     "gsid": "LuNBbMEAAAAJ",
-    "affiliation": "National Laboratory for Scientific Computation – LNCC",
-    "fullName": "Maurício Vieira Kritz"
+    "affiliation": "Associate Researcher, National Laboratory for Scientific Computing",
+    "fullName": "Mauricio Vieira Kritz"
   },
   "m-di-bernardo": {
     "shortname": "M Di Bernardo",
@@ -4522,7 +4524,7 @@
     "photo": "/assets/avatars/gs/eOUCBIEAAAAJ.jpg",
     "url": "https://www.researchgate.net/profile/Ragnar-Van-Der-Merwe",
     "gsid": "eOUCBIEAAAAJ",
-    "affiliation": "PhD student, University of Johannesburg",
+    "affiliation": "Postdoctoral research fellow, University of Johannesburg",
     "fullName": "Ragnar van der Merwe"
   },
   "f-pellet": {
@@ -4784,10 +4786,11 @@
   },
   "cm-schaeberle": {
     "shortname": "CM Schaeberle",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
-    "affiliation": ""
+    "photo": "/assets/avatars/gs/NMCXGVQAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=NMCXGVQAAAAJ",
+    "gsid": "NMCXGVQAAAAJ",
+    "affiliation": "Affiliation inconnue",
+    "fullName": "Cheryl Schaeberle"
   },
   "p-li": {
     "shortname": "P Li",
@@ -4865,7 +4868,7 @@
   "m-helmy": {
     "shortname": "M Helmy",
     "photo": "/assets/avatars/gs/Ccx_2agAAAAJ.jpg",
-    "url": "http://individual.utoronto.ca/mohamedhelmy",
+    "url": "https://www.linkedin.com/in/mohamed-helmy-phd/",
     "gsid": "Ccx_2agAAAAJ",
     "affiliation": "Computational Systems Biologist",
     "fullName": "Mohamed Helmy"
@@ -5007,7 +5010,8 @@
     "photo": "/assets/avatars/gs/cvAm-5EAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=cvAm-5EAAAAJ",
     "gsid": "cvAm-5EAAAAJ",
-    "affiliation": ""
+    "affiliation": "China University of Geoscience (Wuhan)",
+    "fullName": "Xia Wu"
   },
   "z-duan": {
     "shortname": "Z Duan",
@@ -5021,7 +5025,7 @@
     "photo": "/assets/avatars/gs/ovmqgJoAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=ovmqgJoAAAAJ",
     "gsid": "ovmqgJoAAAAJ",
-    "affiliation": "Institute of Chemistry, Chinese Academy of Sciences; Pennsylvania State University",
+    "affiliation": "China University of Geosciences, Wuhan",
     "fullName": "Yu Huang"
   },
   "x-lou": {
@@ -5140,7 +5144,7 @@
     "photo": "/assets/avatars/gs/wWiwF8AAAAAJ.jpg",
     "url": "http://yuanlab.org/",
     "gsid": "wWiwF8AAAAAJ",
-    "affiliation": "Computational Biology and Integrated Genomics - Institute of Cancer Research",
+    "affiliation": "Translational Molecular Pathology - MD Anderson Cancer Center",
     "fullName": "Simon P. Castillo"
   },
   "je-keymer": {
@@ -5148,7 +5152,7 @@
     "photo": "/assets/avatars/gs/YDqfmQoAAAAJ.jpg",
     "url": "http://keymerlab.nl/",
     "gsid": "YDqfmQoAAAAJ",
-    "affiliation": "University of Aysén",
+    "affiliation": "Assistant Professor at IAS, Shenzhen's X-Institute",
     "fullName": "Juan Keymer"
   },
   "pa-marquet": {
@@ -5179,7 +5183,7 @@
     "photo": "/assets/avatars/gs/ngiGUbsAAAAJ.jpg",
     "url": "http://www.swansea.ac.uk/staff/science/maths/g.g.powathil/",
     "gsid": "ngiGUbsAAAAJ",
-    "affiliation": "Associate Professor, Swansea University",
+    "affiliation": "Professor, Swansea University",
     "fullName": "Gibin Powathil"
   },
   "jj-arroyo-crespo": {
@@ -5308,7 +5312,7 @@
     "photo": "/assets/avatars/gs/MF-yajUAAAAJ.jpg",
     "url": "https://www.researchgate.net/profile/Murad_Alahdal2",
     "gsid": "MF-yajUAAAAJ",
-    "affiliation": "Shenzhen Second People's Hospital /Zhejiang University",
+    "affiliation": "Johns Hopkins All Children's Hospital, Johns Hopkins University",
     "fullName": "Dr Murad Alahdal"
   },
   "d-sun": {
@@ -5482,7 +5486,7 @@
     "photo": "/assets/avatars/gs/O_5EebsAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=O_5EebsAAAAJ",
     "gsid": "O_5EebsAAAAJ",
-    "affiliation": "NC State",
+    "affiliation": "Professor of Biological Sciences NC State University",
     "fullName": "Scott Belcher"
   },
   "ja-flaws": {
@@ -5640,9 +5644,10 @@
   "sj-colleta": {
     "shortname": "SJ Colleta",
     "photo": "/assets/avatars/gs/OemEXUcAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=OemEXUcAAAAJ",
+    "url": "https://www.ibilce.unesp.br/",
     "gsid": "OemEXUcAAAAJ",
-    "affiliation": ""
+    "affiliation": "Unesp - IBILCE - Instituto de Biociências, Letras e Ciências Exatas",
+    "fullName": "Simone Jacovaci Colleta"
   },
   "dap-de-campos-zuccari": {
     "shortname": "DAP de Campos Zuccari",
@@ -6034,9 +6039,10 @@
   "a-angelini": {
     "shortname": "A Angelini",
     "photo": "/assets/avatars/gs/nJ-6ENkAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=nJ-6ENkAAAAJ",
+    "url": "http://www.angeliniandrea.it/",
     "gsid": "nJ-6ENkAAAAJ",
-    "affiliation": ""
+    "affiliation": "Associate Professor of Orthopedics, University of Padova, Department of Orthopedics and Orthopedic",
+    "fullName": "Andrea Angelini"
   },
   "mmg-longo": {
     "shortname": "MMG Longo",
@@ -6335,7 +6341,7 @@
     "photo": "/assets/avatars/gs/ggdN34MAAAAJ.jpg",
     "url": "http://www.econ.iastate.edu/tesfatsi/",
     "gsid": "ggdN34MAAAAJ",
-    "affiliation": "Research Professor, Professor Emerita of Economics, Iowa State University",
+    "affiliation": "Research Professor of Economics, Courtesy Research Professor of ECpE, Iowa State University",
     "fullName": "Leigh Tesfatsion"
   },
   "ea-di-paolo": {
@@ -6457,7 +6463,7 @@
     "photo": "/assets/avatars/gs/OY4atVoAAAAJ.jpg",
     "url": "http://mason.gmu.edu/~escott8/",
     "gsid": "OY4atVoAAAAJ",
-    "affiliation": "George Mason University",
+    "affiliation": "MITRE Corporation",
     "fullName": "Eric O. Scott"
   },
   "i-matutinovic": {
@@ -6536,7 +6542,7 @@
     "photo": "/assets/avatars/gs/NZKf-r4AAAAJ.jpg",
     "url": "https://uow.academia.edu/MichaelKirchhoff",
     "gsid": "NZKf-r4AAAAJ",
-    "affiliation": "University of Wollongong, School of Liberal Arts",
+    "affiliation": "Associate Professor, School of Liberal Arts, University of Wollongong",
     "fullName": "Michael Kirchhoff"
   },
   "jr-di-leo": {
@@ -6573,7 +6579,7 @@
     "photo": "/assets/avatars/gs/_BZK3XEAAAAJ.jpg",
     "url": "http://www.dirk-ehnts.de/",
     "gsid": "_BZK3XEAAAAJ",
-    "affiliation": "TU Chemnitz",
+    "affiliation": "Torrens University, Australia",
     "fullName": "Dirk Ehnts"
   },
   "t-idema": {
@@ -6714,9 +6720,9 @@
   "l-damiano": {
     "shortname": "L Damiano",
     "photo": "/assets/avatars/gs/bVE_DiQAAAAJ.jpg",
-    "url": "https://www.iulm.it/en/iulm/ateneo/docenti-e-collaboratori/damiano-luisa",
+    "url": "https://www.iulm.it/it/iulm/ateneo/docenti-e-collaboratori/damiano-luisa",
     "gsid": "bVE_DiQAAAAJ",
-    "affiliation": "Associate Professor of Logic and Philosophy of Science, IULM University, Milan, Italy",
+    "affiliation": "Full Professor of Logic and Philosophy of Science, IULM University, Milan, Italy",
     "fullName": "Luisa Damiano"
   },
   "ja-bacigalupi": {
@@ -6790,9 +6796,9 @@
   },
   "p-stapleton": {
     "shortname": "P Stapleton",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
+    "photo": "/assets/avatars/gs/aebrlLEAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=aebrlLEAAAAJ",
+    "gsid": "aebrlLEAAAAJ",
     "affiliation": ""
   },
   "p-vedula": {
@@ -7092,7 +7098,8 @@
     "photo": "/assets/avatars/gs/Lj9BLx4AAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=Lj9BLx4AAAAJ",
     "gsid": "Lj9BLx4AAAAJ",
-    "affiliation": ""
+    "affiliation": "Professor of Economics University of Montpellier",
+    "fullName": "Sandrine Michel"
   },
   "ab-kazanskij": {
     "shortname": "АБ Казанский",
@@ -7358,7 +7365,7 @@
     "photo": "/assets/avatars/gs/qkLxA0wAAAAJ.jpg",
     "url": "https://broitman.net.technion.ac.il/",
     "gsid": "qkLxA0wAAAAJ",
-    "affiliation": "Assistant Professor, Faculty of Architecture and Town Planning, Technion - Israel Institute of",
+    "affiliation": "Associate Professor, Faculty of Architecture and Town Planning, Technion - Israel Institute of",
     "fullName": "Dani Broitman"
   },
   "g-liang": {
@@ -7537,7 +7544,7 @@
     "photo": "/assets/avatars/gs/3NcNnn0AAAAJ.jpg",
     "url": "https://morgantingley.com/",
     "gsid": "3NcNnn0AAAAJ",
-    "affiliation": "Associate Professor, UCLA",
+    "affiliation": "Associate Professor, University of California, Los Angeles",
     "fullName": "Morgan Tingley"
   },
   "s-jerez": {
@@ -7890,16 +7897,18 @@
   "f-chwalczyk": {
     "shortname": "F Chwałczyk",
     "photo": "/assets/avatars/gs/3Fe9D8EAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=3Fe9D8EAAAAJ",
+    "url": "https://fchwalczyk.tumblr.com/eng",
     "gsid": "3Fe9D8EAAAAJ",
-    "affiliation": ""
+    "affiliation": "Institute of Cultural Studies, Faculty of Anthropology and Cultural Studies, Adam Mickiewicz University in Poznań, Poland",
+    "fullName": "Franciszek Chwałczyk"
   },
   "a-belabes": {
     "shortname": "A Belabes",
     "photo": "/assets/avatars/gs/giHgWKcAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=giHgWKcAAAAJ",
     "gsid": "giHgWKcAAAAJ",
-    "affiliation": ""
+    "affiliation": "Islamic Economics Institute",
+    "fullName": "Prof Dr Abderrazak Belabes"
   },
   "ha-serra": {
     "shortname": "HA Serra",
@@ -7920,7 +7929,8 @@
     "photo": "/assets/avatars/gs/NHnSU1cAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=NHnSU1cAAAAJ",
     "gsid": "NHnSU1cAAAAJ",
-    "affiliation": ""
+    "affiliation": "Tufts University",
+    "fullName": "Christopher Polleys"
   },
   "ht-thieu": {
     "shortname": "HT Thieu",
@@ -7941,14 +7951,16 @@
     "photo": "/assets/avatars/gs/JoEJgSUAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=JoEJgSUAAAAJ",
     "gsid": "JoEJgSUAAAAJ",
-    "affiliation": ""
+    "affiliation": "Emeritus Professor of Animal Behaviour, Queen's University, Belfast",
+    "fullName": "Bob Elwood"
   },
   "j-bartlett": {
     "shortname": "J Bartlett",
     "photo": "/assets/avatars/gs/pIxkqQIAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=pIxkqQIAAAAJ",
+    "url": "http://www.blythinstitute.org/",
     "gsid": "pIxkqQIAAAAJ",
-    "affiliation": ""
+    "affiliation": "The Blyth Institute",
+    "fullName": "Jonathan Bartlett"
   },
   "j-brooke": {
     "shortname": "J Brooke",
@@ -8030,30 +8042,34 @@
   "fr-martinez-cleves": {
     "shortname": "FR Martínez Cleves",
     "photo": "/assets/avatars/gs/S9amR1oAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=S9amR1oAAAAJ",
+    "url": "https://orcid.org/0000-0003-0347-3199",
     "gsid": "S9amR1oAAAAJ",
-    "affiliation": ""
+    "affiliation": "Universidad del Tolima",
+    "fullName": "Félix Raúl Martínez Cleves"
   },
   "s-quenot": {
     "shortname": "S Quenot",
     "photo": "/assets/avatars/gs/PK9nSsgAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=PK9nSsgAAAAJ",
+    "url": "https://indiature.hypotheses.org/",
     "gsid": "PK9nSsgAAAAJ",
-    "affiliation": ""
+    "affiliation": "Università di Corsica Pasquale Paoli - UMR LISA 6240",
+    "fullName": "Sébastien Quenot"
   },
   "b-turner": {
     "shortname": "B Turner",
     "photo": "/assets/avatars/gs/_e_gx0cAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=_e_gx0cAAAAJ",
+    "url": "https://www.kent.ac.uk/politics/staff/canterbury/turner.html",
     "gsid": "_e_gx0cAAAAJ",
-    "affiliation": ""
+    "affiliation": "Lecturer in Political Theory, University of Kent",
+    "fullName": "Ben Turner"
   },
   "j-mulder": {
     "shortname": "J Mulder",
     "photo": "/assets/avatars/gs/uiYUzlMAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=uiYUzlMAAAAJ",
+    "url": "http://www.nmbu.no/",
     "gsid": "uiYUzlMAAAAJ",
-    "affiliation": ""
+    "affiliation": "Professor, Soil Science. Norwegian University of Life Sciences",
+    "fullName": "Jan Mulder"
   },
   "lac-uhlmann": {
     "shortname": "LAC Uhlmann",
@@ -8074,7 +8090,8 @@
     "photo": "/assets/avatars/gs/BLhNDPkAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=BLhNDPkAAAAJ",
     "gsid": "BLhNDPkAAAAJ",
-    "affiliation": ""
+    "affiliation": "Universidade Federal do Tocantins",
+    "fullName": "Fernando Mayer Pelicice"
   },
   "h-lehmann": {
     "shortname": "H Lehmann",
@@ -8100,9 +8117,10 @@
   "j-jia": {
     "shortname": "J Jia",
     "photo": "/assets/avatars/gs/MIFEkRYAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=MIFEkRYAAAAJ",
+    "url": "http://www.jimmyjia.com/",
     "gsid": "MIFEkRYAAAAJ",
-    "affiliation": ""
+    "affiliation": "Visiting Scholar, George Washington University",
+    "fullName": "Jimmy Jia"
   },
   "bm-kiforenko": {
     "shortname": "BM Kiforenko",
@@ -8121,16 +8139,18 @@
   "t-rama-folco": {
     "shortname": "T Rama Folco",
     "photo": "/assets/avatars/gs/82ZtT08AAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=82ZtT08AAAAJ",
+    "url": "https://tiagorama.wordpress.com/",
     "gsid": "82ZtT08AAAAJ",
-    "affiliation": ""
+    "affiliation": "Autonomous University of Barcelona",
+    "fullName": "Tiago Rama"
   },
   "y-le-cunff": {
     "shortname": "Y Le Cunff",
     "photo": "/assets/avatars/gs/kVGP0MoAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=kVGP0MoAAAAJ",
     "gsid": "kVGP0MoAAAAJ",
-    "affiliation": ""
+    "affiliation": "Université Rennes 1 - IGDR",
+    "fullName": "Yann Le Cunff"
   },
   "l-chesneau": {
     "shortname": "L Chesneau",
@@ -8179,13 +8199,294 @@
     "photo": "/assets/avatars/gs/EzsbEKQAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=EzsbEKQAAAAJ",
     "gsid": "EzsbEKQAAAAJ",
-    "affiliation": ""
+    "affiliation": "Universidad de Salamanca",
+    "fullName": "Mariano Martín Villuendas"
   },
   "h-van-eyghen": {
     "shortname": "H Van Eyghen",
     "photo": "/assets/avatars/gs/8XSxntQAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=8XSxntQAAAAJ",
+    "url": "https://www.researchgate.net/profile/Hans_Van_Eyghen",
     "gsid": "8XSxntQAAAAJ",
+    "affiliation": "Tilburg University",
+    "fullName": "Hans Van Eyghen"
+  },
+  "am-adams": {
+    "shortname": "AM Adams",
+    "photo": "/assets/avatars/gs/KzspA6sAAAAJ.jpg",
+    "url": "https://www.curiosityspaces.com/",
+    "gsid": "KzspA6sAAAAJ",
+    "affiliation": "University of Wisconsin-Madison",
+    "fullName": "Alyssa M Adams"
+  },
+  "lt-boenke": {
+    "shortname": "LT Boenke",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "a-zeghbib": {
+    "shortname": "A Zeghbib",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "m-spiliopoulou": {
+    "shortname": "M Spiliopoulou",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "t-rama": {
+    "shortname": "T Rama",
+    "photo": "/assets/avatars/gs/82ZtT08AAAAJ.jpg",
+    "url": "https://tiagorama.wordpress.com/",
+    "gsid": "82ZtT08AAAAJ",
+    "affiliation": "Autonomous University of Barcelona",
+    "fullName": "Tiago Rama"
+  },
+  "dt-rivadeneira": {
+    "shortname": "DT Rivadeneira",
+    "photo": "/assets/avatars/gs/ARE0ZPsAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=ARE0ZPsAAAAJ",
+    "gsid": "ARE0ZPsAAAAJ",
+    "affiliation": "Museo Nacional de Ciencias Naturales",
+    "fullName": "Dancizo Toro Rivadeneira"
+  },
+  "r-hirota": {
+    "shortname": "R Hirota",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "h-saigo": {
+    "shortname": "H Saigo",
+    "photo": "/assets/avatars/gs/iV_yA5EAAAAJ.jpg",
+    "url": "https://researchmap.jp/-qp/",
+    "gsid": "iV_yA5EAAAAJ",
+    "affiliation": "Nagahama Institute of Bio-science and Technology",
+    "fullName": "Hayato Saigo"
+  },
+  "s-taguchi": {
+    "shortname": "S Taguchi",
+    "photo": "/assets/avatars/gs/c94LFvsAAAAJ.jpg",
+    "url": "http://researchmap.jp/read0125809/?lang=english",
+    "gsid": "c94LFvsAAAAJ",
+    "affiliation": "Hokkaido University",
+    "fullName": "Shigeru Taguchi"
+  },
+  "b-stanic": {
+    "shortname": "B Stanic",
+    "photo": "/assets/avatars/gs/Vo_N4pMAAAAJ.jpg",
+    "url": "https://endos.pmf.uns.ac.rs/",
+    "gsid": "Vo_N4pMAAAAJ",
+    "affiliation": "Senior Research Associate, University of Novi Sad, Serbia",
+    "fullName": "Bojana Stanic"
+  },
+  "d-kokai": {
+    "shortname": "D Kokai",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "jm-filipovic": {
+    "shortname": "JM Filipovic",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "ds-nenadov": {
+    "shortname": "DS Nenadov",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "cl-casey": {
+    "shortname": "CL Casey",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "j-dreyer": {
+    "shortname": "J Dreyer",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "k-van-der-walt": {
+    "shortname": "K van der Walt",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "f-horst": {
+    "shortname": "F Horst",
+    "photo": "/assets/avatars/gs/BEEULrIAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=BEEULrIAAAAJ",
+    "gsid": "BEEULrIAAAAJ",
+    "affiliation": "Johannes Gutenberg-University Mainz (Germany)",
+    "fullName": "Fabian Horst"
+  },
+  "d-slijepcevic": {
+    "shortname": "D Slijepcevic",
+    "photo": "/assets/avatars/gs/faWNz2YAAAAJ.jpg",
+    "url": "https://icmt.fhstp.ac.at/en/team/djordje-slijepcevic",
+    "gsid": "faWNz2YAAAAJ",
+    "affiliation": "Researcher, Institute of Creative\\Media/Technologies, St. Pölten University of Applied",
+    "fullName": "Djordje Slijepcevic"
+  },
+  "m-simak": {
+    "shortname": "M Simak",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "b-horsak": {
+    "shortname": "B Horsak",
+    "photo": "/assets/avatars/gs/XIgceWIAAAAJ.jpg",
+    "url": "https://cdhsi.fhstp.ac.at/forschungsgruppen/motor-rehabilitation",
+    "gsid": "XIgceWIAAAAJ",
+    "affiliation": "St. Pölten University of Applied Sciences",
+    "fullName": "Brian Horsak"
+  },
+  "dd-spyropoulos": {
+    "shortname": "DD Spyropoulos",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "jpa-de-jesus": {
+    "shortname": "JPA de Jesus",
+    "photo": "/assets/avatars/gs/MBK6jyMAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=MBK6jyMAAAAJ",
+    "gsid": "MBK6jyMAAAAJ",
+    "affiliation": "Universidade Tecnológica Federal do Paraná",
+    "fullName": "João Paulo Almirão de Jesus"
+  },
+  "fa-la-porta": {
+    "shortname": "FA La Porta",
+    "photo": "/assets/avatars/gs/Su1-IC0AAAAJ.jpg",
+    "url": "http://lattes.cnpq.br/9613088203057046",
+    "gsid": "Su1-IC0AAAAJ",
+    "affiliation": "Professor Adjunto do Departamento de Química, Universidade Tecnológica Federal do Paraná",
+    "fullName": "Felipe de Almeida La Porta"
+  },
+  "x-bondil": {
+    "shortname": "X Bondil",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "mh-haye": {
+    "shortname": "MH Haye",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "n-dritsch": {
+    "shortname": "N Dritsch",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "l-rinsky-halivni": {
+    "shortname": "L Rinsky-Halivni",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "y-karaca": {
+    "shortname": "Y Karaca",
+    "photo": "/assets/avatars/gs/qY0J23sAAAAJ.jpg",
+    "url": "https://www.umassmed.edu/",
+    "gsid": "qY0J23sAAAAJ",
+    "affiliation": "University of Massachusetts Chan Medical School & University of Massachusetts Medical Center",
+    "fullName": "Yeliz Karaca"
+  },
+  "t-pieterse": {
+    "shortname": "T Pieterse",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "m-bitbol": {
+    "shortname": "M Bitbol",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": "",
+    "fullName": "Michel Bitbol"
+  },
+  "si-ereniev": {
+    "shortname": "СИ Ерениев",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "ss-stepanov": {
+    "shortname": "СС Степанов",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "am-dygaj": {
+    "shortname": "АМ Дыгай",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "h-isaac": {
+    "shortname": "H Isaac",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "wn-butos": {
+    "shortname": "WN Butos",
+    "photo": "/assets/avatars/gs/C23uNsQAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=C23uNsQAAAAJ",
+    "gsid": "C23uNsQAAAAJ",
+    "affiliation": ""
+  },
+  "tj-mcquade": {
+    "shortname": "TJ McQuade",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "l-virenque": {
+    "shortname": "L Virenque",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "w-deans": {
+    "shortname": "W Deans",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
     "affiliation": ""
   }
 }

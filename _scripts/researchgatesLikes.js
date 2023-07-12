@@ -83,11 +83,13 @@ let res = {};
     await scrolldown(driver);
     await sleep(5000);
     listpub = await driver.findElements(
-      By.xpath("//div[@class='nova-legacy-v-publication-item__stack-item']/div/a")
+      By.xpath("//div[@class='nova-legacy-v-entity-item__stack-item']/div/a")
     );
+              console.log(listpub);
     titles = [];
     urls = [];
     for (pub in listpub) {
+          console.log("test");
       let resu = await listpub[pub].getAttribute('href');
       let rest = await listpub[pub].getText();
       titles.push(rest);
