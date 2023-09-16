@@ -92,13 +92,23 @@ JSON-LD for:
 </div>
 
 
+  {% from "macros/talkCard.njk" import talkCard %}
 
 
-    
-    
     <hr class="fade-2">
  
-  {% from "macros/pubCard.njk" import pubCard %}
+  <h2   class="wrap titleDiag titleDiag2" id="Events">Events</h2>
+  <ol class="cards-list">
+    {% for article in collections.latesteventsall %}
+      {{ talkCard(article,numbers.numbers2) }}
+    {% endfor %}
+  </ol>
+        <p class="wrap more ">Check <a href="/all/events/">all events</a>…</p>
+
+      {% from "macros/pubCard.njk" import pubCard %}
+
+    <hr class="fade-2">
+ 
   <h2   class="wrap titleDiag titleDiag2" id="latest-publications">Latest Publications</h2>
   <ol class="cards-list">
     {% for article in collections.latestpublicationsall %}

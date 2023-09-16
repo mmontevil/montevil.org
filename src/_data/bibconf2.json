@@ -1,6 +1,25 @@
 [
     {
         "objecttype": "entry",
+        "entrytype": "proceedings",
+        "entrykey": "2023-inauguration",
+        "fields": {
+            "title": "Inauguration Programme interdisciplinaire : fondations théoriques de la biologie",
+            "location": " École Normale Supérieure",
+            "year": "2023",
+            "month": "10",
+            "day": "4",
+            "url": "https://republique-des-savoirs.fr/events/event/inauguration-du-programme-fondations-theoriques-de-la-biologie/",
+            "annonce": "true",
+            "abstract": "La biologie moléculaire a donné un cadre très fécond pour l’exploration empirique du vivant, mais ses résultats ont aussi et en même temps mis à mal son cadre conceptuel. Pour dépasser ce cadre, un certain nombre d’auteurs soulignent les défis théoriques que comporte la compréhension des êtres vivants dans leur historicité et organicité. Si l’on doit comprendre les êtres vivant comme des organisations biologiques, comment ne pas se perdre dans leur complexité ? Et si leurs régularités sont les résultat d’une histoire et continuent de changer, de produire une histoire, comment les objectiver ? Ces questions sont, nous le pensons, essentielles pour répondre aux défis de ce siècle concernant la santé et la biodiversité et croisent aussi la question de l’encadrement théorique de l’usage des nouvelles technologies dans le travail scientifique. </br> Dans ce contexte, nous inaugurons ici le programme interdisciplinaire : fondations théoriques de la biologie. Notre approche consiste à aborder les questions théoriques en s’appuyant sur la philosophie, notamment l’épistémologie ainsi que la comparaison avec les innovations mais aussi les contraintes théoriques d’autres disciplines, notamment la physique. En s’appuyant sur cette réflexivité, il s’agira à la fois de réinterpréter les pratiques existantes et de développer de nouvelles pratiques et méthodes.",
+            "language": "fr",
+            "illustration": "poster-inauguration.jpg",
+            "program": "poster-inauguration.pdf",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2023-interface",
         "fields": {

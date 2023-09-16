@@ -20,7 +20,7 @@ async function login(driver) {
   await driver.get('https://www.researchgate.net/login');
   await driver.wait(() => documentInitialised(), 10000);
   await sleep(2000);
-    await driver.findElement(By.xpath("//button[@mode='secondary'][3]")).click();
+   // await driver.findElement(By.xpath("//button[@mode='secondary'][3]")).click();
   await sleep(2000);
  // await driver.findElement(By.xpath("//button[@mode='primary']")).click();
   await driver.findElement(By.name('login')).sendKeys(RG_LOGIN);

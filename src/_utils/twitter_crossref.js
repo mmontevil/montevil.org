@@ -16,7 +16,7 @@ async function getTweet(tweetId, target, source) {
   // if we using cache and not cache busting, check there first
 
   // if we have env variables, go get tweet
-  if (hasAuth()) {
+  if (0==1 && hasAuth()) {
     let changed = false;
     let cachedTweet = cachedTweets[tweetId];
     let tweetViewModel = {};
@@ -46,7 +46,7 @@ async function getTweet(tweetId, target, source) {
                          '927885838712754178','1645560374719131652'
                         ]; 
     if (tweetViewModel['wm-property'] == 'mention-of') {
-      if (tweetViewModel['retweetUpdated'] !== day && !deletedTweets.includes(tweetId)) {
+      if ((tweetViewModel['retweetUpdated'] !== day && !deletedTweets.includes(tweetId) )) {
         let livereTweet = await fetchreTweet(tweetId);
 
         if (livereTweet) {
