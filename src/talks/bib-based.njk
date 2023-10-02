@@ -7,7 +7,7 @@ pagination: {
   addAllPagesToCollections: "true"
     },
 layout: "talk",
-permalink:    "talks/{{entry.issued['date-parts'][0][0]}}-{%-if entry['container-title'] -%}{{- entry['container-title'] | slugify-}}{%-endif-%}-{{- entry['title'] | slugify| truncate(5,false) | slugify-}}/",
+permalink:    "talks/{{entry.issued['date-parts'][0][0]}}-{%-if entry['container-title'] -%}{{- entry['container-title'] | slugify-}}{%-endif-%}-{{- entry['title'] |  slugify-}}/",
 eleventyComputed: {
   title: "{{ entry.title }}",
   location: {   
