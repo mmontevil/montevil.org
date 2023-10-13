@@ -763,9 +763,10 @@
   "b-beckage": {
     "shortname": "B Beckage",
     "photo": "/assets/avatars/gs/6Tbmu1IAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=6Tbmu1IAAAAJ",
+    "url": "https://brianbeckage.github.io/",
     "gsid": "6Tbmu1IAAAAJ",
-    "affiliation": ""
+    "affiliation": "Professor, Department of Plant Biology & Department of Computer Science, University of Vermont",
+    "fullName": "Brian Beckage"
   },
   "r-hollerbach": {
     "shortname": "R Hollerbach",
@@ -1694,7 +1695,7 @@
     "photo": "/assets/avatars/gs/2Uos2_gAAAAJ.jpg",
     "url": "http://www.pouriamistani.com/",
     "gsid": "2Uos2_gAAAAJ",
-    "affiliation": "Genentech",
+    "affiliation": "University of California Santa Barbara",
     "fullName": "Pouria A. Mistani"
   },
   "s-pakravan": {
@@ -8760,5 +8761,103 @@
     "gsid": "",
     "affiliation": "",
     "fullName": "Thomas Heams"
+  },
+  "jm-aerts": {
+    "shortname": "JM Aerts",
+    "photo": "/assets/avatars/gs/GZDn_UIAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=GZDn_UIAAAAJ",
+    "gsid": "GZDn_UIAAAAJ",
+    "affiliation": ""
+  },
+  "d-balschun": {
+    "shortname": "D Balschun",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "a-ragauskas": {
+    "shortname": "A Ragauskas",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "i-ignataviciene": {
+    "shortname": "I Ignatavičienė",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "v-rakauskas": {
+    "shortname": "V Rakauskas",
+    "photo": "/assets/avatars/gs/i6IbJXcAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=i6IbJXcAAAAJ",
+    "gsid": "i6IbJXcAAAAJ",
+    "affiliation": ""
+  },
+  "d-grauda": {
+    "shortname": "D Grauda",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "l-lavanderos": {
+    "shortname": "L Lavanderos",
+    "photo": "/assets/avatars/gs/YdB2Wv8AAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=YdB2Wv8AAAAJ",
+    "gsid": "YdB2Wv8AAAAJ",
+    "affiliation": ""
+  },
+  "a-malpartida": {
+    "shortname": "A Malpartida",
+    "photo": "/assets/avatars/gs/_k62V4cAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=_k62V4cAAAAJ",
+    "gsid": "_k62V4cAAAAJ",
+    "affiliation": ""
+  },
+  "j-may": {
+    "shortname": "J May",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "hs-rodrigues": {
+    "shortname": "HS Rodrigues",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "bw-millen": {
+    "shortname": "BW Millen",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "d-lorente": {
+    "shortname": "D Lorenté",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "b-andrieu": {
+    "shortname": "B Andrieu",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "o-sirost": {
+    "shortname": "O Sirost",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
   }
 }

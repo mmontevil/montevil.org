@@ -2,6 +2,24 @@
     {
         "objecttype": "entry",
         "entrytype": "proceedings",
+        "entrykey": "2023-open-historicity",
+        "fields": {
+            "year": "2023",
+            "month": "11",
+            "location": "Salle Dussane, ENS",
+            "language": "en",
+            "day": "9",
+            "url": "https://republique-des-savoirs.fr/events/event/colloque-possibility-in-biology/",
+            "illustration": "Novembre 9 2023 Affiche Open Historicity of life.jpg",
+            "abstract": "In the last decade, the notion that new possibilities appear over time in biological phenomena has received renewed and growing attention. Kauffman approaches it as the adjacent possible, Sarti and Citti as heterogenesis, and Longo and Montévil as symmetry change and specific objects. Accordingly, there is a growing understanding that this notion is a significant shift and challenge in the way to do science. However, there has yet to be a systematic effort to bring together the different perspectives on this question in biology and in other fields confronted with it. In this conference, we intend to create bridges between the different perspectives that have been developed, mostly independently, on the question of changing possibility spaces in biology.",
+            "program": "program-open-historicity.pdf",
+            "author": "Marie Chollat-Namy and Maël Montévil and Anton Robert",
+            "title": "Open Historicity of Life. Theory, epistemology, practice"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "proceedings",
         "entrykey": "vivant-seminaire-2023",
         "fields": {
             "title": "Séminaire sur le vivant 2023-2024",
@@ -92,7 +110,7 @@
         "entrytype": "inproceedings",
         "entrykey": "2023-enmi-prep",
         "fields": {
-            "title": "De la théorie des jeux au jeu du vivant",
+            "title": "De la théorie des jeux aux jeux du vivant",
             "booktitle": "Jeux, gestes et savoirs",
             "location": "Maison Suger, FMSH, 16 rue Suger, 75006 Paris",
             "year": "2023",
@@ -102,6 +120,7 @@
             "annonce": "true",
             "program": "Programme_ENMI-PREPA-23.pdf",
             "url": "https://www.iri.centrepompidou.fr/evenement/entretiens-du-nouveau-monde-industriel-2/",
+            "language": "fr",
             "author": "Maël Montévil"
         }
     },

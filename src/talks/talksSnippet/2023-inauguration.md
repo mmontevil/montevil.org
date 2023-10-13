@@ -14,6 +14,8 @@ Frederic Worms – Directeur de l’ÉNS
 
 Pascal Daloz – Directeur Général Délégué de Dassault Systèmes. 
 
+Patrick Johnson – Vice-Président Corporate Research & Science de Dassault Systèmes
+
 ## Le programme interdisciplinaire : fondations théoriques de la biologie :
 
 Maël Montévil, CR CNRS, Centre Cavaillès, République des savoirs UAR3608 – directeur du programme 
