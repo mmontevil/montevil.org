@@ -26,7 +26,11 @@ However, there has yet to be a systematic effort to bring together the different
 
     ***Can there be new biological possibilities in Systematics?***
 
+<<<<<<< HEAD
 * **10h20 Andrea Roli**, *Department of Computer Science and Engineering, Campus of Cesena, Università di Bologna.*
+=======
+* **10h20 Andrea Rolli**, *Department of Computer Science and Engineering, Campus of Cesena, Università di Bologna.*
+>>>>>>> 694052934d8fd7e971acbf0f854ef6a0978a4b9e
 
     ***A cybernetic perspective of evolution***
 
