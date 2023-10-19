@@ -26,17 +26,13 @@ However, there has yet to be a systematic effort to bring together the different
 
     ***Can there be new biological possibilities in Systematics?***
 
-<<<<<<< HEAD
 * **10h20 Andrea Roli**, *Department of Computer Science and Engineering, Campus of Cesena, Università di Bologna.*
-=======
-* **10h20 Andrea Rolli**, *Department of Computer Science and Engineering, Campus of Cesena, Università di Bologna.*
->>>>>>> 694052934d8fd7e971acbf0f854ef6a0978a4b9e
 
     ***A cybernetic perspective of evolution***
 
 * **10h55 Coffee Break**
 
-* **11h10** **Giuseppe Longo**, *Centre Cavaillès, République des Savoirs UAR3608, École Normale Supérieure (ENS), CNRS, Paris.*
+* **11h10** **Giuseppe Longo**, *Centre Cavaillès, République des Savoirs, École Normale Supérieure (ENS), CNRS, Paris.*
 
     ***Twenty years after the** *[***2001***](https://www.di.ens.fr/users/longo/files/PhilosophyAndCognition/space-time.pdf)* **and** *[***2003***](http://savoirs.ens.fr/uploads/sons/2003_10_24_longo.mp3)* **lectures on "changing phase spaces" in Biology, the challenge of "novelty production"***
 
@@ -48,7 +44,7 @@ However, there has yet to be a systematic effort to bring together the different
 
 ***(Chair: Ana Soto)***
 
-* **14h**  **Alessandro Sarti**, *Centre d'analyse et de mathématique sociales* *(CAMS),* *École des hautes études en sciences sociales (EHESS), Paris.*
+* **14h**  **Alessandro Sarti**, *Centre d'analyse et de mathématique sociales* *(CAMS),* *École des hautes études en sciences sociales (EHESS), CNRS,  Paris.*
 
       ***Beyond possibility spaces: heterogenesis and meaning***
 
@@ -59,7 +55,7 @@ However, there has yet to be a systematic effort to bring together the different
 
 
 
-* **15h10 Maël Montévil**, *Centre Cavaillès, République des Savoirs UAR3608, École Normale Supérieure (ENS), CNRS, Paris.*
+* **15h10 Maël Montévil**, *Centre Cavaillès, République des Savoirs, École Normale Supérieure (ENS), CNRS, Paris.*
 
       ***Mathematical spaces and biological objects***
 
@@ -111,12 +107,12 @@ However, there has yet to be a systematic effort to bring together the different
 
 ***(Chair: Carlos Sonnenschein)***
 
-* **14h Marie Chollat-Namy**, *Post-doc, Centre Cavaillès, République des Savoirs UAR 3608, École Normale Supérieure (ENS), Paris.*
+* **14h Marie Chollat-Namy**, *Post-doc, Centre Cavaillès, République des Savoirs, École Normale Supérieure (ENS), Paris.*
 
       ***Perspectives on Anti-entropy as the reconfiguration dynamic of historicity***
 
 
-* **Anton Robert**, *PhD student, Centre Cavaillès, République des Savoirs UAR 3608, École Normale Supérieure (ENS), Paris.*
+* **Anton Robert**, *PhD student, Centre Cavaillès, République des Savoirs, École Normale Supérieure (ENS), Paris.*
 
       ***Physical arguments for an epistemology of new possibilities via a methodical deconstruction of biophysical models***
 
