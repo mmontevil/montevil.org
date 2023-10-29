@@ -41,6 +41,10 @@ layout: default0
     {% include "components/footer.njk" %}
     {% include "svg-sprite.svg" %}
 
+    
+    <script async type="module" src="/js/additional.js"></script>
+      <script defer nomodule src="/js/additional.legacy.js"></script>
+    {#
     {% if build.env == 'production' %}
 
       <script async type="module" src="/js/{{ hashes_additional_es['assets/js/additional.js']}}"></script>
@@ -53,3 +57,4 @@ layout: default0
    
     {% endif %}
 
+#}

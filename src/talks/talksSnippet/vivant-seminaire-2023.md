@@ -6,7 +6,9 @@ ENS - 45 ou 29, rue D'Ulm - Paris Ve
 [Maël Montévil](https://republique-des-savoirs.fr/membres/mael-montevil/) (CNRS/RDS/Centre Cavaillès), [Caroline Petit](https://republique-des-savoirs.fr/membres/caroline-petit/) (CNRS/RDS/Centre Cavaillès) et Anton Robert (Ed540/RDS/Centre Cavaillès)
 
 **Présentation :**\
-Perpétuant les orientations impulsées par Jean-Jacques Kupiec lors de sa création, le séminaire Cavaillès se donne pour objet l'histoire et la philosophie des sciences du vivant. Une fois par mois un acteur des sciences expérimentales ou humaines est invité à y présenter ses travaux et réflexions. Le séminaire se veut ouvert à toutes et à tous, avec l'objectif de croiser les regards, partager les connaissances et favoriser les échanges sur un large spectre de thématiques et de questions. Il entend être le témoin de la vitalité, l'actualité et la fertilité des recherches en épistémologie historique des sciences biomédicales, ainsi que de leur incidence sur les débats scientifiques contemporains.
+Dans la lignée des sessions précédentes, organisées par Jean-Jacques Kupiec, puis par Gérard Lambert et Thomas Heams, le séminaire sur le vivant du centre Cavaillès se donne pour objet les défis conceptuels de la connaissance du vivant, en articulant théorie et pratique. Une fois par mois, une chercheuse des sciences du vivant, de l'histoire ou de la philosophie de cette discipline, ou un praticien, est invité à y présenter ses travaux et réflexions.
+
+Le séminaire se veut ouvert à toutes et à tous, avec l'objectif de croiser les regards, partager les connaissances et favoriser les échanges sur un large spectre de thématiques et de questions. Il entend être le témoin de la vitalité, de l'actualité et de la fertilité des recherches à la croisée des humanités et des sciences du vivant, pour en aborder autant les questions théoriques qu’elles portent que leur incidence sur les débats contemporains.
 
 [Programme :](https://republique-des-savoirs.fr/wp-content/uploads/2023/09/octobre-2023-affiche-programme-seminaire-vivant-centre-cavailles.pdf)
 
