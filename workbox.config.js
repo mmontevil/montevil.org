@@ -7,7 +7,7 @@ module.exports = {
   clientsClaim: true,
   globDirectory: DIST,
   globPatterns: [
-    './js/additional-es.*.js',
+    './js/additional.js',
     './index.html',
     './about/index.html',
     './about/the-website.html',
