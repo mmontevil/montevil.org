@@ -25,6 +25,7 @@ module.exports = {
   },
   output: {
     filename: '[name].legacy.js',
+     sourceMapFilename: '[file].map',
     path: path.resolve(__dirname, '_site/js'),
   },
 };
