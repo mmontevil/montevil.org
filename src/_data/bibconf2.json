@@ -1,6 +1,24 @@
 [
     {
         "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2023-historicite",
+        "fields": {
+            "title": "Quel concept d'historicité pour la biologie?",
+            "booktitle": "Séminaire doctoral « Événement, nature, histoire »",
+            "location": "ENS, 45, rue D’Ulm, Paris Ve",
+            "year": "2023",
+            "month": "12",
+            "day": "7",
+            "annonce": "true",
+            "language": "fr",
+            "url": "https://republique-des-savoirs.fr/events/event/seminaire-doctoral-evenement-nature-histoire/",
+            "illustration": "septembre-2023-affiche-evenement-nature-histoire.jpeg",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "2023-open-historicity",
         "fields": {

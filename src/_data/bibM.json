@@ -1,5 +1,122 @@
 [
   {
+    "ISBN": "978-191172323",
+    "URL": "https://www.hurstpublishers.com/book/indian-philosophy-indian-revolution/",
+    "abstract": "In their brave and challenging book, grounded in political science and the Continental philosophical tradition, Divya Dwivedi and Shaj Mohan engage with the resurgence of upper-caste supremacism in India and its justification via the legacy of “the Aryan doctrine” and Hindu nationalism. Their essays were written from 2016 to 2023, when India’s democratic institutions were subverted and caste-based oppression overflowed into public space―killing and menacing the lower castes of all religions, minorities, women, students and the media. <br> This book chronicles the ascending oppression of democracy in India, a veritable biography of authoritarianism. Dwivedi and Mohan reject simplistic accounts of India’s politics as the opposition between “Hindu majoritarian nationalism” and “the religious minorities”, or between “Hindu fundamentalism” and “religious pluralism”. They propose instead a genuinely transformative account of Indian politics, grounded in political philosophy and in the lower- caste majority position <br> What does revolution mean where the constitutional promise of equality is betrayed daily by the millennia- old inequality of caste? What does politics mean where religion serves as the justification for descent- based enslavement and indignity? Revolution has only one sense in India, the annihilation of caste; and “citizen” has only one sense, the people of the state shedding caste and racism.",
+    "author": [
+      {
+        "family": "Dwivedi",
+        "given": "Divya"
+      },
+      {
+        "family": "Mohan",
+        "given": "Shaj"
+      }
+    ],
+    "editor": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "id": "2023-DMM-Castes-Politics",
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          2,
+          8
+        ]
+      ]
+    },
+    "publisher": "C Hurst & Co Publishers Ltd",
+    "title": "Indian Philosophy, Indian Revolution: On Caste and Politics",
+    "title-short": "Indian Philosophy, Indian Revolution",
+    "type": "book"
+  },
+  {
+    "ISBN": "9791037032270",
+    "URL": "https://www.editions-hermann.fr/livre/jean-luc-nancy-anastasis-de-la-pensee-divya-dwivedi",
+    "abstract": "Dans ce texte, je propose trois ouvertures à partir des réflexions de Jean-Luc Nancy concernant le corps, notamment dans Corpus et L’Intrus.",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "Jean-Luc Nancy : Anastasis de la pensée",
+    "editor": [
+      {
+        "family": "Dwivedi",
+        "given": "Divya"
+      },
+      {
+        "family": "Lèbre",
+        "given": "Jérôme"
+      },
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      },
+      {
+        "family": "Warin",
+        "given": "François"
+      }
+    ],
+    "id": "2023-Montevil-Nancy-Anastase-immunite",
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          29
+        ]
+      ]
+    },
+    "publisher": "Hermann",
+    "title": "Remarques sur les corps",
+    "type": "chapter"
+  },
+  {
+    "ISBN": "9791037032270",
+    "URL": "https://www.editions-hermann.fr/livre/jean-luc-nancy-anastasis-de-la-pensee-divya-dwivedi",
+    "abstract": "L’œuvre singulière plurielle de Jean-Luc Nancy a croisé presque toutes les préoccupations majeures de la philosophie – temps, être, espace, négativité, forme, image, poésie –, et a exercé une influence considérable sur de nombreux intellectuels et chercheurs du monde entier. Dans cet ouvrage, qui rassemble des articles rédigés par des philosophes et spécialistes reconnus, français et étrangers (Europe, Inde, États-Unis, Japon, Brésil, Chili, Égypte), les auteurs rendent hommage à Nancy pour son amitié et sa pensée. <br> Considérant qu’une histoire particulière de la philosophie a pris fin, Nancy a montré que la philosophie peut se lever à nouveau, touchant à son éternité. Il a invité à la recommencer de manière multiple, métaphysique, post- phénoménologique, politique, littéraire et esthétique. Se souvenir de sa pensée, c’est donc recommencer ici d’une manière plurielle avec lui ; c’est relancer dans son sillage la réflexion sur la démocratie et l’art, en réassumant une approche résolument transversale, avec ce que Nancy appelait anastasis – ce qui « ne provient pas de soi » mais « vient de l’autre, ou relève de l’autre en lui ».",
+    "author": [
+      {
+        "family": "Dwivedi",
+        "given": "Divya"
+      },
+      {
+        "family": "Lèbre",
+        "given": "Jérôme"
+      },
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      },
+      {
+        "family": "Warin",
+        "given": "François"
+      }
+    ],
+    "id": "2023-DLMW-Nancy-Anastase",
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          11,
+          29
+        ]
+      ]
+    },
+    "publisher": "Hermann",
+    "title": "Jean-Luc Nancy : Anastasis de la pensée",
+    "title-short": "Jean-Luc Nancy ",
+    "type": "book"
+  },
+  {
+    "ISBN": "9781071635766",
+    "URL": "https://link.springer.com/book/9781071635766",
     "abstract": "Mathematical modeling is a very powerful tool to understand natural phenomena. Such a tool carries its own assumptions and should always be used critically. In this chapter we highlight the key ingredients and steps of modeling and focus on their biological interpretation. In particular, we discuss the role of theoretical principles in writing models. We also highlight the meaning and interpretation of equations. The main aim of this chapter is to facilitate the interaction between biologists and mathematical modelers. We focus on the case of cell proliferation and motility in the context of multicellular organisms.",
     "author": [
       {
@@ -17,7 +134,13 @@
     ],
     "id": "2023-Montevil-Mathematical-Modeling-organisms",
     "issued": {
-      "date-parts": []
+      "date-parts": [
+        [
+          2024,
+          1,
+          26
+        ]
+      ]
     },
     "keyword": "Equations, Mathematical modeling, Parameters, Proliferation, Theory",
     "title": "Mathematical modeling in the study of organisms and their parts",
@@ -75,36 +198,40 @@
     "type": "chapter"
   },
   {
-    "abstract": "La physique possède plusieurs concepts de hasard qui reposent néanmoins tous sur l’idée que les possibilités sont données d’avance. En revanche, un nombre croissant de biologistes théoriciens cherchent à introduire la notion de nouvelles possibilités, c’est-à-dire des modifications de l’espace des possibles - une idée déjà discutée par Bergson et qui n’a pas été véritablement poursuivie scientifiquement jusqu’à récemment (sauf, en un sens, dans la systématique, c’est-à-dire la méthode de classification des êtres vivants). Alors, le hasard opère au niveau des possibilités elles-mêmes et est à la base de l’historicité des objets biologiques. Nous soulignons que ce concept de hasard n’est pas seulement pertinent lorsqu’on cherche à prédire l’avenir. Au contraire, il façonne les organisations biologiques et les écosystèmes. À titre d’illustration, nous soutenons qu’une question cruciale de l’Anthropocène est la disruption des organisations biologiques que l’histoire naturelle a structurées, conduisant à un effondrement des possibilités biologiques.",
+    "ISBN": "9781350329034",
+    "URL": "https://www.bloomsbury.com/uk/on-bernard-stiegler-9781350329034/",
+    "abstract": "\"What I love, and those whom I love, you, that is to say us in so far as we are capable of forming a we, all this I love, and I love them, and I love you infinitely\" (Bernard Steigler April 1952- August 2020). <br> When Bernard Stiegler writes \"I love you\" in the quote above, he openly provokes us to question or experience the meaning or contact of these words. He also invites us to question the relationship between a thinker’s life and their thought. For Stiegler, they were inextricable. His life was one that focused on friendship but not friendships at a purely social level but ones that produced philosophy, politics, and existential truths. <br> Bringing together scholars who knew Stiegler, including Shaj Mohan, Achille Mbembe, Divya Dwivedi, Peter Szendy, and Emily Apter, this volume provides an original - and personal - insight into his life and philosophy. Each piece gives a sense of the wide range of Stiegler’s work and how it affected the praxis of the philosopher in different parts of the world.",
     "author": [
       {
         "family": "Montévil",
         "given": "Maël"
       }
     ],
-    "container-title": "Figurer le hasard : questions de théorie",
+    "container-title": "On Bernard Stiegler - Philosopher of Friendship",
     "editor": [
       {
-        "family": "Duprat",
-        "given": "Anne"
-      },
-      {
-        "literal": "others"
+        "family": "Nancy",
+        "given": "Jean-Luc"
       }
     ],
-    "id": "2023-Montevil-chance-hasard-biologie",
+    "id": "2023-Montevil-Stiegler",
     "issued": {
       "date-parts": [
         [
-          2023
+          2024,
+          2,
+          8
         ]
       ]
     },
-    "publisher": "Éditions CNRS",
-    "title": "Comment le hasard façonne le vivant ?",
+    "publisher": "Bloomsbury",
+    "title": "Bernard Stiegler: Friendship and Fellowship",
+    "title-short": "Bernard Stiegler",
     "type": "chapter"
   },
   {
+    "ISBN": "9781350410442",
+    "URL": "https://www.bloomsbury.com/uk/bernard-stiegler-9781350410459/",
     "abstract": "The program Plaine Commune, contributive learning territory, started in late 2016. It emerged from the theoretical work of Bernard Stiegler and the Ars Industrialis group. The contributive economy is a strategy to disrupt technological disruption by developing knowledge in all its forms. This program has led to several concrete working groups in Plaine Commune, while others are still developing. Mainly, work is taking place on the economy, digital urbanism, and young children’s development in the context of the overuse of digital media. Here, we focus on the group on digital media and young children’s development and how academics and inhabitant works integrate.",
     "author": [
       {
@@ -131,14 +258,19 @@
     "issued": {
       "date-parts": [
         [
-          2023
+          2024,
+          1,
+          25
         ]
       ]
     },
+    "publisher": "Bloomsbury",
     "title": "Plaine Commune, contributive learning territory",
     "type": "chapter"
   },
   {
+    "ISBN": "9783031389672",
+    "URL": "https://link.springer.com/book/9783031389672",
     "abstract": "Unlike inert objects, organisms and their cells have the ability to initiate activity by themselves, and thus change their properties or states even in the absence of an external cause. This crucial difference led us to search for principles suitable for the study organisms. We propose that cells follow the default state of proliferation with variation and motility, a principle of biological inertia. This means that in the presence of sufficient nutrients, cells will express their default state. We also propose a principle of variation that addresses two central features of organisms, variation and historicity. To address interdependence between parts, we use a third principle, the principle of organization: more specifically, the notion of the closure of constraints. Within this theoretical framework, constraints are specific theoretical entities defined by their relative stability with respect to the processes they constrain. Constraints are mutually dependent in an organized system and act on the default state. <br>Here we discuss the application and articulation of these principles for mathematical modeling of morphogenesis in a specific case, that of mammary ductal morphogenesis, with an emphasis on the default state. Our model has both a biological component, the cells, and a physical component, the matrix that contains collagen fibers. Cells are agents that move and proliferate unless constrained; they exert mechanical forces that i) act on collagen fibers and ii) on other cells. As fibers are organized, they constrain the cells’ ability to move and to proliferate. This model exhibits a circularity that can be interpreted in terms of the closure of constraints. Implementing our mathematical model shows that constraints to the default state are sufficient to explain the formation of mammary epithelial structures. Finally, the success of this modeling effort suggests a step-wise approach whereby additional constraints imposed by the tissue and the organism can be examined in silico and rigorously tested by in vitro and in vivo experiments, in accordance with the organicist perspective we embrace.",
     "author": [
       {
@@ -161,7 +293,9 @@
     "issued": {
       "date-parts": [
         [
-          2023
+          2023,
+          12,
+          17
         ]
       ]
     },

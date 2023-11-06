@@ -40,7 +40,7 @@ module.exports = function (eleventyConfig) {
   // Filters
   // ------------------------------------------------------------------------
 
-  glob.sync(path.join(config.dir.src, '_11ty/filters/*.js')).forEach((file) => {
+  glob.sync(path.join(config.dir.src, '_11ty/filters/*js')).forEach((file) => {
     let filters = require('./' + file);
     Object.keys(filters).forEach((name) => {
       eleventyConfig.addFilter(name, filters[name]);

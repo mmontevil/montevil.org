@@ -1,5 +1,27 @@
 [
   {
+    "URL": "https://republique-des-savoirs.fr/events/event/seminaire-doctoral-evenement-nature-histoire/",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "Séminaire doctoral « Événement, nature, histoire »",
+    "id": "2023-historicite",
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          12,
+          7
+        ]
+      ]
+    },
+    "title": "Quel concept d’historicité pour la biologie?",
+    "type": "paper-conference"
+  },
+  {
     "URL": "https://republique-des-savoirs.fr/events/event/colloque-possibility-in-biology/",
     "abstract": "In the last decade, the notion that new possibilities appear over time in biological phenomena has received renewed and growing attention. Kauffman approaches it as the adjacent possible, Sarti and Citti as heterogenesis, and Longo and Montévil as symmetry change and specific objects. Accordingly, there is a growing understanding that this notion is a significant shift and challenge in the way to do science. However, there has yet to be a systematic effort to bring together the different perspectives on this question in biology and in other fields confronted with it. In this conference, we intend to create bridges between the different perspectives that have been developed, mostly independently, on the question of changing possibility spaces in biology.",
     "author": [
