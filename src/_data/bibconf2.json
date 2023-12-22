@@ -2,6 +2,39 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "2023-Forum-citoyen",
+        "fields": {
+            "title": " Table ronde, 1er forum",
+            "booktitle": "Forum Citoyen sur les écrans – Assemblée Nationale",
+            "location": "Assemblée Nationale, Paris",
+            "year": "2023",
+            "month": "4",
+            "day": "15",
+            "annonce": "true",
+            "language": "fr",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2023-cluster-meeting",
+        "fields": {
+            "title": " Organization & Self-Organization",
+            "booktitle": "Agency and Directionality in Development Cluster Meeting",
+            "location": "IHPST, Paris",
+            "year": "2023",
+            "month": "11",
+            "day": "16",
+            "annonce": "true",
+            "language": "en",
+            "url": "https://www.biologicalpurpose.org/landing/agency-and-directionality-development-november-2023-cluster-meeting",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
         "entrykey": "2023-historicite",
         "fields": {
             "title": "Quel concept d'historicité pour la biologie?",
@@ -15,6 +48,24 @@
             "url": "https://republique-des-savoirs.fr/events/event/seminaire-doctoral-evenement-nature-histoire/",
             "illustration": "septembre-2023-affiche-evenement-nature-histoire.jpeg",
             "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2023-montevil-open-historicity",
+        "fields": {
+            "title": "Mathematical spaces and biological objects",
+            "year": "2023",
+            "month": "11",
+            "location": "Salle Dussane, ENS",
+            "language": "en",
+            "day": "9",
+            "url": "https://republique-des-savoirs.fr/events/event/colloque-possibility-in-biology/",
+            "illustration": "Novembre_9_2023_Affiche_Open_Historicity_of_life.jpg",
+            "program": "program-open-historicity.pdf",
+            "author": " Maël Montévil",
+            "booktitle": "Open Historicity of Life. Theory, epistemology, practice"
         }
     },
     {
@@ -145,6 +196,24 @@
     {
         "objecttype": "entry",
         "entrytype": "proceedings",
+        "entrykey": "2023-enmi-prep-org",
+        "fields": {
+            "title": "Jeux, gestes et savoirs",
+            "location": "Maison Suger, FMSH, 16 rue Suger, 75006 Paris",
+            "year": "2023",
+            "month": "7",
+            "day": "5",
+            "abstract": "Ce séminaire est conçu comme un temps de préparation et d’échanges en vue du colloque qui se tiendra les 18 et 19 décembre au Centre Pompidou. Il entend apporter un éclairage théorique, historique et épistémologique sur le pouvoir du jeu à nous capaciter dans l’interaction avec le calcul. Nous aborderons pour cela comment passer d’une théorie des jeux historiquement située dans le champ mathématique à la question du jeu dans le champ biologique. Le jeu est aussi un espace des valeurs et de la valeur qui après Abraham Moles nous invite à repenser la question des jeux d’argent. Mais le jeu n’est pas que règles, il est chez Winnicott la condition du développement de l’espace potentiel chez l’enfant et de la culture chez l’adulte. Cette projection primordiale engage le corps, la main, le geste comme processus temporel pouvant résister à l’immédiateté du calcul.",
+            "annonce": "true",
+            "program": "Programme_ENMI-PREPA-23.pdf",
+            "url": "https://www.iri.centrepompidou.fr/evenement/entretiens-du-nouveau-monde-industriel-2/",
+            "language": "fr",
+            "author": "Marie-Claude Bossière and Giuseppe Longo and Maël Montévil and Vincent Puig"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "proceedings",
         "entrykey": "Paris-Seminar-2023",
         "fields": {
             "title": "Anastase de la philosophie",
@@ -228,6 +297,21 @@
             "illustration": "logoSIG_Design_website.jpg",
             "author": "Maël Montévil",
             "title": "On biological novelties"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2023-sevilla",
+        "fields": {
+            "booktitle": "Dassault Systèmes Leadership 2023 Convention -- Metamorphisis, Regenerative Universes",
+            "year": "2023",
+            "month": "1",
+            "location": " Alfonso XIII hotel, Sevilla, Spain",
+            "language": "fr",
+            "day": "13",
+            "author": "Ana Soto and Maël Montévil",
+            "title": "Toward a metamorphosis of life sciences"
         }
     },
     {
