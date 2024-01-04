@@ -1,5 +1,65 @@
 [
   {
+    "URL": "https://enmi-conf.org/wp/enmi23/",
+    "abstract": "Cette année, l’édition 2023 s’inscrit dans une réflexion autour du jeu, du geste et du savoir croisant les questions épistémologiques, économiques, de design et d’éducation. Nous mobilisons ce sujet parce qu’il nous paraît pertinent pour penser la situation actuelle de perte de motivation et de savoirs, exploités par les pouvoirs économiques et politiques, et objets d’analyse et de calculs grâce à la captation des données. L’hypothèse de cette édition envisage le jeu comme un espace de création, de capacitation pour soi et le groupe, qui permet de façon intermittente une sortie des logiques de calcul et des modèles statistiques. La conquête du marché des jeux vidéo par Roblox et la percée de ChatGPT renforce notre volonté d’apporter un éclairage théorique, historique et épistémologique au pouvoir du jeu. Nous nous intéresserons avec Winnicott à l’enfant qui joue, engage son corps, ses gestes, ses apprentissages et ses savoirs. Puis nous considérerons la place du jeu à l’âge adulte, à travers une histoire technique, biologique et industrielle, questionnant la motivation et le geste dans le numérique. Nous aborderons les jeux d’argent, la gamification et les modèles économiques associés. Enfin, nous nous intéresserons aux enjeux de design des jeux vidéo et à leur industrie. Veiller sur le potentiel créateur et libérateur du jeu et en prendre soin seront les objectifs de ces entretiens. Ils visent à renouveler la relation entre les savoirs et le monde industriel de façon créative, non consumériste et pulsionnelle, en repensant les industries culturelles et en premier lieu celle des jeux vidéo",
+    "author": [
+      {
+        "family": "Bossière",
+        "given": "Marie-Claude"
+      },
+      {
+        "family": "Cormerais",
+        "given": "Franck"
+      },
+      {
+        "family": "Longo",
+        "given": "Giuseppe"
+      },
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      },
+      {
+        "family": "IRI"
+      }
+    ],
+    "id": "2023-enmi",
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          12,
+          18
+        ]
+      ]
+    },
+    "title": "ENMI 2023 - Jeux, gestes et savoirs",
+    "type": "book"
+  },
+  {
+    "URL": "https://enmi-conf.org/wp/enmi23/",
+    "abstract": "Le tournant phylogénétique a déplacé l’agentivité du niveau des organismes à celui des populations, à tel point que la théorie des jeux est appliquée en biologie à la question de la tragédie des communs, la possibilité qu’un variant (génétique) vienne perturber une stratégie de coopération. Mais la notion de jeu en un sens plus classique existe toujours, notamment en éthologie, et l’on découvre que des espèces de plus en plus diverses ont la capacité de jouer. Quel est alors le sens théorique de ces jeux et comment peuvent-ils nous éclairer sur le vivant?",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "ENMI 2023 - Jeux, gestes et savoirs",
+    "id": "2023-enmi-vivant",
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          12,
+          18
+        ]
+      ]
+    },
+    "title": "Le jeu et le vivant",
+    "type": "paper-conference"
+  },
+  {
     "author": [
       {
         "family": "Montévil",

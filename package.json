@@ -41,7 +41,7 @@
     "people": "node ./_scripts/updateAuthors.js",
     "bib": "(cd BIB; ./updatebib.sh)",
     "update": "npm-run-all start0 bib sprite webmention",
-    "updateall": "npm-run-all start0 bib sprite webmention plum start0  rglikes likes  start0",
+    "updateall": "npm-run-all build  bib sprite webmention plum   rglikes likes  build",
     "sleep": "sleep 800",
     "sleepshort": "sleep 120",
     "updatetweets": " npm-run-all --sequential build sleepshort build sleep build sleepshort build",
