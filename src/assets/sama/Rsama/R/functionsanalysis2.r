@@ -409,7 +409,8 @@ getconditions <- function (dir,addcond,versioncounter=4) {
 
 
 coarseplot <- function (dir,addcond,crical=-100,lumencri=FALSE,file="all.csv",lumen=TRUE,tree=TRUE,filter="",filterwith=TRUE,speccond=c(""),specname="",crisize=-1,versioncounter=4,label="welltreat",center=FALSE,withpca=TRUE,colorr=T,byplate=F) {
-message("**RSAMA=0.9974**");	st=initiate(dir,addcond,file=file,lumen=lumen,tree=tree,filter=filter,filterwith=filterwith,speccond=speccond,versioncounter=versioncounter);
+message("**RSAMA=0.9975**");	
+st=initiate(dir,addcond,file=file,lumen=lumen,tree=tree,filter=filter,filterwith=filterwith,speccond=speccond,versioncounter=versioncounter);
 	strc="";
 	pcaplate=F;
 	
@@ -689,7 +690,7 @@ coarseplotall <- function (dir,crical,addcond,file="all.csv",lumen=TRUE,tree=TRU
 
 #######################################plot distributions###################################
 
-welldisplot <- function (dir,addcond,crical=-100,lumencri=FALSE,file="all.csv",lumen=TRUE,tree=TRUE,filter="",filterwith=TRUE,versioncounter=4,crisize=0,colorr=T) {
+welldisplot0 <- function (dir,addcond,crical=-100,lumencri=FALSE,file="all.csv",lumen=TRUE,tree=TRUE,filter="",filterwith=TRUE,versioncounter=4,crisize=0,colorr=T) {
 	st=initiate(dir,addcond,file=file,lumen=lumen,tree=tree,filter=filter,filterwith=filterwith,versioncounter=versioncounter);
 	
 	strc="";
@@ -773,4 +774,10 @@ welldisplot <- function (dir,addcond,crical=-100,lumencri=FALSE,file="all.csv",l
 		}
 	}
 	dev.off()
+}
+welldisplot <- function (dir,addcond,crical=-100,lumencri=FALSE,file="all.csv",lumen=TRUE,tree=TRUE,filter="",filterwith=TRUE,versioncounter=4,crisize=0,colorr=T) {
+	welldisplot0(dir,addcond,crical=crical,lumencri=lumencri,file=file,lumen=lumen,tree=tree,filter=filter,filterwith=filterwith,crisize=0*crisize,versioncounter=versioncounter,colorr=colorr);
+		welldisplot0(dir,addcond,crical=crical,lumencri=lumencri,file=file,lumen=lumen,tree=tree,filter=filter,filterwith=filterwith,crisize=1*crisize,versioncounter=versioncounter,colorr=colorr);
+	welldisplot0(dir,addcond,crical=crical,lumencri=lumencri,file=file,lumen=lumen,tree=tree,filter=filter,filterwith=filterwith,crisize=2*crisize,versioncounter=versioncounter,colorr=colorr);
+	welldisplot0(dir,addcond,crical=crical,lumencri=lumencri,file=file,lumen=lumen,tree=tree,filter=filter,filterwith=filterwith,crisize=4*crisize,versioncounter=versioncounter,colorr=colorr);
 }
