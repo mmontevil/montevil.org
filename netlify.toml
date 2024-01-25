@@ -5,6 +5,7 @@
   functionsSource = "_lambdas"
 
 
+  
   [[plugins]]
 package = "@algolia/netlify-plugin-crawler"
   [plugins.inputs]
