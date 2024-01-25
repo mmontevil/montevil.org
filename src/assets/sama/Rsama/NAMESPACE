@@ -1,0 +1,3 @@
+
+import(stringr,sm,cluster,gdata,FactoMineR )
+exportPattern("^[[:alpha:]]+")

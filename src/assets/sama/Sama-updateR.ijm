@@ -1,5 +1,5 @@
 //SAMA
-version=0.97;
+version=0.9972;
 //Copyright (C) 2015 Maël Montévil and Tessie Paulose 
 
 //    This program is free software: you can redistribute it and/or modify
