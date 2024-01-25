@@ -29,9 +29,14 @@ library(dendextend)
 checkvar <- function (st,var){
 	return(!is.null(st[[var]]));
 }
-observables <- function (st,lumen=TRUE,tree=TRUE,versioncounter=4,logs=FALSE){
+observables <- function (st,lumen=TRUE,tree=TRUE,versioncounter=4,logs=FALSE,thres=TRUE){
 	qtt=rbind("Quality","Elon1","logElon1","Elon2","logElon2","logvol","logEll_MajRad","logFerret","Sphericity","RatioVolEllipsoid",
-		  "logRatioVolEllipsoid","RatioVolbox","logRatioVolbox","ShapeScore","score01","score02");
+		  "logRatioVolEllipsoid","RatioVolbox","logRatioVolbox","ShapeScore");
+		  
+		  if(thres){
+		  qtt=rbind(qtt,"score01","score02");
+		  }
+		  
 	if(logs){
 		qtt=rbind("Quality","logvol","logElon1","logElon2","Sphericity","logRatioVolEllipsoid","logRatioVolbox");
 	}
@@ -404,7 +409,7 @@ getconditions <- function (dir,addcond,versioncounter=4) {
 
 
 coarseplot <- function (dir,addcond,crical=-100,lumencri=FALSE,file="all.csv",lumen=TRUE,tree=TRUE,filter="",filterwith=TRUE,speccond=c(""),specname="",crisize=-1,versioncounter=4,label="welltreat",center=FALSE,withpca=TRUE,colorr=T,byplate=F) {
-message("**RSAMA=0.9972**");	st=initiate(dir,addcond,file=file,lumen=lumen,tree=tree,filter=filter,filterwith=filterwith,speccond=speccond,versioncounter=versioncounter);
+message("**RSAMA=0.9974**");	st=initiate(dir,addcond,file=file,lumen=lumen,tree=tree,filter=filter,filterwith=filterwith,speccond=speccond,versioncounter=versioncounter);
 	strc="";
 	pcaplate=F;
 	
@@ -688,7 +693,7 @@ welldisplot <- function (dir,addcond,crical=-100,lumencri=FALSE,file="all.csv",l
 	st=initiate(dir,addcond,file=file,lumen=lumen,tree=tree,filter=filter,filterwith=filterwith,versioncounter=versioncounter);
 	
 	strc="";
-	qtt=observables(st,lumen=lumen,tree=tree,versioncounter=versioncounter);
+	qtt=observables(st,lumen=lumen,tree=tree,versioncounter=versioncounter,thres=FALSE);
 	
 	st=filterwells(st);
 	
