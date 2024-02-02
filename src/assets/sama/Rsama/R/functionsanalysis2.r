@@ -368,8 +368,8 @@ initiate <- function (dir,addcond,file="all.csv",lumen=TRUE,tree=TRUE,filter="",
 	st=addVar(st,"Thickness_Max",function(x,y) x/(y+0.000001),"rbThickness_Max",secondvar="Thickness_Mean");
 	st=addVar(st,"Thickness_SD",function(x,y) x/(y+0.000001),"rbThickness_SD",secondvar="Thickness_Mean");
 	st=addVar(st,"Elon1",function(x,y) (log(x/y)),"ShapeScore",secondvar="RatioVolEllipsoid");
-	st=addVar(st,"ShapeScore",function(x) x<0.1,"score01");
-	st=addVar(st,"ShapeScore",function(x) x<0.2,"score02");
+	st=addVar(st,"ShapeScore",function(x) x<0.5,"score01");
+	st=addVar(st,"ShapeScore",function(x) x<0.75,"score02");
 
 	###########lumen
 	if(lumen){
@@ -409,7 +409,7 @@ getconditions <- function (dir,addcond,versioncounter=4) {
 
 
 coarseplot <- function (dir,addcond,crical=-100,lumencri=FALSE,file="all.csv",lumen=TRUE,tree=TRUE,filter="",filterwith=TRUE,speccond=c(""),specname="",crisize=-1,versioncounter=4,label="welltreat",center=FALSE,withpca=TRUE,colorr=T,byplate=F) {
-message("**RSAMA=0.9975**");	
+message("**RSAMA=0.9976**");	
 st=initiate(dir,addcond,file=file,lumen=lumen,tree=tree,filter=filter,filterwith=filterwith,speccond=speccond,versioncounter=versioncounter);
 	strc="";
 	pcaplate=F;
