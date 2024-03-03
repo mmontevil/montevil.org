@@ -25,7 +25,7 @@ async function login(driver) {
  // await driver.findElement(By.xpath("//button[@mode='primary']")).click();
   await driver.findElement(By.name('login')).sendKeys(RG_LOGIN);
   await driver.findElement(By.name('password')).sendKeys(RG_MDP);
-  await sleep(1000);
+  await sleep(10000);
   await driver
     .findElement(By.xpath("//button[@data-testid='loginCta']"))
     .click();
@@ -79,9 +79,9 @@ let res = {};
       'https://www.researchgate.net/profile/Mael-Montevil/research'
     ),
       await driver.wait(() => documentInitialised(), 10000);
-    await sleep(1000);
+    await sleep(20000);
     await scrolldown(driver);
-    await sleep(5000);
+    await sleep(20000);
     listpub = await driver.findElements(
       By.xpath("//div[@class='nova-legacy-v-entity-item__stack-item']/div/a")
     );

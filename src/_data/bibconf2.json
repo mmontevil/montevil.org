@@ -1,6 +1,39 @@
 [
     {
         "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2024-organisation-ecology",
+        "fields": {
+            "title": "Disruption of ecosystems and the vulnerability of biological organizations",
+            "booktitle": "Philosophical and theoretical works about organization in biology and biological and ecological functions",
+            "location": "University of Bahia, Salvador",
+            "year": "2024",
+            "month": "03",
+            "day": "14",
+            "annonce": "true",
+            "language": "en",
+            "program": "Encontro presencial projeto Templeton.pdf",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2024-brazil-knowledge",
+        "fields": {
+            "title": "Contributive research in Saint-Denis: addressing the disruption of baby and toddler development by digital media",
+            "booktitle": "Workshop: epistemology and concerned publics",
+            "location": "University of Bahia, Salvador",
+            "year": "2024",
+            "month": "03",
+            "day": "06",
+            "annonce": "true",
+            "language": "en",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "2023-enmi",
         "fields": {

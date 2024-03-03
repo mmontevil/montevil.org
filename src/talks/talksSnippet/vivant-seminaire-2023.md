@@ -39,9 +39,9 @@ Le changement de vision de François Jacob dans les années 1970 : de l'histoire
 La centralité épocale de la question de l'organicité\
 Miguel BENASAYAG, psychanalyste et philosophe
 
-## 28 février 2024, Johannes JÄGER
+## Reporté -- 28 février 2024, Johannes JÄGER
 16h-18h, Salle Camille MARBO (U205) -- 29, rue d'Ulm (2ème étage)\
-Theoretical biology\
+Life beyond Computation and Formalization\
 [Johannes JÄGER](https://www.csh.ac.at/researcher/johannes-jaeger/), philosophe, biologiste des systèmes, Complexity Science Hub (CSH), Vienna
 
 ## 20 mars 2024, Mathilde TAHAR
@@ -54,10 +54,16 @@ Mathilde TAHAR, philosophe de la biologie, ATER Université de Lille, laboratoir
 Repenser la biologie à partir de paramètres fondamentaux trop souvent négligés\
 [Jacques FANTINI](https://unis-neuro.com/96-membre-fantini-jacques.html), professeur de biologie, Université d'Aix-Marseille, UNIS UMR_S 1072
 
+**Résumé :** Définir la vie est une tâche ardue qui suscite bien des débats chez les philosophes et les scientifiques depuis des siècles. Or la biologie souffre d'un manque de définition claire, plaçant les biologistes dans la situation paradoxale où l'on peut décrire au niveau atomique des objets complexes qui restent globalement mal définis. On pourrait supposer que de telles descriptions permettent de caractériser parfaitement les systèmes vivants. Cependant, de nombreux cas d'interprétation erronée relativisent cette hypothèse. Dans cet exposé, je mettrai l'accent sur des paramètres fondamentaux qui sont minimisés voire totalement ignorés dans les ouvrages de biologie destinés aux étudiants : l'eau, l'entropie, les dimensions spatiale et temporelle, les propriétés quantiques et le potentiel électrostatique. D'où vient la structure hélicoïdale de l'ADN, pourquoi la reproduction des organismes vivants ne peut se faire sans mutations, quelles sont les limites du code génétique, pourquoi toutes les protéines n'ont pas une structure tridimensionnelle stable : autant de questions qui ne peuvent être résolues sans tenir compte des paramètres mentionnés ci-dessus. En effet, sans prétendre à l'exhaustivité : i) le temps et l'espace contraignent de nombreux mécanismes biologiques qui nécessitent des solutions efficaces propres aux systèmes vivants (enzymes, transporteurs), ii) l'eau contrôle la fidélité de la réplication de l'ADN et l'équilibre structure/désordre des protéines, iii) l'entropie intervient fréquemment dans les interactions moléculaires et dans de nombreuses réactions enzymatiques, iv) les mécanismes quantiques expliquent pourquoi une molécule aussi simple que l'acide cyanhydrique (HCN) préfigure la double hélice de l'ADN, pourquoi des mutations se produisent, et comment le champ magnétique terrestre peut déterminer la migration des oiseaux (boussole quantique), v) le potentiel de surface contrôle les mécanismes épigénétiques, l'analogie ADN/membrane et les interactions agent pathogène-hôte. La  prise en compte de ces paramètres fondamentaux est essentielle pour mieux comprendre ce qu'est la vie et comment elle gère l'ordre et le chaos à travers une combinaison de mécanismes génétiques et épigénétiques. 
+
+
+
+
 ## 15 mai 2024
 16h-18h, Salle Camille MARBO (U205) -- 29, rue d'Ulm (2ème étage)\
 Intervenant/titre à venir
 
 ## 12 juin 2024
 16h-18h, Amphi Evariste GALOIS -- 45, rue d'Ulm (étage -1)\
-Intervenant/titre à venir
+Vitalisme matérialiste, vitalisme spiritualiste\
+[Charles Wolfe](https://philosophie.univ-tlse2.fr/accueil-philosophie/departement/charles-wolfe), professeur de philosophie, Université de Toulouse Jean Jaurès, Équipe de Recherche sur les Rationalités Philosophiques et les Savoirs (ERRAPHIS)
