@@ -1,5 +1,48 @@
 [
   {
+    "URL": "https://training.institut-curie.org/courses/raising-awareness-on-history-epistemology-and-ethics-of-science-3",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "Raising Awareness",
+    "id": "2024-awareness-science",
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          3
+        ]
+      ]
+    },
+    "title": "Two links between epistemology and ethics",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "Appliquer les philosophies des sciences et des techniques ?",
+    "id": "2024-application-philosophie",
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          3,
+          28
+        ]
+      ]
+    },
+    "title": "Quelles dichotomies en philosophie ?",
+    "type": "paper-conference"
+  },
+  {
     "author": [
       {
         "family": "Montévil",

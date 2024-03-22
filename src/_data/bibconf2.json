@@ -2,6 +2,42 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "2024-awareness-science",
+        "fields": {
+            "title": "Two links between epistemology and ethics",
+            "booktitle": "Raising Awareness",
+            "location": "Institut Curie",
+            "year": "2024",
+            "month": "05",
+            "day": "03",
+            "annonce": "true",
+            "language": "en",
+            "illustration": "Epistemiology2024_Poster.png",
+            "url": "https://training.institut-curie.org/courses/raising-awareness-on-history-epistemology-and-ethics-of-science-3",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2024-application-philosophie",
+        "fields": {
+            "title": "Quelles dichotomies en philosophie ?",
+            "booktitle": "Appliquer les philosophies des sciences et des techniques ?",
+            "location": "Campus Jussieu",
+            "year": "2024",
+            "month": "03",
+            "day": "28",
+            "annonce": "true",
+            "language": "fr",
+            "program": "ColloqueMars 2024-Affiche2-optimized.pdf",
+            "illustration": "ColloqueMars 2024-Affiche2-optimized.jpg",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
         "entrykey": "2024-organisation-ecology",
         "fields": {
             "title": "Disruption of ecosystems and the vulnerability of biological organizations",
