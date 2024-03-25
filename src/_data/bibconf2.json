@@ -19,6 +19,22 @@
     },
     {
         "objecttype": "entry",
+        "entrytype": "proceedings",
+        "entrykey": "2024-politics-philosophie",
+        "fields": {
+            "title": "What Is Politics?",
+            "location": "Salle des Actes, ENS, 45 rue d'Ulm",
+            "year": "2024",
+            "month": "04",
+            "day": "23",
+            "annonce": "true",
+            "language": "en",
+            "url": "https://republique-des-savoirs.fr/events/event/conference-what-is-politics/",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2024-application-philosophie",
         "fields": {
@@ -48,6 +64,7 @@
             "day": "14",
             "annonce": "true",
             "language": "en",
+            "illustration": "Brasao_da_UFBA.png",
             "program": "Encontro presencial projeto Templeton.pdf",
             "author": "Maël Montévil"
         }
@@ -60,6 +77,7 @@
             "title": "Contributive research in Saint-Denis: addressing the disruption of baby and toddler development by digital media",
             "booktitle": "Workshop: epistemology and concerned publics",
             "location": "University of Bahia, Salvador",
+            "illustration": "Brasao_da_UFBA.png",
             "year": "2024",
             "month": "03",
             "day": "06",
