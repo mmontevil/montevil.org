@@ -2,6 +2,42 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "2024-identity-organization",
+        "fields": {
+            "title": "The identity of organisms from an organizational perspective",
+            "booktitle": "Foundations of Biology",
+            "location": "University of Bahia, Salvador",
+            "year": "2024",
+            "month": "04",
+            "day": "16",
+            "annonce": "true",
+            "language": "en",
+            "illustration": "Brasao_da_UFBA.png",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2024-modelisation-democratie",
+        "fields": {
+            "title": "Que peut la modélisation ? Table ronde",
+            "booktitle": "Journées Sciences & Démocratie",
+            "location": "Académie du Climat, Paris",
+            "year": "2024",
+            "month": "04",
+            "day": "12",
+            "annonce": "true",
+            "language": "fr",
+            "illustration": "SJD-Web_page-0001-2-724x1024.jpg",
+            "url": "https://www.cliodynamique.org/journees-sciences-democratie",
+            "abstract": "La modélisation est un enjeu majeur, au cœur de nos actions en écologie et en économie. Son aspect technique conduit cependant à soustraire les discussion à son sujet du débat public, ce qui peut poser un problème démocratique de taille. Dans cette table ronde, nous aborderons la modélisation sous ces aspects pratiques et philosophiques. D’abord en définissant ce qu’est la modélisation et en dressant un panorama des pratiques existantes. Puis dans un second temps en discutant ses limites ainsi que ses dimensions participatives.",
+            "author": "Maël Montévil and Nicolas Becu"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
         "entrykey": "2024-awareness-science",
         "fields": {
             "title": "Two links between epistemology and ethics",
@@ -30,6 +66,8 @@
             "annonce": "true",
             "language": "en",
             "url": "https://republique-des-savoirs.fr/events/event/conference-what-is-politics/",
+            "illustration": "Avril 23 2024 Affiche What is politics.jpg",
+            "abstract": "Politics is the fight for freedom; freedom does not exist outside of the struggles for it. Freedom is neither transcendent infinite being nor is it an Idea. Since the object of politics is not an Idea, there is no universal form for politics. The péjoration of politics, “politics” as a culture of lies and manipulations for gaining power, presupposes a non-political ideality or an anti-political totality. When philosophy commences otherwise than its ethno-history through an other beginning of philosophy politics is already opening a collective anticipation of freedoms unknown. For that very reason, unknown dangers await our political future.",
             "author": "Maël Montévil"
         }
     },
@@ -40,6 +78,7 @@
         "fields": {
             "title": "Quelles dichotomies en philosophie ?",
             "booktitle": "Appliquer les philosophies des sciences et des techniques ?",
+            "url": "https://scai.sorbonne-universite.fr/public/events/view/8bd4c95c507064c5cf84/4",
             "location": "Campus Jussieu",
             "year": "2024",
             "month": "03",
@@ -48,6 +87,7 @@
             "language": "fr",
             "program": "ColloqueMars 2024-Affiche2-optimized.pdf",
             "illustration": "ColloqueMars 2024-Affiche2-optimized.jpg",
+            "abstract": "Ce colloque sera l’occasion de discuter de l’apparition récente de l’expression “philosophie appliquée” qui interroge à nouveaux frais la définition, les limites et les fins des philosophies des sciences et des techniques. Elle sous-entend, au moyen d’une reprise de la distinction entre recherche fondamentale et recherche appliquée, une dualité entre, d’un côté, une philosophie fondamentale qui serait tournée vers l’élaboration et la discussion de concepts et d’hypothèses qui lui seraient propres ; et, d’un autre, une philosophie appliquée qui serait tournée vers des contextes et enjeux dictés par les sciences et les techniques.",
             "author": "Maël Montévil"
         }
     },
