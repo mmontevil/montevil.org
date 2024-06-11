@@ -50,9 +50,7 @@
       {
         "family": "Mohan",
         "given": "Shaj"
-      }
-    ],
-    "editor": [
+      },
       {
         "family": "Montévil",
         "given": "Maël"
@@ -612,6 +610,26 @@
     },
     "note": "https://montevil.org/publications/varia/2021-Montevil-Bernard-Stiegler/",
     "title": "Bernard Stiegler (1952-2020)",
+    "type": "article-journal"
+  },
+  {
+    "abstract": "The free-energy principle (FEP) furnishes a computational, physical and teleological theory for understanding biological organization as cognitive agent minimizing their entropy in relation to their environment. Is minimizing entropy the first principle driving all dynamics of cognition ? Is it enough to account for organizational changes in a open-ended way ? After a general presentation of the literature on FEP, we then turn to the paradoxical case of the brain under the influence of psychedelics, where FEP is challenged by an increased cerebral entropy, which induces organizational changes of the cognition. From on this paradox, we then identify some limits of the FEP, notably applying concepts of information, optimization and predefined phase space to biology, which does not account for strong organizational changes. We therefore propose an organicist theoretical alternative with the concept of anti-entropy, explaining how a biological system’s disorganization can enable its \"unprestatable\" reorganization and so its open-ended evolution. We finally rediscuss the concept of activity and passivity of living beings and the notion that their default state corresponds to an activity.",
+    "author": [
+      {
+        "family": "Chollat-Namy",
+        "given": "Marie"
+      },
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "",
+    "id": "submitted-Chollat-Montevil-FEP-entropy",
+    "issued": {
+      "date-parts": []
+    },
+    "title": "What drives the brain ? Organizational changes, FEP and anti-entropy",
     "type": "article-journal"
   },
   {

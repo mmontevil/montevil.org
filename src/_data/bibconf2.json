@@ -2,37 +2,56 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
-        "entrykey": "2024-identity-organization",
+        "entrykey": "2024-enmi-produire",
         "fields": {
-            "title": "The identity of organisms from an organizational perspective",
-            "booktitle": "Foundations of Biology",
-            "location": "University of Bahia, Salvador",
+            "title": "Qu’appelle-t-on produire ?",
+            "booktitle": "Entretiens du Nouveau Monde Industriel Préparatoires",
+            "location": "ÉNS",
             "year": "2024",
-            "month": "04",
-            "day": "16",
+            "month": "06",
+            "day": "26",
             "annonce": "true",
-            "language": "en",
-            "illustration": "Brasao_da_UFBA.png",
+            "language": "fr",
+            "illustration": "enmiprep2024.jpg",
+            "url": "https://www.iri.centrepompidou.fr/actualites/entretiens-du-nouveau-monde-industriel-preparatoires-2024/",
+            "abstract": "Les notions de production et d’industrie ont, contre leurs origines historiques, été confinées dans les deux dernier siècles à ce que l’on appelle le secteur secondaire, le secteur primaire étant, lui, dévolu à la matière dite première et qui regroupe pelle-mêle l’exploitation du vivant sauvage et domestique ainsi que l’extraction minière. Pourtant les fourmis sont bien – plus ou moins – industrieuses, le concept de reproduction est l’un des plus fondamental en biologie et même les processus physiques irréversibles produisent de l’entropie. Alors que le champs et les acteurs de l’industrie se reconfigurent tant pour des raisons technologiques « qu’écologiques », il nous semble pertinent de repenser ce que signifie produire à l’aune tant de la physique que de la biologie et de la technologie.",
             "author": "Maël Montévil"
         }
     },
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
-        "entrykey": "2024-modelisation-democratie",
+        "entrykey": "2024-Canguilhem-inedit",
         "fields": {
-            "title": "Que peut la modélisation ? Table ronde",
-            "booktitle": "Journées Sciences & Démocratie",
-            "location": "Académie du Climat, Paris",
+            "title": "Normativité et quelques enjeux théoriques contemporains",
+            "booktitle": "Relire Canguilhem à partir des inédits",
+            "location": "ÉNS",
             "year": "2024",
-            "month": "04",
-            "day": "12",
+            "month": "06",
+            "day": "18",
             "annonce": "true",
             "language": "fr",
-            "illustration": "SJD-Web_page-0001-2-724x1024.jpg",
-            "url": "https://www.cliodynamique.org/journees-sciences-democratie",
-            "abstract": "La modélisation est un enjeu majeur, au cœur de nos actions en écologie et en économie. Son aspect technique conduit cependant à soustraire les discussion à son sujet du débat public, ce qui peut poser un problème démocratique de taille. Dans cette table ronde, nous aborderons la modélisation sous ces aspects pratiques et philosophiques. D’abord en définissant ce qu’est la modélisation et en dressant un panorama des pratiques existantes. Puis dans un second temps en discutant ses limites ainsi que ses dimensions participatives.",
-            "author": "Maël Montévil and Nicolas Becu"
+            "illustration": "cang2024.jpg",
+            "url": "https://philofr.hypotheses.org/14848",
+            "program": "Canguilhem-2024.pdf",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2024-Disruption-Cavaillès",
+        "fields": {
+            "title": "Disruption et vulnérabilité des organisations biologiques",
+            "location": " École Normale Supérieure",
+            "year": "2024",
+            "month": "5",
+            "day": "15",
+            "annonce": "true",
+            "language": "fr",
+            "illustration": "Octobre_2023_Affiche_Seminaire_Vivant_Centre_Cavailles.png",
+            "url": "https://republique-des-savoirs.fr/events/event/seminaire-centre-cavailles-sur-le-vivant-du-2023-2024/",
+            "author": "Maël Montévil"
         }
     },
     {
@@ -69,6 +88,42 @@
             "illustration": "Avril 23 2024 Affiche What is politics.jpg",
             "abstract": "Politics is the fight for freedom; freedom does not exist outside of the struggles for it. Freedom is neither transcendent infinite being nor is it an Idea. Since the object of politics is not an Idea, there is no universal form for politics. The péjoration of politics, “politics” as a culture of lies and manipulations for gaining power, presupposes a non-political ideality or an anti-political totality. When philosophy commences otherwise than its ethno-history through an other beginning of philosophy politics is already opening a collective anticipation of freedoms unknown. For that very reason, unknown dangers await our political future.",
             "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2024-identity-organization",
+        "fields": {
+            "title": "The identity of organisms from an organizational perspective",
+            "booktitle": "Foundations of Biology",
+            "location": "University of Bahia, Salvador",
+            "year": "2024",
+            "month": "04",
+            "day": "16",
+            "annonce": "true",
+            "language": "en",
+            "illustration": "Brasao_da_UFBA.png",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2024-modelisation-democratie",
+        "fields": {
+            "title": "Que peut la modélisation ? Table ronde",
+            "booktitle": "Journées Sciences & Démocratie",
+            "location": "Académie du Climat, Paris",
+            "year": "2024",
+            "month": "04",
+            "day": "12",
+            "annonce": "true",
+            "language": "fr",
+            "illustration": "SJD-Web_page-0001-2-724x1024.jpg",
+            "url": "https://www.cliodynamique.org/journees-sciences-democratie",
+            "abstract": "La modélisation est un enjeu majeur, au cœur de nos actions en écologie et en économie. Son aspect technique conduit cependant à soustraire les discussion à son sujet du débat public, ce qui peut poser un problème démocratique de taille. Dans cette table ronde, nous aborderons la modélisation sous ces aspects pratiques et philosophiques. D’abord en définissant ce qu’est la modélisation et en dressant un panorama des pratiques existantes. Puis dans un second temps en discutant ses limites ainsi que ses dimensions participatives.",
+            "author": "Maël Montévil and Nicolas Becu"
         }
     },
     {
@@ -502,7 +557,7 @@
         "entrytype": "proceedings",
         "entrykey": "2022-ENMI",
         "fields": {
-            "title": "Organisation du Vivant, Organologie des Savoirs : Technodiversité, biodiversité, noodiversité : nouveaux régimes de l’habiter",
+            "title": "ENMI 2022 - Organisation du Vivant, Organologie des Savoirs : Technodiversité, biodiversité, noodiversité : nouveaux régimes de l’habiter",
             "location": "Centre Pompidou",
             "year": "2022",
             "month": "12",
@@ -3306,7 +3361,7 @@
         "entrytype": "proceedings",
         "entrykey": "enmi_2020org",
         "fields": {
-            "title": "Entretiens du Nouveau Monde Industriel 2020 : prendre soin de l'informatique et des générations.",
+            "title": "ENMI 2020 - Prendre soin de l'informatique et des générations.",
             "year": "2020",
             "month": "12",
             "location": "Centre Pompidou, Paris, France",

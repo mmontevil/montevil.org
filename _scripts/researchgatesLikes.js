@@ -74,6 +74,7 @@ let res = {};
     bib = Object.values(JSON.parse(file)) || [];
 
     await login(driver);
+        await sleep(30000);
 
     await driver.get(
       'https://www.researchgate.net/profile/Mael-Montevil/research'

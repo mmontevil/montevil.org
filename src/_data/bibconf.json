@@ -1,5 +1,115 @@
 [
   {
+    "URL": "https://www.iri.centrepompidou.fr/actualites/entretiens-du-nouveau-monde-industriel-preparatoires-2024/",
+    "abstract": "Les notions de production et d’industrie ont, contre leurs origines historiques, été confinées dans les deux dernier siècles à ce que l’on appelle le secteur secondaire, le secteur primaire étant, lui, dévolu à la matière dite première et qui regroupe pelle-mêle l’exploitation du vivant sauvage et domestique ainsi que l’extraction minière. Pourtant les fourmis sont bien – plus ou moins – industrieuses, le concept de reproduction est l’un des plus fondamental en biologie et même les processus physiques irréversibles produisent de l’entropie. Alors que le champs et les acteurs de l’industrie se reconfigurent tant pour des raisons technologiques « qu’écologiques », il nous semble pertinent de repenser ce que signifie produire à l’aune tant de la physique que de la biologie et de la technologie.",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "Entretiens du Nouveau Monde Industriel Préparatoires",
+    "id": "2024-enmi-produire",
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          6,
+          26
+        ]
+      ]
+    },
+    "title": "Qu’appelle-t-on produire ?",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://philofr.hypotheses.org/14848",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "Relire Canguilhem à partir des inédits",
+    "id": "2024-Canguilhem-inedit",
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          6,
+          18
+        ]
+      ]
+    },
+    "title": "Normativité et quelques enjeux théoriques contemporains",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://republique-des-savoirs.fr/events/event/seminaire-centre-cavailles-sur-le-vivant-du-2023-2024/",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "id": "2024-Disruption-Cavaillès",
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          15
+        ]
+      ]
+    },
+    "title": "Disruption et vulnérabilité des organisations biologiques",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://training.institut-curie.org/courses/raising-awareness-on-history-epistemology-and-ethics-of-science-3",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "Raising Awareness",
+    "id": "2024-awareness-science",
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          3
+        ]
+      ]
+    },
+    "title": "Two links between epistemology and ethics",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://republique-des-savoirs.fr/events/event/conference-what-is-politics/",
+    "abstract": "Politics is the fight for freedom; freedom does not exist outside of the struggles for it. Freedom is neither transcendent infinite being nor is it an Idea. Since the object of politics is not an Idea, there is no universal form for politics. The péjoration of politics, “politics” as a culture of lies and manipulations for gaining power, presupposes a non-political ideality or an anti-political totality. When philosophy commences otherwise than its ethno-history through an other beginning of philosophy politics is already opening a collective anticipation of freedoms unknown. For that very reason, unknown dangers await our political future.",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "id": "2024-politics-philosophie",
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          4,
+          23
+        ]
+      ]
+    },
+    "title": "What Is Politics?",
+    "type": "book"
+  },
+  {
     "author": [
       {
         "family": "Montévil",
@@ -46,50 +156,6 @@
     },
     "title": "Que peut la modélisation ? Table ronde",
     "type": "paper-conference"
-  },
-  {
-    "URL": "https://training.institut-curie.org/courses/raising-awareness-on-history-epistemology-and-ethics-of-science-3",
-    "author": [
-      {
-        "family": "Montévil",
-        "given": "Maël"
-      }
-    ],
-    "container-title": "Raising Awareness",
-    "id": "2024-awareness-science",
-    "issued": {
-      "date-parts": [
-        [
-          2024,
-          5,
-          3
-        ]
-      ]
-    },
-    "title": "Two links between epistemology and ethics",
-    "type": "paper-conference"
-  },
-  {
-    "URL": "https://republique-des-savoirs.fr/events/event/conference-what-is-politics/",
-    "abstract": "Politics is the fight for freedom; freedom does not exist outside of the struggles for it. Freedom is neither transcendent infinite being nor is it an Idea. Since the object of politics is not an Idea, there is no universal form for politics. The péjoration of politics, “politics” as a culture of lies and manipulations for gaining power, presupposes a non-political ideality or an anti-political totality. When philosophy commences otherwise than its ethno-history through an other beginning of philosophy politics is already opening a collective anticipation of freedoms unknown. For that very reason, unknown dangers await our political future.",
-    "author": [
-      {
-        "family": "Montévil",
-        "given": "Maël"
-      }
-    ],
-    "id": "2024-politics-philosophie",
-    "issued": {
-      "date-parts": [
-        [
-          2024,
-          4,
-          23
-        ]
-      ]
-    },
-    "title": "What Is Politics?",
-    "type": "book"
   },
   {
     "URL": "https://scai.sorbonne-universite.fr/public/events/view/8bd4c95c507064c5cf84/4",
@@ -723,8 +789,8 @@
         ]
       ]
     },
-    "title": "Organisation du Vivant, Organologie des Savoirs : Technodiversité, biodiversité, noodiversité : nouveaux régimes de l’habiter",
-    "title-short": "Organisation du Vivant, Organologie des Savoirs ",
+    "title": "ENMI 2022 - Organisation du Vivant, Organologie des Savoirs : Technodiversité, biodiversité, noodiversité : nouveaux régimes de l’habiter",
+    "title-short": "ENMI 2022 - Organisation du Vivant, Organologie des Savoirs ",
     "type": "book"
   },
   {
@@ -4693,8 +4759,7 @@
         ]
       ]
     },
-    "title": "Entretiens du Nouveau Monde Industriel 2020 : prendre soin de l’informatique et des générations.",
-    "title-short": "Entretiens du Nouveau Monde Industriel 2020 ",
+    "title": "ENMI 2020 - Prendre soin de l’informatique et des générations.",
     "type": "book"
   },
   {
