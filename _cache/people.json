@@ -7585,9 +7585,9 @@
   },
   "s-jube": {
     "shortname": "S Jube",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
+    "photo": "/assets/avatars/gs/440BKPQAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=440BKPQAAAAJ",
+    "gsid": "440BKPQAAAAJ",
     "affiliation": ""
   },
   "ut-bhosale": {
@@ -7683,9 +7683,9 @@
   },
   "s-goldwasser": {
     "shortname": "S Goldwasser",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
+    "photo": "/assets/avatars/gs/LVarrY0AAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=LVarrY0AAAAJ",
+    "gsid": "LVarrY0AAAAJ",
     "affiliation": ""
   },
   "m-mcmanus": {
@@ -8277,9 +8277,9 @@
   },
   "r-hirota": {
     "shortname": "R Hirota",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
+    "photo": "/assets/avatars/gs/jEg-WK4AAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=jEg-WK4AAAAJ",
+    "gsid": "jEg-WK4AAAAJ",
     "affiliation": ""
   },
   "h-saigo": {
@@ -8448,9 +8448,9 @@
   },
   "m-bitbol": {
     "shortname": "M Bitbol",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
+    "photo": "/assets/avatars/gs/x6Hwq3cAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=x6Hwq3cAAAAJ",
+    "gsid": "x6Hwq3cAAAAJ",
     "affiliation": "",
     "fullName": "Michel Bitbol"
   },
@@ -8637,9 +8637,9 @@
   },
   "n-brodeur": {
     "shortname": "N Brodeur",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
+    "photo": "/assets/avatars/gs/ip6xGCcAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=ip6xGCcAAAAJ",
+    "gsid": "ip6xGCcAAAAJ",
     "affiliation": ""
   },
   "sr-notley": {
@@ -9756,16 +9756,16 @@
   },
   "j-coutinho": {
     "shortname": "J Coutinho",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
+    "photo": "/assets/avatars/gs/RwpYW0MAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=RwpYW0MAAAAJ",
+    "gsid": "RwpYW0MAAAAJ",
     "affiliation": ""
   },
   "c-el-hani": {
     "shortname": "C El-Hani",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
+    "photo": "/assets/avatars/gs/e5aekOQAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=e5aekOQAAAAJ",
+    "gsid": "e5aekOQAAAAJ",
     "affiliation": ""
   },
   "r-mozaffaripour": {
@@ -9856,5 +9856,40 @@
     "gsid": "B1gMcHkAAAAJ",
     "affiliation": "Professor of Philosophy, University of Memphis/Professorial Fellow, University of Wollongong",
     "fullName": "Shaun Gallagher"
+  },
+  "h-akl": {
+    "shortname": "H Akl",
+    "photo": "/assets/avatars/gs/obO2RBcAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=obO2RBcAAAAJ",
+    "gsid": "obO2RBcAAAAJ",
+    "affiliation": ""
+  },
+  "z-direk": {
+    "shortname": "Z Direk",
+    "photo": "/assets/avatars/gs/YCsnYvwAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=YCsnYvwAAAAJ",
+    "gsid": "YCsnYvwAAAAJ",
+    "affiliation": ""
+  },
+  "e-jacopin": {
+    "shortname": "E Jacopin",
+    "photo": "/assets/avatars/gs/ekd57U0AAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=ekd57U0AAAAJ",
+    "gsid": "ekd57U0AAAAJ",
+    "affiliation": ""
+  },
+  "p-gagrani": {
+    "shortname": "P Gagrani",
+    "photo": "/assets/avatars/gs/apGl8RAAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=apGl8RAAAAAJ",
+    "gsid": "apGl8RAAAAAJ",
+    "affiliation": ""
+  },
+  "mm-montevil": {
+    "shortname": "MM Montévil",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
   }
 }

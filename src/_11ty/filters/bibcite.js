@@ -1,7 +1,7 @@
 const fs = require('fs');
 //const linkifyUrls = require('linkify-urls');
-import linkifyUrls from 'linkify-urls';
-
+//import linkifyUrls from 'linkify-urls';
+const linkifyUrls = require("linkify-string");
 //const linkifyUrls = import("../../../node_modules/linkify-urls/index.js")
 //const linkifyUrls = require('../../_utils/linkify');
 

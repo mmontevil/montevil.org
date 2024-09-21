@@ -2,6 +2,59 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "2024-inserm-contributive",
+        "fields": {
+            "title": "La recherche contributive: l'expérience de la clinique contributive à saint-Denis",
+            "booktitle": "Webconférence Inserm SEDD",
+            "location": "INSERM - en ligne",
+            "year": "2024",
+            "month": "10",
+            "day": "8",
+            "annonce": "true",
+            "language": "fr",
+            "abstract": "La recherche contributive est une réponse à la disruption technologique développée initialement par Bernard Stiegler et l'association Ars Industrialis passant par une stratégie pour le développement de savoirs pratiques et théoriques. Cette approche a été et est expérimentée à Plaine Commune, notamment dans un travail autour des écrans et de la petite enfance dont les résultats sont prometteurs.",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2024-rouen-ecran",
+        "fields": {
+            "title": "Prendre soin du développement humain : théorie et leçon de l'expérience de Saint-Denis",
+            "booktitle": "Des bébés & des Écrans - Doudou versus Écran ?",
+            "location": "18ème journée de l'Association Mon Ti Loup - Salle des fêtes Michel Vallery - Abbaye de Montivilliers",
+            "year": "2024",
+            "month": "10",
+            "day": "4",
+            "annonce": "true",
+            "language": "fr",
+            "program": "formation-2024.pdf",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2024-evaluation-globale",
+        "fields": {
+            "title": "Historicité et applications",
+            "booktitle": "Tempête de cerveaux sur les problématiques d’une évaluation globale (systémique) des nouvelles technologies",
+            "location": "ÉNS",
+            "year": "2024",
+            "month": "06",
+            "day": "26",
+            "annonce": "true",
+            "language": "fr",
+            "url": "https://iscpif.fr/evenements/evaluation-globale/",
+            "abstract": "L’objectif de cette tempête de cerveaux est de démarrer un processus d’évaluation des technologies modernes qui corresponde aux besoins du monde actuel. Démarrer, cela veut dire aller vers la mise en place éventuelle d’un comité d’évaluation globale à l’ANSES, projet qui commence à prendre forme. Cette « évaluation globale » (ou « systémique », mais ce terme est souvent utilisé pour de la transversalité) ne vise pas à se substituer à l’évaluation classique, analytique, mais à la complémenter et la contextualiser. En schématisant : actuellement, on cherche à savoir si les nouveaux produits mis dans la nature peuvent avoir un effet jugé négatif sur tel ou tel individu ou groupe d’individus. Il est évidemment important de prévoir au mieux des effets cancérigènes, reprotoxiques, allergiques etc. Il est vrai aussi que de plus en plus, des approches plus complexes sont proposées (« Une Seule Santé », évaluation des effets des nouveautés sur les pratiques, agricoles ou industrielles par exemple…). Mais on reste sur l’idée implicite tenace selon laquelle la nature a une résilience infinie et que l’être humain est de droit sur terre, même si, explicitement, on reconnaît le contraire. Or, nous vivons dans des systèmes complexes naturels (adaptatifs) qui ont une organisation. Cette organisation n’est pas la seule possible, mais telle qu’elle est, elle nous permet de vivre dans cemonde- là et cela mérite quelque attention. L’évaluation globale vise donc, non à chercher à prévoir ce qui peut advenir suite à une perturbation liée à l’introduction d’un nouveau produit dans la nature, mais bien plutôt à savoir si telle ou telle technologie peut interférer avec l’organisation des systèmes complexes dont nous dépendons (écosystèmes, sociétés…). Par exemple, si une technologie accélère l’évolution du vivant ou des sociétés, il convient de disposer d’une méthode permettant d’estimer si cette accélération est durable et significative ou non avant de se lancer. La vitesse d’évolution est en effet un caractère fondamental de l’organisation des systèmes complexes naturels. L’approche globale n’est donc pas un frein, mais une nécessité actuelle pour pouvoir continuer à agir sans aller à l’aveuglette titiller ce qui nous permet d’exister en tant qu’espèce. La méthode proposée consiste donc 1) à faire un point aussi large que possible sur ce qui est connu sur les systèmes complexes naturels adaptatifs, et ce dans l’optique d’une évaluation des technologies, afin de comprendre comment les technologies modernes peuvent interférer avec l’organisation de ces systèmes ; 2) de mobiliser des connaissances, y compris des connaissances développées dans un tout autre domaine que celui de l’organisation des systèmes complexes, afin d’enrichir la problématique ; 3) rédiger une première synthèse au bout d’environ six mois, afin de donner matière à l’ANSES pour décider ou non de la mise en place d’une instance d’évaluation globale en son sein. Le colloque veut être un point de départ de ce processus. Après une présentation du projet, nous échangerons librement sur les problématiques et la méthode.",
+            "program": "deroule-juin2024.pdf",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
         "entrykey": "2024-enmi-produire",
         "fields": {
             "title": "Qu’appelle-t-on produire ?",
@@ -9,7 +62,7 @@
             "location": "ÉNS",
             "year": "2024",
             "month": "06",
-            "day": "26",
+            "day": "25",
             "annonce": "true",
             "language": "fr",
             "illustration": "enmiprep2024.jpg",
@@ -48,6 +101,7 @@
             "month": "5",
             "day": "15",
             "annonce": "true",
+            "booktitle": "Séminaire Cavaillès sur le vivant",
             "language": "fr",
             "illustration": "Octobre_2023_Affiche_Seminaire_Vivant_Centre_Cavailles.png",
             "url": "https://republique-des-savoirs.fr/events/event/seminaire-centre-cavailles-sur-le-vivant-du-2023-2024/",
