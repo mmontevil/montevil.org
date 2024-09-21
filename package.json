@@ -25,7 +25,7 @@
     "build:js:legacy": "NODE_ENV=production webpack --progress",
     "start:js:legacy": "NODE_ENV=development webpack --progress -w",
     "build:eleventy": "NODE_OPTIONS='-r esm' eleventy",
-    "watch:eleventy": " eleventy --serve",
+    "watch:eleventy": "NODE_OPTIONS='-r esm' eleventy --serve",
     "serviceworker:inject": "workbox generateSW workbox.config.js",
     "start": " NODE_ENV=development npm-run-all  --sequential clean build:js  build:js:legacy --parallel watch:*",
     "start0": " NODE_ENV=development npm-run-all --sequential clean --parallel start:js start:js:legacy build:sass --sequential build:eleventy ",
@@ -135,7 +135,10 @@
     "workbox-strategies": "7.0.0"
   },
   "engines": {
-    "node": ">=22"
+    "node": ">=20"
+  },
+  "esm": {
+    "mode": "all"
   },
   "private": true,
   "dependencies": {
