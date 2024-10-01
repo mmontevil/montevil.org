@@ -2,7 +2,8 @@
 const CleanCSS = require('clean-css');
 //import PurgeCSS from 'purgecss'
 //import PurgeCSS from 'purgecss';
-import { PurgeCSS } from "purgecss";
+//import { PurgeCSS } from "purgecss";
+const {PurgeCSS} = require('purgecss');
 
 const purge = async function (content, cssFiles) {
   // const Purgecss=await import('purgecss');

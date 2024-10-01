@@ -9,7 +9,7 @@ const {
 require('mathjax-full/js/util/entities/all.js');
 //const htmlmin = require("html-minifier");
 const cleancss = require('clean-css');
-import { DOMParser, parseHTML } from 'linkedom';
+const { DOMParser, parseHTML } =require('linkedom');
 
 module.exports = async function (content, outputPath) {
   if (

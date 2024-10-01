@@ -6,7 +6,8 @@ const { promises: fs } = require('fs');
 const syncFs = require('fs');
 const moment = require('moment');
 let day = moment().format('YYYY-MM-DD');
-import { DOMParser, parseHTML } from 'linkedom';
+const { DOMParser, parseHTML } =require('linkedom');
+
 function JSDOM(html) {
   return parseHTML(html);
 }

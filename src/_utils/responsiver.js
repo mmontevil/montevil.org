@@ -6,7 +6,8 @@
 
 global.window = global;
 
-import { DOMParser, parseHTML } from 'linkedom';
+
+const { DOMParser, parseHTML } =require('linkedom');
 
 function createDocumentFromHTML(html, customElements) {
   const document = new DOMParser().parseFromString(html, 'text/html');

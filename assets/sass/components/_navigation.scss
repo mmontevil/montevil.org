@@ -40,11 +40,7 @@
     padding-left: var(--gap-xxs);
     padding-right: var(--gap-xxs);
     margin-left: -1.5vw;
-    @media (min-width: 35em) {
-      padding-left: var(--gap-s);
-      padding-right: var(--gap-s);
-      margin-left: -3.8em;
-    }
+
     z-index: -1;
     position: absolute;
     overflow: visible;
@@ -73,7 +69,11 @@
       
       color: var(--color-primary-lighter-1);}
       a:hover, a:focus {color: var(--color-link-hover);}
-      
+    @media (min-width: 35em) {
+      padding-left: var(--gap-s);
+      padding-right: var(--gap-s);
+      margin-left: -3.8em;
+    } 
   } 
   
   

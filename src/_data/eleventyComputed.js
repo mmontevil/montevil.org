@@ -2,13 +2,15 @@ const twitter = require('twitter-text');
 const slugifyString = require('../_utils/slugify');
 const tagFilter = require('../_utils/tagfilter');
 var search = require('approx-string-match').default;
+//const search = (...args) => import('approx-string-match').then(({default: search}) => fetch(...search));
 const flatcache = require('flat-cache');
 const path = require('path');
 const { writeToCache, readFromCache } = require('../_utils/cache');
 const PLUM_CACHE = '_cache/plumMention.json';
 const { tweettomention, wikiMention } = require('../_utils/twitter_crossref');
 //const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
-const fetch = require('node-fetch');
+//const fetch = require('node-fetch');
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 
 const WEBMENTION_CACHE = '_cache/webmentions.json';
 const TWITL_WEBMENTION_CACHE = '_cache/tweetLikeMentions.json';
@@ -331,6 +333,7 @@ async function fetchCrossref00(doi, id, type, source,cursor=undefined) {
        }else{
          var cursort="";
       }
+      
       allPosts = await fetch(
         'https://api.eventdata.crossref.org/v1/events?'+'mailto=montevil@crans.org'+cursort+'&rows=1000&'+idtype+'=' +
           encodeURI(doi) +
@@ -373,9 +376,9 @@ async function fetchCrossref0(doi, id, type, source) {
 
 async function fetchCrossref(doi, id, type) {
   const cachedData = cache.getKey(id);
-
-  if (!cachedData) {
-
+  
+ // if (!cachedData || cachedData ) {
+    if (!cachedData ) {
     var allPosts = await fetchCrossref0(doi, id, type, 'twitter');
     if(!allPosts){
       var allPosts = '[]';
@@ -392,6 +395,7 @@ async function fetchCrossref(doi, id, type) {
     }
       
      if ( allPosts2.message){
+       console.log("cccccccccccc");
     if ( allPosts2.message.events && allPosts2.message.events!=[]) {
       for (i in allPosts2.message.events) {
         if (

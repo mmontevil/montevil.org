@@ -130,19 +130,7 @@
   --color-grad: 100%;
     
   --soft-shadow: rgba(0, 0, 0, 0.05);
-  @media (min-width: 25rem) {
-    --width: calc(min(var(--layout-max), 90vw));
-  }
 
-  @media (min-width: 40rem) {
-    --width: calc(min(var(--layout-max), 80vw));
-  }
-  @media (min-width: 40rem) {
-    --footerW: 1600;
-  }
-  @media (min-width: 80rem) {
-    --footerW: 2400;
-  }
   @for $i from 1 through 9 {
     --color-primary-lighter-#{$i}: hsl(
       var(--hue),
@@ -158,13 +146,27 @@
       calc(var(--lum) + #{$i} * var(--lum-step2))
     );
   }
+  
+
   --color-trans: hsla(
       var(--hue),
       calc(var(--sat) + 9 * var(--sat-step)),
       calc(var(--lum) + 9 * var(--lum-step)),
       0.6
     );
-  
+  @media (min-width: 25rem) {
+    --width: calc(min(var(--layout-max), 90vw));
+  }
+
+  @media (min-width: 40rem) {
+    --width: calc(min(var(--layout-max), 80vw));
+  }
+  @media (min-width: 40rem) {
+    --footerW: 1600;
+  }
+  @media (min-width: 80rem) {
+    --footerW: 2400;
+  }    
 .noDarkFilter {
     filter: none;
   }

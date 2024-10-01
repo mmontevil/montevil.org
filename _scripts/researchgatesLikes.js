@@ -23,8 +23,9 @@ async function login(driver) {
    // await driver.findElement(By.xpath("//button[@mode='secondary'][3]")).click();
   await sleep(2000);
  // await driver.findElement(By.xpath("//button[@mode='primary']")).click();
-  await driver.findElement(By.name('login')).sendKeys(RG_LOGIN);
-  await driver.findElement(By.name('password')).sendKeys(RG_MDP);
+  console.log(RG_LOGIN);
+  await driver.findElement(By.css("input[autocomplete='email']")).sendKeys(RG_LOGIN);
+  await driver.findElement(By.css("input[autocomplete='current-password']")).sendKeys(RG_MDP);
   await sleep(10000);
   await driver
     .findElement(By.xpath("//button[@data-testid='loginCta']"))

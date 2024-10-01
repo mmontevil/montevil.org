@@ -1,4 +1,4 @@
-import { DOMParser, parseHTML } from 'linkedom';
+const { DOMParser, parseHTML } =require('linkedom');
 
 function addAnchordom(html) {
   const document = new DOMParser().parseFromString(html, 'text/html');
