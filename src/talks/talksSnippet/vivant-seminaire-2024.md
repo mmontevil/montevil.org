@@ -12,11 +12,11 @@ Le séminaire se veut ouvert à toutes et à tous, avec l'objectif de croiser le
 
 **Programme  :**\
 Attention, il y a deux salles différentes U209 et U203 (Émile BOREL), 29 rue d'Ulm, 2ième étage.
-Contacter les organisateurs pour le lien de connection si besoin. 
+Contacter les organisateurs pour le lien de connection et/ou  s'inscrire sur la liste de diffusion. 
 
 ## Mercredi 16 octobre 2024, Matteo Mossio (IHPST-CNRS, Paris)
 16h-18h, salle U203 (Émile BOREL), 29 rue d'Ulm, 2ième étage : *« Vie, Autonomie, Dialectique »*
-Cette séance est jumelée avec l'atelier Phibe : Philosophie, biologie, écologie : interfaces épistémiques
+Cette séance est jumelée avec l'atelier Phibe "Philosophie, biologie, écologie : interfaces épistémiques" organisé par Andrea Angelini (LLCP, Université Paris 8), Matteo Mossio (CNRS-IHPST) et Giuseppe Longo (ENS, CNRS). 
 
 ## Mercredi 13 novembre 2024, Guiseppe Longo (centre Cavaillès, RdS, CNRS )
 16h-18h, salle U203 (Émile BOREL), 29 rue d'Ulm, 2ième étage : *« Qu’est-ce qui cause quoi (What causes what) »*
@@ -29,7 +29,7 @@ Cette séance est jumelée avec l'atelier Phibe : Philosophie, biologie, écolog
 
 ## Mercredi 12 février 2025, Silvia De Monte (IBENS-CNRS, Paris)
 16h-18h, salle U203 (Émile BOREL), 29 rue d'Ulm, 2ième étage : *« Species equivalence in diversity : trait heterogeneity and populations dynamics »*
-Cette séance est jumelée avec l'atelier Phibe : Philosophie, biologie, écologie : interfaces épistémiques
+Cette séance est jumelée avec l'atelier Phibe "Philosophie, biologie, écologie : interfaces épistémiques" organisé par Andrea Angelini (LLCP, Université Paris 8), Matteo Mossio (CNRS-IHPST) et Giuseppe Longo (ENS, CNRS). 
 
 ## Mercredi 12 mars 2025, Benedetta Piazzesi (CRH-EHESS, Paris)
 16h-18h, salle U203 (Émile BOREL), 29 rue d'Ulm, 2ième étage : *« La zootechnie entre thermodynamique et spécialisation des races : naissance d’une science industrielle »*
