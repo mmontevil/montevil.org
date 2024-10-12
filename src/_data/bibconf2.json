@@ -2,6 +2,24 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "2024-enmi",
+        "fields": {
+            "title": "Qu’apelle-t-on produire ?",
+            "booktitle": "ENMI 2024 - La nouvelle écologie de l'industrie : Pour une bifurcation vers l’éco-technologie et les nouvelles localités industrielles",
+            "location": "Centre Pompidou, Paris",
+            "year": "2024",
+            "month": "12",
+            "day": "18",
+            "abstract": "Les notions de production et d’industrie ont, contre leurs origines historiques, été confinées dans les deux derniers siècles à ce que l’on appelle le secteur secondaire, le secteur primaire étant, lui, dévolu à la matière dite première et qui regroupe pelle-mêle l’exploitation du vivant sauvage et domestique ainsi que l’extraction minière. Pourtant les fourmis sont bien – plus ou moins – industrieuses, le concept de reproduction est l’un des plus fondamental en biologie et même les processus physiques irréversibles produisent de l’entropie. Le passage à l'échelle de ces différents types de production est néanmoins distinct - et cette question est centrale pour l'industrie. Alors que le champs et les acteurs de l’industrie se reconfigurent tant pour des raisons technologiques « qu’écologiques », il nous semble pertinent de repenser ce que signifie produire à l’aune tant de la physique que de la biologie et de la technologie.",
+            "annonce": "true",
+            "url": "https://enmi-conf.org/wp/enmi24/",
+            "language": "fr",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
         "entrykey": "2024-cours-mnhn",
         "fields": {
             "title": "Formalisation et connaissance de la nature",

@@ -18,7 +18,7 @@ Contacter les organisateurs pour le lien de connection et/ou  s'inscrire sur la 
 16h-18h, salle U203 (Émile BOREL), 29 rue d'Ulm, 2ième étage : *« Vie, Autonomie, Dialectique »*
 Cette séance est jumelée avec l'atelier Phibe "Philosophie, biologie, écologie : interfaces épistémiques" organisé par Andrea Angelini (LLCP, Université Paris 8), Matteo Mossio (CNRS-IHPST) et Giuseppe Longo (ENS, CNRS). 
 
-## Mercredi 13 novembre 2024, Guiseppe Longo (centre Cavaillès, RdS, CNRS )
+## Mercredi 13 novembre 2024, Giuseppe Longo (centre Cavaillès, RdS, CNRS )
 16h-18h, salle U203 (Émile BOREL), 29 rue d'Ulm, 2ième étage : *« Qu’est-ce qui cause quoi (What causes what) »*
 
 ## Mercredi 11 décembre 2024, Jean Lassègue (Centre Georg Simmel-EHESS-CNRS, Paris)
