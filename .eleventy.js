@@ -10,18 +10,14 @@ const slugify = require('./src/_utils/slugify');
 
 const { writeToCache, readFromCache } = require('./src/_utils/cache');
 
-cachedTweets = readFromCache('_cache/tweetsMentions.json', (alt = {}));
-cachedWiki = readFromCache('_cache/wikiMentions.json', (alt = {}));
 cachedPeople = readFromCache('_cache/people.json', (alt = {}));
 //const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
 
-module.exports = function (eleventyConfig) {  
-
+module.exports =  function (eleventyConfig) {  
   eleventyConfig.on('afterBuild', () => {
     writeToCache(cachedPeople, '_cache/people.json');
-    writeToCache(cachedWiki, '_cache/wikiMentions.json');
-    writeToCache(cachedTweets, '_cache/tweetsMentions.json');
+
   });
   // ------------------------------------------------------------------------
   // Collections
@@ -87,12 +83,7 @@ module.exports = function (eleventyConfig) {
   const rss = require('@11ty/eleventy-plugin-rss');
   eleventyConfig.addPlugin(rss);
 
-  const embedTweets = require('eleventy-plugin-embed-tweet');
-  eleventyConfig.addPlugin(embedTweets, {
-    cacheDirectory: '_cache',
-    useInlineStyles: false,
-    autoEmbed: true,
-  });
+
 
   const embedEverythingElse = require('eleventy-plugin-embed-everything');
   eleventyConfig.addPlugin(embedEverythingElse, {

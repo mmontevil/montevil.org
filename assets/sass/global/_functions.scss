@@ -2,6 +2,7 @@
 // @description converts 1 or more characters into a unicode
 // @markup {scss}
 // unicode("e655"); // "\e655"
+@use 'sass:string';
 @function unicode($str) {
-  @return unquote('"') + unquote(str-insert($str, '\\', 1)) + unquote('"');
+  @return string.unquote('"') + string.unquote(str - string.insert($str, '\\', 1)) + string.unquote('"');
 }

@@ -1,5 +1,40 @@
 [
   {
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "Jeux, gestes et savoirs",
+    "editor": [
+      {
+        "family": "Cormerais",
+        "given": "Franck"
+      },
+      {
+        "family": "Puig",
+        "given": "Vincent"
+      },
+      {
+        "family": "Triclot",
+        "given": "Mathieu"
+      }
+    ],
+    "id": "2024-Montevil-Jeu-Biologie",
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          12,
+          1
+        ]
+      ]
+    },
+    "title": "Le vivant et le jeu",
+    "type": "chapter"
+  },
+  {
     "ISBN": "9782728808663",
     "URL": "https://presses.ens.psl.eu/georges-canguilhem.html",
     "abstract": "Quatre-vingts ans après, Le Normal et le Pathologique est une référence majeure en philosophie mais qu’en est-il en biologie et en médecine ? Plus précisément, quelle est aujourd’hui la pertinence des concepts de Canguilhem dans la compréhension du vivant et de l’action concernant le vivant ?",

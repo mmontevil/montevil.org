@@ -20,6 +20,24 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "2024-Canguilhem-ecologie",
+        "fields": {
+            "title": "La normativité à l'épreuve de l'Anthropocène",
+            "booktitle": "Georges Canguilhem et l’écologie : Trajectoires de lecture et usages pour le présent",
+            "location": "Université Paris 8 Vincennes – Saint-Denis : Maison de la recherche – Amphithéâtre MR002",
+            "year": "2024",
+            "month": "12",
+            "day": "5",
+            "annonce": "true",
+            "url": "https://llcp.univ-paris8.fr/appel-a-communications-colloque-international-georges-canguilhem-et-l-ecologie",
+            "language": "fr",
+            "program": "Colloque Canguilhem Programme 3-4-5 Décembre 2024 .pdf",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
         "entrykey": "2024-cours-mnhn",
         "fields": {
             "title": "Formalisation et connaissance de la nature",

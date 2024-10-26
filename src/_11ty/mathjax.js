@@ -3,9 +3,7 @@ const { MathML } = require('mathjax-full/js/input/mathml.js');
 const { CHTML } = require('mathjax-full/js/output/chtml.js');
 const { liteAdaptor } = require('mathjax-full/js/adaptors/liteAdaptor.js');
 const { RegisterHTMLHandler } = require('mathjax-full/js/handlers/html.js');
-const {
-  AssistiveMmlHandler,
-} = require('mathjax-full/js/a11y/assistive-mml.js');
+const {AssistiveMmlHandler} = require('mathjax-full/js/a11y/assistive-mml.js');
 require('mathjax-full/js/util/entities/all.js');
 //const htmlmin = require("html-minifier");
 const cleancss = require('clean-css');

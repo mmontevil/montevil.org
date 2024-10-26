@@ -1,4 +1,3 @@
-// slugify is called 1000s of times, let's memoize it
 let memoizedTags = {};
 
 let substitution = {

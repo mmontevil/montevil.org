@@ -1,4 +1,3 @@
-const twitter = require('twitter-text');
 const slugifyString = require('../_utils/slugify');
 const tagFilter = require('../_utils/tagfilter');
 var search = require('approx-string-match').default;
@@ -6,21 +5,15 @@ var search = require('approx-string-match').default;
 const flatcache = require('flat-cache');
 const path = require('path');
 const { writeToCache, readFromCache } = require('../_utils/cache');
-const PLUM_CACHE = '_cache/plumMention.json';
-const { tweettomention, wikiMention } = require('../_utils/twitter_crossref');
+
 //const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 //const fetch = require('node-fetch');
-const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+
 
 const WEBMENTION_CACHE = '_cache/webmentions.json';
-const TWITL_WEBMENTION_CACHE = '_cache/tweetLikeMentions.json';
-const RG_WEBMENTION_CACHE = '_cache/rgLikeMentions.json';
 
 function getExtWebmentions() {
   const cached = readFromCache(WEBMENTION_CACHE);
-  const cached3 = Object.values(readFromCache(TWITL_WEBMENTION_CACHE));
-  const cached4 = Object.values(readFromCache(RG_WEBMENTION_CACHE));
-  return cached.webmentions.concat(cached3).concat(cached4);
 }
 const extWebmentions = getExtWebmentions();
 
@@ -301,132 +294,18 @@ function uniqByKeepLast(a, key) {
 }
 // Crossref and Plum mentions
 
-var cache = flatcache.load('crossref', path.resolve('./_cache'));
-var plumCache = readFromCache(PLUM_CACHE);
-
-async function fetching(response) {
-  {
-      try {
-       const data = await response.json()
-       console.log('response data?', data)
-     } catch(error) {
-       console.log('Error happened here!')
-       console.error(error)
-       console.log(response)
-     }
-    }
-}
-
-const delay = ms => new Promise(r => setTimeout(r, ms));
-
-async function fetchCrossref00(doi, id, type, source,cursor=undefined) {
-      await delay(200);
-    if (type === 'doi') {
-      var idtype='obj-id';
-    } else {
-      if (type === 'url') {
-        var idtype='obj.url';
-      }
-       }
-       if (cursor){
-        var cursort="&cursor="+cursor;
-       }else{
-         var cursort="";
-      }
-      
-      allPosts = await fetch(
-        'https://api.eventdata.crossref.org/v1/events?'+'mailto=montevil@crans.org'+cursort+'&rows=1000&'+idtype+'=' +
-          encodeURI(doi) +
-          '&source='+source,  {method: 'GET', headers: {'Content-Type': 'application/json'}}
-      ).then((res) => {
-        if (!res.ok) {
-          console.log(res);
-          return "a";
-        }
-              return  res.json();
-            });
-     
-  return allPosts;
-}
-
-async function fetchCrossref0(doi, id, type, source) {
-    var allPosts =fetchCrossref00(doi, id, type, source);
-    
-    if(allPosts && allPosts.message){
-      if (allPosts.message['total-results']>1000){
-            await delay(200);
-      var allPosts2 =fetchCrossref00(doi, id, type, source,allPosts.message['next-cursor'] );
-        if(allPosts2=="a"){
-          allpost="a";
-        }else{
-          if (allPosts2.message){
-            allPosts.message.events = allPosts.message.events.concat(allPosts2.message.events);
-
-          }
-        }
-        
-      }}
-      
-    return allPosts;
-}
 
 
 
 
 
-async function fetchCrossref(doi, id, type) {
-  const cachedData = cache.getKey(id);
-  
- // if (!cachedData || cachedData ) {
-    if (!cachedData ) {
-    var allPosts = await fetchCrossref0(doi, id, type, 'twitter');
-    if(!allPosts){
-      var allPosts = '[]';
-    }
-    var allPosts2 = await fetchCrossref0(doi, id, type,'wikipedia');
-    if(!allPosts2){
-      var allPosts2 = '[]';
-    }
-        if(allPosts=="a"){
-      console.log("aaaaaaaaaaaaaaaaaaaaaa");
-    }
-            if(allPosts2=="a"){
-      console.log("bbbbbbbbbbbbbbbbbbbb");
-    }
-      
-     if ( allPosts2.message){
-       console.log("cccccccccccc");
-    if ( allPosts2.message.events && allPosts2.message.events!=[]) {
-      for (i in allPosts2.message.events) {
-        if (
-          allPosts2.message.events[i].subj.url.length >
-          allPosts2.message.events[i].subj.pid.length
-        ) {
-          let temp = allPosts2.message.events[i].subj.url;
-          allPosts2.message.events[i].subj.url =
-            allPosts2.message.events[i].subj.pid;
-          allPosts2.message.events[i].subj.pid = temp;
-        }
-      }
-      allPosts2ev = uniqByKeepLast(allPosts2.message.events, (x) => x.subj.url);
-    }}
-    
-  if( allPosts.message && allPosts2.message ) {
-          allPosts.message.events = allPosts.message.events.concat(allPosts2ev);
-  }
-      if( allPosts=="[]" && allPosts2.message ) {
-          allPosts = allPosts2;
-          allPosts2.message.events =allPosts2ev;
-  }
-    
-    if (allPosts != "a" && allPosts2 != "a"){
-      cache.setKey(id, allPosts);
-      cache.save(true);
-    }else{ }
-    return allPosts;
-  }
-  return cachedData;
-}
+
+
+
+
+
+
+
 
 //
 
@@ -508,102 +387,10 @@ module.exports = {
     return res;
   },
 
-  allMentions: (data) => {
-    if (!data.computeMentions) {
-      return [];
-    }
-        let tempp=[];
 
-    // get crossref data
 
-    let crossref = undefined;
-    if (data.bibentry.DOI) {
-      crossref = fetchCrossref(data.bibentry.DOI, data.page.fileSlug, 'doi');
-    } else {
-      if (data.bibentry.URL)
-        crossref =  fetchCrossref(data.bibentry.URL, data.page.fileSlug, 'url');
-    }
-   crossref= cache.getKey(data.page.fileSlug);
- 
-    // get crossref mentions
+    
 
-    let temp = data.page.url;
-    if (crossref && crossref.message) {
-      for (i in crossref.message.events) {
-        let eventm = crossref.message.events[i];
-        if (eventm.source_id == 'twitter') {
-          let tweet = eventm.subj.title.replace('Tweet ', '');
-          if (
-            ![
-              '1274995148934561793',
-              '1275912806257344515',
-              '1123337833714835456',
-              '1394392626598645766',
-            ].includes(tweet)
-          )
-           
-            temp = tweettomention(
-              tweet,
-              'https://montevil.org' + data.page.url,
-              'https://www.crossref.org/'
-            );
-        }
-        if (eventm.source_id == 'wikipedia') {
-         
-          temp = wikiMention(
-            eventm,
-            'https://montevil.org' + data.page.url,
-            'https://www.crossref.org/'
-          );
-        }
-      }
-            tempp=tempp.concat(temp);
-    }
-
-    // Get Plum, manual, and talk tweets
-    let res = [];
-    if (data.bibentry && data.bibentry.DOI && plumCache[data.bibentry.DOI]) {
-      res = res.concat(plumCache[data.bibentry.DOI]);
-    }
-    if (data.tweets_mentions) {
-      const newArr = data.tweets_mentions.filter((el) => el !== undefined);
-      res = res.concat(newArr);
-    }
-    if (
-      data.bibentryconf &&
-      data.bibentryconf.fields &&
-      data.bibentryconf.fields.twittermention
-    ) {
-      res = res.concat(data.bibentryconf.fields.twittermention.split(', '));
-    }
-   
-    for (i in res) {
-
-      let temp = tweettomention(
-        res[i],
-        'https://montevil.org' + data.page.url,
-        'none'
-      );
-      tempp=tempp.concat(temp);
-    }
-
-    // mentions for this url
-    let urlsList = [
-      encodeURI('https://montevil.org' + data.page.url).toLowerCase(),
-    ];
-    return extWebmentions
-      .concat(Object.values(cachedTweets))
-      .concat(Object.values(cachedWiki))
-      .filter((entry) => {
-        return urlsList.includes(encodeURI(entry['wm-target'].toLowerCase()));
-      })
-      .filter((entry) => !isSelf(entry))
-      .sort(
-        (a, b) =>
-          parseInt(b.published.replace(new RegExp('\\' + '-', 'gi'), '')) -
-          parseInt(a.published.replace(new RegExp('\\' + '-', 'gi'), ''))
-      );
-  },
   citationSize: (data) => {
     let citationSize = 0;
     if (data.gsentry && data.gsentry.citing && data.gsentry.citing.length > 0)
@@ -613,18 +400,12 @@ module.exports = {
   },
   allMentionsSize: (data) => {
     return (
-      data.likesSize +
-      data.repostsSize +
-      data.repliesSize +
       data.mentionsSize +
       data.citationSize
     );
   },
   mentionsScore: (data) => {
     return ((
-      data.likesSize/5 +
-      data.repostsSize/4 +
-      data.repliesSize/3 +
       data.mentionsSize/3 +
       data.citationSize)/(data.age+175)
     );
