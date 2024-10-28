@@ -15,6 +15,7 @@ module.exports = {
   addAnchor: (content) => {
     return addAnchordom(content);
   },
+
   /* addAnchor2: (content) => {
    var file000="";
     rehype().data('settings', {fragment: true}).use(link,options).process(String(content), function(err, file) {

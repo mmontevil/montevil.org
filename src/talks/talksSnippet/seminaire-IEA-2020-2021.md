@@ -60,7 +60,7 @@ Répondant : Cyril Rauch, Associate Professor à l’Université de Nottingham
 # Nicolas Bouleau - Lundi, 7 juin 2021
 
 Programme
-* 17:00 - Introduction par Maël Montevil (IRI et IHPST, Paris)
+* 17:00 - Introduction par Maël Montévil (IRI et IHPST, Paris)
 * 17:15 - Présentation par Nicolas Bouleau (Professeur émérite à l’Ecole des Ponts ParisTech)
 
 ## "CE QUE LA NATURE SAIT" La révolution combinatoire de la biologie et ses dangers

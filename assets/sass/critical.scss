@@ -265,6 +265,8 @@ a.deeplink {
   }
 }
 
+
+
 :target {
   animation-name: target;
   animation-duration: 0.6s;
@@ -836,6 +838,25 @@ article .subtitleHead {
   stroke-width: 0.15em;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+.svgleft {
+
+    font-size: 1em;
+
+}
+a.anchorlink{ 
+  border-radius: 50%;
+  text-indent: 0;
+  padding-bottom: var(--gap-3xs);
+  padding-right: var(--gap-xxs);
+  padding-left: var(--gap-3xs);
+      &:hover,
+  &:focus {
+    color: var(--color-link-hover);
+
+    background-color: var(--color-link-hover-bg);
+  }
+
 }
 .svgup {
     vertical-align: text-top;

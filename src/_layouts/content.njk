@@ -157,7 +157,8 @@ hasSup: hasSup,
     {% if layout == 'note' %}
       {{ content | noteToHtml | safe }}
     {% else %}
-      {{ content | safe }}
+      
+      {% addAutoref  content, bibM  %}
     {% endif %}
   </div>
   

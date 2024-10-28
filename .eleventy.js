@@ -43,6 +43,7 @@ module.exports =  function (eleventyConfig) {
     });
   });
 
+  
   // ------------------------------------------------------------------------
   // Shortcodes
   // ------------------------------------------------------------------------
@@ -73,6 +74,12 @@ module.exports =  function (eleventyConfig) {
     }
   );
 
+      const addAutoref = require('./src/_utils/addAutoref');
+	eleventyConfig.addShortcode("addAutoref", async function (content,bibM) {
+		return addAutoref(content,bibM); });
+ 
+  
+  
   // ------------------------------------------------------------------------
   // Plugins
   // ------------------------------------------------------------------------
@@ -81,8 +88,22 @@ module.exports =  function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
 
   const rss = require('@11ty/eleventy-plugin-rss');
-  eleventyConfig.addPlugin(rss);
-
+eleventyConfig.addPlugin(rss, {
+		type: "rss", // or "rss", "json"
+		outputPath: "all.xml",
+		collection: {
+			name: "archivesall", // iterate over `collections.posts`
+			limit: 10,     // 0 means no limit
+		},
+		metadata: {
+			language: "en",
+			title: "Maël Montévil, research page",
+			base: "https://montevil.org/",
+			author: {
+				name: "Maël Montévil",
+			}
+		}
+	});
 
 
   const embedEverythingElse = require('eleventy-plugin-embed-everything');
@@ -151,52 +172,6 @@ module.exports =  function (eleventyConfig) {
   
   
   
- /*
-  const markdownItAnchorOptions = {
-    permalink: true,
-    permalinkClass: 'deeplink',
-    permalinkSymbol:
-      '<svg class="icon" role="img" focusable="false" aria-label="Anchor"><use xlink:href="#symbol-anchor" /></svg>',
-    level: [2, 3, 4],
-    slugify: function (s) {
-      return slugify(s);
-    },
-  }; 
-  */
-    /*
-  const linkAfterHeader = markdownItAnchor.permalink.linkAfterHeader({
-    class: 'deeplink',
-    symbol:
-      '<svg class="icon" role="img" focusable="false" viewBox="0 0 24 24" width="1em" height="1em"><use xlink:href="#symbol-anchor" /></svg>',
-    style: 'visually-hidden',
-    visuallyHiddenClass: 'visually-hidden',
-    assistiveText: (title) => `Permalink to heading ${title}`,
-  });
-  const markdownItAnchorOptions = {
-    level: [2, 3, 4],
-    slugify,
-    permalink(slug, opts, state, idx) {
-      state.tokens.splice(
-        idx,
-        0,
-        Object.assign(new state.Token('div_open', 'div', 1), {
-          attrs: [['class', 'heading-wrapper']],
-          block: true,
-        })
-      );
-
-      state.tokens.splice(
-        idx + 4,
-        0,
-        Object.assign(new state.Token('div_close', 'div', -1), {
-          block: true,
-        })
-      );
-
-      linkAfterHeader(slug, opts, state, idx + 1);
-    },
-  };
-    */
 
   const markdownItAttributes = require('markdown-it-attrs');
 

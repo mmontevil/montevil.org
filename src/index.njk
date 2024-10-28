@@ -157,34 +157,9 @@ JSON-LD for:
     <p class="wrap more ">See <a href="/all/talks/">all talks</a>…</p>
 
 
-{#
-
- {% from "macros/postCard.njk" import postCard %}    
-
-  <h2 class="wrap titleDiag titleDiag2" id="latest-posts">Latest posts</h2>
-
-  <ol class="cards-list">
-    {% for article in collections.latestpostsall %}
-      {{ postCard(article) }}
-    {% endfor %}
-  </ol>
-  #}
-  
-  {#
-  <div class="titleDiag titleDiag2">
-  <h2 class="wrap" id="older">Older noteworthy articles</h2>
-    </div>
 
   
-  <ol class="cards-list">
-  {% for article in collections.promotedpostsall %}
-    {{ postCard(article) }}
-  {% endfor %}
-  </ol>
-  
-  
-  <p class="wrap more ">Read <a href="/all/posts/">all posts</a>…</p>
- #}
+
  <hr class="fade-2">
 
   

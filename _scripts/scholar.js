@@ -6,7 +6,6 @@ const moment = require('moment');
 const { promises: fs } = require('fs');
 const syncFs = require('fs');
 require('dotenv').config();
-var search = require('approx-string-match').default;
 const slugifyString = require('@sindresorhus/slugify');
 
 
@@ -73,6 +72,7 @@ let res = [];
              for (originePub in listmypub) {
             let title0=await listmypub[originePub].findElement(By.xpath((".//a[@class='gsc_a_at']")));
             let title1=await title0.getText();
+            
             let numberCite0=await listmypub[originePub].findElements(By.xpath((".//td[@class='gsc_a_c']/a[not(@data-eid)]")));
             if (numberCite0.length>0){
               let numberCite= numberCite0[0];
@@ -85,29 +85,39 @@ let res = [];
             'citenumber':numberCite1
             }
               updatedList.push(publi);
+            }else{
+               console.log(title1);
+              let publi = { 
+            'title': title1,
+            'citingLink': "",
+            'citenumber':0
+            }
+               updatedList.push(publi);
             }
              }
+             
              }
-       //      console.log(updatedList);
+             console.log(updatedList);
             
-             for (pubIt in updatedList){
-             
-             
-      let targetNb=-1;
+  for (pubIt in updatedList){
+          let targetNb=-1;
     for (ii in res){
       if(res[ii].title == updatedList[pubIt].title){
         targetNb=ii
         res[ii].citenumber=res[ii].citing.length;
       }
     }
+
+            
+ 
     if((targetNb>-1)&&(res[targetNb].citenumber == updatedList[pubIt].citenumber)){
     }else{
     if(targetNb==-1){
       res.push([]);
       targetNb=res.length-1;
     }
-    
-    
+    let publi = {};
+    if (updatedList[pubIt].citenumber>0){
     
     await driver.get(updatedList[pubIt].citingLink), 
     await driver.wait(() => documentInitialised(), 10000);
@@ -202,13 +212,21 @@ let res = [];
     }
 }
 
-let publi = { 
+ publi = { 
             'title': updatedList[pubIt].title,
             'citingLink':updatedList[pubIt].citingLink,
             'citenumber':updatedList[pubIt].citenumber,
             'citing':res0
             };
-            
+    }else{
+     publi = { 
+            'title': updatedList[pubIt].title,
+            'citingLink':'',
+            'citenumber':0,
+            'citing':[]
+            }; 
+      
+    }  
 
 res[targetNb]=publi;
 console.log(res);

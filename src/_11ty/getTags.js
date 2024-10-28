@@ -1,5 +1,4 @@
 const fs = require('fs');
-const hashtagsToTags = require('../_utils/hashtags').hashtagsToTags;
 const tagFilter = require('../_utils/tagfilter');
 const slugify = require('../_utils/slugify');
 //const slugify = require("slugify");
@@ -13,17 +12,7 @@ module.exports = function (collection) {
     if ('tags' in item.data) {
       itemTags = item.data.tags;
     }
-    // TODO: deal with hashtags only once
-    if (item.data.layout === 'note') {
-      itemTags = [
-        ...new Set(
-          [].concat(
-            ...itemTags,
-            ...hashtagsToTags(item.template.frontMatter.content)
-          )
-        ),
-      ];
-    }
+
     //  if (item.data.layout === 'publication') {
     let tagst = [];
     if (item.data.keyword) {

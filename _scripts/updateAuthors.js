@@ -3,7 +3,6 @@ const moment = require('moment');
 const { promises: fs } = require('fs');
 const syncFs = require('fs');
 require('dotenv').config();
-var search = require('approx-string-match').default;
 const slugifyString = require('../src/_utils/slugify');
 
 function sleep(ms) {

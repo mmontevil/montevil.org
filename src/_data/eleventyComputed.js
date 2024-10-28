@@ -1,11 +1,10 @@
 const slugifyString = require('../_utils/slugify');
 const tagFilter = require('../_utils/tagfilter');
-var search = require('approx-string-match').default;
-//const search = (...args) => import('approx-string-match').then(({default: search}) => fetch(...search));
 const flatcache = require('flat-cache');
 const path = require('path');
 const { writeToCache, readFromCache } = require('../_utils/cache');
-
+const stringComparison = require('string-similarity');
+const compare = stringComparison.compareTwoStrings;
 //const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 //const fetch = require('node-fetch');
 
@@ -370,7 +369,7 @@ module.exports = {
       }
 
       title = slugifyString(title.toLowerCase());
-      let temp = 0;
+     /* let temp = 0;
       for (const entry in data.scholar2) {
         if (
           search(
@@ -382,7 +381,19 @@ module.exports = {
           temp = temp + 1;
           res = data.scholar2[entry];
         }
+      }*/ 
+      similarity=0;
+      
+      for (const entry in data.scholar2){      
+        test=compare(slugifyString(data.scholar2[entry].title.toLowerCase()),title);
+        if(test>similarity && test>0.7 ){ 
+          similarity=test;
+          res = data.scholar2[entry];
+        }
       }
+      /*console.log(res.title);
+      console.log(title);
+      console.log("aaa");*/
     }
     return res;
   },
@@ -406,7 +417,7 @@ module.exports = {
   },
   mentionsScore: (data) => {
     return ((
-      data.mentionsSize/3 +
+      data.mentionsSize/3/(data.age+175) +
       data.citationSize)/(data.age+175)
     );
   },  

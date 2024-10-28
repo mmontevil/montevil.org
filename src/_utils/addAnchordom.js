@@ -17,7 +17,6 @@ function addAnchordom(html) {
 
   return document.toString();
 
-  //return "";
 }
 
 module.exports = addAnchordom;
