@@ -10,10 +10,10 @@ const runBeforeHook = (image, document) => {
   // TODO: get "_site/" from config
   let distPath = documentBody
     .getAttribute('data-img-dist')
-    .replace(/^_site/, '');
+    .replace(/^\.\/_site/, '');
 
   let imageSrc = image.getAttribute('src');
-
+    imageSrc=imageSrc.replace(/^_site/, '');
   let imageUrl = '';
 
   if (imageSrc.match(/^(https?:)?\/\//)) {
