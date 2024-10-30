@@ -120,27 +120,8 @@ const runAfterHook = (image, document) => {
   if (!captionfound && image.getAttribute('alt'))
     lightbox.setAttribute('data-lightbox-caption', image.getAttribute('alt'));
 
-  if ((caption || zoom) && 1 == 0) {
-    const figure = document.createElement('figure');
-    figure.classList.add(...image.classList);
-    // TODO: decide weither classes should be removed from the image or not
-    image.classList.remove(...image.classList);
-    let figCaption = document.createElement('figcaption');
-    // figCaption.classList.add(classs);
-    figCaption.innerHTML =
-      (caption ? caption : '') +
-      (zoom
-        ? `<p class="zoom ">&#128269; See <a href="https://res.cloudinary.com/mmontevil/image/fetch/q_auto,f_auto/${imageUrl}" class="">full size</a></p>`
-        : '');
-
-    figure.appendChild(lightbox.cloneNode(true));
-    figure.appendChild(figCaption);
-    image.replaceWith(figure);
-  } else {
-    /*  if (image.classLists.contains("noDarkFilter")){
-      }else{lightbox.classList.add("imageInvert");}*/
-    image.replaceWith(lightbox);
-  }
+  image.replaceWith(lightbox);
+  
 };
 
 module.exports = {

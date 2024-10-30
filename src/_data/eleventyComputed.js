@@ -44,6 +44,7 @@ function formattedDate(lang, date) {
   return dtf[lang || 'en'].format(date);
 }
 
+//check use
 function chooseDate(datepub, date) {
   if (datepub) {
     if (datepub == ' Submitted') {
@@ -132,8 +133,6 @@ function title(data) {
   switch (data.layout) {
     case 'link':
       return `${textAuthors(data)}:\n“${data.title}”`;
-    case 'note':
-      return `Note from ${formattedDate(data.lang, data.page.date)}`;
   }
   if (data.title && data.title !== '') {
     return data.title;
@@ -143,27 +142,7 @@ function title(data) {
   }
 }
 
-// TODO: remove 'excerpt' filter when this works
-function lead(data) {
-  // if (data.layout === 'note') {
-  //   console.dir(data);
-  // }
-  if (data.content === undefined) {
-    return '';
-  }
-  const regex = /(<p( [^>]*)?>((?!(<\/p>)).|\n)+<\/p>)/m;
-  let lead = '';
 
-  // Remove paragraphs containing only an image
-  let cleanContent = data.content.replace(/<p><img [^>]+><\/p>/, '');
-
-  // Get first paragraph, if there's at least one, and remove the paragraph tag
-  if ((matches = regex.exec(cleanContent)) !== null) {
-    lead = matches[0].replace(/<p( [^>]*)?>(((?!(<\/p>)).|\n)+)<\/p>/, '$2');
-  }
-
-  return lead;
-}
 
 // TODO: refactor with the one in filters
 function tagToHashtag(tag) {
@@ -179,9 +158,6 @@ function tagToHashtag(tag) {
 
 function tags(data) {
   let tags = [];
-  if (data.layout === 'note') {
-    tags = twitter.extractHashtags(twitter.htmlEscape(data.content));
-  }
   if (data.layout === 'publication') {
     if (data.keyword) {
       tags = data.keyword.split(',');
@@ -236,9 +212,7 @@ function ogTitle(data) {
   return removeEmojis(title(data));
 }
 
-function ogDescription(data) {
-  return lead(data).slice(0, 50);
-}
+
 
 function ogImageTitle(data) {
   if (data.page.url === '/') {
@@ -272,14 +246,6 @@ function ogImageTagline(data) {
   return '';
 }
 
-// utility for mentions
-function isSelf(entry) {
-  return (
-    (entry.url.match(/^https:\/\/twitter.com\/MMontevil\//) &&
-      !entry.url.match(/\#/)) ||
-    entry.author.screen_name == 'MMontevil'
-  );
-}
 
 function webmentionsByType(mentions, mentionType) {
   if (mentions)
@@ -339,13 +305,11 @@ module.exports = {
   opengraph: {
     type: (data) => ogType(data),
     title: (data) => ogTitle(data),
-    description: (data) => ogDescription(data),
     image: {
       title: (data) => ogImageTitle(data),
       tagline: (data) => ogImageTagline(data),
     },
   },
-  lead: (data) => lead(data),
   bibentry: (data) => {
     var res = {};
     for (const entry in data.bibM) {

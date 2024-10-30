@@ -22,39 +22,6 @@ module.exports = {
   urlify: (text) => {
     return linkifyUrls(text);
   },
-
-  bibcite: (bibfi) => {
-    let relativeFilePath = `${bibfi}`;
-    let rawBib = fs.readFileSync(relativeFilePath);
-    const cite = new Cite(`${rawBib}`);
-    return linkifyUrls(
-      cite.format('bibliography', {
-        format: 'html',
-        template: templateName,
-        lang: 'en-US',
-      })
-    );
-  },
-  bibbibtex: (bibfi) => {
-    let relativeFilePath = `${bibfi}`;
-    let rawBib = fs.readFileSync(relativeFilePath);
-    const cite = new Cite(`${rawBib}`);
-    return cite.format('bibtex', {
-      format: 'html',
-      template: templateName,
-      lang: 'en-US',
-    });
-  },
-  bibcite3: (bibfi) => {
-    const cite = new Cite(JSON.stringify(bibfi));
-    return linkifyUrls(
-      cite.format('bibliography', {
-        format: 'html',
-        template: templateName,
-        lang: 'en-US',
-      })
-    );
-  },
   bibcite2: (bibfi) => {
     if (bibfi.id in memoizedCite) {
       return memoizedCite[bibfi.id];

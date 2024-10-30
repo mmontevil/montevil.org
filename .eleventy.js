@@ -4,6 +4,7 @@ const config = require('./pack11ty.config.js');
 const { promises: fs } = require('fs');
 const syncFs = require('fs');
 const slugify = require('./src/_utils/slugify');
+const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 //const slugify = require("slugify");
 //import slugify from '@sindresorhus/slugify';
 //const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
@@ -14,7 +15,7 @@ cachedPeople = readFromCache('_cache/people.json', (alt = {}));
 //const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
 
-module.exports =  function (eleventyConfig) {  
+module.exports = async function (eleventyConfig) {  
   eleventyConfig.on('afterBuild', () => {
     writeToCache(cachedPeople, '_cache/people.json');
 
@@ -86,14 +87,17 @@ module.exports =  function (eleventyConfig) {
 
   const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
   eleventyConfig.addPlugin(syntaxHighlight);
-
-  const rss = require('@11ty/eleventy-plugin-rss');
-eleventyConfig.addPlugin(rss, {
+  
+	const { IdAttributePlugin } = await import("@11ty/eleventy");
+	eleventyConfig.addPlugin(IdAttributePlugin);
+  
+  /*
+eleventyConfig.addPlugin(feedPlugin, {
 		type: "rss", // or "rss", "json"
-		outputPath: "all.xml",
+		outputPath: "/feeds/all.xml",
 		collection: {
 			name: "archivesall", // iterate over `collections.posts`
-			limit: 10,     // 0 means no limit
+			limit: 50,     // 0 means no limit
 		},
 		metadata: {
 			language: "en",
@@ -104,7 +108,7 @@ eleventyConfig.addPlugin(rss, {
 			}
 		}
 	});
-
+*/
 
   const embedEverythingElse = require('eleventy-plugin-embed-everything');
   eleventyConfig.addPlugin(embedEverythingElse, {
@@ -279,8 +283,8 @@ eleventyConfig.addPlugin(rss, {
     disable: ['ligatures'], // Disable typesetting feature 'smallCaps'
     // etc.
   })
-);*/
-    /* const options = {
+);*//*
+     const options = {
   disable: ['ligatures'] // array of typeset feature(s) to disable
 };
 const typeset = require('typeset');
@@ -293,7 +297,9 @@ const typeseter = (content, outputPath) => {
   eleventyConfig.addTransform(
       'typeseter',
       typeseter
-    ); */
+    ); 
+  
+  */
     const mathjax2 = require('./src/_11ty/mathjax.js');
 
     eleventyConfig.addTransform('mathjax2', mathjax2);

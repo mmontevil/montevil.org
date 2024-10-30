@@ -47,6 +47,8 @@
         'about'
       ] %}
       {% set url = '/' + type + '/' %}
+      {% if type == "feeds" %} {% set url = '/' + type + '/all.xml' %}{% endif %}
+      
           <li class="navigation__{{ type }}{% if url in page.url %} current" aria-current="page{% endif %}">
           <a href="{{ url }}">
           {% if type == "tags" %}{% icon "tags", "tag" %}{%- endif -%}

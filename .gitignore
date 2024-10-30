@@ -5,6 +5,7 @@ node_modules
 _site
 hashes_*.json
 functions
+coverage
 # logs
 _logs
 
