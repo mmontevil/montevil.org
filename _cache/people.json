@@ -239,11 +239,11 @@
   },
   "n-mylonas": {
     "shortname": "N Mylonas",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
-    "affiliation": "",
-    "fullName": "Nikolaos Mylonas"
+    "photo": "/assets/avatars/gs/fqFnl5MAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=fqFnl5MAAAAJ",
+    "gsid": "fqFnl5MAAAAJ",
+    "affiliation": "Greater Manchester Mental Health NHS FT",
+    "fullName": "Dr Nikos A. Mylonas"
   },
   "s-benvenuto": {
     "shortname": "S Benvenuto",
@@ -5808,10 +5808,11 @@
   },
   "as-tupper": {
     "shortname": "AS Tupper",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
-    "affiliation": ""
+    "photo": "/assets/avatars/gs/ZQ5AkUgAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=ZQ5AkUgAAAAJ",
+    "gsid": "ZQ5AkUgAAAAJ",
+    "affiliation": "Research Computing and Data Professional, UNCW",
+    "fullName": "Andrew S. Tupper"
   },
   "re-pudritz": {
     "shortname": "RE Pudritz",
@@ -6592,7 +6593,7 @@
     "photo": "/assets/avatars/gs/TzDThmcAAAAJ.jpg",
     "url": "https://brookes.academia.edu/AndreaBardin/Analytics",
     "gsid": "TzDThmcAAAAJ",
-    "affiliation": "Oxford Brookes University",
+    "affiliation": "Università degli studi di Padova",
     "fullName": "Andrea Bardin"
   },
   "m-ferrari": {
@@ -10313,5 +10314,116 @@
     "gsid": "d-QhGq4AAAAJ",
     "affiliation": "Brunel University",
     "fullName": "Predrag Slijepcevic"
+  },
+  "n-pastor": {
+    "shortname": "N Pastor",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "j-cooke": {
+    "shortname": "J Cooke",
+    "photo": "/assets/avatars/gs/ZnbVkL0AAAAJ.jpg",
+    "url": "http://drjamescooke.com/",
+    "gsid": "ZnbVkL0AAAAJ",
+    "affiliation": "University College London",
+    "fullName": "Dr. James Cooke"
+  },
+  "m-kangaskoski": {
+    "shortname": "M Kangaskoski",
+    "photo": "/assets/avatars/gs/ICLmNLQAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=ICLmNLQAAAAJ",
+    "gsid": "ICLmNLQAAAAJ",
+    "affiliation": "Affiliation inconnue",
+    "fullName": "Matti Kangaskoski"
+  },
+  "mav-arenas": {
+    "shortname": "MAV Arenas",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "mf-faggian": {
+    "shortname": "MF Faggian",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "e-clarizio": {
+    "shortname": "E Clarizio",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "rc-kelly": {
+    "shortname": "RC Kelly",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "ra-morgan": {
+    "shortname": "RA Morgan",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "m-brown": {
+    "shortname": "M Brown",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "i-overton": {
+    "shortname": "I Overton",
+    "photo": "/assets/avatars/gs/-jpF9EgAAAAJ.jpg",
+    "url": "http://www.overton-lab.uk/",
+    "gsid": "-jpF9EgAAAAJ",
+    "affiliation": "Reader (Associate Professor) of Bioinformatics, Queen's University Belfast",
+    "fullName": "Ian Overton"
+  },
+  "g-karelin": {
+    "shortname": "G Karelin",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "i-takashi": {
+    "shortname": "I Takashi",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "mc-merat": {
+    "shortname": "MC Mérat",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": "",
+    "fullName": "Marie-Catherine Mérat"
+  },
+  "jm-galan": {
+    "shortname": "JM Galan",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": "",
+    "fullName": "Jean-Marc Galan"
+  },
+  "r-chatila": {
+    "shortname": "R Chatila",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": "",
+    "fullName": "Raja Chatila"
   }
 }

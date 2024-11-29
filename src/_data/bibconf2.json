@@ -1,6 +1,61 @@
 [
     {
         "objecttype": "entry",
+        "entrytype": "proceedings",
+        "entrykey": "2024-workshop-closure",
+        "fields": {
+            "title": "The closure of constraints in practices",
+            "location": "ENS",
+            "year": "2024",
+            "month": "12",
+            "day": "16",
+            "annonce": "true",
+            "language": "en",
+            "abstract": "What understanding does the closure of constraints bring about a biological system in practices? Without discussing particular cases, one cannot answer this question. The goal of this workshop is to bring together and synthesize individual modeling experiences in physiology and ecology to establish perspectives of research collectively regarding organization in biology, sensu closure of constraints. This workshop is intended to a specialized audience. We encourage speakers to present models or modeling methods, and share critical reflections on their work and the difficulties encountered. Identifying achievements, open questions, perspectives, and experimental, conceptual or technical difficulties is the main goal of this meeting. Additionally to relatively short Q&A sessions, a general discussion will synthesize the main points raised during the day. This synthesis will be transcribed and shared with the participants after the workshop.",
+            "author": "Maël Montévil and Anton Robert"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2024-Recherche-en-cours",
+        "fields": {
+            "booktitle": "Recherche en cours",
+            "year": "2024",
+            "month": "09",
+            "location": "Aligre FM",
+            "url": "https://aligrefm.org/emissions/recherche-en-cours-30",
+            "video": "https://audio.ausha.co/y8YKAhpMW309.mp3",
+            "language": "fr",
+            "day": "27",
+            "eventtype": "media",
+            "abstract": "« Nous pouvons jeter les chiffres dans les plus grandes grappes de calcul que le monde ait jamais connues et laisser les algorithmes statistiques trouver des modèles là où la science ne le peut pas. La corrélation l'emporte sur la causalité, et la science peut progresser même sans modèles cohérents, sans théories unifiées... » Ces quelques mots, c’est le journaliste Chris Anderson qui les écrivait en 2008, il était alors rédacteur en chef du magazine américain Wired, son article faisait écho à l’essor des big data.",
+            "author": "Marie-Catherine Mérat and Jean-Marc Galan and Raja Chatila and Maël Montévil",
+            "title": "IA en recherche"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2024-SFS",
+        "fields": {
+            "title": "Systématique et biologie générale: un défi épistémologique",
+            "booktitle": "Journées 2024 de la Société Française de Systématique",
+            "location": "Auditorium de la Grande Galerie de l’Evolution, 36 Rue Geoffroy-Saint-Hilaire, 75005 Paris",
+            "year": "2024",
+            "month": "11",
+            "day": "14",
+            "abstract": "Si la systématique permet de nommer les êtres vivants que les autres disciplines de la biologie étudient, ce qui implique une dépendance logique, force est de constater que ses concepts sont plus rarement mobilisés. Nous argumenterons que l'une des raisons de cette situation est une contradiction épistémologique profonde entre les raisonnements historiques au coeur de la systématique phylogénétique et les raisonnements relationnels ou synchroniques, que la plupart des autres disciplines de la biologie mobilisent. Autrement dit, les biologistes et écologues décrivent leurs objets par leurs histoires - au moins en partie et parfois implicitement - mais ils sont intéressés à comprendre ce qu'ils font dans une situation donnée. Nous poserons que cette difficulté ne peut être surmontée par un cadre épistémologiquement uniforme. Alors, la biologie demande une épistémologie hybride, articulant raisonnements historiques et raisonnement relationnels ou synchroniques. Clarifier cette situation, présente de fait dans les raisonnements biologiques, et tirer parti de cette épistémologie hybride demande des développements théoriques, épistémologiques et formels.",
+            "annonce": "true",
+            "url": "https://40ans-sfs.sciencesconf.org/?lang=fr",
+            "language": "fr",
+            "program": "Programme_SFS_2024.pdf",
+            "illustration": "40-ans-SFS-logo-1008x1024.png",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2024-enmi",
         "fields": {
@@ -31,7 +86,7 @@
             "annonce": "true",
             "url": "https://llcp.univ-paris8.fr/appel-a-communications-colloque-international-georges-canguilhem-et-l-ecologie",
             "language": "fr",
-            "program": "Colloque Canguilhem Programme 3-4-5 Décembre 2024 .pdf",
+            "program": "Colloque_Canguilhem_Programme_3-4-5_Decembre_2024.pdf",
             "author": "Maël Montévil"
         }
     },

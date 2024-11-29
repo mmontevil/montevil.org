@@ -37,7 +37,10 @@ Cette séance est jumelée avec l'atelier Phibe "Philosophie, biologie, écologi
 ## Mercredi 09 avril 2025, tbd
 16h-18h, salle U203 (Émile BOREL), 29 rue d'Ulm, 2ième étage 
 
-## Mercredi 21 mai 2025, Spyridon Koutroufinis (Institute of Philosophy of the Technical University, Berlin)
+## Mercredi 21 mai 2025, Walter Fontana (Harvard University)
+16h-18h, salle U203 (Émile BOREL), 29 rue d'Ulm, 2ième étage : tbd
+
+## Mercredi 28 mai 2025, Spyridon Koutroufinis (Institute of Philosophy of the Technical University, Berlin)
 16h-18h, salle U203 (Émile BOREL), 29 rue d'Ulm, 2ième étage : tbd
 
 ## Mercredi 12 juin 2025, tbd

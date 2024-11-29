@@ -1,5 +1,89 @@
 [
   {
+    "abstract": "What understanding does the closure of constraints bring about a biological system in practices? Without discussing particular cases, one cannot answer this question. The goal of this workshop is to bring together and synthesize individual modeling experiences in physiology and ecology to establish perspectives of research collectively regarding organization in biology, sensu closure of constraints. This workshop is intended to a specialized audience. We encourage speakers to present models or modeling methods, and share critical reflections on their work and the difficulties encountered. Identifying achievements, open questions, perspectives, and experimental, conceptual or technical difficulties is the main goal of this meeting. Additionally to relatively short Q&A sessions, a general discussion will synthesize the main points raised during the day. This synthesis will be transcribed and shared with the participants after the workshop.",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      },
+      {
+        "family": "Robert",
+        "given": "Anton"
+      }
+    ],
+    "id": "2024-workshop-closure",
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          12,
+          16
+        ]
+      ]
+    },
+    "title": "The closure of constraints in practices",
+    "type": "book"
+  },
+  {
+    "URL": "https://aligrefm.org/emissions/recherche-en-cours-30",
+    "abstract": "« Nous pouvons jeter les chiffres dans les plus grandes grappes de calcul que le monde ait jamais connues et laisser les algorithmes statistiques trouver des modèles là où la science ne le peut pas. La corrélation l’emporte sur la causalité, et la science peut progresser même sans modèles cohérents, sans théories unifiées... » Ces quelques mots, c’est le journaliste Chris Anderson qui les écrivait en 2008, il était alors rédacteur en chef du magazine américain Wired, son article faisait écho à l’essor des big data.",
+    "author": [
+      {
+        "family": "Mérat",
+        "given": "Marie-Catherine"
+      },
+      {
+        "family": "Galan",
+        "given": "Jean-Marc"
+      },
+      {
+        "family": "Chatila",
+        "given": "Raja"
+      },
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "Recherche en cours",
+    "id": "2024-Recherche-en-cours",
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          9,
+          27
+        ]
+      ]
+    },
+    "title": "IA en recherche",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://40ans-sfs.sciencesconf.org/?lang=fr",
+    "abstract": "Si la systématique permet de nommer les êtres vivants que les autres disciplines de la biologie étudient, ce qui implique une dépendance logique, force est de constater que ses concepts sont plus rarement mobilisés. Nous argumenterons que l’une des raisons de cette situation est une contradiction épistémologique profonde entre les raisonnements historiques au coeur de la systématique phylogénétique et les raisonnements relationnels ou synchroniques, que la plupart des autres disciplines de la biologie mobilisent. Autrement dit, les biologistes et écologues décrivent leurs objets par leurs histoires - au moins en partie et parfois implicitement - mais ils sont intéressés à comprendre ce qu’ils font dans une situation donnée. Nous poserons que cette difficulté ne peut être surmontée par un cadre épistémologiquement uniforme. Alors, la biologie demande une épistémologie hybride, articulant raisonnements historiques et raisonnement relationnels ou synchroniques. Clarifier cette situation, présente de fait dans les raisonnements biologiques, et tirer parti de cette épistémologie hybride demande des développements théoriques, épistémologiques et formels.",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "Journées 2024 de la Société Française de Systématique",
+    "id": "2024-SFS",
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          11,
+          14
+        ]
+      ]
+    },
+    "title": "Systématique et biologie générale: un défi épistémologique",
+    "title-short": "Systématique et biologie générale",
+    "type": "paper-conference"
+  },
+  {
     "URL": "https://enmi-conf.org/wp/enmi24/",
     "abstract": "Les notions de production et d’industrie ont, contre leurs origines historiques, été confinées dans les deux derniers siècles à ce que l’on appelle le secteur secondaire, le secteur primaire étant, lui, dévolu à la matière dite première et qui regroupe pelle-mêle l’exploitation du vivant sauvage et domestique ainsi que l’extraction minière. Pourtant les fourmis sont bien – plus ou moins – industrieuses, le concept de reproduction est l’un des plus fondamental en biologie et même les processus physiques irréversibles produisent de l’entropie. Le passage à l’échelle de ces différents types de production est néanmoins distinct - et cette question est centrale pour l’industrie. Alors que le champs et les acteurs de l’industrie se reconfigurent tant pour des raisons technologiques « qu’écologiques », il nous semble pertinent de repenser ce que signifie produire à l’aune tant de la physique que de la biologie et de la technologie.",
     "author": [
