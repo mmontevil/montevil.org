@@ -1,5 +1,6 @@
 [
   {
+    "URL": "https://republique-des-savoirs.fr/events/event/workshop-the-closure-of-constraints-in-practices/",
     "abstract": "What understanding does the closure of constraints bring about a biological system in practices? Without discussing particular cases, one cannot answer this question. The goal of this workshop is to bring together and synthesize individual modeling experiences in physiology and ecology to establish perspectives of research collectively regarding organization in biology, sensu closure of constraints. This workshop is intended to a specialized audience. We encourage speakers to present models or modeling methods, and share critical reflections on their work and the difficulties encountered. Identifying achievements, open questions, perspectives, and experimental, conceptual or technical difficulties is the main goal of this meeting. Additionally to relatively short Q&A sessions, a general discussion will synthesize the main points raised during the day. This synthesis will be transcribed and shared with the participants after the workshop.",
     "author": [
       {
@@ -22,6 +23,35 @@
       ]
     },
     "title": "The closure of constraints in practices",
+    "type": "book"
+  },
+  {
+    "URL": "https://republique-des-savoirs.fr/events/event/conference-what-can-be-democracy/",
+    "author": [
+      {
+        "family": "Dwivedi",
+        "given": "Divya"
+      },
+      {
+        "family": "Mohan",
+        "given": "Shaj"
+      },
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "id": "2024-democracy",
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          12,
+          13
+        ]
+      ]
+    },
+    "title": "What can be Democracy?",
     "type": "book"
   },
   {
