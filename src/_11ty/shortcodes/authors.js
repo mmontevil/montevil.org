@@ -5,14 +5,15 @@ const { writeToCache, readFromCache } = require('../../_utils/cache');
 
 const memoize = require('fast-memoize');
 
-request = require('request');
-var download = function (uri, filename, callback) {
-  request.head(uri, function (err, res, body) {
-    console.log('content-type:', res.headers['content-type']);
-    console.log('content-length:', res.headers['content-length']);
-    request(uri).pipe(fs.createWriteStream(filename)).on('close', callback);
+const axios = require('axios');
+async function download(url, filename, callback) {
+  const response = await axios.get(url, { responseType: 'arraybuffer' });
+
+  fs.writeFile(filename, response.data, (err) => {
+    if (err) throw err;
+    callback();
   });
-};
+}
 
 var donwloadAuthor = (id) => {
   if (!fs.existsSync('src/assets/avatars/gs/' + id + '.jpg')) {

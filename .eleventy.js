@@ -110,20 +110,20 @@ eleventyConfig.addPlugin(feedPlugin, {
 	});
 */
 
-  const embedEverythingElse = require('eleventy-plugin-embed-everything');
-  eleventyConfig.addPlugin(embedEverythingElse, {
-    youtube: {
+ 
+  const embedYouTube = require("eleventy-plugin-youtube-embed");
+  eleventyConfig.addPlugin(embedYouTube, {
+      lite: true
       //options: {
-      lite: {
+    /*  lite: {
         css: {
           path: '/assets/javascript/vendors/yt-lite/lite-yt-embed.css',
         },
         js: {
           path: '/assets/javascript/vendors/yt-lite/lite-yt-embed.js',
         },
-      },
+      },*/
       //},
-    },
   });
 
   eleventyConfig.addPlugin(require('eleventy-plugin-link_to'));
