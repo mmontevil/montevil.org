@@ -90,6 +90,49 @@
     "type": "paper-conference"
   },
   {
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "UE Epistémologie 2024",
+    "id": "2024-cours-EPHE",
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          12,
+          12
+        ]
+      ]
+    },
+    "title": "Technologies et travail scientifique",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "Colloque “Philosophy of Health – Rethinking Organism, Environment and Metabolism”",
+    "id": "2024-health",
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          12,
+          17
+        ]
+      ]
+    },
+    "title": "Physiology and historicity: re-entangling the biological, the ecological and the social",
+    "title-short": "Physiology and historicity",
+    "type": "paper-conference"
+  },
+  {
     "URL": "https://40ans-sfs.sciencesconf.org/?lang=fr",
     "abstract": "Si la systématique permet de nommer les êtres vivants que les autres disciplines de la biologie étudient, ce qui implique une dépendance logique, force est de constater que ses concepts sont plus rarement mobilisés. Nous argumenterons que l’une des raisons de cette situation est une contradiction épistémologique profonde entre les raisonnements historiques au coeur de la systématique phylogénétique et les raisonnements relationnels ou synchroniques, que la plupart des autres disciplines de la biologie mobilisent. Autrement dit, les biologistes et écologues décrivent leurs objets par leurs histoires - au moins en partie et parfois implicitement - mais ils sont intéressés à comprendre ce qu’ils font dans une situation donnée. Nous poserons que cette difficulté ne peut être surmontée par un cadre épistémologiquement uniforme. Alors, la biologie demande une épistémologie hybride, articulant raisonnements historiques et raisonnement relationnels ou synchroniques. Clarifier cette situation, présente de fait dans les raisonnements biologiques, et tirer parti de cette épistémologie hybride demande des développements théoriques, épistémologiques et formels.",
     "author": [
@@ -137,7 +180,8 @@
     "type": "paper-conference"
   },
   {
-    "URL": "https://llcp.univ-paris8.fr/appel-a-communications-colloque-international-georges-canguilhem-et-l-ecologie",
+    "URL": "https://philosophie.univ-paris8.fr/colloque-international-georges-canguilhem-et-l-ecologie-trajectoires-de-lecture-et-usages-pour-le-present-3-5-dec-2024-2432",
+    "abstract": "Si les mouvements environnementalistes des années 1960-70 ont pu susciter une certaine méfiance chez Canguilhem, et si l’écologie scientifique a joué un rôle plutôt marginal dans son œuvre, il a aussi affirmé, dans un entretien de 1995, quelques dizaines de jours avant sa mort, qu’il était indécis, au moment d’entreprendre ses études de doctorat, entre la médecine et la « géographie agricole », c’est-à-dire « ce qui finalement s’appelle maintenant l’écologie ». Cette indication conduit ainsi à s’interroger sur les relations avec l’écologie repérables dans l’ensemble des savoirs mobilisés par Canguilhem, allant de la géographie humaine à la santé environnementale, en passant par l’ergonomie ou l’agronomie. Sous le label assez large de « l’écologie », il s’agit en effet d’examiner l’attention portée par Canguilhem à l’interdépendance entre la société et l’environnement, le vivant et son milieu, le social et le biologique, les techniques et le corps, la santé et les conditions de vie. À partir d’une recognition des implications écologiques de la réflexion de Canguilhem, ce colloque se propose de prendre appui sur ses contributions théoriques pour explorer l’histoire de l’écologie, jusqu’aux débats scientifiques et politiques plus récents. Les différents aspects de l’œuvre de Canguilhem sont ouverts aussi à des lectures critiques. Loin de vouloir proposer une apologie de l’auteur, avec la prétention de pouvoir trouver dans son œuvre tous les instruments et les réponses pour aborder les enjeux épistémologiques et politiques de l’écologie contemporaine, ce colloque entend aussi évaluer les éventuelles tensions entre sa posture philosophique et d’autres perspectives théoriques concernant l’épistémologie des sciences biologiques et médicales, l’histoire des sciences, l’histoire environnementale etc. D’ailleurs, il pourrait aussi être l’occasion pour envisager d’éventuelles interactions entre l’héritage théorique de Canguilhem et d’autres champs de la réflexion écologico-politique contemporaine : les études postcoloniales, l’éco-marxisme, l’écoféminisme, etc.",
     "author": [
       {
         "family": "Montévil",
