@@ -1,5 +1,7 @@
 [
   {
+    "ISBN": "9782376620891",
+    "abstract": "La dix-septième édition des Entretiens du Nouveau Monde Industriel apporte un éclairage théorique, historique et épistémologique sur le pouvoir du jeu. Cet ouvrage mobilise les apports théoriques des sciences du vivant, de la psychologie, de l’économie, de la philosophie ou des sciences du jeu, aussi bien que des comptes-rendus d’expérimentations de terrain.",
     "author": [
       {
         "family": "Montévil",
@@ -44,7 +46,7 @@
         "given": "Maël"
       }
     ],
-    "collection-title": "Les rencontres de Normale Sup’",
+    "collection-title": "Les @rencontres de Normale Sup’",
     "container-title": "Georges Canguilhem, 80 ans après Le Normal et le Pathologique",
     "editor": [
       {
@@ -70,11 +72,14 @@
         ]
       ]
     },
+    "number-of-pages": "215",
+    "publisher": "Rued’Ulm",
+    "publisher-place": "Paris",
     "title": "Normativité et disruption du vivant dans l’Anthropocène",
     "type": "chapter"
   },
   {
-    "ISBN": "978-191172323",
+    "ISBN": "9781805261742",
     "URL": "https://www.hurstpublishers.com/book/indian-philosophy-indian-revolution/",
     "abstract": "In their brave and challenging book, grounded in political science and the Continental philosophical tradition, Divya Dwivedi and Shaj Mohan engage with the resurgence of upper-caste supremacism in India and its justification via the legacy of “the Aryan doctrine” and Hindu nationalism. Their essays were written from 2016 to 2023, when India’s democratic institutions were subverted and caste-based oppression overflowed into public space―killing and menacing the lower castes of all religions, minorities, women, students and the media. <br> This book chronicles the ascending oppression of democracy in India, a veritable biography of authoritarianism. Dwivedi and Mohan reject simplistic accounts of India’s politics as the opposition between “Hindu majoritarian nationalism” and “the religious minorities”, or between “Hindu fundamentalism” and “religious pluralism”. They propose instead a genuinely transformative account of Indian politics, grounded in political philosophy and in the lower- caste majority position <br> What does revolution mean where the constitutional promise of equality is betrayed daily by the millennia- old inequality of caste? What does politics mean where religion serves as the justification for descent- based enslavement and indignity? Revolution has only one sense in India, the annihilation of caste; and “citizen” has only one sense, the people of the state shedding caste and racism.",
     "author": [
@@ -91,6 +96,13 @@
         "given": "Maël"
       }
     ],
+    "edition": "1st ed.",
+    "editor": [
+      {
+        "family": "Mohan",
+        "given": "Shaj"
+      }
+    ],
     "id": "2023-DMM-Castes-Politics",
     "issued": {
       "date-parts": [
@@ -101,7 +113,10 @@
         ]
       ]
     },
-    "publisher": "C Hurst & Co Publishers Ltd",
+    "note": "Description based on publisher supplied metadata and other sources.",
+    "number-of-pages": "1256",
+    "publisher": "Hurst Publishers",
+    "publisher-place": "La Vergne",
     "title": "Indian Philosophy, Indian Revolution: On Caste and Politics",
     "title-short": "Indian Philosophy, Indian Revolution",
     "type": "book"
@@ -187,17 +202,20 @@
     "type": "book"
   },
   {
-    "ISBN": "9781071635766",
-    "URL": "https://link.springer.com/book/9781071635766",
-    "abstract": "Mathematical modeling is a very powerful tool to understand natural phenomena. Such a tool carries its own assumptions and should always be used critically. In this chapter we highlight the key ingredients and steps of modeling and focus on their biological interpretation. In particular, we discuss the role of theoretical principles in writing models. We also highlight the meaning and interpretation of equations. The main aim of this chapter is to facilitate the interaction between biologists and mathematical modelers. We focus on the case of cell proliferation and motility in the context of multicellular organisms.",
+    "DOI": "10.1007/978-1-0716-3577-3_7",
+    "ISBN": "9781071635773",
+    "URL": "https://doi.org/10.1007/978-1-0716-3577-3_7",
+    "abstract": "Mathematical modeling is a very powerful tool to understand natural phenomena. Such a tool carries its own assumptions and should always be used critically. In this chapter we highlight the key ingredients and steps of modeling and focus on their biological interpretation. Particularly, we discuss the role of theoretical principles in writing models. We also highlight the meaning and interpretation of equations. The main aim of this chapter is to facilitate the interaction between biologists and mathematical modelers. We focus on the case of cell proliferation and motility in the context of multicellular organisms.",
     "author": [
       {
         "family": "Montévil",
         "given": "Maël"
       }
     ],
+    "collection-number": "2745",
     "collection-title": "Methods in Molecular Biology",
-    "container-title": "Systems Biology 2nd edition",
+    "container-title": "Systems Biology",
+    "edition": "2nd ed. 2024.",
     "editor": [
       {
         "family": "Bizzarri",
@@ -208,14 +226,15 @@
     "issued": {
       "date-parts": [
         [
-          2024,
-          1,
-          26
+          2024
         ]
       ]
     },
-    "keyword": "Equations, Mathematical modeling, Parameters, Proliferation, Theory",
-    "title": "Mathematical modeling in the study of organisms and their parts",
+    "number-of-pages": "12565343",
+    "page": "105-119",
+    "publisher": "Springer US",
+    "publisher-place": "New York, NY",
+    "title": "Mathematical Modeling in the Study of Organisms and Their Parts",
     "type": "chapter"
   },
   {
@@ -291,6 +310,7 @@
     "type": "chapter"
   },
   {
+    "ISBN": "9781032358666",
     "abstract": "Physics has several concepts of randomness that build on the idea that the possibilities are pre-given. By contrast, an increasing number of theoretical biologists attempt to introduce new possibilities, that is to say, changes of possibility space – an idea already discussed by Bergson and that was not genuinely pursued scientifically until recently (except, in a sense, in systematics, i.e, the method to classify living beings). <br> Then, randomness operates at the level of possibilities themselves and is the basis of the historicity of biological objects. We emphasize that this concept of randomness is not only relevant when aiming to predict the future. Instead, it shapes biological organizations and ecosystems. As an illustration, we argue that a critical issue of the Anthropocene is the disruption of the biological organizations that natural history has shaped, leading to a collapse of biological possibilities.",
     "author": [
       {
@@ -317,18 +337,18 @@
     "issued": {
       "date-parts": [
         [
-          2024,
+          2025,
           7,
           31
         ]
       ]
     },
-    "publisher": "Routledge",
+    "publisher": "Taylor & Francis",
     "title": "How does randomness shape the living?",
     "type": "chapter"
   },
   {
-    "ISBN": "9781350329034",
+    "ISBN": "9781350329041",
     "URL": "https://www.bloomsbury.com/uk/on-bernard-stiegler-9781350329034/",
     "abstract": "\"What I love, and those whom I love, you, that is to say us in so far as we are capable of forming a we, all this I love, and I love them, and I love you infinitely\" (Bernard Steigler April 1952- August 2020). <br> When Bernard Stiegler writes \"I love you\" in the quote above, he openly provokes us to question or experience the meaning or contact of these words. He also invites us to question the relationship between a thinker’s life and their thought. For Stiegler, they were inextricable. His life was one that focused on friendship but not friendships at a purely social level but ones that produced philosophy, politics, and existential truths. <br> Bringing together scholars who knew Stiegler, including Shaj Mohan, Achille Mbembe, Divya Dwivedi, Peter Szendy, and Emily Apter, this volume provides an original - and personal - insight into his life and philosophy. Each piece gives a sense of the wide range of Stiegler’s work and how it affected the praxis of the philosopher in different parts of the world.",
     "author": [
@@ -338,7 +358,12 @@
       }
     ],
     "container-title": "On Bernard Stiegler - Philosopher of Friendship",
+    "edition": "1st ed.",
     "editor": [
+      {
+        "family": "Mohan",
+        "given": "Shaj"
+      },
       {
         "family": "Nancy",
         "given": "Jean-Luc"
@@ -354,13 +379,16 @@
         ]
       ]
     },
-    "publisher": "Bloomsbury",
-    "title": "Bernard Stiegler: Friendship and Fellowship",
+    "note": "Description based on publisher supplied metadata and other sources.",
+    "number-of-pages": "1169",
+    "publisher": "Bloomsbury Publishing Plc",
+    "publisher-place": "London",
+    "title": "Bernard Stiegler: Friendship and Fellowship: Philosopher of Friendship",
     "title-short": "Bernard Stiegler",
     "type": "chapter"
   },
   {
-    "ISBN": "9781350410442",
+    "ISBN": "1350410446",
     "URL": "https://www.bloomsbury.com/uk/bernard-stiegler-9781350410459/",
     "abstract": "The program Plaine Commune, contributive learning territory, started in late 2016. It emerged from the theoretical work of Bernard Stiegler and the Ars Industrialis group. The contributive economy is a strategy to disrupt technological disruption by developing knowledge in all its forms. This program has led to several concrete working groups in Plaine Commune, while others are still developing. Mainly, work is taking place on the economy, digital urbanism, and young children’s development in the context of the overuse of digital media. Here, we focus on the group on digital media and young children’s development and how academics and inhabitant works integrate.",
     "author": [
@@ -394,12 +422,18 @@
         ]
       ]
     },
-    "publisher": "Bloomsbury",
-    "title": "Plaine Commune, contributive learning territory",
+    "note": "Includes bibliographical references and index",
+    "number-of-pages": "249",
+    "publisher": "Bloomsbury Academic",
+    "publisher-place": "London",
+    "title": "Plaine Commune, contributive learning territory: Memories of the future",
+    "title-short": "Plaine Commune, contributive learning territory",
     "type": "chapter"
   },
   {
-    "ISBN": "9783031389672",
+    "DOI": "10.1007/978-3-031-38968-9_12",
+    "ISBN": "9783031389689",
+    "ISSN": "2211-1956",
     "URL": "https://link.springer.com/book/9783031389672",
     "abstract": "Unlike inert objects, organisms and their cells have the ability to initiate activity by themselves, and thus change their properties or states even in the absence of an external cause. This crucial difference led us to search for principles suitable for the study organisms. We propose that cells follow the default state of proliferation with variation and motility, a principle of biological inertia. This means that in the presence of sufficient nutrients, cells will express their default state. We also propose a principle of variation that addresses two central features of organisms, variation and historicity. To address interdependence between parts, we use a third principle, the principle of organization: more specifically, the notion of the closure of constraints. Within this theoretical framework, constraints are specific theoretical entities defined by their relative stability with respect to the processes they constrain. Constraints are mutually dependent in an organized system and act on the default state. <br>Here we discuss the application and articulation of these principles for mathematical modeling of morphogenesis in a specific case, that of mammary ductal morphogenesis, with an emphasis on the default state. Our model has both a biological component, the cells, and a physical component, the matrix that contains collagen fibers. Cells are agents that move and proliferate unless constrained; they exert mechanical forces that i) act on collagen fibers and ii) on other cells. As fibers are organized, they constrain the cells’ ability to move and to proliferate. This model exhibits a circularity that can be interpreted in terms of the closure of constraints. Implementing our mathematical model shows that constraints to the default state are sufficient to explain the formation of mammary epithelial structures. Finally, the success of this modeling effort suggests a step-wise approach whereby additional constraints imposed by the tissue and the organism can be examined in silico and rigorously tested by in vitro and in vivo experiments, in accordance with the organicist perspective we embrace.",
     "author": [
@@ -409,10 +443,12 @@
       },
       {
         "family": "Soto",
-        "given": "Ana"
+        "given": "Ana M."
       }
     ],
-    "container-title": "Organization in Biology: Foundational Enquiries into a Scientific Blindspot",
+    "collection-number": "33",
+    "collection-title": "History, Philosophy et Theory of the Life Sciences",
+    "container-title": "Organization in Biology",
     "editor": [
       {
         "family": "Mossio",
@@ -424,17 +460,20 @@
       "date-parts": [
         [
           2023,
-          12,
+          11,
           17
         ]
       ]
     },
-    "publisher": "Springer Nature",
-    "title": "Modeling organogenesis from biological first principles",
+    "number-of-pages": "1333",
+    "page": "263-283",
+    "publisher": "Springer International Publishing",
+    "publisher-place": "Cham",
+    "title": "Modeling Organogenesis from Biological First Principles",
     "type": "chapter"
   },
   {
-    "ISBN": "9781784058135",
+    "ISBN": "9781784068134",
     "URL": "https://www.istegroup.com/fr/produit/la-revolution-contributive/",
     "abstract": "La révolution contributive résulte du passage rapide à une conception dominante des systèmes (techniques, sociaux, organisationnels, culturels, etc.) où chacun des composants des systèmes co-élabore la performance du tout, en dehors de tout pilotage et contrôle centralisé et extérieur au système. Elle réinvente fondamentalement la relation sujet-objet.La révolution contributive en cours est globale et profonde. Elle apparaît comme une solution possible à la crise économique, écologique et politique qui frappe les sociétés contemporaines, elle concerne tout le champ épistémologique, des sciences jusqu’aux organisations sociales (épistémè).",
     "author": [
@@ -454,13 +493,16 @@
     "issued": {
       "date-parts": [
         [
-          2022,
+          2021,
           1,
           1
         ]
       ]
     },
-    "publisher": "ISTE Editions",
+    "note": "Description based on publisher supplied metadata and other sources.",
+    "number-of-pages": "1250",
+    "publisher": "ISTE Editions Ltd.",
+    "publisher-place": "London",
     "title": "Postface de La révolution contributive, 2022, Pierre Giorgini",
     "type": "chapter"
   },
@@ -513,7 +555,7 @@
     "type": "article-journal"
   },
   {
-    "DOI": "10.53136/97912218011945",
+    "DOI": "10.13135/2036-542X/8104",
     "URL": "https://www.aracneeditrice.eu/it/pubblicazioni/tropos-ada-tenuti-ada-tenuti-gaetano-chiurazzi-emilio-carlo-corriero-giuseppe-longo-mael-montevil-teresa-numerico-francesca-perotto-davide-pilotto-9791221801194.html",
     "abstract": "The analogy between living beings and computers was introduced with circumspection by Schrödinger and has been widely propagated since, rarely with a precise technical meaning. Critics of this perspective are numerous. We emphasize that this perspective is mobilized to justify what may be called a regressive reductionism by comparison with physics or the Cartesian method. <br> Other views on the living are possible, and we focus on an epistemological and theoretical framework where historicity is central, and the regularities susceptible to mathematization are constraints whose existence is fundamentally precarious and historically contingent. <br> We then propose to reinterpret the computer, no longer as a Turing machine but as constituted by constraints. This move allows us to understand that computation in the sense of Church-Turing is only a part of the theoretical determination of what actually happens in a computer when considering them in their larger theoretical context where historicity is also central.",
     "author": [
@@ -522,22 +564,24 @@
         "given": "M."
       }
     ],
-    "container-title": "Trópoς. Rivista di ermeneutica e critica filosofica",
+    "container-title": "Trópos",
     "id": "2022-Montevil-uncomputable-living-computers",
-    "issue": "2",
+    "issue": "2, 2020",
     "issued": {
       "date-parts": [
         [
-          2022,
+          2021,
           8,
           5
         ]
       ]
     },
     "note": "The Future as a Problem. Between Philosophy and Cultural Studies",
+    "page": "etica",
+    "publisher": "Trópos",
     "title": "Understanding living beings by analogy with computers or understanding computers as an emanation of the living",
     "type": "article-journal",
-    "volume": "13"
+    "volume": "V. 13 N. 2"
   },
   {
     "URL": "https://hal.archives-ouvertes.fr/hal-03574022",
@@ -609,6 +653,7 @@
     "type": "chapter"
   },
   {
+    "ISBN": "978-2-36405-212-3",
     "URL": "https://www.fypeditions.com/prendre-soin-de-linformatique-et-des-generations-hommage-a-bernard-stiegler/",
     "abstract": "Lorsque les technologies numériques sont mises au service de l’économie des données, leur design et leur fonctionnement exploitent les attentions, afin d’orienter, voire de contrôler, les comportements des utilisateurs. Réduits à un ensemble de processus cognitifs et de réactions réflexes, ils se voient dépossédés de leurs savoirs, alors même que, dans nos sociétés en situation de crise sanitaire, sociale, politique et écologique, le partage et la transmission des savoir-faire, des savoir-vivre et des savoir-penser sont plus que jamais nécessaires. <br> Comment concevoir et réaliser des plateformes numériques au service des relations sociales et intergénérationnelles, aujourd’hui menacées par les applications addictives et l’économie des données ? Comment intégrer dans les dispositifs computationnels des fonctions délibératives et interprétatives ? Comment transformer les technologies numériques en supports de mémoire et de savoirs ? Comment mettre les algorithmes au service de l’intelligence collective ? En un mot, comment prendre soin de l’informatique pour les générations actuelles et à venir ? Ce livre interroge la manière dont les supports techniques configurent nos capacités psychiques et nos relations collectives, et propose des solutions pour concevoir de nouveaux dispositifs et de nouvelles pratiques, afin de mettre les technologies numériques au service de la production et de la transmission de savoirs, ainsi que des liens entre les générations.",
     "author": [
@@ -772,7 +817,7 @@
       "date-parts": [
         [
           2016,
-          8,
+          10,
           4
         ]
       ]
@@ -792,8 +837,8 @@
     "abstract": "We developed 3D culture methods that reproduce in vitro mammary gland ductal morphogenesis. We are proposing a conceptual framework to understand morphogenetic events based on epistemologically sound biological principles instead of the common practice of using only physical principles. More specifically, our theoretical framework is based on the principle that the default state of cells is proliferation with variation and motility. We emphasize the role played by the agency of cells embedded in a gel and the circularity that is relevant for the intended process, whereby cells act upon other cells and on matrix elements, and are subject to the agentivity of neighboring cells. This circularity strongly differs from classical linear causality. Finally, our approach opens up the study of causal determination to multilevel explanations rather than to reductive ones involving only molecules in general and genes in particular.",
     "author": [
       {
-        "family": "Montevil",
-        "given": "M."
+        "family": "Montévil",
+        "given": "Maël"
       },
       {
         "family": "Sonnenschein",
@@ -801,7 +846,7 @@
       },
       {
         "family": "Soto",
-        "given": "Ana M."
+        "given": "Ana M"
       }
     ],
     "container-title": "Journal of Theoretical and Applied Vascular Research",
@@ -862,6 +907,7 @@
     ],
     "container-title": "Theory in Biosciences",
     "id": "2020-Montevil-Historicity-Heart-Biology",
+    "issue": "2",
     "issued": {
       "date-parts": [
         [
@@ -872,14 +918,15 @@
       ]
     },
     "keyword": "Historicity, Organization, Epistemology, Mathematical modeling, Constraints",
-    "note": "https://montevil.org/publications/articles/2020-Montevil-Historicity-Heart-Biology/",
+    "page": "165-173",
     "publisher": "Springer Science and Business Media LLC",
     "title": "Historicity at the heart of biology",
-    "type": "article-journal"
+    "type": "article-journal",
+    "volume": "141"
   },
   {
     "DOI": "10.1007/978-3-030-74804-3_3",
-    "ISBN": "978-3-030-74804-3",
+    "ISBN": "9783030748043",
     "URL": "https://doi.org/10.1007/978-3-030-74804-3_3",
     "abstract": "Technological developments in genomics and other -omics originated the idea that precise measurements would lead to better therapeutic strategies. However, precision does not entail accuracy. Scientific accuracy requires a theoretical framework to understand the meaning of measurements, the nature of causal relationships, and potential intrinsic limitations of knowledge. For example, a precise measurement of initial positions in classical mechanics is useless without initial velocities; it is not an accurate measurement of the initial condition. Conceptual and theoretical accuracy is required for precision to lead to the progress of knowledge and rationality in action. In the search for accuracy in medicine, we first outline our results on a theory of organisms. Biology is distinct from physics and requires a specific epistemology. In particular, we develop the meaning of biological measurements and emphasize that variability and historicity are fundamental notions. However, medicine is not just biology; we articulate the historicity of biological norms that stems from evolution and the idea that patients and groups of patients generate new norms to overcome pathological situations. Patients then play an active role, in line with the philosophy of Georges Canguilhem. We argue that taking this dimension of medicine into account is critical for theoretical accuracy.",
     "author": [
@@ -888,13 +935,10 @@
         "given": "Maël"
       }
     ],
-    "collection-title": "Human Perspectives in Health Sciences et Technology",
+    "collection-number": "v.3",
+    "collection-title": "Human Perspectives in Health Sciences et Technology Series",
     "container-title": "Personalized Medicine in the Making: Philosophical Perspectives from Biology to Healthcare",
     "editor": [
-      {
-        "family": "Beneduce",
-        "given": "Chiara"
-      },
       {
         "family": "Bertolaso",
         "given": "Marta"
@@ -911,13 +955,18 @@
       ]
     },
     "keyword": "Normativity, Organization, Personalized Medicine, Technology, theoretical biology",
+    "note": "Description based on publisher supplied metadata and other sources.",
+    "number-of-pages": "1334",
     "page": "47-62",
-    "publisher": "Springer International Publishing",
-    "title": "Conceptual and Theoretical Specifications for Accuracy in Medicine",
+    "publisher": "Springer International Publishing AG",
+    "publisher-place": "Cham",
+    "title": "Conceptual and Theoretical Specifications for Accuracy in Medicine: Philosophical Perspectives from Biology to Healthcare",
+    "title-short": "Conceptual and Theoretical Specifications for Accuracy in Medicine",
     "type": "chapter"
   },
   {
     "DOI": "10.3917/ecorev.050.0109",
+    "ISSN": "1628-6391",
     "abstract": "En examinant le second tome de Qu’appelle-t-on panser (1), le théoricien de la biologie et épistémologue Maël Montévil, qui a collaboré avec Bernard Stiegler à la fois sur des questions théoriques et sur des expérimentations territoriales, s’arrête sur le rôle des sciences dans l’Anthropocène pour souligner leur difficulté à penser cette ère et, ce faisant, à prendre soin des vivants, humains et non-humains, des techniques et des sciences elles-mêmes. Stiegler soulignait l’importance de la question de l’entropie, conduisant au concept d’entropocène. L’auteur introduit et illustre ce concept pour montrer sa pertinence d’un point de vue physique, biologique et social. Ce faisant, il insiste sur la parenté mais aussi sur les différences entre ces phénomènes. Dans le cas des humains, les savoirs jouent un rôle central pour lutter contre l’entropie, et les sciences pourraient retrouver leur compte en contribuant au développement – urgent – de savoirs territoriaux.",
     "author": [
       {
@@ -939,10 +988,11 @@
     },
     "note": "https://montevil.org/publications/articles/2021-Montevil-Stiegler-Sciences-Entropocene/",
     "page": "109-125",
-    "publisher": "Association EcoRev’",
-    "title": "Sciences et entropocène. Autour de Qu’appelle-t-on panser ? de Bernard Stiegler",
+    "publisher": "CAIRN",
+    "title": "Sciences et entropocène: Autour de Qu’appelle-t-on panser ? de Bernard Stiegler",
+    "title-short": "Sciences et entropocène",
     "type": "article-journal",
-    "volume": "50"
+    "volume": "N° 50"
   },
   {
     "DOI": "10.1007/s12038-015-9574-9",
@@ -954,8 +1004,8 @@
         "given": "Giuseppe"
       },
       {
-        "family": "Montevil",
-        "given": "Mael"
+        "family": "Montévil",
+        "given": "Maël"
       },
       {
         "family": "Sonnenschein",
@@ -963,10 +1013,10 @@
       },
       {
         "family": "Soto",
-        "given": "Ana M."
+        "given": "Ana M"
       }
     ],
-    "container-title": "Journal of biosciences",
+    "container-title": "Journal of Biosciences",
     "id": "2015-LMS-Search-Principles-Organisms",
     "issue": "5",
     "issued": {
@@ -979,7 +1029,7 @@
       ]
     },
     "keyword": "Animals, Biological Evolution, Biophysics/methods, Cell Division, Mice, Models, Morphogenesis, Thermodynamics",
-    "note": "https://montevil.org/publications/articles/2015-LMS-Search-Principles-Organisms/",
+    "note": "26648040[pmid]",
     "page": "955-968",
     "publisher": "Springer Science and Business Media LLC",
     "title": "In search of principles for a Theory of Organisms",
@@ -988,30 +1038,34 @@
   },
   {
     "DOI": "10.1007/s00146-021-01221-0",
-    "abstract": "The Anthropocene crisis is frequently described as the rarefaction of resources or resources per capita. However, both energy and minerals correspond to fundamentally conserved quantities from the perspective of physics. A specific concept is required to understand the rarefaction of available resources. This concept, entropy, pertains to energy and matter configurations and not just to their sheer amount. <br> However, the physics concept of entropy is insufficient to understand biological and social organizations. Biological phenomena display both historicity and systemic properties. A biological organization, the ability of a specific living being to last over time, results from history, expresses itself by systemic properties, and may require generating novelties The concept of anti-entropy stems from the combination of these features. We propose that Anthropocene changes disrupt biological organizations by randomizing them, that is, decreasing anti-entropy. Moreover, second-order disruptions correspond to the decline of the ability to produce functional novelties, that is, to produce anti-entropy.",
+    "ISSN": "1435-5655",
+    "abstract": "The Anthropocene crisis is frequently described as the rarefaction of resources or resources per capita. However, both energy and minerals correspond to fundamentally conserved quantities from the perspective of physics. A specific concept is required to understand the rarefaction of available resources. This concept, entropy, pertains to energy and matter configurations and not just to their sheer amount. However, the physics concept of entropy is insufficient to understand biological and social organizations. Biological phenomena display both historicity and systemic properties. A biological organization, the ability of a specific living being to last over time, results from history, expresses itself by systemic properties, and may require generating novelties The concept of anti-entropy stems from the combination of these features. We propose that Anthropocene changes disrupt biological organizations by randomizing them, that is, decreasing anti-entropy. Moreover, second-order disruptions correspond to the decline of the ability to produce functional novelties, that is, to produce anti-entropy.",
     "author": [
       {
         "family": "Montévil",
         "given": "Maël"
       }
     ],
-    "container-title": "AI and society",
+    "container-title": "AI & SOCIETY",
     "id": "2021-Montevil-Entropies-Anthropocene",
+    "issue": "6",
     "issued": {
       "date-parts": [
         [
-          2021,
-          5,
-          15
+          2023,
+          12,
+          1
         ]
       ]
     },
     "keyword": "entropy, anti-entropy, resources, organization, disruption, Anthropocene",
-    "note": "https://montevil.org/publications/articles/2021-Montevil-Entropies-Anthropocene/",
+    "page": "2451-2471",
     "title": "Entropies and the Anthropocene crisis",
-    "type": "article-journal"
+    "type": "article-journal",
+    "volume": "38"
   },
   {
+    "ISBN": "9781785421228",
     "URL": "http://www.openhumanitiespress.org/books/titles/bifurcate/",
     "abstract": "Bifurcating means: reconstituting a political economy that reconnects local knowledge and practices with macroeconomic circulation and rethinks territoriality at its different scales of locality; developing an economy of contribution on the basis of a contributory income no longer tied to employment and once again valuing work as a knowledge activity; overhauling law, and government and corporate accounting, via economic and social experiments, including in laboratory territories, and in relation to cooperative, local market economies formed into networks and linked to international trade; revaluing research from a long-term perspective, independent of the short-term interests of political and economic powers; reorienting digital technology in the service of territories and territorial cooperation. <br> The collective work that produced this book is based on the claim that today’s destructive development model is reaching its ultimate limits, and that its toxicity, which is increasingly massive, manifest and multidimensional (medical, environmental, mental, epistemological, economic – accumulating pockets of insolvency, which become veritable oceans), is generated above all by the fact that the current industrial economy is based in every sector on an obsolete physical model – a mechanism that ignores the constraints of locality in biology and the entropic tendency in reticulated computational information. In these gravely perilous times, we must bifurcate: there is no alternative.",
     "author": [
@@ -1027,6 +1081,13 @@
         "given": "Daniel"
       }
     ],
+    "collection-title": "CCC2 Irreversibility",
+    "editor": [
+      {
+        "dropping-particle": "null",
+        "family": "null"
+      }
+    ],
     "id": "2021-Internation-Bifurcate",
     "issued": {
       "date-parts": [
@@ -1037,6 +1098,9 @@
         ]
       ]
     },
+    "number-of-pages": "1330",
+    "publisher": "Open Humanities Press",
+    "publisher-place": "London",
     "title": "Bifurcate: There Is No Alternative",
     "title-short": "Bifurcate",
     "type": "book"
@@ -1195,7 +1259,26 @@
       }
     ],
     "chapter-number": "22",
+    "collection-title": "Information systems, web et pervasive computing series",
     "container-title": "Life Sciences, Information Sciences",
+    "editor": [
+      {
+        "family": "Lacroix",
+        "given": "Dominique"
+      },
+      {
+        "family": "Pomerol",
+        "given": "Jean-Charles"
+      },
+      {
+        "family": "Maurel",
+        "given": "Marie-Christine"
+      },
+      {
+        "family": "Gaudin",
+        "given": "Thierry"
+      }
+    ],
     "id": "2018-ML-Big-Data-Biology-ISLS",
     "issued": {
       "date-parts": [
@@ -1208,9 +1291,12 @@
     },
     "keyword": "big data, biology, carcinogenesis process, combinatory theory, ergodic theory, immense digital databases, Ramsey theory",
     "note": "https://montevil.org/publications/chapters/2018-ML-Big-Data-Biology/",
+    "number-of-pages": "11",
     "page": "243-248",
-    "publisher": "John Wiley & Sons, Ltd",
-    "title": "Big Data, Knowledge and Biology",
+    "publisher": "Wiley",
+    "publisher-place": "London",
+    "title": "Big Data, Knowledge and Biology: Cerisy SVSI (Conference)",
+    "title-short": "Big Data, Knowledge and Biology",
     "type": "chapter"
   },
   {
@@ -1232,6 +1318,7 @@
       }
     ],
     "chapter-number": "9",
+    "collection-title": "Information systems, web et pervasive computing series",
     "container-title": "Life Sciences, Information Sciences",
     "editor": [
       {
@@ -1263,9 +1350,11 @@
     },
     "keyword": "cell theory, evolution biology, mathematical structures, organism biology, philosophical position, physical theories, theoretical symmetries",
     "note": "https://montevil.org/publications/chapters/2018-MLS-Gene-Century-Organism/",
+    "number-of-pages": "11",
     "page": "81-97",
     "publisher": "John Wiley & Sons, Ltd",
-    "title": "From the Century of the Gene to that of the Organism: Introduction to New Theoretical Perspectives",
+    "publisher-place": "London",
+    "title": "From the Century of the Gene to that of the Organism: Introduction to New Theoretical Perspectives: Cerisy SVSI (Conference)",
     "title-short": "From the Century of the Gene to that of the Organism",
     "type": "chapter"
   },
@@ -1367,6 +1456,7 @@
     "volume": "13"
   },
   {
+    "ISSN": "11207183",
     "URL": "http://www1.mat.uniroma1.it/ricerca/rendiconti/40_3-4_(2019)_177-189.html",
     "abstract": "Like theoretical physics, theoretical biology is not just mathematical modeling. Instead, theoretical biology should strive to find suitable first principles to ground the understanding of biological phenomena and ultimately frame biological experiments and mathematical models. First principles in physics are expressed in terms of symmetries and the associated conservations, on the one side, and optimization on the other side. In biology, we argue instead that a strong notion of variation is fundamental. This notion encompasses new possibilities and the historicity of biological phenomena. By contrast, the relative regularity of some aspects of biological organisms, which we call constraints, should be regarded as the consequence of a mutual stabilization of the parts of organisms. We exemplify several aspects of this framework with the modeling of allometric relationships. Our change of perspective leads to reconsider the meaning of measurements and the structure of the space of description.",
     "author": [
@@ -1377,6 +1467,7 @@
     ],
     "container-title": "Rendiconti di Matematica e delle sue Applicazioni",
     "id": "2019-Montevil-First-Principles-Biology",
+    "issue": "3-4, 3-4",
     "issued": {
       "date-parts": [
         [
@@ -1417,6 +1508,7 @@
     "volume": "72"
   },
   {
+    "ISBN": "9782374401232",
     "URL": "https://www.naimaunlimited.com/biblio/biomorphisme-approches-sensibles-et-conceptuelles-des-formes-du-vivant/",
     "abstract": "Dans l’interface entre biologie et mathématiques, les formes et les processus de morphogenèse sont souvent étudiées pour eux-mêmes. Nous pensons que cette manière de procéder est insuffisante pour capturer le sens biologique de ces formes. La biologie comporte des spécificités qui se manifestent tant sur le plan philosophique que sur celui des principes théoriques : en particulier, tout processus biologique tel qu’un processus de morphogenèse ou une régulation physiologique (i) s’inscrit dans l’évolution et dans une histoire naturelle et (ii) s’intègre dans un organisme dont il dépend et auquel il participe. Nous aborderons alors le sens des formes biologiques à l’aune de ces principes, tant au niveau de la théorie qu’au niveau de la compréhension de l’accès expérimental aux objets biologiques.",
     "author": [
@@ -1521,7 +1613,7 @@
       "date-parts": [
         [
           2016,
-          7,
+          10,
           2
         ]
       ]
@@ -1559,7 +1651,7 @@
       "date-parts": [
         [
           2016,
-          8,
+          10,
           10
         ]
       ]
@@ -1602,7 +1694,7 @@
       "date-parts": [
         [
           2016,
-          8,
+          10,
           13
         ]
       ]
@@ -1645,7 +1737,7 @@
       "date-parts": [
         [
           2016,
-          8,
+          10,
           18
         ]
       ]
@@ -1725,7 +1817,7 @@
     "volume": "122"
   },
   {
-    "ISBN": "978 88 8080 313 3",
+    "ISBN": "9788880803133",
     "abstract": "Some authors assert that the analysis of huge databases could replace the scientific method. On the contrary, we argue that the best way to make these new technologies bear fruits is to frame them with theories concerning the phenomena of interest. Such theories hint to the observable that should be taken into account and the mathematical structures that may link them. In biology, we argue that the community urgently needs an overarching theory of organisms that would provide a precise framework to understand lifecycles. Among other benefits, such a theory should make explicit what we can and cannot predict in principle.",
     "author": [
       {
@@ -1780,8 +1872,8 @@
     "issued": {
       "date-parts": [
         [
-          2019,
-          11,
+          2018,
+          1,
           1
         ]
       ]
@@ -1796,6 +1888,7 @@
     "volume": "196"
   },
   {
+    "ISBN": "978-2-37361-107-6",
     "URL": "https://materiologiques.com/fr/sciences-philosophie/244-qu-est-ce-que-la-science-pour-vous--9782373611076.html",
     "abstract": "Deux collègues chercheurs terminent une longue réunion de travail. Ils décident de boire un verre ensemble dans un café voisin. Le bon vin y étant sans doute pour quelque chose, ils se retrouvent à confronter leurs points de vue sur un sujet ô combien difficile...",
     "author": [
@@ -1829,6 +1922,7 @@
     "type": "chapter"
   },
   {
+    "ISBN": "9782271090836",
     "URL": "http://www.cnrseditions.fr/philosophie-et-histoire-des-idees/7678-temps-de-la-nature-nature-du-temps.html",
     "abstract": "La répétitivité et la réversibilité ont longtemps été considérées comme des traits caractéristiques de la connaissance scientifique. Dans la génétique des populations, la répétitivité est illustrée par un certain nombre d’équilibres réalisés dans des conditions spécifiques. Étant donné que ces équilibres sont maintenus en dépit du renouvellement des générations (réarrangement de gènes, reproduction ...), on peut légitimement dire que la génétique des populations révèle d’importantes propriétés d’invariance par transformation. La réversibilité est un sujet plus controversé. Ici, le parallèle avec la mécanique classique est beaucoup plus faible. La réversibilité est incontestable dans certains modèles stochastiques, mais au prix d’un concept probabiliste particulier de réversibilité. Par contre, elle ne semble pas être une propriété de la plupart des modèles déterministes classiques décrivant la dynamique des changements évolutifs au niveau des populations. Nous distinguons plusieurs sens de la « réversibilité ». En particulier, la symétrie par inversion du temps ne doit pas être confondue avec la rétrodiction.",
     "author": [
@@ -1872,7 +1966,8 @@
   },
   {
     "DOI": "10.1007/978-3-319-53725-2_13",
-    "ISBN": "978-3-319-53725-2",
+    "ISBN": "9783319537252",
+    "ISSN": "2214-7942",
     "abstract": "Repetitiveness and reversibility have long been considered as characteristic features of scientific knowledge. In theoretical population genetics, repetitiveness is illustrated by a number of genetic equilibria realized under specific conditions. Since these equilibria are maintained despite a continual flux of changes in the course of generations (reshuffling of genes, reproduction…), it can legitimately be said that population genetics reveals important properties of invariance through transformation. Time-reversibility is a more controversial subject. Here, the parallel with classical mechanics is much weaker. Time-reversibility is unquestionable in some stochastic models, but at the cost of a special, probabilistic concept of reversibility. But it does not seem to be a property of the most basic deterministic models describing the dynamics of evolutionary change at the level of populations and genes. Furthermore, various meanings of “reversibility” are distinguished. In particular, time-reversibility should not be confused with retrodictability.",
     "author": [
       {
@@ -1884,6 +1979,7 @@
         "given": "Maël"
       }
     ],
+    "collection-title": "Springer eBook Collection",
     "container-title": "Time of Nature and the Nature of Time: Philosophical Perspectives of Time in Natural Sciences",
     "editor": [
       {
@@ -1905,10 +2001,11 @@
     },
     "keyword": "population genetics, repetition, retrodiction, reversibility",
     "note": "https://montevil.org/publications/chapters/2017-GM-Repetition-Reversibility-Evolution/",
+    "number-of-pages": "4038229",
     "page": "275-314",
     "publisher": "Springer International Publishing",
     "publisher-place": "Cham",
-    "title": "Repetition and Reversibility in Evolution: Theoretical Population Genetics",
+    "title": "Repetition and Reversibility in Evolution: Theoretical Population Genetics: Philosophical Perspectives of Time in Natural Sciences",
     "title-short": "Repetition and Reversibility in Evolution",
     "type": "chapter"
   },
@@ -1931,9 +2028,7 @@
     "issued": {
       "date-parts": [
         [
-          2015,
-          5,
-          7
+          2015
         ]
       ]
     },
@@ -1970,7 +2065,7 @@
       "date-parts": [
         [
           2011,
-          2,
+          9,
           11
         ]
       ]
@@ -1985,6 +2080,7 @@
   },
   {
     "DOI": "10.1371/journal.pone.0093325",
+    "ISSN": "1932-6203",
     "abstract": "Background: Mammary gland morphogenesis involves ductal elongation, branching, and budding. All of these processes are mediated by stroma - epithelium interactions. Biomechanical factors, such as matrix stiffness, have been established as important factors in these interactions. For example, epithelial cells fail to form normal acinar structures in vitro in 3D gels that exceed the stiffness of a normal mammary gland. Additionally, heterogeneity in the spatial distribution of acini and ducts within individual collagen gels suggests that local organization of the matrix may guide morphogenesis. Here, we quantified the effects of both bulk material stiffness and local collagen fiber arrangement on epithelial morphogenesis. Results: The formation of ducts and acini from single cells and the reorganization of the collagen fiber network were quantified using time-lapse confocal microscopy. MCF10A cells organized the surrounding collagen fibers during the first twelve hours after seeding. Collagen fiber density and alignment relative to the epithelial surface significantly increased within the first twelve hours and were a major influence in the shaping of the mammary epithelium. The addition of Matrigel to the collagen fiber network impaired cell-mediated reorganization of the matrix and increased the probability of spheroidal acini rather than branching ducts. The mechanical anisotropy created by regions of highly aligned collagen fibers facilitated elongation and branching, which was significantly correlated with fiber organization. In contrast, changes in bulk stiffness were not a strong predictor of this epithelial morphology. Conclusions: Localized regions of collagen fiber alignment are required for ductal elongation and branching suggesting the importance of local mechanical anisotropy in mammary epithelial morphogenesis. Similar principles may govern the morphology of branching and budding in other tissues and organs.",
     "author": [
       {
@@ -2057,7 +2153,7 @@
     "keyword": "Collagens, Morphogenesis, Extracellular matrix, Gels, Anisotropy, Stiffness, Scanning electron microscopy, Mammary gland development",
     "note": "https://montevil.org/publications/articles/2014-BSQ-Tissues-Collagen-Time/",
     "page": "e93325",
-    "publisher": "Public Library of Science",
+    "publisher": "Public Library of Science (PLoS)",
     "title": "From Single Cells to Tissues: Interactions between the Matrix and Human Breast Cells in Real Time",
     "title-short": "From Single Cells to Tissues",
     "type": "article-journal",
@@ -2065,7 +2161,8 @@
   },
   {
     "DOI": "10.1007/978-3-642-35938-5",
-    "ISBN": "978-3-642-35937-8",
+    "ISBN": "9783642359385",
+    "ISSN": "2195-1942",
     "abstract": "This authored monograph introduces a genuinely theoretical approach to biology. Starting point is the investigation of empirical biological scaling including their variability, which is found in the literature, e.g. allometric relationships, fractals, etc. The book then analyzes two different aspects of biological time: first, a supplementary temporal dimension to accommodate proper biological rhythms; secondly, the concepts of protension and retention as a means of local organization of time in living organisms. Moreover, the book investigates the role of symmetry in biology, in view of its ubiquitous importance in physics. In relation with the notion of extended critical transitions, the book proposes that organisms and their evolution can be characterized by continued symmetry changes, which accounts for the irreducibility of their historicity and variability. The authors also introduce the concept of anti-entropy as a measure for the potential of variability, being equally understood as alterations in symmetry. By this, the book provides a mathematical account of Gould’s analysis of phenotypic complexity with respect to biological evolution. The target audience primarily comprises researchers interested in new theoretical approaches to biology, from physical, biological or philosophical backgrounds, but the book may also be beneficial for graduate students who want to enter this field.",
     "author": [
       {
@@ -2077,7 +2174,15 @@
         "given": "Maël"
       }
     ],
-    "collection-title": "Lecture Notes in Morphogenesis",
+    "collection-title": "Lecture Notes in Morphogenesis Ser.",
+    "container-title": "Lecture Notes in Morphogenesis",
+    "edition": "1st ed.",
+    "editor": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
     "id": "2014-LM-Perspectives-Organisms",
     "issued": {
       "date-parts": [
@@ -2089,15 +2194,16 @@
       ]
     },
     "note": "https://montevil.org/publications/books/2014-LM-Perspectives-Organisms/",
-    "publisher": "Springer",
-    "publisher-place": "Heidelberg",
-    "title": "Perspectives on Organisms: Biological time, symmetries and singularities",
+    "number-of-pages": "1293",
+    "publisher": "Springer Berlin / Heidelberg",
+    "publisher-place": "Berlin, Heidelberg",
+    "title": "Perspectives on Organisms: Biological time, Symmetries and Singularities: Biological Time, Symmetries and Singularities",
     "title-short": "Perspectives on Organisms",
     "type": "book"
   },
   {
     "DOI": "10.1007/978-3-642-27654-5_22",
-    "ISBN": "978-3-642-27654-5",
+    "ISBN": "9783642276545",
     "abstract": "In this text, we revisit part of the analysis of anti-entropy in [4] and develop further theoretical reflections. In particular, we analyze how randomness, an essential component of biological variability, is associated to the growth of biological organization, both in ontogenesis and in evolution. This approach, in particular, focuses on the role of global entropy production and provides a tool for a mathematical understanding of some fundamental observations by Gould on the increasing phenotypic complexity along evolution. Lastly, we analyze the situation in terms of theoretical symmetries, in order to further specify the biological meaning of anti-entropy as well as its strong link with randomness.",
     "author": [
       {
@@ -2109,7 +2215,8 @@
         "given": "Maël"
       }
     ],
-    "collection-title": "Lecture Notes in Computer Science",
+    "collection-number": "v.7160",
+    "collection-title": "Lecture Notes in Computer Science Ser.",
     "container-title": "Computation, Physics and Beyond",
     "editor": [
       {
@@ -2137,10 +2244,12 @@
     },
     "keyword": "Entropy Production, Biological Evolution, Irreversible Process, Combinatorial Complexity, Biological Organization",
     "note": "https://montevil.org/publications/chapters/2012-LM-Randomness-Order-Evolution/",
+    "number-of-pages": "1435",
     "page": "289-308",
-    "publisher": "Springer Berlin Heidelberg",
+    "publisher": "Springer Berlin / Heidelberg",
     "publisher-place": "Berlin, Heidelberg",
-    "title": "Randomness Increases Order in Biological Evolution",
+    "title": "Randomness Increases Order in Biological Evolution: International Workshop on Theoretical Computer Science, WTCS 2012, Dedicated to Cristian S. Calude on the Occasion of His 60th Birthday, Auckland, New Zealand, February 21-24, 2012, Revised Selected and Invited Papers",
+    "title-short": "Randomness Increases Order in Biological Evolution",
     "type": "chapter",
     "volume": "7160"
   },
@@ -2173,7 +2282,7 @@
     "keyword": "criticality, biological time, anti-entropy, theoretical biology, symmetry, allometry, incompleteness",
     "note": "https://montevil.org/publications/articles/2012-LM-Inert-Vs-Living/",
     "publisher": "Frontiers Media SA",
-    "title": "The Inert vs. the Living State of Matter: Extended Criticality, Time Geometry, Anti-Entropy — an overview",
+    "title": "The Inert vs. the Living State of Matter: Extended Criticality, Time Geometry, Anti-Entropy – An Overview",
     "title-short": "The Inert vs. the Living State of Matter",
     "type": "article-journal",
     "volume": "3"
@@ -2206,7 +2315,7 @@
   },
   {
     "DOI": "10.1007/s12064-010-0116-6",
-    "ISSN": "1431-7613",
+    "ISSN": "1611-7530",
     "abstract": "This article proposes an abstract mathematical frame for describing some features of cognitive and biological time. We focus here on the so called extended present as a result of protentional and retentional activities (memory and anticipation). Memory, as retention, is treated in some physical theories (relaxation phenomena, which will inspire our approach), while protention (or anticipation) seems outside the scope of physics. We then suggest a simple functional representation of biological protention. This allows us to introduce the abstract notion of biological inertia.",
     "author": [
       {
@@ -2224,7 +2333,7 @@
     "issued": {
       "date-parts": [
         [
-          2011,
+          2010,
           11,
           30
         ]
@@ -2233,7 +2342,7 @@
     "keyword": "Memory and Cognition, protention, retention, biological time",
     "note": "https://montevil.org/publications/articles/2011-LM-Protention-Retention-Biology/",
     "page": "107-117",
-    "publisher": "Springer Berlin / Heidelberg",
+    "publisher": "Springer Science and Business Media LLC",
     "title": "Protention and retention in biological systems",
     "type": "article-journal",
     "volume": "130"
@@ -2259,7 +2368,7 @@
       "date-parts": [
         [
           2011,
-          3,
+          8,
           16
         ]
       ]
@@ -2289,7 +2398,8 @@
         "given": "S."
       }
     ],
-    "container-title": "Genetic and Evolutionary Computation Conference",
+    "collection-title": "GECCO ’12",
+    "container-title": "Proceedings of the 14th annual conference companion on Genetic and evolutionary computation",
     "edition": "GECCO’12",
     "id": "2012-LMK-No-Entailing-Laws-Enablement",
     "issued": {
@@ -2303,6 +2413,7 @@
     },
     "keyword": "conservation properties, symmetries, biological causality",
     "note": "https://montevil.org/publications/chapters/2012-LMK-No-Entailing-Laws-Enablement/",
+    "page": "1379-1392",
     "publisher": "GECCO’12; ACM",
     "publisher-place": "New York, NY, USA",
     "title": "No entailing laws, but enablement in the evolution of the biosphere",
@@ -2326,7 +2437,7 @@
         "given": "A."
       }
     ],
-    "container-title": "Autour de la simplexité",
+    "container-title": "Complexité-Simplexité",
     "editor": [
       {
         "family": "Berthoz",
@@ -2348,7 +2459,7 @@
       ]
     },
     "note": "https://montevil.org/publications/chapters/2014-LMP-Incompressible-Complexite/",
-    "publisher": "Odile Jacob",
+    "publisher": "Collège de France",
     "title": "L’incompressible complexité du réel et la construction évolutive du simple",
     "type": "chapter"
   },
@@ -2383,14 +2494,14 @@
       ]
     },
     "keyword": "bottom-up, extended criticality, levels of organization, organism, renormalization, singularity",
-    "note": "https://montevil.org/publications/articles/2012-LMP-Levels-Organization-Criticality/",
+    "note": "invited paper",
     "publisher": "Frontiers Media SA",
-    "title": "From bottom-up approaches to levels of organization and extended critical transitions",
+    "title": "From Bottom-Up Approaches to Levels of Organization and Extended Critical Transitions",
     "type": "article-journal",
     "volume": "3"
   },
   {
-    "ISBN": "978-2705681555",
+    "ISBN": "9782705681555",
     "URL": "https://www.editions-hermann.fr/livre/9782705681555",
     "abstract": "Le vivant possède une phénoménalité particulière et originale. Comme cadre et siège de cette phénoménalité, l’organisation temporelle des organismes est elle-même d’une grande richesse. Ainsi, l’on rencontre dans l’activité biologique des cas de cyclicité : cycle cardiaque, cycle respiratoire, rythmes cérébraux, cycles circadiens, cycle de vie, etc. ; et d’autre part il s’y présente, parfois même au sein de ces cycles, des phénomènes dont la nature semble plutôt être caractérisée par une irréversibilité fondamentale : cognition, nutrition, développement, vieillissement, évolution, ...Il nous semble dès lors impératif, pour aborder théoriquement — et donc aussi empiriquement — ces phénomènes, de les considérer dans un cadre où la question de la temporalité soit abordée de manière adéquate.",
     "author": [
@@ -2424,8 +2535,8 @@
         ]
       ]
     },
-    "note": "https://montevil.org/publications/chapters/2012-Montevil-Geometrie-Temps-Biologique/",
-    "publisher": "Hermann",
+    "note": "Article invité",
+    "publisher": "Editions Hermann",
     "title": "Géométrie du temps biologique : rythmes et protension",
     "title-short": "Géométrie du temps biologique ",
     "type": "chapter"
@@ -2461,7 +2572,8 @@
     "volume": "34"
   },
   {
-    "DOI": "10.1289/EHP6301",
+    "DOI": "10.1289/ehp6301",
+    "ISSN": "1552-9924",
     "abstract": "We aimed to a) determine whether BPA showed effects on the developing rat mammary gland using new quantitative and established semiquantitative methods in two laboratories, b) develop a software tool for automatic evaluation of quantifiable aspects of the mammary ductal tree, and c) compare those methods. Conclusions: Both the semiquantitative and the quantitative methods revealed nonmonotonic effects of BPA. The quantitative unsupervised analysis used 91 measurements and produced the most striking nonmonotonic dose–response curves. At all time points, lower doses resulted in larger effects, consistent with the core study, which revealed a significant increase of mammary adenocarcinoma incidence in the stop-dose animals at the lowest BPA dose tested.",
     "author": [
       {
@@ -2502,7 +2614,7 @@
     "note": "https://montevil.org/publications/articles/2020-MAS-Morphometric-Clarity-Bpa/",
     "page": "057001",
     "publisher": "Environmental Health Perspectives",
-    "title": "A combined morphometric and statistical approach to assess non-monotonicity in the developing mammary gland of rats in the CLARITY-BPA study",
+    "title": "A Combined Morphometric and Statistical Approach to Assess Nonmonotonicity in the Developing Mammary Gland of Rats in the CLARITY-BPA Study",
     "type": "article-journal",
     "volume": "128"
   },
@@ -2610,7 +2722,8 @@
   },
   {
     "DOI": "10.1007/978-1-4939-7456-6_4",
-    "ISBN": "978-1-4939-7456-6",
+    "ISBN": "9781493974566",
+    "ISSN": "1940-6029",
     "abstract": "Mathematical modeling is a very powerful tool for understanding natural phenomena. Such a tool carries its own assumptions and should always be used critically. In this chapter, we highlight the key ingredients and steps of modeling and focus on their biological interpretation. In particular, we discuss the role of theoretical principles in writing models. We also highlight the meaning and interpretation of equations. The main aim of this chapter is to facilitate the interaction between biologists and mathematical modelers. We focus on the case of cell proliferation and motility in the context of multicellular organisms.",
     "author": [
       {
@@ -2638,15 +2751,17 @@
     },
     "keyword": "Equations, Mathematical modeling, Parameters, Proliferation, Theory",
     "note": "https://montevil.org/publications/chapters/2018-Montevil-Primer-Mathematical-Modeling/",
+    "number-of-pages": "36410283",
     "page": "41-55",
-    "publisher": "Springer",
+    "publisher": "Springer New York",
     "publisher-place": "New York, NY",
     "title": "A Primer on Mathematical Modeling in the Study of Organisms and Their Parts",
     "type": "chapter"
   },
   {
     "DOI": "10.1007/978-3-319-30526-4",
-    "ISBN": "9783319808307",
+    "ISBN": "9783319305264",
+    "ISSN": "2522-8706",
     "abstract": "Computer simulations brought remarkable novelties to knowledge construction. In this chapter, we first distinguish between mathematical modeling, computer implementations of these models and purely computational approaches. In all three cases, different answers are provided to the questions the observer may have concerning the processes under investigation. These differences will be highlighted by looking at the different theoretical symmetries of each frame. In the latter case, the peculiarities of agent-based or object oriented languages allow to discuss the role of phase spaces in mathematical analyses of physical versus biological dynamics. Symmetry breaking and randomness are finally correlated in the various contexts where they may be observed.",
     "author": [
       {
@@ -2684,7 +2799,7 @@
     "keyword": "Phase Space, Symmetry Breaking, Chaotic Dynamic, Object Oriented Programming, Genetically Modify Organism",
     "note": "https://montevil.org/publications/chapters/2017-LM-Comparing-Symmetries-Models/",
     "page": "843-856",
-    "publisher": "Springer",
+    "publisher": "Springer International Publishing",
     "title": "Comparing Symmetries in Models and Simulations",
     "type": "chapter"
   },
@@ -2739,6 +2854,7 @@
   },
   {
     "DOI": "10.1371/journal.pone.0153022",
+    "ISSN": "1932-6203",
     "abstract": "Three-dimensional (3D) culture models are critical tools for understanding tissue morphogenesis. A key requirement for their analysis is the ability to reconstruct the tissue into computational models that allow quantitative evaluation of the formed structures. Here, we present Software for Automated Morphological Analysis (SAMA), a method by which epithelial structures grown in 3D cultures can be imaged, reconstructed and analyzed with minimum human intervention. SAMA allows quantitative analysis of key features of epithelial morphogenesis such as ductal elongation, branching and lumen formation that distinguish different hormonal treatments. SAMA is a user-friendly set of customized macros operated via FIJI (http://fiji.sc/Fiji), an open-source image analysis platform in combination with a set of functions in R (http://www.r-project.org/), an open-source program for statistical analysis. SAMA enables a rapid, exhaustive and quantitative 3D analysis of the shape of a population of structures in a 3D image. SAMA is cross-platform, licensed under the GPLv3 and available at http://montevil.theobio.org/content/sama.",
     "author": [
       {
@@ -2766,7 +2882,7 @@
         "given": "Ana M."
       }
     ],
-    "container-title": "PLoS ONE",
+    "container-title": "PLOS ONE",
     "editor": [
       {
         "family": "Seagroves",
@@ -2786,15 +2902,15 @@
     },
     "keyword": "Open source software, Image analysis, Ellipsoids, Morphogenesis, Computer software, Morphometry, Image processing, Branching morphogenesis",
     "note": "https://montevil.org/publications/articles/2016-PMS-Sama-Method-Morphometry/",
-    "page": "1-14",
-    "publisher": "Public Library of Science",
+    "page": "e0153022",
+    "publisher": "Public Library of Science (PLoS)",
     "title": "SAMA: A Method for 3D Morphological Analysis",
     "title-short": "SAMA",
     "type": "article-journal",
     "volume": "11"
   },
   {
-    "ISBN": "978-2-919694-93-8",
+    "ISBN": "9782919694938",
     "URL": "https://materiologiques.com/fr/modelisations-simulations-systemes-complexes-2425-5661/206-le-vivant-critique-et-chaotique-9782919694938.html",
     "abstract": "Ce texte présente un modèle pour le temps biologique ainsi qu’un certain nombre d’idées plus générales sur l’articulation entre mathématiques et objets biologiques, fondées sur des propositions théoriques. Nous décrivons d’abord un modèle géométrisant le temps des mammifères, basé en partie sur la notion d’allométrie. Ce modèle permet de mettre en évidence la structure de la variabilité des rythmes biologiques et de discriminer cas sains et cas pathologiques. Nous utilisons cet exemple pour illustrer les principes permettant la mathématisation. Nous discutons comment s’articulent mathématiques et définition théorique des objets physiques. Nous mettons en particulier l’accent sur le rôle que jouent les symétries théoriques pour justifier ces définitions, tant au niveau de la constitution d’un espace de description que de l’obtention d’équations déterminant la trajectoire suivie par un objet. Nous abordons aussi les transitions de phases comme situations paradigmatiques où les symétries d’un système changent. Ceci nous amène à proposer que les objets biologiques (organismes, cellules) sont caractérisés par une instabilité de leurs symétries théoriques. Les objets prennent alors un sens différent de celui qu’ils ont en physique : ils font preuve de variabilité et sont fondamentalement historiques. Ceci n’empêche pas la présence d’éléments de stabilité chez le vivant, mais les symétries biologiques prennent un sens différent des symétries fondamentales de la physique.",
     "author": [
@@ -2832,7 +2948,7 @@
     "type": "chapter"
   },
   {
-    "ISBN": "978-1-78405-287-4",
+    "ISBN": "9781784062873",
     "URL": "https://www.istegroup.com/fr/produit/sciences-de-la-vie-sciences-de-linformation/",
     "abstract": "Certains auteurs affirment que l’analyse des grandes bases de données pourrait remplacer la méthode scientifique. A contrario, nous argumentons que la bonne manière de faire fructifier ces nouveautés techniques est de les encadrer théoriquement. En biologie, en particulier, il nous semble urgent de développer une théorie des organismes.",
     "author": [
@@ -2875,15 +2991,16 @@
       ]
     },
     "note": "https://montevil.org/publications/chapters/2017-LM-Big-Data-Connaissance/",
+    "number-of-pages": "1382",
     "page": "233-238",
-    "publisher": "ISTE-Editions.",
-    "publisher-place": "Paris",
+    "publisher": "ISTE Editions Ltd.",
+    "publisher-place": "London",
     "status": "2017",
     "title": "Big Data et connaissance biologique",
     "type": "chapter"
   },
   {
-    "ISBN": "978-1-78405-287-4",
+    "ISBN": "9781784062873",
     "URL": "https://www.istegroup.com/fr/produit/sciences-de-la-vie-sciences-de-linformation/",
     "abstract": "Les organismes, qu’ils soient uni ou multi-cellulaires, sont des agents capables de créer leurs propres normes ; ils articulent continuellement leur capacité à créer de la nouveauté et de la stabilité, c’est-à-dire qu’ils combinent plasticité et robustesse. Ici, nous présentons et articulons brièvement les trois principes proposés récemment pour une théorie des organismes, à savoir : l’état par défaut, prolifération avec variation et motilité, le principe de variation et le principe d’organisation. Ces principes modifient profondément les observables biologiques et leur nature théorique par rapport aux cadres des théories physiques. Ce changement radical ouvre la possibilité d’ancrer la modélisation mathématique à des principes proprement biologiques.",
     "author": [
@@ -2928,9 +3045,10 @@
       ]
     },
     "note": "https://montevil.org/publications/chapters/2017-MLS-Siecle-Organisme/",
+    "number-of-pages": "1382",
     "page": "76-90",
-    "publisher": "ISTE-Editions.",
-    "publisher-place": "Paris",
+    "publisher": "ISTE Editions Ltd.",
+    "publisher-place": "London",
     "status": "2017",
     "title": "Du siècle du gène à celui de l’organisme : introduction à de nouvelles perspectives théoriques",
     "title-short": "Du siècle du gène à celui de l’organisme ",
@@ -2938,7 +3056,7 @@
   },
   {
     "DOI": "10.1007/s13752-014-0191-x",
-    "ISSN": "1555-5542",
+    "ISSN": "1555-5550",
     "abstract": "In this article, we apply the perspective of intraorganismal ecology by investigating a family of ecological models suitable to describe a gene therapy for a particular metabolic disorder, the adenosine deaminase deficiency. The gene therapy is modeled as the prospective ecological invasion of an organ (here, bone marrow) by genetically modified stem cells, which then operate niche construction in the cellular environment by releasing an enzyme they synthesize. We show that depending on the order chosen for the model (a choice that cannot be made on a priori assumptions), different kinds of dynamics are expected, possibly leading to different therapeutic strategies. This drives us to discuss several features of the extension of ecology to intraorganismal ecology.",
     "author": [
       {
@@ -2969,14 +3087,14 @@
     "keyword": "Adenosine deaminase deficiency, Ecosystem engineering, Gene therapy, Intraorganismal ecology, Nongenetic inheritance, Severe combined immunodeficiency",
     "note": "https://montevil.org/publications/articles/2014-PMF-Ecological-Models-Cells-Genes/",
     "page": "414-422",
-    "publisher": "Springer Netherlands",
+    "publisher": "Springer Science and Business Media LLC",
     "title": "Ecological Models for Gene Therapy. II. Niche Construction, Nongenetic Inheritance, and Ecosystem Perturbations",
     "type": "article-journal",
     "volume": "9"
   },
   {
     "DOI": "10.1007/s13752-014-0190-y",
-    "ISSN": "1555-5542",
+    "ISSN": "1555-5550",
     "abstract": "In this article, we discuss the perspective of intraorganismal ecology by investigating a family of ecological models. We consider two types of models. First-order models describe the population dynamics as being directly affected by ecological factors (here understood as nutrients, space, etc). They might be thought of as analogous to Aristotelian physics. Second-order models describe the population dynamics as being indirectly affected, the ecological factors now affecting the derivative of the growth rate (that is, the population acceleration), possibly through an impact on nongenetically inherited factors. Second-order models might be thought of as analogous to Galilean physics. In a companion article, we apply these ideas to a situation of gene therapy.",
     "author": [
       {
@@ -3003,14 +3121,15 @@
     "keyword": "Ecosystem engineering, Inertial dynamics, Intraorganismal ecology, Niche construction, Nongenetic inheritance",
     "note": "https://montevil.org/publications/articles/2014-PM-Ecological-Models-Cells/",
     "page": "401-413",
-    "publisher": "Springer Netherlands",
+    "publisher": "Springer Science and Business Media LLC",
     "title": "Ecological Models for Gene Therapy. I. Models for Intraorganismal Ecology",
     "type": "article-journal",
     "volume": "9"
   },
   {
     "DOI": "10.1007/978-3-642-35938-5_2",
-    "ISBN": "978-3-642-35937-8",
+    "ISBN": "9783642359385",
+    "ISSN": "2195-1942",
     "author": [
       {
         "family": "Longo",
@@ -3051,7 +3170,7 @@
     ],
     "container-title": "Science & Education",
     "id": "2017-Montevil-Garson-Functions",
-    "issue": "7-9",
+    "issue": "7–9",
     "issued": {
       "date-parts": [
         [
@@ -3061,10 +3180,9 @@
         ]
       ]
     },
-    "note": "https://montevil.org/publications/varia/2017-Montevil-Garson-Functions/",
+    "note": "Book review of A Critical Overview of Biological Functions, Justin Garson (2016).",
     "page": "1071-1073",
     "publisher": "Springer Science and Business Media LLC",
-    "title": "Philosophical Accounts of Biological Functions",
     "type": "article-journal",
     "volume": "26"
   },

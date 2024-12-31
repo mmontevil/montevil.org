@@ -9774,9 +9774,9 @@
   },
   "s-xie": {
     "shortname": "S Xie",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
+    "photo": "/assets/avatars/gs/GsIa5SIAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=GsIa5SIAAAAJ",
+    "gsid": "GsIa5SIAAAAJ",
     "affiliation": ""
   },
   "a-natsch": {
@@ -10536,5 +10536,75 @@
     "gsid": "LFJCv0cAAAAJ",
     "affiliation": "Associate Professor, University of Johannesburg",
     "fullName": "Benjamin Smart"
+  },
+  "r-bensaoud": {
+    "shortname": "R Bensaoud",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "j-mueller": {
+    "shortname": "J Müller",
+    "photo": "/assets/avatars/gs/PfSPvBAAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=PfSPvBAAAAAJ",
+    "gsid": "PfSPvBAAAAAJ",
+    "affiliation": ""
+  },
+  "p-koster": {
+    "shortname": "P Koster",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "pa-lane": {
+    "shortname": "PA Lane",
+    "photo": "/assets/avatars/gs/CZ_GzpAAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=CZ_GzpAAAAAJ",
+    "gsid": "CZ_GzpAAAAAJ",
+    "affiliation": ""
+  },
+  "m-faggian": {
+    "shortname": "M Faggian",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "w-cai": {
+    "shortname": "W Cai",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "q-yan": {
+    "shortname": "Q Yan",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "y-deng": {
+    "shortname": "Y Deng",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "y-guo": {
+    "shortname": "Y Guo",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "hm-cawood": {
+    "shortname": "HM Cawood",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
   }
 }
