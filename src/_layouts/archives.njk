@@ -13,8 +13,8 @@ css: ["page-archives.css"]
 {% set currentType = page.url | split("/") | offset(2) | first %}
 
 {% set currentYear = page.url | split("/") | offset(3) | first %}
-{% set regExpYear = r/^[0-9]{4}$/g %}
-{% if not regExpYear.test(currentYear) %}
+
+{% if not currentYear %}
   {% set currentYear = false %}
 {% endif %}
 

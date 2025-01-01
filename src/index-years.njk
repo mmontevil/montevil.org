@@ -10,10 +10,10 @@ eleventyComputed:
 {%- set currentType = page.url | split("/") | offset(2) | first -%}
 {%- set currentYear = page.url | split("/") | offset(3) | first -%}
 {{- currentType |capitalize-}}
-{%- set regExpYear = r/^[0-9]{4}$/g -%}
-{%- if not regExpYear.test(currentYear) -%}
+{%- set regExpYear = r/^[0-9]{4}/g -%}
+{%- if not currentYear -%}
   {%- set currentYear = false -%}
-  {%-else%} of {{currentYear-}}
+  {%-else%} {% if regExpYear.test(currentYear) -%} of {%- endif %}  {{currentYear-}}
 {%- endif -%} 
 {%- if currentLang ==="fr" %} in french
 {%- elif currentLang ==="en" %} in english

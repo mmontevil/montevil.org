@@ -6,13 +6,15 @@ const getFilteredCollection = require('../../_utils/get-collection');
 
 function makeDateFormatter(datePattern) {
   return function (date) {
-    //  if (date ==" Submitted"){
-    //      return (datePattern =='YYYY' ? " Submitted" : "Submitted2");
-    //  }else{
+      if (date =="2100-01-01"){
+          return  "Submitted" ;
+      }else{
+    console.log(date);
+     console.log(moment(date).format(datePattern));
     return moment(date).format(datePattern);
-    //}
+    }
   };
-}
+} 
 
 function generateItemsDateSet(items, dateFormatter) {
   const formattedDates = items.map((item) => {
@@ -34,7 +36,7 @@ const contentByDateString = (items, dateFormatter) => {
   ) {
     return Object.assign({}, collected, {
       // lowercase to match month directory page.url
-      [formattedDate.toLowerCase()]: getItemsByDate(
+      [formattedDate]: getItemsByDate(
         items,
         formattedDate,
         dateFormatter
@@ -153,9 +155,7 @@ collections[`allKeys`] = (collection) => {
             catSet.add('all/' + catt) &&
             catSet.add('all/' + catt + '/' + formatter(item.data.orderDate)) &&
             catSet.add(item.data.lang + '/archives') &&
-            catSet.add(
-              item.data.lang + '/archives/' + formatter(item.data.orderDate)
-            ) &&
+            catSet.add(item.data.lang + '/archives/' + formatter(item.data.orderDate)) &&
             catSet.add(item.data.lang + '/' + catt) &&
             catSet.add(
               item.data.lang + '/' + catt + '/' + formatter(item.data.orderDate)
