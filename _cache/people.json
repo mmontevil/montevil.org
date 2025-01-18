@@ -5,7 +5,7 @@
     "url": "https://montevil.org/",
     "gsid": "5eOo9hQAAAAJ",
     "affiliation": "Chargé de recherche CNRS, Centre Cavaillès, UAR 3608 République des savoirs ÉNS",
-    "fullName": "Maël Montévil"
+    "fullName": "Maël Montévil."
   },
   "am-soto": {
     "shortname": "AM Soto",
@@ -13,7 +13,7 @@
     "url": "https://gsbs.tufts.edu/facultyResearch/faculty/soto-ana/research",
     "gsid": "GS2coBkAAAAJ",
     "affiliation": "Professor, tufts University School of Medicine",
-    "fullName": "Ana M Soto"
+    "fullName": "Ana M. Soto"
   },
   "a-alombert": {
     "shortname": "A Alombert",
@@ -1037,7 +1037,8 @@
     "photo": "/assets/avatars/gs/K6rJQqcAAAAJ.jpg",
     "url": "http://www.cu/H_Mostafa",
     "affiliation": "أستاذ مساعد - قسم الفيزياء الحيوية - جامعة القاهرة",
-    "fullName": "Hamdy I.A. Mostafa"
+    "fullName": "Hamdy I.A. Mostafa",
+    "gsid": "K6rJQqcAAAAJ"
   },
   "a-zia": {
     "shortname": "A Zia",
@@ -10429,9 +10430,9 @@
   },
   "e-brown": {
     "shortname": "E Brown",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
+    "photo": "/assets/avatars/gs/T0ZJPeQAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=T0ZJPeQAAAAJ",
+    "gsid": "T0ZJPeQAAAAJ",
     "affiliation": ""
   },
   "st-vittadello": {
@@ -10607,6 +10608,41 @@
     "photo": "/assets/avatars/gs/dummy.jpg",
     "url": "",
     "gsid": "",
+    "affiliation": ""
+  },
+  "a-michaud": {
+    "shortname": "A Michaud",
+    "photo": "/assets/avatars/gs/s_yL_WIAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=s_yL_WIAAAAJ",
+    "gsid": "s_yL_WIAAAAJ",
+    "affiliation": ""
+  },
+  "jg-da-encarnacao-coutinho": {
+    "shortname": "JG da Encarnação Coutinho",
+    "photo": "/assets/avatars/gs/RwpYW0MAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=RwpYW0MAAAAJ",
+    "gsid": "RwpYW0MAAAAJ",
+    "affiliation": ""
+  },
+  "rd-beer": {
+    "shortname": "RD Beer",
+    "photo": "/assets/avatars/gs/F_J8QyAAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=F_J8QyAAAAAJ",
+    "gsid": "F_J8QyAAAAAJ",
+    "affiliation": ""
+  },
+  "la-campillos-moron": {
+    "shortname": "LÁ Campillos Morón",
+    "photo": "/assets/avatars/gs/dJ6GepgAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=dJ6GepgAAAAJ",
+    "gsid": "dJ6GepgAAAAJ",
+    "affiliation": ""
+  },
+  "j-marin": {
+    "shortname": "J Marin",
+    "photo": "/assets/avatars/gs/cqDaAlEAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=cqDaAlEAAAAJ",
+    "gsid": "cqDaAlEAAAAJ",
     "affiliation": ""
   }
 }

@@ -1,6 +1,25 @@
 [
     {
         "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2025-conception-milieux",
+        "fields": {
+            "title": "Quelques défis théoriques et épistémologiques entre biologie et conception orientée milieu",
+            "booktitle": "Séminaire PHITECO 2025 -- Concevoir au milieu des milieux : vivants, sociaux, techniques",
+            "location": "UTC • centre Benjamin Franklin • amphi FA 205",
+            "year": "2025",
+            "month": "01",
+            "day": "21",
+            "annonce": "true",
+            "language": "fr",
+            "abstract": "La biologie théorique contemporaine prend en charge et renouvelle certaines questions fondamentales : notamment la question de l’historicité et la question des niveaux d’organisation – ainsi que le sens accordé à ce dernier terme. Nous présenterons certaines avancées dans ce domaine qui recoupent les questionnements et les défis rencontrés dans la conception orientée milieu.",
+            "url": "https://sites.google.com/site/mineurphiteco/s%C3%A9minaires-et-ateliers/phiteco-2025-concevoir-au-milieu-des-milieux-vivants-sociaux-techniques",
+            "program": "PHITECO_2025_Livret.pdf",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "2024-workshop-closure",
         "fields": {
@@ -83,6 +102,7 @@
             "annonce": "true",
             "language": "en",
             "program": "programme-16-12-2024.pdf",
+            "abstract": "Depending on the theoretical and epistemological stance in biology, the relations between the biological and social change in nature. A reductionist stance, for example, genocentrism, focuses scientific investigations on a specific part of the organism - then, the social stands, at best and by definition, in the outskirts as far as biology is concerned. On the opposite, the perspective we are elaborating for reasons internal to biology considers biology at the crossroads of historical and relational epistemologies. The object's definition is never purely based on synchronic relations, like in physics. Instead, biological objects are historical and contextual. Cultural or social determinations can enter the biological picture, more or less strongly depending on specific situations. For example, taste is a phenomenon that involves specific biological structures (taste buds, olfactory receptors), and one may think that it is independent of society. Food pairing studies showed instead that the way to perform associations depends on the culture. Of course, historicity also means that other receptors can also creatively be recruited, which is the case with the capsaicin of chili pepper that triggers pain receptors.",
             "author": "Maël Montévil"
         }
     },
@@ -121,6 +141,7 @@
             "annonce": "true",
             "url": "https://enmi-conf.org/wp/enmi24/",
             "language": "fr",
+            "video": "https://media.iri.centrepompidou.fr/video/enmi/2024/enmi2024_2024-12-18_14-32-13.mp4",
             "author": "Maël Montévil"
         }
     },
