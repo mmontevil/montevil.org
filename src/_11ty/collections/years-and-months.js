@@ -9,8 +9,8 @@ function makeDateFormatter(datePattern) {
       if (date =="2100-01-01"){
           return  "Submitted" ;
       }else{
-    console.log(date);
-     console.log(moment(date).format(datePattern));
+    //console.log(date);
+     //console.log(moment(date).format(datePattern));
     return moment(date).format(datePattern);
     }
   };

@@ -39,7 +39,7 @@ function idToUrl(id) {
     res="/publications/articles/".concat(id)
   }
   if(res==""){
-    console.log(id);
+    //console.log(id);
   }
   return res;
 }
