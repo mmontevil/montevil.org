@@ -85,8 +85,8 @@
 
   <meta property="og:title" content="{{ opengraph.title }}" />
 <meta name="description" property="og:description" content="{{ ogDescription}}" />
-  <link rel="canonical" href="{{ pkg.homepage + page.url | lowerize }}"  />
-  <meta property="og:url" content="{{ pkg.homepage + page.url | lowerize }}" />
+  <link rel="canonical" href="{{ pkg.homepage + page.url | lower }}"  />
+  <meta property="og:url" content="{{ pkg.homepage + page.url | lower }}" />
 
   <meta property="og:type" content="{{ opengraph.type }}" />
   {% if opengraph.type == "article" %}

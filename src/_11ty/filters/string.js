@@ -29,7 +29,4 @@ module.exports = {
 
     return res;
   },
-  lowerize: (string) => {
-    return string.toLowerCase();
-  },
 };
