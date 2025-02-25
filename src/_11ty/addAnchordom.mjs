@@ -1,6 +1,6 @@
-const { DOMParser, parseHTML } =require('linkedom');
+import {DOMParser, parseHTML} from 'linkedom';
 
-function addAnchordom(html) {
+export default async function addAnchordom(html) {
   const document = new DOMParser().parseFromString(html, 'text/html');
   const selector = 'h2[id],h3[id],h4[id],h5[id],h6[id]';
   [...document.querySelectorAll(selector)].forEach((title) => {
@@ -19,4 +19,3 @@ function addAnchordom(html) {
 
 }
 
-module.exports = addAnchordom;

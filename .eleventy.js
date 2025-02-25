@@ -5,14 +5,11 @@ const { promises: fs } = require('fs');
 const syncFs = require('fs');
 const slugify = require('./src/_utils/slugify');
 const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
-//const slugify = require("slugify");
-//import slugify from '@sindresorhus/slugify';
-//const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
+
 
 const { writeToCache, readFromCache } = require('./src/_utils/cache');
 
 cachedPeople = readFromCache('_cache/people.json', (alt = {}));
-//const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
 
 module.exports = async function (eleventyConfig) {  
@@ -67,7 +64,7 @@ module.exports = async function (eleventyConfig) {
       });
     });
 
-  const purge = require('./src/_utils/purgecss');
+  const purge = require('./src/_11ty/purgecss');
   eleventyConfig.addNunjucksAsyncShortcode(
     'purgeCss',
     async function (content, cssFiles) {
@@ -75,7 +72,7 @@ module.exports = async function (eleventyConfig) {
     }
   );
 
-      const addAutoref = require('./src/_utils/addAutoref');
+      const addAutoref = require('./src/_11ty/addAutoref');
 	eleventyConfig.addShortcode("addAutoref", async function (content,bibM) {
 		return addAutoref(content,bibM); });
  
@@ -113,23 +110,11 @@ eleventyConfig.addPlugin(feedPlugin, {
  
   const embedYouTube = require("eleventy-plugin-youtube-embed");
   eleventyConfig.addPlugin(embedYouTube, {
-      lite: true
-      //options: {
-    /*  lite: {
-        css: {
-          path: '/assets/javascript/vendors/yt-lite/lite-yt-embed.css',
-        },
-        js: {
-          path: '/assets/javascript/vendors/yt-lite/lite-yt-embed.js',
-        },
-      },*/
-      //},
-  });
+      lite: true});
 
   eleventyConfig.addPlugin(require('eleventy-plugin-link_to'));
 
   const readingTime = require('eleventy-plugin-reading-time');
-
   eleventyConfig.addPlugin(readingTime);
 
   const pluginTOC = require('eleventy-plugin-nesting-toc');
@@ -274,32 +259,7 @@ eleventyConfig.addPlugin(feedPlugin, {
       imagesResponsiverTransform
     );
 
-    /*
-  const typesetPlugin = require('eleventy-plugin-typeset');
-  
-  eleventyConfig.addPlugin(
-  typesetPlugin({
-//    only: '.article-text', // Run only on HTML content within a certain CSS selector
-    disable: ['ligatures'], // Disable typesetting feature 'smallCaps'
-    // etc.
-  })
-);*//*
-     const options = {
-  disable: ['ligatures'] // array of typeset feature(s) to disable
-};
-const typeset = require('typeset');
-const typeseter = (content, outputPath) => {
-  if (outputPath && outputPath.endsWith('.html')) {
-    return typeset(content,options);
-  }
-  return content;
-};
-  eleventyConfig.addTransform(
-      'typeseter',
-      typeseter
-    ); 
-  
-  */
+
     const mathjax2 = require('./src/_11ty/mathjax.js');
 
     eleventyConfig.addTransform('mathjax2', mathjax2);

@@ -1,12 +1,12 @@
-const truncateHtml = require('truncate-html');
-const entities = require('entities');
-var replaceall = require('replaceall');
-const addAnchordom = require('../../_utils/addAnchordom');
+
+
+const addAnchor = async function (content) {
+      let addAnchordom = (await  import('../addAnchordom.mjs')).default;
+      return addAnchordom(content);
+}
 
 module.exports = {
-  addAnchor: (content) => {
-    return addAnchordom(content);
-  },
+  addAnchor,
   divRemove: (content) => {
     const regex = /(<div ((?!(>)).|\n)+>)|(<\/div>)/gm;
     return content.replace(regex, '');

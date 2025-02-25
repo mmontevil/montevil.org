@@ -1,14 +1,6 @@
 const fs = require('fs');
-//const linkifyUrls = require('linkify-urls');
-//import linkifyUrls from 'linkify-urls';
 const linkifyUrls = require("linkify-string");
-//const linkifyUrls = import("../../../node_modules/linkify-urls/index.js")
-//const linkifyUrls = require('../../_utils/linkify');
-
-//import linkifyUrls from 'linkify-urls';
-//const Cite = require('citation-js');
 const path = require('path');
-
 const template = String(fs.readFileSync('assets/chicago-author-date.csl'));
 let templateName = 'chicago';
 const Cite = require('citation-js');

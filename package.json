@@ -1,6 +1,6 @@
 {
   "name": "montevil.org",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "title": "Maël Montévil, research in theoretical biology",
   "description": "This is the personnal website of Maël Montévil.",
   "author": {
@@ -36,10 +36,7 @@
     "scholar": "node ./_scripts/scholar.js",
     "people": "node ./_scripts/updateAuthors.js",
     "bib": "(cd BIB; ./updatebib.sh)",
-    "update": "npm-run-all start0 bib sprite webmention",
     "updateall": "npm-run-all build  bib sprite webmention   build",
-    "sleep": "sleep 800",
-    "sleepshort": "sleep 120",
     "build:debug": "DEBUG=Eleventy* npm run build",
     "build:benchmark": "DEBUG=Eleventy:Benchmark* npm run build",
     "start:debug": "DEBUG=Eleventy* npm start",

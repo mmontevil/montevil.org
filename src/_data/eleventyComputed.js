@@ -361,11 +361,6 @@ module.exports = {
     }
     return res;
   },
-
-
-
-    
-
   citationSize: (data) => {
     let citationSize = 0;
     if (data.gsentry && data.gsentry.citing && data.gsentry.citing.length > 0)
@@ -447,9 +442,4 @@ module.exports = {
     }
     return res;
   },
-  /* colKey: {
-    lang: (data) => data.lang,
-    date: (data) => data.orderDate,
-    category: (data) => data.category,
-  },*/
 };

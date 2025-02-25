@@ -2,6 +2,24 @@
     {
         "objecttype": "entry",
         "entrytype": "inproceedings",
+        "entrykey": "2025-Canguilhem-Stiegler",
+        "fields": {
+            "title": "Extension du domaine de soin",
+            "booktitle": "Séminaire d'études canguilhémiennes",
+            "location": "Salle Cavaillès, ENS",
+            "year": "2025",
+            "month": "02",
+            "day": "13",
+            "annonce": "true",
+            "language": "fr",
+            "abstract": "Ce séminaire a pour vocation de constituer un espace de réflexion et de discussion autour des textes de l’œuvre publiée et des archives non publiées disponibles au fonds CAPHÉS. Creusant le sillon de la journée d’étude sur les inédits de Canguilhem, ces rencontres permettront une analyse détaillée et approfondie de l’ensemble de l’œuvre canguilhémienne, au-delà de la seule thèse princeps (Le Normal et le pathologique). Il s’agit à la fois de faire connaître et approfondir de manière graduelle l’œuvre canguilhémienne, tout en nouant des liens avec ses autres écrits et les pensées avec lesquelles il entre en dialogue ou lorsque ce n’est pas le cas recueillir les échos, que ses idées rencontrent chez d’autres penseurs et chez d’autres disciplines.",
+            "url": "https://www.ens.psl.eu/agenda/seminaire-d-etudes-canguilhemiennes/2025-03-13t170000",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
         "entrykey": "2025-conception-milieux",
         "fields": {
             "title": "Quelques défis théoriques et épistémologiques entre biologie et conception orientée milieu",

@@ -1,7 +1,6 @@
 const fs = require('fs');
 //const slugify = require('@sindresorhus/slugify');
 const slugify = require('../../_utils/slugify');
-const { writeToCache, readFromCache } = require('../../_utils/cache');
 
 const memoize = require('fast-memoize');
 

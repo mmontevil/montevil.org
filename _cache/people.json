@@ -1483,9 +1483,10 @@
   "p-andrea": {
     "shortname": "P Andrea",
     "photo": "/assets/avatars/gs/bSpGVPMAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=bSpGVPMAAAAJ",
+    "url": "http://www.unicampus.it/",
     "gsid": "bSpGVPMAAAAJ",
-    "affiliation": ""
+    "affiliation": "Università Campus Bio-Medico",
+    "fullName": "Andrea Pensotti"
   },
   "jl-natale": {
     "shortname": "JL Natale",
@@ -3707,7 +3708,8 @@
     "photo": "/assets/avatars/gs/7kDUFPsAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=7kDUFPsAAAAJ",
     "gsid": "7kDUFPsAAAAJ",
-    "affiliation": ""
+    "affiliation": "The Hong Kong University of Science and Technology",
+    "fullName": "Jacky W. Y. Lam"
   },
   "bz-tang": {
     "shortname": "BZ Tang",
@@ -6313,7 +6315,8 @@
     "photo": "/assets/avatars/gs/EzsbEKQAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=EzsbEKQAAAAJ",
     "gsid": "EzsbEKQAAAAJ",
-    "affiliation": ""
+    "affiliation": "Universidad de Salamanca",
+    "fullName": "Mariano Martín-Villuendas"
   },
   "dj-wolken": {
     "shortname": "DJ Wolken",
