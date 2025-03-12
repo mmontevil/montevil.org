@@ -4699,9 +4699,9 @@
   },
   "l-sganzerla": {
     "shortname": "L Sganzerla",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
+    "photo": "/assets/avatars/gs/pLcK9VEAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=pLcK9VEAAAAJ",
+    "gsid": "pLcK9VEAAAAJ",
     "affiliation": ""
   },
   "g-ellis": {
@@ -10979,9 +10979,9 @@
   },
   "h-sayama": {
     "shortname": "H Sayama",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
+    "photo": "/assets/avatars/gs/IwDCodEAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=IwDCodEAAAAJ",
+    "gsid": "IwDCodEAAAAJ",
     "affiliation": ""
   },
   "c-gershenson": {
@@ -11241,6 +11241,76 @@
     "photo": "/assets/avatars/gs/j3P0170AAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=j3P0170AAAAJ",
     "gsid": "j3P0170AAAAJ",
+    "affiliation": ""
+  },
+  "g-gandolfi": {
+    "shortname": "G Gandolfi",
+    "photo": "/assets/avatars/gs/S5aUk3kAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=S5aUk3kAAAAJ",
+    "gsid": "S5aUk3kAAAAJ",
+    "affiliation": ""
+  },
+  "f-mazzocchi": {
+    "shortname": "F Mazzocchi",
+    "photo": "/assets/avatars/gs/TUMB0rYAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=TUMB0rYAAAAJ",
+    "gsid": "TUMB0rYAAAAJ",
+    "affiliation": ""
+  },
+  "s-miravete": {
+    "shortname": "S Miravete",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "p-krajewski": {
+    "shortname": "P Krajewski",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "aud-de-sociologie": {
+    "shortname": "AUD DE SOCIOLOGIE",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "r-rainville": {
+    "shortname": "R RAINVILLE",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "p-chacko": {
+    "shortname": "P Chacko",
+    "photo": "/assets/avatars/gs/JGSjWtQAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=JGSjWtQAAAAJ",
+    "gsid": "JGSjWtQAAAAJ",
+    "affiliation": ""
+  },
+  "a-sreekumar": {
+    "shortname": "A Sreekumar",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "wyd-so": {
+    "shortname": "WYD So",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "e-triby": {
+    "shortname": "E Triby",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
     "affiliation": ""
   }
 }
