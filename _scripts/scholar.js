@@ -62,10 +62,21 @@ async function adsleep() {
 
         const documentInitialised = () => driver.executeScript("return 'initialised'");
 
-        await driver.get('https://scholar.google.fr/citations?user=5eOo9hQAAAAJ&hl=en&oi=ao'),
-            await driver.wait(() => documentInitialised(), 10000);
+        await driver.get('https://scholar.google.fr/citations?user=5eOo9hQAAAAJ&hl=en&oi=ao');
+        await driver.wait(() => documentInitialised(), 10000);
         await sleep(10000);
 
+        await driver.findElement(By.id('gs_hdr_mnu')).click();
+        await driver.get('https://scholar.google.fr/scholar_settings?hl=en');
+        await driver.wait(() => documentInitialised(), 10000);
+        await driver.findElement(By.id('gs_num-b')).click();       
+        await sleep(1000);       
+        await driver.findElement(By.xpath(("//a[@data-v='20']"))).click();       
+        await sleep(1000);
+        await driver.findElement(By.name('save')).click(); 
+        await sleep(1000);
+        await driver.get('https://scholar.google.fr/citations?user=5eOo9hQAAAAJ&hl=en&oi=ao');
+        await driver.wait(() => documentInitialised(), 10000);        
         // get publications
         let temp = true;
         while (temp) {

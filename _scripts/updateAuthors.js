@@ -35,6 +35,8 @@ let res = {};
         await driver.get('https://scholar.google.fr/citations?user=' + gsid),
           await driver.wait(() => documentInitialised(), 12000);
         await sleep(3110);
+        let titre = await driver.getTitle();
+        if (titre != "Error 404 (Not Found)!!1") {
         let urls = await driver.findElements(
           By.xpath("//div[@id='gsc_prf_ivh']/a")
         );
@@ -59,6 +61,7 @@ let res = {};
           slugifyString(entry.shortname)
         ].affiliation.replaceAll('"', '');
         //console.log(res[entry.shortname].affiliation)
+      }
       }
     }
   } finally {
