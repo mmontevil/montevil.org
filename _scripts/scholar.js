@@ -51,7 +51,7 @@ async function adsleep() {
                     ],
                 },
             })
-            .forBrowser('chrome').setChromeService(new chrome.ServiceBuilder(chromeDriverPath))
+            .forBrowser('chrome')
             .build();
         let res = [];
 

@@ -37,6 +37,49 @@
     "type": "chapter"
   },
   {
+    "DOI": "10.54195/technophany.19608",
+    "URL": "https://technophany.philosophyandtechnology.network/article/view/19608",
+    "abstract": "This is a transcribed and translated  a podcast of the interview concerning the 1st chapter of the book Biurquer: Il n’y a pas d’alternative (Bifurcate: There Is No Alternative) on the scientific, technological and political stakes of the notion of entropy. The discussion took place between Bernard Stiegler, Maël Montévil, Marie Chollat-Namy and Victor Chaix, on the 1st of July 2020.",
+    "author": [
+      {
+        "family": "Stiegler",
+        "given": "Bernard"
+      },
+      {
+        "family": "Montevil",
+        "given": "Maël"
+      },
+      {
+        "family": "Chaix",
+        "given": "Victor"
+      },
+      {
+        "family": "Chollat-Namy",
+        "given": "Marie"
+      }
+    ],
+    "container-title": "Technophany, A Journal for Philosophy and Technology",
+    "editor": [
+      {
+        "family": "White",
+        "given": "Joel"
+      }
+    ],
+    "id": "2025-Stiegler-Montevil-Entropy",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "page": "1-28",
+    "title": "Towards a new industrial revolution? Entropy and its challenges",
+    "type": "article-journal",
+    "volume": "2"
+  },
+  {
     "ISBN": "9782728808663",
     "URL": "https://presses.ens.psl.eu/georges-canguilhem.html",
     "abstract": "Quatre-vingts ans après, Le Normal et le Pathologique est une référence majeure en philosophie mais qu’en est-il en biologie et en médecine ? Plus précisément, quelle est aujourd’hui la pertinence des concepts de Canguilhem dans la compréhension du vivant et de l’action concernant le vivant ?",
@@ -310,6 +353,46 @@
     "type": "chapter"
   },
   {
+    "ISBN": "9781350329041",
+    "URL": "https://www.bloomsbury.com/uk/on-bernard-stiegler-9781350329034/",
+    "abstract": "What I love, and those whom I love, you, that is to say us in so far as we are capable of forming a we, all this I love, and I love them, and I love you infinitely (Bernard Steigler April 1952- August 2020). <br> When Bernard Stiegler writes ’I love you’ in the quote above, he openly provokes us to question or experience the meaning or contact of these words. He also invites us to question the relationship between a thinker’s life and their thought. For Stiegler, they were inextricable. His life was one that focused on friendship but not friendships at a purely social level but ones that produced philosophy, politics, and existential truths. <br> Bringing together scholars who knew Stiegler, including Shaj Mohan, Achille Mbembe, Divya Dwivedi, Peter Szendy, and Emily Apter, this volume provides an original - and personal - insight into his life and philosophy. Each piece gives a sense of the wide range of Stiegler’s work and how it affected the praxis of the philosopher in different parts of the world.",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "On bernard stiegler - philosopher of friendship",
+    "edition": "1st ed.",
+    "editor": [
+      {
+        "family": "Mohan",
+        "given": "Shaj"
+      },
+      {
+        "family": "Nancy",
+        "given": "Jean-Luc"
+      }
+    ],
+    "id": "2023-Montevil-Stiegler",
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          2,
+          8
+        ]
+      ]
+    },
+    "note": "Description based on publisher supplied metadata and other sources.",
+    "number-of-pages": "1169",
+    "publisher": "Bloomsbury Publishing Plc",
+    "publisher-place": "London",
+    "title": "Bernard stiegler: Friendship and fellowship",
+    "title-short": "Bernard stiegler",
+    "type": "chapter"
+  },
+  {
     "ISBN": "9781032358666",
     "abstract": "Physics has several concepts of randomness that build on the idea that the possibilities are pre-given. By contrast, an increasing number of theoretical biologists attempt to introduce new possibilities, that is to say, changes of possibility space – an idea already discussed by Bergson and that was not genuinely pursued scientifically until recently (except, in a sense, in systematics, i.e, the method to classify living beings). <br> Then, randomness operates at the level of possibilities themselves and is the basis of the historicity of biological objects. We emphasize that this concept of randomness is not only relevant when aiming to predict the future. Instead, it shapes biological organizations and ecosystems. As an illustration, we argue that a critical issue of the Anthropocene is the disruption of the biological organizations that natural history has shaped, leading to a collapse of biological possibilities.",
     "author": [
@@ -345,46 +428,6 @@
     },
     "publisher": "Taylor & Francis",
     "title": "How does randomness shape the living?",
-    "type": "chapter"
-  },
-  {
-    "ISBN": "9781350329041",
-    "URL": "https://www.bloomsbury.com/uk/on-bernard-stiegler-9781350329034/",
-    "abstract": "What I love, and those whom I love, you, that is to say us in so far as we are capable of forming a we, all this I love, and I love them, and I love you infinitely (Bernard Steigler April 1952- August 2020). <br> When Bernard Stiegler writes \"I love you\" in the quote above, he openly provokes us to question or experience the meaning or contact of these words. He also invites us to question the relationship between a thinker’s life and their thought. For Stiegler, they were inextricable. His life was one that focused on friendship but not friendships at a purely social level but ones that produced philosophy, politics, and existential truths. <br> Bringing together scholars who knew Stiegler, including Shaj Mohan, Achille Mbembe, Divya Dwivedi, Peter Szendy, and Emily Apter, this volume provides an original - and personal - insight into his life and philosophy. Each piece gives a sense of the wide range of Stiegler’s work and how it affected the praxis of the philosopher in different parts of the world.",
-    "author": [
-      {
-        "family": "Montévil",
-        "given": "Maël"
-      }
-    ],
-    "container-title": "On bernard stiegler - philosopher of friendship",
-    "edition": "1st ed.",
-    "editor": [
-      {
-        "family": "Mohan",
-        "given": "Shaj"
-      },
-      {
-        "family": "Nancy",
-        "given": "Jean-Luc"
-      }
-    ],
-    "id": "2023-Montevil-Stiegler",
-    "issued": {
-      "date-parts": [
-        [
-          2024,
-          2,
-          8
-        ]
-      ]
-    },
-    "note": "Description based on publisher supplied metadata and other sources.",
-    "number-of-pages": "1169",
-    "publisher": "Bloomsbury Publishing Plc",
-    "publisher-place": "London",
-    "title": "Bernard stiegler: Friendship and fellowship",
-    "title-short": "Bernard stiegler",
     "type": "chapter"
   },
   {
@@ -755,6 +798,7 @@
     "type": "article-journal"
   },
   {
+    "DOI": "10.1007/s10441-025-09496-2",
     "URL": "https://hal.archives-ouvertes.fr/hal-03574022",
     "abstract": "Biologists increasingly report anthropogenic disruptions of both organisms and ecosystems, suggesting that these processes are a fundamental, qualitative component of the Anthropocene crisis, seemingly generating disorder. Nonetheless, the notion of disruption has not yet been theorized as such in biology. To progress on this matter, we build on a specific case. Relatively minor temperature changes disrupt plant-pollinator synchrony, tearing apart the web of life. Understanding this phenomenon requires a specific rationale since models describing them use both historical and systemic reasoning. Specifically, history justifies that the system is initially in a narrow part of the possibility space where it is viable, and the disruption randomizes this configuration. Building on this rationale, we develop a formal framework inspired by Boltzmann’s entropy. This framework defines the randomization of the system and leads to analyze its consequences systematically. Notably, maximum randomization does not lead to the complete collapse of the ecosystem. Moreover, pollinators’ robustness mostly increases viability for low randomizations, while resilience enhances viability after high randomizations. Applying this framework to empirical networks, we show historical trends depending on latitude, providing further evidence of climate change’s impact on ecosystems via phenology changes. These results lead to an initial definition of disruption in ecology. When a specific historical outcome contributes to a system’s viability, disruption is the randomization of this outcome, decreasing this viability.",
     "author": [
@@ -3195,6 +3239,8 @@
     "note": "Book review of A Critical Overview of Biological Functions, Justin Garson (2016).",
     "page": "1071-1073",
     "publisher": "Springer Science and Business Media LLC",
+    "title": "Philosophical accounts of biological functions: Justin garson (2016) a critical overview of biological functions. Springer international publishing, dordrecht. ISBN: 978-3-319-32020-5, 113 pages, price: $54.99 (paperback)",
+    "title-short": "Philosophical accounts of biological functions",
     "type": "article-journal",
     "volume": "26"
   },

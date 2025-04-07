@@ -34,8 +34,12 @@ Cette séance est jumelée avec l'atelier Phibe "Philosophie, biologie, écologi
 ## Mercredi 12 mars 2025, Benedetta Piazzesi (CRH-EHESS, Paris)
 16h-18h, salle U203 (Émile BOREL), 29 rue d'Ulm, 2ième étage : *« La zootechnie entre thermodynamique et spécialisation des races : naissance d’une science industrielle »*
 
-## Mercredi 09 avril 2025, tbd
+## Mercredi 09 avril 2025, Auguste Nahas (IHPST, Université Paris panthéon Sorbonne)
 16h-18h, salle U203 (Émile BOREL), 29 rue d'Ulm, 2ième étage 
+: *« Equilibria, Optima, and Goals: The Explanatory Role of Consequences in Biology »*
+
+Abstract: Teleological explanations are those in which a phenomenon is explained by a consequence it brings about. The traditional objection to such explanations is that for a consequence to explain, it must be a cause; and citing future causes to explain present phenomena implies backward causation. A typical response to this problem is to show how, in an evolutionary context, the past consequences of a trait or behavior can explain its persistence into the present. In this talk I approach the problem differently. Focusing on non-causal explanations in biology, I argue that teleology is far from the only mode of explanation in which consequences explain. There are in fact several non-causal explanations, including equilibrium and optimality explanations, in which a consequence is cited as an explanation. This suggests that teleological explanations are only one of a larger class of consequence-explanations.
+
 
 ## Mercredi 21 mai 2025, Walter Fontana (Harvard University)
 16h-18h, salle U203 (Émile BOREL), 29 rue d'Ulm, 2ième étage : tbd
