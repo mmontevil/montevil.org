@@ -42,11 +42,11 @@ const runBeforeHook =async (image, document) => {
 
     if (imageSrc[0] === '/' && temp > 0) {
       // TODO: get "src/" from Eleventy config
-      imageDimensions = imageSizeFromFile('./src' + imageSrc);
+      imageDimensions =await  imageSizeFromFile('./src' + imageSrc);
       imageUrl = pkg.homepage + encodeURI(imageSrc);
     } else {
       // This is a relative URL
-      imageDimensions = imageSizeFromFile(srcPath + imageSrc);
+      imageDimensions =await imageSizeFromFile(srcPath + imageSrc);
       imageUrl = pkg.homepage + distPath + encodeURI(imageSrc);
     }
     if (image.getAttribute('width') === null) {
