@@ -7,7 +7,6 @@ const {
     until
 } = require('selenium-webdriver');
 const firefox = require('selenium-webdriver/firefox');
-const SeleniumStealth = require("selenium-stealth/selenium_stealth");
 const moment = require('moment');
 const {promises: fs} = require('fs');
 const syncFs = require('fs');
@@ -69,6 +68,8 @@ async function adsleep() {
         await driver.findElement(By.id('gs_hdr_mnu')).click();
         await driver.get('https://scholar.google.fr/scholar_settings?hl=en');
         await driver.wait(() => documentInitialised(), 10000);
+        await sleep(60000);       
+
         await driver.findElement(By.id('gs_num-b')).click();       
         await sleep(1000);       
         await driver.findElement(By.xpath(("//a[@data-v='20']"))).click();       

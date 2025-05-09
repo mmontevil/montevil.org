@@ -42,7 +42,7 @@ Abstract: Teleological explanations are those in which a phenomenon is explained
 
 
 ## Mercredi 21 mai 2025, Walter Fontana (Harvard University)
-16h-18h, salle U203 (Émile BOREL), 29 rue d'Ulm, 2ième étage : tbd
+16h-18h, salle U203 (Émile BOREL), 29 rue d'Ulm, 2ième étage : *« Generative system.»*
 Cette séance est jumelée avec l'atelier Phibe "Philosophie, biologie, écologie : interfaces épistémiques" organisé par Andrea Angelini (LLCP, Université Paris 8), Matteo Mossio (CNRS-IHPST) et Giuseppe Longo (ENS, CNRS). 
 
 ## Mercredi 28 mai 2025, Spyridon Koutroufinis (Institute of Philosophy of the Technical University, Berlin)
