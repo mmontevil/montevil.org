@@ -43,7 +43,7 @@ Contact:
 
 Affiliation: 
 * Researcher (Chargé de recherche) in [CNRS](http://www.cnrs.fr/){.p-org}{.h-card}
-* working in [Centre Cavaillès](https://republique-des-savoirs.fr/equipes/centre-cavailles/){.p-org}{.h-card}, [République des Savoirs UAR 3608](https://republique-des-savoirs.fr/){.p-org}{.h-card}, [École Normale Supérieure](https://www.ens.fr/){.p-org}{.h-card}
+* working in [Centre Cavaillès](https://republique-des-savoirs.fr/equipes/centre-cavailles/){.p-org}{.h-card}, [République des Savoirs UMR 8241](https://republique-des-savoirs.fr/){.p-org}{.h-card}, [École Normale Supérieure](https://www.ens.fr/){.p-org}{.h-card}
 
 
 Downloadable  <a class="" href=/assets/pdf/cv_Montevil_2019_en.pdf >CV {% icon "pdf", "pdf" %}</a>.
