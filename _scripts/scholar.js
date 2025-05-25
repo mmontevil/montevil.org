@@ -261,4 +261,5 @@ async function adsleep() {
                     }
                 }
             }
+        await driver.quit();
         })();

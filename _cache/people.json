@@ -4,7 +4,7 @@
     "photo": "/assets/avatars/m-montevil.jpg",
     "url": "https://montevil.org/",
     "gsid": "5eOo9hQAAAAJ",
-    "affiliation": "Chargé de recherche CNRS, Centre Cavaillès, UAR 3608 République des savoirs ÉNS",
+    "affiliation": "Chargé de recherche CNRS, Centre Cavaillès, UMR 8241 République des savoirs ÉNS",
     "fullName": "Maël Montévil."
   },
   "am-soto": {
@@ -1759,7 +1759,7 @@
     "photo": "/assets/avatars/gs/7vy-QhcAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=7vy-QhcAAAAJ",
     "gsid": "7vy-QhcAAAAJ",
-    "affiliation": "Affiliation inconnue",
+    "affiliation": "ZCNC Inc.",
     "fullName": "Marzieh Zare"
   },
   "h-van-eyghen": {
@@ -3385,7 +3385,8 @@
     "photo": "/assets/avatars/gs/dooEEOMAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=dooEEOMAAAAJ",
     "gsid": "dooEEOMAAAAJ",
-    "affiliation": ""
+    "affiliation": "John Innes Centre",
+    "fullName": "Melissa Sophie Tomkins"
   },
   "jx-zhou": {
     "shortname": "JX Zhou",
@@ -3649,7 +3650,7 @@
     "photo": "/assets/avatars/gs/5eOo9hQAAAAJ.jpg",
     "url": "https://montevil.org/",
     "gsid": "5eOo9hQAAAAJ",
-    "affiliation": "Chargé de recherche CNRS, Centre Cavaillès, UAR 3608 République des savoirs ÉNS",
+    "affiliation": "Chargé de recherche CNRS, Centre Cavaillès, UMR 8241 République des savoirs ÉNS",
     "fullName": "Maël Montévil"
   },
   "n-nunes-neto": {
@@ -5076,8 +5077,8 @@
     "photo": "/assets/avatars/gs/AwaZbzsAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=AwaZbzsAAAAJ",
     "gsid": "AwaZbzsAAAAJ",
-    "affiliation": "University of Melbourne",
-    "fullName": "Borjan (Boki) Milinkovic"
+    "affiliation": "Institute of Neuroscience (NeuroPSI) Paris-Saclay, CNRS",
+    "fullName": "Borjan Milinkovic"
   },
   "l-barnett": {
     "shortname": "L Barnett",
@@ -6591,7 +6592,7 @@
     "photo": "/assets/avatars/gs/B2w5R3wAAAAJ.jpg",
     "url": "http://annabelle.ballesta.fr/",
     "gsid": "B2w5R3wAAAAJ",
-    "affiliation": "Institut Curie, INSERM U900",
+    "affiliation": "Institut Curie, INSERM U1331",
     "fullName": "Annabelle Ballesta"
   },
   "a-bardin": {
@@ -8192,7 +8193,7 @@
     "photo": "/assets/avatars/gs/MIFEkRYAAAAJ.jpg",
     "url": "http://www.jimmyjia.com/",
     "gsid": "MIFEkRYAAAAJ",
-    "affiliation": "Visiting Scholar, George Washington University",
+    "affiliation": "Research Associate, Oxford Net Zero",
     "fullName": "Jimmy Jia"
   },
   "bj-maclennan": {
@@ -9735,8 +9736,8 @@
     "photo": "/assets/avatars/gs/ZQdnw8wAAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=ZQdnw8wAAAAJ",
     "gsid": "ZQdnw8wAAAAJ",
-    "affiliation": "Universidade Federal de Goiás",
-    "fullName": "Ellen Cristina Rivas Leonel"
+    "affiliation": "UCLouvain",
+    "fullName": "Ellen Rivas Leonel"
   },
   "b-stanic": {
     "shortname": "B Stanic",
@@ -10734,7 +10735,8 @@
     "photo": "/assets/avatars/gs/yvK28j8AAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=yvK28j8AAAAJ",
     "gsid": "yvK28j8AAAAJ",
-    "affiliation": ""
+    "affiliation": "Doutorando em Biotecnologia, Universidade Federal do Espírito Santo (UFES)",
+    "fullName": "Matheus Correia Casotti"
   },
   "ass-zetum": {
     "shortname": "ASS Zetum",
@@ -11796,16 +11798,18 @@
   "d-bostick": {
     "shortname": "D Bostick",
     "photo": "/assets/avatars/gs/ZCa-uEkAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=ZCa-uEkAAAAJ",
+    "url": "http://codesintelligence.com/",
     "gsid": "ZCa-uEkAAAAJ",
-    "affiliation": ""
+    "affiliation": "CODES Intelligence",
+    "fullName": "Devin Bostick"
   },
   "fj-varela": {
     "shortname": "FJ Varela",
     "photo": "/assets/avatars/gs/kEHKsr8AAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=kEHKsr8AAAAJ",
     "gsid": "kEHKsr8AAAAJ",
-    "affiliation": ""
+    "affiliation": "Director Research CNRS",
+    "fullName": "Francisco Varela"
   },
   "mc-wolfe": {
     "shortname": "MC WOLFE",
@@ -11817,9 +11821,10 @@
   "o-guerrero-rosado": {
     "shortname": "O Guerrero Rosado",
     "photo": "/assets/avatars/gs/alzNvtAAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=alzNvtAAAAAJ",
+    "url": "https://www.ru.nl/en/people/guerrero-rosado-o",
     "gsid": "alzNvtAAAAAJ",
-    "affiliation": ""
+    "affiliation": "Donders Institute for Brain, Cognition and Behaviour - Radboud University",
+    "fullName": "Oscar Guerrero Rosado"
   },
   "a-fernandez-amil": {
     "shortname": "A Fernandez Amil",
@@ -11868,7 +11873,8 @@
     "photo": "/assets/avatars/gs/5UHxHV8AAAAJ.jpg",
     "url": "https://scholar.google.fr/citations?user=5UHxHV8AAAAJ",
     "gsid": "5UHxHV8AAAAJ",
-    "affiliation": ""
+    "affiliation": "amsterdam univerisity",
+    "fullName": "Cristobal Bonelli"
   },
   "a-pavez": {
     "shortname": "A Pavez",
@@ -11880,16 +11886,18 @@
   "n-liberati": {
     "shortname": "N Liberati",
     "photo": "/assets/avatars/gs/6WIM5pwAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=6WIM5pwAAAAJ",
+    "url": "https://shss.sjtu.edu.cn/En/FacultyDetail/271?f=1&t=3",
     "gsid": "6WIM5pwAAAAJ",
-    "affiliation": ""
+    "affiliation": "Shanghai Jiao Tong University",
+    "fullName": "Nicola Liberati"
   },
   "a-pace-giannotta": {
     "shortname": "A Pace Giannotta",
     "photo": "/assets/avatars/gs/iaNZ_1kAAAAJ.jpg",
-    "url": "https://scholar.google.fr/citations?user=iaNZ_1kAAAAJ",
+    "url": "https://philpeople.org/profiles/andrea-s-pace-giannotta",
     "gsid": "iaNZ_1kAAAAJ",
-    "affiliation": ""
+    "affiliation": "Associate Professor, Niccolò Cusano University (Rome)",
+    "fullName": "Andrea Pace Giannotta"
   },
   "a-monga": {
     "shortname": "A Monga",

@@ -1,5 +1,47 @@
 [
   {
+    "DOI": "https://doi.org/10.1016/j.reprotox.2025.108929",
+    "ISSN": "0890-6238",
+    "URL": "https://www.sciencedirect.com/science/article/pii/S0890623825001005",
+    "abstract": "Endocrine disruptors alter mammary gland development, impair the ability to nourish offspring, and increase the cancer risk in animal models. Epidemiological studies reveal trends towards early mammary development, nursing problems, and breast cancer in younger women. Morphological changes in mouse postnatal mammary gland development are considered sensitive markers of endocrine disruption. While the mouse mammary gland is easily amenable to morphometric measurements from the fetal stage to full maturity, the rat mammary gland grows more conspicuously into the third dimension, hindering conventional morphometric analysis. However, since rats are more commonly used in international toxicological reproductive studies, it would be beneficial to include mammary gland whole-mount analysis in these studies. Using our quantitative software to perform computer-driven analysis of the rat mammary epithelium we examined the effects of gestational and postnatal exposure to ketoconazole, an antifungal medication that affects steroidogenesis, and to the estrogen diethylstilbestrol in the mammary glands of 6- and 22-day-old females. Both treatments produced effects at both ages; the epithelium was smaller and less complex in exposed animals compared to controls. Global analysis with the permutation test showed that morphological evaluation of the PND22 mammary gland is sensitive to endocrine disruption and possibly non-monotonic. In addition to revealing that ketoconazole altered the mammary gland structure, these results suggest that for future toxicology studies, day 22 (at weaning) is more suitable than day 6 because it showed significant measurements and trends. If the collection of mammary glands is added to existing international test methods, PND22 could be a relevant time point.",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      },
+      {
+        "family": "Schaeberle",
+        "given": "Cheryl"
+      },
+      {
+        "family": "Boberg",
+        "given": "Julie"
+      },
+      {
+        "family": "Christiansen",
+        "given": "Sofie"
+      },
+      {
+        "family": "Soto",
+        "given": "Ana M."
+      }
+    ],
+    "container-title": "Reproductive Toxicology",
+    "id": "2025-MSBCS-Quantitative-Endocrine-Disruption",
+    "issued": {
+      "date-parts": [
+        [
+          2025
+        ]
+      ]
+    },
+    "keyword": "Ketoconazole, Diethylstilbestrol, endocrine disruptors, perinatal exposure, mammary gland whole mount",
+    "page": "108929",
+    "title": "Quantitative analysis of endocrine disruption by ketoconazole and diethylstilbestrol in rat mammary gland development",
+    "type": "article-journal",
+    "volume": "135"
+  },
+  {
     "ISBN": "9782376620891",
     "abstract": "La dix-septième édition des Entretiens du Nouveau Monde Industriel apporte un éclairage théorique, historique et épistémologique sur le pouvoir du jeu. Cet ouvrage mobilise les apports théoriques des sciences du vivant, de la psychologie, de l’économie, de la philosophie ou des sciences du jeu, aussi bien que des comptes-rendus d’expérimentations de terrain.",
     "author": [

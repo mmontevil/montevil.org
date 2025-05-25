@@ -100,7 +100,7 @@
   {
     "title": "Biological organisation as closure of constraints",
     "citingLink": "https://scholar.google.fr/scholar?oi=bibs&hl=en&cites=5715512211526556221,3900630348746021571,14845969391047998323,14363413167387750092,8276048874602552248",
-    "citenumber": "357",
+    "citenumber": "358",
     "citing": [
       {
         "title": "Metabolic disorders in the transition period indicate that the dairy cows' ability to adapt is overstressed",
@@ -144,7 +144,7 @@
         "journal": "",
         "gid": "D9hh3ssRKMwJ",
         "pdflink": "https://www.paralimes.org/wp-content/uploads/2018/03/Stuart-Kauffman.pdf",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=0zCPDwAAQBAJ&oi=fnd&pg=PP1&ots=DIHTUXaC_O&sig=j1krr1RVvHu4Nv_1pnHbRd621A0"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=0zCPDwAAQBAJ&oi=fnd&pg=PP1&ots=DIHUN35FSS&sig=aWiFfVsUNcNCxN9IiR_oqx4_1c4"
       },
       {
         "title": "Biological autonomy",
@@ -174,7 +174,7 @@
         "journal": "",
         "gid": "eSdgTHpMnP0J",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=gz0HEAAAQBAJ&oi=fnd&pg=PP1&ots=HOptT96xID&sig=XhWKSORs4G9wgcoyPMLo6XpxKg0"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=gz0HEAAAQBAJ&oi=fnd&pg=PP1&ots=HOpuMh1AAH&sig=cqmkzd7vbkdtGYz2aGriveqc9Ic"
       },
       {
         "title": "[HTML] How organisms come to know the world: Fundamental limits on artificial general intelligence",
@@ -222,7 +222,7 @@
         "journal": "",
         "gid": "cr3vBuuo4rIJ",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=t5GKEAAAQBAJ&oi=fnd&pg=PA21&ots=FrdEkXFcNn&sig=er75RGyY0X-Wvd-7XPsS8Ai5F-U"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=t5GKEAAAQBAJ&oi=fnd&pg=PA21&ots=FrdFd3AfFr&sig=R5RZ4wqpVenYlpmrxGGRbdeo8Pk"
       },
       {
         "title": "Naturalizing relevance realization: why agency and cognition are fundamentally not computational",
@@ -361,6 +361,24 @@
         "mainlink": "https://royalsocietypublishing.org/doi/abs/10.1098/rsfs.2022.0063"
       },
       {
+        "title": "[HTML] The end of the genetic paradigm of cancer",
+        "authors": [
+          "S Huang",
+          "AM Soto",
+          "C Sonnenschein"
+        ],
+        "authorsid": [
+          "",
+          "GS2coBkAAAAJ",
+          "VmTCfroAAAAJ"
+        ],
+        "year": "2025",
+        "journal": "PLoS biology",
+        "gid": "TtjxTyi_-skJ",
+        "pdflink": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003052&fbclid=IwZXh0bgNhZW0CMTEAAR5m5Pa-6SPId3-uiGmMSHd93eXZWn1DEthJjzbe4a8yIM54fiU7KIH4u7SH0w_aem_ek5iGbllzR039O-p23Gnyw",
+        "mainlink": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003052&fbclid=IwZXh0bgNhZW0CMTEAAR5m5Pa-6SPId3-uiGmMSHd93eXZWn1DEthJjzbe4a8yIM54fiU7KIH4u7SH0w_aem_ek5iGbllzR039O-p23Gnyw"
+      },
+      {
         "title": "Constrained disorder principle-based variability is fundamental for biological processes: Beyond biological relativity and physiological regulatory networks",
         "authors": [
           "Y Ilan"
@@ -457,24 +475,6 @@
         "gid": "YdVdMCUwToAJ",
         "pdflink": "https://www.frontiersin.org/journals/ecology-and-evolution/articles/10.3389/fevo.2022.878729/pdf",
         "mainlink": "https://www.frontiersin.org/articles/10.3389/fevo.2022.878729/full"
-      },
-      {
-        "title": "[HTML] The end of the genetic paradigm of cancer",
-        "authors": [
-          "S Huang",
-          "AM Soto",
-          "C Sonnenschein"
-        ],
-        "authorsid": [
-          "",
-          "GS2coBkAAAAJ",
-          "VmTCfroAAAAJ"
-        ],
-        "year": "2025",
-        "journal": "PLoS biology",
-        "gid": "TtjxTyi_-skJ",
-        "pdflink": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003052&fbclid=IwZXh0bgNhZW0CMTEAAR5m5Pa-6SPId3-uiGmMSHd93eXZWn1DEthJjzbe4a8yIM54fiU7KIH4u7SH0w_aem_ek5iGbllzR039O-p23Gnyw",
-        "mainlink": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003052&fbclid=IwZXh0bgNhZW0CMTEAAR5m5Pa-6SPId3-uiGmMSHd93eXZWn1DEthJjzbe4a8yIM54fiU7KIH4u7SH0w_aem_ek5iGbllzR039O-p23Gnyw"
       },
       {
         "title": "[HTML] Answering Schrödinger's “What is life?”",
@@ -943,22 +943,6 @@
         "mainlink": "https://philpapers.org/rec/MEIPAB"
       },
       {
-        "title": "The identity of organisms in scientific practice: Integrating historical and relational conceptions",
-        "authors": [
-          "M Montévil",
-          "M Mossio"
-        ],
-        "authorsid": [
-          "5eOo9hQAAAAJ",
-          "tlUCk58AAAAJ"
-        ],
-        "year": "2020",
-        "journal": "Frontiers in Physiology",
-        "gid": "U5oc2OUXT_cJ",
-        "pdflink": "https://www.frontiersin.org/articles/10.3389/fphys.2020.00611/pdf",
-        "mainlink": "https://www.frontiersin.org/articles/10.3389/fphys.2020.00611/full"
-      },
-      {
         "title": "[PDF] From the organizational theory of ecological functions to a new notion of sustainability",
         "authors": [
           "CN El-Hani",
@@ -973,6 +957,22 @@
         "gid": "EyNnaMG9BKYJ",
         "pdflink": "https://library.oapen.org/bitstream/handle/20.500.12657/85058/1/978-3-031-38968-9.pdf#page=290",
         "mainlink": "https://library.oapen.org/bitstream/handle/20.500.12657/85058/1/978-3-031-38968-9.pdf#page=290"
+      },
+      {
+        "title": "The identity of organisms in scientific practice: Integrating historical and relational conceptions",
+        "authors": [
+          "M Montévil",
+          "M Mossio"
+        ],
+        "authorsid": [
+          "5eOo9hQAAAAJ",
+          "tlUCk58AAAAJ"
+        ],
+        "year": "2020",
+        "journal": "Frontiers in Physiology",
+        "gid": "U5oc2OUXT_cJ",
+        "pdflink": "https://www.frontiersin.org/articles/10.3389/fphys.2020.00611/pdf",
+        "mainlink": "https://www.frontiersin.org/articles/10.3389/fphys.2020.00611/full"
       },
       {
         "title": "Enactivism and the Hegelian stance on intrinsic purposiveness",
@@ -1253,6 +1253,20 @@
         "mainlink": "https://www.cambridge.org/core/elements/biological-organization/8F618A9F6912A03B3A2AC8D6D754D53D"
       },
       {
+        "title": "Disruption of biological processes in the anthropocene: The case of phenological mismatch",
+        "authors": [
+          "M Montévil"
+        ],
+        "authorsid": [
+          "5eOo9hQAAAAJ"
+        ],
+        "year": "2025",
+        "journal": "Acta Biotheoretica",
+        "gid": "M7pAflbILmYJ",
+        "pdflink": "https://ens.hal.science/hal-03574022/file/disruption-phenology13.pdf",
+        "mainlink": "https://link.springer.com/article/10.1007/s10441-025-09496-2"
+      },
+      {
         "title": "Cognitive Cells: From Cellular Senomic Spheres to Earth's Biosphere",
         "authors": [
           "F Baluška"
@@ -1295,20 +1309,6 @@
         "gid": "WXl3xuaBaWcJ",
         "pdflink": "https://hal.science/hal-02189255/document",
         "mainlink": "https://www.taylorfrancis.com/chapters/edit/10.4324/9781351066389-10/diachronic-identity-complex-life-cycles-james-difrisco-matteo-mossio"
-      },
-      {
-        "title": "Disruption of biological processes in the anthropocene: The case of phenological mismatch",
-        "authors": [
-          "M Montévil"
-        ],
-        "authorsid": [
-          "5eOo9hQAAAAJ"
-        ],
-        "year": "2025",
-        "journal": "Acta Biotheoretica",
-        "gid": "M7pAflbILmYJ",
-        "pdflink": "https://ens.hal.science/hal-03574022/file/disruption-phenology13.pdf",
-        "mainlink": "https://link.springer.com/article/10.1007/s10441-025-09496-2"
       },
       {
         "title": "Naturalized teleology: Cybernetics, organization, purpose",
@@ -1721,6 +1721,22 @@
         "mainlink": "https://link.springer.com/article/10.1007/s10539-023-09927-9"
       },
       {
+        "title": "Is the emergence of life an expected phase transition in the evolving universe?",
+        "authors": [
+          "S Kauffman",
+          "A Roli"
+        ],
+        "authorsid": [
+          "",
+          "RoAXDw0AAAAJ"
+        ],
+        "year": "2024",
+        "journal": "arXiv preprint arXiv:2401.09514",
+        "gid": "fAIYp-ee-LcJ",
+        "pdflink": "https://arxiv.org/pdf/2401.09514",
+        "mainlink": "https://arxiv.org/abs/2401.09514"
+      },
+      {
         "title": "Multiscalar temporality in human behaviour: A case study of constraint interdependence in psychotherapy",
         "authors": [
           "JM Loaiza",
@@ -1737,22 +1753,6 @@
         "gid": "oM74nqOccfoJ",
         "pdflink": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2020.01685/pdf",
         "mainlink": "https://www.frontiersin.org/articles/10.3389/fpsyg.2020.01685/full"
-      },
-      {
-        "title": "Is the emergence of life an expected phase transition in the evolving universe?",
-        "authors": [
-          "S Kauffman",
-          "A Roli"
-        ],
-        "authorsid": [
-          "",
-          "RoAXDw0AAAAJ"
-        ],
-        "year": "2024",
-        "journal": "arXiv preprint arXiv:2401.09514",
-        "gid": "fAIYp-ee-LcJ",
-        "pdflink": "https://arxiv.org/pdf/2401.09514",
-        "mainlink": "https://arxiv.org/abs/2401.09514"
       },
       {
         "title": "Functions, organization and etiology: a reply to Artiga and Martinez",
@@ -1862,7 +1862,7 @@
         "journal": "",
         "gid": "NZlHhl7DfIYJ",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=QeQ9EAAAQBAJ&oi=fnd&pg=PP1&ots=1a5-bx-zwr&sig=--YrNIhmLXy3fowzE_OtHda1IJM"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=QeQ9EAAAQBAJ&oi=fnd&pg=PP1&ots=1a504FWBys&sig=GLbtBuuI5HORFlsljRB5ChoMwgE"
       },
       {
         "title": "Human–Artificial Intelligence Systems: How Human Survival First Principles Influence Machine Learning World Models",
@@ -1974,7 +1974,7 @@
         "journal": "",
         "gid": "3OqCHqtWrZEJ",
         "pdflink": "https://files.osf.io/v1/resources/ds9mn/providers/osfstorage/64f88695989de62f0edd14f8?action=download&direct&version=3",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=iUkJEQAAQBAJ&oi=fnd&pg=PR9&ots=f8sezEinZu&sig=rIQ2QCRfC_uaaH3M6Crm64awlZU"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=iUkJEQAAQBAJ&oi=fnd&pg=PR9&ots=f8sfsMdp-v&sig=mLN0dteRVdOpOfv9maimJ-8y2uI"
       },
       {
         "title": "An organisational systems-biology view of viruses explains why they are not alive",
@@ -2016,7 +2016,7 @@
         "journal": "",
         "gid": "U0rHFu9MU-EJ",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=QJfEEAAAQBAJ&oi=fnd&pg=PT291&ots=HlypAoEZp-&sig=ovfAtZXelE2Sq4To0pxheJiQ0Ns"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=QJfEEAAAQBAJ&oi=fnd&pg=PT291&ots=Hlyqtwz-r0&sig=xfupioX7v5Imu6hTbVJTJUIihgs"
       },
       {
         "title": "[PDF] The third transition in science: beyond Newton and quantum mechanics–a statistical mechanics of emergence",
@@ -2123,6 +2123,20 @@
         "mainlink": "https://royalsocietypublishing.org/doi/abs/10.1098/rstb.2019.0329"
       },
       {
+        "title": "Naturalizing Physics Or, embedding physics in the historicity and materiality of the living",
+        "authors": [
+          "G Longo"
+        ],
+        "authorsid": [
+          ""
+        ],
+        "year": "2020",
+        "journal": "La Deleuziana-Online Journal Of Philosophy",
+        "gid": "4OZF5rTh0dEJ",
+        "pdflink": "https://hal.science/hal-02903742/document",
+        "mainlink": "https://hal.science/hal-02903742/"
+      },
+      {
         "title": "[PDF] Economics, Society, and the Pre-eminent Role of Values",
         "authors": [
           "G Ellis",
@@ -2137,20 +2151,6 @@
         "gid": "FZyB-w194gYJ",
         "pdflink": "https://www.global-solutions-initiative.org/wp-content/uploads/2025/03/GFRE-Noble-B-Economics-Society-and-the-Pre-eminent-Role-of-Values-2023_05_24_DN_GE.pdf",
         "mainlink": "https://www.global-solutions-initiative.org/wp-content/uploads/2025/03/GFRE-Noble-B-Economics-Society-and-the-Pre-eminent-Role-of-Values-2023_05_24_DN_GE.pdf"
-      },
-      {
-        "title": "Naturalizing Physics Or, embedding physics in the historicity and materiality of the living",
-        "authors": [
-          "G Longo"
-        ],
-        "authorsid": [
-          ""
-        ],
-        "year": "2020",
-        "journal": "La Deleuziana-Online Journal Of Philosophy",
-        "gid": "4OZF5rTh0dEJ",
-        "pdflink": "https://hal.science/hal-02903742/document",
-        "mainlink": "https://hal.science/hal-02903742/"
       },
       {
         "title": "Closure of constraints and the individuation of causal systems in biology",
@@ -2250,7 +2250,7 @@
         "journal": "Evolutionary causation",
         "gid": "JFfarqHCNusJ",
         "pdflink": "https://www.academia.edu/download/57655954/pocheville-darwinian-20181028.pdf",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=3baoDwAAQBAJ&oi=fnd&pg=PA265&ots=EF0zb0YiAr&sig=Ey6-7ARSLZ8E4OKCSAYvYxIkWGc"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=3baoDwAAQBAJ&oi=fnd&pg=PA265&ots=EF0A48TkBs&sig=LsrKMkMIWhycBdDLQJ5aF8V3WEc"
       },
       {
         "title": "The Hitchhiker's Guide to the Cancer Galaxy. How two critics missed their destination",
@@ -2312,7 +2312,7 @@
         "journal": "",
         "gid": "XHSkJrJ_wY0J",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=waQBEQAAQBAJ&oi=fnd&pg=PP1&ots=rMTKsWlXzD&sig=1Gj0xelB3ppuo3_h1CatVY6FzHU"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=waQBEQAAQBAJ&oi=fnd&pg=PP1&ots=rMTLl2gZAE&sig=kruvAXjicOiaWPuYUlX6Y82ZewI"
       },
       {
         "title": "Programming evolution: A crack in science",
@@ -2567,22 +2567,6 @@
         "mainlink": "https://ens.hal.science/hal-03933227/document"
       },
       {
-        "title": "[HTML] Start-ups as adaptable stable systems based on synchronous business models",
-        "authors": [
-          "S Fox",
-          "P Vahala"
-        ],
-        "authorsid": [
-          "",
-          ""
-        ],
-        "year": "2022",
-        "journal": "Systems",
-        "gid": "-0Wz7gUCxHgJ",
-        "pdflink": "https://www.mdpi.com/2079-8954/10/3/81",
-        "mainlink": "https://www.mdpi.com/2079-8954/10/3/81"
-      },
-      {
         "title": "An Open-Ended Approach to Understanding Local, Emergent Conservation Laws in Biological Evolution",
         "authors": [
           "AM Adams",
@@ -2613,6 +2597,22 @@
         "gid": "Q6OI90Ttf6kJ",
         "pdflink": "https://researchportal.vub.be/files/99318761/Evo_AutonomousChange_submitted.pdf",
         "mainlink": "https://researchportal.vub.be/files/99318761/Evo_AutonomousChange_submitted.pdf"
+      },
+      {
+        "title": "[HTML] Start-ups as adaptable stable systems based on synchronous business models",
+        "authors": [
+          "S Fox",
+          "P Vahala"
+        ],
+        "authorsid": [
+          "",
+          ""
+        ],
+        "year": "2022",
+        "journal": "Systems",
+        "gid": "-0Wz7gUCxHgJ",
+        "pdflink": "https://www.mdpi.com/2079-8954/10/3/81",
+        "mainlink": "https://www.mdpi.com/2079-8954/10/3/81"
       },
       {
         "title": "Random with respect to fitness or external selection? an important but often overlooked distinction",
@@ -3282,7 +3282,7 @@
         "journal": "",
         "gid": "uUUfyCJKSQ8J",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=6ynfDwAAQBAJ&oi=fnd&pg=PP2&ots=ypZ8B4kqGb&sig=g2hUI1RPJCwha_Ay9e-8N6o6pKY"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=6ynfDwAAQBAJ&oi=fnd&pg=PP2&ots=ypZ9ucgiH5&sig=uczGbBSBfFxf2EukiwPfdDAp8V0"
       },
       {
         "title": "[PDF] Theoretical analysis of the vascular system and its relation to Adrian Bejan's constructal theory",
@@ -3356,7 +3356,7 @@
         "journal": "Biomimetic and Biohybrid Systems",
         "gid": "ymoqjGUmuW0J",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=p5o3EQAAQBAJ&oi=fnd&pg=PA269&ots=6csSGJ-n76&sig=oVoj-E1owMATLkz5HB0OS03oOYU"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=p5o3EQAAQBAJ&oi=fnd&pg=PA269&ots=6csTzRXf80&sig=rQ8_Zxtxl7F7_gmolYBi_EccEhc"
       },
       {
         "title": "Mathematical modeling in the study of organisms and their parts",
@@ -3674,7 +3674,7 @@
         "journal": "",
         "gid": "N3D43P0dExoJ",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=mrsfEQAAQBAJ&oi=fnd&pg=PR5&ots=G8Oh-P4nJ1&sig=BXI8KIB4IxtRVDL4IgB3vpG3HDU"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=mrsfEQAAQBAJ&oi=fnd&pg=PR5&ots=G8OiUX0fK-&sig=QhutSXuq_cR16-Lox1vhlDYdhLk"
       },
       {
         "title": "Signs, dispositions, and semiotic scaffolding",
@@ -3730,7 +3730,7 @@
         "journal": "Current Thoughts on the Brain-Computer Analogy-All …",
         "gid": "YlebX9C2QiEJ",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=9Bq1EAAAQBAJ&oi=fnd&pg=PA42&ots=s9csjR84rv&sig=Ao5ncRbeJHp891Oh_yMRePoKnwY"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=9Bq1EAAAQBAJ&oi=fnd&pg=PA42&ots=s9ctcZ4Yst&sig=snB5webkNLRxfhivyejzlUhY1WI"
       },
       {
         "title": "[PDF] Complexity Theory in Biology and Technology: Broken Symmetries and Emergence",
@@ -4365,6 +4365,20 @@
         "mainlink": "https://arxiv.org/abs/1812.02578"
       },
       {
+        "title": "[PDF] The gap is relational",
+        "authors": [
+          "A Guénin—Carlut"
+        ],
+        "authorsid": [
+          "laZZC60AAAAJ"
+        ],
+        "year": "osf.io",
+        "journal": "",
+        "gid": "yq24aSj05gQJ",
+        "pdflink": "https://osf.io/3u4wp/download",
+        "mainlink": "https://osf.io/3u4wp/download"
+      },
+      {
         "title": "[HTML] Philosophical Aspects of Astrobiology Revisited",
         "authors": [
           "RE Zimmermann"
@@ -4392,7 +4406,7 @@
         "journal": "",
         "gid": "WvaKWctolvIJ",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=5hieDwAAQBAJ&oi=fnd&pg=IA2&ots=YVaONPapf6&sig=3YBtWHO0Nc2TciN6aJxxgInQOO8"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=5hieDwAAQBAJ&oi=fnd&pg=IA2&ots=YVaPGX6hg0&sig=tvwXDA0Gb8rO9fQEjoKwvOblSIo"
       },
       {
         "title": "How the naked mole-rat resists senescence: a constraints-based theory",
@@ -4498,7 +4512,7 @@
         "journal": "",
         "gid": "rnLnZuW5rQYJ",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=M731EAAAQBAJ&oi=fnd&pg=PT5&ots=Hq94tQIZdZ&sig=pR25VeEVH5QpVWpOSuIsVwWOMW0"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=M731EAAAQBAJ&oi=fnd&pg=PT5&ots=Hq95mYERdZ&sig=PVKloWa8gFKqV8zXTC32bu0CqE8"
       },
       {
         "title": "[PDF] Concrete lifeforms and cognitive archeology",
@@ -4593,6 +4607,20 @@
         "mainlink": "https://osf.io/preprints/x7yr4/"
       },
       {
+        "title": "La consideración teleológica de los organismos en la Crítica de la Facultad de juzgar de Kant",
+        "authors": [
+          "C Jáuregui"
+        ],
+        "authorsid": [
+          ""
+        ],
+        "year": "2025",
+        "journal": "Diánoia",
+        "gid": "SIe46lEFN8UJ",
+        "pdflink": "https://dianoia.filosoficas.unam.mx/index.php/dianoia/article/download/2109/2105",
+        "mainlink": "https://dianoia.filosoficas.unam.mx/index.php/dianoia/article/view/2109"
+      },
+      {
         "title": "Comment le hasard façonne le vivant?",
         "authors": [
           "M Montévil"
@@ -4620,7 +4648,7 @@
         "journal": "Enaction and Ecological …",
         "gid": "mXQH4H662bAJ",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=nCgZEAAAQBAJ&oi=fnd&pg=PA161&ots=Xe9mXcqJ9W&sig=FrX9raajhBAPN3dE-9Y2EiW_aGY"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=nCgZEAAAQBAJ&oi=fnd&pg=PA161&ots=Xe9nQkmB9W&sig=QrdoilrnJsrz3HQkERtspg7cVYU"
       },
       {
         "title": "[PDF] Emergence of organisms: An exploration of the boundaries between living organisms and robots",
@@ -5069,20 +5097,6 @@
         "gid": "APT2y3He4ocJ",
         "pdflink": "https://philarchive.org/archive/LEOSAO-3",
         "mainlink": "https://philpapers.org/rec/LEOSAO-3"
-      },
-      {
-        "title": "La consideración teleológica de los organismos en la Crítica de la Facultad de juzgar de Kant",
-        "authors": [
-          "C Jáuregui"
-        ],
-        "authorsid": [
-          ""
-        ],
-        "year": "Diánoia",
-        "journal": "",
-        "gid": "KQI7FU0FxJYJ",
-        "pdflink": "https://dianoia.filosoficas.unam.mx/index.php/dianoia/article/download/2109/2105",
-        "mainlink": "https://dianoia.filosoficas.unam.mx/index.php/dianoia/article/view/2109"
       },
       {
         "title": "[PDF] Systems and Organizations",
@@ -5571,7 +5585,7 @@
   {
     "title": "No entailing laws, but enablement in the evolution of the biosphere",
     "citingLink": "https://scholar.google.fr/scholar?oi=bibs&hl=en&cites=2664675988189654514,9693452709443669995,11678091597971341852,12511620932438053051,6167489915897988168,3098207149923676678",
-    "citenumber": "278",
+    "citenumber": "279",
     "citing": [
       {
         "title": "Theoretical principles for biology: Organization",
@@ -5623,7 +5637,7 @@
         "journal": "",
         "gid": "D9hh3ssRKMwJ",
         "pdflink": "https://www.paralimes.org/wp-content/uploads/2018/03/Stuart-Kauffman.pdf",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=0zCPDwAAQBAJ&oi=fnd&pg=PP1&ots=DIHTUXbxUQ&sig=8IA38-JA3EL0T-b-QzUEoawxtNs"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=0zCPDwAAQBAJ&oi=fnd&pg=PP1&ots=DIHUN36zTQ&sig=JBICuSZx8u_mTLp5zmPdwzB0cvs"
       },
       {
         "title": "[BOOK] Humanity in a creative universe",
@@ -5637,7 +5651,7 @@
         "journal": "",
         "gid": "E-d5QIhy6ewJ",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=4PdGCwAAQBAJ&oi=fnd&pg=PP1&ots=Geps3jFknW&sig=MLSL4bQbrcMWWVUqOpett16qSZY"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=4PdGCwAAQBAJ&oi=fnd&pg=PP1&ots=GeptYrAmmW&sig=ww0EHEBGeWR3Vx7aigsGoOZlDQA"
       },
       {
         "title": "Biological organisation as closure of constraints",
@@ -6276,20 +6290,6 @@
         "mainlink": "https://www.frontiersin.org/articles/10.3389/fphys.2020.00611/full"
       },
       {
-        "title": "Evolution beyond Newton, Darwin and entailing law",
-        "authors": [
-          "S Kauffman"
-        ],
-        "authorsid": [
-          ""
-        ],
-        "year": "2013",
-        "journal": "Beyond mechanism: putting life back into biology …",
-        "gid": "qIItWN1nyF4J",
-        "pdflink": "https://joaocamillopenna.wordpress.com/wp-content/uploads/2018/04/henning-e-scarfe-foreword-introduction.pdf",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=3VtosxAtq-EC&oi=fnd&pg=PA1&ots=FZ2wZFczqQ&sig=DLPZ-Qhv-z0vVR947jVWNX_TIpQ"
-      },
-      {
         "title": "Introduction: Organization as a scientific blind spot",
         "authors": [
           "M Mossio"
@@ -6302,6 +6302,20 @@
         "gid": "F6M6d0ivQO4J",
         "pdflink": "https://link.springer.com/content/pdf/10.1007/978-3-031-38968-9_1.pdf",
         "mainlink": "https://link.springer.com/chapter/10.1007/978-3-031-38968-9_1"
+      },
+      {
+        "title": "Evolution beyond Newton, Darwin and entailing law",
+        "authors": [
+          "S Kauffman"
+        ],
+        "authorsid": [
+          ""
+        ],
+        "year": "2013",
+        "journal": "Beyond mechanism: putting life back into biology …",
+        "gid": "qIItWN1nyF4J",
+        "pdflink": "https://joaocamillopenna.wordpress.com/wp-content/uploads/2018/04/henning-e-scarfe-foreword-introduction.pdf",
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=3VtosxAtq-EC&oi=fnd&pg=PA1&ots=FZ2xSN7BqS&sig=1XScQyDJgrMwsJiW8KpY7VoD8Jk"
       },
       {
         "title": "The diffused evolutionary dynamics of morphological novelty",
@@ -6719,7 +6733,7 @@
         "journal": "",
         "gid": "3OqCHqtWrZEJ",
         "pdflink": "https://files.osf.io/v1/resources/ds9mn/providers/osfstorage/64f88695989de62f0edd14f8?action=download&direct&version=3",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=iUkJEQAAQBAJ&oi=fnd&pg=PR9&ots=f8sezEjg4y&sig=OwqTRdNzbI4vwgIaeFvA-Olnulk"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=iUkJEQAAQBAJ&oi=fnd&pg=PR9&ots=f8sfsMejYu&sig=YaMNUK4RxOn14FUsKQQjXbhD_hk"
       },
       {
         "title": "[PDF] The third transition in science: beyond Newton and quantum mechanics–a statistical mechanics of emergence",
@@ -7159,7 +7173,7 @@
         "journal": "Towards a theory of development",
         "gid": "QCgIqoOWs8sJ",
         "pdflink": "https://works.swarthmore.edu/cgi/viewcontent.cgi?article=1452&context=fac-biology",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=0jSTAwAAQBAJ&oi=fnd&pg=PA129&ots=S2pjLua1yX&sig=zd_tYRjibhevObkbFi5ogNoivzc"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=0jSTAwAAQBAJ&oi=fnd&pg=PA129&ots=S2pkEC53AV&sig=DTJoCS7IB_6cUBmg4InC0Zljq6w"
       },
       {
         "title": "Economic interactions that are beyond simulation",
@@ -7387,7 +7401,7 @@
         "journal": "",
         "gid": "0k0I2bMgsigJ",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=hZEVEQAAQBAJ&oi=fnd&pg=PT5&ots=CGoe27ISy4&sig=X3n7ysCG6qSfH0q-u__jJoyQ_Zc"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=hZEVEQAAQBAJ&oi=fnd&pg=PT5&ots=CGofXfDUz8&sig=n52cvmVn2Fwi4ctUJcQYJ1OPnAU"
       },
       {
         "title": "The common developmental road: tensions among centripetal and centrifugal dynamics",
@@ -7663,7 +7677,7 @@
         "journal": "",
         "gid": "hwYMhwBAvNsJ",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=PsdFEAAAQBAJ&oi=fnd&pg=PR9&ots=PXYVuzOJr9&sig=wpLTvsPm_YZUn0CYuGeK3QN0Tqk"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=PsdFEAAAQBAJ&oi=fnd&pg=PR9&ots=PXYWnHJLsb&sig=B8g7-zNDKbSysplDDaYRtRWJzfA"
       },
       {
         "title": "On the emergence of biology from chemistry: a discontinuist perspective from the point of view of stability and regulation",
@@ -8063,7 +8077,7 @@
         "journal": "",
         "gid": "O9JC-s-7YbAJ",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=GSlVEAAAQBAJ&oi=fnd&pg=PP1&ots=uIGZ44b1_z&sig=_R9has2Wu2tGKRr3jWnZNF4ssB4"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=GSlVEAAAQBAJ&oi=fnd&pg=PP1&ots=uIG_Zc63_C&sig=LlOztoIRk27fUdhiOrhAz4oLj2g"
       },
       {
         "title": "What drives the brain? Organizational changes, FEP and anti-entropy",
@@ -8574,20 +8588,6 @@
         "mainlink": "https://philpapers.org/rec/BOSPSA"
       },
       {
-        "title": "AVOIDING TECHNOLOGICAL MONOCULTURES AND DEVELOPING OPEN OUTCOMES SUPPORTING LIFELONG LEARNING LITERACIES",
-        "authors": [
-          "S Allen"
-        ],
-        "authorsid": [
-          ""
-        ],
-        "year": "2022",
-        "journal": "",
-        "gid": "s17ghu1VLDUJ",
-        "pdflink": "https://dt.athabascau.ca/jspui/bitstream/10791/378/10/AllenStephenThesis.pdf",
-        "mainlink": "https://dt.athabascau.ca/jspui/handle/10791/378"
-      },
-      {
         "title": "Cybernetic Materials for Theory of Intelligent Systems",
         "authors": [
           "A Monga"
@@ -8602,6 +8602,20 @@
         "mainlink": "https://journals.isss.org/index.php/jisss/article/view/4312"
       },
       {
+        "title": "AVOIDING TECHNOLOGICAL MONOCULTURES AND DEVELOPING OPEN OUTCOMES SUPPORTING LIFELONG LEARNING LITERACIES",
+        "authors": [
+          "S Allen"
+        ],
+        "authorsid": [
+          ""
+        ],
+        "year": "2022",
+        "journal": "",
+        "gid": "s17ghu1VLDUJ",
+        "pdflink": "https://dt.athabascau.ca/jspui/bitstream/10791/378/10/AllenStephenThesis.pdf",
+        "mainlink": "https://dt.athabascau.ca/jspui/handle/10791/378"
+      },
+      {
         "title": "The re-enchantment of humanity",
         "authors": [
           "SA Kauffman"
@@ -8613,7 +8627,7 @@
         "journal": "Awakening: Exploring Spirituality",
         "gid": "J-WAnNcAbWAJ",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=FEC9DwAAQBAJ&oi=fnd&pg=PA19&ots=y_VoPR4-rg&sig=gPiqAVBeYpkqTVBw9dHOHajr6mk"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=FEC9DwAAQBAJ&oi=fnd&pg=PA19&ots=y_VpIZ-1ql&sig=1jx1PQY3np4om7k2zJZeE3WH70Q"
       },
       {
         "title": "Times, Thickness and Relational Space",
@@ -8706,20 +8720,6 @@
         "mainlink": "https://www.researchgate.net/profile/Matthew-Harvey-7/publication/270759111_Making_sense_of_common_ground_Presupposition_joint_action_and_coordination_MASTER'S_THESIS/links/54b3f59d0cf28ebe92e446bc/Making-sense-of-common-ground-Presupposition-joint-action-and-coordination-MASTERS-THESIS.pdf"
       },
       {
-        "title": "Synecological Systems Theory: An Alternative Foundation for Economic Inquiry",
-        "authors": [
-          "A Devereaux"
-        ],
-        "authorsid": [
-          "us8DRLEAAAAJ"
-        ],
-        "year": "2020",
-        "journal": "",
-        "gid": "-lNQSLULXy0J",
-        "pdflink": "",
-        "mainlink": "https://search.proquest.com/openview/0278ca4aeed60efa36009a27b1d8757b/1?pq-origsite=gscholar&cbl=51922&diss=y"
-      },
-      {
         "title": "[PDF] Is the ecological redirection possible?",
         "authors": [
           "A GUÉNIN—CARLUT"
@@ -8748,18 +8748,18 @@
         "mainlink": "https://files.de-1.osf.io/v1/resources/3kyzt/providers/osfstorage/668c18a6a5387a073ba3cf7b?action=download&direct&version=3"
       },
       {
-        "title": "Commentary on “An evolutionary framework for cultural change: Selectionism versus communal exchange” by Liane Gabora",
+        "title": "Synecological Systems Theory: An Alternative Foundation for Economic Inquiry",
         "authors": [
-          "S Kauffman"
+          "A Devereaux"
         ],
         "authorsid": [
-          ""
+          "us8DRLEAAAAJ"
         ],
-        "year": "2013",
-        "journal": "Physics of Life Reviews",
-        "gid": "lb1VGowebFEJ",
+        "year": "2020",
+        "journal": "",
+        "gid": "-lNQSLULXy0J",
         "pdflink": "",
-        "mainlink": "https://ui.adsabs.harvard.edu/abs/2013PhLRv..10..154K/abstract"
+        "mainlink": "https://search.proquest.com/openview/0278ca4aeed60efa36009a27b1d8757b/1?pq-origsite=gscholar&cbl=51922&diss=y"
       },
       {
         "title": "The Dynamics of Plasticity",
@@ -8774,6 +8774,20 @@
         "gid": "EaAGku2dl5kJ",
         "pdflink": "",
         "mainlink": "https://www.nomos-elibrary.de/de/10.5771/9781538157961.pdf#page=74"
+      },
+      {
+        "title": "Commentary on “An evolutionary framework for cultural change: Selectionism versus communal exchange” by Liane Gabora",
+        "authors": [
+          "S Kauffman"
+        ],
+        "authorsid": [
+          ""
+        ],
+        "year": "2013",
+        "journal": "Physics of Life Reviews",
+        "gid": "lb1VGowebFEJ",
+        "pdflink": "",
+        "mainlink": "https://ui.adsabs.harvard.edu/abs/2013PhLRv..10..154K/abstract"
       },
       {
         "title": "Mark Solms' Project",
@@ -8900,6 +8914,20 @@
         "gid": "fa4Axj1AIa4J",
         "pdflink": "https://www.researchgate.net/profile/John-Verdon/publication/375519610_Toward_A_Wiser_Political_Economy_Research_Paper_-MA_-_Final_-Aug_-_2023_-_John_Verdon/links/654d3761ce88b87031d8b8f7/Toward-A-Wiser-Political-Economy-Research-Paper-MA-Final-Aug-2023-John-Verdon.pdf",
         "mainlink": "https://www.researchgate.net/profile/John-Verdon/publication/375519610_Toward_A_Wiser_Political_Economy_Research_Paper_-MA_-_Final_-Aug_-_2023_-_John_Verdon/links/654d3761ce88b87031d8b8f7/Toward-A-Wiser-Political-Economy-Research-Paper-MA-Final-Aug-2023-John-Verdon.pdf"
+      },
+      {
+        "title": "[PDF] The gap is relational",
+        "authors": [
+          "A Guénin—Carlut"
+        ],
+        "authorsid": [
+          "laZZC60AAAAJ"
+        ],
+        "year": "osf.io",
+        "journal": "",
+        "gid": "yq24aSj05gQJ",
+        "pdflink": "https://osf.io/3u4wp/download",
+        "mainlink": "https://osf.io/3u4wp/download"
       },
       {
         "title": "Physics of creation-Symmetry breaking,(en) active inference, and unfolding statespaces",

@@ -78,7 +78,7 @@ Downloadable   <a class="" href=/assets/pdf/cv_Montevil_2019_en.pdf >long CV {% 
 
  
 
-* ![CNRS](/assets/logos/CNRS.svg){.biglogo}{.left}![ENS](/assets/talks/ENS.png){.biglogo}{.left}{.darkFilter} I am a researcher (chargé de recherche) in [CNRS](http://www.cnrs.fr/){.p-org}{.h-card}, working in [Centre Cavaillès](https://republique-des-savoirs.fr/equipes/centre-cavailles/){.p-org}{.h-card}, [République des Savoirs UAR 3608](https://republique-des-savoirs.fr/){.p-org}{.h-card}, [École Normale Supérieure](https://www.ens.fr/){.p-org}{.h-card}.
+* ![CNRS](/assets/logos/CNRS.svg){.biglogo}{.left}![ENS](/assets/talks/ENS.png){.biglogo}{.left}{.darkFilter} I am a researcher (chargé de recherche) in [CNRS](http://www.cnrs.fr/){.p-org}{.h-card}, working in [Centre Cavaillès](https://republique-des-savoirs.fr/equipes/centre-cavailles/){.p-org}{.h-card}, [République des Savoirs UMR 8241](https://republique-des-savoirs.fr/){.p-org}{.h-card}, [École Normale Supérieure](https://www.ens.fr/){.p-org}{.h-card}.
 I work on the concept of <a href="/tags/disruption">disruption</a> in biology.
 I also continue to my work on the theoretical foundations of biology, especially biological historicity and organization, and their challenges for mathematization. 
 I will also touch on more general philosophical questions.{data-date="2021"}
