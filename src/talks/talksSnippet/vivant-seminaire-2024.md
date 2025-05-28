@@ -18,11 +18,19 @@ Contacter les organisateurs pour le lien de connection et/ou  s'inscrire sur la 
 16h-18h, salle U203 (Émile BOREL), 29 rue d'Ulm, 2ième étage : *« Vie, Autonomie, Dialectique »*
 Cette séance est jumelée avec l'atelier Phibe "Philosophie, biologie, écologie : interfaces épistémiques" organisé par Andrea Angelini (LLCP, Université Paris 8), Matteo Mossio (CNRS-IHPST) et Giuseppe Longo (ENS, CNRS). 
 
+![Enregistrement](https://savoirs.ens.fr/uploads/videos//diffusion/2024_10_16_mossio.mp4)
+
 ## Mercredi 13 novembre 2024, Giuseppe Longo (centre Cavaillès, RdS, CNRS )
 16h-18h, salle U203 (Émile BOREL), 29 rue d'Ulm, 2ième étage : *« Qu’est-ce qui cause quoi? (What causes what) »*
 
+![Enregistrement](https://savoirs.ens.fr/uploads/videos//diffusion/2024_11_13_longo.mp4)
+
+
 ## Mercredi 11 décembre 2024, Jean Lassègue (Centre Georg Simmel-EHESS-CNRS, Paris)
 16h-18h, salle  U209, 29 rue d'Ulm, 2ième étage : *« Une réflexion sémiotique a-t-elle un intérêt pour l'épistémologie de la biologie ? »*
+
+![Enregistrement](https://savoirs.ens.fr/uploads/videos//diffusion/2024_12_11_lassegue.mp4)
+
 
 ## Mercredi 15 janvier 2025, Nadine Peyrieras (MSC, CNRS and Paris 7)
 16h-18h, salle U209, 29 rue d'Ulm, 2ième étage 
@@ -30,6 +38,8 @@ Cette séance est jumelée avec l'atelier Phibe "Philosophie, biologie, écologi
 ## Mercredi 12 février 2025, Silvia De Monte (IBENS-CNRS, Paris)
 16h-18h, salle U203 (Émile BOREL), 29 rue d'Ulm, 2ième étage : *« Species equivalence in diversity : trait heterogeneity and populations dynamics »*
 Cette séance est jumelée avec l'atelier Phibe "Philosophie, biologie, écologie : interfaces épistémiques" organisé par Andrea Angelini (LLCP, Université Paris 8), Matteo Mossio (CNRS-IHPST) et Giuseppe Longo (ENS, CNRS). 
+![Enregistrement](https://savoirs.ens.fr/uploads/videos//diffusion/2025_02_12_de-monte.mp4)
+
 
 ## Mercredi 12 mars 2025, Benedetta Piazzesi (CRH-EHESS, Paris)
 16h-18h, salle U203 (Émile BOREL), 29 rue d'Ulm, 2ième étage : *« La zootechnie entre thermodynamique et spécialisation des races : naissance d’une science industrielle »*
