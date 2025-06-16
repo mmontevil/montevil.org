@@ -1,5 +1,27 @@
 [
   {
+    "URL": "https://www.iri.centrepompidou.fr/actualites/entretiens-du-nouveau-monde-industriel-preparatoires-2025/",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "Synthèse artificielle et contribution humaine : Quelle économie pour de nouveaux milieux des savoirs ?",
+    "id": "2025-ENMI-Prep",
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          16
+        ]
+      ]
+    },
+    "title": "De la fonction du processus de synthèse",
+    "type": "paper-conference"
+  },
+  {
     "URL": "https://www.ens.psl.eu/agenda/seminaire-d-etudes-canguilhemiennes/2025-03-13t170000",
     "abstract": "Ce séminaire a pour vocation de constituer un espace de réflexion et de discussion autour des textes de l’œuvre publiée et des archives non publiées disponibles au fonds CAPHÉS. Creusant le sillon de la journée d’étude sur les inédits de Canguilhem, ces rencontres permettront une analyse détaillée et approfondie de l’ensemble de l’œuvre canguilhémienne, au-delà de la seule thèse princeps (Le Normal et le pathologique). Il s’agit à la fois de faire connaître et approfondir de manière graduelle l’œuvre canguilhémienne, tout en nouant des liens avec ses autres écrits et les pensées avec lesquelles il entre en dialogue ou lorsque ce n’est pas le cas recueillir les échos, que ses idées rencontrent chez d’autres penseurs et chez d’autres disciplines.",
     "author": [
@@ -949,6 +971,35 @@
       ]
     },
     "title": "Jeux, gestes et savoirs",
+    "type": "book"
+  },
+  {
+    "URL": "https://republique-des-savoirs.fr/events/event/conference-the-concept-of-field-in-philosophy/",
+    "author": [
+      {
+        "family": "Dwivedi",
+        "given": "Divya"
+      },
+      {
+        "family": "Mohan",
+        "given": "Shaj"
+      },
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "id": "Paris-Seminar-2025",
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          5
+        ]
+      ]
+    },
+    "title": "The concept of field in philosophy",
     "type": "book"
   },
   {

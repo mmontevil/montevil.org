@@ -5090,9 +5090,9 @@
   },
   "o-carter": {
     "shortname": "O Carter",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
+    "photo": "/assets/avatars/gs/qxv59-AAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=qxv59-AAAAAJ",
+    "gsid": "qxv59-AAAAAJ",
     "affiliation": ""
   },
   "a-seth": {
@@ -11904,6 +11904,104 @@
     "photo": "/assets/avatars/gs/dummy.jpg",
     "url": "",
     "gsid": "",
+    "affiliation": ""
+  },
+  "d-robinsona": {
+    "shortname": "Д Робінсона",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "ab-rubina": {
+    "shortname": "АБ Рубіна",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "d-mari": {
+    "shortname": "Д Марі",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "p-twumasi": {
+    "shortname": "P Twumasi",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "r-watson": {
+    "shortname": "R Watson",
+    "photo": "/assets/avatars/gs/DBDLLYQAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=DBDLLYQAAAAJ",
+    "gsid": "DBDLLYQAAAAJ",
+    "affiliation": ""
+  },
+  "s-ongstad": {
+    "shortname": "S Ongstad",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "l-fierz": {
+    "shortname": "L Fierz",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "a-fabregas-tejeda": {
+    "shortname": "A Fábregas-Tejeda",
+    "photo": "/assets/avatars/gs/s1LT4ywAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=s1LT4ywAAAAJ",
+    "gsid": "s1LT4ywAAAAJ",
+    "affiliation": ""
+  },
+  "value-koppl": {
+    "shortname": "< _value> Koppl",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "roger-rkoppl-syr-edu": {
+    "shortname": "Roger rkoppl@ syr. edu",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "j-baedke": {
+    "shortname": "J Baedke",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "r-pincak": {
+    "shortname": "R Pinčák",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "k-kanjamapornkul": {
+    "shortname": "K Kanjamapornkul",
+    "photo": "/assets/avatars/gs/xRG1W4kAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=xRG1W4kAAAAJ",
+    "gsid": "xRG1W4kAAAAJ",
+    "affiliation": ""
+  },
+  "a-pigazzini": {
+    "shortname": "A Pigazzini",
+    "photo": "/assets/avatars/gs/40RqwM4AAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=40RqwM4AAAAJ",
+    "gsid": "40RqwM4AAAAJ",
     "affiliation": ""
   }
 }
