@@ -119,25 +119,25 @@ li.aa-Item div.aa-ItemDescription{color: var(--color-primary-darker-1);}
 
           {% if currentYear %}
           {% if currentType === "publications" or  currentType === "archives" %}
-            {% for item in collections[currentType +currentLang + 'ByYear'][currentYear] | limit(10) %}
-                {{ itemCard(item,numbers.numbers2) }}
+            {% for item in collections[currentType +currentLang + 'ByYear'][currentYear] | limit(20) %}
+                {{ itemCard(item,numbers.numbers2)| safe }}
             {% endfor %}
        </ol>       
-            {% if (collections[currentType  +currentLang + 'ByYear'][currentYear].length > 10) and (currentType=== "archives") %}
+            {% if (collections[currentType  +currentLang + 'ByYear'][currentYear].length > 20) and (currentType=== "archives") %}
               <p class= "wrap"><a href="#dates-menu">Filter by type to see more {{ currentType }} from year {{ currentYear }}.</a></p>
             {% endif %}
             {% else %}
             {% for item in collections[currentType +currentLang + 'ByYear'][currentYear]  %}
-                {{ itemCard(item,numbers.numbers2) }}
+                {{ itemCard(item,numbers.numbers2)  | safe}}
             {% endfor %}
       </ol>  
           {% endif %}
           {% else %}
-            {% for item in collections[currentType+currentLang ] | limit(10) %}
-                {{ itemCard(item,numbers.numbers2) }}
+            {% for item in collections[currentType+currentLang ] | limit(20) %}
+                {{ itemCard(item,numbers.numbers2) | safe}}
             {% endfor %}
         </ol>    
-            {% if collections[currentType+currentLang].length > 10 %}
+            {% if collections[currentType+currentLang].length > 20 %}
               <p class= "wrap"> <a href="#dates-menu">Filter by year to see more {{ currentType }}.</a></p>
             {% endif %}
           {% endif %}

@@ -1,6 +1,100 @@
 [
   {
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      },
+      {
+        "family": "Mossio",
+        "given": "Matteo"
+      },
+      {
+        "family": "Robert",
+        "given": "Anton"
+      },
+      {
+        "family": "Nahas",
+        "given": "Auguste"
+      }
+    ],
+    "container-title": "Pushing the boundaries: Agency, evolution, and emergence",
+    "id": "2025-pushing-boundaries",
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          29
+        ]
+      ]
+    },
+    "title": "Organization and variation as theoretical principles for biology",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://ishpssb2025.icbas.up.pt/",
+    "abstract": "Biologists often use the term disruption more or less informally; however, this notion is increasingly used to describe the effects of detrimental anthropogenic causes. We argue that disruptions are distinct from perturbations or, in ecology, from generic disturbances. We illustrate this with examples from ecology using the case of plant-pollinator networks and organismal biology with endocrine disruptors. Specifically, we argue that understanding disruptions requires the articulation of historical and relational reasoning. The object of disruption, such as endocrine regulation or seasonal synchrony between plants and pollinators, is a specific property coming from history that is disturbed in a new way, leading to a loss or degradation of this specificity. Moreover, initially, this specificity plays a specific relational role, typically a functional one. This role is lost or impaired by the disruption which explains the disorganization characteristic of disruptions. In our view, however, disruptions are normal processes in evolution. What is severely detrimental is the current accumulation of disruptions at a pace that exceeds living entities’ ability to overcome them.",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "ISHPSSB-2025, session: Concepts and principles for the new biology: Development, disruption and normalization",
+    "id": "2025-ISH",
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          21
+        ]
+      ]
+    },
+    "title": "Disruptions: A specific kind of disorganization",
+    "title-short": "Disruptions",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://ishpssb2025.icbas.up.pt/",
+    "abstract": "During the first 25 years of the 21st century, we witnessed a resurgence of Organicism. This process is characterized by the return of the organism as a central biological entity and the increasing investigation on purpose and normativity at this level.</br>Simultaneously, the issue of the vulnerabilities of living beings and their numerous disruptions is escalating in urgency. The need to comprehend these disruptions, and how living beings adapt to them, is pressing. Organicism, with its systemic approach to disruptions and its focus on organisms’ normativity, is the most suitable framework for this understanding.</br>In this session, we will:</br>1) explore the epistemological role played by the morphogenetic field concept in the studies on the etiology of tumors in the early 20th century and its resurgence in the organicist conception of cancer as development gone awry (presented by Claudia Gadaleta, Paris 1 Sorbonne Panthéon - IHPST, Paris, France),</br>2) argue that a properly fleshed-out concept of disruption describes the effects of a significant category of detrimental anthropogenic causes in organisms and ecosystems. Understanding disruptions requires articulating historical and relational reasoning, which is a hallmark of recent theoretical developments (presented by Maël Montévil, Centre Cavaillès, Ecole Normale Supérieure, Paris, France)</br>3) argue that disruption causes a loss of function. The organismal agency may overcome disruption by acquiring novel functions, a process we call normalization. We will discuss two examples: i) how young quadrupeds that lost the function of their forelimbs teach themselves to walk as bipeds, and ii) cancer, a disease usually perceived as irreversible but known to regress spontaneously by normalization (presented by Ana Soto, Tufts University, USA and Centre Cavaillès, Ecole Normale Supérieure, Paris, France).",
+    "author": [
+      {
+        "family": "Gadaleta",
+        "given": "Claudia"
+      },
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      },
+      {
+        "family": "Sonnenschein",
+        "given": "Carlos"
+      },
+      {
+        "family": "Soto",
+        "given": "Ana"
+      }
+    ],
+    "container-title": "ISHPSSB-2025",
+    "id": "2025-ISH-session",
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          21
+        ]
+      ]
+    },
+    "title": "Concepts and principles for the new biology: Development, disruption and normalization",
+    "title-short": "Concepts and principles for the new biology",
+    "type": "paper-conference"
+  },
+  {
     "URL": "https://www.iri.centrepompidou.fr/actualites/entretiens-du-nouveau-monde-industriel-preparatoires-2025/",
+    "abstract": "Biologists often use the term disruption more or less informally; however, this notion is increasingly used to describe the effects of detrimental anthropogenic causes. We argue that disruptions are distinct from perturbations or, in ecology, from generic disturbances. We illustrate this with examples from ecology using the case of plant-pollinator networks and organismal biology with endocrine disruptors. Specifically, we argue that understanding disruptions requires the articulation of historical and relational reasoning. The object of disruption, such as endocrine regulation or seasonal synchrony between plants and pollinators, is a specific property coming from history that is disturbed in a new way, leading to a loss or degradation of this specificity. Moreover, initially, this specificity plays a specific relational role, typically a functional one. This role is lost or impaired by the disruption which explains the disorganization characteristic of disruptions. In our view, however, disruptions are normal processes in evolution. What is severely detrimental is the current accumulation of disruptions at a pace that exceeds living entities’ ability to overcome them.",
     "author": [
       {
         "family": "Montévil",

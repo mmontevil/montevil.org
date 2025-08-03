@@ -9,7 +9,7 @@
 {% endif %}
 
   {% set content %}
-{{- talk.templateContent | excerpt | striptags | safe -}}
+{{- talk.data.abstract |safe  -}}
   {% endset %}
   {%if not (content==="")%}
   {% set content %}
@@ -28,7 +28,7 @@
     subtitle=subtitle,
     url = talk.url,
     illustration = talk.data.illustration,
-    content = content,
+    content = content |safe,
     meta = meta) }}
 {% endmacro %}
 
