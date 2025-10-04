@@ -1,12 +1,10 @@
 const pkg = require('../../package.json');
-pkg.homepage="https://montevil.org";
-//const {imageSize} = require('image-size');
-const { imageSizeFromFile } = require('image-size/fromFile')
+const imageSize = require('image-size');
 const markdownIt = require('markdown-it');
 const md = new markdownIt();
 const fs = require('fs');
 
-const runBeforeHook = async (image, document) => {
+const runBeforeHook = (image, document) => {
   let documentBody = document.querySelector('body');
   let srcPath = documentBody.getAttribute('data-img-src');
   // TODO: get "_site/" from config
@@ -43,11 +41,11 @@ const runBeforeHook = async (image, document) => {
 
     if (imageSrc[0] === '/' && temp > 0) {
       // TODO: get "src/" from Eleventy config
-      imageDimensions = await imageSizeFromFile('./src' + imageSrc);
+      imageDimensions =  imageSize('./src' + imageSrc);
       imageUrl = pkg.homepage + encodeURI(imageSrc);
     } else {
       // This is a relative URL
-      imageDimensions = await imageSizeFromFile(srcPath + imageSrc);
+      imageDimensions = imageSize(srcPath + imageSrc);
       imageUrl = pkg.homepage + distPath + encodeURI(imageSrc);
     }
     if (image.getAttribute('width') === null) {
