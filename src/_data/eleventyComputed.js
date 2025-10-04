@@ -323,14 +323,14 @@ module.exports = {
     var res = [];
     let title = data.title.toLowerCase();
     if (data.layout == 'publication') {
-      if (
+     /* if (
         slugifyString(title.toLowerCase()) ==
         slugifyString(
-          'Perspectives on Organisms: Biological time, symmetries and singularities'.toLowerCase()
+          'Perspectives on organisms: Biological time, symmetries and singularities'.toLowerCase()
         )
       ) {
         title = 'Perspectives on organisms';
-      }
+      }*/
 
       title = slugifyString(title.toLowerCase());
      /* let temp = 0;

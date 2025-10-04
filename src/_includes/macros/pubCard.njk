@@ -40,9 +40,9 @@
   {% set content %}
   {% if article.data.excerpt or article.data.abstract%}
   {% if article.data.excerpt %}
-    <p class="card__body p-summary">  {{article.data.excerpt}}   </p> 
+    <p class="card__body p-summary">  {{article.data.excerpt| safe}}   </p> 
     {%elif article.data.abstract%}
-     <p class="card__body p-summary">  {{article.data.abstract | truncate(300)}}   </p> 
+     <p class="card__body p-summary">  {{article.data.abstract |  safe}}   </p> 
  
 {% endif %}
 
@@ -89,6 +89,6 @@
     title = article.data.title,
     url = article.url,
     illustration = illustration,
-    content = content,
+    content = content|safe,
     meta = meta) }}
 {% endmacro %}

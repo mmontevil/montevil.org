@@ -1,10 +1,11 @@
 const pkg = require('../../package.json');
-const imageSize = require('image-size');
+//const {imageSize} = require('image-size');
+const { imageSizeFromFile } = require('image-size/fromFile')
 const markdownIt = require('markdown-it');
 const md = new markdownIt();
 const fs = require('fs');
 
-const runBeforeHook = (image, document) => {
+const runBeforeHook = async (image, document) => {
   let documentBody = document.querySelector('body');
   let srcPath = documentBody.getAttribute('data-img-src');
   // TODO: get "_site/" from config
@@ -41,11 +42,11 @@ const runBeforeHook = (image, document) => {
 
     if (imageSrc[0] === '/' && temp > 0) {
       // TODO: get "src/" from Eleventy config
-      imageDimensions =  imageSize('./src' + imageSrc);
+      imageDimensions = await imageSizeFromFile('./src' + imageSrc);
       imageUrl = pkg.homepage + encodeURI(imageSrc);
     } else {
       // This is a relative URL
-      imageDimensions = imageSize(srcPath + imageSrc);
+      imageDimensions = await imageSizeFromFile(srcPath + imageSrc);
       imageUrl = pkg.homepage + distPath + encodeURI(imageSrc);
     }
     if (image.getAttribute('width') === null) {

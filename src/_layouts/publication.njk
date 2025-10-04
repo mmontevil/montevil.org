@@ -4,7 +4,7 @@ upnav: toc-site
 css: ["page-text.css"]
 eleventyComputed:
     keyword : "{{ bibentry.keyword }}"
-    abstract : "{%- if bibentry.abstract -%}{{ bibentry.abstract | unprotect  | urlify | safe}}{%- endif -%}"
+    abstract : "{%- if bibentry.abstract -%}{{ bibentry.abstract  | safe}}{%- endif -%}"
     bibib: "src/assets/bib/{{page.fileSlug}}.bib"
     bibout: "/assets/bib/{{page.fileSlug}}.bib"
     pdfout: "/assets/pdf/{{page.fileSlug}}.pdf"
@@ -15,8 +15,6 @@ eleventyComputed:
     auteurs: "{%- for auth in bibentry.author -%}{%-if auth.given[0]-%}{%- authors auth.given[0]+' '+auth.family, '', people,true, nbAuteurs -%}{%-else-%}{{-auth.literal-}}{%-endif-%}{%- if loop.revindex >2 -%}, {%endif-%}{%- if loop.revindex ===2 %} & {%endif-%}{%- if loop.revindex ===1 %}.{%endif-%}{%-endfor-%}"
 ---
 
-
- 
  {# <div class="legibilityWidth wrap0all"> </div>#}
  
 {% if noAnchor %}

@@ -49,16 +49,19 @@ Cette séance est jumelée avec l'atelier Phibe "Philosophie, biologie, écologi
 : *« Equilibria, Optima, and Goals: The Explanatory Role of Consequences in Biology »*
 
 Abstract: Teleological explanations are those in which a phenomenon is explained by a consequence it brings about. The traditional objection to such explanations is that for a consequence to explain, it must be a cause; and citing future causes to explain present phenomena implies backward causation. A typical response to this problem is to show how, in an evolutionary context, the past consequences of a trait or behavior can explain its persistence into the present. In this talk I approach the problem differently. Focusing on non-causal explanations in biology, I argue that teleology is far from the only mode of explanation in which consequences explain. There are in fact several non-causal explanations, including equilibrium and optimality explanations, in which a consequence is cited as an explanation. This suggests that teleological explanations are only one of a larger class of consequence-explanations.
+![Enregistrement](https://savoirs.ens.fr/uploads/videos//diffusion/2025_04_09_nahas.mp4)
 
 
 ## Mercredi 21 mai 2025, Walter Fontana (Harvard University)
 16h-18h, salle U203 (Émile BOREL), 29 rue d'Ulm, 2ième étage : *« Generative systems.»*
 Cette séance est jumelée avec l'atelier Phibe "Philosophie, biologie, écologie : interfaces épistémiques" organisé par Andrea Angelini (LLCP, Université Paris 8), Matteo Mossio (CNRS-IHPST) et Giuseppe Longo (ENS, CNRS). 
+![Enregistrement](https://savoirs.ens.fr/uploads/videos//diffusion/2025_05_21_fontana.mp4)
 
 ## Mercredi 28 mai 2025, Spyridon Koutroufinis (Institute of Philosophy of the Technical University, Berlin)
 16h-18h, salle U203 (Émile BOREL), 29 rue d'Ulm, 2ième étage :  *« Can the Consideration of Organisms as Dynamic Physicochemical Systems Capture their Uniqueness? Biophilosophical Reflections on the processual Essence of Organisms. »*
 
 ABSTRACT: The aim of the lecture is to explore the limits of the reduction of organisms to dynamic physicochemical systems. This investigation is particularly necessary when systems biology and mechanistic descriptions of organismal processes are implicitly ascribed not only heuristic but also ontological relevance. To this end, I will attempt to demonstrate the limits of the *ontological* reduction of organisms to systems of formal mechanisms. By addressing the biophilosophical subject of the *essence* of the organism, I will claim that every organism constantly redetermines its individual essence. 
+![Enregistrement](https://savoirs.ens.fr/uploads/videos//diffusion/2025_05_28_koutroufinis.mp4)
 
 ## Mercredi 18 juin 2025, Tarja Knuuttila
 16h-18h, salle de reunion Cavaillès, 29 rue d'Ulm, 3ième étage.  *«Models as representations and artefacts»*

@@ -121,7 +121,15 @@ async function adsleep() {
             }
 
         }
+        await driver.get("https://scholar.google.fr/scholar?oi=bibs&hl=fr&cites=5715512211526556221,3900630348746021571,14845969391047998323"),
+        await driver.wait(() => documentInitialised(), 10000);
+        await sleep(30000);
+        await adsleep(); 
         //console.log(updatedList);
+        // update citations number 
+
+        
+        
         
         // browse publications
         for (pubIt in updatedList) {
@@ -142,10 +150,23 @@ async function adsleep() {
                 if (updatedList[pubIt].citenumber > 0) {
 
                     await driver.get(updatedList[pubIt].citingLink),
-                        await driver.wait(() => documentInitialised(), 10000);
+                    await driver.wait(() => documentInitialised(), 10000);
                     await sleep(15000 + Math.floor(Math.random() * 30000));
                     await adsleep();
                     
+                    headdd = await driver.findElement(By.xpath(("//div[@id='gs_ab_md']")));
+                    let auth0 = await headdd.getText();
+                    let numberava1 = parseInt(auth0.split(" ")[0]);
+                    let numberava = parseInt(auth0.split(" ")[1]);
+                    if (isNaN(numberava)){
+                      numberava =numberava1;
+                    }
+                    updatedList[pubIt].citenumber=numberava;
+                    console.log(numberava);
+                }
+            }
+            if ((targetNb > -1) && (res[targetNb].citenumber == updatedList[pubIt].citenumber)) {} else {
+                if ((updatedList[pubIt].citenumber > 0))  {
                     let res0 = []
                     let whiletest = true;
                     while (whiletest) {
@@ -249,10 +270,13 @@ async function adsleep() {
                     
                     testz=true;
                     if (res[targetNb].citing){
-                      if (res[targetNb].citing.length>publi.citing.length){
+                   /*   if (res[targetNb].citing.length!=publi.citing.length){
                         testz=false;
-                        console.log("****failed!***");
-                      }
+                      console.log("****failed!*** ");
+
+                      }*/
+                      console.log(updatedList[pubIt].title);
+                      console.log("orglist"+res[targetNb].citing.length+", newlist "+publi.citing.length+", targetnbr "+updatedList[pubIt].citenumber);
                     }
                     if(testz){
                       res[targetNb] = publi;
