@@ -1,4 +1,5 @@
 const pkg = require('../../package.json');
+pkg.homepage="https://montevil.org";
 //const {imageSize} = require('image-size');
 const { imageSizeFromFile } = require('image-size/fromFile')
 const markdownIt = require('markdown-it');

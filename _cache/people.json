@@ -5926,9 +5926,9 @@
   },
   "axs-dos-santos": {
     "shortname": "AXS Dos Santos",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
+    "photo": "/assets/avatars/gs/6UfvKyMAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=6UfvKyMAAAAJ",
+    "gsid": "6UfvKyMAAAAJ",
     "affiliation": ""
   },
   "p-liberali": {
@@ -12969,6 +12969,104 @@
     "photo": "/assets/avatars/gs/dummy.jpg",
     "url": "",
     "gsid": "",
+    "affiliation": ""
+  },
+  "cc-olsson": {
+    "shortname": "CC Olsson",
+    "photo": "/assets/avatars/gs/CuWXqtoAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=CuWXqtoAAAAJ",
+    "gsid": "CuWXqtoAAAAJ",
+    "affiliation": ""
+  },
+  "l-likavcana": {
+    "shortname": "L Likavcana",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "a-frankc": {
+    "shortname": "A Frankc",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "k-ninomiya": {
+    "shortname": "K Ninomiya",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "y-yasui": {
+    "shortname": "Y Yasui",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "l-han": {
+    "shortname": "L Han",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "t-uehara": {
+    "shortname": "T Uehara",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "t-nishimura": {
+    "shortname": "T Nishimura",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "t-lind": {
+    "shortname": "T Lind",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "l-dunder": {
+    "shortname": "L Dunder",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "mh-lejonklou": {
+    "shortname": "MH Lejonklou",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "pm-lind": {
+    "shortname": "PM Lind",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "s-cortes": {
+    "shortname": "S Cortés",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "c-eduardo": {
+    "shortname": "C Eduardo",
+    "photo": "/assets/avatars/gs/gyDMhsoAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=gyDMhsoAAAAJ",
+    "gsid": "gyDMhsoAAAAJ",
     "affiliation": ""
   }
 }
