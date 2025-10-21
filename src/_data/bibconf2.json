@@ -1,6 +1,24 @@
 [
     {
         "objecttype": "entry",
+        "entrytype": "proceedings",
+        "entrykey": "2025-spherical-cows",
+        "fields": {
+            "title": "Spherical cows and bipedal goats: perspectives on mathematical models in biology",
+            "location": "Amphi Jaurès, 29 rue d'Ulm, École Normale Supérieure",
+            "year": "2025",
+            "month": "11",
+            "day": "13",
+            "annonce": "true",
+            "language": "en",
+            "abstract": "This event aims to take a step back and reflect on everyday mathematical modeling. We aim to organize a discussion on the diversity of this practice in biology and the homologies in current models. We wish to center those discussions around two related problems. First, given that the general reference system of biology builds on a notion of novelty to classify living beings, how can we use mathematical structures (using predefined spaces of possibilities) to describe living beings while avoiding contradiction? Is it reasonable that many of these practices do not even consider the organization of the organisms? Second, if models can be considered as instruments that contribute to shaping scientific reasoning, is their inscription within broader theoretical frameworks (not) necessary? Are data-based approaches sufficient to understand the living, or should theoretical and methodological jumps be performed? Is the perspective of the National Research Council sound when it states that not all New Biologists are now, or will in the future be, biologists? How to take mathematics and modelling seriously and, at the same time, avoid the disruption of biological knowledge by the fetishization of those tools?",
+            "illustration": "affiche-spherical-cows.jpg",
+            "program": "program-spherical-cows.pdf",
+            "author": "Ruãn Batista and Maël Montévil and Anton Robert"
+        }
+    },
+    {
+        "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2025-ihpst-disruption",
         "fields": {

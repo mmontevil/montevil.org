@@ -10416,9 +10416,9 @@
   },
   "i-takashi": {
     "shortname": "I Takashi",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
+    "photo": "/assets/avatars/gs/el-aKSYAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=el-aKSYAAAAJ",
+    "gsid": "el-aKSYAAAAJ",
     "affiliation": ""
   },
   "mc-merat": {
@@ -11760,9 +11760,9 @@
   },
   "p-azadi": {
     "shortname": "P Azadi",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
+    "photo": "/assets/avatars/gs/lV2GaTEAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=lV2GaTEAAAAJ",
+    "gsid": "lV2GaTEAAAAJ",
     "affiliation": ""
   },
   "a-ghanbarzehi": {
@@ -13068,5 +13068,111 @@
     "url": "https://scholar.google.fr/citations?user=gyDMhsoAAAAJ",
     "gsid": "gyDMhsoAAAAJ",
     "affiliation": ""
+  },
+  "s-rout": {
+    "shortname": "S Rout",
+    "photo": "/assets/avatars/gs/SrrP4fcAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=SrrP4fcAAAAJ",
+    "gsid": "SrrP4fcAAAAJ",
+    "affiliation": ""
+  },
+  "s-stepney": {
+    "shortname": "S Stepney",
+    "photo": "/assets/avatars/gs/rD32w_EAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=rD32w_EAAAAJ",
+    "gsid": "rD32w_EAAAAJ",
+    "affiliation": ""
+  },
+  "c-micheli": {
+    "shortname": "C Micheli",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "r-prinz": {
+    "shortname": "R Prinz",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "pl-gentili": {
+    "shortname": "PL Gentili",
+    "photo": "/assets/avatars/gs/jMm_Na4AAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=jMm_Na4AAAAJ",
+    "gsid": "jMm_Na4AAAAJ",
+    "affiliation": ""
+  },
+  "am-proulx": {
+    "shortname": "AM PROULX",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "fc-darras": {
+    "shortname": "FC Darras",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "dg-quevedo": {
+    "shortname": "DG QUEVEDO",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "k-hudnall": {
+    "shortname": "K Hudnall",
+    "photo": "/assets/avatars/gs/oNqF8RIAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=oNqF8RIAAAAJ",
+    "gsid": "oNqF8RIAAAAJ",
+    "affiliation": ""
+  },
+  "d-goldgaber": {
+    "shortname": "D Goldgaber",
+    "photo": "/assets/avatars/gs/xhu1TjsAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=xhu1TjsAAAAJ",
+    "gsid": "xhu1TjsAAAAJ",
+    "affiliation": ""
+  },
+  "a-proulx": {
+    "shortname": "A Proulx",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "j-camp": {
+    "shortname": "J Camp",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "n-lettieri": {
+    "shortname": "N Lettieri",
+    "photo": "/assets/avatars/gs/cLEKn3kAAAAJ.jpg",
+    "url": "https://scholar.google.fr/citations?user=cLEKn3kAAAAJ",
+    "gsid": "cLEKn3kAAAAJ",
+    "affiliation": ""
+  },
+  "i-pica": {
+    "shortname": "I Pica",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "r-batista": {
+    "shortname": "R Batista",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": "",
+    "fullName": "Ruãn Batista"
   }
 }

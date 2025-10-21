@@ -1,12 +1,9 @@
-const chrome = require('selenium-webdriver/chrome');
-const chromeDriverPath = "/home/kamome/.local/share/undetected_chromedriver/undetected_chromedriver"
-const {
-    Builder,
-    By,
-    Key,
-    until
-} = require('selenium-webdriver');
-const firefox = require('selenium-webdriver/firefox');
+//const chrome = require('selenium-webdriver/chrome');
+//const chromeDriverPath = "/home/kamome/.local/share/undetected_chromedriver/undetected_chromedriver"
+//const {Builder,By,    Key,    until} = require('selenium-webdriver');
+//const firefox = require('selenium-webdriver/firefox');
+const {Builder,By,Key,until} = require('selenium-webdriver');
+
 const moment = require('moment');
 const {promises: fs} = require('fs');
 const syncFs = require('fs');
@@ -42,15 +39,7 @@ async function adsleep() {
 (async function example() {
         //initialize
         let driver = new Builder()
-            .withCapabilities({
-                'goog:chromeOptions': {
-                    excludeSwitches: [
-                        'enable-automation',
-                        'useAutomationExtension',
-                    ],
-                },
-            })
-            .forBrowser('chrome')
+            .forBrowser('firefox')
             .build();
         let res = [];
 
