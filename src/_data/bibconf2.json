@@ -1,6 +1,42 @@
 [
     {
         "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2025-SFS-systematique",
+        "fields": {
+            "title": "Le défi épistémologique de l'intégration entre la systématique et le reste de la biologie",
+            "booktitle": "Journées annuelles de la Société Française de Systématique",
+            "location": "salle Fourcade (tour 46-56, 5ᵉ étage, campus de Jussieu, Sorbonne Université",
+            "year": "2025",
+            "month": "12",
+            "day": "9",
+            "annonce": "true",
+            "url": "https://sfs.infosyslab.fr/",
+            "language": "en",
+            "abstract": "La systématique donne, de fait, le système de référence de la biologie permettant de désigner ses objets, mais cet état de fait manque d'une intégration conceptuelle, épistémologique et méthodologique. Des domaines comme la génétique des population, l'écologie théorique, la biologie moléculaire ou la biologie des systèmes, en effet, s'appuient sur les relations causales synchroniques chez les être vivants. Ceci est particulièrement clair lorsque l'on considère leurs modèles mathématiques, largement hérités de la physique pour ce qui est de leurs structures et de leurs épistémologies. Surmonter cet obstacle épistémologique suppose de repenser le cadre théorique de la biologie comme un cadre épistémologiquement hybride, entre cadre historique et cadre relationnelle et synchronique, et de développer une écriture théorique et des méthodes adaptées.",
+            "illustration": "Logo_SFS4-01.png",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
+        "entrytype": "inproceedings",
+        "entrykey": "2025-spherical-cows-epistemology",
+        "fields": {
+            "title": "Biology lies between historical and relational frameworks",
+            "location": "Amphi Jaurès, 29 rue d'Ulm, École Normale Supérieure",
+            "year": "2025",
+            "month": "11",
+            "day": "13",
+            "annonce": "true",
+            "language": "en",
+            "illustration": "affiche-spherical-cows.jpg",
+            "program": "program-spherical-cows.pdf",
+            "author": "Maël Montévil"
+        }
+    },
+    {
+        "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "2025-spherical-cows",
         "fields": {
@@ -31,8 +67,8 @@
             "annonce": "true",
             "url": "https://ihpst.pantheonsorbonne.fr/recherche/seminaires",
             "language": "en",
-            "illustration": "Université_Panthéon-Sorbonne_(depuis_janvier_2015).svg",
             "abstract": "Biologists often use the term \"disruption\" informally to describe the effects of detrimental anthropogenic causes. A proper concept of disruption should be distinct from perturbations or, in ecology, from generic disturbances. We illustrate this with examples from ecology, using the case of plant-pollinator networks, from organismal biology, with endocrine disruptors, and at the interface of psychological and cognitive development with digital media and young children. Specifically, we argue that understanding disruptions requires the articulation of historical and relational reasoning. The object of disruption, such as endocrine regulation or seasonal synchrony between plants and pollinators, is a specific property coming from history that is disturbed in a new, random way, leading to a loss or degradation of this specificity. Moreover, initially, this specificity plays a specific relational role, typically a functional one. This role is lost or impaired by the disruption, which explains the disorganization characteristic of disruptions. In our view, however, disruptions are a normal part of the evolutionary process. What is severely detrimental in the Anthropocene is the accumulation of disruptions at a pace that exceeds the ability of living entities to overcome them.",
+            "illustration": "Université_Panthéon-Sorbonne_(depuis_janvier_2015).svg",
             "author": "Maël Montévil"
         }
     },

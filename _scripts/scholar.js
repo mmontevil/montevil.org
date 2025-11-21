@@ -39,7 +39,7 @@ async function adsleep() {
 (async function example() {
         //initialize
         let driver = new Builder()
-            .forBrowser('firefox')
+            .forBrowser('chrome')
             .build();
         let res = [];
 

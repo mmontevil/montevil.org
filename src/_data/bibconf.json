@@ -1,5 +1,48 @@
 [
   {
+    "URL": "https://sfs.infosyslab.fr/",
+    "abstract": "La systématique donne, de fait, le système de référence de la biologie permettant de désigner ses objets, mais cet état de fait manque d’une intégration conceptuelle, épistémologique et méthodologique. Des domaines comme la génétique des population, l’écologie théorique, la biologie moléculaire ou la biologie des systèmes, en effet, s’appuient sur les relations causales synchroniques chez les être vivants. Ceci est particulièrement clair lorsque l’on considère leurs modèles mathématiques, largement hérités de la physique pour ce qui est de leurs structures et de leurs épistémologies. Surmonter cet obstacle épistémologique suppose de repenser le cadre théorique de la biologie comme un cadre épistémologiquement hybride, entre cadre historique et cadre relationnelle et synchronique, et de développer une écriture théorique et des méthodes adaptées.",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "Journées annuelles de la société française de systématique",
+    "id": "2025-SFS-systematique",
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          9
+        ]
+      ]
+    },
+    "title": "Le défi épistémologique de l’intégration entre la systématique et le reste de la biologie",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "id": "2025-spherical-cows-epistemology",
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          11,
+          13
+        ]
+      ]
+    },
+    "title": "Biology lies between historical and relational frameworks",
+    "type": "paper-conference"
+  },
+  {
     "abstract": "This event aims to take a step back and reflect on everyday mathematical modeling. We aim to organize a discussion on the diversity of this practice in biology and the homologies in current models. We wish to center those discussions around two related problems. First, given that the general reference system of biology builds on a notion of novelty to classify living beings, how can we use mathematical structures (using predefined spaces of possibilities) to describe living beings while avoiding contradiction? Is it reasonable that many of these practices do not even consider the organization of the organisms? Second, if models can be considered as instruments that contribute to shaping scientific reasoning, is their inscription within broader theoretical frameworks (not) necessary? Are data-based approaches sufficient to understand the living, or should theoretical and methodological jumps be performed? Is the perspective of the National Research Council sound when it states that not all New Biologists are now, or will in the future be, biologists? How to take mathematics and modelling seriously and, at the same time, avoid the disruption of biological knowledge by the fetishization of those tools?",
     "author": [
       {
