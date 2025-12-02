@@ -24,59 +24,18 @@ options.addArguments(
     '--no-sandbox',
     '--disable-gpu',
     '--window-size=1280,800',
-    '--start-maximized'
+    '--start-maximized',
+    '--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121 Safari/537.36'
 );
-// ---- Randomized Chrome Args per Session ----
-const randomUA = [
-    "Mozilla/5.0 ... Chrome/120 Safari/537.36",
-    "Mozilla/5.0 ... Chrome/121 Safari/537.36",
-    "Mozilla/5.0 ... Chrome/122 Safari/537.36"
-][Math.floor(Math.random()*3)];
-
-const randomWindow = [
-    "--window-size=1280,720",
-    "--window-size=1366,768",
-    "--window-size=1440,900",
-][Math.floor(Math.random()*3)];
-
-options.addArguments(`--user-agent=${randomUA}`);
-options.addArguments(randomWindow);
-
-if (Math.random() < 0.5) options.addArguments("--disable-gpu");
-if (Math.random() < 0.3) options.addArguments("--force-device-scale-factor=1");
-if (Math.random() < 0.3) options.addArguments("--force-device-scale-factor=2");
-
 const profilePath = path.join(process.cwd(), "chrome-profile");
 options.addArguments(`--user-data-dir=${profilePath}`);
 options.excludeSwitches(['enable-automation']);
 options.setUserPreferences({ 'credentials_enable_service': false });
 
-
-let scholarPageCount = 0;
 // ---- STEALTH PATCH ----
 async function applyStealth(driver) {
     await driver.executeScript(() => {
         Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
-        // ---- Hardware Fingerprint Randomization ----
-        Object.defineProperty(navigator, 'hardwareConcurrency', {
-          get: () => [2, 4, 6, 8][Math.floor(Math.random()*4)]
-          });
-        Object.defineProperty(navigator, 'deviceMemory', {
-          get: () => [4, 8, 16][Math.floor(Math.random()*3)]
-          });
-        Object.defineProperty(navigator, 'maxTouchPoints', {
-          get: () => 0
-          });
-        Object.defineProperty(screen, 'colorDepth', {
-          get: () => [24, 30][Math.floor(Math.random()*2)]
-          });
-        Object.defineProperty(screen, 'width', {
-          get: () => 1280 + Math.floor(Math.random()*200)
-          });
-        Object.defineProperty(screen, 'height', {
-          get: () => 720 + Math.floor(Math.random()*200)
-          });
-        
         window.navigator.chrome = { runtime: {} };
         const originalQuery = window.navigator.permissions.query;
         window.navigator.permissions.query = (parameters) =>
@@ -88,99 +47,20 @@ async function applyStealth(driver) {
     });
 }
 
-// ---- CAPTCHA DETECTION & WAIT ----
-async function isCaptchaPresent(driver) {
-    try {
-        // 1) Text-based detection (case-insensitive)
-        const texts = [
-            'unusual traffic',
-            'our systems have detected',
-            'please show you are not a robot',
-            'are you a robot'
-        ];
-        for (const t of texts) {
-            const nodes = await driver.findElements(By.xpath(`//*[contains(translate(normalize-space(text()), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), "${t}")]`));
-            if (nodes.length > 0) return true;
-        }
-
-        // 2) input field detection (common captcha input names/ids)
-        const captchaInputs = await driver.findElements(By.css("input#captcha, input[name*='captcha'], input[id*='captcha']"));
-        if (captchaInputs.length > 0) return true;
-
-        // 3) element/class/id detection
-        const captchaEls = await driver.findElements(By.css("[class*='captcha'], [id*='captcha']"));
-        if (captchaEls.length > 0) return true;
-
-        // 4) recaptcha iframe detection
-        const frames = await driver.findElements(By.css("iframe[src*='recaptcha'], iframe[src*='google.com/recaptcha']"));
-        if (frames.length > 0) return true;
-
-        return false;
-    } catch (e) {
-        console.log("Error during CAPTCHA presence check:", e);
-        // be conservative: if check fails, treat as no captcha
-        return false;
-    }
-}
-
-/**
- * If a CAPTCHA is detected, wait up to waitMs milliseconds for the user to solve it.
- * Polls every pollIntervalMs to check if CAPTCHA disappeared.
- * Returns true if solved within wait time, false otherwise.
- */
-async function waitForCaptchaSolve(driver, waitMs = 60000, pollIntervalMs = 5000) {
-    const present = await isCaptchaPresent(driver);
-    if (!present) return true; // no captcha
-
-    console.log(`⚠️ CAPTCHA detected. Please solve it in the opened browser. Waiting up to ${Math.round(waitMs/1000)}s...`);
-    const start = Date.now();
-    while (Date.now() - start < waitMs) {
-        await sleep(pollIntervalMs);
-        const still = await isCaptchaPresent(driver);
-        if (!still) {
-            console.log("✅ CAPTCHA solved — resuming.");
-            // small human-like pause before continuing
-            await adsleep(1500, 3000);
-            return true;
-        }
-        const elapsed = Math.round((Date.now() - start) / 1000);
-        console.log(`...still waiting (${elapsed}s)`);
-    }
-
-    console.log(`❌ CAPTCHA still present after ${Math.round(waitMs/1000)}s.`);
-    return false;
-}
-
-// ---- SAFE NAVIGATION WITH RETRIES (uses captcha logic) ----
+// ---- SAFE NAVIGATION WITH RETRIES ----
 async function safeGet(driver, url, retries = 3) {
     for (let attempt = 1; attempt <= retries; attempt++) {
         try {
             await adsleep(1500, 4500);
-
-            // occasional long human-like wait (low probability)
-            if (Math.random() < 0.12) {
-                const longWait = 15000 + Math.random() * 15000; // 15-30s
-                console.log(`Long human-like wait before navigating: ${Math.round(longWait/1000)}s`);
-                await sleep(longWait);
-            }
-
             await driver.get(url);
             await adsleep(2000, 5000);
             await applyStealth(driver);
-
-            // check captcha and wait for up to 60s if present
-            const solved = await waitForCaptchaSolve(driver, 60000, 5000);
-            if (!solved) {
-                // If you prefer to keep waiting indefinitely instead of throwing, change behavior here.
-                throw new Error('CAPTCHA not solved within 60s');
-            }
-
             return;
         } catch (err) {
-            console.log(`Attempt ${attempt} failed for URL: ${url} — ${err.message || err}`);
+            console.log(`Attempt ${attempt} failed for URL: ${url}`);
             if (attempt === retries) throw err;
-            const waitTime = 5000 + Math.random() * 5000;
-            console.log(`Waiting ${Math.round(waitTime)}ms before retrying...`);
+            let waitTime = 5000 + Math.random() * 5000;
+            console.log(`Waiting ${waitTime}ms before retrying...`);
             await sleep(waitTime);
         }
     }
@@ -192,8 +72,7 @@ async function findElementSafe(driver, locator, retries = 3) {
             const el = await driver.findElement(locator);
             return el;
         } catch (err) {
-            // locator is an object; for logging convert to string carefully
-            try { console.log(`Attempt ${attempt} failed to find element: ${locator.using || ''} ${locator.value || ''}`); } catch(e){ }
+            console.log(`Attempt ${attempt} failed to find element: ${locator}`);
             if (attempt === retries) throw err;
             let waitTime = 3000 + Math.random() * 4000;
             await sleep(waitTime);
@@ -263,18 +142,13 @@ async function findElementSafe(driver, locator, retries = 3) {
     }
 
     // PARSE CITATIONS WITH RETRIES
-    for (let pubIt in updatedList) { 
-
-            let targetNb = res.findIndex(r => r.title === updatedList[pubIt].title);
-            if (targetNb >= 0) res[targetNb].citenumber = res[targetNb].citing.length;
-            if (targetNb < 0 || res[targetNb].citenumber != updatedList[pubIt].citenumber) {
+    for (let pubIt in updatedList) {
+        let targetNb = res.findIndex(r => r.title === updatedList[pubIt].title);
+        if (targetNb >= 0) res[targetNb].citenumber = res[targetNb].citing.length;
+        if (targetNb < 0 || res[targetNb].citenumber != updatedList[pubIt].citenumber) {
             if (targetNb < 0) { res.push([]); targetNb = res.length - 1; }
             let publi = {};
             if (updatedList[pubIt].citenumber > 0) {
-              console.log("[CookieCleaner] Clearing cookies to break tracking…");
-              await driver.manage().deleteAllCookies();
-              await adsleep(4000, 7000);  // small delay after clearing
-            
                 await safeGet(driver, updatedList[pubIt].citingLink);
                 await driver.wait(() => documentInitialised(), 10000);
                 let headdd = await findElementSafe(driver, By.xpath("//div[@id='gs_ab_md']"));
@@ -288,9 +162,6 @@ async function findElementSafe(driver, locator, retries = 3) {
             let res0 = [];
             let whiletest = true;
             while (whiletest) {
-              
-
-                
                 let listpub = await driver.findElements(By.xpath("//div[@data-cid and @class='gs_r gs_or gs_scl']"));
                 for (let pub in listpub) {
                     let gid = await listpub[pub].getAttribute('data-cid');

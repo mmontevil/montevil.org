@@ -1,5 +1,49 @@
 [
   {
+    "URL": "https://enmi-conf.org/wp/enmi25/",
+    "abstract": "Nous analysons la fonction de la synthèse en partant de la production des connaissances en examinant ses opérations ainsi que ses dysfonctionnements contemporains. La montée d’un empirisme computationnel — fondé sur les protocoles standardisés, la production de données et la pression à publier — marginalise le travail théorique et empêche l’émergence de nouveaux cadres conceptuels. À partir du cas de la biologie, nous montrons que l’activité synthétique ne subsiste principalement que dans les articles de revue, nécessairement conservateurs, ce qui conduit à l’accumulation de contradictions et à la prolifération de métaphores et de concepts zombies. Nous identifions ensuite les conditions matérielles et organisationnelles de la synthèse, en mobilisant l’analogie des systèmes vasculaire et nerveux pour décrire l’intégration des processus locaux en unités globales cohérentes. Enfin, nous caractérisons la synthèse comme un processus anti-entropique, producteur de singularités fonctionnelles et garant d’une unité épistémique ; son érosion favorise le morcellement intellectuel et l’incohérence institutionnelle.",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "ENMI 2024 - la nouvelle écologie de l’industrie : Pour une bifurcation vers l’éco-technologie et les nouvelles localités industrielles",
+    "id": "2025-enmi",
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          16
+        ]
+      ]
+    },
+    "title": "De la fonction du processus de synthèse",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "Séminaire de la clinique contributive",
+    "id": "2025-clinique",
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          5
+        ]
+      ]
+    },
+    "title": "Disruptions et théorie de la récapitulation pour penser l’éducation",
+    "type": "paper-conference"
+  },
+  {
     "URL": "https://sfs.infosyslab.fr/",
     "abstract": "La systématique donne, de fait, le système de référence de la biologie permettant de désigner ses objets, mais cet état de fait manque d’une intégration conceptuelle, épistémologique et méthodologique. Des domaines comme la génétique des population, l’écologie théorique, la biologie moléculaire ou la biologie des systèmes, en effet, s’appuient sur les relations causales synchroniques chez les être vivants. Ceci est particulièrement clair lorsque l’on considère leurs modèles mathématiques, largement hérités de la physique pour ce qui est de leurs structures et de leurs épistémologies. Surmonter cet obstacle épistémologique suppose de repenser le cadre théorique de la biologie comme un cadre épistémologiquement hybride, entre cadre historique et cadre relationnelle et synchronique, et de développer une écriture théorique et des méthodes adaptées.",
     "author": [

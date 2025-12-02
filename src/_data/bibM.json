@@ -1,6 +1,6 @@
 [
   {
-    "DOI": "https://doi.org/10.1016/j.reprotox.2025.108929",
+    "DOI": "10.1016/j.reprotox.2025.108929",
     "ISSN": "0890-6238",
     "URL": "https://www.sciencedirect.com/science/article/pii/S0890623825001005",
     "abstract": "Endocrine disruptors alter mammary gland development, impair the ability to nourish offspring, and increase the cancer risk in animal models. Epidemiological studies reveal trends towards early mammary development, nursing problems, and breast cancer in younger women. Morphological changes in mouse postnatal mammary gland development are considered sensitive markers of endocrine disruption. While the mouse mammary gland is easily amenable to morphometric measurements from the fetal stage to full maturity, the rat mammary gland grows more conspicuously into the third dimension, hindering conventional morphometric analysis. However, since rats are more commonly used in international toxicological reproductive studies, it would be beneficial to include mammary gland whole-mount analysis in these studies. Using our quantitative software to perform computer-driven analysis of the rat mammary epithelium we examined the effects of gestational and postnatal exposure to ketoconazole, an antifungal medication that affects steroidogenesis, and to the estrogen diethylstilbestrol in the mammary glands of 6- and 22-day-old females. Both treatments produced effects at both ages; the epithelium was smaller and less complex in exposed animals compared to controls. Global analysis with the permutation test showed that morphological evaluation of the PND22 mammary gland is sensitive to endocrine disruption and possibly non-monotonic. In addition to revealing that ketoconazole altered the mammary gland structure, these results suggest that for future toxicology studies, day 22 (at weaning) is more suitable than day 6 because it showed significant measurements and trends. If the collection of mammary glands is added to existing international test methods, PND22 could be a relevant time point.",
@@ -31,7 +31,8 @@
     "issued": {
       "date-parts": [
         [
-          2025
+          2025,
+          8
         ]
       ]
     },
@@ -42,7 +43,8 @@
     "volume": "135"
   },
   {
-    "ISBN": "9782376620891",
+    "ISBN": "978‑2‑37662‑089‑1",
+    "URL": "https://cfeditions.com/jeux-gestes-savoirs/",
     "abstract": "La dix-septième édition des Entretiens du Nouveau Monde Industriel apporte un éclairage théorique, historique et épistémologique sur le pouvoir du jeu. Cet ouvrage mobilise les apports théoriques des sciences du vivant, de la psychologie, de l’économie, de la philosophie ou des sciences du jeu, aussi bien que des comptes-rendus d’expérimentations de terrain.",
     "author": [
       {
@@ -50,19 +52,20 @@
         "given": "Maël"
       }
     ],
-    "container-title": "Jeux, gestes et savoirs",
+    "collection-title": "Les entretiens du nouveau monde industriel (ENMI)",
+    "container-title": "Jeux, gestes & savoirs: Jouer, une puissance d’émancipation dans un monde de calcul",
     "editor": [
       {
-        "family": "Cormerais",
-        "given": "Franck"
+        "family": "Triclot",
+        "given": "Mathieu"
       },
       {
         "family": "Puig",
         "given": "Vincent"
       },
       {
-        "family": "Triclot",
-        "given": "Mathieu"
+        "family": "Cormerais",
+        "given": "Franck"
       }
     ],
     "id": "2024-Montevil-Jeu-Biologie",
@@ -70,13 +73,17 @@
       "date-parts": [
         [
           2024,
-          12,
-          1
+          11,
+          28
         ]
       ]
     },
+    "page": "286",
+    "publisher": "C&F Éditions",
+    "publisher-place": "Caen, France",
     "title": "Le vivant et le jeu",
-    "type": "chapter"
+    "type": "chapter",
+    "volume": "17"
   },
   {
     "DOI": "10.54195/technophany.19608",
@@ -323,6 +330,8 @@
     "type": "chapter"
   },
   {
+    "ISBN": "978-2-271-14455-3",
+    "URL": "https://www.cnrseditions.fr/catalogue/philosophie-et-histoire-des-idees/le-hasard/",
     "abstract": "La physique possède plusieurs concepts de hasard qui reposent néanmoins tous sur l’idée que les possibilités sont données d’avance. En revanche, un nombre croissant de biologistes théoriciens cherchent à introduire la notion de nouvelles possibilités, c’est-à-dire des modifications de l’espace des possibles - une idée déjà discutée par Bergson et qui n’a pas été véritablement poursuivie scientifiquement jusqu’à récemment (sauf, en un sens, dans la systématique, c’est-à-dire la méthode de classification des êtres vivants). <br> Alors, le hasard opère au niveau des possibilités elles-mêmes et est à la base de l’historicité des objets biologiques. Nous soulignons que ce concept de hasard n’est pas seulement pertinent lorsqu’on cherche à prédire l’avenir. Au contraire, il façonne les organisations biologiques et les écosystèmes. À titre d’illustration, nous soutenons qu’une question cruciale de l’Anthropocène est la disruption des organisations biologiques que l’histoire naturelle a structurées, conduisant à un effondrement des possibilités biologiques.",
     "author": [
       {
@@ -330,34 +339,37 @@
         "given": "Maël"
       }
     ],
-    "container-title": "Figures du hasard",
+    "container-title": "Le hasard. Littérature, arts, sciences, philosophie",
     "editor": [
       {
         "family": "Duprat",
         "given": "Anne"
       },
       {
-        "family": "Mcintosh-Varjabédian",
+        "family": "McIntosh‑Varjabédian",
         "given": "Fiona"
       },
       {
         "family": "Weber",
-        "given": "Anne-Gaëlle"
+        "given": "Anne‑Gaëlle"
       },
       {
         "family": "James",
         "given": "Alison"
-      },
-      {
-        "family": "Dwivedi",
-        "given": "Divya"
       }
     ],
     "id": "2023-Montevil-chance-hasard-biologie",
     "issued": {
-      "date-parts": []
+      "date-parts": [
+        [
+          2025,
+          4
+        ]
+      ]
     },
-    "publisher": "CNRS éditions",
+    "page": "505-516",
+    "publisher": "CNRS Éditions",
+    "publisher-place": "Paris, France",
     "title": "Comment le hasard façonne le vivant ?",
     "type": "chapter"
   },
@@ -435,7 +447,9 @@
     "type": "chapter"
   },
   {
+    "DOI": "10.4324/9781003329060-4",
     "ISBN": "9781032358666",
+    "URL": "https://www.routledge.com/Figures-of-Chance-II-Chance-in-Theory-and-Practice/Duprat-James/p/book/9781032358659",
     "abstract": "Physics has several concepts of randomness that build on the idea that the possibilities are pre-given. By contrast, an increasing number of theoretical biologists attempt to introduce new possibilities, that is to say, changes of possibility space – an idea already discussed by Bergson and that was not genuinely pursued scientifically until recently (except, in a sense, in systematics, i.e, the method to classify living beings). <br> Then, randomness operates at the level of possibilities themselves and is the basis of the historicity of biological objects. We emphasize that this concept of randomness is not only relevant when aiming to predict the future. Instead, it shapes biological organizations and ecosystems. As an illustration, we argue that a critical issue of the Anthropocene is the disruption of the biological organizations that natural history has shaped, leading to a collapse of biological possibilities.",
     "author": [
       {
@@ -443,7 +457,7 @@
         "given": "Maël"
       }
     ],
-    "container-title": "Figures of chance II chance in theory and practice",
+    "container-title": "Figures of chance II chance: In theory and practice",
     "editor": [
       {
         "family": "Duprat",
@@ -452,10 +466,6 @@
       {
         "family": "James",
         "given": "Alison"
-      },
-      {
-        "family": "Dwivedi",
-        "given": "Divya"
       }
     ],
     "id": "2023-Montevil-chance-randomness-biology",
@@ -468,11 +478,14 @@
         ]
       ]
     },
-    "publisher": "Taylor & Francis",
+    "page": "477-531",
+    "publisher": "Routledge",
+    "publisher-place": "London / New York",
     "title": "How does randomness shape the living?",
     "type": "chapter"
   },
   {
+    "DOI": "10.5040/9781350410473",
     "ISBN": "1350410446",
     "URL": "https://www.bloomsbury.com/uk/bernard-stiegler-9781350410459/",
     "abstract": "The program Plaine Commune, contributive learning territory, started in late 2016. It emerged from the theoretical work of Bernard Stiegler and the Ars Industrialis group. The contributive economy is a strategy to disrupt technological disruption by developing knowledge in all its forms. This program has led to several concrete working groups in Plaine Commune, while others are still developing. Mainly, work is taking place on the economy, digital urbanism, and young children’s development in the context of the overuse of digital media. Here, we focus on the group on digital media and young children’s development and how academics and inhabitant works integrate.",
@@ -669,7 +682,7 @@
     "volume": "V. 13 N. 2"
   },
   {
-    "URL": "https://hal.archives-ouvertes.fr/hal-03574022",
+    "URL": "https://www.philosophy-world-democracy.org/computational-empiricism",
     "abstract": "What do mainstream scientists acknowledge as original scientific contributions? In other words, what is the current épistémè in natural sciences? This essay attempts to characterize this épistémè as computational empiricism. Scientific works are primarily empirical, generating data and computational, to analyze them and reproduce them with models. This épistémè values primarily the investigation of specific phenomena and thus leads to the fragmentation of sciences. It also promotes attention-catching results showing limits of earlier theories. However, it consumes these theories since it does not renew them, leading more and more fields to be in a state of theory disruption.",
     "author": [
       {
@@ -841,8 +854,8 @@
   },
   {
     "DOI": "10.1007/s10441-025-09496-2",
-    "URL": "https://hal.archives-ouvertes.fr/hal-03574022",
-    "abstract": "Biologists increasingly report anthropogenic disruptions of both organisms and ecosystems, suggesting that these processes are a fundamental, qualitative component of the Anthropocene crisis, seemingly generating disorder. Nonetheless, the notion of disruption has not yet been theorized as such in biology. To progress on this matter, we build on a specific case. Relatively minor temperature changes disrupt plant-pollinator synchrony, tearing apart the web of life. Understanding this phenomenon requires a specific rationale since models describing them use both historical and systemic reasoning. Specifically, history justifies that the system is initially in a narrow part of the possibility space where it is viable, and the disruption randomizes this configuration. Building on this rationale, we develop a formal framework inspired by Boltzmann’s entropy. This framework defines the randomization of the system and leads to analyze its consequences systematically. Notably, maximum randomization does not lead to the complete collapse of the ecosystem. Moreover, pollinators’ robustness mostly increases viability for low randomizations, while resilience enhances viability after high randomizations. Applying this framework to empirical networks, we show historical trends depending on latitude, providing further evidence of climate change’s impact on ecosystems via phenology changes. These results lead to an initial definition of disruption in ecology. When a specific historical outcome contributes to a system’s viability, disruption is the randomization of this outcome, decreasing this viability.",
+    "ISSN": "1572-8358",
+    "abstract": "Biologists are increasingly documenting anthropogenic disruptions, both at the organism and ecosystem levels, indicating that these disruptions are a fundamental, qualitative component of the Anthropocene. Nonetheless, the notion of disruption has yet to be theorized. Informally, disruptions are direct or indirect consequences of specific causes that impair the contribution of parts of living systems to their ability to last over time. To progress in this theorization, we work here on a particular case. Even relatively minor temperature changes can significantly impact plant-pollinator synchrony, disrupting mutualistic interaction networks. Understanding this phenomenon requires a specific rationale since models describing it use both historical and systemic reasoning. Specifically, history justifies that the ecosystem initially exists in a very narrow part of the possibility space where all its populations are viable, and the disruption leads to a more generic configuration where some populations are not viable. Building on this rationale, we develop a mathematical schema inspired by Boltzmann’s entropy, apply it to this situation, and provide a technical definition of disruption.",
     "author": [
       {
         "family": "Montévil",
@@ -851,16 +864,21 @@
     ],
     "container-title": "Acta Biotheoretica",
     "id": "2025-Montevil-Disruption-Phenology",
+    "issue": "2",
     "issued": {
       "date-parts": [
         [
-          2025
+          2025,
+          3,
+          22
         ]
       ]
     },
+    "page": "5",
     "title": "Disruption of biological processes in the anthropocene: The case of phenological mismatch",
     "title-short": "Disruption of biological processes in the anthropocene",
-    "type": "article-journal"
+    "type": "article-journal",
+    "volume": "73"
   },
   {
     "DOI": "10.1016/j.pbiomolbio.2016.07.006",
