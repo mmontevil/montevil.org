@@ -3,7 +3,6 @@ const path = require('path');
 const config = require('./pack11ty.config.js');
 const { promises: fs } = require('fs');
 const syncFs = require('fs');
-const slugify = require('./src/_utils/slugify');
 const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 
 
@@ -64,6 +63,31 @@ module.exports = async function (eleventyConfig) {
       });
     });
 
+    
+      const { authors } = await import('./src/_11ty/shortcodes2/authors.mjs');
+  // Add async filter for authors
+  eleventyConfig.addAsyncShortcode(
+    'authors',
+     async function (name, gsid, people, auth = false, nbAuteurs = 0, fullname) {
+       const result = await authors(name, gsid, people, auth, nbAuteurs, fullname);
+       // console.log('author filter output:', result);
+      return result ;
+    });
+   
+      const {default:addAutoref} = await import('./src/_11ty/shortcodes2/addAutoref.mjs');
+	eleventyConfig.addAsyncShortcode("addAutoref", async function (content,bibM) {
+    const result = await addAutoref(content,bibM);;
+       // console.log('author filter output:', result);
+      return result ;
+  });
+  
+     const {renderCitedBy} = await import('./src/_11ty/shortcodes2/authors.mjs');
+	eleventyConfig.addAsyncShortcode("renderCitedBy", async function (content,bibM) {
+    const result = await renderCitedBy(content,bibM);;
+       // console.log('author filter output:', result);
+      return result ;
+  });
+    
   const purge = require('./src/_11ty/purgecss');
   eleventyConfig.addNunjucksAsyncShortcode(
     'purgeCss',
@@ -72,10 +96,7 @@ module.exports = async function (eleventyConfig) {
     }
   );
 
-      const addAutoref = require('./src/_11ty/addAutoref');
-	eleventyConfig.addShortcode("addAutoref", async function (content,bibM) {
-		return addAutoref(content,bibM); });
- 
+  
   
   
   // ------------------------------------------------------------------------
@@ -88,6 +109,8 @@ module.exports = async function (eleventyConfig) {
 	const { IdAttributePlugin } = await import("@11ty/eleventy");
 	eleventyConfig.addPlugin(IdAttributePlugin);
   
+  const { RenderPlugin } = await import("@11ty/eleventy");
+  eleventyConfig.addPlugin(RenderPlugin);
   /*
 eleventyConfig.addPlugin(feedPlugin, {
 		type: "rss", // or "rss", "json"
@@ -139,11 +162,11 @@ eleventyConfig.addPlugin(feedPlugin, {
 
   const markdownItFootnote = require('markdown-it-footnote');
 
-  // const slugify = require('@sindresorhus/slugify');
   const markdownItAnchor = require('markdown-it-anchor');
 
   const { html5Media } = require('markdown-it-html5-media');
-  
+    const { default: slugify } = await import("./src/_utils/slugify.mjs");
+
     const markdownItAnchorOptions = {
     permalink: markdownItAnchor.permalink.ariaHidden({
       assistiveText: title => `Permalink to “${title}”`,
@@ -154,8 +177,8 @@ eleventyConfig.addPlugin(feedPlugin, {
       '<svg class="icon" role="img" focusable="false" aria-label="Anchor"><use xlink:href="#symbol-anchor" /></svg>'
     }),
     level: [2, 3, 4],
-    slugify: function (s) {
-      return slugify(s);
+    slugify: async function (s) {
+      return await slugify(s);
     },
   };
   

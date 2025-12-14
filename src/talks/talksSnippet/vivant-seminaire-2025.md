@@ -32,21 +32,21 @@ This builds on conversations with S. Kauffman, G. Longo, M. Montevil, N. Damiris
 *« Cellules et unités de sélection. Quelle singularité du concept de cellule dans une perspective évolutionniste ? »*
 
 ## Mercredi 10 décembre 2025, 16h-18h Anton Robert (Centre Cavaillès, ENS)
+*« Peut-on penser l'histoire naturelle à partir de l'organisation biologique? »*
+
+## Mercredi 7 janvier 2026, 16h-18h Roberto Toro et Katja Heuer (Institut Pasteur)
 
 
-## Mercredi 7 janvier 2026, 16h-18h
+## Mercredi 11 février 2026, 16h-18h Philip Ball
 
 
-## Mercredi 4 février 2026, 16h-18h
-
-
-## Mercredi 11 mars 2026, 16h-18h
+## Mercredi 11 mars 2026, 16h-18h Patrizia d’ALESSIO,
 *« La tentation du néovitalisme pour la recherche en biologie »*
 
-## Mercredi 8 avril 2026, 16h-18h
+## Mercredi 8 avril 2026, 16h-18h Ruãn BATISTA (UFBA)
 
 
-## Mercredi 6 mai 2026, 16h-18h
+## Mercredi 6 mai 2026, 16h-18h Franck Varenne 
 
 
 ## Mercredi 10 juin 2026, 16h-18h

@@ -3,7 +3,7 @@ const moment = require('moment');
 const { promises: fs } = require('fs');
 const syncFs = require('fs');
 require('dotenv').config();
-const slugifyString = require('../src/_utils/slugify');
+//const slugifyString = require('../src/_utils/slugify');
 
 function sleep(ms) {
   return new Promise((resolve) => {

@@ -8,6 +8,7 @@ functions
 coverage
 # logs
 _logs
+chrome-profile
 
 # secret data
 .env

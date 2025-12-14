@@ -271,9 +271,9 @@ async function findElementSafe(driver, locator, retries = 3) {
             if (targetNb < 0) { res.push([]); targetNb = res.length - 1; }
             let publi = {};
             if (updatedList[pubIt].citenumber > 0) {
-              console.log("[CookieCleaner] Clearing cookies to break tracking…");
-              await driver.manage().deleteAllCookies();
-              await adsleep(4000, 7000);  // small delay after clearing
+              //console.log("[CookieCleaner] Clearing cookies to break tracking…");
+              //await driver.manage().deleteAllCookies();
+              //await adsleep(4000, 7000);  // small delay after clearing
             
                 await safeGet(driver, updatedList[pubIt].citingLink);
                 await driver.wait(() => documentInitialised(), 10000);

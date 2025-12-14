@@ -1,26 +1,4 @@
-{#
-{% set allMentions = articleUrl | getWebmentionsForUrl %}
-{% set allMentionsSize = allMentions | size %}
 
-{% set citationSize = 0 %}
-{{ gsentry | dump(2) }}
-{% if gsentry and gsentry.citing.length >0%}
- {% set citationSize =gsentry.citing.length%}
-{% endif %}
-{% set allMentionsSize = allMentionsSize+citationSize  %}
-
-{% set likes = allMentions | webmentionsByType('like-of') %}
-{% set likesSize = likes | size %}
-
-{% set reposts = allMentions | webmentionsByType('repost-of') %}
-{% set repostsSize = reposts | size %}
-
-{% set replies = allMentions | webmentionsByType('in-reply-to') %}
-{% set repliesSize = replies | size  %}
-
-{% set mentions = allMentions | webmentionsByType('mention-of') %}
-{% set mentionsSize = mentions | size  %}
-#}
 
 <aside class="wrap webmention">
 <h2 id="webmentions">{{ allMentionsSize }} mention{% if allMentionsSize > 1 %}s{% endif %}</h2>
@@ -41,10 +19,24 @@ or
   <details class="mention">
    <summary> <h3 > {{ citationSize }} citation{% if citationSize > 1 %}s{% endif %} </h3></summary> 
    
+   {#
    {% set myvar %} 
-    {% include "components/webmentions/citedby.njk" %}
+    {% include "components/webmentions/citedby.njk"  %}
   {% endset %}
-  {% addAutoref  myvar, bibM  %}
+   {% addAutoref  myvar, bibM  %} 
+    {% include "components/webmentions/citedby.njk"  %}
+    #}
+   
+ 
+  
+  
+  {% renderCitedBy gsentry, people, bibM %}
+  
+  
+  
+  
+  
+  
   </details>
 {% endif %}
 

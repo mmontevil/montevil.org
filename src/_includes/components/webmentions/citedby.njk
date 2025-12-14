@@ -3,14 +3,16 @@
  {% if gsentry and gsentry.citing.length >0%}
 
  <ol class="citedBy">
-{% for article in gsentry.citing%}
+{% asyncEach article in gsentry.citing%}
  <li class="citedbyitem">
  
 
-{% for auth in article.authorsid%}
+{% asyncEach auth in article.authorsid%}
+
  {% authors article.authors[loop.index0], auth, people %}
+ 
  {%- if loop.revindex >2 -%}, {%endif-%}{%- if loop.revindex ===2 %} & {%endif-%}{%- if loop.revindex ===1 %}.{%endif-%}
-{%endfor%} 
+{%endeach%} 
 
 {% if article.year!=="NA"%}{{article.year}}. {%endif%}
 {% if article.journal=="NA"%}<i>{%endif%}
@@ -23,6 +25,6 @@
 {%endif%}
 
  </li >
-{%endfor%}
+{%endeach%}
 </ol >
 {%endif%}

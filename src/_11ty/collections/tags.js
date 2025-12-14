@@ -1,9 +1,10 @@
 
 const fs = require('fs');
 const tagFilter = require('../../_utils/tagfilter');
-const slugify = require('../../_utils/slugify');
 
-function tags(collection) {
+async function tags(collection) {
+  const { default: slugify } = await import("../../_utils/slugify.mjs");
+
   let tagsCollection = new Map();
   let max = 0;
 
@@ -33,9 +34,9 @@ function tags(collection) {
   const maxLog = Math.log(max);
 
   const tags = [];
-  tagsCollection.forEach((number, tag) => {
+  tagsCollection.forEach(async (number, tag) => {
     let factor = (Math.log(number) - minLog) / (maxLog - minLog);
-    let tagSlug = slugify(tag, {
+    let tagSlug = await slugify(tag, {
       decamelize: false,
       customReplacements: [['%', ' ']],
     });

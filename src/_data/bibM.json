@@ -1,5 +1,85 @@
 [
   {
+    "abstract": "La notion d’individu a une grande importance en sciences sociales, notamment à travers la doctrine de l’individualisme méthodologique qui se propose de comprendre les phénomènes sociaux sur la seule base des individus et de leurs interactions, un point de vue atomiste donc. Cette notion renvoie à deux idées liées mais distinctes. Tout d’abord, les individus forment des unités à peu près insécables, comme le terme l’indique. De plus, les individus sont distincts les uns des autres, ainsi que séparables, au moins analytiquement, de leurs contextes. L’individuation renvoie alors à deux questions. Tout d’abord, sur quelles bases identifier les différents individus et les distinguer de leurs contextes ? L’individuation est alors la question théorique et épistémologique de l’identification des différents individus. Deuxièmement, notamment à la suite de Simondon, la notion d’individuation peut être une manière de dépasser l’atomisme inhérent au concept d’individu, en posant l’individuation comme première par rapport aux individus. Alors, l’individuation est le processus qui devient le centre de l’intérêt théorique.",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "Atlas des sciences de la culture",
+    "editor": [
+      {
+        "family": "Kurts-Wöste",
+        "given": "Lia"
+      },
+      {
+        "family": "Lassègue",
+        "given": "Jean"
+      },
+      {
+        "family": "Missire",
+        "given": "Régis"
+      },
+      {
+        "family": "Michaud-Laine",
+        "given": "Vincent"
+      },
+      {
+        "dropping-particle": "van",
+        "family": "Vliet",
+        "given": "Muriel"
+      }
+    ],
+    "id": "2026-Montevil-individuation-desindividuation",
+    "issued": {
+      "date-parts": []
+    },
+    "publisher": "Classiques Garnier",
+    "title": "Individuation et désindividuation",
+    "type": "chapter"
+  },
+  {
+    "URL": "https://www.philosophy-world-democracy.org/articles-1/for-one-another-without-conditions-on-palestine-and-ukraine",
+    "abstract": "Do the Palestinian people and the Ukrainian people understand one another? Do they support one another? What are the similarities and the distinctions between these two conditions of oppression? The question of Ukraine and Palestine are one for this reason; no condition, no argument, no geo-poli-technique can justify what is taking place in either regions. Further, none of the so-called solutions to Ukraine—divide it between Russia, Europe and America—is acceptable because the very existence of freedom, which is what people are, what each individual is, is going to be thus divided and partitioned, and hence annihilated.",
+    "author": [
+      {
+        "family": "Bekhta",
+        "given": "Natalya"
+      },
+      {
+        "family": "Dwivedi",
+        "given": "Divya"
+      },
+      {
+        "family": "Mohan",
+        "given": "Shaj"
+      },
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      },
+      {
+        "family": "Perica",
+        "given": "Ivana"
+      }
+    ],
+    "container-title": "Philosophy World Democracy",
+    "id": "2025-BDMMP-Without-Conditions",
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          6
+        ]
+      ]
+    },
+    "title": "For one another, without conditions: On palestine and ukraine",
+    "title-short": "For one another, without conditions",
+    "type": "article-journal"
+  },
+  {
     "DOI": "10.1016/j.reprotox.2025.108929",
     "ISSN": "0890-6238",
     "URL": "https://www.sciencedirect.com/science/article/pii/S0890623825001005",

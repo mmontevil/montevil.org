@@ -1,4 +1,3 @@
-const slugifyString = require('../_utils/slugify');
 const tagFilter = require('../_utils/tagfilter');
 const flatcache = require('flat-cache');
 const path = require('path');
@@ -319,7 +318,9 @@ module.exports = {
     }
     return res;
   },
-  gsentry: (data) => {
+  gsentry: async (data) => {
+  const { default: slugify } = await import("../_utils/slugify.mjs");
+
     var res = [];
     let title = data.title.toLowerCase();
     if (data.layout == 'publication') {
@@ -332,7 +333,7 @@ module.exports = {
         title = 'Perspectives on organisms';
       }*/
 
-      title = slugifyString(title.toLowerCase());
+      title = slugify(title.toLowerCase());
      /* let temp = 0;
       for (const entry in data.scholar2) {
         if (
@@ -349,7 +350,7 @@ module.exports = {
       similarity=0;
       
       for (const entry in data.scholar2){      
-        test=compare(slugifyString(data.scholar2[entry].title.toLowerCase()),title);
+        test=compare(slugify(data.scholar2[entry].title.toLowerCase()),title);
         if(test>similarity && test>0.7 ){ 
           similarity=test;
           res = data.scholar2[entry];
