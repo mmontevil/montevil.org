@@ -1,17 +1,14 @@
-// Because Nunjucks's include doesn't like CSS with "{#"
 
-const fs = require('fs');
+import fs from 'fs';
 
-let memoizedIncludes = {};
+const memoizedIncludes = {};
 
-module.exports = {
-  include_raw: (file) => {
-    if (file in memoizedIncludes) {
-      return memoizedIncludes[file];
-    } else {
-      let content = fs.readFileSync(file, 'utf8');
-      memoizedIncludes[file] = content;
-      return content;
-    }
-  },
-};
+export default function include_raw(file) {
+  if (file in memoizedIncludes) {
+    return memoizedIncludes[file];
+  }
+
+  const content = fs.readFileSync(file, 'utf8');
+  memoizedIncludes[file] = content;
+  return content;
+}

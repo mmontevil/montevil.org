@@ -1,8 +1,13 @@
-module.exports = {
+// postcss.config.mjs
+import autoprefixer from 'autoprefixer';
+import cssnano from 'cssnano';
+import postcssHash from 'postcss-hash';
+
+export default {
   plugins: [
-    require('autoprefixer'),
-    require('cssnano'),
-    require('postcss-hash')({
+    autoprefixer,
+    cssnano,
+    postcssHash({
       manifest: './src/_data/hashes_css.json',
     }),
   ],

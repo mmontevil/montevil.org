@@ -1,3 +1,3 @@
-module.exports = {
+export default {
   abstract: (data) => data.abstract,
 };

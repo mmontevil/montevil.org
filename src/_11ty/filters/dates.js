@@ -1,16 +1,17 @@
-const moment = require('moment');
+import moment from "moment";
 
-module.exports = {
-  date: (date, format) => {
-    return moment(date).format(format);
-  },
-  formattedDate: (date) => {
-    return moment(date).format('Do MMMM YYYY');
-  },
-  formattedDateShort: (date) => {
-    return moment(date).format('MMM YYYY');
-  },
-  attributeDate: (date) => {
-    return moment(date).format('YYYY-MM-DD');
-  },
+export const date = (dateValue, format) => {
+  return moment(dateValue).format(format);
+};
+
+export const formattedDate = (dateValue) => {
+  return moment(dateValue).format("Do MMMM YYYY");
+};
+
+export const formattedDateShort = (dateValue) => {
+  return moment(dateValue).format("MMM YYYY");
+};
+
+export const attributeDate = (dateValue) => {
+  return moment(dateValue).format("YYYY-MM-DD");
 };

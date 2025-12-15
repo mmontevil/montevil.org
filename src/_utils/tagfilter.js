@@ -1,6 +1,8 @@
-let memoizedTags = {};
+// normalizeTags.js (ESM)
 
-let substitution = {
+const memoizedTags = {};
+
+const substitution = {
   'acinar morphogenesis': ['acinus', 'morphogenesis'],
   'ductal morphogenesis': ['ducts', 'morphogenesis'],
   'anti-entropie': 'anti-entropy',
@@ -46,16 +48,18 @@ let substitution = {
   variabilite: 'variability',
 };
 
-module.exports = (keyword) => {
-  var tagst = Array.from(keyword);
-  tagst = tagst.map((st) =>
+export default function tagFilter(keyword) {
+  let tags = Array.from(keyword);
+
+  tags = tags.map(st =>
     st
       .toLowerCase()
       .trim()
-      .replace(/[é,é,è,ê]/g, 'e')
+      .replace(/[éèê]/g, 'e')
   );
-  tagst = tagst.map((st) => (st in substitution ? substitution[st] : st));
-  tagst = tagst.flat();
-  var res = new Set(tagst);
-  return Array.from(res);
-};
+
+  tags = tags.map(st => (st in substitution ? substitution[st] : st));
+  tags = tags.flat();
+
+  return [...new Set(tags)];
+}

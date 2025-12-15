@@ -1,243 +1,133 @@
-/*!
- * Forked from https://github.com/apvarun/toastify-js
- */
-(function (root, factory) {
-  if (typeof module === 'object' && module.exports) {
-    module.exports = factory();
-  } else {
-    root.Toast = factory();
-  }
-})(this, function (global) {
-  // Object initialization
-  var Toast = function (options) {
-      // Returning a new init object
-      return new Toast.lib.init(options);
-    },
-    // Library version
-    version = '1.0.0';
+// toast.js (ESM)
+const Toast = (function () {
+  const version = '1.0.0';
 
-  // Defining the prototype of the object
+  function Toast(options) {
+    return new Toast.lib.init(options);
+  }
+
   Toast.lib = Toast.prototype = {
     toast: version,
-
     constructor: Toast,
 
-    // Initializing the object with required parameters
-    init: function (options) {
-      // Verifying and validating the input object
-      if (!options) {
-        options = {};
-      }
-
-      // Creating the options object
-      this.options = {};
+    init(options = {}) {
+      this.options = {
+        text: options.text || 'Hi there!',
+        duration: options.duration ?? 3000,
+        callback: options.callback || (() => {}),
+        close: options.close || false,
+        icon: options.icon || 'info',
+        type: options.type || 'info',
+        onClick: options.onClick,
+        destination: options.destination,
+        newWindow: options.newWindow,
+      };
 
       this.toastElement = null;
-
-      // Validating the options
-      this.options.text = options.text || 'Hi there!'; // Display message
-      this.options.duration = options.duration || 3000; // Display duration
-      this.options.callback = options.callback || function () {}; // Callback after display
-      this.options.close = options.close || false; // Show toast close icon
-      this.options.icon = options.icon || 'info'; // svg icon id
-      this.options.type = options.type || 'info'; // additional class names for the toast
-      this.options.onClick = options.onClick; // Callback after click
-
-      // Returning the current object for chaining functions
       return this;
     },
 
-    // Building the DOM element
-    buildToast: function () {
-      // Validating if the options are defined
-      if (!this.options) {
-        throw 'Toast is not initialized';
-      }
+    buildToast() {
+      if (!this.options) throw new Error('Toast is not initialized');
 
-      // Creating the DOM object
-      var divElement = document.createElement('div');
-      divElement.className = `toast on toast-bottom toast-${this.options.type}`;
+      const div = document.createElement('div');
+      div.className = `toast on toast-bottom toast-${this.options.type}`;
+      div.innerHTML = this.options.text;
 
-      // Adding the toast message
-      divElement.innerHTML = this.options.text;
-
-      if (this.options.icon !== '') {
-        // Adding icon on the left of content
-        divElement.insertAdjacentHTML(
+      if (this.options.icon) {
+        div.insertAdjacentHTML(
           'afterbegin',
           `<svg class="toast-icon"><use xlink:href="#symbol-${this.options.icon}" /></svg>`
         );
       }
 
-      // Adding a close icon to the toast
-      if (this.options.close === true) {
-        // Create a span for close element
-        var closeElement = document.createElement('span');
-        closeElement.innerHTML = '&#10006;';
-        closeElement.className = 'toast-close';
-
-        // Triggering the removal of toast from DOM on close click
-        closeElement.addEventListener(
-          'click',
-          function (event) {
-            event.stopPropagation();
-            this.removeElement(event.target.parentElement);
-            window.clearTimeout(event.target.parentElement.timeOutValue);
-          }.bind(this)
-        );
-
-        // Clear timeout while toast is focused
-        const self = this;
-        // stop countdown
-        divElement.addEventListener('mouseover', function (event) {
-          window.clearTimeout(divElement.timeOutValue);
-        });
-        // add back the timeout
-        divElement.addEventListener('mouseleave', function () {
-          divElement.timeOutValue = window.setTimeout(function () {
-            // Remove the toast from DOM
-            self.removeElement(divElement);
-          }, self.options.duration);
+      if (this.options.close) {
+        const closeEl = document.createElement('span');
+        closeEl.innerHTML = '&#10006;';
+        closeEl.className = 'toast-close';
+        closeEl.addEventListener('click', (event) => {
+          event.stopPropagation();
+          this.removeElement(event.target.parentElement);
+          clearTimeout(event.target.parentElement.timeOutValue);
         });
 
-        // Adding the close icon to the toast element
-        divElement.appendChild(closeElement);
+        div.addEventListener('mouseover', () => clearTimeout(div.timeOutValue));
+        div.addEventListener('mouseleave', () => {
+          div.timeOutValue = setTimeout(() => this.removeElement(div), this.options.duration);
+        });
+
+        div.appendChild(closeEl);
       }
 
-      // Adding an on-click destination path
-      if (typeof this.options.destination !== 'undefined') {
-        divElement.addEventListener(
-          'click',
-          function (event) {
-            event.stopPropagation();
-            if (this.options.newWindow === true) {
-              window.open(this.options.destination, '_blank');
-            } else {
-              window.location = this.options.destination;
-            }
-          }.bind(this)
-        );
+      if (this.options.destination) {
+        div.addEventListener('click', (event) => {
+          event.stopPropagation();
+          if (this.options.newWindow) {
+            window.open(this.options.destination, '_blank');
+          } else {
+            window.location.href = this.options.destination;
+          }
+        });
+      } else if (typeof this.options.onClick === 'function') {
+        div.addEventListener('click', (event) => {
+          event.stopPropagation();
+          this.options.onClick();
+        });
       }
 
-      if (
-        typeof this.options.onClick === 'function' &&
-        typeof this.options.destination === 'undefined'
-      ) {
-        divElement.addEventListener(
-          'click',
-          function (event) {
-            event.stopPropagation();
-            this.options.onClick();
-          }.bind(this)
-        );
-      }
-
-      // Returning the generated element
-      return divElement;
+      return div;
     },
 
-    // Displaying the toast
-    showToast: function () {
-      // Creating the DOM object for the toast
+    showToast() {
       this.toastElement = this.buildToast();
+      const root = document.body;
+      if (!root) throw new Error('Root element is not defined');
 
-      // Getting the root element to with the toast needs to be added
-      var rootElement = document.body;
-
-      // Validating if root element is present in DOM
-      if (!rootElement) {
-        throw 'Root element is not defined';
-      }
-
-      // Adding the DOM element
-      rootElement.insertBefore(this.toastElement, rootElement.firstChild);
-
-      // Repositioning the toasts in case multiple toasts are present
+      root.insertBefore(this.toastElement, root.firstChild);
       Toast.reposition();
 
       if (this.options.duration > 0) {
-        this.toastElement.timeOutValue = window.setTimeout(
-          function () {
-            // Remove the toast from DOM
-            this.removeElement(this.toastElement);
-          }.bind(this),
+        this.toastElement.timeOutValue = setTimeout(
+          () => this.removeElement(this.toastElement),
           this.options.duration
-        ); // Binding `this` for function invocation
+        );
       }
 
-      // Supporting function chaining
       return this;
     },
 
-    hideToast: function () {
-      if (this.toastElement.timeOutValue) {
-        clearTimeout(this.toastElement.timeOutValue);
-      }
+    hideToast() {
+      clearTimeout(this.toastElement?.timeOutValue);
       this.removeElement(this.toastElement);
     },
 
-    // Removing the element from the DOM
-    removeElement: function (toastElement) {
-      // Hiding the element
-      // toastElement.classList.remove("on");
-      toastElement.className = toastElement.className.replace(' on', '');
-
-      // Removing the element from DOM after transition end
-      window.setTimeout(
-        function () {
-          // Remove the elemenf from the DOM
-          toastElement.parentNode.removeChild(toastElement);
-
-          // Calling the callback function
-          this.options.callback.call(toastElement);
-
-          // Repositioning the toasts again
-          Toast.reposition();
-        }.bind(this),
-        400
-      ); // Binding `this` for function invocation
+    removeElement(el) {
+      if (!el) return;
+      el.className = el.className.replace(' on', '');
+      setTimeout(() => {
+        el.parentNode?.removeChild(el);
+        this.options.callback.call(el);
+        Toast.reposition();
+      }, 400);
     },
   };
 
-  // Positioning the toasts on the DOM
   Toast.reposition = function () {
-    // Spacing between toasts
-    var spacing = 15;
+    const spacing = 15;
+    let bottomOffset = spacing;
+    const allToasts = document.getElementsByClassName('toast');
 
-    var bottomOffset = spacing;
-
-    // Get all toast messages on the DOM
-    var allToasts = document.getElementsByClassName('toast');
-
-    // Modifying the position of each toast element
-    for (var i = 0; i < allToasts.length; i++) {
-      var height = allToasts[i].offsetHeight;
-
-      // Setting the position
-      allToasts[i].style.bottom = bottomOffset + 'px';
-      bottomOffset += height + spacing;
+    for (const t of allToasts) {
+      t.style.bottom = bottomOffset + 'px';
+      bottomOffset += t.offsetHeight + spacing;
     }
 
-    // Supporting function chaining
     return this;
   };
 
-  function containsClass(elem, yourClass) {
-    if (!elem || typeof yourClass !== 'string') {
-      return false;
-    } else if (
-      elem.className &&
-      elem.className.trim().split(/\s+/gi).indexOf(yourClass) > -1
-    ) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  // Setting up the prototype for the init object
   Toast.lib.init.prototype = Toast.lib;
 
-  // Returning the Toast function to be assigned to the window object/module
   return Toast;
-});
+})();
+
+export default Toast;

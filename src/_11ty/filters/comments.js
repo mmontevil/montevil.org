@@ -1,20 +1,21 @@
-const { readFromCache } = require('../../_utils/cache');
+import { createRequire } from "module";
 
-const COMMENTS_CACHE = 'src/comments/comments.json';
+import { readFromCache, writeToCache } from "../../_utils/cache.js";
+
+const COMMENTS_CACHE = "src/comments/comments.json";
 let comments = false;
 
-module.exports = {
-  getCommentsForUrl: (url) => {
-    if (url === undefined) {
-      console.log('No URL for comments matching');
-      return [];
-    }
-    let contentPath = url.replace(/^\/(.*)\/$/, '$1');
-    if (comments === false) {
-      comments = readFromCache(COMMENTS_CACHE);
-      // TODO: sort comments by date?
-    }
+export const getCommentsForUrl = (url) => {
+  if (!url) {
+    console.log("No URL for comments matching");
+    return [];
+  }
 
-    return comments[contentPath] || [];
-  },
+  const contentPath = url.replace(/^\/(.*)\/$/, "$1");
+
+  if (comments === false) {
+    comments = readFromCache(COMMENTS_CACHE);
+  }
+
+  return comments?.[contentPath] || [];
 };

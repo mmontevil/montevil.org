@@ -10,7 +10,7 @@ import { terser } from 'rollup-plugin-terser';
 import entrypointHashmanifest from 'rollup-plugin-entrypoint-hashmanifest';
 // import visualizer from 'rollup-plugin-visualizer';
 
-const config = require('./pack11ty.config.js');
+import config from './pack11ty.config.js';
 
 const SRC_DIR = config.dir.src;
 const ASSETS_DIR = config.dir.assets;

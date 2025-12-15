@@ -1,7 +1,6 @@
-module.exports = {
-  purge: {
-    options: {
-      safelist: [/data-theme$/],
-    },
+// purgeConfig.mjs
+export const purge = {
+  options: {
+    safelist: [/data-theme$/],
   },
 };

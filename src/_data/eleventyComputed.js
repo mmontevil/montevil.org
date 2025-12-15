@@ -1,32 +1,24 @@
-const tagFilter = require('../_utils/tagfilter');
-const flatcache = require('flat-cache');
-const path = require('path');
-const { writeToCache, readFromCache } = require('../_utils/cache');
-const stringComparison = require('string-similarity');
+// filters.mjs  (ESM, Eleventy-compatible)
+
+import tagFilter from '../_utils/tagfilter.js';
+import stringComparison from 'string-similarity';
+import slugify from '../_utils/slugify.js';
+import { readFromCache } from '../_utils/cache.js';
+
 const compare = stringComparison.compareTwoStrings;
-//const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
-//const fetch = require('node-fetch');
-
-
 const WEBMENTION_CACHE = '_cache/webmentions.json';
 
-function getExtWebmentions() {
-  const cached = readFromCache(WEBMENTION_CACHE);
-}
-const extWebmentions = getExtWebmentions();
+/* ------------------ Webmentions ------------------ */
 
-// dates
+export function getExtWebmentions() {
+  return readFromCache(WEBMENTION_CACHE);
+}
+
+/* ------------------ Dates ------------------ */
+
 const dtf = {
-  en: new Intl.DateTimeFormat('en-GB', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  }),
-  fr: new Intl.DateTimeFormat('fr-FR', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  }),
+  en: new Intl.DateTimeFormat('en-GB', { year: 'numeric', month: 'long', day: 'numeric' }),
+  fr: new Intl.DateTimeFormat('fr-FR', { year: 'numeric', month: 'long', day: 'numeric' }),
 };
 
 const dtfDigits = new Intl.DateTimeFormat('en-GB', {
@@ -35,78 +27,51 @@ const dtfDigits = new Intl.DateTimeFormat('en-GB', {
   day: '2-digit',
 });
 
-function attributeDate(date) {
+function attributeDateRaw(date) {
+  if (!(date instanceof Date) || isNaN(date)) return '';
   return dtfDigits.format(date).split('/').reverse().join('-');
 }
 
-function formattedDate(lang, date) {
-  return dtf[lang || 'en'].format(date);
-}
-
-//check use
-function chooseDate(datepub, date) {
-  if (datepub) {
-    if (datepub == ' Submitted') {
-      return date;
-    } else {
-      return datepub;
-    }
-  } else {
-    return date;
-  }
+function formattedDateRaw(lang, date) {
+  return dtf[lang === 'fr' || lang === 'en' ? lang : 'en'].format(date);
 }
 
 const _MS_PER_DAY = 1000 * 60 * 60 * 24;
 
 function dateDiffInDays(a, b) {
-  // Discard the time and time-zone information.
   const utc1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
   const utc2 = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());
-
   return Math.floor((utc2 - utc1) / _MS_PER_DAY);
 }
 
-function age(date) {
-  var today = new Date();  
-  var date0 = new Date(date); 
-  return Math.abs(dateDiffInDays(today, date0));
+export function age(date) {
+  return Math.abs(dateDiffInDays(new Date(), new Date(date)));
 }
 
-function removeEmojis(content) {
-  // https://thekevinscott.com/emojis-in-javascript/
-  return content.replace(
-    /(?:[\u2700-\u27bf]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff]|[\u0023-\u0039]\ufe0f?\u20e3|\u3299|\u3297|\u303d|\u3030|\u24c2|\ud83c[\udd70-\udd71]|\ud83c[\udd7e-\udd7f]|\ud83c\udd8e|\ud83c[\udd91-\udd9a]|\ud83c[\udde6-\uddff]|[\ud83c\ude01-\ude02]|\ud83c\ude1a|\ud83c\ude2f|[\ud83c\ude32-\ude3a]|[\ud83c\ude50-\ude51]|\u203c|\u2049|[\u25aa-\u25ab]|\u25b6|\u25c0|[\u25fb-\u25fe]|\u00a9|\u00ae|\u2122|\u2139|\ud83c\udc04|[\u2600-\u26FF]|\u2b05|\u2b06|\u2b07|\u2b1b|\u2b1c|\u2b50|\u2b55|\u231a|\u231b|\u2328|\u23cf|[\u23e9-\u23f3]|[\u23f8-\u23fa]|\ud83c\udccf|\u2934|\u2935|[\u2190-\u21ff])/g,
-    ''
-  );
+export function chooseDate(datepub, date) {
+  if (!datepub) return date;
+  if (datepub === ' Submitted') return date;
+  return datepub;
 }
 
-// authors for citations
+/* ------------------ Authors ------------------ */
 
-function textAuthors(data) {
+export function textAuthors(data) {
   let text = '';
-  if (data.layout === 'link' && data.authors && data.authors.length > 0) {
-    let i = 0;
-    const nb = data.authors.length;
-    data.authors.forEach((author) => {
+  if (data.layout === 'link' && Array.isArray(data.authors)) {
+    data.authors.forEach((author, i) => {
       text += author.name;
-      i++;
-      if (i < nb - 1) {
-        text += ', ';
-      }
-      if (i === nb - 1) {
-        text += ' and ';
-      }
+      if (i < data.authors.length - 2) text += ', ';
+      if (i === data.authors.length - 2) text += ' and ';
     });
   }
   return text;
 }
 
-function htmlAuthors(data) {
+export function htmlAuthors(data) {
   let html = '';
-  if (data.layout === 'link' && data.authors && data.authors.length > 0) {
-    let i = 0;
-    const nb = data.authors.length;
-    data.authors.forEach((author) => {
+  if (data.layout === 'link' && Array.isArray(data.authors)) {
+    data.authors.forEach((author, i) => {
       if (author.twitter) {
         html += `<img class="u-photo avatar" src="https://res.cloudinary.com/mmontevil/image/twitter_name/${author.twitter}" alt="${author.name} avatar" loading="lazy" width="48" height="48" /> `;
       }
@@ -114,333 +79,239 @@ function htmlAuthors(data) {
       if (author.twitter) {
         html += ` <a class="author__twitter" href="https://twitter.com/${author.twitter}" aria-label="@${author.twitter} on Twitter"><svg><use xlink:href="#symbol-twitter" /></svg></a>`;
       }
-      i++;
-      if (i < nb - 1) {
-        html += ', ';
-      }
-      if (i === nb - 1) {
-        html += ' and ';
-      }
+      if (i < data.authors.length - 2) html += ', ';
+      if (i === data.authors.length - 2) html += ' and ';
     });
   }
   return html;
 }
 
-// metadata
+/* ------------------ Metadata ------------------ */
 
-function title(data) {
-  switch (data.layout) {
-    case 'link':
-      return `${textAuthors(data)}:\n“${data.title}”`;
+function titleRaw(data) {
+  if (data.layout === 'link') {
+    return `${textAuthors(data)}:\n“${data.title}”`;
   }
-  if (data.title && data.title !== '') {
-    return data.title;
-  } else {
-    // TODO: console.log(`No title for ${data.page.inputPath}`);
-    return '???';
-  }
+  return data.title || '???';
 }
 
-
-
-// TODO: refactor with the one in filters
-function tagToHashtag(tag) {
-  let words = tag.replace(/[-\.]/, ' ').split(' ');
-  return (
-    words[0] +
-    words
-      .slice(1)
-      .map((word) => word.charAt(0).toUpperCase() + word.substr(1))
-      .join('')
-  );
-}
-
-function tags(data) {
-  let tags = [];
-  if (data.layout === 'publication') {
-    if (data.keyword) {
-      tags = data.keyword.split(',');
-    }
-  }
-  if (data.tags !== undefined) {
-    // merge and deduplicate
-    tags = [...new Set([].concat(...tags, ...data.tags))];
-    tags = tagFilter(tags);
-  }
-
-  tags.sort((a, b) => {
-    return a.localeCompare(b, 'en', { ignorePunctuation: true });
-  });
-  return tags;
-}
-
-function ogTags(data) {
-  return tags(data)
-    .map((tag) => '#' + tagToHashtag(tag))
-    .join('%20%20');
-}
-
-function headTitle(data) {
+export function headTitle(data) {
   if (data.page.url === '/') {
     return `<title itemprop="name">${data.pkg.title}</title>`;
   }
-  // if (data.layout === 'note') {
-  //   return `<title>${lead(data).slice(0, 50)} - ${
-  //     data.pkg.author.name
-  //   }</title>`;
-  // }
-  return `<title>${title(data)} - ${data.pkg.author.name}</title>`;
+  return `<title>${titleRaw(data)} - ${data.pkg.author.name}</title>`;
 }
 
-function ogType(data) {
-  switch (data.layout) {
-    case 'publication':
-    case 'post':
-    case 'link':
-    case 'note':
-    case 'talk':
-      return 'article';
+/* ------------------ OpenGraph ------------------ */
+
+export function ogType(data) {
+  if (['publication', 'post', 'link', 'note', 'talk'].includes(data.layout)) {
+    return 'article';
   }
   return 'website';
 }
 
-function ogTitle(data) {
-  if (data.page.url === '/') {
-    return data.pkg.title;
-  }
-  return removeEmojis(title(data));
+export function ogTitle(data) {
+  if (data.page.url === '/') return data.pkg.title;
+  return removeEmojis(titleRaw(data));
 }
 
-
-
-function ogImageTitle(data) {
-  if (data.page.url === '/') {
-    return data.pkg.title;
-  }
-  switch (data.layout) {
-    case 'publication':
-    case 'post':
-    case 'link':
-    case 'talk':
-    case 'note':
-      return removeEmojis(title(data));
-    // case 'note':
-    //   return lead(data);
+export function ogImageTitle(data) {
+  if (data.page.url === '/') return data.pkg.title;
+  if (['publication', 'post', 'link', 'note', 'talk'].includes(data.layout)) {
+    return removeEmojis(titleRaw(data));
   }
   return '';
 }
 
-function ogImageTagline(data) {
-  if (data.page.url === '/') {
-    return '';
-  }
-  switch (data.layout) {
-    case 'publication':
-    case 'post':
-    case 'link':
-    case 'note':
-    case 'talk':
-      return ogTags(data);
+function ogTags(data) {
+  return tags(data).map(t => `#${tagToHashtag(t)}`).join('%20%20');
+}
+
+export function ogImageTagline(data) {
+  if (data.page.url === '/') return '';
+  if (['publication', 'post', 'link', 'note', 'talk'].includes(data.layout)) {
+    return ogTags(data);
   }
   return '';
 }
 
+/* ------------------ Bibliography ------------------ */
 
-function webmentionsByType(mentions, mentionType) {
-  if (mentions)
-    return mentions.filter((entry) => entry['wm-property'] === mentionType);
-
-  return [];
+export function bibentry(data) {
+  let res = {};
+  for (const entry in data.bibM) {
+    if (data.bibM[entry].id === data.page.fileSlug) {
+      res = data.bibM[entry];
+    }
+  }
+  return res;
 }
 
-function uniqByKeepLast(a, key) {
-  return [...new Map(a.map((x) => [key(x), x])).values()];
+export async function gsentry(data) {
+  // Guard: missing or invalid title
+  if (!data || typeof data.title !== 'string') {
+    return {};
+  }
+
+  if (data.layout !== 'publication') {
+    return {};
+  }
+
+  const baseTitle = data.title.trim();
+  if (!baseTitle) {
+    return {};
+  }
+
+  const titleStr = slugify(baseTitle.toLowerCase());
+
+  let res = {};
+  let similarity = 0;
+
+  const entries = Array.isArray(data.scholar2)
+    ? data.scholar2
+    : Object.values(data.scholar2 || {});
+
+  for (const entry of entries) {
+    if (!entry?.title) continue;
+
+    const test = compare(
+      slugify(entry.title.toLowerCase()),
+      titleStr
+    );
+
+    if (test > similarity && test > 0.7) {
+      similarity = test;
+      res = entry;
+    }
+  }
+
+  return res;
 }
-// Crossref and Plum mentions
+
+/* ------------------ Mentions ------------------ */
+
+export function webmentionsByType(mentions, type) {
+  if (!Array.isArray(mentions)) return [];
+  return mentions.filter(m => m['wm-property'] === type);
+}
+
+export function uniqByKeepLast(arr, key) {
+  if (!Array.isArray(arr)) return [];
+
+  return [...new Map(
+    arr.map(x => [key(x), x])
+  ).values()];
+}
 
 
+export function citationSize(data) {
+  return data.gsentry?.citing?.length || 0;
+}
 
+export function allMentionsSize(data) {
+  return data.mentionsSize + data.citationSize;
+}
 
+export function mentionsScore(data) {
+  return (
+    (data.mentionsSize / 3 / (data.age + 175) + data.citationSize) /
+    (data.age + 175)
+  );
+}
 
+export function likes(data) {
+  return uniqByKeepLast(webmentionsByType(data.allMentions, 'like-of'), x => x.author.url);
+}
 
+export const likesSize = d => d.likes.length;
+export const reposts = d => webmentionsByType(d.allMentions, 'repost-of');
+export const repostsSize = d => d.reposts.length;
+export const replies = d => webmentionsByType(d.allMentions, 'in-reply-to');
+export const repliesSize = d => d.replies.length;
+export const mentions = d => webmentionsByType(d.allMentions, 'mention-of');
+export const mentionsSize = d => d.mentions.length;
 
+/* ------------------ Tags & Category ------------------ */
 
+export function tagToHashtag(tag = '') {
+  const words = String(tag).replace(/[-\.]/g, ' ').split(' ').filter(Boolean);
+  if (words.length === 0) return '';
+  return words[0] + words.slice(1).map(w => w[0].toUpperCase() + w.slice(1)).join('');
+}
 
-
-
-
-
-
-//
-
-//Exports
-
-module.exports = {
-  lang: (data) => {
-    let lang = data.lang;
-    if (
-      data.bibentryconf &&
-      data.bibentryconf.fields &&
-      data.bibentryconf.fields.language
-    ) {
-      lang = data.bibentryconf.fields.language;
+export function tags(data) {
+  let t = [];
+  if (data.layout === 'publication' && data.keyword) {
+    t = data.keyword.split(',');
+  }
+  if (data.tags !== undefined) {
+    t = [...new Set([].concat(...t, ...data.tags))];
+  }
+  return tagFilter(t).sort((a, b) => a.localeCompare(b, 'en', { ignorePunctuation: true }));
+}
+export function video(data) {
+  return data?.bibentryconf?.fields?.video
+}
+export function category(data) {
+  let res = data.category ? [...data.category] : [];
+  if (data.video && !res.includes('video')) res.push('video');
+  if (res.includes('talks')) {
+    if (data.entry?.type === 'book' && !res.includes('events')) res.push('events');
+    if (data.bibentryconf?.fields?.eventtype === 'media' && !res.includes('media')) {
+      res.push('media');
     }
-    if ('fr' === lang || 'en' === lang) {
-      return lang;
-    } else {
-      return 'en';
-    }
-  },
-  formattedDate: (data) => formattedDate(data.lang, data.page.date),
-  attributeDate: (data) => attributeDate(data.page.date),
-  age: (data) => age(data.orderDate),
-  authors: {
-    text: (data) => textAuthors(data),
-    html: (data) => htmlAuthors(data),
-  },
-  head: {
-    title: (data) => headTitle(data),
-  },
-  opengraph: {
-    type: (data) => ogType(data),
-    title: (data) => ogTitle(data),
-    image: {
-      title: (data) => ogImageTitle(data),
-      tagline: (data) => ogImageTagline(data),
-    },
-  },
-  bibentry: (data) => {
-    var res = {};
-    for (const entry in data.bibM) {
-      if (data.bibM[entry].id === data.page.fileSlug) {
-        res = data.bibM[entry];
-      }
-    }
-    return res;
-  },
-  gsentry: async (data) => {
-  const { default: slugify } = await import("../_utils/slugify.mjs");
+  }
+  return res;
+}
 
-    var res = [];
-    let title = data.title.toLowerCase();
-    if (data.layout == 'publication') {
-     /* if (
-        slugifyString(title.toLowerCase()) ==
-        slugifyString(
-          'Perspectives on organisms: Biological time, symmetries and singularities'.toLowerCase()
-        )
-      ) {
-        title = 'Perspectives on organisms';
-      }*/
+/* ------------------ Utils ------------------ */
 
-      title = slugify(title.toLowerCase());
-     /* let temp = 0;
-      for (const entry in data.scholar2) {
-        if (
-          search(
-            slugifyString(data.scholar2[entry].title.toLowerCase()),
-            title,
-            4
-          ).length > 0
-        ) {
-          temp = temp + 1;
-          res = data.scholar2[entry];
-        }
-      }*/ 
-      similarity=0;
-      
-      for (const entry in data.scholar2){      
-        test=compare(slugify(data.scholar2[entry].title.toLowerCase()),title);
-        if(test>similarity && test>0.7 ){ 
-          similarity=test;
-          res = data.scholar2[entry];
-        }
-      }
-      /*console.log(res.title);
-      console.log(title);
-      console.log("aaa");*/
-    }
-    return res;
-  },
-  citationSize: (data) => {
-    let citationSize = 0;
-    if (data.gsentry && data.gsentry.citing && data.gsentry.citing.length > 0)
-      citationSize = data.gsentry.citing.length;
+export function removeEmojis(content = '') {
+  return String(content).replace(
+    /(?:[\u2700-\u27bf]|[\ud800-\udfff][\udc00-\udfff]|[\u2600-\u26FF])/g,
+    ''
+  );
+}
 
-    return citationSize;
-  },
-  allMentionsSize: (data) => {
-    return (
-      data.mentionsSize +
-      data.citationSize
-    );
-  },
-  mentionsScore: (data) => {
-    return ((
-      data.mentionsSize/3/(data.age+175) +
-      data.citationSize)/(data.age+175)
-    );
-  },  
-  likes: (data) => {
-     /*     if (encodeURI('https://montevil.org' + data.page.url).toLowerCase()=="https://montevil.org/publications/articles/2021-montevil-episteme-computational-empiricism/"){
-        console.log(webmentionsByType(data.allMentions, 'in-reply-of').);
-      }*/
-    return uniqByKeepLast(
-      webmentionsByType(data.allMentions, 'like-of'),
-      (x) => x.author.url
-    );
-  },
-  likesSize: (data) => {
-    return data.likes.length;
-  },
-  reposts: (data) => {
-    return webmentionsByType(data.allMentions, 'repost-of');
-  },
-  repostsSize: (data) => {
-    return data.reposts.length;
-  },
-  replies: (data) => {
-    return webmentionsByType(data.allMentions, 'in-reply-to');
-  },
-  repliesSize: (data) => {
-    return data.replies.length;
-  },
-  mentions: (data) => {
-    return webmentionsByType(data.allMentions, 'mention-of');
-  },
-  mentionsSize: (data) => {
-    return data.mentions.length;
-  },
+/* ------------------ Eleventy Export (CRITICAL) ------------------ */
 
-  bibentryconf: (data) => {
-    var res = {};
-    if (data.entry) {
-      for (const entry in data.bibconf2) {
-        if (data.bibconf2[entry].entrykey === data.entry.id) {
-          res = data.bibconf2[entry];
-        }
-      }
-    }
-    return res;
-  },
-  title: (data) =>
-    data.titlePrefix
-      ? data.titlePrefix + (data.bibentry.title || data.title)
-      : data.bibentry.title || data.title,
-  tags: (data) => tags(data),
-  category: (data) => {
-    var res = data.category ? data.category : [];
-    res = data.video ? [res, 'video'].flat() : res;
-    if (res.includes('talks')) {
-      res = data.entry.type == 'book' ? [res, 'events'].flat() : res;
-      res =
-        data.bibentryconf &&
-        data.bibentryconf.fields &&
-        data.bibentryconf.fields.eventtype &&
-        data.bibentryconf.fields.eventtype == 'media'
-          ? [res, 'media'].flat()
-          : res;
-    }
-    return res;
-  },
+
+// Language
+export const lang = (data) => {
+  let language = data.lang;
+  if (data.bibentryconf?.fields?.language) {
+    language = data.bibentryconf.fields.language;
+  }
+  return language === 'fr' || language === 'en' ? language : 'en';
 };
+
+// Formatted date
+export const formattedDate = (data) => formattedDateRaw(data.lang, data.page.date);
+
+// Attribute date
+export const attributeDate = (data) => attributeDateRaw(data.page.date);
+
+
+
+
+// Bibentry configuration
+export const bibentryconf = (data) => {
+  let res = {};
+  if (data.entry) {
+    for (const e in data.bibconf2) {
+      if (data.bibconf2[e].entrykey === data.entry.id) {
+        res = data.bibconf2[e];
+      }
+    }
+  }
+  return res;
+};
+
+// Title
+export const title = (data) =>
+  data.titlePrefix
+    ? data.titlePrefix + (data.bibentry.title || data.title)
+    : data.bibentry.title || data.title;
+
+

@@ -1,0 +1,30 @@
+ 
+
+ {% if gsentry and gsentry.citing.length >0%}
+
+ <ol class="citedBy">
+{% asyncEach article in gsentry.citing%}
+ <li class="citedbyitem">
+ 
+
+{% asyncEach auth in article.authorsid%}
+
+ {% authors article.authors[loop.index0], auth, people %}
+ 
+ {%- if loop.revindex >2 -%}, {%endif-%}{%- if loop.revindex ===2 %} & {%endif-%}{%- if loop.revindex ===1 %}.{%endif-%}
+{%endeach%} 
+
+{% if article.year!=="NA"%}{{article.year}}. {%endif%}
+{% if article.journal=="NA"%}<i>{%endif%}
+{{article.title | title}}.
+{% if article.journal=="NA"%}</i>{%else%}
+<i>{{article.journal | title-}}</i>.{%endif%}
+{% if not article.mainlink==""%}<a href="{{article.mainlink}}">Publisher</a> {%endif%}
+{% if not article.pdflink==""%}
+<a href="{{article.pdflink}}">Eprint </a>
+{%endif%}
+
+ </li >
+{%endeach%}
+</ol >
+{%endif%}

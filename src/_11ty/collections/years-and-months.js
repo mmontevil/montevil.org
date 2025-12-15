@@ -1,224 +1,123 @@
-// https://github.com/11ty/eleventy/issues/316#issuecomment-441053919
-// https://github.com/11ty/eleventy/issues/502#issuecomment-498234424
+// collections.js (ESM)
+import moment from 'moment';
 
-const moment = require('moment');
+const filteredCollectionsMemoization = {};
+const now = Date.now();
 
-let filteredCollectionsMemoization = {};
-let now = new Date().getTime();
+function getFilteredCollection(collection, type, lang) {
+  const key = type + lang;
+  if (filteredCollectionsMemoization[key]) return filteredCollectionsMemoization[key];
 
-function getFilteredCollection(collection, type, lang){
-  if (type + lang in filteredCollectionsMemoization) {
-    return filteredCollectionsMemoization[type + lang];
-  } else {
-    let filteredCollection = collection
-      .getAll()
-      .filter(function (item) {
-        if (type === 'archives') {
-          return (
-            'category' in item.data &&
-            item.data.category[0] &&
-            (lang === 'all' || item.data.lang === lang)
-          );
-        }
-        if (item.data.category) {
-          return (
-            item.data.category.includes(type) &&
-            (lang === 'all' || item.data.lang === lang)
-          );
-        }
-        return false;
-      })
-      .filter((item) => now >= item.date.getTime())
-      .sort(
-        (a, b) =>
-          parseInt(b.data.orderDate.replace(new RegExp('\\' + '-', 'gi'), '')) -
-          parseInt(a.data.orderDate.replace(new RegExp('\\' + '-', 'gi'), ''))
-      );
-    filteredCollectionsMemoization[type] = filteredCollection;
-    return filteredCollection;
-  }
-};
+  const filteredCollection = collection
+    .getAll()
+    .filter((item) => {
+      const categories = item.data?.category ?? [];
+      if (type === 'archives') {
+        return categories[0] && (lang === 'all' || item.data.lang === lang);
+      }
+      return categories.includes(type) && (lang === 'all' || item.data.lang === lang);
+    })
+    .filter((item) => item.date?.getTime() <= now)
+    .sort((a, b) => {
+      const orderA = a.data?.orderDate?.replace(/-/g, '') ?? '0';
+      const orderB = b.data?.orderDate?.replace(/-/g, '') ?? '0';
+      return parseInt(orderB, 10) - parseInt(orderA, 10);
+    });
 
+  filteredCollectionsMemoization[key] = filteredCollection;
+  return filteredCollection;
+}
 
-function makeDateFormatter(datePattern) {
+function makeDateFormatter(pattern) {
   return function (date) {
-      if (date =="2100-01-01"){
-          return  "Submitted" ;
-      }else{
-    //console.log(date);
-     //console.log(moment(date).format(datePattern));
-    return moment(date).format(datePattern);
-    }
+    if (!date || date === '2100-01-01') return 'Submitted';
+    return moment(date).format(pattern);
   };
-} 
+}
 
 function generateItemsDateSet(items, dateFormatter) {
-  const formattedDates = items.map((item) => {
-    return dateFormatter(item.data.orderDate);
-  });
-  return [...new Set(formattedDates)];
+  return [...new Set(items.map((item) => dateFormatter(item.data?.orderDate ?? '')))]; 
 }
 
 function getItemsByDate(items, date, dateFormatter) {
-  return items.filter((item) => {
-    return dateFormatter(item.data.orderDate) === date;
-  });
+  return items.filter((item) => dateFormatter(item.data?.orderDate ?? '') === date);
 }
 
-const contentByDateString = (items, dateFormatter) => {
-  return generateItemsDateSet(items, dateFormatter).reduce(function (
-    collected,
-    formattedDate
-  ) {
-    return Object.assign({}, collected, {
-      // lowercase to match month directory page.url
-      [formattedDate]: getItemsByDate(
-        items,
-        formattedDate,
-        dateFormatter
-      ),
-    });
-  },
-  {});
-};
+function contentByDateString(items, dateFormatter) {
+  return generateItemsDateSet(items, dateFormatter).reduce((acc, date) => {
+    acc[date] = getItemsByDate(items, date, dateFormatter);
+    return acc;
+  }, {});
+}
 
-const yearsWithContent = (collection) => {
+function yearsWithContent(collection) {
   return generateItemsDateSet(collection, makeDateFormatter('YYYY'));
-};
-const contentsByYear = (collection) => {
+}
+
+function contentsByYear(collection) {
   return contentByDateString(collection, makeDateFormatter('YYYY'));
-};
-
-/*
-const monthsWithContent = (collection) => {
-  return generateItemsDateSet(collection, makeDateFormatter('YYYY/MM'));
-};
-
-const contentsByMonth = (collection) => {
-  return contentByDateString(collection, makeDateFormatter('YYYY/MM'));
-};
-*/
-
-let collections = {};
+}
 
 const latestNb = 3;
 const promotedNb = 3;
 
-['all', 'fr', 'en'].forEach((lang) => {
-  [
-    'publications',
-    'posts',
-    'links',
-    'notes',
-    'talks',
-    'archives',
-    'chapters',
-    'articles',
-    'varia',
-    'books',
-    'SamaDocs',
-    'video',
-    'events',
-    'media',
-  ].forEach((collectionName) => {
-    // collections for yearly archives
-    collections[`${collectionName}${lang}ByYear`] = (collection) => {
-      return contentsByYear(
-        getFilteredCollection(collection, collectionName, lang)
-      );
-    };
+const collections = {};
+const langs = ['all', 'fr', 'en'];
+const collectionNames = [
+  'publications', 'posts', 'links', 'notes', 'talks', 'archives', 'chapters',
+  'articles', 'varia', 'books', 'SamaDocs', 'video', 'events', 'media'
+];
 
-    collections[`yearsWith${collectionName}${lang}`] = (collection) => {
-      return yearsWithContent(
-        getFilteredCollection(collection, collectionName, lang)
-      );
-    };
-    collections[`${collectionName}${lang}`] = (collection) => {
-      return getFilteredCollection(collection, collectionName, lang);
-    };
-    collections[`latest${collectionName}${lang}`] = (collection) => {
-      // latest articles
-      return getFilteredCollection(collection, collectionName, lang).slice(
-        0,
-        latestNb
-      );
-    };
-    collections[`promoted${collectionName}${lang}`] = (collection) => {
-      // promoted articles within not the latest ones
-      return getFilteredCollection(collection, collectionName, lang)
+for (const lang of langs) {
+  for (const name of collectionNames) {
+    collections[`${name}${lang}ByYear`] = (collection) =>
+      contentsByYear(getFilteredCollection(collection, name, lang));
+
+    collections[`yearsWith${name}${lang}`] = (collection) =>
+      yearsWithContent(getFilteredCollection(collection, name, lang));
+
+    collections[`${name}${lang}`] = (collection) =>
+      getFilteredCollection(collection, name, lang);
+
+    collections[`latest${name}${lang}`] = (collection) =>
+      getFilteredCollection(collection, name, lang).slice(0, latestNb);
+
+    collections[`promoted${name}${lang}`] = (collection) =>
+      getFilteredCollection(collection, name, lang)
         .slice(latestNb)
-        .filter((article) => article.data.promoted)
+        .filter((item) => item.data?.promoted)
         .slice(0, promotedNb);
-    };
-    /* eleventyConfig.addCollection("onlyMarkdown", function(collectionApi) {
-    return collectionApi.getAllSorted().filter(function(item) {
-      // Only return content that was originally a markdown file
-      let extension = item.inputPath.split('.').pop();
-      return extension === "md";
-    });
-  });*/
-
-    // collections for monthly archives
-    /*   collections[`${collectionName}ByMonth`] = (collection) => {
-      return contentsByMonth(getFilteredCollection(collection, collectionName));
-    };*/
-    /* collections[`monthsWith${collectionName}`] =   (collection) => {
-    return monthsWithContent(getFilteredCollection(collection, collectionName));
-  } ;*/
-  });
-});
-
-/*
-tags.forEach(  (tag) => {
-    collections[`tags${tag}`] = (collection) => {
-      return collection.getAll().filter(function(item) { "tags" in item.data && tag in item.data.tags;});
-    }
-});
-  */
+  }
+}
 
 const formatter = makeDateFormatter('YYYY');
-collections[`allKeys`] = (collection) => {
-  let catSet = new Set();
-  collection
-    .getAllSorted()
-    .forEach(
-      (item) =>
-        item.data.category &&
-        item.data.category.forEach(
-          (catt) =>
-            catSet.add('all/archives') &&
-            catSet.add('all/archives/' + formatter(item.data.orderDate)) &&
-            catSet.add('all/' + catt) &&
-            catSet.add('all/' + catt + '/' + formatter(item.data.orderDate)) &&
-            catSet.add(item.data.lang + '/archives') &&
-            catSet.add(item.data.lang + '/archives/' + formatter(item.data.orderDate)) &&
-            catSet.add(item.data.lang + '/' + catt) &&
-            catSet.add(
-              item.data.lang + '/' + catt + '/' + formatter(item.data.orderDate)
-            )
-        )
-    );
-
+collections.allKeys = (collection) => {
+  const catSet = new Set();
+  collection.getAllSorted().forEach((item) => {
+    const categories = item.data?.category ?? [];
+    categories.forEach((catt) => {
+      const orderDate = formatter(item.data?.orderDate ?? '');
+      const lang = item.data?.lang ?? 'all';
+      catSet.add('all/archives');
+      catSet.add(`all/archives/${orderDate}`);
+      catSet.add(`all/${catt}`);
+      catSet.add(`all/${catt}/${orderDate}`);
+      catSet.add(`${lang}/archives`);
+      catSet.add(`${lang}/archives/${orderDate}`);
+      catSet.add(`${lang}/${catt}`);
+      catSet.add(`${lang}/${catt}/${orderDate}`);
+    });
+  });
   return [...catSet];
 };
 
 const formatter2 = makeDateFormatter('YYYYMMDD');
-collections[`futureTalks`] = (collection) => {
-  return collection.getAll().filter(function (item) {
-    if (
-      item.data.category &&
-      item.data.category.includes('talks') &&
-      item.data.bibentryconf.fields.annonce
-    ) {
-      return (
-        parseInt(formatter2(Date.now())) -
-          parseInt(formatter2(item.data.orderDate)) <=
-        0
-      );
-    } else {
-      return false;
-    }
+collections.futureTalks = (collection) =>
+  collection.getAll().filter((item) => {
+    const catIncludesTalks = item.data?.category?.includes('talks') ?? false;
+    const annonceExists = item.data?.bibentryconf?.fields?.annonce ?? false;
+    const diff = parseInt(formatter2(Date.now()), 10) - parseInt(formatter2(item.data?.orderDate ?? ''), 10);
+    return catIncludesTalks && annonceExists && diff <= 0;
   });
-};
 
-module.exports = collections;
+export default collections;

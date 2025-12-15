@@ -1,17 +1,21 @@
- 
-require('dotenv').config();
-const fs = require('fs');
-const path = require('path');
+import 'dotenv/config';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-// return any files matching in the directory (non-recursively)
-const getEntryPoints = (directory) => fs.readdirSync(path.join(__dirname, directory))
-  .filter((file) => !fs.statSync(path.join(directory, file)).isDirectory())
-  .reduce((entries, file) => ({
-    ...entries,
-    [file.split('.')[0]]: `./${directory}/${file}`,
-  }), {});
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-module.exports = {
+// Return all files in a directory (non-recursive) as entry points
+const getEntryPoints = (directory) =>
+  fs.readdirSync(path.join(__dirname, directory))
+    .filter((file) => !fs.statSync(path.join(__dirname, directory, file)).isDirectory())
+    .reduce((entries, file) => ({
+      ...entries,
+      [file.split('.')[0]]: `./${directory}/${file}`,
+    }), {});
+
+export default {
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
   entry: () => getEntryPoints('assets/js'),
   module: {
@@ -25,7 +29,7 @@ module.exports = {
   },
   output: {
     filename: '[name].legacy.js',
-     sourceMapFilename: '[file].map',
+    sourceMapFilename: '[file].map',
     path: path.resolve(__dirname, '_site/js'),
   },
 };

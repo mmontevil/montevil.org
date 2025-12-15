@@ -1,8 +1,9 @@
 
+
 const timestamp = new Date();
 
-module.exports = {
+export default {
   env: process.env.NODE_ENV,
-  timestamp: timestamp,
+  timestamp,
   id: timestamp.valueOf(),
 };
