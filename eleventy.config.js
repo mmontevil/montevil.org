@@ -172,7 +172,7 @@ export default async function (eleventyConfig) {
 
   //const { default: ogImage } = require('./src/_11ty/shortcodes/ogImage.mjs');
   
-const { default: imagesResponsiverConfig } = await import('./src/_11ty/images-responsiver-config.js');
+const { default: imagesResponsiverConfig } = await import('./src/_11ty/images-responsiver-config.cjs');
   
     eleventyConfig.addTransform('imagesResponsiver', async (content, outputPath) =>
       outputPath?.endsWith('.html') ? imagesResponsiver(content, imagesResponsiverConfig) : content
