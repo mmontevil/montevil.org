@@ -5,7 +5,7 @@ export const dirname = (filePath) => {
   return path.dirname(filePath);
 };
 
-export const includeifex = async (id) => {
+export const includeifex = (id) => {
   const tagContentPath = `src/talks/talksSnippet/${id}.md`;
 
   if (fs.existsSync(tagContentPath)) {

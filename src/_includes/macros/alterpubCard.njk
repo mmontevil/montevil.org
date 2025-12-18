@@ -4,11 +4,10 @@
 {% macro alterpubCard(itemdata) %}
 
 
-{% set rid -%}{{-itemdata.title| slugify -}}{%-endset%}
+{% set rid -%}{{-itemdata.title| slug-}}{%-endset%}
 
-
-    {% set aref %}<a href={{pageUrl}}>{{-itemdata.title-}}</a>{%endset%}
-  <li  class="publi"><section  class="wrap"><h4 ><a href="{{itemdata.page.url |safe}}">{{itemdata.bibentry.title |safe}}</a></h4>
+    {% set aref %}<a href={{itemdata.page.url}}>{{-itemdata.title-}}</a>{%endset%}
+  <li  class="publi"><section  class="wrap"><h4 ><a href="{{itemdata.bibentry.note |safe}}">{{itemdata.bibentry.title |safe}}</a></h4>
   <ul class="inlinemeta" >{{publabel2(itemdata)|safe}}</ul> <p>{% icon "reference", "reference" %} {{ itemdata.bibentry | bibcite2|divRemove| urlize( itemdata.title,itemdata.page.url, itemdata.bibentry.type)|safe}}</p>
   {% if not  (itemdata.bibentry.abstract === undefined) %}
 <details class=" citation abstract"> 

@@ -3,9 +3,7 @@
 import { readFileSync } from 'fs';
 import Cite from 'citation-js';
 
-
-// Function to generate references
-async function refs() {// Load and parse JSON data
+// Load and parse JSON data
 const databibM = readFileSync('./src/_data/bibM.json', 'utf-8');
 const bibM = JSON.parse(databibM);
 
@@ -13,6 +11,8 @@ const bibM = JSON.parse(databibM);
 const config = Cite.plugins.config.get('@csl');
 const templateName = 'chicago';
 
+// Function to generate references
+function refs(bibM, Cite, templateName) {
   const res = {};
   for (const entry in bibM) {
     const bibfi = bibM[entry];
@@ -32,5 +32,5 @@ const templateName = 'chicago';
 }
 
 // Export references
-export const references = await refs();
+export const references = refs(bibM, Cite, templateName);
 

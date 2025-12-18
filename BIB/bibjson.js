@@ -1,41 +1,33 @@
- import fs from 'fs/promises';
-import parser from 'bib2json';
+ 
+var fs = require('fs')
+const parser = require('bib2json')
 
-// Fonction récursive pour mettre toutes les clés en minuscules
+
+
 function changeKeysToLower(obj) {
-    if (typeof obj !== 'object' || obj === null) return obj;
-    return Object.fromEntries(
-        Object.entries(obj).map(([k, v]) => [k.toLowerCase(), changeKeysToLower(v)])
-    );
-}
-
-async function main() {
-    try {
-        // Lire le fichier BibTeX
-        const bibContent = await fs.readFile('bibconf.bib', 'utf8');
-        
-        // Parser le BibTeX en JSON
-        const bibJSON = parser(bibContent);
-
-        // Transformer les clés et ajuster la syntaxe
-        const result = JSON.stringify(
-            changeKeysToLower(bibJSON.entries),
-            null,
-            4
-        ).replaceAll('[*', '{').replaceAll('*]', '}');
-
-        console.log(result);
-
-        // Si tu veux écrire dans un fichier JSON
-        // await fs.writeFile('bibconf.json', result, 'utf8');
-
-    } catch (err) {
-        console.error('Erreur:', err);
+    var key, upKey;
+    for (key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            upKey = key.toLowerCase();
+            if (upKey !== key) {
+                obj[upKey] = obj[key];
+                delete(obj[key]);
+            }
+            // recurse
+            if (typeof obj[upKey] === "object") {
+                changeKeysToLower(obj[upKey]);
+            }
+        }
     }
+    return obj;
 }
+/*
+fs.writeFile('bibconf2.json', 
+JSON.stringify(changeKeysToLower(parser(String(fs.readFileSync('bibconf.bib'))).entries), null, 4).replaceAll('[*','{').replaceAll('*]','}'));
+**/
 
-// Lancer le script
-main();
+
+console.log(JSON.stringify(changeKeysToLower(parser(String(fs.readFileSync('bibconf.bib'))).entries), null, 4).replaceAll('[*','{').replaceAll('*]','}'));
 
 /*
 var addClasses = require('rehype-add-classes')

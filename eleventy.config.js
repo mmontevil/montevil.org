@@ -1,6 +1,7 @@
 import path from 'path';
 import fs from 'fs';
 import { promises as fsp } from 'fs';
+import glob from 'fast-glob';
 
 import markdownIt from 'markdown-it';
 import markdownItFootnote from 'markdown-it-footnote';
@@ -25,8 +26,10 @@ import slugifyFn from './src/_utils/slugify.js';
 import imagesResponsiver from './src/_utils/responsiver.js';
 import htmlmin from 'html-minifier-next';
 
-import dirOutputPlugin from "@11ty/eleventy-plugin-directory-output";
 
+
+/* ---------------- Cache ---------------- */
+const cachedPeople = readFromCache('_cache/people.json', {});
 
 /* ---------------- Markdown Helpers ---------------- */
 function getHeadingLevel(tagName) {
@@ -57,18 +60,9 @@ function markdownItHeadingLevel(md, options) {
 
 /* ---------------- ESM Eleventy Config ---------------- */
 export default async function (eleventyConfig) {
-  eleventyConfig.on('eleventy.before', async () => {
-    // Initialize global cache before build
-    if (!globalThis.__cachedPeople__) {
-      globalThis.__cachedPeople__ = {};
-    }
-    const peopleData = await readFromCache('_cache/people.json', {});
-    Object.assign(globalThis.__cachedPeople__, peopleData);
-  });
-  
+
   /* ---------------- After Build ---------------- */
-  eleventyConfig.on('eleventy.after', () => {
-    const cachedPeople = globalThis.__cachedPeople__;
+  eleventyConfig.on('afterBuild', () => {
     writeToCache(cachedPeople, '_cache/people.json');
   });
 
@@ -169,7 +163,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('markdownify', s => md.render(s));
 
   /* ---------------- Transforms ---------------- */
- 
+  if (process.env.NODE_ENV === 'production') {
 
   //const { default: ogImage } = require('./src/_11ty/shortcodes/ogImage.mjs');
   
@@ -200,7 +194,6 @@ const { default: imagesResponsiverConfig } = await import('./src/_11ty/images-re
   }
   return content;
 });
-  if (process.env.NODE_ENV === 'production') {
 }
   
   /* ---------------- Passthrough Copy ---------------- */

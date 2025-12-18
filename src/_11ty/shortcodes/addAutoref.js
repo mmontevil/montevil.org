@@ -3,7 +3,7 @@ import { DOMParser } from 'linkedom';
 import fs from 'fs';
 import stringComparison from 'string-similarity';
 import Cite from 'citation-js';
-import memoize from 'memoize';
+import memoize from 'fast-memoize';
 
 const { compareTwoStrings: cos } = stringComparison;
 
@@ -21,8 +21,7 @@ function clean(text) {
     .replace(/issn/g, '')
     .replace(/isbn/g, '')
     .replace(/op cit/g, '')
-    .replace(/\s\s+/g, ' ')
-    .replace(/figure/g, '');
+    .replace(/\s\s+/g, ' ');
 }
 
 // Citation
@@ -39,7 +38,7 @@ const cite00 = function(jsonentry) {
 const cite0 = memoize(cite00);
 
 // Map ID to URL
-function idToUrl0(id) {
+function idToUrl(id) {
   let res = '';
   if (fs.existsSync(`./src/publications/chapters/${id}`)) res = `/publications/chapters/${id}`;
   if (fs.existsSync(`./src/publications/varia/${id}`)) res = `/publications/varia/${id}`;
@@ -47,9 +46,6 @@ function idToUrl0(id) {
   if (fs.existsSync(`./src/publications/articles/${id}`)) res = `/publications/articles/${id}`;
   return res;
 }
-
-const idToUrl = memoize(idToUrl0);
-
 
 // Test function
 function testmoi(bibitem) {
@@ -60,35 +56,8 @@ function testmoi(bibitem) {
   return item.innerHTML.includes('Montévil');
 }
 
-export function findOrigin(strip,bibM) {
-      let similarity = 0;
-      let resultat = '';
-      let resid = '';
-      let strip2= strip.toLowerCase();
-      for (const entry in bibM) {
-        const txt = bibM[entry].title.toLowerCase()+bibM[entry]?.["container-title"]?.toLowerCase();//cite0(bibM[entry]);
-        const test = cos(clean(txt), strip2);
-        if (test > similarity) {
-          resultat = txt;
-          similarity = test;
-          resid = bibM[entry].id;
-        }
-      }
-      //console.log("--------");
-      //console.log(strip);
-      //console.log(resultat);
-      // Special overrides
-      if (resid === '2014-LM-ScalingScaleSymmetries') resid = '2014-LM-Perspectives-Organisms';
-      if (resid === '2018-ML-Big-Data-Biology-ISLS') resid = '2018-ML-Big-Data-Biology';
-
-
-      return idToUrl(resid);
-}
-export const anchorSvg ='<svg  class="svgnofill icon svgleft" role="img" focusable="false" aria-label="Anchor"><use xlink:href="#symbol-anchor" /></svg>';
-
 // Main async function
 async function addAutoref(html, bibM) {
-  if (html.includes('bibitem')||html.includes('citedbyitem')){
   const document = new DOMParser().parseFromString(html, 'text/html');
   const selector = 'li.bibitem,li.citedbyitem';
 
@@ -100,19 +69,34 @@ async function addAutoref(html, bibM) {
       });
 
       const strip = clean(bibitem.innerHTML);
- 
+      let similarity = 0;
+      let resultat = '';
+      let resid = '';
+
+      for (const entry in bibM) {
+        const txt = cite0(bibM[entry]);
+        const test = cos(clean(txt), strip);
+        if (test > similarity) {
+          resultat = txt;
+          similarity = test;
+          resid = bibM[entry].id;
+        }
+      }
+
+      // Special overrides
+      if (resid === '2014-LM-ScalingScaleSymmetries') resid = '2014-LM-Perspectives-Organisms';
+      if (resid === '2018-ML-Big-Data-Biology-ISLS') resid = '2018-ML-Big-Data-Biology';
+
       const link = document.createElement('a');
-      link.setAttribute('href', findOrigin(strip,bibM));
+      link.setAttribute('href', idToUrl(resid));
       link.setAttribute('class', 'anchorlink');
-      link.innerHTML =anchorSvg;
+      link.innerHTML =
+        '<svg  class="svgnofill icon svgleft" role="img" focusable="false" aria-label="Anchor"><use xlink:href="#symbol-anchor" /></svg>';
       bibitem.appendChild(link);
     }
   });
 
   return await document.toString();
-  }else{
-    return html;
-  }
 }
 
 // Export as default

@@ -1,6 +1,6 @@
-import svgstore from 'svgstore';
-import fs from 'fs';
-import path from 'path';
+const svgstore = require('svgstore');
+const fs = require('fs');
+const path = require('path');
 
 // Where are Feather icons available from the npm package?
 const ICONS_FOLDERS = {
@@ -13,7 +13,7 @@ const ICONS_FOLDERS = {
 // icon filename + title for accessibility
 const ICONS_LIST = {
   feather: {
-    layers: { name: 'archives', title: 'archives' },
+      layers: { name: 'archives', title: 'archives' },
     mail: { name: 'mail', title: 'mail' },
     'message-square': { name: 'message', title: 'message' },
     'book-open': { name: 'book', title: 'book' },
@@ -57,7 +57,7 @@ const ICONS_LIST = {
 };
 
 // Initiate the sprite with svgstore
-const sprite = svgstore({
+let sprite = svgstore({
   // Add these attributes to the sprite SVG
   svgAttrs: { style: 'display: none;', 'aria-hidden': 'true' },
   // Copy these attributes from the icon source SVG to the symbol in the sprite
@@ -69,7 +69,6 @@ Object.entries(ICONS_LIST).forEach(([source, icons]) => {
   Object.entries(icons).forEach(([icon, properties]) => {
     // Log the name of the icon and its title to the console
     console.log(`${icon}.svg -> ${properties.title}`);
-
     const svgFile = fs
       // Load the content of the icon SVG file
       .readFileSync(path.join(ICONS_FOLDERS[source], `${icon}.svg`), 'utf8')
@@ -80,7 +79,6 @@ Object.entries(ICONS_LIST).forEach(([source, icons]) => {
         / fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-[^"]+">/,
         ' >'
       );
-
     // Add the new symbol to the sprite
     sprite.add(`symbol-${properties.name || icon}`, svgFile, {
       // Add attributes for accessibility

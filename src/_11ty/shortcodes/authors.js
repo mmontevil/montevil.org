@@ -1,23 +1,16 @@
 // utils/authors.mjs
 import fs from 'fs';
 import axios from 'axios';
-import memoize from 'memoize';
+import memoize from 'fast-memoize';
 import slugify from '@sindresorhus/slugify';
-import {anchorSvg ,findOrigin } from './addAutoref.js';
-
-if (!globalThis.__cachedPeople__) {
-  globalThis.__cachedPeople__ = {};
-}
-let cachedPeople = globalThis.__cachedPeople__ ;
-
-
+import addAutoref from './addAutoref.js';
 
 async function download(url, filename) {
   const response = await axios.get(url, { responseType: 'arraybuffer' });
   return fs.promises.writeFile(filename, response.data);
 }
 
-const downloadAuthor0 = async (id) => {
+const downloadAuthor = async (id) => {
   const path = `src/assets/avatars/gs/${id}.jpg`;
   if (!fs.existsSync(path)) {
     await download(
@@ -27,8 +20,6 @@ const downloadAuthor0 = async (id) => {
     console.log('downloaded ' + id);
   }
 };
-
-export const downloadAuthor = memoize(downloadAuthor0);
 
 const filename = (url) => {
   const url0 = url.replace('_normal', '');
@@ -45,6 +36,7 @@ const downloadAvatar = async (url) => {
   return `https://montevil.org/assets/avatars/mentions/${filename(url0)}`;
 };
 
+const cachedPeople = {};
 
 export const authors0 = async (
   name,
@@ -63,10 +55,10 @@ export const authors0 = async (
 
   // Resolve alias
   if (people[name]?.alias) name = people[name].alias;
-  if ( people[name]?.gsid) gsid = people[name].gsid;
+  if (!gsid && people[name]?.gsid) gsid = people[name].gsid;
 
   // Google Scholar avatar
-  if (gsid && gsid!="") {
+  if (gsid) {
     await downloadAuthor(gsid);
     authorPic = `/assets/avatars/gs/${gsid}.jpg`;
     authorUrl = `https://scholar.google.fr/citations?user=${gsid}`;
@@ -105,13 +97,10 @@ export const authors0 = async (
     cachedPeople[slug] = person;
     authorUrl = person.url || authorUrl;
     fullName = person.fullName || fullName;
-    if (person.affiliation) affiliation =  person.affiliation;
-
-
+    if (person.affiliation) affiliation = ', ' + person.affiliation;
   }
-  let sep="";
-  if (affiliation) sep = ', ';
-  tooltip += `${fullName}${sep}${affiliation}"`;
+
+  tooltip += `${fullName}${affiliation}"`;
 
   // Build HTML
   let content = `<figure class="frameAuthor ${authclass} h-card" ${tooltip}>`;
@@ -132,14 +121,13 @@ export async function renderCitedBy0(gsentry, people, bibM) {
 
   for (const article of gsentry.citing) {
     html += '  <li class="citedbyitem">\n';
-    let strip="";
-    let authorstxt="";
+
     if (article.authorsid && article.authors) {
       const totalAuthors = article.authorsid.length;
       for (let i = 0; i < totalAuthors; i++) {
         const auth = article.authorsid[i];
         html += await authors(article.authors[i], auth, people);
-       authorstxt+=article.authors[i]+" ";
+
         // Add separators like Nunjucks loop.revindex logic
         const revIndex = totalAuthors - i;
         if (revIndex > 2) {
@@ -154,18 +142,13 @@ export async function renderCitedBy0(gsentry, people, bibM) {
 
     if (article.year && article.year !== "NA") {
       html += ` ${article.year}. `;
-      //strip+= ` ${article.year}`+" ";
-
     }
-    let title=article.title.replace("[PDF] ", "").replace("[HTML] ", "");
+
     if (article.journal === "NA") html += '<i>';
-    html += `${title.charAt(0).toUpperCase() + title.slice(1)}.`;
+    html += `${article.title.charAt(0).toUpperCase() + article.title.slice(1)}.`;
     if (article.journal === "NA") html += '</i>';
     else html += ` <i>${article.journal.charAt(0).toUpperCase() + article.journal.slice(1)}</i>.`;
-    
-    strip+= `${title}`+" "+`${article.journal}`;
-    
-    
+
     if (article.mainlink && article.mainlink !== "") {
       html += ` <a href="${article.mainlink}">Publisher</a>`;
     }
@@ -173,18 +156,17 @@ export async function renderCitedBy0(gsentry, people, bibM) {
     if (article.pdflink && article.pdflink !== "") {
       html += ` <a href="${article.pdflink}">Eprint</a>`;
     }
-    if (authorstxt.includes("Montévil")){
-      html += ` <a href="${findOrigin(strip,bibM)}" class="anchorlink">${anchorSvg}</a>`;
-    }
-      
+
     html += '\n  </li>\n';
   }
 
   html += '</ol>\n';
+  html=addAutoref(html, bibM);
   return html;
 }
 
 
 // Memoize async function
-export const authors = memoize(authors0);
-export const renderCitedBy = memoize(renderCitedBy0);
+export const authors = authors0;
+export const downloadAvatarFn = downloadAvatar;
+export const renderCitedBy = renderCitedBy0;

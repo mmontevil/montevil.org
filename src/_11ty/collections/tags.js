@@ -1,8 +1,10 @@
 import fs from 'fs';
-import slugify from '../../_utils/slugify.js';
-import tagFilter from '../../_utils/tagfilter.js';
+import slugifyModule from '../../_utils/slugify.js';
+import tagFilterModule from '../../_utils/tagfilter.js';
 
 export async function tags(collection) {
+  const slugify = slugifyModule.default || slugifyModule;
+  const tagFilter = tagFilterModule.default || tagFilterModule;
 
   const tagsCollection = new Map();
   let max = 0;

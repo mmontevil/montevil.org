@@ -10,7 +10,7 @@ const WEBMENTION_CACHE = '_cache/webmentions.json';
 
 /* ------------------ Webmentions ------------------ */
 
-export async function getExtWebmentions() {
+export function getExtWebmentions() {
   return readFromCache(WEBMENTION_CACHE);
 }
 
@@ -148,7 +148,7 @@ export function bibentry(data) {
   return res;
 }
 
-export function gsentry(data) {
+export async function gsentry(data) {
   // Guard: missing or invalid title
   if (!data || typeof data.title !== 'string') {
     return {};
