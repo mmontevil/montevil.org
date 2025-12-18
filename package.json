@@ -28,7 +28,7 @@
     "build:eleventy": " eleventy",
     "watch:eleventy": " eleventy --serve ",
     "serviceworker:inject": "workbox generateSW workbox.config.cjs",
-    "start": " NODE_ENV=development npm-run-all  --sequential clean build:js  build:js:legacy --parallel watch:*",
+    "start": " NODE_ENV=production npm-run-all  --sequential clean build:js  build:js:legacy --parallel watch:*",
     "start0": " NODE_ENV=development npm-run-all --sequential clean --parallel start:js start:js:legacy build:sass --sequential build:eleventy ",
     "build": " NODE_ENV=production npm-run-all --sequential clean --parallel  build:js build:js:legacy build:sass --sequential build:eleventy serviceworker:inject",
     "build:netlify": " NODE_ENV=production npm-run-all --sequential clean --parallel build:js  build:js:legacy build:sass --sequential build:eleventy serviceworker:inject",
@@ -45,7 +45,7 @@
     "benchmark": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy >bench.txt 2>&1"
   },
   "devDependencies": {
-    "@11ty/eleventy": "v4.0.0-alpha.6",
+    "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-navigation": "^1.0.5",
     "@11ty/eleventy-plugin-rss": "^2.0.4",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
