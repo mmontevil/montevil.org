@@ -25,7 +25,6 @@ import slugifyFn from './src/_utils/slugify.js';
 import imagesResponsiver from './src/_utils/responsiver.js';
 import htmlmin from 'html-minifier-next';
 
-import dirOutputPlugin from "@11ty/eleventy-plugin-directory-output";
 
 
 /* ---------------- Markdown Helpers ---------------- */
@@ -169,7 +168,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('markdownify', s => md.render(s));
 
   /* ---------------- Transforms ---------------- */
- 
+ if (process.env.NODE_ENV === 'production') {
 
   //const { default: ogImage } = require('./src/_11ty/shortcodes/ogImage.mjs');
   
@@ -200,7 +199,7 @@ const { default: imagesResponsiverConfig } = await import('./src/_11ty/images-re
   }
   return content;
 });
-  if (process.env.NODE_ENV === 'production') {
+  
 }
   
   /* ---------------- Passthrough Copy ---------------- */
