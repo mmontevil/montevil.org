@@ -13,12 +13,9 @@ const getImageDimensions = memoize(async (filePath) => {
 });
 const md = new MarkdownIt();
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const pkg = JSON.parse(
-  await fs.readFile(path.resolve(__dirname, '../../package.json'), 'utf8')
-);
+const pkgPath = path.join(process.cwd(), 'package.json');
+const pkgRaw = await fs.readFile(pkgPath, 'utf8');
+const pkg = JSON.parse(pkgRaw);
 
 
 
