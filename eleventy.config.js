@@ -168,6 +168,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('markdownify', s => md.render(s));
 
   /* ---------------- Transforms ---------------- */
+  if (process.env.NODE_ENV === 'production') {
 
   //const { default: ogImage } = require('./src/_11ty/shortcodes/ogImage.mjs');
   
@@ -198,8 +199,6 @@ const { default: imagesResponsiverConfig } = await import('./src/_11ty/images-re
   }
   return content;
 });
-   if (process.env.NODE_ENV === 'production') {
-
 }
   
   /* ---------------- Passthrough Copy ---------------- */

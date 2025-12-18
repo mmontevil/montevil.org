@@ -1,11 +1,10 @@
 // filters.mjs  (ESM, Eleventy-compatible)
 
 import tagFilter from '../_utils/tagfilter.js';
-import stringComparison from 'string-similarity';
+import {diceCoefficient} from  'dice-coefficient';
 import slugify from '../_utils/slugify.js';
 import { readFromCache } from '../_utils/cache.js';
 
-const compare = stringComparison.compareTwoStrings;
 const WEBMENTION_CACHE = '_cache/webmentions.json';
 
 /* ------------------ Webmentions ------------------ */
@@ -175,7 +174,7 @@ export function gsentry(data) {
   for (const entry of entries) {
     if (!entry?.title) continue;
 
-    const test = compare(
+    const test = diceCoefficient(
       slugify(entry.title.toLowerCase()),
       titleStr
     );

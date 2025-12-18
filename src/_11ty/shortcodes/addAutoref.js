@@ -1,11 +1,10 @@
 // utils/addAutoref.mjs
 import { DOMParser } from 'linkedom';
 import fs from 'fs';
-import stringComparison from 'string-similarity';
+import {diceCoefficient} from 'dice-coefficient';
 import Cite from 'citation-js';
 import memoize from 'memoize';
 
-const { compareTwoStrings: cos } = stringComparison;
 
 // Strip HTML tags
 const stripHTMLTags = str => str.replace(/<[^>]*>/g, '');
@@ -67,7 +66,7 @@ export function findOrigin(strip,bibM) {
       let strip2= strip.toLowerCase();
       for (const entry in bibM) {
         const txt = bibM[entry].title.toLowerCase()+bibM[entry]?.["container-title"]?.toLowerCase();//cite0(bibM[entry]);
-        const test = cos(clean(txt), strip2);
+        const test = diceCoefficient(clean(txt), strip2);
         if (test > similarity) {
           resultat = txt;
           similarity = test;
