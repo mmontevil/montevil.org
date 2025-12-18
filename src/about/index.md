@@ -65,7 +65,7 @@ Downloadable  <a class="" href=/assets/pdf/cv_Montevil_2019_en.pdf >CV {% icon "
 </div>
 {% endset %}
 
-You may have a look at my [list of publications](/publications/publicationsbyType/)  or on a [thematic map of my publications]({% link_to "map" %}). You may also download my publication list formatted in pdf or in bibtex format.
+You may have a look at my [list of publications](/publications/publicationsbyType/). You may also download my publication list formatted in pdf or in bibtex format.
 
 {{links|safe}}
 </section>

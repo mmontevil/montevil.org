@@ -1,5 +1,5 @@
 import slugify1 from "@sindresorhus/slugify";
-import memoize from "fast-memoize";
+import memoize from "memoize";
 
 const slugify0 = (string) => {
   return slugify1(string, {

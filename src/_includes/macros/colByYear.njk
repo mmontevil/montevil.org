@@ -6,7 +6,7 @@
 
    
 {% set dateit="temp" %}
-    {% for article in (collection| sortByOrder| reverse)  %}
+    {% asyncEach article in (collection| sortByOrder| reverse)  %}
     {% set datete=article.data.bibentry.issued['date-parts'][0][0] %}
     {% if datete=== undefined %}  {% set datete="Submitted" %} {%endif%}
    {% if datete !== dateit %}
@@ -23,6 +23,6 @@
 
 {{-alterpubCard(article.data)  |safe-}}
     
-    {% endfor %}
+    {% endeach %}
     </ol> 
 {% endmacro %}

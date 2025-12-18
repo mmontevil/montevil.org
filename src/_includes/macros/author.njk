@@ -12,7 +12,7 @@
 {% if people[name] and people[name].alias %}{%set name =people[name].alias -%}{%endif%}
 
 
-{%set temp -%}/assets/avatars/{{name |slug}}.jpg{%-endset-%}
+{%set temp -%}/assets/avatars/{{name |slugify}}.jpg{%-endset-%}
 {% if (("src"+temp)|fExists)==true %}{%set authorPic =temp -%}{%endif%}
 
 {% if people[name] and people[name].site %}{%set authorUrl =people[name].site -%}{%endif%}
