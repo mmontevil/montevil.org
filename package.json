@@ -32,7 +32,7 @@
     "start0": " NODE_ENV=development npm-run-all --sequential clean --parallel start:js start:js:legacy build:sass --sequential build:eleventy ",
     "build": " NODE_ENV=production npm-run-all --sequential clean --parallel  build:js build:js:legacy build:sass --sequential build:eleventy serviceworker:inject",
     "build:netlify": " NODE_ENV=production npm-run-all --sequential clean --parallel build:js  build:js:legacy build:sass --sequential build:eleventy serviceworker:inject",
-    "webmention": "node ./_scripts/update-webmention.js",
+    "webmention": "node ./_scripts/update-webmention.cjs",
     "sprite": "node ./_scripts/generate-svg-sprite.js",
     "scholar": "node ./_scripts/scholar.js",
     "people": "node ./_scripts/updateAuthors.js",

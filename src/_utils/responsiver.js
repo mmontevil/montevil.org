@@ -30,7 +30,7 @@ function createDocumentFromHTML(html) {
   return new DOMParser().parseFromString(html, 'text/html');
 }
 
-const imagesResponsiver = (html, options = {}) => {
+const imagesResponsiver =  (html, options = {}) => {
   // Default settings
   let globalSettings = defaultSettings;
 
