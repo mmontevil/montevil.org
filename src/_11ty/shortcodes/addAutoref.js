@@ -53,10 +53,23 @@ const idToUrl = memoize(idToUrl0);
 // Test function
 function testmoi(bibitem) {
   let item = bibitem;
-  while (item.innerHTML.includes('——') || item.innerHTML.includes('___')) {
+
+  while (
+    item?.previousElementSibling &&
+    (item.innerHTML.includes('—')||item.innerHTML.includes('—')||item.innerHTML.includes('_'))
+  ) {
     item = item.previousElementSibling;
   }
-  return item.innerHTML.includes('Montévil');
+
+  const normalized = item.innerHTML
+    .normalize('NFD')
+    .replace(/\p{Diacritic}/gu, '')
+    .toLowerCase();
+ let title="j.pbiomolbio.2016.07.006";
+ title=title.normalize('NFD')
+    .replace(/\p{Diacritic}/gu, '')
+    .toLowerCase();
+  return (normalized.includes('montevil') || normalized.includes(title));
 }
 
 export function findOrigin(strip,bibM) {
@@ -104,7 +117,9 @@ async function addAutoref(html, bibM) {
       link.setAttribute('href', findOrigin(strip,bibM));
       link.setAttribute('class', 'anchorlink');
       link.innerHTML =anchorSvg;
-      bibitem.appendChild(link);
+      const p = bibitem.querySelector(':scope > p');
+const target = p ?? bibitem;
+target.appendChild(link);
     }
   });
 

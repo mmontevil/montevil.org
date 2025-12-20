@@ -114,8 +114,8 @@ export default async function (eleventyConfig) {
   const { default: icon } = await import('./src/_11ty/shortcodes/images.js');
   eleventyConfig.addShortcode('icon', icon);
 
-  const { authors, renderCitedBy } = await import('./src/_11ty/shortcodes/authors.js');
-  eleventyConfig.addShortcode('authors', authors);
+  const { author, renderCitedBy } = await import('./src/_11ty/shortcodes/authors.js');
+  eleventyConfig.addShortcode('author', author);
   eleventyConfig.addShortcode('renderCitedBy', renderCitedBy);
 
   const { default: addAutoref } = await import('./src/_11ty/shortcodes/addAutoref.js');
@@ -138,6 +138,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginTOC, {
     tags: ['h2', 'h3', 'h4', 'h5', 'h6'],
     wrapperClass: 'autotoc indent',
+    ignoredElements: ['a'],
   });
 
   /* ---------------- Markdown ---------------- */
@@ -177,10 +178,10 @@ const { default: imagesResponsiverConfig } = await import('./src/_11ty/images-re
     eleventyConfig.addTransform('imagesResponsiver', async (content, outputPath) =>
       outputPath?.endsWith('.html') ? imagesResponsiver(content, imagesResponsiverConfig) : content
     );
-
+/*
     const { default: mathjaxTransform } = await import('./src/_11ty/transform/mathjaxTransform.js');
     eleventyConfig.addTransform('mathjaxTransform', mathjaxTransform);
-  
+  */
 
  eleventyConfig.addTransform('htmlmin', async function(content) {
   if (this.page.outputPath && this.page.outputPath.endsWith('.html')) {

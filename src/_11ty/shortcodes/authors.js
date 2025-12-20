@@ -28,7 +28,7 @@ const downloadAuthor0 = async (id) => {
   }
 };
 
-export const downloadAuthor = memoize(downloadAuthor0);
+const downloadAuthor = memoize(downloadAuthor0);
 
 const filename = (url) => {
   const url0 = url.replace('_normal', '');
@@ -46,7 +46,7 @@ const downloadAvatar = async (url) => {
 };
 
 
-export const authors0 = async (
+ const author0 = async (
   name,
   gsid = '',
   people = {},
@@ -81,7 +81,7 @@ export const authors0 = async (
   if (people[name]?.affiliation) affiliation = people[name].affiliation;
 
   const authclass = auth ? 'p-author' : '';
-  let fullName = fullname0 || name;
+  let fullName =people[name]?.fullName|| fullname0 || name;
 
   if (!cachedPeople[slug]) {
     cachedPeople[slug] = {
@@ -102,6 +102,8 @@ export const authors0 = async (
     if (person.photo === '/assets/avatars/gs/dummy.jpg' && authorPic !== '/assets/avatars/gs/dummy.jpg') {
       person.photo = authorPic;
     }
+    if (people[name]?.fullName) person.fullName = people[name].fullName
+      
     cachedPeople[slug] = person;
     authorUrl = person.url || authorUrl;
     fullName = person.fullName || fullName;
@@ -123,7 +125,10 @@ export const authors0 = async (
 };
 
 
-export async function renderCitedBy0(gsentry, people, bibM) {
+  
+  
+
+async function renderCitedBy0(gsentry, people, bibM) {
   if (!gsentry || !gsentry.citing || gsentry.citing.length === 0) {
     return '';
   }
@@ -138,7 +143,7 @@ export async function renderCitedBy0(gsentry, people, bibM) {
       const totalAuthors = article.authorsid.length;
       for (let i = 0; i < totalAuthors; i++) {
         const auth = article.authorsid[i];
-        html += await authors(article.authors[i], auth, people);
+        html += await author(article.authors[i], auth, people);
        authorstxt+=article.authors[i]+" ";
         // Add separators like Nunjucks loop.revindex logic
         const revIndex = totalAuthors - i;
@@ -146,9 +151,7 @@ export async function renderCitedBy0(gsentry, people, bibM) {
           html += ', ';
         } else if (revIndex === 2) {
           html += ' & ';
-        } else if (revIndex === 1) {
-          html += '.';
-        }
+        } 
       }
     }
 
@@ -186,5 +189,5 @@ export async function renderCitedBy0(gsentry, people, bibM) {
 
 
 // Memoize async function
-export const authors = memoize(authors0);
+export const author = memoize(author0);
 export const renderCitedBy = memoize(renderCitedBy0);

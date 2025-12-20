@@ -36,7 +36,9 @@ a.buttonlink.buttonemph {&:link, &:visited{background-color: var(--color-emph-bg
 }
 
 
-.inlinemeta{padding: 0;}
+.inlinemeta{padding: 0;
+  margin-top: 0;
+}
 .paragraphHead2{
   color: var(--color-primary);
   font-weight: bold;

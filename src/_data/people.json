@@ -30,10 +30,16 @@
     "site" : "https://centregeorgsimmel.ehess.fr/jean-lassegue/"
     },
         "M Montevil": {
-    "alias": "M Montévil"
+    "alias": "M Montévil",
+    "fullName": "Maël Montévil"
+  },
+  "MM Montévil": {
+    "alias": "M Montévil",
+    "fullName": "Maël Montévil"
   },
     "M Montévil": {
-    "site" : "https://montevil.org"
+    "site" : "https://montevil.org",
+    "fullName": "Maël Montévil"
     },
     "C Schaeberle": {
       "affiliation": "Tufts University School of Medicine",

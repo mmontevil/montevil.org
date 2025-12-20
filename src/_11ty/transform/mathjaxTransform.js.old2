@@ -38,7 +38,7 @@ export default async function mathjaxTransform(content, outputPath) {
   /* ------------------------------------------------------------------ */
 
   const adaptor = liteAdaptor({
-    fontSize: 16,
+    fontSize: 14,
     cjkCharWidth: 0,
     unknownCharWidth: 0,
     unknownCharHeight: 0,
@@ -54,7 +54,7 @@ export default async function mathjaxTransform(content, outputPath) {
 
   const chtml = new CHTML({
     fontURL: '/assets/fonts/woff-2',
-    exFactor: 8 / 16,
+    exFactor: 8 / 14,
   });
 
   /* ------------------------------------------------------------------ */
@@ -94,7 +94,7 @@ export default async function mathjaxTransform(content, outputPath) {
           restructureRules: true,
         },
       },
-    }).minify(style.innerHTML).styles;
+    }).minify(style.innerHTML.replace(/clip-path:[^;]+;/g, '')).styles;
   }
 
   return document.toString();

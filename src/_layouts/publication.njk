@@ -12,7 +12,7 @@ eleventyComputed:
     datepub: "{%- set date0 = bibentry.issued['date-parts'][0] -%}{%- if  date0 -%}{{- 0 if date0[0]<10  -}}{{- date0[0] if date0[0] else 2021 -}}-{{- 0 if (date0[1]<10 or not date0[2])  -}}{{- date0[1] if date0[1] else 01 -}}-{{- 0 if (date0[2]<10 or not date0[2])  -}}{{- date0[2] if date0[2] else 01 -}}{%- else -%}Submitted{%- endif -%}"
     orderDate: "{%- if datepub=='Submitted'  -%}{{- '2100-01-01' -}}{%- else -%}{{- datepub     -}}{%- endif -%}"
     nbAuteurs:  "{{bibentry.author | length}}"    
-    auteurs: "{%- for auth in bibentry.author -%}{%-if auth.given[0]-%}{%- authors auth.given[0]+' '+auth.family, '', people,true, nbAuteurs -%}{%-else-%}{{-auth.literal-}}{%-endif-%}{%- if loop.revindex >2 -%}, {%endif-%}{%- if loop.revindex ===2 %} & {%endif-%}{%- if loop.revindex ===1 %}.{%endif-%}{%-endfor-%}"
+    auteurs: "{%- for auth in bibentry.author -%}{%-if auth.given[0]-%}{%- author auth.given[0]+' '+auth.family, '', people,true, nbAuteurs -%}{%-else-%}{{-auth.literal-}}{%-endif-%}{%- if loop.revindex >2 -%}, {%endif-%}{%- if loop.revindex ===2 %} & {%endif-%}{%-endfor-%}"
 ---
 
  {# <div class="legibilityWidth wrap0all"> </div>#}

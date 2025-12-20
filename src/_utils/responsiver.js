@@ -1,4 +1,6 @@
-'use strict';import { DOMParser } from 'linkedom';
+'use strict';
+
+import { DOMParser } from 'linkedom';
 import deepmerge from 'deepmerge';
 import clonedeep from 'lodash.clonedeep';
 import debug from 'debug';
@@ -43,82 +45,82 @@ function createDocumentFromHTML(html) {
 }
 
 const imagesResponsiver = async (html, options = {}) => {
-  let globalSettings = defaultSettings;
-
-  if (options.default !== undefined) {
-    globalSettings = deepmerge(globalSettings, options.default, {
-      arrayMerge: overwriteMerge,
-    });
-  }
+  let globalSettings = options.default
+    ? deepmerge(defaultSettings, options.default, { arrayMerge: overwriteMerge })
+    : defaultSettings;
 
   const document = createDocumentFromHTML(html);
+
   const images = [...document.querySelectorAll(globalSettings.selector)].filter(
     (img) => img.getAttribute('src') !== null && !img.getAttribute('srcset')
   );
 
-  for (const image of images) {
-    let imageSettings = clonedeep(globalSettings);
+  // Run all images in parallel for speed
+  await Promise.all(
+    images.map(async (image) => {
+      let imageSettings = clonedeep(globalSettings);
 
-    // Run async before hook
-    await imageSettings.runBefore(image, document);
+      // BEFORE hook
+      await imageSettings.runBefore(image, document);
 
-    // Merge presets based on classes
-    if ('responsiver' in image.dataset) {
-      image.dataset.responsiver.split(' ').forEach((preset) => {
-        if (options[preset] !== undefined) {
-          if ('selector' in options[preset]) {
-            error(`'selector' can't be used in preset '${preset}'`);
-            delete options[preset].selector;
+      // Merge presets based on classes
+      if ('responsiver' in image.dataset) {
+        image.dataset.responsiver.split(' ').forEach((preset) => {
+          if (options[preset]) {
+            if ('selector' in options[preset]) {
+              error(`'selector' can't be used in preset '${preset}'`);
+              delete options[preset].selector;
+            }
+            const presetClasses = options[preset].classes || [];
+            const existingClasses = imageSettings.classes;
+            imageSettings = deepmerge(imageSettings, options[preset], { arrayMerge: overwriteMerge });
+            imageSettings.classes = [...existingClasses, ...presetClasses];
           }
-          const presetClasses = options[preset].classes || [];
-          const existingClasses = imageSettings.classes;
-          imageSettings = deepmerge(imageSettings, options[preset], {
-            arrayMerge: overwriteMerge,
-          });
-          imageSettings.classes = [...existingClasses, ...presetClasses];
-        }
+        });
+        delete image.dataset.responsiver;
+      }
+
+      const imageSrc = image.getAttribute('src');
+      info(`Transforming ${imageSrc}`);
+
+      // Local image dimensions using memoized call
+      if (!imageSrc.startsWith('http')) {
+        const filePath = path.join(process.cwd(), imageSrc.replace(/^_site\//, 'src/'));
+        const dims = await getImageDimensions(filePath);
+        if (!image.getAttribute('width')) image.setAttribute('width', dims.width);
+        if (!image.getAttribute('height')) image.setAttribute('height', dims.height);
+      }
+
+      // Generate srcset
+      const srcsetList = [];
+      const stepCount = Math.max(imageSettings.steps, 2);
+      for (let i = 0; i < stepCount; i++) {
+        const stepWidth = Math.ceil(
+          imageSettings.minWidth +
+            ((imageSettings.maxWidth - imageSettings.minWidth) / (stepCount - 1)) * i
+        );
+        srcsetList.push(`${imageSettings.resizedImageUrl(imageSrc, stepWidth)} ${stepWidth}w`);
+      }
+
+      // Apply settings
+      if (imageSettings.classes.length > 0) image.classList.add(...imageSettings.classes);
+      image.setAttribute('src', imageSettings.resizedImageUrl(imageSrc, imageSettings.fallbackWidth));
+      image.setAttribute('srcset', srcsetList.join(', '));
+      image.setAttribute('sizes', imageSettings.sizes);
+      image.dataset.pristine = imageSrc;
+
+      Object.entries(imageSettings.attributes).forEach(([attr, val]) => {
+        if (val !== null) image.setAttribute(attr, val);
       });
-      delete image.dataset.responsiver;
-    }
 
-    const imageSrc = image.getAttribute('src');
-    info(`Transforming ${imageSrc}`);
-
-    // Example: use memoized getImageDimensions for local images
-    if (!imageSrc.startsWith('http')) {
-      const filePath = path.join(process.cwd(), imageSrc.replace(/^_site\//, 'src/'));
-      const dims = await getImageDimensions(filePath);
-      if (!image.getAttribute('width')) image.setAttribute('width', dims.width);
-      if (!image.getAttribute('height')) image.setAttribute('height', dims.height);
-    }
-
-    // Generate srcset
-    let srcsetList = [];
-    for (let i = 0; i < imageSettings.steps; i++) {
-      const stepWidth = Math.ceil(
-        imageSettings.minWidth +
-          ((imageSettings.maxWidth - imageSettings.minWidth) / (imageSettings.steps - 1)) * i
-      );
-      srcsetList.push(`${imageSettings.resizedImageUrl(imageSrc, stepWidth)} ${stepWidth}w`);
-    }
-
-    // Apply settings
-    if (imageSettings.classes.length > 0) image.classList.add(...imageSettings.classes);
-    image.setAttribute('src', imageSettings.resizedImageUrl(imageSrc, imageSettings.fallbackWidth));
-    image.setAttribute('srcset', srcsetList.join(', '));
-    image.setAttribute('sizes', imageSettings.sizes);
-    image.dataset.pristine = imageSrc;
-
-    Object.entries(imageSettings.attributes).forEach(([attr, val]) => {
-      if (val !== null) image.setAttribute(attr, val);
-    });
-
-    // Run async after hook
-    await imageSettings.runAfter(image, document);
-  }
+      // AFTER hook
+      await imageSettings.runAfter(image, document);
+    })
+  );
 
   return document.toString();
 };
 
 export default imagesResponsiver;
+
 
