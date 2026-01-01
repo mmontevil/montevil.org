@@ -4,7 +4,6 @@ import tagFilter from '../_utils/tagfilter.js';
 import {diceCoefficient} from  'dice-coefficient';
 import slugify from '../_utils/slugify.js';
 import { readFromCache } from '../_utils/cache.js';
-
 const WEBMENTION_CACHE = '_cache/webmentions.json';
 
 /* ------------------ Webmentions ------------------ */
@@ -35,23 +34,8 @@ function formattedDateRaw(lang, date) {
   return dtf[lang === 'fr' || lang === 'en' ? lang : 'en'].format(date);
 }
 
-const _MS_PER_DAY = 1000 * 60 * 60 * 24;
 
-function dateDiffInDays(a, b) {
-  const utc1 = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
-  const utc2 = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());
-  return Math.floor((utc2 - utc1) / _MS_PER_DAY);
-}
 
-export function age(date) {
-  return Math.abs(dateDiffInDays(new Date(), new Date(date)));
-}
-
-export function chooseDate(datepub, date) {
-  if (!datepub) return date;
-  if (datepub === ' Submitted') return date;
-  return datepub;
-}
 
 /* ------------------ Authors ------------------ */
 
@@ -179,12 +163,13 @@ export function gsentry(data) {
       titleStr
     );
 
-    if (test > similarity && test > 0.7) {
+    if (test > similarity && test > 0.6) {
       similarity = test;
       res = entry;
     }
   }
-
+ // console.log(titleStr);
+  //console.log((res?.title?.toLowerCase()));
   return res;
 }
 
@@ -289,7 +274,7 @@ export const lang = (data) => {
 export const formattedDate = (data) => formattedDateRaw(data.lang, data.page.date);
 
 // Attribute date
-export const attributeDate = (data) => attributeDateRaw(data.page.date);
+export const attributeDate = (data) => data.page.date;
 
 
 
@@ -312,5 +297,115 @@ export const title = (data) =>
   data.titlePrefix
     ? data.titlePrefix + (data.bibentry.title || data.title)
     : data.bibentry.title || data.title;
+    
+export const auteurssimple = (data) => {
+  let res = [];
+  if (data.bibentry && data.bibentry.author) {
+    for (const auth of data.bibentry.author) {
+      res.push(auth.given+' '+auth.family);
+    }
+  }
+  return res;
+};
+
+export const nbAuteurs = (data) => {
+  if (data.layout == 'publication') {
+    return data?.bibentry?.author?.length
+  }
+};
+export const auteurs = async (data) => {
+    data.bibentry;
+      data.entry;
+   let databib;
+if (data.layout === 'publication')  databib=data.bibentry;
+if (data.layout === 'talk')  databib=data.entry;
+  const authors = databib?.author;
+  if (!Array.isArray(authors) || authors.length === 0) {
+    return '';
+  }
+
+  const { author } = await import('../_11ty/shortcodes/authors.js');
+
+  const people = data.people;
+  const nbAuteurs = authors.length;
+
+  let output = '';
+  let index = 0;
+
+  for (const auth of authors) {
+    const revindex = authors.length - index;
+
+    if (auth.given && auth.given[0]) {
+      output += await author(
+        `${auth.given[0]} ${auth.family}`,
+        '',
+        people,
+        true,
+        nbAuteurs
+      );
+    } else {
+      output += auth.literal || '';
+    }
+
+    if (revindex > 2) {
+      output += ', ';
+    } else if (revindex === 2) {
+      output += ' & ';
+    }
+
+    index++;
+  }
+
+  return output;
+};
 
 
+/*
+export const orderDate = (data) => {
+  data.datepub;
+  if (data.layout !== 'publication') return;
+
+  return data.datepub == 'Submitted'
+    ? '2100-01-01'
+    : data.datepub;
+};*/
+
+export const datepub = (data) => {
+  data.bibentry;
+  data.entry;
+  if (!((data.layout === 'publication')||(data.layout === 'talk'))) return ;
+  let databib;
+if (data.layout === 'publication')  databib=data.bibentry;
+if (data.layout === 'talk')  databib=data.entry;
+
+  const parts = databib?.issued?.['date-parts'][0];
+
+  if (!Array.isArray(parts) || !parts[0]) {
+    return 'Submitted';
+  }
+
+  const [year, month, day] = parts;
+
+  const pad = (n) => String(n).padStart(2, '0');
+
+  if (year && month && day) {
+    return `${year}-${pad(month)}-${pad(day)}`;
+  }
+
+  if (year && month) {
+    return `${year}-${pad(month)}-01`;
+  }
+
+  return `${year}-01-01`;
+};
+
+
+
+
+/*  
+       auteurs: "{%- for auth in entry.author -%}{%-set authname-%}{%-if auth.given[0]-%}{{-auth.given | initials }} {{auth.family-}}{%-else-%}{{-auth.literal-}}{%-endif-%}{%-endset-%}{%-set fullauthname-%}{%-if auth.given[0]-%}{{-auth.given }} {{auth.family-}}{%-else-%}{{-auth.literal-}}{%-endif-%}{%-endset-%}{%- author authname, '', people,true, nbAuteurs, fullauthname -%}{%- if loop.revindex >2 -%}, {%endif-%}{%- if loop.revindex ===2 %} & {%endif-%}{%-endfor-%}",
+ 
+ 
+   datepub: "{%- set date0 = bibentry.issued['date-parts'][0] -%}{%- if  date0 -%}{{- 0 if date0[0]<10  -}}{{- date0[0] if date0[0] else 2021 -}}-{{- 0 if (date0[1]<10 or not date0[2])  -}}{{- date0[1] if date0[1] else 01 -}}-{{- 0 if (date0[2]<10 or not date0[2])  -}}{{- date0[2] if date0[2] else 01 -}}{%- else -%}Submitted{%- endif -%}"
+ 
+*/

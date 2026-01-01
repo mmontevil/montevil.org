@@ -3,7 +3,7 @@ layout: default
 css: ["component-older-newer.css"]
 computeMentions: true
 eleventyComputed:
-    orderDate: "{{-page.date | attributeDate-}}"
+    orderDate: "{{-page.date| formatDateUTC | attributeDate-}}"
 ---
 
 {% set newerContent = collections[layout + 'sall'] | getPreviousCollectionItem(page) %}
@@ -21,15 +21,15 @@ eleventyComputed:
         "@type": "ListItem",
         "position": 1,
         "item": {
-          "@id": "{{websiteid.url}}/{{ layout }}s/{{ date | date("YYYY") }}/",
-          "name": "{{ date | date(" YYYY ") }}"
+          "@id": "{{websiteid.url}}/{{ layout }}s/{{ date|formatDateUTC | date("YYYY") }}/",
+          "name": "{{ date |formatDateUTC| date("YYYY") }}"
         }
       }, {
         "@type": "ListItem",
         "position": 2,
         "item": {
           "@id": "{{ pkg.homepage }}{{ page.url }}",
-          "name": "{% if layout == 'note' %}Note from {{ page.date | formattedDate }}{% else %}{{ title }}{% endif %}"
+          "name": "{% if layout == 'note' %}Note from {{ page.date| formatDateUTC | formattedDate }}{% else %}{{ title }}{% endif %}"
         }
       }
     ]
@@ -95,7 +95,7 @@ hasSup: hasSup,
   {% endif %}
   
   {% if layout == 'note' %}
-    <h1 class="page__title p-name">Note from {{ page.date | formattedDate }}</h1>
+    <h1 class="page__title p-name">Note from {{ page.date | formatDateUTC| formattedDate }}</h1>
   {% else %}
     <h1 class="page__title p-name">{{ title | orphans | safe }}</h1>
   {% endif %}
@@ -126,7 +126,7 @@ hasSup: hasSup,
           type: type,
       typepub: typepub,
       page: {
-          date: page.date,
+          date: page.date| formatDateUTC,
           url: page.url
           },
       location: {

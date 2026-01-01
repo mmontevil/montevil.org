@@ -30,7 +30,10 @@ export const urlify = (text) => {
   const reg = /(http.*)</gi;
   res = res.replace(reg, '<a href="$1">$1</a><');
 
-  return res;
+
+  const regex = /(<div ((?!(>)).|\n)+>)|(<\/div>)/gm;
+  return res.replace(regex, "");
+
 };
 
 export const bibcite2= memoize(bibcite);

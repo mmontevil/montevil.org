@@ -1,6 +1,24 @@
 {
     "0": {
         "objecttype": "entry",
+        "entrytype": "proceedings",
+        "entrykey": "2026-cerisy-theoriser-vivant",
+        "fields": {
+            "title": "Théoriser le vivant",
+            "location": "Cerisy",
+            "year": "2026",
+            "month": "07",
+            "day": "24",
+            "author": "Adrien Goulletquer and Sébastien Massart and Maël Montévil and Anton Robert and Mathilde Tahar",
+            "annonce": "true",
+            "language": "fr",
+            "abstract": "Le tournant moléculaire a enrichi l’étude empirique du vivant mais ce faisant il a fragilisé ses propres fondements conceptuels. Plutôt que d’importer des cadres venus de la physique ou de l’informatique, ce colloque explore les possibilités d’une nouvelle synthèse théorique en biologie, apte à saisir l’historicité et l’organicité des êtres vivants. Un tel cadre vise à s’articuler à des applications et pratiques déjà existantes et en permettraient de nouvelles.",
+            "illustration": "theoriservivant2026.jpg",
+            "url": "https://cerisy-colloques.fr/theoriservivant2026/"
+        }
+    },
+    "1": {
+        "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2025-enmi",
         "fields": {
@@ -17,7 +35,7 @@
             "language": "fr"
         }
     },
-    "1": {
+    "2": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2025-clinique",
@@ -33,7 +51,7 @@
             "language": "fr"
         }
     },
-    "2": {
+    "3": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2025-SFS-systematique",
@@ -53,7 +71,7 @@
             "program": "programme_SFS_2025.pdf"
         }
     },
-    "3": {
+    "4": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2025-spherical-cows-epistemology",
@@ -70,7 +88,7 @@
             "program": "program-spherical-cows.pdf"
         }
     },
-    "4": {
+    "5": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "2025-spherical-cows",
@@ -88,7 +106,7 @@
             "program": "program-spherical-cows.pdf"
         }
     },
-    "5": {
+    "6": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2025-ihpst-disruption",
@@ -107,7 +125,7 @@
             "illustration": "Université_Panthéon-Sorbonne_(depuis_janvier_2015).svg"
         }
     },
-    "6": {
+    "7": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2025-cavailles-theory",
@@ -126,7 +144,7 @@
             "abstract": "To a large extent, the question of theoretical frameworks in the sciences has been neglected (or poorly treated) in philosophy. In parallel, we argue that scientists themselves are currently neglecting this question, and we will show the consequences of this situation in biology. We will then provide elements of the definition of scientific theories, which are partly grounded in the activity of theorization itself. We will articulate this discussion with the question of the function of theories and theorization in the sciences."
         }
     },
-    "7": {
+    "8": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "vivant-seminaire-2025",
@@ -142,7 +160,7 @@
             "illustration": "affiche_seminaire_2025.webp"
         }
     },
-    "8": {
+    "9": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2025-pushing-boundaries",
@@ -158,7 +176,7 @@
             "language": "en"
         }
     },
-    "9": {
+    "10": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2025-ISH",
@@ -178,7 +196,7 @@
             "abstract": "Biologists often use the term disruption more or less informally; however, this notion is increasingly used to describe the effects of detrimental anthropogenic causes. We argue that disruptions are distinct from perturbations or, in ecology, from generic disturbances. We illustrate this with examples from ecology using the case of plant-pollinator networks and organismal biology with endocrine disruptors. Specifically, we argue that understanding disruptions requires the articulation of historical and relational reasoning. The object of disruption, such as endocrine regulation or seasonal synchrony between plants and pollinators, is a specific property coming from history that is disturbed in a new way, leading to a loss or degradation of this specificity. Moreover, initially, this specificity plays a specific relational role, typically a functional one. This role is lost or impaired by the disruption which explains the disorganization characteristic of disruptions. In our view, however, disruptions are normal processes in evolution. What is severely detrimental is the current accumulation of disruptions at a pace that exceeds living entities' ability to overcome them."
         }
     },
-    "10": {
+    "11": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2025-ISH-session",
@@ -198,7 +216,7 @@
             "abstract": "During the first 25 years of the 21st century, we witnessed a resurgence of Organicism. This process is characterized by the return of the organism as a central biological entity and the increasing investigation on purpose and normativity at this level.<br> Simultaneously, the issue of the vulnerabilities of living beings and their numerous disruptions is escalating in urgency. The need to comprehend these disruptions, and how living beings adapt to them, is pressing. Organicism, with its systemic approach to disruptions and its focus on organisms’ normativity, is the most suitable framework for this understanding.<br> In this session, we will:<br> 1) explore the epistemological role played by the morphogenetic field concept in the studies on the etiology of tumors in the early 20th century and its resurgence in the organicist conception of cancer as development gone awry (presented by Claudia Gadaleta, Paris 1 Sorbonne Panthéon - IHPST, Paris, France),<br> 2) argue that a properly fleshed-out concept of disruption describes the effects of a significant category of detrimental anthropogenic causes in organisms and ecosystems. Understanding disruptions requires articulating historical and relational reasoning, which is a hallmark of recent theoretical developments (presented by Maël Montévil, Centre Cavaillès, Ecole Normale Supérieure, Paris, France)<br> 3) argue that disruption causes a loss of function. The organismal agency may overcome disruption by acquiring novel functions, a process we call normalization. We will discuss two examples: i) how young quadrupeds that lost the function of their forelimbs teach themselves to walk as bipeds, and ii) cancer, a disease usually perceived as irreversible but known to regress spontaneously by normalization (presented by Ana Soto, Tufts University, USA and Centre Cavaillès, Ecole Normale Supérieure, Paris, France)."
         }
     },
-    "11": {
+    "12": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2025-ENMI-Prep",
@@ -217,7 +235,7 @@
             "illustration": "ENMI-preparatoires-2025-1024x541.png"
         }
     },
-    "12": {
+    "13": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2025-Canguilhem-Stiegler",
@@ -235,7 +253,7 @@
             "url": "https://www.ens.psl.eu/agenda/seminaire-d-etudes-canguilhemiennes/2025-03-13t170000"
         }
     },
-    "13": {
+    "14": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2025-conception-milieux",
@@ -254,7 +272,7 @@
             "program": "PHITECO_2025_Livret.pdf"
         }
     },
-    "14": {
+    "15": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "2024-workshop-closure",
@@ -272,7 +290,7 @@
             "program": "Program - closure in practice.pdf"
         }
     },
-    "15": {
+    "16": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2024-workshop-closure-moi",
@@ -290,7 +308,7 @@
             "program": "Program - closure in practice.pdf"
         }
     },
-    "16": {
+    "17": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "2024-democracy",
@@ -307,7 +325,7 @@
             "illustration": "DDSMMM.png"
         }
     },
-    "17": {
+    "18": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2024-Recherche-en-cours",
@@ -326,7 +344,7 @@
             "abstract": "« Nous pouvons jeter les chiffres dans les plus grandes grappes de calcul que le monde ait jamais connues et laisser les algorithmes statistiques trouver des modèles là où la science ne le peut pas. La corrélation l'emporte sur la causalité, et la science peut progresser même sans modèles cohérents, sans théories unifiées... » Ces quelques mots, c’est le journaliste Chris Anderson qui les écrivait en 2008, il était alors rédacteur en chef du magazine américain Wired, son article faisait écho à l’essor des big data."
         }
     },
-    "18": {
+    "19": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2024-cours-EPHE",
@@ -342,7 +360,7 @@
             "programm": "Programme UE Epistémologie_2024.pdf"
         }
     },
-    "19": {
+    "20": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2024-health",
@@ -360,7 +378,7 @@
             "abstract": "Depending on the theoretical and epistemological stance in biology, the relations between the biological and social change in nature. A reductionist stance, for example, genocentrism, focuses scientific investigations on a specific part of the organism - then, the social stands, at best and by definition, in the outskirts as far as biology is concerned. On the opposite, the perspective we are elaborating for reasons internal to biology considers biology at the crossroads of historical and relational epistemologies. The object's definition is never purely based on synchronic relations, like in physics. Instead, biological objects are historical and contextual. Cultural or social determinations can enter the biological picture, more or less strongly depending on specific situations. For example, taste is a phenomenon that involves specific biological structures (taste buds, olfactory receptors), and one may think that it is independent of society. Food pairing studies showed instead that the way to perform associations depends on the culture. Of course, historicity also means that other receptors can also creatively be recruited, which is the case with the capsaicin of chili pepper that triggers pain receptors."
         }
     },
-    "20": {
+    "21": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2024-SFS",
@@ -380,7 +398,7 @@
             "illustration": "40-ans-SFS-logo-1008x1024.png"
         }
     },
-    "21": {
+    "22": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2024-enmi",
@@ -399,7 +417,7 @@
             "video": "https://media.iri.centrepompidou.fr/video/enmi/2024/enmi2024_2024-12-18_14-32-13.mp4"
         }
     },
-    "22": {
+    "23": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2024-Canguilhem-ecologie",
@@ -418,7 +436,7 @@
             "abstract": "Si les mouvements environnementalistes des années 1960-70 ont pu susciter une certaine méfiance chez Canguilhem, et si l’écologie scientifique a joué un rôle plutôt marginal dans son œuvre, il a aussi affirmé, dans un entretien de 1995, quelques dizaines de jours avant sa mort, qu’il était indécis, au moment d’entreprendre ses études de doctorat, entre la médecine et la « géographie agricole », c’est-à-dire « ce qui finalement s’appelle maintenant l’écologie ». Cette indication conduit ainsi à s’interroger sur les relations avec l’écologie repérables dans l’ensemble des savoirs mobilisés par Canguilhem, allant de la géographie humaine à la santé environnementale, en passant par l’ergonomie ou l’agronomie. Sous le label assez large de « l’écologie », il s’agit en effet d’examiner l’attention portée par Canguilhem à l’interdépendance entre la société et l’environnement, le vivant et son milieu, le social et le biologique, les techniques et le corps, la santé et les conditions de vie. À partir d’une recognition des implications écologiques de la réflexion de Canguilhem, ce colloque se propose de prendre appui sur ses contributions théoriques pour explorer l’histoire de l’écologie, jusqu’aux débats scientifiques et politiques plus récents.<br> Les différents aspects de l’œuvre de Canguilhem sont ouverts aussi à des lectures critiques. Loin de vouloir proposer une apologie de l’auteur, avec la prétention de pouvoir trouver dans son œuvre tous les instruments et les réponses pour aborder les enjeux épistémologiques et politiques de l’écologie contemporaine, ce colloque entend aussi évaluer les éventuelles tensions entre sa posture philosophique et d’autres perspectives théoriques concernant l’épistémologie des sciences biologiques et médicales, l’histoire des sciences, l’histoire environnementale etc. D’ailleurs, il pourrait aussi être l’occasion pour envisager d’éventuelles interactions entre l’héritage théorique de Canguilhem et d’autres champs de la réflexion écologico-politique contemporaine : les études postcoloniales, l’éco-marxisme, l’écoféminisme, etc."
         }
     },
-    "23": {
+    "24": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2024-cours-mnhn",
@@ -434,7 +452,7 @@
             "language": "fr"
         }
     },
-    "24": {
+    "25": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2024-inserm-contributive",
@@ -451,7 +469,7 @@
             "abstract": "La recherche contributive est une réponse à la disruption technologique développée initialement par Bernard Stiegler et l'association Ars Industrialis passant par une stratégie pour le développement de savoirs pratiques et théoriques. Cette approche a été et est expérimentée à Plaine Commune, notamment dans un travail autour des écrans et de la petite enfance dont les résultats sont prometteurs."
         }
     },
-    "25": {
+    "26": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2024-rouen-ecran",
@@ -469,7 +487,7 @@
             "program": "formation-2024.pdf"
         }
     },
-    "26": {
+    "27": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2024-evaluation-globale",
@@ -488,7 +506,7 @@
             "program": "deroule-juin2024.pdf"
         }
     },
-    "27": {
+    "28": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2024-enmi-produire",
@@ -507,7 +525,7 @@
             "abstract": "Les notions de production et d’industrie ont, contre leurs origines historiques, été confinées dans les deux dernier siècles à ce que l’on appelle le secteur secondaire, le secteur primaire étant, lui, dévolu à la matière dite première et qui regroupe pelle-mêle l’exploitation du vivant sauvage et domestique ainsi que l’extraction minière. Pourtant les fourmis sont bien – plus ou moins – industrieuses, le concept de reproduction est l’un des plus fondamental en biologie et même les processus physiques irréversibles produisent de l’entropie. Alors que le champs et les acteurs de l’industrie se reconfigurent tant pour des raisons technologiques « qu’écologiques », il nous semble pertinent de repenser ce que signifie produire à l’aune tant de la physique que de la biologie et de la technologie."
         }
     },
-    "28": {
+    "29": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2024-Canguilhem-inedit",
@@ -526,7 +544,7 @@
             "program": "Canguilhem-2024.pdf"
         }
     },
-    "29": {
+    "30": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2024-Disruption-Cavaillès",
@@ -544,7 +562,7 @@
             "url": "https://republique-des-savoirs.fr/events/event/seminaire-centre-cavailles-sur-le-vivant-du-2023-2024/"
         }
     },
-    "30": {
+    "31": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2024-awareness-science",
@@ -562,7 +580,7 @@
             "url": "https://training.institut-curie.org/courses/raising-awareness-on-history-epistemology-and-ethics-of-science-3"
         }
     },
-    "31": {
+    "32": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "2024-politics-philosophie",
@@ -580,7 +598,7 @@
             "abstract": "Politics is the fight for freedom; freedom does not exist outside of the struggles for it. Freedom is neither transcendent infinite being nor is it an Idea. Since the object of politics is not an Idea, there is no universal form for politics. The péjoration of politics, “politics” as a culture of lies and manipulations for gaining power, presupposes a non-political ideality or an anti-political totality. When philosophy commences otherwise than its ethno-history through an other beginning of philosophy politics is already opening a collective anticipation of freedoms unknown. For that very reason, unknown dangers await our political future."
         }
     },
-    "32": {
+    "33": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2024-identity-organization",
@@ -597,7 +615,7 @@
             "illustration": "Brasao_da_UFBA.png"
         }
     },
-    "33": {
+    "34": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2024-modelisation-democratie",
@@ -616,7 +634,7 @@
             "abstract": "La modélisation est un enjeu majeur, au cœur de nos actions en écologie et en économie. Son aspect technique conduit cependant à soustraire les discussion à son sujet du débat public, ce qui peut poser un problème démocratique de taille. <br> Dans cette table ronde, nous aborderons la modélisation sous ces aspects pratiques et philosophiques. D’abord en définissant ce qu’est la modélisation et en dressant un panorama des pratiques existantes. Puis dans un second temps en discutant ses limites ainsi que ses dimensions participatives."
         }
     },
-    "34": {
+    "35": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2024-application-philosophie",
@@ -636,7 +654,7 @@
             "abstract": "Ce colloque sera l’occasion de discuter de l’apparition récente de l’expression “philosophie appliquée” qui interroge à nouveaux frais la définition, les limites et les fins des philosophies des sciences et des techniques. Elle sous-entend, au moyen d’une reprise de la distinction entre recherche fondamentale et recherche appliquée, une dualité entre, d’un côté, une philosophie fondamentale qui serait tournée vers l’élaboration et la discussion de concepts et d’hypothèses qui lui seraient propres ; et, d’un autre, une philosophie appliquée qui serait tournée vers des contextes et enjeux dictés par les sciences et les techniques."
         }
     },
-    "35": {
+    "36": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2024-organisation-ecology",
@@ -654,7 +672,7 @@
             "program": "Encontro presencial projeto Templeton.pdf"
         }
     },
-    "36": {
+    "37": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2024-brazil-knowledge",
@@ -671,7 +689,7 @@
             "language": "en"
         }
     },
-    "37": {
+    "38": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "2023-enmi",
@@ -690,7 +708,7 @@
             "illustration": "banner_ENMI_logo_2023-1.jpg"
         }
     },
-    "38": {
+    "39": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2023-enmi-vivant",
@@ -709,7 +727,7 @@
             "illustration": "banner_ENMI_logo_2023-1.jpg"
         }
     },
-    "39": {
+    "40": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2023-Forum-citoyen",
@@ -725,7 +743,7 @@
             "language": "fr"
         }
     },
-    "40": {
+    "41": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2023-cluster-meeting",
@@ -742,7 +760,7 @@
             "url": "https://www.biologicalpurpose.org/landing/agency-and-directionality-development-november-2023-cluster-meeting"
         }
     },
-    "41": {
+    "42": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2023-historicite",
@@ -760,7 +778,7 @@
             "illustration": "septembre-2023-affiche-evenement-nature-histoire.jpeg"
         }
     },
-    "42": {
+    "43": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2023-montevil-open-historicity",
@@ -778,7 +796,7 @@
             "program": "program-open-historicity.pdf"
         }
     },
-    "43": {
+    "44": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "2023-open-historicity",
@@ -796,7 +814,7 @@
             "program": "program-open-historicity.pdf"
         }
     },
-    "44": {
+    "45": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "vivant-seminaire-2024",
@@ -813,7 +831,7 @@
             "program": "program-open-historicity.pdf"
         }
     },
-    "45": {
+    "46": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "vivant-seminaire-2023",
@@ -830,7 +848,7 @@
             "url": "https://republique-des-savoirs.fr/events/event/seminaire-centre-cavailles-sur-le-vivant-du-2023-2024/"
         }
     },
-    "46": {
+    "47": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "vivant-seminaire-2022",
@@ -846,7 +864,7 @@
             "url": "https://republique-des-savoirs.fr/events/event/seminaire-cavailles-2022-2023/"
         }
     },
-    "47": {
+    "48": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "2023-inauguration",
@@ -866,7 +884,7 @@
             "video": "https://savoirs.ens.fr/uploads/videos//diffusion/2023_10_04_montevil.mp4"
         }
     },
-    "48": {
+    "49": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2023-interface",
@@ -881,7 +899,7 @@
             "annonce": "true"
         }
     },
-    "49": {
+    "50": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "ish2023",
@@ -902,7 +920,7 @@
             "twittermention": "1673718328052060160"
         }
     },
-    "50": {
+    "51": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2023-enmi-prep",
@@ -921,7 +939,7 @@
             "language": "fr"
         }
     },
-    "51": {
+    "52": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "2023-enmi-prep-org",
@@ -939,7 +957,7 @@
             "language": "fr"
         }
     },
-    "52": {
+    "53": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "Paris-Seminar-2025",
@@ -956,7 +974,7 @@
             "url": "https://republique-des-savoirs.fr/events/event/conference-the-concept-of-field-in-philosophy/"
         }
     },
-    "53": {
+    "54": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "Paris-Seminar-2023",
@@ -973,7 +991,7 @@
             "url": "https://republique-des-savoirs.fr/events/event/seminaire-anastasis-de-la-philosophie-2022-2023/"
         }
     },
-    "54": {
+    "55": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2023-canguilhem",
@@ -991,7 +1009,7 @@
             "abstract": "En 1943, il y a 80 ans, l’agrégé de philosophie Georges Canguilhem (1904-1995), au terme d’études de médecine entamées en 1936, soutenait une thèse de doctorat en médecine intituléeEssai sur quelques problèmes concernant le normal et le pathologique. Thèse qui demeurait le « plus célèbre » de ses ouvrages. <br> Mais qui a contribué à la « célébrité » de cette thèse en France et au-delà ? Et quels hypothèses et concepts avancés en 1943 par Canguilhem dans cet Essai auraient gardé, 80 ans après, toute leur pertinence sur le plan philosophique, biologique ou médical en 2023 ? <br> Ce colloque commémorant la soutenance de la thèse de doctorat en médecine de Canguilhem réunit plusieurs générations de spécialistes internationaux de l’œuvre de Canguilhem qui, des années 1990 à nos jours, en France et au-delà, se signalèrent par une attention particulière pour les hypothèses et les concepts proposés par Canguilhem dans son Essai sur quelques problèmes concernant le normal et le pathologique de 1943."
         }
     },
-    "55": {
+    "56": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2023-Cardano-P8",
@@ -1008,7 +1026,7 @@
             "illustration": "1200px-Paris_VIII.svg.png"
         }
     },
-    "56": {
+    "57": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2023-heterogenese",
@@ -1026,7 +1044,7 @@
             "abstract": "Si la physique, notamment la mécanique classique, a largement été mobilisée comme modèle de la compréhension théorique de la nature, la biologie a dans une certaine mesure, réussi à s'en détacher avec la théorie de l'évolution, une théorie où l'historicité est première. Néanmoins, cette innovation épistémologique et méthodologique n'est pas miscible avec la méthode de théorisation physique et il s'ensuit une étrange cohabitation dont les enjeux sont rarement traités. Nous proposerons des directions pour repenser la théorisation en biologie en insistant sur le concept de nouveau possible. Nous montrerons aussi que ce travail permet de mieux comprendre des phénomènes biologiques cruciaux : la disruption des organisations biologique dans l'Anthropocène."
         }
     },
-    "57": {
+    "58": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2023-novelties",
@@ -1044,7 +1062,7 @@
             "illustration": "logoSIG_Design_website.jpg"
         }
     },
-    "58": {
+    "59": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2023-sevilla",
@@ -1059,7 +1077,7 @@
             "day": "13"
         }
     },
-    "59": {
+    "60": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2022-MeMoDEvo",
@@ -1076,7 +1094,7 @@
             "url": "https://neuroanatomy.github.io/MeMoDEvo/"
         }
     },
-    "60": {
+    "61": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "2022-ENMI",
@@ -1094,7 +1112,7 @@
             "url": "https://enmi-conf.org/wp/enmi22/"
         }
     },
-    "61": {
+    "62": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2022-ENMI2",
@@ -1113,7 +1131,7 @@
             "video": "https://media.iri.centrepompidou.fr/video/enmi/2022/enmi22_jour1_session1_2022-12-15.mp4"
         }
     },
-    "62": {
+    "63": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2022-ENMI3",
@@ -1130,7 +1148,7 @@
             "video": "https://media.iri.centrepompidou.fr/video/enmi/2022/enmi22_jour1_table_ronde_2022-12-15.mp4"
         }
     },
-    "63": {
+    "64": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2022-unesco",
@@ -1150,7 +1168,7 @@
             "video": "https://www.youtube.com/watch?v=TeQNqrdsJBM&t=12031s"
         }
     },
-    "64": {
+    "65": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2022-save-our-seeds",
@@ -1169,7 +1187,7 @@
             "twittermention": "1584439488939315200"
         }
     },
-    "65": {
+    "66": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "2022-begining",
@@ -1187,7 +1205,7 @@
             "url": "https://republique-des-savoirs.fr/events/event/7264/"
         }
     },
-    "66": {
+    "67": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "2022-Giuseppe-Ana",
@@ -1208,7 +1226,7 @@
             "video": "https://youtu.be/laiXb0REVcs"
         }
     },
-    "67": {
+    "68": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2022-Giuseppe-Ana-moi",
@@ -1228,7 +1246,7 @@
             "video": "https://youtu.be/laiXb0REVcs"
         }
     },
-    "68": {
+    "69": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2022-entretien-entropie",
@@ -1248,7 +1266,7 @@
             "illustration": "entretien-bif-2.jpg"
         }
     },
-    "69": {
+    "70": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2022-science-age-experience",
@@ -1266,7 +1284,7 @@
             "video": "https://www.youtube.com/watch?v=OXFT_I2nfpQ"
         }
     },
-    "70": {
+    "71": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2022-care-IIT",
@@ -1285,7 +1303,7 @@
             "twittermention": "1574054047618932736"
         }
     },
-    "71": {
+    "72": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2022-technology-biology-IIT",
@@ -1302,7 +1320,7 @@
             "url": "https://hss.iitd.ac.in/event/technology-and-biology-anthropocene-overcoming-stasis"
         }
     },
-    "72": {
+    "73": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2022-organicism-castelnaudary",
@@ -1318,7 +1336,7 @@
             "program": "PROGRAM Organicism in Castelnaudary.pdf"
         }
     },
-    "73": {
+    "74": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2022-organologie-biologie",
@@ -1336,7 +1354,7 @@
             "video": "https://www.youtube.com/watch?v=Qav87V3wk1I"
         }
     },
-    "74": {
+    "75": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2022-Parcours-scientifique",
@@ -1355,7 +1373,7 @@
             "abstract": "Nous recevons Maël Montévil, chercheur CNRS à l’ÉNS de Paris (République des Savoirs). La science demande une pensé théorique : celle-ci propose un regard sur la nature, oblige à en expliciter les principes, guide l’expérience, pose des limites à la connaissance et à l’action. Elle permet une éthique de la connaissance, c’est-à-dire “savoir faire un pas de côté” par rapport à ses propres conceptions et formuler une pensée critique, pour en comprendre les limites, et souvent ouvrir ainsi de nouvelles questions. Nous comparerons les situations en physique et biologie pour cerner ce qui est science par rapport à une technoscience négligeant la connaissance et déformant l’action sur le vivant. Nous réfléchirons de manière critique sur le rôle des données, leur interprétation et modélisation computationnelles, sur les mythes du génocentrisme en biologie qui rendent difficile de penser l’organisme en contexte. Nous esquisserons des parcours différents en train de se construire."
         }
     },
-    "75": {
+    "76": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "2022-rome",
@@ -1373,7 +1391,7 @@
             "url": "https://www.iprs.it/evento/the-other-beginning-of-philosophy-cenferenza/"
         }
     },
-    "76": {
+    "77": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "Paris-Seminar-2022",
@@ -1392,7 +1410,7 @@
             "twittermention": "1533837406113353731, 1535881857597902849, 1535679583537836034, 1534236773613723652, 1534084643670065154, 1533431697546661890, 1533138516108001282, 1531306334393614336, 1530814464039206913"
         }
     },
-    "77": {
+    "78": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "2022-marseille",
@@ -1410,7 +1428,7 @@
             "abstract": "Partager autour de nos initiatives et de nos expériences de terrain. Journée animée par des membres de la Clinique Contributive de l’IRI (institut de recherche et d’innovation)"
         }
     },
-    "78": {
+    "79": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2022-ISTP",
@@ -1429,7 +1447,7 @@
             "illustration": "istp.webp"
         }
     },
-    "79": {
+    "80": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2022-EJP",
@@ -1447,7 +1465,7 @@
             "url": "https://environmentaljustice.georgetown.edu/"
         }
     },
-    "80": {
+    "81": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2022-ISC",
@@ -1466,7 +1484,7 @@
             "program": "Programme FRCCS 2022.pdf"
         }
     },
-    "81": {
+    "82": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2022-Trends1",
@@ -1484,7 +1502,7 @@
             "url": "https://sciorigin.weebly.com/events.html"
         }
     },
-    "82": {
+    "83": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2022-Trends2",
@@ -1502,7 +1520,7 @@
             "url": "https://sciorigin.weebly.com/events.html"
         }
     },
-    "83": {
+    "84": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "ElHani-2022",
@@ -1520,7 +1538,7 @@
             "video": "https://www.youtube.com/watch?v=ZGsRqIpm7TI"
         }
     },
-    "84": {
+    "85": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "lust-philosophy-2022",
@@ -1539,7 +1557,7 @@
             "twittermention": "1486291988643258369"
         }
     },
-    "85": {
+    "86": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "3S-2022",
@@ -1557,7 +1575,7 @@
             "url": "https://recherche.utt.fr/interdisciplinary-research-on-society-technology-environment-interactions-insyte/seminar-3s"
         }
     },
-    "86": {
+    "87": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "JL-Nancy-2022",
@@ -1576,7 +1594,7 @@
             "twittermention": "1479677260135157761, 1480227639323287556, 1479822519892733957"
         }
     },
-    "87": {
+    "88": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "JL-Nancy-mm-2022",
@@ -1595,7 +1613,7 @@
             "url": "https://www.philosophy-world-democracy.org/events"
         }
     },
-    "88": {
+    "89": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "fyp-2021",
@@ -1613,7 +1631,7 @@
             "video": "https://www.youtube.com/watch?v=M09cQcMoek8"
         }
     },
-    "89": {
+    "90": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "Anastasis-2021",
@@ -1634,7 +1652,7 @@
             "twittermention": "1459859910825426948, 1460095404842749952, 1462742390272364544"
         }
     },
-    "90": {
+    "91": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2021-enmi",
@@ -1654,7 +1672,7 @@
             "video": "https://media.iri.centrepompidou.fr/video/enmi/2021/iri_enmi_2021_session_2_2021-11-29.mp4"
         }
     },
-    "91": {
+    "92": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2021-cang",
@@ -1674,7 +1692,7 @@
             "program": "Canguilhem-2021.pdf"
         }
     },
-    "92": {
+    "93": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2021-louvain",
@@ -1695,7 +1713,7 @@
             "twittermention": "1457470327655649286"
         }
     },
-    "93": {
+    "94": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2021-lvlm",
@@ -1715,7 +1733,7 @@
             "illustrationclass": "viclass darkFilter"
         }
     },
-    "94": {
+    "95": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2021-cardano",
@@ -1736,7 +1754,7 @@
             "video": "https://savoirs.ens.fr/uploads/videos//diffusion/2021_10_21_montevil.mp4"
         }
     },
-    "95": {
+    "96": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2021-cavailles",
@@ -1757,7 +1775,7 @@
             "video": "https://savoirs.ens.fr/uploads/videos/diffusion/2021_10_06_montevil.mp4"
         }
     },
-    "96": {
+    "97": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2021-Ensser",
@@ -1778,7 +1796,7 @@
             "video": "https://www.youtube.com/watch?v=0EqfwfPeJJQ"
         }
     },
-    "97": {
+    "98": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2021-cracovie",
@@ -1796,7 +1814,7 @@
             "illustrationclass": "viclass darkFilter"
         }
     },
-    "98": {
+    "99": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2021-lecco",
@@ -1814,7 +1832,7 @@
             "url": "https://c-r-a-m-s.jimdo.com/qtp-attiviamoci-c4c/baite-filosofiche/"
         }
     },
-    "99": {
+    "100": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2021-enmi-prep",
@@ -1834,7 +1852,7 @@
             "video": "https://www.youtube.com/watch?v=vZo5xZxU0Ac"
         }
     },
-    "100": {
+    "101": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2021-complex",
@@ -1851,7 +1869,7 @@
             "annonce": "true"
         }
     },
-    "101": {
+    "102": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "pharmaconumerique",
@@ -1870,7 +1888,7 @@
             "language": "fr"
         }
     },
-    "102": {
+    "103": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "2021-interview",
@@ -1887,7 +1905,7 @@
             "video": "https://www.youtube.com/watch?v=3YJteHjWm24"
         }
     },
-    "103": {
+    "104": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "ish2021",
@@ -1906,7 +1924,7 @@
             "illustration": "ish2021.png"
         }
     },
-    "104": {
+    "105": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "origin2021",
@@ -1926,7 +1944,7 @@
             "video": "https://youtu.be/3acRxErUniM?t=36409"
         }
     },
-    "105": {
+    "106": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "agnotology_2021",
@@ -1944,7 +1962,7 @@
             "video": "https://media.iri.centrepompidou.fr/video/aagt/seminaires/aagt_seminaires_science-in-the-storm_2021-04-19.mp4"
         }
     },
-    "106": {
+    "107": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "IAS2021",
@@ -1960,7 +1978,7 @@
             "author": "M. Montévil"
         }
     },
-    "107": {
+    "108": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "gaetano2021",
@@ -1979,7 +1997,7 @@
             "language": "fr"
         }
     },
-    "108": {
+    "109": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "midisante_2020",
@@ -1997,7 +2015,7 @@
             "video": "https://legacy.theobio.org/midi-sante.mp4"
         }
     },
-    "109": {
+    "110": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "UT2020",
@@ -2010,7 +2028,7 @@
             "language": "fr"
         }
     },
-    "110": {
+    "111": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "rtbfc2021",
@@ -2031,7 +2049,7 @@
             "twittermention": "1408914071542501380"
         }
     },
-    "111": {
+    "112": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "utc2021",
@@ -2051,7 +2069,7 @@
             "video": "https://www.youtube.com/watch?v=aM_YYbAvJgs"
         }
     },
-    "112": {
+    "113": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "sembifu_2020",
@@ -2067,7 +2085,7 @@
             "language": "fr"
         }
     },
-    "113": {
+    "114": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "semfoodpackaging_2020",
@@ -2084,7 +2102,7 @@
             "day": "26"
         }
     },
-    "114": {
+    "115": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "enmi_2020",
@@ -2103,7 +2121,7 @@
             "illustration": "banner_ENMI_logo_2020.jpg"
         }
     },
-    "115": {
+    "116": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "memory_2020",
@@ -2120,7 +2138,7 @@
             "illustration": "memory-future.jpg"
         }
     },
-    "116": {
+    "117": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "info2020",
@@ -2136,7 +2154,7 @@
             "day": "25"
         }
     },
-    "117": {
+    "118": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "rtbfa2020",
@@ -2155,7 +2173,7 @@
             "eventtype": "media"
         }
     },
-    "118": {
+    "119": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "rtbfb2020",
@@ -2174,7 +2192,7 @@
             "eventtype": "media"
         }
     },
-    "119": {
+    "120": {
         "objecttype": "entry",
         "entrytype": "article",
         "entrykey": "lemonde2020",
@@ -2193,7 +2211,7 @@
             "eventtype": "media"
         }
     },
-    "120": {
+    "121": {
         "objecttype": "entry",
         "entrytype": "article",
         "entrykey": "lemonde2021",
@@ -2212,7 +2230,7 @@
             "eventtype": "media"
         }
     },
-    "121": {
+    "122": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "immun2020",
@@ -2228,7 +2246,7 @@
             "day": "3"
         }
     },
-    "122": {
+    "123": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "Katowice2020",
@@ -2245,7 +2263,7 @@
             "day": "18"
         }
     },
-    "123": {
+    "124": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "personalized2020",
@@ -2262,7 +2280,7 @@
             "url": "https://philpharmblog.wordpress.com/2020/11/15/experts-meeting-personalized-medicine-a-multidisciplinary-approach-to-complexity/"
         }
     },
-    "124": {
+    "125": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "trarles2020",
@@ -2280,7 +2298,7 @@
             "twittermention": "1299059957250261001"
         }
     },
-    "125": {
+    "126": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "geneva2020",
@@ -2297,7 +2315,7 @@
             "day": "10"
         }
     },
-    "126": {
+    "127": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "lille2019",
@@ -2313,7 +2331,7 @@
             "illustration": "lille-logo.png"
         }
     },
-    "127": {
+    "128": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "espace2019",
@@ -2331,7 +2349,7 @@
             "url": "https://www.ciph.org/"
         }
     },
-    "128": {
+    "129": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "shaj_2019",
@@ -2348,7 +2366,7 @@
             "twittermention": "1191259164993036288"
         }
     },
-    "129": {
+    "130": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "padoue_2019",
@@ -2367,7 +2385,7 @@
             "video": "https://media.iri.centrepompidou.fr/video/temp/Video III - Il governo dell'entropia.MP4"
         }
     },
-    "130": {
+    "131": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "fm_2019",
@@ -2385,7 +2403,7 @@
             "program": "programme-lyon.pdf"
         }
     },
-    "131": {
+    "132": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "isc_2019",
@@ -2403,7 +2421,7 @@
             "twittermention": "1182612556386635777"
         }
     },
-    "132": {
+    "133": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "bergson_2019",
@@ -2421,7 +2439,7 @@
             "illustration": "bergson-affiche-Toulouse.jpeg"
         }
     },
-    "133": {
+    "134": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "cim_2019",
@@ -2438,7 +2456,7 @@
             "illustrationclass": "viclass darkFilter"
         }
     },
-    "134": {
+    "135": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "sf_2019",
@@ -2455,7 +2473,7 @@
             "twittermention": "1164306221547053057"
         }
     },
-    "135": {
+    "136": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "Sableon_2019",
@@ -2470,7 +2488,7 @@
             "illustration": "ihpst.png"
         }
     },
-    "136": {
+    "137": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "cerisy_2019",
@@ -2488,7 +2506,7 @@
             "video": "#video"
         }
     },
-    "137": {
+    "138": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "oslo_2019",
@@ -2506,7 +2524,7 @@
             "twittermention": "1148894179025666049, 1148894548300652544, 1148894830556303360, 1148894079364870145, 1148897163545600000, 1148898018168594432"
         }
     },
-    "138": {
+    "139": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "enmiprep_2019",
@@ -2523,7 +2541,7 @@
             "url": "https://iri-ressources.org/collections/season-55.html"
         }
     },
-    "139": {
+    "140": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "gradcam_2019",
@@ -2540,7 +2558,7 @@
             "twittermention": "1154710590994169861"
         }
     },
-    "140": {
+    "141": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "epimod_2019",
@@ -2557,7 +2575,7 @@
             "url": "https://www.ihpst.cnrs.fr/activites/seminaires/seminaire-epistemod-05-mael-montevil"
         }
     },
-    "141": {
+    "142": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "biomorph2_2019",
@@ -2575,7 +2593,7 @@
             "illustration": "affiche_biomorphisme-recto_web2510.jpg"
         }
     },
-    "142": {
+    "143": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "biomorph1_2019",
@@ -2595,7 +2613,7 @@
             "illustration": "affiche_biomorphisme-recto_web2510.jpg"
         }
     },
-    "143": {
+    "144": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "Ehess2019",
@@ -2611,7 +2629,7 @@
             "url": "https://enseignements-2018.ehess.fr/2018/ue/2884/"
         }
     },
-    "144": {
+    "145": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "ENS2018",
@@ -2628,7 +2646,7 @@
             "program": "2018_12_12-13-14_Coll_Geometries.pdf"
         }
     },
-    "145": {
+    "146": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "zurich2018",
@@ -2646,7 +2664,7 @@
             "url": "https://republique-des-savoirs.fr/events/event/3eme-rencontre-cardano-symposium-the-science-of-systems-and-life-alternative-philosophies-new-mathematics/"
         }
     },
-    "146": {
+    "147": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "sip2018",
@@ -2664,7 +2682,7 @@
             "illustration": "sip.png"
         }
     },
-    "147": {
+    "148": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "onteis2018",
@@ -2681,7 +2699,7 @@
             "day": "29"
         }
     },
-    "148": {
+    "149": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "bolognesemio",
@@ -2699,7 +2717,7 @@
             "illustration": "eco.jpeg"
         }
     },
-    "149": {
+    "150": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "sepentine2_2018",
@@ -2717,7 +2735,7 @@
             "illustration": "work2.jpg"
         }
     },
-    "150": {
+    "151": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "sepentine_2018",
@@ -2735,7 +2753,7 @@
             "twittermention": "1118506998071472128, 1043457218379698176, 1043471465989980161"
         }
     },
-    "151": {
+    "152": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "simai_2018",
@@ -2750,7 +2768,7 @@
             "url": "https://sbglab.org/sbglab-news/a-new-mathematical-look-into-biology/"
         }
     },
-    "152": {
+    "153": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "nextleap_2018",
@@ -2768,7 +2786,7 @@
             "webmention": "1267665020869136384, 1010969411694616576, 1010966099347890176"
         }
     },
-    "153": {
+    "154": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "ischappy_2018",
@@ -2785,7 +2803,7 @@
             "twittermention": "1011654132267212801"
         }
     },
-    "154": {
+    "155": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "mnhn2_2018",
@@ -2801,7 +2819,7 @@
             "url": "https://iscpif.fr/evenements/rencontres-scientifiques-mnhn-isc-pif/"
         }
     },
-    "155": {
+    "156": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "pasteur_2018",
@@ -2818,7 +2836,7 @@
             "url": "http://www.hotelpasteur.fr/articles/13"
         }
     },
-    "156": {
+    "157": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "cardano_2018",
@@ -2835,7 +2853,7 @@
             "illustration": "Affiche_2018_05_28_GL.jpg"
         }
     },
-    "157": {
+    "158": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "museum_2018",
@@ -2851,7 +2869,7 @@
             "illustrationclass": "viclass darkFilter"
         }
     },
-    "158": {
+    "159": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "enmi_2017",
@@ -2871,7 +2889,7 @@
             "twittermention": "945650379089498112, 943431955189727232, 950139523459112960"
         }
     },
-    "159": {
+    "160": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "drts_2017",
@@ -2888,7 +2906,7 @@
             "url": "https://www.droithumain-france.org/rencontres-droit-humain-autour-de-l-intelligence-artificielle-9-decembre-2017/"
         }
     },
-    "160": {
+    "161": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "utc_2017",
@@ -2904,7 +2922,7 @@
             "url": "http://www.utc.fr/cred/?page_id=18"
         }
     },
-    "161": {
+    "162": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "museum_2017",
@@ -2921,7 +2939,7 @@
             "url": "https://isyeb.mnhn.fr/fr/agenda/les-seminaires-passes-de-lisyeb-2798"
         }
     },
-    "162": {
+    "163": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "iri_2017",
@@ -2939,7 +2957,7 @@
             "video": "https://media.iri.centrepompidou.fr/video/ldtplatform/prepaENMI/2017/prepaENMI-2017-06-29_2.mp4"
         }
     },
-    "163": {
+    "164": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "saopaulo_2017",
@@ -2958,7 +2976,7 @@
             "twittermention": "913334175385743360, 913334758431748096, 913334954506854400"
         }
     },
-    "164": {
+    "165": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "saopaulo2_2017",
@@ -2977,7 +2995,7 @@
             "twittermention": "887320697248382977, 887322755422728192, 887323660259819520, 887325829553893378, 887325989637935104"
         }
     },
-    "165": {
+    "166": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "whoami2016",
@@ -2995,7 +3013,7 @@
             "language": "en"
         }
     },
-    "166": {
+    "167": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "gould17",
@@ -3013,7 +3031,7 @@
             "illustrationclass": "viclass darkFilter"
         }
     },
-    "167": {
+    "168": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "nantes17",
@@ -3030,7 +3048,7 @@
             "language": "fr"
         }
     },
-    "168": {
+    "169": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "toulouse17",
@@ -3045,7 +3063,7 @@
             "day": "12"
         }
     },
-    "169": {
+    "170": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "isc16",
@@ -3062,7 +3080,7 @@
             "language": "fr"
         }
     },
-    "170": {
+    "171": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "coursihpst",
@@ -3077,7 +3095,7 @@
             "language": "fr"
         }
     },
-    "171": {
+    "172": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "coursihpst2",
@@ -3092,7 +3110,7 @@
             "language": "fr"
         }
     },
-    "172": {
+    "173": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "nancy16",
@@ -3110,7 +3128,7 @@
             "abstract": "L’allométrie est l’analyse de la variation de certaines grandeurs (métabolisme, rythmes, ...) en fonction de la taille de l’objet considéré. Elle procède d’une hypothèse de symétrie entre des objets de tailles différentes et a conduit à des résultats remarquables en biologie. Cependant, ces résultats sont le lieu de conflits d’interprétation entre un point de vue physique, où les relations allométriques sont conçues comme une « loi de la nature » et un point de vue plus biologique où l’historicité du vivant et les exceptions sont mises en valeur. <br> Pour expliciter cette différence de point de vue, nous allons discuter les bases théoriques de la phylogénie, c’est-à-dire la classification évolutive des êtres vivants. Dans la théorie de l’évolution, la variation, une asymétrie, est un principe premier et ce n’est que dans un deuxième temps que certains caractères peuvent être interprétés comme plus ou moins symétriques (conservés). Ici donc, les symétries pertinentes sont les homologies, les caractères ayant une origine commune située historiquement.<br> Nous proposerons enfin un cadre conceptuel permettant d’articuler l’épistémologie de la physique où les symétries fondamentales sont postulées et celle de la biologie, où les symétries apparaissent de manière historique."
         }
     },
-    "173": {
+    "174": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "Ronchi16",
@@ -3127,7 +3145,7 @@
             "illustrationclass": "viclass darkFilter"
         }
     },
-    "174": {
+    "175": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "smile16",
@@ -3142,7 +3160,7 @@
             "day": "18"
         }
     },
-    "175": {
+    "176": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "cerisy16",
@@ -3159,7 +3177,7 @@
             "abstract": "Dans cette présentation nous développons deux principes théoriques qui opèrent ensemble pour permettre de comprendre les organismes vivants dans leurs spécificités. Le premier principe est un principe de variation, et nous montrons qu'il conduit à distinguer fortement les objets biologiques des objets physiques. Le second est un principe d'organisation, s’appuyant sur une tradition riche en biologie théorique et qui met l'accent sur l'interdépendance des parties d'un organisme. Ces deux principes, combinés à la notion d'état par défaut, conduisent à un concept de contrainte biologique opératoire, riche et original."
         }
     },
-    "176": {
+    "177": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "sanseb16",
@@ -3177,7 +3195,7 @@
             "language": "en"
         }
     },
-    "177": {
+    "178": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "barbara2015",
@@ -3194,7 +3212,7 @@
             "abstract": "In this presentation we will discuss three theoretical principles for biology: the principle of organization, the principle of variation and the default state of cells. We will propose possible applications to understand hormone action."
         }
     },
-    "178": {
+    "179": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "labex_2015",
@@ -3210,7 +3228,7 @@
             "day": "24"
         }
     },
-    "179": {
+    "180": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "napoli_2015",
@@ -3227,7 +3245,7 @@
             "day": "4"
         }
     },
-    "180": {
+    "181": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "canada2_2015",
@@ -3243,7 +3261,7 @@
             "day": "7"
         }
     },
-    "181": {
+    "182": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "canada1_2015",
@@ -3260,7 +3278,7 @@
             "day": "6"
         }
     },
-    "182": {
+    "183": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "syd_2015",
@@ -3276,7 +3294,7 @@
             "day": "26"
         }
     },
-    "183": {
+    "184": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "nice_2015",
@@ -3293,7 +3311,7 @@
             "language": "fr"
         }
     },
-    "184": {
+    "185": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "explabio_2015",
@@ -3309,7 +3327,7 @@
             "illustration": "ihpst.png"
         }
     },
-    "185": {
+    "186": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "pascal_2015",
@@ -3325,7 +3343,7 @@
             "day": "5"
         }
     },
-    "186": {
+    "187": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "pascal2015",
@@ -3342,7 +3360,7 @@
             "day": "12"
         }
     },
-    "187": {
+    "188": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "evaglo2014",
@@ -3358,7 +3376,7 @@
             "language": "fr"
         }
     },
-    "188": {
+    "189": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "IHES2014",
@@ -3374,7 +3392,7 @@
             "day": "4"
         }
     },
-    "189": {
+    "190": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "carlos2014",
@@ -3389,7 +3407,7 @@
             "url": "https://chairepascalbio.wordpress.com/2014/11/25/colloque-evolution-development-and-cancer/"
         }
     },
-    "190": {
+    "191": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "sps2014",
@@ -3406,7 +3424,7 @@
             "day": "25"
         }
     },
-    "191": {
+    "192": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "stflour2014",
@@ -3423,7 +3441,7 @@
             "illustration": "Saint-flour-ville-haute_0640x0428_cc-by-sa_WM.jpg"
         }
     },
-    "192": {
+    "193": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "cam2",
@@ -3439,7 +3457,7 @@
             "illustration": "Logo_Università_degli_Studi_di_Camerino.png"
         }
     },
-    "193": {
+    "194": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "cam1",
@@ -3455,7 +3473,7 @@
             "illustration": "Logo_Università_degli_Studi_di_Camerino.png"
         }
     },
-    "194": {
+    "195": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "cams",
@@ -3472,7 +3490,7 @@
             "url": "http://cams.ehess.fr/seminaire-systemes-complexes-en-sciences-sociales-annee-20132014/"
         }
     },
-    "195": {
+    "196": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "ensbp",
@@ -3488,7 +3506,7 @@
             "language": "fr"
         }
     },
-    "196": {
+    "197": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "mhnm",
@@ -3504,7 +3522,7 @@
             "day": "14"
         }
     },
-    "197": {
+    "198": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "mnantes",
@@ -3520,7 +3538,7 @@
             "illustrationclass": "viclass darkFilter"
         }
     },
-    "198": {
+    "199": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "mpitt",
@@ -3538,7 +3556,7 @@
             "twittermention": "430587710827274240"
         }
     },
-    "199": {
+    "200": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "mtufts",
@@ -3552,7 +3570,7 @@
             "illustration": "tufts.png"
         }
     },
-    "200": {
+    "201": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "po12",
@@ -3567,7 +3585,7 @@
             "illustrationclass": "viclass darkFilter"
         }
     },
-    "201": {
+    "202": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "ssml",
@@ -3583,7 +3601,7 @@
             "language": "fr"
         }
     },
-    "202": {
+    "203": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "pocheville_intra-organismal_2010",
@@ -3596,7 +3614,7 @@
             "location": "Laboratoire Ecologie et Evolution, Université Paris 6"
         }
     },
-    "203": {
+    "204": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "mm11c",
@@ -3613,7 +3631,7 @@
             "language": "fr"
         }
     },
-    "204": {
+    "205": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "mm9",
@@ -3631,7 +3649,7 @@
             "language": "fr"
         }
     },
-    "205": {
+    "206": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "mm11b",
@@ -3648,7 +3666,7 @@
             "day": "8"
         }
     },
-    "206": {
+    "207": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "mm11a",
@@ -3664,7 +3682,7 @@
             "day": "24"
         }
     },
-    "207": {
+    "208": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "mm10b",
@@ -3683,7 +3701,7 @@
             "language": "fr"
         }
     },
-    "208": {
+    "209": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "mm10a",
@@ -3697,7 +3715,7 @@
             "day": "25"
         }
     },
-    "209": {
+    "210": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "mm09c",
@@ -3713,7 +3731,7 @@
             "language": "fr"
         }
     },
-    "210": {
+    "211": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "mm09b",
@@ -3728,7 +3746,7 @@
             "language": "fr"
         }
     },
-    "211": {
+    "212": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "mm09a",
@@ -3744,7 +3762,7 @@
             "language": "fr"
         }
     },
-    "212": {
+    "213": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "mm08a",
@@ -3762,7 +3780,7 @@
             "language": "fr"
         }
     },
-    "213": {
+    "214": {
         "objecttype": "entry",
         "entrytype": "misc",
         "entrykey": "Chicago2014b",
@@ -3780,7 +3798,7 @@
             "day": "21"
         }
     },
-    "214": {
+    "215": {
         "objecttype": "entry",
         "entrytype": "misc",
         "entrykey": "Chicago2014a",
@@ -3798,7 +3816,7 @@
             "day": "21"
         }
     },
-    "215": {
+    "216": {
         "objecttype": "entry",
         "entrytype": "misc",
         "entrykey": "pocheville_are_2009",
@@ -3812,7 +3830,7 @@
             "year": "2009"
         }
     },
-    "216": {
+    "217": {
         "objecttype": "entry",
         "entrytype": "inproceedings",
         "entrykey": "div_2015",
@@ -3830,7 +3848,7 @@
             "abstract": "We argue that a theory of biological systems should rely on organization and variation as fundamental theoretical principles. Biological systems are organized natural systems that undergo functional variation. In this presentation we will provide a specific characterization of each principle while emphasizing their mutual relations. Organization provides the relevant kind of complexity for functional variation occur; and, in turn, variation enables the maintenance of organization over time, notably at the evolutionary scale."
         }
     },
-    "217": {
+    "218": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "seminaire-IEA-2020-2021",
@@ -3845,7 +3863,7 @@
             "illustration": "iea-nantes.png"
         }
     },
-    "218": {
+    "219": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "seminaire-IEA-2021-2022",
@@ -3861,7 +3879,7 @@
             "url": "https://www.iea-nantes.fr/fr/vie-numerique-sante-2021-2022/"
         }
     },
-    "219": {
+    "220": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "Anastasis-2021-org",
@@ -3880,7 +3898,7 @@
             "twittermention": "1459859910825426948, 1460095404842749952, 1462742390272364544"
         }
     },
-    "220": {
+    "221": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "enmi_2020org",
@@ -3898,7 +3916,7 @@
             "illustration": "banner_ENMI_logo_2020.jpg"
         }
     },
-    "221": {
+    "222": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "ED2020",
@@ -3914,7 +3932,7 @@
             "day": "20"
         }
     },
-    "222": {
+    "223": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "div_2015col",
@@ -3931,7 +3949,7 @@
             "abstract": " La relation entre biodiversité, variabilité, adaptabilité et résilience des systèmes vivants, soumis aux perturbations imprédictibles caractéristiques des systèmes complexes, quelles que soient leurs échelles, doit être questionnée, même en l’absence de mécanismes causalistes identifiables. La rencontre interdisciplinaires entre biologistes, immunologistes, écologues, philosophes, mathématiciens, physiciens, informaticiens permettra l’étude des concepts de diversité et de variabilité dans le vivant adaptatif et de leurs rôles dans la résilience des systèmes vivants multi-échelles et organisés. <br> Le système immunitaire adaptatif en cognition de l’environnement moléculaire des êtres vivants a co-évolué pour permettre la tolérance ou destruction de tissus et du microbiote et présente une biodiversité cellulaire et moléculaire exceptionnelle. Ces systèmes représentent des modèles d’étude de l’organisation et variation de systèmes dynamiques multi-échelles tout comme les écosystèmes macroscopiques. Il s’agira donc à travers les échelles des systèmes étudiés d’établir les modalités de synergie entre biodiversité et résilience ou robustesse."
         }
     },
-    "223": {
+    "224": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "ias_2014col",
@@ -3948,7 +3966,7 @@
             "abstract": "The workshop will discuss the notion of biological organization from a systemic- perspective. In particular it will focus on its intrinsic hierarchical dimension, and on the role organization plays in the understanding of the transition from pre-biotic to minimal living systems and of more complex forms of biological, cognitive and ecological systems."
         }
     },
-    "224": {
+    "225": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "soin_2018",
@@ -3967,7 +3985,7 @@
             "illustration": "flyer-eco-2018.png"
         }
     },
-    "225": {
+    "226": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "cardano_2018col",
@@ -3985,7 +4003,7 @@
             "illustration": "cardano-2018.png"
         }
     },
-    "226": {
+    "227": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "cardano_2018col2",
@@ -4003,7 +4021,7 @@
             "illustration": "2018_10_26_cardano_affiche.jpg"
         }
     },
-    "227": {
+    "228": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "onteis2018col",
@@ -4019,7 +4037,7 @@
             "abstract": "Avec l’arrivée des algorithmes en médecine, il y a deux voies possibles. Certains pensent que l’on peut automatiser l’essentiel de la pratique médicale et dans ce cas le médecin deviendra subordonné à la machine. La médecine par la preuve ouvre déjà cette voie en standardisant la décision médicale, même si cette automatisation ne passe pas par une machine. L’alternative consiste à redonner une centralité à l’analyse du médecin et à subordonner l’automatisation et la modélisation à son regard critique."
         }
     },
-    "228": {
+    "229": {
         "objecttype": "entry",
         "entrytype": "proceedings",
         "entrykey": "iea-2020col",

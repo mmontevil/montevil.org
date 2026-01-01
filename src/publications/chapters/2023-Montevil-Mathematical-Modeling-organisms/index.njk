@@ -20,7 +20,7 @@ date: 2024-01-26
     <p>Current organisms are the result of an evolutionary and developmental history which means that many contingent events are deeply inscribed in the organization of living being. By contrast the aim of mathematical modeling is usually to make explicit the necessity of an outcome. For more on this issue, see [<a href="#bkmRefNumPara18051924949141">3</a>].</p>
   </li>
   <li>
-    <p>The study of a part <span style="font-style:italic">X</span> of an organism is not completely meaningful by itself. Instead, the inscription of this part inside the organism and in particular the role that this part plays is a mandatory object of study to assess the biological relevance of the properties of <span style="font-style:italic">X </span><span>that are under</span> study. As such, the modelization of <span style="font-style:italic">X per se</span> is insufficient and requires a supplementary discussion [<a href="#bkmRefNumPara18071924949141">4</a>]. There is no mathematical method to do so, but schematization starts to be available.</p>
+    <p>The study of a part <span style="font-style:italic">X</span> of an organism is not completely meaningful by itself. Instead, the inscription of this part inside the organism and in particular the role that this part plays is a mandatory object of study to assess the biological relevance of the properties of <span style="font-style:italic">X </span>that are under study. As such, the modelization of <span style="font-style:italic">X per se</span> is insufficient and requires a supplementary discussion [<a href="#bkmRefNumPara18071924949141">4</a>]. There is no mathematical method to do so, but schematization starts to be available.</p>
   </li>
 </ul>
 <p>The third difficulty is that there are no well established theoretical principles to frame model writing in physiology or developmental biology [<a href="#bkmRefNumPara30321924949141">5</a>]. In particular, cells are elementary objects since the cell theory states that there is no living things without cells. However, cells have complex organizations themselves. Modeling their behavior (note <a href="#bkmRefNumPara17981924949141">1</a>) is therefore challenging and requires appropriate theoretical assumptions to ensure that this modeling has a robust biological meaning.</p>
@@ -36,7 +36,7 @@ date: 2024-01-26
     <p>Parameters that will be used explicitly in the model are parameters whose value is required to deduce the behavior of the system. The dynamics of the system depends explicitly on the value of these parameters. <span style="font-style:italic">A fortiori</span>, parameters that correspond to different treatments leading to a response will fall under this category. Note that the significance of some parameters usually appear in other steps of modeling. For example, we may think that gravitation is not relevant to a morphogenetic process, and find it is not the case, or the other way around.</p>
   </li>
   <li>
-    <p>Theoretical parameters correspond to parameters that we know are relevant and even mandatory for the process to take place but that we can keep implicit in our model. For example, the concentration of oxygen in the media is usually not made explicit in a model of an <span style="font-style:italic">in vitro </span><span>experiment even though it is relevant for the very survival of the cells studied. Of course, there is usually a cornucopia of this sort of parameters, for example the many components of the serum many of them being unknown.</span></p>
+    <p>Theoretical parameters correspond to parameters that we know are relevant and even mandatory for the process to take place but that we can keep implicit in our model. For example, the concentration of oxygen in the media is usually not made explicit in a model of an <span style="font-style:italic">in vitro </span>experiment even though it is relevant for the very survival of the cells studied. Of course, there is usually a cornucopia of this sort of parameters, for example the many components of the serum many of them being unknown.</p>
   </li>
 </ul>
 <h4 class="sectionHead" id="state-space">State space</h4>
@@ -86,7 +86,7 @@ date: 2024-01-26
           </mstyle>
           <mrow></mrow>
         </mrow>
-      </math> <span style="font-style:italic">. </span><span>As a result, it is sufficient to describe how two of these three variables change in order obtain the third one.</span>
+      </math> <span style="font-style:italic">. </span>As a result, it is sufficient to describe how two of these three variables change in order obtain the third one.
     </p>
   </li>
   <li>
@@ -108,7 +108,7 @@ date: 2024-01-26
           </mstyle>
           <mrow></mrow>
         </mrow>
-      </math> <span>. This equation means that the change of </span><span style="font-style:italic">n</span><span> (</span><span style="font-style:italic">dn)</span><span> during a short time (</span><span style="font-style:italic">dt)</span><span> is equal to </span><span style="font-style:italic">ndt/τ</span><span>. This change follows from cell proliferation and we will expand on this equation in the next section. In discrete time, </span>
+      </math> . This equation means that the change of <span style="font-style:italic">n</span> (<span style="font-style:italic">dn)</span> during a short time (<span style="font-style:italic">dt)</span> is equal to <span style="font-style:italic">ndt/τ</span>. This change follows from cell proliferation and we will expand on this equation in the next section. In discrete time, 
       <math xmlns="http://www.w3.org/1998/Math/MathML">
         <mrow>
           <mstyle mathsize="12pt">
@@ -138,7 +138,7 @@ date: 2024-01-26
           </mstyle>
           <mrow></mrow>
         </mrow>
-      </math> <span>is the change of state which relates to the current state by </span>
+      </math> is the change of state which relates to the current state by 
       <math xmlns="http://www.w3.org/1998/Math/MathML">
         <mrow>
           <mstyle mathsize="12pt">
@@ -193,7 +193,7 @@ date: 2024-01-26
           </mstyle>
           <mrow></mrow>
         </mrow>
-      </math> <span>. Alternatively and equivalently, the future state can be written as a function of the current state:</span>
+      </math> . Alternatively and equivalently, the future state can be written as a function of the current state:
       <math xmlns="http://www.w3.org/1998/Math/MathML">
         <mrow>
           <mstyle mathsize="12pt">
@@ -238,7 +238,7 @@ date: 2024-01-26
           </mstyle>
           <mrow></mrow>
         </mrow>
-      </math> <span>. Defining a dynamics requires at least one such equation to bind together the different time points, that is to say to bind causes and their effects.</span>
+      </math> . Defining a dynamics requires at least one such equation to bind together the different time points, that is to say to bind causes and their effects.
     </p>
   </li>
 </ul>
@@ -257,9 +257,9 @@ date: 2024-01-26
       </mstyle>
       <mrow></mrow>
     </mrow>
-  </math> . What is the meaning of such an equation? This equation states that the change of <span style="font-style:italic">n, dn/dt,</span> is proportional to <span style="font-style:italic">n</span>. 1) In conformity, with the cell theory, there is no spontaneous generation. There is no migration from outside the system described, which is an assumption proper to a given situation. The only source of cells is then cell proliferation. 2) Every cell divides at a given rate, independently. As a conclusion, the appearance of new cells is proportional to the number of cells which are dividing unconstrained, that is to say <span style="font-style:italic">n</span><span>. A cell needs a duration of </span><span style="font-style:italic">τ</span><span> to generate two cells (that is to say increase the cell count by one) which is exemplified by the fact that</span><span style="font-style:italic"> </span><span>for</span><span style="font-style:italic"> n=1, dn/dt=1/ </span><span style="font-style:italic">τ.</span><span style="font-style:italic"></span>
+  </math> . What is the meaning of such an equation? This equation states that the change of <span style="font-style:italic">n, dn/dt,</span> is proportional to <span style="font-style:italic">n</span>. 1) In conformity, with the cell theory, there is no spontaneous generation. There is no migration from outside the system described, which is an assumption proper to a given situation. The only source of cells is then cell proliferation. 2) Every cell divides at a given rate, independently. As a conclusion, the appearance of new cells is proportional to the number of cells which are dividing unconstrained, that is to say <span style="font-style:italic">n</span>. A cell needs a duration of <span style="font-style:italic">τ</span> to generate two cells (that is to say increase the cell count by one) which is exemplified by the fact that<span style="font-style:italic"> </span>for<span style="font-style:italic"> n=1, dn/dt=1/ </span><span style="font-style:italic">τ.</span><span style="font-style:italic"></span>
 </p>
-<p><span>Alternatively, this equation is equivalent to</span><span style="font-style:italic"> </span>
+<p>Alternatively, this equation is equivalent to<span style="font-style:italic"> </span>
   <math xmlns="http://www.w3.org/1998/Math/MathML">
     <mrow>
       <mstyle mathsize="12pt">
@@ -288,7 +288,7 @@ date: 2024-01-26
       </mstyle>
       <mrow></mrow>
     </mrow>
-  </math> <span>, and the latter relation shows that the equation is equivalent to the existence of an invariant quantity: </span>
+  </math> , and the latter relation shows that the equation is equivalent to the existence of an invariant quantity: 
   <math xmlns="http://www.w3.org/1998/Math/MathML">
     <mrow>
       <mstyle mathsize="12pt">
@@ -308,7 +308,7 @@ date: 2024-01-26
       </mstyle>
       <mrow></mrow>
     </mrow>
-  </math> <span>which is equal to</span><span style="font-style:italic"> </span><span>1/</span><span style="font-style:italic">τ </span><span>for all values of </span><span style="font-style:italic">n. </span><span>Doubling </span><span style="font-style:italic">dn/dt </span><span>thus requires to double </span><span style="font-style:italic">n. </span><span>In this sense, the joint transformation</span><span style="font-style:italic"> </span>
+  </math> which is equal to<span style="font-style:italic"> </span>1/<span style="font-style:italic">τ </span>for all values of <span style="font-style:italic">n. </span>Doubling <span style="font-style:italic">dn/dt </span>thus requires to double <span style="font-style:italic">n. </span>In this sense, the joint transformation<span style="font-style:italic"> </span>
   <math xmlns="http://www.w3.org/1998/Math/MathML">
     <mrow>
       <mstyle mathsize="12pt">
@@ -337,7 +337,7 @@ date: 2024-01-26
       </mstyle>
       <mrow></mrow>
     </mrow>
-  </math> <span>and</span>
+  </math> and
   <math xmlns="http://www.w3.org/1998/Math/MathML">
     <mrow>
       <mstyle mathsize="12pt">
@@ -350,16 +350,16 @@ date: 2024-01-26
       </mstyle>
       <mrow></mrow>
     </mrow>
-  </math> <span>is a symmetry, that is to say a transformation that leaves invariant a key aspect of the system</span><span style="font-style:italic">. </span><span>This transformation leads from one time point to another.</span><span style="font-style:italic"> </span><span>Discussing symmetries of equations is a method to show their meaning. Here, in a sense, the size of the population does not matter. Symmetries can also be multi-scale, for example fractal analysis is based on a symmetry between the different scales that is very fruitful in biology [<a href="#bkmRefNumPara36521924949141">9</a>,<a href="#bkmRefNumPara36541924949141">10</a>].</span>
+  </math> is a symmetry, that is to say a transformation that leaves invariant a key aspect of the system<span style="font-style:italic">. </span>This transformation leads from one time point to another.<span style="font-style:italic"> </span><span>Discussing symmetries of equations is a method to show their meaning. Here, in a sense, the size of the population does not matter. Symmetries can also be multi-scale, for example fractal analysis is based on a symmetry between the different scales that is very fruitful in biology [<a href="#bkmRefNumPara36521924949141">9</a>,<a href="#bkmRefNumPara36541924949141">10</a>].</span>
 </p>
 <p><span>Probabilities may also be analyzed on the basis of symmetries. To define probabilities, two steps have to be performed. The modeler needs to define a space of possibilities and then to define the probabilities of these possibilities. The most meaningful way to do the latter is to figure out possibilities that are equivalent, that is to say symmetric. For example, in a homogeneous environment, all directions are equivalent and thus would be assigned the same probabilities. A cell, in this situation, would have the same chance to choose any of these directions assuming that the cell’s organization is not already oriented in space, see also note <a href="#bkmRefNumPara22321924949141">6</a>. In physics, a common assumption is to consider that states which have the same energy have the same probabilities.</span></p>
-<p class="Textbody" dir="ltr" style="text-align:justify;font-style:normal">Now there are several ways to write equations, independently of their deterministic or stochastic nature:<span></span></p>
+<p class="Textbody" dir="ltr" style="text-align:justify;font-style:normal">Now there are several ways to write equations, independently of their deterministic or stochastic nature:</p>
 <ul class="listlevel1WW8Num10">
   <li>
-    <p class="Textbody" dir="ltr" style="text-align:justify;font-style:normal">Symmetry based writing is exemplified by the model of exponential growth above. In this case, the equation has a genuine meaning. Of course the model conveys approximations which are not always valid, but the terms of the equation are biologically meaningful and explicit. This also ensure that all mathematical outputs of the model may be interpreted biologically.<span></span></p>
+    <p class="Textbody" dir="ltr" style="text-align:justify;font-style:normal">Symmetry based writing is exemplified by the model of exponential growth above. In this case, the equation has a genuine meaning. Of course the model conveys approximations which are not always valid, but the terms of the equation are biologically meaningful and explicit. This also ensure that all mathematical outputs of the model may be interpreted biologically.</p>
   </li>
   <li>
-    <p><span>Equations may also be based on a mathematical reasoning which provides a legitimacy to their form but restricts their biological interpretations. For example, many mathematical functions may be approximated around 0 by the sum </span>
+    <p>Equations may also be based on a mathematical reasoning which provides a legitimacy to their form but restricts their biological interpretations. For example, many mathematical functions may be approximated around 0 by the sum 
       <math xmlns="http://www.w3.org/1998/Math/MathML">
         <mrow>
           <mstyle mathsize="12pt">
@@ -382,7 +382,7 @@ date: 2024-01-26
           </mstyle>
           <mrow></mrow>
         </mrow>
-      </math> <span>. As a result, a usual way to model a population which constrains itself is the following</span>
+      </math> . As a result, a usual way to model a population which constrains itself is the following
     </p>
   </li>
 </ul>
@@ -458,8 +458,8 @@ date: 2024-01-26
     </mrow>
   </math>
 </p>
-<p class="Textbody" dir="ltr" style="margin-left:0.5in;margin-right:0.0in;text-align:justify"><span>where </span><span style="font-style:italic">k</span><span> is the maximum of the population. Le us remark that we have written the equation in two different forms, we come back on this in note <a href="#bkmRefNumPara1233547012894">7</a>. The solution of this equation is the classical logistic function.</span></p>
-<p class="Textbody" dir="ltr" style="margin-left:0.5in;margin-right:0.0in;text-align:justify"><span>Note however that this equation has symmetries which are dubious from a biological viewpoint: the way the population takes off is identical to the way it saturates because the logistic equation has a center of symmetry, </span><span style="font-style:italic">A</span><span> in figure, see also [<a href="#bkmRefNumPara18291924949141">11</a>].</span></p>
+<p class="Textbody" dir="ltr" style="margin-left:0.5in;margin-right:0.0in;text-align:justify">where <span style="font-style:italic">k</span><span> is the maximum of the population. Le us remark that we have written the equation in two different forms, we come back on this in note <a href="#bkmRefNumPara1233547012894">7</a>. The solution of this equation is the classical logistic function.</span></p>
+<p class="Textbody" dir="ltr" style="margin-left:0.5in;margin-right:0.0in;text-align:justify">Note however that this equation has symmetries which are dubious from a biological viewpoint: the way the population takes off is identical to the way it saturates because the logistic equation has a center of symmetry, <span style="font-style:italic">A</span><span> in figure, see also [<a href="#bkmRefNumPara18291924949141">11</a>].</span></p>
  <figure class="figure">
     <img alt="The logistic function." src="montevil_method_2023-img001.png" width="500" class="zoom darkFilter darkFilterT" />
     <figcaption class="caption">
@@ -564,7 +564,7 @@ date: 2024-01-26
     <p>Steady states analysis. In fairly complex situations, for example when both space and time are involved, a usual approach is to analyze states that are sustained over time because it is a method to singularize specific states. For example, in the analysis of epithelial morphogenesis, it is possible to consider how the shape of a duct is sustained over time.</p>
   </li>
   <li>
-    <p>Stability analysis. A further step is to find equibria, that is to say situations where the changes stop (<span style="font-style:italic">dx/dt=0</span><span> for all state variable </span><span style="font-style:italic">x</span>). For example, 
+    <p>Stability analysis. A further step is to find equibria, that is to say situations where the changes stop (<span style="font-style:italic">dx/dt=0</span> for all state variable <span style="font-style:italic">x</span>). For example, 
       <math xmlns="http://www.w3.org/1998/Math/MathML">
         <mrow>
           <mstyle mathsize="12pt">
@@ -599,7 +599,7 @@ date: 2024-01-26
           </mstyle>
           <mrow></mrow>
         </mrow>
-      </math> has two equilibria for <span style="font-style:italic">n=k </span><span>and</span><span style="font-style:italic"> n=0</span>. Stability analysis look at the consequences of equation near an equilibrium point. <span>Near the equilibrium value </span><span style="font-style:italic">n</span><span style="font-style:italic;vertical-align:sub">e</span><span>, </span>
+      </math> has two equilibria for <span style="font-style:italic">n=k </span>and<span style="font-style:italic"> n=0</span>. Stability analysis look at the consequences of equation near an equilibrium point. Near the equilibrium value <span style="font-style:italic">n</span><span style="font-style:italic;vertical-align:sub">e</span>, 
       <math xmlns="http://www.w3.org/1998/Math/MathML">
         <mrow>
           <mstyle mathsize="12pt">
@@ -619,7 +619,7 @@ date: 2024-01-26
           </mstyle>
           <mrow></mrow>
         </mrow>
-      </math> <span></span><span>where </span>
+      </math> where 
       <math xmlns="http://www.w3.org/1998/Math/MathML">
         <mrow>
           <mstyle mathsize="12pt">
@@ -629,7 +629,7 @@ date: 2024-01-26
           </mstyle>
           <mrow></mrow>
         </mrow>
-      </math> <span>is considered to be small. </span>
+      </math> is considered to be small. 
       <math xmlns="http://www.w3.org/1998/Math/MathML">
         <mrow>
           <mstyle mathsize="12pt">
@@ -639,7 +639,7 @@ date: 2024-01-26
           </mstyle>
           <mrow></mrow>
         </mrow>
-      </math> <span>small means that </span>
+      </math> small means that 
       <math xmlns="http://www.w3.org/1998/Math/MathML">
         <mrow>
           <mstyle mathsize="12pt">
@@ -649,7 +649,7 @@ date: 2024-01-26
           </mstyle>
           <mrow></mrow>
         </mrow>
-      </math> <span>dominates</span>
+      </math> dominates
       <math xmlns="http://www.w3.org/1998/Math/MathML">
         <mrow>
           <mstyle mathsize="12pt">
@@ -664,7 +664,7 @@ date: 2024-01-26
           </mstyle>
           <mrow></mrow>
         </mrow>
-      </math> <span>and all other powers of</span>
+      </math> and all other powers of
       <math xmlns="http://www.w3.org/1998/Math/MathML">
         <mrow>
           <mstyle mathsize="12pt">
@@ -689,7 +689,7 @@ date: 2024-01-26
           </mstyle>
           <mrow></mrow>
         </mrow>
-      </math> <span>, </span>
+      </math> , 
       <math xmlns="http://www.w3.org/1998/Math/MathML">
         <mrow>
           <mstyle mathsize="12pt">
@@ -712,7 +712,7 @@ date: 2024-01-26
           </mstyle>
           <mrow></mrow>
         </mrow>
-      </math> <span>…</span>
+      </math> …
     </p>
   </li>
 </ol>
@@ -956,7 +956,7 @@ date: 2024-01-26
           </mstyle>
           <mrow></mrow>
         </mrow>
-      </math> <span>we have written </span>
+      </math> we have written 
       <math xmlns="http://www.w3.org/1998/Math/MathML">
         <mrow>
           <mstyle mathsize="12pt">
@@ -983,7 +983,7 @@ date: 2024-01-26
           </mstyle>
           <mrow></mrow>
         </mrow>
-      </math> <span>. The point here is to introduce </span><span style="font-style:italic">τ </span><span>the characteristic time for a cell division and </span><span style="font-style:italic">k</span><span> which is the maximum size of the population. By contrast, </span><span style="font-style:italic">a </span><span>and especially</span><span style="font-style:italic"> b </span><span>are less meaningful. These key parameters and their meaning are an outcome of models and at the same time should be the target of precise experiments to explore the validity of models.</span>
+      </math> . The point here is to introduce <span style="font-style:italic">τ </span>the characteristic time for a cell division and <span style="font-style:italic">k</span> which is the maximum size of the population. By contrast, <span style="font-style:italic">a </span>and especially<span style="font-style:italic"> b </span>are less meaningful. These key parameters and their meaning are an outcome of models and at the same time should be the target of precise experiments to explore the validity of models.
     </p>
   </li>
 </ol>
@@ -1001,10 +1001,10 @@ date: 2024-01-26
     <p><a id="RefNumPara17981924949141"></a><a id="bkmRefNumPara17981924949141"></a>In biology, behavior usually has an ethological meaning and evolution refers to the theory evolution. In the mathematical context, these words have a broader meaning. They both typically refer to the properties of dynamics. For example, the behavior of a population without constrain is exponential growth.</p>
   </li>
   <li>
-    <p><a id="RefNumPara18611924949141"></a><a id="bkmRefNumPara18611924949141"></a>Parameters that play a role in an equation are defined in two different ways. They are defined by their role in the equation and by their biological interpretation. For example, the division rate<span> </span><span style="font-style:italic">τ</span><span> corresponds to the division rate of the cells without the constraint that is represented by </span><span style="font-style:italic">k</span><span>. </span><span style="font-style:italic">τ</span><span> may also embed</span><span style="font-style:italic"> </span><span>constant constraints on cell proliferation, for example chemical constraints from the serum or the temperature. Thus, </span><span style="font-style:italic">τ</span><span> is what physicists call an effective parameter it carries implicitly constraints beyond the explicit constraints of the model.</span></p>
+    <p><a id="RefNumPara18611924949141"></a><a id="bkmRefNumPara18611924949141"></a>Parameters that play a role in an equation are defined in two different ways. They are defined by their role in the equation and by their biological interpretation. For example, the division rate <span style="font-style:italic">τ</span> corresponds to the division rate of the cells without the constraint that is represented by <span style="font-style:italic">k</span>. <span style="font-style:italic">τ</span> may also embed<span style="font-style:italic"> </span>constant constraints on cell proliferation, for example chemical constraints from the serum or the temperature. Thus, <span style="font-style:italic">τ</span> is what physicists call an effective parameter it carries implicitly constraints beyond the explicit constraints of the model.</p>
   </li>
   <li>
-    <p><a id="RefNumPara28701924949141"></a><a id="bkmRefNumPara28701924949141"></a><span>A state may be composed of several quantities, let’s say </span><span style="font-style:italic">k, n, m</span><span>. It is possible to write the state by the three quantities independently or to join them in one vector </span><span style="font-style:italic">X=(k,n,m)</span><span>. The two viewpoints are of course equivalent but they lead to different mathematical methods and ways to see the problem. The second viewpoint shows that it is always valid to consider that the state is a single mathematical object and not just a plurality of quantities.</span></p>
+    <p><a id="RefNumPara28701924949141"></a><a id="bkmRefNumPara28701924949141"></a>A state may be composed of several quantities, let’s say <span style="font-style:italic">k, n, m</span>. It is possible to write the state by the three quantities independently or to join them in one vector <span style="font-style:italic">X=(k,n,m)</span>. The two viewpoints are of course equivalent but they lead to different mathematical methods and ways to see the problem. The second viewpoint shows that it is always valid to consider that the state is a single mathematical object and not just a plurality of quantities.</p>
   </li>
   <li>
     <p><a id="RefNumPara27161924949141"></a><a id="bkmRefNumPara27161924949141"></a><span>The notion of organization in the sense of a specific interdependence between parts [<a href="#bkmRefNumPara18071924949141">4</a>] implies that most parameters are a consequence of others parts, at other time scales. As a result, modeling a given quantity as a parameter is only valid for some time scales, and is acceptable when these time scales are the ones at which the process modeled takes place.</span></p>
@@ -1013,10 +1013,10 @@ date: 2024-01-26
     <p><a id="RefNumPara18651924949141"></a><a id="bkmRefNumPara18651924949141"></a>The choice between a model based on discrete or on continuous time is base on several criteria. For example, if the proliferation of cells is synchronized, there is a discrete nature of the phenomenon that strongly suggests to represent the dynamics in discrete time. In this case the discrete time corresponds to an objective aspect of the phenomenon. On the opposite, when cells divide at all times in the population, a representation in continuous time is more adequate. In order to perform simulations, time may still be discretized but the status of the discrete structure is then different than in the first case: discretization is then arbitrary and serves the purpose of approximating the continuum. To distinguish the two situations, a simple question should be asked. What is the meaning of the time difference between two time points. In the first case, this time difference has a biological meaning, in the second it is arbitrary and just small enough for the approximation to be acceptable.</p>
   </li>
   <li>
-    <p><a id="RefNumPara22321924949141"></a><a id="bkmRefNumPara22321924949141"></a>Probabilities over continuous possibilities are somewhat subtle. Let us show why: let us say that all directions are equivalent, thus all angles in the interval [0,360[ are equivalent. They are equivalent, so their probabilities are all the same value <span style="font-style:italic">p. </span><span>However, there is an infinite number of possible angles, so the sum of all the probabilities of all possibilities would be infinite. Over the continuum, probabilities are assigned to sets and in particular to intervals, not individual possibilities. Elements only have a density of probability.</span></p>
+    <p><a id="RefNumPara22321924949141"></a><a id="bkmRefNumPara22321924949141"></a>Probabilities over continuous possibilities are somewhat subtle. Let us show why: let us say that all directions are equivalent, thus all angles in the interval [0,360[ are equivalent. They are equivalent, so their probabilities are all the same value <span style="font-style:italic">p. </span>However, there is an infinite number of possible angles, so the sum of all the probabilities of all possibilities would be infinite. Over the continuum, probabilities are assigned to sets and in particular to intervals, not individual possibilities. Elements only have a density of probability.</p>
   </li>
   <li>
-    <p><a id="RefNumPara1233547012894"></a><a id="bkmRefNumPara1233547012894"></a><span>There are many equivalent ways to write a mathematical term. The choice of a specific way to write a term conveys meaning and corresponds to an interpretation of this term. For example, in the text, we transformed</span>
+    <p><a id="RefNumPara1233547012894"></a><a id="bkmRefNumPara1233547012894"></a>There are many equivalent ways to write a mathematical term. The choice of a specific way to write a term conveys meaning and corresponds to an interpretation of this term. For example, in the text, we transformed
       <math xmlns="http://www.w3.org/1998/Math/MathML">
         <mrow>
           <mstyle mathsize="12pt">
@@ -1049,7 +1049,7 @@ date: 2024-01-26
           </mstyle>
           <mrow></mrow>
         </mrow>
-      </math> <span>because this expression has little biological meaning. By contrast, </span>
+      </math> because this expression has little biological meaning. By contrast, 
       <math xmlns="http://www.w3.org/1998/Math/MathML">
         <mrow>
           <mstyle mathsize="12pt">
@@ -1086,7 +1086,7 @@ date: 2024-01-26
           </mstyle>
           <mrow></mrow>
         </mrow>
-      </math> <span>implies that when n/k is very small by comparison with 1, cells are not constraining each other. On the opposite, when </span><span style="font-style:italic">n=k</span><span> there is no proliferation. The consequence of cells constraining each other can be interpreted as a proportion </span><span style="font-style:italic">1-n/k</span><span> of cells proliferating and a proportion </span><span style="font-style:italic">n/k</span><span> of cells not proliferating. Now, there is another way to write the same term which is: </span>
+      </math> implies that when n/k is very small by comparison with 1, cells are not constraining each other. On the opposite, when <span style="font-style:italic">n=k</span> there is no proliferation. The consequence of cells constraining each other can be interpreted as a proportion <span style="font-style:italic">1-n/k</span> of cells proliferating and a proportion <span style="font-style:italic">n/k</span> of cells not proliferating. Now, there is another way to write the same term which is: 
       <math xmlns="http://www.w3.org/1998/Math/MathML">
         <mrow>
           <mstyle mathsize="12pt">
@@ -1128,7 +1128,7 @@ date: 2024-01-26
           </mstyle>
           <mrow></mrow>
         </mrow>
-      </math> <span>. Here, the division time becomes </span><span style="font-style:italic">τ/(1-n/k)</span><span> and the more cells there are, the longer the division time becomes. This division time becomes infinite when </span><span style="font-style:italic">n=k</span><span> which means that cells are quiescent. These two interpretations are biologically different. In the first interpretation, a proportion of cells are completely constrained, for example due to spatial constraints, while the other proliferate freely. In the second, all cells are impacted equally, for example by a lack of nutrient. Nevertheless, the initial term is compatible with both interpretations and they hhave the same consequences at this level of analysis.</span>
+      </math> . Here, the division time becomes <span style="font-style:italic">τ/(1-n/k)</span> and the more cells there are, the longer the division time becomes. This division time becomes infinite when <span style="font-style:italic">n=k</span> which means that cells are quiescent. These two interpretations are biologically different. In the first interpretation, a proportion of cells are completely constrained, for example due to spatial constraints, while the other proliferate freely. In the second, all cells are impacted equally, for example by a lack of nutrient. Nevertheless, the initial term is compatible with both interpretations and they hhave the same consequences at this level of analysis.
     </p>
   </li>
   <li>
@@ -1183,56 +1183,41 @@ date: 2024-01-26
 </ol>
 <h2 class="sectionHead" id="references----">References</h2>
 <ol class="thebibliography">
-  <li class="bibitem">
-    <p><a id="RefNumPara18011924949141"></a><a id="bkmRefNumPara18011924949141"></a><span>Beeman, D. (2013). Hodgkin-Huxley Model, pages 1–13. <span class="cmti-10">Encyclopedia of Computational Neuroscience.</span> Springer New York, New York, NY. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1007/978-1-4614-7320-6_127-3"><span><span>10.1007/978-1-4614-7320-6_127-3</span></span></a></p>
+  <li class="bibitem" id="bkmRefNumPara18011924949141"><span>Beeman, D. (2013). Hodgkin-Huxley Model, pages 1–13. <span class="cmti-10">Encyclopedia of Computational Neuroscience.</span> Springer New York, New York, NY. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1007/978-1-4614-7320-6_127-3">10.1007/978-1-4614-7320-6_127-3</a>
   </li>
-  <li class="bibitem">
-    <p><a id="RefNumPara18031924949141"></a><a id="bkmRefNumPara18031924949141"></a>Descartes, R. (2016). <span class="cmti-10">Discours de la méthode.</span> Flammarion.<span></span></p>
+  <li class="bibitem" id="bkmRefNumPara18031924949141">Descartes, R. (2016). <span class="cmti-10">Discours de la méthode.</span> Flammarion.
   </li>
-  <li class="bibitem">
-    <p><a id="RefNumPara18051924949141"></a><a id="bkmRefNumPara18051924949141"></a><span>Montévil, M., Mossio, M., Pocheville, A., and Longo, G. (2016a). Theoretical principles for biology: Variation. <span class="cmti-10">Progress in Biophysics and Molecular Biology</span>, 122(1): 36 – 50. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1016/j.pbiomolbio.2016.08.005"><span><span>10.1016/j.pbiomolbio.2016.08.005</span></span></a></p>
+  <li class="bibitem" id="bkmRefNumPara18051924949141"><span>Montévil, M., Mossio, M., Pocheville, A., and Longo, G. (2016a). Theoretical principles for biology: Variation. <span class="cmti-10">Progress in Biophysics and Molecular Biology</span>, 122(1): 36 – 50. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1016/j.pbiomolbio.2016.08.005">10.1016/j.pbiomolbio.2016.08.005</a>
   </li>
-  <li class="bibitem">
-    <p><a id="RefNumPara18071924949141"></a><a id="bkmRefNumPara18071924949141"></a><span>Mossio, M., Montévil, M., and Longo, G. (2016). Theoretical principles for biology: Organization. <span class="cmti-10">Progress in Biophysics and Molecular Biology</span>, 122(1): 24 – 35. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1016/j.pbiomolbio.2016.07.005"><span><span>10.1016/j.pbiomolbio.2016.07.005</span></span></a></p>
+  <li class="bibitem" id="bkmRefNumPara18071924949141"><span>Mossio, M., Montévil, M., and Longo, G. (2016). Theoretical principles for biology: Organization. <span class="cmti-10">Progress in Biophysics and Molecular Biology</span>, 122(1): 24 – 35. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1016/j.pbiomolbio.2016.07.005">10.1016/j.pbiomolbio.2016.07.005</a>
   </li>
-  <li class="bibitem">
-    <p><a id="RefNumPara30321924949141"></a><a id="bkmRefNumPara30321924949141"></a><span>Noble, D. (2010). Biophysics and systems biology. <span class="cmti-10">Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</span>, 368(1914): 1125. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1098/rsta.2009.0245"><span><span>10.1098/rsta.2009.0245</span></span></a></p>
+  <li class="bibitem" id="bkmRefNumPara30321924949141"><span>Noble, D. (2010). Biophysics and systems biology. <span class="cmti-10">Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</span>, 368(1914): 1125. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1098/rsta.2009.0245">10.1098/rsta.2009.0245</a>
   </li>
-  <li class="bibitem">
-    <p><a id="RefNumPara18091924949141"></a><a id="bkmRefNumPara18091924949141"></a>Sonnenschein, C. and Soto, A. (1999). <span class="cmti-10">The society of cells: cancer and control of cell proliferation.</span> Springer Verlag, New York.<span></span></p>
+  <li class="bibitem" id="bkmRefNumPara18091924949141">Sonnenschein, C. and Soto, A. (1999). <span class="cmti-10">The society of cells: cancer and control of cell proliferation.</span> Springer Verlag, New York.</p>
   </li>
-  <li class="bibitem">
-    <p><a id="RefNumPara18111924949141"></a><a id="bkmRefNumPara18111924949141"></a><span>Soto, A. M., Longo, G., Montévil, M., and Sonnenschein, C. (2016). The biological default state of cell proliferation with variation and motility, a fundamental principle for a theory of organisms. <span class="cmti-10">Progress in Biophysics and Molecular Biology,</span> 122(1): 16 – 23. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1016/j.pbiomolbio.2016.06.006"><span><span>10.1016/j.pbiomolbio.2016.06.006</span></span></a></p>
+  <li class="bibitem" id="bkmRefNumPara18111924949141"><span>Soto, A. M., Longo, G., Montévil, M., and Sonnenschein, C. (2016). The biological default state of cell proliferation with variation and motility, a fundamental principle for a theory of organisms. <span class="cmti-10">Progress in Biophysics and Molecular Biology,</span> 122(1): 16 – 23. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1016/j.pbiomolbio.2016.06.006">10.1016/j.pbiomolbio.2016.06.006</a>
   </li>
-  <li class="bibitem">
-    <p><a id="RefNumPara18131924949141"></a><a id="bkmRefNumPara18131924949141"></a><span>Montévil, M., Speroni, L., Sonnenschein, C., and Soto, A. M. (2016b). Modeling mammary organogenesis from biological first principles: Cells and their physical constraints. <span class="cmti-10">Progress in Biophysics and Molecular Biology,</span> 122(1): 58 – 69. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1016/j.pbiomolbio.2016.08.004"><span><span>10.1016/j.pbiomolbio.2016.08.004</span></span></a></p>
+  <li class="bibitem" id="bkmRefNumPara18131924949141"><span>Montévil, M., Speroni, L., Sonnenschein, C., and Soto, A. M. (2016b). Modeling mammary organogenesis from biological first principles: Cells and their physical constraints. <span class="cmti-10">Progress in Biophysics and Molecular Biology,</span> 122(1): 58 – 69. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1016/j.pbiomolbio.2016.08.004">10.1016/j.pbiomolbio.2016.08.004</a>
   </li>
-  <li class="bibitem">
-    <p><a id="RefNumPara36521924949141"></a><a id="bkmRefNumPara36521924949141"></a><span>D’Anselmi, F., Valerio, M., Cucina, A., Galli, L., Proietti, S., Dinicola, S., Pasqualato, A., Manetti, C., Ricci, G., Giuliani, A., and Bizzarri, M. (2011). Metabolism and cell shape in cancer: A fractal analysis. <span class="cmti-10">The International Journal of Biochemistry &amp; Cell Biology,</span> 43(7): 1052 – 1058. Metabolic Pathways in Cancer. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1016/j.biocel.2010.05.002"><span><span>10.1016/j.biocel.2010.05.002</span></span></a></p>
+  <li class="bibitem" id="bkmRefNumPara36521924949141"><span>D’Anselmi, F., Valerio, M., Cucina, A., Galli, L., Proietti, S., Dinicola, S., Pasqualato, A., Manetti, C., Ricci, G., Giuliani, A., and Bizzarri, M. (2011). Metabolism and cell shape in cancer: A fractal analysis. <span class="cmti-10">The International Journal of Biochemistry &amp; Cell Biology,</span> 43(7): 1052 – 1058. Metabolic Pathways in Cancer. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1016/j.biocel.2010.05.002">10.1016/j.biocel.2010.05.002</a>
   </li>
-  <li class="bibitem">
-    <p><a id="RefNumPara36541924949141"></a><a id="bkmRefNumPara36541924949141"></a><span>Longo, G. and Montévil, M. (2014). <span class="cmti-10">Perspectives on Organisms: Biological time, symmetries and singularities. Lecture Notes in Morphogenesis.</span> Springer, Dordrecht. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1007/978-3-642-35938-5"><span><span>10.1007/978-3-642-35938-5</span></span></a></p>
+  <li class="bibitem" id="bkmRefNumPara36541924949141"><span>Longo, G. and Montévil, M. (2014). <span class="cmti-10">Perspectives on Organisms: Biological time, symmetries and singularities. Lecture Notes in Morphogenesis.</span> Springer, Dordrecht. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1007/978-3-642-35938-5">10.1007/978-3-642-35938-5</a>
   </li>
-  <li class="bibitem">
-    <p><a id="RefNumPara18291924949141"></a><a id="bkmRefNumPara18291924949141"></a><span>Tjørve, E. (2003). Shapes and functions of species–area curves: a review of possible models. <span class="cmti-10">Journal of Biogeography,</span> 30(6): 827 – 835. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1046/j.1365-2699.2003.00877.x"><span><span>10.1046/j.1365-2699.2003.00877.x</span></span></a></p>
+  <li class="bibitem" id="bkmRefNumPara18291924949141"><span>Tjørve, E. (2003). Shapes and functions of species–area curves: a review of possible models. <span class="cmti-10">Journal of Biogeography,</span> 30(6): 827 – 835. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1046/j.1365-2699.2003.00877.x">10.1046/j.1365-2699.2003.00877.x</a>
   </li>
-  <li class="bibitem">
-    <p><a id="RefNumPara32861924949141"></a><a id="bkmRefNumPara32861924949141"></a><span>Hoehler, T. M. and Jorgensen, B. B. (2013). Microbial life under extreme energy limitation. <span class="cmti-10">Nat Rev Micro,</span> 11(2): 83 – 94. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1038/nrmicro2939"><span><span>10.1038/nrmicro2939</span></span></a></p>
+  <li class="bibitem" id="bkmRefNumPara32861924949141"><span>Hoehler, T. M. and Jorgensen, B. B. (2013). Microbial life under extreme energy limitation. <span class="cmti-10">Nat Rev Micro,</span> 11(2): 83 – 94. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1038/nrmicro2939">10.1038/nrmicro2939</a>
   </li>
-  <li class="bibitem">
-    <p><a id="RefNumPara18331924949141"></a><a id="bkmRefNumPara18331924949141"></a><span>Camalet, S., Duke, T., Julicher, F., and Prost, J. (2000). Auditory sensitivity provided by self-tuned critical oscillations of hair cells. <span class="cmti-10">Proceedings of the National Academy of Sciences,</span> pages 3183 – 3188. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1073/pnas.97.7.3183"><span><span>10.1073/pnas.97.7.3183</span></span></a></p>
+  <li class="bibitem" id="bkmRefNumPara18331924949141"><span>Camalet, S., Duke, T., Julicher, F., and Prost, J. (2000). Auditory sensitivity provided by self-tuned critical oscillations of hair cells. <span class="cmti-10">Proceedings of the National Academy of Sciences,</span> pages 3183 – 3188. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1073/pnas.97.7.3183">10.1073/pnas.97.7.3183</a>
   </li>
-  <li class="bibitem">
-    <p><a id="RefNumPara18351924949141"></a><a id="bkmRefNumPara18351924949141"></a><span>Lesne, A. and Victor, J.-M. (2006). Chromatin fiber functional organization: Some plausible models. <span class="cmti-10">Eur Phys J E Soft Matter,</span> 19(3): 279 – 290. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1140/epje/i2005-10050-6"><span><span>10.1140/epje/i2005-10050-6</span></span></a></p>
+  <li class="bibitem" id="bkmRefNumPara18351924949141"><span>Lesne, A. and Victor, J.-M. (2006). Chromatin fiber functional organization: Some plausible models. <span class="cmti-10">Eur Phys J E Soft Matter,</span> 19(3): 279 – 290. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1140/epje/i2005-10050-6">10.1140/epje/i2005-10050-6</a>
   </li>
-  <li class="bibitem">
-    <p class="Textbody" dir="ltr" style="margin-top:0.0in;margin-bottom:0.097200006in;text-align:justify"><a id="RefNumPara40491924949141"></a><a id="bkmRefNumPara40491924949141"></a><span>Montévil, M. and Mossio, M. (2015). Biological organisation as closure of constraints. <span class="cmti-10">Journal of Theoretical Biology,</span> 372(0): 179 – 191. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1016/j.jtbi.2015.02.029"><span><span>10.1016/j.jtbi.2015.02.029</span></span></a></p>
+  <li class="bibitem"  id="bkmRefNumPara40491924949141"></a><span>Montévil, M. and Mossio, M. (2015). Biological organisation as closure of constraints. <span class="cmti-10">Journal of Theoretical Biology,</span> 372(0): 179 – 191. Doi: </span><a class="Internet20link" href="http://dx.doi.org/10.1016/j.jtbi.2015.02.029">10.1016/j.jtbi.2015.02.029</a>
   </li>
 </ol>
 <div>
   <hr class="footnoterule" />
   <div id="ftn1">
-    <p class="Footnote" dir="ltr"><a class="FootnoteSymbol" href="#bodyftn1">1</a> <span>E-mail: </span><a class="Internet20link" href="mailto:mael.montevil@gmail.com"><span><span>mael.montevil@gmail.com</span></span></a><span> Url: </span><a class="Internet20link" href="http://montevil.theobio.org/"><span><span>http://montevil.org</span></span></a></p>
+    <p class="Footnote" dir="ltr"><a class="FootnoteSymbol" href="#bodyftn1">1</a> E-mail: <a class="Internet20link" href="mailto:mael.montevil@gmail.com">mael.montevil@gmail.com</a> Url: <a class="Internet20link" href="http://montevil.theobio.org/">http://montevil.org</a></p>
     <p class="Footnote" dir="ltr" style="margin-left:0.0in;margin-right:0.0in;text-indent:0.0in;text-align:justify;font-size:11.0pt">Centre Cavaillès, République des savoirs UAR 3608, ÉNS-PSL and CNRS</p>
   </div>
 </div>

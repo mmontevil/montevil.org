@@ -1,5 +1,5 @@
 // collections.js (ESM)
-import moment from 'moment';
+import {date} from '../filters/dates.js';
 
 const filteredCollectionsMemoization = {};
 const now = Date.now();
@@ -29,9 +29,8 @@ function getFilteredCollection(collection, type, lang) {
 }
 
 function makeDateFormatter(pattern) {
-  return function (date) {
-    if (!date || date === '2100-01-01') return 'Submitted';
-    return moment(date).format(pattern);
+  return function (date0) {
+    return date(date0, pattern);
   };
 }
 

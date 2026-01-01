@@ -24,7 +24,7 @@ import slugifyFn from './src/_utils/slugify.js';
 
 import imagesResponsiver from './src/_utils/responsiver.js';
 import htmlmin from 'html-minifier-next';
-
+import { ebookShortcode } from "./src/_11ty/shortcodes/ebook.js";
 
 
 /* ---------------- Markdown Helpers ---------------- */
@@ -70,7 +70,7 @@ export default async function (eleventyConfig) {
     const cachedPeople = globalThis.__cachedPeople__;
     writeToCache(cachedPeople, '_cache/people.json');
   });
-
+  eleventyConfig.addGlobalData("NODE_ENV", process.env.NODE_ENV || "development");
   /* ---------------- Collections ---------------- */
   const tags = await import('./src/_11ty/collections/tags.js');
   Object.entries(tags).forEach(([name, fn]) =>
@@ -103,6 +103,13 @@ export default async function (eleventyConfig) {
 
   const { default: addAnchorDom } = await import('./src/_11ty/filters/addAnchordom.js');
   eleventyConfig.addFilter('addAnchor', addAnchorDom);
+  
+ const { default: linkCitations } = await import('./src/_11ty/filters/linkCitations.js');
+eleventyConfig.addFilter("linkCitations", linkCitations)
+
+
+
+  
 
   /* ---------------- Shortcodes ---------------- */
   const { default: ogImage } = await import('./src/_11ty/shortcodes/ogImage.js');
@@ -123,6 +130,9 @@ export default async function (eleventyConfig) {
 
   const { default: purgeCss } = await import('./src/_11ty/shortcodes/purgecss.js');
   eleventyConfig.addShortcode('purgeCss', purgeCss);
+  
+
+  eleventyConfig.addAsyncShortcode("ebook", ebookShortcode);
 
   /* ---------------- Plugins ---------------- */
   eleventyConfig.addPlugin(syntaxHighlight);
@@ -173,11 +183,7 @@ export default async function (eleventyConfig) {
 
   //const { default: ogImage } = require('./src/_11ty/shortcodes/ogImage.mjs');
   
-const { default: imagesResponsiverConfig } = await import('./src/_11ty/images-responsiver-config.js');
-  
-    eleventyConfig.addTransform('imagesResponsiver', async (content, outputPath) =>
-      outputPath?.endsWith('.html') ? imagesResponsiver(content, imagesResponsiverConfig) : content
-    );
+
 /*
     const { default: mathjaxTransform } = await import('./src/_11ty/transform/mathjaxTransform.js');
     eleventyConfig.addTransform('mathjaxTransform', mathjaxTransform);
@@ -200,6 +206,11 @@ const { default: imagesResponsiverConfig } = await import('./src/_11ty/images-re
   }
   return content;
 });
+ const { default: imagesResponsiverConfig } = await import('./src/_11ty/images-responsiver-config.js');
+  
+    eleventyConfig.addTransform('imagesResponsiver', async (content, outputPath) =>
+      outputPath?.endsWith('.html') ? imagesResponsiver(content, imagesResponsiverConfig) : content
+    );
 }
   
   /* ---------------- Passthrough Copy ---------------- */

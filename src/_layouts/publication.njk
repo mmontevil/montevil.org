@@ -9,21 +9,49 @@ eleventyComputed:
     bibout: "/assets/bib/{{page.fileSlug}}.bib"
     pdfout: "/assets/pdf/{{page.fileSlug}}.pdf"
     pdfoutSup: "/assets/pdf/{{page.fileSlug}}-sup.pdf"
-    datepub: "{%- set date0 = bibentry.issued['date-parts'][0] -%}{%- if  date0 -%}{{- 0 if date0[0]<10  -}}{{- date0[0] if date0[0] else 2021 -}}-{{- 0 if (date0[1]<10 or not date0[2])  -}}{{- date0[1] if date0[1] else 01 -}}-{{- 0 if (date0[2]<10 or not date0[2])  -}}{{- date0[2] if date0[2] else 01 -}}{%- else -%}Submitted{%- endif -%}"
-    orderDate: "{%- if datepub=='Submitted'  -%}{{- '2100-01-01' -}}{%- else -%}{{- datepub     -}}{%- endif -%}"
-    nbAuteurs:  "{{bibentry.author | length}}"    
-    auteurs: "{%- for auth in bibentry.author -%}{%-if auth.given[0]-%}{%- author auth.given[0]+' '+auth.family, '', people,true, nbAuteurs -%}{%-else-%}{{-auth.literal-}}{%-endif-%}{%- if loop.revindex >2 -%}, {%endif-%}{%- if loop.revindex ===2 %} & {%endif-%}{%-endfor-%}"
+    orderDate: "{%- if datepub=='Submitted'  -%}{{- '2100-01-01' -}}{%- else -%}{{- datepub     -}}{%- endif -%}"   
 ---
 
  {# <div class="legibilityWidth wrap0all"> </div>#}
  
+ 
+ 
+ 
 {% if noAnchor %}
     {{ content  | safe }}
 {% else %}
-    {{ content | addAnchor | safe }}
+    {% if filterauthoryear %}
+        {{ content |linkCitations| addAnchor | safe }}
+        {% else %}
+       
+    {% if filterauthoryear2 %}
+        {{ content |linkCitationsInline| addAnchor | safe }}
+    {% else %}
+        {{ content | addAnchor | safe }}
+    {% endif %}
+    {% endif %}
 {% endif %}
 
+{% if NODE_ENV == "epub" and hasFullText %}
+{% set css0 %}
+{%- include_raw config.dir.dist + "/css/" + hashes_css["critical.css"] -%}
 
+{%- include_raw config.dir.dist + "/css/" + hashes_css["page-text.css"] -%}
+{%- include_raw "node_modules/@lesjoursfr/html-to-epub/templates/" + "template.css" -%}
+{% endset %}
+
+{% set ebookContent %}
+  <article>
+    {{ content | safe }}
+  </article>
+{% endset %}
+{% ebook ebookContent, page, {
+  title: title,
+  author: auteurssimple,
+  cover: illust,
+  css: css0
+} %}
+{% endif %}
  
  {#
  {% if gsentry.citing.length >0%}

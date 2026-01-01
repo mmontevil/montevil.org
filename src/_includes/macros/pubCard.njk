@@ -67,7 +67,7 @@
 <div class="handle smalltext">
 <details class="citation"> <summary  >Citation </summary>  
  <div> {% icon "reference", "reference" %}
-{{ article.data.bibentry | bibcite2| urlize( article.data.title,article.data.page.url, article.data.bibentry.type)|divRemove|safe}} </div></details> 
+{{ article.data.bibentry | bibcite2| urlize( article.data.title,article.data.page.url, article.data.bibentry.type)|safe}} </div></details> 
 {{pubuttons(article.data) |safe}}
 
   </div>

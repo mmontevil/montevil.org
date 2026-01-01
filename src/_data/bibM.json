@@ -1,5 +1,35 @@
 [
   {
+    "DOI": "10.13133/2532-5876/19211",
+    "URL": "https://www.philosophy-world-democracy.org/articles-1/for-one-another-without-conditions-on-palestine-and-ukraine",
+    "abstract": "computational, physical and teleological theory for understanding biological organization as cognitive agent minimizing their entropy in relation to their environment. Is minimizing entropy the first principle driving all dynamics of cognition ? Is it enough to account for organizational changes in an open-ended way ? After a general presentation of the literature on the FEP, we turn to the paradoxical case of the brain under the influence of psychedelics, where the FEP is challenged by an increased cerebral entropy, which induces organizational changes of the cognition. Building on this paradox, we identify some limits of the FEP, notably applying concepts of information, optimization and predefined phase space to biology that do not fit our criteria for a theory of biological organization. We also identify two aspects of entropy in physics and in the FEP: the local entropic trend that implies variations and the global entropic trend that leads to homogeneization and stability. Extending these concepts outside of their physicomathematical context, we contribute to an organicist theoretical alternative where living systems find a balance between these two trends, and, conceptually, a biological system’s disorganization enable its \"unprestatable\" reorganization and so its open-ended evolution.",
+    "author": [
+      {
+        "family": "Chollat-Namy",
+        "given": "Marie"
+      },
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "Organisms. Journal of biosciences",
+    "id": "2025-CM-entropy-FEP-anti-entropy",
+    "issue": "1-2",
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          12,
+          21
+        ]
+      ]
+    },
+    "title": "What drives the brain? Organizational changes, FEP and anti-entropy",
+    "type": "article-journal",
+    "volume": "8"
+  },
+  {
     "abstract": "La notion d’individu a une grande importance en sciences sociales, notamment à travers la doctrine de l’individualisme méthodologique qui se propose de comprendre les phénomènes sociaux sur la seule base des individus et de leurs interactions, un point de vue atomiste donc. Cette notion renvoie à deux idées liées mais distinctes. Tout d’abord, les individus forment des unités à peu près insécables, comme le terme l’indique. De plus, les individus sont distincts les uns des autres, ainsi que séparables, au moins analytiquement, de leurs contextes. L’individuation renvoie alors à deux questions. Tout d’abord, sur quelles bases identifier les différents individus et les distinguer de leurs contextes ? L’individuation est alors la question théorique et épistémologique de l’identification des différents individus. Deuxièmement, notamment à la suite de Simondon, la notion d’individuation peut être une manière de dépasser l’atomisme inhérent au concept d’individu, en posant l’individuation comme première par rapport aux individus. Alors, l’individuation est le processus qui devient le centre de l’intérêt théorique.",
     "author": [
       {
@@ -604,8 +634,7 @@
     "number-of-pages": "249",
     "publisher": "Bloomsbury Academic",
     "publisher-place": "London",
-    "title": "Plaine commune, contributive learning territory: Memories of the future",
-    "title-short": "Plaine commune, contributive learning territory",
+    "title": "Plaine commune, contributive learning territory",
     "type": "chapter"
   },
   {
@@ -913,26 +942,6 @@
     "type": "article-journal"
   },
   {
-    "abstract": "The free-energy principle (FEP) furnishes a computational, physical and teleological theory for understanding biological organization as cognitive agent minimizing their entropy in relation to their environment. Is minimizing entropy the first principle driving all dynamics of cognition ? Is it enough to account for organizational changes in a open-ended way ? After a general presentation of the literature on FEP, we then turn to the paradoxical case of the brain under the influence of psychedelics, where FEP is challenged by an increased cerebral entropy, which induces organizational changes of the cognition. From on this paradox, we then identify some limits of the FEP, notably applying concepts of information, optimization and predefined phase space to biology, which does not account for strong organizational changes. We therefore propose an organicist theoretical alternative with the concept of anti-entropy, explaining how a biological system’s disorganization can enable its \"unprestatable\" reorganization and so its open-ended evolution. We finally rediscuss the concept of activity and passivity of living beings and the notion that their default state corresponds to an activity.",
-    "author": [
-      {
-        "family": "Chollat-Namy",
-        "given": "Marie"
-      },
-      {
-        "family": "Montévil",
-        "given": "Maël"
-      }
-    ],
-    "container-title": "",
-    "id": "submitted-Chollat-Montevil-FEP-entropy",
-    "issued": {
-      "date-parts": []
-    },
-    "title": "What drives the brain ? Organizational changes, FEP and anti-entropy",
-    "type": "article-journal"
-  },
-  {
     "DOI": "10.1007/s10441-025-09496-2",
     "ISSN": "1572-8358",
     "abstract": "Biologists are increasingly documenting anthropogenic disruptions, both at the organism and ecosystem levels, indicating that these disruptions are a fundamental, qualitative component of the Anthropocene. Nonetheless, the notion of disruption has yet to be theorized. Informally, disruptions are direct or indirect consequences of specific causes that impair the contribution of parts of living systems to their ability to last over time. To progress in this theorization, we work here on a particular case. Even relatively minor temperature changes can significantly impact plant-pollinator synchrony, disrupting mutualistic interaction networks. Understanding this phenomenon requires a specific rationale since models describing it use both historical and systemic reasoning. Specifically, history justifies that the ecosystem initially exists in a very narrow part of the possibility space where all its populations are viable, and the disruption leads to a more generic configuration where some populations are not viable. Building on this rationale, we develop a mathematical schema inspired by Boltzmann’s entropy, apply it to this situation, and provide a technical definition of disruption.",
@@ -1148,8 +1157,7 @@
     "page": "47-62",
     "publisher": "Springer International Publishing AG",
     "publisher-place": "Cham",
-    "title": "Conceptual and theoretical specifications for accuracy in medicine: Philosophical perspectives from biology to healthcare",
-    "title-short": "Conceptual and theoretical specifications for accuracy in medicine",
+    "title": "Conceptual and theoretical specifications for accuracy in medicine",
     "type": "chapter"
   },
   {
@@ -1478,13 +1486,12 @@
       ]
     },
     "keyword": "big data, biology, carcinogenesis process, combinatory theory, ergodic theory, immense digital databases, Ramsey theory",
-    "note": "https://montevil.org/publications/chapters/2018-ML-Big-Data-Biology/",
+    "note": "Cerisy SVSI (Conference)",
     "number-of-pages": "11",
     "page": "243-248",
     "publisher": "Wiley",
     "publisher-place": "London",
-    "title": "Big data, knowledge and biology: Cerisy SVSI (conference)",
-    "title-short": "Big data, knowledge and biology",
+    "title": "Big data, knowledge and biology",
     "type": "chapter"
   },
   {
@@ -1537,12 +1544,12 @@
       ]
     },
     "keyword": "cell theory, evolution biology, mathematical structures, organism biology, philosophical position, physical theories, theoretical symmetries",
-    "note": "https://montevil.org/publications/chapters/2018-MLS-Gene-Century-Organism/",
+    "note": "Cerisy SVSI (Conference)",
     "number-of-pages": "11",
     "page": "81-97",
     "publisher": "John Wiley & Sons, Ltd",
     "publisher-place": "London",
-    "title": "From the century of the gene to that of the organism: Introduction to new theoretical perspectives: Cerisy SVSI (conference)",
+    "title": "From the century of the gene to that of the organism: Introduction to new theoretical perspectives",
     "title-short": "From the century of the gene to that of the organism",
     "type": "chapter"
   },
@@ -2195,7 +2202,7 @@
     "page": "275-314",
     "publisher": "Springer International Publishing",
     "publisher-place": "Cham",
-    "title": "Repetition and reversibility in evolution: Theoretical population genetics: Philosophical perspectives of time in natural sciences",
+    "title": "Repetition and reversibility in evolution: Theoretical population genetics",
     "title-short": "Repetition and reversibility in evolution",
     "type": "chapter"
   },
@@ -2389,7 +2396,7 @@
     "number-of-pages": "1293",
     "publisher": "Springer Berlin / Heidelberg",
     "publisher-place": "Berlin, Heidelberg",
-    "title": "Perspectives on organisms: Biological time, symmetries and singularities: Biological time, symmetries and singularities",
+    "title": "Perspectives on organisms: Biological time, symmetries and singularities",
     "title-short": "Perspectives on organisms",
     "type": "book"
   },
@@ -2435,13 +2442,12 @@
       ]
     },
     "keyword": "Entropy Production, Biological Evolution, Irreversible Process, Combinatorial Complexity, Biological Organization",
-    "note": "https://montevil.org/publications/chapters/2012-LM-Randomness-Order-Evolution/",
+    "note": "International Workshop on Theoretical Computer Science, WTCS 2012, Dedicated to Cristian S. Calude on the Occasion of His 60th Birthday, Auckland, New Zealand, February 21-24, 2012, Revised Selected and Invited Papers",
     "number-of-pages": "1435",
     "page": "289-308",
     "publisher": "Springer Berlin / Heidelberg",
     "publisher-place": "Berlin, Heidelberg",
-    "title": "Randomness increases order in biological evolution: International workshop on theoretical computer science, WTCS 2012, dedicated to cristian s. Calude on the occasion of his 60th birthday, auckland, new zealand, february 21-24, 2012, revised selected and invited papers",
-    "title-short": "Randomness increases order in biological evolution",
+    "title": "Randomness increases order in biological evolution",
     "type": "chapter",
     "volume": "7160"
   },

@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: true
   {% for page in collections.all %}
     <url>
       <loc>{{ pkg.homepage }}{{ page.url | url }}</loc>
-      <lastmod>{{ page.date.toISOString() }}</lastmod>
+      <lastmod>{{ page.date| formatDateUTC }}</lastmod>
       {% if page.url | split('/') | length == 7 %}
         <changefreq>weekly</changefreq>
       {% else %}

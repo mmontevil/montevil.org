@@ -24,7 +24,7 @@
     {% if item.data.page.date %}
       <li class="date meta__item meta__date">
         {% icon "date", "Date" %}
-        <time class="dt-published" datetime="{{ item.data.page.date | attributeDate }}">
+        <time class="dt-published" datetime="{{ item.data.page.date | formatDateUTC| attributeDate }}">
         {% if item.data.datepub %}
                {% if item.data.datepub == "Submitted" %} Submitted {% else %}                  
             {% if item.data.layout == 'talk' %}
@@ -33,9 +33,9 @@
                   {{ item.data.datepub | formattedDateShort}} 
             {% endif %}  
                
-               {% endif %} ({{ item.data.page.date | formattedDate }})
+               {% endif %} 
             {% else %}
-          {{ item.data.page.date | formattedDate }}            
+          {{ item.data.page.date| formatDateUTC| formattedDate }}  
         {% endif %}
         </time>
       </li>

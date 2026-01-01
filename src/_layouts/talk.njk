@@ -3,7 +3,7 @@ layout: content
 upnav: toc-site
 css: ["page-text.css"]
 eleventyComputed:
-    orderDate: "{{-page.date | attributeDate-}}"
+    orderDate: "{{-page.date| formatDateUTC | attributeDate-}}"
 ---
 
 

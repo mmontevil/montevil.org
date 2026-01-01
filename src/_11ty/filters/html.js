@@ -1,10 +1,5 @@
 
 
-export  const divRemove =  (content) => {
-  if (!content) return "";
-  const regex = /(<div ((?!(>)).|\n)+>)|(<\/div>)/gm;
-  return content.replace(regex, "");
-};
 
 export  const excerpt =  (content) => {
   if (content === undefined) {

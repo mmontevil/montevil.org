@@ -18,26 +18,17 @@
     {% include "add-css.njk" %}
 {% endeach %}
 
-{#
-  {% if build.env == 'production' %}
-    {% set criticalJs %}
-    {% include_raw config.dir.dist + "/js/" + hashes_critical[config.dir.assets + '/js/critical.js'] %}
-    {% endset %}
-    <script>
-      {{ criticalJs | replace('//# sourceMappingURL=', '//# sourceMappingURL=/js/') | safe }}
-    </script>
-  {% else %}
-    <script src="/js/critical-iife.js"></script>
-  {% endif %}
-#}
+
 
     {% set criticalJs %}
-    {% include_raw config.dir.dist + '/js/critical.legacy.js'  %}
+    {% include_raw config.dir.dist + '/js/critical.js'  %}
     {% endset %}
     <script>
       {{ criticalJs | replace('//# sourceMappingURL=', '//# sourceMappingURL=/js/') | safe }}
     </script>
 
+    
+    
   {% include 'components/google-analytics.njk' %}
 
   {# opengraph and Twitter #}

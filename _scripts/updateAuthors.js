@@ -1,5 +1,4 @@
 import { Builder, By, Key, until } from 'selenium-webdriver';
-import moment from 'moment';
 import { promises as fs } from 'fs';
 import syncFs from 'fs';
 import path from 'path';

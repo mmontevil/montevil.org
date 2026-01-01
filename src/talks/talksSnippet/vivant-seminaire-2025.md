@@ -43,6 +43,9 @@ This builds on conversations with S. Kauffman, G. Longo, M. Montevil, N. Damiris
 ## Mercredi 11 mars 2026, 16h-18h Patrizia d’ALESSIO,
 *« La tentation du néovitalisme pour la recherche en biologie »*
 
+## Mercredi 1 avril 2026, 16h-18h  Adam Nocek
+
+
 ## Mercredi 8 avril 2026, 16h-18h Ruãn BATISTA (UFBA)
 
 

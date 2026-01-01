@@ -3,7 +3,7 @@ upnav: true
 layout: content
 css: ["page-text.css"]
 eleventyComputed:
-    orderDate: "{{-page.date | attributeDate-}}"
+    orderDate: "{{-page.date| formatDateUTC | attributeDate-}}"
     title: "SAMA documentation - {{title}}"
 ---
 
