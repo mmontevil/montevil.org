@@ -38,7 +38,11 @@ This builds on conversations with S. Kauffman, G. Longo, M. Montevil, N. Damiris
 
 
 ## Mercredi 11 février 2026, 16h-18h Philip Ball
+*«  The enabling molecular mechanisms of biological agency»*
 
+**Abstract:** Goal-directed behaviour, a central aspect of most definitions of agency, is arguably a defining feature of living organisms. The problem for biology is to explain such behaviour without trying to explain it away. Organisms are not “programmed by evolution” to behave in a certain way in every given circumstance, for the obvious reason that organisms, especially complex ones like humans, regularly encounter circumstances that neither they nor their ancestors have ever encountered before. The most useful (most adaptive) endowment that evolution can confer on organisms is the agential ability to make contextual decisions – biased by innate predispositions but able to evaluate and respond to circumstantial specifics, both in the environment and in the organism.
+
+What capacities are required for this kind of agency? The key requirement is to create systems that are informationally open and not over-committed to tightly prescribed modes of action. Here I argue that to acquire such versatile and responsive functionality, fuzzy and contextual molecular interactions are a far better “programming language” than is any deterministic readout of a genetic blueprint into molecules that exhibit precise recognition. I explore the characteristics of biomolecules that give them this capacity: features such as cooperativity, promiscuity of binding, combinatorial operation, and responsiveness to higher levels of information.
 
 ## Mercredi 11 mars 2026, 16h-18h Patrizia d’ALESSIO,
 *« La tentation du néovitalisme pour la recherche en biologie »*

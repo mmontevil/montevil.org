@@ -11986,20 +11986,6 @@
     "affiliation": "Centre for Logic and Philosophy of Science, Institute of Philosophy, KU Leuven",
     "fullName": "Alejandro Fábregas-Tejeda"
   },
-  "value-koppl": {
-    "shortname": "< _value> Koppl",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
-    "affiliation": ""
-  },
-  "roger-rkoppl-syr-edu": {
-    "shortname": "Roger rkoppl@ syr. edu",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
-    "affiliation": ""
-  },
   "j-baedke": {
     "shortname": "J Baedke",
     "photo": "/assets/avatars/gs/rPcz-mcAAAAJ.jpg",
@@ -12290,20 +12276,6 @@
   },
   "a-boisseau": {
     "shortname": "A Boisseau",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
-    "affiliation": ""
-  },
-  "value-huneman": {
-    "shortname": "< _value> Huneman",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
-    "affiliation": ""
-  },
-  "philippe": {
-    "shortname": "Philippe",
     "photo": "/assets/avatars/gs/dummy.jpg",
     "url": "",
     "gsid": "",
@@ -12987,20 +12959,6 @@
   },
   "sa-avila-zuniga": {
     "shortname": "SA Ávila Zúñiga",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
-    "affiliation": ""
-  },
-  "value-chavalarias": {
-    "shortname": "< _value> Chavalarias",
-    "photo": "/assets/avatars/gs/dummy.jpg",
-    "url": "",
-    "gsid": "",
-    "affiliation": ""
-  },
-  "david": {
-    "shortname": "David",
     "photo": "/assets/avatars/gs/dummy.jpg",
     "url": "",
     "gsid": "",
@@ -13985,6 +13943,27 @@
   },
   "m-colas-blaise": {
     "shortname": "M Colas-Blaise",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "philippe-huneman": {
+    "shortname": "Philippe Huneman",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "roger-koppl": {
+    "shortname": "Roger Koppl",
+    "photo": "/assets/avatars/gs/dummy.jpg",
+    "url": "",
+    "gsid": "",
+    "affiliation": ""
+  },
+  "david-chavalarias": {
+    "shortname": "David Chavalarias",
     "photo": "/assets/avatars/gs/dummy.jpg",
     "url": "",
     "gsid": "",
