@@ -17,22 +17,22 @@ eleventyComputed:
  
  
  
-{% if noAnchor %}
-    {{ content  | safe }}
-{% else %}
+{% set doFilter = (not isFeed) and (not noAnchor) %}
+{% if doFilter %}
     {% if filterauthoryear %}
-        {{ content |linkCitations| addAnchor | safe }}
-        {% else %}
-       
-    {% if filterauthoryear2 %}
-        {{ content |linkCitationsInline| addAnchor | safe }}
+        {{ content | linkCitations | addAnchor | safe }}
     {% else %}
         {{ content | addAnchor | safe }}
     {% endif %}
-    {% endif %}
+{% else %}
+    {{ content | safe }}
 {% endif %}
 
-{% if NODE_ENV == "epub" and hasFullText %}
+
+
+
+
+{% if NODE_ENV == "epub" and hasFullText and (not isFeed) %}
 {% set css0 %}
 {%- include_raw config.dir.dist + "/css/" + hashes_css["critical.css"] -%}
 
@@ -52,6 +52,12 @@ eleventyComputed:
   css: css0
 } %}
 {% endif %}
+ 
+ 
+ 
+ 
+ 
+ 
  
  {#
  {% if gsentry.citing.length >0%}

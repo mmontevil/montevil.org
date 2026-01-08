@@ -25,8 +25,8 @@ import slugifyFn from './src/_utils/slugify.js';
 import imagesResponsiver from './src/_utils/responsiver.js';
 import htmlmin from 'html-minifier-next';
 import { ebookShortcode } from "./src/_11ty/shortcodes/ebook.js";
-
-
+import  pluginRss  from "@11ty/eleventy-plugin-rss";
+import escape from "lodash.escape";
 /* ---------------- Markdown Helpers ---------------- */
 function getHeadingLevel(tagName) {
   if (tagName[0].toLowerCase() === 'h') tagName = tagName.slice(1);
@@ -107,6 +107,7 @@ export default async function (eleventyConfig) {
  const { default: linkCitations } = await import('./src/_11ty/filters/linkCitations.js');
 eleventyConfig.addFilter("linkCitations", linkCitations)
 
+eleventyConfig.addFilter("xmlEscape", escape)
 
 
   
@@ -150,7 +151,7 @@ eleventyConfig.addFilter("linkCitations", linkCitations)
     wrapperClass: 'autotoc indent',
     ignoredElements: ['a'],
   });
-
+  eleventyConfig.addPlugin(pluginRss);
   /* ---------------- Markdown ---------------- */
   const md = markdownIt({ html: true, breaks: true, linkify: true })
     .use(markdownItHeadingLevel, { firstLevel: 2 })
@@ -180,15 +181,7 @@ eleventyConfig.addFilter("linkCitations", linkCitations)
 
   /* ---------------- Transforms ---------------- */
   if (process.env.NODE_ENV === 'production') {
-
-  //const { default: ogImage } = require('./src/_11ty/shortcodes/ogImage.mjs');
-  
-
-/*
-    const { default: mathjaxTransform } = await import('./src/_11ty/transform/mathjaxTransform.js');
-    eleventyConfig.addTransform('mathjaxTransform', mathjaxTransform);
-  */
-
+    
  eleventyConfig.addTransform('htmlmin', async function(content) {
   if (this.page.outputPath && this.page.outputPath.endsWith('.html')) {
     let minified = await htmlmin.minify(content, {
@@ -206,6 +199,15 @@ eleventyConfig.addFilter("linkCitations", linkCitations)
   }
   return content;
 });
+  //const { default: ogImage } = require('./src/_11ty/shortcodes/ogImage.mjs');
+  
+
+/*
+    const { default: mathjaxTransform } = await import('./src/_11ty/transform/mathjaxTransform.js');
+    eleventyConfig.addTransform('mathjaxTransform', mathjaxTransform);
+  */
+
+
  const { default: imagesResponsiverConfig } = await import('./src/_11ty/images-responsiver-config.js');
   
     eleventyConfig.addTransform('imagesResponsiver', async (content, outputPath) =>

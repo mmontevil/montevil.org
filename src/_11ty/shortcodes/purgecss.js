@@ -18,6 +18,7 @@ export default async function purgeCss(content, cssFiles) {
         /.*equation.*/,
         /.*mjx.*/,
         /.*selected-B.*/,
+        /.*target.*/,
       ],
     },
   });

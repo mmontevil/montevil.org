@@ -3,7 +3,7 @@
 
 {% macro noteCard(note) %}
   {% set content %}
-  {{ note.templateContent | noteToHtml | absoluteImagePath(note.url) | safe }}
+  {{ note.content | noteToHtml | absoluteImagePath(note.url) | safe }}
   {% endset %}
 
   {% set meta %}

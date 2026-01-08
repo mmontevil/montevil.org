@@ -142,7 +142,7 @@
   {
     "title": "Biological organisation as closure of constraints",
     "citingLink": "https://scholar.google.fr/scholar?oi=bibs&hl=en&cites=5715512211526556221,3900630348746021571,14845969391047998323",
-    "citenumber": 410,
+    "citenumber": "411",
     "citing": [
       {
         "title": "[HTML] Metabolic disorders in the transition period indicate that the dairy cows' ability to adapt is overstressed",
@@ -202,7 +202,7 @@
         "journal": "",
         "gid": "eSdgTHpMnP0J",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=gz0HEAAAQBAJ&oi=fnd&pg=PP1&ots=HOrtMg0tHG&sig=sJMEBc6p78TnghWkhLOWGhV6IW4"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=gz0HEAAAQBAJ&oi=fnd&pg=PP1&ots=HOrtSb5xCG&sig=kRXoM0fHe-PT-bDR3157LxU9hG0"
       },
       {
         "title": "[BOOK] A world beyond physics: the emergence and evolution of life",
@@ -216,7 +216,7 @@
         "journal": "",
         "gid": "D9hh3ssRKMwJ",
         "pdflink": "https://indico.cern.ch/event/628979/contributions/2542188/attachments/1437880/2212240/CERN-BEYOND_PHYSICS-_THE_EMERGENCE_AND_EVOLUTION_2OF_LIFE.pdf",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=0zCPDwAAQBAJ&oi=fnd&pg=PP1&ots=DIJTN24yZR&sig=ZFjGcK7OVmyDU4dL7kaRdqb8T48"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=0zCPDwAAQBAJ&oi=fnd&pg=PP1&ots=DIJTTZ9CUR&sig=STmdFZ-f4XASipBWVwan6feJrQs"
       },
       {
         "title": "[HTML] Naturalizing relevance realization: why agency and cognition are fundamentally not computational",
@@ -286,7 +286,7 @@
         "journal": "",
         "gid": "cr3vBuuo4rIJ",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=t5GKEAAAQBAJ&oi=fnd&pg=PA21&ots=FrfEd2z8Mq&sig=Y1ptvdrs2MDFsifPXKV-3i9HIi0"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=t5GKEAAAQBAJ&oi=fnd&pg=PA21&ots=FrfEjZEcHq&sig=N99aOpbIZeLPm6kQNjTtdd57ZRs"
       },
       {
         "title": "[HTML] Living things are not (20th century) machines: updating mechanism metaphors in light of the modern science of machine behavior",
@@ -773,24 +773,6 @@
         "mainlink": "https://www.frontiersin.org/articles/10.3389/fphys.2020.00069/full"
       },
       {
-        "title": "The creation of information: how evolution generates novel improvisations in the biosphere",
-        "authors": [
-          "A Roli",
-          "S Patra",
-          "S Kauffman"
-        ],
-        "authorsid": [
-          "RoAXDw0AAAAJ",
-          "6AnweEkAAAAJ",
-          ""
-        ],
-        "year": "2025",
-        "journal": "Interface Focus",
-        "gid": "qdiZ63lqABIJ",
-        "pdflink": "",
-        "mainlink": "https://royalsocietypublishing.org/rsfs/article/15/6/20250038/366153"
-      },
-      {
         "title": "Toward a theory of organisms: Three founding principles in search of a useful integration",
         "authors": [
           "AM Soto",
@@ -809,6 +791,24 @@
         "gid": "Xp44t56xetwJ",
         "pdflink": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5097676/pdf/nihms-812597.pdf",
         "mainlink": "https://www.sciencedirect.com/science/article/pii/S0079610716300906"
+      },
+      {
+        "title": "The creation of information: how evolution generates novel improvisations in the biosphere",
+        "authors": [
+          "A Roli",
+          "S Patra",
+          "S Kauffman"
+        ],
+        "authorsid": [
+          "RoAXDw0AAAAJ",
+          "6AnweEkAAAAJ",
+          ""
+        ],
+        "year": "2025",
+        "journal": "Interface Focus",
+        "gid": "qdiZ63lqABIJ",
+        "pdflink": "https://www.researchgate.net/profile/Sudip-Patra/publication/396291114_The_creation_of_information_how_evolution_generates_novel_improvisations_in_the_biosphere/links/69464aa40c98040d481f33ac/The-creation-of-information-how-evolution-generates-novel-improvisations-in-the-biosphere.pdf",
+        "mainlink": "https://royalsocietypublishing.org/rsfs/article/15/6/20250038/366153"
       },
       {
         "title": "[HTML] A systematic approach to autonomous agents",
@@ -879,6 +879,22 @@
         "gid": "zqIItv5mQXgJ",
         "pdflink": "https://library.oapen.org/bitstream/handle/20.500.12657/85058/978-3-031-38968-9.pdf?sequence=1#page=67",
         "mainlink": "https://library.oapen.org/bitstream/handle/20.500.12657/85058/978-3-031-38968-9.pdf?sequence=1#page=67"
+      },
+      {
+        "title": "[HTML] Cognition all the way down 2.0: neuroscience beyond neurons in the diverse intelligence era",
+        "authors": [
+          "R Chis-Ciure",
+          "M Levin"
+        ],
+        "authorsid": [
+          "7V9C7skAAAAJ",
+          "luouyakAAAAJ"
+        ],
+        "year": "2025",
+        "journal": "Synthese",
+        "gid": "oPTWK253EnMJ",
+        "pdflink": "https://link.springer.com/article/10.1007/s11229-025-05319-6",
+        "mainlink": "https://link.springer.com/article/10.1007/s11229-025-05319-6"
       },
       {
         "title": "Scaffolding layered control architectures through constraint closure: insights into brain evolution and development",
@@ -1174,7 +1190,7 @@
         "journal": "",
         "gid": "3OqCHqtWrZEJ",
         "pdflink": "https://files.osf.io/v1/resources/ds9mn/providers/osfstorage/64f88695989de62f0edd14f8?action=download&direct&version=3",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=iUkJEQAAQBAJ&oi=fnd&pg=PR9&ots=f8uesLciXy&sig=vRPGKGVvZOfwTtP4zNTvLOnMslc"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=iUkJEQAAQBAJ&oi=fnd&pg=PR9&ots=f8ueyGhl1t&sig=SIvLd6em_qGRHBWwJY0XTXmOdA8"
       },
       {
         "title": "[HTML] Closing the loop: how semantic closure enables open-ended evolution?",
@@ -1237,20 +1253,6 @@
         "mainlink": "https://www.sciencedirect.com/science/article/pii/S0303264722000715"
       },
       {
-        "title": "[HTML] Homeostatic set-points are physical and foundational to organism autonomy",
-        "authors": [
-          "KD Farnsworth"
-        ],
-        "authorsid": [
-          "KtbAdE8AAAAJ"
-        ],
-        "year": "2025",
-        "journal": "BioSystems",
-        "gid": "v7CEI2xAn8oJ",
-        "pdflink": "https://www.sciencedirect.com/science/article/pii/S0303264725002448",
-        "mainlink": "https://www.sciencedirect.com/science/article/pii/S0303264725002448"
-      },
-      {
         "title": "Biocosmology: Biology from a cosmological perspective",
         "authors": [
           "M Cortês",
@@ -1269,6 +1271,20 @@
         "gid": "DzpUf5wadAkJ",
         "pdflink": "https://arxiv.org/pdf/2204.09379",
         "mainlink": "https://arxiv.org/abs/2204.09379"
+      },
+      {
+        "title": "[HTML] Homeostatic set-points are physical and foundational to organism autonomy",
+        "authors": [
+          "KD Farnsworth"
+        ],
+        "authorsid": [
+          "KtbAdE8AAAAJ"
+        ],
+        "year": "2025",
+        "journal": "BioSystems",
+        "gid": "v7CEI2xAn8oJ",
+        "pdflink": "https://www.sciencedirect.com/science/article/pii/S0303264725002448",
+        "mainlink": "https://www.sciencedirect.com/science/article/pii/S0303264725002448"
       },
       {
         "title": "Modeling autopoiesis and cognition with reaction networks",
@@ -1299,22 +1315,6 @@
         "gid": "wfF5tweIMKMJ",
         "pdflink": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/sres.3178",
         "mainlink": "https://onlinelibrary.wiley.com/doi/abs/10.1002/sres.3178"
-      },
-      {
-        "title": "[HTML] Cognition all the way down 2.0: neuroscience beyond neurons in the diverse intelligence era",
-        "authors": [
-          "R Chis-Ciure",
-          "M Levin"
-        ],
-        "authorsid": [
-          "7V9C7skAAAAJ",
-          "luouyakAAAAJ"
-        ],
-        "year": "2025",
-        "journal": "Synthese",
-        "gid": "oPTWK253EnMJ",
-        "pdflink": "https://link.springer.com/article/10.1007/s11229-025-05319-6",
-        "mainlink": "https://link.springer.com/article/10.1007/s11229-025-05319-6"
       },
       {
         "title": "Semiotic fitting and the nativeness of community",
@@ -1603,6 +1603,22 @@
         "mainlink": "https://www.cambridge.org/core/journals/hegel-bulletin/article/do-functions-explain-hegel-and-the-organizational-view/CA47CB13DA096E0547C61109EA06859C"
       },
       {
+        "title": "From physical to biological individuation",
+        "authors": [
+          "PA Miquel",
+          "SY Hwang"
+        ],
+        "authorsid": [
+          "7B6IXo0AAAAJ",
+          ""
+        ],
+        "year": "2016",
+        "journal": "Progress in biophysics and molecular biology",
+        "gid": "jpnhUy5VvOUJ",
+        "pdflink": "https://hal.science/hal-04039234v1/file/From_physical_to_biological_individuatio.pdf",
+        "mainlink": "https://www.sciencedirect.com/science/article/pii/S0079610716300803"
+      },
+      {
         "title": "Beyond the genome: A multi-scale, agent-based taxonomy of biological codes and energetic constraints",
         "authors": [
           "C Micheli",
@@ -1619,22 +1635,6 @@
         "gid": "2sKyfrxYtYgJ",
         "pdflink": "https://papers.ssrn.com/sol3/Delivery.cfm?abstractid=5346061",
         "mainlink": "https://www.sciencedirect.com/science/article/pii/S030326472500214X"
-      },
-      {
-        "title": "From physical to biological individuation",
-        "authors": [
-          "PA Miquel",
-          "SY Hwang"
-        ],
-        "authorsid": [
-          "7B6IXo0AAAAJ",
-          ""
-        ],
-        "year": "2016",
-        "journal": "Progress in biophysics and molecular biology",
-        "gid": "jpnhUy5VvOUJ",
-        "pdflink": "https://hal.science/hal-04039234v1/file/From_physical_to_biological_individuatio.pdf",
-        "mainlink": "https://www.sciencedirect.com/science/article/pii/S0079610716300803"
       },
       {
         "title": "[HTML] Constraint closure drove major transitions in the origins of life",
@@ -1867,20 +1867,6 @@
         "mainlink": "https://link.springer.com/article/10.1007/s10441-019-09342-2"
       },
       {
-        "title": "[PDF] Intrinsic purposiveness and autonomy in interaction",
-        "authors": [
-          "L Virenque"
-        ],
-        "authorsid": [
-          ""
-        ],
-        "year": "2026",
-        "journal": "Outonomy: Fleshing out the Concept of Autonomy …",
-        "gid": "NDZFJUojxdQJ",
-        "pdflink": "https://library.oapen.org/bitstream/handle/20.500.12657/108694/9783032055019.pdf?sequence=1#page=24",
-        "mainlink": "https://library.oapen.org/bitstream/handle/20.500.12657/108694/9783032055019.pdf?sequence=1#page=24"
-      },
-      {
         "title": "Functions, organization and etiology: a reply to Artiga and Martinez",
         "authors": [
           "M Mossio",
@@ -1911,22 +1897,6 @@
         "mainlink": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2020.01348/full"
       },
       {
-        "title": "[HTML] Is the emergence of life and of agency expected?",
-        "authors": [
-          "S Kauffman",
-          "A Roli"
-        ],
-        "authorsid": [
-          "",
-          "RoAXDw0AAAAJ"
-        ],
-        "year": "2025",
-        "journal": "… Transactions of the Royal Society B …",
-        "gid": "G9kBUrhMMhQJ",
-        "pdflink": "https://royalsocietypublishing.org/rstb/article/380/1936/20240283/235143",
-        "mainlink": "https://royalsocietypublishing.org/rstb/article/380/1936/20240283/235143"
-      },
-      {
         "title": "The cognitive archaeology of sociocultural lifeforms",
         "authors": [
           "A Guenin-Carlut",
@@ -1943,6 +1913,36 @@
         "gid": "Sp-ukcBtFhEJ",
         "pdflink": "https://direct.mit.edu/isal/proceedings-pdf/isal2023/35/142/2355121/isal_a_00670.pdf",
         "mainlink": "https://direct.mit.edu/isal/proceedings-abstract/isal2023/35/142/116944"
+      },
+      {
+        "title": "[HTML] Is the emergence of life and of agency expected?",
+        "authors": [
+          "S Kauffman",
+          "A Roli"
+        ],
+        "authorsid": [
+          "",
+          "RoAXDw0AAAAJ"
+        ],
+        "year": "2025",
+        "journal": "… Transactions of the Royal Society B …",
+        "gid": "G9kBUrhMMhQJ",
+        "pdflink": "https://royalsocietypublishing.org/rstb/article/380/1936/20240283/235143",
+        "mainlink": "https://royalsocietypublishing.org/rstb/article/380/1936/20240283/235143"
+      },
+      {
+        "title": "[PDF] Intrinsic purposiveness and autonomy in interaction",
+        "authors": [
+          "L Virenque"
+        ],
+        "authorsid": [
+          ""
+        ],
+        "year": "2026",
+        "journal": "Outonomy: Fleshing out the Concept of Autonomy …",
+        "gid": "NDZFJUojxdQJ",
+        "pdflink": "https://library.oapen.org/bitstream/handle/20.500.12657/108694/9783032055019.pdf?sequence=1#page=24",
+        "mainlink": "https://library.oapen.org/bitstream/handle/20.500.12657/108694/9783032055019.pdf?sequence=1#page=24"
       },
       {
         "title": "Vertical Closure Constraint for Self-replicating Machines",
@@ -2000,7 +2000,7 @@
         "journal": "",
         "gid": "U0rHFu9MU-EJ",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=QJfEEAAAQBAJ&oi=fnd&pg=PT294&ots=HlAptvyUp0&sig=HHJya9XE8UdixdRZY5gKN2TaG_8"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=QJfEEAAAQBAJ&oi=fnd&pg=PT294&ots=HlApzqDXu3&sig=gcdGKUlyJDxaisOEV9ESJksnY2k"
       },
       {
         "title": "Comparing artificial, animal and scientific intelligence: A dialogue with Giuseppe Longo",
@@ -2208,7 +2208,7 @@
         "journal": "",
         "gid": "NZlHhl7DfIYJ",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=QeQ9EAAAQBAJ&oi=fnd&pg=PP1&ots=1a7-4EVuzo&sig=5sLy2N3lgtYpm_Lerl7RxeaZjZc"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=QeQ9EAAAQBAJ&oi=fnd&pg=PP1&ots=1a7-az_xCu&sig=H0nrNpr9bqT7QK3_KuaCSdd8wI8"
       },
       {
         "title": "The unconventionality of nature: biology, from noise to functional randomness",
@@ -2311,22 +2311,6 @@
         "gid": "92FQ1bkEcfAJ",
         "pdflink": "https://philsci-archive.pitt.edu/25369/1/CLEAN%20FINAL%20-%20Barandiaran%20and%20Rama%20-%20Sensorimotor%20teleology%20and%20goal-directedness.pdf",
         "mainlink": "https://philsci-archive.pitt.edu/25369/1/CLEAN%20FINAL%20-%20Barandiaran%20and%20Rama%20-%20Sensorimotor%20teleology%20and%20goal-directedness.pdf"
-      },
-      {
-        "title": "Understanding the layered brain architecture for motivation: Dynamical systems, computational neuroscience, and robotic approaches",
-        "authors": [
-          "TJ Prescott",
-          "A Jimenez-Rodriguez"
-        ],
-        "authorsid": [
-          "u2T4wjgAAAAJ",
-          ""
-        ],
-        "year": "2025",
-        "journal": "Psychology of Learning and Motivation",
-        "gid": "gd-Et4iX9CUJ",
-        "pdflink": "",
-        "mainlink": "https://www.sciencedirect.com/science/article/pii/S0079742125000076"
       },
       {
         "title": "[PDF] Organization and inheritance in twenty-first-century evolutionary biology",
@@ -2459,20 +2443,6 @@
         "mainlink": "https://pdfs.semanticscholar.org/7de6/86ee5098eec9ecc9bdcf8d99de1753996a6b.pdf"
       },
       {
-        "title": "[HTML] A new set of criteria for units of selection",
-        "authors": [
-          "P Bourrat"
-        ],
-        "authorsid": [
-          "OdPTjCsAAAAJ"
-        ],
-        "year": "2022",
-        "journal": "Biological Theory",
-        "gid": "AsXKQKWwJ1kJ",
-        "pdflink": "https://link.springer.com/article/10.1007/s13752-022-00416-y",
-        "mainlink": "https://link.springer.com/article/10.1007/s13752-022-00416-y"
-      },
-      {
         "title": "An integrative approach toward biology, organisms, and cancer",
         "authors": [
           "C Sonnenschein",
@@ -2489,6 +2459,20 @@
         "mainlink": "https://link.springer.com/protocol/10.1007/978-1-4939-7456-6_2"
       },
       {
+        "title": "[HTML] A new set of criteria for units of selection",
+        "authors": [
+          "P Bourrat"
+        ],
+        "authorsid": [
+          "OdPTjCsAAAAJ"
+        ],
+        "year": "2022",
+        "journal": "Biological Theory",
+        "gid": "AsXKQKWwJ1kJ",
+        "pdflink": "https://link.springer.com/article/10.1007/s13752-022-00416-y",
+        "mainlink": "https://link.springer.com/article/10.1007/s13752-022-00416-y"
+      },
+      {
         "title": "A Darwinian dream: on time, levels, and processes in evolution",
         "authors": [
           "A Pocheville"
@@ -2500,7 +2484,7 @@
         "journal": "Evolutionary causation",
         "gid": "JFfarqHCNusJ",
         "pdflink": "https://www.academia.edu/download/57655954/pocheville-darwinian-20181028.pdf",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=3baoDwAAQBAJ&oi=fnd&pg=PA265&ots=EF2z47SdAt&sig=34nm7vB7Bs9usMDt3rd9KLjR3vc"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=3baoDwAAQBAJ&oi=fnd&pg=PA265&ots=EF2za2XgEp&sig=kLtekgz98Q_8Ksfr4-k0x3gMLdI"
       },
       {
         "title": "Naturalizing physics. or, embedding physics in the historicity and materiality of the living",
@@ -2641,6 +2625,20 @@
         "mainlink": "https://arxiv.org/abs/2404.04374"
       },
       {
+        "title": "Achilles and the tortoise: Some caveats to mathematical modeling in biology",
+        "authors": [
+          "SF Gilbert"
+        ],
+        "authorsid": [
+          "jpMLyFYAAAAJ"
+        ],
+        "year": "2018",
+        "journal": "Progress in biophysics and molecular biology",
+        "gid": "KKO6gZ7JcJQJ",
+        "pdflink": "https://works.swarthmore.edu/cgi/viewcontent.cgi?article=1549&context=fac-biology",
+        "mainlink": "https://www.sciencedirect.com/science/article/pii/S0079610717302213"
+      },
+      {
         "title": "Reformalizing the notion of autonomy as closure through category theory as an arrow-first mathematics",
         "authors": [
           "R Hirota",
@@ -2657,20 +2655,6 @@
         "gid": "jr3A_R7D9qkJ",
         "pdflink": "https://direct.mit.edu/isal/proceedings-pdf/isal2023/35/99/2354923/isal_a_00627.pdf",
         "mainlink": "https://direct.mit.edu/isal/proceedings-abstract/isal2023/35/116901"
-      },
-      {
-        "title": "Achilles and the tortoise: Some caveats to mathematical modeling in biology",
-        "authors": [
-          "SF Gilbert"
-        ],
-        "authorsid": [
-          "jpMLyFYAAAAJ"
-        ],
-        "year": "2018",
-        "journal": "Progress in biophysics and molecular biology",
-        "gid": "KKO6gZ7JcJQJ",
-        "pdflink": "https://works.swarthmore.edu/cgi/viewcontent.cgi?article=1549&context=fac-biology",
-        "mainlink": "https://www.sciencedirect.com/science/article/pii/S0079610717302213"
       },
       {
         "title": "A Bergsonian perspective on causality and evolution",
@@ -3079,6 +3063,22 @@
         "mainlink": "https://arxiv.org/abs/2511.03346"
       },
       {
+        "title": "Understanding the layered brain architecture for motivation: Dynamical systems, computational neuroscience, and robotic approaches",
+        "authors": [
+          "TJ Prescott",
+          "A Jimenez-Rodriguez"
+        ],
+        "authorsid": [
+          "u2T4wjgAAAAJ",
+          ""
+        ],
+        "year": "2025",
+        "journal": "Psychology of Learning and Motivation",
+        "gid": "gd-Et4iX9CUJ",
+        "pdflink": "",
+        "mainlink": "https://www.sciencedirect.com/science/article/pii/S0079742125000076"
+      },
+      {
         "title": "Studying self-organisation across the biosphere with process-enablement graphs",
         "authors": [
           "E Brown",
@@ -3138,7 +3138,7 @@
         "journal": "",
         "gid": "N3D43P0dExoJ",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=mrsfEQAAQBAJ&oi=fnd&pg=PR5&ots=G8QhUW_hM4&sig=8RvVRL8COjSv0MNehlrtyr9NQqU"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=mrsfEQAAQBAJ&oi=fnd&pg=PR5&ots=G8Qh_R3lG0&sig=hqnf9KnJ_7XjVzWQ0FjNgR5cQhs"
       },
       {
         "title": "The principle of biological relativity: Origins and current status",
@@ -3171,6 +3171,20 @@
         "mainlink": "https://link.springer.com/article/10.1007/s40656-025-00707-0"
       },
       {
+        "title": "Hegel and the Evolutionary Dimension of Autonomy",
+        "authors": [
+          "A Gambarotto"
+        ],
+        "authorsid": [
+          "QZ-lUAoAAAAJ"
+        ],
+        "year": "2024",
+        "journal": "Teorema: Revista internacional de filosofía",
+        "gid": "T9iHoToHS4IJ",
+        "pdflink": "https://dialnet.unirioja.es/descarga/articulo/9760974.pdf",
+        "mainlink": "https://dialnet.unirioja.es/servlet/articulo?codigo=9760974"
+      },
+      {
         "title": "Interview: Entropy, the Living and Technics: Part I",
         "authors": [
           "B Stiegler",
@@ -3187,20 +3201,6 @@
         "gid": "yMAyxGDoKPwJ",
         "pdflink": "",
         "mainlink": "https://www.pdcnet.org/philtoday/content/philtoday_2025_0069_0003_0553_0566"
-      },
-      {
-        "title": "Hegel and the Evolutionary Dimension of Autonomy",
-        "authors": [
-          "A Gambarotto"
-        ],
-        "authorsid": [
-          "QZ-lUAoAAAAJ"
-        ],
-        "year": "2024",
-        "journal": "Teorema: Revista internacional de filosofía",
-        "gid": "T9iHoToHS4IJ",
-        "pdflink": "https://dialnet.unirioja.es/descarga/articulo/9760974.pdf",
-        "mainlink": "https://dialnet.unirioja.es/servlet/articulo?codigo=9760974"
       },
       {
         "title": "Social Organisms. Hegel's organizational view of social functions",
@@ -3321,6 +3321,22 @@
         "mainlink": "https://direct.mit.edu/isal/proceedings-abstract/isal2025/37/134095"
       },
       {
+        "title": "Georges Canguilhem, the Health-Disease Transition and the Return of Organicism",
+        "authors": [
+          "A Soto",
+          "C Sonnenschein"
+        ],
+        "authorsid": [
+          "GS2coBkAAAAJ",
+          "VmTCfroAAAAJ"
+        ],
+        "year": "2023",
+        "journal": "Organisms. Journal of Biological …",
+        "gid": "9jbFRDPLwbYJ",
+        "pdflink": "https://rosa.uniroma1.it/rosa04/organisms/article/download/17792/16950",
+        "mainlink": "https://rosa.uniroma1.it/rosa04/organisms/article/view/17792"
+      },
+      {
         "title": "Cell-supracellular structural relations solve the French Flag Problem without graded molecular control",
         "authors": [
           "CS Ko",
@@ -3341,22 +3357,6 @@
         "gid": "nzHu90D5WysJ",
         "pdflink": "https://www.biorxiv.org/content/biorxiv/early/2025/10/24/2025.10.24.683925.full.pdf",
         "mainlink": "https://www.biorxiv.org/content/10.1101/2025.10.24.683925.abstract"
-      },
-      {
-        "title": "Georges Canguilhem, the Health-Disease Transition and the Return of Organicism",
-        "authors": [
-          "A Soto",
-          "C Sonnenschein"
-        ],
-        "authorsid": [
-          "GS2coBkAAAAJ",
-          "VmTCfroAAAAJ"
-        ],
-        "year": "2023",
-        "journal": "Organisms. Journal of Biological …",
-        "gid": "9jbFRDPLwbYJ",
-        "pdflink": "https://rosa.uniroma1.it/rosa04/organisms/article/download/17792/16950",
-        "mainlink": "https://rosa.uniroma1.it/rosa04/organisms/article/view/17792"
       },
       {
         "title": "Repetition and reversibility in evolution: Theoretical population genetics",
@@ -3471,22 +3471,6 @@
         "mainlink": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2019.02578/full"
       },
       {
-        "title": "[PDF] Extended criticality and structural stability:'architectures' of biological individuation",
-        "authors": [
-          "G Longo",
-          "E Pagni"
-        ],
-        "authorsid": [
-          "",
-          "xqJjeVAAAAAJ"
-        ],
-        "year": "2015",
-        "journal": "Journal Philosophical Inquiries",
-        "gid": "fhvmf7tJdkYJ",
-        "pdflink": "https://www.di.ens.fr/users/longo/files/Longo-Pagni_ExtCriticIndividuaMerleau.pdf",
-        "mainlink": "https://www.di.ens.fr/users/longo/files/Longo-Pagni_ExtCriticIndividuaMerleau.pdf"
-      },
-      {
         "title": "[HTML] Biological action at a distance: Correlated pattern formation in adjacent tessellation domains without communication",
         "authors": [
           "JM Brooke",
@@ -3501,6 +3485,22 @@
         "gid": "heuA8hQdlW8J",
         "pdflink": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009963",
         "mainlink": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009963"
+      },
+      {
+        "title": "[PDF] Extended criticality and structural stability:'architectures' of biological individuation",
+        "authors": [
+          "G Longo",
+          "E Pagni"
+        ],
+        "authorsid": [
+          "",
+          "xqJjeVAAAAAJ"
+        ],
+        "year": "2015",
+        "journal": "Journal Philosophical Inquiries",
+        "gid": "fhvmf7tJdkYJ",
+        "pdflink": "https://www.di.ens.fr/users/longo/files/Longo-Pagni_ExtCriticIndividuaMerleau.pdf",
+        "mainlink": "https://www.di.ens.fr/users/longo/files/Longo-Pagni_ExtCriticIndividuaMerleau.pdf"
       },
       {
         "title": "Confusing biological rhythms and physical clocks Today's ecological relevance of Bergson-Einstein debate on time",
@@ -3811,20 +3811,6 @@
         "mainlink": "https://link.springer.com/chapter/10.1007/978-3-031-94744-5_3"
       },
       {
-        "title": "GYMNASTICS AND THE PHILOSOPHY OF ANTI-PLANETARY PRACTICE.",
-        "authors": [
-          "CC Olsson"
-        ],
-        "authorsid": [
-          "CuWXqtoAAAAJ"
-        ],
-        "year": "2025",
-        "journal": "Cosmos & History",
-        "gid": "pj78DOnYLDoJ",
-        "pdflink": "",
-        "mainlink": "https://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=18329101&AN=188107352&h=%2FhmQEYQqjZa%2Bcn1sQyblgS7pepeFrWaz3AKL5GamWzxIyNIz7iMWMMXShH%2FzNxAqSkOM0VIoijMrJo8D4cW91A%3D%3D&crl=c"
-      },
-      {
         "title": "Reinventare il corpo e lo spazio",
         "authors": [
           "G Longo",
@@ -3866,7 +3852,7 @@
         "journal": "Biomimetic and Biohybrid Systems: 13th International …",
         "gid": "ymoqjGUmuW0J",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=p5o3EQAAQBAJ&oi=fnd&pg=PA269&ots=6cuSzQVi74&sig=_bnnvGMPAQ1DNjzQXE3auWblQtw"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=p5o3EQAAQBAJ&oi=fnd&pg=PA269&ots=6cuSFL_l74&sig=Oh8fu1Y3r3WE3PTQtCgxUh1Qtt0"
       },
       {
         "title": "[PDF] Theoretical analysis of the vascular system and its relation to Adrian Bejan's constructal theory",
@@ -3959,18 +3945,24 @@
         "mainlink": "https://files.osf.io/v1/resources/4963w_v3/providers/osfstorage/68c307e1d8c4f1be0cd65c18?format=pdf&action=download&direct&version=1"
       },
       {
-        "title": "[PDF] Theoretical Biology Manifesto",
+        "title": "Choosing effect and response traits based on the organizational theory of functions and the new mechanistic philosophy of science",
         "authors": [
-          "TN Carp"
+          "J Coutinho",
+          "L Poliseli",
+          "B Viana",
+          "C El-Hani"
         ],
         "authorsid": [
+          "RwpYW0MAAAAJ",
+          "aSCM8SkAAAAJ",
+          "zcWtKUcAAAAJ",
           ""
         ],
-        "year": "2025",
-        "journal": "",
-        "gid": "zt9I0APyZeMJ",
-        "pdflink": "https://www.researchgate.net/profile/Theodor-Nicolae-Carp/publication/395396815_Theoretical_Biology_Manifesto_-_The_Case_for_Theoretical_Biology_Toward_a_New_Paradigm/links/68c18dff6f87c42f3b916fa3/Theoretical-Biology-Manifesto-The-Case-for-Theoretical-Biology-Toward-a-New-Paradigm.pdf",
-        "mainlink": "https://www.researchgate.net/profile/Theodor-Nicolae-Carp/publication/395396815_Theoretical_Biology_Manifesto_-_The_Case_for_Theoretical_Biology_Toward_a_New_Paradigm/links/68c18dff6f87c42f3b916fa3/Theoretical-Biology-Manifesto-The-Case-for-Theoretical-Biology-Toward-a-New-Paradigm.pdf"
+        "year": "2024",
+        "journal": "Authorea Preprints",
+        "gid": "Gsp2V-xXT5IJ",
+        "pdflink": "https://www.authorea.com/doi/pdf/10.22541/au.172700644.49531819",
+        "mainlink": "https://www.authorea.com/doi/full/10.22541/au.172700644.49531819"
       },
       {
         "title": "Organisms as Agents: Beyond the Artifact Model of Teleology",
@@ -3987,24 +3979,18 @@
         "mainlink": "https://search.proquest.com/openview/79cc64037fe41b8168eec8be35e28349/1?pq-origsite=gscholar&cbl=18750&diss=y"
       },
       {
-        "title": "Choosing effect and response traits based on the organizational theory of functions and the new mechanistic philosophy of science",
+        "title": "[PDF] Theoretical Biology Manifesto",
         "authors": [
-          "J Coutinho",
-          "L Poliseli",
-          "B Viana",
-          "C El-Hani"
+          "TN Carp"
         ],
         "authorsid": [
-          "RwpYW0MAAAAJ",
-          "aSCM8SkAAAAJ",
-          "zcWtKUcAAAAJ",
-          "e5aekOQAAAAJ"
+          ""
         ],
-        "year": "2024",
-        "journal": "Authorea Preprints",
-        "gid": "Gsp2V-xXT5IJ",
-        "pdflink": "https://www.authorea.com/doi/pdf/10.22541/au.172700644.49531819",
-        "mainlink": "https://www.authorea.com/doi/full/10.22541/au.172700644.49531819"
+        "year": "2025",
+        "journal": "",
+        "gid": "zt9I0APyZeMJ",
+        "pdflink": "https://www.researchgate.net/profile/Theodor-Nicolae-Carp/publication/395396815_Theoretical_Biology_Manifesto_-_The_Case_for_Theoretical_Biology_Toward_a_New_Paradigm/links/68c18dff6f87c42f3b916fa3/Theoretical-Biology-Manifesto-The-Case-for-Theoretical-Biology-Toward-a-New-Paradigm.pdf",
+        "mainlink": "https://www.researchgate.net/profile/Theodor-Nicolae-Carp/publication/395396815_Theoretical_Biology_Manifesto_-_The_Case_for_Theoretical_Biology_Toward_a_New_Paradigm/links/68c18dff6f87c42f3b916fa3/Theoretical-Biology-Manifesto-The-Case-for-Theoretical-Biology-Toward-a-New-Paradigm.pdf"
       },
       {
         "title": "From the century of the gene to that of the organism: Introduction to new theoretical perspectives",
@@ -4081,6 +4067,20 @@
         "mainlink": "https://ruor.uottawa.ca/items/ae6cf014-ebc1-4e09-a0e2-5ad80f1a2352"
       },
       {
+        "title": "[PDF] Developing a Naturalistic Metaphysics for Biological Agency",
+        "authors": [
+          "HD Potter"
+        ],
+        "authorsid": [
+          "IE2e_yAAAAAJ"
+        ],
+        "year": "2025",
+        "journal": "",
+        "gid": "FjlmNT_LBMYJ",
+        "pdflink": "https://www.tara.tcd.ie/tara8/server/api/core/bitstreams/7e51b2ca-2363-4bcc-bc37-332b58e9ea62/content",
+        "mainlink": "https://www.tara.tcd.ie/tara8/server/api/core/bitstreams/7e51b2ca-2363-4bcc-bc37-332b58e9ea62/content"
+      },
+      {
         "title": "Big data and biological knowledge",
         "authors": [
           "M Montévil",
@@ -4125,20 +4125,6 @@
         "mainlink": "https://www.sciencedirect.com/science/article/pii/S0079610715001248"
       },
       {
-        "title": "Developing a Naturalistic Metaphysics for Biological Agency",
-        "authors": [
-          "HD Potter"
-        ],
-        "authorsid": [
-          "IE2e_yAAAAAJ"
-        ],
-        "year": "2025",
-        "journal": "",
-        "gid": "FjlmNT_LBMYJ",
-        "pdflink": "https://www.tara.tcd.ie/bitstreams/7e51b2ca-2363-4bcc-bc37-332b58e9ea62/download",
-        "mainlink": "https://www.tara.tcd.ie/items/ac05477b-1ac8-417f-bc77-5fc35b2a7269"
-      },
-      {
         "title": "[BOOK] Sustainable Production System: Eco-development versus Sustainable Development",
         "authors": [
           "C Morlat"
@@ -4150,7 +4136,7 @@
         "journal": "",
         "gid": "uUUfyCJKSQ8J",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=nZ3aDwAAQBAJ&oi=fnd&pg=PR7&ots=E-KgMYBbTs&sig=I5AnyzykigI1UH2pjXxg5AJnmco"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=nZ3aDwAAQBAJ&oi=fnd&pg=PR7&ots=E-KgSTGeTr&sig=-L21P39wOKu3BodMspVlUzRn4bE"
       },
       {
         "title": "Organism, self, umwelt: A new approach to organismic individuality",
@@ -4237,20 +4223,18 @@
         "mainlink": "https://link.springer.com/article/10.1007/s10699-019-09598-4"
       },
       {
-        "title": "Individuation, Adaptability and Cognition in Biological Systems: A Philosophical Modeling",
+        "title": "GYMNASTICS AND THE PHILOSOPHY OF ANTI-PLANETARY PRACTICE.",
         "authors": [
-          "A Boisseau",
-          "PA Miquel"
+          "CC Olsson"
         ],
         "authorsid": [
-          "",
-          "7B6IXo0AAAAJ"
+          "CuWXqtoAAAAJ"
         ],
         "year": "2025",
-        "journal": "Yearbook for Philosophy of …",
-        "gid": "Icppr4Ff_P0J",
+        "journal": "Cosmos & History",
+        "gid": "pj78DOnYLDoJ",
         "pdflink": "",
-        "mainlink": "https://elibrary.duncker-humblot.com/article/75818/individuation-adaptability-and-cognition-in-biological-systems-a-philosophical-modeling"
+        "mainlink": "https://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=18329101&AN=188107352&h=%2FhmQEYQqjZa%2Bcn1sQyblgS7pepeFrWaz3AKL5GamWzxIyNIz7iMWMMXShH%2FzNxAqSkOM0VIoijMrJo8D4cW91A%3D%3D&crl=c"
       },
       {
         "title": "Mechanism, autonomy and biological explanation",
@@ -4495,20 +4479,6 @@
         "mainlink": "https://arxiv.org/abs/2107.09669"
       },
       {
-        "title": "Misunderstandings About the Nature of Life and its Consequences on Societies",
-        "authors": [
-          "D Chavalarias"
-        ],
-        "authorsid": [
-          "mmUj-OoAAAAJ"
-        ],
-        "year": "2025",
-        "journal": "Yearbook for Philosophy of Complex …",
-        "gid": "RVavsZIrpp0J",
-        "pdflink": "",
-        "mainlink": "https://elibrary.duncker-humblot.com/doi:10.3790/pcs.2025.1461907"
-      },
-      {
         "title": "[CITATION] Cognitive agency in sociocultural evolution",
         "authors": [
           "A GUÉNIN"
@@ -4537,6 +4507,20 @@
         "gid": "f-knu5qLUH0J",
         "pdflink": "https://www.sciencedirect.com/science/article/pii/S1877050922017811/pdf?md5=d148b93a0bb51f46729dd8b6bbec9400&pid=1-s2.0-S1877050922017811-main.pdf",
         "mainlink": "https://www.sciencedirect.com/science/article/pii/S1877050922017811"
+      },
+      {
+        "title": "[PDF] Can AI become more ethical than humans?: A Cross-Paradigmatic Evaluation of the Question",
+        "authors": [
+          "M Cannon"
+        ],
+        "authorsid": [
+          ""
+        ],
+        "year": "2024",
+        "journal": "",
+        "gid": "QcFW9p7upcsJ",
+        "pdflink": "https://research.tue.nl/files/330577417/20240625_Cannon_hf.pdf",
+        "mainlink": "https://research.tue.nl/files/330577417/20240625_Cannon_hf.pdf"
       },
       {
         "title": "Il problema delle finalità nel vivente, nella macchina e nella società. Un'analisi epistemologica",
@@ -4597,6 +4581,22 @@
         "gid": "YsPWfLWNHEgJ",
         "pdflink": "https://www.academia.edu/download/97934720/WSN-98-2018-140-149-1.pdf",
         "mainlink": "https://www.academia.edu/download/97934720/WSN-98-2018-140-149-1.pdf"
+      },
+      {
+        "title": "Individuation, Adaptability and Cognition in Biological Systems: A Philosophical Modeling",
+        "authors": [
+          "A Boisseau",
+          "PA Miquel"
+        ],
+        "authorsid": [
+          "",
+          "7B6IXo0AAAAJ"
+        ],
+        "year": "2025",
+        "journal": "Yearbook for Philosophy of …",
+        "gid": "Icppr4Ff_P0J",
+        "pdflink": "",
+        "mainlink": "https://elibrary.duncker-humblot.com/article/75818/individuation-adaptability-and-cognition-in-biological-systems-a-philosophical-modeling"
       },
       {
         "title": "[PDF] Naked mole-rat resistance to senescence and cancer: Key constraints embodied by the histone H1. 0 protein on chromatin dynamics",
@@ -4702,7 +4702,7 @@
         "journal": "Current Thoughts on the Brain-Computer Analogy-All …",
         "gid": "YlebX9C2QiEJ",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=9Bq1EAAAQBAJ&oi=fnd&pg=PA42&ots=s9escY2-rA&sig=90u3RVC60tK6gbT-jI_0Tddr4RI"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=9Bq1EAAAQBAJ&oi=fnd&pg=PA42&ots=s9esiT72rC&sig=xBz2TqQm5PU1JWFLipO7X4CX9ao"
       },
       {
         "title": "[CITATION] Physics of creation-Symmetry breaking,(en) active inference, and unfolding statespaces",
@@ -4793,6 +4793,20 @@
         "mainlink": ""
       },
       {
+        "title": "Misunderstandings About the Nature of Life and its Consequences on Societies",
+        "authors": [
+          "D Chavalarias"
+        ],
+        "authorsid": [
+          "mmUj-OoAAAAJ"
+        ],
+        "year": "2025",
+        "journal": "Yearbook for Philosophy of Complex …",
+        "gid": "RVavsZIrpp0J",
+        "pdflink": "",
+        "mainlink": "https://elibrary.duncker-humblot.com/doi:10.3790/pcs.2025.1461907"
+      },
+      {
         "title": "Organicisme, sémiotique, et pseudogènes",
         "authors": [
           "E Pertusati"
@@ -4881,20 +4895,6 @@
         "mainlink": "https://link.springer.com/chapter/10.1007/978-3-031-39374-7_6"
       },
       {
-        "title": "[PDF] Fitness II: Increase of biological autonomy as evolutionary outcome",
-        "authors": [
-          "K Heininger"
-        ],
-        "authorsid": [
-          ""
-        ],
-        "year": "researchgate.net",
-        "journal": "",
-        "gid": "qlCWYuDbXNYJ",
-        "pdflink": "https://www.researchgate.net/profile/Kurt-Heininger-3/publication/396443543_Fitness_II_Increase_of_biological_autonomy_as_evolutionary_outcome/links/68ebe46c220a341aa154b27f/Fitness-II-Increase-of-biological-autonomy-as-evolutionary-outcome.pdf",
-        "mainlink": "https://www.researchgate.net/profile/Kurt-Heininger-3/publication/396443543_Fitness_II_Increase_of_biological_autonomy_as_evolutionary_outcome/links/68ebe46c220a341aa154b27f/Fitness-II-Increase-of-biological-autonomy-as-evolutionary-outcome.pdf"
-      },
-      {
         "title": "[PDF] From the existential stance to social constraints",
         "authors": [
           "A Guénin—Carlut"
@@ -4907,6 +4907,20 @@
         "gid": "ntVrxO1V6H4J",
         "pdflink": "https://osf.io/download/3kyzt",
         "mainlink": "https://osf.io/download/3kyzt"
+      },
+      {
+        "title": "[PDF] Fitness II: Increase of biological autonomy as evolutionary outcome",
+        "authors": [
+          "K Heininger"
+        ],
+        "authorsid": [
+          ""
+        ],
+        "year": "researchgate.net",
+        "journal": "",
+        "gid": "qlCWYuDbXNYJ",
+        "pdflink": "https://www.researchgate.net/profile/Kurt-Heininger-3/publication/396443543_Fitness_II_Increase_of_biological_autonomy_as_evolutionary_outcome/links/68ebe46c220a341aa154b27f/Fitness-II-Increase-of-biological-autonomy-as-evolutionary-outcome.pdf",
+        "mainlink": "https://www.researchgate.net/profile/Kurt-Heininger-3/publication/396443543_Fitness_II_Increase_of_biological_autonomy_as_evolutionary_outcome/links/68ebe46c220a341aa154b27f/Fitness-II-Increase-of-biological-autonomy-as-evolutionary-outcome.pdf"
       },
       {
         "title": "[PDF] Entropy and Negativity: The Ecological Implications of Dialectics",
@@ -5128,7 +5142,7 @@
         "journal": "",
         "gid": "WvaKWctolvIJ",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=5hieDwAAQBAJ&oi=fnd&pg=IA2&ots=YVcOGW4kg3&sig=PifLUMFeQEfoWLADtRAdnswi0gI"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=5hieDwAAQBAJ&oi=fnd&pg=IA2&ots=YVcOMR9ne4&sig=yex8XjF-3IYY_SBEXd9eRQllQyk"
       },
       {
         "title": "[HTML] 2024-WAYS OF BEING",
@@ -5189,20 +5203,6 @@
         "mainlink": "https://www.sciencedirect.com/science/article/pii/S0022519317304885"
       },
       {
-        "title": "[PDF] COSMOGENESIS: THE VARIABLES OF SU (3) x SU (2) x U (1) ARE FORMALLY CAPABLE OF COLLECTIVE AUTOCATALYSIS: Potential Implications for Why …",
-        "authors": [
-          "S Kauffman"
-        ],
-        "authorsid": [
-          ""
-        ],
-        "year": "2022",
-        "journal": "",
-        "gid": "37IDHy72dR4J",
-        "pdflink": "https://files.osf.io/v1/resources/b3fde/providers/osfstorage/627aa9ef47df850a4e6efdc5?action=download&direct&version=1",
-        "mainlink": "https://files.osf.io/v1/resources/b3fde/providers/osfstorage/627aa9ef47df850a4e6efdc5?action=download&direct&version=1"
-      },
-      {
         "title": "Prédire l'évolution?",
         "authors": [
           "N Pastor"
@@ -5215,6 +5215,20 @@
         "gid": "ffMhaZE-49IJ",
         "pdflink": "https://theses.hal.science/tel-04758850/document",
         "mainlink": "https://theses.hal.science/tel-04758850/"
+      },
+      {
+        "title": "[PDF] COSMOGENESIS: THE VARIABLES OF SU (3) x SU (2) x U (1) ARE FORMALLY CAPABLE OF COLLECTIVE AUTOCATALYSIS: Potential Implications for Why …",
+        "authors": [
+          "S Kauffman"
+        ],
+        "authorsid": [
+          ""
+        ],
+        "year": "2022",
+        "journal": "",
+        "gid": "37IDHy72dR4J",
+        "pdflink": "https://files.osf.io/v1/resources/b3fde/providers/osfstorage/627aa9ef47df850a4e6efdc5?action=download&direct&version=1",
+        "mainlink": "https://files.osf.io/v1/resources/b3fde/providers/osfstorage/627aa9ef47df850a4e6efdc5?action=download&direct&version=1"
       },
       {
         "title": "The effects of geometry and dynamics on biological pattern formation",
@@ -5263,20 +5277,6 @@
         "mainlink": "https://www.persee.fr/doc/intel_0769-4113_2022_num_77_2_2029"
       },
       {
-        "title": "La complexité de l'élémentaire qui change",
-        "authors": [
-          "G Longo"
-        ],
-        "authorsid": [
-          ""
-        ],
-        "year": "2025",
-        "journal": "Revista Acta Semiotica",
-        "gid": "-dbBQhczn4sJ",
-        "pdflink": "https://revistas.pucsp.br/actasemiotica/article/download/73074/48423",
-        "mainlink": "https://revistas.pucsp.br/actasemiotica/article/view/73074"
-      },
-      {
         "title": "[CITATION] Thinking like a State-Embodied intelligence in the deep history of our collective minds",
         "authors": [
           "A GUÉNIN"
@@ -5303,6 +5303,20 @@
         "gid": "ccnBnLv4d7oJ",
         "pdflink": "https://ens.hal.science/hal-03907247/document",
         "mainlink": "https://ens.hal.science/hal-03907247/"
+      },
+      {
+        "title": "La complexité de l'élémentaire qui change",
+        "authors": [
+          "G Longo"
+        ],
+        "authorsid": [
+          ""
+        ],
+        "year": "2025",
+        "journal": "Revista Acta Semiotica",
+        "gid": "-dbBQhczn4sJ",
+        "pdflink": "https://revistas.pucsp.br/actasemiotica/article/download/73074/48423",
+        "mainlink": "https://revistas.pucsp.br/actasemiotica/article/view/73074"
       },
       {
         "title": "[PDF] Concrete lifeforms and cognitive archeology",
@@ -5413,20 +5427,6 @@
         "mainlink": "https://dianoia.filosoficas.unam.mx/index.php/dianoia/article/view/2109"
       },
       {
-        "title": "Comment le hasard façonne le vivant?",
-        "authors": [
-          "M Montévil"
-        ],
-        "authorsid": [
-          "5eOo9hQAAAAJ"
-        ],
-        "year": "2023",
-        "journal": "Figurer le hasard: questions de théorie",
-        "gid": "o7x2aPl1BDIJ",
-        "pdflink": "https://ens.hal.science/hal-04271158/file/2023-Montevil-chance-hasard-biologie.pdf",
-        "mainlink": "https://ens.hal.science/hal-04271158/"
-      },
-      {
         "title": "[PDF] Emergence of organisms: An exploration of the boundaries between living organisms and robots",
         "authors": [
           "A Roli",
@@ -5443,6 +5443,20 @@
         "mainlink": "http://www.foresight.cnr.it/media/attachments/2022/04/11/proceedings_a-quest-for-an-interface-between-information-and-action_issn-2724-6132_2021-8.pdf#page=35"
       },
       {
+        "title": "Comment le hasard façonne le vivant?",
+        "authors": [
+          "M Montévil"
+        ],
+        "authorsid": [
+          "5eOo9hQAAAAJ"
+        ],
+        "year": "2023",
+        "journal": "Figurer le hasard: questions de théorie",
+        "gid": "o7x2aPl1BDIJ",
+        "pdflink": "https://ens.hal.science/hal-04271158/file/2023-Montevil-chance-hasard-biologie.pdf",
+        "mainlink": "https://ens.hal.science/hal-04271158/"
+      },
+      {
         "title": "Bringing Forth Within: Enhabiting at",
         "authors": [
           "M Heras-Escribano",
@@ -5456,7 +5470,7 @@
         "journal": "Enaction and Ecological …",
         "gid": "mXQH4H662bAJ",
         "pdflink": "",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=nCgZEAAAQBAJ&oi=fnd&pg=PA161&ots=XebmQjkDi_&sig=xkSKK-w_Mp5WTr3BYr5WUy7Vr7Y"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=nCgZEAAAQBAJ&oi=fnd&pg=PA161&ots=XebmWepGi-&sig=VcUQDaiK5vdok_jcF1en9v55POY"
       },
       {
         "title": "[HTML] Philosophical Aspects of Astrobiology Revisited",
@@ -5718,7 +5732,7 @@
         "journal": "Deleuze and Evolutionary Theory",
         "gid": "cLvJ9P8sdUcJ",
         "pdflink": "https://www.researchgate.net/profile/Miquel-Paul-Antoine/publication/359775594_5_Deterritorialisation_and_Creative_Involution_A_Note_on_Guattari_and_Deleuze/links/630b20fc1ddd44702114d737/5-Deterritorialisation-and-Creative-Involution-A-Note-on-Guattari-and-Deleuze.pdf",
-        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=snsxEAAAQBAJ&oi=fnd&pg=PA97&ots=EyNTLn78Ut&sig=bXf6peh_Ewg4tgOJo7SpgjZviw8"
+        "mainlink": "https://books.google.fr/books?hl=en&lr=&id=snsxEAAAQBAJ&oi=fnd&pg=PA97&ots=EyNTRicbUt&sig=vdxRKxyrFLA5WQ5pL4O3oIaGKVM"
       },
       {
         "title": "[HTML] Supplément au dossier «Aspects sémiotiques du changement»",
@@ -6309,7 +6323,8 @@
       {
         "title": "[CITATION] Characterizing Network Explanations in Complex Systems: Patterns, Processes and Epistemic Values",
         "authors": [
-          "Philippe Huneman"
+          "< _value> Huneman",
+          "Philippe"
         ],
         "authorsid": [
           "",
@@ -6324,9 +6339,11 @@
       {
         "title": "[CITATION] Misunderstandings About the Nature of Life and its Consequences on Societies",
         "authors": [
-          "David Chavalarias"
+          "< _value> Chavalarias",
+          "David"
         ],
         "authorsid": [
+          "",
           ""
         ],
         "year": "",
@@ -38950,7 +38967,7 @@
   {
     "title": "Entropies and the Anthropocene crisis",
     "citingLink": "https://scholar.google.fr/scholar?oi=bibs&hl=en&cites=2218549910868758759,10418741555930612726",
-    "citenumber": 49,
+    "citenumber": "50",
     "citing": [
       {
         "title": "From the century of the genome to the century of the organism: New theoretical approaches",
@@ -39407,6 +39424,20 @@
         "gid": "H2lb0iYnr0cJ",
         "pdflink": "https://montevil.org/publications/chapters/2024-montevil-normal-pathologique-80ans/",
         "mainlink": "https://montevil.org/publications/chapters/2024-montevil-normal-pathologique-80ans/"
+      },
+      {
+        "title": "[PDF] 'Not Infinite Enough': Experimental British Poetics, Industrial Ecology and Scarcity, 1969–Present",
+        "authors": [
+          "PC Elliott-Mills"
+        ],
+        "authorsid": [
+          ""
+        ],
+        "year": "2023",
+        "journal": "",
+        "gid": "d2vROWXfE8oJ",
+        "pdflink": "https://www.repository.cam.ac.uk/bitstreams/141a821c-f05a-4779-b297-4d5eddc50841/download",
+        "mainlink": "https://www.repository.cam.ac.uk/bitstreams/141a821c-f05a-4779-b297-4d5eddc50841/download"
       },
       {
         "title": "[PDF] Agency and organisation: the dialectics of nature and life",

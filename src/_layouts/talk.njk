@@ -7,8 +7,9 @@ eleventyComputed:
 ---
 
 
+
     {% from "macros/overlayToc.njk" import overlayToc %}
-{{overlayToc(content,"",title, printToc=false)|safe}}
+{{overlayToc(content,"",title, printToc=false, isFeed=isFeed)|safe}}
  
     {{ content | safe }}
 

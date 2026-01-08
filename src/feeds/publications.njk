@@ -1,0 +1,52 @@
+---
+layout: null
+permalink: /feeds/publications.xml
+isFeed: true
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+{%- from "macros/pubCard.njk" import pubCard -%}
+  <title>{{websiteid.name}} - Publications</title>
+  <link href="{{ pkg.homepage }}/feeds/publications.xml" rel="self"/>
+  <link href="{{ pkg.homepage }}/all/publications/"/>
+  <link rel="hub" href="http://pubsubhubbub.superfeedr.com/" />
+  <updated>{{ collections.publicationsall | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ pkg.homepage }}/publications/</id>
+  <author>
+    <name>{{ pkg.author.name }}</name>
+    <email>{{ pkg.author.email }}</email>
+  </author>
+  {% asyncEach entry in collections.publicationsall | limit(50) %}
+    {% set absoluteEntryUrl %}{{ entry.url | url | absoluteUrl(pkg.homepage) }}{% endset %}
+    <entry>
+      <title>🖋 {{ entry.data.title }}</title>
+      <link href="{{ absoluteEntryUrl }}"/>
+      <updated>{{ entry.data.orderDate | toDate }}</updated>
+      <id>{{ absoluteEntryUrl }}</id>
+      <content type="html">
+        {% set contenthtml %}
+        {% if entry.data.illust %}{% if not (""== entry.data.illust)  %}
+           <img   src="https://res.cloudinary.com/mmontevil/image/fetch/w_250,h_250,c_limit,q_auto,f_auto/{{ absoluteEntryUrl }}{{entry.data.illust}}"
+      srcset="https://res.cloudinary.com/mmontevil/image/fetch/w_100,h_100,c_limit,q_auto,f_auto/{{ absoluteEntryUrl }}{{entry.data.illust}} 100w, https://res.cloudinary.com/mmontevil/image/fetch/w_250,h_250,c_limit,q_auto,f_auto/{{ absoluteEntryUrl }}{{entry.data.illust}}  250w, https://res.cloudinary.com/mmontevil/image/fetch/w_500,h_500,c_limit,q_auto,f_auto/{{ absoluteEntryUrl }}{{entry.data.illust}}  500w"
+      sizes="(max-width: 20rem) 45vw, (max-width: 67rem) 30vw, 20rem"
+       />
+        
+      {% endif %}{% endif %}
+        <h2>Reference: </h2>
+<p>{{ entry.data.bibentry | bibcite2| safe}} </p>
+      <h2>Abstract: </h2>
+      <p>{{ entry.data.abstract }}</p>
+      {% endset %}
+      <![CDATA[{{ contenthtml |safe}}]]>
+      
+      </content>
+    </entry>
+  {% endeach %}
+</feed>
+
+
+
+
+ 
+      

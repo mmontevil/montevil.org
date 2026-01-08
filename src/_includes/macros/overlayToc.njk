@@ -1,9 +1,10 @@
 
 
-{% macro overlayToc(content,h2=false,title="",printToc=true,about=false) %}
+{% macro overlayToc(content,h2=false,title="",printToc=true,about=false,isFeed=false) %}
 
 
-
+  {% if isFeed %}
+  {% else %}
 <div id="myNav" class=" overlay" >
   <div class="wrap ">
   <div class="legibilityWidth overlay-content ">
@@ -31,5 +32,5 @@
 <nav class=" autotoc indent"><ol ><li  class="tocLevel1"><a href="#webmentions">Mentions</a></li></ol></nav>
 {%endif%}
 {%endif%}
-
+  {% endif %}
 {% endmacro %}

@@ -67,9 +67,11 @@ hasSup: hasSup,
   <h3 class="subtitleHead indent" > Reading time: ~{{ content   | readingTime({speed:170}) }}</h3>
 
  
-
+  {% if isFeed %}
+  {% else %}
   {% from "macros/overlayToc.njk" import overlayToc %}
 {{overlayToc(content,"",title)|safe}}
+{% endif %} 
 </nav>  
 <hr> 
  {%endif%}

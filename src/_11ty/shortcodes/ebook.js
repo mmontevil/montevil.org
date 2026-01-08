@@ -93,7 +93,7 @@ export async function ebookShortcode(...args) {
   } else if (args.length === 1) {
     [page] = args;
     options = {};
-    content = page?.templateContent ?? "";
+    content = page?.content ?? "";
   } else {
     throw new Error("ebook shortcode: invalid arguments");
   }

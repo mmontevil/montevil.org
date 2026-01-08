@@ -16,9 +16,9 @@ illust: La-revolution-contributive.jpg
 ## Références
 <ol class="thebibliography">
 
-<li class="bibitem"><span class="footnodeNumber"><a class="Footnote_20_Symbol" id="ftn0" href="#body_ftn0">*</a></span> <em>La révolution contributive</em>, <span class="T11">2022,</span> Pierre Giorgini, <span class="T11">ISTE Editions</span></li>
+<li class="bibitem"><span class="footnodeNumber"><a class="Footnote_20_Symbol" id="ftn0" >*</a></span> <em>La révolution contributive</em>, <span class="T11">2022,</span> Pierre Giorgini, <span class="T11">ISTE Editions</span></li>
 
-<li class="bibitem"><span class="footnodeNumber"><a class="Footnote_20_Symbol" id="ftn1" href="#body_ftn1">1</a></span> Institut de Recherche et d’Innovation et IHPST, Université Paris 1.</li>
+<li class="bibitem"><span class="footnodeNumber"><a class="Footnote_20_Symbol" id="ftn1">1</a></span> Institut de Recherche et d’Innovation et IHPST, Université Paris 1.</li>
 
 <li class="bibitem"><span class="footnodeNumber"><a class="Footnote_20_Symbol" id="ftn2" href="#body_ftn2">2</a></span> Blaise, G., &amp; Glachant, M. (2019). Quel est l’impact des travaux de rénovation énergétique des logements sur la consommation d’énergie?. <span class="T6"><em>La revue de l’énergie</em></span>, <span class="T6">646</span>, 46-60.</li>
 

@@ -154,13 +154,16 @@ hasSup: hasSup,
   
   <div class="page__body e-content legibilityWidth wrap0all">
 
-    
+    {% if isFeed %}
+    {{ content  | safe }}
+  {% else %}
     {% if layout == 'note' %}
       {{ content | noteToHtml | safe }}
     {% else %}
       
       {% addAutoref  content, bibM  %}
        
+    {% endif %}
     {% endif %}
   </div>
   

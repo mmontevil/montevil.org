@@ -19,6 +19,13 @@ export const formattedDateShort = (dateValue) => {
 export const attributeDate = (dateValue) => {
   return DateTime.fromISO(dateValue).toISODate() ;
 };
+
+export const toDate = (dateValue) => {
+   let s = DateTime.fromISO(dateValue).toFormat("yyyy-LL-dd'T'TTZZ");
+    // remove milliseconds
+   
+    return s;
+};
 export const formatDateUTC = (date, locale = 'en') => {
   if (!(date instanceof Date)){ return date;}
 

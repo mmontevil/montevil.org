@@ -7,9 +7,8 @@ export default function linkCitations(content) {
   /* ---------------- 0️⃣ NORMALISATION ---------------- */
 
   content = content
-   // .replace(/\s*\n\s*/g, " ")
+    .replace(/\s*\n\s*/g, " ")
     .replace(/[’‘]/g, "'")
-    .replace(/[ \t]+/g, " ")
     .replace(/&amp;/g, "&");
 
   /* ---------------- UTILITAIRES ---------------- */
@@ -104,14 +103,13 @@ export default function linkCitations(content) {
 
   /* ---------------- 3️⃣ CITATIONS INLINE (Nom (année)) ---------------- */
 
-content = content.replace(
-  /\b([A-ZÀ-ÖØ-öø-ÿ][\wÀ-ÖØ-öø-ÿ.'-]*(?:(?:\s*|\n)\s*(?:&|and)\s*[A-ZÀ-ÖØ-öø-ÿ][\wÀ-ÖØ-öø-ÿ.'-]*|(?:\s*|\n)\s*et al\.?)?)\s*\((\d{4}[a-z]?)\)/g,
-  (full, authorText, year) => {
-    const firstAuthor = getFirstAuthor(authorText);
-    return linkCitation(full, firstAuthor, year);
-  }
-);
-
+  content = content.replace(
+    /\b([A-ZÀ-ÖØ-öø-ÿ][\wÀ-ÖØ-öø-ÿ.'-]*(?:\s+(?:&|and)\s+[A-ZÀ-ÖØ-öø-ÿ][\wÀ-ÖØ-öø-ÿ.'-]*|\s+et al\.?)?)\s*\((\d{4}[a-z]?)\)/g,
+    (full, authorText, year) => {
+      const firstAuthor = getFirstAuthor(authorText);
+      return linkCitation(full, firstAuthor, year);
+    }
+  );
 
   /* ---------------- RESTAURER LA BIBLIOGRAPHIE ---------------- */
 

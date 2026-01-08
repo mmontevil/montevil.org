@@ -29,7 +29,7 @@ layout: default0
     <main id="main">
       {% if title=="Home"%}
         {% from "macros/overlayToc.njk" import overlayToc %}
-        {{overlayToc(content,"tocCenter",title,printToc=false,about=true)|safe}}
+        {{overlayToc(content,"tocCenter",title,printToc=false,about=true,isFeed=isFeed)|safe}}
         {%endif%}
         
         {% block content %}

@@ -3,6 +3,7 @@ layout: default
 upnav: toc-site
 css: ["page-archives.css"]
 ---
+
 <div class="wrap snapper">
 <h1 id="toc-site" class=" center">{{ title }}</h1>
 <hr class=" wrap ">
@@ -10,7 +11,7 @@ css: ["page-archives.css"]
 
 
 {% from "macros/overlayToc.njk" import overlayToc %}
-{{overlayToc(content,tocOver,title)|safe}}
+{{overlayToc(content,tocOver,title,isFeed=isFeed)|safe}}
 </div>
 
 

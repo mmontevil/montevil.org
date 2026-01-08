@@ -7,10 +7,12 @@ eleventyComputed:
     title: "SAMA documentation - {{title}}"
 ---
 
-
+  {% if isFeed %}
+  {% else %}
+ 
   {% from "macros/overlayToc.njk" import overlayToc %}
-{{overlayToc(content,"tocCenter",title,printToc=false,about=true)|safe}}
-
+{{overlayToc(content,"tocCenter",title,printToc=false,about=true,isFeed=isFeed)|safe}}
+ {% endif %} 
 
 
 
