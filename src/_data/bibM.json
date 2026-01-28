@@ -1,8 +1,8 @@
 [
   {
     "DOI": "10.13133/2532-5876/19211",
-    "URL": "https://www.philosophy-world-democracy.org/articles-1/for-one-another-without-conditions-on-palestine-and-ukraine",
-    "abstract": "computational, physical and teleological theory for understanding biological organization as cognitive agent minimizing their entropy in relation to their environment. Is minimizing entropy the first principle driving all dynamics of cognition ? Is it enough to account for organizational changes in an open-ended way ? After a general presentation of the literature on the FEP, we turn to the paradoxical case of the brain under the influence of psychedelics, where the FEP is challenged by an increased cerebral entropy, which induces organizational changes of the cognition. Building on this paradox, we identify some limits of the FEP, notably applying concepts of information, optimization and predefined phase space to biology that do not fit our criteria for a theory of biological organization. We also identify two aspects of entropy in physics and in the FEP: the local entropic trend that implies variations and the global entropic trend that leads to homogeneization and stability. Extending these concepts outside of their physicomathematical context, we contribute to an organicist theoretical alternative where living systems find a balance between these two trends, and, conceptually, a biological system’s disorganization enable its \"unprestatable\" reorganization and so its open-ended evolution.",
+    "URL": "https://rosa.uniroma1.it/rosa04/organisms/article/view/19211",
+    "abstract": "The free-energy principle (FEP) provides a computational, physical and teleological theory for understanding biological organization as cognitive agents minimizing their entropy in relation to their environment. Is minimizing entropy the first principle driving all dynamics of cognition? Is it enough to account for organizational changes in an open-ended way?After a general presentation of the literature on the FEP, we turn to the paradoxical case of the brain under the influence of psychedelics, where the FEP is challenged by an increased cerebral entropy, which induces organizational changes of cognition. Building on this paradox, we identify some limits of the FEP, notably its application of concepts of information, optimization, and predefined phase spaces to biology that do not fit our criteria for a theory of biological organization.We also identify two aspects of entropy in physics and in the FEP: the local entropic trend that implies variations, and the global entropic trend that leads to homogenization and stability. Extending these concepts outside of their physico-mathematical context, we contribute to an organicist theoretical alternative in which living systems find a balance between these two trends. Conceptually, a biological system’s disorganization enables its “unprestatable”unprestatable reorganization and thus its open-ended evolution.",
     "author": [
       {
         "family": "Chollat-Namy",
@@ -13,18 +13,19 @@
         "given": "Maël"
       }
     ],
-    "container-title": "Organisms. Journal of biosciences",
+    "container-title": "Organisms. Journal of Biological Sciences",
     "id": "2025-CM-entropy-FEP-anti-entropy",
-    "issue": "1-2",
+    "issue": "1–2",
     "issued": {
       "date-parts": [
         [
           2025,
-          12,
-          21
+          12
         ]
       ]
     },
+    "keyword": "free energy principle, anti-entropy, entropy, novelty, biological organization, organicism",
+    "page": "63-84",
     "title": "What drives the brain? Organizational changes, FEP and anti-entropy",
     "type": "article-journal",
     "volume": "8"
@@ -817,7 +818,7 @@
     "type": "article-journal"
   },
   {
-    "URL": "https://www.fypeditions.com/prendre-soin-de-linformatique-et-des-generations-hommage-a-bernard-stiegler/",
+    "URL": "https://fypeditions.com/prendre-soin-de-l-informatique-et-des-generations/",
     "abstract": "Pour progresser sur la question du rapport entre l’informatique et le calculable, je propose de réinterpréter l’objet de l’informatique théorique puis de faire un détour par la biologie théorique où la question d’un symbole qui empêche de calculer se pose. Enfin, je reviens vers l’informatique en transférant de manière critique certains concepts issus de mes travaux en biologie théorique.",
     "author": [
       {
@@ -2084,7 +2085,7 @@
   },
   {
     "ISBN": "978-2-37361-107-6",
-    "URL": "https://materiologiques.com/fr/sciences-philosophie/244-qu-est-ce-que-la-science-pour-vous--9782373611076.html",
+    "URL": "https://stm.cairn.info/qu-est-ce-que-la-science-pour-vous--9782373611076?lang=fr",
     "abstract": "Deux collègues chercheurs terminent une longue réunion de travail. Ils décident de boire un verre ensemble dans un café voisin. Le bon vin y étant sans doute pour quelque chose, ils se retrouvent à confronter leurs points de vue sur un sujet ô combien difficile...",
     "author": [
       {
@@ -2111,7 +2112,6 @@
         ]
       ]
     },
-    "note": "https://montevil.org/publications/chapters/2017-MM-Une-Breve-Discussion/",
     "publisher": "Editions Matériologiques",
     "title": "Une brève discussion sur la science autour d’un verre",
     "type": "chapter"
@@ -3113,7 +3113,7 @@
   },
   {
     "ISBN": "9782919694938",
-    "URL": "https://materiologiques.com/fr/modelisations-simulations-systemes-complexes-2425-5661/206-le-vivant-critique-et-chaotique-9782919694938.html",
+    "URL": "https://stm.cairn.info/le-vivant-critique-et-chaotique--9782919694938?lang=fr",
     "abstract": "Ce texte présente un modèle pour le temps biologique ainsi qu’un certain nombre d’idées plus générales sur l’articulation entre mathématiques et objets biologiques, fondées sur des propositions théoriques. Nous décrivons d’abord un modèle géométrisant le temps des mammifères, basé en partie sur la notion d’allométrie. Ce modèle permet de mettre en évidence la structure de la variabilité des rythmes biologiques et de discriminer cas sains et cas pathologiques. Nous utilisons cet exemple pour illustrer les principes permettant la mathématisation. Nous discutons comment s’articulent mathématiques et définition théorique des objets physiques. Nous mettons en particulier l’accent sur le rôle que jouent les symétries théoriques pour justifier ces définitions, tant au niveau de la constitution d’un espace de description que de l’obtention d’équations déterminant la trajectoire suivie par un objet. Nous abordons aussi les transitions de phases comme situations paradigmatiques où les symétries d’un système changent. Ceci nous amène à proposer que les objets biologiques (organismes, cellules) sont caractérisés par une instabilité de leurs symétries théoriques. Les objets prennent alors un sens différent de celui qu’ils ont en physique : ils font preuve de variabilité et sont fondamentalement historiques. Ceci n’empêche pas la présence d’éléments de stabilité chez le vivant, mais les symétries biologiques prennent un sens différent des symétries fondamentales de la physique.",
     "author": [
       {

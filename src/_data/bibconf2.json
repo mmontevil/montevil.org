@@ -41,7 +41,7 @@
         "entrykey": "2025-enmi",
         "fields": {
             "title": "De la fonction du processus de synthèse",
-            "booktitle": "ENMI 2024 - La nouvelle écologie de l'industrie : Pour une bifurcation vers l’éco-technologie et les nouvelles localités industrielles",
+            "booktitle": "ENMI 2025 - Synthèse artificielle et contribution humaine: quelle économie pour de nouveaux milieux des savoirs ?",
             "location": "Centre Pompidou, Paris",
             "year": "2025",
             "month": "12",
@@ -103,7 +103,8 @@
             "annonce": "true",
             "language": "en",
             "illustration": "affiche-spherical-cows.jpg",
-            "program": "program-spherical-cows.pdf"
+            "program": "program-spherical-cows.pdf",
+            "booktitle": "Spherical cows and bipedal goats: perspectives on mathematical models in biology"
         }
     },
     "6": {
@@ -3505,7 +3506,7 @@
             "language": "fr",
             "day": "11",
             "abstract": "Dans chaque théorie physique, la mesure, en tant que lien entre modèle et l'empirie, a un sens précis et adapté au cadre théorique. En biologie, cette question n'a que peu été étudiée, ce qui contraste avec la richesse et la spécificité méthodologique des approches expérimentales. Nous proposons ici, dans le cadre d'une caractérisation des spécificités de l'objet biologique, d’appréhender la mesure biologique comme co-constituant l'objet observé au sens où le résultat de la mesure dépend de, et parfois agit sur, les régularités et en particulier l'histoire de l'objet en un sens précis que nous développerons.",
-            "url": "http://cams.ehess.fr/seminaire-systemes-complexes-en-sciences-sociales-annee-20132014/"
+            "url": "https://cams.ehess.fr/archives-systemes-complexes-en-sciences-sociales#annee-2013"
         }
     },
     "197": {

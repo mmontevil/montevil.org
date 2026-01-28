@@ -350,7 +350,7 @@ async function findElementSafe(driver, locator, retries = 3) {
             const authorPart = metaText.split(" - ")[0];
             const authors = authorPart
               .split(", ")
-              .map((a) => a.replace(/…/g, ""));
+              .map((a) => a.replace(/…/g, "").replace(/<_value>\s*/g, ""));
 
             const authorLinks = [];
             const authorLinkEls = await metaEl.findElements(By.xpath(".//a"));

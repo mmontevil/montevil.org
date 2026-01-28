@@ -216,7 +216,7 @@ eleventyConfig.addFilter("xmlEscape", escape)
 }
   
   /* ---------------- Passthrough Copy ---------------- */
-  eleventyConfig.addPassthroughCopy(`${config.dir.src}/**/*.{jpg,jpeg,png,gif,svg,kmz,zip,css,bib,pdf,webp,mov,woff,ttf,woff2,ico,htm,r,csv,gz}`);
+  eleventyConfig.addPassthroughCopy(`${config.dir.src}/**/*.{jpg,jpeg,png,gif,svg,kmz,zip,css,bib,pdf,webp,mov,woff,ttf,woff2,ico,htm,r,csv,gz,ico}`);
   eleventyConfig.addPassthroughCopy(`${config.dir.src}/assets/**/*.{css,js,htl,r,csv,gz}`);
   eleventyConfig.addPassthroughCopy(`${config.dir.src}/.well-known/*.txt`);
   eleventyConfig.addPassthroughCopy(`${config.dir.src}/.htaccess`);
