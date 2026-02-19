@@ -11,10 +11,10 @@ Le séminaire se veut ouvert à toutes et à tous, avec l'objectif de croiser le
 
 
 **Programme  :**\
-Salle : amphi Gallois (45 rue d'Ulm) voire le plan : https://republique-des-savoirs.fr/wp-content/uploads/2021/11/2021-11-23-4-ens-anastase-de-la-philosophie-plan.pdf
+salle de séminaire du DEC ou salle de réunion Cavaillès
 et sur zoom (demander le lien)
 
-## CHANGEMENT DE JOUR ET DE SALLE Jeudi 11 septembre 2025, 16h-18h Sha Xin Wei (School of Complex Adaptive Systems, School of Arts, Media + Engineering, ASU)
+##  Jeudi 11 septembre 2025, 16h-18h Sha Xin Wei (School of Complex Adaptive Systems, School of Arts, Media + Engineering, ASU)
 *« Indeterminate Ontogenesis and Sensemaking »*, ** salle de réunion Cavaillès** , 29 Rue d'Ulm, troisième étage à droite.
 
 **Abstract:** How does sensemaking take place amidst history-laden, open-ended ontogenesis, in particular biosocial development?  Motivated and guided by Simondon’s account of ontogenesis and individuation, and Deleuze’s logic of sense, I propose an account of sense-making without a priori subjects and objects, in which sense may be co-constituted with subjectivities.  In order to gain some traction, I adapt concepts from analysis on manifolds and geometric measure theory that are anexact enough to serve as lures for further thought, and still be adequate to the indeterminacy and open-ended fertility of experience and ontogenesis.
@@ -47,16 +47,24 @@ This builds on conversations with S. Kauffman, G. Longo, M. Montevil, N. Damiris
 What capacities are required for this kind of agency? The key requirement is to create systems that are informationally open and not over-committed to tightly prescribed modes of action. Here I argue that to acquire such versatile and responsive functionality, fuzzy and contextual molecular interactions are a far better “programming language” than is any deterministic readout of a genetic blueprint into molecules that exhibit precise recognition. I explore the characteristics of biomolecules that give them this capacity: features such as cooperativity, promiscuity of binding, combinatorial operation, and responsiveness to higher levels of information.
 
 ## Mercredi 11 mars 2026, 16h-18h Patrizia d’ALESSIO,
+** salle de réunion Cavaillès** , 29 Rue d'Ulm, troisième étage à droite.
+
 *« La tentation du néovitalisme pour la recherche en biologie »*
 
 ## Mercredi 1 avril 2026, 16h-18h  Adam Nocek
+** salle de séminaire du DEC**, 29 Rue d'Ulm, RDC à droite.
 
+** "The Normative Organism: Canguilhem, Whitehead, and the Crisis of Value." **
+
+Adam Nocek is Associate Professor in Philosophy of Science and Technology and Founding Director of the Center for Philosophical Technologies at Arizona State University. 
+Visiting Professor at the Politecnico di Milano 
+Chercheur Associé, Centre Georg Simmel, Centre National de la Recherche Scientifique (CNRS) and the École des Hautes Études en Sciences Sociales (EHESS). 
 
 ## Mercredi 8 avril 2026, 16h-18h Ruãn BATISTA (UFBA)
-
+** salle de réunion Cavaillès** , 29 Rue d'Ulm, troisième étage à droite.
 
 ## Mercredi 6 mai 2026, 16h-18h Franck Varenne 
-
+** salle de séminaire du DEC** , 29 Rue d'Ulm, RDC à droite.
 
 ## Mercredi 10 juin 2026, 16h-18h
-
+** salle de réunion Cavaillès** , 29 Rue d'Ulm, troisième étage à droite.
