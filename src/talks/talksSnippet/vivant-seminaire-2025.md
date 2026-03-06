@@ -47,24 +47,30 @@ This builds on conversations with S. Kauffman, G. Longo, M. Montevil, N. Damiris
 What capacities are required for this kind of agency? The key requirement is to create systems that are informationally open and not over-committed to tightly prescribed modes of action. Here I argue that to acquire such versatile and responsive functionality, fuzzy and contextual molecular interactions are a far better “programming language” than is any deterministic readout of a genetic blueprint into molecules that exhibit precise recognition. I explore the characteristics of biomolecules that give them this capacity: features such as cooperativity, promiscuity of binding, combinatorial operation, and responsiveness to higher levels of information.
 
 ## Mercredi 11 mars 2026, 16h-18h Patrizia d’ALESSIO,
-** salle de réunion Cavaillès** , 29 Rue d'Ulm, troisième étage à droite.
+**salle de réunion Cavaillès** , 29 Rue d'Ulm, troisième étage à droite.
 
-*« La tentation du néovitalisme pour la recherche en biologie »*
+*« Tradition et tentation vitaliste en biologie »*
+
+La conférence présentera une synthèse des travaux scientifiques portant sur les mécanismes moléculaires de l’inflammation, en extrapolant à partir d’une particularité biophysique de ce réflexe du vivant vis-à-vis de son environnement, les implications pour un vitalisme pondéré. Ainsi _**l’élasticité**_, propriété du vivant et du non vivant caractérisée par sa capacité de réversibilité a été identifiée très anciennement par le Timée de Platon, puis par les iatromécanistes de l’Illuminisme Anglais du XVIIIème siècle notamment par les contributions de Georges Cheyne. Afin de rendre l’invisible visible, ils la situèrent dans _**la fibre**_, capable de _**springiness**_ entité qui sera ensuite reprise par Albrecht Haller et Sténon au XIXème siècle, et par Raymond Ruyer et Georges Canguilhem, qui la relieront ouvertement à leur analyse du vitalisme. En revanche Alan Turing dans _Morphogenesis_, résumera plus sobrement _and the rod starts to swing_. Élasticité et réversibilité, geste spontané et autonomie des territoires cellulaires \[_Die_ _Zellularpathologie_, Rudolph Virchow, 1858\] fonderont, avec les contributions des débats entre Wilhelm Roux et Friedrich Nietzsche sur la lutte des parties et la _Einverleibung,_ un premier cadre conceptuel permettant d’essayer de comprendre quel a été le destin de l’intuition vitaliste pour les biologistes du passé et quelles sources ont inspiré les néo-vitalistes, tel Marc Kirschner au XXème siècle.
+
+Sur un mode plus personnel, l’inflammation ayant la capacité d’accélérer le vieillissement et _de facto_ d’en devenir la première responsable, la question sera abordée de comment relier le mode non-standardisé du vivant, (Prigogine) condition centrale pour un nouveau vitalisme assumé, à la problématique d’une longévité réussie. Y aurait-il chez ces anciens physiologistes, philosophes et mathématiciens un consensus sur l’existence d’un élément que nous nommerons _**l’indocilité**_, qui aurait pour vocation de maintenir la vitalité de la matière autant que possible ? Pour ce faire il faut recourir à la désormais doctrine de _**la tenségrité**_, qui, depuis l’architecture Fullerienne fut introduite en biologie cellulaire par Donald Ingber au XXème siècle pour rendre compte de la structure biophysique inhérente à cette propriété, capable de combiner en permanence une alternance entre pré-stress et stress, grâce aux passages élastiques au sein du couple compressivo-tensionnel du vivant. Ceci permet à la cellule, aux organes et aux organismes, de rester fidèles à leur mode de fonctionnement qui semble fondamentalement ignorer les injonctions sociales tout comme les contraintes de l’environnement, ce qui pourrait donner l’impression que le corps fait ce qu’il veut.
+
+Mais pour faire quoi ? Pour privilégier ce pour quoi il est fait, c’est à dire la circulation de l’énergie, des sensations et des idées et pourquoi pas des intuitions. Ainsi Bergson essayera de cerner la profonde connexion entre les états psychologiques et les entités biophysiques du corps, en créant l’espace de l’intuition, se référant vraisemblablement au préréflexif, la condition _sine qua non_ de la formulation d’un concept, autrement dit penser. Cette dimension est cependant liée à une autre condition, la dilatation. Pour Bergson, c’est la condition de la possibilité de l’intuition, ce qui ne l’empêche pas de se demander qu’est-ce qui se dilate, et qu’est-ce que se dilater ?  L’élasticité, sous-jacente à l’état de dilatation, crée une condition de ressort intrinsèque, considérée comme une « force active originelle » et non pas un état de passivité de la matière. C’est pourquoi Bergson l’associe à « l’intuition ».
 
 ## Mercredi 1 avril 2026, 16h-18h  Adam Nocek
-** salle de séminaire du DEC**, 29 Rue d'Ulm, RDC à droite.
+**salle de séminaire du DEC**, 29 Rue d'Ulm, RDC à droite.
 
-** "The Normative Organism: Canguilhem, Whitehead, and the Crisis of Value." **
+*"The Normative Organism: Canguilhem, Whitehead, and the Crisis of Value."*
 
 Adam Nocek is Associate Professor in Philosophy of Science and Technology and Founding Director of the Center for Philosophical Technologies at Arizona State University. 
 Visiting Professor at the Politecnico di Milano 
 Chercheur Associé, Centre Georg Simmel, Centre National de la Recherche Scientifique (CNRS) and the École des Hautes Études en Sciences Sociales (EHESS). 
 
 ## Mercredi 8 avril 2026, 16h-18h Ruãn BATISTA (UFBA)
-** salle de réunion Cavaillès** , 29 Rue d'Ulm, troisième étage à droite.
+**salle de réunion Cavaillès** , 29 Rue d'Ulm, troisième étage à droite.
 
 ## Mercredi 6 mai 2026, 16h-18h Franck Varenne 
-** salle de séminaire du DEC** , 29 Rue d'Ulm, RDC à droite.
+**salle de séminaire du DEC** , 29 Rue d'Ulm, RDC à droite.
 
 ## Mercredi 10 juin 2026, 16h-18h
-** salle de réunion Cavaillès** , 29 Rue d'Ulm, troisième étage à droite.
+**salle de réunion Cavaillès** , 29 Rue d'Ulm, troisième étage à droite.
