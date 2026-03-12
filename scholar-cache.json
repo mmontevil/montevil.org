@@ -2354,12 +2354,6 @@
     ]
   },
   {
-    "title": "Theoretical approach of ductal morphogenesis",
-    "citenumber": "1",
-    "citingLink": "https://scholar.google.fr/scholar?oi=bibs&hl=en&cites=16879166792753358240",
-    "citing": []
-  },
-  {
     "title": "Biological time and extended critical transitions: Towards an objectivization of the living state of matter",
     "citenumber": "1",
     "citingLink": "https://scholar.google.fr/scholar?oi=bibs&hl=en&cites=7264612438988647309,2212544142245727457",
@@ -2374,18 +2368,44 @@
     "title": "Vaccines, germs, and knowledge",
     "citenumber": "1",
     "citingLink": "https://scholar.google.fr/scholar?oi=bibs&hl=en&cites=11523439469648113742",
-    "citing": []
+    "citing": [
+      {
+        "title": "Penser au-delà de l'identité: Philosophie et sciences",
+        "meta": "M Montévil - Philosophy World Democracy, 2022 - montevil.org"
+      }
+    ]
   },
   {
     "title": "Big Data, Knowledge and Biology",
     "citenumber": "1",
     "citingLink": "https://scholar.google.fr/scholar?oi=bibs&hl=en&cites=8996255557301356332",
-    "citing": []
+    "citing": [
+      {
+        "title": "Why is new materialism not the answer? Approaching hyper-matter, reinventing the sense of critique beyond 'theory'",
+        "meta": "M Krzykawski - Praktyka teoretyczna, 2019 - ceeol.com"
+      }
+    ]
   },
   {
     "title": "Big Data et connaissance biologique",
     "citenumber": "1",
     "citingLink": "https://scholar.google.fr/scholar?oi=bibs&hl=en&cites=14080438319990975433",
-    "citing": []
+    "citing": [
+      {
+        "title": "[BOOK] Le Cauchemar de Prométhée: Les sciences et leurs limites",
+        "meta": "G Longo - 2023 - books.google.com"
+      }
+    ]
+  },
+  {
+    "title": "Theoretical approach of ductal morphogenesis",
+    "citenumber": "1",
+    "citingLink": "https://scholar.google.fr/scholar?oi=bibs&hl=en&cites=16879166792753358240",
+    "citing": [
+      {
+        "title": "[PDF] Emergence vs. novelty production in physics vs. biology",
+        "meta": "G Longo - Language, history, gender, and science: Celebrating …, 2023 - di.ens.fr"
+      }
+    ]
   }
 ]
