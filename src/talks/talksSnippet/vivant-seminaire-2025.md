@@ -58,7 +58,7 @@ Sur un mode plus personnel, l’inflammation ayant la capacité d’accélérer 
 Mais pour faire quoi ? Pour privilégier ce pour quoi il est fait, c’est à dire la circulation de l’énergie, des sensations et des idées et pourquoi pas des intuitions. Ainsi Bergson essayera de cerner la profonde connexion entre les états psychologiques et les entités biophysiques du corps, en créant l’espace de l’intuition, se référant vraisemblablement au préréflexif, la condition _sine qua non_ de la formulation d’un concept, autrement dit penser. Cette dimension est cependant liée à une autre condition, la dilatation. Pour Bergson, c’est la condition de la possibilité de l’intuition, ce qui ne l’empêche pas de se demander qu’est-ce qui se dilate, et qu’est-ce que se dilater ?  L’élasticité, sous-jacente à l’état de dilatation, crée une condition de ressort intrinsèque, considérée comme une « force active originelle » et non pas un état de passivité de la matière. C’est pourquoi Bergson l’associe à « l’intuition ».
 
 ## Mercredi 1 avril 2026, 16h-18h  Adam Nocek
-**salle de séminaire du DEC**, 29 Rue d'Ulm, RDC à droite.
+**Amphi Jaurès**, 29 Rue d'Ulm, sous-sol.
 
 *"The Normative Organism: Canguilhem, Whitehead, and the Crisis of Value."*
 
@@ -66,8 +66,17 @@ Adam Nocek is Associate Professor in Philosophy of Science and Technology and Fo
 Visiting Professor at the Politecnico di Milano 
 Chercheur Associé, Centre Georg Simmel, Centre National de la Recherche Scientifique (CNRS) and the École des Hautes Études en Sciences Sociales (EHESS). 
 
-## Mercredi 8 avril 2026, 16h-18h Ruãn BATISTA (UFBA)
+## Mercredi 8 avril 2026, 16h-18h Ruãn BATISTA (Federal University of Bahia )
 **salle de réunion Cavaillès** , 29 Rue d'Ulm, troisième étage à droite.
+
+*"The Hybrid Metaphysics of Organismal Organization and the Future of Biological Systematics"*
+
+Ruãn BATISTA, PhD student in Philosophy of Science at the Federal University of Bahia (supervised by Charbel El-Hani), doing a research-stay at Centre Cavaillès, République de Savoirs, École Normale Supérieure (supervised by Maël Montévil). 
+
+
+Abstract: What metaphysical commitments are necessary to construct theoretically robust references to biological existents? By disentangling the metaphysical dimension of the problem of biological individuality and taking an organicist stance towards it, I will defend why analyzing the theorization of organismal organization is the preferable first step to start solving this problem. After introducing the problem of reference in the context of scientific classifications and analyzing the very problem towards the definition of biological systematics, I will elucidate why the Hennigian (with focus on the concept of semaphoront) and "Montévimossian" (with focus on the concept of closure of constraints) metaphysical panoramas captures two - metaphysically discontinuous - aspects that are unavoidable for a robust theorization of variant organismal organization and, because of that, need to be hybridized. The χ (chi) symbol, proposed by Montévil & Mossio (2020) to capture such hybrid identity, will be presented. After elucidating the configuration of the hybrid metaphysics underlying this theoretical tool, I will discuss how it brings important implications for the future of biological systematics and for the understanding of topics such as: the nature of biological time; the relationships between biological hierarchies; the classification of biological sciences; and schools in the metaphysics of biology.
+
+
 
 ## Mercredi 6 mai 2026, 16h-18h Franck Varenne 
 **salle de séminaire du DEC** , 29 Rue d'Ulm, RDC à droite.
