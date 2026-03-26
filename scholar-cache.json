@@ -1,99 +1,5 @@
 [
   {
-    "title": "Biological organisation as closure of constraints",
-    "citenumber": "411",
-    "citingLink": "https://scholar.google.fr/scholar?oi=bibs&hl=en&cites=5715512211526556221,3900630348746021571,14845969391047998323",
-    "citing": [
-      {
-        "title": "[HTML] Metabolic disorders in the transition period indicate that the dairy cows' ability to adapt is overstressed",
-        "meta": "A Sundrum - Animals, 2015 - mdpi.com"
-      },
-      {
-        "title": "[HTML] The end of the genetic paradigm of cancer",
-        "meta": "S Huang, AM Soto, C Sonnenschein - PLoS biology, 2025 - journals.plos.org"
-      },
-      {
-        "title": "Understanding brain functional architecture through robotics",
-        "meta": "TJ Prescott, SP Wilson - Science Robotics, 2023 - science.org"
-      },
-      {
-        "title": "[HTML] Naturalizing relevance realization: Why agency and cognition are fundamentally not computational",
-        "meta": "J Jaeger, A Riedl, A Djedovic, J Vervaeke… - Frontiers in …, 2024 - frontiersin.org"
-      },
-      {
-        "title": "Biological autonomy",
-        "meta": "A Moreno, M Mossio - A philo, 2015 - Springer"
-      },
-      {
-        "title": "[BOOK] A world beyond physics: the emergence and evolution of life",
-        "meta": "SA Kauffman - 2019 - books.google.com"
-      },
-      {
-        "title": "[BOOK] Neurocognitive mechanisms: Explaining biological cognition",
-        "meta": "G Piccinini - 2020 - books.google.com"
-      },
-      {
-        "title": "[HTML] How organisms come to know the world: Fundamental limits on artificial general intelligence",
-        "meta": "A Roli, J Jaeger, SA Kauffman - Frontiers in Ecology and Evolution, 2022 - frontiersin.org"
-      },
-      {
-        "title": "Living things are not (20th century) machines: updating mechanism metaphors in light of the modern science of machine behavior",
-        "meta": "J Bongard, M Levin - Frontiers in Ecology and Evolution, 2021 - frontiersin.org"
-      },
-      {
-        "title": "Situated neural representations: Solving the problems of content",
-        "meta": "G Piccinini - Frontiers in Neurorobotics, 2022 - frontiersin.org"
-      }
-    ]
-  },
-  {
-    "title": "No entailing laws, but enablement in the evolution of the biosphere",
-    "citenumber": "313",
-    "citingLink": "https://scholar.google.fr/scholar?oi=bibs&hl=en&cites=2664675988189654514,11678091597971341852,9693452709443669995,12511620932438053051,6167489915897988168,14363413167387750092,8276048874602552248,3098207149923676678",
-    "citing": [
-      {
-        "title": "[HTML] The human nature of generative AIs and the technological nature of humanity: Implications for education",
-        "meta": "J Dron - Digital, 2023 - mdpi.com"
-      },
-      {
-        "title": "Theoretical principles for biology: Organization",
-        "meta": "M Mossio, M Montévil, G Longo - Progress in Biophysics and Molecular …, 2016 - Elsevier"
-      },
-      {
-        "title": "[BOOK] A world beyond physics: the emergence and evolution of life",
-        "meta": "SA Kauffman - 2019 - books.google.com"
-      },
-      {
-        "title": "Biological organisation as closure of constraints",
-        "meta": "M Montévil, M Mossio - Journal of theoretical biology, 2015 - Elsevier"
-      },
-      {
-        "title": "[BOOK] Humanity in a creative universe",
-        "meta": "SA Kauffman - 2016 - books.google.com"
-      },
-      {
-        "title": "The ecological niche: history and recent controversies",
-        "meta": "A Pocheville - Handbook of evolutionary thinking in the sciences, 2014 - Springer"
-      },
-      {
-        "title": "[BOOK] Bacteria to AI: Human futures with our nonhuman symbionts",
-        "meta": "NK Hayles - 2025 - books.google.com"
-      },
-      {
-        "title": "First principles in the life sciences: The free-energy principle, organicism, and mechanism",
-        "meta": "M Colombo, C Wright - Synthese, 2021 - Springer"
-      },
-      {
-        "title": "The diffused evolutionary dynamics of morphological novelty",
-        "meta": "I Quintero - Proceedings of the National Academy of Sciences, 2025 - pnas.org"
-      },
-      {
-        "title": "[HTML] A third transition in science?",
-        "meta": "SA Kauffman, A Roli - Interface Focus, 2023 - royalsocietypublishing.org"
-      }
-    ]
-  },
-  {
     "title": "Theoretical principles for biology: Organization",
     "citenumber": "155",
     "citingLink": "https://scholar.google.fr/scholar?oi=bibs&hl=en&cites=1770161116342702157",
@@ -2405,6 +2311,180 @@
       {
         "title": "[PDF] Emergence vs. novelty production in physics vs. biology",
         "meta": "G Longo - Language, history, gender, and science: Celebrating …, 2023 - di.ens.fr"
+      }
+    ]
+  },
+  {
+    "title": "Biological organisation as closure of constraints",
+    "citenumber": "423",
+    "citingLink": "https://scholar.google.fr/scholar?oi=bibs&hl=en&cites=5715512211526556221,3900630348746021571,14845969391047998323",
+    "citing": [
+      {
+        "title": "[HTML] The end of the genetic paradigm of cancer",
+        "meta": "S Huang, AM Soto, C Sonnenschein - PLoS biology, 2025 - journals.plos.org"
+      },
+      {
+        "title": "[HTML] Metabolic disorders in the transition period indicate that the dairy cows' ability to adapt is overstressed",
+        "meta": "A Sundrum - Animals, 2015 - mdpi.com"
+      },
+      {
+        "title": "[HTML] Naturalizing relevance realization: Why agency and cognition are fundamentally not computational",
+        "meta": "J Jaeger, A Riedl, A Djedovic, J Vervaeke… - Frontiers in …, 2024 - frontiersin.org"
+      },
+      {
+        "title": "Biological autonomy",
+        "meta": "A Moreno, M Mossio - A philo, 2015 - Springer"
+      },
+      {
+        "title": "[BOOK] A world beyond physics: the emergence and evolution of life",
+        "meta": "SA Kauffman - 2019 - books.google.com"
+      },
+      {
+        "title": "[BOOK] Neurocognitive mechanisms: Explaining biological cognition",
+        "meta": "G Piccinini - 2020 - books.google.com"
+      },
+      {
+        "title": "[HTML] How organisms come to know the world: Fundamental limits on artificial general intelligence",
+        "meta": "A Roli, J Jaeger, SA Kauffman - Frontiers in Ecology and Evolution, 2022 - frontiersin.org"
+      },
+      {
+        "title": "Living things are not (20th century) machines: updating mechanism metaphors in light of the modern science of machine behavior",
+        "meta": "J Bongard, M Levin - Frontiers in Ecology and Evolution, 2021 - frontiersin.org"
+      },
+      {
+        "title": "Situated neural representations: Solving the problems of content",
+        "meta": "G Piccinini - Frontiers in Neurorobotics, 2022 - frontiersin.org"
+      },
+      {
+        "title": "[HTML] Organization needs organization: Understanding integrated control in living organisms",
+        "meta": "L Bich, W Bechtel - Studies in History and Philosophy of Science, 2022 - Elsevier"
+      },
+      {
+        "title": "[HTML] A third transition in science?",
+        "meta": "SA Kauffman, A Roli - Interface Focus, 2023 - royalsocietypublishing.org"
+      },
+      {
+        "title": "Grounding cognition: heterarchical control mechanisms in biology",
+        "meta": "W Bechtel, L Bich - … Transactions of the Royal Society B, 2021 - royalsocietypublishing.org"
+      },
+      {
+        "title": "Biological regulation: controlling the system from within",
+        "meta": "L Bich, M Mossio, K Ruiz-Mirazo, A Moreno - Biology & Philosophy, 2016 - Springer"
+      },
+      {
+        "title": "Understanding brain functional architecture through robotics",
+        "meta": "TJ Prescott, SP Wilson - Science Robotics, 2023 - science.org"
+      },
+      {
+        "title": "[HTML] Machines all the way up and cognition all the way down: Updating the machine metaphor in biology",
+        "meta": "M Levin, R Watson - Seminars in Cell & Developmental Biology, 2026 - Elsevier"
+      },
+      {
+        "title": "[HTML] Understanding multicellularity: the functional organization of the intercellular space",
+        "meta": "L Bich, T Pradeu, JF Moreau - Frontiers in Physiology, 2019 - frontiersin.org"
+      },
+      {
+        "title": "What is agency? A view from autonomy theory",
+        "meta": "L Virenque, M Mossio - Biological Theory, 2024 - Springer"
+      },
+      {
+        "title": "Over a century of cancer research: Inconvenient truths and promising leads",
+        "meta": "C Sonnenschein, AM Soto - PLoS biology, 2020 - journals.plos.org"
+      },
+      {
+        "title": "Teleology and the organism: Kant's controversial legacy for contemporary biology",
+        "meta": "A Gambarotto, A Nahas - Studies in History and Philosophy of Science, 2022 - Elsevier"
+      },
+      {
+        "title": "Constrained disorder principle-based variability is fundamental for biological processes: Beyond biological relativity and physiological regulatory networks",
+        "meta": "Y Ilan - Progress in biophysics and molecular biology, 2023 - Elsevier"
+      }
+    ]
+  },
+  {
+    "title": "No entailing laws, but enablement in the evolution of the biosphere",
+    "citenumber": "318",
+    "citingLink": "https://scholar.google.fr/scholar?oi=bibs&hl=en&cites=2664675988189654514,11678091597971341852,9693452709443669995,12511620932438053051,6167489915897988168,14363413167387750092,8276048874602552248,3098207149923676678",
+    "citing": [
+      {
+        "title": "[HTML] The human nature of generative AIs and the technological nature of humanity: Implications for education",
+        "meta": "J Dron - Digital, 2023 - mdpi.com"
+      },
+      {
+        "title": "Theoretical principles for biology: Organization",
+        "meta": "M Mossio, M Montévil, G Longo - Progress in Biophysics and Molecular …, 2016 - Elsevier"
+      },
+      {
+        "title": "[BOOK] A world beyond physics: the emergence and evolution of life",
+        "meta": "SA Kauffman - 2019 - books.google.com"
+      },
+      {
+        "title": "Biological organisation as closure of constraints",
+        "meta": "M Montévil, M Mossio - Journal of theoretical biology, 2015 - Elsevier"
+      },
+      {
+        "title": "[BOOK] Humanity in a creative universe",
+        "meta": "SA Kauffman - 2016 - books.google.com"
+      },
+      {
+        "title": "The ecological niche: history and recent controversies",
+        "meta": "A Pocheville - Handbook of evolutionary thinking in the sciences, 2014 - Springer"
+      },
+      {
+        "title": "[BOOK] Bacteria to AI: Human futures with our nonhuman symbionts",
+        "meta": "NK Hayles - 2025 - books.google.com"
+      },
+      {
+        "title": "First principles in the life sciences: The free-energy principle, organicism, and mechanism",
+        "meta": "M Colombo, C Wright - Synthese, 2021 - Springer"
+      },
+      {
+        "title": "The diffused evolutionary dynamics of morphological novelty",
+        "meta": "I Quintero - Proceedings of the National Academy of Sciences, 2025 - pnas.org"
+      },
+      {
+        "title": "[HTML] A third transition in science?",
+        "meta": "SA Kauffman, A Roli - Interface Focus, 2023 - royalsocietypublishing.org"
+      },
+      {
+        "title": "Measuring exaptation and its impact on innovation, search, and problem solving",
+        "meta": "P Andriani, A Ali, M Mastrogiorgio - Organization Science, 2017 - pubsonline.informs.org"
+      },
+      {
+        "title": "Evolution of collective behaviors for a real swarm of aquatic surface robots",
+        "meta": "M Duarte, V Costa, J Gomes, T Rodrigues, F Silva… - PloS one, 2016 - journals.plos.org"
+      },
+      {
+        "title": "Teleology and the organism: Kant's controversial legacy for contemporary biology",
+        "meta": "A Gambarotto, A Nahas - Studies in History and Philosophy of Science, 2022 - Elsevier"
+      },
+      {
+        "title": "Economics for a creative world",
+        "meta": "R Koppl, S Kauffman, T Felin, G Longo - Journal of Institutional …, 2015 - cambridge.org"
+      },
+      {
+        "title": "[HTML] The world is not a theorem",
+        "meta": "S Kauffman, A Roli - Entropy, 2021 - mdpi.com"
+      },
+      {
+        "title": "Economic opportunity and evolution: Beyond landscapes and bounded rationality",
+        "meta": "T Felin, S Kauffman, R Koppl… - Strategic …, 2014 - Wiley Online Library"
+      },
+      {
+        "title": "Theoretical principles for biology: Variation",
+        "meta": "M Montévil, M Mossio, A Pocheville, G Longo - Progress in Biophysics and …, 2016 - Elsevier"
+      },
+      {
+        "title": "[BOOK] A drive to survive: The free energy principle and the meaning of life",
+        "meta": "K Nave - 2025 - books.google.com"
+      },
+      {
+        "title": "[HTML] Answering Schrödinger's “What is life?”",
+        "meta": "S Kauffman - Entropy, 2020 - mdpi.com"
+      },
+      {
+        "title": "Non-equilibrium thermodynamics and the free energy principle in biology",
+        "meta": "M Colombo, P Palacios - Biology & Philosophy, 2021 - Springer"
       }
     ]
   }

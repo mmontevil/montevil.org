@@ -264,6 +264,7 @@ async function findElementSafe(driver, locator, retries = 3) {
     "https://scholar.google.fr/citations?user=5eOo9hQAAAAJ&hl=en&oi=ao",
   );
   await driver.wait(() => documentInitialised(), 10000);
+  console.log("time 1");
 
   // LOAD ALL PUBLICATIONS
   let temp = true;
@@ -275,12 +276,14 @@ async function findElementSafe(driver, locator, retries = 3) {
       await adsleep(3000, 6000);
     } else temp = false;
   }
-
+  console.log("time 11");
   // EXTRACT PUBLICATIONS
   const updatedList = [];
   const listmypub = await driver.findElements(
     By.xpath("//tr[@class='gsc_a_tr']"),
   );
+    console.log("time 111");
+
   for (const pubElement of listmypub) {
     const title0 = await pubElement.findElement(
       By.xpath(".//a[@class='gsc_a_at']"),
@@ -301,6 +304,7 @@ async function findElementSafe(driver, locator, retries = 3) {
       });
     }
   }
+  console.log("time 1111");
 
   // PARSE CITATIONS
   for (const pubItem of updatedList) {

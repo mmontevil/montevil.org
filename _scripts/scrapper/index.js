@@ -34,9 +34,10 @@ for (const pub of pubs) {
   if (!pub.citingLink) continue;
 
   const cached = cache.find(c => c.title === pub.title);
-  if (cached && cached.citing?.length) continue;
+ // if (cached && cached.citing?.length) continue;
 
   console.log(`📄 Citations : ${pub.title}`);
+  console.log(`${pub.citingLink}`);
 
   pub.citing = await scrapeCitations(page, pub.citingLink);
 

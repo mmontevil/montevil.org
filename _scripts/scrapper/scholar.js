@@ -83,14 +83,33 @@ export async function loadAllPublications(page) {
     await waitForCaptchaSolved(page);
 
     const more = await page.$("#gsc_bpf_more");
-    if (!more || !(await more.isEnabled())) break;
+    if (!more) break;
 
-    await humanBeforeClick(page);
-    await more.hover();
-    await page.waitForTimeout(1000 + Math.random() * 1500);
-    await more.click({ delay: 250 });
+    // ✅ Check if button is clickable
+    const isDisabled = await page.evaluate(el => {
+      return (
+        el.disabled ||
+        el.classList.contains("gs_dis") ||
+        el.getAttribute("aria-disabled") === "true"
+      );
+    }, more);
 
-    await humanPause(page, 6000, 10000);
+    if (isDisabled) {
+      console.log("✅ All publications loaded");
+      break;
+    }
+
+    try {
+      await humanBeforeClick(page);
+      await more.hover();
+      await page.waitForTimeout(1000 + Math.random() * 1500);
+      await more.click({ delay: 250 });
+
+      await humanPause(page, 6000, 10000);
+    } catch (err) {
+      console.log("⚠️ Click failed, stopping loop");
+      break;
+    }
   }
 }
 
