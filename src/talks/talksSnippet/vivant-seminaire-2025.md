@@ -78,8 +78,36 @@ Abstract: What metaphysical commitments are necessary to construct theoretically
 
 
 
-## Mercredi 6 mai 2026, 16h-18h Franck Varenne 
+## Mercredi 6 mai 2026, 16h-18h Franck Varenne (Université de Rouen & ERIAC UR 4705).
 **salle de séminaire du DEC** , 29 Rue d'Ulm, RDC à droite.
+
+*"La « course à la puissance » comme clé de lecture de l'évolution. Exploration comparative de quelques approches synthétiques récentes couplant thermodynamique et agentivité"*
+
+**Résumé :**
+
+Lorsqu’une conception de l’évolution des vivants met l’accentsur leur agentivité, on ne s’attend pas à ce qu’elle souligneaussi l’importance d’un certain aspect thermodynamique global decette évolution, en l’occurrence la tendance générale, par-delàcertains reculs ou stagnations temporaires, à l’augmentation de ladensité de puissance (i.e. la puissance rapportée à la masse)développée par les organismes en évolution. On a en effet appris àse méfier des approches globales prétendant donner une orientationdéterminée à l’évolution des vivants, que ce soit en termesd’énergie, d’entropie, d’information ou même, parfois, decomplexité. C’est bien pourtant ce que propose le livre récent dupaléontologue et biologiste de l’évolution Geerat J. Vermeij(2023), mais donc en termes de puissance, plus exactement, de densitéde puissance. Sans adopter ici le point de vue - qui n’est pas lemien - d’un biologiste ou d’un philosophe de la biologie, jem’interrogerai, comme analyste des transferts interdisciplinairesde concepts, sur les emprunts répétés faits, dans ce travail, àla physique et en particulier à la cosmologie.
+
+Dans un premier temps, j’analyserai comment Vermeij articule saconception propre de l’agentivité en biologie à certains de sesemprunts à la cosmologie (Chaisson, 2001) de sorte qu’il luisemble, par là, pouvoir répondre à la fois à l’objection de laZero-Force Evolutionary Law (McShea, Brandon, 2010) et à celle dela « bande magnétique » non repassable illustrantle fait que l’histoire de la vie est descriptible mais ne peut êtreremontée puis identiquement repassée, qu’elle n’aurait donc pasde direction (Gould, 1989).
+
+Je proposerai ensuite de comparer cette stratégie de lecturethermodynamique renouvelée de l’histoire évolutive – du fait durôle nouveau donné à la densité de puissance (et pas à l’énergieseule, ni à ses flux absolus ni à la seule puissance) - avec celleproposée également récemment par le paléoanthropologueJean-Jacques Hublin (2025) pour le cas du cerveau. Cet ouvragen’aurait-il pas, d’ailleurs, pu tout aussi bien être nommé « latyrannie de la puissance » ?
+
+Ces travaux récents de biologie évolutive fondés d’abord sur deconsidérables analyses du terrain mais qui en appellent aussinouvellement, et par principe, au rôle insigne de la densité depuissance donneraient-ils raison finalement à ceux, d’abord plusspéculatifs et issus de la physique, qui firent entretemps écho àcelui de (Chaisson, 2001) comme, parmi d’autres, celui de (Roddier,2012) ? Plus largement, au vu de leur surprenante convergenceaujourd’hui, dans quelle mesure pourraient-ils également donner uncertain crédit à l’hypothèse d’une transdisciplinaritéconceptuelle désormais permise par cette clé de lecture de la« course à la puissance » ? (Varenne, Crétot,2025)
+
+**Références** :
+
+Chaisson, E., _Cosmic Evolution. The riseof complexity in nature_. Harvard,Harvard University Press.
+
+Gould, S.J., 2004, \[1989\]. _La vie est belle : Les surprises del'évolution_. Paris, Seuil.
+
+Hublin, J.J., 2025. _La tyrannie du cerveau. Un nouveau récit del’évolution humaine_. Paris, Robert Laffont.
+
+McShea; D.W, Brandon, R.N. 2010. _Biology’sfirst law: The tendency for diversity and complexity to increase inevolutionary systems_, Chicago,University of Chicago Press.
+
+Roddier, F., 2012. _Thermodynamique de l’évolution. Un essai dethermo-bio-sociologie,_ La Seyne-sur-Mer, Éditions Parole.
+
+Varenne, F., Crétot, A.. 2025. « La ‘course à lapuissance’ : réductionnisme fataliste ou opportunité pour unralentissement volontariste ? », _Natures SciencesSociétés_, 33(3), p. 347-351,[https://doi.org/10.1051/nss/2025062](https://doi.org/10.1051/nss/2025062).
+
+Vermeij, G.J., 2023. _The evolution of power. Anew understanding of the history of life_,Princeton, Princeton University Press.
 
 ## Mercredi 10 juin 2026, 16h-18h
 **salle de réunion Cavaillès** , 29 Rue d'Ulm, troisième étage à droite.
