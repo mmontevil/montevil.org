@@ -65,3 +65,4 @@ ABSTRACT: The aim of the lecture is to explore the limits of the reduction of or
 
 ## Mercredi 18 juin 2025, Tarja Knuuttila
 16h-18h, salle de reunion Cavaillès, 29 rue d'Ulm, 3ième étage.  *«Models as representations and artefacts»*
+![Enregistrement](https://savoirs.ens.fr/uploads/videos//diffusion/2025_06_18_knuuttila.mp4)

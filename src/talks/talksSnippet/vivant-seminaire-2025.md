@@ -27,6 +27,7 @@ This builds on conversations with S. Kauffman, G. Longo, M. Montevil, N. Damiris
 
 **Abstract:** To a large extent, the question of theoretical frameworks in the sciences has been neglected (or poorly treated) in philosophy. In parallel, we argue that scientists themselves are currently neglecting this question, and we will show the consequences of this situation in biology. We will then provide elements of the definition of scientific theories, which are partly grounded in the activity of theorization itself. We will articulate this discussion with the question of the function of theories and theorization in the sciences.
 
+![Enregistrement](https://savoirs.ens.fr/uploads/videos//diffusion/2025_10_08_montevil.mp4)
 
 ## Mercredi 5 novembre 2025, 16h-18h Caroline Angleraux (Inserm UMR 1253 et IHPST)
 *« Cellules et unités de sélection. Quelle singularité du concept de cellule dans une perspective évolutionniste ? »*
@@ -74,7 +75,7 @@ Chercheur Associé, Centre Georg Simmel, Centre National de la Recherche Scienti
 Ruãn BATISTA, PhD student in Philosophy of Science at the Federal University of Bahia (supervised by Charbel El-Hani), doing a research-stay at Centre Cavaillès, République de Savoirs, École Normale Supérieure (supervised by Maël Montévil). 
 
 
-Abstract: What metaphysical commitments are necessary to construct theoretically robust references to biological existents? By disentangling the metaphysical dimension of the problem of biological individuality and taking an organicist stance towards it, I will defend why analyzing the theorization of organismal organization is the preferable first step to start solving this problem. After introducing the problem of reference in the context of scientific classifications and analyzing the very problem towards the definition of biological systematics, I will elucidate why the Hennigian (with focus on the concept of semaphoront) and "Montévimossian" (with focus on the concept of closure of constraints) metaphysical panoramas captures two - metaphysically discontinuous - aspects that are unavoidable for a robust theorization of variant organismal organization and, because of that, need to be hybridized. The χ (chi) symbol, proposed by Montévil & Mossio (2020) to capture such hybrid identity, will be presented. After elucidating the configuration of the hybrid metaphysics underlying this theoretical tool, I will discuss how it brings important implications for the future of biological systematics and for the understanding of topics such as: the nature of biological time; the relationships between biological hierarchies; the classification of biological sciences; and schools in the metaphysics of biology.
+**Abstract:** What metaphysical commitments are necessary to construct theoretically robust references to biological existents? By disentangling the metaphysical dimension of the problem of biological individuality and taking an organicist stance towards it, I will defend why analyzing the theorization of organismal organization is the preferable first step to start solving this problem. After introducing the problem of reference in the context of scientific classifications and analyzing the very problem towards the definition of biological systematics, I will elucidate why the Hennigian (with focus on the concept of semaphoront) and "Montévimossian" (with focus on the concept of closure of constraints) metaphysical panoramas captures two - metaphysically discontinuous - aspects that are unavoidable for a robust theorization of variant organismal organization and, because of that, need to be hybridized. The χ (chi) symbol, proposed by Montévil & Mossio (2020) to capture such hybrid identity, will be presented. After elucidating the configuration of the hybrid metaphysics underlying this theoretical tool, I will discuss how it brings important implications for the future of biological systematics and for the understanding of topics such as: the nature of biological time; the relationships between biological hierarchies; the classification of biological sciences; and schools in the metaphysics of biology.
 
 
 
@@ -83,31 +84,78 @@ Abstract: What metaphysical commitments are necessary to construct theoretically
 
 *"La « course à la puissance » comme clé de lecture de l'évolution. Exploration comparative de quelques approches synthétiques récentes couplant thermodynamique et agentivité"*
 
-**Résumé :**
+**Résumé:** Lorsqu'une conception de l'évolution des vivants met l'accent sur leur
+agentivité, on ne s'attend pas à ce qu'elle souligne aussi l'importance
+d'un certain aspect thermodynamique global de cette évolution, en
+l'occurrence la tendance générale, par-delà certains reculs ou
+stagnations temporaires, à l'augmentation de la densité de puissance
+(i.e. la puissance rapportée à la masse) développée par les organismes
+en évolution. On a en effet appris à se méfier des approches globales
+prétendant donner une orientation déterminée à l'évolution des vivants,
+que ce soit en termes d'énergie, d'entropie, d'information ou même,
+parfois, de complexité. C'est bien pourtant ce que propose le livre
+récent du paléontologue et biologiste de l'évolution Geerat J. Vermeij
+(2023), mais donc en termes de puissance, plus exactement, de densité de
+puissance. Sans adopter ici le point de vue - qui n'est pas le mien -
+d'un biologiste ou d'un philosophe de la biologie, je m'interrogerai,
+comme analyste des transferts interdisciplinaires de concepts, sur les
+emprunts répétés faits, dans ce travail, à la physique et en particulier
+à la cosmologie.
 
-Lorsqu’une conception de l’évolution des vivants met l’accentsur leur agentivité, on ne s’attend pas à ce qu’elle souligneaussi l’importance d’un certain aspect thermodynamique global decette évolution, en l’occurrence la tendance générale, par-delàcertains reculs ou stagnations temporaires, à l’augmentation de ladensité de puissance (i.e. la puissance rapportée à la masse)développée par les organismes en évolution. On a en effet appris àse méfier des approches globales prétendant donner une orientationdéterminée à l’évolution des vivants, que ce soit en termesd’énergie, d’entropie, d’information ou même, parfois, decomplexité. C’est bien pourtant ce que propose le livre récent dupaléontologue et biologiste de l’évolution Geerat J. Vermeij(2023), mais donc en termes de puissance, plus exactement, de densitéde puissance. Sans adopter ici le point de vue - qui n’est pas lemien - d’un biologiste ou d’un philosophe de la biologie, jem’interrogerai, comme analyste des transferts interdisciplinairesde concepts, sur les emprunts répétés faits, dans ce travail, àla physique et en particulier à la cosmologie.
+Dans un premier temps, j'analyserai comment Vermeij articule sa
+conception propre de l'agentivité en biologie à certains de ses emprunts
+à la cosmologie (Chaisson, 2001) de sorte qu'il lui semble, par là,
+pouvoir répondre à la fois à l'objection de la Zero-Force Evolutionary
+Law (McShea, Brandon, 2010) et à celle de la « bande magnétique » non
+repassable illustrant le fait que l'histoire de la vie est descriptible
+mais ne peut être remontée puis identiquement repassée, qu'elle n'aurait
+donc pas de direction (Gould, 1989).
 
-Dans un premier temps, j’analyserai comment Vermeij articule saconception propre de l’agentivité en biologie à certains de sesemprunts à la cosmologie (Chaisson, 2001) de sorte qu’il luisemble, par là, pouvoir répondre à la fois à l’objection de laZero-Force Evolutionary Law (McShea, Brandon, 2010) et à celle dela « bande magnétique » non repassable illustrantle fait que l’histoire de la vie est descriptible mais ne peut êtreremontée puis identiquement repassée, qu’elle n’aurait donc pasde direction (Gould, 1989).
+Je proposerai ensuite de comparer cette stratégie de lecture
+thermodynamique renouvelée de l'histoire évolutive -- du fait du rôle
+nouveau donné à la densité de puissance (et pas à l'énergie seule, ni à
+ses flux absolus ni à la seule puissance) - avec celle proposée
+également récemment par le paléoanthropologue Jean-Jacques Hublin (2025)
+pour le cas du cerveau. Cet ouvrage n'aurait-il pas, d'ailleurs, pu tout
+aussi bien être nommé « la tyrannie de la puissance » ?
 
-Je proposerai ensuite de comparer cette stratégie de lecturethermodynamique renouvelée de l’histoire évolutive – du fait durôle nouveau donné à la densité de puissance (et pas à l’énergieseule, ni à ses flux absolus ni à la seule puissance) - avec celleproposée également récemment par le paléoanthropologueJean-Jacques Hublin (2025) pour le cas du cerveau. Cet ouvragen’aurait-il pas, d’ailleurs, pu tout aussi bien être nommé « latyrannie de la puissance » ?
-
-Ces travaux récents de biologie évolutive fondés d’abord sur deconsidérables analyses du terrain mais qui en appellent aussinouvellement, et par principe, au rôle insigne de la densité depuissance donneraient-ils raison finalement à ceux, d’abord plusspéculatifs et issus de la physique, qui firent entretemps écho àcelui de (Chaisson, 2001) comme, parmi d’autres, celui de (Roddier,2012) ? Plus largement, au vu de leur surprenante convergenceaujourd’hui, dans quelle mesure pourraient-ils également donner uncertain crédit à l’hypothèse d’une transdisciplinaritéconceptuelle désormais permise par cette clé de lecture de la« course à la puissance » ? (Varenne, Crétot,2025)
+Ces travaux récents de biologie évolutive fondés d'abord sur de
+considérables analyses du terrain mais qui en appellent aussi
+nouvellement, et par principe, au rôle insigne de la densité de
+puissance donneraient-ils raison finalement à ceux, d'abord plus
+spéculatifs et issus de la physique, qui firent entretemps écho à celui
+de (Chaisson, 2001) comme, parmi d'autres, celui de (Roddier, 2012) ?
+Plus largement, au vu de leur surprenante convergence aujourd'hui, dans
+quelle mesure pourraient-ils également donner un certain crédit à
+l'hypothèse d'une transdisciplinarité conceptuelle désormais permise par
+cette clé de lecture de la « course à la puissance » ? (Varenne, Crétot,
+2025)
 
 **Références** :
 
-Chaisson, E., _Cosmic Evolution. The riseof complexity in nature_. Harvard,Harvard University Press.
+Chaisson, E., *Cosmic Evolution. The rise of complexity in nature*.
+Harvard, Harvard University Press.
 
-Gould, S.J., 2004, \[1989\]. _La vie est belle : Les surprises del'évolution_. Paris, Seuil.
+Gould, S.J., 2004, \[1989\]. *La vie est belle : Les surprises de
+l\'évolution*. Paris, Seuil.
 
-Hublin, J.J., 2025. _La tyrannie du cerveau. Un nouveau récit del’évolution humaine_. Paris, Robert Laffont.
+Hublin, J.J., 2025. *La tyrannie du cerveau. Un nouveau récit de
+l'évolution humaine*. Paris, Robert Laffont.
 
-McShea; D.W, Brandon, R.N. 2010. _Biology’sfirst law: The tendency for diversity and complexity to increase inevolutionary systems_, Chicago,University of Chicago Press.
+McShea; D.W, Brandon, R.N. 2010. *Biology's first law: The tendency for
+diversity and complexity to increase in evolutionary systems*, Chicago,
+University of Chicago Press.
 
-Roddier, F., 2012. _Thermodynamique de l’évolution. Un essai dethermo-bio-sociologie,_ La Seyne-sur-Mer, Éditions Parole.
+Roddier, F., 2012. *Thermodynamique de l'évolution. Un essai de
+thermo-bio-sociologie,* La Seyne-sur-Mer, Éditions Parole.
 
-Varenne, F., Crétot, A.. 2025. « La ‘course à lapuissance’ : réductionnisme fataliste ou opportunité pour unralentissement volontariste ? », _Natures SciencesSociétés_, 33(3), p. 347-351,[https://doi.org/10.1051/nss/2025062](https://doi.org/10.1051/nss/2025062).
+Varenne, F., Crétot, A.. 2025. « La 'course à la puissance' :
+réductionnisme fataliste ou opportunité pour un ralentissement
+volontariste ? », *Natures Sciences Sociétés*, 33(3), p. 347-351,
+[**https://doi.org/10.1051/nss/2025062**](https://doi.org/10.1051/nss/2025062).
 
-Vermeij, G.J., 2023. _The evolution of power. Anew understanding of the history of life_,Princeton, Princeton University Press.
+Vermeij, G.J., 2023. *The evolution of power. A new understanding of the
+history of life*, Princeton, Princeton University Press.
 
 ## Mercredi 10 juin 2026, 16h-18h
 **salle de réunion Cavaillès** , 29 Rue d'Ulm, troisième étage à droite.
