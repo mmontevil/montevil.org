@@ -189,5 +189,9 @@ async function renderCitedBy0(gsentry, people, bibM) {
 
 
 // Memoize async function
-export const author = memoize(author0);
+//export const author = author0;
+export const author = memoize(author0, {
+  cacheKey: ([name, gsid, , auth, nbAuteurs]) => 
+    `${name}|${gsid}|${auth}|${nbAuteurs}`
+});
 export const renderCitedBy = memoize(renderCitedBy0);
