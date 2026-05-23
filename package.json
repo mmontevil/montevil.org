@@ -110,7 +110,7 @@
     "workbox-strategies": "7.4.1"
   },
   "engines": {
-    "node": ">=26"
+    "node": ">=24"
   },
   "private": true,
   "dependencies": {
