@@ -150,7 +150,9 @@ if (myNav && navToc) {
   navToc.addEventListener('click', openNav, false);
   myNav.addEventListener('click', openNav, false);
 }
-
+document.querySelector('.navigation__ .normalStyle').addEventListener('click', function() {
+  document.getElementById('navToc').click();
+});
 
 
 /*****************************************************************

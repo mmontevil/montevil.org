@@ -63,9 +63,12 @@
     </ul>
     <ul class="tools" >    
     {% if upnav and not noToc%}
-        <li class="navigation__{{ type }}{% if url in page.url %} current" aria-current="page{% endif %}"><span class="normalStyle">Map</span>
-          <button class="onclickbutton navButton"  id="navToc">{%- icon "chevronUp", "Link" -%}
+        <li class="navigation__{{ type }}{% if url in page.url %} current" aria-current="page{% endif %}">
+          <span class="normalStyle"  style="cursor: pointer;">Map</span>
+          <button  class="onclickbutton navButton" id="navToc">
+          {%- icon "chevronUp", "Link" -%}
           </button>
+          
         </li>
         
         {% endif %}

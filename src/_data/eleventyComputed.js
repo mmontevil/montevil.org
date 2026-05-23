@@ -199,8 +199,8 @@ export function allMentionsSize(data) {
 
 export function mentionsScore(data) {
   return (
-    (data.mentionsSize / 3 / (data.age + 175) + data.citationSize) /
-    (data.age + 175)
+    (data.mentionsSize / 3 / ( 175) + data.citationSize) /
+    ( 175)
   );
 }
 
@@ -334,7 +334,7 @@ if (data.layout === 'talk')  databib=data.entry;
 
   for (const auth of authors) {
     const revindex = authors.length - index;
-
+    
     if (auth.given && auth.given[0]) {
       output += await author(
         `${auth.given[0]} ${auth.family}`,

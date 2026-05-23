@@ -185,6 +185,7 @@ export default {
     attributes: {
       loading: 'lazy',
       crossorigin: 'anonymous',
+      decoding: 'async',
     },
   },
 
