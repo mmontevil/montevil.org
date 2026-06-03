@@ -114,7 +114,10 @@ const downloadAvatar = async (url) => {
   let sep="";
   if (affiliation) sep = ', ';
   tooltip += `${fullName}${sep}${affiliation}"`;
-
+  if ( authorPic === '/assets/avatars/gs/dummy.jpg') {
+      authorPic="https://ui-avatars.com/api/?name="+slugify(name)+"&background=691449&color=ede1e6&size=48";
+      authorPic=initialsAvatar( name);
+    }
   // Build HTML
   let content = `<figure class="frameAuthor ${authclass} h-card" ${tooltip}>`;
   content += `<img class="reaction__author__photo2 u-photo noDarkFilter ${auth && nbAuteurs === 1 ? 'hidden' : ''}" src="${authorPic}" height="48" ${auth && nbAuteurs === 1 ? 'width="48"' : ''} alt="${name}">`;
@@ -124,7 +127,14 @@ const downloadAvatar = async (url) => {
   return content;
 };
 
-
+function initialsAvatar( name) {
+  const initials = name.split(" ").map(w => w[0]).slice(0, 2).join("").toUpperCase();
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+    <rect x="0" y="0" width="48" height="48" rx="6" ry="6" fill="#691449"/>
+    <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" fill="#ede1e6" font-family="Georgia" font-size="18">${initials}</text>
+  </svg>`;
+  return "data:image/svg+xml," + encodeURIComponent(svg);
+}
   
   
 

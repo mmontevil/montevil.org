@@ -76,7 +76,9 @@ const runBeforeHook = async (image, document) => {
       statSize = 0;
     }
   }
-
+if (imageSrc.startsWith('data') ) {
+  console.log("hophop")
+}
 if (imageSrc.startsWith('/') && statSize > 0) {
   imageDimensions = await getImageDimensions('./src' + imageSrc);
   imageUrl = pkg.homepage + encodeURI(imageSrc);
@@ -173,7 +175,7 @@ const runAfterHook = async (image, document) => {
 export default {
   default: {
     selector:
-      ':not(picture) img[src]:not([srcset]):not([src$=".svg"]):not([src^="https://res.cloudinary.com"])',
+      ':not(picture) img[src]:not([srcset]):not([src$=".svg"]):not([src^="https://res.cloudinary.com"]):not([src^="data:"])',
     resizedImageUrl: (src, width) =>
       `https://res.cloudinary.com/mmontevil/image/fetch/q_auto,f_auto,w_auto:100:${width},c_limit/${src}`,
     runBefore: runBeforeHook,
