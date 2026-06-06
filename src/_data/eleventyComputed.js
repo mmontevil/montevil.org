@@ -87,19 +87,19 @@ export function headTitle(data) {
 
 /* ------------------ OpenGraph ------------------ */
 
-export function ogType(data) {
+ function ogType(data) {
   if (['publication', 'post', 'link', 'note', 'talk'].includes(data.layout)) {
     return 'article';
   }
   return 'website';
 }
 
-export function ogTitle(data) {
-  if (data.page.url === '/') return data.pkg.title;
+ function ogTitle(data) {
+  if (data.page.url === '/') return "Maël Montévil's research page";
   return removeEmojis(titleRaw(data));
 }
 
-export function ogImageTitle(data) {
+ function ogImageTitle(data) {
   if (data.page.url === '/') return data.pkg.title;
   if (['publication', 'post', 'link', 'note', 'talk'].includes(data.layout)) {
     return removeEmojis(titleRaw(data));
@@ -111,13 +111,16 @@ function ogTags(data) {
   return tags(data).map(t => `#${tagToHashtag(t)}`).join('%20%20');
 }
 
-export function ogImageTagline(data) {
+ function ogImageTagline(data) {
   if (data.page.url === '/') return '';
   if (['publication', 'post', 'link', 'note', 'talk'].includes(data.layout)) {
     return ogTags(data);
   }
   return '';
 }
+
+
+
 
 /* ------------------ Bibliography ------------------ */
 
@@ -400,7 +403,16 @@ if (data.layout === 'talk')  databib=data.entry;
 };
 
 
-
+export default {
+  opengraph: {
+    type: (data) => ogType(data),
+    title: (data) => ogTitle(data),
+    image: {
+      title: (data) => ogImageTitle(data),
+      tagline: (data) => ogImageTagline(data),
+    },
+  },
+};
 
 /*  
        auteurs: "{%- for auth in entry.author -%}{%-set authname-%}{%-if auth.given[0]-%}{{-auth.given | initials }} {{auth.family-}}{%-else-%}{{-auth.literal-}}{%-endif-%}{%-endset-%}{%-set fullauthname-%}{%-if auth.given[0]-%}{{-auth.given }} {{auth.family-}}{%-else-%}{{-auth.literal-}}{%-endif-%}{%-endset-%}{%- author authname, '', people,true, nbAuteurs, fullauthname -%}{%- if loop.revindex >2 -%}, {%endif-%}{%- if loop.revindex ===2 %} & {%endif-%}{%-endfor-%}",

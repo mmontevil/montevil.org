@@ -157,5 +157,7 @@ volontariste ? », *Natures Sciences Sociétés*, 33(3), p. 347-351,
 Vermeij, G.J., 2023. *The evolution of power. A new understanding of the
 history of life*, Princeton, Princeton University Press.
 
-## Mercredi 10 juin 2026, 16h-18h
+## Mercredi 10 juin 2026, 16h-18h Océane Gustave (République des Savoirs, ÉNS)
 **salle de réunion Cavaillès** , 29 Rue d'Ulm, troisième étage à droite.
+
+*"Canguilhem et l'introduction du concept d'erreur en pathologie""*
