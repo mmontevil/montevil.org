@@ -1,5 +1,36 @@
 [
   {
+    "ISBN": "978-2-37662-112-6",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "collection-title": "Les entretiens du nouveau monde industriel (ENMI)",
+    "container-title": "Pour une nouvelle écologie de l’industrie: Une bifurcation vers l’écotechnologie et de nouvelles localités industrielles",
+    "editor": [
+      {
+        "family": "Vincent Puig",
+        "given": "Olivier Landau & Franck Cormerais"
+      }
+    ],
+    "id": "2026-Montevil-produire-industrie",
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          4
+        ]
+      ]
+    },
+    "publisher": "C&F Éditions",
+    "publisher-place": "Caen, France",
+    "title": "Qu’appelle-t-on produire ?",
+    "type": "chapter",
+    "volume": "18"
+  },
+  {
     "DOI": "10.13133/2532-5876/19211",
     "URL": "https://rosa.uniroma1.it/rosa04/organisms/article/view/19211",
     "abstract": "The free-energy principle (FEP) provides a computational, physical and teleological theory for understanding biological organization as cognitive agents minimizing their entropy in relation to their environment. Is minimizing entropy the first principle driving all dynamics of cognition? Is it enough to account for organizational changes in an open-ended way?After a general presentation of the literature on the FEP, we turn to the paradoxical case of the brain under the influence of psychedelics, where the FEP is challenged by an increased cerebral entropy, which induces organizational changes of cognition. Building on this paradox, we identify some limits of the FEP, notably its application of concepts of information, optimization, and predefined phase spaces to biology that do not fit our criteria for a theory of biological organization.We also identify two aspects of entropy in physics and in the FEP: the local entropic trend that implies variations, and the global entropic trend that leads to homogenization and stability. Extending these concepts outside of their physico-mathematical context, we contribute to an organicist theoretical alternative in which living systems find a balance between these two trends. Conceptually, a biological system’s disorganization enables its “unprestatable”unprestatable reorganization and thus its open-ended evolution.",
