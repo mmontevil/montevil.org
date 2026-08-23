@@ -1,5 +1,61 @@
 [
   {
+    "URL": "https://www.iri.centrepompidou.fr/actualites/entretiens-du-nouveau-monde-industriel-preparatoires-2026/",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "La clinique des objets : Prendre soin des objets et des milieux dans les réseaux, médias et territoires de demain",
+    "id": "2026-ENMI-Prep",
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          25
+        ]
+      ]
+    },
+    "title": "La question du rapport entre l’abstraction, le discours rationnel, et la matière",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "https://rss.com/podcasts/cpasdanslmanuel/2913758/",
+    "author": [
+      {
+        "family": "Ravillard",
+        "given": "Arnaud"
+      },
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      },
+      {
+        "family": "Bossière",
+        "given": "Marie-Claude"
+      },
+      {
+        "dropping-particle": "yasmine",
+        "family": "Mesli"
+      }
+    ],
+    "container-title": "Adultes & écrans : Comprendre pour agir",
+    "id": "2026-podcast",
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          21
+        ]
+      ]
+    },
+    "title": "Épisode 1 — pourquoi sommes-nous accros ? Comprendre les mécanismes invisibles qui nous retiennent devant nos écrans.",
+    "type": "paper-conference"
+  },
+  {
     "URL": "https://www.cliodynamique.org/beyond-events-historical-processes-behind-political-crisis",
     "author": [
       {

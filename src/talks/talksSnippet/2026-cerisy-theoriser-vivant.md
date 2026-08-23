@@ -66,8 +66,7 @@ La question du cadre théorique est structurellement négligée en biologie -- m
 -   Paul-Antoine Miquel
     *Quel rôle un philosophe peut-il jouer sur des questions de biologie théorique?*
 
--   Barbara Bravi
-    *Statistical and machine learning modelling in biology: considerations and examples from immunology*
+
 
 -   Armand Hatchuel et Pascal Le Masson
     *Les épreuves du travail théorique : l'exemple de la théorie de la
@@ -77,14 +76,14 @@ La question du cadre théorique est structurellement négligée en biologie -- m
 
 La biologie de la deuxième moitié du XXème siècle, notamment à la suite de la découverte de l'ADN, a centré son travail sur le niveau moléculaire, parfois de manière dogmatique. Si ce dogmatisme est intimement lié à une approche génocentrique du vivant qui tend à s'effacer, quels enjeux porte ce niveau d'analyse aujourd'hui?
 
+-   Barbara Bravi
+    *Statistical and machine learning modelling in biology: considerations and examples from immunology*
 -   Arnaud Pocheville
     *Biologie Galtonienne de l'évolution*
 
 -   Andràs Paldi
     *La biologie expérimentale à la lumière de la théorie*
 
--   Anne Goupil
-    *Modélisation moléculaire du vivant : apports, limites et temporalité des modèles d'IA*
 
 #### Soirée: Discussion collective sur la théorisation {#soirée-discussion-collective-sur-la-théorisation .unnumbered}
 
@@ -131,8 +130,7 @@ L'historicité biologique est marquée par l'apparition de nouveautés. Or si l'
 -   Andrea Roli
     *Évolution de l'espace des possibles et création d'information*
 
--   Mathilde Tahar
-    *Imprévisibilité de l'évolution, normativité des contraintes et inventivité des organismes*
+-   Table ronde avec Giuseppe Longo, Maël Montévil, René Zaragueta Bagils
 
 #### Après-midi: Sortie fromage de chèvre {#après-midi-sortie-fromage-de-chèvre .unnumbered}
 
@@ -158,14 +156,13 @@ Saint-Malo-de-la-Lande.
 
 Comment faire tenir ensemble l'historicité des être vivants et l'étude de leurs relations causales synchroniques? Et si l'on se donne ce projet, quel type de logique suivent les objets de la biologie et à quel type de théorie sommes-nous conduits pour la biologie?
 
--   Shaj Mohan
-    *One Life*
-
 -   Maël Montévil
     *Le défi d'une épistémologie hybride pour la théorisation en biologie*
 
 -   Anton Robert
     *L'origine supplémentaire du vivant et ses conséquences pour la modélisation en biologie*
+
+-   Discussion générale 
 
 #### Soirée: Théâtre {#soirée-théâtre .unnumbered}
 
@@ -177,21 +174,22 @@ Eaudyssée avec Pierre-Henri Gouyon
 
 Les tissus comme les écosystèmes comportent un grand nombre d'entités organisées, cellules et organismes respectivement. En même temps, ils sont eux-mêmes organisés, ou du moins peuvent l'être dans le cas des écosystèmes. Comment ces deux niveaux sont-ils théorisés et étudiés en pratique ?
 
+-   Maël Montévil
+    *Disruption des écosystèmes plantes-pollinisateur*
+    
 -   Claudia Gadaleta
     *Champs morphogénétiques : implications en morphogenèse et en oncogenèse*
 
 -   Ana Soto
     *Sur les organismes et leurs parties : détermination théorique de l'objet d'étude*
 
--   Océane Guillot
-    *Intérêts des approches organisationnelles pour l'écologie*
 
 #### Vie et technique {#Vie-et-technique .unnumbered}
 
 Comment aborder les actions humaines dès lors que l'on pense les objets avec lesquels on agit comme ayant en même temps une histoire et des propriétés systémiques? La question technique peut-elle contribuer à la compréhension et à l'élaboration théorique, et réciproquement la théorie biologique peut-elle transformer notre point de vue sur les techniques?
 
--   Céline Delbes
-    *Entre préservation de la biodiversité microbienne comme ressource pour l'expression des terroirs et exigences sanitaires: le cas des fromages au lait cru*
+-   Nathalie Desmasures
+    *Des laits crus aux fromages, regard sur les communautés microbiennes : entre diversité et exigences sanitaires*
 
 -   Sébastien Massart
     *Le virtuel: technique du vivant, technique vivante*

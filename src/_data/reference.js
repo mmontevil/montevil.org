@@ -1,8 +1,8 @@
 // utils/refs.mjs (or any .js file if "type": "module" is in package.json)
 
 import { readFileSync } from 'fs';
-import Cite from 'citation-js';
-
+import { Cite, plugins } from '@citation-js/core'
+import '@citation-js/plugin-csl'
 
 // Function to generate references
 async function refs() {// Load and parse JSON data
@@ -10,7 +10,7 @@ const databibM = readFileSync('./src/_data/bibM.json', 'utf-8');
 const bibM = JSON.parse(databibM);
 
 // Citation template configuration
-const config = Cite.plugins.config.get('@csl');
+const config = plugins.config.get('@csl');
 const templateName = 'chicago';
 
   const res = {};
@@ -19,7 +19,7 @@ const templateName = 'chicago';
     const cite = new Cite(JSON.stringify(bibfi));
     const txt = cite.format('bibliography', {
       format: 'text',
-      template: templateName,
+      style: templateName,
       lang: 'en-US',
     });
 

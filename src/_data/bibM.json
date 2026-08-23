@@ -1,5 +1,36 @@
 [
   {
+    "DOI": " 10.3917/ravs.004.0005 ",
+    "URL": " https://shs.cairn.info/revue-audiovisuelle-de-la-valorisation-des-savoirs-scientifiques-2026-4-page-18?lang=fr ",
+    "author": [
+      {
+        "family": "Montévil",
+        "given": "Maël"
+      }
+    ],
+    "container-title": "Revue Audiovisuelle de la Valorisation des Savoirs Scientifiques",
+    "editor": [
+      {
+        "family": "IQSOG"
+      }
+    ],
+    "id": "2026-Montevil-Cerisy",
+    "issue": "4",
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          4
+        ]
+      ]
+    },
+    "page": "18-20",
+    "publisher": "Cairn.info",
+    "title": "Théoriser le vivant pour sortir des concepts zombies",
+    "type": "article-journal",
+    "volume": "4"
+  },
+  {
     "ISBN": "978-2-37662-112-6",
     "author": [
       {

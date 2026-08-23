@@ -1,7 +1,9 @@
 import fs from "fs";
 import path from "path";
 import linkifyUrls from "linkify-string";
-import Cite from "citation-js";
+import { Cite, plugins } from '@citation-js/core'
+import '@citation-js/plugin-csl'
+
 import memoize from 'memoize';
 
 // Read CSL template
@@ -9,8 +11,9 @@ const template = fs.readFileSync("assets/chicago-author-date.csl", "utf8");
 const templateName = "chicago";
 
 // Register CSL template
-const config = Cite.plugins.config.get("@csl");
-config.templates.add(templateName, template);
+const config = plugins.config.get('@csl');
+
+config.styles.add(templateName, template);
 
 
 export const urlify = (text) => {
@@ -23,7 +26,7 @@ export const urlify = (text) => {
   const cite = new Cite(JSON.stringify(bibfi));
   let res = cite.format("bibliography", {
     format: "html",
-    template: templateName,
+    style: templateName,
     lang: "en-US",
   });
 

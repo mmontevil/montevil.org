@@ -283,8 +283,9 @@ async function safeGet(page, url, retries = 3) {
             const linkEl = titleEl.locator("a");
             const mainlink = (await linkEl.count()) > 0 ? await linkEl.getAttribute("href") : "";
 
-            const metaText = await item.locator("div.gs_a").textContent();
-
+            let metaText = await item.locator("div.gs_a").textContent();
+            metaText=metaText.replace(/\s+/g, ' ').replace(/<\s*_value\s*>/g, '');
+            
             const authorPart = metaText.split(" - ")[0];
             const authors = authorPart
               .split(", ")

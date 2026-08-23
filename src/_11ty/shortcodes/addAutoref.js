@@ -2,7 +2,9 @@
 import { DOMParser } from 'linkedom';
 import fs from 'fs';
 import {diceCoefficient} from 'dice-coefficient';
-import Cite from 'citation-js';
+import { Cite, plugins } from '@citation-js/core'
+import '@citation-js/plugin-csl'
+
 import memoize from 'memoize';
 
 
@@ -25,13 +27,13 @@ function clean(text) {
 }
 
 // Citation
-const config = Cite.plugins.config.get('@csl');
+const config = plugins.config.get('@csl');
 const templateName = 'chicago';
 const cite00 = function(jsonentry) {
   const cite = new Cite(JSON.stringify(jsonentry));
   return cite.format('bibliography', {
     format: 'text',
-    template: templateName,
+    style: templateName,
     lang: 'en-US',
   });
 };
