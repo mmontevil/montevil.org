@@ -71,8 +71,10 @@
     <meta name="keywords" content="{{bibentry.keyword}}">
 {%endif%} 
 
+
+{# {{websiteid.url}}/assets/pdf/{{bibentry.id}}.pdf #}
 {% if hasPDF%}
-    <meta name="citation_pdf_url" content="{{websiteid.url}}/assets/pdf/{{bibentry.id}}.pdf">
+    <meta name="citation_pdf_url" content="https://raw.githubusercontent.com/mmontevil/montevil.org/refs/heads/master/pdf/{{bibentry.id}}.pdf">
 {%endif%} 
 
 
