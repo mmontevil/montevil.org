@@ -7,7 +7,7 @@ eleventyComputed:
     abstract : "{%- if bibentry.abstract -%}{{ bibentry.abstract  | safe}}{%- endif -%}"
     bibib: "src/assets/bib/{{page.fileSlug}}.bib"
     bibout: "/assets/bib/{{page.fileSlug}}.bib"
-    pdfout: "https://raw.githubusercontent.com/mmontevil/montevil.org/refs/heads/master/src/{{page.fileSlug}}.pdf"
+    pdfout: "https://raw.githubusercontent.com/mmontevil/montevil.org/refs/heads/master/pdf/{{page.fileSlug}}.pdf"
     pdfoutSup: "https://raw.githubusercontent.com/mmontevil/montevil.org/refs/heads/master/pdf/{{page.fileSlug}}-sup.pdf"
     orderDate: "{%- if datepub=='Submitted'  -%}{{- '2100-01-01' -}}{%- else -%}{{- datepub     -}}{%- endif -%}"   
 ---
@@ -16,8 +16,7 @@ eleventyComputed:
  
  {# <div class="legibilityWidth wrap0all"> </div>#}
  
- 
- 
+
 {% set doFilter = (not isFeed) and (not noAnchor) %}
 {% if doFilter %}
     {% if filterauthoryear %}
